@@ -1104,7 +1104,8 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
             #change dir back to previous wd
             os.chdir(wd)
             
-#wrapper function to do all in one call.
+#wrapper function to calculate SPS of a (sub-)set of aligned sequences 
+#(str, str, str, str, int, [str,str,...], int) -> (float, [{},{},...])
 def calc_SPS_from_aln_sample(output_path, aln_file_path, job_title, dali_path, sample_size, valid_symbols, verbosity):
     
     job_out_path = os.path.join(output_path, job_title)
@@ -1146,8 +1147,11 @@ def calc_SPS_from_aln_sample(output_path, aln_file_path, job_title, dali_path, s
     SPS_csv_full_out_path = os.path.join(SPS_out_path, job_title+"_SPS.csv")
     #write SPS_dict_list to csv
     write_list_of_dicts_to_csv(SPS_dict_list, SPS_csv_full_out_path)
+    
+    return job_SPS, SPS_dict_list
 
 #evaluate and create overview of search data
+#void (str, str, str)    
 def evaluate_search_data(csv_path, output_path, sort_by):
     
     ex_match_counter = 0
@@ -1187,7 +1191,8 @@ def evaluate_search_data(csv_path, output_path, sort_by):
         axes_obj.get_figure().savefig(os.path.join(output_path,csv_file_name+".svg"))
     print("Exact matches: %s.Total number of sequences: %s." % (ex_match_counter, total_counter))
     
-#synchronizes copy of remote PDB archive with local copy  
+#synchronizes copy of remote PDB archive with local copy
+#void (str, int)  
 def sync_pdb_copy(loc_db_out_path, verbosity):
     
     create_dir_safely(loc_db_out_path)
