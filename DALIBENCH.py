@@ -1275,6 +1275,7 @@ def main():
 
     toc = time.perf_counter()
     print(f"Done in {toc - tic:0.4f} seconds.")
+    print("check")
     exit(0)
 
 if __name__ == "__main__":
