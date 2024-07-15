@@ -1083,7 +1083,7 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
             process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
     
             try:
-                out, err = process.communicate(timeout=120) #timeout may need to be longer (or shorter), depending on size of alignments
+                out, err = process.communicate(timeout=500) #timeout may need to be longer (or shorter), depending on size of alignments
                 if out is not None and verbosity>1:
                     print(out.decode('ascii'))
             except subprocess.TimeoutExpired:
@@ -1187,13 +1187,33 @@ def evaluate_search_data(csv_path, output_path, sort_by):
         axes_obj.get_figure().savefig(os.path.join(output_path,csv_file_name+".svg"))
     print("Exact matches: %s.Total number of sequences: %s." % (ex_match_counter, total_counter))
     
-#synchronizes copy of remote PDB archive with local copy
-#consider only syncing pdb index file    
-def sync_pdb_copy():
+#synchronizes copy of remote PDB archive with local copy  
+def sync_pdb_copy(loc_db_out_path, verbosity):
     
+    create_dir_safely(loc_db_out_path)
     #https://www.wwpdb.org/ftp/pdb-ftp-sites
     #rsync -rlpt -v -z --delete --port=33444 rsync.rcsb.org::ftp_data/structures/divided/pdb/ ./pdb
-    pass
+    shell_input = []
+    shell_input = ["rsync", "-rlpt", "-v", "-z", "--delete", "--port=33444", "rsync.rcsb.org::ftp_data/structures/divided/pdb/", loc_db_out_path]
+    
+    if verbosity>0:
+        print("Synchronizing local PDB database with remote.")
+    if verbosity>1:
+        process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+        for line in process.stdout:
+            print(line, end='')
+    else:
+        process = subprocess.Popen(shell_input, stdout=subprocess.DEVNULL)
+
+    try:
+        out, err = process.communicate()
+    except:
+        process.kill()
+        out, err = process.communicate()
+        errMsg = "Communication with rsync subprocess failed. Killed it."
+        shell_err_fct(err.decode('ascii'))
+        errorFct(errMsg)
+        exit(1)
 
 def main():
 
@@ -1205,8 +1225,10 @@ def main():
     argParser.add_argument("-p", "--createsearchplots", default=0, action="count", help="Creates search plots from CSV search metadata.", required=False)
     argParser.add_argument("-csv", "--csvdir", help="Path to CSV files with search metadata.", required=False)
     argParser.add_argument("-e", "--doitall", default=0, action="count", help="Do it all.", required=False)
+    argParser.add_argument("-sync", "--syncdb", default=0, action="count", help="Sync local PDB database with remote.", required=False)
     argParser.add_argument("-dm", "--datamode", default=0, action="count",
                            help="data mode for gathering PDB files and other data from given FASTA alignment", required=False)
+    argParser.add_argument("-db", "--locdb", default="PDB_db", help="Path to local PDB database.", required=False)
     argParser.add_argument("-af", "--alignmentfile", help="MSA file in FASTA format", required=False)
     argParser.add_argument("-bat", "--batchsearch", help="Path to MSA files in FASTA format", required=False)
     argParser.add_argument("-ss", "--samplesize", default=10, type = int,
@@ -1231,6 +1253,9 @@ def main():
                            required=False)
 
     args = argParser.parse_args()
+    
+    if args.syncdb>0:
+        sync_pdb_copy(args.locdb, args.verbose)
 
     valid_symbols = sel_alphabet(args.alphabet)
     invalid_symbols = set_non_alphabet(args.nonalphabet)
@@ -1275,7 +1300,6 @@ def main():
 
     toc = time.perf_counter()
     print(f"Done in {toc - tic:0.4f} seconds.")
-    print("check")
     exit(0)
 
 if __name__ == "__main__":
