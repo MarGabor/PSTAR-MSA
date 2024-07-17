@@ -1202,7 +1202,7 @@ def sync_pdb_copy(loc_db_out_path, verbosity):
     shell_input = ["rsync", "-rlpt", "-v", "-z", "--delete", "--port=33444", "rsync.rcsb.org::ftp_data/structures/divided/pdb/", loc_db_out_path]
     
     if verbosity>0:
-        print("Synchronizing local PDB database with remote.")
+        print("Synchronizing local PDB database with remote. This may take a while.")
     if verbosity>1:
         process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
         for line in process.stdout:
@@ -1219,6 +1219,91 @@ def sync_pdb_copy(loc_db_out_path, verbosity):
         shell_err_fct(err.decode('ascii'))
         errorFct(errMsg)
         exit(1)
+
+def get_pdb_path_list_recursively(loc_pdb_db_list):
+    
+    pass
+
+
+#creating fasta file from a local directory with PDB files recursively
+#extends fasta file, if it already exists        
+#void (str)
+def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, verbosity):
+    
+    pdb_path_list = get_pdb_path_list_recursively(loc_pdb_db_path)
+    
+    if verbosity>0:
+        print("Writing PDB index file...")
+
+    tic_index_file = time.perf_counter()
+    write_pdb_index_file(pdb_path_list, index_file_full_path)
+    toc_index_file = time.perf_counter()
+    print(f"Indexing done in {toc_index_file - tic_index_file:0.4f} seconds.")
+
+    seq = ""
+    header = ""
+
+    if verbosity>0:
+        print("Writing Fasta file...")
+    try:
+        fasta_file_handle = open(fasta_file_full_path, 'w')
+    except:
+        errMsg = "File %s could not be opened for writing." % os.path.split(fasta_file_full_path)[1]
+        errorFct(errMsg)
+        exit(1)
+    try:
+        for pdb_path in pdb_path_list:
+            seq = get_sequence_from_pdb(pdb_path)
+            #header = (os.path.splitext(os.path.splitext(os.path.split(pdb_path)[1])[0])[0])[3:7]
+            header = get_header_from_pdb(pdb_path)
+            write_entry_to_fasta_file(seq, header, fasta_file_handle)
+    except:
+        errMsg = "Error while writing to %s." % os.path.split(fasta_file_full_path)[1]
+        close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
+        errorFct(errMsg)
+        exit(1)
+        
+    close_file_safely(fasta_file_handle, fasta_file_full_path, '')
+
+
+#creates diamond database from collection of pdb files in directory
+#void (str, str, int)        
+def create_diamond_database(loc_pdb_db_path, db_out_path, verbosity):
+    
+    fasta_file_full_path = os.path.join(db_out_path, "pdb_database.fasta")
+    index_file_full_path = os.path.join(db_out_path, "pdb_database.index")
+
+    try:
+        create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, verbosity)
+    except:
+        errMsg = "Failed to create FASTA or INDEX file."
+        errorFct(errMsg)
+        exit(1)
+    
+    #./diamond makedb --in <path_to_FASTA> --db <db_out_path>
+    shell_input = []
+    shell_input = ["./diamond", "makedb", "--in", fasta_file_path, "--db", db_out_path]
+    
+    if verbosity>0:
+        print("Creating local database...")
+    if verbosity>1:
+        process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+        for line in process.stdout:
+            print(line, end='')
+    else:
+        process = subprocess.Popen(shell_input, stdout=subprocess.DEVNULL)
+
+    try:
+        out, err = process.communicate()
+        shell_err_fct(err.decode('ascii'))
+    except:
+        process.kill()
+        out, err = process.communicate()
+        errMsg = "Communication with \"diamond makedb\" subprocess failed. Killed it."
+        shell_err_fct(err.decode('ascii'))
+        errorFct(errMsg)
+        exit(1)
+
 
 def main():
 
