@@ -4,6 +4,7 @@
 #11/04/2024
 
 import argparse
+import sys
 from datetime import datetime
 from distutils.command import clean
 import re
@@ -1220,28 +1221,37 @@ def sync_pdb_copy(loc_db_out_path, verbosity):
         errorFct(errMsg)
         exit(1)
 
+#recursively get all pdb file paths in a specified path and return them as list
+# str -> [str, str, ...]        
 def get_pdb_path_list_recursively(loc_pdb_db_list):
     
-    pass
+    pdb_path_list = []
+    
+    for root, dirs, files in os.walk(loc_pdb_db_list):
+        for file in files:
+            if ".pdb" in file or ".ent" in file:
+                pdb_path_list.append(file)
+                
+    return pdb_path_list
+                
 
 
 #creating fasta file from a local directory with PDB files recursively
-#extends fasta file, if it already exists        
+#extends fasta file, if it already exists. now make this make sense
 #void (str)
 def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, verbosity):
     
+    #write list directly to file, in case of heavy RAM usage
     pdb_path_list = get_pdb_path_list_recursively(loc_pdb_db_path)
-    
-    if verbosity>0:
-        print("Writing PDB index file...")
 
-    tic_index_file = time.perf_counter()
-    write_pdb_index_file(pdb_path_list, index_file_full_path)
-    toc_index_file = time.perf_counter()
-    print(f"Indexing done in {toc_index_file - tic_index_file:0.4f} seconds.")
+    #for testing, print memory size of list
+    print(sys.getsizeof(pdb_path_list))
 
     seq = ""
     header = ""
+    counter = 1
+    number_of_pdbs = len(pdb_path_list)
+    header_list = []
 
     if verbosity>0:
         print("Writing Fasta file...")
@@ -1257,6 +1267,10 @@ def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_
             #header = (os.path.splitext(os.path.splitext(os.path.split(pdb_path)[1])[0])[0])[3:7]
             header = get_header_from_pdb(pdb_path)
             write_entry_to_fasta_file(seq, header, fasta_file_handle)
+            if verbosity>0:
+                msg = "["+counter+"\/"+number_of_pdbs+"]"
+                print(msg, end="\r")
+            counter += 1
     except:
         errMsg = "Error while writing to %s." % os.path.split(fasta_file_full_path)[1]
         close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
@@ -1264,6 +1278,14 @@ def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_
         exit(1)
         
     close_file_safely(fasta_file_handle, fasta_file_full_path, '')
+    
+    if verbosity>0:
+        print("Writing PDB index file...")
+
+    tic_index_file = time.perf_counter()
+    write_pdb_index_file(pdb_path_list, index_file_full_path)
+    toc_index_file = time.perf_counter()
+    print(f"Indexing done in {toc_index_file - tic_index_file:0.4f} seconds.")
 
 
 #creates diamond database from collection of pdb files in directory
