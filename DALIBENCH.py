@@ -15,9 +15,15 @@ import math
 import random
 import requests
 import subprocess
+import gzip
+import warnings
 from rcsbsearchapi.search import SequenceQuery
-from Bio import AlignIO
-from Bio import SeqIO
+from Bio import BiopythonExperimentalWarning
+#ideally write warnings to log, suppressing them like this does NOT work atm
+with warnings.catch_warnings():
+    warnings.simplefilter('ignore', BiopythonExperimentalWarning)
+    from Bio import AlignIO
+    from Bio import SeqIO
 import matplotlib
 
 #defining path to script
@@ -1229,23 +1235,45 @@ def get_pdb_path_list_recursively(loc_pdb_db_list):
     
     for root, dirs, files in os.walk(loc_pdb_db_list):
         for file in files:
-            if ".pdb" in file or ".ent" in file:
-                pdb_path_list.append(file)
+            if ".pdb" in file.lower() or ".ent" in file.lower():
+                pdb_path_list.append(os.path.join(root, file))
                 
     return pdb_path_list
-                
 
+def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle):
+    
+    warning_dict = {}
+    
+    #make sure that this also works with uncompressed files
+    try:
+        pdb_file_handle = gzip.open(pdb_file_path, 'rt')
+    except:
+        errMsg = "Failed to open %s." % pdb_file_path
+        errorFct(errMsg)
+        exit(1)
+    else:
+        with gzip.open(pdb_file_path, 'rt') as pdb_file_handle:
+            
+            try:
+                chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)
+            except:
+                errMsg = "Failed to parse chain data from %s." % pdb_file_path
+                errorFct(errMsg)
+                exit(1)
+            try:
+                SeqIO.write(chains, fasta_file_handle, "fasta")
+            except:
+                errMsg = "Error while writing %s to FASTA file." % pdb_file_path
+                errorFct(errMsg)
+                exit(1)
+    
 
 #creating fasta file from a local directory with PDB files recursively
 #extends fasta file, if it already exists. now make this make sense
 #void (str)
 def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, verbosity):
     
-    #write list directly to file, in case of heavy RAM usage
     pdb_path_list = get_pdb_path_list_recursively(loc_pdb_db_path)
-
-    #for testing, print memory size of list
-    print(sys.getsizeof(pdb_path_list))
 
     seq = ""
     header = ""
@@ -1258,21 +1286,18 @@ def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_
     try:
         fasta_file_handle = open(fasta_file_full_path, 'w')
     except:
-        errMsg = "File %s could not be opened for writing." % os.path.split(fasta_file_full_path)[1]
+        errMsg = "File %s could not be opened for writing." % fasta_file_full_path
         errorFct(errMsg)
         exit(1)
     try:
         for pdb_path in pdb_path_list:
-            seq = get_sequence_from_pdb(pdb_path)
-            #header = (os.path.splitext(os.path.splitext(os.path.split(pdb_path)[1])[0])[0])[3:7]
-            header = get_header_from_pdb(pdb_path)
-            write_entry_to_fasta_file(seq, header, fasta_file_handle)
+            write_loc_pdb_to_fasta_file(pdb_path, fasta_file_handle)
             if verbosity>0:
-                msg = "["+counter+"\/"+number_of_pdbs+"]"
+                msg = "["+str(counter)+"\/"+str(number_of_pdbs)+"]"
                 print(msg, end="\r")
             counter += 1
     except:
-        errMsg = "Error while writing to %s." % os.path.split(fasta_file_full_path)[1]
+        errMsg = "Error while writing to %s." % fasta_file_full_path
         close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
         errorFct(errMsg)
         exit(1)
@@ -1283,14 +1308,14 @@ def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_
         print("Writing PDB index file...")
 
     tic_index_file = time.perf_counter()
-    write_pdb_index_file(pdb_path_list, index_file_full_path)
+    #write_pdb_index_file(pdb_path_list, index_file_full_path)
     toc_index_file = time.perf_counter()
     print(f"Indexing done in {toc_index_file - tic_index_file:0.4f} seconds.")
 
 
 #creates diamond database from collection of pdb files in directory
 #void (str, str, int)        
-def create_diamond_database(loc_pdb_db_path, db_out_path, verbosity):
+def create_diamond_database(diamond_file_path, loc_pdb_db_path, db_out_path, verbosity):
     
     fasta_file_full_path = os.path.join(db_out_path, "pdb_database.fasta")
     index_file_full_path = os.path.join(db_out_path, "pdb_database.index")
@@ -1302,9 +1327,9 @@ def create_diamond_database(loc_pdb_db_path, db_out_path, verbosity):
         errorFct(errMsg)
         exit(1)
     
-    #./diamond makedb --in <path_to_FASTA> --db <db_out_path>
+    #<path_to_diamond_file> makedb --in <path_to_FASTA> --db <db_out_path>
     shell_input = []
-    shell_input = ["./diamond", "makedb", "--in", fasta_file_path, "--db", db_out_path]
+    shell_input = [diamond_file_path, "makedb", "--in", fasta_file_full_path, "--db", db_out_path]
     
     if verbosity>0:
         print("Creating local database...")
@@ -1363,21 +1388,19 @@ def main():
     argParser.add_argument("-v", "--verbose", default=0, action="count",
                            help="Print progress to terminal. No effect on error logging.1: Basic output. 2: Doesn't work atm. Redirect DALI output.",
                            required=False)
+    argParser.add_argument("-tdb", "--testdb", action="count", default=0, help="Testing diamond database creation.", required=False)
+    argParser.add_argument("-dia", "--diamondfile", help="Path to diamond program file.", required=False)
 
     args = argParser.parse_args()
     
+    if args.testdb>0:
+        create_diamond_database(args.diamondfile, args.locdb, args.output, args.verbose)
+
     if args.syncdb>0:
         sync_pdb_copy(args.locdb, args.verbose)
 
     valid_symbols = sel_alphabet(args.alphabet)
     invalid_symbols = set_non_alphabet(args.nonalphabet)
-    #DALI_aln = get_DALI_aln_as_string(args.alignmentfile, args.output)
-    #seq_dict = get_seq_ids(args.pdbfolder)
-    #later ref_SP will be summed up over all Binomial(N,2)/2 pairs to get reference score, where N is the number of sequences
-    #ref_SP = 0
-    #placeholder IDs for row number?
-    #sequence_ids = (0,1)
-    #ref_SP_set = calc_ref_SP(sequence_ids, DALI_aln, valid_symbols)
 
     if args.doitall > 0:
         calc_SPS_from_aln_sample(args.output, args.alignmentfile, args.title, args.dalidir, args.samplesize, valid_symbols, args.verbose)
