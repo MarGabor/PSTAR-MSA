@@ -1195,10 +1195,20 @@ def evaluate_search_data(csv_path, output_path, sort_by):
         #we can get figure object from axes_obj using get_figure() method and save it to vector image
         axes_obj.get_figure().savefig(os.path.join(output_path,csv_file_name+".svg"))
     print("Exact matches: %s.Total number of sequences: %s." % (ex_match_counter, total_counter))
+
+def update_local_pdb_index(raw_line, tmp_index_file_handle):
+
+    tic_index_file = time.perf_counter()
+    #write_pdb_index_file(pdb_path_list, index_file_full_path)
+    toc_index_file = time.perf_counter()
+    print(f"Indexing done in {toc_index_file - tic_index_file:0.4f} seconds.")
     
+def repair_index(index_file_full_path):
+    pass
+   
 #synchronizes copy of remote PDB archive with local copy
 #void (str, int)  
-def sync_pdb_copy(loc_db_out_path, verbosity):
+def sync_pdb_copy(loc_db_out_path, index_file_full_path, tmp_index_file_full_path, verbosity):
     
     create_dir_safely(loc_db_out_path)
     #https://www.wwpdb.org/ftp/pdb-ftp-sites
@@ -1208,20 +1218,45 @@ def sync_pdb_copy(loc_db_out_path, verbosity):
     
     if verbosity>0:
         print("Synchronizing local PDB database with remote. This may take a while.")
-    if verbosity>1:
-        process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
-        for line in process.stdout:
-            print(line, end='')
-    else:
-        process = subprocess.Popen(shell_input, stdout=subprocess.DEVNULL)
+    
+    process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+    
+    if verbosity>0:
+        print("Updating PDB index file...")
 
+    try:
+        tmp_index_file_handle = open(tmp_index_file_full_path, 'w')
+    except:
+        errMsg = "Cannot open file %s." % tmp_index_file_full_path
+        errorFct(errMsg)
+        exit(1)
+    try:    
+        for line in process.stdout:
+            if verbosity>0:
+                print(line, end='\r')
+            update_local_pdb_index(line, tmp_index_file_handle)
+    except:
+        errMsg1 = ""
+        try:
+            close_file_safely(tmp_index_file_handle, tmp_index_file_full_path, errMsg)
+        except:
+            errMsg1 = "Error while closing temporary index file. Skipping."
+        finally:
+            repair_code = repair_index(index_file_full_path)
+            errorFct("Error while updating index. Rewriting")
+            if repair_code == 0:
+                errorFct("Successfully repaired PDB index and updated FASTA accordingly. Try runnung sync again. Requires internet connection.")
+            else:
+                errMsg2 = "Repair code %s. We got a problem." % repair_code
+                errorFct(errMsg1)
+                errorFct(errMsg2)
     try:
         out, err = process.communicate()
     except:
         process.kill()
         out, err = process.communicate()
         errMsg = "Communication with rsync subprocess failed. Killed it."
-        shell_err_fct(err.decode('ascii'))
+        shell_err_fct(err)
         errorFct(errMsg)
         exit(1)
 
@@ -1238,10 +1273,11 @@ def get_pdb_path_list_recursively(loc_pdb_db_list):
                 
     return pdb_path_list
 
-def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_full_path, fasta_file_handle):
-    
-    fasta_file_path = os.path.split(fasta_file_full_path)[0]
-    biopython_log_full_path = os.path.join(fasta_file_path, "biopython_log.txt")
+#extracts chain numbers, pdbid and sequences from pdb file and writes them to FASTA file index
+#also writes biopython output to dedicated log file
+#consider parallelization
+#void (str, file, file)
+def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle):
     
     #make sure that this also works with uncompressed files
     try:
@@ -1255,40 +1291,32 @@ def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_full_path, fasta_file_
             #supressing warnings for this line, specifically Bio.PDB.PDBExceptions.PDBConstructionWarning does NOT work in ANY way
             #not with BiopythonWarnings or BiopythonExperimentalWarnings either
             #since I am fed up with trying something that should work, but doesnt, I will resort to
-            #redirecting all stdout and stderr streams to a file
-            try:
-                biopython_log_file = open(biopython_log_full_path, 'w')
-            except:
-                errMsg = "Failed to open %s." % biopython_log_full_path
-                errorFct(errMsg)
-                exit(1)
-            with contextlib.redirect_stdout(biopython_log_file):
+            #redirecting all stdout and stderr streams to a different file
+            with contextlib.redirect_stdout(biopython_log_file_handle):
                 with contextlib.redirect_stderr(sys.stdout):
                     try:
-                        chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)
+                        chains = SeqIO.PdbIO.PdbSeqresIterator(pdb_file_handle)
+                        #atom iterator, speed killer. but safer? implement option to choose, if slow or fast.
+                        #also make sure to switch to atomiterator, if seqres not readable. find out exception
+                        #chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)
                     except:
                         errMsg = "Failed to parse chain data from %s." % pdb_file_path
-                        close_file_safely(biopython_log_file, biopython_log_full_path, errMsg)
                         errorFct(errMsg)
                         exit(1)
                     try:
                         SeqIO.write(chains, fasta_file_handle, "fasta")
                     except:
                         errMsg = "Error while writing %s to FASTA file." % pdb_file_path
-                        close_file_safely(biopython_log_file, biopython_log_full_path, errMsg)
                         errorFct(errMsg)
                         exit(1)
-                        
-            close_file_safely(biopython_log_file, biopython_log_full_path, "")
-                   
-    
 
 #creating fasta file from a local directory with PDB files recursively
 #extends fasta file, if it already exists. now make this make sense
-#void (str)
-def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, verbosity):
+#void (str, str, str, str, int)
+def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, biopython_log_full_path, verbosity):
     
     pdb_path_list = get_pdb_path_list_recursively(loc_pdb_db_path)
+    #pdb_path_list = get_pdb_path_list_by_index_file
 
     seq = ""
     header = ""
@@ -1299,47 +1327,51 @@ def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_
     if verbosity>0:
         print("Writing Fasta file...")
     try:
-        fasta_file_handle = open(fasta_file_full_path, 'w')
+        #check integrity of/rewrite last entry
+        fasta_file_handle = open(fasta_file_full_path, 'a')
     except:
         errMsg = "File %s could not be opened for writing." % fasta_file_full_path
         errorFct(errMsg)
         exit(1)
     try:
+        biopython_log_file_handle = open(biopython_log_full_path)
+    except:
+        errMsg = "File %s could not be opened for writing." % biopython_log_full_path
+        errorFct(errMsg)
+        exit(1)
+
+    try:
         for pdb_path in pdb_path_list:
-            if counter > 100:
+            if counter>100:
                 break
-            write_loc_pdb_to_fasta_file(pdb_path, fasta_file_full_path, fasta_file_handle)
+            write_loc_pdb_to_fasta_file(pdb_path, fasta_file_handle, biopython_log_file_handle)
             if verbosity>0:
-                msg = "["+str(counter)+"\/"+str(number_of_pdbs)+"]"
+                msg = "[%s\/%s]" % (str(counter), str(number_of_pdbs))
                 print(msg, end="\r")
             counter += 1
     except:
         errMsg = "Error while writing to %s." % fasta_file_full_path
         print(traceback.format_exc())
+        close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg)
         close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
         errorFct(errMsg)
         exit(1)
         
-    close_file_safely(fasta_file_handle, fasta_file_full_path, '')
     
-    if verbosity>0:
-        print("Writing PDB index file...")
-
-    tic_index_file = time.perf_counter()
-    #write_pdb_index_file(pdb_path_list, index_file_full_path)
-    toc_index_file = time.perf_counter()
-    print(f"Indexing done in {toc_index_file - tic_index_file:0.4f} seconds.")
+    close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg)
+    close_file_safely(fasta_file_handle, fasta_file_full_path, '')
 
 
-#creates diamond database from collection of pdb files in directory
-#void (str, str, int)        
+#creates diamond database from collection of pdb files in directory or index file
+#void (str, str, str, int)        
 def create_diamond_database(diamond_file_path, loc_pdb_db_path, db_out_path, verbosity):
     
     fasta_file_full_path = os.path.join(db_out_path, "pdb_database.fasta")
     index_file_full_path = os.path.join(db_out_path, "pdb_database.index")
+    biopython_log_full_path = os.path.join(db_out_path, "biopython_log.txt")
 
     try:
-        create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, verbosity)
+        create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, biopython_log_full_path, verbosity)
     except:
         errMsg = "Failed to create FASTA or INDEX file."
         errorFct(errMsg)
