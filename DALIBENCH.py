@@ -17,13 +17,11 @@ import requests
 import subprocess
 import gzip
 import warnings
+import traceback
+import contextlib
 from rcsbsearchapi.search import SequenceQuery
-from Bio import BiopythonExperimentalWarning
-#ideally write warnings to log, suppressing them like this does NOT work atm
-with warnings.catch_warnings():
-    warnings.simplefilter('ignore', BiopythonExperimentalWarning)
-    from Bio import AlignIO
-    from Bio import SeqIO
+from Bio import AlignIO
+from Bio import SeqIO
 import matplotlib
 
 #defining path to script
@@ -1240,9 +1238,10 @@ def get_pdb_path_list_recursively(loc_pdb_db_list):
                 
     return pdb_path_list
 
-def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle):
+def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_full_path, fasta_file_handle):
     
-    warning_dict = {}
+    fasta_file_path = os.path.split(fasta_file_full_path)[0]
+    biopython_log_full_path = os.path.join(fasta_file_path, "biopython_log.txt")
     
     #make sure that this also works with uncompressed files
     try:
@@ -1253,19 +1252,35 @@ def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle):
         exit(1)
     else:
         with gzip.open(pdb_file_path, 'rt') as pdb_file_handle:
-            
+            #supressing warnings for this line, specifically Bio.PDB.PDBExceptions.PDBConstructionWarning does NOT work in ANY way
+            #not with BiopythonWarnings or BiopythonExperimentalWarnings either
+            #since I am fed up with trying something that should work, but doesnt, I will resort to
+            #redirecting all stdout and stderr streams to a file
             try:
-                chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)
+                biopython_log_file = open(biopython_log_full_path, 'w')
             except:
-                errMsg = "Failed to parse chain data from %s." % pdb_file_path
+                errMsg = "Failed to open %s." % biopython_log_full_path
                 errorFct(errMsg)
                 exit(1)
-            try:
-                SeqIO.write(chains, fasta_file_handle, "fasta")
-            except:
-                errMsg = "Error while writing %s to FASTA file." % pdb_file_path
-                errorFct(errMsg)
-                exit(1)
+            with contextlib.redirect_stdout(biopython_log_file):
+                with contextlib.redirect_stderr(sys.stdout):
+                    try:
+                        chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)
+                    except:
+                        errMsg = "Failed to parse chain data from %s." % pdb_file_path
+                        close_file_safely(biopython_log_file, biopython_log_full_path, errMsg)
+                        errorFct(errMsg)
+                        exit(1)
+                    try:
+                        SeqIO.write(chains, fasta_file_handle, "fasta")
+                    except:
+                        errMsg = "Error while writing %s to FASTA file." % pdb_file_path
+                        close_file_safely(biopython_log_file, biopython_log_full_path, errMsg)
+                        errorFct(errMsg)
+                        exit(1)
+                        
+            close_file_safely(biopython_log_file, biopython_log_full_path, "")
+                   
     
 
 #creating fasta file from a local directory with PDB files recursively
@@ -1291,13 +1306,16 @@ def create_fasta_and_index_file_from_pdb_collection(loc_pdb_db_path, fasta_file_
         exit(1)
     try:
         for pdb_path in pdb_path_list:
-            write_loc_pdb_to_fasta_file(pdb_path, fasta_file_handle)
+            if counter > 100:
+                break
+            write_loc_pdb_to_fasta_file(pdb_path, fasta_file_full_path, fasta_file_handle)
             if verbosity>0:
                 msg = "["+str(counter)+"\/"+str(number_of_pdbs)+"]"
                 print(msg, end="\r")
             counter += 1
     except:
         errMsg = "Error while writing to %s." % fasta_file_full_path
+        print(traceback.format_exc())
         close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
         errorFct(errMsg)
         exit(1)
@@ -1342,12 +1360,12 @@ def create_diamond_database(diamond_file_path, loc_pdb_db_path, db_out_path, ver
 
     try:
         out, err = process.communicate()
-        shell_err_fct(err.decode('ascii'))
+        shell_err_fct(err)
     except:
         process.kill()
         out, err = process.communicate()
         errMsg = "Communication with \"diamond makedb\" subprocess failed. Killed it."
-        shell_err_fct(err.decode('ascii'))
+        shell_err_fct(err)
         errorFct(errMsg)
         exit(1)
 
