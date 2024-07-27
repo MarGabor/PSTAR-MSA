@@ -1212,27 +1212,123 @@ def get_pdb_path_list_recursively(loc_pdb_db_list):
 def write_tmp_pdb_index_entry(raw_line, tmp_index_file_handle):
 
     #this might need to be generalized more for other structure formats downloaded by rsync
-    pdb_id_match = re.search(r'..\/pdb(....)\..*', raw_line)
-    pdb_id = pdb_id_match.group(1)
+    pdb_id_match = re.search(r'(.+\/)*pdb(....)\..*', raw_line)
+    pdb_id = pdb_id_match.group(2)
     index_line = pdb_id+"\n"
     tmp_index_file_handle.write(index_line)
     
+    return pdb_id
     
-def repair_index(index_file_full_path):
+def read_index_file(old_index_file_handle):
     
+    old_index_set = set()
+
+    pdb_ids = old_index_file_handle.readlines()
+    for pdb_id in pdb_ids:
+        old_index_set.add(pdb_id.lower())
+        
+    return old_index_set
+
+def backup_fasta_file(fasta_file_full_path):
     pass
 
-def update_local_pdb_index(raw_line, tmp_index_file_handle):
-    
+def restore_fasta_file_backup(fasta_file_full_path):
     pass
+
+#unfortunately theres no perfect way to do it at the moment
+#lines need to be rewritten when we want to delete some
+#but maybe the biopython parser is what makes it slow
+#just try it later and see how performance does
+def remove_fasta_db_entries_by_header(removal_set, diamond_db_path):
+
+    fasta_file_full_path = os.path.join(diamond_db_path, "pdb_db.fasta")
+    with open(fasta_file_full_path, 'r+') as fasta_file:
+        for line in fasta_file:
+            if line[0] == ">":
+                if line[1:5].lower() in removal_set:
+                    pass
+
+def add_fasta_db_entry(added_set, fasta_file_full_path, loc_pdb_db_path, biopython_log_full_path):
+    
+    backup_fasta_file(fasta_file_full_path)
+    
+    try:
+        biopython_log_file_handle = open(biopython_log_full_path)
+    except:
+        errMsg = "File %s could not be opened for writing." % biopython_log_full_path
+        errorFct(errMsg)
+        exit(1)
+    try:
+        with open(fasta_file_full_path, 'a') as fasta_file_handle:
+            for pdb_id in added_set:
+                pdb_file_path = os.path.join(loc_pdb_db_path, pdb_id[1:3], "pdb"+pdb_id+".ent.gz")
+                write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle)
+    except:
+        restore_fasta_file_backup()
+        errMsg = "Error while writing to %s." % fasta_file_full_path
+        close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
+        close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg)
+        errorFct(errMsg)
+        exit(1)
+        
+
+def update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path, old_index_file_full_path, fasta_file_full_path, biopython_log_full_path):
+
+    tmp_index_set = set()
+    old_index_set = set()
+    pdb_id = ""
+
+    try:
+        tmp_index_file_handle = open(tmp_index_file_full_path, 'w')
+    except:
+        errMsg = "Cannot open file %s." % tmp_index_file_full_path
+        errorFct(errMsg)
+        exit(1)
+    try:      
+        pdb_path_list = get_pdb_path_list_recursively(loc_pdb_db_path)
+        for pdb_path in pdb_path_list:
+            pdb_id = write_tmp_pdb_index_entry(pdb_path, tmp_index_file_handle)
+            tmp_index_set.add(pdb_id.lower())
+    except:
+        errMsg = "Error while writing index file %s." % tmp_index_file_full_path
+        close_file_safely(tmp_index_file_handle, tmp_index_file_full_path, errMsg)
+    try:
+        old_index_file_handle = open(old_index_file_full_path, "r")
+    except:
+        errMsg = "Cannot open file %s." % old_index_file_full_path
+        close_file_safely(tmp_index_file_handle, tmp_index_file_full_path, errMsg)
+        errorFct(errMsg)
+        exit(1)
+    try:
+        old_index_set = read_index_file(old_index_file_handle)
+    except:
+        errMsg = "Error while reading index file %s." % old_index_file_full_path
+        close_file_safely(tmp_index_file_handle, tmp_index_file_full_path, errMsg)
+        close_file_safely(old_index_file_handle, old_index_file_full_path, errMsg)
+        exit(1)
+        
+    close_file_safely(tmp_index_file_handle, tmp_index_file_full_path, "")
+    close_file_safely(old_index_file_handle, old_index_file_full_path, "")
+  
+    #for all entries that have been removed in recent sync
+    #this will probably be a rare occurence
+    #removal_set = old_index_set.difference(tmp_index_set)
+    #if len(removal_set) != 0:
+     #   remove_fasta_db_entries_by_header(removal_set)
+        
+    #for all entries that got added in recent sync
+    added_set = tmp_index_set.difference(old_index_set)
+    add_fasta_db_entry(added_set, fasta_file_full_path, loc_pdb_db_path, biopython_log_full_path)
    
 #synchronizes copy of remote PDB archive with local copy
 #void (str, int)  
 def sync_pdb_copy(loc_pdb_db_path, diamond_db_path, verbosity):
     
-    tmp_index_file_full_path = os.path.join(diamond_db_path, "tmp_pdb_database.index")
-    index_file_full_path = os.path.join(diamond_db_path, "pdb_database.index")
-    
+    tmp_index_file_full_path = os.path.join(diamond_db_path, "tmp_pdb_db.index")
+    old_index_file_full_path = os.path.join(diamond_db_path, "pdb_db.index")
+    fasta_file_full_path = os.path.join(diamond_db_path, "pdb_db.fasta")
+    biopython_log_full_path = os.path.join(diamond_db_path, "biopython_log.txt")
+
     create_dir_safely(diamond_db_path)
     #https://www.wwpdb.org/ftp/pdb-ftp-sites
     #rsync -rlpt -v -z --delete --port=33444 rsync.rcsb.org::ftp_data/structures/divided/pdb/ ./pdb
@@ -1247,42 +1343,20 @@ def sync_pdb_copy(loc_pdb_db_path, diamond_db_path, verbosity):
     if verbosity>0:
         print("Updating PDB index file...")
 
-    try:
-        tmp_index_file_handle = open(tmp_index_file_full_path, 'w')
-    except:
-        errMsg = "Cannot open file %s." % tmp_index_file_full_path
-        errorFct(errMsg)
-        exit(1)
-    try:    
+    if verbosity>1:
         for line in process.stdout:
-            if verbosity>0:
                 print(line, end='\r')
-            write_tmp_pdb_index_entry(line, tmp_index_file_handle)
-    except:
-        errMsg1 = ""
-        try:
-            close_file_safely(tmp_index_file_handle, tmp_index_file_full_path, "")
-        except:
-            errMsg1 = "Error while closing temporary index file. Skipping."
-        finally:
-            repair_code = repair_index(index_file_full_path)
-            errorFct("Error while updating index. Rewriting")
-            if repair_code == 0:
-                errorFct("Successfully repaired PDB index and updated FASTA accordingly. Try runnung sync again. Requires internet connection.")
-            else:
-                errMsg2 = "Repair code %s. We got a problem." % repair_code
-                errorFct(errMsg1)
-                errorFct(errMsg2)
-                exit(1)
     try:
         out, err = process.communicate()
     except:
         process.kill()
+        update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path, old_index_file_full_path, fasta_file_full_path)
         out, err = process.communicate()
         errMsg = "Communication with rsync subprocess failed. Killed it."
         shell_err_fct(err)
         errorFct(errMsg)
         exit(1)
+    update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path, old_index_file_full_path, fasta_file_full_path, biopython_log_full_path)
 
 #extracts chain numbers, pdbid and sequences from pdb file and writes them to FASTA file index
 #also writes biopython output to dedicated log file
