@@ -1196,25 +1196,48 @@ def evaluate_search_data(csv_path, output_path, sort_by):
         axes_obj.get_figure().savefig(os.path.join(output_path,csv_file_name+".svg"))
     print("Exact matches: %s.Total number of sequences: %s." % (ex_match_counter, total_counter))
 
-def update_local_pdb_index(raw_line, tmp_index_file_handle):
+#recursively get all pdb file paths in a specified path and return them as list
+# str -> [str, str, ...]        
+def get_pdb_path_list_recursively(loc_pdb_db_list):
+    
+    pdb_path_list = []
+    
+    for root, dirs, files in os.walk(loc_pdb_db_list):
+        for file in files:
+            if ".pdb" in file.lower() or ".ent" in file.lower():
+                pdb_path_list.append(os.path.join(root, file))
+                
+    return pdb_path_list
 
-    tic_index_file = time.perf_counter()
-    #write_pdb_index_file(pdb_path_list, index_file_full_path)
-    toc_index_file = time.perf_counter()
-    print(f"Indexing done in {toc_index_file - tic_index_file:0.4f} seconds.")
+def write_tmp_pdb_index_entry(raw_line, tmp_index_file_handle):
+
+    #this might need to be generalized more for other structure formats downloaded by rsync
+    pdb_id_match = re.search(r'..\/pdb(....)\..*', raw_line)
+    pdb_id = pdb_id_match.group(1)
+    index_line = pdb_id+"\n"
+    tmp_index_file_handle.write(index_line)
+    
     
 def repair_index(index_file_full_path):
+    
+    pass
+
+def update_local_pdb_index(raw_line, tmp_index_file_handle):
+    
     pass
    
 #synchronizes copy of remote PDB archive with local copy
 #void (str, int)  
-def sync_pdb_copy(loc_db_out_path, index_file_full_path, tmp_index_file_full_path, verbosity):
+def sync_pdb_copy(loc_pdb_db_path, diamond_db_path, verbosity):
     
-    create_dir_safely(loc_db_out_path)
+    tmp_index_file_full_path = os.path.join(diamond_db_path, "tmp_pdb_database.index")
+    index_file_full_path = os.path.join(diamond_db_path, "pdb_database.index")
+    
+    create_dir_safely(diamond_db_path)
     #https://www.wwpdb.org/ftp/pdb-ftp-sites
     #rsync -rlpt -v -z --delete --port=33444 rsync.rcsb.org::ftp_data/structures/divided/pdb/ ./pdb
     shell_input = []
-    shell_input = ["rsync", "-rlpt", "-v", "-z", "--delete", "--port=33444", "rsync.rcsb.org::ftp_data/structures/divided/pdb/", loc_db_out_path]
+    shell_input = ["rsync", "-rlpt", "-v", "-z", "--delete", "--port=33444", "rsync.rcsb.org::ftp_data/structures/divided/pdb/", loc_pdb_db_path]
     
     if verbosity>0:
         print("Synchronizing local PDB database with remote. This may take a while.")
@@ -1234,11 +1257,11 @@ def sync_pdb_copy(loc_db_out_path, index_file_full_path, tmp_index_file_full_pat
         for line in process.stdout:
             if verbosity>0:
                 print(line, end='\r')
-            update_local_pdb_index(line, tmp_index_file_handle)
+            write_tmp_pdb_index_entry(line, tmp_index_file_handle)
     except:
         errMsg1 = ""
         try:
-            close_file_safely(tmp_index_file_handle, tmp_index_file_full_path, errMsg)
+            close_file_safely(tmp_index_file_handle, tmp_index_file_full_path, "")
         except:
             errMsg1 = "Error while closing temporary index file. Skipping."
         finally:
@@ -1250,6 +1273,7 @@ def sync_pdb_copy(loc_db_out_path, index_file_full_path, tmp_index_file_full_pat
                 errMsg2 = "Repair code %s. We got a problem." % repair_code
                 errorFct(errMsg1)
                 errorFct(errMsg2)
+                exit(1)
     try:
         out, err = process.communicate()
     except:
@@ -1259,19 +1283,6 @@ def sync_pdb_copy(loc_db_out_path, index_file_full_path, tmp_index_file_full_pat
         shell_err_fct(err)
         errorFct(errMsg)
         exit(1)
-
-#recursively get all pdb file paths in a specified path and return them as list
-# str -> [str, str, ...]        
-def get_pdb_path_list_recursively(loc_pdb_db_list):
-    
-    pdb_path_list = []
-    
-    for root, dirs, files in os.walk(loc_pdb_db_list):
-        for file in files:
-            if ".pdb" in file.lower() or ".ent" in file.lower():
-                pdb_path_list.append(os.path.join(root, file))
-                
-    return pdb_path_list
 
 #extracts chain numbers, pdbid and sequences from pdb file and writes them to FASTA file index
 #also writes biopython output to dedicated log file
@@ -1447,7 +1458,7 @@ def main():
         create_diamond_database(args.diamondfile, args.locdb, args.output, args.verbose)
 
     if args.syncdb>0:
-        sync_pdb_copy(args.locdb, args.verbose)
+        sync_pdb_copy(args.locdb, args.output, args.verbose)
 
     valid_symbols = sel_alphabet(args.alphabet)
     invalid_symbols = set_non_alphabet(args.nonalphabet)
