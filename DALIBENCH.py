@@ -6,8 +6,6 @@
 import argparse
 import sys
 from datetime import datetime
-#why did i import this?
-from distutils.command import clean
 import re
 import os
 import time
@@ -346,7 +344,7 @@ def calc_ref_SP_set(sequence_ids, aligned_sequences):
 
 #function to calculate MSA sum-of-pairs-set (different equivalence relation)
 #its partly duplicate to "calc_ref_SP_set" and will most likely be refactored together with latter function
-#
+#((int,int),(str,str)) -> set( ((),()) )
 def calc_MSA_SP_set(sequence_ids, aligned_sequences):
     
     query = aligned_sequences[0]
@@ -379,6 +377,7 @@ def calc_MSA_SP_set(sequence_ids, aligned_sequences):
             #if one of the sequences has a gap, it's a mismatch
             if equiv_sbjct is False or equiv_query is False:
                 continue
+            #if sequences in MSA have differing residues, then it's a mismatch
             if sbjct[i].upper() != query[i].upper():
                 continue
             #is the following is an inefficient approach, when we know what symbols to expect?
@@ -395,6 +394,7 @@ def calc_MSA_SP_set(sequence_ids, aligned_sequences):
 
 #function for naive approach to maximizing intersection between two sets by shifting all element values in set_2 by some constant
 #sets need to contain mutable elements
+# (set(),set()) -> (set(),int)
 def argmax_intersection(set_1, set_2):
     
     #make copies of original sets
@@ -522,7 +522,7 @@ def calc_SPS_scores_in_job(job_list_of_dict_lists, internal_id_pdb_name_dict, in
         
     return SPS_dict_list, job_SPS
 
-#import function for DALI outputs. one pass, line per line. might need rework, because it's hard to read and looks ugly. hopefully it's fast, at least.
+#import function for DALI outputs. one pass, line per line. might need rework, because it's hard to read and looks ugly. hopefully it's fastish, at least.
 #(str) -> ([{},{},...])
 def import_DALI_aln(aln_file_path):
 
@@ -759,6 +759,7 @@ def choose_random_sample_from_aln_file(seq_list, sample_size):
     return sample_seq_list
 
 #counts number of "real" proteins in alignment
+#irrelevant function
 #(str,str) -> (str,int,int,float) 
 def count_homologues(aln_file_path, hom_aln_file_path):
     
@@ -867,12 +868,9 @@ def write_aln_file_search_hits_to_csv(valid_symbols, aln_file_path, output_path,
     csv_output_full_path = os.path.join(output_path, csv_output_file_name)
     write_list_of_dicts_to_csv(relevant_search_results_list, csv_output_full_path)
 
-    if(verbosity>0):
-            print("Done!")
-            
     return internal_id_raw_seq_dict
 
-#function to write error log for errors encountered during subprocesses involving the shell
+#function to write error log. for errors encountered during subprocesses involving the shell
 #void str        
 def shell_err_fct(errMsg):
     try:
@@ -927,21 +925,12 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
             err_file = open(err_file_path, 'w+')
         except:
             errMsg = "Failed to open file %s." % err_file_path
-            #no need to close file when failed to open
-            try:
-                close_file_safely(err_file, err_file_path, errMsg)
-            except UnboundLocalError:
-                pass
             errorFct(errMsg)
             exit(1)
         try:
             out_file = open(out_file_path, 'w+')
         except:
             errMsg = "Failed to open file %s." % out_file_path
-            try:
-                close_file_safely(out_file, out_file_path, errMsg)
-            except UnboundLocalError:
-                pass
             errorFct(errMsg)
             exit(1)
 
@@ -949,18 +938,20 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
         process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
         
         try:
-            out, err = process.communicate(timeout=15)
-            if out is not None and verbosity>1:
-                print(out.decode('ascii'))
-        except subprocess.TimeoutExpired:
+            out, err = process.communicate()
+            #its really just a lot to print...
+            #if out is not None and verbosity>1:
+                #print(out)
+        except:
             process.kill()
             out, err = process.communicate()
-            #print(out.decode('ascii'))
             errMsg = "Communication with import.pl subprocess timed out. Killed it. Forwarding error to shell_err_log.txt."
             close_file_safely(err_file, err_file_path, errMsg)
             close_file_safely(out_file, out_file_path, errMsg)
-            #shell_err_fct(err.decode('ascii'))
+            shell_err_fct(err)
             errorFct(errMsg)
+            if out is not None:
+                print(out)
             exit(1)
             
         #close files
@@ -1016,7 +1007,10 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
     create_dir_safely(job_path)
     
     
-    #Dali's all-against-all feature behaves in unexpected ways. That's why I'm manually looping through the PDB list for generation of pairwise alignments.
+    #Dali's all-against-all feature behaves in unexpected ways. 
+    #That's why manual looping through the PDB list for generation of pairwise alignments.
+    #this is also beneficial, since it allows full control over what alignments are to be generated
+    #and individual sub job error logging
     n = len(pdb_name_list)
     no_of_alns = sum(range(1,n))
     if n<2:
@@ -1024,7 +1018,8 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
         errorFct(errMsg)
         exit(0)
     
-    #we dont want redundant or trivial alignments: e.g. (1,1) is trivial, (1,2) = (2,1) are (effectively?) redundant
+    #we dont want redundant or trivial alignments:
+    # e.g. (1,1) is trivial, (1,2) = (2,1) are (effectively?) redundant
     
     counter = 0    
     for i in range(0, n):
@@ -1038,7 +1033,7 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
             counter += 1 
             if verbosity>0:
                 msg = "Calculating alignment %s. [%s/%s] " % (sub_job, counter, no_of_alns)
-                print(msg)
+                print(msg, end="\r")
             
             #creating ALN dir
             aln_path = os.path.join(job_path, "ALN")
@@ -1067,20 +1062,12 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
                 err_file = open(err_file_path, 'w+')
             except:
                 errMsg = "Failed to open file %s." % err_file_path
-                try:
-                    close_file_safely(err_file, err_file_path, errMsg)
-                except UnboundLocalError:
-                    pass
                 errorFct(errMsg)
                 exit(1)
             try:
                 out_file = open(out_file_path, 'w+')
             except:
                 errMsg = "Failed to open file %s." % out_file_path
-                try:
-                    close_file_safely(out_file, out_file_path, errMsg)
-                except UnboundLocalError:
-                    pass
                 errorFct(errMsg)
                 exit(1)
 
@@ -1089,18 +1076,22 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
             process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
     
             try:
-                out, err = process.communicate(timeout=500) #timeout may need to be longer (or shorter), depending on size of alignments
-                if out is not None and verbosity>1:
-                    print(out.decode('ascii'))
+                #timeout may need to be longer (or shorter), depending on size of alignments
+                #for the calculation of pairwise alignments of up to a few chains
+                #500 seconds seems to be reasonable though
+                out, err = process.communicate(timeout=500)
+                #if out is not None and verbosity>1:
+                    #print(out)
             except subprocess.TimeoutExpired:
                 process.kill()
                 out, err = process.communicate()
-                #print(out.decode('ascii'))
                 errMsg = "Communication with dali.pl subprocess timed out. Killed it. Forwarding error to shell_err_log.txt"
                 close_file_safely(err_file, err_file_path, errMsg)
                 close_file_safely(out_file, out_file_path, errMsg)
-                #shell_err_fct(err.decode('ascii'))
+                shell_err_fct(err)
                 errorFct(errMsg)
+                if out is not None:
+                    print(out)
                 exit(1)
             
             #close files
@@ -1210,7 +1201,9 @@ def get_pdb_path_list_recursively(loc_pdb_db_path):
                 
     return pdb_path_list
 
-def write_pdb_index_entry(raw_line, index_file_handle):
+#extract pdb ID from pdb file path and write it to index file as line
+# (str,file_handle) -> (str)
+def write_pdb_index_entry_from_file_path(raw_line, index_file_handle):
 
     #this might need to be generalized more for other structure formats downloaded by rsync
     pdb_id_match = re.search(r'(.+\/)*pdb(....)\..*', raw_line)
@@ -1219,7 +1212,9 @@ def write_pdb_index_entry(raw_line, index_file_handle):
     index_file_handle.write(index_line)
     
     return pdb_id
-    
+
+#read index file and return set with pdb IDs
+# (file_handle) -> set()    
 def read_index_file(old_index_file_handle):
     
     old_index_set = set()
@@ -1231,6 +1226,9 @@ def read_index_file(old_index_file_handle):
         
     return old_index_set
 
+#function to be called before editing the database fasta file
+#creates a copy of the fasta file in the same location
+# void (str,str)
 def backup_fasta_file(dest_backup, fasta_file_full_path):
     
     cp_process = subprocess.Popen(['cp', fasta_file_full_path, dest_backup], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
@@ -1242,11 +1240,17 @@ def backup_fasta_file(dest_backup, fasta_file_full_path):
         shell_err_fct(err)
         raise Exception
 
+#called when editing fasta file has been completed successfully
+#double checks to see, if original fasta file is present in the same location
+# void (str,str)    
 def remove_fasta_backup(dest_backup, fasta_file_full_path):
     
     if os.path.exists(fasta_file_full_path):
         os.remove(dest_backup)
 
+#called when exception is raised during editing of fasta file
+#simply overwrites the (potentially) broken, edited fasta file with the backup and renames it
+# void (str,str)        
 def restore_fasta_file_from_backup(dest_backup, fasta_file_full_path):
     
     backup_file_path, backup_file_name = os.path.split(dest_backup)
@@ -1264,10 +1268,12 @@ def restore_fasta_file_from_backup(dest_backup, fasta_file_full_path):
     
     os.remove(dest_backup_2)
 
+#function for removal of specific entries in fasta file
 #unfortunately theres no perfect way to do it at the moment
 #lines need to be rewritten when we want to delete some
 #but maybe the biopython parser is what makes it slow
 #just try it later and see how performance does
+# void (set(),str)    
 def remove_fasta_db_entries_by_header(removal_set, diamond_db_path):
 
     fasta_file_full_path = os.path.join(diamond_db_path, "pdb_db.fasta")
@@ -1277,6 +1283,9 @@ def remove_fasta_db_entries_by_header(removal_set, diamond_db_path):
                 if line[1:5].lower() in removal_set:
                     pass
 
+#takes a set of pdb IDs and appends existing fasta file with the elements of this set
+#throws FileNotFoundException, if indexed PDB ID is not in local PDB database
+# void (set(),str,str,str,int)                
 def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopython_log_full_path, verbosity):
     
     if verbosity>0:
@@ -1323,7 +1332,13 @@ def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopy
     remove_fasta_backup(dest_backup, fasta_file_full_path)
     close_file_safely(biopython_log_file_handle, biopython_log_full_path, "")
 
-#print sets tmp_index_set and old_index_set to see whats going on        
+#updates index file by reading the old index file and a new index file.
+#the new index file is generated by recursively listing all pdb files that are in the local database.
+#this ensures that the up-to-date index really only contains IDs that exist locally.    
+#the index entries are then added to two different sets. the resulting difference set is subsequently used
+#to write only the new entries to the fasta file (s. function "sync_pdb_copy()")    
+#this funciton gets called for every rsync call
+# (str,str,str,str) -> set()    
 def update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path, old_index_file_full_path):
 
     tmp_index_set = set()
@@ -1339,7 +1354,7 @@ def update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path,
     try:      
         pdb_path_list = get_pdb_path_list_recursively(loc_pdb_db_path)
         for pdb_path in pdb_path_list:
-            pdb_id = write_pdb_index_entry(pdb_path, tmp_index_file_handle)
+            pdb_id = write_pdb_index_entry_from_file_path(pdb_path, tmp_index_file_handle)
             tmp_index_set.add(pdb_id.lower())
     except:
         errMsg = "Error while writing index file %s." % tmp_index_file_full_path
@@ -1354,7 +1369,7 @@ def update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path,
             errorFct(errMsg)
             exit(1)
         for pdb_path in pdb_path_list:
-            write_pdb_index_entry(pdb_path, old_index_file_handle)
+            write_pdb_index_entry_from_file_path(pdb_path, old_index_file_handle)
         close_file_safely(old_index_file_handle, old_index_file_full_path, "")
      
     try:
@@ -1400,6 +1415,9 @@ def update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path,
     return added_set
 
 #extra. biopython should handle fasta write errors just fine.
+#the idea would be to traverse the file backwards with the cursor and delete everything
+#between the first occurence of the PDB ID contained within "chains" and the end of the file
+# void (file_handle,Bio.SeqRecord)
 def repair_recent_fasta_entries(fasta_file_handle, chains):
     
     offset = 0
@@ -1409,10 +1427,13 @@ def repair_recent_fasta_entries(fasta_file_handle, chains):
             pass
 
 
-#extracts chain numbers, pdbid and sequences from pdb file and writes them to FASTA file index
+#extracts chain numbers, pdbid and sequences from pdb file and writes them to FASTA file
 #also writes biopython output to dedicated log file
-#consider parallelization
-#void (str, file, file)
+#consider parallelization/optimization, very slow
+#i suspect the biopython parser is snailing its way through the pdb files
+#(calling constructors for everything might be sturdy, but slow)
+#maybe try refactoring so that entire pdb_path_list is passed to this function       
+#void (str, file_handle, file_handle)
 def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle):
     
     #make sure that this also works with uncompressed files
@@ -1425,13 +1446,13 @@ def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_
     else:
         with gzip.open(pdb_file_path, 'rt') as pdb_file_handle:
             #supressing warnings for this line, specifically Bio.PDB.PDBExceptions.PDBConstructionWarning does NOT work in ANY way
-            #not with BiopythonWarnings or BiopythonExperimentalWarnings either
-            #redirecting all stdout and stderr streams to a different file
+            #not with BiopythonWarnings nor with BiopythonExperimentalWarnings
+            #redirecting all stdout and stderr streams to a different file instead
             with contextlib.redirect_stdout(biopython_log_file_handle):
                 with contextlib.redirect_stderr(sys.stdout):
                     try:
                         chains = SeqIO.PdbIO.PdbSeqresIterator(pdb_file_handle)
-                        #atom iterator, speed killer.
+                        #atom iterator is speed killer.
                         #IMPORTANT REMARK: AtomIterator ends up producing FASTA files down the line that
                         #confuse DIAMOND. The current FTP path of rsync also downloads DNA files.
                         #something about the handling of HETATOMS in AtomIterator causes problems (wrong Biopython parser).
@@ -1453,6 +1474,9 @@ def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_
                         errMsg = "Error while writing %s to FASTA file. Skipping." % pdb_file_path
                         errorFct(errMsg)
 
+#using this function probably does not have a big advantage over using "get_pdb_path_list_recursively()"
+#though tying everything to the index file instead of to the file system structure might be useful later
+# (str,str) -> [str,str,...]                      
 def get_pdb_path_list_by_index_file(index_file_full_path, loc_pdb_db_path):
     
     pdb_path = ""
@@ -1521,7 +1545,7 @@ def create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, ind
     close_file_safely(fasta_file_handle, fasta_file_full_path, '')
 
 
-#creates diamond database from collection of pdb files in directory or index file
+#creates diamond database from fasta file
 #void (str, str, str, int)        
 def create_diamond_database(diamond_file_path, diamond_db_path, fasta_file_full_path, verbosity):
     
@@ -1550,13 +1574,20 @@ def create_diamond_database(diamond_file_path, diamond_db_path, fasta_file_full_
         errorFct(errMsg)
         exit(1)
 
-#thinking about when to call
+#think about when to call this.
+#when the rsync process fails, e.g. internet connection is lost,
+#broken pdb files might remain that might not be cleaned up by calling rsync again, since
+#they're already indexed as present in the directory tree.
+#the assumption here is that the pdb files are being written from top to bottom.
+#when the writing process fails halfway though the file will be truncated, but might still seem intact.
+#thus, in truncated files the trailing "END" statement will be missing. check if its there.
+# void (str)        
 def rm_incomplete_pdbs(loc_pdb_db_path):
     
     pdb_path_list = get_pdb_path_list_recursively(loc_pdb_db_path)
         
 #synchronizes copy of remote PDB archive with local copy
-#void (str, int)  
+#void (str,str,str,int)  
 def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity):
     
     tmp_index_file_full_path = os.path.join(diamond_db_path, "tmp_pdb_db.index")
