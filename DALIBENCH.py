@@ -4,6 +4,7 @@
 #11/04/2024
 
 import argparse
+from genericpath import isfile
 import sys
 from datetime import datetime
 import re
@@ -21,6 +22,7 @@ import contextlib
 from rcsbsearchapi.search import SequenceQuery
 from Bio import AlignIO
 from Bio import SeqIO
+from Bio import Seq
 import matplotlib
 
 #defining path to script
@@ -95,9 +97,60 @@ def write_list_of_dicts_to_csv(mydict_list, output_full_path):
 
     close_file_safely(csv_file, output_full_path, '')
 
+#function to select alignment sequence alphabet (e.g. protein, RNA, DNA)
+#currently without choice    
+#(str) -> [str,str,...]
+def sel_alphabet(choice):
+ 
+    if choice == "AA":
+        #depending on the length of the protein sequence, different orders might be more efficient
+        #see "Amino acid composition and protein dimension", Protein Sci. 17(12): 2187-2191 (2008)
+        #maybe make into set. then rework of build_regex is required
+        valid_symbols = ["A","R","N","D","C","Q","E","G","H","I","L","K","M","F","P","O","S","U","T","W","Y","V","B","Z","X","J"]
+        #IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984)
+    elif choice == "DNA/RNA":
+        valid_symbols = ["A","G","C","T","U"]
+    
+    return valid_symbols
+
+#takes string of invalid symbols and returns a list
+#this function mostly exists only for factoring consistency
+#str -> [str,str,...]
+def set_non_alphabet(non_alphabet):
+    
+    return list(non_alphabet)
+
+#build regex from list of valid symbols for clean_seq() function
+#([str,str,...]) -> str
+def build_regex_for_seq_cleaning_whitelist(valid_symbols):
+
+    regex_str_list = []
+    regex_str_list = valid_symbols.copy()
+    valid_symbols_lower = list(map(str.lower, valid_symbols.copy()))
+    regex_str_list.extend(valid_symbols_lower)
+    regex_str_list.append("]")
+    regex_str_list.insert(0,"^")
+    regex_str_list.insert(0,"[")
+    regex_str = ''.join(regex_str_list)
+    
+    return regex_str
+
+def build_regex_for_seq_cleaning_blacklist(invalid_symbols):
+    
+    regex_str_list = []
+    regex_str_list = invalid_symbols.copy()
+    invalid_symbols_lower = list(map(str.lower, invalid_symbols.copy()))
+    regex_str_list.append("]")
+    regex_str_list.insert(0,"[")
+    regex_str = ''.join(regex_str_list)
+    
+    return regex_str
+
 #removing gaps and other symbols not in "valid_symbols" from given alignment sequence data
 #(str, str) -> str
-def clean_seq(seq, regex_str):
+def clean_seq(seq, valid_symbols):
+
+    regex_str = build_regex_for_seq_cleaning_whitelist(valid_symbols)
 
     cleaned_seq = re.sub(regex_str,'',seq)
     cleaned_seq = cleaned_seq.upper()
@@ -262,29 +315,6 @@ def download_pdb_files_by_CSV(csv_file_path, out_path, sort_by, verbosity):
     
     #maybe refactor so that id_list and internal_id_name_dict is passed to download_pdb_files_by_CSV directly
     return internal_id_pdb_name_dict
-
-#function to select alignment sequence alphabet (e.g. protein, RNA, DNA)
-#currently without choice    
-#(str) -> [str,str,...]
-def sel_alphabet(choice):
- 
-    if choice == "AA":
-        #depending on the length of the protein sequence, different orders might be more efficient
-        #see "Amino acid composition and protein dimension", Protein Sci. 17(12): 2187-2191 (2008)
-        #maybe make into set. then rework of build_regex is required
-        valid_symbols = ["A","R","N","D","C","Q","E","G","H","I","L","K","M","F","P","O","S","U","T","W","Y","V","B","Z","X","J"]
-        #IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984)
-    elif choice == "DNA/RNA":
-        valid_symbols = ["A","G","C","T"]
-    
-    return valid_symbols
-
-#takes string of invalid symbols and returns a list
-#this function mostly exists only for factoring consistency
-#str -> [str,str,...]
-def set_non_alphabet(non_alphabet):
-    
-    return list(non_alphabet)
 
 #calculates the reference "sum-of-pairs-set" for structural alignments (lowercase chars mean not equivalent)
 #which is a set containing double-nested 2-tuples ( i.e. ((x,y),(a,b)) )
@@ -702,32 +732,6 @@ def import_aln_files_in_job(job_title, out_path):
         
     return job_list_of_dict_lists
 
-#build regex from list of valid symbols for clean_seq() function
-#([str,str,...]) -> str
-def build_regex_for_seq_cleaning_whitelist(valid_symbols):
-
-    regex_str_list = []
-    regex_str_list = valid_symbols.copy()
-    valid_symbols_lower = list(map(str.lower, valid_symbols.copy()))
-    regex_str_list.extend(valid_symbols_lower)
-    regex_str_list.append("]")
-    regex_str_list.insert(0,"^")
-    regex_str_list.insert(0,"[")
-    regex_str = ''.join(regex_str_list)
-    
-    return regex_str
-
-def build_regex_for_seq_cleaning_blacklist(invalid_symbols):
-    
-    regex_str_list = []
-    regex_str_list = invalid_symbols.copy()
-    invalid_symbols_lower = list(map(str.lower, invalid_symbols.copy()))
-    regex_str_list.append("]")
-    regex_str_list.insert(0,"[")
-    regex_str = ''.join(regex_str_list)
-    
-    return regex_str
-
 #takes a list of sequence-header pairs and returns a random sample of given size
 #([[str,str,int],[str,str,int],...],int) -> [[str,str,int],[str,str,int],...]
 def choose_random_sample_from_aln_file(seq_list, sample_size):
@@ -798,7 +802,7 @@ def write_aln_file_search_hits_to_csv(valid_symbols, aln_file_path, output_path,
     else:
         sample_seq_list = seq_list
     
-    #double check whitelist, i.e. valid_symbols
+    #delete next line, if everything runs fine
     regex_str = build_regex_for_seq_cleaning_whitelist(valid_symbols)
     
     #make a copy of seq list before sequences are cleaned. returned by function.
@@ -818,7 +822,8 @@ def write_aln_file_search_hits_to_csv(valid_symbols, aln_file_path, output_path,
         
         identity_cutoff = 1.00
         
-        seq[0] = clean_seq(str(seq[0]), regex_str)
+        #pass regex_str to clean_seq() again, if something goes wrong
+        seq[0] = clean_seq(str(seq[0]), valid_symbols)
         if seq[1] in header_pdb_dict.keys():
             errMsg = "Duplicate header \"%s\" in alignment file %s." %(seq[1], os.path.split(aln_file_path)[1])
             errorFct(errMsg)
@@ -1530,13 +1535,16 @@ def create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, ind
         for pdb_path in pdb_path_list:
             write_loc_pdb_to_fasta_file(pdb_path, fasta_file_handle, biopython_log_file_handle)
             if verbosity>0:
-                msg = "[%s\/%s]" % (str(counter), str(number_of_pdbs))
+                msg = "[%s/%s]" % (str(counter), str(number_of_pdbs))
                 print(msg, end="\r")
             counter += 1
     except:
         errMsg = "Error while writing to %s." % fasta_file_full_path
         print(traceback.format_exc())
         close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg)
+        #if an exception is thrown during writing of fasta file this will flush fasta file to memory
+        #however, at the moment there's no way to tell, which entries from the index have been written
+        #implement check to not have to rewrite fasta file again or check if it already exists
         close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
         errorFct(errMsg)
         exit(1)
@@ -1636,6 +1644,92 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
        
     create_diamond_database(diamond_file_path, diamond_db_path, fasta_file_full_path, verbosity)
 
+#removes gaps and other symbols not in valid_symbols and writes new fasta file with cleaned sequences
+# void (str,str,[str,str,...], int)    
+def clean_fasta_file(aln_file_full_path, out_path, valid_symbols, verbosity):
+    
+    if verbosity>0:
+        msg = "Cleaning %s..." % os.path.split(aln_file_full_path)[1]
+        print(msg)
+
+    try:
+        aln_file_handle = open(aln_file_full_path)
+    except:
+        errMsg = "Could not open alignment file %s." % aln_file_full_path
+        errorFct(errMsg)
+        exit(1)
+    try:
+        records = AlignIO.read(aln_file_handle, "fasta")
+    except:
+        errMsg = "Could not read fasta file %s." % aln_file_full_path
+        close_file_safely(aln_file_handle, aln_file_full_path, errMsg)
+        errorFct(errMsg)
+        exit(1)
+
+    close_file_safely(aln_file_handle, aln_file_full_path, "")
+    
+    counter = 1
+    no_of_records = len(records)
+    for record in records:
+        if verbosity>0:
+            msg = "[%s/%s]" % (str(counter), str(no_of_records))
+            print(msg, end='\r')
+        cleaned_seq = clean_seq(str(record.seq), valid_symbols)
+        #if this fails use seqrecord constructor
+        record.seq = Seq.Seq(cleaned_seq)
+        counter += 1
+
+    aln_file_name = os.path.split(aln_file_full_path)[1]
+    out_file_full_path = os.path.join(out_path, aln_file_name)
+    try:
+        SeqIO.write(records, out_file_full_path, "fasta")
+    except:
+        errMsg = "Error while writing %s." % out_file_full_path
+        errorFct(errMsg)
+        exit(1)
+
+#clean all fasta files in given dir. writes new ones to out_path with the same name
+# void (str,str,[str,str,...],int)        
+def clean_fasta_files_in_dir(path_to_fasta_files, out_path, valid_symbols, verbosity):
+    
+    for fasta_file_name in os.listdir(path_to_fasta_files):
+        fasta_file_full_path = os.path.join(path_to_fasta_files, fasta_file_name)
+        clean_fasta_file(fasta_file_full_path, out_path, valid_symbols, verbosity)
+
+# ./diamond blastp -d <diamond_db_file_full_path> -q <query_fasta_file_full_path> -o <out_path> --iterate
+#launches a subprocess for a diamond blastp query without restriction of sequence identity
+# void (str,str,str,str,int)        
+def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path, verbosity):
+
+    shell_input = []
+    shell_input = [diamond_exe_full_path, 'blastp', '-d', diamond_db_file_full_path, '-q', query_fasta_file_full_path, '-o', out_file_full_path, '--iterate', '--log']
+    if verbosity>0:
+        msg = "Performing blastp query for file %s." % os.path.split(query_fasta_file_full_path)[1]
+        print(msg)
+    
+    blastp_process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    
+    try:
+        out, err = blastp_process.communicate()
+    except:
+        blastp_process.kill()
+        out, err = blastp_process.communicate()
+        shell_err_fct(err)
+        errMsg = "Failed to communicate with diamond blastp subprocess. Killed it."
+        errorFct(errMsg)
+        exit(1)
+
+def batch_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_dir_path, out_path, verbosity):
+    
+    create_dir_safely(out_path)
+
+    for query_fasta_file_name in os.listdir(query_fasta_file_dir_path):
+        query_fasta_file_full_path = os.path.join(query_fasta_file_dir_path, query_fasta_file_name)
+        if os.path.isfile(query_fasta_file_full_path) is False:
+            continue
+        out_file_full_path = os.path.join(out_path, query_fasta_file_name)
+        diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path, verbosity)
+        
 def main():
 
     tic = time.perf_counter()
@@ -1674,14 +1768,23 @@ def main():
                            required=False)
     argParser.add_argument("-tdb", "--testdb", action="count", default=0, help="Testing diamond database creation.", required=False)
     argParser.add_argument("-dia", "--diamondfile", help="Path to diamond program file.", required=False)
+    argParser.add_argument("-clf", "--cleanfasta", action="count", default=0, help="testing fasta cleaning", required=False)
+    argParser.add_argument("-babp", "--batchblastp", action="count", default=0, help="testing fasta cleaning", required=False)
+    argParser.add_argument("-ddb", "--diamonddbfile", help="Path to diamond database file.", required=False)
 
     args = argParser.parse_args()
+    
+    valid_symbols = sel_alphabet(args.alphabet)
+    invalid_symbols = set_non_alphabet(args.nonalphabet)
+
+    if args.cleanfasta>0:
+        clean_fasta_files_in_dir(args.batchsearch, args.output, valid_symbols, args.verbose)
+    
+    if args.batchblastp>0:
+        batch_blastp_query(args.diamondfile, args.diamonddbfile, args.batchsearch, args.output, args.verbose)
 
     if args.syncdb>0:
         sync_pdb_copy(args.diamondfile, args.locdb, args.output, args.verbose)
-
-    valid_symbols = sel_alphabet(args.alphabet)
-    invalid_symbols = set_non_alphabet(args.nonalphabet)
 
     if args.doitall > 0:
         calc_SPS_from_aln_sample(args.output, args.alignmentfile, args.title, args.dalidir, args.samplesize, valid_symbols, args.verbose)
