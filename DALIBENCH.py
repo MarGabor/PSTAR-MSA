@@ -4,7 +4,6 @@
 #11/04/2024
 
 import argparse
-from genericpath import isfile
 import sys
 from datetime import datetime
 import re
@@ -1154,7 +1153,7 @@ def calc_SPS_from_aln_sample(output_path, aln_file_path, job_title, dali_path, s
 
 #evaluate and create overview of search data
 #void (str, str, str)    
-def evaluate_search_data(csv_path, output_path, sort_by):
+def evaluate_rcsb_search_data(csv_path, output_path, sort_by):
     
     ex_match_counter = 0
     total_counter = 0
@@ -1192,6 +1191,76 @@ def evaluate_search_data(csv_path, output_path, sort_by):
         #we can get figure object from axes_obj using get_figure() method and save it to vector image
         axes_obj.get_figure().savefig(os.path.join(output_path,csv_file_name+".svg"))
     print("Exact matches: %s.Total number of sequences: %s." % (ex_match_counter, total_counter))
+
+#evaluate diamond blastp TSV files and create overview plots for structure availability
+#optimizable (?)
+# void (str,str,str,int)    
+def evaluate_diamond_search_data(tsv_path, output_path, sort_by, verbosity):
+    
+    tsv_file_list = get_file_names_in_path(tsv_path)
+    exact_match_dict = {}
+    file_counter = 1
+    no_of_files = len(tsv_file_list)
+
+    for tsv_file_path in tsv_file_list:
+        if verbosity>0:
+            msg = "[%s/%s] Plotting %s..." % (file_counter, no_of_files, tsv_file_path)
+            print(msg)
+        tsv_ex_match_counter = 0
+        tsv_total_counter = 0
+        df = pandas.read_csv(tsv_file_path, sep='\t')
+        new_df = pandas.DataFrame(columns=['qseqid','sseqid','pident','length','mismatch','gapopen','qstart','qend','sstart','send','evalue','bitscore'])
+        row_list = []
+        #remove next line, once trailing delimiters have been removed
+        #df = df.drop(['Unnamed: 16'], axis=1)
+        #split df into one dataframe per fasta_header
+        df_list = [x for _,x in df.groupby('qseqid')]
+        for split_df in df_list:
+            split_df['is_exact_match'] = 0
+            if sort_by == "identity":
+                split_df = split_df.sort_values(by=['pident'], ascending=False)
+            elif sort_by == "score":
+                split_df = split_df.sort_values(by=['bitscore'], ascending=False)
+            else:
+                errMsg = "Can't sort by %s. Exiting." % sort_by
+                errorFct(errMsg)
+                exit(1)
+            tsv_total_counter += 1
+            #append highest score/identity row to df list
+            #if math.isclose(split_df.iloc[[0]]['pident'],1,abs_tol=10e-1):
+             #   ex_match_counter += 1
+            ex_match_col_num = split_df.columns.get_loc('is_exact_match')
+            mismatch_col_num = split_df.columns.get_loc('mismatch')
+            if int(split_df.iloc[0,mismatch_col_num]) == 0:
+                tsv_ex_match_counter += 1
+                split_df.iloc[0,ex_match_col_num] = 100
+            row_list.append(split_df.iloc[[0]].copy())
+        tsv_file_name = os.path.splitext(os.path.split(tsv_file_path)[1])[0]
+        exact_match_dict[tsv_file_name] = (tsv_ex_match_counter/tsv_total_counter)*100
+        #combine list into one df
+        new_df = pandas.concat(row_list, ignore_index=True)
+        plot_df = pandas.DataFrame(new_df[['pident','is_exact_match']])
+        plot_df['mean_identity'] = new_df['pident'].mean()
+        plot_df['exact_match_perc'] = (tsv_ex_match_counter/tsv_total_counter)*100
+        #pandas.plot returns matplotlib.axes.Axes object
+        plot_df_len = len(plot_df)
+        xtick_list = list(range(0,plot_df_len,500))
+        xtick_list.append(plot_df_len)
+        axes_obj = plot_df[['pident','is_exact_match',]].plot(title=tsv_file_name, kind="bar", yticks=[0,2.5,5,7.5,10,15,20,25,30,40,50,60,70,80,90,100],
+                                                             xticks=xtick_list)
+        plot_df[['mean_identity','exact_match_perc']].plot(kind="line", ax=axes_obj)
+        #we can get figure object from axes_obj using get_figure() method and save it to vector image
+        axes_obj.get_figure().savefig(os.path.join(output_path, tsv_file_name+".svg"))
+        #matplot.pyplot.figure objects need to be explicitly closed. otherwise they are all open at the same time
+        matplotlib.pyplot.clf()
+        file_counter += 1
+    exact_perc_df = pandas.DataFrame.from_dict(data=exact_match_dict, orient='index', columns=['ex_match_perc'])
+    exact_perc_df['mean_exact_perc'] = exact_perc_df['ex_match_perc'].mean()
+    axes_obj = exact_perc_df[['ex_match_perc']].plot(title="Exact match distribution among test alignments", kind="bar")
+    exact_perc_df[['mean_exact_perc']].plot(kind="line", ax=axes_obj, color='orange')
+    axes_obj.set_xticklabels(exact_perc_df.index.values, rotation = 45)
+    axes_obj.get_figure().savefig(os.path.join(output_path, "mean_ex_match_perc.svg"))
+    matplotlib.pyplot.close()
 
 #recursively get all pdb file paths in a specified path and return them as list
 # str -> [str, str, ...]        
@@ -1316,7 +1385,7 @@ def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopy
         with open(fasta_file_full_path, 'a') as fasta_file_handle:
             for pdb_id in added_set:
                 if verbosity>0:
-                    msg = "[%s\/%s]" % (str(counter), str(number_of_pdbs))
+                    msg = "[%s/%s]" % (str(counter), str(number_of_pdbs))
                     print(msg, end="\r")
                 pdb_file_path = os.path.join(loc_pdb_db_path, pdb_id[1:3], "pdb"+pdb_id+".ent.gz")
                 write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle)
@@ -1404,8 +1473,15 @@ def update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path,
         
     #set of all entries that got added in recent sync
     added_set = tmp_index_set.difference(old_index_set)
+    
+    return added_set
 
-    #replace old index file with new one
+
+#replaces old index file with new one
+#called after appending of fasta file finished successfully
+# void (str,str)
+def replace_old_index_file(tmp_index_file_full_path, old_index_file_full_path):
+    
     mv_process = subprocess.Popen(['mv', tmp_index_file_full_path, old_index_file_full_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     try:
         out, err = mv_process.communicate()
@@ -1416,8 +1492,6 @@ def update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path,
         errMsg = "Communcation with mv_process to replace old index file failed. Killed it."
         errorFct(errMsg)
         exit(1)
-    
-    return added_set
 
 #extra. biopython should handle fasta write errors just fine.
 #the idea would be to traverse the file backwards with the cursor and delete everything
@@ -1639,6 +1713,7 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
     added_set = update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path, old_index_file_full_path)
     if len(added_set)>0 and os.path.exists(fasta_file_full_path):
         add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopython_log_full_path, verbosity)
+        replace_old_index_file(tmp_index_file_full_path, old_index_file_full_path)
     elif os.path.exists(fasta_file_full_path) is False:
         create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, old_index_file_full_path, biopython_log_full_path, verbosity)
        
@@ -1702,7 +1777,8 @@ def clean_fasta_files_in_dir(path_to_fasta_files, out_path, valid_symbols, verbo
 def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path, verbosity):
 
     shell_input = []
-    shell_input = [diamond_exe_full_path, 'blastp', '-d', diamond_db_file_full_path, '-q', query_fasta_file_full_path, '-o', out_file_full_path, '--iterate', '--log']
+    shell_input = [diamond_exe_full_path, 'blastp', '-d', diamond_db_file_full_path, '-q', query_fasta_file_full_path, '-o', out_file_full_path,
+                   '--iterate', '--log', '--header', 'simple']
     if verbosity>0:
         msg = "Performing blastp query for file %s." % os.path.split(query_fasta_file_full_path)[1]
         print(msg)
@@ -1793,7 +1869,7 @@ def main():
         if args.alignmentfile is not None:
             _ = write_aln_file_search_hits_to_csv(valid_symbols, args.alignmentfile, args.output, args.verbose, args.samplesize)
         if args.createsearchplots > 0:
-            evaluate_search_data(args.csvdir, args.output, "identity")
+            evaluate_diamond_search_data(args.csvdir, args.output, "identity", args.verbose)
         #wrap in function    
         elif args.batchsearch is not None:
             aln_file_list = get_file_names_in_path(args.batchsearch)
