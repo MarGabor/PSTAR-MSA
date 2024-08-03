@@ -16,6 +16,8 @@ import requests
 import subprocess
 import gzip
 import warnings
+import svg_stack
+import lxml
 import traceback
 import contextlib
 from rcsbsearchapi.search import SequenceQuery
@@ -1151,6 +1153,26 @@ def calc_SPS_from_aln_sample(output_path, aln_file_path, job_title, dali_path, s
     
     return job_SPS, SPS_dict_list
 
+#function to take a list of svg images and concatenates them to a large svg image
+#void ([str,str,...],str)    
+def append_svg_images(svg_path, out_img_full_path):
+    
+    svg_full_path_list = []
+    svg_file_name_list = os.listdir(svg_path)
+    for svg_file_name in svg_file_name_list:
+        svg_full_path = os.path.join(svg_path, svg_file_name)
+        if os.path.isfile(svg_full_path) is False:
+            continue
+        svg_full_path_list.append(svg_full_path)
+
+    doc = svg_stack.Document()
+    
+    layout1 = svg_stack.HBoxLayout()
+    for svg_full_path in svg_full_path_list:
+        layout1.addSVG(svg_full_path, alignment=svg_stack.AlignCenter)
+    doc.setLayout(layout1)
+    doc.save(out_img_full_path)
+
 #evaluate and create overview of search data
 #void (str, str, str)    
 def evaluate_rcsb_search_data(csv_path, output_path, sort_by):
@@ -1193,7 +1215,8 @@ def evaluate_rcsb_search_data(csv_path, output_path, sort_by):
     print("Exact matches: %s.Total number of sequences: %s." % (ex_match_counter, total_counter))
 
 #evaluate diamond blastp TSV files and create overview plots for structure availability
-#optimizable (?)
+#optimizable (?) iloc is massively slowing things down.
+#try with df.set_value(), almost 3 times faster probably, but its deprecated. annoying  
 # void (str,str,str,int)    
 def evaluate_diamond_search_data(tsv_path, output_path, sort_by, verbosity):
     
@@ -1213,10 +1236,12 @@ def evaluate_diamond_search_data(tsv_path, output_path, sort_by, verbosity):
         row_list = []
         #remove next line, once trailing delimiters have been removed
         #df = df.drop(['Unnamed: 16'], axis=1)
+        df['is_exact_match'] = 0
+        ex_match_col_num = df.columns.get_loc('is_exact_match')
+        mismatch_col_num = df.columns.get_loc('mismatch')
         #split df into one dataframe per fasta_header
         df_list = [x for _,x in df.groupby('qseqid')]
         for split_df in df_list:
-            split_df['is_exact_match'] = 0
             if sort_by == "identity":
                 split_df = split_df.sort_values(by=['pident'], ascending=False)
             elif sort_by == "score":
@@ -1229,8 +1254,6 @@ def evaluate_diamond_search_data(tsv_path, output_path, sort_by, verbosity):
             #append highest score/identity row to df list
             #if math.isclose(split_df.iloc[[0]]['pident'],1,abs_tol=10e-1):
              #   ex_match_counter += 1
-            ex_match_col_num = split_df.columns.get_loc('is_exact_match')
-            mismatch_col_num = split_df.columns.get_loc('mismatch')
             if int(split_df.iloc[0,mismatch_col_num]) == 0:
                 tsv_ex_match_counter += 1
                 split_df.iloc[0,ex_match_col_num] = 100
@@ -1244,21 +1267,21 @@ def evaluate_diamond_search_data(tsv_path, output_path, sort_by, verbosity):
         plot_df['exact_match_perc'] = (tsv_ex_match_counter/tsv_total_counter)*100
         #pandas.plot returns matplotlib.axes.Axes object
         plot_df_len = len(plot_df)
-        xtick_list = list(range(0,plot_df_len,500))
-        xtick_list.append(plot_df_len)
+        xtick_list = list(range(0,plot_df_len,math.floor(plot_df_len/5)))
         axes_obj = plot_df[['pident','is_exact_match',]].plot(title=tsv_file_name, kind="bar", yticks=[0,2.5,5,7.5,10,15,20,25,30,40,50,60,70,80,90,100],
                                                              xticks=xtick_list)
         plot_df[['mean_identity','exact_match_perc']].plot(kind="line", ax=axes_obj)
         #we can get figure object from axes_obj using get_figure() method and save it to vector image
         axes_obj.get_figure().savefig(os.path.join(output_path, tsv_file_name+".svg"))
         #matplot.pyplot.figure objects need to be explicitly closed. otherwise they are all open at the same time
-        matplotlib.pyplot.clf()
+        matplotlib.pyplot.close()
         file_counter += 1
     exact_perc_df = pandas.DataFrame.from_dict(data=exact_match_dict, orient='index', columns=['ex_match_perc'])
     exact_perc_df['mean_exact_perc'] = exact_perc_df['ex_match_perc'].mean()
     axes_obj = exact_perc_df[['ex_match_perc']].plot(title="Exact match distribution among test alignments", kind="bar")
     exact_perc_df[['mean_exact_perc']].plot(kind="line", ax=axes_obj, color='orange')
     axes_obj.set_xticklabels(exact_perc_df.index.values, rotation = 45)
+    axes_obj.tick_params(axis='x', which='major', labelsize=2)
     axes_obj.get_figure().savefig(os.path.join(output_path, "mean_ex_match_perc.svg"))
     matplotlib.pyplot.close()
 
@@ -1847,6 +1870,7 @@ def main():
     argParser.add_argument("-clf", "--cleanfasta", action="count", default=0, help="testing fasta cleaning", required=False)
     argParser.add_argument("-babp", "--batchblastp", action="count", default=0, help="testing fasta cleaning", required=False)
     argParser.add_argument("-ddb", "--diamonddbfile", help="Path to diamond database file.", required=False)
+    argParser.add_argument("-svg", "--svgpath", help="Path to SVG files to be concatenated.", required=False)
 
     args = argParser.parse_args()
     
@@ -1870,6 +1894,7 @@ def main():
             _ = write_aln_file_search_hits_to_csv(valid_symbols, args.alignmentfile, args.output, args.verbose, args.samplesize)
         if args.createsearchplots > 0:
             evaluate_diamond_search_data(args.csvdir, args.output, "identity", args.verbose)
+            #append_svg_images(args.svgpath, args.output)
         #wrap in function    
         elif args.batchsearch is not None:
             aln_file_list = get_file_names_in_path(args.batchsearch)
