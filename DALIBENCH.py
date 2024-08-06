@@ -16,7 +16,8 @@ import requests
 import subprocess
 import gzip
 import warnings
-import svg_stack
+#import svg_stack
+from itertools import tee
 import lxml
 import traceback
 import contextlib
@@ -1380,6 +1381,131 @@ def remove_fasta_db_entries_by_header(removal_set, diamond_db_path):
                 if line[1:5].lower() in removal_set:
                     pass
 
+#takes a SeqRecord iterator, if chain.id does not have expected format and rewrites the whole iterator
+#fixing those entries that don't adhere to XXXX:X format in the header by getting pdb id from file name
+#if not even the chain identifier can be read (accessing first char of chain.id throws IndexError)
+#the header will simply contain the pdb id without chain information
+# (iterator, str) -> (iterator)                
+def update_chains_iterator(iterator, pdb_file_path):
+         
+    new_chains_list = []
+
+    for chain in iterator:
+        try:
+            chain_id_str = str(chain.id)
+            if chain_id_str[4] != ":":
+                pdb_id_match = re.search(r'(.+\/)*pdb(....)\..*', pdb_file_path)
+                pdb_id = pdb_id_match.group(2)
+                new_chain_id = pdb_id+":"+chain_id_str[0].upper()
+                new_chain_seq = str(chain.seq)
+                new_chain = SeqIO.SeqRecord(Seq.Seq(new_chain_seq), id=new_chain_id)
+                new_chains_list.append(new_chain)
+            else:
+                new_chain_id = str(chain.id)
+                new_chain_seq = Seq.Seq(str(chain.seq))
+                new_chain = SeqIO.SeqRecord(new_chain_seq, id=new_chain_id)
+                new_chains_list.append(new_chain)
+        except IndexError:
+            pdb_id_match = re.search(r'(.+\/)*pdb(....)\..*', pdb_file_path)
+            pdb_id = pdb_id_match.group(2)
+            try:
+                new_chain_id = (pdb_id+":"+chain_id_str[0]).upper()
+                new_chain_seq = str(chain.seq)
+                new_chain = SeqIO.SeqRecord(Seq.Seq(new_chain_seq), id=new_chain_id)
+                new_chains_list.append(new_chain)
+            except IndexError:
+                new_chain_id = pdb_id
+                new_chain_seq = str(chain.seq)
+                new_chain = SeqIO.SeqRecord(Seq.Seq(new_chain_seq), id=new_chain_id)
+                new_chains_list.append(new_chain)
+                
+    return iter(new_chains_list)
+                
+#extracts chain numbers, pdbid and sequences from pdb file and writes them to FASTA file
+#also writes biopython output to dedicated log file
+#consider parallelization/optimization, very slow
+#i suspect the biopython pdb parser     
+#void (str, file_handle, file_handle)
+def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle):
+    
+    #make sure that this also works with uncompressed files
+    try:
+        pdb_file_handle = gzip.open(pdb_file_path, 'rt')
+    except:
+        errMsg = "Failed to open %s." % pdb_file_path
+        errorFct(errMsg)
+        exit(1)
+    #supressing warnings for this line, specifically Bio.PDB.PDBExceptions.PDBConstructionWarning does NOT work in ANY way
+    #not with BiopythonWarnings nor with BiopythonExperimentalWarnings
+    #redirecting all stdout and stderr streams to a different file instead
+    with contextlib.redirect_stdout(biopython_log_file_handle):
+        with contextlib.redirect_stderr(sys.stdout):
+            try:
+                chains = SeqIO.PdbIO.PdbSeqresIterator(pdb_file_handle)
+                #atom iterator is speed killer.
+                #IMPORTANT REMARK: AtomIterator ends up producing FASTA files down the line that
+                #confuse DIAMOND. The current FTP path of rsync also downloads DNA files.
+                #something about the handling of HETATOMS in AtomIterator causes problems (wrong Biopython parser).
+                #stick to using SeqResIterator for now 
+                #chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)  
+            except:
+                errMsg = "Failed to parse chain data from %s." % pdb_file_path
+                close_file_safely(pdb_file_handle, pdb_file_path, errMsg)
+                errorFct(errMsg)
+                return
+    
+    update = False
+    #copies of iterators are required for a) counting length, b) looping to check for incomplete headers
+    #c) passing to update_chains_iterator() function 
+    chains, chains_copy, chains_copy_2, chains_copy_3 = tee(chains, 4)
+    chains_choice = chains
+
+    #if parser fails to get valid chain ID, try to get PDB ID from file name
+    #this is not a particularly elegant implementation, but at least it requires only
+    #a minimal amount of rewriting iterators  
+    for chain in chains_copy_2:
+        try:
+            chain_id_str = str(chain.id)
+            if chain_id_str[4] != ":":
+                new_chains = update_chains_iterator(chains_copy_3, pdb_file_path)
+                update = True
+                break
+        except IndexError:
+            new_chains = update_chains_iterator(chains_copy_3, pdb_file_path)
+            update = True
+            break
+        
+    if update:
+        #check len of old iterator
+        old_iter_len = 0
+        for chain in chains_copy:
+            old_iter_len +=1
+        new_chains, new_chains_copy = tee(new_chains)
+        #check len of new iterator
+        new_iter_len = 0
+        for chain in new_chains_copy:
+            new_iter_len += 1
+        if old_iter_len == new_iter_len:
+            chains_choice = new_chains
+        else:
+            errMsg = "Warning: Failed to update chains for %s." % (pdb_file_path)
+            errorFct(errMsg)
+
+    try:
+        SeqIO.write(chains_choice, fasta_file_handle, "fasta")
+    except:
+        #try:
+            #   repair_recent_fasta_entries(fasta_file_handle, chains)
+        #except:
+            #   errMsg = "Error while attempting to repair most recent FASTA entries."
+            #  errorFct(errMsg)
+            # raise Exception
+        print(traceback.format_exc())
+        errMsg = "Error while writing %s to FASTA file. Skipping." % pdb_file_path
+        close_file_safely(pdb_file_handle, pdb_file_path, errMsg)
+        errorFct(errMsg)
+    close_file_safely(pdb_file_handle, pdb_file_path, "")
+
 #takes a set of pdb IDs and appends existing fasta file with the elements of this set
 #throws FileNotFoundException, if indexed PDB ID is not in local PDB database
 # void (set(),str,str,str,int)                
@@ -1387,13 +1513,6 @@ def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopy
     
     if verbosity>0:
         print("Appending FASTA file...")
-
-    try:
-        biopython_log_file_handle = open(biopython_log_full_path)
-    except:
-        errMsg = "File %s could not be opened for writing." % biopython_log_full_path
-        errorFct(errMsg)
-        exit(1)
     try: 
         dest_backup = os.path.join(os.path.split(fasta_file_full_path)[0], "pdb_db_backup.fasta")
         backup_fasta_file(dest_backup, fasta_file_full_path)
@@ -1402,13 +1521,21 @@ def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopy
         errMsg = "Failed to back up %s. Insufficient writing priviliges in %s?" % (tail, head)
         errorFct(errMsg)
         exit(1)
+    
+    try:
+        biopython_log_file_handle = open(biopython_log_full_path)
+    except:
+        errMsg = "File %s could not be opened for writing." % biopython_log_full_path
+        errorFct(errMsg)
+        exit(1)
+
     try:
         counter = 1
         number_of_pdbs = len(added_set)
         with open(fasta_file_full_path, 'a') as fasta_file_handle:
             for pdb_id in added_set:
                 if verbosity>0:
-                    msg = "[%s/%s]" % (str(counter), str(number_of_pdbs))
+                    msg = "[%s/%s]              " % (str(counter), str(number_of_pdbs))
                     print(msg, end="\r")
                 pdb_file_path = os.path.join(loc_pdb_db_path, pdb_id[1:3], "pdb"+pdb_id+".ent.gz")
                 write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle)
@@ -1420,11 +1547,13 @@ def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopy
             print(traceback.format_exc())
             errMsg = "Error while restoring FASTA file from backup %s." % dest_backup
             errorFct(errMsg)
-        errMsg = "Error while writing to %s." % fasta_file_full_path
-        close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
-        close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg)
-        errorFct(errMsg)
-        exit(1)
+        finally:
+            print(traceback.format_exc())
+            errMsg = "Error while writing to %s." % fasta_file_full_path
+            close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
+            close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg)
+            errorFct(errMsg)
+            exit(1)
 
     remove_fasta_backup(dest_backup, fasta_file_full_path)
     close_file_safely(biopython_log_file_handle, biopython_log_full_path, "")
@@ -1527,54 +1656,6 @@ def repair_recent_fasta_entries(fasta_file_handle, chains):
         fasta_file_handle.seek(offset, 2)
         if fasta_file_handle.read(1) == ">":
             pass
-
-
-#extracts chain numbers, pdbid and sequences from pdb file and writes them to FASTA file
-#also writes biopython output to dedicated log file
-#consider parallelization/optimization, very slow
-#i suspect the biopython parser is snailing its way through the pdb files
-#(calling constructors for everything might be sturdy, but slow)
-#maybe try refactoring so that entire pdb_path_list is passed to this function       
-#void (str, file_handle, file_handle)
-def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle):
-    
-    #make sure that this also works with uncompressed files
-    try:
-        pdb_file_handle = gzip.open(pdb_file_path, 'rt')
-    except:
-        errMsg = "Failed to open %s." % pdb_file_path
-        errorFct(errMsg)
-        exit(1)
-    else:
-        with gzip.open(pdb_file_path, 'rt') as pdb_file_handle:
-            #supressing warnings for this line, specifically Bio.PDB.PDBExceptions.PDBConstructionWarning does NOT work in ANY way
-            #not with BiopythonWarnings nor with BiopythonExperimentalWarnings
-            #redirecting all stdout and stderr streams to a different file instead
-            with contextlib.redirect_stdout(biopython_log_file_handle):
-                with contextlib.redirect_stderr(sys.stdout):
-                    try:
-                        chains = SeqIO.PdbIO.PdbSeqresIterator(pdb_file_handle)
-                        #atom iterator is speed killer.
-                        #IMPORTANT REMARK: AtomIterator ends up producing FASTA files down the line that
-                        #confuse DIAMOND. The current FTP path of rsync also downloads DNA files.
-                        #something about the handling of HETATOMS in AtomIterator causes problems (wrong Biopython parser).
-                        #stick to using SeqResIterator for now 
-                        #chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)
-                    except:
-                        errMsg = "Failed to parse chain data from %s." % pdb_file_path
-                        errorFct(errMsg)
-                        return
-                    try:
-                        SeqIO.write(chains, fasta_file_handle, "fasta")
-                    except:
-                        #try:
-                         #   repair_recent_fasta_entries(fasta_file_handle, chains)
-                        #except:
-                         #   errMsg = "Error while attempting to repair most recent FASTA entries."
-                          #  errorFct(errMsg)
-                           # raise Exception
-                        errMsg = "Error while writing %s to FASTA file. Skipping." % pdb_file_path
-                        errorFct(errMsg)
 
 #using this function probably does not have a big advantage over using "get_pdb_path_list_recursively()"
 #though tying everything to the index file instead of to the file system structure might be useful later
@@ -1700,10 +1781,11 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
     fasta_file_full_path = os.path.join(diamond_db_path, "pdb_db.fasta")
     biopython_log_full_path = os.path.join(diamond_db_path, "biopython_log.txt")
 
+    create_dir_safely(loc_pdb_db_path)
     create_dir_safely(diamond_db_path)
     #https://www.wwpdb.org/ftp/pdb-ftp-sites
     #rsync -rlpt -v -z --delete --port=33444 rsync.rcsb.org::ftp_data/structures/divided/pdb/ ./pdb
-    #there's also DNA in there, look into it
+    #there's also DNA/RNA in there, look into it to maybe only sync protein structures
     shell_input = []
     shell_input = ["rsync", "-rlpt", "-v", "-z", "--delete", "--port=33444", "rsync.rcsb.org::ftp_data/structures/divided/pdb/", loc_pdb_db_path]
     
@@ -1715,6 +1797,9 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
     if verbosity>0:
         counter = 1
         for line in process.stdout:
+            if counter > 100:
+                process.kill()
+                break
             line = line.rstrip()+"                   "
             print(line, end="\r")
             counter += 1
@@ -1842,7 +1927,7 @@ def main():
     argParser.add_argument("-sync", "--syncdb", default=0, action="count", help="Sync local PDB database with remote.", required=False)
     argParser.add_argument("-dm", "--datamode", default=0, action="count",
                            help="data mode for gathering PDB files and other data from given FASTA alignment", required=False)
-    argParser.add_argument("-db", "--locdb", default="PDB_db", help="Path to local PDB database.", required=False)
+    argParser.add_argument("-db", "--locpdbdb", default="PDB_db", help="Path to local PDB database.", required=False)
     argParser.add_argument("-af", "--alignmentfile", help="MSA file in FASTA format", required=False)
     argParser.add_argument("-bat", "--batchsearch", help="Path to MSA files in FASTA format", required=False)
     argParser.add_argument("-ss", "--samplesize", default=10, type = int,
@@ -1884,7 +1969,7 @@ def main():
         batch_blastp_query(args.diamondfile, args.diamonddbfile, args.batchsearch, args.output, args.verbose)
 
     if args.syncdb>0:
-        sync_pdb_copy(args.diamondfile, args.locdb, args.output, args.verbose)
+        sync_pdb_copy(args.diamondfile, args.locpdbdb, args.output, args.verbose)
 
     if args.doitall > 0:
         calc_SPS_from_aln_sample(args.output, args.alignmentfile, args.title, args.dalidir, args.samplesize, valid_symbols, args.verbose)
@@ -1894,7 +1979,8 @@ def main():
             _ = write_aln_file_search_hits_to_csv(valid_symbols, args.alignmentfile, args.output, args.verbose, args.samplesize)
         if args.createsearchplots > 0:
             evaluate_diamond_search_data(args.csvdir, args.output, "identity", args.verbose)
-            #append_svg_images(args.svgpath, args.output)
+            #with import svg_stack:
+                #append_svg_images(args.svgpath, args.output)
         #wrap in function    
         elif args.batchsearch is not None:
             aln_file_list = get_file_names_in_path(args.batchsearch)
