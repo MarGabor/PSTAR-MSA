@@ -1311,6 +1311,49 @@ def write_pdb_index_entry_from_file_path(raw_line, index_file_handle):
     
     return pdb_id
 
+#wrapper function to write pdb index entries according to list of paths to pdb files
+# void (str, [str,str,...])
+def write_index_file_from_file_path_list(old_index_file_full_path, pdb_path_list):
+    
+    try:
+        old_index_file_handle = open(old_index_file_full_path, "w")
+    except:
+        errMsg = "Cannot open file %s." % old_index_file_full_path
+        errorFct(errMsg)
+        exit(1)
+    try:
+        for pdb_path in pdb_path_list:
+            write_pdb_index_entry_from_file_path(pdb_path, old_index_file_handle)
+    except:
+        errMsg = "Error while writing PDB IDs to index file %s." % old_index_file_full_path
+        close_file_safely(old_index_file_handle, old_index_file_full_path, errMsg)
+        exit(1)
+            
+    close_file_safely(old_index_file_handle, old_index_file_full_path, "")
+
+#writes an index file from the contents of a set
+# void (str, set())   
+def write_index_file_from_set(index_file_full_path, pdb_id_set):
+    
+    try:
+        index_file_handle = open(index_file_full_path, "w")
+    except:
+        errMsg = "Cannot open file %s." % index_file_full_path
+        errorFct(errMsg)
+        exit(1)
+    try:
+        for pdb_id in pdb_id_set:
+            index_line = str(pdb_id).lower()+"\n"
+            index_file_handle.write(index_line)
+    except:
+        errMsg = "Error while writing PDB IDs to index file %s." % index_file_full_path
+        close_file_safely(index_file_handle, index_file_full_path, errMsg)
+        exit(1)
+            
+    close_file_safely(index_file_handle, index_file_full_path, "")
+        
+    
+
 #read index file and return set with pdb IDs
 # (file_handle) -> set()    
 def read_index_file(old_index_file_handle):
@@ -1327,8 +1370,9 @@ def read_index_file(old_index_file_handle):
 #function to be called before editing the database fasta file
 #creates a copy of the fasta file in the same location
 # void (str,str)
-def backup_fasta_file(dest_backup, fasta_file_full_path):
-    
+def backup_fasta_file(fasta_file_full_path):
+     
+    dest_backup = os.path.join(os.path.split(fasta_file_full_path)[0], "pdb_db_backup.fasta")
     cp_process = subprocess.Popen(['cp', fasta_file_full_path, dest_backup], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
     try:
         out, err = cp_process.communicate()
@@ -1337,12 +1381,15 @@ def backup_fasta_file(dest_backup, fasta_file_full_path):
         out, err = cp_process.communicate()
         shell_err_fct(err)
         raise Exception
+    
+    return dest_backup
 
 #called when editing fasta file has been completed successfully
 #double checks to see, if original fasta file is present in the same location
 # void (str,str)    
 def remove_fasta_backup(dest_backup, fasta_file_full_path):
     
+    #just to be extra safe
     if os.path.exists(fasta_file_full_path):
         os.remove(dest_backup)
 
@@ -1513,9 +1560,8 @@ def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopy
     
     if verbosity>0:
         print("Appending FASTA file...")
-    try: 
-        dest_backup = os.path.join(os.path.split(fasta_file_full_path)[0], "pdb_db_backup.fasta")
-        backup_fasta_file(dest_backup, fasta_file_full_path)
+    try:
+        dest_backup = backup_fasta_file(fasta_file_full_path)
     except:
         head, tail = os.path.split(fasta_file_full_path)
         errMsg = "Failed to back up %s. Insufficient writing priviliges in %s?" % (tail, head)
@@ -1588,15 +1634,7 @@ def update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path,
     
     #if old index file does not exist, then write it  
     if os.path.exists(old_index_file_full_path) is False:
-        try:
-            old_index_file_handle = open(old_index_file_full_path, "w")
-        except:
-            errMsg = "Cannot open file %s." % old_index_file_full_path
-            errorFct(errMsg)
-            exit(1)
-        for pdb_path in pdb_path_list:
-            write_pdb_index_entry_from_file_path(pdb_path, old_index_file_handle)
-        close_file_safely(old_index_file_handle, old_index_file_full_path, "")
+        write_index_file_from_file_path_list(old_index_file_full_path, pdb_path_list)
      
     try:
         old_index_file_handle = open(old_index_file_full_path, "r")
@@ -1686,6 +1724,20 @@ def get_pdb_path_list_by_index_file(index_file_full_path, loc_pdb_db_path):
     
     return pdb_path_list
 
+#if there is an exception during the writing of the FASTA file in create_fasta_file_from_index_file(),
+#then this function is called to remove the most recently added entries belonging to the PDB that was read
+#while the exception occured.
+#starts with the file handle at the end of file, works its way up to the last occurence of most_recent_pdb_id
+#and deletes everything from there to end of file
+# void (str, str)
+def rm_most_recent_pdb_from_fasta_file(fasta_file_full_path, most_recent_pdb_path):
+    pass
+
+#reads a fasta file and returns all pdb ids (not chain names) in the headers
+# (str) -> set() 
+def read_fasta_pdb_ids(fasta_file_full_path):
+    pass
+
 #creates fasta file from index file
 #void (str, str, str, str, int)
 def create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, index_file_full_path, biopython_log_full_path, verbosity):
@@ -1712,21 +1764,46 @@ def create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, ind
         exit(1)
     try:
         for pdb_path in pdb_path_list:
+            most_recent_pdb_path = pdb_path
             write_loc_pdb_to_fasta_file(pdb_path, fasta_file_handle, biopython_log_file_handle)
             if verbosity>0:
                 msg = "[%s/%s]" % (str(counter), str(number_of_pdbs))
                 print(msg, end="\r")
             counter += 1
     except:
-        errMsg = "Error while writing to %s." % fasta_file_full_path
         print(traceback.format_exc())
         close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg)
         #if an exception is thrown during writing of fasta file this will flush fasta file to memory
-        #however, at the moment there's no way to tell, which entries from the index have been written
-        #implement check to not have to rewrite fasta file again or check if it already exists
         close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
-        errorFct(errMsg)
-        exit(1)
+        try:
+            dest_backup = backup_fasta_file(fasta_file_full_path)
+        except:
+            errMsg = "Error while backing up FASTA file. Exiting."
+            errorFct(errMsg)
+            exit(1)
+        #removes most recent pdb chains from fasta file
+        try:    
+            rm_most_recent_pdb_from_fasta_file(fasta_file_full_path, most_recent_pdb_path)
+            fasta_pdb_id_set = read_fasta_pdb_ids(fasta_file_full_path)
+            #overwrite index file
+            write_index_file_from_set(index_file_full_path, fasta_pdb_id_set)
+        except:
+            try:
+                restore_fasta_file_from_backup(dest_backup, fasta_file_full_path)
+            except:
+                print(traceback.format_exc())
+                errMsg3 = "Error while restoring FASTA file backup %s." % dest_backup
+                errorFct(errMsg3)
+            finally:
+                print(traceback.format_exc())
+                errMsg2 = "Error while attempting to repair FASTA file %s." % fasta_file_full_path
+                errorFct(errMsg2)
+        else:
+            remove_fasta_backup(dest_backup, fasta_file_full_path)
+        finally:
+            errMsg1 = "Error while writing to %s." % fasta_file_full_path
+            errorFct(errMsg1)
+            exit(1)
           
     close_file_safely(biopython_log_file_handle, biopython_log_full_path, '')
     close_file_safely(fasta_file_handle, fasta_file_full_path, '')
@@ -1798,9 +1875,6 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
     if verbosity>0:
         counter = 1
         for line in process.stdout:
-            if counter > 100:
-                process.kill()
-                break
             line = line.rstrip()+"                   "
             print(line, end="\r")
             counter += 1
