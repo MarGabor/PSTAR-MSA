@@ -1401,10 +1401,10 @@ def update_chains_iterator(iterator, pdb_file_path):
                 new_chain = SeqIO.SeqRecord(Seq.Seq(new_chain_seq), id=new_chain_id)
                 new_chains_list.append(new_chain)
             else:
-                new_chain_id = str(chain.id)
-                new_chain_seq = Seq.Seq(str(chain.seq))
-                new_chain = SeqIO.SeqRecord(new_chain_seq, id=new_chain_id)
-                new_chains_list.append(new_chain)
+                #new_chain_id = str(chain.id)
+                #new_chain_seq = Seq.Seq(str(chain.seq))
+                #new_chain = SeqIO.SeqRecord(new_chain_seq, id=new_chain_id)
+                new_chains_list.append(chain)
         except IndexError:
             pdb_id_match = re.search(r'(.+\/)*pdb(....)\..*', pdb_file_path)
             pdb_id = pdb_id_match.group(2)
@@ -1680,6 +1680,7 @@ def get_pdb_path_list_by_index_file(index_file_full_path, loc_pdb_db_path):
         errMsg = "Error while reading %s." % index_file_full_path
         close_file_safely(index_file_handle, index_file_full_path, errMsg)
         errorFct(errMsg)
+        exit(1)
 
     close_file_safely(index_file_handle, index_file_full_path, "")
     
@@ -1824,6 +1825,10 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
         replace_old_index_file(tmp_index_file_full_path, old_index_file_full_path)
     elif os.path.exists(fasta_file_full_path) is False:
         create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, old_index_file_full_path, biopython_log_full_path, verbosity)
+        replace_old_index_file(tmp_index_file_full_path, old_index_file_full_path)
+    else:
+        if verbosity>0:
+            print("No new PDB entries for update.")
        
     create_diamond_database(diamond_file_path, diamond_db_path, fasta_file_full_path, verbosity)
 
