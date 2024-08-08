@@ -1322,6 +1322,7 @@ def write_index_file_from_file_path_list(old_index_file_full_path, pdb_path_list
         errorFct(errMsg)
         exit(1)
     try:
+        old_index_file_handle.truncate()
         for pdb_path in pdb_path_list:
             write_pdb_index_entry_from_file_path(pdb_path, old_index_file_handle)
     except:
@@ -1342,6 +1343,7 @@ def write_index_file_from_set(index_file_full_path, pdb_id_set):
         errorFct(errMsg)
         exit(1)
     try:
+        index_file_handle.truncate()
         for pdb_id in pdb_id_set:
             index_line = str(pdb_id).lower()+"\n"
             index_file_handle.write(index_line)
@@ -1380,7 +1382,7 @@ def backup_fasta_file(fasta_file_full_path):
         cp_process.kill()
         out, err = cp_process.communicate()
         shell_err_fct(err)
-        raise Exception
+        raise
     
     return dest_backup
 
@@ -1398,10 +1400,6 @@ def remove_fasta_backup(dest_backup, fasta_file_full_path):
 # void (str,str)        
 def restore_fasta_file_from_backup(dest_backup, fasta_file_full_path):
     
-    backup_file_path, backup_file_name = os.path.split(dest_backup)
-    dest_backup_2 = os.path.join(backup_file_path, os.path.splitext(backup_file_name)[0]+"_2.fasta") 
-    backup_fasta_file(dest_backup_2, dest_backup)
-
     mv_process = subprocess.Popen(['mv', dest_backup, fasta_file_full_path], stdout = subprocess.PIPE, stderr = subprocess.PIPE)
     try:
         out, err = mv_process.communicate()
@@ -1409,9 +1407,7 @@ def restore_fasta_file_from_backup(dest_backup, fasta_file_full_path):
         mv_process.kill()
         out, err = mv_process.communicate()
         shell_err_fct(err)
-        raise Exception
-    
-    os.remove(dest_backup_2)
+        raise
 
 #function for removal of specific entries in fasta file
 #unfortunately theres no perfect way to do it at the moment
@@ -1470,7 +1466,7 @@ def update_chains_iterator(iterator, pdb_file_path):
                 
 #extracts chain numbers, pdbid and sequences from pdb file and writes them to FASTA file
 #also writes biopython output to dedicated log file
-#consider parallelization/optimization, very slow
+#consider parallelization of pdb file parser, it's very slow like this
 #i suspect the biopython pdb parser     
 #void (str, file_handle, file_handle)
 def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle):
@@ -1731,12 +1727,70 @@ def get_pdb_path_list_by_index_file(index_file_full_path, loc_pdb_db_path):
 #and deletes everything from there to end of file
 # void (str, str)
 def rm_most_recent_pdb_from_fasta_file(fasta_file_full_path, most_recent_pdb_path):
-    pass
+    
+    #get PDB ID from file path
+    pdb_id_match = re.search(r'(.+\/)*pdb(....)\..*', most_recent_pdb_path)
+    pdb_id = pdb_id_match.group(2).upper()
+
+    try:
+        fasta_file_handle = open(fasta_file_full_path, 'rb+')
+    except:
+        errMsg = "Failed to open %s." % fasta_file_full_path
+        errorFct(errMsg)
+        raise
+    try:
+        offset = 0
+        first_occurence_offset = 0
+        while True:
+            fasta_file_handle.seek(offset, 2)
+            char_byte = fasta_file_handle.read(1)
+            #every char in UTF-8 that is only decoded by exactly one byte has a 0 as a first bit
+            if int.from_bytes(char_byte, byteorder='little') & (1 << 7):
+                errMsg = "FASTA file contains char that is not encoded by exactly 1 byte in UTF-8. Exiting."
+                errorFct(errMsg)
+                raise UnicodeDecodeError('utf-8',char_byte,offset,offset+1,'Char is encoded using more than 1 byte.')
+            if char_byte == ">".encode('utf-8'):
+                header = fasta_file_handle.read(4)
+                if header == str(pdb_id).encode('utf-8'):
+                    first_occurence_offset = offset
+                    offset -= 1
+                    continue
+                else:
+                    break
+            else:
+                offset -= 1
+                continue
+        #sets the file handle end of line before first occurence of matching pdb header
+        fasta_file_handle.seek(first_occurence_offset-1, 2)
+        #deletes everything from there to eof
+        fasta_file_handle.truncate()
+            
+    except:
+        errMsg = "Error during repairing of %s." % fasta_file_full_path
+        close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
+        errorFct(errMsg)
+        raise
+        
+    close_file_safely(fasta_file_handle, fasta_file_full_path, "")
 
 #reads a fasta file and returns all pdb ids (not chain names) in the headers
 # (str) -> set() 
 def read_fasta_pdb_ids(fasta_file_full_path):
-    pass
+    
+    try:
+        fasta_file_handle = open(fasta_file_full_path, 'r')
+    except:
+        errMsg = "Failed to open %s." % fasta_file_full_path
+        errorFct(errMsg)
+        raise
+
+    pdb_id_set = set()
+
+    for line in fasta_file_handle:
+        if line.startswith(">"):
+            pdb_id_set.add(line[1:5])
+    
+    return pdb_id_set     
 
 #creates fasta file from index file
 #void (str, str, str, str, int)
@@ -1750,14 +1804,13 @@ def create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, ind
     if verbosity>0:
         print("Writing Fasta file...")
     try:
-        #check integrity of/rewrite last entry
         fasta_file_handle = open(fasta_file_full_path, 'w')
     except:
         errMsg = "File %s could not be opened for writing." % fasta_file_full_path
         errorFct(errMsg)
         exit(1)
     try:
-        biopython_log_file_handle = open(biopython_log_full_path, 'w')
+        biopython_log_file_handle = open(biopython_log_full_path, 'a+')
     except:
         errMsg = "File %s could not be opened for writing." % biopython_log_full_path
         errorFct(errMsg)
@@ -1772,9 +1825,10 @@ def create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, ind
             counter += 1
     except:
         print(traceback.format_exc())
-        close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg)
+        errMsg1 = "Error while writing to %s." % fasta_file_full_path
+        close_file_safely(biopython_log_file_handle, biopython_log_full_path, errMsg1)
         #if an exception is thrown during writing of fasta file this will flush fasta file to memory
-        close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg)
+        close_file_safely(fasta_file_handle, fasta_file_full_path, errMsg1)
         try:
             dest_backup = backup_fasta_file(fasta_file_full_path)
         except:
@@ -1801,7 +1855,6 @@ def create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, ind
         else:
             remove_fasta_backup(dest_backup, fasta_file_full_path)
         finally:
-            errMsg1 = "Error while writing to %s." % fasta_file_full_path
             errorFct(errMsg1)
             exit(1)
           
@@ -1875,6 +1928,9 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
     if verbosity>0:
         counter = 1
         for line in process.stdout:
+            if counter>1000:
+                process.kill()
+                break
             line = line.rstrip()+"                   "
             print(line, end="\r")
             counter += 1
@@ -1950,7 +2006,7 @@ def clean_fasta_file(aln_file_full_path, out_path, valid_symbols, verbosity):
         errorFct(errMsg)
         exit(1)
 
-#clean all fasta files in given dir. writes new ones to out_path with the same name
+#clean sequences of all fasta files in given dir. writes new ones to out_path with the same name
 # void (str,str,[str,str,...],int)        
 def clean_fasta_files_in_dir(path_to_fasta_files, out_path, valid_symbols, verbosity):
     
@@ -1982,6 +2038,8 @@ def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query
         errorFct(errMsg)
         exit(1)
 
+#starts a diamond blastp query, but with an entire dir of fasta files, writes them with the same file name to out_path
+#void (str,str,str,str,int)        
 def batch_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_dir_path, out_path, verbosity):
     
     create_dir_safely(out_path)
