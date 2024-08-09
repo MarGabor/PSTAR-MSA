@@ -1964,7 +1964,7 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
 
 #removes gaps and other symbols not in valid_symbols and writes new fasta file with cleaned sequences
 # void (str,str,[str,str,...], int)    
-def clean_fasta_file(aln_file_full_path, out_path, valid_symbols, verbosity):
+def clean_fasta_file(aln_file_full_path, out_file_full_path, valid_symbols, verbosity):
     
     if verbosity>0:
         msg = "Cleaning %s..." % os.path.split(aln_file_full_path)[1]
@@ -1997,8 +1997,6 @@ def clean_fasta_file(aln_file_full_path, out_path, valid_symbols, verbosity):
         record.seq = Seq.Seq(cleaned_seq)
         counter += 1
 
-    aln_file_name = os.path.split(aln_file_full_path)[1]
-    out_file_full_path = os.path.join(out_path, aln_file_name)
     try:
         SeqIO.write(records, out_file_full_path, "fasta")
     except:
@@ -2012,7 +2010,8 @@ def clean_fasta_files_in_dir(path_to_fasta_files, out_path, valid_symbols, verbo
     
     for fasta_file_name in os.listdir(path_to_fasta_files):
         fasta_file_full_path = os.path.join(path_to_fasta_files, fasta_file_name)
-        clean_fasta_file(fasta_file_full_path, out_path, valid_symbols, verbosity)
+        out_file_full_path = os.path.join(out_path, os.path.split(fasta_file_full_path)[1])
+        clean_fasta_file(fasta_file_full_path, out_file_full_path, valid_symbols, verbosity)
 
 # ./diamond blastp -d <diamond_db_file_full_path> -q <query_fasta_file_full_path> -o <out_path> --iterate
 #launches a subprocess for a diamond blastp query without restriction of sequence identity
@@ -2050,6 +2049,67 @@ def batch_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_f
             continue
         out_file_full_path = os.path.join(out_path, query_fasta_file_name)
         diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path, verbosity)
+
+def get_exact_matches():
+    pass
+
+def cp_PDB_files_to_job_dir():
+    pass
+
+#takes alignment and calculates SPS score from pairwise structural alignments
+#        
+def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamond_db_file_full_path, out_path,
+                                dali_path, job_title, valid_symbols, verbosity):
+    
+    job_out_path = os.path.join(out_path, job_title)
+    create_dir_safely(job_out_path)
+    
+    job_data_out_path = os.path.join(job_out_path, "DATA")
+    create_dir_safely(job_data_out_path)
+    
+    aln_file_name = os.path.splitext(os.path.split(aln_file_full_path)[1])[0]
+    TSV_out_path = os.path.join(job_data_out_path, "TSV")
+    TSV_file_full_path = os.path.join(TSV_out_path, aln_file_name+".tsv")
+    create_dir_safely(TSV_out_path)
+
+    clean_fasta_out_path = os.path.join(job_data_out_path, "CLEAN_ALN")
+    create_dir_safely(clean_fasta_out_path)
+    clean_fasta_full_path = os.path.join(clean_fasta_out_path, aln_file_name)
+    clean_fasta_file(aln_file_full_path, clean_fasta_full_path, valid_symbols, verbosity)
+
+    diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, clean_fasta_full_path, TSV_file_full_path, verbosity)
+    #exact_match_dict has chains as keys, i.e. XXXX:X
+    #be extra careful and watch out for leading spaces and wrong or missing \t separations
+    exact_match_dict = get_exact_matches()
+    
+    pdb_out_path = os.path.join(job_data_out_path, "PDB_lib")
+    create_dir_safely(pdb_out_path)
+
+    cp_PDB_files_to_job_dir(exact_match_dict.keys(), pdb_out_path)
+
+    dat_out_path = os.path.join(job_data_out_path, "DAT_lib")
+    create_dir_safely(dat_out_path)
+
+    DALI_import_PDBs(dali_path, pdb_out_path, dat_out_path, verbosity)
+    
+    #rewrite function to align individual chains instead of whole PDBs, if possible offline (chains to align found in exact_match_dict)
+    #if not possible get only those dicts from job_list_of_dict_lists that match the chains (unnecessary DALI computing tho)
+    DALI_all_vs_all_query(dali_path, pdb_out_path, out_path, dat_out_path, job_title, verbosity)
+    
+    job_list_of_dict_lists = import_aln_files_in_job(job_title, out_path)
+    
+    SPS_dict_list, job_SPS = calc_SPS_scores_in_job(job_list_of_dict_lists, internal_id_pdb_name_dict, internal_id_raw_seq_dict)
+    
+    print(SPS_dict_list)
+    print(job_SPS)
+
+    SPS_out_path = os.path.join(job_data_out_path, "SPS")
+    create_dir_safely(SPS_out_path)
+    SPS_csv_full_out_path = os.path.join(SPS_out_path, job_title+"_SPS.csv")
+    #write SPS_dict_list to csv
+    write_list_of_dicts_to_csv(SPS_dict_list, SPS_csv_full_out_path)
+    
+    return job_SPS, SPS_dict_list
         
 def main():
 
