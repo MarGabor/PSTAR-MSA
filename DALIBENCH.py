@@ -15,7 +15,7 @@ import random
 import requests
 import subprocess
 import gzip
-import warnings
+import shutil
 #import svg_stack
 from itertools import tee
 import lxml
@@ -975,14 +975,16 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
 #http://ekhidna2.biocenter.helsinki.fi/dali/README.v5.html
 #creates subprocess to run dali.pl of DaliLite.v5. Uses "pairwise" functionality of DALI for better control over what alignments are being made.
 #writes stderr and stdout to files for each job and alignment. improved output dir structure, since DaliLite.v5 doesn't seem to support specifying an output dir
-#dir structure: <jobtitle>/ALN/<queryPDBname_sbjctPDBname>/        
-#void (str,str,str,str,str,int)
-def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, verbosity):
+#dir structure: <jobtitle>/ALN/<queryPDBname_sbjctPDBname>/
+#if chain_list is passed, only the specified chains of the PDBs will be used in alignment       
+#void (str,str,str,str,str,int,[str,str,...])
+def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, verbosity, chain_list=[]):
 
     #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
     #and generates only empty alignments for job titles exactly 12 chars long
     #this is a DALI problem and can't be changed at the moment
     #i could, however probably find a workaround, but this isn't really worth the effort right now
+    #maybe it's also just because job_title needs to be passed with "" around it.
     if len(job_title) > 11:
         errMsg = "Job title is longer than 11 characters. Please enter a shorter job title."
         errorFct(errMsg)
@@ -1005,14 +1007,19 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
     
     if not os.path.isabs(DAT_path):
         DAT_path = os.path.join(wd, DAT_path)
-
-    pdb_name_list = get_pdb_name_list(pdb_path)
+    
+    chains_used = False
+    #if optional argument chain_list is passed, use that instead    
+    if len(chain_list) != 0:
+        pdb_name_list = chain_list
+        chains_used = True
+    else:
+        pdb_name_list = get_pdb_name_list(pdb_path)
         
     
     #creating job dir
     job_path = os.path.join(out_path, job_title)
     create_dir_safely(job_path)
-    
     
     #Dali's all-against-all feature behaves in unexpected ways. 
     #That's why manual looping through the PDB list for generation of pairwise alignments.
@@ -1050,16 +1057,31 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
             sub_job_path = os.path.join(aln_path, sub_job)    
             create_dir_safely(sub_job_path)
                           
-            pdb_full_path_query = os.path.join(pdb_path, pdb_name_list[i]+".pdb")
-            pdb_full_path_sbjct = os.path.join(pdb_path, pdb_name_list[j]+".pdb")
             err_file_path = os.path.join(sub_job_path, "err_log")
             out_file_path = os.path.join(sub_job_path, "output_log")
-            #/.../<dali_dir>/dali.pl --pdbfile1 <path> --pdbid1 <id> --pdbfile2 <path> --pdbid2 <id> --dat1 <path> --dat2 <path> --title <string> \
-            # --outfmt "summary,alignments,equivalences,transrot" --clean
-            shell_input = [dali_pl_full_path, '--pdbfile1', pdb_full_path_query, '--pdbid1', pdb_name_list[i], 
-                           '--pdbfile2', pdb_full_path_sbjct, '--pdbid2', pdb_name_list[j], '--dat1', DAT_path,
-                           '--dat2', DAT_path, '--title', job_title, '--outfmt', "summary,alignments,equivalences,transrot",
+            if chains_used:
+                try:
+                    chain_id1 = str(pdb_name_list[i][0:4])+str(pdb_name_list[i][5])
+                    chain_id2 = str(pdb_name_list[j][0:4])+str(pdb_name_list[j][5])
+                except IndexError:
+                    errMsg = "Chain identifier %s or %s is shorter than 6 chars." % (pdb_name_list[i], pdb_name_list[j])
+                    errorFct(errMsg)
+                    raise
+                #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
+                # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+                shell_input = [dali_pl_full_path, '--cd1', chain_id1, '--cd2', chain_id2, 
+                           '--dat1', DAT_path, '--dat2', DAT_path, '--title', job_title,
+                           '--outfmt', "summary,alignments,equivalences,transrot",
                            '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
+            else:
+                #/.../<dali_dir>/dali.pl --pdbfile1 <path> --pdbid1 <id> --pdbfile2 <path> --pdbid2 <id> --dat1 <path> --dat2 <path> --title <string> \
+                # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+                pdb_full_path_query = os.path.join(pdb_path, pdb_name_list[i]+".pdb")
+                pdb_full_path_sbjct = os.path.join(pdb_path, pdb_name_list[j]+".pdb")    
+                shell_input = [dali_pl_full_path, '--pdbfile1', pdb_full_path_query, '--pdbid1', pdb_name_list[i], 
+                               '--pdbfile2', pdb_full_path_sbjct, '--pdbid2', pdb_name_list[j], '--dat1', DAT_path,
+                               '--dat2', DAT_path, '--title', job_title, '--outfmt', "summary,alignments,equivalences,transrot",
+                               '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
 
             #navigate to output dir in loop
             os.chdir(sub_job_path)
@@ -1086,7 +1108,7 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
                 #timeout may need to be longer (or shorter), depending on size of alignments
                 #for the calculation of pairwise alignments of up to a few chains
                 #500 seconds seems to be reasonable though
-                out, err = process.communicate(timeout=500)
+                out, err = process.communicate()
                 #if out is not None and verbosity>1:
                     #print(out)
             except subprocess.TimeoutExpired:
@@ -2073,23 +2095,78 @@ def check_TSV_integrity(TSV_file_full_path):
             
     return broken_line_list
 
+#this function defines what an exact match is
+#currently it's simply 0 mismatches
+# (str) -> (pandas.DataFrame)
+def filter_exact_matches(TSV_file_full_path):
+    
+    df = pandas.read_csv(TSV_file_full_path, sep='\t')
+    new_df = pandas.DataFrame(columns=['qseqid','sseqid','pident','length','mismatch','gapopen','qstart','qend','sstart','send','evalue','bitscore'])
+    row_list = []
+    #remove next line, once trailing delimiters have been removed
+    #df = df.drop(['Unnamed: 16'], axis=1)
+    df['is_exact_match'] = 0
+    ex_match_col_num = df.columns.get_loc('is_exact_match')
+    mismatch_col_num = df.columns.get_loc('mismatch')
+    #split df into one dataframe per fasta_header
+    df_list = [x for _,x in df.groupby('qseqid')]
+    for split_df in df_list:
+        #next lines needs to be changed, if definition of exact match requires it
+        split_df = split_df.sort_values(by=['pident'], ascending=False)
+        if int(split_df.iloc[0,mismatch_col_num]) == 0:
+            split_df.iloc[0,ex_match_col_num] = 100
+        row_list.append(split_df.iloc[[0]].copy())
+    new_df = pandas.concat(row_list, ignore_index=True)
+    
+    return new_df
+
 #definition of exact match needs to be applied here
-#
+# (str) -> { {},{},... },{ {},{},... }
 def get_exact_matches(TSV_file_full_path):
     
     #optional check, if I trust diamond to generate good data
     broken_line_list = check_TSV_integrity(TSV_file_full_path)
+    print(broken_line_list)
     #if len(broken_line_list) != 0:
      #   attempt_TSV_repair()
-    df = pandas.read_csv(TSV_file_full_path, sep='\t')
     #apply filter according to exact match definition to get at most one chain id for each query header
-
-def cp_PDB_files_to_job_dir():
-    pass
+    exact_matches_df = filter_exact_matches(TSV_file_full_path)
+    #for each row in dataframe write dict and append it to list
+    exact_match_dict = {}
+    #iterating over dataframe rows is slow, look for better options
+    for index, row in exact_matches_df.iterrows():
+        row_dict = {}
+        for col_name in exact_matches_df.columns:
+            row_dict[col_name] = row[col_name]
+        exact_match_dict[row["sseqid"]] = row_dict.copy()
+        
+    return exact_match_dict
+  
+#copies PDB files from local PDB database to <job_dir>/DATA/PDB_lib
+#mainly implemented for consistency, no real advantage
+# void ([str,str,...],str,str)
+def cp_PDB_files_to_job_dir(chain_list, pdb_db_path, pdb_out_path):
+    
+    for chain in chain_list:
+        try:
+            pdb_id = chain[0:4]
+        except IndexError:
+            errMsg = "Chain name has less than 4 chars."
+            errorFct(errMsg)
+            raise
+        pdb_file_name = "pdb"+str(pdb_id)+".ent.gz"
+        src_pdb_full_path = os.path.join(pdb_db_path, pdb_id[1:3], pdb_file_name)
+        dest_pdb_full_path = os.path.join(pdb_out_path, pdb_file_name)
+        try:
+            shutil.copy(src_pdb_full_path, dest_pdb_full_path)
+        except:
+            errMsg = "Error while copying file %s to %s." % (src_pdb_full_path, dest_pdb_full_path)
+            errorFct(errMsg)
+            raise
 
 #takes alignment and calculates SPS score from pairwise structural alignments
 #        
-def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamond_db_file_full_path, out_path,
+def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamond_db_file_full_path, pdb_db_path, out_path,
                                 dali_path, job_title, valid_symbols, verbosity):
     
     job_out_path = os.path.join(out_path, job_title)
@@ -2125,7 +2202,7 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     
     #rewrite function to align individual chains instead of whole PDBs, if possible offline (chains to align found in exact_match_dict)
     #if not possible get only those dicts from job_list_of_dict_lists that match the chains (unnecessary DALI computing tho)
-    DALI_all_vs_all_query(dali_path, pdb_out_path, out_path, dat_out_path, job_title, verbosity)
+    DALI_all_vs_all_query(dali_path, pdb_out_path, out_path, dat_out_path, job_title, verbosity, chain_list=exact_match_dict.keys())
     
     job_list_of_dict_lists = import_aln_files_in_job(job_title, out_path)
     
