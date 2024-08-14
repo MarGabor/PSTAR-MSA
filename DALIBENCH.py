@@ -244,9 +244,8 @@ def import_seq_list_from_fasta_aln(aln_file_path):
     return seq_list
 
 #reading file names in specified path and returning list of full paths
-#function needs rework with os.path, and rename to get_file_paths_in_path
 #(str) -> [str,str,...]
-def get_file_names_in_path(path):
+def get_file_paths_in_dir(path):
 
     path_file_list = []
  
@@ -254,7 +253,6 @@ def get_file_names_in_path(path):
         full_path = os.path.join(path, element)
         if os.path.isfile(full_path):
             path_file_list.append(full_path)
-
 
     return path_file_list
 
@@ -468,7 +466,7 @@ def write_job_SPS_CSV(ref_set_list, aln_set_list, job_SPS):
 #calculates SP scores for job and returns list of dictionaries containing information about each alignment
 #highly specific signature
 #([[{},{},...],[{},{},...],...], {}, {}) -> ([{},{},...], float)
-def calc_SPS_scores_in_job(job_list_of_dict_lists, internal_id_pdb_name_dict, internal_id_raw_seq_dict):
+def calc_job_SPS(job_list_of_dict_lists, internal_id_pdb_name_dict, internal_id_raw_seq_dict):
     current_max_ref_SP_set = set()
     save_dict = {}
     SPS_dict_list = []
@@ -554,7 +552,8 @@ def calc_SPS_scores_in_job(job_list_of_dict_lists, internal_id_pdb_name_dict, in
         
     return SPS_dict_list, job_SPS
 
-#import function for DALI outputs. one pass, line per line. might need rework, because it's hard to read and looks ugly. hopefully it's fastish, at least.
+#import function for DALI outputs. one pass, line per line. might need rework,
+#because it's hard to read and looks ugly. hopefully it's fast(-ish), at least.
 #(str) -> ([{},{},...])
 def import_DALI_aln(aln_file_path):
 
@@ -601,12 +600,14 @@ def import_DALI_aln(aln_file_path):
             header_match = None
             continue
         
+        
+        #we're not using structural equivalences or transrot at the moment,
+        #thus we can end parsing once we reached this point
         if aln_counter > 0 and (line.startswith("# S") or line.startswith("# T")):
             overall_query = ''.join(query_list)
             overall_sbjct = ''.join(sbjct_list)
             aln_dict_list[aln_counter-1]['DALI_query_seq'] = overall_query
             aln_dict_list[aln_counter-1]['DALI_sbjct_seq'] = overall_sbjct
-            #we're not using structural equivalences at the moment
             close_file_safely(alignment, aln_file_path, "")
             return aln_dict_list
 
@@ -659,8 +660,17 @@ def import_DALI_aln(aln_file_path):
         try:
             head_tail = os.path.split(aln_file_path)
             head_tail2 = os.path.split(head_tail[0])
-            query_name = head_tail2[1][0:4]
-            sbjct_name = head_tail2[1][5:9]
+            #if chain identifiers are used for naming of dirs
+            if len(head_tail2[1]) == 11:
+                query_name = head_tail2[1][0:5]
+                sbjct_name = head_tail2[1][6:11]
+            elif len(head_tail2[1]) == 9:
+                query_name = head_tail2[1][0:4]
+                sbjct_name = head_tail2[1][5:9]
+            else:
+                errMsg = "Sub job dir name %s is not of expected format." % head_tail[0]
+                errorFct(errMsg)
+                raise NameError
         except:
             query_name = "NA"
             sbjct_name = "NA"
@@ -893,21 +903,28 @@ def shell_err_fct(errMsg):
 #str -> [str,str,...]        
 def get_pdb_name_list(pdb_path):
     
-    pdb_path_list = get_file_names_in_path(pdb_path)
+    ent_gz = False
+    pdb_path_list = get_file_paths_in_dir(pdb_path)
     pdb_name_list = []
     for pdb_path in pdb_path_list:
-        head, tail = os.path.split(pdb_path)
-        tail = os.path.splitext(tail)[0]
-        pdb_name_list.append(tail)
+        head, file_name = os.path.split(pdb_path)
+        #this loop works for .pdb and for .ent.gz formats
+        while file_name.contains("."):
+            file_name = os.path.splitext(file_name)[0]
+        #standard rsync pdb database has file names of format "pdbxxxx.ent.gz"
+        if len(file_name) == 7:
+            file_name = file_name[3:8]
+            ent_gz = True
+        pdb_name_list.append(file_name)
         
-    return pdb_name_list
+    return pdb_name_list, ent_gz
 
 #http://ekhidna2.biocenter.helsinki.fi/dali/README.v5.html
 #creates subprocess to run import.pl of DaliLite.v5 to import PDBs in a given dir to DAT file format used by DALI
 #void (str, str, str, int)
 def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
 
-    pdb_name_list = get_pdb_name_list(pdb_path)
+    pdb_name_list, ent_gz = get_pdb_name_list(pdb_path)
         
     import_pl_full_path = os.path.join(pl_bin_path, "import.pl")
 
@@ -920,7 +937,10 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
     for pdb_name in pdb_name_list:
         
         shell_input = []
-        pdb_full_path = os.path.join(pdb_path, pdb_name+".pdb")
+        if ent_gz:
+            pdb_full_path = os.path.join(pdb_path, pdb_name+".ent.gz")
+        else:
+            pdb_full_path = os.path.join(pdb_path, pdb_name+".pdb")
         err_file_path = os.path.join(DAT_path, "err_logs/", pdb_name)
         out_file_path = os.path.join(DAT_path, "out_logs/", pdb_name)
         
@@ -942,6 +962,8 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
             exit(1)
 
         #subprocess for importing PDBs
+        #shell input already sends stdout to out_file_path and stderr to err_file_path
+        #probably just pipe output in the next line    
         process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
         
         try:
@@ -965,10 +987,10 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
         close_file_safely(err_file, err_file_path, "")
         close_file_safely(out_file, out_file_path, "")
     
-    #rewrite a sufficient check whether import has been successful
+    #rewrite a sufficient check of whether import has been successful
     for file_name in os.listdir(DAT_path):
         if file_name.endswith(".d"):
-            errMsg = "Failed to convert PDBs to DAT format. Exiting."
+            errMsg = "Failed to convert PDB %s to DAT format. Exiting." % file_name
             errorFct(errMsg)
             exit(1)
 
@@ -1011,7 +1033,7 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
     chains_used = False
     #if optional argument chain_list is passed, use that instead    
     if len(chain_list) != 0:
-        pdb_name_list = chain_list
+        pdb_name_list = list(chain_list).copy()
         chains_used = True
     else:
         pdb_name_list = get_pdb_name_list(pdb_path)
@@ -1040,9 +1062,17 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
         k = i+1
         for j in range(k, n):
             
+            if chains_used:
+                try:
+                    chain_id1 = str(pdb_name_list[i][0:4])+str(pdb_name_list[i][5])
+                    chain_id2 = str(pdb_name_list[j][0:4])+str(pdb_name_list[j][5])
+                except IndexError:
+                    errMsg = "Chain identifier %s or %s is shorter than 6 chars." % (pdb_name_list[i], pdb_name_list[j])
+                    errorFct(errMsg)
+                    raise
+
             shell_input = []
-            sub_job = "%s_%s" % (pdb_name_list[i], pdb_name_list[j])
-            
+            sub_job = "%s_%s" % (chain_id1, chain_id2)
             
             counter += 1 
             if verbosity>0:
@@ -1060,13 +1090,6 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
             err_file_path = os.path.join(sub_job_path, "err_log")
             out_file_path = os.path.join(sub_job_path, "output_log")
             if chains_used:
-                try:
-                    chain_id1 = str(pdb_name_list[i][0:4])+str(pdb_name_list[i][5])
-                    chain_id2 = str(pdb_name_list[j][0:4])+str(pdb_name_list[j][5])
-                except IndexError:
-                    errMsg = "Chain identifier %s or %s is shorter than 6 chars." % (pdb_name_list[i], pdb_name_list[j])
-                    errorFct(errMsg)
-                    raise
                 #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
                 # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
                 shell_input = [dali_pl_full_path, '--cd1', chain_id1, '--cd2', chain_id2, 
@@ -1076,6 +1099,7 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
             else:
                 #/.../<dali_dir>/dali.pl --pdbfile1 <path> --pdbid1 <id> --pdbfile2 <path> --pdbid2 <id> --dat1 <path> --dat2 <path> --title <string> \
                 # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+                #technically --dat argument makes no sense here
                 pdb_full_path_query = os.path.join(pdb_path, pdb_name_list[i]+".pdb")
                 pdb_full_path_sbjct = os.path.join(pdb_path, pdb_name_list[j]+".pdb")    
                 shell_input = [dali_pl_full_path, '--pdbfile1', pdb_full_path_query, '--pdbid1', pdb_name_list[i], 
@@ -1163,7 +1187,7 @@ def calc_SPS_from_aln_sample(output_path, aln_file_path, job_title, dali_path, s
     
     job_list_of_dict_lists = import_aln_files_in_job(job_title, output_path)
     
-    SPS_dict_list, job_SPS = calc_SPS_scores_in_job(job_list_of_dict_lists, internal_id_pdb_name_dict, internal_id_raw_seq_dict)
+    SPS_dict_list, job_SPS = calc_job_SPS(job_list_of_dict_lists, internal_id_pdb_name_dict, internal_id_raw_seq_dict)
     
     print(SPS_dict_list)
     print(job_SPS)
@@ -1202,7 +1226,7 @@ def evaluate_rcsb_search_data(csv_path, output_path, sort_by):
     
     ex_match_counter = 0
     total_counter = 0
-    csv_file_list = get_file_names_in_path(csv_path)
+    csv_file_list = get_file_paths_in_dir(csv_path)
     
     for csv_file_path in csv_file_list:
         df = pandas.read_csv(csv_file_path)
@@ -1243,7 +1267,7 @@ def evaluate_rcsb_search_data(csv_path, output_path, sort_by):
 # void (str,str,str,int)    
 def evaluate_diamond_search_data(tsv_path, output_path, sort_by, verbosity):
     
-    tsv_file_list = get_file_names_in_path(tsv_path)
+    tsv_file_list = get_file_paths_in_dir(tsv_path)
     exact_match_dict = {}
     file_counter = 1
     no_of_files = len(tsv_file_list)
@@ -2125,8 +2149,8 @@ def filter_exact_matches(TSV_file_full_path):
 def get_exact_matches(TSV_file_full_path):
     
     #optional check, if I trust diamond to generate good data
-    broken_line_list = check_TSV_integrity(TSV_file_full_path)
-    print(broken_line_list)
+    #broken_line_list = check_TSV_integrity(TSV_file_full_path)
+    #print(broken_line_list)
     #if len(broken_line_list) != 0:
      #   attempt_TSV_repair()
     #apply filter according to exact match definition to get at most one chain id for each query header
@@ -2149,7 +2173,7 @@ def cp_PDB_files_to_job_dir(chain_list, pdb_db_path, pdb_out_path):
     
     for chain in chain_list:
         try:
-            pdb_id = chain[0:4]
+            pdb_id = chain[0:4].lower()
         except IndexError:
             errMsg = "Chain name has less than 4 chars."
             errorFct(errMsg)
@@ -2163,6 +2187,37 @@ def cp_PDB_files_to_job_dir(chain_list, pdb_db_path, pdb_out_path):
             errMsg = "Error while copying file %s to %s." % (src_pdb_full_path, dest_pdb_full_path)
             errorFct(errMsg)
             raise
+
+#assigns numbers (temporary ids) to headers and sequences in alignment file, return dict
+#this function is very similar to import_seq_list_from_fasta_aln(), but i dont want to change the latter at the moment
+# (str) -> { (str,int),(str,int),... }        
+def enumerate_aln_headers(aln_file_full_path):
+    
+    aln_dict = {}
+    
+    with open(aln_file_full_path, 'r') as aln_file_handle:
+        tmp_id = 0
+        try:
+            alignment = AlignIO.read(aln_file_handle, "fasta")
+        except:
+            errMsg = "Failed to read alignment file %s." % aln_file_handle
+            errorFct(errMsg)
+            raise
+        for record in alignment:
+            aln_dict[record.id] = (str(record.seq), tmp_id)
+            tmp_id += 1
+            
+    return aln_dict
+                
+def diamond_calc_job_SPS(job_list_of_dict_lists, exact_match_dict, aln_dict):
+    
+    #each list in job_list_of_dict_lists represents a sub job, i.e. a dir of format xxxxX_xxxxX
+    #for each sub job in job
+    for sub_job_dict_list in job_list_of_dict_lists:
+        #for each alignment in sub job
+        for dali_aln in sub_job_dict_list:
+            pass
+
 
 #takes alignment and calculates SPS score from pairwise structural alignments
 #        
@@ -2185,28 +2240,34 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     clean_fasta_full_path = os.path.join(clean_fasta_out_path, aln_file_name)
     clean_fasta_file(aln_file_full_path, clean_fasta_full_path, valid_symbols, verbosity)
 
+    #it's a bit of a waste to read the alignment file yet again and not import this information while the
+    #file is read the first time, but it's definitely clearer this way
+    #aln_dict has original fasta headers as keys, check for duplicate keys
+    aln_dict = enumerate_aln_headers(aln_file_full_path)
+
     diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, clean_fasta_full_path, TSV_file_full_path, verbosity)
     #exact_match_dict has chains as keys, i.e. XXXX:X
     #be extra careful and watch out for leading spaces and wrong or missing \t separations
+    #check for duplicate keys
     exact_match_dict = get_exact_matches(TSV_file_full_path)
     
     pdb_out_path = os.path.join(job_data_out_path, "PDB_lib")
     create_dir_safely(pdb_out_path)
 
-    cp_PDB_files_to_job_dir(exact_match_dict.keys(), pdb_out_path)
+    cp_PDB_files_to_job_dir(exact_match_dict.keys(), pdb_db_path, pdb_out_path)
 
     dat_out_path = os.path.join(job_data_out_path, "DAT_lib")
     create_dir_safely(dat_out_path)
 
     DALI_import_PDBs(dali_path, pdb_out_path, dat_out_path, verbosity)
     
-    #rewrite function to align individual chains instead of whole PDBs, if possible offline (chains to align found in exact_match_dict)
-    #if not possible get only those dicts from job_list_of_dict_lists that match the chains (unnecessary DALI computing tho)
+    #use xxxxX format for all dali related things, instead of xxxx:X
     DALI_all_vs_all_query(dali_path, pdb_out_path, out_path, dat_out_path, job_title, verbosity, chain_list=exact_match_dict.keys())
     
+    #if possible rewrite these next two functions to make sense with the current data structure
     job_list_of_dict_lists = import_aln_files_in_job(job_title, out_path)
     
-    SPS_dict_list, job_SPS = calc_SPS_scores_in_job(job_list_of_dict_lists, internal_id_pdb_name_dict, internal_id_raw_seq_dict)
+    _ = diamond_calc_job_SPS(job_list_of_dict_lists, exact_match_dict, aln_dict)
     
     print(SPS_dict_list)
     print(job_SPS)
@@ -2277,7 +2338,9 @@ def main():
         sync_pdb_copy(args.diamondfile, args.locpdbdb, args.output, args.verbose)
 
     if args.doitall > 0:
-        calc_SPS_from_aln_sample(args.output, args.alignmentfile, args.title, args.dalidir, args.samplesize, valid_symbols, args.verbose)
+        #calc_SPS_from_aln_sample(args.output, args.alignmentfile, args.title, args.dalidir, args.samplesize, valid_symbols, args.verbose)
+        calc_aln_score_with_diamond(args.alignmentfile, args.diamondfile, args.diamonddbfile, args.locpdbdb, args.output,
+                                args.dalidir, args.title, valid_symbols, args.verbose)
 
     if args.datamode > 0:
         if args.alignmentfile is not None:
@@ -2288,7 +2351,7 @@ def main():
                 #append_svg_images(args.svgpath, args.output)
         #wrap in function    
         elif args.batchsearch is not None:
-            aln_file_list = get_file_names_in_path(args.batchsearch)
+            aln_file_list = get_file_paths_in_dir(args.batchsearch)
             for file_path in aln_file_list:
                 csv_path = os.path.join(args.output,os.path.split(file_path)[1]+".csv")
                 if os.path.exists(csv_path):
