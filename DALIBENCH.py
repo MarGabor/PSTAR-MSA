@@ -21,7 +21,7 @@ from itertools import tee
 import lxml
 import traceback
 import contextlib
-from rcsbsearchapi.search import SequenceQuery
+from rcsbsearchapi.search import Query, SequenceQuery
 from Bio import AlignIO
 from Bio import SeqIO
 from Bio import Seq
@@ -395,26 +395,17 @@ def calc_MSA_SP_set(sequence_ids, aligned_sequences):
         max_len = len(query)
     for i in range(0, max_len):
         try:
-            equiv_sbjct = True
-            equiv_query = True
-            #need to define a set of expected symbols or set of gap/unknown symbols
+            #define a set of expected symbols or set of gap/unknown symbols
+            sbjct_gap = False
+            query_gap = False
             if sbjct[i] == "-" or sbjct[i] == ".":
                 sbjct_gaps += 1
-                equiv_sbjct = False
+                sbjct_gap = True
             if query[i] == "-"  or sbjct[i] == ".":
                 query_gaps += 1
-                equiv_query = False
-            #if one of the sequences has a gap, it's a mismatch
-            if equiv_sbjct is False or equiv_query is False:
+                query_gap = True
+            if sbjct_gap or query_gap:
                 continue
-            #if sequences in MSA have differing residues, then it's a mismatch
-            if sbjct[i].upper() != query[i].upper():
-                continue
-            #is the following is an inefficient approach, when we know what symbols to expect?
-            #if sbjct[i] not in valid_symbols:
-            #   continue
-            #if query[i] not in valid_symbols:
-            #   continue
             MSA_ind_set.add(((sequence_ids[0],i-query_gaps),(sequence_ids[1],i-sbjct_gaps)))
         except IndexError:
             break
@@ -909,7 +900,7 @@ def get_pdb_name_list(pdb_path):
     for pdb_path in pdb_path_list:
         head, file_name = os.path.split(pdb_path)
         #this loop works for .pdb and for .ent.gz formats
-        while file_name.contains("."):
+        while "." in file_name:
             file_name = os.path.splitext(file_name)[0]
         #standard rsync pdb database has file names of format "pdbxxxx.ent.gz"
         if len(file_name) == 7:
@@ -938,14 +929,14 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
         
         shell_input = []
         if ent_gz:
-            pdb_full_path = os.path.join(pdb_path, pdb_name+".ent.gz")
+            pdb_full_path = os.path.join(pdb_path, "pdb"+pdb_name+".ent.gz")
         else:
             pdb_full_path = os.path.join(pdb_path, pdb_name+".pdb")
         err_file_path = os.path.join(DAT_path, "err_logs/", pdb_name)
         out_file_path = os.path.join(DAT_path, "out_logs/", pdb_name)
         
         #/.../<dali_dir>/import.pl --pdbfile <path> --pdbid <id> --dat <path> --verbose --clean
-        shell_input = [import_pl_full_path, '--pdbfile', pdb_full_path, '--pdbid', pdb_name, '--dat', DAT_path, '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
+        shell_input = [import_pl_full_path, '--pdbfile', pdb_full_path, '--pdbid', pdb_name.upper(), '--dat', DAT_path, '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
         
         #create file handles for stdout and stderr
         try:
@@ -2139,9 +2130,9 @@ def filter_exact_matches(TSV_file_full_path):
         split_df = split_df.sort_values(by=['pident'], ascending=False)
         if int(split_df.iloc[0,mismatch_col_num]) == 0:
             split_df.iloc[0,ex_match_col_num] = 100
-        row_list.append(split_df.iloc[[0]].copy())
+            row_list.append(split_df.iloc[[0]].copy())
     new_df = pandas.concat(row_list, ignore_index=True)
-    
+
     return new_df
 
 #definition of exact match needs to be applied here
@@ -2209,20 +2200,59 @@ def enumerate_aln_headers(aln_file_full_path):
             
     return aln_dict
                 
-def diamond_calc_job_SPS(job_list_of_dict_lists, exact_match_dict, aln_dict):
+def diamond_calc_job_SPS(job_list_of_dict_lists, exact_match_dict, aln_dict, job_title, verbosity):
+    
+    if verbosity>0:
+        msg = "Calculating SPS for job %s." % job_title
+        print(msg)
+
+    ref_DALI_set = set()
+    MSA_set = set()
     
     #each list in job_list_of_dict_lists represents a sub job, i.e. a dir of format xxxxX_xxxxX
     #for each sub job in job
     for sub_job_dict_list in job_list_of_dict_lists:
         #for each alignment in sub job
         for dali_aln in sub_job_dict_list:
-            pass
-
+            try:
+                query_chain_id = dali_aln["query"][0:4]+":"+dali_aln["query"][4]
+                sbjct_chain_id = dali_aln["sbjct"][0:4]+":"+dali_aln["sbjct"][4]
+            except IndexError:
+                errMsg = "Query or subject name in DALI alignment %s contain less than 5 characters."
+                errorFct(errMsg)
+                exit(1)
+            DALI_query_seq = dali_aln["DALI_query_seq"]
+            DALI_sbjct_seq = dali_aln["DALI_sbjct_seq"]
+            orig_query_header = exact_match_dict[query_chain_id]["qseqid"]
+            orig_sbjct_header = exact_match_dict[sbjct_chain_id]["qseqid"]
+            tmp_query_id = aln_dict[orig_query_header][1]
+            tmp_sbjct_id = aln_dict[orig_sbjct_header][1]
+            orig_query_seq = aln_dict[orig_query_header][0]
+            orig_sbjct_seq = aln_dict[orig_sbjct_header][0]
+            print(orig_query_header)
+            print(orig_query_seq)
+            print(orig_sbjct_header)
+            print(orig_sbjct_seq)
+            DALI_aln_index_set = calc_ref_SP_set((tmp_query_id, tmp_sbjct_id), (DALI_query_seq, DALI_sbjct_seq))
+            ref_DALI_set = ref_DALI_set.union(DALI_aln_index_set.copy())
+            orig_aln_index_set = calc_MSA_SP_set((tmp_query_id, tmp_sbjct_id), (orig_query_seq, orig_sbjct_seq))
+            MSA_set = MSA_set.union(orig_aln_index_set.copy())
+    print("DALI_set: ")
+    print(ref_DALI_set)
+    print("MSA_set: ")
+    print(MSA_set)
+    intersection_set = ref_DALI_set.intersection(MSA_set)
+    if len(ref_DALI_set) == 0:
+        job_SPS = 0
+    else:
+        job_SPS = len(intersection_set)/len(ref_DALI_set)
+    
+    return job_SPS
 
 #takes alignment and calculates SPS score from pairwise structural alignments
 #        
 def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamond_db_file_full_path, pdb_db_path, out_path,
-                                dali_path, job_title, valid_symbols, verbosity):
+                                dali_path, sample_size, job_title, valid_symbols, verbosity):
     
     job_out_path = os.path.join(out_path, job_title)
     create_dir_safely(job_out_path)
@@ -2251,6 +2281,23 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     #check for duplicate keys
     exact_match_dict = get_exact_matches(TSV_file_full_path)
     
+    #randomize key popping and write function
+    key_list = list(exact_match_dict.keys())
+    key_list_len = len(key_list)
+    no_to_remove = key_list_len - sample_size
+    if no_to_remove < 0:
+        no_to_remove = 0
+    i = 1
+    while i <= no_to_remove:
+        #generate random number between 0 and len(key_list)
+        random_int = random.randint(0, len(key_list)-1)
+        key = key_list[random_int]
+        try:
+            exact_match_dict.pop(key)
+        except KeyError:
+            continue
+        i += 1
+    
     pdb_out_path = os.path.join(job_data_out_path, "PDB_lib")
     create_dir_safely(pdb_out_path)
 
@@ -2266,19 +2313,10 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     
     #if possible rewrite these next two functions to make sense with the current data structure
     job_list_of_dict_lists = import_aln_files_in_job(job_title, out_path)
-    
-    _ = diamond_calc_job_SPS(job_list_of_dict_lists, exact_match_dict, aln_dict)
-    
-    print(SPS_dict_list)
-    print(job_SPS)
 
-    SPS_out_path = os.path.join(job_data_out_path, "SPS")
-    create_dir_safely(SPS_out_path)
-    SPS_csv_full_out_path = os.path.join(SPS_out_path, job_title+"_SPS.csv")
-    #write SPS_dict_list to csv
-    write_list_of_dicts_to_csv(SPS_dict_list, SPS_csv_full_out_path)
+    job_SPS = diamond_calc_job_SPS(job_list_of_dict_lists, exact_match_dict, aln_dict, job_title, verbosity)
     
-    return job_SPS, SPS_dict_list
+    print(job_SPS)
         
 def main():
 
@@ -2340,7 +2378,7 @@ def main():
     if args.doitall > 0:
         #calc_SPS_from_aln_sample(args.output, args.alignmentfile, args.title, args.dalidir, args.samplesize, valid_symbols, args.verbose)
         calc_aln_score_with_diamond(args.alignmentfile, args.diamondfile, args.diamonddbfile, args.locpdbdb, args.output,
-                                args.dalidir, args.title, valid_symbols, args.verbose)
+                                args.dalidir, args.samplesize, args.title, valid_symbols, args.verbose)
 
     if args.datamode > 0:
         if args.alignmentfile is not None:
