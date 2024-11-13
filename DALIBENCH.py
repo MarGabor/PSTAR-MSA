@@ -2381,14 +2381,11 @@ def extract_exact_query_matches(aln_file_path_list, out_path, valid_symbols):
         for aln in aln_list:
             cleaned_seq = clean_seq(aln[0], regex_str)
 
-
-
 #creates job dir from a list of alignments
 def create_job(aln_path_list, out_path, job_name):
     job_path = os.path.join(out_path, job_name)
     create_dir_safely(job_path)
     extract_exact_query_matches(aln_path_list, job_path)
-
 
 def main():
 
