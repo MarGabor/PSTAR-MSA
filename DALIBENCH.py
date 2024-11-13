@@ -149,13 +149,13 @@ def build_regex_for_seq_cleaning_blacklist(invalid_symbols):
     return regex_str
 
 #removing gaps and other symbols not in "valid_symbols" from given alignment sequence data
+#preserves case
 #(str, str) -> str
 def clean_seq(seq, valid_symbols):
 
     regex_str = build_regex_for_seq_cleaning_whitelist(valid_symbols)
 
     cleaned_seq = re.sub(regex_str,'',seq)
-    cleaned_seq = cleaned_seq.upper()
     
     return cleaned_seq
 
@@ -214,6 +214,7 @@ def search_pdb_for_sequences(seq, aln_file_path, identity_cutoff):
     return raw_response_list
 
 #extracting sequences and headers from alignment file in FASTA format
+# [sequence, header, number]
 #(str) -> [[str,str,int],[str,str,int],...]
 def import_seq_list_from_fasta_aln(aln_file_path):
 
@@ -734,6 +735,34 @@ def import_aln_files_in_job(job_title, out_path):
         job_list_of_dict_lists.append(import_aln_files_in_dir(aln_path))
         
     return job_list_of_dict_lists
+
+#build regex from list of valid symbols for clean_seq() function
+#([str,str,...]) -> str
+def build_regex_for_seq_cleaning_whitelist(valid_symbols):
+
+    regex_str_list = []
+    #all upper case alphabet letters
+    regex_str_list = valid_symbols.copy()
+    valid_symbols_lower = list(map(str.lower, valid_symbols.copy()))
+    #and all lower case alphabet letters
+    regex_str_list.extend(valid_symbols_lower)
+    regex_str_list.append("]")
+    regex_str_list.insert(0,"^")
+    regex_str_list.insert(0,"[")
+    regex_str = ''.join(regex_str_list)
+    
+    return regex_str
+
+def build_regex_for_seq_cleaning_blacklist(invalid_symbols):
+    
+    regex_str_list = []
+    regex_str_list = invalid_symbols.copy()
+    invalid_symbols_lower = list(map(str.lower, invalid_symbols.copy()))
+    regex_str_list.append("]")
+    regex_str_list.insert(0,"[")
+    regex_str = ''.join(regex_str_list)
+    
+    return regex_str
 
 #takes a list of sequence-header pairs and returns a random sample of given size
 #([[str,str,int],[str,str,int],...],int) -> [[str,str,int],[str,str,int],...]
@@ -2336,6 +2365,31 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     
     print(job_SPS)
         
+
+#calculation rework
+#__________________________________________________________________________________________________________________________________________________
+def extract_exact_query_matches(aln_file_path_list, out_path, valid_symbols):
+    for aln_file_path in aln_file_path_list:
+        path, aln_file_name_ext = os.path.split(aln_file_path)
+        aln_file_name, ext = os.path.splitext(aln_file_name_ext)
+        #aln_list is a list of lists each of length 3, containing [sequence, header, entry_number]
+        aln_list = import_seq_list_from_fasta_aln(aln_file_path)
+        #VERY CAREFUL HERE, DOUBLE CHECK, TRIPLE CHECK, IF IT MAKES SENSE TO DO IT LIKE THIS
+        #IF WE FORGOT A SINGLE LETTER, THIS RUINS ALL RESULTS
+        #HOW DO WE HANDLE UNCOMMON AAs OR 'X' AND THE LIKE?
+        regex_str = build_regex_for_seq_cleaning_whitelist(valid_symbols)
+        for aln in aln_list:
+            cleaned_seq = clean_seq(aln[0], regex_str)
+
+
+
+#creates job dir from a list of alignments
+def create_job(aln_path_list, out_path, job_name):
+    job_path = os.path.join(out_path, job_name)
+    create_dir_safely(job_path)
+    extract_exact_query_matches(aln_path_list, job_path)
+
+
 def main():
 
     tic = time.perf_counter()
@@ -2378,7 +2432,7 @@ def main():
     argParser.add_argument("-babp", "--batchblastp", action="count", default=0, help="testing fasta cleaning", required=False)
     argParser.add_argument("-ddb", "--diamonddbfile", help="Path to diamond database file.", required=False)
     argParser.add_argument("-svg", "--svgpath", help="Path to SVG files to be concatenated.", required=False)
-
+    argParser.add_argument("-cr", "--calcrework", default=0, action="count", help="Placeholder for new calculation of job", required=False)
     args = argParser.parse_args()
     
     valid_symbols = sel_alphabet(args.alphabet)
@@ -2426,6 +2480,8 @@ def main():
             job_list_of_dict_lists = import_aln_files_in_job(args.title, args.output)
             print(len(job_list_of_dict_lists))
             print(job_list_of_dict_lists)
+    if args.calcrework > 0:
+        create_job()
     
 
     toc = time.perf_counter()
