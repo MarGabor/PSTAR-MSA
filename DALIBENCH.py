@@ -2365,6 +2365,7 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     
     print(job_SPS)
         
+#test
 
 #calculation rework
 #__________________________________________________________________________________________________________________________________________________
