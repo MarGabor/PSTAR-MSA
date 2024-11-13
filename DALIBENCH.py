@@ -2364,8 +2364,6 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     job_SPS = diamond_calc_job_SPS(job_list_of_dict_lists, exact_match_dict, aln_dict, job_title, verbosity)
     
     print(job_SPS)
-        
-#test
 
 #calculation rework
 #__________________________________________________________________________________________________________________________________________________
