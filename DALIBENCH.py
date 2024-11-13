@@ -151,8 +151,9 @@ def build_regex_for_seq_cleaning_blacklist(invalid_symbols):
 #removing gaps and other symbols not in "valid_symbols" from given alignment sequence data
 #preserves case
 #(str, str) -> str
-def clean_seq(seq, valid_symbols):
+def clean_seq(seq):
 
+    valid_symbols = sel_alphabet("AA")
     regex_str = build_regex_for_seq_cleaning_whitelist(valid_symbols)
 
     cleaned_seq = re.sub(regex_str,'',seq)
@@ -240,7 +241,8 @@ def import_seq_list_from_fasta_aln(aln_file_path):
 
     for record in alignment:
         internal_id += 1
-        seq_list.append([str(record.seq), str(record.id), internal_id])
+        cleaned_seq = clean_seq(str(record.seq))
+        seq_list.append([str(record.seq), str(record.id), internal_id, cleaned_seq])
 
     return seq_list
 
@@ -2030,7 +2032,7 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
 
 #removes gaps and other symbols not in valid_symbols and writes new fasta file with cleaned sequences
 # void (str,str,[str,str,...], int)    
-def clean_fasta_file(aln_file_full_path, out_file_full_path, valid_symbols, verbosity):
+def clean_fasta_file(aln_file_full_path, out_file_full_path, verbosity):
     
     if verbosity>0:
         msg = "Cleaning %s..." % os.path.split(aln_file_full_path)[1]
@@ -2058,7 +2060,7 @@ def clean_fasta_file(aln_file_full_path, out_file_full_path, valid_symbols, verb
         if verbosity>0:
             msg = "[%s/%s]" % (str(counter), str(no_of_records))
             print(msg, end='\r')
-        cleaned_seq = clean_seq(str(record.seq), valid_symbols)
+        cleaned_seq = clean_seq(str(record.seq))
         #if this fails use seqrecord constructor
         record.seq = Seq.Seq(cleaned_seq)
         counter += 1
@@ -2077,7 +2079,7 @@ def clean_fasta_files_in_dir(path_to_fasta_files, out_path, valid_symbols, verbo
     for fasta_file_name in os.listdir(path_to_fasta_files):
         fasta_file_full_path = os.path.join(path_to_fasta_files, fasta_file_name)
         out_file_full_path = os.path.join(out_path, os.path.split(fasta_file_full_path)[1])
-        clean_fasta_file(fasta_file_full_path, out_file_full_path, valid_symbols, verbosity)
+        clean_fasta_file(fasta_file_full_path, out_file_full_path, verbosity)
 
 # ./diamond blastp -d <diamond_db_file_full_path> -q <query_fasta_file_full_path> -o <out_path> --iterate
 #launches a subprocess for a diamond blastp query without restriction of sequence identity
@@ -2177,6 +2179,8 @@ def get_exact_matches(TSV_file_full_path):
     #if len(broken_line_list) != 0:
      #   attempt_TSV_repair()
     #apply filter according to exact match definition to get at most one chain id for each query header
+    #we also need to make sure that if the input sequences are the same that we always choose the SAME 
+    #chain as exact query match
     exact_matches_df = filter_exact_matches(TSV_file_full_path)
     #for each row in dataframe write dict and append it to list
     exact_match_dict = {}
@@ -2367,24 +2371,46 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
 
 #calculation rework
 #__________________________________________________________________________________________________________________________________________________
-def extract_exact_query_matches(aln_file_path_list, out_path, valid_symbols):
-    for aln_file_path in aln_file_path_list:
-        path, aln_file_name_ext = os.path.split(aln_file_path)
+def write_temp_fasta_file(temp_fasta_path):
+    SeqIO.write(chains_choice, fasta_file_handle, "fasta")
+
+
+def create_aln_index_files(aln_file_full_path_list, job_path, verbosity):
+
+
+
+    for aln_file_full_path in aln_file_full_path_list:
+        path, aln_file_name_ext = os.path.split(aln_file_full_path)
         aln_file_name, ext = os.path.splitext(aln_file_name_ext)
-        #aln_list is a list of lists each of length 3, containing [sequence, header, entry_number]
-        aln_list = import_seq_list_from_fasta_aln(aln_file_path)
+        #subdir of jobdir for each alignment, contains all temporary or permanent files important for measurment
+        aln_misc_path = os.path.join(job_path, aln_file_name)
+        create_dir_safely(aln_misc_path)
+        #aln_entry_list is a list of lists each of length 4, containing [sequence, header, entry_number, ungapped_sequence]
+        aln_entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
+        
         #VERY CAREFUL HERE, DOUBLE CHECK, TRIPLE CHECK, IF IT MAKES SENSE TO DO IT LIKE THIS
         #IF WE FORGOT A SINGLE LETTER, THIS RUINS ALL RESULTS
         #HOW DO WE HANDLE UNCOMMON AAs OR 'X' AND THE LIKE?
-        regex_str = build_regex_for_seq_cleaning_whitelist(valid_symbols)
-        for aln in aln_list:
-            cleaned_seq = clean_seq(aln[0], regex_str)
+        #___________________________________________________________________________________________
+        #path for fasta output
+        clean_fasta_file_full_path = os.path.join(aln_misc_path, aln_file_name+"_cleaned.fasta")
+        clean_fasta_file(aln_file_full_path, clean_fasta_file_full_path, verbosity)
+        #-------------------------------------------------------------------------------------------
+
+        #path for TSV output, return file for query
+        TSV_file_full_path = os.path.join(aln_misc_path, aln_file_name+"_diamond.tsv")
+        diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, clean_fasta_file_full_path, TSV_file_full_path, verbosity)
+
+        #get exact query matches. this is shaky, because we dont know how diamond processes large
+        # FASTA files internally and if this has an impact on what results we are presented with
+        exact_match_dict = get_exact_matches(TSV_file_full_path)
+
 
 #creates job dir from a list of alignments
 def create_job(aln_path_list, out_path, job_name):
     job_path = os.path.join(out_path, job_name)
     create_dir_safely(job_path)
-    extract_exact_query_matches(aln_path_list, job_path)
+    create_aln_index_files(aln_path_list, job_path)
 
 def main():
 
