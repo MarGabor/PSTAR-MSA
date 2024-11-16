@@ -4,6 +4,7 @@
 #11/04/2024
 
 import argparse
+from codecs import ignore_errors
 import sys
 from datetime import datetime
 import re
@@ -215,8 +216,8 @@ def search_pdb_for_sequences(seq, aln_file_path, identity_cutoff):
     return raw_response_list
 
 #extracting sequences and headers from alignment file in FASTA format
-# [sequence, header, number]
-#(str) -> [[str,str,int],[str,str,int],...]
+# [sequence, header, number, cleaned_sequence]
+#(str) -> [[str,str,int,str],[str,str,int,str],...]
 def import_seq_list_from_fasta_aln(aln_file_path):
 
     seq_list = []
@@ -520,7 +521,7 @@ def calc_job_SPS(job_list_of_dict_lists, internal_id_pdb_name_dict, internal_id_
             #try to find shift pattern to minimize maximization effort
             #this could actually be viable. but since we know from the search meta data where in the PDB the particular sequence match starts
             #we should use that information first
-            #in any way, maximizing intersection increases sensitivity
+            #in any way, maximizing intersection increases values
             argmax_aln_SP_set, max_shift = argmax_intersection(current_max_ref_SP_set, aln_SP_set)
             argmax_aln_SP_set_list.append(argmax_aln_SP_set.copy())
             save_dict["max_shift"] = max_shift
@@ -2148,24 +2149,15 @@ def check_TSV_integrity(TSV_file_full_path):
 def filter_exact_matches(TSV_file_full_path):
     
     df = pandas.read_csv(TSV_file_full_path, sep='\t')
-    new_df = pandas.DataFrame(columns=['qseqid','sseqid','pident','length','mismatch','gapopen','qstart','qend','sstart','send','evalue','bitscore','qlen'])
+    #new_df = pandas.DataFrame(columns=['qseqid','sseqid','pident','length','mismatch','gapopen','qstart','qend','sstart','send','evalue','bitscore','qlen'])
     row_list = []
-    #remove next line, once trailing delimiters have been removed
-    #df = df.drop(['Unnamed: 16'], axis=1)
-    df['is_exact_match'] = 0
-    ex_match_col_num = df.columns.get_loc('is_exact_match')
-    mismatch_col_num = df.columns.get_loc('mismatch')
-    len_col_num = df.columns.get_loc('length')
-    qlen_col_num = df.columns.get_loc('qlen')
-    #split df into one dataframe per fasta_header
-    df_list = [x for _,x in df.groupby('qseqid')]
-    for split_df in df_list:
-        #next lines needs to be changed, if definition of exact match requires it
-        split_df = split_df.sort_values(by=['pident'], ascending=False)
-        if int(split_df.iloc[0,mismatch_col_num]) == 0 and int(split_df.iloc[0,len_col_num]) == int(split_df.iloc[0,qlen_col_num]):
-            split_df.iloc[0,ex_match_col_num] = 100
-            row_list.append(split_df.iloc[[0]].copy())
-    new_df = pandas.concat(row_list, ignore_index=True)
+    for index, row in df.iterrows():
+        #exact query match definition. no mismatches and no additional gaps and qlen=send-sstart+1 =>(?) pident = 100
+        if row.mismatch == 0 and row.gapopen == 0:
+            aln_len = row.send - row.sstart + 1
+            if row.qlen == aln_len:
+                row_list.append(row.values)
+    new_df = pandas.DataFrame(row_list, columns=df.columns)
 
     return new_df
 
@@ -2182,15 +2174,20 @@ def get_exact_matches(TSV_file_full_path):
     #we also need to make sure that if the input sequences are the same that we always choose the SAME 
     #chain as exact query match
     exact_matches_df = filter_exact_matches(TSV_file_full_path)
-    #for each row in dataframe write dict and append it to list
+    #write to file
+    TSV_path, TSV_name = os.path.split(TSV_file_full_path)
+    name, ext = os.path.splitext(TSV_name)
+    exact_matches_df.to_csv(os.path.join(TSV_path, name+"_exact_matches.tsv"), sep="\t")
+    
+    #keys = FASTA_header; values = [row,row,...] 
     exact_match_dict = {}
-    #iterating over dataframe rows is slow, look for better options
+    #initializing exact_match_dict with empty lists
     for index, row in exact_matches_df.iterrows():
-        row_dict = {}
-        for col_name in exact_matches_df.columns:
-            row_dict[col_name] = row[col_name]
-        exact_match_dict[row["sseqid"]] = row_dict.copy()
-        
+        exact_match_dict[row.qseqid] = []
+    #filling lists
+    for index, row in exact_matches_df.iterrows():
+        exact_match_dict[row.qseqid].append(row)    
+
     return exact_match_dict
   
 #copies PDB files from local PDB database to <job_dir>/DATA/PDB_lib
@@ -2371,12 +2368,13 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
 
 #calculation rework
 #__________________________________________________________________________________________________________________________________________________
-def write_temp_fasta_file(temp_fasta_path):
-    SeqIO.write(chains_choice, fasta_file_handle, "fasta")
+#this function serves to detect and resolve duplicate values in dictionary for any one key
+#right now it takes FASTA headers as keys and checks if the list in values is of length <= 1
+def resolve_ambivalences(exact_match_dict):
+    pass
 
 
-def create_aln_index_files(aln_file_full_path_list, job_path, verbosity):
-
+def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
 
 
     for aln_file_full_path in aln_file_full_path_list:
@@ -2397,20 +2395,59 @@ def create_aln_index_files(aln_file_full_path_list, job_path, verbosity):
         clean_fasta_file(aln_file_full_path, clean_fasta_file_full_path, verbosity)
         #-------------------------------------------------------------------------------------------
 
-        #path for TSV output, return file for query
+        #path for TSV output, return file for db query
         TSV_file_full_path = os.path.join(aln_misc_path, aln_file_name+"_diamond.tsv")
         diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, clean_fasta_file_full_path, TSV_file_full_path, verbosity)
 
         #get exact query matches. this is shaky, because we dont know how diamond processes large
         # FASTA files internally and if this has an impact on what results we are presented with
+        #however, diamond excels at processing large FASTA files and it would be wasteful to feed in 
+        #the individual FASTA entries one by one (it might be necessary though, if exact query match
+        #output turns out to differ between different alignments with the same underlying sequences)
         exact_match_dict = get_exact_matches(TSV_file_full_path)
+        print(exact_match_dict)
+        #red_exact_match_dict = resolve_ambivalences(exact_match_dict)
 
 
 #creates job dir from a list of alignments
-def create_job(aln_path_list, out_path, job_name):
+def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
+
+    #get all alignment files in dir
+    aln_dir_list = os.listdir(aln_dir)
+    aln_file_full_path_list = []
+    for thing in aln_dir_list:
+        if os.path.isfile(os.path.join(aln_dir, thing)):
+            aln_file_full_path_list.append(os.path.join(aln_dir, thing))
+
     job_path = os.path.join(out_path, job_name)
     create_dir_safely(job_path)
-    create_aln_index_files(aln_path_list, job_path)
+    create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity)
+
+def test_SPS(aln_file_full_path):
+
+    #[sequence, header, number, cleaned_sequence]
+    entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
+
+    #((int,int),(str,str)) -> set( ((),()) )
+    sequence_ids_1 = (1,2)
+    aligned_sequences_1 = ((entry_list[0][0]),(entry_list[1][0]))
+    sequence_ids_2 = (1,2)
+    aligned_sequences_2 = ((entry_list[2][0]),(entry_list[3][0]))
+    MSA_set_1 = calc_MSA_SP_set(sequence_ids_1, aligned_sequences_1)
+    MSA_ref_set_2 = calc_MSA_SP_set(sequence_ids_2, aligned_sequences_2)
+
+    print("SET 1:\n")
+    print(MSA_set_1)
+    print("\nSET 2:\n")
+    print(MSA_ref_set_2)
+    print("\nINTERSECTION:\n")
+    print(MSA_set_1.intersection(MSA_ref_set_2))
+    print("\nSPS:\n")
+
+    SPS = len(MSA_set_1.intersection(MSA_ref_set_2))/len(MSA_ref_set_2)
+
+    print(SPS)
+    print("\n")
 
 def main():
 
@@ -2455,6 +2492,8 @@ def main():
     argParser.add_argument("-ddb", "--diamonddbfile", help="Path to diamond database file.", required=False)
     argParser.add_argument("-svg", "--svgpath", help="Path to SVG files to be concatenated.", required=False)
     argParser.add_argument("-cr", "--calcrework", default=0, action="count", help="Placeholder for new calculation of job", required=False)
+
+    argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
     args = argParser.parse_args()
     
     valid_symbols = sel_alphabet(args.alphabet)
@@ -2503,7 +2542,9 @@ def main():
             print(len(job_list_of_dict_lists))
             print(job_list_of_dict_lists)
     if args.calcrework > 0:
-        create_job()
+        create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose)
+    if args.test > 0:
+        test_SPS(args.alignmentfile)
     
 
     toc = time.perf_counter()
