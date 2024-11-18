@@ -2163,7 +2163,7 @@ def filter_exact_matches(TSV_file_full_path):
 
 #definition of exact match needs to be applied here
 # (str) -> { {},{},... },{ {},{},... }
-def get_exact_matches(TSV_file_full_path):
+def get_exact_matches(TSV_file_full_path, aln_entry_list):
     
     #optional check, if I trust diamond to generate good data
     #broken_line_list = check_TSV_integrity(TSV_file_full_path)
@@ -2182,8 +2182,8 @@ def get_exact_matches(TSV_file_full_path):
     #keys = FASTA_header; values = [row,row,...] 
     exact_match_dict = {}
     #initializing exact_match_dict with empty lists
-    for index, row in exact_matches_df.iterrows():
-        exact_match_dict[row.qseqid] = []
+    for aln_entry in aln_entry_list:
+        exact_match_dict[aln_entry[1]] = []
     #filling lists
     for index, row in exact_matches_df.iterrows():
         exact_match_dict[row.qseqid].append(row)    
@@ -2370,18 +2370,80 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
 #__________________________________________________________________________________________________________________________________________________
 #this function serves to detect and resolve duplicate values in dictionary for any one key
 #right now it takes FASTA headers as keys and checks if the list in values is of length <= 1
-def resolve_ambivalences(exact_match_dict):
-    pass
+def resolve_ambivalences(exact_match_dict, aln_file_full_path):
+    
+    for qseqid in exact_match_dict.keys():
+        if len(exact_match_dict[qseqid]) > 1:
+            cur_best_entry = exact_match_dict[qseqid][0]
+            for row in exact_match_dict[qseqid][1:]:
+                #try to select entry by bitscore
+                if int(row.bitscore) > int(cur_best_entry.bitscore):
+                    cur_best_entry = row
+                elif int(row.bitscore) == int(cur_best_entry.bitscore):
+                    #if bitscore is the same, try lower subject match start
+                    if int(row.sstart) < int(cur_best_entry.sstart):
+                        cur_best_entry = row
+                    elif int(row.sstart) == int(cur_best_entry.sstart):
+                        #if lower match start is the same, we must have different chain IDs
+                        for i in range(0,6):
+                            if int(str(row.sseqid)[i]) < int(str(cur_best_entry.sseqid)[i]):
+                                cur_best_entry = row
+                                break
+                        #if we have the same chain IDs, we'll have the same query match restriction
+                        #and the choice is irrelevant. This SHOULD NOT happen usually.
+                        else:
+                            err_msg = """Warning: Identical exact matches suspected for headers %s and 
+                                       %s in %s.""" % (str(cur_best_entry.qseqid), str(row.qseqid), aln_file_full_path)
+                            errorFct(err_msg)
+            #we'll use a list for consistency
+            exact_match_dict[qseqid] = []
+            exact_match_dict[qseqid].append(cur_best_entry)
+
+    return exact_match_dict
+
+def create_MSA_ex_match_df(aln_entry_list, unique_exact_match_dict):
+
+    MSA_df = pandas.DataFrame(columns=['fasta_entry_index','fasta_entry_header','ungapped_seq','gapped_seq',
+                                       'chain_id','sstart','send','evalue','bitscore','qlen'])
+    row_list = []
+    #aln_entry = [sequence, header, entry_number, ungapped_sequence]
+    for aln_entry in aln_entry_list:
+        row = []
+        qseqid = aln_entry[1]
+        if len(unique_exact_match_dict[qseqid]) == 1:
+            row.append(aln_entry[2])
+            row.append(qseqid)
+            row.append(aln_entry[3])
+            row.append(aln_entry[0])
+            exact_match_tuple = unique_exact_match_dict[qseqid][0]
+            row.append(exact_match_tuple.sseqid)
+            row.append(exact_match_tuple.sstart)
+            row.append(exact_match_tuple.send)
+            row.append(exact_match_tuple.evalue)
+            row.append(exact_match_tuple.bitscore)
+            row.append(exact_match_tuple.qlen)
+
+            row_list.append(row.copy())
+    
+    MSA_df = pandas.DataFrame(row_list, columns=['fasta_entry_index','fasta_entry_header','ungapped_seq',
+                              'gapped_seq','chain_id','sstart','send','evalue','bitscore','qlen'])
+    return MSA_df
 
 
 def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
 
 
     for aln_file_full_path in aln_file_full_path_list:
+
+        DATA_path = os.path.join(job_path, "DATA")
+        create_dir_safely(DATA_path)
+
         path, aln_file_name_ext = os.path.split(aln_file_full_path)
         aln_file_name, ext = os.path.splitext(aln_file_name_ext)
-        #subdir of jobdir for each alignment, contains all temporary or permanent files important for measurment
-        aln_misc_path = os.path.join(job_path, aln_file_name)
+
+        #sub-subdir of jobdir for each alignment, contains all temporary or permanent files important for measurment
+        #of each individual MSA file
+        aln_misc_path = os.path.join(DATA_path, aln_file_name)
         create_dir_safely(aln_misc_path)
         #aln_entry_list is a list of lists each of length 4, containing [sequence, header, entry_number, ungapped_sequence]
         aln_entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
@@ -2404,10 +2466,13 @@ def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_p
         #however, diamond excels at processing large FASTA files and it would be wasteful to feed in 
         #the individual FASTA entries one by one (it might be necessary though, if exact query match
         #output turns out to differ between different alignments with the same underlying sequences)
-        exact_match_dict = get_exact_matches(TSV_file_full_path)
-        print(exact_match_dict)
-        #red_exact_match_dict = resolve_ambivalences(exact_match_dict)
+        exact_match_dict = get_exact_matches(TSV_file_full_path, aln_entry_list)
+        unique_exact_match_dict = resolve_ambivalences(exact_match_dict, aln_file_full_path)
 
+        #create dataframe for summary of MSA data
+        MSA_df = create_MSA_ex_match_df(aln_entry_list, unique_exact_match_dict)
+        #write MSA_df to file
+        MSA_df.to_csv(os.path.join(aln_misc_path, aln_file_name+"_exact_match.index"), sep="\t")
 
 #creates job dir from a list of alignments
 def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
