@@ -215,7 +215,7 @@ def search_pdb_for_sequences(seq, aln_file_path, identity_cutoff):
 
     return raw_response_list
 
-#extracting sequences and headers from alignment file in FASTA format
+#extracting sequences and headers from alignment file in FASTA format and adding entry indices for good measure
 # [sequence, header, number, cleaned_sequence]
 #(str) -> [[str,str,int,str],[str,str,int,str],...]
 def import_seq_list_from_fasta_aln(aln_file_path):
@@ -240,10 +240,22 @@ def import_seq_list_from_fasta_aln(aln_file_path):
 
     internal_id = 0
 
+    #dict for duplicate check
+    seen = {}
+
     for record in alignment:
+
+        #check if key has been seen before
+        if str(record.id) in seen:
+            warn_msg = "Warning: Duplicate header %s in file %s." % (str(record.id),aln_file_path)
+            print(warn_msg)
+            errorFct(warn_msg)
+
         internal_id += 1
         cleaned_seq = clean_seq(str(record.seq))
         seq_list.append([str(record.seq), str(record.id), internal_id, cleaned_seq])
+
+        seen[str(record.id)] = True
 
     return seq_list
 
@@ -2474,6 +2486,87 @@ def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_p
         #write MSA_df to file
         MSA_df.to_csv(os.path.join(aln_misc_path, aln_file_name+"_exact_match.index"), sep="\t")
 
+def read_MSA_index_files_in_job(aln_file_full_path_list, job_path):
+
+    #extract aln_file_names from paths and build list of full paths to index files
+    DATA_path = os.path.join(job_path, "DATA")
+    aln_index_full_path_list = []
+    for aln_file_full_path in aln_file_full_path_list:
+        aln_path, aln_name_ext = os.path.split(aln_file_full_path)
+        aln_file_name = os.path.splitext(aln_name_ext)
+        aln_index_full_path = os.path.join(DATA_path, aln_file_name, aln_file_name+"_exact_match.index")
+        aln_index_full_path_list.append(aln_index_full_path)
+
+    #load index files into list of DataFrames
+    MSA_df_dict = {}
+    for aln_index_full_path in aln_index_full_path_list:
+        MSA_df = pandas.read_csv(aln_index_full_path, sep="\t")
+        MSA_df_dict[aln_index_full_path] = MSA_df.copy()
+
+    return MSA_df_dict
+
+#this function is given a set of ungapped sequences that are shared among all input MSAs
+#it is also given a list of dictionaries. latter contain ungapped_sequences of ALL queries that have 
+#exact query matches as keys and the corresponding rows in the aln_index as values. each element of the list
+#represents a different input MSA
+# (set(), [{},{},...]) -> set()
+def verify_common_seq_data(common_seq_set, seq_prim_key_dict_list):
+
+    exclude_set = set()
+    #following three sets should sufficiently define the exact query match restriction
+    chain_id_set = set()
+    sstart_set = set()
+    send_set = set()
+    #this is just an extra check
+    bitscore_set = set()
+    for common_seq in common_seq_set:
+        chain_id_set.clear()
+        sstart_set.clear()
+        send_set.clear()
+        bitscore_set.clear()
+        for i in range(0,len(seq_prim_key_dict_list)):
+            chain_id_set.add(str(seq_prim_key_dict_list[i][common_seq].chain_id))
+            sstart_set.add(str(seq_prim_key_dict_list[i][common_seq].sstart))
+            send_set.add(str(seq_prim_key_dict_list[i][common_seq].send))
+            bitscore_set.add(str(seq_prim_key_dict_list[i][common_seq].bitscore))
+        if len(chain_id_set)!=1 or len(sstart_set)!=1 or len(send_set)!=1 or len(bitscore_set)!=1:
+            exclude_set.add(common_seq.copy())
+            warn_msg = """Warning: Inconsistency in common sequence set. Excluding sequence.\n
+                          Chain_ids: %s\n Sstart: %s\n Send: %s\n Bitscore: %s""" % (str(chain_id_set,sstart_set,send_set,bitscore_set))
+            print(warn_msg)
+            errorFct(warn_msg)
+
+    red_common_seq_set = common_seq_set.difference(exclude_set)
+    
+    return red_common_seq_set
+
+
+def generate_common_seq_set(MSA_df_dict):
+
+    #load cleaned exact query match sequences into sets
+    seq_set_list = []
+    #make it a dict of dicts with instead of list of dict
+    #key should be aln_index_full_path
+    seq_prim_key_dict_list = []
+    for aln_index_full_path in MSA_df_dict.keys():
+        seq_set = set()
+        seq_prim_key_dict = {}
+        seq_prim_key_dict.clear()
+        for row in MSA_df_dict[aln_index_full_path].iterrows():
+            seq_set.add(str(row.ungapped_seq))
+            seq_prim_key_dict[str(row.ungapped_seq)] = row
+        seq_set_list.append(seq_set.copy())
+        seq_prim_key_dict_list.append(seq_prim_key_dict.copy())
+
+    #splat seq_set_list and intersect every set in it
+    common_seq_set = set.intersection(*seq_set_list)
+
+    red_common_seq_set = verify_common_seq_data(common_seq_set, seq_prim_key_dict_list)
+
+    return red_common_seq_set, seq_prim_key_dict_list
+
+
+
 #creates job dir from a list of alignments
 def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
 
@@ -2487,6 +2580,12 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
     job_path = os.path.join(out_path, job_name)
     create_dir_safely(job_path)
     create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity)
+    
+    #use index files to determine set of common underlying sequences
+    #MSA_df_list will serve as a central information hub
+    MSA_df_dict = read_MSA_index_files_in_job(aln_file_full_path_list, job_path)
+    common_seq_set = generate_common_seq_set(MSA_df_dict)
+    #see 2548
 
 def test_SPS(aln_file_full_path):
 
