@@ -2493,7 +2493,7 @@ def read_MSA_index_files_in_job(aln_file_full_path_list, job_path):
     aln_index_full_path_list = []
     for aln_file_full_path in aln_file_full_path_list:
         aln_path, aln_name_ext = os.path.split(aln_file_full_path)
-        aln_file_name = os.path.splitext(aln_name_ext)
+        aln_file_name, ext = os.path.splitext(aln_name_ext)
         aln_index_full_path = os.path.join(DATA_path, aln_file_name, aln_file_name+"_exact_match.index")
         aln_index_full_path_list.append(aln_index_full_path)
 
@@ -2506,66 +2506,102 @@ def read_MSA_index_files_in_job(aln_file_full_path_list, job_path):
     return MSA_df_dict
 
 #this function is given a set of ungapped sequences that are shared among all input MSAs
-#it is also given a list of dictionaries. latter contain ungapped_sequences of ALL queries that have 
-#exact query matches as keys and the corresponding rows in the aln_index as values. each element of the list
-#represents a different input MSA
+#it is also given a dict of dictionaries. latter contain ungapped_sequences of ALL queries that have 
+#exact query matches as keys and the corresponding rows in the aln_index as values. each key of the
+#higher level dict represents a different input MSA
 # (set(), [{},{},...]) -> set()
-def verify_common_seq_data(common_seq_set, seq_prim_key_dict_list):
+def verify_common_seq_data(common_seq_set, seq_prim_key_dict_dict):
 
     exclude_set = set()
     #following three sets should sufficiently define the exact query match restriction
     chain_id_set = set()
     sstart_set = set()
     send_set = set()
-    #this is just an extra check
+    #this is just an extra check, it should be the same, but it needn't be
     bitscore_set = set()
     for common_seq in common_seq_set:
         chain_id_set.clear()
         sstart_set.clear()
         send_set.clear()
         bitscore_set.clear()
-        for i in range(0,len(seq_prim_key_dict_list)):
-            chain_id_set.add(str(seq_prim_key_dict_list[i][common_seq].chain_id))
-            sstart_set.add(str(seq_prim_key_dict_list[i][common_seq].sstart))
-            send_set.add(str(seq_prim_key_dict_list[i][common_seq].send))
-            bitscore_set.add(str(seq_prim_key_dict_list[i][common_seq].bitscore))
-        if len(chain_id_set)!=1 or len(sstart_set)!=1 or len(send_set)!=1 or len(bitscore_set)!=1:
-            exclude_set.add(common_seq.copy())
-            warn_msg = """Warning: Inconsistency in common sequence set. Excluding sequence.\n
-                          Chain_ids: %s\n Sstart: %s\n Send: %s\n Bitscore: %s""" % (str(chain_id_set,sstart_set,send_set,bitscore_set))
-            print(warn_msg)
-            errorFct(warn_msg)
-
+        #the next loop adds the respective column values to sets for all aln_index files
+        #if a set of the relevalent data has more than one element, then it means that
+        #there had to be a difference in relevant data (i.e. chain_id, sstart, send)
+        #somewhere among all the aln_index files for rows that share the same unngapped sequence
+        #this means that there would be NOT at most one P_{ref,C} for a given C of ungapped sequences
+        #contradicting Lemma 2 
+        prev_aln_index_full_path = ""
+        for aln_index_full_path in seq_prim_key_dict_dict.keys():
+            chain_id_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq].chain_id))
+            sstart_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq].sstart))
+            send_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq].send))
+            bitscore_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq].bitscore))
+            if len(chain_id_set)>1 or len(sstart_set)>1 or len(send_set)>1 or len(bitscore_set)>1:
+                exclude_set.add(common_seq.copy())
+                warn_msg = """Warning: Inconsistency in common sequence set between %s and %s. Excluding sequence.\n
+                              Chain_ids: %s\n Sstart: %s\n Send: %s\n Bitscore: %s""" % (prev_aln_index_full_path,aln_index_full_path,
+                                                                                         str(chain_id_set,sstart_set,send_set,bitscore_set))
+                print(warn_msg)
+                errorFct(warn_msg)
+            prev_aln_index_full_path = aln_index_full_path
     red_common_seq_set = common_seq_set.difference(exclude_set)
     
     return red_common_seq_set
 
 
-def generate_common_seq_set(MSA_df_dict):
+def generate_common_seq_set(MSA_df_dict, verbosity):
 
     #load cleaned exact query match sequences into sets
     seq_set_list = []
-    #make it a dict of dicts with instead of list of dict
-    #key should be aln_index_full_path
-    seq_prim_key_dict_list = []
+    seq_prim_key_dict_dict = {}
     for aln_index_full_path in MSA_df_dict.keys():
         seq_set = set()
         seq_prim_key_dict = {}
         seq_prim_key_dict.clear()
-        for row in MSA_df_dict[aln_index_full_path].iterrows():
-            seq_set.add(str(row.ungapped_seq))
-            seq_prim_key_dict[str(row.ungapped_seq)] = row
+        for index, row in MSA_df_dict[aln_index_full_path].iterrows():
+            upper_ungapped_seq = str(row.ungapped_seq).upper()
+            seq_set.add(upper_ungapped_seq)
+            seq_prim_key_dict[upper_ungapped_seq] = row
         seq_set_list.append(seq_set.copy())
-        seq_prim_key_dict_list.append(seq_prim_key_dict.copy())
+        seq_prim_key_dict_dict[aln_index_full_path] = seq_prim_key_dict.copy()
 
     #splat seq_set_list and intersect every set in it
     common_seq_set = set.intersection(*seq_set_list)
 
-    red_common_seq_set = verify_common_seq_data(common_seq_set, seq_prim_key_dict_list)
+    red_common_seq_set = verify_common_seq_data(common_seq_set, seq_prim_key_dict_dict)
 
-    return red_common_seq_set, seq_prim_key_dict_list
+    if verbosity>0:
+        msg = "[%s/%s] common sequences remaining after verification." % (str(len(common_seq_set)),str(len(red_common_seq_set)))
+        print(msg)
 
+    return red_common_seq_set, seq_prim_key_dict_dict
 
+#create reduced MSA dataframe and write to file. return list of full paths to reduced MSA index files.
+def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict):
+
+    red_MSA_index_full_path_list = []
+    #assign ID to each common seq, e.g. convert set to list.
+    common_seq_list = list(common_seq_set)
+    #common seq IDs are index for new df
+    df_index_list = range(0,len(common_seq_list))
+
+    for aln_index_full_path in seq_prim_key_dict_dict.keys():
+        red_MSA_row_dict = {}
+        red_MSA_row_dict.clear()
+        for common_seq_ID in df_index_list:
+            #this looks clunky, but I wanted to make extra sure that we have the right common sequence IDs
+            red_MSA_row_dict[common_seq_ID] = seq_prim_key_dict_dict[aln_index_full_path][common_seq_list[common_seq_ID]]
+        #create df
+        red_MSA_df = pandas.DataFrame.from_dict(red_MSA_row_dict, orient='index')
+        #construct path
+        path, name_ext = os.path.split(aln_index_full_path)
+        red_name_ext = "red_"+name_ext
+        red_MSA_index_full_path = os.path.join(path, red_name_ext)
+        #write to file
+        red_MSA_df.to_csv(red_MSA_index_full_path, sep='\t')
+        red_MSA_index_full_path_list.append(red_MSA_index_full_path)
+
+    return red_MSA_index_full_path_list
 
 #creates job dir from a list of alignments
 def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
@@ -2581,11 +2617,17 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
     create_dir_safely(job_path)
     create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity)
     
+    if verbosity>0:
+        msg = "Determining maximal common sequence set..."
+        print(msg)
+
     #use index files to determine set of common underlying sequences
     #MSA_df_list will serve as a central information hub
     MSA_df_dict = read_MSA_index_files_in_job(aln_file_full_path_list, job_path)
-    common_seq_set = generate_common_seq_set(MSA_df_dict)
-    #see 2548
+    #common_seq_set is our C. seq_prim_key_dict_dict is utility structure helping to generate
+    #the reduced alignment index files
+    common_seq_set, seq_prim_key_dict_dict = generate_common_seq_set(MSA_df_dict, verbosity)
+    red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict)
 
 def test_SPS(aln_file_full_path):
 
