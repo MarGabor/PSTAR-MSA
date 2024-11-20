@@ -248,7 +248,6 @@ def import_seq_list_from_fasta_aln(aln_file_path):
         #check if key has been seen before
         if str(record.id) in seen:
             warn_msg = "Warning: Duplicate header %s in file %s." % (str(record.id),aln_file_path)
-            print(warn_msg)
             errorFct(warn_msg)
 
         internal_id += 1
@@ -2541,7 +2540,6 @@ def verify_common_seq_data(common_seq_set, seq_prim_key_dict_dict):
                 warn_msg = """Warning: Inconsistency in common sequence set between %s and %s. Excluding sequence.\n
                               Chain_ids: %s\n Sstart: %s\n Send: %s\n Bitscore: %s""" % (prev_aln_index_full_path,aln_index_full_path,
                                                                                          str(chain_id_set,sstart_set,send_set,bitscore_set))
-                print(warn_msg)
                 errorFct(warn_msg)
             prev_aln_index_full_path = aln_index_full_path
     red_common_seq_set = common_seq_set.difference(exclude_set)
@@ -2629,6 +2627,110 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
     common_seq_set, seq_prim_key_dict_dict = generate_common_seq_set(MSA_df_dict, verbosity)
     red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict)
 
+def import_red_aln_index_files(red_aln_index_full_path_list):
+    red_MSA_df_dict = {}
+    for red_aln_index_full_path in red_aln_index_full_path_list:
+        red_MSA_df_dict[red_aln_index_full_path] = pandas.read_csv(red_aln_index_full_path, sep="\t")
+    return red_MSA_df_dict
+
+def get_aln_path_list(DATA_path):
+    aln_path_list = []
+    aln_dir_list = os.listdir(DATA_path)
+    for thing in aln_dir_list:
+        if not os.path.isfile(thing):
+            aln_path_list.append(os.path.join(DATA_path,thing))
+    return aln_path_list
+
+def get_red_aln_index_full_path_list(aln_path_list):
+    red_aln_index_full_path_list = []
+    for aln_path in aln_path_list:
+        head, aln_name = os.path.split(aln_path)
+        red_aln_index_full_path = os.path.join(aln_path, "red_"+aln_name+"_exact_match.index")
+        red_aln_index_full_path_list.append(red_aln_index_full_path)
+    return red_aln_index_full_path_list
+
+def get_max_sample_size_for_job(red_MSA_df_dict):
+    len_set = set()
+    for red_aln_index_full_path in red_MSA_df_dict.keys():
+        len_set.add(len(red_MSA_df_dict[red_aln_index_full_path].index))
+    if len(len_set) > 1:
+        err_msg = "Reduced alignment index files are of unequal length. Attempting to fix..."
+        errorFct(err_msg)
+        try:
+            #fix_red_aln_index_files()
+            raise
+        except:
+            err_msg = "Fixing alignment index failed. Try to create new job."
+            errorFct(err_msg)
+    else:
+        return len_set.pop()
+
+#by design the comparison strategy is a set of 2-tuples
+#to be precise: comp_strat \subseteq sample_set x sample_set
+#lower triangle means that, if we had a square matrix A=(a_{ik}) with
+#i \in sample_set and k \in sample_set, we exclude the diagonal elements
+#and also assume symmetry a_{ik}=a_{ki}. Of course this leads to a large number of
+#pairwise reference alignments of (n^2-n)/2, where n=len(sample_set) and also is not true
+#for arbitrary structure aligners. i.e. alignments a_{ik}=a_{ki} are not identical in general.
+#i'm not sure what exactly this means for measurement though.
+def generate_low_triangle(sample_set):
+    comp_strat = set()
+    for i in sample_set:
+        for k in sample_set:
+            if k >= i:
+                break
+            comp_strat.add((i,k))
+    return comp_strat
+
+def generate_comp_strat(max_sample_size, sample_size, comp_strat_name="low_triangle", comp_strat_file_path=""):
+    sample_set = set()
+    if comp_strat_file_path == "":
+        #first step: choose subset of maximal set
+        int_sample_size = int(sample_size)
+        #this will hardly impact performance, but I thought it was cool
+        if int_sample_size <= max_sample_size/2:
+            include_set = set()
+            while len(include_set) < int_sample_size:
+                random_int = random.randint(0, max_sample_size-1)
+                include_set.add(random_int)
+            sample_set = include_set.copy()
+        else:
+            max_sample_set = set(range(0,max_sample_size))
+            exclude_set = set()
+            exclude_bound = max_sample_size-int_sample_size
+            while len(exclude_set) < exclude_bound:
+                random_int = random.randint(0, max_sample_size-1)
+                exclude_set.add(random_int)
+            sample_set = max_sample_set.difference(exclude_set).copy()
+        if comp_strat_name == "low_triangle":
+            comp_strat = generate_low_triangle(sample_set)
+            return comp_strat
+        elif comp_strat_name == "random":
+            pass
+        elif comp_strat_name == "complete_linear_coverage":
+            pass
+    else:
+        #functionality not implemented
+        pass
+            
+
+def run_job(out_path, job_name, verbosity, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path=""):
+    #set and get paths
+    DATA_path = os.path.join(out_path, job_name, "DATA")
+    aln_path_list = get_aln_path_list(DATA_path)
+    red_aln_index_full_path_list = get_red_aln_index_full_path_list(aln_path_list)
+    #import reduced alignment index files as dict of dataframes (keys: red_aln_index_full_path; values: dataframe)
+    red_MSA_df_dict = import_red_aln_index_files(red_aln_index_full_path_list)
+    #get max sample size
+    max_sample_size = get_max_sample_size_for_job(red_MSA_df_dict)
+    if sample_size == 0 or sample_size >= max_sample_size:
+        sample_size = int(max_sample_size)
+    #generating comparison strategy
+    comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+    print(len(comp_strat))
+    print(comp_strat)
+
+
 def test_SPS(aln_file_full_path):
 
     #[sequence, header, number, cleaned_sequence]
@@ -2671,8 +2773,11 @@ def main():
     argParser.add_argument("-db", "--locpdbdb", default="PDB_db", help="Path to local PDB database.", required=False)
     argParser.add_argument("-af", "--alignmentfile", help="MSA file in FASTA format", required=False)
     argParser.add_argument("-bat", "--batchsearch", help="Path to MSA files in FASTA format", required=False)
-    argParser.add_argument("-ss", "--samplesize", default=10, type = int,
-                           help="Give sample size of random sequences taken from alignment file as integer. Default:10. 0 means full alignment.", required=False)
+    argParser.add_argument("-ss", "--samplesize", default=0, type = int,
+                           help="Give sample size of random sequences taken from alignment file as integer. Default:0 means full alignment.", required=False)
+    argParser.add_argument("-csn", "--compstratname", choices=["low_triangle"], default="low_triangle",
+                           help="Select comparison strategy by name. Default: low_triangle", required=False)
+    argParser.add_argument("-csf", "--compstratfile", default="", help="Path to comparison strategy set in file format. Currently not implemented", required=False)
     argParser.add_argument("-sn", "--samplenumber",type = int, default = 1, help="Provide integer for how many times you want to sample. Default:1", required=False)
     argParser.add_argument("-dow", "--download", help="Path to CSV files to download PDB files from", required=False)
     argParser.add_argument("-bnch", "--benchmarkmode", default=0, action="count",
@@ -2697,7 +2802,8 @@ def main():
     argParser.add_argument("-babp", "--batchblastp", action="count", default=0, help="testing fasta cleaning", required=False)
     argParser.add_argument("-ddb", "--diamonddbfile", help="Path to diamond database file.", required=False)
     argParser.add_argument("-svg", "--svgpath", help="Path to SVG files to be concatenated.", required=False)
-    argParser.add_argument("-cr", "--calcrework", default=0, action="count", help="Placeholder for new calculation of job", required=False)
+    argParser.add_argument("-cr", "--createjob", default=0, action="count", help="Set up job folder and required data.", required=False)
+    argParser.add_argument("-rj", "--runjob", default=0, action="count", help="Running job by specifying output folder and job title.", required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
     args = argParser.parse_args()
@@ -2747,8 +2853,10 @@ def main():
             job_list_of_dict_lists = import_aln_files_in_job(args.title, args.output)
             print(len(job_list_of_dict_lists))
             print(job_list_of_dict_lists)
-    if args.calcrework > 0:
+    if args.createjob > 0:
         create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose)
+    if args.runjob > 0:
+        run_job(args.output, args.title, args.verbose, args.samplesize, args.compstratname, args.compstratfile)
     if args.test > 0:
         test_SPS(args.alignmentfile)
     
