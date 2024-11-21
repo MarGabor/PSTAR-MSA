@@ -17,6 +17,7 @@ import requests
 import subprocess
 import gzip
 import shutil
+import json
 #import svg_stack
 from itertools import tee
 import lxml
@@ -968,6 +969,8 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
     create_dir_safely(os.path.join(DAT_path, "out_logs"))
     
     #this loop is necessary for clean error logging, since DaliLite.v5 seems to have bad logging
+    counter = 0
+    no_of_files = len(pdb_name_list)
     for pdb_name in pdb_name_list:
         
         shell_input = []
@@ -977,6 +980,11 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
             pdb_full_path = os.path.join(pdb_path, pdb_name+".pdb")
         err_file_path = os.path.join(DAT_path, "err_logs/", pdb_name)
         out_file_path = os.path.join(DAT_path, "out_logs/", pdb_name)
+
+        counter += 1
+        if verbosity>0:
+            msg = "Importing PDBs... [%s/%s] " % (counter, no_of_files)
+            print(msg, end="\r")
         
         #/.../<dali_dir>/import.pl --pdbfile <path> --pdbid <id> --dat <path> --verbose --clean
         shell_input = [import_pl_full_path, '--pdbfile', pdb_full_path, '--pdbid', pdb_name.upper(), '--dat', DAT_path, '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
@@ -2201,12 +2209,13 @@ def get_exact_matches(TSV_file_full_path, aln_entry_list):
 
     return exact_match_dict
   
-#copies PDB files from local PDB database to <job_dir>/DATA/PDB_lib
+#copies PDB files from local PDB database to <job_dir>/DALI/PDB_lib
 #mainly implemented for consistency, no real advantage
 # void ([str,str,...],str,str)
 def cp_PDB_files_to_job_dir(chain_list, pdb_db_path, pdb_out_path):
     
     for chain in chain_list:
+        print(chain)
         try:
             pdb_id = chain[0:4].lower()
         except IndexError:
@@ -2338,6 +2347,8 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     #exact_match_dict has chains as keys, i.e. XXXX:X
     #be extra careful and watch out for leading spaces and wrong or missing \t separations
     #check for duplicate keys
+    
+    #this function was changed!
     exact_match_dict = get_exact_matches(TSV_file_full_path)
     
     if sample_size != 0:
@@ -2712,9 +2723,168 @@ def generate_comp_strat(max_sample_size, sample_size, comp_strat_name="low_trian
     else:
         #functionality not implemented
         pass
-            
 
-def run_job(out_path, job_name, verbosity, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path=""):
+def get_chain_IDs_from_red_MSA_df(red_MSA_df_dict, comp_strat):
+    index_set = set()
+    for i,k in comp_strat:
+        index_set.add(i)
+        index_set.add(k)
+    chain_ID_dict = {}
+    #index is the common sequence ID
+    for index in index_set:
+        small_chain_id_set = set()
+        small_chain_id_set.clear()
+        for key in red_MSA_df_dict.keys():
+            chain_id_col_num = red_MSA_df_dict[key].columns.get_loc('chain_id')
+            chain_id = red_MSA_df_dict[key].iloc[index, chain_id_col_num]
+            small_chain_id_set.add(str(chain_id))
+        if len(small_chain_id_set)>1:
+            err_msg = "Differing chain IDs for the same common sequence index. Attempting to fix..."
+            errorFct(err_msg)
+            try:
+                #fix_red_aln_index_files()
+                raise
+            except:
+                err_msg = "Fixing alignment index failed. Try to create new job."
+                errorFct(err_msg)
+        else:
+            #maybe decolonize chain ID (?)
+            chain_id = small_chain_id_set.pop()
+            chain_ID_dict[index] = chain_id
+    
+    return chain_ID_dict
+
+def write_set_to_file(comp_strat, dest_full_path):
+    comp_strat_list = list(comp_strat)
+    comp_strat_list_list = [list(element) for element in comp_strat_list]
+    with open(dest_full_path, "w") as file:
+        json.dump(comp_strat_list_list, file)
+
+def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity):
+    #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
+    #and generates only empty alignments for job titles exactly 12 chars long
+    #this is a DALI problem and can't be changed at the moment
+    #i could, however probably find a workaround, but this isn't really worth the effort right now
+    #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
+    comp_strat_exclude_set = set()
+    if len(job_name) > 11:
+        errMsg = "Job title is longer than 11 characters. Please enter a shorter job title."
+        errorFct(errMsg)
+        raise
+    
+    #saving cwd for later file system navigation
+    wd = os.getcwd()
+    
+    #changing relative paths to absolute
+    if os.path.isabs(pl_bin_path):
+        dali_pl_full_path = os.path.join(pl_bin_path, "dali.pl")
+    else:
+        dali_pl_full_path = os.path.join(wd, pl_bin_path, "dali.pl")
+        
+    if not os.path.isabs(small_pdb_lib_path):
+        small_pdb_lib_path = os.path.join(wd, small_pdb_lib_path)
+        
+    if not os.path.isabs(out_path):
+        out_path = os.path.join(wd, out_path)
+    
+    if not os.path.isabs(dali_dat_lib_path):
+        dali_dat_lib_path = os.path.join(wd, dali_dat_lib_path)
+
+    #creating ALN subdir
+    ALN_path = os.path.join(out_path, job_name, "DALI", "ALN")
+    create_dir_safely(ALN_path)
+
+    json_exclude_path = os.path.join(ALN_path, "continue_exclude.json")
+    
+    counter = 0
+    no_of_alns = len(comp_strat)
+    for i,k in comp_strat:
+
+        try:
+            chain_id1 = str(chain_id_dict[i][0:4])+str(chain_id_dict[i][5])
+            chain_id2 = str(chain_id_dict[k][0:4])+str(chain_id_dict[k][5])
+        except IndexError:
+            errMsg = "Chain identifier %s or %s is shorter than 6 chars." % (chain_id_dict[i], chain_id_dict[k])
+            errorFct(errMsg)
+            raise
+
+        shell_input = []
+        sub_job = "%s_%s" % (str(i), str(k))
+            
+        counter += 1 
+        if verbosity>0:
+            msg = "Calculating alignment %s. [%s/%s] " % (sub_job, counter, no_of_alns)
+            print(msg, end="\r")
+            
+        #creating sub job dir
+        sub_job_path = os.path.join(ALN_path, sub_job)    
+        create_dir_safely(sub_job_path)
+                          
+        err_file_path = os.path.join(sub_job_path, "err_log")
+        out_file_path = os.path.join(sub_job_path, "output_log")
+
+        #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
+        # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+        shell_input = [dali_pl_full_path, '--cd1', chain_id1, '--cd2', chain_id2, 
+                    '--dat1', dali_dat_lib_path, '--dat2', dali_dat_lib_path, '--title', job_name,
+                    '--outfmt', "summary,alignments,equivalences,transrot",
+                    '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
+
+        #navigate to output dir in loop
+        os.chdir(sub_job_path)
+            
+        #create file handles for stdout and stderr, only needed for Popen. rework maybe
+        #or remove
+        try:
+            err_file = open(err_file_path, 'w+')
+        except:
+            errMsg = "Failed to open file %s." % err_file_path
+            errorFct(errMsg)
+            raise
+        try:
+            out_file = open(out_file_path, 'w+')
+        except:
+            errMsg = "Failed to open file %s." % out_file_path
+            errorFct(errMsg)
+            raise
+
+        #subprocess for alignment generation
+        #need to PIPE stdout and stderr for output forwarding    
+        process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
+    
+        try:
+            #timeout may need to be longer (or shorter), depending on size of alignments
+            #for the calculation of pairwise alignments of up to a few chains
+            #500 seconds seems to be reasonable though
+            #remove killing of the process, if it causes problems. Instead, add a warning.
+            out, err = process.communicate()
+            #if out is not None and verbosity>1:
+                #print(out)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            out, err = process.communicate()
+            errMsg = "Communication with dali.pl subprocess timed out. Killed it. Forwarding error to shell_err_log.txt"
+            close_file_safely(err_file, err_file_path, errMsg)
+            close_file_safely(out_file, out_file_path, errMsg)
+            shell_err_fct(err)
+            errorFct(errMsg)
+            if out is not None:
+                print(out)
+            raise
+            
+        #close files
+        close_file_safely(err_file, err_file_path, "")
+        close_file_safely(out_file, out_file_path, "")
+            
+        #change dir back to previous wd
+        os.chdir(wd)
+
+        #add (i,k) tuple to exclude set, since alignment was successful
+        comp_strat_exclude_set.add((i,k))
+        if counter % 100 == 0:
+            write_set_to_file(comp_strat_exclude_set, json_exclude_path)
+
+def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path=""):
     #set and get paths
     DATA_path = os.path.join(out_path, job_name, "DATA")
     aln_path_list = get_aln_path_list(DATA_path)
@@ -2727,8 +2897,32 @@ def run_job(out_path, job_name, verbosity, sample_size=0, comp_strat_name="low_t
         sample_size = int(max_sample_size)
     #generating comparison strategy
     comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
-    print(len(comp_strat))
-    print(comp_strat)
+    #everything below this line can be continued after aborting with a reduced comparison strategy
+    #-----------------------------------------------------------------------------------------------------------------------------------------
+    #generating dir structure for DALI
+    dali_job_dir = os.path.join(out_path, job_name, "DALI")
+    create_dir_safely(dali_job_dir)
+
+    small_pdb_lib_path = os.path.join(dali_job_dir, "PDB_lib")
+    create_dir_safely(small_pdb_lib_path)
+    #get chain IDs from reduced MSA dataframes and associate them with common seq ID
+    chain_id_dict = get_chain_IDs_from_red_MSA_df(red_MSA_df_dict, comp_strat)
+    #create a small copy of PDB files that are relevant to the specific job
+    cp_PDB_files_to_job_dir(list(chain_id_dict.values()), pdb_db_path, small_pdb_lib_path)
+
+    dali_dat_lib_path = os.path.join(dali_job_dir, "DAT_lib")
+    create_dir_safely(dali_dat_lib_path)
+
+    #import data for DALI
+    DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
+    #start pairwise structural alignment
+    try:
+        DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity)
+    except:
+        err_msg = """Exception raised during alignment generation. Use --continuejob to resume
+                     alignment from where it failed, after error source has been identified."""
+        errorFct(err_msg)
+        raise
 
 
 def test_SPS(aln_file_full_path):
@@ -2770,7 +2964,7 @@ def main():
     argParser.add_argument("-sync", "--syncdb", default=0, action="count", help="Sync local PDB database with remote.", required=False)
     argParser.add_argument("-dm", "--datamode", default=0, action="count",
                            help="data mode for gathering PDB files and other data from given FASTA alignment", required=False)
-    argParser.add_argument("-db", "--locpdbdb", default="PDB_db", help="Path to local PDB database.", required=False)
+    argParser.add_argument("-db", "--locpdbdb", help="Path to local PDB database.", required=False)
     argParser.add_argument("-af", "--alignmentfile", help="MSA file in FASTA format", required=False)
     argParser.add_argument("-bat", "--batchsearch", help="Path to MSA files in FASTA format", required=False)
     argParser.add_argument("-ss", "--samplesize", default=0, type = int,
@@ -2856,7 +3050,7 @@ def main():
     if args.createjob > 0:
         create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose)
     if args.runjob > 0:
-        run_job(args.output, args.title, args.verbose, args.samplesize, args.compstratname, args.compstratfile)
+        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.samplesize, args.compstratname, args.compstratfile)
     if args.test > 0:
         test_SPS(args.alignmentfile)
     
