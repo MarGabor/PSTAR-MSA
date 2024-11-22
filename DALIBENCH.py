@@ -2215,7 +2215,6 @@ def get_exact_matches(TSV_file_full_path, aln_entry_list):
 def cp_PDB_files_to_job_dir(chain_list, pdb_db_path, pdb_out_path):
     
     for chain in chain_list:
-        print(chain)
         try:
             pdb_id = chain[0:4].lower()
         except IndexError:
@@ -2760,7 +2759,7 @@ def write_set_to_file(comp_strat, dest_full_path):
     with open(dest_full_path, "w") as file:
         json.dump(comp_strat_list_list, file)
 
-def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity):
+def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq):
     #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
     #and generates only empty alignments for job titles exactly 12 chars long
     #this is a DALI problem and can't be changed at the moment
@@ -2881,10 +2880,22 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
 
         #add (i,k) tuple to exclude set, since alignment was successful
         comp_strat_exclude_set.add((i,k))
-        if counter % 100 == 0:
+        
+        if backup_freq == 0:
+            continue
+        if counter % backup_freq == 0:
             write_set_to_file(comp_strat_exclude_set, json_exclude_path)
 
-def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path=""):
+def restore_comp_strat_backup(comp_strat, out_path, job_name):
+    exclude_set_file_full_path = os.path.join(out_path, job_name, "DALI", "ALN", "continue_exclude.json")
+    with open(exclude_set_file_full_path, "r") as file:
+        exclude_comp_strat_list_list = json.load(file)
+    exclude_comp_strat_set = set(tuple(x) for x in exclude_comp_strat_list_list)
+    comp_strat = comp_strat.difference(exclude_comp_strat_set)
+
+    return comp_strat
+
+def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
     #set and get paths
     DATA_path = os.path.join(out_path, job_name, "DATA")
     aln_path_list = get_aln_path_list(DATA_path)
@@ -2897,6 +2908,14 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size
         sample_size = int(max_sample_size)
     #generating comparison strategy
     comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+    if cont > 0:
+        try:
+            comp_strat = restore_comp_strat_backup(comp_strat, out_path, job_name)
+        except:
+            err_msg = ("Unable to read backup file for comparison strategy. By default, it is being generated every 100 structure alignments."
+                       "You can specify backup frequency with the --backupfreq flag.")
+            errorFct(err_msg)
+            raise
     #everything below this line can be continued after aborting with a reduced comparison strategy
     #-----------------------------------------------------------------------------------------------------------------------------------------
     #generating dir structure for DALI
@@ -2917,10 +2936,10 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size
     DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
     #start pairwise structural alignment
     try:
-        DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity)
+        DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq)
     except:
-        err_msg = """Exception raised during alignment generation. Use --continuejob to resume
-                     alignment from where it failed, after error source has been identified."""
+        err_msg = ("Exception raised during alignment generation. Use flag --continuejob to resume"
+                   "alignment from where it failed, after error has been identified.")
         errorFct(err_msg)
         raise
 
@@ -2969,6 +2988,7 @@ def main():
     argParser.add_argument("-bat", "--batchsearch", help="Path to MSA files in FASTA format", required=False)
     argParser.add_argument("-ss", "--samplesize", default=0, type = int,
                            help="Give sample size of random sequences taken from alignment file as integer. Default:0 means full alignment.", required=False)
+    argParser.add_argument("-bf", "--backupfreq", default=100, type = int, help="Specify how often you'd like to save progress of alignment generation.", required=False)
     argParser.add_argument("-csn", "--compstratname", choices=["low_triangle"], default="low_triangle",
                            help="Select comparison strategy by name. Default: low_triangle", required=False)
     argParser.add_argument("-csf", "--compstratfile", default="", help="Path to comparison strategy set in file format. Currently not implemented", required=False)
@@ -2988,8 +3008,8 @@ def main():
     argParser.add_argument("-a", "--alphabet", choices=["AA", "DNA/RNA"], default="AA", help="Select alphabet: (AA, DNA/RNA). Default: AA", required=False)
     argParser.add_argument("-na", "--nonalphabet", default="-.", help="Select non-alphabet. Default: -.", required=False)
     argParser.add_argument("-v", "--verbose", default=0, action="count",
-                           help="Print progress to terminal. No effect on error logging.1: Basic output. 2: Doesn't work atm. Redirect DALI output.",
-                           required=False)
+                           help="Print progress to terminal. No effect on error logging.", required=False)
+    argParser.add_argument("-cnt", "--continuejob", default=0, action="count", help="Continue job from last checkpoint", required=False)
     argParser.add_argument("-tdb", "--testdb", action="count", default=0, help="Testing diamond database creation.", required=False)
     argParser.add_argument("-dia", "--diamondfile", help="Path to diamond program file.", required=False)
     argParser.add_argument("-clf", "--cleanfasta", action="count", default=0, help="testing fasta cleaning", required=False)
@@ -3050,7 +3070,7 @@ def main():
     if args.createjob > 0:
         create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose)
     if args.runjob > 0:
-        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.samplesize, args.compstratname, args.compstratfile)
+        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.samplesize, args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
     if args.test > 0:
         test_SPS(args.alignmentfile)
     
