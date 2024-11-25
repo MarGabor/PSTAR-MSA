@@ -2692,6 +2692,13 @@ def generate_low_triangle(sample_set):
             comp_strat.add((i,k))
     return comp_strat
 
+def load_comp_strat_from_file(comp_strat_file_full_path):
+    with open(comp_strat_file_full_path, "r") as file:
+        comp_strat_list_list = json.load(file)
+    comp_strat = set(tuple(x) for x in comp_strat_list_list)
+
+    return comp_strat
+
 def generate_comp_strat(max_sample_size, sample_size, comp_strat_name="low_triangle", comp_strat_file_path=""):
     sample_set = set()
     if comp_strat_file_path == "":
@@ -2712,6 +2719,7 @@ def generate_comp_strat(max_sample_size, sample_size, comp_strat_name="low_trian
                 random_int = random.randint(0, max_sample_size-1)
                 exclude_set.add(random_int)
             sample_set = max_sample_set.difference(exclude_set).copy()
+        #select from list of different comparison strategies
         if comp_strat_name == "low_triangle":
             comp_strat = generate_low_triangle(sample_set)
             return comp_strat
@@ -2719,9 +2727,10 @@ def generate_comp_strat(max_sample_size, sample_size, comp_strat_name="low_trian
             pass
         elif comp_strat_name == "complete_linear_coverage":
             pass
+    #else if path to comparison strategy file is provided, then load it up
     else:
-        #functionality not implemented
-        pass
+        comp_strat = load_comp_strat_from_file(comp_strat_file_path)
+        return comp_strat
 
 def get_chain_IDs_from_red_MSA_df(red_MSA_df_dict, comp_strat):
     index_set = set()
@@ -2898,6 +2907,9 @@ def restore_comp_strat_backup(comp_strat, out_path, job_name):
 def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
     #set and get paths
     DATA_path = os.path.join(out_path, job_name, "DATA")
+
+    auto_gen_comp_strat_file_full_path = os.path.join(out_path, job_name, "comp_strat.json")
+
     aln_path_list = get_aln_path_list(DATA_path)
     red_aln_index_full_path_list = get_red_aln_index_full_path_list(aln_path_list)
     #import reduced alignment index files as dict of dataframes (keys: red_aln_index_full_path; values: dataframe)
@@ -2906,9 +2918,22 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size
     max_sample_size = get_max_sample_size_for_job(red_MSA_df_dict)
     if sample_size == 0 or sample_size >= max_sample_size:
         sample_size = int(max_sample_size)
-    #generating comparison strategy
-    comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+    #if --continuejob flag is passed (cont>0), load comp_strat from auto-generated file and
+    #exclude elements that have already been used for pairwise structure alignment
     if cont > 0:
+        try:
+            comp_strat = load_comp_strat_from_file(auto_gen_comp_strat_file_full_path)
+        except:
+            err_msg = ("Error loading auto-generated comparison strategy file. Please make sure that the comparison strategy"
+                       "specified under --compstratname or --compstratfile matches the one that was initially used to run the job"
+                       "when proceeding.")
+            errorFct(err_msg)
+            comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+            try:
+                write_set_to_file(comp_strat, auto_gen_comp_strat_file_full_path)
+            except:
+                err_msg = "Warning: Could not write comparison strategy to file for path %s." % auto_gen_comp_strat_file_full_path
+                errorFct(err_msg)
         try:
             comp_strat = restore_comp_strat_backup(comp_strat, out_path, job_name)
         except:
@@ -2916,6 +2941,15 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size
                        "You can specify backup frequency with the --backupfreq flag.")
             errorFct(err_msg)
             raise
+    #else generate comparison strategy the normal way and write to file
+    else:
+        comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+        try:
+            write_set_to_file(comp_strat, auto_gen_comp_strat_file_full_path)
+        except:
+            err_msg = "Warning: Could not write comparison strategy to file for path %s." % auto_gen_comp_strat_file_full_path
+            errorFct(err_msg)
+
     #everything below this line can be continued after aborting with a reduced comparison strategy
     #-----------------------------------------------------------------------------------------------------------------------------------------
     #generating dir structure for DALI
@@ -2943,6 +2977,40 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size
         errorFct(err_msg)
         raise
 
+def guess_comp_strat_from_DALI_dir(DALI_ALN_path):
+    pass
+
+def import_DALI_alignments(comp_strat, DALI_ALN_dir, red_MSA_df_dict):
+
+    for i,k in comp_strat:
+        pass
+
+def generate_ref_set(comp_strat, aln_dir, red_MSA_df_dict):
+    
+    import_DALI_alignments(comp_strat, aln_dir, red_MSA_df_dict)
+
+
+def evaluate_job(out_path, job_name):
+
+    auto_gen_comp_strat_file_full_path = os.path.join(out_path, job_name, "comp_strat.json")
+    job_path = os.path.join(out_path, job_name)
+    DATA_path = os.path.join(job_path, "DATA")
+    DALI_path = os.path.join(job_path, "DALI")
+    DALI_ALN_path = os.path.join(DALI_path, "ALN")
+
+    #import reduced alignment index files as dict of dataframes (keys: red_aln_index_full_path; values: dataframe)
+    aln_path_list = get_aln_path_list(DATA_path)
+    red_aln_index_full_path_list = get_red_aln_index_full_path_list(aln_path_list)
+    red_MSA_df_dict = import_red_aln_index_files(red_aln_index_full_path_list)
+
+    try:
+        comp_strat = load_comp_strat_from_file(auto_gen_comp_strat_file_full_path)
+    except:
+        err_msg = ("Error loading auto-generated comparison strategy file. Trying to guess comparison strategy from generated alignments.")
+        errorFct(err_msg)
+        comp_strat = guess_comp_strat_from_DALI_dir(DALI_ALN_path)
+    #generate reference set
+    ref_set = generate_ref_set(comp_strat, DALI_ALN_path, red_MSA_df_dict)
 
 def test_SPS(aln_file_full_path):
 
@@ -2991,7 +3059,7 @@ def main():
     argParser.add_argument("-bf", "--backupfreq", default=100, type = int, help="Specify how often you'd like to save progress of alignment generation.", required=False)
     argParser.add_argument("-csn", "--compstratname", choices=["low_triangle"], default="low_triangle",
                            help="Select comparison strategy by name. Default: low_triangle", required=False)
-    argParser.add_argument("-csf", "--compstratfile", default="", help="Path to comparison strategy set in file format. Currently not implemented", required=False)
+    argParser.add_argument("-csf", "--compstratfile", default="", help="Path to comparison strategy set in file format.", required=False)
     argParser.add_argument("-sn", "--samplenumber",type = int, default = 1, help="Provide integer for how many times you want to sample. Default:1", required=False)
     argParser.add_argument("-dow", "--download", help="Path to CSV files to download PDB files from", required=False)
     argParser.add_argument("-bnch", "--benchmarkmode", default=0, action="count",
@@ -3016,8 +3084,9 @@ def main():
     argParser.add_argument("-babp", "--batchblastp", action="count", default=0, help="testing fasta cleaning", required=False)
     argParser.add_argument("-ddb", "--diamonddbfile", help="Path to diamond database file.", required=False)
     argParser.add_argument("-svg", "--svgpath", help="Path to SVG files to be concatenated.", required=False)
-    argParser.add_argument("-cr", "--createjob", default=0, action="count", help="Set up job folder and required data.", required=False)
+    argParser.add_argument("-cj", "--createjob", default=0, action="count", help="Set up job folder and required data.", required=False)
     argParser.add_argument("-rj", "--runjob", default=0, action="count", help="Running job by specifying output folder and job title.", required=False)
+    argParser.add_argument("-ej", "--evaljob", default=0, action="count", help="Evaluating finished job.", required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
     args = argParser.parse_args()
@@ -3071,6 +3140,8 @@ def main():
         create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose)
     if args.runjob > 0:
         run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.samplesize, args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
+    if args.evaljob > 0:
+        evaluate_job(args.output, args.title)
     if args.test > 0:
         test_SPS(args.alignmentfile)
     
