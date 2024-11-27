@@ -2980,14 +2980,124 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size
 def guess_comp_strat_from_DALI_dir(DALI_ALN_path):
     pass
 
-def import_DALI_alignments(comp_strat, DALI_ALN_dir, red_MSA_df_dict):
-
+def import_DALI_alns_by_comp_strat(comp_strat, DALI_ALN_dir):
+    #keys are all tuples in comp_strat and values are
+    #lists of dictionaries returned by the function import_DALI_aln()
+    #each dict represents an individual alignment within a TXT file
+    #with keys being 'job_name','Z-score','rmsd','lali','nres','perc_id','pdb_descr','query'(chain id),'sbjct'(chain id),'DALI_query_seq','DALI_sbjct_seq'
+    #query is the first index in comp_strat index pair (i), sbjct is the second (k)  
+    comp_strat_struct_aln_dict = {}
     for i,k in comp_strat:
-        pass
+        sub_job_name = "%s_%s" % (str(i),str(k))
+        sub_job_path = os.path.join(DALI_ALN_dir, sub_job_name)
+        txt_file_counter = 0
+        for item in os.listdir(sub_job_path):
+            #there should exactly be one .txt file in the dir. it can be empty.
+            if item.endswith('.txt'):
+                txt_file_counter += 1
+                struct_aln_full_path = os.path.join(sub_job_path, item)
+        if txt_file_counter != 1:
+            warn_msg = "Warning: Not exactly one structural alignment in sub job dir %s. Counted %s." % (sub_job_path, str(txt_file_counter))
+            errorFct(warn_msg)
+        #import_DALI_aln() function returns a list of dictionaries. each dict corresponds to one alignment
+        #here we should have at most one alignment per file, i.e. at most lists of length one
+        if txt_file_counter > 0:
+            struct_aln_dict_list = import_DALI_aln(struct_aln_full_path)
+        else:
+            comp_strat_struct_aln_dict[(i,k)] = ["NA"]
+        no_of_alns = len(struct_aln_dict_list)
+        if no_of_alns != 1:
+            warn_msg = "Warning: Not exactly one structural alignment in file %s. Counted %s." % (struct_aln_full_path, str(no_of_alns))
+            errorFct(warn_msg)
+        comp_strat_struct_aln_dict[(i,k)] = struct_aln_dict_list.copy()
+
+    return comp_strat_struct_aln_dict
+
+#technically each common sequence has its own restriction bounds and theres no need to associate
+#a pair of common sequences with a pair of restriction bounds, but it's easier to just calculate
+#everything based on the comparison strategy
+def get_restr_bounds(comp_strat, red_MSA_df_dict):
+    restr_bounds_dict = {}
+    for i,k in comp_strat:
+        sstart_i_set = set()
+        send_i_set = set()
+        sstart_k_set = set()
+        send_k_set = set()
+        sstart_i_set.clear()
+        send_i_set.clear()
+        sstart_k_set.clear()
+        send_k_set.clear()
+        last_key = ""
+        for key in red_MSA_df_dict.keys():
+            sstart_col_num = red_MSA_df_dict[key].columns.get_loc('sstart')
+            send_col_num = red_MSA_df_dict[key].columns.get_loc('send')
+            sstart_i = red_MSA_df_dict[key].iloc[i, sstart_col_num]
+            send_i = red_MSA_df_dict[key].iloc[i, send_col_num]
+            sstart_k = red_MSA_df_dict[key].iloc[k, sstart_col_num]
+            send_k = red_MSA_df_dict[key].iloc[k, send_col_num]
+            #watch out for zero-based indexing
+            sstart_i_set.add(int(sstart_i)-1)
+            send_i_set.add(int(send_i)-1)
+            sstart_k_set.add(int(sstart_k)-1)
+            send_k_set.add(int(send_k)-1)
+            if len(sstart_i_set) != 1 or len(send_i_set) != 1:
+                err_msg = ("Differing subject-embedded query index sets ('sstart','send') among common sequence matches"
+                           "at index %s among files %s and %s.") % (str(i),last_key,key)
+                errorFct(err_msg)
+                exit(1)
+            if len(sstart_k_set) != 1 or len(send_k_set) != 1:
+                err_msg = ("Differing subject-embedded query index sets ('sstart','send') among common sequence matches"
+                           "at index %s in files %s and %s.") % (str(k),last_key,key)
+                errorFct(err_msg)
+                exit(1)
+            last_key = key
+        restr_bounds_dict[i] = (sstart_i_set.pop(),send_i_set.pop())
+        restr_bounds_dict[k] = (sstart_k_set.pop(),send_k_set.pop())
+
+    return restr_bounds_dict
+
+#applies current definition of reference set restriction to individual reference index sets
+#as for right now, we chose to only work with the intersection of the two intervals bounds_i and bounds_k
+#for reasons that are explained in detail in the adjacent work
+#in short: it can be that lack of specificity in MSA algorithm is either punished too harshly or not at all,
+#depending on whether or not any given pair of indices is in the union of bounds_i and bounds_k 
+# (set(),(int,int),(int,int)) -> set()
+def apply_ref_set_restr(small_ref_ind_set, bounds_i, bounds_k):
+    restr_small_ref_ind_set = set()
+    new_min = max(bounds_i[0], bounds_k[0])
+    new_max = min(bounds_i[1], bounds_k[1])
+    if new_max < new_min:
+        return set()
+    for elem in small_ref_ind_set:
+        if elem[0][1] >= new_min and elem[1][1] <= new_max:
+            restr_small_ref_ind_set.add(elem)
+
+    return restr_small_ref_ind_set
 
 def generate_ref_set(comp_strat, aln_dir, red_MSA_df_dict):
     
-    import_DALI_alignments(comp_strat, aln_dir, red_MSA_df_dict)
+    #import structural alignments for all entries in comp_strat
+    comp_strat_struct_aln_dict = import_DALI_alns_by_comp_strat(comp_strat, aln_dir)
+
+    #get subject-embedded query index set for all (i,k) in comp_strat
+    #for that note that each common sequence C_i is associated with exactly
+    #one subject_embedded query index set, which can be found in files red_<aln_name>_exact_match.index
+    #column 'sstart' represents sms_i and 'send' sms_i+m_i-1 with m_i='qlen'
+    #indices 'sstart'-1 and 'send'-1 are both included in the subject-embedded query index set
+    #these files are already readily imported into red_MSA_df_dict
+    #restr_bounds_dict has common sequences indices i as keys and tuple ('sstart'_i-1, 'send'_i-1) as values
+    #property 'qlen' emerges from that as 'qlen'=('send'-1)-('sstart'-1)+1 with min('sstart')=1
+    restr_bounds_dict = get_restr_bounds(comp_strat, red_MSA_df_dict)
+
+    #calculate index sets for DALI alignments
+    for i,k in comp_strat:
+        aln_query_seq = comp_strat_struct_aln_dict[(i,k)][0]['DALI_query_seq']
+        aln_sbjct_seq = comp_strat_struct_aln_dict[(i,k)][0]['DALI_sbjct_seq']
+        small_ref_ind_set = calc_ref_SP_set((i,k), (aln_query_seq, aln_sbjct_seq))
+
+        #this set should be smaller or equal to 'qlen'
+        restr_small_ref_ind_set = apply_ref_set_restr(small_ref_ind_set, restr_bounds_dict[i], restr_bounds_dict[k])
+
 
 
 def evaluate_job(out_path, job_name):
