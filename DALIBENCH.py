@@ -3013,9 +3013,6 @@ def import_DALI_alns_by_comp_strat(comp_strat, DALI_ALN_dir):
 
     return comp_strat_struct_aln_dict
 
-#technically each common sequence has its own restriction bounds and theres no need to associate
-#a pair of common sequences with a pair of restriction bounds, but it's easier to just calculate
-#everything based on the comparison strategy
 def get_restr_bounds(comp_strat, red_MSA_df_dict):
     restr_bounds_dict = {}
     for i,k in comp_strat:
@@ -3074,7 +3071,7 @@ def apply_ref_set_restr(small_ref_ind_set, bounds_i, bounds_k):
 
     return restr_small_ref_ind_set
 
-def generate_ref_set(comp_strat, aln_dir, red_MSA_df_dict):
+def generate_ref_sets(comp_strat, aln_dir, red_MSA_df_dict):
     
     #import structural alignments for all entries in comp_strat
     comp_strat_struct_aln_dict = import_DALI_alns_by_comp_strat(comp_strat, aln_dir)
@@ -3090,6 +3087,8 @@ def generate_ref_set(comp_strat, aln_dir, red_MSA_df_dict):
     restr_bounds_dict = get_restr_bounds(comp_strat, red_MSA_df_dict)
 
     #calculate index sets for DALI alignments
+    #keys are (i,k) and values are restr_small_ref_ind_sets (reference index sets for structural alignments between i and k)
+    restr_small_ref_ind_set_dict = {}
     for i,k in comp_strat:
         aln_query_seq = comp_strat_struct_aln_dict[(i,k)][0]['DALI_query_seq']
         aln_sbjct_seq = comp_strat_struct_aln_dict[(i,k)][0]['DALI_sbjct_seq']
@@ -3098,6 +3097,126 @@ def generate_ref_set(comp_strat, aln_dir, red_MSA_df_dict):
         #this set should be smaller or equal to 'qlen'
         restr_small_ref_ind_set = apply_ref_set_restr(small_ref_ind_set, restr_bounds_dict[i], restr_bounds_dict[k])
 
+        #add to dict
+        restr_small_ref_ind_set_dict[(i,k)] = restr_small_ref_ind_set.copy()
+
+    return restr_small_ref_ind_set_dict, comp_strat_struct_aln_dict
+
+def generate_MSA_sets(comp_strat, red_MSA_df_dict):
+
+    comp_strat_MSA_aln_dict = {}
+    comp_strat_MSA_aln_dict.clear()
+    for red_index_file_full_path in red_MSA_df_dict.keys():
+        orig_fasta_index_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('fasta_entry_index')
+        fasta_header_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('fasta_entry_header')
+        gapped_seq_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('gapped_seq')
+        chain_id_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('chain_id')
+        evalue_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('evalue')
+        bitscore_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('bitscore')
+        sstart_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('sstart')
+        send_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('send')
+        MSA_ind_set_dict = {}
+        comp_strat_red_ind_dict = {}
+        MSA_ind_set_dict.clear()
+        comp_strat_red_ind_dict.clear()
+        for i,k in comp_strat:
+            #generate MSA index sets
+            gapped_seq_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, gapped_seq_col_num]
+            gapped_seq_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, gapped_seq_col_num]
+            MSA_ind_set = calc_MSA_SP_set((i,k), (gapped_seq_i, gapped_seq_k))
+            MSA_ind_set_dict[(i,k)] = MSA_ind_set.copy()
+            #generate additional info
+            row_dict = {}
+            row_dict.clear()
+            orig_fasta_index_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, orig_fasta_index_col_num]
+            orig_fasta_index_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, orig_fasta_index_col_num]
+            fasta_header_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, fasta_header_col_num]
+            fasta_header_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, fasta_header_col_num]
+            chain_id_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, chain_id_col_num]
+            chain_id_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, chain_id_col_num]
+            evalue_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, evalue_col_num]
+            evalue_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, evalue_col_num]
+            bitscore_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, bitscore_col_num]
+            bitscore_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, bitscore_col_num]
+            sstart_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, sstart_col_num]
+            sstart_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, sstart_col_num]
+            send_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, send_col_num]
+            send_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, send_col_num]
+            row_dict['fasta_entry_index'] = (orig_fasta_index_i, orig_fasta_index_k)
+            row_dict['fasta_entry_header'] = (fasta_header_i, fasta_header_k)
+            row_dict['chain_id'] = (chain_id_i, chain_id_k)
+            row_dict['evalue'] = (evalue_i, evalue_k)
+            row_dict['bitscore'] = (bitscore_i, bitscore_k)
+            row_dict['sstart'] = (sstart_i, sstart_k)
+            row_dict['send'] = (send_i, send_k)
+            comp_strat_red_ind_dict[(i,k)] = row_dict.copy()
+        comp_strat_MSA_aln_dict[red_index_file_full_path] = (MSA_ind_set_dict.copy(), comp_strat_red_ind_dict.copy())
+    
+    return comp_strat_MSA_aln_dict
+
+#in this function we can determine how to calculate any score based on the calculated sets
+def calc_pair_SPS_by_comp_strat(comp_strat, ref_set_dict, comp_strat_MSA_aln_dict):
+    pair_SPS_dict = {}
+    pair_SPS_dict.clear()
+    for red_index_file_full_path in comp_strat_MSA_aln_dict.keys():
+        MSA_ind_set_dict = comp_strat_MSA_aln_dict[red_index_file_full_path][0]
+        small_pair_SPS_dict = {}
+        small_pair_SPS_dict.clear()
+        for i,k in comp_strat:
+            intersect_set = MSA_ind_set_dict[(i,k)].intersection(ref_set_dict[(i,k)])
+            if len(ref_set_dict[(i,k)]) != 0:
+                pair_SPS = len(intersect_set)/len(ref_set_dict[(i,k)])
+            else:
+                pair_SPS = 0
+            small_pair_SPS_dict[(i,k)] = pair_SPS
+        pair_SPS_dict[red_index_file_full_path] = small_pair_SPS_dict.copy()
+
+    return pair_SPS_dict
+
+def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict):
+    #calculate SPS for each pair of sequences indexed by comparison strategy
+    #pair_SPS_dict: keys are paths to red_index_file; values are small_pair_SPS_dict
+    #small_pair_SPS_dict: keys are each element in comp_strat (i,k); values are the SPS between sequences i and k ("pair_SPS")
+    pair_SPS_dict = calc_pair_SPS_by_comp_strat(comp_strat, ref_set_dict, comp_strat_MSA_aln_dict)
+    
+    #merge comp_strat_MSA_aln_dict with pair_SPS_dict and comp_strat_struct_aln_dict
+    output_dict = {}
+    output_dict.clear()
+    for red_ind_file_full_path in comp_strat_MSA_aln_dict.keys():
+        small_output_dict = {}
+        small_output_dict.clear()
+        for i,k in comp_strat:
+            row_dict = {}
+            row_dict.clear()
+            row_dict['fasta_entry_index'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['fasta_entry_index']
+            row_dict['fasta_entry_header'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['fasta_entry_header']
+            row_dict['chain_id'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['chain_id']
+            row_dict['evalue'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['evalue']
+            row_dict['bitscore'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['bitscore']
+            row_dict['sstart'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['sstart']
+            row_dict['send'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['send']
+            row_dict['Z-score'] = comp_strat_struct_aln_dict[(i,k)][0]['Z-score']
+            row_dict['rmsd'] = comp_strat_struct_aln_dict[(i,k)][0]['rmsd']
+            row_dict['lali'] = comp_strat_struct_aln_dict[(i,k)][0]['lali']
+            row_dict['nres'] = comp_strat_struct_aln_dict[(i,k)][0]['nres']
+            row_dict['perc_id'] = comp_strat_struct_aln_dict[(i,k)][0]['perc_id']
+            row_dict['pdb_descr'] = comp_strat_struct_aln_dict[(i,k)][0]['pdb_descr']
+            #next two are only for verification
+            row_dict['query_id'] = comp_strat_struct_aln_dict[(i,k)][0]['query']
+            row_dict['sbjct_id'] = comp_strat_struct_aln_dict[(i,k)][0]['sbjct']
+            #include pair_SPS
+            row_dict['pair_SPS'] = pair_SPS_dict[red_ind_file_full_path][(i,k)]
+            small_output_dict[(i,k)] = row_dict.copy()
+
+        output_dict[red_ind_file_full_path] = small_output_dict.copy()
+
+    #use output dict to write dataframe to csv for each key
+    for red_ind_file_full_path in output_dict.keys():
+        path, file = os.path.split(red_ind_file_full_path)
+        path2, aln_name = os.path.split(path)
+        tsv_output_file_full_path = os.path.join(eval_path, aln_name+".tsv")
+        output_df = pandas.DataFrame.from_dict(output_dict[red_ind_file_full_path], orient='index')
+        output_df.to_csv(tsv_output_file_full_path, sep='\t')
 
 
 def evaluate_job(out_path, job_name):
@@ -3119,8 +3238,28 @@ def evaluate_job(out_path, job_name):
         err_msg = ("Error loading auto-generated comparison strategy file. Trying to guess comparison strategy from generated alignments.")
         errorFct(err_msg)
         comp_strat = guess_comp_strat_from_DALI_dir(DALI_ALN_path)
-    #generate reference set
-    ref_set = generate_ref_set(comp_strat, DALI_ALN_path, red_MSA_df_dict)
+    #generate reference sets
+    #ref_set_dict: keys are (i,k); values are reference index sets
+    #comp_strat_struct_aln_dict: keys are (i,k); values are (one-element) lists of dict with struct alignment data (s. function "import_DALI_alns_by_comp_strat()")
+    ref_set_dict, comp_strat_struct_aln_dict = generate_ref_sets(comp_strat, DALI_ALN_path, red_MSA_df_dict)
+
+    #generate MSA index sets
+    #comp_strat_MSA_aln_dict: keys are paths to red_index_file (<path>/DATA/<aln_name>/red_<aln_name>_exact_match.index)
+    #values are 2-tuples. at pos [0] they have MSA_index_set_dict, at pos [1] they have comp_strat_red_ind_dict
+
+        #MSA_index_set_dict: keys are each element in comp_strat (i,k); values are MSA_index_sets
+        # for gapped sequences i and k
+
+        #comp_strat_red_ind_dict: keys are each element in comp_strat (i,k); values are 2-tuples with
+        # pos [0] representing row i and pos [1] representing row k in red_index_file as dictionaries
+   
+    comp_strat_MSA_aln_dict = generate_MSA_sets(comp_strat, red_MSA_df_dict)
+
+    #create output folder and 
+    eval_path = os.path.join(job_path, "EVAL")
+    create_dir_safely(eval_path)
+
+    write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict)
 
 def test_SPS(aln_file_full_path):
 
