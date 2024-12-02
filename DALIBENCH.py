@@ -224,20 +224,26 @@ def import_seq_list_from_fasta_aln(aln_file_path):
     seq_list = []
 
     try:
-        aln_file = open(aln_file_path)
+        aln_file = open(aln_file_path, "r")
     except:
         errMsg = "Could not open alignment file %s." % aln_file_path
         errorFct(errMsg)
-        return seq_list
+        raise
     try:
         alignment = AlignIO.read(aln_file, "fasta")
-    except:
-        errMsg = "Could not read fasta file %s." %aln_file_path
-        close_file_safely(aln_file, aln_file_path, errMsg)
-        errorFct(errMsg)
-        return seq_list
+    except ValueError:
+        close_file_safely(aln_file, aln_file_path, '')
+        try:
+            alignment = SeqIO.parse(aln_file_path, "fasta")
+        except:
+            errMsg = "Could not read fasta file %s." %aln_file_path
+            errorFct(errMsg)
+            raise
+        finally:
+            warn_msg = "Warning: Sequences in %s might not all have the same length." % aln_file_path
+            close_file_safely(aln_file, aln_file_path, warn_msg)
+            errorFct(warn_msg)
 
-    close_file_safely(aln_file, aln_file_path, '')
 
     internal_id = 0
 
@@ -1354,6 +1360,9 @@ def evaluate_diamond_search_data(tsv_path, output_path, sort_by, verbosity):
         plot_df = pandas.DataFrame(new_df[['pident','is_exact_match']])
         plot_df['mean_identity'] = new_df['pident'].mean()
         plot_df['exact_match_perc'] = (tsv_ex_match_counter/tsv_total_counter)*100
+
+        plot_df.to_csv(os.path.join(output_path,"data_avail.tsv"), sep='\t')
+
         #pandas.plot returns matplotlib.axes.Axes object
         plot_df_len = len(plot_df)
         xtick_list = list(range(0,plot_df_len,math.floor(plot_df_len/5)))
@@ -2450,14 +2459,15 @@ def create_MSA_ex_match_df(aln_entry_list, unique_exact_match_dict):
                               'gapped_seq','chain_id','sstart','send','evalue','bitscore','qlen'])
     return MSA_df
 
-
+#writes index files for each input alignment that tie together diamond blastp query data
+# with the headers and the aligned sequences in the original input files
+# void ([str,str,...], str, str, str, int)
 def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
 
+    DATA_path = os.path.join(job_path, "DATA")
+    create_dir_safely(DATA_path)
 
     for aln_file_full_path in aln_file_full_path_list:
-
-        DATA_path = os.path.join(job_path, "DATA")
-        create_dir_safely(DATA_path)
 
         path, aln_file_name_ext = os.path.split(aln_file_full_path)
         aln_file_name, ext = os.path.splitext(aln_file_name_ext)
@@ -2516,8 +2526,8 @@ def read_MSA_index_files_in_job(aln_file_full_path_list, job_path):
 
 #this function is given a set of ungapped sequences that are shared among all input MSAs
 #it is also given a dict of dictionaries. latter contain ungapped_sequences of ALL queries that have 
-#exact query matches as keys and the corresponding rows in the aln_index as values. each key of the
-#higher level dict represents a different input MSA
+#exact query matches (the ungapped sequences) as keys and the corresponding rows in the aln_index as values as a list.
+# each key of the higher level dict represents a different input MSA
 # (set(), [{},{},...]) -> set()
 def verify_common_seq_data(common_seq_set, seq_prim_key_dict_dict):
 
@@ -2541,16 +2551,17 @@ def verify_common_seq_data(common_seq_set, seq_prim_key_dict_dict):
         #contradicting Lemma 2 
         prev_aln_index_full_path = ""
         for aln_index_full_path in seq_prim_key_dict_dict.keys():
-            chain_id_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq].chain_id))
-            sstart_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq].sstart))
-            send_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq].send))
-            bitscore_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq].bitscore))
-            if len(chain_id_set)>1 or len(sstart_set)>1 or len(send_set)>1 or len(bitscore_set)>1:
-                exclude_set.add(common_seq.copy())
-                warn_msg = """Warning: Inconsistency in common sequence set between %s and %s. Excluding sequence.\n
-                              Chain_ids: %s\n Sstart: %s\n Send: %s\n Bitscore: %s""" % (prev_aln_index_full_path,aln_index_full_path,
-                                                                                         str(chain_id_set,sstart_set,send_set,bitscore_set))
-                errorFct(warn_msg)
+            for i in range(0, len(seq_prim_key_dict_dict[aln_index_full_path][common_seq])):
+                chain_id_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].chain_id))
+                sstart_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].sstart))
+                send_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].send))
+                bitscore_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].bitscore))
+                if len(chain_id_set)>1 or len(sstart_set)>1 or len(send_set)>1 or len(bitscore_set)>1:
+                    exclude_set.add(common_seq.copy())
+                    warn_msg = """Warning: Inconsistency in common sequence set between %s and %s. Excluding sequence.\n
+                                  Chain_ids: %s\n Sstart: %s\n Send: %s\n Bitscore: %s""" % (prev_aln_index_full_path,aln_index_full_path,
+                                                                                             str(chain_id_set,sstart_set,send_set,bitscore_set))
+                    errorFct(warn_msg)
             prev_aln_index_full_path = aln_index_full_path
     red_common_seq_set = common_seq_set.difference(exclude_set)
     
@@ -2569,7 +2580,12 @@ def generate_common_seq_set(MSA_df_dict, verbosity):
         for index, row in MSA_df_dict[aln_index_full_path].iterrows():
             upper_ungapped_seq = str(row.ungapped_seq).upper()
             seq_set.add(upper_ungapped_seq)
-            seq_prim_key_dict[upper_ungapped_seq] = row
+            #initialize seq_prim_key_dict with empty list.
+            #these lists will contain every row, where the ungapped sequences
+            #are the same (this actually happens)
+            if upper_ungapped_seq not in seq_prim_key_dict.keys():
+                seq_prim_key_dict[upper_ungapped_seq] = []
+            seq_prim_key_dict[upper_ungapped_seq].append(row)
         seq_set_list.append(seq_set.copy())
         seq_prim_key_dict_dict[aln_index_full_path] = seq_prim_key_dict.copy()
 
@@ -2597,8 +2613,11 @@ def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict):
         red_MSA_row_dict = {}
         red_MSA_row_dict.clear()
         for common_seq_ID in df_index_list:
+            #list of rows where ungapped sequences are the same
             #this looks clunky, but I wanted to make extra sure that we have the right common sequence IDs
-            red_MSA_row_dict[common_seq_ID] = seq_prim_key_dict_dict[aln_index_full_path][common_seq_list[common_seq_ID]]
+            row_list = seq_prim_key_dict_dict[aln_index_full_path][common_seq_list[common_seq_ID]]
+            for second_index in range(0,len(row_list)):
+                red_MSA_row_dict[(common_seq_ID,second_index)] = row_list[second_index]
         #create df
         red_MSA_df = pandas.DataFrame.from_dict(red_MSA_row_dict, orient='index')
         #construct path
@@ -2630,7 +2649,7 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
         print(msg)
 
     #use index files to determine set of common underlying sequences
-    #MSA_df_list will serve as a central information hub
+    #MSA_df_dict will serve as a central information hub
     MSA_df_dict = read_MSA_index_files_in_job(aln_file_full_path_list, job_path)
     #common_seq_set is our C. seq_prim_key_dict_dict is utility structure helping to generate
     #the reduced alignment index files
@@ -3218,6 +3237,22 @@ def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_
         output_df = pandas.DataFrame.from_dict(output_dict[red_ind_file_full_path], orient='index')
         output_df.to_csv(tsv_output_file_full_path, sep='\t')
 
+def pstar_union(ref_set_dict, comp_strat_MSA_aln_dict):
+    union_ref_set = set()
+    union_ref_set.clear()
+    for key in ref_set_dict.keys():
+        union_ref_set = union_ref_set.union(ref_set_dict[key].copy())
+
+    union_test_set_dict = {}
+    union_test_set_dict.clear()
+    for key in comp_strat_MSA_aln_dict.keys():
+        union_test_set = set()
+        union_test_set.clear()
+        for key_2 in comp_strat_MSA_aln_dict[key][0].keys():
+            union_test_set = union_test_set.union(comp_strat_MSA_aln_dict[key][0][key_2].copy())
+        union_test_set_dict[key] = union_test_set.copy()
+
+    return union_ref_set, union_test_set_dict
 
 def evaluate_job(out_path, job_name):
 
@@ -3261,6 +3296,17 @@ def evaluate_job(out_path, job_name):
 
     write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict)
 
+    union_ref_set, union_test_set_dict = pstar_union(ref_set_dict, comp_strat_MSA_aln_dict)
+    #print overall SPS per MSA
+    for key in union_test_set_dict.keys():
+        intersect_union = union_test_set_dict[key].intersection(union_ref_set)
+        if len(union_ref_set) > 0:
+            SPS = len(intersect_union)/len(union_ref_set)
+        else:
+            SPS = 0
+        sps_msg = "SPS for alignment file %s: %s" % (key, str(SPS))
+        print(sps_msg) 
+
 def test_SPS(aln_file_full_path):
 
     #[sequence, header, number, cleaned_sequence]
@@ -3286,6 +3332,31 @@ def test_SPS(aln_file_full_path):
 
     print(SPS)
     print("\n")
+
+def test_duplicate_clean_seq(fasta_file_full_path):
+    #[sequence, header, number, cleaned_sequence]
+    entry_list = import_seq_list_from_fasta_aln(fasta_file_full_path)
+
+    seq_set = set()
+    header_set = set()
+    seq_set.clear()
+    header_set.clear()
+    seq_header_dict = {}
+    entry_no = len(entry_list)
+    last_seq_set_size = len(seq_set)
+    for entry in entry_list:
+        upper_seq = str(entry[0]).upper()
+        seq_set.add(upper_seq)
+        header_set.add(entry[1])
+        if last_seq_set_size == len(seq_set):
+            msg = "Seq\n %s \n with header %s is the same as seq with header %s." %(str(entry[0]),str(entry[1]),str(seq_header_dict[upper_seq]))
+            print(msg)
+        last_seq_set_size = len(seq_set)
+        seq_header_dict[upper_seq] = entry[1]
+    seq_msg = "Sequences: [%s/%s]" % (str(len(seq_set)), str(entry_no))
+    header_msg = "Headers: [%s/%s]" % (str(len(header_set)), str(entry_no))
+    print(seq_msg)
+    print(header_msg)
 
 def main():
 
@@ -3392,7 +3463,8 @@ def main():
     if args.evaljob > 0:
         evaluate_job(args.output, args.title)
     if args.test > 0:
-        test_SPS(args.alignmentfile)
+        #test_SPS(args.alignmentfile)
+        test_duplicate_clean_seq(args.alignmentfile)
     
 
     toc = time.perf_counter()
