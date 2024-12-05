@@ -2582,7 +2582,7 @@ def generate_common_seq_set(MSA_df_dict, verbosity):
             seq_set.add(upper_ungapped_seq)
             #initialize seq_prim_key_dict with empty list.
             #these lists will contain every row, where the ungapped sequences
-            #are the same (this actually happens)
+            #are the same (yes, this actually happens for whatever reason)
             if upper_ungapped_seq not in seq_prim_key_dict.keys():
                 seq_prim_key_dict[upper_ungapped_seq] = []
             seq_prim_key_dict[upper_ungapped_seq].append(row)
@@ -2601,25 +2601,66 @@ def generate_common_seq_set(MSA_df_dict, verbosity):
     return red_common_seq_set, seq_prim_key_dict_dict
 
 #create reduced MSA dataframe and write to file. return list of full paths to reduced MSA index files.
+#i'm personally dissatisfied with this function, but I had to work with duplicate underlying sequences somehow
+#thus this function is a bit of a frankenstein's creation
+#rewrite at appropriate moment in time
 def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict):
 
     red_MSA_index_full_path_list = []
     #assign ID to each common seq, e.g. convert set to list.
     common_seq_list = list(common_seq_set)
-    #common seq IDs are index for new df
-    df_index_list = range(0,len(common_seq_list))
-
+    #initialize total row dict of dicts for each alignment file
+    total_row_dict = {}
+    total_row_dict.clear()
     for aln_index_full_path in seq_prim_key_dict_dict.keys():
-        red_MSA_row_dict = {}
-        red_MSA_row_dict.clear()
-        for common_seq_ID in df_index_list:
-            #list of rows where ungapped sequences are the same
-            #this looks clunky, but I wanted to make extra sure that we have the right common sequence IDs
-            row_list = seq_prim_key_dict_dict[aln_index_full_path][common_seq_list[common_seq_ID]]
-            for second_index in range(0,len(row_list)):
-                red_MSA_row_dict[(common_seq_ID,second_index)] = row_list[second_index]
-        #create df
-        red_MSA_df = pandas.DataFrame.from_dict(red_MSA_row_dict, orient='index')
+        total_row_dict[aln_index_full_path] = {}
+        total_row_dict[aln_index_full_path].clear()
+    
+    while_com_seq_list_len = len(common_seq_list)
+    common_seq_ID = 0
+    canon_ind = 0
+    while common_seq_ID < while_com_seq_list_len:
+        rows_per_com_seq_dict = {}
+        rows_per_com_seq_dict.clear()
+        for aln_index_full_path in seq_prim_key_dict_dict.keys():
+            #list of rows where ungapped sequences are the same per alignment file
+            rows_per_com_seq_dict[aln_index_full_path] = seq_prim_key_dict_dict[aln_index_full_path][common_seq_list[common_seq_ID]]
+        #making sure that for each alignment to be compared we have the same amount
+        # of aligned sequences for each common sequence
+        len_dict = {}
+        len_dict.clear()
+        for aln_index_full_path in seq_prim_key_dict_dict.keys():
+            len_dict[aln_index_full_path] = len(rows_per_com_seq_dict[aln_index_full_path])
+        #determine minimum of values in len_dict to restrict number of aligned sequences to this int
+        min_value = min(list(len_dict.values()))
+        #RANDOM ELEMENTS! This is controversial in my mind. Ultimately, this only affects the MSA index sets
+        # NOT the reference sets, because the underlying sequences are EXACTLY the same. This means, that if 
+        # DIAMOND and the subsequent processing of data is deterministic, we should only see a difference in the 
+        # reduced index files in the columns "fasta_header", "fasta_index" and "gapped_sequence". 
+        # Columns "sstart", "send" and "ungapped_seq" should be the same, which means that our
+        # exact query match restriction should remain constant, no matter the choice of the next rows
+        # implement check to be extra sure
+        new_rows_per_com_seq_dict = {}
+        new_rows_per_com_seq_dict.clear()
+        #choosing subset for each list of rows with gapped_seq, where ungapped sequences are the same 
+        for aln_index_full_path in rows_per_com_seq_dict.keys():
+            rand_ind_list = random.sample(range(0,len(rows_per_com_seq_dict[aln_index_full_path])), min_value)
+            new_rows_per_com_seq_dict[aln_index_full_path] = [rows_per_com_seq_dict[aln_index_full_path][index] for index in rand_ind_list]
+
+        #assign canonical index
+        for aln_index_full_path in new_rows_per_com_seq_dict.keys():
+            for row in new_rows_per_com_seq_dict[aln_index_full_path]:
+                total_row_dict[aln_index_full_path][canon_ind] = row
+                canon_ind += 1
+            #new_rows_per_com_seq_dict[key] for all aln_index_full_paths in keys contains exactly min_value rows
+            #thus we can subtract min_value from canon_ind to keep the canonical index the same between all red_index_files
+            canon_ind -= min_value
+        canon_ind += min_value
+        common_seq_ID += 1
+
+    #create dfs
+    for aln_index_full_path in total_row_dict.keys():
+        red_MSA_df = pandas.DataFrame.from_dict(total_row_dict[aln_index_full_path], orient='index')
         #construct path
         path, name_ext = os.path.split(aln_index_full_path)
         red_name_ext = "red_"+name_ext
@@ -2629,6 +2670,100 @@ def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict):
         red_MSA_index_full_path_list.append(red_MSA_index_full_path)
 
     return red_MSA_index_full_path_list
+
+#elaborate test function to test integrity of reduced index files
+def test_red_index_file(aln_dir, out_path, job_name, verbosity, differing_sequences):
+
+    #get all alignment files in dir
+    aln_dir_list = os.listdir(aln_dir)
+    aln_file_full_path_list = []
+    for thing in aln_dir_list:
+        if os.path.isfile(os.path.join(aln_dir, thing)):
+            aln_file_full_path_list.append(os.path.join(aln_dir, thing))
+
+    job_path = os.path.join(out_path, job_name)
+    create_dir_safely(job_path)
+
+    #use index files to determine set of common underlying sequences
+    #MSA_df_dict will serve as a central information hub
+    MSA_df_dict = read_MSA_index_files_in_job(aln_file_full_path_list, job_path)
+    #common_seq_set is our C. seq_prim_key_dict_dict is utility structure helping to generate
+    #the reduced alignment index files
+    common_seq_set, seq_prim_key_dict_dict = generate_common_seq_set(MSA_df_dict, verbosity)
+    if differing_sequences.issubset(common_seq_set) and len(differing_sequences) != 0:
+        warn_msg = ("Warning: Integrity test failed for reduced index files."
+                    "Common sequences %s are not present, although they should be.") % (str(differing_sequences))
+        errorFct(warn_msg)
+    red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict)
+    #test contents of reduced index files
+    red_MSA_df_dict = import_red_aln_index_files(red_MSA_index_full_path_list)
+
+    test_dict = {}
+    test_dict.clear()
+    i = 0
+    while True:
+        try:
+            test_dict[i] = []
+            for aln_index_full_path in red_MSA_df_dict.keys():
+                test_dict[i].append(red_MSA_df_dict[aln_index_full_path].iloc[i])
+            i += 1
+        except IndexError:
+            max_i = i-1
+            break
+    #are the rows almost the same for each canonical index?
+    seq_set_red = set()
+    for i in range(0,max_i+1):
+        last_row = test_dict[i][0]
+        for row in test_dict[i]:
+            if row.ungapped_seq.upper() != last_row.ungapped_seq.upper():
+                msg = "Warning: Rows with index %s have differing ungapped sequences." % (str(i))
+                print(row.ungapped_seq)
+                print(last_row.ungapped_seq)
+                errorFct(msg)
+            if row.sstart != last_row.sstart:
+                msg = "Warning: Rows with index %s have differing sstart." % (str(i))
+                print(row.sstart)
+                print(last_row.sstart)
+                errorFct(msg)
+            if row.send != last_row.send:
+                msg = "Warning: Rows with index %s have differing send." % (str(i))
+                print(row.send)
+                print(last_row.send)
+                errorFct(msg)
+            if row.evalue != last_row.evalue:
+                msg = "Warning: Rows with index %s have differing evalue." % (str(i))
+                print(row.evalue)
+                print(last_row.evalue)
+                errorFct(msg)
+            if row.bitscore != last_row.bitscore:
+                msg = "Warning: Rows with index %s have differing bitscore." % (str(i))
+                print(row.bitscore)
+                print(last_row.bitscore)
+                errorFct(msg)
+
+            seq_set_red.add(row.ungapped_seq.upper())
+
+    seq_set_index_file = set()
+    test_dict_2 = {}
+    test_dict_2.clear()
+    i = 0
+    while True:
+        try:
+            test_dict_2[i] = []
+            for aln_index_full_path in MSA_df_dict.keys():
+                test_dict_2[i].append(MSA_df_dict[aln_index_full_path].iloc[i])
+            i += 1
+        except IndexError:
+            max_i = i-1
+            break
+
+    for i in range(0, max_i+1):
+        for row in test_dict_2[i]:
+            seq_set_index_file.add(row.ungapped_seq.upper())
+
+    differing_sequences = seq_set_red.symmetric_difference(seq_set_index_file)
+
+    return differing_sequences
 
 #creates job dir from a list of alignments
 def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
@@ -2655,6 +2790,12 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
     #the reduced alignment index files
     common_seq_set, seq_prim_key_dict_dict = generate_common_seq_set(MSA_df_dict, verbosity)
     red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict)
+
+    #testing reduced index files, especially the canonical index for correctness
+    #this can be left out, once sufficient trust is built
+    differing_sequences = set()
+    differing_sequences = test_red_index_file(aln_dir, out_path, job_name, 0, differing_sequences)
+    _ = test_red_index_file(aln_dir, out_path, job_name, 0, differing_sequences)
 
 def import_red_aln_index_files(red_aln_index_full_path_list):
     red_MSA_df_dict = {}
@@ -2683,7 +2824,7 @@ def get_max_sample_size_for_job(red_MSA_df_dict):
     for red_aln_index_full_path in red_MSA_df_dict.keys():
         len_set.add(len(red_MSA_df_dict[red_aln_index_full_path].index))
     if len(len_set) > 1:
-        err_msg = "Reduced alignment index files are of unequal length. Attempting to fix..."
+        err_msg = "Reduced alignment index files are of unequal length."
         errorFct(err_msg)
         try:
             #fix_red_aln_index_files()
@@ -3464,7 +3605,10 @@ def main():
         evaluate_job(args.output, args.title)
     if args.test > 0:
         #test_SPS(args.alignmentfile)
-        test_duplicate_clean_seq(args.alignmentfile)
+        #test_duplicate_clean_seq(args.alignmentfile)
+        differing_sequences = set()
+        differing_sequences = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
+        _ = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
     
 
     toc = time.perf_counter()
