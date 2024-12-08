@@ -2113,12 +2113,22 @@ def clean_fasta_files_in_dir(path_to_fasta_files, out_path, valid_symbols, verbo
 # ./diamond blastp -d <diamond_db_file_full_path> -q <query_fasta_file_full_path> -o <out_path> --iterate
 #launches a subprocess for a diamond blastp query without restriction of sequence identity
 # void (str,str,str,str,int)        
-def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path, verbosity):
+def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path,
+                         verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir):
 
     shell_input = []
     shell_input = [diamond_exe_full_path, 'blastp', '-d', diamond_db_file_full_path, '-q', query_fasta_file_full_path, '-o', out_file_full_path,
                    '--iterate', '--log', '--header', 'simple', '--outfmt', '6', 'qseqid', 'sseqid', 'pident', 'length', 'mismatch', 'gapopen',
                    'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore', 'qlen']
+    if diamond_block_size != None:
+        shell_input.append('--block-size')
+        shell_input.append(str(diamond_block_size))
+    if diamond_tmp_dir != "":
+        shell_input.append('--tmpdir')
+        shell_input.append(str(diamond_tmp_dir))
+    if diamond_threads > 0:
+        shell_input.append('--threads')
+        shell_input.append(str(diamond_threads))
     if verbosity>0:
         msg = "Performing blastp query for file %s." % os.path.split(query_fasta_file_full_path)[1]
         print(msg)
@@ -2462,7 +2472,7 @@ def create_MSA_ex_match_df(aln_entry_list, unique_exact_match_dict):
 #writes index files for each input alignment that tie together diamond blastp query data
 # with the headers and the aligned sequences in the original input files
 # void ([str,str,...], str, str, str, int)
-def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
+def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir):
 
     DATA_path = os.path.join(job_path, "DATA")
     create_dir_safely(DATA_path)
@@ -2490,7 +2500,8 @@ def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_p
 
         #path for TSV output, return file for db query
         TSV_file_full_path = os.path.join(aln_misc_path, aln_file_name+"_diamond.tsv")
-        diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, clean_fasta_file_full_path, TSV_file_full_path, verbosity)
+        diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, clean_fasta_file_full_path, TSV_file_full_path,
+                             verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir)
 
         #get exact query matches. this is shaky, because we dont know how diamond processes large
         # FASTA files internally and if this has an impact on what results we are presented with
@@ -2604,7 +2615,7 @@ def generate_common_seq_set(MSA_df_dict, verbosity):
 #i'm personally dissatisfied with this function, but I had to work with duplicate underlying sequences somehow
 #thus this function is a bit of a frankenstein's creation
 #rewrite at appropriate moment in time
-def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict):
+def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict, unique_seq_only):
 
     red_MSA_index_full_path_list = []
     #assign ID to each common seq, e.g. convert set to list.
@@ -2632,7 +2643,11 @@ def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict):
         for aln_index_full_path in seq_prim_key_dict_dict.keys():
             len_dict[aln_index_full_path] = len(rows_per_com_seq_dict[aln_index_full_path])
         #determine minimum of values in len_dict to restrict number of aligned sequences to this int
-        min_value = min(list(len_dict.values()))
+        #if unique_seq_only is true, then take only one aligned sequence per common sequence
+        if unique_seq_only:
+            min_value = 1
+        else:
+            min_value = min(list(len_dict.values()))
         #RANDOM ELEMENTS! This is controversial in my mind. Ultimately, this only affects the MSA index sets
         # NOT the reference sets, because the underlying sequences are EXACTLY the same. This means, that if 
         # DIAMOND and the subsequent processing of data is deterministic, we should only see a difference in the 
@@ -2672,7 +2687,7 @@ def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict):
     return red_MSA_index_full_path_list
 
 #elaborate test function to test integrity of reduced index files
-def test_red_index_file(aln_dir, out_path, job_name, verbosity, differing_sequences):
+def test_red_index_file(aln_dir, out_path, job_name, verbosity, differing_sequences, unique_seq_only):
 
     #get all alignment files in dir
     aln_dir_list = os.listdir(aln_dir)
@@ -2694,7 +2709,7 @@ def test_red_index_file(aln_dir, out_path, job_name, verbosity, differing_sequen
         warn_msg = ("Warning: Integrity test failed for reduced index files."
                     "Common sequences %s are not present, although they should be.") % (str(differing_sequences))
         errorFct(warn_msg)
-    red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict)
+    red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict, unique_seq_only)
     #test contents of reduced index files
     red_MSA_df_dict = import_red_aln_index_files(red_MSA_index_full_path_list)
 
@@ -2766,7 +2781,7 @@ def test_red_index_file(aln_dir, out_path, job_name, verbosity, differing_sequen
     return differing_sequences
 
 #creates job dir from a list of alignments
-def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity):
+def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity, unique_seq_only, diamond_block_size, diamond_threads, diamond_tmp_dir):
 
     #get all alignment files in dir
     aln_dir_list = os.listdir(aln_dir)
@@ -2777,7 +2792,7 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
 
     job_path = os.path.join(out_path, job_name)
     create_dir_safely(job_path)
-    create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity)
+    create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir)
     
     if verbosity>0:
         msg = "Determining maximal common sequence set..."
@@ -2789,13 +2804,13 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
     #common_seq_set is our C. seq_prim_key_dict_dict is utility structure helping to generate
     #the reduced alignment index files
     common_seq_set, seq_prim_key_dict_dict = generate_common_seq_set(MSA_df_dict, verbosity)
-    red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict)
+    red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict, unique_seq_only)
 
     #testing reduced index files, especially the canonical index for correctness
     #this can be left out, once sufficient trust is built
     differing_sequences = set()
-    differing_sequences = test_red_index_file(aln_dir, out_path, job_name, 0, differing_sequences)
-    _ = test_red_index_file(aln_dir, out_path, job_name, 0, differing_sequences)
+    differing_sequences = test_red_index_file(aln_dir, out_path, job_name, 0, differing_sequences, unique_seq_only)
+    _ = test_red_index_file(aln_dir, out_path, job_name, 0, differing_sequences, unique_seq_only)
 
 def import_red_aln_index_files(red_aln_index_full_path_list):
     red_MSA_df_dict = {}
@@ -2928,7 +2943,7 @@ def write_set_to_file(comp_strat, dest_full_path):
     with open(dest_full_path, "w") as file:
         json.dump(comp_strat_list_list, file)
 
-def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq):
+def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads):
     #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
     #and generates only empty alignments for job titles exactly 12 chars long
     #this is a DALI problem and can't be changed at the moment
@@ -3064,7 +3079,7 @@ def restore_comp_strat_backup(comp_strat, out_path, job_name):
 
     return comp_strat
 
-def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
+def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
     #set and get paths
     DATA_path = os.path.join(out_path, job_name, "DATA")
 
@@ -3130,7 +3145,7 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, sample_size
     DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
     #start pairwise structural alignment
     try:
-        DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq)
+        DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads)
     except:
         err_msg = ("Exception raised during alignment generation. Use flag --continuejob to resume"
                    "alignment from where it failed, after error has been identified.")
@@ -3548,6 +3563,11 @@ def main():
     argParser.add_argument("-cj", "--createjob", default=0, action="count", help="Set up job folder and required data.", required=False)
     argParser.add_argument("-rj", "--runjob", default=0, action="count", help="Running job by specifying output folder and job title.", required=False)
     argParser.add_argument("-ej", "--evaljob", default=0, action="count", help="Evaluating finished job.", required=False)
+    argParser.add_argument("-uo", "--uniqueonly", default=0, action="count", help="Provide this flag to only use each common sequence at most once.", required=False)
+    argParser.add_argument("-bz", "--diamondblocksize", type = float, default = None, help="Provide float for diamond block size. Default is 2.0.", required=False)
+    argParser.add_argument("-dtd", "--diamondtmpdir", default = "", help="Provide temporary storage directory for diamond. Default is output dir.", required=False)
+    argParser.add_argument("-cpu", "--threads", type = int, default = 0, help=("Provide int for number of CPU threads to use."
+                           "If not provided, diamond will try to auto-detect number of available cores and DALI will run on one core only."), required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
     args = argParser.parse_args()
@@ -3598,9 +3618,11 @@ def main():
             print(len(job_list_of_dict_lists))
             print(job_list_of_dict_lists)
     if args.createjob > 0:
-        create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose)
+        create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
+                   args.diamondblocksize, args.threads, args.diamondtmpdir)
     if args.runjob > 0:
-        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.samplesize, args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
+        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.samplesize,
+                args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
     if args.evaljob > 0:
         evaluate_job(args.output, args.title)
     if args.test > 0:
