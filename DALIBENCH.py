@@ -2972,15 +2972,16 @@ def shell_err_queue_writer(shell_err_queue):
         if open_file_err is not None:
             raise
 
-def sub_job_queue_handler(no_of_alns, verbosity, backup_freq, sub_job_queue):
-    counter += 0 
+def sub_job_queue_handler(no_of_alns, verbosity, backup_freq, json_exclude_path, sub_job_queue):
+    counter = 0 
     comp_strat_exclude_set = set()
     while True:
         pair = sub_job_queue.get()
+        counter += 1
         if pair == 'kill':
             return comp_strat_exclude_set
         if verbosity>0:
-            msg = "Calculating alignment %s_%s. [%s/%s] " % (str(pair[0]), str(pair[1]), str(counter), str(no_of_alns))
+            msg = "Calculated alignment %s_%s. [%s/%s] " % (str(pair[0]), str(pair[1]), str(counter), str(no_of_alns))
             print(msg, end="\r") 
 
         #add (i,k) tuple to exclude set, since alignment was successful
@@ -2993,8 +2994,25 @@ def sub_job_queue_handler(no_of_alns, verbosity, backup_freq, sub_job_queue):
 
 #pre-initialize constant data, e.g. not (i,k)
 #a single DALI process to be launched in parallel based on i,k
-def DALI_comp_strat_child(i, k, ALN_path, dali_pl_full_path, dali_dat_lib_path, wd, job_name, chain_id_dict, shell_err_queue, err_queue):
-    
+def DALI_comp_strat_child(arg_tuple):
+    try:
+        #unpack arg_tuple
+        err_queue = arg_tuple[9]
+        i = arg_tuple[0]
+        k = arg_tuple[1]
+        ALN_path = arg_tuple[2]
+        dali_pl_full_path = arg_tuple[3]
+        dali_dat_lib_path = arg_tuple[4]
+        wd = arg_tuple[5]
+        job_name = arg_tuple[6]
+        chain_id_dict = arg_tuple[7]
+        shell_err_queue = arg_tuple[8]
+    except:
+        msg = "Error while unpacking argument tuple in DALI_comp_strat_child process."
+        print(msg)
+        err_queue.put(msg)
+        raise
+
     try:
         chain_id1 = str(chain_id_dict[i][0:4])+str(chain_id_dict[i][5])
         chain_id2 = str(chain_id_dict[k][0:4])+str(chain_id_dict[k][5])
@@ -3003,25 +3021,28 @@ def DALI_comp_strat_child(i, k, ALN_path, dali_pl_full_path, dali_dat_lib_path, 
         err_queue.put(errMsg)
         raise
 
-    shell_input = []
-    sub_job = "%s_%s" % (str(i), str(k))
+    try:
+        shell_input = []
+        sub_job = "%s_%s" % (str(i), str(k))
             
-    #creating sub job dir
-    sub_job_path = os.path.join(ALN_path, sub_job)    
-    create_dir_safely(sub_job_path)
+        #creating sub job dir
+        sub_job_path = os.path.join(ALN_path, sub_job)    
+        create_dir_safely(sub_job_path)
                           
-    err_file_path = os.path.join(sub_job_path, "err_log")
-    out_file_path = os.path.join(sub_job_path, "output_log")
+        err_file_path = os.path.join(sub_job_path, "err_log")
+        out_file_path = os.path.join(sub_job_path, "output_log")
 
-    #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
-    # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
-    shell_input = [dali_pl_full_path, '--cd1', chain_id1, '--cd2', chain_id2, 
-                '--dat1', dali_dat_lib_path, '--dat2', dali_dat_lib_path, '--title', job_name,
-                '--outfmt', "summary,alignments,equivalences,transrot",
-                '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
+        #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
+        # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+        shell_input = [dali_pl_full_path, '--cd1', chain_id1, '--cd2', chain_id2, 
+                    '--dat1', dali_dat_lib_path, '--dat2', dali_dat_lib_path, '--title', job_name,
+                    '--outfmt', "summary,alignments,equivalences,transrot",
+                    '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
 
-    #navigate to output dir in loop
-    os.chdir(sub_job_path)
+        #navigate to output dir
+        os.chdir(sub_job_path)
+    except:
+        raise
             
     #create file handles for stdout and stderr, only needed for Popen. rework maybe
     #or remove
@@ -3039,15 +3060,18 @@ def DALI_comp_strat_child(i, k, ALN_path, dali_pl_full_path, dali_dat_lib_path, 
         raise
 
     #subprocess for alignment generation
-    #need to PIPE stdout and stderr for output forwarding    
-    process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
+    #need to PIPE stdout and stderr for output forwarding
+    try:  
+        process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
+    except:
+        raise
     
     try:
         #timeout may need to be longer (or shorter), depending on size of alignments
         #for the calculation of pairwise alignments of up to a few chains
         #500 seconds seems to be reasonable though
         #remove killing of the process, if it causes problems. Instead, add a warning.
-        output = process.check_output(timeout=1000)
+        out, err = process.communicate(timeout=1000)
         #if out is not None and verbosity>1:
             #print(out)
     except subprocess.TimeoutExpired:
@@ -3057,16 +3081,17 @@ def DALI_comp_strat_child(i, k, ALN_path, dali_pl_full_path, dali_dat_lib_path, 
         shell_err_queue.put(err)
         err_queue.put(errMsg)
         raise
-    except subprocess.CalledProcessError as e:
-        process.kill()
-        out, err = process.communicate()
-        errMsg = "Called process exited with non-zero return code (Code:%s) during dali.pl subprocess of alignment %s." % (str(e.returncode), sub_job)
-        shell_err_queue.put(err)
-        err_queue.put(errMsg)
-        raise
+    #this exception should not occur when using Popen().communicate()
+    #instead errors are logged in specific err_file via the shell_err_watcher process
+    #except subprocess.CalledProcessError as e:
+     #   process.kill()
+      #  out, err = process.communicate()
+       # errMsg = "Called process exited with non-zero return code (Code:%s) during dali.pl subprocess of alignment %s." % (str(e.returncode), sub_job)
+        #shell_err_queue.put(err)
+        #err_queue.put(errMsg)
+        #raise
     except:
         process.kill()
-        out, err = process.communicate()
         errMsg = "Exception raised during dali.pl subprocess of alignment %s." % (sub_job)
         shell_err_queue.put(err)
         err_queue.put(errMsg)
@@ -3074,21 +3099,16 @@ def DALI_comp_strat_child(i, k, ALN_path, dali_pl_full_path, dali_dat_lib_path, 
     finally:
         close_file_err = close_file_safely(err_file, err_file_path, 'mp')
         close_file_err2 = close_file_safely(out_file, out_file_path, 'mp')
-        shell_err_queue.put(err)
-        err_queue.put(errMsg)
         if close_file_err is not None:
             err_queue.put(close_file_err)
         if close_file_err2 is not None:
             err_queue.put(close_file_err2)
         #if out is not None:
             #return out
-            
-    #change dir back to previous wd
-    os.chdir(wd)
 
     return i,k
 
-def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads):
+def DALI_comp_strat_query_mp(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads):
     #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
     #and generates only empty alignments for job titles exactly 12 chars long
     #this is a DALI problem and can't be changed at the moment
@@ -3123,40 +3143,188 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
     create_dir_safely(ALN_path)
 
     json_exclude_path = os.path.join(ALN_path, "continue_exclude.json")
+    try:
+        #set up queue manager and process pool
+        manager = multiprocessing.Manager()
+        shell_err_queue = manager.Queue()
+        err_queue = manager.Queue()
+        sub_job_queue = manager.Queue()
+        if threads == 0:
+            threads = multiprocessing.cpu_count()
+            pool = multiprocessing.Pool(threads)
+        else:
+            pool = multiprocessing.Pool(threads)
     
-    #set up queue manager and process pool
-    manager = multiprocessing.Manager()
-    shell_err_queue = manager.Queue()
-    err_queue = manager.Queue()
-    sub_job_queue = manager.Queue()
-    if threads == 0:
-        threads = multiprocessing.cpu_count()
-        pool = multiprocessing.Pool(threads)
+        #launch sub-jobs as child processes
+        no_of_alns = len(comp_strat)
+        #intentionally underestimating chunk_size to account for variance in alignment generation time
+        chunk_size = int(round(no_of_alns/(threads+2)))
+        #launch error-handling processes
+        shell_err_watcher = pool.apply_async(shell_err_queue_writer, (shell_err_queue,))
+        err_watcher = pool.apply_async(err_queue_writer, (err_queue,))
+        sub_job_watcher = pool.apply_async(sub_job_queue_handler, (no_of_alns, verbosity, backup_freq, json_exclude_path, sub_job_queue,))
+
+        arg_tuple_list = []
+        arg_tuple_list.clear()
+        for i,k in comp_strat:
+            arg_tuple_list.append(tuple([i, k, ALN_path, dali_pl_full_path, dali_dat_lib_path,
+                                  wd, job_name, chain_id_dict, shell_err_queue, err_queue]))
+        #fire off workers with task list
+        res_iter = pool.imap_unordered(DALI_comp_strat_child, arg_tuple_list, chunksize=chunk_size)
+        #loop through results, until every result is returned
+        #look into what blocking means exactly and if this loop makes sense
+        for j in range(0, len(comp_strat)):
+            #next() call SHOULD block until next element is available, unless timeout is given
+            #in which case we should raise a TimeoutException
+            res_pair = next(res_iter)
+            #put result in a queue to be handled by the sub_job_watcher process
+            sub_job_queue.put(res_pair)
+
+    except:
+        raise
+    finally:
+        #kill watcher processes
+        shell_err_queue.put('kill')
+        err_queue.put('kill')
+        comp_strat_exclude_set = sub_job_queue.put('kill')
+        pool.close()
+        pool.join()
+
+def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads, mpi_path):
+    #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
+    #and generates only empty alignments for job titles exactly 12 chars long
+    #this is a DALI problem and can't be changed at the moment
+    #i could, however probably find a workaround, but this isn't really worth the effort right now
+    #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
+    comp_strat_exclude_set = set()
+    if len(job_name) > 11:
+        errMsg = "Job title is longer than 11 characters. Please enter a shorter job title."
+        errorFct(errMsg)
+        raise
+
+    #saving cwd for later file system navigation
+    wd = os.getcwd()
+
+    #changing relative paths to absolute
+    if os.path.isabs(pl_bin_path):
+        dali_pl_full_path = os.path.join(pl_bin_path, "dali.pl")
     else:
-        pool = multiprocessing.Pool(threads)
-    
-    #launch sub-jobs as child processes
+        dali_pl_full_path = os.path.join(wd, pl_bin_path, "dali.pl")
+
+    if not os.path.isabs(small_pdb_lib_path):
+        small_pdb_lib_path = os.path.join(wd, small_pdb_lib_path)
+
+    if not os.path.isabs(out_path):
+        out_path = os.path.join(wd, out_path)
+
+    if not os.path.isabs(dali_dat_lib_path):
+        dali_dat_lib_path = os.path.join(wd, dali_dat_lib_path)
+
+    #creating ALN subdir
+    ALN_path = os.path.join(out_path, job_name, "DALI", "ALN")
+    create_dir_safely(ALN_path)
+
+    json_exclude_path = os.path.join(ALN_path, "continue_exclude.json")
+
+    counter = 0
     no_of_alns = len(comp_strat)
-    #intentionally underestimating chunk_size to account for variance in alignment generation time
-    chunk_size = no_of_alns/(threads+2)
-    #launch error-handling processes
-    shell_err_watcher = pool.apply_async(shell_err_queue_writer, (shell_err_queue,))
-    err_watcher = pool.apply_async(err_queue_writer, (err_queue,))
-    sub_job_watcher = pool.apply_async(sub_job_queue_handler, (no_of_alns, verbosity, backup_freq, sub_job_queue,))
-
     for i,k in comp_strat:
-        
-        sub_job = pool.imap_unordered(DALI_comp_strat_child, (i, k, ALN_path, dali_pl_full_path, dali_dat_lib_path, wd,
-                                                              job_name, chain_id_dict, shell_err_queue, err_queue), chunksize=chunk_size)
-        sub_job_queue.put(sub_job)
 
-    #kill watcher processes
-    shell_err_queue.put('kill')
-    err_watcher.put('kill')
-    comp_strat_exclude_set = sub_job_queue.put('kill')
-    pool.close()
-    pool.join()
+        try:
+            chain_id1 = str(chain_id_dict[i][0:4])+str(chain_id_dict[i][5])
+            chain_id2 = str(chain_id_dict[k][0:4])+str(chain_id_dict[k][5])
+        except IndexError:
+            errMsg = "Chain identifier %s or %s is shorter than 6 chars." % (chain_id_dict[i], chain_id_dict[k])
+            errorFct(errMsg)
+            raise
 
+        shell_input = []
+        sub_job = "%s_%s" % (str(i), str(k))
+
+        counter += 1 
+        if verbosity>0:
+            msg = "Calculating alignment %s. [%s/%s] " % (sub_job, counter, no_of_alns)
+            print(msg, end="\r")
+
+        #creating sub job dir
+        sub_job_path = os.path.join(ALN_path, sub_job)    
+        create_dir_safely(sub_job_path)
+
+        err_file_path = os.path.join(sub_job_path, "err_log")
+        out_file_path = os.path.join(sub_job_path, "output_log")
+
+        #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
+        # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+        shell_input = [dali_pl_full_path, '--cd1', chain_id1, '--cd2', chain_id2, 
+                    '--dat1', dali_dat_lib_path, '--dat2', dali_dat_lib_path, '--title', job_name,
+                    '--outfmt', "summary,alignments,equivalences,transrot",
+                    '--clean']
+        if mpi_path != "":
+            shell_input.append('--MPIRUN_EXE')
+            shell_input.append('--np')
+            if threads > 0:
+                shell_input.append(str(threads))
+            else:
+                shell_input.append(str(multiprocessing.cpu_count()))
+
+        shell_input.extend(['1', '>', out_file_path, '2', '>', err_file_path])
+
+        #navigate to output dir in loop
+        os.chdir(sub_job_path)
+
+        #create file handles for stdout and stderr, only needed for Popen. rework maybe
+        #or remove
+        try:
+            err_file = open(err_file_path, 'w+')
+        except:
+            errMsg = "Failed to open file %s." % err_file_path
+            errorFct(errMsg)
+            raise
+        try:
+            out_file = open(out_file_path, 'w+')
+        except:
+            errMsg = "Failed to open file %s." % out_file_path
+            errorFct(errMsg)
+            raise
+
+        #subprocess for alignment generation
+        #need to PIPE stdout and stderr for output forwarding    
+        process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
+
+        try:
+            #timeout may need to be longer (or shorter), depending on size of alignments
+            #for the calculation of pairwise alignments of up to a few chains
+            #500 seconds seems to be reasonable though
+            #remove killing of the process, if it causes problems. Instead, add a warning.
+            out, err = process.communicate()
+            #if out is not None and verbosity>1:
+                #print(out)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            out, err = process.communicate()
+            errMsg = "Communication with dali.pl subprocess timed out. Killed it. Forwarding error to shell_err_log.txt"
+            close_file_safely(err_file, err_file_path, errMsg)
+            close_file_safely(out_file, out_file_path, errMsg)
+            shell_err_fct(err)
+            errorFct(errMsg)
+            if out is not None:
+                print(out)
+            raise
+
+        #close files
+        close_file_safely(err_file, err_file_path, "")
+        close_file_safely(out_file, out_file_path, "")
+
+        #change dir back to previous wd
+        os.chdir(wd)
+
+        #add (i,k) tuple to exclude set, since alignment was successful
+        comp_strat_exclude_set.add((i,k))
+
+        if backup_freq == 0:
+            continue
+        if counter % backup_freq == 0:
+            write_set_to_file(comp_strat_exclude_set, json_exclude_path)
 
 def restore_comp_strat_backup(comp_strat, out_path, job_name):
     exclude_set_file_full_path = os.path.join(out_path, job_name, "DALI", "ALN", "continue_exclude.json")
@@ -3167,7 +3335,8 @@ def restore_comp_strat_backup(comp_strat, out_path, job_name):
 
     return comp_strat
 
-def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
+def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mpi_path,
+            sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
     #set and get paths
     DATA_path = os.path.join(out_path, job_name, "DATA")
 
@@ -3233,7 +3402,7 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, sa
     DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
     #start pairwise structural alignment
     try:
-        DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads)
+        DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads, mpi_path)
     except:
         err_msg = ("Exception raised during alignment generation. Use flag --continuejob to resume"
                    "alignment from where it failed, after error has been identified.")
@@ -3243,14 +3412,17 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, sa
 def guess_comp_strat_from_DALI_dir(DALI_ALN_path):
     pass
 
-def import_DALI_alns_by_comp_strat(comp_strat, DALI_ALN_dir):
+def import_DALI_alns_by_comp_strat(comp_strat, DALI_ALN_dir, verbosity):
     #keys are all tuples in comp_strat and values are
     #lists of dictionaries returned by the function import_DALI_aln()
     #each dict represents an individual alignment within a TXT file
     #with keys being 'job_name','Z-score','rmsd','lali','nres','perc_id','pdb_descr','query'(chain id),'sbjct'(chain id),'DALI_query_seq','DALI_sbjct_seq'
     #query is the first index in comp_strat index pair (i), sbjct is the second (k)  
     comp_strat_struct_aln_dict = {}
+    no_of_alns = len(comp_strat)
+    counter = 0
     for i,k in comp_strat:
+        counter += 1
         sub_job_name = "%s_%s" % (str(i),str(k))
         sub_job_path = os.path.join(DALI_ALN_dir, sub_job_name)
         txt_file_counter = 0
@@ -3273,6 +3445,11 @@ def import_DALI_alns_by_comp_strat(comp_strat, DALI_ALN_dir):
             warn_msg = "Warning: Not exactly one structural alignment in file %s. Counted %s." % (struct_aln_full_path, str(no_of_alns))
             errorFct(warn_msg)
         comp_strat_struct_aln_dict[(i,k)] = struct_aln_dict_list.copy()
+
+        if verbosity>0:
+            msg = "Importing DALI alignments... [%s/%s] " % (str(counter), str(no_of_alns))
+            print(msg, end="\r")
+
 
     return comp_strat_struct_aln_dict
 
@@ -3334,10 +3511,10 @@ def apply_ref_set_restr(small_ref_ind_set, bounds_i, bounds_k):
 
     return restr_small_ref_ind_set
 
-def generate_ref_sets(comp_strat, aln_dir, red_MSA_df_dict):
+def generate_ref_sets(comp_strat, aln_dir, red_MSA_df_dict, verbosity):
     
     #import structural alignments for all entries in comp_strat
-    comp_strat_struct_aln_dict = import_DALI_alns_by_comp_strat(comp_strat, aln_dir)
+    comp_strat_struct_aln_dict = import_DALI_alns_by_comp_strat(comp_strat, aln_dir, verbosity)
 
     #get subject-embedded query index set for all (i,k) in comp_strat
     #for that note that each common sequence C_i is associated with exactly
@@ -3365,11 +3542,15 @@ def generate_ref_sets(comp_strat, aln_dir, red_MSA_df_dict):
 
     return restr_small_ref_ind_set_dict, comp_strat_struct_aln_dict
 
-def generate_MSA_sets(comp_strat, red_MSA_df_dict):
+def generate_MSA_sets(comp_strat, red_MSA_df_dict, verbosity):
 
     comp_strat_MSA_aln_dict = {}
     comp_strat_MSA_aln_dict.clear()
     for red_index_file_full_path in red_MSA_df_dict.keys():
+        if verbosity>0:
+            msg = "Generating MSA sets for file %s ..." % red_index_file_full_path
+            print(msg)
+
         orig_fasta_index_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('fasta_entry_index')
         fasta_header_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('fasta_entry_header')
         gapped_seq_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('gapped_seq')
@@ -3382,7 +3563,13 @@ def generate_MSA_sets(comp_strat, red_MSA_df_dict):
         comp_strat_red_ind_dict = {}
         MSA_ind_set_dict.clear()
         comp_strat_red_ind_dict.clear()
+        no_of_alns = len(comp_strat)
+        counter = 0
         for i,k in comp_strat:
+            counter += 1
+            if verbosity>0:
+                msg = "[%s/%s]" % (str(counter), str(no_of_alns))
+                print(msg, end="\r")
             #generate MSA index sets
             gapped_seq_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, gapped_seq_col_num]
             gapped_seq_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, gapped_seq_col_num]
@@ -3436,7 +3623,7 @@ def calc_pair_SPS_by_comp_strat(comp_strat, ref_set_dict, comp_strat_MSA_aln_dic
 
     return pair_SPS_dict
 
-def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict):
+def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict, verbosity):
     #calculate SPS for each pair of sequences indexed by comparison strategy
     #pair_SPS_dict: keys are paths to red_index_file; values are small_pair_SPS_dict
     #small_pair_SPS_dict: keys are each element in comp_strat (i,k); values are the SPS between sequences i and k ("pair_SPS")
@@ -3445,10 +3632,19 @@ def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_
     #merge comp_strat_MSA_aln_dict with pair_SPS_dict and comp_strat_struct_aln_dict
     output_dict = {}
     output_dict.clear()
+    no_of_alns = len(comp_strat)
     for red_ind_file_full_path in comp_strat_MSA_aln_dict.keys():
+        counter = 0
         small_output_dict = {}
         small_output_dict.clear()
+        if verbosity>0:
+            msg = "Preparing output for file %s..." % (red_ind_file_full_path)
+            print(msg)
         for i,k in comp_strat:
+            counter += 1
+            if verbosity>0:
+                msg = "[%s/%s]" % (str(counter), str(no_of_alns))
+                print(msg, end="\r")
             row_dict = {}
             row_dict.clear()
             row_dict['fasta_entry_index'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['fasta_entry_index']
@@ -3475,6 +3671,9 @@ def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_
 
     #use output dict to write dataframe to csv for each key
     for red_ind_file_full_path in output_dict.keys():
+        if verbosity>0:
+            msg = "Writing output file for %s..." % (red_ind_file_full_path)
+            print(msg)
         path, file = os.path.split(red_ind_file_full_path)
         path2, aln_name = os.path.split(path)
         tsv_output_file_full_path = os.path.join(eval_path, aln_name+".tsv")
@@ -3482,23 +3681,17 @@ def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_
         output_df.to_csv(tsv_output_file_full_path, sep='\t')
 
 def pstar_union(ref_set_dict, comp_strat_MSA_aln_dict):
-    union_ref_set = set()
-    union_ref_set.clear()
-    for key in ref_set_dict.keys():
-        union_ref_set = union_ref_set.union(ref_set_dict[key].copy())
+    
+    union_ref_set = set.union(*list(ref_set_dict.values()))
 
     union_test_set_dict = {}
     union_test_set_dict.clear()
-    for key in comp_strat_MSA_aln_dict.keys():
-        union_test_set = set()
-        union_test_set.clear()
-        for key_2 in comp_strat_MSA_aln_dict[key][0].keys():
-            union_test_set = union_test_set.union(comp_strat_MSA_aln_dict[key][0][key_2].copy())
-        union_test_set_dict[key] = union_test_set.copy()
+    for red_aln_index_full_path in comp_strat_MSA_aln_dict.keys():
+        union_test_set_dict[red_aln_index_full_path] = set.union(*list(comp_strat_MSA_aln_dict[red_aln_index_full_path][0].values())).copy()
 
     return union_ref_set, union_test_set_dict
 
-def evaluate_job(out_path, job_name):
+def evaluate_job(out_path, job_name, verbosity):
 
     auto_gen_comp_strat_file_full_path = os.path.join(out_path, job_name, "comp_strat.json")
     job_path = os.path.join(out_path, job_name)
@@ -3517,10 +3710,13 @@ def evaluate_job(out_path, job_name):
         err_msg = ("Error loading auto-generated comparison strategy file. Trying to guess comparison strategy from generated alignments.")
         errorFct(err_msg)
         comp_strat = guess_comp_strat_from_DALI_dir(DALI_ALN_path)
+        exit(1)
+
     #generate reference sets
     #ref_set_dict: keys are (i,k); values are reference index sets
     #comp_strat_struct_aln_dict: keys are (i,k); values are (one-element) lists of dict with struct alignment data (s. function "import_DALI_alns_by_comp_strat()")
-    ref_set_dict, comp_strat_struct_aln_dict = generate_ref_sets(comp_strat, DALI_ALN_path, red_MSA_df_dict)
+    ref_set_dict, comp_strat_struct_aln_dict = generate_ref_sets(comp_strat, DALI_ALN_path, red_MSA_df_dict, verbosity)
+
 
     #generate MSA index sets
     #comp_strat_MSA_aln_dict: keys are paths to red_index_file (<path>/DATA/<aln_name>/red_<aln_name>_exact_match.index)
@@ -3532,17 +3728,25 @@ def evaluate_job(out_path, job_name):
         #comp_strat_red_ind_dict: keys are each element in comp_strat (i,k); values are 2-tuples with
         # pos [0] representing row i and pos [1] representing row k in red_index_file as dictionaries
    
-    comp_strat_MSA_aln_dict = generate_MSA_sets(comp_strat, red_MSA_df_dict)
+    comp_strat_MSA_aln_dict = generate_MSA_sets(comp_strat, red_MSA_df_dict, verbosity)
 
     #create output folder and 
     eval_path = os.path.join(job_path, "EVAL")
     create_dir_safely(eval_path)
 
-    write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict)
+    write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict, verbosity)
 
     union_ref_set, union_test_set_dict = pstar_union(ref_set_dict, comp_strat_MSA_aln_dict)
+    #write sets to files
+    union_ref_set_full_path = os.path.join(eval_path, "union_ref_set.json")
+    write_set_to_file(union_ref_set, union_ref_set_full_path)
     #print overall SPS per MSA
     for key in union_test_set_dict.keys():
+        #set paths and write individual sets to files
+        head, file_name = os.path.split(key)
+        head, aln_name = os.path.split(head)
+        union_test_set_full_path = os.path.join(eval_path, "union_"+aln_name+"_MSA_set.json")
+        write_set_to_file(union_test_set_dict[key], union_test_set_full_path)
         intersect_union = union_test_set_dict[key].intersection(union_ref_set)
         if len(union_ref_set) > 0:
             SPS = len(intersect_union)/len(union_ref_set)
@@ -3608,6 +3812,8 @@ def main():
     
     set_script_path()
 
+    #multiprocessing.set_start_method('spawn')
+
     argParser = argparse.ArgumentParser()
     argParser.add_argument("-p", "--createsearchplots", default=0, action="count", help="Creates search plots from CSV search metadata.", required=False)
     argParser.add_argument("-csv", "--csvdir", help="Path to CSV files with search metadata.", required=False)
@@ -3656,6 +3862,7 @@ def main():
     argParser.add_argument("-dtd", "--diamondtmpdir", default = "", help="Provide temporary storage directory for diamond. Default is output dir.", required=False)
     argParser.add_argument("-cpu", "--threads", type = int, default = 0, help=("Provide int for number of CPU threads to use."
                            "If not provided, diamond will try to auto-detect number of available cores and DALI will run on one core only."), required=False)
+    argParser.add_argument("-mpi", "--mpirun", default = "", help="Provide path to mpirun.", required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
     args = argParser.parse_args()
@@ -3709,10 +3916,10 @@ def main():
         create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
                    args.diamondblocksize, args.threads, args.diamondtmpdir)
     if args.runjob > 0:
-        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.samplesize,
+        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.mpirun, args.samplesize,
                 args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
     if args.evaljob > 0:
-        evaluate_job(args.output, args.title)
+        evaluate_job(args.output, args.title, args.verbose)
     if args.test > 0:
         #test_SPS(args.alignmentfile)
         #test_duplicate_clean_seq(args.alignmentfile)
