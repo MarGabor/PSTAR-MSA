@@ -27,6 +27,7 @@ from rcsbsearchapi.search import Query, SequenceQuery
 from Bio import AlignIO
 from Bio import SeqIO
 from Bio import Seq
+from Bio import SeqRecord
 import matplotlib
 import multiprocessing
 
@@ -2481,7 +2482,8 @@ def create_MSA_ex_match_df(aln_entry_list, unique_exact_match_dict):
 #writes index files for each input alignment that tie together diamond blastp query data
 # with the headers and the aligned sequences in the original input files
 # void ([str,str,...], str, str, str, int)
-def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir):
+def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path,
+                           verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir):
 
     DATA_path = os.path.join(job_path, "DATA")
     create_dir_safely(DATA_path)
@@ -2504,7 +2506,7 @@ def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_p
         #___________________________________________________________________________________________
         #path for fasta output
         clean_fasta_file_full_path = os.path.join(aln_misc_path, aln_file_name+"_cleaned.fasta")
-        clean_fasta_file(aln_file_full_path, clean_fasta_file_full_path, verbosity)
+        _ = clean_fasta_file(aln_file_full_path, clean_fasta_file_full_path, verbosity)
         #-------------------------------------------------------------------------------------------
 
         #path for TSV output, return file for db query
@@ -2789,8 +2791,80 @@ def test_red_index_file(aln_dir, out_path, job_name, verbosity, differing_sequen
 
     return differing_sequences
 
+def random_aln_seq(clean_seq, base_aln_len):
+    clean_seq_len = len(clean_seq)
+    cur_seq_len = clean_seq_len
+    gaps_to_insert = base_aln_len - clean_seq_len
+    while gaps_to_insert > 0:
+        #cur_seq_len+1 places to insert gap 
+        rand_int = random.randint(0,cur_seq_len)
+        if rand_int != 0 and rand_int != cur_seq_len:
+            clean_seq = clean_seq[:rand_int]+'-'+clean_seq[rand_int:]
+            cur_seq_len += 1
+            gaps_to_insert -= 1
+            continue
+        elif rand_int == 0:
+            clean_seq = '-'+clean_seq
+            cur_seq_len += 1
+            gaps_to_insert -= 1
+            continue
+        elif rand_int == cur_seq_len:
+            clean_seq = clean_seq+'-'
+            cur_seq_len += 1
+            gaps_to_insert -= 1
+            continue
+
+    return clean_seq
+
+def write_baseline_aln_file(aln_file_full_path_list, job_path):
+
+    clean_seq_set = set()
+    clean_seq_set.clear()
+    aln_len_set = set()
+    aln_len_set.clear()
+    for aln_file_full_path in aln_file_full_path_list:
+        #entry is [sequence, header, entry_number, ungapped_sequence]
+        aln_entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
+        #cleaning sequences
+        try:
+            aln_file_handle = open(aln_file_full_path)
+        except:
+            errMsg = "Could not open alignment file %s." % aln_file_full_path
+            errorFct(errMsg)
+            exit(1)
+        try:
+            records = AlignIO.read(aln_file_handle, "fasta")
+        except:
+            errMsg = "Could not read fasta file %s." % aln_file_full_path
+            close_file_safely(aln_file_handle, aln_file_full_path, errMsg)
+            errorFct(errMsg)
+            exit(1)
+
+        close_file_safely(aln_file_handle, aln_file_full_path, "")
+        for record in records:
+            aln_len_set.add(len(str(record.seq)))
+            clean_seq_set.add(clean_seq(str(record.seq)))
+    
+    base_aln_len = max(aln_len_set)
+    #create SeqRecord list
+    seq_record_list = []
+    counter = 1
+    for clean_seq in clean_seq_set:
+        aln_seq = random_aln_seq(clean_seq, base_aln_len)
+        seq_record = SeqRecord(Seq(aln_seq), id=str(counter))
+        seq_record_list.append(seq_record)
+        counter += 1
+
+    baseline_aln_full_path = os.path.join(job_path, "baseline_aln.fasta")
+    SeqIO.write(seq_record_list, baseline_aln_full_path, "fasta")
+
+    aln_file_full_path_list.append(baseline_aln_full_path)
+
+    return aln_file_full_path_list
+
 #creates job dir from a list of alignments
-def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity, unique_seq_only, diamond_block_size, diamond_threads, diamond_tmp_dir):
+def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity, unique_seq_only,
+               diamond_block_size, diamond_threads, diamond_tmp_dir, baseline):
 
     #get all alignment files in dir
     aln_dir_list = os.listdir(aln_dir)
@@ -2801,7 +2875,17 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
 
     job_path = os.path.join(out_path, job_name)
     create_dir_safely(job_path)
-    create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir)
+
+     #generate baseline alignment file
+    if baseline > 0:
+        if unique_seq_only < 1:
+            err_msg = "Using --baseline currently requires use of --uniqueonly. Please provide the latter to use baseline."
+            errorFct(err_msg)
+            exit(1)
+        aln_file_full_path_list = write_baseline_aln_file(aln_file_full_path_list, job_path)
+
+    create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity,
+                           diamond_block_size, diamond_threads, diamond_tmp_dir)
     
     if verbosity>0:
         msg = "Determining maximal common sequence set..."
@@ -3862,7 +3946,8 @@ def main():
     argParser.add_argument("-dtd", "--diamondtmpdir", default = "", help="Provide temporary storage directory for diamond. Default is output dir.", required=False)
     argParser.add_argument("-cpu", "--threads", type = int, default = 0, help=("Provide int for number of CPU threads to use."
                            "If not provided, diamond will try to auto-detect number of available cores and DALI will run on one core only."), required=False)
-    argParser.add_argument("-mpi", "--mpirun", default = "", help="Provide path to mpirun.", required=False)
+    argParser.add_argument("-mpi", "--mpibin", default = "", help="Provide path to \"openmpi/bin\" path.", required=False)
+    argParser.add_argument("-bl", "--baseline", default=0, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
     args = argParser.parse_args()
@@ -3914,9 +3999,9 @@ def main():
             print(job_list_of_dict_lists)
     if args.createjob > 0:
         create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
-                   args.diamondblocksize, args.threads, args.diamondtmpdir)
+                   args.diamondblocksize, args.threads, args.diamondtmpdir, args.baseline)
     if args.runjob > 0:
-        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.mpirun, args.samplesize,
+        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.mpibin, args.samplesize,
                 args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
     if args.evaljob > 0:
         evaluate_job(args.output, args.title, args.verbose)
