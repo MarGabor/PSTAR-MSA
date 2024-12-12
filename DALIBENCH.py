@@ -2231,10 +2231,10 @@ def get_exact_matches(TSV_file_full_path, aln_entry_list):
     exact_match_dict = {}
     #initializing exact_match_dict with empty lists
     for aln_entry in aln_entry_list:
-        exact_match_dict[aln_entry[1]] = []
+        exact_match_dict[str(aln_entry[1])] = []
     #filling lists
     for index, row in exact_matches_df.iterrows():
-        exact_match_dict[row.qseqid].append(row)    
+        exact_match_dict[str(row.qseqid)].append(row)    
 
     return exact_match_dict
   
@@ -2818,8 +2818,8 @@ def random_aln_seq(clean_seq, base_aln_len):
 
 def write_baseline_aln_file(aln_file_full_path_list, job_path):
 
-    clean_seq_set = set()
-    clean_seq_set.clear()
+    cleaned_seq_set = set()
+    cleaned_seq_set.clear()
     aln_len_set = set()
     aln_len_set.clear()
     for aln_file_full_path in aln_file_full_path_list:
@@ -2843,22 +2843,22 @@ def write_baseline_aln_file(aln_file_full_path_list, job_path):
         close_file_safely(aln_file_handle, aln_file_full_path, "")
         for record in records:
             aln_len_set.add(len(str(record.seq)))
-            clean_seq_set.add(clean_seq(str(record.seq)))
+            cleaned_seq_set.add(clean_seq(str(record.seq).upper()))
     
     base_aln_len = max(aln_len_set)
     #create SeqRecord list
     seq_record_list = []
     counter = 1
-    for clean_seq in clean_seq_set:
-        aln_seq = random_aln_seq(clean_seq, base_aln_len)
-        seq_record = SeqRecord(Seq(aln_seq), id=str(counter))
+    for cleaned_seq in cleaned_seq_set:
+        aln_seq = random_aln_seq(cleaned_seq, base_aln_len)
+        seq_record = SeqRecord.SeqRecord(Seq.Seq(aln_seq), id=str(counter))
         seq_record_list.append(seq_record)
         counter += 1
 
     baseline_aln_full_path = os.path.join(job_path, "baseline_aln.fasta")
     SeqIO.write(seq_record_list, baseline_aln_full_path, "fasta")
 
-    aln_file_full_path_list.append(baseline_aln_full_path)
+    aln_file_full_path_list.insert(0, baseline_aln_full_path)
 
     return aln_file_full_path_list
 
