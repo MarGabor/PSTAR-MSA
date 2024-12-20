@@ -4,6 +4,7 @@
 #11/04/2024
 
 import argparse
+from codecs import ignore_errors
 import sys
 from datetime import datetime
 import re
@@ -16,6 +17,7 @@ import requests
 import subprocess
 import gzip
 import shutil
+import json
 #import svg_stack
 from itertools import tee
 import lxml
@@ -25,7 +27,9 @@ from rcsbsearchapi.search import Query, SequenceQuery
 from Bio import AlignIO
 from Bio import SeqIO
 from Bio import Seq
+from Bio import SeqRecord
 import matplotlib
+import multiprocessing
 
 #defining path to script
 def set_script_path():
@@ -45,7 +49,10 @@ def errorFct(errorMsg):
             logEntry = "\n [%s] %s" % ((datetime.now()).strftime("%d/%m/%Y %H:%M:%S"), errorMsg)
             errFile.write(logEntry)
     except:
-        print("Error log file could not be opened.")
+        open_file_err_msg = "Error log file could not be opened."
+        if errorMsg == 'mp':
+            return open_file_err_msg
+        print(open_file_err_msg)
         exit(1)
 
 #safely closing files, writing to error log if it fails
@@ -55,6 +62,8 @@ def close_file_safely(file, file_path, errMsgForward):
         file.close()
     except:
         errorMsg = "%s\nCould not close %s." % (errMsgForward, file_path)
+        if errMsgForward == "mp":
+            return errorMsg
         errorFct(errorMsg)
         exit(1)
         
@@ -149,13 +158,11 @@ def build_regex_for_seq_cleaning_blacklist(invalid_symbols):
     return regex_str
 
 #removing gaps and other symbols not in "valid_symbols" from given alignment sequence data
+#preserves case
 #(str, str) -> str
-def clean_seq(seq, valid_symbols):
+def clean_seq(seq):
 
-    regex_str = build_regex_for_seq_cleaning_whitelist(valid_symbols)
-
-    cleaned_seq = re.sub(regex_str,'',seq)
-    cleaned_seq = cleaned_seq.upper()
+    cleaned_seq = re.sub(CLEAN_SEQ_REGEX_STR,'',seq)
     
     return cleaned_seq
 
@@ -213,33 +220,55 @@ def search_pdb_for_sequences(seq, aln_file_path, identity_cutoff):
 
     return raw_response_list
 
-#extracting sequences and headers from alignment file in FASTA format
-#(str) -> [[str,str,int],[str,str,int],...]
+#extracting sequences and headers from alignment file in FASTA format and adding entry indices for good measure
+# [sequence, header, number, cleaned_sequence]
+#(str) -> [[str,str,int,str],[str,str,int,str],...]
 def import_seq_list_from_fasta_aln(aln_file_path):
 
     seq_list = []
 
     try:
-        aln_file = open(aln_file_path)
+        aln_file = open(aln_file_path, "r")
     except:
         errMsg = "Could not open alignment file %s." % aln_file_path
         errorFct(errMsg)
-        return seq_list
+        raise
     try:
         alignment = AlignIO.read(aln_file, "fasta")
-    except:
-        errMsg = "Could not read fasta file %s." %aln_file_path
-        close_file_safely(aln_file, aln_file_path, errMsg)
-        errorFct(errMsg)
-        return seq_list
+    except ValueError:
+        close_file_safely(aln_file, aln_file_path, '')
+        try:
+            alignment = SeqIO.parse(aln_file_path, "fasta")
+        except:
+            errMsg = "Could not read fasta file %s." %aln_file_path
+            errorFct(errMsg)
+            raise
+        finally:
+            #implement this in a way that warnings are not alwaays written when a cleaned fasta file is written
+            warn_msg = "Warning: Sequences in %s might not all have the same length." % aln_file_path
+            close_file_safely(aln_file, aln_file_path, warn_msg)
+            errorFct(warn_msg)
 
-    close_file_safely(aln_file, aln_file_path, '')
 
     internal_id = 0
 
+    #dict for duplicate check
+    seen = {}
+
     for record in alignment:
+
+        #check if key has been seen before
+        try:
+            if seen[str(record.id)]:
+                warn_msg = "Warning: Duplicate header %s in file %s." % (str(record.id),aln_file_path)
+                errorFct(warn_msg)
+        except KeyError:
+            pass
         internal_id += 1
-        seq_list.append([str(record.seq), str(record.id), internal_id])
+        cleaned_seq = clean_seq(str(record.seq))
+        seq_list.append([str(record.seq), str(record.id), internal_id, cleaned_seq])
+
+        seen[str(record.id)] = True
 
     return seq_list
 
@@ -517,7 +546,7 @@ def calc_job_SPS(job_list_of_dict_lists, internal_id_pdb_name_dict, internal_id_
             #try to find shift pattern to minimize maximization effort
             #this could actually be viable. but since we know from the search meta data where in the PDB the particular sequence match starts
             #we should use that information first
-            #in any way, maximizing intersection increases sensitivity
+            #in any way, maximizing intersection increases values
             argmax_aln_SP_set, max_shift = argmax_intersection(current_max_ref_SP_set, aln_SP_set)
             argmax_aln_SP_set_list.append(argmax_aln_SP_set.copy())
             save_dict["max_shift"] = max_shift
@@ -735,6 +764,34 @@ def import_aln_files_in_job(job_title, out_path):
         
     return job_list_of_dict_lists
 
+#build regex from list of valid symbols for clean_seq() function
+#([str,str,...]) -> str
+def build_regex_for_seq_cleaning_whitelist(valid_symbols):
+
+    regex_str_list = []
+    #all upper case alphabet letters
+    regex_str_list = valid_symbols.copy()
+    valid_symbols_lower = list(map(str.lower, valid_symbols.copy()))
+    #and all lower case alphabet letters
+    regex_str_list.extend(valid_symbols_lower)
+    regex_str_list.append("]")
+    regex_str_list.insert(0,"^")
+    regex_str_list.insert(0,"[")
+    regex_str = ''.join(regex_str_list)
+    
+    return regex_str
+
+def build_regex_for_seq_cleaning_blacklist(invalid_symbols):
+    
+    regex_str_list = []
+    regex_str_list = invalid_symbols.copy()
+    invalid_symbols_lower = list(map(str.lower, invalid_symbols.copy()))
+    regex_str_list.append("]")
+    regex_str_list.insert(0,"[")
+    regex_str = ''.join(regex_str_list)
+    
+    return regex_str
+
 #takes a list of sequence-header pairs and returns a random sample of given size
 #([[str,str,int],[str,str,int],...],int) -> [[str,str,int],[str,str,int],...]
 def choose_random_sample_from_aln_file(seq_list, sample_size):
@@ -887,7 +944,10 @@ def shell_err_fct(errMsg):
             logEntry = "\n [%s] %s" % ((datetime.now()).strftime("%d/%m/%Y %H:%M:%S"), errMsg)
             errFile.write(logEntry)
     except:
-        print("Error log file could not be opened.")
+        open_err_file_msg = "Error log file could not be opened."
+        if errMsg == "mp":
+            return open_err_file_msg
+        print(open_err_file_msg)
         exit(1)
 
 #returns list of PDB names from given dir of PDB files
@@ -925,6 +985,8 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
     create_dir_safely(os.path.join(DAT_path, "out_logs"))
     
     #this loop is necessary for clean error logging, since DaliLite.v5 seems to have bad logging
+    counter = 0
+    no_of_files = len(pdb_name_list)
     for pdb_name in pdb_name_list:
         
         shell_input = []
@@ -934,6 +996,11 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
             pdb_full_path = os.path.join(pdb_path, pdb_name+".pdb")
         err_file_path = os.path.join(DAT_path, "err_logs/", pdb_name)
         out_file_path = os.path.join(DAT_path, "out_logs/", pdb_name)
+
+        counter += 1
+        if verbosity>0:
+            msg = "Importing PDBs... [%s/%s] " % (counter, no_of_files)
+            print(msg, end="\r")
         
         #/.../<dali_dir>/import.pl --pdbfile <path> --pdbid <id> --dat <path> --verbose --clean
         shell_input = [import_pl_full_path, '--pdbfile', pdb_full_path, '--pdbid', pdb_name.upper(), '--dat', DAT_path, '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
@@ -999,9 +1066,8 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
     #i could, however probably find a workaround, but this isn't really worth the effort right now
     #maybe it's also just because job_title needs to be passed with "" around it.
     if len(job_title) > 11:
-        errMsg = "Job title is longer than 11 characters. Please enter a shorter job title."
-        errorFct(errMsg)
-        exit(1)
+        errMsg = "Note: Job title is longer than 11 characters. Will be cut off in DALI output files due to title length limitations."
+        job_title = job_title[0:11]
     
     #saving cwd for later file system navigation
     wd = os.getcwd()
@@ -1303,6 +1369,9 @@ def evaluate_diamond_search_data(tsv_path, output_path, sort_by, verbosity):
         plot_df = pandas.DataFrame(new_df[['pident','is_exact_match']])
         plot_df['mean_identity'] = new_df['pident'].mean()
         plot_df['exact_match_perc'] = (tsv_ex_match_counter/tsv_total_counter)*100
+
+        plot_df.to_csv(os.path.join(output_path,"data_avail.tsv"), sep='\t')
+
         #pandas.plot returns matplotlib.axes.Axes object
         plot_df_len = len(plot_df)
         xtick_list = list(range(0,plot_df_len,math.floor(plot_df_len/5)))
@@ -2001,7 +2070,7 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
 
 #removes gaps and other symbols not in valid_symbols and writes new fasta file with cleaned sequences
 # void (str,str,[str,str,...], int)    
-def clean_fasta_file(aln_file_full_path, out_file_full_path, valid_symbols, verbosity):
+def clean_fasta_file(aln_file_full_path, out_file_full_path, verbosity):
     
     if verbosity>0:
         msg = "Cleaning %s..." % os.path.split(aln_file_full_path)[1]
@@ -2029,7 +2098,7 @@ def clean_fasta_file(aln_file_full_path, out_file_full_path, valid_symbols, verb
         if verbosity>0:
             msg = "[%s/%s]" % (str(counter), str(no_of_records))
             print(msg, end='\r')
-        cleaned_seq = clean_seq(str(record.seq), valid_symbols)
+        cleaned_seq = clean_seq(str(record.seq))
         #if this fails use seqrecord constructor
         record.seq = Seq.Seq(cleaned_seq)
         counter += 1
@@ -2048,17 +2117,82 @@ def clean_fasta_files_in_dir(path_to_fasta_files, out_path, valid_symbols, verbo
     for fasta_file_name in os.listdir(path_to_fasta_files):
         fasta_file_full_path = os.path.join(path_to_fasta_files, fasta_file_name)
         out_file_full_path = os.path.join(out_path, os.path.split(fasta_file_full_path)[1])
-        clean_fasta_file(fasta_file_full_path, out_file_full_path, valid_symbols, verbosity)
+        clean_fasta_file(fasta_file_full_path, out_file_full_path, verbosity)
+
+def init_parallel_diamond_run(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path,
+                              diamond_block_size, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_threads):
+
+    shell_input = [str(diamond_exe_full_path), 'blastp', '--db', str(diamond_db_file_full_path), '--query', str(query_fasta_file_full_path), '-o', str(out_file_full_path),
+                   '--multiprocessing', '--mp-init', '--tmpdir', str(diamond_tmp_dir), '--parallel-tmpdir', str(diamond_mp_tmp_dir)]
+    
+    blastp_process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    
+    try:
+        out, err = blastp_process.communicate()
+    except:
+        blastp_process.kill()
+        out, err = blastp_process.communicate()
+        shell_err_fct(err)
+        errMsg = "Failed to communicate with diamond blastp subprocess. Killed it."
+        errorFct(errMsg)
+        raise
 
 # ./diamond blastp -d <diamond_db_file_full_path> -q <query_fasta_file_full_path> -o <out_path> --iterate
 #launches a subprocess for a diamond blastp query without restriction of sequence identity
 # void (str,str,str,str,int)        
-def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path, verbosity):
+def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path,
+                         verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_mp):
 
     shell_input = []
-    shell_input = [diamond_exe_full_path, 'blastp', '-d', diamond_db_file_full_path, '-q', query_fasta_file_full_path, '-o', out_file_full_path,
-                   '--iterate', '--log', '--header', 'simple', '--outfmt', '6', 'qseqid', 'sseqid', 'pident', 'length', 'mismatch', 'gapopen',
+    shell_input = [str(diamond_exe_full_path), 'blastp', '--db', str(diamond_db_file_full_path), '--query', str(query_fasta_file_full_path), '-o', str(out_file_full_path),
+                   '--log', '--header', 'simple', '--outfmt', '6', 'qseqid', 'sseqid', 'pident', 'length', 'mismatch', 'gapopen',
                    'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore', 'qlen']
+
+    if int(diamond_threads) > 0:
+        shell_input.append('--threads')
+        shell_input.append(str(diamond_threads))
+    if diamond_tmp_dir != "":
+        shell_input.append('--tmpdir')
+        shell_input.append(str(diamond_tmp_dir))
+    if diamond_mp_tmp_dir != "":
+        shell_input.append('--parallel-tmpdir')
+        shell_input.append(str(diamond_mp_tmp_dir))
+    if diamond_mp > 0:
+        shell_input.append('--multiprocessing')
+        shell_input.append('--mid-sensitive')
+        if int(diamond_threads) <= 0:
+            shell_input.append('--threads')
+            try:
+                diamond_threads = os.environ['SLURM_CPUS_PER_TASK']
+            except:
+                warn_msg = "Warning: Could not get number of CPUs per task from environment variable SLURM_CPUS_PER_TASK."
+                errorFct(warn_msg)
+            print("SLURM_CPUS_PER_TASK="+str(diamond_threads))
+            shell_input.append(str(diamond_threads))
+        if verbosity>0:
+            msg = "Initializing parallel run for file %s..." % query_fasta_file_full_path
+            print(msg)
+        try:
+            init_parallel_diamond_run(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path,
+                                      diamond_block_size, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_threads)
+        except:
+            err_msg = "Error while initializing parallel diamond run for file %s!" % query_fasta_file_full_path
+            errorFct(err_msg)
+            exit(1)
+    else:
+        shell_input.append('--iterate')
+        if int(diamond_threads) <= 0:
+            shell_input.append('--threads')
+            try:
+                diamond_threads = os.environ['SLURM_CPUS_PER_TASK']
+            except:
+                warn_msg = "Warning: Could not get number of CPUs per task from environment variable SLURM_CPUS_PER_TASK."
+                errorFct(warn_msg)
+            print("SLURM_CPUS_PER_TASK="+str(diamond_threads))
+            shell_input.append(str(diamond_threads))
+    if diamond_block_size != None:
+        shell_input.append('--block-size')
+        shell_input.append(str(diamond_block_size))
     if verbosity>0:
         msg = "Performing blastp query for file %s." % os.path.split(query_fasta_file_full_path)[1]
         print(msg)
@@ -2117,30 +2251,21 @@ def check_TSV_integrity(TSV_file_full_path):
 def filter_exact_matches(TSV_file_full_path):
     
     df = pandas.read_csv(TSV_file_full_path, sep='\t')
-    new_df = pandas.DataFrame(columns=['qseqid','sseqid','pident','length','mismatch','gapopen','qstart','qend','sstart','send','evalue','bitscore','qlen'])
+    #new_df = pandas.DataFrame(columns=['qseqid','sseqid','pident','length','mismatch','gapopen','qstart','qend','sstart','send','evalue','bitscore','qlen'])
     row_list = []
-    #remove next line, once trailing delimiters have been removed
-    #df = df.drop(['Unnamed: 16'], axis=1)
-    df['is_exact_match'] = 0
-    ex_match_col_num = df.columns.get_loc('is_exact_match')
-    mismatch_col_num = df.columns.get_loc('mismatch')
-    len_col_num = df.columns.get_loc('length')
-    qlen_col_num = df.columns.get_loc('qlen')
-    #split df into one dataframe per fasta_header
-    df_list = [x for _,x in df.groupby('qseqid')]
-    for split_df in df_list:
-        #next lines needs to be changed, if definition of exact match requires it
-        split_df = split_df.sort_values(by=['pident'], ascending=False)
-        if int(split_df.iloc[0,mismatch_col_num]) == 0 and int(split_df.iloc[0,len_col_num]) == int(split_df.iloc[0,qlen_col_num]):
-            split_df.iloc[0,ex_match_col_num] = 100
-            row_list.append(split_df.iloc[[0]].copy())
-    new_df = pandas.concat(row_list, ignore_index=True)
+    for index, row in df.iterrows():
+        #exact query match definition. no mismatches and no additional gaps and qlen=send-sstart+1 =>(?) pident = 100
+        if row.mismatch == 0 and row.gapopen == 0:
+            aln_len = row.send - row.sstart + 1
+            if row.qlen == aln_len:
+                row_list.append(row.values)
+    new_df = pandas.DataFrame(row_list, columns=df.columns)
 
     return new_df
 
 #definition of exact match needs to be applied here
 # (str) -> { {},{},... },{ {},{},... }
-def get_exact_matches(TSV_file_full_path):
+def get_exact_matches(TSV_file_full_path, aln_entry_list):
     
     #optional check, if I trust diamond to generate good data
     #broken_line_list = check_TSV_integrity(TSV_file_full_path)
@@ -2148,19 +2273,26 @@ def get_exact_matches(TSV_file_full_path):
     #if len(broken_line_list) != 0:
      #   attempt_TSV_repair()
     #apply filter according to exact match definition to get at most one chain id for each query header
+    #we also need to make sure that if the input sequences are the same that we always choose the SAME 
+    #chain as exact query match
     exact_matches_df = filter_exact_matches(TSV_file_full_path)
-    #for each row in dataframe write dict and append it to list
+    #write to file
+    TSV_path, TSV_name = os.path.split(TSV_file_full_path)
+    name, ext = os.path.splitext(TSV_name)
+    exact_matches_df.to_csv(os.path.join(TSV_path, name+"_exact_matches.tsv"), sep="\t")
+    
+    #keys = FASTA_header; values = [row,row,...] 
     exact_match_dict = {}
-    #iterating over dataframe rows is slow, look for better options
+    #initializing exact_match_dict with empty lists
+    for aln_entry in aln_entry_list:
+        exact_match_dict[str(aln_entry[1])] = []
+    #filling lists
     for index, row in exact_matches_df.iterrows():
-        row_dict = {}
-        for col_name in exact_matches_df.columns:
-            row_dict[col_name] = row[col_name]
-        exact_match_dict[row["sseqid"]] = row_dict.copy()
-        
+        exact_match_dict[str(row.qseqid)].append(row)    
+
     return exact_match_dict
   
-#copies PDB files from local PDB database to <job_dir>/DATA/PDB_lib
+#copies PDB files from local PDB database to <job_dir>/DALI/PDB_lib
 #mainly implemented for consistency, no real advantage
 # void ([str,str,...],str,str)
 def cp_PDB_files_to_job_dir(chain_list, pdb_db_path, pdb_out_path):
@@ -2297,6 +2429,8 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     #exact_match_dict has chains as keys, i.e. XXXX:X
     #be extra careful and watch out for leading spaces and wrong or missing \t separations
     #check for duplicate keys
+    
+    #this function was changed!
     exact_match_dict = get_exact_matches(TSV_file_full_path)
     
     if sample_size != 0:
@@ -2335,12 +2469,1519 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
     job_SPS = diamond_calc_job_SPS(job_list_of_dict_lists, exact_match_dict, aln_dict, job_title, verbosity)
     
     print(job_SPS)
+
+#calculation rework
+#__________________________________________________________________________________________________________________________________________________
+#this function serves to detect and resolve duplicate values in dictionary for any one key
+#right now it takes FASTA headers as keys and checks if the list in values is of length <= 1
+def resolve_ambivalences(exact_match_dict, aln_file_full_path):
+    
+    for qseqid in exact_match_dict.keys():
+        if len(exact_match_dict[qseqid]) > 1:
+            cur_best_entry = exact_match_dict[qseqid][0]
+            for row in exact_match_dict[qseqid][1:]:
+                #try to select entry by bitscore
+                if int(row.bitscore) > int(cur_best_entry.bitscore):
+                    cur_best_entry = row
+                elif int(row.bitscore) == int(cur_best_entry.bitscore):
+                    #if bitscore is the same, try lower subject match start
+                    if int(row.sstart) < int(cur_best_entry.sstart):
+                        cur_best_entry = row
+                    elif int(row.sstart) == int(cur_best_entry.sstart):
+                        #if lower match start is the same, we must have different chain IDs
+                        for i in range(0,6):
+                            if int(str(row.sseqid)[i]) < int(str(cur_best_entry.sseqid)[i]):
+                                cur_best_entry = row
+                                break
+                        #if we have the same chain IDs, we'll have the same query match restriction
+                        #and the choice is irrelevant. This SHOULD NOT happen usually.
+                        else:
+                            err_msg = """Warning: Identical exact matches suspected for headers %s and 
+                                       %s in %s.""" % (str(cur_best_entry.qseqid), str(row.qseqid), aln_file_full_path)
+                            errorFct(err_msg)
+            #we'll use a list for consistency
+            exact_match_dict[qseqid] = []
+            exact_match_dict[qseqid].append(cur_best_entry)
+
+    return exact_match_dict
+
+def create_MSA_ex_match_df(aln_entry_list, unique_exact_match_dict):
+
+    MSA_df = pandas.DataFrame(columns=['fasta_entry_index','fasta_entry_header','ungapped_seq','gapped_seq',
+                                       'chain_id','sstart','send','evalue','bitscore','qlen'])
+    row_list = []
+    #aln_entry = [sequence, header, entry_number, ungapped_sequence]
+    for aln_entry in aln_entry_list:
+        row = []
+        qseqid = aln_entry[1]
+        if len(unique_exact_match_dict[qseqid]) == 1:
+            row.append(aln_entry[2])
+            row.append(qseqid)
+            row.append(aln_entry[3])
+            row.append(aln_entry[0])
+            exact_match_tuple = unique_exact_match_dict[qseqid][0]
+            row.append(exact_match_tuple.sseqid)
+            row.append(exact_match_tuple.sstart)
+            row.append(exact_match_tuple.send)
+            row.append(exact_match_tuple.evalue)
+            row.append(exact_match_tuple.bitscore)
+            row.append(exact_match_tuple.qlen)
+
+            row_list.append(row.copy())
+    
+    MSA_df = pandas.DataFrame(row_list, columns=['fasta_entry_index','fasta_entry_header','ungapped_seq',
+                              'gapped_seq','chain_id','sstart','send','evalue','bitscore','qlen'])
+    return MSA_df
+
+#writes index files for each input alignment that tie together diamond blastp query data
+# with the headers and the aligned sequences in the original input files
+# void ([str,str,...], str, str, str, int)
+def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path,
+                           verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_mp):
+
+    DATA_path = os.path.join(job_path, "DATA")
+    create_dir_safely(DATA_path)
+
+    for aln_file_full_path in aln_file_full_path_list:
+
+        path, aln_file_name_ext = os.path.split(aln_file_full_path)
+        aln_file_name, ext = os.path.splitext(aln_file_name_ext)
+
+        #sub-subdir of jobdir for each alignment, contains all temporary or permanent files important for measurment
+        #of each individual MSA file
+        aln_misc_path = os.path.join(DATA_path, aln_file_name)
+        create_dir_safely(aln_misc_path)
+        #aln_entry_list is a list of lists each of length 4, containing [sequence, header, entry_number, ungapped_sequence]
+        aln_entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
         
+        #VERY CAREFUL HERE, DOUBLE CHECK, TRIPLE CHECK, IF IT MAKES SENSE TO DO IT LIKE THIS
+        #IF WE FORGOT A SINGLE LETTER, THIS RUINS ALL RESULTS
+        #HOW DO WE HANDLE UNCOMMON AAs OR 'X' AND THE LIKE?
+        #___________________________________________________________________________________________
+        #path for fasta output
+        clean_fasta_file_full_path = os.path.join(aln_misc_path, aln_file_name+"_cleaned.fasta")
+        _ = clean_fasta_file(aln_file_full_path, clean_fasta_file_full_path, verbosity)
+        #-------------------------------------------------------------------------------------------
+
+        #path for TSV output, return file for db query
+        TSV_file_full_path = os.path.join(aln_misc_path, aln_file_name+"_diamond.tsv")
+        diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, clean_fasta_file_full_path, TSV_file_full_path,
+                             verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_mp)
+
+        #get exact query matches. this is shaky, because we dont know how diamond processes large
+        # FASTA files internally and if this has an impact on what results we are presented with
+        #however, diamond excels at processing large FASTA files and it would be wasteful to feed in 
+        #the individual FASTA entries one by one (it might be necessary though, if exact query match
+        #output turns out to differ between different alignments with the same underlying sequences)
+        exact_match_dict = get_exact_matches(TSV_file_full_path, aln_entry_list)
+        unique_exact_match_dict = resolve_ambivalences(exact_match_dict, aln_file_full_path)
+
+        #create dataframe for summary of MSA data
+        MSA_df = create_MSA_ex_match_df(aln_entry_list, unique_exact_match_dict)
+        #write MSA_df to file
+        MSA_df.to_csv(os.path.join(aln_misc_path, aln_file_name+"_exact_match.index"), sep="\t")
+
+def read_MSA_index_files_in_job(aln_file_full_path_list, job_path):
+
+    #extract aln_file_names from paths and build list of full paths to index files
+    DATA_path = os.path.join(job_path, "DATA")
+    aln_index_full_path_list = []
+    for aln_file_full_path in aln_file_full_path_list:
+        aln_path, aln_name_ext = os.path.split(aln_file_full_path)
+        aln_file_name, ext = os.path.splitext(aln_name_ext)
+        aln_index_full_path = os.path.join(DATA_path, aln_file_name, aln_file_name+"_exact_match.index")
+        aln_index_full_path_list.append(aln_index_full_path)
+
+    #load index files into list of DataFrames
+    MSA_df_dict = {}
+    for aln_index_full_path in aln_index_full_path_list:
+        MSA_df = pandas.read_csv(aln_index_full_path, sep="\t")
+        MSA_df_dict[aln_index_full_path] = MSA_df.copy()
+
+    return MSA_df_dict
+
+#this function is given a set of ungapped sequences that are shared among all input MSAs
+#it is also given a dict of dictionaries. latter contain ungapped_sequences of ALL queries that have 
+#exact query matches (the ungapped sequences) as keys and the corresponding rows in the aln_index as values as a list.
+# each key of the higher level dict represents a different input MSA
+# (set(), [{},{},...]) -> set()
+def verify_common_seq_data(common_seq_set, seq_prim_key_dict_dict):
+
+    exclude_set = set()
+    #following three sets should sufficiently define the exact query match restriction
+    chain_id_set = set()
+    sstart_set = set()
+    send_set = set()
+    #this is just an extra check, it should be the same, but it needn't be
+    bitscore_set = set()
+    for common_seq in common_seq_set:
+        chain_id_set.clear()
+        sstart_set.clear()
+        send_set.clear()
+        bitscore_set.clear()
+        #the next loop adds the respective column values to sets for all aln_index files
+        #if a set of the relevalent data has more than one element, then it means that
+        #there had to be a difference in relevant data (i.e. chain_id, sstart, send)
+        #somewhere among all the aln_index files for rows that share the same unngapped sequence
+        #this means that there would be NOT at most one P_{ref,C} for a given C of ungapped sequences
+        #contradicting Lemma 2 
+        prev_aln_index_full_path = ""
+        for aln_index_full_path in seq_prim_key_dict_dict.keys():
+            for i in range(0, len(seq_prim_key_dict_dict[aln_index_full_path][common_seq])):
+                chain_id_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].chain_id))
+                sstart_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].sstart))
+                send_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].send))
+                bitscore_set.add(str(float(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].bitscore)))
+                if len(chain_id_set)>1 or len(sstart_set)>1 or len(send_set)>1 or len(bitscore_set)>1:
+                    exclude_set.add(common_seq)
+                    warn_msg = """Warning: Inconsistency in common sequence set between %s and %s. Excluding sequence.\n
+                                  Chain_ids: %s\n Sstart: %s\n Send: %s\n Bitscore: %s""" % (prev_aln_index_full_path,aln_index_full_path,
+                                                                                             str(chain_id_set),str(sstart_set),str(send_set),str(bitscore_set))
+                    errorFct(warn_msg)
+            prev_aln_index_full_path = aln_index_full_path
+    red_common_seq_set = common_seq_set.difference(exclude_set)
+    
+    return red_common_seq_set
+
+
+def generate_common_seq_set(MSA_df_dict, verbosity):
+
+    #load cleaned exact query match sequences into sets
+    seq_set_list = []
+    seq_prim_key_dict_dict = {}
+    for aln_index_full_path in MSA_df_dict.keys():
+        seq_set = set()
+        seq_prim_key_dict = {}
+        seq_prim_key_dict.clear()
+        for index, row in MSA_df_dict[aln_index_full_path].iterrows():
+            upper_ungapped_seq = str(row.ungapped_seq).upper()
+            seq_set.add(upper_ungapped_seq)
+            #initialize seq_prim_key_dict with empty list.
+            #these lists will contain every row, where the ungapped sequences
+            #are the same (yes, this actually happens for whatever reason)
+            if upper_ungapped_seq not in seq_prim_key_dict.keys():
+                seq_prim_key_dict[upper_ungapped_seq] = []
+            seq_prim_key_dict[upper_ungapped_seq].append(row)
+        seq_set_list.append(seq_set.copy())
+        seq_prim_key_dict_dict[aln_index_full_path] = seq_prim_key_dict.copy()
+
+    #splat seq_set_list and intersect every set in it
+    common_seq_set = set.intersection(*seq_set_list)
+
+    red_common_seq_set = verify_common_seq_data(common_seq_set, seq_prim_key_dict_dict)
+
+    if verbosity>0:
+        msg = "[%s/%s] common sequences remaining after verification." % (str(len(common_seq_set)),str(len(red_common_seq_set)))
+        print(msg)
+
+    return red_common_seq_set, seq_prim_key_dict_dict
+
+#create reduced MSA dataframe and write to file. return list of full paths to reduced MSA index files.
+#i'm personally dissatisfied with this function, but I had to work with duplicate underlying sequences somehow
+#thus this function is a bit of a frankenstein's creation
+#rewrite at appropriate moment in time
+def write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict, unique_seq_only):
+
+    red_MSA_index_full_path_list = []
+    #assign ID to each common seq, e.g. convert set to list.
+    common_seq_list = list(common_seq_set)
+    #initialize total row dict of dicts for each alignment file
+    total_row_dict = {}
+    total_row_dict.clear()
+    for aln_index_full_path in seq_prim_key_dict_dict.keys():
+        total_row_dict[aln_index_full_path] = {}
+        total_row_dict[aln_index_full_path].clear()
+    
+    while_com_seq_list_len = len(common_seq_list)
+    common_seq_ID = 0
+    canon_ind = 0
+    while common_seq_ID < while_com_seq_list_len:
+        rows_per_com_seq_dict = {}
+        rows_per_com_seq_dict.clear()
+        for aln_index_full_path in seq_prim_key_dict_dict.keys():
+            #list of rows where ungapped sequences are the same per alignment file
+            rows_per_com_seq_dict[aln_index_full_path] = seq_prim_key_dict_dict[aln_index_full_path][common_seq_list[common_seq_ID]]
+        #making sure that for each alignment to be compared we have the same amount
+        # of aligned sequences for each common sequence
+        len_dict = {}
+        len_dict.clear()
+        for aln_index_full_path in seq_prim_key_dict_dict.keys():
+            len_dict[aln_index_full_path] = len(rows_per_com_seq_dict[aln_index_full_path])
+        #determine minimum of values in len_dict to restrict number of aligned sequences to this int
+        #if unique_seq_only is true, then take only one aligned sequence per common sequence
+        if unique_seq_only:
+            min_value = 1
+        else:
+            min_value = min(list(len_dict.values()))
+        #RANDOM ELEMENTS! This is controversial in my mind. Ultimately, this only affects the MSA index sets
+        # NOT the reference sets, because the underlying sequences are EXACTLY the same. This means, that if 
+        # DIAMOND and the subsequent processing of data is deterministic, we should only see a difference in the 
+        # reduced index files in the columns "fasta_header", "fasta_index" and "gapped_sequence". 
+        # Columns "sstart", "send" and "ungapped_seq" should be the same, which means that our
+        # exact query match restriction should remain constant, no matter the choice of the next rows
+        # implement check to be extra sure
+        new_rows_per_com_seq_dict = {}
+        new_rows_per_com_seq_dict.clear()
+        #choosing subset for each list of rows with gapped_seq, where ungapped sequences are the same 
+        for aln_index_full_path in rows_per_com_seq_dict.keys():
+            rand_ind_list = random.sample(range(0,len(rows_per_com_seq_dict[aln_index_full_path])), min_value)
+            new_rows_per_com_seq_dict[aln_index_full_path] = [rows_per_com_seq_dict[aln_index_full_path][index] for index in rand_ind_list]
+
+        #assign canonical index
+        for aln_index_full_path in new_rows_per_com_seq_dict.keys():
+            for row in new_rows_per_com_seq_dict[aln_index_full_path]:
+                total_row_dict[aln_index_full_path][canon_ind] = row
+                canon_ind += 1
+            #new_rows_per_com_seq_dict[key] for all aln_index_full_paths in keys contains exactly min_value rows
+            #thus we can subtract min_value from canon_ind to keep the canonical index the same between all red_index_files
+            canon_ind -= min_value
+        canon_ind += min_value
+        common_seq_ID += 1
+
+    #create dfs
+    for aln_index_full_path in total_row_dict.keys():
+        red_MSA_df = pandas.DataFrame.from_dict(total_row_dict[aln_index_full_path], orient='index')
+        #construct path
+        path, name_ext = os.path.split(aln_index_full_path)
+        red_name_ext = "red_"+name_ext
+        red_MSA_index_full_path = os.path.join(path, red_name_ext)
+        #write to file
+        red_MSA_df.to_csv(red_MSA_index_full_path, sep='\t')
+        red_MSA_index_full_path_list.append(red_MSA_index_full_path)
+
+    return red_MSA_index_full_path_list
+
+#elaborate test function to test integrity of reduced index files
+def test_red_index_file(aln_dir, out_path, job_name, verbosity, differing_sequences, unique_seq_only):
+
+    #get all alignment files in dir
+    aln_dir_list = os.listdir(aln_dir)
+    aln_file_full_path_list = []
+    for thing in aln_dir_list:
+        if os.path.isfile(os.path.join(aln_dir, thing)):
+            aln_file_full_path_list.append(os.path.join(aln_dir, thing))
+
+    job_path = os.path.join(out_path, job_name)
+    create_dir_safely(job_path)
+
+    #use index files to determine set of common underlying sequences
+    #MSA_df_dict will serve as a central information hub
+    MSA_df_dict = read_MSA_index_files_in_job(aln_file_full_path_list, job_path)
+    #common_seq_set is our C. seq_prim_key_dict_dict is utility structure helping to generate
+    #the reduced alignment index files
+    common_seq_set, seq_prim_key_dict_dict = generate_common_seq_set(MSA_df_dict, verbosity)
+    if differing_sequences.issubset(common_seq_set) and len(differing_sequences) != 0:
+        warn_msg = ("Warning: Integrity test failed for reduced index files."
+                    "Common sequences %s are not present, although they should be.") % (str(differing_sequences))
+        errorFct(warn_msg)
+    red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict, unique_seq_only)
+    #test contents of reduced index files
+    red_MSA_df_dict = import_red_aln_index_files(red_MSA_index_full_path_list)
+
+    test_dict = {}
+    test_dict.clear()
+    i = 0
+    while True:
+        try:
+            test_dict[i] = []
+            for aln_index_full_path in red_MSA_df_dict.keys():
+                test_dict[i].append(red_MSA_df_dict[aln_index_full_path].iloc[i])
+            i += 1
+        except IndexError:
+            max_i = i-1
+            break
+    #are the rows almost the same for each canonical index?
+    seq_set_red = set()
+    for i in range(0,max_i+1):
+        last_row = test_dict[i][0]
+        for row in test_dict[i]:
+            if row.ungapped_seq.upper() != last_row.ungapped_seq.upper():
+                msg = "Warning: Rows with index %s have differing ungapped sequences." % (str(i))
+                print(row.ungapped_seq)
+                print(last_row.ungapped_seq)
+                errorFct(msg)
+            if row.sstart != last_row.sstart:
+                msg = "Warning: Rows with index %s have differing sstart." % (str(i))
+                print(row.sstart)
+                print(last_row.sstart)
+                errorFct(msg)
+            if row.send != last_row.send:
+                msg = "Warning: Rows with index %s have differing send." % (str(i))
+                print(row.send)
+                print(last_row.send)
+                errorFct(msg)
+            if row.evalue != last_row.evalue:
+                msg = "Warning: Rows with index %s have differing evalue." % (str(i))
+                print(row.evalue)
+                print(last_row.evalue)
+                errorFct(msg)
+            if row.bitscore != last_row.bitscore:
+                msg = "Warning: Rows with index %s have differing bitscore." % (str(i))
+                print(row.bitscore)
+                print(last_row.bitscore)
+                errorFct(msg)
+
+            seq_set_red.add(row.ungapped_seq.upper())
+
+    seq_set_index_file = set()
+    test_dict_2 = {}
+    test_dict_2.clear()
+    i = 0
+    while True:
+        try:
+            test_dict_2[i] = []
+            for aln_index_full_path in MSA_df_dict.keys():
+                test_dict_2[i].append(MSA_df_dict[aln_index_full_path].iloc[i])
+            i += 1
+        except IndexError:
+            max_i = i-1
+            break
+
+    for i in range(0, max_i+1):
+        for row in test_dict_2[i]:
+            seq_set_index_file.add(row.ungapped_seq.upper())
+
+    differing_sequences = seq_set_red.symmetric_difference(seq_set_index_file)
+
+    return differing_sequences
+
+def random_aln_seq(clean_seq, base_aln_len):
+    clean_seq_len = len(clean_seq)
+    cur_seq_len = clean_seq_len
+    gaps_to_insert = base_aln_len - clean_seq_len
+    if gaps_to_insert <= 0:
+        return '0'
+    while gaps_to_insert > 0:
+        #cur_seq_len+1 places to insert gap 
+        rand_int = random.randint(0,cur_seq_len)
+        if rand_int != 0 and rand_int != cur_seq_len:
+            clean_seq = clean_seq[:rand_int]+'-'+clean_seq[rand_int:]
+            cur_seq_len += 1
+            gaps_to_insert -= 1
+            continue
+        elif rand_int == 0:
+            clean_seq = '-'+clean_seq
+            cur_seq_len += 1
+            gaps_to_insert -= 1
+            continue
+        elif rand_int == cur_seq_len:
+            clean_seq = clean_seq+'-'
+            cur_seq_len += 1
+            gaps_to_insert -= 1
+            continue
+
+    return clean_seq
+
+def write_baseline_aln_file(aln_file_full_path_list, job_path, verbosity):
+
+    cleaned_seq_set = set()
+    cleaned_seq_set.clear()
+    aln_len_set = set()
+    aln_len_set.clear()
+    for aln_file_full_path in aln_file_full_path_list:
+        if verbosity>0:
+            msg = "Cleaning file %s for baseline." % (aln_file_full_path)
+            print(msg, end="\n")
+        #why is this here?
+        #entry is [sequence, header, entry_number, ungapped_sequence]
+        #aln_entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
+        #cleaning sequences
+        try:
+            aln_file_handle = open(aln_file_full_path)
+        except:
+            errMsg = "Could not open alignment file %s." % aln_file_full_path
+            errorFct(errMsg)
+            exit(1)
+        try:
+            records = AlignIO.read(aln_file_handle, "fasta")
+        except:
+            errMsg = "Could not read fasta file %s." % aln_file_full_path
+            close_file_safely(aln_file_handle, aln_file_full_path, errMsg)
+            errorFct(errMsg)
+            exit(1)
+
+        close_file_safely(aln_file_handle, aln_file_full_path, "")
+
+        counter = 0
+        for record in records:
+            counter += 1
+            if verbosity>0:
+                msg = "[%s]" % (counter)
+                print(msg, end="\r")
+            if counter<2:
+                aln_len_set.add(len(str(record.seq)))
+            cleaned_seq_set.add(clean_seq(str(record.seq).upper()))
+    
+    base_aln_len_sorted_list = iter(sorted(list(aln_len_set)))
+    cur_base_aln_len = next(base_aln_len_sorted_list)
+    #create SeqRecord list
+    seq_record_list = []
+    counter = 1
+    if verbosity>0:
+        msg = "Generating random alignment file."
+        print(msg, end="\n")
+    cleaned_seq_list = list(cleaned_seq_set)
+    cleaned_seq_list_len = len(cleaned_seq_list)
+    i = 0
+    while i < cleaned_seq_list_len:
+        if verbosity>0:
+            msg = "[%s/%s]" % (counter, cleaned_seq_list_len)
+            print(msg, end="\r")
+        aln_seq = random_aln_seq(cleaned_seq_list[i], cur_base_aln_len)
+        #if the chosen alignment length is too short for at least one sequence, then use
+        #a bigger alignment length and restart the loop 
+        if aln_seq == '0':
+            seq_record_list.clear()
+            cur_base_aln_len = next(base_aln_len_sorted_list)
+            i = 0
+            counter = 1
+            continue
+        else:
+            seq_record = SeqRecord.SeqRecord(Seq.Seq(aln_seq), id=str(counter))
+            seq_record_list.append(seq_record)
+            i += 1
+            counter += 1
+
+    baseline_aln_full_path = os.path.join(job_path, "baseline_aln.fasta")
+    SeqIO.write(seq_record_list, baseline_aln_full_path, "fasta")
+
+    aln_file_full_path_list.insert(0, baseline_aln_full_path)
+
+    return aln_file_full_path_list
+
+#creates job dir from a list of alignments
+def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity, unique_seq_only,
+               diamond_block_size, diamond_threads, diamond_tmp_dir, baseline, diamond_mp_tmp_dir, diamond_mp):
+
+    #get all alignment files in dir
+    aln_dir_list = os.listdir(aln_dir)
+    aln_file_full_path_list = []
+    for thing in aln_dir_list:
+        if os.path.isfile(os.path.join(aln_dir, thing)):
+            aln_file_full_path_list.append(os.path.join(aln_dir, thing))
+
+    job_path = os.path.join(out_path, job_name)
+    create_dir_safely(job_path)
+
+     #generate baseline alignment file
+    if baseline > 0:
+        if unique_seq_only < 1:
+            err_msg = "Using --baseline currently requires use of --uniqueonly. Please provide the latter to use baseline."
+            errorFct(err_msg)
+            exit(1)
+        aln_file_full_path_list = write_baseline_aln_file(aln_file_full_path_list, job_path, verbosity)
+
+    create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity,
+                           diamond_block_size, diamond_threads, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_mp)
+    
+    if verbosity>0:
+        msg = "Determining maximal common sequence set..."
+        print(msg)
+
+    #use index files to determine set of common underlying sequences
+    #MSA_df_dict will serve as a central information hub
+    MSA_df_dict = read_MSA_index_files_in_job(aln_file_full_path_list, job_path)
+    #common_seq_set is our C. seq_prim_key_dict_dict is utility structure helping to generate
+    #the reduced alignment index files
+    common_seq_set, seq_prim_key_dict_dict = generate_common_seq_set(MSA_df_dict, verbosity)
+    red_MSA_index_full_path_list = write_red_aln_index_files(common_seq_set, seq_prim_key_dict_dict, unique_seq_only)
+
+    #testing reduced index files, especially the canonical index for correctness
+    #this can be left out, once sufficient trust is built
+    differing_sequences = set()
+    differing_sequences = test_red_index_file(aln_dir, out_path, job_name, 0, differing_sequences, unique_seq_only)
+    _ = test_red_index_file(aln_dir, out_path, job_name, 0, differing_sequences, unique_seq_only)
+
+def import_red_aln_index_files(red_aln_index_full_path_list):
+    red_MSA_df_dict = {}
+    for red_aln_index_full_path in red_aln_index_full_path_list:
+        red_MSA_df_dict[red_aln_index_full_path] = pandas.read_csv(red_aln_index_full_path, sep="\t")
+    return red_MSA_df_dict
+
+def get_aln_path_list(DATA_path):
+    aln_path_list = []
+    aln_dir_list = os.listdir(DATA_path)
+    for thing in aln_dir_list:
+        if not os.path.isfile(thing):
+            aln_path_list.append(os.path.join(DATA_path,thing))
+    return aln_path_list
+
+def get_red_aln_index_full_path_list(aln_path_list):
+    red_aln_index_full_path_list = []
+    for aln_path in aln_path_list:
+        head, aln_name = os.path.split(aln_path)
+        red_aln_index_full_path = os.path.join(aln_path, "red_"+aln_name+"_exact_match.index")
+        red_aln_index_full_path_list.append(red_aln_index_full_path)
+    return red_aln_index_full_path_list
+
+def get_max_sample_size_for_job(red_MSA_df_dict):
+    len_set = set()
+    for red_aln_index_full_path in red_MSA_df_dict.keys():
+        len_set.add(len(red_MSA_df_dict[red_aln_index_full_path].index))
+    if len(len_set) > 1:
+        err_msg = "Reduced alignment index files are of unequal length."
+        errorFct(err_msg)
+        try:
+            #fix_red_aln_index_files()
+            raise
+        except:
+            err_msg = "Fixing alignment index failed. Try to create new job."
+            errorFct(err_msg)
+    else:
+        return len_set.pop()
+
+#by design the comparison strategy is a set of 2-tuples
+#to be precise: comp_strat \subseteq sample_set x sample_set
+#lower triangle means that, if we had a square matrix A=(a_{ik}) with
+#i \in sample_set and k \in sample_set, we exclude the diagonal elements
+#and also assume symmetry a_{ik}=a_{ki}. Of course this leads to a large number of
+#pairwise reference alignments of (n^2-n)/2, where n=len(sample_set) and also is not true
+#for arbitrary structure aligners. i.e. alignments a_{ik}=a_{ki} are not identical in general.
+#i'm not sure what exactly this means for measurement though.
+def generate_low_triangle(sample_set):
+    comp_strat = set()
+    for i in sample_set:
+        for k in sample_set:
+            if k >= i:
+                break
+            comp_strat.add((i,k))
+    return comp_strat
+
+def load_comp_strat_from_file(comp_strat_file_full_path):
+    with open(comp_strat_file_full_path, "r") as file:
+        comp_strat_list_list = json.load(file)
+    comp_strat = set(tuple(x) for x in comp_strat_list_list)
+
+    return comp_strat
+
+def generate_comp_strat(max_sample_size, sample_size, comp_strat_name="low_triangle", comp_strat_file_path=""):
+    sample_set = set()
+    if comp_strat_file_path == "":
+        #first step: choose subset of maximal set
+        int_sample_size = int(sample_size)
+        #this will hardly impact performance, but I thought it was cool
+        if int_sample_size <= max_sample_size/2:
+            include_set = set()
+            while len(include_set) < int_sample_size:
+                random_int = random.randint(0, max_sample_size-1)
+                include_set.add(random_int)
+            sample_set = include_set.copy()
+        else:
+            max_sample_set = set(range(0,max_sample_size))
+            exclude_set = set()
+            exclude_bound = max_sample_size-int_sample_size
+            while len(exclude_set) < exclude_bound:
+                random_int = random.randint(0, max_sample_size-1)
+                exclude_set.add(random_int)
+            sample_set = max_sample_set.difference(exclude_set).copy()
+        #select from list of different comparison strategies
+        if comp_strat_name == "low_triangle":
+            comp_strat = generate_low_triangle(sample_set)
+            return comp_strat
+        elif comp_strat_name == "random":
+            pass
+        elif comp_strat_name == "complete_linear_coverage":
+            pass
+    #else if path to comparison strategy file is provided, then load it up
+    else:
+        comp_strat = load_comp_strat_from_file(comp_strat_file_path)
+        return comp_strat
+
+def get_chain_IDs_from_red_MSA_df(red_MSA_df_dict, comp_strat):
+    index_set = set()
+    for i,k in comp_strat:
+        index_set.add(i)
+        index_set.add(k)
+    chain_ID_dict = {}
+    #index is the common sequence ID
+    for index in index_set:
+        small_chain_id_set = set()
+        small_chain_id_set.clear()
+        for key in red_MSA_df_dict.keys():
+            chain_id_col_num = red_MSA_df_dict[key].columns.get_loc('chain_id')
+            chain_id = red_MSA_df_dict[key].iloc[index, chain_id_col_num]
+            small_chain_id_set.add(str(chain_id))
+        if len(small_chain_id_set)>1:
+            err_msg = "Differing chain IDs for the same common sequence index. Attempting to fix..."
+            errorFct(err_msg)
+            try:
+                #fix_red_aln_index_files()
+                raise
+            except:
+                err_msg = "Fixing alignment index failed. Try to create new job."
+                errorFct(err_msg)
+        else:
+            #maybe decolonize chain ID (?)
+            chain_id = small_chain_id_set.pop()
+            chain_ID_dict[index] = chain_id
+    
+    return chain_ID_dict
+
+def write_set_to_file(comp_strat, dest_full_path):
+    comp_strat_list = list(comp_strat)
+    comp_strat_list_list = [list(element) for element in comp_strat_list]
+    with open(dest_full_path, "w") as file:
+        json.dump(comp_strat_list_list, file)
+
+#listener function that writes errors to err_log given a queue of error messages
+def err_queue_writer(err_queue):
+    while True:
+        queued_err = err_queue.get()
+        if queued_err == "kill":
+            break
+        open_file_err = errorFct(queued_err)
+        if open_file_err is not None:
+            raise
+
+#listener function that writes errors to shell_err_log given a queue of error messages
+def shell_err_queue_writer(shell_err_queue):
+    while True:
+        queued_err = shell_err_queue.get()
+        if queued_err == "kill":
+            break
+        open_file_err = shell_err_fct(queued_err)
+        if open_file_err is not None:
+            raise
+
+def sub_job_queue_handler(no_of_alns, verbosity, backup_freq, json_exclude_path, sub_job_queue):
+    counter = 0 
+    comp_strat_exclude_set = set()
+    while True:
+        pair = sub_job_queue.get()
+        counter += 1
+        if pair == 'kill':
+            return comp_strat_exclude_set
+        if verbosity>0:
+            msg = "Calculated alignment %s_%s. [%s/%s] " % (str(pair[0]), str(pair[1]), str(counter), str(no_of_alns))
+            print(msg, end="\r") 
+
+        #add (i,k) tuple to exclude set, since alignment was successful
+        comp_strat_exclude_set.add((pair[0], pair[1]))
+        
+        if backup_freq == 0: 
+            continue
+        if counter % backup_freq == 0:
+            write_set_to_file(comp_strat_exclude_set, json_exclude_path)
+
+#pre-initialize constant data, e.g. not (i,k)
+#a single DALI process to be launched in parallel based on i,k
+def DALI_comp_strat_child(arg_tuple):
+    try:
+        #unpack arg_tuple
+        err_queue = arg_tuple[9]
+        i = arg_tuple[0]
+        k = arg_tuple[1]
+        ALN_path = arg_tuple[2]
+        dali_pl_full_path = arg_tuple[3]
+        dali_dat_lib_path = arg_tuple[4]
+        wd = arg_tuple[5]
+        job_name = arg_tuple[6]
+        chain_id_dict = arg_tuple[7]
+        shell_err_queue = arg_tuple[8]
+    except:
+        msg = "Error while unpacking argument tuple in DALI_comp_strat_child process."
+        print(msg)
+        err_queue.put(msg)
+        raise
+
+    try:
+        chain_id1 = str(chain_id_dict[i][0:4])+str(chain_id_dict[i][5])
+        chain_id2 = str(chain_id_dict[k][0:4])+str(chain_id_dict[k][5])
+    except IndexError:
+        errMsg = "Chain identifier %s or %s is shorter than 6 chars." % (chain_id_dict[i], chain_id_dict[k])
+        err_queue.put(errMsg)
+        raise
+
+    try:
+        shell_input = []
+        sub_job = "%s_%s" % (str(i), str(k))
+            
+        #creating sub job dir
+        sub_job_path = os.path.join(ALN_path, sub_job)    
+        create_dir_safely(sub_job_path)
+                          
+        err_file_path = os.path.join(sub_job_path, "err_log")
+        out_file_path = os.path.join(sub_job_path, "output_log")
+
+        #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
+        # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+        shell_input = [dali_pl_full_path, '--cd1', chain_id1, '--cd2', chain_id2, 
+                    '--dat1', dali_dat_lib_path, '--dat2', dali_dat_lib_path, '--title', job_name,
+                    '--outfmt', "summary,alignments,equivalences,transrot",
+                    '--clean', '1', '>', out_file_path, '2', '>', err_file_path]
+
+        #navigate to output dir
+        os.chdir(sub_job_path)
+    except:
+        raise
+            
+    #create file handles for stdout and stderr, only needed for Popen. rework maybe
+    #or remove
+    try:
+        err_file = open(err_file_path, 'w+')
+    except:
+        errMsg = "Failed to open file %s." % err_file_path
+        err_queue.put(errMsg)
+        raise
+    try:
+        out_file = open(out_file_path, 'w+')
+    except:
+        errMsg = "Failed to open file %s." % out_file_path
+        err_queue.put(errMsg)
+        raise
+
+    #subprocess for alignment generation
+    #need to PIPE stdout and stderr for output forwarding
+    try:  
+        process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
+    except:
+        raise
+    
+    try:
+        #timeout may need to be longer (or shorter), depending on size of alignments
+        #for the calculation of pairwise alignments of up to a few chains
+        #500 seconds seems to be reasonable though
+        #remove killing of the process, if it causes problems. Instead, add a warning.
+        out, err = process.communicate(timeout=1000)
+        #if out is not None and verbosity>1:
+            #print(out)
+    except subprocess.TimeoutExpired:
+        process.kill()
+        out, err = process.communicate()
+        errMsg = "Communication with dali.pl subprocess timed out during %s. Killed it. Forwarding error to shell_err_log.txt" % (sub_job)
+        shell_err_queue.put(err)
+        err_queue.put(errMsg)
+        raise
+    #this exception should not occur when using Popen().communicate()
+    #instead errors are logged in specific err_file via the shell_err_watcher process
+    #except subprocess.CalledProcessError as e:
+     #   process.kill()
+      #  out, err = process.communicate()
+       # errMsg = "Called process exited with non-zero return code (Code:%s) during dali.pl subprocess of alignment %s." % (str(e.returncode), sub_job)
+        #shell_err_queue.put(err)
+        #err_queue.put(errMsg)
+        #raise
+    except:
+        process.kill()
+        errMsg = "Exception raised during dali.pl subprocess of alignment %s." % (sub_job)
+        shell_err_queue.put(err)
+        err_queue.put(errMsg)
+        raise
+    finally:
+        close_file_err = close_file_safely(err_file, err_file_path, 'mp')
+        close_file_err2 = close_file_safely(out_file, out_file_path, 'mp')
+        if close_file_err is not None:
+            err_queue.put(close_file_err)
+        if close_file_err2 is not None:
+            err_queue.put(close_file_err2)
+        #if out is not None:
+            #return out
+
+    return i,k
+
+def DALI_comp_strat_query_mp(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads):
+    #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
+    #and generates only empty alignments for job titles exactly 12 chars long
+    #this is a DALI problem and can't be changed at the moment
+    #i could, however probably find a workaround, but this isn't really worth the effort right now
+    #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
+    comp_strat_exclude_set = set()
+    if len(job_name) > 11:
+        errMsg = "Job title is longer than 11 characters. Will be cut off in DALI output due to length limitations."
+        job_name = job_name[0:11]
+    
+    #saving cwd for later file system navigation
+    wd = os.getcwd()
+    
+    #changing relative paths to absolute
+    if os.path.isabs(pl_bin_path):
+        dali_pl_full_path = os.path.join(pl_bin_path, "dali.pl")
+    else:
+        dali_pl_full_path = os.path.join(wd, pl_bin_path, "dali.pl")
+        
+    if not os.path.isabs(small_pdb_lib_path):
+        small_pdb_lib_path = os.path.join(wd, small_pdb_lib_path)
+        
+    if not os.path.isabs(out_path):
+        out_path = os.path.join(wd, out_path)
+    
+    if not os.path.isabs(dali_dat_lib_path):
+        dali_dat_lib_path = os.path.join(wd, dali_dat_lib_path)
+
+    #creating ALN subdir
+    ALN_path = os.path.join(out_path, job_name, "DALI", "ALN")
+    create_dir_safely(ALN_path)
+
+    json_exclude_path = os.path.join(ALN_path, "continue_exclude.json")
+    try:
+        #set up queue manager and process pool
+        manager = multiprocessing.Manager()
+        shell_err_queue = manager.Queue()
+        err_queue = manager.Queue()
+        sub_job_queue = manager.Queue()
+        if threads == 0:
+            threads = multiprocessing.cpu_count()
+            pool = multiprocessing.Pool(threads)
+        else:
+            pool = multiprocessing.Pool(threads)
+    
+        #launch sub-jobs as child processes
+        no_of_alns = len(comp_strat)
+        #intentionally underestimating chunk_size to account for variance in alignment generation time
+        chunk_size = int(round(no_of_alns/(threads+2)))
+        #launch error-handling processes
+        shell_err_watcher = pool.apply_async(shell_err_queue_writer, (shell_err_queue,))
+        err_watcher = pool.apply_async(err_queue_writer, (err_queue,))
+        sub_job_watcher = pool.apply_async(sub_job_queue_handler, (no_of_alns, verbosity, backup_freq, json_exclude_path, sub_job_queue,))
+
+        arg_tuple_list = []
+        arg_tuple_list.clear()
+        for i,k in comp_strat:
+            arg_tuple_list.append(tuple([i, k, ALN_path, dali_pl_full_path, dali_dat_lib_path,
+                                  wd, job_name, chain_id_dict, shell_err_queue, err_queue]))
+        #fire off workers with task list
+        res_iter = pool.imap_unordered(DALI_comp_strat_child, arg_tuple_list, chunksize=chunk_size)
+        #loop through results, until every result is returned
+        #look into what blocking means exactly and if this loop makes sense
+        for j in range(0, len(comp_strat)):
+            #next() call SHOULD block until next element is available, unless timeout is given
+            #in which case we should raise a TimeoutException
+            res_pair = next(res_iter)
+            #put result in a queue to be handled by the sub_job_watcher process
+            sub_job_queue.put(res_pair)
+
+    except:
+        raise
+    finally:
+        #kill watcher processes
+        shell_err_queue.put('kill')
+        err_queue.put('kill')
+        comp_strat_exclude_set = sub_job_queue.put('kill')
+        pool.close()
+        pool.join()
+
+def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads, mpi_path):
+    #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
+    #and generates only empty alignments for job titles exactly 12 chars long
+    #this is a DALI problem and can't be changed at the moment
+    #i could, however probably find a workaround, but this isn't really worth the effort right now
+    #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
+    comp_strat_exclude_set = set()
+    if len(job_name) > 11:
+        errMsg = "Job title is longer than 11 characters. Will be cut off in DALI output due to length limitations."
+        job_name = job_name[0:11]
+
+    #saving cwd for later file system navigation
+    wd = os.getcwd()
+
+    #changing relative paths to absolute
+    if os.path.isabs(pl_bin_path):
+        dali_pl_full_path = os.path.join(pl_bin_path, "dali.pl")
+    else:
+        dali_pl_full_path = os.path.join(wd, pl_bin_path, "dali.pl")
+
+    if not os.path.isabs(small_pdb_lib_path):
+        small_pdb_lib_path = os.path.join(wd, small_pdb_lib_path)
+
+    if not os.path.isabs(out_path):
+        out_path = os.path.join(wd, out_path)
+
+    if not os.path.isabs(dali_dat_lib_path):
+        dali_dat_lib_path = os.path.join(wd, dali_dat_lib_path)
+
+    #creating ALN subdir
+    ALN_path = os.path.join(out_path, job_name, "DALI", "ALN")
+    create_dir_safely(ALN_path)
+
+    json_exclude_path = os.path.join(ALN_path, "continue_exclude.json")
+
+    counter = 0
+    no_of_alns = len(comp_strat)
+    for i,k in comp_strat:
+
+        try:
+            chain_id1 = str(chain_id_dict[i][0:4])+str(chain_id_dict[i][5])
+            chain_id2 = str(chain_id_dict[k][0:4])+str(chain_id_dict[k][5])
+        except IndexError:
+            errMsg = "Chain identifier %s or %s is shorter than 6 chars." % (chain_id_dict[i], chain_id_dict[k])
+            errorFct(errMsg)
+            raise
+
+        shell_input = []
+        sub_job = "%s_%s" % (str(i), str(k))
+
+        counter += 1 
+        if verbosity>0:
+            msg = "Calculating alignment %s. [%s/%s] " % (sub_job, counter, no_of_alns)
+            print(msg, end="\r")
+
+        #creating sub job dir
+        sub_job_path = os.path.join(ALN_path, sub_job)    
+        create_dir_safely(sub_job_path)
+
+        err_file_path = os.path.join(sub_job_path, "err_log")
+        out_file_path = os.path.join(sub_job_path, "output_log")
+
+        #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
+        # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+        shell_input = [dali_pl_full_path, '--cd1', chain_id1, '--cd2', chain_id2, 
+                    '--dat1', dali_dat_lib_path, '--dat2', dali_dat_lib_path, '--title', job_name,
+                    '--outfmt', "summary,alignments,equivalences,transrot",
+                    '--clean']
+        if mpi_path != "":
+            shell_input.append('--MPIRUN_EXE')
+            shell_input.append('--np')
+            if threads > 0:
+                shell_input.append(str(threads))
+            else:
+                shell_input.append(str(multiprocessing.cpu_count()))
+
+        shell_input.extend(['1', '>', out_file_path, '2', '>', err_file_path])
+
+        #navigate to output dir in loop
+        os.chdir(sub_job_path)
+
+        #create file handles for stdout and stderr, only needed for Popen. rework maybe
+        #or remove
+        try:
+            err_file = open(err_file_path, 'w+')
+        except:
+            errMsg = "Failed to open file %s." % err_file_path
+            errorFct(errMsg)
+            raise
+        try:
+            out_file = open(out_file_path, 'w+')
+        except:
+            errMsg = "Failed to open file %s." % out_file_path
+            errorFct(errMsg)
+            raise
+
+        #subprocess for alignment generation
+        #need to PIPE stdout and stderr for output forwarding    
+        process = subprocess.Popen(shell_input, stdout=out_file, stderr=err_file)
+
+        try:
+            #timeout may need to be longer (or shorter), depending on size of alignments
+            #for the calculation of pairwise alignments of up to a few chains
+            #500 seconds seems to be reasonable though
+            #remove killing of the process, if it causes problems. Instead, add a warning.
+            out, err = process.communicate()
+            #if out is not None and verbosity>1:
+                #print(out)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            out, err = process.communicate()
+            errMsg = "Communication with dali.pl subprocess timed out. Killed it. Forwarding error to shell_err_log.txt"
+            close_file_safely(err_file, err_file_path, errMsg)
+            close_file_safely(out_file, out_file_path, errMsg)
+            shell_err_fct(err)
+            errorFct(errMsg)
+            if out is not None:
+                print(out)
+            raise
+
+        #close files
+        close_file_safely(err_file, err_file_path, "")
+        close_file_safely(out_file, out_file_path, "")
+
+        #change dir back to previous wd
+        os.chdir(wd)
+
+        #add (i,k) tuple to exclude set, since alignment was successful
+        comp_strat_exclude_set.add((i,k))
+
+        if backup_freq == 0:
+            continue
+        if counter % backup_freq == 0:
+            write_set_to_file(comp_strat_exclude_set, json_exclude_path)
+
+def restore_comp_strat_backup(comp_strat, out_path, job_name):
+    exclude_set_file_full_path = os.path.join(out_path, job_name, "DALI", "ALN", "continue_exclude.json")
+    with open(exclude_set_file_full_path, "r") as file:
+        exclude_comp_strat_list_list = json.load(file)
+    exclude_comp_strat_set = set(tuple(x) for x in exclude_comp_strat_list_list)
+    comp_strat = comp_strat.difference(exclude_comp_strat_set)
+
+    return comp_strat
+
+def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mpi_path,
+            sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
+    #set and get paths
+    DATA_path = os.path.join(out_path, job_name, "DATA")
+
+    auto_gen_comp_strat_file_full_path = os.path.join(out_path, job_name, "comp_strat.json")
+
+    aln_path_list = get_aln_path_list(DATA_path)
+    red_aln_index_full_path_list = get_red_aln_index_full_path_list(aln_path_list)
+    #import reduced alignment index files as dict of dataframes (keys: red_aln_index_full_path; values: dataframe)
+    red_MSA_df_dict = import_red_aln_index_files(red_aln_index_full_path_list)
+    #get max sample size
+    max_sample_size = get_max_sample_size_for_job(red_MSA_df_dict)
+    if sample_size == 0 or sample_size >= max_sample_size:
+        sample_size = int(max_sample_size)
+    #if --continuejob flag is passed (cont>0), load comp_strat from auto-generated file and
+    #exclude elements that have already been used for pairwise structure alignment
+    if cont > 0:
+        try:
+            comp_strat = load_comp_strat_from_file(auto_gen_comp_strat_file_full_path)
+        except:
+            err_msg = ("Error loading auto-generated comparison strategy file. Please make sure that the comparison strategy"
+                       "specified under --compstratname or --compstratfile matches the one that was initially used to run the job"
+                       "when proceeding.")
+            errorFct(err_msg)
+            comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+            try:
+                write_set_to_file(comp_strat, auto_gen_comp_strat_file_full_path)
+            except:
+                err_msg = "Warning: Could not write comparison strategy to file for path %s." % auto_gen_comp_strat_file_full_path
+                errorFct(err_msg)
+        try:
+            comp_strat = restore_comp_strat_backup(comp_strat, out_path, job_name)
+        except:
+            err_msg = ("Unable to read backup file for comparison strategy. By default, it is being generated every 100 structure alignments."
+                       "You can specify backup frequency with the --backupfreq flag.")
+            errorFct(err_msg)
+            raise
+    #else generate comparison strategy the normal way and write to file
+    else:
+        comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+        try:
+            write_set_to_file(comp_strat, auto_gen_comp_strat_file_full_path)
+        except:
+            err_msg = "Warning: Could not write comparison strategy to file for path %s." % auto_gen_comp_strat_file_full_path
+            errorFct(err_msg)
+
+    #everything below this line can be continued after aborting with a reduced comparison strategy
+    #-----------------------------------------------------------------------------------------------------------------------------------------
+    #generating dir structure for DALI
+    dali_job_dir = os.path.join(out_path, job_name, "DALI")
+    create_dir_safely(dali_job_dir)
+
+    small_pdb_lib_path = os.path.join(dali_job_dir, "PDB_lib")
+    create_dir_safely(small_pdb_lib_path)
+    #get chain IDs from reduced MSA dataframes and associate them with common seq ID
+    chain_id_dict = get_chain_IDs_from_red_MSA_df(red_MSA_df_dict, comp_strat)
+    #create a small copy of PDB files that are relevant to the specific job
+    cp_PDB_files_to_job_dir(list(chain_id_dict.values()), pdb_db_path, small_pdb_lib_path)
+
+    dali_dat_lib_path = os.path.join(dali_job_dir, "DAT_lib")
+    create_dir_safely(dali_dat_lib_path)
+
+    #import data for DALI
+    DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
+    #start pairwise structural alignment
+    try:
+        DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads, mpi_path)
+    except:
+        err_msg = ("Exception raised during alignment generation. Use flag --continuejob to resume"
+                   "alignment from where it failed, after error has been identified.")
+        errorFct(err_msg)
+        raise
+
+def guess_comp_strat_from_DALI_dir(DALI_ALN_path):
+    pass
+
+def import_DALI_alns_by_comp_strat(comp_strat, DALI_ALN_dir, verbosity):
+    #keys are all tuples in comp_strat and values are
+    #lists of dictionaries returned by the function import_DALI_aln()
+    #each dict represents an individual alignment within a TXT file
+    #with keys being 'job_name','Z-score','rmsd','lali','nres','perc_id','pdb_descr','query'(chain id),'sbjct'(chain id),'DALI_query_seq','DALI_sbjct_seq'
+    #query is the first index in comp_strat index pair (i), sbjct is the second (k)  
+    comp_strat_struct_aln_dict = {}
+    no_of_alns = len(comp_strat)
+    counter = 0
+    for i,k in comp_strat:
+        counter += 1
+        sub_job_name = "%s_%s" % (str(i),str(k))
+        sub_job_path = os.path.join(DALI_ALN_dir, sub_job_name)
+        txt_file_counter = 0
+        for item in os.listdir(sub_job_path):
+            #there should exactly be one .txt file in the dir. it can be empty.
+            if item.endswith('.txt'):
+                txt_file_counter += 1
+                struct_aln_full_path = os.path.join(sub_job_path, item)
+        if txt_file_counter != 1:
+            warn_msg = "Warning: Not exactly one structural alignment in sub job dir %s. Counted %s." % (sub_job_path, str(txt_file_counter))
+            errorFct(warn_msg)
+        #import_DALI_aln() function returns a list of dictionaries. each dict corresponds to one alignment
+        #here we should have at most one alignment per file, i.e. at most lists of length one
+        if txt_file_counter > 0:
+            struct_aln_dict_list = import_DALI_aln(struct_aln_full_path)
+        else:
+            comp_strat_struct_aln_dict[(i,k)] = ["NA"]
+        no_of_alns = len(struct_aln_dict_list)
+        if no_of_alns != 1:
+            warn_msg = "Warning: Not exactly one structural alignment in file %s. Counted %s." % (struct_aln_full_path, str(no_of_alns))
+            errorFct(warn_msg)
+        comp_strat_struct_aln_dict[(i,k)] = struct_aln_dict_list.copy()
+
+        if verbosity>0:
+            msg = "Importing DALI alignments... [%s/%s] " % (str(counter), str(no_of_alns))
+            print(msg, end="\r")
+
+
+    return comp_strat_struct_aln_dict
+
+def get_restr_bounds(comp_strat, red_MSA_df_dict):
+    restr_bounds_dict = {}
+    for i,k in comp_strat:
+        sstart_i_set = set()
+        send_i_set = set()
+        sstart_k_set = set()
+        send_k_set = set()
+        sstart_i_set.clear()
+        send_i_set.clear()
+        sstart_k_set.clear()
+        send_k_set.clear()
+        last_key = ""
+        for key in red_MSA_df_dict.keys():
+            sstart_col_num = red_MSA_df_dict[key].columns.get_loc('sstart')
+            send_col_num = red_MSA_df_dict[key].columns.get_loc('send')
+            sstart_i = red_MSA_df_dict[key].iloc[i, sstart_col_num]
+            send_i = red_MSA_df_dict[key].iloc[i, send_col_num]
+            sstart_k = red_MSA_df_dict[key].iloc[k, sstart_col_num]
+            send_k = red_MSA_df_dict[key].iloc[k, send_col_num]
+            #watch out for zero-based indexing
+            sstart_i_set.add(int(sstart_i)-1)
+            send_i_set.add(int(send_i)-1)
+            sstart_k_set.add(int(sstart_k)-1)
+            send_k_set.add(int(send_k)-1)
+            if len(sstart_i_set) != 1 or len(send_i_set) != 1:
+                err_msg = ("Differing subject-embedded query index sets ('sstart','send') among common sequence matches"
+                           "at index %s among files %s and %s.") % (str(i),last_key,key)
+                errorFct(err_msg)
+                exit(1)
+            if len(sstart_k_set) != 1 or len(send_k_set) != 1:
+                err_msg = ("Differing subject-embedded query index sets ('sstart','send') among common sequence matches"
+                           "at index %s in files %s and %s.") % (str(k),last_key,key)
+                errorFct(err_msg)
+                exit(1)
+            last_key = key
+        restr_bounds_dict[i] = (sstart_i_set.pop(),send_i_set.pop())
+        restr_bounds_dict[k] = (sstart_k_set.pop(),send_k_set.pop())
+
+    return restr_bounds_dict
+
+#applies current definition of reference set restriction to individual reference index sets
+#as for right now, we chose to only work with the intersection of the two intervals bounds_i and bounds_k
+#for reasons that are explained in detail in the adjacent work
+#in short: it can be that lack of specificity in MSA algorithm is either punished too harshly or not at all,
+#depending on whether or not any given pair of indices is in the union of bounds_i and bounds_k 
+# (set(),(int,int),(int,int)) -> set()
+def apply_ref_set_restr(small_ref_ind_set, bounds_i, bounds_k):
+    restr_small_ref_ind_set = set()
+    new_min = max(bounds_i[0], bounds_k[0])
+    new_max = min(bounds_i[1], bounds_k[1])
+    if new_max < new_min:
+        return set()
+    for elem in small_ref_ind_set:
+        if elem[0][1] >= new_min and elem[1][1] <= new_max:
+            restr_small_ref_ind_set.add(elem)
+
+    return restr_small_ref_ind_set
+
+def generate_ref_sets(comp_strat, aln_dir, red_MSA_df_dict, verbosity):
+    
+    #import structural alignments for all entries in comp_strat
+    comp_strat_struct_aln_dict = import_DALI_alns_by_comp_strat(comp_strat, aln_dir, verbosity)
+
+    #get subject-embedded query index set for all (i,k) in comp_strat
+    #for that note that each common sequence C_i is associated with exactly
+    #one subject_embedded query index set, which can be found in files red_<aln_name>_exact_match.index
+    #column 'sstart' represents sms_i and 'send' sms_i+m_i-1 with m_i='qlen'
+    #indices 'sstart'-1 and 'send'-1 are both included in the subject-embedded query index set
+    #these files are already readily imported into red_MSA_df_dict
+    #restr_bounds_dict has common sequences indices i as keys and tuple ('sstart'_i-1, 'send'_i-1) as values
+    #property 'qlen' emerges from that as 'qlen'=('send'-1)-('sstart'-1)+1 with min('sstart')=1
+    restr_bounds_dict = get_restr_bounds(comp_strat, red_MSA_df_dict)
+
+    #calculate index sets for DALI alignments
+    #keys are (i,k) and values are restr_small_ref_ind_sets (reference index sets for structural alignments between i and k)
+    restr_small_ref_ind_set_dict = {}
+    for i,k in comp_strat:
+        aln_query_seq = comp_strat_struct_aln_dict[(i,k)][0]['DALI_query_seq']
+        aln_sbjct_seq = comp_strat_struct_aln_dict[(i,k)][0]['DALI_sbjct_seq']
+        small_ref_ind_set = calc_ref_SP_set((i,k), (aln_query_seq, aln_sbjct_seq))
+
+        #this set should be smaller or equal to 'qlen'
+        restr_small_ref_ind_set = apply_ref_set_restr(small_ref_ind_set, restr_bounds_dict[i], restr_bounds_dict[k])
+
+        #add to dict
+        restr_small_ref_ind_set_dict[(i,k)] = restr_small_ref_ind_set.copy()
+
+    return restr_small_ref_ind_set_dict, comp_strat_struct_aln_dict
+
+def generate_MSA_sets(comp_strat, red_MSA_df_dict, verbosity):
+
+    comp_strat_MSA_aln_dict = {}
+    comp_strat_MSA_aln_dict.clear()
+    for red_index_file_full_path in red_MSA_df_dict.keys():
+        if verbosity>0:
+            msg = "Generating MSA sets for file %s ..." % red_index_file_full_path
+            print(msg)
+
+        orig_fasta_index_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('fasta_entry_index')
+        fasta_header_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('fasta_entry_header')
+        gapped_seq_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('gapped_seq')
+        chain_id_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('chain_id')
+        evalue_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('evalue')
+        bitscore_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('bitscore')
+        sstart_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('sstart')
+        send_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('send')
+        MSA_ind_set_dict = {}
+        comp_strat_red_ind_dict = {}
+        MSA_ind_set_dict.clear()
+        comp_strat_red_ind_dict.clear()
+        no_of_alns = len(comp_strat)
+        counter = 0
+        for i,k in comp_strat:
+            counter += 1
+            if verbosity>0:
+                msg = "[%s/%s]" % (str(counter), str(no_of_alns))
+                print(msg, end="\r")
+            #generate MSA index sets
+            gapped_seq_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, gapped_seq_col_num]
+            gapped_seq_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, gapped_seq_col_num]
+            MSA_ind_set = calc_MSA_SP_set((i,k), (gapped_seq_i, gapped_seq_k))
+            MSA_ind_set_dict[(i,k)] = MSA_ind_set.copy()
+            #generate additional info
+            row_dict = {}
+            row_dict.clear()
+            orig_fasta_index_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, orig_fasta_index_col_num]
+            orig_fasta_index_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, orig_fasta_index_col_num]
+            fasta_header_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, fasta_header_col_num]
+            fasta_header_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, fasta_header_col_num]
+            chain_id_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, chain_id_col_num]
+            chain_id_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, chain_id_col_num]
+            evalue_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, evalue_col_num]
+            evalue_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, evalue_col_num]
+            bitscore_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, bitscore_col_num]
+            bitscore_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, bitscore_col_num]
+            sstart_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, sstart_col_num]
+            sstart_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, sstart_col_num]
+            send_i = red_MSA_df_dict[red_index_file_full_path].iloc[i, send_col_num]
+            send_k = red_MSA_df_dict[red_index_file_full_path].iloc[k, send_col_num]
+            row_dict['fasta_entry_index'] = (orig_fasta_index_i, orig_fasta_index_k)
+            row_dict['fasta_entry_header'] = (fasta_header_i, fasta_header_k)
+            row_dict['chain_id'] = (chain_id_i, chain_id_k)
+            row_dict['evalue'] = (evalue_i, evalue_k)
+            row_dict['bitscore'] = (bitscore_i, bitscore_k)
+            row_dict['sstart'] = (sstart_i, sstart_k)
+            row_dict['send'] = (send_i, send_k)
+            comp_strat_red_ind_dict[(i,k)] = row_dict.copy()
+        comp_strat_MSA_aln_dict[red_index_file_full_path] = (MSA_ind_set_dict.copy(), comp_strat_red_ind_dict.copy())
+    
+    return comp_strat_MSA_aln_dict
+
+#in this function we can determine how to calculate any score based on the calculated sets
+def calc_pair_SPS_by_comp_strat(comp_strat, ref_set_dict, comp_strat_MSA_aln_dict):
+    pair_SPS_dict = {}
+    pair_SPS_dict.clear()
+    for red_index_file_full_path in comp_strat_MSA_aln_dict.keys():
+        MSA_ind_set_dict = comp_strat_MSA_aln_dict[red_index_file_full_path][0]
+        small_pair_SPS_dict = {}
+        small_pair_SPS_dict.clear()
+        for i,k in comp_strat:
+            intersect_set = MSA_ind_set_dict[(i,k)].intersection(ref_set_dict[(i,k)])
+            if len(ref_set_dict[(i,k)]) != 0:
+                pair_SPS = len(intersect_set)/len(ref_set_dict[(i,k)])
+            else:
+                pair_SPS = 0
+            small_pair_SPS_dict[(i,k)] = pair_SPS
+        pair_SPS_dict[red_index_file_full_path] = small_pair_SPS_dict.copy()
+
+    return pair_SPS_dict
+
+def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict, verbosity):
+    #calculate SPS for each pair of sequences indexed by comparison strategy
+    #pair_SPS_dict: keys are paths to red_index_file; values are small_pair_SPS_dict
+    #small_pair_SPS_dict: keys are each element in comp_strat (i,k); values are the SPS between sequences i and k ("pair_SPS")
+    pair_SPS_dict = calc_pair_SPS_by_comp_strat(comp_strat, ref_set_dict, comp_strat_MSA_aln_dict)
+    
+    #merge comp_strat_MSA_aln_dict with pair_SPS_dict and comp_strat_struct_aln_dict
+    output_dict = {}
+    output_dict.clear()
+    no_of_alns = len(comp_strat)
+    for red_ind_file_full_path in comp_strat_MSA_aln_dict.keys():
+        counter = 0
+        small_output_dict = {}
+        small_output_dict.clear()
+        if verbosity>0:
+            msg = "Preparing output for file %s..." % (red_ind_file_full_path)
+            print(msg)
+        for i,k in comp_strat:
+            counter += 1
+            if verbosity>0:
+                msg = "[%s/%s]" % (str(counter), str(no_of_alns))
+                print(msg, end="\r")
+            row_dict = {}
+            row_dict.clear()
+            row_dict['fasta_entry_index'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['fasta_entry_index']
+            row_dict['fasta_entry_header'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['fasta_entry_header']
+            row_dict['chain_id'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['chain_id']
+            row_dict['evalue'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['evalue']
+            row_dict['bitscore'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['bitscore']
+            row_dict['sstart'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['sstart']
+            row_dict['send'] = comp_strat_MSA_aln_dict[red_ind_file_full_path][1][(i,k)]['send']
+            row_dict['Z-score'] = comp_strat_struct_aln_dict[(i,k)][0]['Z-score']
+            row_dict['rmsd'] = comp_strat_struct_aln_dict[(i,k)][0]['rmsd']
+            row_dict['lali'] = comp_strat_struct_aln_dict[(i,k)][0]['lali']
+            row_dict['nres'] = comp_strat_struct_aln_dict[(i,k)][0]['nres']
+            row_dict['perc_id'] = comp_strat_struct_aln_dict[(i,k)][0]['perc_id']
+            row_dict['pdb_descr'] = comp_strat_struct_aln_dict[(i,k)][0]['pdb_descr']
+            #next two are only for verification
+            row_dict['query_id'] = comp_strat_struct_aln_dict[(i,k)][0]['query']
+            row_dict['sbjct_id'] = comp_strat_struct_aln_dict[(i,k)][0]['sbjct']
+            #include pair_SPS
+            row_dict['pair_SPS'] = pair_SPS_dict[red_ind_file_full_path][(i,k)]
+            small_output_dict[(i,k)] = row_dict.copy()
+
+        output_dict[red_ind_file_full_path] = small_output_dict.copy()
+
+    #use output dict to write dataframe to csv for each key
+    for red_ind_file_full_path in output_dict.keys():
+        if verbosity>0:
+            msg = "Writing output file for %s..." % (red_ind_file_full_path)
+            print(msg)
+        path, file = os.path.split(red_ind_file_full_path)
+        path2, aln_name = os.path.split(path)
+        tsv_output_file_full_path = os.path.join(eval_path, aln_name+".tsv")
+        output_df = pandas.DataFrame.from_dict(output_dict[red_ind_file_full_path], orient='index')
+        output_df.to_csv(tsv_output_file_full_path, sep='\t')
+
+def pstar_union(ref_set_dict, comp_strat_MSA_aln_dict):
+    
+    union_ref_set = set.union(*list(ref_set_dict.values()))
+
+    union_test_set_dict = {}
+    union_test_set_dict.clear()
+    for red_aln_index_full_path in comp_strat_MSA_aln_dict.keys():
+        union_test_set_dict[red_aln_index_full_path] = set.union(*list(comp_strat_MSA_aln_dict[red_aln_index_full_path][0].values())).copy()
+
+    return union_ref_set, union_test_set_dict
+
+def evaluate_job(out_path, job_name, verbosity):
+
+    auto_gen_comp_strat_file_full_path = os.path.join(out_path, job_name, "comp_strat.json")
+    job_path = os.path.join(out_path, job_name)
+    DATA_path = os.path.join(job_path, "DATA")
+    DALI_path = os.path.join(job_path, "DALI")
+    DALI_ALN_path = os.path.join(DALI_path, "ALN")
+
+    #import reduced alignment index files as dict of dataframes (keys: red_aln_index_full_path; values: dataframe)
+    aln_path_list = get_aln_path_list(DATA_path)
+    red_aln_index_full_path_list = get_red_aln_index_full_path_list(aln_path_list)
+    red_MSA_df_dict = import_red_aln_index_files(red_aln_index_full_path_list)
+
+    try:
+        comp_strat = load_comp_strat_from_file(auto_gen_comp_strat_file_full_path)
+    except:
+        err_msg = ("Error loading auto-generated comparison strategy file. Trying to guess comparison strategy from generated alignments.")
+        errorFct(err_msg)
+        comp_strat = guess_comp_strat_from_DALI_dir(DALI_ALN_path)
+        exit(1)
+
+    #generate reference sets
+    #ref_set_dict: keys are (i,k); values are reference index sets
+    #comp_strat_struct_aln_dict: keys are (i,k); values are (one-element) lists of dict with struct alignment data (s. function "import_DALI_alns_by_comp_strat()")
+    ref_set_dict, comp_strat_struct_aln_dict = generate_ref_sets(comp_strat, DALI_ALN_path, red_MSA_df_dict, verbosity)
+
+
+    #generate MSA index sets
+    #comp_strat_MSA_aln_dict: keys are paths to red_index_file (<path>/DATA/<aln_name>/red_<aln_name>_exact_match.index)
+    #values are 2-tuples. at pos [0] they have MSA_index_set_dict, at pos [1] they have comp_strat_red_ind_dict
+
+        #MSA_index_set_dict: keys are each element in comp_strat (i,k); values are MSA_index_sets
+        # for gapped sequences i and k
+
+        #comp_strat_red_ind_dict: keys are each element in comp_strat (i,k); values are 2-tuples with
+        # pos [0] representing row i and pos [1] representing row k in red_index_file as dictionaries
+   
+    comp_strat_MSA_aln_dict = generate_MSA_sets(comp_strat, red_MSA_df_dict, verbosity)
+
+    #create output folder and 
+    eval_path = os.path.join(job_path, "EVAL")
+    create_dir_safely(eval_path)
+
+    write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict, verbosity)
+
+    union_ref_set, union_test_set_dict = pstar_union(ref_set_dict, comp_strat_MSA_aln_dict)
+    #write sets to files
+    union_ref_set_full_path = os.path.join(eval_path, "union_ref_set.json")
+    write_set_to_file(union_ref_set, union_ref_set_full_path)
+    #print overall SPS per MSA
+    for key in union_test_set_dict.keys():
+        #set paths and write individual sets to files
+        head, file_name = os.path.split(key)
+        head, aln_name = os.path.split(head)
+        union_test_set_full_path = os.path.join(eval_path, "union_"+aln_name+"_MSA_set.json")
+        write_set_to_file(union_test_set_dict[key], union_test_set_full_path)
+        intersect_union = union_test_set_dict[key].intersection(union_ref_set)
+        if len(union_ref_set) > 0:
+            SPS = len(intersect_union)/len(union_ref_set)
+        else:
+            SPS = 0
+        sps_msg = "SPS for alignment file %s: %s" % (key, str(SPS))
+        print(sps_msg) 
+
+def test_SPS(aln_file_full_path):
+
+    #[sequence, header, number, cleaned_sequence]
+    entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
+
+    #((int,int),(str,str)) -> set( ((),()) )
+    sequence_ids_1 = (1,2)
+    aligned_sequences_1 = ((entry_list[0][0]),(entry_list[1][0]))
+    sequence_ids_2 = (1,2)
+    aligned_sequences_2 = ((entry_list[2][0]),(entry_list[3][0]))
+    MSA_set_1 = calc_MSA_SP_set(sequence_ids_1, aligned_sequences_1)
+    MSA_ref_set_2 = calc_MSA_SP_set(sequence_ids_2, aligned_sequences_2)
+
+    print("SET 1:\n")
+    print(MSA_set_1)
+    print("\nSET 2:\n")
+    print(MSA_ref_set_2)
+    print("\nINTERSECTION:\n")
+    print(MSA_set_1.intersection(MSA_ref_set_2))
+    print("\nSPS:\n")
+
+    SPS = len(MSA_set_1.intersection(MSA_ref_set_2))/len(MSA_ref_set_2)
+
+    print(SPS)
+    print("\n")
+
+def test_duplicate_clean_seq(fasta_file_full_path):
+    #[sequence, header, number, cleaned_sequence]
+    entry_list = import_seq_list_from_fasta_aln(fasta_file_full_path)
+
+    seq_set = set()
+    header_set = set()
+    seq_set.clear()
+    header_set.clear()
+    seq_header_dict = {}
+    entry_no = len(entry_list)
+    last_seq_set_size = len(seq_set)
+    for entry in entry_list:
+        upper_seq = str(entry[0]).upper()
+        seq_set.add(upper_seq)
+        header_set.add(entry[1])
+        if last_seq_set_size == len(seq_set):
+            msg = "Seq\n %s \n with header %s is the same as seq with header %s." %(str(entry[0]),str(entry[1]),str(seq_header_dict[upper_seq]))
+            print(msg)
+        last_seq_set_size = len(seq_set)
+        seq_header_dict[upper_seq] = entry[1]
+    seq_msg = "Sequences: [%s/%s]" % (str(len(seq_set)), str(entry_no))
+    header_msg = "Headers: [%s/%s]" % (str(len(header_set)), str(entry_no))
+    print(seq_msg)
+    print(header_msg)
+
 def main():
 
     tic = time.perf_counter()
     
     set_script_path()
+
+    #multiprocessing.set_start_method('spawn')
 
     argParser = argparse.ArgumentParser()
     argParser.add_argument("-p", "--createsearchplots", default=0, action="count", help="Creates search plots from CSV search metadata.", required=False)
@@ -2349,11 +3990,15 @@ def main():
     argParser.add_argument("-sync", "--syncdb", default=0, action="count", help="Sync local PDB database with remote.", required=False)
     argParser.add_argument("-dm", "--datamode", default=0, action="count",
                            help="data mode for gathering PDB files and other data from given FASTA alignment", required=False)
-    argParser.add_argument("-db", "--locpdbdb", default="PDB_db", help="Path to local PDB database.", required=False)
+    argParser.add_argument("-db", "--locpdbdb", help="Path to local PDB database.", required=False)
     argParser.add_argument("-af", "--alignmentfile", help="MSA file in FASTA format", required=False)
     argParser.add_argument("-bat", "--batchsearch", help="Path to MSA files in FASTA format", required=False)
-    argParser.add_argument("-ss", "--samplesize", default=10, type = int,
-                           help="Give sample size of random sequences taken from alignment file as integer. Default:10. 0 means full alignment.", required=False)
+    argParser.add_argument("-ss", "--samplesize", default=0, type = int,
+                           help="Give sample size of random sequences taken from alignment file as integer. Default:0 means full alignment.", required=False)
+    argParser.add_argument("-bf", "--backupfreq", default=100, type = int, help="Specify how often you'd like to save progress of alignment generation.", required=False)
+    argParser.add_argument("-csn", "--compstratname", choices=["low_triangle"], default="low_triangle",
+                           help="Select comparison strategy by name. Default: low_triangle", required=False)
+    argParser.add_argument("-csf", "--compstratfile", default="", help="Path to comparison strategy set in file format.", required=False)
     argParser.add_argument("-sn", "--samplenumber",type = int, default = 1, help="Provide integer for how many times you want to sample. Default:1", required=False)
     argParser.add_argument("-dow", "--download", help="Path to CSV files to download PDB files from", required=False)
     argParser.add_argument("-bnch", "--benchmarkmode", default=0, action="count",
@@ -2370,18 +4015,34 @@ def main():
     argParser.add_argument("-a", "--alphabet", choices=["AA", "DNA/RNA"], default="AA", help="Select alphabet: (AA, DNA/RNA). Default: AA", required=False)
     argParser.add_argument("-na", "--nonalphabet", default="-.", help="Select non-alphabet. Default: -.", required=False)
     argParser.add_argument("-v", "--verbose", default=0, action="count",
-                           help="Print progress to terminal. No effect on error logging.1: Basic output. 2: Doesn't work atm. Redirect DALI output.",
-                           required=False)
+                           help="Print progress to terminal. No effect on error logging.", required=False)
+    argParser.add_argument("-cnt", "--continuejob", default=0, action="count", help="Continue job from last checkpoint", required=False)
     argParser.add_argument("-tdb", "--testdb", action="count", default=0, help="Testing diamond database creation.", required=False)
     argParser.add_argument("-dia", "--diamondfile", help="Path to diamond program file.", required=False)
     argParser.add_argument("-clf", "--cleanfasta", action="count", default=0, help="testing fasta cleaning", required=False)
     argParser.add_argument("-babp", "--batchblastp", action="count", default=0, help="testing fasta cleaning", required=False)
     argParser.add_argument("-ddb", "--diamonddbfile", help="Path to diamond database file.", required=False)
     argParser.add_argument("-svg", "--svgpath", help="Path to SVG files to be concatenated.", required=False)
+    argParser.add_argument("-cj", "--createjob", default=0, action="count", help="Set up job folder and required data.", required=False)
+    argParser.add_argument("-rj", "--runjob", default=0, action="count", help="Running job by specifying output folder and job title.", required=False)
+    argParser.add_argument("-ej", "--evaljob", default=0, action="count", help="Evaluating finished job.", required=False)
+    argParser.add_argument("-uo", "--uniqueonly", default=0, action="count", help="Provide this flag to only use each common sequence at most once.", required=False)
+    argParser.add_argument("-bz", "--diamondblocksize", type = float, default = None, help="Provide float for diamond block size. Default is 2.0.", required=False)
+    argParser.add_argument("-dtd", "--diamondtmpdir", default = "", help="Provide temporary storage directory for diamond. Default is output dir.", required=False)
+    argParser.add_argument("-mptd", "--diamondmptmpdir", default = "", help="Provide temporary shared storage directory for diamond multiprocessing.", required=False)
+    argParser.add_argument("-cpu", "--threads", type = int, default = 0, help=("Provide int for number of CPU threads to use."
+                           "If not provided, diamond will try to auto-detect number of available cores and DALI will run on one core only."), required=False)
+    argParser.add_argument("-dmp", "--diamondmp", default=0, action="count", help="Provide this flag to use diamond in a multiprocessing cluster environment.", required=False)
+    argParser.add_argument("-mpi", "--mpibin", default = "", help="Provide path to \"openmpi/bin\" path.", required=False)
+    argParser.add_argument("-bl", "--baseline", default=0, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
 
+    argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
     args = argParser.parse_args()
     
+    #setting list of valid symbols and constructing regex for sequence cleaning as a global variable
     valid_symbols = sel_alphabet(args.alphabet)
+    global CLEAN_SEQ_REGEX_STR
+    CLEAN_SEQ_REGEX_STR = build_regex_for_seq_cleaning_whitelist(valid_symbols)
     invalid_symbols = set_non_alphabet(args.nonalphabet)
 
     if args.cleanfasta>0:
@@ -2426,6 +4087,20 @@ def main():
             job_list_of_dict_lists = import_aln_files_in_job(args.title, args.output)
             print(len(job_list_of_dict_lists))
             print(job_list_of_dict_lists)
+    if args.createjob > 0:
+        create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
+                   args.diamondblocksize, args.threads, args.diamondtmpdir, args.baseline, args.diamondmptmpdir, args.diamondmp)
+    if args.runjob > 0:
+        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.mpibin, args.samplesize,
+                args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
+    if args.evaljob > 0:
+        evaluate_job(args.output, args.title, args.verbose)
+    if args.test > 0:
+        #test_SPS(args.alignmentfile)
+        #test_duplicate_clean_seq(args.alignmentfile)
+        differing_sequences = set()
+        differing_sequences = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
+        _ = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
     
 
     toc = time.perf_counter()
