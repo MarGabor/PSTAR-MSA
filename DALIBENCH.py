@@ -162,10 +162,7 @@ def build_regex_for_seq_cleaning_blacklist(invalid_symbols):
 #(str, str) -> str
 def clean_seq(seq):
 
-    valid_symbols = sel_alphabet("AA")
-    regex_str = build_regex_for_seq_cleaning_whitelist(valid_symbols)
-
-    cleaned_seq = re.sub(regex_str,'',seq)
+    cleaned_seq = re.sub(CLEAN_SEQ_REGEX_STR,'',seq)
     
     return cleaned_seq
 
@@ -247,6 +244,7 @@ def import_seq_list_from_fasta_aln(aln_file_path):
             errorFct(errMsg)
             raise
         finally:
+            #implement this in a way that warnings are not alwaays written when a cleaned fasta file is written
             warn_msg = "Warning: Sequences in %s might not all have the same length." % aln_file_path
             close_file_safely(aln_file, aln_file_path, warn_msg)
             errorFct(warn_msg)
@@ -260,10 +258,12 @@ def import_seq_list_from_fasta_aln(aln_file_path):
     for record in alignment:
 
         #check if key has been seen before
-        if str(record.id) in seen:
-            warn_msg = "Warning: Duplicate header %s in file %s." % (str(record.id),aln_file_path)
-            errorFct(warn_msg)
-
+        try:
+            if seen[str(record.id)]:
+                warn_msg = "Warning: Duplicate header %s in file %s." % (str(record.id),aln_file_path)
+                errorFct(warn_msg)
+        except KeyError:
+            pass
         internal_id += 1
         cleaned_seq = clean_seq(str(record.seq))
         seq_list.append([str(record.seq), str(record.id), internal_id, cleaned_seq])
@@ -1066,9 +1066,8 @@ def DALI_all_vs_all_query(pl_bin_path, pdb_path, out_path, DAT_path, job_title, 
     #i could, however probably find a workaround, but this isn't really worth the effort right now
     #maybe it's also just because job_title needs to be passed with "" around it.
     if len(job_title) > 11:
-        errMsg = "Job title is longer than 11 characters. Please enter a shorter job title."
-        errorFct(errMsg)
-        exit(1)
+        errMsg = "Note: Job title is longer than 11 characters. Will be cut off in DALI output files due to title length limitations."
+        job_title = job_title[0:11]
     
     #saving cwd for later file system navigation
     wd = os.getcwd()
@@ -2120,25 +2119,80 @@ def clean_fasta_files_in_dir(path_to_fasta_files, out_path, valid_symbols, verbo
         out_file_full_path = os.path.join(out_path, os.path.split(fasta_file_full_path)[1])
         clean_fasta_file(fasta_file_full_path, out_file_full_path, verbosity)
 
+def init_parallel_diamond_run(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path,
+                              diamond_block_size, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_threads):
+
+    shell_input = [str(diamond_exe_full_path), 'blastp', '--db', str(diamond_db_file_full_path), '--query', str(query_fasta_file_full_path), '-o', str(out_file_full_path),
+                   '--multiprocessing', '--mp-init', '--tmpdir', str(diamond_tmp_dir), '--parallel-tmpdir', str(diamond_mp_tmp_dir)]
+    
+    blastp_process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    
+    try:
+        out, err = blastp_process.communicate()
+    except:
+        blastp_process.kill()
+        out, err = blastp_process.communicate()
+        shell_err_fct(err)
+        errMsg = "Failed to communicate with diamond blastp subprocess. Killed it."
+        errorFct(errMsg)
+        raise
+
 # ./diamond blastp -d <diamond_db_file_full_path> -q <query_fasta_file_full_path> -o <out_path> --iterate
 #launches a subprocess for a diamond blastp query without restriction of sequence identity
 # void (str,str,str,str,int)        
 def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path,
-                         verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir):
+                         verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_mp):
 
     shell_input = []
-    shell_input = [diamond_exe_full_path, 'blastp', '-d', diamond_db_file_full_path, '-q', query_fasta_file_full_path, '-o', out_file_full_path,
-                   '--iterate', '--log', '--header', 'simple', '--outfmt', '6', 'qseqid', 'sseqid', 'pident', 'length', 'mismatch', 'gapopen',
+    shell_input = [str(diamond_exe_full_path), 'blastp', '--db', str(diamond_db_file_full_path), '--query', str(query_fasta_file_full_path), '-o', str(out_file_full_path),
+                   '--log', '--header', 'simple', '--outfmt', '6', 'qseqid', 'sseqid', 'pident', 'length', 'mismatch', 'gapopen',
                    'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore', 'qlen']
-    if diamond_block_size != None:
-        shell_input.append('--block-size')
-        shell_input.append(str(diamond_block_size))
+
+    if int(diamond_threads) > 0:
+        shell_input.append('--threads')
+        shell_input.append(str(diamond_threads))
     if diamond_tmp_dir != "":
         shell_input.append('--tmpdir')
         shell_input.append(str(diamond_tmp_dir))
-    if diamond_threads > 0:
-        shell_input.append('--threads')
-        shell_input.append(str(diamond_threads))
+    if diamond_mp_tmp_dir != "":
+        shell_input.append('--parallel-tmpdir')
+        shell_input.append(str(diamond_mp_tmp_dir))
+    if diamond_mp > 0:
+        shell_input.append('--multiprocessing')
+        shell_input.append('--mid-sensitive')
+        if int(diamond_threads) <= 0:
+            shell_input.append('--threads')
+            try:
+                diamond_threads = os.environ['SLURM_CPUS_PER_TASK']
+            except:
+                warn_msg = "Warning: Could not get number of CPUs per task from environment variable SLURM_CPUS_PER_TASK."
+                errorFct(warn_msg)
+            print("SLURM_CPUS_PER_TASK="+str(diamond_threads))
+            shell_input.append(str(diamond_threads))
+        if verbosity>0:
+            msg = "Initializing parallel run for file %s..." % query_fasta_file_full_path
+            print(msg)
+        try:
+            init_parallel_diamond_run(diamond_exe_full_path, diamond_db_file_full_path, query_fasta_file_full_path, out_file_full_path,
+                                      diamond_block_size, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_threads)
+        except:
+            err_msg = "Error while initializing parallel diamond run for file %s!" % query_fasta_file_full_path
+            errorFct(err_msg)
+            exit(1)
+    else:
+        shell_input.append('--iterate')
+        if int(diamond_threads) <= 0:
+            shell_input.append('--threads')
+            try:
+                diamond_threads = os.environ['SLURM_CPUS_PER_TASK']
+            except:
+                warn_msg = "Warning: Could not get number of CPUs per task from environment variable SLURM_CPUS_PER_TASK."
+                errorFct(warn_msg)
+            print("SLURM_CPUS_PER_TASK="+str(diamond_threads))
+            shell_input.append(str(diamond_threads))
+    if diamond_block_size != None:
+        shell_input.append('--block-size')
+        shell_input.append(str(diamond_block_size))
     if verbosity>0:
         msg = "Performing blastp query for file %s." % os.path.split(query_fasta_file_full_path)[1]
         print(msg)
@@ -2483,7 +2537,7 @@ def create_MSA_ex_match_df(aln_entry_list, unique_exact_match_dict):
 # with the headers and the aligned sequences in the original input files
 # void ([str,str,...], str, str, str, int)
 def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path,
-                           verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir):
+                           verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_mp):
 
     DATA_path = os.path.join(job_path, "DATA")
     create_dir_safely(DATA_path)
@@ -2512,7 +2566,7 @@ def create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_p
         #path for TSV output, return file for db query
         TSV_file_full_path = os.path.join(aln_misc_path, aln_file_name+"_diamond.tsv")
         diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, clean_fasta_file_full_path, TSV_file_full_path,
-                             verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir)
+                             verbosity, diamond_block_size, diamond_threads, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_mp)
 
         #get exact query matches. this is shaky, because we dont know how diamond processes large
         # FASTA files internally and if this has an impact on what results we are presented with
@@ -2577,12 +2631,12 @@ def verify_common_seq_data(common_seq_set, seq_prim_key_dict_dict):
                 chain_id_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].chain_id))
                 sstart_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].sstart))
                 send_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].send))
-                bitscore_set.add(str(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].bitscore))
+                bitscore_set.add(str(float(seq_prim_key_dict_dict[aln_index_full_path][common_seq][i].bitscore)))
                 if len(chain_id_set)>1 or len(sstart_set)>1 or len(send_set)>1 or len(bitscore_set)>1:
-                    exclude_set.add(common_seq.copy())
+                    exclude_set.add(common_seq)
                     warn_msg = """Warning: Inconsistency in common sequence set between %s and %s. Excluding sequence.\n
                                   Chain_ids: %s\n Sstart: %s\n Send: %s\n Bitscore: %s""" % (prev_aln_index_full_path,aln_index_full_path,
-                                                                                             str(chain_id_set,sstart_set,send_set,bitscore_set))
+                                                                                             str(chain_id_set),str(sstart_set),str(send_set),str(bitscore_set))
                     errorFct(warn_msg)
             prev_aln_index_full_path = aln_index_full_path
     red_common_seq_set = common_seq_set.difference(exclude_set)
@@ -2795,6 +2849,8 @@ def random_aln_seq(clean_seq, base_aln_len):
     clean_seq_len = len(clean_seq)
     cur_seq_len = clean_seq_len
     gaps_to_insert = base_aln_len - clean_seq_len
+    if gaps_to_insert <= 0:
+        return '0'
     while gaps_to_insert > 0:
         #cur_seq_len+1 places to insert gap 
         rand_int = random.randint(0,cur_seq_len)
@@ -2816,15 +2872,19 @@ def random_aln_seq(clean_seq, base_aln_len):
 
     return clean_seq
 
-def write_baseline_aln_file(aln_file_full_path_list, job_path):
+def write_baseline_aln_file(aln_file_full_path_list, job_path, verbosity):
 
     cleaned_seq_set = set()
     cleaned_seq_set.clear()
     aln_len_set = set()
     aln_len_set.clear()
     for aln_file_full_path in aln_file_full_path_list:
+        if verbosity>0:
+            msg = "Cleaning file %s for baseline." % (aln_file_full_path)
+            print(msg, end="\n")
+        #why is this here?
         #entry is [sequence, header, entry_number, ungapped_sequence]
-        aln_entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
+        #aln_entry_list = import_seq_list_from_fasta_aln(aln_file_full_path)
         #cleaning sequences
         try:
             aln_file_handle = open(aln_file_full_path)
@@ -2841,19 +2901,46 @@ def write_baseline_aln_file(aln_file_full_path_list, job_path):
             exit(1)
 
         close_file_safely(aln_file_handle, aln_file_full_path, "")
+
+        counter = 0
         for record in records:
-            aln_len_set.add(len(str(record.seq)))
+            counter += 1
+            if verbosity>0:
+                msg = "[%s]" % (counter)
+                print(msg, end="\r")
+            if counter<2:
+                aln_len_set.add(len(str(record.seq)))
             cleaned_seq_set.add(clean_seq(str(record.seq).upper()))
     
-    base_aln_len = max(aln_len_set)
+    base_aln_len_sorted_list = iter(sorted(list(aln_len_set)))
+    cur_base_aln_len = next(base_aln_len_sorted_list)
     #create SeqRecord list
     seq_record_list = []
     counter = 1
-    for cleaned_seq in cleaned_seq_set:
-        aln_seq = random_aln_seq(cleaned_seq, base_aln_len)
-        seq_record = SeqRecord.SeqRecord(Seq.Seq(aln_seq), id=str(counter))
-        seq_record_list.append(seq_record)
-        counter += 1
+    if verbosity>0:
+        msg = "Generating random alignment file."
+        print(msg, end="\n")
+    cleaned_seq_list = list(cleaned_seq_set)
+    cleaned_seq_list_len = len(cleaned_seq_list)
+    i = 0
+    while i < cleaned_seq_list_len:
+        if verbosity>0:
+            msg = "[%s/%s]" % (counter, cleaned_seq_list_len)
+            print(msg, end="\r")
+        aln_seq = random_aln_seq(cleaned_seq_list[i], cur_base_aln_len)
+        #if the chosen alignment length is too short for at least one sequence, then use
+        #a bigger alignment length and restart the loop 
+        if aln_seq == '0':
+            seq_record_list.clear()
+            cur_base_aln_len = next(base_aln_len_sorted_list)
+            i = 0
+            counter = 1
+            continue
+        else:
+            seq_record = SeqRecord.SeqRecord(Seq.Seq(aln_seq), id=str(counter))
+            seq_record_list.append(seq_record)
+            i += 1
+            counter += 1
 
     baseline_aln_full_path = os.path.join(job_path, "baseline_aln.fasta")
     SeqIO.write(seq_record_list, baseline_aln_full_path, "fasta")
@@ -2864,7 +2951,7 @@ def write_baseline_aln_file(aln_file_full_path_list, job_path):
 
 #creates job dir from a list of alignments
 def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_file_full_path, verbosity, unique_seq_only,
-               diamond_block_size, diamond_threads, diamond_tmp_dir, baseline):
+               diamond_block_size, diamond_threads, diamond_tmp_dir, baseline, diamond_mp_tmp_dir, diamond_mp):
 
     #get all alignment files in dir
     aln_dir_list = os.listdir(aln_dir)
@@ -2882,10 +2969,10 @@ def create_job(aln_dir, out_path, job_name, diamond_exe_full_path, diamond_db_fi
             err_msg = "Using --baseline currently requires use of --uniqueonly. Please provide the latter to use baseline."
             errorFct(err_msg)
             exit(1)
-        aln_file_full_path_list = write_baseline_aln_file(aln_file_full_path_list, job_path)
+        aln_file_full_path_list = write_baseline_aln_file(aln_file_full_path_list, job_path, verbosity)
 
     create_aln_index_files(aln_file_full_path_list, job_path, diamond_exe_full_path, diamond_db_file_full_path, verbosity,
-                           diamond_block_size, diamond_threads, diamond_tmp_dir)
+                           diamond_block_size, diamond_threads, diamond_tmp_dir, diamond_mp_tmp_dir, diamond_mp)
     
     if verbosity>0:
         msg = "Determining maximal common sequence set..."
@@ -3200,9 +3287,8 @@ def DALI_comp_strat_query_mp(pl_bin_path, small_pdb_lib_path, out_path, dali_dat
     #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
     comp_strat_exclude_set = set()
     if len(job_name) > 11:
-        errMsg = "Job title is longer than 11 characters. Please enter a shorter job title."
-        errorFct(errMsg)
-        raise
+        errMsg = "Job title is longer than 11 characters. Will be cut off in DALI output due to length limitations."
+        job_name = job_name[0:11]
     
     #saving cwd for later file system navigation
     wd = os.getcwd()
@@ -3282,9 +3368,8 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
     #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
     comp_strat_exclude_set = set()
     if len(job_name) > 11:
-        errMsg = "Job title is longer than 11 characters. Please enter a shorter job title."
-        errorFct(errMsg)
-        raise
+        errMsg = "Job title is longer than 11 characters. Will be cut off in DALI output due to length limitations."
+        job_name = job_name[0:11]
 
     #saving cwd for later file system navigation
     wd = os.getcwd()
@@ -3944,15 +4029,20 @@ def main():
     argParser.add_argument("-uo", "--uniqueonly", default=0, action="count", help="Provide this flag to only use each common sequence at most once.", required=False)
     argParser.add_argument("-bz", "--diamondblocksize", type = float, default = None, help="Provide float for diamond block size. Default is 2.0.", required=False)
     argParser.add_argument("-dtd", "--diamondtmpdir", default = "", help="Provide temporary storage directory for diamond. Default is output dir.", required=False)
+    argParser.add_argument("-mptd", "--diamondmptmpdir", default = "", help="Provide temporary shared storage directory for diamond multiprocessing.", required=False)
     argParser.add_argument("-cpu", "--threads", type = int, default = 0, help=("Provide int for number of CPU threads to use."
                            "If not provided, diamond will try to auto-detect number of available cores and DALI will run on one core only."), required=False)
+    argParser.add_argument("-dmp", "--diamondmp", default=0, action="count", help="Provide this flag to use diamond in a multiprocessing cluster environment.", required=False)
     argParser.add_argument("-mpi", "--mpibin", default = "", help="Provide path to \"openmpi/bin\" path.", required=False)
     argParser.add_argument("-bl", "--baseline", default=0, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
     args = argParser.parse_args()
     
+    #setting list of valid symbols and constructing regex for sequence cleaning as a global variable
     valid_symbols = sel_alphabet(args.alphabet)
+    global CLEAN_SEQ_REGEX_STR
+    CLEAN_SEQ_REGEX_STR = build_regex_for_seq_cleaning_whitelist(valid_symbols)
     invalid_symbols = set_non_alphabet(args.nonalphabet)
 
     if args.cleanfasta>0:
@@ -3999,7 +4089,7 @@ def main():
             print(job_list_of_dict_lists)
     if args.createjob > 0:
         create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
-                   args.diamondblocksize, args.threads, args.diamondtmpdir, args.baseline)
+                   args.diamondblocksize, args.threads, args.diamondtmpdir, args.baseline, args.diamondmptmpdir, args.diamondmp)
     if args.runjob > 0:
         run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.mpibin, args.samplesize,
                 args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
