@@ -1590,13 +1590,21 @@ def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_
     with contextlib.redirect_stdout(biopython_log_file_handle):
         with contextlib.redirect_stderr(sys.stdout):
             try:
-                chains = SeqIO.PdbIO.PdbSeqresIterator(pdb_file_handle)
+                #version with SeqResIterator
+                #chains = SeqIO.PdbIO.PdbSeqresIterator(pdb_file_handle)
+
+                #version with AtomIterator
                 #atom iterator is speed killer.
                 #IMPORTANT REMARK: AtomIterator ends up producing FASTA files down the line that
                 #confuse DIAMOND. The current FTP path of rsync also downloads DNA files.
                 #something about the handling of HETATOMS in AtomIterator causes problems (wrong Biopython parser).
-                #stick to using SeqResIterator for now 
-                #chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)  
+                #stick to using SeqResIterator for now
+                #UPDATE: what makes the use of AtomIterator problematic is that it automatically fills the first n-1
+                #AAs with "X", if the AA count starts at values n > 1. We'd also need to cover the edge case, where the first
+                #listed AA is unrecognized, thus gets marked as "X"
+                #we'll need to remove those leading "X" for it to work properly with DALI, since DALIs importer
+                #does not use them, and additionally NOT remove "X", if its not recognized and the first listed AA
+                chains = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle)  
             except:
                 errMsg = "Failed to parse chain data from %s." % pdb_file_path
                 close_file_safely(pdb_file_handle, pdb_file_path, errMsg)
@@ -3975,6 +3983,106 @@ def test_duplicate_clean_seq(fasta_file_full_path):
     print(seq_msg)
     print(header_msg)
 
+def test_PDB_AtomIterator(pdb_file_full_path_1, pdb_file_full_path_2, output_path, dali_pl_full_path, import_pl_full_path, chain_letter_1, chain_letter_2):
+
+    try:
+        pdb_file_handle_1 = gzip.open(pdb_file_full_path_1, 'rt')
+        pdb_file_handle_2 = gzip.open(pdb_file_full_path_2, 'rt')
+    except:
+        errMsg = "Failed to open file."
+        errorFct(errMsg)
+        exit(1)
+    try:
+        chains_1 = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle_1)
+        chains_2 = SeqIO.PdbIO.PdbAtomIterator(pdb_file_handle_2)
+    
+        for record in chains_1:
+            msg = "Record id %s, sequence %s, length %s" % (str(record.id), str(record.seq), str(len(str(record.seq))))
+            print(msg)
+        for record in chains_2:
+            msg = "Record id %s, sequence %s, length %s" % (str(record.id), str(record.seq), str(len(str(record.seq))))
+            print(msg)
+    except:
+        raise
+    finally:
+        close_file_safely(pdb_file_handle_1,pdb_file_full_path_1,'')
+        close_file_safely(pdb_file_handle_2,pdb_file_full_path_2,'')
+
+    wd = os.getcwd()
+    output_path = os.path.join(wd, output_path)
+    dali_pl_full_path = os.path.join(wd, dali_pl_full_path)
+    import_pl_full_path = os.path.join(wd, import_pl_full_path)
+    DAT_path = os.path.join(output_path, 'DAT_path')
+    pdb_file_full_path_1 = os.path.join(wd, pdb_file_full_path_1)
+    pdb_file_full_path_2 = os.path.join(wd, pdb_file_full_path_2)
+    create_dir_safely(DAT_path)
+
+    head, ext = os.path.splitext(pdb_file_full_path_1)
+    head2, ext = os.path.splitext(head)
+    path, file_name = os.path.split(head2)
+    pdb_name_1 = file_name[3:7]
+    head, ext = os.path.splitext(pdb_file_full_path_2)
+    head2, ext = os.path.splitext(head)
+    path, file_name = os.path.split(head2)
+    pdb_name_2 = file_name[3:7]
+    pdb_name_dict = {}
+    pdb_name_dict[pdb_name_1] = pdb_file_full_path_1
+    pdb_name_dict[pdb_name_2] = pdb_file_full_path_2
+
+    for key in pdb_name_dict.keys():
+        #try with and without importing first
+        shell_input_import = [import_pl_full_path, '--pdbfile', pdb_name_dict[key], '--pdbid', key.upper(),
+                       '--dat', DAT_path,'1>','/dev/null','2>','/dev/null']
+
+        #subprocess for importing PDBs
+        #shell input already sends stdout to out_file_path and stderr to err_file_path
+        #probably just pipe output in the next line    
+        process = subprocess.Popen(shell_input_import)
+        
+        try:
+            out, err = process.communicate()
+            #its really just a lot to print...
+            #if out is not None and verbosity>1:
+                #print(out)
+        except:
+            process.kill()
+            out, err = process.communicate()
+            errMsg = "Communication with import.pl subprocess timed out. Killed it."
+            print(errMsg)
+            exit(1)
+
+    chain_id1 = pdb_name_1+chain_letter_1
+    chain_id2 = pdb_name_2+chain_letter_2
+    job_title = 'TestAtIt'
+
+    print(chain_id1)
+    print(chain_id2)
+
+    #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
+    # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
+    shell_input_align = [dali_pl_full_path, '--cd1', chain_id1.upper(), '--cd2', chain_id2.upper(), 
+                '--dat1', DAT_path, '--dat2', DAT_path, '--title', job_title,
+                '--outfmt', "summary,alignments,equivalences,transrot",
+                '--clean','1>','/dev/null','2>','/dev/null']
+
+    os.chdir(output_path)
+
+    process = subprocess.Popen(shell_input_align)
+        
+    try:
+        out, err = process.communicate()
+        #its really just a lot to print...
+        #if out is not None and verbosity>1:
+            #print(out)
+    except:
+        process.kill()
+        out, err = process.communicate()
+        errMsg = "Communication with dali.pl subprocess timed out. Killed it."
+        print(errMsg)
+        exit(1)
+
+    os.chdir(wd)
+
 def main():
 
     tic = time.perf_counter()
@@ -4037,6 +4145,7 @@ def main():
     argParser.add_argument("-bl", "--baseline", default=0, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
+
     args = argParser.parse_args()
     
     #setting list of valid symbols and constructing regex for sequence cleaning as a global variable
@@ -4089,7 +4198,7 @@ def main():
             print(job_list_of_dict_lists)
     if args.createjob > 0:
         create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
-                   args.diamondblocksize, args.threads, args.diamondtmpdir, args.baseline, args.diamondmptmpdir, args.diamondmp)
+                    args.diamondblocksize, args.threads, args.diamondtmpdir, args.baseline, args.diamondmptmpdir, args.diamondmp)
     if args.runjob > 0:
         run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.mpibin, args.samplesize,
                 args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
@@ -4098,9 +4207,13 @@ def main():
     if args.test > 0:
         #test_SPS(args.alignmentfile)
         #test_duplicate_clean_seq(args.alignmentfile)
-        differing_sequences = set()
-        differing_sequences = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
-        _ = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
+        #differing_sequences = set()
+        #differing_sequences = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
+        #_ = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
+        pass
+    if sys.argv[1] == '--test':
+        arg_list = sys.argv
+        test_PDB_AtomIterator(arg_list[2], arg_list[3], arg_list[4], arg_list[5], arg_list[6], arg_list[7], arg_list[8])
     
 
     toc = time.perf_counter()
