@@ -1666,7 +1666,7 @@ def write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_
 #takes a set of pdb IDs and appends existing fasta file with the elements of this set
 #throws FileNotFoundException, if indexed PDB ID is not in local PDB database
 # void (set(),str,str,str,int)                
-def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopython_log_full_path, verbosity):
+def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopython_log_full_path, verbosity, backup_freq):
     
     if verbosity>0:
         print("Appending FASTA file...")
@@ -1688,7 +1688,7 @@ def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopy
     try:
         counter = 1
         number_of_pdbs = len(added_set)
-        with open(fasta_file_full_path, 'a') as fasta_file_handle:
+        with open(fasta_file_full_path, 'a+') as fasta_file_handle:
             for pdb_id in added_set:
                 if verbosity>0:
                     msg = "[%s/%s]              " % (str(counter), str(number_of_pdbs))
@@ -1696,6 +1696,12 @@ def add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopy
                 pdb_file_path = os.path.join(loc_pdb_db_path, pdb_id[1:3], "pdb"+pdb_id+".ent.gz")
                 write_loc_pdb_to_fasta_file(pdb_file_path, fasta_file_handle, biopython_log_file_handle)
                 counter += 1
+                #this is a bit shaky. maybe change it in the future
+                if backup_freq != 0 and counter % backup_freq == 0:
+                    fasta_file_handle.seek(0)
+                    dest_backup = backup_fasta_file(fasta_file_full_path)
+                    fasta_file_handle.read()
+                    fasta_file_handle.write('\n')
     except:
         try:
             restore_fasta_file_from_backup(dest_backup, fasta_file_full_path)
@@ -2019,7 +2025,7 @@ def rm_incomplete_pdbs(loc_pdb_db_path):
         
 #synchronizes copy of remote PDB archive with local copy
 #void (str,str,str,int)  
-def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity):
+def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity, backup_freq):
     
     tmp_index_file_full_path = os.path.join(diamond_db_path, "tmp_pdb_db.index")
     old_index_file_full_path = os.path.join(diamond_db_path, "pdb_db.index")
@@ -2042,6 +2048,7 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
     if verbosity>0:
         counter = 1
         for line in process.stdout:
+            #REMOVE THIS
             if counter>1000:
                 process.kill()
                 break
@@ -2065,7 +2072,7 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
     
     added_set = update_pdb_index(loc_pdb_db_path, diamond_db_path, tmp_index_file_full_path, old_index_file_full_path)
     if len(added_set)>0 and os.path.exists(fasta_file_full_path):
-        add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopython_log_full_path, verbosity)
+        add_fasta_db_entries(added_set, fasta_file_full_path, loc_pdb_db_path, biopython_log_full_path, verbosity, backup_freq)
         replace_old_index_file(tmp_index_file_full_path, old_index_file_full_path)
     elif os.path.exists(fasta_file_full_path) is False:
         create_fasta_file_from_index_file(loc_pdb_db_path, fasta_file_full_path, old_index_file_full_path, biopython_log_full_path, verbosity)
@@ -4161,7 +4168,7 @@ def main():
         batch_blastp_query(args.diamondfile, args.diamonddbfile, args.batchsearch, args.output, args.verbose)
 
     if args.syncdb>0:
-        sync_pdb_copy(args.diamondfile, args.locpdbdb, args.output, args.verbose)
+        sync_pdb_copy(args.diamondfile, args.locpdbdb, args.output, args.verbose, args.backupfreq)
 
     if args.doitall > 0:
         #calc_SPS_from_aln_sample(args.output, args.alignmentfile, args.title, args.dalidir, args.samplesize, valid_symbols, args.verbose)
