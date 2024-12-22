@@ -2161,7 +2161,7 @@ def diamond_blastp_query(diamond_exe_full_path, diamond_db_file_full_path, query
     shell_input = []
     shell_input = [str(diamond_exe_full_path), 'blastp', '--db', str(diamond_db_file_full_path), '--query', str(query_fasta_file_full_path), '-o', str(out_file_full_path),
                    '--log', '--header', 'simple', '--outfmt', '6', 'qseqid', 'sseqid', 'pident', 'length', 'mismatch', 'gapopen',
-                   'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore', 'qlen']
+                   'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore', 'qlen', '--id', '99.9']
 
     if int(diamond_threads) > 0:
         shell_input.append('--threads')
@@ -2487,26 +2487,61 @@ def calc_aln_score_with_diamond(aln_file_full_path, diamond_exe_full_path, diamo
 
 #calculation rework
 #__________________________________________________________________________________________________________________________________________________
+def get_mantissa_and_exponent_from_number(scientific_number):
+    scientific_regex_str = "([0-9.,-]+)([eE]|(\*[0-9]+\^))([0-9-]+)"
+    match = re.search(scientific_regex_str, str(scientific_number))
+    try:
+        mant = float(match.group(1))
+    except:
+        err_msg = "Could not get mantissa from match group 1 %s." % match.group(1)
+        errorFct(err_msg)
+        raise
+    try:
+        exp = int(match.group(4))
+    except:
+        err_msg = "Could not get exponent from match group 4 %s." % match.group(4)
+        errorFct(err_msg)
+        raise
+
+    return mant, exp
+
 #this function serves to detect and resolve duplicate values in dictionary for any one key
 #right now it takes FASTA headers as keys and checks if the list in values is of length <= 1
+#its important to note that ambiguous rows are rows that are objectively equivalent in respect to
+#exact match selection. this means that there is no direct advantage in choosing one hit over the other
+#BUT we want to make sure that the proteins, which the hits are embedded in are the same among all measurements
+#because this impacts structural alignment generation and thus the reference set and in consequence also the score
 def resolve_ambivalences(exact_match_dict, aln_file_full_path):
-    
+
     for qseqid in exact_match_dict.keys():
         if len(exact_match_dict[qseqid]) > 1:
             cur_best_entry = exact_match_dict[qseqid][0]
             for row in exact_match_dict[qseqid][1:]:
-                #try to select entry by bitscore
-                if int(row.bitscore) > int(cur_best_entry.bitscore):
+                #try to select entry by evalue
+                mant_best, exp_best = get_mantissa_and_exponent_from_number(cur_best_entry.evalue)
+                mant_row, exp_row = get_mantissa_and_exponent_from_number(row.evalue)
+                if exp_row < exp_best:
                     cur_best_entry = row
+                    continue
+                elif exp_row == exp_best and mant_row > mant_best:
+                    cur_best_entry = row
+                    continue
+                #try to select entry by bitscore
+                elif int(row.bitscore) > int(cur_best_entry.bitscore):
+                    cur_best_entry = row
+                    continue
                 elif int(row.bitscore) == int(cur_best_entry.bitscore):
                     #if bitscore is the same, try lower subject match start
                     if int(row.sstart) < int(cur_best_entry.sstart):
                         cur_best_entry = row
+                        continue
                     elif int(row.sstart) == int(cur_best_entry.sstart):
                         #if lower match start is the same, we must have different chain IDs
                         for i in range(0,6):
-                            if int(str(row.sseqid)[i]) < int(str(cur_best_entry.sseqid)[i]):
+                            if ord(str(row.sseqid)[i]) < ord(str(cur_best_entry.sseqid)[i]):
                                 cur_best_entry = row
+                                break
+                            elif ord(str(row.sseqid)[i]) > ord(str(cur_best_entry.sseqid)[i]):
                                 break
                         #if we have the same chain IDs, we'll have the same query match restriction
                         #and the choice is irrelevant. This SHOULD NOT happen usually.
