@@ -117,7 +117,12 @@ def sel_alphabet(choice):
         #depending on the length of the protein sequence, different orders might be more efficient
         #see "Amino acid composition and protein dimension", Protein Sci. 17(12): 2187-2191 (2008)
         #maybe make into set. then rework of build_regex is required
-        valid_symbols = ["A","R","N","D","C","Q","E","G","H","I","L","K","M","F","P","O","S","U","T","W","Y","V","B","Z","X","J"]
+        #this list of letters might change depending on what the database or the given structure aligner requires
+        #for example, DALI ignores all "X" in sequences, that's why it's left out here for now
+        #this results in cleaned sequences that have no "X" and will produce a match, albeit not a perfect match with sequences in the diamond
+        #database that contains gaps (formerly "X"), excluding those sequences by applying our exact match definition will result in DALI never seeing sequences,
+        #which contain "X" somewhere in the middle of the sequence (edges are ok)
+        valid_symbols = ["A","R","N","D","C","Q","E","G","H","I","L","K","M","F","P","O","S","U","T","W","Y","V","B","Z","J"]
         #IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984)
     elif choice == "DNA/RNA":
         valid_symbols = ["A","G","C","T","U"]
@@ -2046,15 +2051,15 @@ def sync_pdb_copy(diamond_file_path, loc_pdb_db_path, diamond_db_path, verbosity
     process = subprocess.Popen(shell_input, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 
     if verbosity>0:
-        counter = 1
+        #counter = 1
         for line in process.stdout:
-            #REMOVE THIS
-            if counter>1000:
-                process.kill()
-                break
+            #REMOVE THIS, testing
+            #if counter>1000:
+             #   process.kill()
+              #  break
             line = line.rstrip()+"                   "
             print(line, end="\r")
-            counter += 1
+            #counter += 1
 
     try:
         out, err = process.communicate()
