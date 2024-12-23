@@ -4130,6 +4130,17 @@ def test_PDB_AtomIterator(pdb_file_full_path_1, pdb_file_full_path_2, output_pat
 
     os.chdir(wd)
 
+def transform_alignment(fasta_file_full_path, output_file_full_path):
+    with open(fasta_file_full_path, 'r') as fasta_file_handle:
+        alignment = AlignIO.read(fasta_file_handle, "fasta")
+    for record in alignment:
+        seq = str(record.seq)
+        seq = re.sub('\.', '-', seq)
+        seq = seq.upper()
+        record.seq = Seq.Seq(seq)
+    
+    SeqIO.write(alignment, output_file_full_path, "fasta")
+
 def main():
 
     tic = time.perf_counter()
@@ -4257,10 +4268,10 @@ def main():
         #differing_sequences = set()
         #differing_sequences = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
         #_ = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
-        pass
-    if sys.argv[1] == '--test':
-        arg_list = sys.argv
-        test_PDB_AtomIterator(arg_list[2], arg_list[3], arg_list[4], arg_list[5], arg_list[6], arg_list[7], arg_list[8])
+        transform_alignment(args.alignmentfile, args.output)
+    #if sys.argv[1] == '--test':
+     #   arg_list = sys.argv
+      #  test_PDB_AtomIterator(arg_list[2], arg_list[3], arg_list[4], arg_list[5], arg_list[6], arg_list[7], arg_list[8])
     
 
     toc = time.perf_counter()
