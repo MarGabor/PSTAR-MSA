@@ -4,7 +4,7 @@
 #11/04/2024
 
 import argparse
-from codecs import ignore_errors
+#from codecs import ignore_errors
 import sys
 from datetime import datetime
 import re
@@ -20,7 +20,7 @@ import shutil
 import json
 #import svg_stack
 from itertools import tee
-import lxml
+#import lxml
 import traceback
 import contextlib
 from rcsbsearchapi.search import Query, SequenceQuery
@@ -3559,6 +3559,8 @@ def restore_comp_strat_backup(comp_strat, out_path, job_name):
 
     return comp_strat
 
+#after job has been set up, this function uses the data to launch structural alignment generation
+# void (str, str, str, str, int, int, str, int, str, str, int, int)
 def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mpi_path,
             sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
     #set and get paths
@@ -3633,9 +3635,15 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mp
         errorFct(err_msg)
         raise
 
+#not implemented.
 def guess_comp_strat_from_DALI_dir(DALI_ALN_path):
-    pass
+    err_msg = "Failed to guess comparison strategy from DALI alignments."
+    errorFct(err_msg)
+    raise
 
+#parses DALI structural alignment information as requested by each entry in the comparison strategy and
+#writes it to a dict
+# (set(), str, int) -> dict()
 def import_DALI_alns_by_comp_strat(comp_strat, DALI_ALN_dir, verbosity):
     #keys are all tuples in comp_strat and values are
     #lists of dictionaries returned by the function import_DALI_aln()
@@ -3677,6 +3685,11 @@ def import_DALI_alns_by_comp_strat(comp_strat, DALI_ALN_dir, verbosity):
 
     return comp_strat_struct_aln_dict
 
+#acquires information about the restriction bounds of each pair of aligned sequences by reading
+#the respective sstart and send values. this function is inefficient because it is practically not necessary to
+#iterate through all elements in the comparison strategy. All N sequence would suffice.
+#It's just easier this way.
+# (set(), dict()) -> dict()
 def get_restr_bounds(comp_strat, red_MSA_df_dict):
     restr_bounds_dict = {}
     for i,k in comp_strat:
@@ -3735,6 +3748,8 @@ def apply_ref_set_restr(small_ref_ind_set, bounds_i, bounds_k):
 
     return restr_small_ref_ind_set
 
+#calculates reference sets based on comparison strategy
+# (set(), str, dict(), int) -> ( dict(), dict() )
 def generate_ref_sets(comp_strat, aln_dir, red_MSA_df_dict, verbosity):
     
     #import structural alignments for all entries in comp_strat
@@ -3766,6 +3781,8 @@ def generate_ref_sets(comp_strat, aln_dir, red_MSA_df_dict, verbosity):
 
     return restr_small_ref_ind_set_dict, comp_strat_struct_aln_dict
 
+#function to calculate MSA index sets for comparison strategy
+# (set(), dict(), int) -> dict()
 def generate_MSA_sets(comp_strat, red_MSA_df_dict, verbosity):
 
     comp_strat_MSA_aln_dict = {}
@@ -3828,7 +3845,9 @@ def generate_MSA_sets(comp_strat, red_MSA_df_dict, verbosity):
     
     return comp_strat_MSA_aln_dict
 
-#in this function we can determine how to calculate any score based on the calculated sets
+#this function calculates the pstar-score for each pair of sequences given by the comparison strategy
+#this function can be exchanged for any function that calculates values for each pair of sequences
+# (set(), dict(), dict()) -> dict()
 def calc_pair_SPS_by_comp_strat(comp_strat, ref_set_dict, comp_strat_MSA_aln_dict):
     pair_SPS_dict = {}
     pair_SPS_dict.clear()
@@ -3847,8 +3866,9 @@ def calc_pair_SPS_by_comp_strat(comp_strat, ref_set_dict, comp_strat_MSA_aln_dic
 
     return pair_SPS_dict
 
+#calculate SPS for each pair of sequences indexed by comparison strategy and write a detailed output file
+# void (str, set(), dict(), dict(), dict(), int)
 def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_dict, comp_strat_MSA_aln_dict, verbosity):
-    #calculate SPS for each pair of sequences indexed by comparison strategy
     #pair_SPS_dict: keys are paths to red_index_file; values are small_pair_SPS_dict
     #small_pair_SPS_dict: keys are each element in comp_strat (i,k); values are the SPS between sequences i and k ("pair_SPS")
     pair_SPS_dict = calc_pair_SPS_by_comp_strat(comp_strat, ref_set_dict, comp_strat_MSA_aln_dict)
@@ -3904,6 +3924,8 @@ def write_output_tsv(eval_path, comp_strat, ref_set_dict, comp_strat_struct_aln_
         output_df = pandas.DataFrame.from_dict(output_dict[red_ind_file_full_path], orient='index')
         output_df.to_csv(tsv_output_file_full_path, sep='\t')
 
+#aggregates all small reference and MSA index sets into one large set each
+# (dict, dict) -> (set, set) 
 def pstar_union(ref_set_dict, comp_strat_MSA_aln_dict):
     
     union_ref_set = set.union(*list(ref_set_dict.values()))
@@ -3915,6 +3937,8 @@ def pstar_union(ref_set_dict, comp_strat_MSA_aln_dict):
 
     return union_ref_set, union_test_set_dict
 
+#calculates numbers based off precalculated structural alignments and corresponding comparison strategy
+# void (str, str, int)
 def evaluate_job(out_path, job_name, verbosity):
 
     auto_gen_comp_strat_file_full_path = os.path.join(out_path, job_name, "comp_strat.json")
@@ -4150,45 +4174,30 @@ def main():
     #multiprocessing.set_start_method('spawn')
 
     argParser = argparse.ArgumentParser()
-    argParser.add_argument("-p", "--createsearchplots", default=0, action="count", help="Creates search plots from CSV search metadata.", required=False)
-    argParser.add_argument("-csv", "--csvdir", help="Path to CSV files with search metadata.", required=False)
-    argParser.add_argument("-e", "--doitall", default=0, action="count", help="Do it all.", required=False)
+    argParser.add_argument("-p", "--createsearchplots", default=0, action="count", help="Creates search plots from CSV search metadata. Not a feature at the moment.", required=False)
+    argParser.add_argument("-all", "--wrapjob", default=0, action="count", help="Sets up job, runs structural alignments and evaluates results.", required=False)
     argParser.add_argument("-sync", "--syncdb", default=0, action="count", help="Sync local PDB database with remote.", required=False)
-    argParser.add_argument("-dm", "--datamode", default=0, action="count",
-                           help="data mode for gathering PDB files and other data from given FASTA alignment", required=False)
     argParser.add_argument("-db", "--locpdbdb", help="Path to local PDB database.", required=False)
-    argParser.add_argument("-af", "--alignmentfile", help="MSA file in FASTA format", required=False)
-    argParser.add_argument("-bat", "--batchsearch", help="Path to MSA files in FASTA format", required=False)
+    argParser.add_argument("-af", "--alignmentfile", help="MSA file in FASTA format. No purpose at the moment.", required=False)
+    argParser.add_argument("-bat", "--msadir", help="Path to MSA files to be compared; in FASTA format", required=False)
     argParser.add_argument("-ss", "--samplesize", default=0, type = int,
-                           help="Give sample size of random sequences taken from alignment file as integer. Default:0 means full alignment.", required=False)
+                           help="Give sample size of random comparisons taken from comparison strategy as integer. Default:0, means full sample.", required=False)
     argParser.add_argument("-bf", "--backupfreq", default=100, type = int, help="Specify how often you'd like to save progress of alignment generation.", required=False)
     argParser.add_argument("-csn", "--compstratname", choices=["low_triangle"], default="low_triangle",
                            help="Select comparison strategy by name. Default: low_triangle", required=False)
     argParser.add_argument("-csf", "--compstratfile", default="", help="Path to comparison strategy set in file format.", required=False)
     argParser.add_argument("-sn", "--samplenumber",type = int, default = 1, help="Provide integer for how many times you want to sample. Default:1", required=False)
-    argParser.add_argument("-dow", "--download", help="Path to CSV files to download PDB files from", required=False)
-    argParser.add_argument("-bnch", "--benchmarkmode", default=0, action="count",
-                           help="benchmark mode for generating alignments from PDB file database and measuring alignment scores", required=False)
-    argParser.add_argument("-pdb", "--pdbdir", help="Path to directory with PDB files corresponding to proteins in MSA file", required=False)
-    argParser.add_argument("-dat", "--datdir", help="Path to directory with DAT files", required=False)
-    argParser.add_argument("-dali", "--dalidir", help="Path to DaliLite.v5/bin directory", required=False)
-    argParser.add_argument("-jd", "--jobdir", default=0, action="count", help="Specify job dir. Currently no purpose.", required=False)
-    argParser.add_argument("-al", "--align", default=0, action="count", help="Generate pairwise alignments for all PDB files specified under --pdbdir", required=False)
-    argParser.add_argument("-im", "--importdat", default=0, action="count", help="Import all PDB files specified under --pdbdir into DAT format", required=False)
-    argParser.add_argument("-ti", "--title", help="Job title. At most 11 characters.", required=False)
-    argParser.add_argument("-o", "--output", help="Output path", required=False)
-    argParser.add_argument("-s", "--AAscoring", choices=["BLOSUM62", "PAM"], help="Select type of AA-scoring: (BLOSUM, PAM).", required=False)
+    argParser.add_argument("-dali", "--dalibindir", help="Path to DaliLite.v5/bin directory", required=False)
+    argParser.add_argument("-ti", "--jobname", help="Job title. At most 11 characters.", required=False)
+    argParser.add_argument("-o", "--outputdir", help="Path to output dir", required=False)
     argParser.add_argument("-a", "--alphabet", choices=["AA", "DNA/RNA"], default="AA", help="Select alphabet: (AA, DNA/RNA). Default: AA", required=False)
     argParser.add_argument("-na", "--nonalphabet", default="-.", help="Select non-alphabet. Default: -.", required=False)
     argParser.add_argument("-v", "--verbose", default=0, action="count",
                            help="Print progress to terminal. No effect on error logging.", required=False)
     argParser.add_argument("-cnt", "--continuejob", default=0, action="count", help="Continue job from last checkpoint", required=False)
-    argParser.add_argument("-tdb", "--testdb", action="count", default=0, help="Testing diamond database creation.", required=False)
     argParser.add_argument("-dia", "--diamondfile", help="Path to diamond program file.", required=False)
     argParser.add_argument("-clf", "--cleanfasta", action="count", default=0, help="testing fasta cleaning", required=False)
-    argParser.add_argument("-babp", "--batchblastp", action="count", default=0, help="testing fasta cleaning", required=False)
     argParser.add_argument("-ddb", "--diamonddbfile", help="Path to diamond database file.", required=False)
-    argParser.add_argument("-svg", "--svgpath", help="Path to SVG files to be concatenated.", required=False)
     argParser.add_argument("-cj", "--createjob", default=0, action="count", help="Set up job folder and required data.", required=False)
     argParser.add_argument("-rj", "--runjob", default=0, action="count", help="Running job by specifying output folder and job title.", required=False)
     argParser.add_argument("-ej", "--evaljob", default=0, action="count", help="Evaluating finished job.", required=False)
@@ -4198,11 +4207,11 @@ def main():
     argParser.add_argument("-mptd", "--diamondmptmpdir", default = "", help="Provide temporary shared storage directory for diamond multiprocessing.", required=False)
     argParser.add_argument("-cpu", "--threads", type = int, default = 0, help=("Provide int for number of CPU threads to use."
                            "If not provided, diamond will try to auto-detect number of available cores and DALI will run on one core only."), required=False)
-    argParser.add_argument("-dmp", "--diamondmp", default=0, action="count", help="Provide this flag to use diamond in a multiprocessing cluster environment.", required=False)
+    argParser.add_argument("-dmp", "--diamondmp", default=0, action="count", help="Provide this flag to use diamond in a multiprocessing cluster environment across multiple nodes.", required=False)
     argParser.add_argument("-mpi", "--mpibin", default = "", help="Provide path to \"openmpi/bin\" path.", required=False)
     argParser.add_argument("-bl", "--baseline", default=0, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
 
-    argParser.add_argument("-t", "--test", default=0, action="count", help="Testing stuff", required=False)
+    argParser.add_argument("-t", "--test", default=0, action="count", help="Testing ", required=False)
 
     args = argParser.parse_args()
     
@@ -4210,69 +4219,43 @@ def main():
     valid_symbols = sel_alphabet(args.alphabet)
     global CLEAN_SEQ_REGEX_STR
     CLEAN_SEQ_REGEX_STR = build_regex_for_seq_cleaning_whitelist(valid_symbols)
-    invalid_symbols = set_non_alphabet(args.nonalphabet)
+    #invalid_symbols = set_non_alphabet(args.nonalphabet)
 
+    #not a feature
     if args.cleanfasta>0:
-        clean_fasta_files_in_dir(args.batchsearch, args.output, valid_symbols, args.verbose)
-    
-    if args.batchblastp>0:
-        batch_blastp_query(args.diamondfile, args.diamonddbfile, args.batchsearch, args.output, args.verbose)
+        clean_fasta_files_in_dir(args.msadir, args.outputdir, valid_symbols, args.verbose)
 
     if args.syncdb>0:
-        sync_pdb_copy(args.diamondfile, args.locpdbdb, args.output, args.verbose, args.backupfreq)
+        sync_pdb_copy(args.diamondfile, args.locpdbdb, args.outputdir, args.verbose, args.backupfreq)
 
-    if args.doitall > 0:
-        #calc_SPS_from_aln_sample(args.output, args.alignmentfile, args.title, args.dalidir, args.samplesize, valid_symbols, args.verbose)
-        calc_aln_score_with_diamond(args.alignmentfile, args.diamondfile, args.diamonddbfile, args.locpdbdb, args.output,
-                                args.dalidir, args.samplesize, args.title, valid_symbols, args.verbose)
+    #not a feature
+    if args.createsearchplots > 0:
+        evaluate_diamond_search_data(args.csvdir, args.outputdir, "identity", args.verbose)
+    
+    if args.wrapjob > 0:
+        create_job(args.msadir, args.outputdir, args.jobname, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
+                    args.diamondblocksize, args.threads, args.diamondtmpdir, args.baseline, args.diamondmptmpdir, args.diamondmp)
 
-    if args.datamode > 0:
-        if args.alignmentfile is not None:
-            _ = write_aln_file_search_hits_to_csv(valid_symbols, args.alignmentfile, args.output, args.verbose, args.samplesize)
-        if args.createsearchplots > 0:
-            evaluate_diamond_search_data(args.csvdir, args.output, "identity", args.verbose)
-            #with import svg_stack:
-                #append_svg_images(args.svgpath, args.output)
-        #wrap in function    
-        elif args.batchsearch is not None:
-            aln_file_list = get_file_paths_in_dir(args.batchsearch)
-            for file_path in aln_file_list:
-                csv_path = os.path.join(args.output,os.path.split(file_path)[1]+".csv")
-                if os.path.exists(csv_path):
-                    errMsg = "File %s already exists. Skipping." % csv_path
-                    errorFct(errMsg)
-                    continue
-                _ = write_aln_file_search_hits_to_csv(valid_symbols, file_path, args.output, args.verbose, args.samplesize)
-        if args.download is not None:        
-            download_pdb_files_by_CSV(args.download, args.output)
-    if args.benchmarkmode > 0:
-        if args.importdat > 0:
-            DALI_import_PDBs(args.dalidir, args.pdbdir, args.datdir, args.verbose)
-        if args.align > 0:
-            DALI_all_vs_all_query(args.dalidir, args.pdbdir, args.output, args.datdir, args.title, args.verbose)
-        if args.jobdir > 0:
-            job_list_of_dict_lists = import_aln_files_in_job(args.title, args.output)
-            print(len(job_list_of_dict_lists))
-            print(job_list_of_dict_lists)
+        run_job(args.outputdir, args.jobname, args.dalibindir, args.locpdbdb, args.verbose, args.threads, args.mpibin, args.samplesize,
+                args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
+
+        evaluate_job(args.outputdir, args.jobname, args.verbose)
+
     if args.createjob > 0:
-        create_job(args.batchsearch, args.output, args.title, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
+        create_job(args.msadir, args.outputdir, args.jobname, args.diamondfile, args.diamonddbfile, args.verbose, args.uniqueonly,
                     args.diamondblocksize, args.threads, args.diamondtmpdir, args.baseline, args.diamondmptmpdir, args.diamondmp)
     if args.runjob > 0:
-        run_job(args.output, args.title, args.dalidir, args.locpdbdb, args.verbose, args.threads, args.mpibin, args.samplesize,
+        run_job(args.outputdir, args.jobname, args.dalibindir, args.locpdbdb, args.verbose, args.threads, args.mpibin, args.samplesize,
                 args.compstratname, args.compstratfile, args.continuejob, args.backupfreq)
     if args.evaljob > 0:
-        evaluate_job(args.output, args.title, args.verbose)
+        evaluate_job(args.outputdir, args.jobname, args.verbose)
     if args.test > 0:
         #test_SPS(args.alignmentfile)
         #test_duplicate_clean_seq(args.alignmentfile)
         #differing_sequences = set()
         #differing_sequences = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
         #_ = test_red_index_file(args.batchsearch, args.output, args.title, args.verbose, differing_sequences)
-        transform_alignment(args.alignmentfile, args.output)
-    #if sys.argv[1] == '--test':
-     #   arg_list = sys.argv
-      #  test_PDB_AtomIterator(arg_list[2], arg_list[3], arg_list[4], arg_list[5], arg_list[6], arg_list[7], arg_list[8])
-    
+        transform_alignment(args.alignmentfile, args.outputdir)
 
     toc = time.perf_counter()
     print(f"Done in {toc - tic:0.4f} seconds.")
@@ -4280,5 +4263,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-#test rename commit
