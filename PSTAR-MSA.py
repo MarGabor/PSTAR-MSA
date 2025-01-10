@@ -3743,8 +3743,9 @@ def apply_ref_set_restr(small_ref_ind_set, bounds_i, bounds_k):
     if new_max < new_min:
         return set()
     for elem in small_ref_ind_set:
-        if elem[0][1] >= new_min and elem[1][1] <= new_max:
-            restr_small_ref_ind_set.add(elem)
+        if elem[0][1] >= new_min-1 and elem[0][1] <= new_max and elem[1][1] >= new_min-1 and elem[1][1] <= new_max:
+            new_elem = ((elem[0][0],elem[0][1]-bounds_i[0]),(elem[1][0],elem[1][1]-bounds_k[0]))
+            restr_small_ref_ind_set.add(new_elem)
 
     return restr_small_ref_ind_set
 
