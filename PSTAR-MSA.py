@@ -435,7 +435,7 @@ def calc_MSA_SP_set(sequence_ids, aligned_sequences):
             if sbjct[i] == "-" or sbjct[i] == ".":
                 sbjct_gaps += 1
                 sbjct_gap = True
-            if query[i] == "-"  or sbjct[i] == ".":
+            if query[i] == "-"  or query[i] == ".":
                 query_gaps += 1
                 query_gap = True
             if sbjct_gap or query_gap:
@@ -3790,7 +3790,7 @@ def generate_MSA_sets(comp_strat, red_MSA_df_dict, verbosity):
     comp_strat_MSA_aln_dict.clear()
     for red_index_file_full_path in red_MSA_df_dict.keys():
         if verbosity>0:
-            msg = "Generating MSA sets for file %s ..." % red_index_file_full_path
+            msg = "Generating MSA set for file %s ..." % red_index_file_full_path
             print(msg)
 
         orig_fasta_index_col_num = red_MSA_df_dict[red_index_file_full_path].columns.get_loc('fasta_entry_index')
