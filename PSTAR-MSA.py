@@ -3069,7 +3069,7 @@ def get_red_aln_index_full_path_list(aln_path_list):
         red_aln_index_full_path_list.append(red_aln_index_full_path)
     return red_aln_index_full_path_list
 
-def get_max_sample_size_for_job(red_MSA_df_dict):
+def get_max_seq_num_for_job(red_MSA_df_dict):
     len_set = set()
     for red_aln_index_full_path in red_MSA_df_dict.keys():
         len_set.add(len(red_MSA_df_dict[red_aln_index_full_path].index))
@@ -3083,7 +3083,8 @@ def get_max_sample_size_for_job(red_MSA_df_dict):
             err_msg = "Fixing alignment index failed. Try to create new job."
             errorFct(err_msg)
     else:
-        return len_set.pop()
+        max_seq_num = len_set.pop()
+        return max_seq_num
 
 #by design the comparison strategy is a set of 2-tuples
 #to be precise: comp_strat \subseteq sample_set x sample_set
@@ -3093,10 +3094,11 @@ def get_max_sample_size_for_job(red_MSA_df_dict):
 #pairwise reference alignments of (n^2-n)/2, where n=len(sample_set) and also is not true
 #for arbitrary structure aligners. i.e. alignments a_{ik}=a_{ki} are not identical in general.
 #i'm not sure what exactly this means for measurement though.
-def generate_low_triangle(sample_set):
+def generate_low_triangle(max_seq_num):
     comp_strat = set()
-    for i in sample_set:
-        for k in sample_set:
+    range_list = range(0, max_seq_num)
+    for i in range_list:
+        for k in range_list:
             if k >= i:
                 break
             comp_strat.add((i,k))
@@ -3109,34 +3111,30 @@ def load_comp_strat_from_file(comp_strat_file_full_path):
 
     return comp_strat
 
-def generate_comp_strat(max_sample_size, sample_size, comp_strat_name="low_triangle", comp_strat_file_path=""):
-    sample_set = set()
+def generate_comp_strat(max_seq_num, sample_size, comp_strat_name="low_triangle", comp_strat_file_path=""):
+
     if comp_strat_file_path == "":
-        #first step: choose subset of maximal set
         int_sample_size = int(sample_size)
-        #this will hardly impact performance, but I thought it was cool
-        if int_sample_size <= max_sample_size/2:
-            include_set = set()
-            while len(include_set) < int_sample_size:
-                random_int = random.randint(0, max_sample_size-1)
-                include_set.add(random_int)
-            sample_set = include_set.copy()
-        else:
-            max_sample_set = set(range(0,max_sample_size))
-            exclude_set = set()
-            exclude_bound = max_sample_size-int_sample_size
-            while len(exclude_set) < exclude_bound:
-                random_int = random.randint(0, max_sample_size-1)
-                exclude_set.add(random_int)
-            sample_set = max_sample_set.difference(exclude_set).copy()
         #select from list of different comparison strategies
         if comp_strat_name == "low_triangle":
-            comp_strat = generate_low_triangle(sample_set)
-            return comp_strat
+            comp_strat = generate_low_triangle(max_seq_num)
         elif comp_strat_name == "random":
             pass
         elif comp_strat_name == "complete_linear_coverage":
             pass
+
+        if int_sample_size > 0:
+            #random sample on sets is deprecated since python 3.9, that's why i need to waste a bit of resources here
+            #to keep using this function
+            max_sample_size = len(comp_strat)
+            if int_sample_size > max_sample_size:
+                int_sample_size = max_sample_size
+            sampled_comp_strat_list = random.sample(list(comp_strat), int_sample_size)
+            sampled_comp_strat = set(sampled_comp_strat_list)
+
+            return sampled_comp_strat
+
+        return comp_strat
     #else if path to comparison strategy file is provided, then load it up
     else:
         comp_strat = load_comp_strat_from_file(comp_strat_file_path)
@@ -3562,7 +3560,7 @@ def restore_comp_strat_backup(comp_strat, out_path, job_name):
 #after job has been set up, this function uses the data to launch structural alignment generation
 # void (str, str, str, str, int, int, str, int, str, str, int, int)
 def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mpi_path,
-            sample_size=0, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
+            sample_size, comp_strat_name="low_triangle", comp_strat_file_path="", cont=0, backup_freq=100):
     #set and get paths
     DATA_path = os.path.join(out_path, job_name, "DATA")
 
@@ -3573,9 +3571,7 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mp
     #import reduced alignment index files as dict of dataframes (keys: red_aln_index_full_path; values: dataframe)
     red_MSA_df_dict = import_red_aln_index_files(red_aln_index_full_path_list)
     #get max sample size
-    max_sample_size = get_max_sample_size_for_job(red_MSA_df_dict)
-    if sample_size == 0 or sample_size >= max_sample_size:
-        sample_size = int(max_sample_size)
+    max_seq_num = get_max_seq_num_for_job(red_MSA_df_dict)
     #if --continuejob flag is passed (cont>0), load comp_strat from auto-generated file and
     #exclude elements that have already been used for pairwise structure alignment
     if cont > 0:
@@ -3586,7 +3582,7 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mp
                        "specified under --compstratname or --compstratfile matches the one that was initially used to run the job"
                        "when proceeding.")
             errorFct(err_msg)
-            comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+            comp_strat = generate_comp_strat(max_seq_num, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
             try:
                 write_set_to_file(comp_strat, auto_gen_comp_strat_file_full_path)
             except:
@@ -3601,7 +3597,7 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mp
             raise
     #else generate comparison strategy the normal way and write to file
     else:
-        comp_strat = generate_comp_strat(max_sample_size, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
+        comp_strat = generate_comp_strat(max_seq_num, sample_size, comp_strat_name=comp_strat_name, comp_strat_file_path=comp_strat_file_path)
         try:
             write_set_to_file(comp_strat, auto_gen_comp_strat_file_full_path)
         except:
@@ -3938,6 +3934,29 @@ def pstar_union(ref_set_dict, comp_strat_MSA_aln_dict):
 
     return union_ref_set, union_test_set_dict
 
+def write_scores_to_file(union_test_set_dict, eval_path, union_ref_set, verbosity):
+
+    scores_file_full_path = os.path.join(eval_path, 'scores_per_alignment.tsv')
+
+    scores_dict = {}
+    for key in union_test_set_dict.keys():
+        #set paths and write individual sets to files
+        head, file_name = os.path.split(key)
+        head, aln_name = os.path.split(head)
+        union_test_set_full_path = os.path.join(eval_path, "union_"+aln_name+"_MSA_set.json")
+        write_set_to_file(union_test_set_dict[key], union_test_set_full_path)
+        intersect_union = union_test_set_dict[key].intersection(union_ref_set)
+        if len(union_ref_set) > 0:
+            SPS = len(intersect_union)/len(union_ref_set)
+        else:
+            SPS = 0
+        scores_dict[os.path.split(key)[1]] = SPS
+        if verbosity > 0:
+            sps_msg = "Score for alignment file %s: %s" % (key, str(SPS))
+            print(sps_msg)
+    scores_df = pandas.DataFrame.from_dict(scores_dict, orient='index', columns=['score'])
+    scores_df.to_csv(scores_file_full_path, sep='\t')
+
 #calculates numbers based off precalculated structural alignments and corresponding comparison strategy
 # void (str, str, int)
 def evaluate_job(out_path, job_name, verbosity):
@@ -3989,20 +4008,8 @@ def evaluate_job(out_path, job_name, verbosity):
     #write sets to files
     union_ref_set_full_path = os.path.join(eval_path, "union_ref_set.json")
     write_set_to_file(union_ref_set, union_ref_set_full_path)
-    #print overall SPS per MSA
-    for key in union_test_set_dict.keys():
-        #set paths and write individual sets to files
-        head, file_name = os.path.split(key)
-        head, aln_name = os.path.split(head)
-        union_test_set_full_path = os.path.join(eval_path, "union_"+aln_name+"_MSA_set.json")
-        write_set_to_file(union_test_set_dict[key], union_test_set_full_path)
-        intersect_union = union_test_set_dict[key].intersection(union_ref_set)
-        if len(union_ref_set) > 0:
-            SPS = len(intersect_union)/len(union_ref_set)
-        else:
-            SPS = 0
-        sps_msg = "SPS for alignment file %s: %s" % (key, str(SPS))
-        print(sps_msg) 
+    #write scores to file
+    write_scores_to_file(union_test_set_dict, eval_path, union_ref_set, verbosity)
 
 def test_SPS(aln_file_full_path):
 
@@ -4202,7 +4209,7 @@ def main():
     argParser.add_argument("-cj", "--createjob", default=0, action="count", help="Set up job folder and required data.", required=False)
     argParser.add_argument("-rj", "--runjob", default=0, action="count", help="Running job by specifying output folder and job title.", required=False)
     argParser.add_argument("-ej", "--evaljob", default=0, action="count", help="Evaluating finished job.", required=False)
-    argParser.add_argument("-uo", "--uniqueonly", default=0, action="count", help="Provide this flag to only use each common sequence at most once.", required=False)
+    argParser.add_argument("-uo", "--uniqueonly", default=1, action="count", help="Provide this flag to only use each common sequence at most once.", required=False)
     argParser.add_argument("-bz", "--diamondblocksize", type = float, default = None, help="Provide float for diamond block size. Default is 2.0.", required=False)
     argParser.add_argument("-dtd", "--diamondtmpdir", default = "", help="Provide temporary storage directory for diamond. Default is output dir.", required=False)
     argParser.add_argument("-mptd", "--diamondmptmpdir", default = "", help="Provide temporary shared storage directory for diamond multiprocessing.", required=False)
