@@ -1,4 +1,4 @@
-#DALIBENCH
+#PSTAR-MSA
 #Author: Marcel Gabor
 #Institute for Mathematics and Computer Science, University of Greifswald
 #11/04/2024
@@ -3420,9 +3420,6 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
     #i could, however probably find a workaround, but this isn't really worth the effort right now
     #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
     comp_strat_exclude_set = set()
-    if len(job_name) > 11:
-        errMsg = "Job title is longer than 11 characters. Will be cut off in DALI output due to length limitations."
-        job_name = job_name[0:11]
 
     #saving cwd for later file system navigation
     wd = os.getcwd()
@@ -3474,6 +3471,10 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
 
         err_file_path = os.path.join(sub_job_path, "err_log")
         out_file_path = os.path.join(sub_job_path, "output_log")
+
+        if len(job_name) > 11:
+            errMsg = "Job title is longer than 11 characters. Will be cut off in DALI output due to length limitations."
+            job_name = job_name[0:11]
 
         #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
         # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
