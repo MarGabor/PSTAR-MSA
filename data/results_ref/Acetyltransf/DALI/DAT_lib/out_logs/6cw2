@@ -1,0 +1,686 @@
+D length: 241
+C length: 115
+A length: 217
+B length: 199
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            217
+Total number of atoms read in:              1632
+Total number of ignored atom records:         23
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              COMPND   2 MOLECULE: HISTONE ACETYLTRANSFERASE GCN5;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         217  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1802
+ selectset done           0
+ eigen done           0
+ tau           1   16.0231457             130
+ #popped           2           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau           3   1.18561387              98         116
+ #popped           4           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau           5  0.442362249              23          33
+ #popped           6           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau           7  0.652005136              49          59
+ #popped           8           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau           9  0.486236662              49          70
+ #popped          10           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau          11  0.299311280              49
+ #popped          12           2
+ #selectset contacts        1802
+ selectset done           2
+ eigen done           2
+ tau          13   10.1722250              23
+ #popped          14           2
+ #selectset contacts        1802
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          13           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau          15   4.32631826              80
+ #popped          17           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1802
+ selectset done           0
+ eigen done           0
+ tau          17  0.624394059             195
+ #popped          18           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau          19  0.804765880             158         169
+ #popped          20           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau          21  0.432345778             185
+ #popped          22           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau          23  0.557589412             158
+ #popped          24           1
+ #selectset contacts        1802
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          19           0
+ #selectset contacts        1802
+ selectset done           0
+ eigen done           0
+ tau          25  0.208237976             207
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              COMPND   2 MOLECULE: HISTONE ACETYLTRANSFERASE GCN5;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         217
+         217  residues read 6CW2.dssp                                                   
+  grow short strand           3           7
+  grow short strand          10          12
+  exclude short helix          29          31
+  exclude short helix          53          55
+  grow short strand          57          60
+  exclude short helix          74          76
+  exclude short helix          88          90
+  grow short strand         116         119
+  grow short strand         123         127
+  grow short strand         136         140
+  grow short strand         157         160
+ crowded segment excluded!
+  exclude short helix         161         163
+  grow short strand         169         171
+  grow short strand         175         176
+  exclude short helix         205         207
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  3  4  5  8  9 10 11  7  6 12 13 14 15 16 17 18
+   2     1  8  9 11  1  2  3  4  5  8  9 10 11  7  6
+   3     1 18 19  7 12 13 14 15 16 17 18
+   4     0  0  0 11  1  2  3  4  5  8  9 10 11  7  6
+   5     0  0  0  0
+   6     0  0  0 11  1  2  3  4  5  8  9 10 11  7  6
+   7     0  0  0  0
+   8     2 10 11 10  1  2  3  4  5  8  9 10 11  7
+   9     2  0  0  1  6
+  10     8 12 13  9  1  2  3  4  5  8  9 10 11
+  11     8  0  0  1  7
+  12    10 14 15  5  1  2  3  4  5
+  13    10 16 17  4  8  9 10 11
+  14    12  0  0  3  1  2  3
+  15    12  0  0  2  4  5
+  16    13  0  0  1  8
+  17    13  0  0  3  9 10 11
+  18     3 24 25  5 12 13 14 15 16
+  19     3 26 27  2 17 18
+  20     0  0  0  5 12 13 14 15 16
+  21     0  0  0  0
+  22     0  0  0  5 12 13 14 15 16
+  23     0  0  0  0
+  24    18  0  0  2 12 13
+  25    18  0  0  3 14 15 16
+  26    19  0  0  1 17
+  27    19  0  0  1 18
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5 11  1  1 11
+   3 +   1 14 15  7  1 12 18
+   4 -   2  6  7 10  2  1  5  7 11
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  9  2  1  5  8 11
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  5  1  1  5
+   9 -   6 12 13  4  1  8 11
+  10 -   8  0  0  3  1  1  3
+  11 -   8  0  0  2  1  4  5
+  12 -   9  0  0  1  1  8  8
+  13 -   9  0  0  3  1  9 11
+  14 *   3 16 17  5  1 12 16
+  15 =   3 18 19  2  1 17 18
+  16 -  14  0  0  2  1 12 13
+  17 -  14  0  0  3  1 14 16
+  18 -  15  0  0  1  1 17 17
+  19 -  15  0  0  1  1 18 18
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            199
+Total number of atoms read in:              1478
+Total number of ignored atom records:         47
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              COMPND   2 MOLECULE: HISTONE ACETYLTRANSFERASE GCN5;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1570
+ selectset done           0
+ eigen done           0
+ tau           1   1.05847812             176
+ #popped           2           1
+ #selectset contacts        1570
+ selectset done           1
+ eigen done           1
+ tau           3   5.17418814             108
+ #popped           4           2
+ #selectset contacts        1570
+ selectset done           2
+ eigen done           2
+ tau           5  0.565097332              10          20          75
+ #popped           6           3
+ #selectset contacts        1570
+ selectset done           3
+ eigen done           3
+ tau           7   1.70802259              34          63
+ #popped           8           4
+ #selectset contacts        1570
+ selectset done           4
+ eigen done           4
+ tau           9  0.411646605              34
+ #popped          10           4
+ #selectset contacts        1570
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped           9           3
+ #selectset contacts        1570
+ selectset done           3
+ eigen done           3
+ tau          11   1.10041809              49
+ #popped           7           2
+ #selectset contacts        1570
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        1570
+ selectset done           1
+ eigen done           1
+ tau          13  0.446712971             121
+ #popped          15           1
+ #selectset contacts        1570
+ selectset done           1
+ eigen done           1
+ tau          15   1.66492057             140         151
+ #popped          16           1
+ #selectset contacts        1570
+ selectset done           1
+ eigen done           1
+ tau          17  0.158607468             163
+ #popped          18           1
+ #selectset contacts        1570
+ selectset done           1
+ eigen done           1
+ tau          19   999.999023             140
+ #popped           3           0
+ #selectset contacts        1570
+ selectset done           0
+ eigen done           0
+ tau          21  0.366424978             189
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              COMPND   2 MOLECULE: HISTONE ACETYLTRANSFERASE GCN5;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         199
+         199  residues read 6CW2.dssp                                                   
+  grow short strand           5           8
+  grow short strand          11          15
+  grow short strand          46          50
+  grow short strand          54          55
+  exclude short helix          81          83
+  grow short strand         115         119
+  exclude short helix         123         127
+  grow short strand         146         147
+  grow short strand         153         157
+  grow short strand         178         182
+  grow short strand         190         193
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  3  7  8  4  5  6  2  9 10 11 12 14 15 13 16 17
+   2     1  4  5 15  1  3  7  8  4  5  6  2  9 10 11 12 14 15 13
+   3     1 22 23  2 16 17
+   4     2  6  7 10  1  3  7  8  4  5  6  2  9 10
+   5     2 14 15  5 11 12 14 15 13
+   6     4  8  9  7  1  3  7  8  4  5  6
+   7     4  0  0  3  2  9 10
+   8     6 10 11  4  1  3  7  8
+   9     6 12 13  3  4  5  6
+  10     8  0  0  2  1  3
+  11     8  0  0  2  7  8
+  12     9  0  0  2  4  5
+  13     9  0  0  1  6
+  14     5  0  0  1 11
+  15     5 16 17  4 12 14 15 13
+  16    15 18 19  3 12 14 15
+  17    15  0  0  1 13
+  18    16 20 21  2 12 14
+  19    16  0  0  1 15
+  20    18  0  0  1 12
+  21    18  0  0  1 14
+  22     3  0  0  1 16
+  23     3  0  0  1 17
+   1 +   0  2  3 17  1  1 17
+   2 +   1  4  5 15  1  1 15
+   3 =   1 22 23  2  1 16 17
+   4 *   2  6  7 10  1  1 10
+   5 *   2 14 15  5  1 11 15
+   6 -   4  8  9  7  2  1  1  3  8
+   7 -   4  0  0  3  2  2  2  9 10
+   8 -   6 10 11  4  3  1  1  3  3  7  8
+   9 -   6 12 13  3  1  4  6
+  10 -   8  0  0  2  2  1  1  3  3
+  11 -   8  0  0  2  1  7  8
+  12 -   9  0  0  2  1  4  5
+  13 -   9  0  0  1  1  6  6
+  14 -   5  0  0  1  1 11 11
+  15 -   5 16 17  4  1 12 15
+  16 -  15 18 19  3  2 12 12 14 15
+  17 -  15  0  0  1  1 13 13
+  18 -  16 20 21  2  2 12 12 14 14
+  19 -  16  0  0  1  1 15 15
+  20 -  18  0  0  1  1 12 12
+  21 -  18  0  0  1  1 14 14
+  22 -   3  0  0  1  1 16 16
+  23 -   3  0  0  1  1 17 17
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            115
+Total number of atoms read in:               916
+Total number of ignored atom records:          9
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              COMPND   2 MOLECULE: HISTONE ACETYLTRANSFERASE GCN5;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         115  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         953
+ selectset done           0
+ eigen done           0
+ tau           1   9.70273209              50
+ #popped           2           1
+ #selectset contacts         953
+ selectset done           1
+ eigen done           1
+ tau           3   1.00235152              12
+ #popped           5           1
+ #selectset contacts         953
+ selectset done           1
+ eigen done           1
+ tau           5  0.318736374              24
+ #popped           7           1
+ #selectset contacts         953
+ selectset done           1
+ eigen done           1
+ tau           7   2.33886266              34
+ #popped           3           0
+ #selectset contacts         953
+ selectset done           0
+ eigen done           0
+ tau           9   2.27940726             105
+ #popped          10           0
+ #selectset contacts         953
+ selectset done           0
+ eigen done           0
+ tau          11  0.943820179              66          88
+ #popped          12           1
+ #selectset contacts         953
+ selectset done           1
+ eigen done           1
+ tau          13  0.816428602              66
+ #popped          13           0
+ #selectset contacts         953
+ selectset done           0
+ eigen done           0
+ tau          15  0.793107569              76
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              COMPND   2 MOLECULE: HISTONE ACETYLTRANSFERASE GCN5;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         115
+         115  residues read 6CW2.dssp                                                   
+  grow short strand          14          17
+  grow short strand          24          25
+ crowded segment excluded!
+  exclude short helix          27          31
+  grow short strand          45          48
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  2  5  3  4
+   2     1  6  7  2  1  2
+   3     1 12 13  3  5  3  4
+   4     0  0  0  0
+   5     0  0  0  2  1  2
+   6     2  0  0  1  1
+   7     2  0  0  1  2
+   8     0  0  0  0
+   9     0  0  0  1  2
+  10     0  0  0  3  5  3  4
+  11     0  0  0  0
+  12     3  0  0  1  5
+  13     3 16 17  2  3  4
+  14     0  0  0  0
+  15     0  0  0  1  5
+  16    13  0  0  1  3
+  17    13  0  0  1  4
+   1 +   0  2  3  5  1  1  5
+   2 *   1  4  5  2  1  1  2
+   3 *   1  6  7  3  1  3  5
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  0  0  1  1  5  5
+   7 -   3  8  9  2  1  3  4
+   8 -   7  0  0  1  1  3  3
+   9 -   7  0  0  1  1  4  4
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            241
+Total number of atoms read in:              1873
+Total number of ignored atom records:         23
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  calculate residue outside grid:         218
+  calculate residue outside grid:         219
+  calculate residue outside grid:         220
+  calculate residue outside grid:         221
+  calculate residue outside grid:         222
+  calculate residue outside grid:         223
+  calculate residue outside grid:         224
+  calculate residue outside grid:         225
+  calculate residue outside grid:         226
+  calculate residue outside grid:         227
+  calculate residue outside grid:         228
+  calculate residue outside grid:         229
+  calculate residue outside grid:         230
+  calculate residue outside grid:         231
+  calculate residue outside grid:         232
+  calculate residue outside grid:         233
+  calculate residue outside grid:         234
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              COMPND   2 MOLECULE: HISTONE ACETYLTRANSFERASE GCN5;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         241  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2025
+ selectset done           0
+ eigen done           0
+ tau           1   6.19943047              17         190
+ #popped           2           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau           3   4.51837730             222
+ #popped           4           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau           5   3.29932666              17
+ #popped           7           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau           7   2.07221365             211
+ #popped           8           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau           9  0.773470521             200
+ #popped           3           0
+ #selectset contacts        2025
+ selectset done           0
+ eigen done           0
+ tau          11   1.82131171              91         104         124
+ #popped          12           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau          13   1.94921589              34          74
+ #popped          14           2
+ #selectset contacts        2025
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau          15   1.15073895              46
+ #popped          17           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau          17   1.15204501              59
+ #popped          13           0
+ #selectset contacts        2025
+ selectset done           0
+ eigen done           0
+ tau          19   1.00341523             139         180
+ #popped          20           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau          21  0.739971876             104
+ #popped          23           1
+ #selectset contacts        2025
+ selectset done           1
+ eigen done           1
+ tau          23  0.465811431             139
+ #popped          21           0
+ #selectset contacts        2025
+ selectset done           0
+ eigen done           0
+ tau          25  0.672370434             155
+ #popped          27           0
+ #selectset contacts        2025
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW2              COMPND   2 MOLECULE: HISTONE ACETYLTRANSFERASE GCN5;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         241
+         241  residues read 6CW2.dssp                                                   
+  grow short helix          19          25
+  exclude short helix          96          98
+  grow short strand         155         156
+  exclude short helix         163         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 15  3  4  7  8 10  5  6  9 11 12 13 14
+   2     1  6  7  3  1  2 15
+   3     1 12 13 12  3  4  7  8 10  5  6  9 11 12 13 14
+   4     0  0  0  3  1  2 15
+   5     0  0  0  0
+   6     2  0  0  2  1  2
+   7     2  0  0  1 15
+   8     0  0  0  1 15
+   9     0  0  0  0
+  10     0  0  0  1 15
+  11     0  0  0  0
+  12     3 14 15  7  3  4  7  8 10  5  6
+  13     3 20 21  5  9 11 12 13 14
+  14    12  0  0  5  3  4  7  8 10
+  15    12 18 19  2  5  6
+  16     0  0  0  0
+  17     0  0  0  2  5  6
+  18    15  0  0  1  5
+  19    15  0  0  1  6
+  20    13 22 23  2  9 11
+  21    13 26 27  3 12 13 14
+  22    20  0  0  1  9
+  23    20  0  0  1 11
+  24     0  0  0  1 11
+  25     0  0  0  0
+  26    21  0  0  2 12 13
+  27    21  0  0  1 14
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5  3  2  1  2 15 15
+   3 +   1  6  7 12  1  3 14
+   4 -   2  0  0  2  1  1  2
+   5 -   2  0  0  1  1 15 15
+   6 *   3  8  9  7  2  3  8 10 10
+   7 *   3 12 13  5  2  9  9 11 14
+   8 -   6  0  0  5  3  3  4  7  8 10 10
+   9 -   6 10 11  2  1  5  6
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  1  1  6  6
+  12 -   7 14 15  2  2  9  9 11 11
+  13 -   7 16 17  3  1 12 14
+  14 -  12  0  0  1  1  9  9
+  15 -  12  0  0  1  1 11 11
+  16 -  13  0  0  2  1 12 13
+  17 -  13  0  0  1  1 14 14
+
+ CHAIN : 6CW2A
+ CHAIN : 6CW2B
+ CHAIN : 6CW2C
+ CHAIN : 6CW2D
+
