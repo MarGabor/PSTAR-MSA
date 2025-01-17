@@ -3417,8 +3417,12 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
     #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
     #and generates only empty alignments for job titles exactly 12 chars long
     #this is a DALI problem and can't be changed at the moment
-    #i could, however probably find a workaround, but this isn't really worth the effort right now
-    #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
+    #no matter, if the job title is shortened (splicing job_name[0:11]) beforehand and then passed on to DALI, DALI will refuse to generate alignments, if the
+    # the name that was INITIALLY specified at the beginning of the script under --jobname exceeds 11 or 12 characters
+    #thus, to fix this issue it'd be necessary to look at everything that is being done with the job_name in this script to find out exactly why DALI
+    #does not work the expected way with it. The only plausible explanation for this could be that DALI somehow references generated files by looking at the paths
+    # in the background, which DO indeed contain the full job name and thus is unable to find intermediate files, if a directory name contained within this path
+    # exceeds the character limit. This could be tested by executing DALI manually in a directory which name is longer than 12 chars.
     comp_strat_exclude_set = set()
 
     #saving cwd for later file system navigation
@@ -3472,9 +3476,6 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
         err_file_path = os.path.join(sub_job_path, "err_log")
         out_file_path = os.path.join(sub_job_path, "output_log")
 
-        if len(job_name) > 11:
-            errMsg = "Job title is longer than 11 characters. Will be cut off in DALI output due to length limitations."
-            job_name = job_name[0:11]
 
         #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
         # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
@@ -3623,6 +3624,7 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mp
 
     #import data for DALI
     DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
+    
     #start pairwise structural alignment
     try:
         DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads, mpi_path)
@@ -4223,6 +4225,11 @@ def main():
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing ", required=False)
 
     args = argParser.parse_args()
+
+    if len(args.jobname) > 11:
+        errMsg = "Job title must be shorter than 12 characters. Due to DALI longer names are not possible at the moment."
+        errorFct(errMsg)
+        exit(1)
     
     #setting list of valid symbols and constructing regex for sequence cleaning as a global variable
     valid_symbols = sel_alphabet(args.alphabet)
