@@ -2498,14 +2498,16 @@ def get_mantissa_and_exponent_from_number(scientific_number):
     try:
         mant = float(match.group(1))
     except:
-        err_msg = "Could not get mantissa from match group 1 %s." % match.group(1)
-        errorFct(err_msg)
+        if match.group(1) is not None:
+            err_msg = "Could not get mantissa from match group 1 %s." % match.group(1)
+            errorFct(err_msg)
         raise
     try:
         exp = int(match.group(4))
     except:
-        err_msg = "Could not get exponent from match group 4 %s." % match.group(4)
-        errorFct(err_msg)
+        if match.group(4) is not None:
+            err_msg = "Could not get exponent from match group 4 %s." % match.group(4)
+            errorFct(err_msg)
         raise
 
     return mant, exp
@@ -2523,12 +2525,20 @@ def resolve_ambivalences(exact_match_dict, aln_file_full_path):
             cur_best_entry = exact_match_dict[qseqid][0]
             for row in exact_match_dict[qseqid][1:]:
                 #try to select entry by evalue
-                mant_best, exp_best = get_mantissa_and_exponent_from_number(cur_best_entry.evalue)
-                mant_row, exp_row = get_mantissa_and_exponent_from_number(row.evalue)
+                try:
+                    mant_best, exp_best = get_mantissa_and_exponent_from_number(cur_best_entry.evalue)
+                except:
+                    mant_best = float('inf')
+                    exp_best = float('inf')
+                try:
+                    mant_row, exp_row = get_mantissa_and_exponent_from_number(row.evalue)
+                except:
+                    mant_row = float('inf')
+                    exp_row =  float('inf')
                 if exp_row < exp_best:
                     cur_best_entry = row
                     continue
-                elif exp_row == exp_best and mant_row > mant_best:
+                elif exp_row == exp_best and mant_row < mant_best:
                     cur_best_entry = row
                     continue
                 #try to select entry by bitscore
