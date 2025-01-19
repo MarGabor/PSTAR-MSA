@@ -1,0 +1,1793 @@
+A length: 255
+B length: 254
+D length: 255
+E length: 254
+G length: 255
+H length: 254
+J length: 255
+K length: 254
+# 8 chains A B D E G H J K
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1872
+Total number of ignored atom records:         97
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+  Reading DSSP file
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau           1   1.60182822             125
+ #popped           2           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau           3   2.90156245              62
+ #popped           4           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           5  0.884926140              12          23
+ #popped           6           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           7   2.44652414              12          33
+ #popped           8           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau           9   1.74995315              94         105
+ #popped          10           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          11  0.616966546              83
+ #popped          12           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          13  0.438939720              72
+ #popped          13           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          15  0.928923309              94         115
+ #popped          16           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          17  0.489610404              94
+ #popped           3           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau          19   2.82834792             232
+ #popped          20           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          21   1.23112500             138         163         192         206
+ #popped          22           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          23  0.768898904             178
+ #popped          24           3
+ #selectset contacts        2355
+ selectset done           3
+ eigen done           3
+ tau          25  0.518615901             138
+ #popped          25           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          27  0.782771528             192
+ #popped          29           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          29  0.446871877             218
+ #popped          23           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          31   1.09830213             153
+ #popped          33           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          33   3.36982250             163
+ #popped          21           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau          35  0.859836578             243
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+           0
+         255
+         255  residues read 1AW1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          36          40
+  grow short strand          61          64
+  grow short helix          81          87
+  grow short strand          91          94
+  exclude short helix          97         102
+  exclude short helix         132         136
+  exclude short helix         157         160
+  grow short strand         164         167
+  exclude short helix         170         172
+  exclude short helix         200         205
+  grow short strand         207         210
+  exclude short helix         219         223
+  grow short strand         230         233
+  exclude short helix         235         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  2  6  7  9  8 11 12 13 14 10 15
+   2     1  4  5  9  1  3  4  5  2  6  7  9  8
+   3     1 20 21  6 11 12 13 14 10 15
+   4     2  6  7  5  1  3  4  5  2
+   5     2 16 17  4  6  7  9  8
+   6     4  0  0  4  1  3  4  5
+   7     4  0  0  1  2
+   8     0  0  0  4  1  3  4  5
+   9     0  0  0  0
+  10     0  0  0  4  6  7  9  8
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  4  6  7  9  8
+  14     0  0  0  0
+  15     0  0  0  0
+  16     5 18 19  3  6  7  9
+  17     5  0  0  1  8
+  18    16  0  0  2  6  7
+  19    16  0  0  1  9
+  20     3 22 23  5 11 12 13 14 10
+  21     3  0  0  1 15
+  22    20 24 25  4 11 12 13 14
+  23    20  0  0  1 10
+  24    22  0  0  1 11
+  25    22 28 29  3 12 13 14
+  26     0  0  0  0
+  27     0  0  0  1 11
+  28    25  0  0  1 12
+  29    25 30 31  2 13 14
+  30    29  0  0  1 13
+  31    29  0  0  1 14
+  32     0  0  0  1 10
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5  9  1  1  9
+   3 +   1 12 13  6  1 10 15
+   4 *   2  6  7  5  1  1  5
+   5 *   2  8  9  4  1  6  9
+   6 -   4  0  0  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  3  2  6  7  9  9
+   9 -   5  0  0  1  1  8  8
+  10 -   8  0  0  2  1  6  7
+  11 -   8  0  0  1  1  9  9
+  12 *   3 14 15  5  1 10 14
+  13 =   3  0  0  1  1 15 15
+  14 -  12 16 17  4  1 11 14
+  15 -  12  0  0  1  1 10 10
+  16 -  14  0  0  1  1 11 11
+  17 -  14 18 19  3  1 12 14
+  18 -  17  0  0  1  1 12 12
+  19 -  17 20 21  2  1 13 14
+  20 -  19  0  0  1  1 13 13
+  21 -  19  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            254
+Total number of atoms read in:              1866
+Total number of ignored atom records:         77
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+  Reading DSSP file
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+         254  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau           1   1.55403757             125
+ #popped           2           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau           3   2.11735654              62
+ #popped           4           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau           5  0.810338974              10          25
+ #popped           6           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau           7  0.949755430              37
+ #popped           8           3
+ #selectset contacts        2352
+ selectset done           3
+ eigen done           3
+ tau           9  0.626776874              10
+ #popped           9           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          11  0.494382024              52
+ #popped           5           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          13   1.71106529              94         105
+ #popped          14           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          15  0.907822251              94         115
+ #popped          16           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          17  0.648989677              84
+ #popped          18           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          19  0.503184736              94
+ #popped           3           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau          21   2.35257077             233
+ #popped          22           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          23   1.16157448             147         163         190         206
+ #popped          24           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          25   1.06960762             147
+ #popped          26           3
+ #selectset contacts        2352
+ selectset done           3
+ eigen done           3
+ tau          27  0.729922593             137
+ #popped          27           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          29  0.543178499             217
+ #popped          30           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          31  0.395199388             190
+ #popped          32           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          33   2.19160271             178
+ #popped          25           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          35   2.63146567             163
+ #popped          23           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau          37  0.702160537             243
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+           0
+         254
+         254  residues read 1AW1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          36          40
+  grow short strand          61          64
+  exclude short helix          81          85
+  exclude short helix          97         102
+  exclude short helix         132         136
+  exclude short helix         157         160
+  grow short strand         164         167
+  exclude short helix         170         172
+  exclude short helix         200         205
+  grow short strand         207         210
+  exclude short helix         219         224
+  grow short strand         230         233
+  exclude short helix         235         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  2  6  8  7  9 10 11 12 13 14
+   2     1  4  5  8  1  3  4  5  2  6  8  7
+   3     1 22 23  6  9 10 11 12 13 14
+   4     2  6  7  5  1  3  4  5  2
+   5     2 16 17  3  6  8  7
+   6     4  8  9  4  1  3  4  5
+   7     4  0  0  1  2
+   8     6  0  0  1  1
+   9     6 12 13  3  3  4  5
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     9  0  0  2  3  4
+  13     9  0  0  1  5
+  14     0  0  0  3  6  8  7
+  15     0  0  0  0
+  16     5 20 21  2  6  8
+  17     5  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  2  6  8
+  20    16  0  0  1  6
+  21    16  0  0  1  8
+  22     3 26 27  5  9 10 11 12 13
+  23     3  0  0  1 14
+  24     0  0  0  5  9 10 11 12 13
+  25     0  0  0  0
+  26    22  0  0  1  9
+  27    22 30 31  4 10 11 12 13
+  28     0  0  0  0
+  29     0  0  0  1  9
+  30    27 32 33  3 10 11 12
+  31    27  0  0  1 13
+  32    30 34 35  2 10 11
+  33    30  0  0  1 12
+  34    32  0  0  1 10
+  35    32  0  0  1 11
+  36     0  0  0  0
+  37     0  0  0  0
+  38     0  0  0  0
+  39     0  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  8  1  1  8
+   3 *   1 16 17  6  1  9 14
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  3  1  6  8
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  1  3  5
+  10 -   9  0  0  2  1  3  4
+  11 -   9  0  0  1  1  5  5
+  12 -   5 14 15  2  2  6  6  8  8
+  13 -   5  0  0  1  1  7  7
+  14 -  12  0  0  1  1  6  6
+  15 -  12  0  0  1  1  8  8
+  16 -   3 18 19  5  1  9 13
+  17 -   3  0  0  1  1 14 14
+  18 -  16  0  0  1  1  9  9
+  19 -  16 20 21  4  1 10 13
+  20 -  19 22 23  3  1 10 12
+  21 -  19  0  0  1  1 13 13
+  22 -  20 24 25  2  1 10 11
+  23 -  20  0  0  1  1 12 12
+  24 -  22  0  0  1  1 10 10
+  25 -  22  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1872
+Total number of ignored atom records:         93
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+  Reading DSSP file
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau           1   1.60182822             125
+ #popped           2           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau           3   2.93783212              62
+ #popped           4           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           5  0.884926140              12          23
+ #popped           6           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           7   2.44652414              12          33
+ #popped           8           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau           9   1.74995315              94         105
+ #popped          10           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          11  0.616966546              83
+ #popped          12           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          13  0.438939720              72
+ #popped          13           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          15  0.928923309              94         115
+ #popped          16           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          17  0.489610404              94
+ #popped           3           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau          19   2.82834792             232
+ #popped          20           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          21   1.22960567             138         163         193         206
+ #popped          22           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          23  0.790221334             179         193
+ #popped          24           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          25  0.711833596             138
+ #popped          27           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          27  0.572309077             218
+ #popped          28           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          29   0.00000000    
+ #popped          23           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          29   1.08518636             153
+ #popped          31           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          31   3.30233741             163
+ #popped          21           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau          33  0.859836578             243
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+           0
+         255
+         255  residues read 1AW1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          36          40
+  grow short strand          61          64
+  grow short helix          81          87
+  grow short strand          91          94
+  exclude short helix          97         102
+  exclude short helix         132         136
+  exclude short helix         157         160
+  grow short strand         164         167
+  exclude short helix         170         172
+  exclude short helix         200         205
+  grow short strand         207         210
+  exclude short helix         219         223
+  grow short strand         230         233
+  exclude short helix         235         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  2  6  7  9  8 11 13 14 12 10 15
+   2     1  4  5  9  1  3  4  5  2  6  7  9  8
+   3     1 20 21  6 11 13 14 12 10 15
+   4     2  6  7  5  1  3  4  5  2
+   5     2 16 17  4  6  7  9  8
+   6     4  0  0  4  1  3  4  5
+   7     4  0  0  1  2
+   8     0  0  0  4  1  3  4  5
+   9     0  0  0  0
+  10     0  0  0  4  6  7  9  8
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  4  6  7  9  8
+  14     0  0  0  0
+  15     0  0  0  0
+  16     5 18 19  3  6  7  9
+  17     5  0  0  1  8
+  18    16  0  0  2  6  7
+  19    16  0  0  1  9
+  20     3 22 23  5 11 13 14 12 10
+  21     3  0  0  1 15
+  22    20 24 25  4 11 13 14 12
+  23    20  0  0  1 10
+  24    22 28 29  3 11 13 14
+  25    22  0  0  1 12
+  26     0  0  0  0
+  27     0  0  0  3 11 13 14
+  28    24  0  0  2 11 13
+  29    24  0  0  1 14
+  30     0  0  0  1 10
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5  9  1  1  9
+   3 +   1 12 13  6  1 10 15
+   4 *   2  6  7  5  1  1  5
+   5 *   2  8  9  4  1  6  9
+   6 -   4  0  0  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  3  2  6  7  9  9
+   9 -   5  0  0  1  1  8  8
+  10 -   8  0  0  2  1  6  7
+  11 -   8  0  0  1  1  9  9
+  12 *   3 14 15  5  1 10 14
+  13 =   3  0  0  1  1 15 15
+  14 -  12 16 17  4  1 11 14
+  15 -  12  0  0  1  1 10 10
+  16 -  14 18 19  3  2 11 11 13 14
+  17 -  14  0  0  1  1 12 12
+  18 -  16  0  0  2  2 11 11 13 13
+  19 -  16  0  0  1  1 14 14
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            254
+Total number of atoms read in:              1866
+Total number of ignored atom records:         75
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+  Reading DSSP file
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+         254  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau           1   1.55403757             125
+ #popped           2           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau           3   2.11735654              62
+ #popped           4           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau           5  0.810338974              10          25
+ #popped           6           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau           7  0.949755430              37
+ #popped           8           3
+ #selectset contacts        2352
+ selectset done           3
+ eigen done           3
+ tau           9  0.626776874              10
+ #popped           9           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          11  0.494382024              52
+ #popped           5           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          13   1.71106529              94         105
+ #popped          14           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          15  0.907822251              94         115
+ #popped          16           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          17  0.648989677              84
+ #popped          18           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          19  0.503184736              94
+ #popped           3           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau          21   2.35257077             233
+ #popped          22           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          23   1.16157448             147         163         190         206
+ #popped          24           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          25   1.06960762             147
+ #popped          26           3
+ #selectset contacts        2352
+ selectset done           3
+ eigen done           3
+ tau          27  0.729922593             137
+ #popped          27           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          29  0.543178499             217
+ #popped          30           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          31  0.395199388             190
+ #popped          32           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          33   2.19160271             178
+ #popped          25           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          35   2.63146567             163
+ #popped          23           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau          37  0.702160537             243
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+           0
+         254
+         254  residues read 1AW1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          36          40
+  grow short strand          61          64
+  exclude short helix          81          85
+  exclude short helix          97         102
+  exclude short helix         132         136
+  exclude short helix         157         160
+  grow short strand         164         167
+  exclude short helix         170         172
+  exclude short helix         200         205
+  grow short strand         207         210
+  exclude short helix         219         224
+  grow short strand         230         233
+  exclude short helix         235         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  2  6  8  7  9 10 11 12 13 14
+   2     1  4  5  8  1  3  4  5  2  6  8  7
+   3     1 22 23  6  9 10 11 12 13 14
+   4     2  6  7  5  1  3  4  5  2
+   5     2 16 17  3  6  8  7
+   6     4  8  9  4  1  3  4  5
+   7     4  0  0  1  2
+   8     6  0  0  1  1
+   9     6 12 13  3  3  4  5
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     9  0  0  2  3  4
+  13     9  0  0  1  5
+  14     0  0  0  3  6  8  7
+  15     0  0  0  0
+  16     5 20 21  2  6  8
+  17     5  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  2  6  8
+  20    16  0  0  1  6
+  21    16  0  0  1  8
+  22     3 26 27  5  9 10 11 12 13
+  23     3  0  0  1 14
+  24     0  0  0  5  9 10 11 12 13
+  25     0  0  0  0
+  26    22  0  0  1  9
+  27    22 30 31  4 10 11 12 13
+  28     0  0  0  0
+  29     0  0  0  1  9
+  30    27 32 33  3 10 11 12
+  31    27  0  0  1 13
+  32    30 34 35  2 10 11
+  33    30  0  0  1 12
+  34    32  0  0  1 10
+  35    32  0  0  1 11
+  36     0  0  0  0
+  37     0  0  0  0
+  38     0  0  0  0
+  39     0  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  8  1  1  8
+   3 *   1 16 17  6  1  9 14
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  3  1  6  8
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  1  3  5
+  10 -   9  0  0  2  1  3  4
+  11 -   9  0  0  1  1  5  5
+  12 -   5 14 15  2  2  6  6  8  8
+  13 -   5  0  0  1  1  7  7
+  14 -  12  0  0  1  1  6  6
+  15 -  12  0  0  1  1  8  8
+  16 -   3 18 19  5  1  9 13
+  17 -   3  0  0  1  1 14 14
+  18 -  16  0  0  1  1  9  9
+  19 -  16 20 21  4  1 10 13
+  20 -  19 22 23  3  1 10 12
+  21 -  19  0  0  1  1 13 13
+  22 -  20 24 25  2  1 10 11
+  23 -  20  0  0  1  1 12 12
+  24 -  22  0  0  1  1 10 10
+  25 -  22  0  0  1  1 11 11
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1872
+Total number of ignored atom records:         97
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+  Reading DSSP file
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau           1   1.60182822             125
+ #popped           2           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau           3   2.90156245              62
+ #popped           4           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           5  0.884926140              12          23
+ #popped           6           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           7   2.44652414              12          33
+ #popped           8           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau           9   1.74995315              94         105
+ #popped          10           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          11  0.634292364              84
+ #popped          12           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          13  0.382775128              74
+ #popped          13           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          15  0.913720369              94         115
+ #popped          16           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          17  0.472872406              94
+ #popped           3           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau          19   2.82834792             232
+ #popped          20           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          21   1.22960567             138         163         193         206
+ #popped          22           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          23  0.790221334             179         193
+ #popped          24           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          25  0.711833596             138
+ #popped          27           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          27  0.572309077             218
+ #popped          28           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          29   0.00000000    
+ #popped          23           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          29   1.08518636             153
+ #popped          31           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          31   3.30233741             163
+ #popped          21           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau          33  0.859836578             243
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+           0
+         255
+         255  residues read 1AW1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          36          40
+  grow short strand          61          64
+  grow short helix          81          87
+  grow short strand          91          94
+  exclude short helix          97         102
+  exclude short helix         132         136
+  exclude short helix         157         160
+  grow short strand         164         167
+  exclude short helix         170         172
+  exclude short helix         200         205
+  grow short strand         207         210
+  exclude short helix         219         223
+  grow short strand         230         233
+  exclude short helix         235         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  2  6  7  9  8 11 13 14 12 10 15
+   2     1  4  5  9  1  3  4  5  2  6  7  9  8
+   3     1 20 21  6 11 13 14 12 10 15
+   4     2  6  7  5  1  3  4  5  2
+   5     2 12 13  4  6  7  9  8
+   6     4  0  0  4  1  3  4  5
+   7     4  0  0  1  2
+   8     0  0  0  4  1  3  4  5
+   9     0  0  0  0
+  10     0  0  0  4  6  7  9  8
+  11     0  0  0  0
+  12     5  0  0  1  6
+  13     5 16 17  3  7  9  8
+  14     0  0  0  0
+  15     0  0  0  1  6
+  16    13 18 19  2  7  9
+  17    13  0  0  1  8
+  18    16  0  0  1  7
+  19    16  0  0  1  9
+  20     3 22 23  5 11 13 14 12 10
+  21     3  0  0  1 15
+  22    20 24 25  4 11 13 14 12
+  23    20  0  0  1 10
+  24    22 28 29  3 11 13 14
+  25    22  0  0  1 12
+  26     0  0  0  0
+  27     0  0  0  3 11 13 14
+  28    24  0  0  2 11 13
+  29    24  0  0  1 14
+  30     0  0  0  1 10
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5  9  1  1  9
+   3 +   1 14 15  6  1 10 15
+   4 *   2  6  7  5  1  1  5
+   5 *   2  8  9  4  1  6  9
+   6 -   4  0  0  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  1  1  6  6
+   9 -   5 10 11  3  1  7  9
+  10 -   9 12 13  2  2  7  7  9  9
+  11 -   9  0  0  1  1  8  8
+  12 -  10  0  0  1  1  7  7
+  13 -  10  0  0  1  1  9  9
+  14 *   3 16 17  5  1 10 14
+  15 =   3  0  0  1  1 15 15
+  16 -  14 18 19  4  1 11 14
+  17 -  14  0  0  1  1 10 10
+  18 -  16 20 21  3  2 11 11 13 14
+  19 -  16  0  0  1  1 12 12
+  20 -  18  0  0  2  2 11 11 13 13
+  21 -  18  0  0  1  1 14 14
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            254
+Total number of atoms read in:              1866
+Total number of ignored atom records:         77
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+  Reading DSSP file
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+         254  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau           1   1.55403757             125
+ #popped           2           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau           3   2.11735654              62
+ #popped           4           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau           5  0.810338974              10          25
+ #popped           6           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau           7  0.949755430              37
+ #popped           8           3
+ #selectset contacts        2352
+ selectset done           3
+ eigen done           3
+ tau           9  0.626776874              10
+ #popped           9           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          11  0.494382024              52
+ #popped           5           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          13   1.71106529              94         105
+ #popped          14           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          15  0.907822251              94         115
+ #popped          16           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          17  0.648989677              84
+ #popped          18           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          19  0.503184736              94
+ #popped           3           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau          21   2.35257077             233
+ #popped          22           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          23   1.16157448             147         163         190         206
+ #popped          24           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          25   1.06960762             147
+ #popped          26           3
+ #selectset contacts        2352
+ selectset done           3
+ eigen done           3
+ tau          27  0.729922593             137
+ #popped          27           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          29  0.546799660             217
+ #popped          30           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          31  0.395199388             190
+ #popped          32           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          33   2.19160271             178
+ #popped          25           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          35   2.63146567             163
+ #popped          23           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau          37  0.702160537             243
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+           0
+         254
+         254  residues read 1AW1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          36          40
+  grow short strand          61          64
+  exclude short helix          81          85
+  exclude short helix          97         102
+  exclude short helix         132         136
+  exclude short helix         157         160
+  grow short strand         164         167
+  exclude short helix         170         172
+  exclude short helix         200         205
+  grow short strand         207         210
+  exclude short helix         219         224
+  grow short strand         230         233
+  exclude short helix         235         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  2  6  8  7  9 10 11 12 13 14
+   2     1  4  5  8  1  3  4  5  2  6  8  7
+   3     1 22 23  6  9 10 11 12 13 14
+   4     2  6  7  5  1  3  4  5  2
+   5     2 16 17  3  6  8  7
+   6     4  8  9  4  1  3  4  5
+   7     4  0  0  1  2
+   8     6  0  0  1  1
+   9     6 12 13  3  3  4  5
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     9  0  0  2  3  4
+  13     9  0  0  1  5
+  14     0  0  0  3  6  8  7
+  15     0  0  0  0
+  16     5 20 21  2  6  8
+  17     5  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  2  6  8
+  20    16  0  0  1  6
+  21    16  0  0  1  8
+  22     3 26 27  5  9 10 11 12 13
+  23     3  0  0  1 14
+  24     0  0  0  5  9 10 11 12 13
+  25     0  0  0  0
+  26    22  0  0  1  9
+  27    22 30 31  4 10 11 12 13
+  28     0  0  0  0
+  29     0  0  0  1  9
+  30    27 32 33  3 10 11 12
+  31    27  0  0  1 13
+  32    30 34 35  2 10 11
+  33    30  0  0  1 12
+  34    32  0  0  1 10
+  35    32  0  0  1 11
+  36     0  0  0  0
+  37     0  0  0  0
+  38     0  0  0  0
+  39     0  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  8  1  1  8
+   3 *   1 16 17  6  1  9 14
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  3  1  6  8
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  1  3  5
+  10 -   9  0  0  2  1  3  4
+  11 -   9  0  0  1  1  5  5
+  12 -   5 14 15  2  2  6  6  8  8
+  13 -   5  0  0  1  1  7  7
+  14 -  12  0  0  1  1  6  6
+  15 -  12  0  0  1  1  8  8
+  16 -   3 18 19  5  1  9 13
+  17 -   3  0  0  1  1 14 14
+  18 -  16  0  0  1  1  9  9
+  19 -  16 20 21  4  1 10 13
+  20 -  19 22 23  3  1 10 12
+  21 -  19  0  0  1  1 13 13
+  22 -  20 24 25  2  1 10 11
+  23 -  20  0  0  1  1 12 12
+  24 -  22  0  0  1  1 10 10
+  25 -  22  0  0  1  1 11 11
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1872
+Total number of ignored atom records:         97
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+  Reading DSSP file
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau           1   1.60182822             125
+ #popped           2           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau           3   2.90156245              62
+ #popped           4           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           5  0.884926140              12          23
+ #popped           6           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           7   2.44652414              12          33
+ #popped           8           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau           9   1.74995315              94         105
+ #popped          10           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          11  0.621192336              83
+ #popped          12           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          13  0.438939720              72
+ #popped          13           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          15  0.928923309              94         115
+ #popped          16           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          17  0.489610404              94
+ #popped           3           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau          19   2.82834792             232
+ #popped          20           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          21   1.22960567             138         163         193         206
+ #popped          22           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          23  0.790221334             179         193
+ #popped          24           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          25  0.711833596             138
+ #popped          27           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          27  0.572309077             218
+ #popped          28           2
+ #selectset contacts        2355
+ selectset done           2
+ eigen done           2
+ tau          29   0.00000000    
+ #popped          23           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          29   1.08518636             153
+ #popped          31           1
+ #selectset contacts        2355
+ selectset done           1
+ eigen done           1
+ tau          31   3.30233741             163
+ #popped          21           0
+ #selectset contacts        2355
+ selectset done           0
+ eigen done           0
+ tau          33  0.859836578             243
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+           0
+         255
+         255  residues read 1AW1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          36          40
+  grow short strand          61          64
+  grow short helix          81          87
+  grow short strand          91          94
+  exclude short helix          97         102
+  exclude short helix         132         136
+  exclude short helix         157         160
+  grow short strand         164         167
+  exclude short helix         170         172
+  exclude short helix         200         205
+  grow short strand         207         210
+  exclude short helix         219         223
+  grow short strand         230         233
+  exclude short helix         235         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  2  6  7  9  8 11 13 14 12 10 15
+   2     1  4  5  9  1  3  4  5  2  6  7  9  8
+   3     1 20 21  6 11 13 14 12 10 15
+   4     2  6  7  5  1  3  4  5  2
+   5     2 16 17  4  6  7  9  8
+   6     4  0  0  4  1  3  4  5
+   7     4  0  0  1  2
+   8     0  0  0  4  1  3  4  5
+   9     0  0  0  0
+  10     0  0  0  4  6  7  9  8
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  4  6  7  9  8
+  14     0  0  0  0
+  15     0  0  0  0
+  16     5 18 19  3  6  7  9
+  17     5  0  0  1  8
+  18    16  0  0  2  6  7
+  19    16  0  0  1  9
+  20     3 22 23  5 11 13 14 12 10
+  21     3  0  0  1 15
+  22    20 24 25  4 11 13 14 12
+  23    20  0  0  1 10
+  24    22 28 29  3 11 13 14
+  25    22  0  0  1 12
+  26     0  0  0  0
+  27     0  0  0  3 11 13 14
+  28    24  0  0  2 11 13
+  29    24  0  0  1 14
+  30     0  0  0  1 10
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5  9  1  1  9
+   3 +   1 12 13  6  1 10 15
+   4 *   2  6  7  5  1  1  5
+   5 *   2  8  9  4  1  6  9
+   6 -   4  0  0  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  3  2  6  7  9  9
+   9 -   5  0  0  1  1  8  8
+  10 -   8  0  0  2  1  6  7
+  11 -   8  0  0  1  1  9  9
+  12 *   3 14 15  5  1 10 14
+  13 =   3  0  0  1  1 15 15
+  14 -  12 16 17  4  1 11 14
+  15 -  12  0  0  1  1 10 10
+  16 -  14 18 19  3  2 11 11 13 14
+  17 -  14  0  0  1  1 12 12
+  18 -  16  0  0  2  2 11 11 13 13
+  19 -  16  0  0  1  1 14 14
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            254
+Total number of atoms read in:              1866
+Total number of ignored atom records:         75
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+  Reading DSSP file
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+         254  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau           1   1.55923498             125
+ #popped           2           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau           3   2.11735654              62
+ #popped           4           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau           5  0.810338974              10          25
+ #popped           6           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau           7  0.949755430              37
+ #popped           8           3
+ #selectset contacts        2352
+ selectset done           3
+ eigen done           3
+ tau           9  0.626776874              10
+ #popped           9           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          11  0.494382024              52
+ #popped           5           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          13   1.71106529              94         105
+ #popped          14           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          15  0.907822251              94         115
+ #popped          16           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          17  0.648989677              84
+ #popped          18           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          19  0.503184736              94
+ #popped           3           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau          21   2.35257077             233
+ #popped          22           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          23   1.16157448             147         163         190         206
+ #popped          24           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          25   1.06960762             147
+ #popped          26           3
+ #selectset contacts        2352
+ selectset done           3
+ eigen done           3
+ tau          27  0.729922593             137
+ #popped          27           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          29  0.543178499             217
+ #popped          30           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          31  0.395199388             190
+ #popped          32           2
+ #selectset contacts        2352
+ selectset done           2
+ eigen done           2
+ tau          33   2.19160271             178
+ #popped          25           1
+ #selectset contacts        2352
+ selectset done           1
+ eigen done           1
+ tau          35   2.63146567             163
+ #popped          23           0
+ #selectset contacts        2352
+ selectset done           0
+ eigen done           0
+ tau          37  0.702160537             243
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               09-OCT-97   1AW1              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MORITELLA MARINA;                               AUTHOR    D.MAES,J.P.ZEELEN,R.K.WIERENGA                                        
+           0
+         254
+         254  residues read 1AW1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          36          40
+  grow short strand          61          64
+  exclude short helix          81          85
+  exclude short helix          97         102
+  exclude short helix         132         136
+  exclude short helix         157         160
+  grow short strand         164         167
+  exclude short helix         170         172
+  exclude short helix         200         205
+  grow short strand         207         210
+  exclude short helix         219         224
+  grow short strand         230         233
+  exclude short helix         235         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  2  6  8  7  9 10 11 12 13 14
+   2     1  4  5  8  1  3  4  5  2  6  8  7
+   3     1 22 23  6  9 10 11 12 13 14
+   4     2  6  7  5  1  3  4  5  2
+   5     2 16 17  3  6  8  7
+   6     4  8  9  4  1  3  4  5
+   7     4  0  0  1  2
+   8     6  0  0  1  1
+   9     6 12 13  3  3  4  5
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     9  0  0  2  3  4
+  13     9  0  0  1  5
+  14     0  0  0  3  6  8  7
+  15     0  0  0  0
+  16     5 20 21  2  6  8
+  17     5  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  2  6  8
+  20    16  0  0  1  6
+  21    16  0  0  1  8
+  22     3 26 27  5  9 10 11 12 13
+  23     3  0  0  1 14
+  24     0  0  0  5  9 10 11 12 13
+  25     0  0  0  0
+  26    22  0  0  1  9
+  27    22 30 31  4 10 11 12 13
+  28     0  0  0  0
+  29     0  0  0  1  9
+  30    27 32 33  3 10 11 12
+  31    27  0  0  1 13
+  32    30 34 35  2 10 11
+  33    30  0  0  1 12
+  34    32  0  0  1 10
+  35    32  0  0  1 11
+  36     0  0  0  0
+  37     0  0  0  0
+  38     0  0  0  0
+  39     0  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  8  1  1  8
+   3 *   1 16 17  6  1  9 14
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  3  1  6  8
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  1  3  5
+  10 -   9  0  0  2  1  3  4
+  11 -   9  0  0  1  1  5  5
+  12 -   5 14 15  2  2  6  6  8  8
+  13 -   5  0  0  1  1  7  7
+  14 -  12  0  0  1  1  6  6
+  15 -  12  0  0  1  1  8  8
+  16 -   3 18 19  5  1  9 13
+  17 -   3  0  0  1  1 14 14
+  18 -  16  0  0  1  1  9  9
+  19 -  16 20 21  4  1 10 13
+  20 -  19 22 23  3  1 10 12
+  21 -  19  0  0  1  1 13 13
+  22 -  20 24 25  2  1 10 11
+  23 -  20  0  0  1  1 12 12
+  24 -  22  0  0  1  1 10 10
+  25 -  22  0  0  1  1 11 11
+
+ CHAIN : 1AW1A
+ CHAIN : 1AW1B
+ CHAIN : 1AW1D
+ CHAIN : 1AW1E
+ CHAIN : 1AW1G
+ CHAIN : 1AW1H
+ CHAIN : 1AW1J
+ CHAIN : 1AW1K
+

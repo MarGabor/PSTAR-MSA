@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1HDSC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBA-A 15.0  2.2  135   146   20   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1HDSC Sbjct=1MBAA Z-score=15.0
+
+DSSP  LLLLLHHHHHHHHHHHHLLLLHHHHHHHHLHHHHHLHHHHHHLLLL-----llLLLLHHH
+Query VLSAANKSNVKAAWGKVGGNAPAYGAQALQRMFLSFPTTKTYFPHF-----dlSHGSAQQ   55
+ident  ||||        |  |  |  | |   |   |  ||     |  |          |   
+Sbjct SLSAAEADLAGKSWAPVFANKNANGLDFLVALFEKFPDSANFFADFkgksvadIKASPKL   60
+DSSP  LLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLLLLllllhhhHHLLLLH
+
+DSSP  HHHHHHHHHHHHHHLLLLL---LHHHHLLLLLHHHHlLLLLLHHHHHHHHHHHHHHHHHH
+Query KAHGQKVANALTKAQGHLN---DLPGTLSNLSNLHAhKLRVNPVNFKLLSHSLLVTLASH  112
+ident           |                ||     |     |    |           || 
+Sbjct RDVSSRIFTRLNEFVNNAAnagKMSAMLSQFAKEHV-GFGVGSAQFENVRSMFPGFVASV  119
+DSSP  HHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHHH-HLLLLHHHHHHHHHHHHHHHHLL
+
+DSSP  LLllLLHHHHHHHHHHHHHHHHHHHHHHl
+Query LPtnFTPAVHANLNKFLANDSTVLTSKYr  141
+ident           |   |        |     
+Sbjct AA--PPAGADAAWTKLFGLIIDALKAAGa  146
+DSSP  LL--LLLLHHHHHHHHHHHHHHHHHHLLl
+
+
+# Structural equivalences
+   1: 1HDS-C 1MBA-A     1 -  46 <=>    1 -  46   (VAL    1  - PHE   46  <=> SER    1  - PHE   46 )                          
+   1: 1HDS-C 1MBA-A    49 -  74 <=>   54 -  79   (SER   49  - ASN   74  <=> ILE   54  - ALA   79 )                          
+   1: 1HDS-C 1MBA-A    75 -  88 <=>   83 -  96   (ASP   75  - ALA   88  <=> LYS   83  - VAL   96 )                          
+   1: 1HDS-C 1MBA-A    90 - 114 <=>   97 - 121   (LYS   90  - PRO  114  <=> GLY   97  - ALA  121 )                          
+   1: 1HDS-C 1MBA-A   117 - 140 <=>  122 - 145   (PHE  117  - TYR  140  <=> PRO  122  - GLY  145 )                          
+
+# Translation-rotation matrices
+-matrix  "1HDS-C 1MBA-A  U(1,.)  -0.871563 -0.343706  0.349635          -30.546738"
+-matrix  "1HDS-C 1MBA-A  U(2,.)  -0.440349  0.862318 -0.250000           11.196481"
+-matrix  "1HDS-C 1MBA-A  U(3,.)  -0.215570 -0.371852 -0.902915          -60.328789"
+

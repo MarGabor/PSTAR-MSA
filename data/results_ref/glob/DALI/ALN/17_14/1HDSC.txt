@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1HDSC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1LHT-A 20.2  1.4  139   153   24   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1HDSC Sbjct=1LHTA Z-score=20.2
+
+DSSP  LLLLLHHHHHHHHHHHHLLLLHHHHHHHHLHHHHHLHHHHHHLLLL------llLLLLHH
+Query VLSAANKSNVKAAWGKVGGNAPAYGAQALQRMFLSFPTTKTYFPHF------dlSHGSAQ   54
+ident  ||      |   | ||     | |     | |   | |   |  |           |  
+Sbjct GLSDDEWNHVLGIWAKVEPDLSAHGQEVIIRLFQLHPETQERFAKFknlttidaLKSSEE   60
+DSSP  LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHLHHHlllllhhhHHHLHH
+
+DSSP  HHHHHHHHHHHHHHHLLLLLLHHHHLLLLLHHHHLLLLLLHHHHHHHHHHHHHHHHHHLL
+Query QKAHGQKVANALTKAQGHLNDLPGTLSNLSNLHAHKLRVNPVNFKLLSHSLLVTLASHLP  114
+ident  | ||  |  ||       |     |  |   || |                   |   |
+Sbjct VKKHGTTVLTALGRILKQKNNHEQELKPLAESHATKHKIPVKYLEFICEIIVKVIAEKHP  120
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHHHHHLL
+
+DSSP  LLLLHHHHHHHHHHHHHHHHHHH-HHHL-----
+Query TNFTPAVHANLNKFLANDSTVLT-SKYR-----  141
+ident   |     |   | |                  
+Sbjct SDFGADSQAAMKKALELFRNDMAsKYKEfgfqg  153
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHhHHHLlllll
+
+
+# Structural equivalences
+   1: 1HDS-C 1LHT-A     1 -  46 <=>    1 -  46   (VAL    1  - PHE   46  <=> GLY    1  - PHE   46 )                          
+   1: 1HDS-C 1LHT-A    49 - 137 <=>   55 - 143   (SER   49  - THR  137  <=> LEU   55  - ALA  143 )                          
+   1: 1HDS-C 1LHT-A   138 - 141 <=>  145 - 148   (SER  138  - ARG  141  <=> LYS  145  - GLU  148 )                          
+
+# Translation-rotation matrices
+-matrix  "1HDS-C 1LHT-A  U(1,.)   0.913663 -0.243147 -0.325728           16.847221"
+-matrix  "1HDS-C 1LHT-A  U(2,.)   0.273341 -0.225565  0.935096           -8.557954"
+-matrix  "1HDS-C 1LHT-A  U(3,.)  -0.300839 -0.943398 -0.139628            2.172156"
+

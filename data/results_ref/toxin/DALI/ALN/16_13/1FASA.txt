@@ -1,0 +1,35 @@
+# Job: toxin
+# Query: 1FASA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CXN-A  6.7  1.8   56    60   32   MOLECULE: CARDIOTOXIN GAMMA;                                         
+
+# Pairwise alignments
+
+No 1: Query=1FASA Sbjct=1CXNA Z-score=6.7
+
+DSSP  LEEELllLLLLlLEEELL--LLLEEEEEELLLLLLEEEEEEL--LLLLLLLEEEEEELLl
+Query TMCYShtTTSRaILTNCG--ENSCYRKSRRHPPKMVLGRGCG--CPPGDDYLEVKCCTSp   56
+ident   |             |    | ||    |  |     |||   ||         ||   
+Sbjct LKCNQ--LIPP-FWKTCPkgKNLCYKMTMRAAPMVPVKRGCIdvCPKSSLLIKYMCCNT-   56
+DSSP  LEEEL--LLLL-LEEELLllLLEEEEEEELLLLLEEEEEEEEllLLLLLLLEEEEEELL-
+
+DSSP  LLLLl
+Query DKCNy   61
+ident |||| 
+Sbjct DKCN-   60
+DSSP  LLLL-
+
+
+# Structural equivalences
+   1: 1FAS-A 1CXN-A     1 -   5 <=>    1 -   5   (THR    1  - SER    5  <=> LEU    1  - GLN    5 )                          
+   1: 1FAS-A 1CXN-A     8 -  11 <=>    6 -   9   (THR    8  - ARG   11  <=> LEU    6  - PRO    9 )                          
+   1: 1FAS-A 1CXN-A    13 -  18 <=>   10 -  15   (ILE   13  - GLY   18  <=> PHE   10  - PRO   15 )                          
+   1: 1FAS-A 1CXN-A    19 -  40 <=>   18 -  39   (GLU   19  - GLY   40  <=> LYS   18  - ILE   39 )                          
+   1: 1FAS-A 1CXN-A    41 -  55 <=>   42 -  56   (CYS   41  - SER   55  <=> CYS   42  - THR   56 )                          
+   1: 1FAS-A 1CXN-A    57 -  60 <=>   57 -  60   (ASP   57  - ASN   60  <=> ASP   57  - ASN   60 )                          
+
+# Translation-rotation matrices
+-matrix  "1FAS-A 1CXN-A  U(1,.)  -0.852732 -0.267704 -0.448533           36.567245"
+-matrix  "1FAS-A 1CXN-A  U(2,.)  -0.505643  0.638473  0.580238           21.807384"
+-matrix  "1FAS-A 1CXN-A  U(3,.)   0.131044  0.721586 -0.679810            7.772137"
+

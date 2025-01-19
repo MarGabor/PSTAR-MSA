@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 1HBRC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1SPG-B 22.6  1.2  137   146   36   MOLECULE: HEMOGLOBIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1HBRC Sbjct=1SPGB Z-score=22.6
+
+DSSP  -LLLHHHHHHHHHHHHHHllLHHHHHHHHHHHHHHHLHHHHHHLLLLL------lLLLLH
+Query -MLTAEDKKLIQQAWEKAasHQEEFGAEALTRMFTTYPQTKTYFPHFD------lSPGSD   53
+ident    |      |   | |      | |  || |    || |   |  |          |  
+Sbjct vDWTDAERAAIKALWGKI--DVGEIGPQALSRLLIVYPWTQRHFKGFGnistnaaILGNA   58
+DSSP  lLLLHHHHHHHHHHHLLL--LHHHHHHHHHHHHHHHLHHHHHHLHHHLllllhhhHHHLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHH
+Query QVRGHGKKVLGALGNAVKNVDNLSQAMAELSNLHAYNLRVDPVNFKLLSQCIQVVLAVHM  113
+ident  |  ||| | | |  || | ||       ||  |     ||| || ||   |        
+Sbjct KVAEHGKTVMGGLDRAVQNMDNIKNVYKQLSIKHSEKIHVDPDNFRLLGEIITMCVGAKF  118
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+
+DSSP  HH-HLLHHHHHHHHHHHHHHHHHHLLLL
+Query GK-DYTPEVHAAFDKFLSAVSAVLAEKY  140
+ident |    ||| | |  |||  |   |   |
+Sbjct GPsAFTPEIHEAWQKFLAVVVSALGRQY  146
+DSSP  LLlLLLHHHHHHHHHHHHHHHHHHLLLL
+
+
+# Structural equivalences
+   1: 1HBR-C 1SPG-B     1 -  17 <=>    2 -  18   (MET    1  - ALA   17  <=> ASP    2  - ILE   18 )                          
+   1: 1HBR-C 1SPG-B    20 -  47 <=>   19 -  46   (HIS   20  - ASP   47  <=> ASP   19  - GLY   46 )                          
+   1: 1HBR-C 1SPG-B    49 - 115 <=>   54 - 120   (SER   49  - LYS  115  <=> ILE   54  - PRO  120 )                          
+   1: 1HBR-C 1SPG-B   116 - 140 <=>  122 - 146   (ASP  116  - TYR  140  <=> ALA  122  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1HBR-C 1SPG-B  U(1,.)  -0.344179  0.938087 -0.039154           18.141132"
+-matrix  "1HBR-C 1SPG-B  U(2,.)  -0.413707 -0.114087  0.903234            2.000763"
+-matrix  "1HBR-C 1SPG-B  U(3,.)   0.842845  0.327072  0.427359           20.834007"
+

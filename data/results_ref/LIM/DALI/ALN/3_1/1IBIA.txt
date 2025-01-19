@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 1IBIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1IML-A  4.4  3.7   55    76   45   MOLECULE: CYSTEINE RICH INTESTINAL PROTEIN;                          
+
+# Pairwise alignments
+
+No 1: Query=1IBIA Sbjct=1IMLA Z-score=4.4
+
+DSSP  lEELLLLLLEELLLLLEELLLLEELLLLEELLLLLLEELLLLLEEElleEELHH-HHHHL
+Query aEKCSRCGDSVYAAEKVIGAGKPWHKNCFRCAKCGKSLESTTLTEKegeIYCKG-CYAKN   59
+ident   ||  |   || || |   || ||  |  | |||| | |    |     ||   ||   
+Sbjct -PKCPKCDKEVYFAERVTSLGKDWHRPCLKCEKCGKTLTSGGHAEHegkPYCNHpCYSAM   59
+DSSP  -LLLLLLLLLLLHHHEEEELLEEEELLLLLLLLLLLLLLLLLEEEElleEEELLlHHHHH
+
+DSSP  -----------------
+Query -----------------   59
+ident                  
+Sbjct fgpkgfgrggaeshtfk   76
+DSSP  lllllllllllllllll
+
+
+# Structural equivalences
+   1: 1IBI-A 1IML-A     2 -  46 <=>    1 -  45   (GLU  118  - LYS  162  <=> PRO    1  - HIS   45 )                          
+   1: 1IBI-A 1IML-A    50 -  54 <=>   49 -  53   (ILE  166  - GLY  170  <=> PRO   49  - HIS   53 )                          
+   1: 1IBI-A 1IML-A    55 -  59 <=>   55 -  59   (CYS  171  - ASN  175  <=> CYS   55  - MET   59 )                          
+
+# Translation-rotation matrices
+-matrix  "1IBI-A 1IML-A  U(1,.)   0.046674 -0.537757 -0.841807           -0.170270"
+-matrix  "1IBI-A 1IML-A  U(2,.)  -0.988014 -0.148983  0.040392            2.920949"
+-matrix  "1IBI-A 1IML-A  U(3,.)  -0.147136  0.829832 -0.538265           -1.336902"
+

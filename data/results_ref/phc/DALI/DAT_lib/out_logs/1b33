@@ -1,0 +1,1951 @@
+A length: 160
+B length: 160
+C length: 160
+D length: 160
+E length: 160
+F length: 160
+N length: 67
+H length: 160
+I length: 160
+J length: 160
+K length: 160
+L length: 160
+M length: 160
+O length: 67
+# 14 chains A B C D E F H I J K L M N O
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1204
+Total number of ignored atom records:        167
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau           1   1.59528351              16          98         119
+ #popped           2           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau           3   3.82759976              16
+ #popped           5           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau           5   1.66562498             109
+ #popped           3           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau           7   4.54111624              31
+ #popped           9           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau           9   1.47057652              98
+ #popped          10           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau          11   1.72075474              49
+ #popped          13           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau          13   2.40781450              72
+ #popped          14           2
+ #selectset contacts        1531
+ selectset done           2
+ eigen done           2
+ tau          15  0.988505721              60
+ #popped          15           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau          17   1.01372552              86
+ #popped          11           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau          19  0.782002926             139         149
+ #popped          20           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau          21   1.23922956             139
+ #popped          22           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau          23  0.628890157             129
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         160
+         160  residues read 1B33.dssp                                                   
+  exclude short helix          63          65
+  grow short helix         101         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  6  7  2  3  4  5  8  9
+   2     1  4  5  3  1  6  7
+   3     1  8  9  6  2  3  4  5  8  9
+   4     2  0  0  1  1
+   5     2  6  7  2  6  7
+   6     5  0  0  1  6
+   7     5  0  0  1  7
+   8     3  0  0  1  2
+   9     3 10 11  5  3  4  5  8  9
+  10     9 12 13  3  3  4  5
+  11     9 22 23  2  8  9
+  12    10  0  0  1  3
+  13    10 14 15  2  4  5
+  14    13  0  0  1  4
+  15    13  0  0  1  5
+  16     0  0  0  1  4
+  17     0  0  0  0
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20     0  0  0  2  8  9
+  21     0  0  0  0
+  22    11  0  0  1  8
+  23    11  0  0  1  9
+  24     0  0  0  1  8
+  25     0  0  0  0
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  3  2  1  1  6  7
+   3 -   1  8  9  6  2  2  5  8  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  6  7
+   6 -   5  0  0  1  1  6  6
+   7 -   5  0  0  1  1  7  7
+   8 -   3  0  0  1  1  2  2
+   9 -   3 10 11  5  2  3  5  8  9
+  10 -   9 12 13  3  1  3  5
+  11 -   9 16 17  2  1  8  9
+  12 -  10  0  0  1  1  3  3
+  13 -  10 14 15  2  1  4  5
+  14 -  13  0  0  1  1  4  4
+  15 -  13  0  0  1  1  5  5
+  16 -  11  0  0  1  1  8  8
+  17 -  11  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1220
+Total number of ignored atom records:        205
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau           1   2.35854006              32
+ #popped           2           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau           3   2.38791847              19
+ #popped           3           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau           5   1.48557496              49          87
+ #popped           6           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau           7   2.47845459              49
+ #popped           9           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau           9   1.41889942             110
+ #popped          10           2
+ #selectset contacts        1535
+ selectset done           2
+ eigen done           2
+ tau          11   1.39819825              99
+ #popped          11           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau          13   1.61070466             122
+ #popped          15           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau          15  0.999074936             139
+ #popped          17           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau          17  0.733539104             149
+ #popped           7           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau          19   1.78629804              62
+ #popped          21           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau          21   1.02586210              73
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         161
+         161  residues read 1B33.dssp                                                   
+  exclude short helix         102         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  2  5  6  3  4
+   2     1  0  0  1  1
+   3     1  6  7  5  2  5  6  3  4
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  3  2  5  6
+   7     3 20 21  2  3  4
+   8     6  0  0  1  2
+   9     6 14 15  2  5  6
+  10     0  0  0  0
+  11     0  0  0  2  5  6
+  12     0  0  0  0
+  13     0  0  0  0
+  14     9  0  0  1  5
+  15     9  0  0  1  6
+  16     0  0  0  0
+  17     0  0  0  1  6
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20     7  0  0  1  3
+  21     7  0  0  1  4
+  22     0  0  0  0
+  23     0  0  0  1  4
+   1 *   0  2  3  6  1  1  6
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  5  1  2  6
+   4 -   3  6  7  3  2  2  2  5  6
+   5 -   3 10 11  2  1  3  4
+   6 -   4  0  0  1  1  2  2
+   7 -   4  8  9  2  1  5  6
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  1  1  6  6
+  10 -   5  0  0  1  1  3  3
+  11 -   5  0  0  1  1  4  4
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1204
+Total number of ignored atom records:        213
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau           1   3.03947783              30
+ #popped           2           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau           3   1.46321797              16
+ #popped           3           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau           5   1.65092409              98
+ #popped           6           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau           7   2.03803563              72
+ #popped           8           2
+ #selectset contacts        1534
+ selectset done           2
+ eigen done           2
+ tau           9   2.13774014              46
+ #popped          11           2
+ #selectset contacts        1534
+ selectset done           2
+ eigen done           2
+ tau          11   1.17586040              60
+ #popped           9           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          13  0.974736094              86
+ #popped           7           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau          15   1.61447632             120
+ #popped          16           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          17   1.73902190             109
+ #popped          17           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau          19  0.752086282             139         149
+ #popped          20           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau          21   1.21267819             139
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         160
+         160  residues read 1B33.dssp                                                   
+  exclude short helix          62          65
+  grow short helix         101         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  6  7  8  9
+   2     1  4  5  2  1  2
+   3     1  6  7  7  3  4  5  6  7  8  9
+   4     2  0  0  1  1
+   5     2  0  0  1  2
+   6     3  8  9  3  3  4  5
+   7     3 16 17  4  6  7  8  9
+   8     6 10 11  2  3  4
+   9     6  0  0  1  5
+  10     8  0  0  1  3
+  11     8  0  0  1  4
+  12     0  0  0  1  4
+  13     0  0  0  0
+  14     0  0  0  1  5
+  15     0  0  0  0
+  16     7 18 19  2  6  7
+  17     7 22 23  2  8  9
+  18    16  0  0  1  6
+  19    16  0  0  1  7
+  20     0  0  0  2  8  9
+  21     0  0  0  0
+  22    17  0  0  1  8
+  23    17  0  0  1  9
+   1 +   0  2  3  9  1  1  9
+   2 =   1  4  5  2  1  1  2
+   3 *   1  6  7  7  1  3  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  8  9  3  1  3  5
+   7 -   3 12 13  4  1  6  9
+   8 -   6 10 11  2  1  3  4
+   9 -   6  0  0  1  1  5  5
+  10 -   8  0  0  1  1  3  3
+  11 -   8  0  0  1  1  4  4
+  12 -   7 14 15  2  1  6  7
+  13 -   7 16 17  2  1  8  9
+  14 -  12  0  0  1  1  6  6
+  15 -  12  0  0  1  1  7  7
+  16 -  13  0  0  1  1  8  8
+  17 -  13  0  0  1  1  9  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1220
+Total number of ignored atom records:        333
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1540
+ selectset done           0
+ eigen done           0
+ tau           1   2.49881053              33
+ #popped           2           1
+ #selectset contacts        1540
+ selectset done           1
+ eigen done           1
+ tau           3   1.90716696              17
+ #popped           3           0
+ #selectset contacts        1540
+ selectset done           0
+ eigen done           0
+ tau           5   1.47513497              59          82
+ #popped           6           1
+ #selectset contacts        1540
+ selectset done           1
+ eigen done           1
+ tau           7   1.92528749              59
+ #popped           8           2
+ #selectset contacts        1540
+ selectset done           2
+ eigen done           2
+ tau           9   1.38888884              47
+ #popped           9           1
+ #selectset contacts        1540
+ selectset done           1
+ eigen done           1
+ tau          11   1.49000871             121
+ #popped          12           2
+ #selectset contacts        1540
+ selectset done           2
+ eigen done           2
+ tau          13   1.62420380              99
+ #popped          15           2
+ #selectset contacts        1540
+ selectset done           2
+ eigen done           2
+ tau          15   1.69788241             110
+ #popped          13           1
+ #selectset contacts        1540
+ selectset done           1
+ eigen done           1
+ tau          17   1.11234856             139
+ #popped          19           1
+ #selectset contacts        1540
+ selectset done           1
+ eigen done           1
+ tau          19  0.761752129             149
+ #popped           7           0
+ #selectset contacts        1540
+ selectset done           0
+ eigen done           0
+ tau          21  0.893329084              70
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         161
+         161  residues read 1B33.dssp                                                   
+  exclude short helix         102         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  2  3  4  5  6
+   2     1  0  0  1  1
+   3     1  8  9  5  2  3  4  5  6
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0  5  2  3  4  5  6
+   7     0  0  0  0
+   8     3  0  0  1  2
+   9     3 12 13  4  3  4  5  6
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     9 14 15  2  3  4
+  13     9 18 19  2  5  6
+  14    12  0  0  1  3
+  15    12  0  0  1  4
+  16     0  0  0  0
+  17     0  0  0  1  4
+  18    13  0  0  1  5
+  19    13  0  0  1  6
+  20     0  0  0  0
+  21     0  0  0  1  6
+  22     0  0  0  0
+  23     0  0  0  0
+   1 *   0  2  3  6  1  1  6
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  5  1  2  6
+   4 -   3  0  0  1  1  2  2
+   5 -   3  6  7  4  1  3  6
+   6 -   5  8  9  2  1  3  4
+   7 -   5 10 11  2  1  5  6
+   8 -   6  0  0  1  1  3  3
+   9 -   6  0  0  1  1  4  4
+  10 -   7  0  0  1  1  5  5
+  11 -   7  0  0  1  1  6  6
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1204
+Total number of ignored atom records:        251
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1527
+ selectset done           0
+ eigen done           0
+ tau           1   3.00149107              31
+ #popped           2           1
+ #selectset contacts        1527
+ selectset done           1
+ eigen done           1
+ tau           3   1.63049650              16
+ #popped           3           0
+ #selectset contacts        1527
+ selectset done           0
+ eigen done           0
+ tau           5   1.47082138              72
+ #popped           6           1
+ #selectset contacts        1527
+ selectset done           1
+ eigen done           1
+ tau           7   1.74623537              46
+ #popped           9           1
+ #selectset contacts        1527
+ selectset done           1
+ eigen done           1
+ tau           9   1.26631129              60
+ #popped           7           0
+ #selectset contacts        1527
+ selectset done           0
+ eigen done           0
+ tau          11   2.07727718              98
+ #popped          12           1
+ #selectset contacts        1527
+ selectset done           1
+ eigen done           1
+ tau          13   1.05596411              86
+ #popped          13           0
+ #selectset contacts        1527
+ selectset done           0
+ eigen done           0
+ tau          15   1.41805100             109
+ #popped          17           0
+ #selectset contacts        1527
+ selectset done           0
+ eigen done           0
+ tau          17   1.57817209             120
+ #popped          19           0
+ #selectset contacts        1527
+ selectset done           0
+ eigen done           0
+ tau          19  0.708487093             139         149
+ #popped          20           0
+ #selectset contacts        1527
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         160
+         160  residues read 1B33.dssp                                                   
+  exclude short helix          62          65
+  grow short helix         101         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  6  7  8  9
+   2     1  4  5  2  1  2
+   3     1  6  7  7  3  4  5  6  7  8  9
+   4     2  0  0  1  1
+   5     2  0  0  1  2
+   6     3  8  9  2  3  4
+   7     3 12 13  5  5  6  7  8  9
+   8     6  0  0  1  3
+   9     6  0  0  1  4
+  10     0  0  0  1  4
+  11     0  0  0  0
+  12     7  0  0  1  5
+  13     7 16 17  4  6  7  8  9
+  14     0  0  0  1  5
+  15     0  0  0  0
+  16    13  0  0  1  6
+  17    13 18 19  3  7  8  9
+  18    17  0  0  1  7
+  19    17  0  0  2  8  9
+  20     0  0  0  2  8  9
+  21     0  0  0  0
+   1 +   0  2  3  9  1  1  9
+   2 =   1  4  5  2  1  1  2
+   3 *   1  6  7  7  1  3  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  8  9  2  1  3  4
+   7 -   3 10 11  5  1  5  9
+   8 -   6  0  0  1  1  3  3
+   9 -   6  0  0  1  1  4  4
+  10 -   7  0  0  1  1  5  5
+  11 -   7 12 13  4  1  6  9
+  12 -  11  0  0  1  1  6  6
+  13 -  11 14 15  3  1  7  9
+  14 -  13  0  0  1  1  7  7
+  15 -  13  0  0  2  1  8  9
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1220
+Total number of ignored atom records:        297
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1544
+ selectset done           0
+ eigen done           0
+ tau           1   2.89717174              33
+ #popped           2           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau           3   1.85107374              17
+ #popped           3           0
+ #selectset contacts        1544
+ selectset done           0
+ eigen done           0
+ tau           5   1.41645730              60          81
+ #popped           6           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau           7   1.79705882              60
+ #popped           8           2
+ #selectset contacts        1544
+ selectset done           2
+ eigen done           2
+ tau           9   1.36342311              48
+ #popped           9           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau          11   1.48702359             110
+ #popped          12           2
+ #selectset contacts        1544
+ selectset done           2
+ eigen done           2
+ tau          13   1.99047625              99
+ #popped          13           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau          15   1.48548865             121
+ #popped          17           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau          17   1.26206517             140
+ #popped          19           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau          19  0.670802414             150
+ #popped           7           0
+ #selectset contacts        1544
+ selectset done           0
+ eigen done           0
+ tau          21  0.783355772              70
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         161
+         161  residues read 1B33.dssp                                                   
+  exclude short helix         102         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  2  3  4  5
+   2     1  0  0  1  1
+   3     1  8  9  4  2  3  4  5
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0  4  2  3  4  5
+   7     0  0  0  0
+   8     3  0  0  1  2
+   9     3 12 13  3  3  4  5
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     9  0  0  1  3
+  13     9 16 17  2  4  5
+  14     0  0  0  1  3
+  15     0  0  0  0
+  16    13  0  0  1  4
+  17    13  0  0  1  5
+  18     0  0  0  0
+  19     0  0  0  1  5
+  20     0  0  0  1  5
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  0
+   1 +   0  2  3  5  1  1  5
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5  4  1  2  5
+   4 -   3  0  0  1  1  2  2
+   5 -   3  6  7  3  1  3  5
+   6 -   5  0  0  1  1  3  3
+   7 -   5  8  9  2  1  4  5
+   8 -   7  0  0  1  1  4  4
+   9 -   7  0  0  1  1  5  5
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1204
+Total number of ignored atom records:        241
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau           1   3.43348408              30
+ #popped           2           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau           3   1.67839718              16
+ #popped           3           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau           5   1.44421637              46
+ #popped           7           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau           7   1.77174342              86
+ #popped           8           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau           9   1.82610130              72
+ #popped          10           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau          11   1.29963529              60
+ #popped           9           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau          13   1.60231900             121
+ #popped          14           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau          15   2.32376575             109
+ #popped          16           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau          17   1.56412339              98
+ #popped          15           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau          19  0.682227671             138         148
+ #popped          20           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau          21   1.05179679             138
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         160
+         160  residues read 1B33.dssp                                                   
+  exclude short helix          62          65
+  grow short helix         101         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  6  7  8  9
+   2     1  4  5  2  1  2
+   3     1  6  7  7  3  4  5  6  7  8  9
+   4     2  0  0  1  1
+   5     2  0  0  1  2
+   6     3  0  0  1  3
+   7     3  8  9  6  4  5  6  7  8  9
+   8     7 10 11  2  4  5
+   9     7 14 15  4  6  7  8  9
+  10     8  0  0  1  4
+  11     8  0  0  1  5
+  12     0  0  0  1  4
+  13     0  0  0  0
+  14     9 16 17  2  6  7
+  15     9 22 23  2  8  9
+  16    14  0  0  1  6
+  17    14  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  1  6
+  20     0  0  0  2  8  9
+  21     0  0  0  0
+  22    15  0  0  1  8
+  23    15  0  0  1  9
+   1 +   0  2  3  9  1  1  9
+   2 =   1  4  5  2  1  1  2
+   3 *   1  6  7  7  1  3  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  0  0  1  1  3  3
+   7 -   3  8  9  6  1  4  9
+   8 -   7 10 11  2  1  4  5
+   9 -   7 12 13  4  1  6  9
+  10 -   8  0  0  1  1  4  4
+  11 -   8  0  0  1  1  5  5
+  12 -   9 14 15  2  1  6  7
+  13 -   9 16 17  2  1  8  9
+  14 -  12  0  0  1  1  6  6
+  15 -  12  0  0  1  1  7  7
+  16 -  13  0  0  1  1  8  8
+  17 -  13  0  0  1  1  9  9
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1220
+Total number of ignored atom records:        269
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1541
+ selectset done           0
+ eigen done           0
+ tau           1   2.44698524              32
+ #popped           2           1
+ #selectset contacts        1541
+ selectset done           1
+ eigen done           1
+ tau           3   2.13207006              19
+ #popped           3           0
+ #selectset contacts        1541
+ selectset done           0
+ eigen done           0
+ tau           5   1.53668094              51          87
+ #popped           6           1
+ #selectset contacts        1541
+ selectset done           1
+ eigen done           1
+ tau           7   2.06596923              51
+ #popped           9           1
+ #selectset contacts        1541
+ selectset done           1
+ eigen done           1
+ tau           9   1.37160277             110
+ #popped          10           2
+ #selectset contacts        1541
+ selectset done           2
+ eigen done           2
+ tau          11   1.53801799              99
+ #popped          11           1
+ #selectset contacts        1541
+ selectset done           1
+ eigen done           1
+ tau          13   1.48548865             121
+ #popped          15           1
+ #selectset contacts        1541
+ selectset done           1
+ eigen done           1
+ tau          15   1.09523547             139
+ #popped          17           1
+ #selectset contacts        1541
+ selectset done           1
+ eigen done           1
+ tau          17  0.776688457             149
+ #popped           7           0
+ #selectset contacts        1541
+ selectset done           0
+ eigen done           0
+ tau          19   1.71180546              62
+ #popped          21           0
+ #selectset contacts        1541
+ selectset done           0
+ eigen done           0
+ tau          21   1.00492609              73
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         161
+         161  residues read 1B33.dssp                                                   
+  exclude short helix         102         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  7  1  2  5  6  7  3  4
+   2     1  0  0  1  1
+   3     1  6  7  6  2  5  6  7  3  4
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  4  2  5  6  7
+   7     3 20 21  2  3  4
+   8     6  0  0  1  2
+   9     6 14 15  3  5  6  7
+  10     0  0  0  0
+  11     0  0  0  3  5  6  7
+  12     0  0  0  0
+  13     0  0  0  0
+  14     9  0  0  1  5
+  15     9 16 17  2  6  7
+  16    15  0  0  1  6
+  17    15  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     7  0  0  1  3
+  21     7  0  0  1  4
+  22     0  0  0  0
+  23     0  0  0  1  4
+   1 *   0  2  3  7  1  1  7
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  6  1  2  7
+   4 -   3  6  7  4  2  2  2  5  7
+   5 -   3 12 13  2  1  3  4
+   6 -   4  0  0  1  1  2  2
+   7 -   4  8  9  3  1  5  7
+   8 -   7  0  0  1  1  5  5
+   9 -   7 10 11  2  1  6  7
+  10 -   9  0  0  1  1  6  6
+  11 -   9  0  0  1  1  7  7
+  12 -   5  0  0  1  1  3  3
+  13 -   5  0  0  1  1  4  4
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1204
+Total number of ignored atom records:        267
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau           1   3.09990048              31
+ #popped           2           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau           3   1.83430851              16
+ #popped           3           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau           5   1.40409994              46
+ #popped           7           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau           7   1.62493539              80
+ #popped           8           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau           9   1.44640970              60
+ #popped          11           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau          11  0.734042585              70
+ #popped           9           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          13   1.68540597             107
+ #popped          14           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau          15   1.28816319              97
+ #popped          15           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          17   1.52178800             120
+ #popped          19           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          19  0.788477540             139         149
+ #popped          20           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          21   1.24299514             139
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         160
+         160  residues read 1B33.dssp                                                   
+  exclude short helix          62          65
+  grow short helix         101         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  6  7  8  9
+   2     1  4  5  2  1  2
+   3     1  6  7  7  3  4  5  6  7  8  9
+   4     2  0  0  1  1
+   5     2  0  0  1  2
+   6     3  0  0  1  3
+   7     3  8  9  6  4  5  6  7  8  9
+   8     7  0  0  1  4
+   9     7 14 15  5  5  6  7  8  9
+  10     0  0  0  1  4
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+  14     9 16 17  2  5  6
+  15     9 18 19  3  7  8  9
+  16    14  0  0  1  5
+  17    14  0  0  1  6
+  18    15  0  0  1  7
+  19    15 22 23  2  8  9
+  20     0  0  0  2  8  9
+  21     0  0  0  0
+  22    19  0  0  1  8
+  23    19  0  0  1  9
+   1 +   0  2  3  9  1  1  9
+   2 =   1  4  5  2  1  1  2
+   3 *   1  6  7  7  1  3  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  0  0  1  1  3  3
+   7 -   3  8  9  6  1  4  9
+   8 -   7  0  0  1  1  4  4
+   9 -   7 10 11  5  1  5  9
+  10 -   9 12 13  2  1  5  6
+  11 -   9 14 15  3  1  7  9
+  12 -  10  0  0  1  1  5  5
+  13 -  10  0  0  1  1  6  6
+  14 -  11  0  0  1  1  7  7
+  15 -  11 16 17  2  1  8  9
+  16 -  15  0  0  1  1  8  8
+  17 -  15  0  0  1  1  9  9
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1220
+Total number of ignored atom records:        277
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau           1   2.47795963              32
+ #popped           2           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau           3   1.74997091              17
+ #popped           3           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau           5   1.82638073              98
+ #popped           6           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau           7   1.33520961              47          88
+ #popped           8           2
+ #selectset contacts        1543
+ selectset done           2
+ eigen done           2
+ tau           9   2.19528866              47
+ #popped           9           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau          11   1.94293356              62
+ #popped          13           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau          13   1.00043881              77
+ #popped           7           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau          15   1.55155814             121
+ #popped          16           1
+ #selectset contacts        1543
+ selectset done           1
+ eigen done           1
+ tau          17   1.80651343             110
+ #popped          17           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau          19  0.916688859             133
+ #popped          21           0
+ #selectset contacts        1543
+ selectset done           0
+ eigen done           0
+ tau          21  0.878889799             147
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         161
+         161  residues read 1B33.dssp                                                   
+  exclude short helix         102         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  2  3  4  5  6
+   2     1  0  0  1  1
+   3     1  6  7  5  2  3  4  5  6
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  2  2  3
+   7     3 16 17  3  4  5  6
+   8     6  0  0  1  2
+   9     6  0  0  1  3
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  3
+  14     0  0  0  0
+  15     0  0  0  1  3
+  16     7  0  0  1  4
+  17     7 20 21  2  5  6
+  18     0  0  0  0
+  19     0  0  0  1  4
+  20    17  0  0  1  5
+  21    17  0  0  1  6
+  22     0  0  0  0
+  23     0  0  0  1  6
+   1 *   0  2  3  6  1  1  6
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  5  1  2  6
+   4 -   3  6  7  2  1  2  3
+   5 -   3  8  9  3  1  4  6
+   6 -   4  0  0  1  1  2  2
+   7 -   4  0  0  1  1  3  3
+   8 -   5  0  0  1  1  4  4
+   9 -   5 10 11  2  1  5  6
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  1  1  6  6
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1204
+Total number of ignored atom records:        301
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau           1   3.19669199              30
+ #popped           2           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau           3   1.46321797              16
+ #popped           3           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau           5   1.45702994              52
+ #popped           6           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau           7  0.865909994              40
+ #popped           7           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau           9   1.53079748              72
+ #popped          10           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau          11  0.770134211              62
+ #popped          11           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau          13   2.20266533             109
+ #popped          14           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau          15   2.08891106              98
+ #popped          16           1
+ #selectset contacts        1535
+ selectset done           1
+ eigen done           1
+ tau          17   1.05596411              86
+ #popped          15           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau          19   1.61762643             120
+ #popped          21           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau          21  0.771776855             138         148
+ #popped          22           0
+ #selectset contacts        1535
+ selectset done           0
+ eigen done           0
+ tau          23   1.24285722             138
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         160
+         160  residues read 1B33.dssp                                                   
+  exclude short helix          62          65
+  grow short helix         101         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  6  7  8  9
+   2     1  4  5  2  1  2
+   3     1  6  7  7  3  4  5  6  7  8  9
+   4     2  0  0  1  1
+   5     2  0  0  1  2
+   6     3  0  0  1  3
+   7     3 10 11  6  4  5  6  7  8  9
+   8     0  0  0  1  3
+   9     0  0  0  0
+  10     7  0  0  1  4
+  11     7 14 15  5  5  6  7  8  9
+  12     0  0  0  1  4
+  13     0  0  0  0
+  14    11 16 17  2  5  6
+  15    11 20 21  3  7  8  9
+  16    14  0  0  1  5
+  17    14  0  0  1  6
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20    15  0  0  1  7
+  21    15 24 25  2  8  9
+  22     0  0  0  2  8  9
+  23     0  0  0  0
+  24    21  0  0  1  8
+  25    21  0  0  1  9
+   1 +   0  2  3  9  1  1  9
+   2 =   1  4  5  2  1  1  2
+   3 *   1  6  7  7  1  3  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  0  0  1  1  3  3
+   7 -   3  8  9  6  1  4  9
+   8 -   7  0  0  1  1  4  4
+   9 -   7 10 11  5  1  5  9
+  10 -   9 12 13  2  1  5  6
+  11 -   9 14 15  3  1  7  9
+  12 -  10  0  0  1  1  5  5
+  13 -  10  0  0  1  1  6  6
+  14 -  11  0  0  1  1  7  7
+  15 -  11 16 17  2  1  8  9
+  16 -  15  0  0  1  1  8  8
+  17 -  15  0  0  1  1  9  9
+
+ CHAIN M
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1220
+Total number of ignored atom records:        315
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1536
+ selectset done           0
+ eigen done           0
+ tau           1   2.44698524              32
+ #popped           2           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau           3   1.91403067              17
+ #popped           3           0
+ #selectset contacts        1536
+ selectset done           0
+ eigen done           0
+ tau           5   1.62685633              48          87
+ #popped           6           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau           7   2.02655554              48
+ #popped           9           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau           9   1.23444247             110
+ #popped          10           2
+ #selectset contacts        1536
+ selectset done           2
+ eigen done           2
+ tau          11   1.53801799              99
+ #popped          11           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau          13   1.57324648             122
+ #popped          15           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau          15  0.856662929             136
+ #popped          17           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau          17  0.950617313             147
+ #popped           7           0
+ #selectset contacts        1536
+ selectset done           0
+ eigen done           0
+ tau          19   2.00970769              62
+ #popped          21           0
+ #selectset contacts        1536
+ selectset done           0
+ eigen done           0
+ tau          21   1.09425282              73
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+         161
+         161  residues read 1B33.dssp                                                   
+  exclude short helix         102         107
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  2  4  5  6  3
+   2     1  0  0  1  1
+   3     1  6  7  5  2  4  5  6  3
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  4  2  4  5  6
+   7     3  0  0  1  3
+   8     6  0  0  1  2
+   9     6 14 15  3  4  5  6
+  10     0  0  0  0
+  11     0  0  0  3  4  5  6
+  12     0  0  0  0
+  13     0  0  0  0
+  14     9  0  0  1  4
+  15     9 16 17  2  5  6
+  16    15  0  0  1  5
+  17    15  0  0  1  6
+  18     0  0  0  0
+  19     0  0  0  1  6
+  20     0  0  0  0
+  21     0  0  0  1  3
+  22     0  0  0  0
+  23     0  0  0  1  3
+   1 *   0  2  3  6  1  1  6
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  5  1  2  6
+   4 -   3  6  7  4  2  2  2  4  6
+   5 -   3  0  0  1  1  3  3
+   6 -   4  0  0  1  1  2  2
+   7 -   4  8  9  3  1  4  6
+   8 -   7  0  0  1  1  4  4
+   9 -   7 10 11  2  1  5  6
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  1  1  6  6
+
+ CHAIN N
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             67
+Total number of atoms read in:               546
+Total number of ignored atom records:         61
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+          67  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         514
+ selectset done           0
+ eigen done           0
+ tau           1   1.76562226              11          25
+ #popped           2           0
+ #selectset contacts         514
+ selectset done           0
+ eigen done           0
+ tau           3   1.65993083              57
+ #popped           4           0
+ #selectset contacts         514
+ selectset done           0
+ eigen done           0
+ tau           5  0.938547432              35          47
+ #popped           6           0
+ #selectset contacts         514
+ selectset done           0
+ eigen done           0
+ tau           7  0.313032925              35
+ #popped           8           0
+ #selectset contacts         514
+ selectset done           0
+ eigen done           0
+ tau           9  0.223726377              11
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+          67
+          67  residues read 1B33.dssp                                                   
+  exclude short helix          22          25
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7  4  1  2  4  3
+   2     0  0  0  4  1  2  4  3
+   3     0  0  0  0
+   4     0  0  0  4  1  2  4  3
+   5     0  0  0  0
+   6     1  8  9  3  1  2  4
+   7     1  0  0  1  3
+   8     6 10 11  2  1  2
+   9     6  0  0  1  4
+  10     8  0  0  1  1
+  11     8  0  0  1  2
+   1 *   0  2  3  4  1  1  4
+   2 -   1  4  5  3  2  1  2  4  4
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  2  1  1  2
+   5 -   2  0  0  1  1  4  4
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+
+ CHAIN O
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             67
+Total number of atoms read in:               546
+Total number of ignored atom records:         29
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+  Reading DSSP file
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+          67  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         507
+ selectset done           0
+ eigen done           0
+ tau           1   1.83635318              57
+ #popped           2           0
+ #selectset contacts         507
+ selectset done           0
+ eigen done           0
+ tau           3   2.05444312              11          24
+ #popped           4           0
+ #selectset contacts         507
+ selectset done           0
+ eigen done           0
+ tau           5   1.01959419              34          47
+ #popped           6           0
+ #selectset contacts         507
+ selectset done           0
+ eigen done           0
+ tau           7  0.305053473              34
+ #popped           8           0
+ #selectset contacts         507
+ selectset done           0
+ eigen done           0
+ tau           9  0.223685801              11
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PHOTOSYNTHESIS                          15-DEC-98   1B33              COMPND   2 MOLECULE: ALLOPHYCOCYANIN, ALPHA CHAIN;                              SOURCE   2 ORGANISM_SCIENTIFIC: MASTIGOCLADUS LAMINOSUS;                        AUTHOR    W.REUTER,G.WIEGAND,R.HUBER,M.E.THAN                                   
+           0
+          67
+          67  residues read 1B33.dssp                                                   
+  exclude short helix          22          25
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7  4  1  2  4  3
+   2     0  0  0  4  1  2  4  3
+   3     0  0  0  0
+   4     0  0  0  4  1  2  4  3
+   5     0  0  0  0
+   6     1  8  9  3  1  2  4
+   7     1  0  0  1  3
+   8     6 10 11  2  1  2
+   9     6  0  0  1  4
+  10     8  0  0  1  1
+  11     8  0  0  1  2
+   1 *   0  2  3  4  1  1  4
+   2 -   1  4  5  3  2  1  2  4  4
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  2  1  1  2
+   5 -   2  0  0  1  1  4  4
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+
+ CHAIN : 1B33A
+ CHAIN : 1B33B
+ CHAIN : 1B33C
+ CHAIN : 1B33D
+ CHAIN : 1B33E
+ CHAIN : 1B33F
+ CHAIN : 1B33H
+ CHAIN : 1B33I
+ CHAIN : 1B33J
+ CHAIN : 1B33K
+ CHAIN : 1B33L
+ CHAIN : 1B33M
+ CHAIN : 1B33N
+ CHAIN : 1B33O
+

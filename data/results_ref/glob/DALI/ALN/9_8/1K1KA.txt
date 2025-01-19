@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1K1KA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBA-A 16.0  2.1  135   146   19   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1K1KA Sbjct=1MBAA Z-score=16.0
+
+DSSP  LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHLLLL-----llLLLLHHH
+Query VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF-----dlSHGSAQV   55
+ident  || |        |  | |     |   |   |  ||     |  |          |   
+Sbjct SLSAAEADLAGKSWAPVFANKNANGLDFLVALFEKFPDSANFFADFkgksvadIKASPKL   60
+DSSP  LLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLLLLllllhhhHHLLLLH
+
+DSSP  HHHHHHHHHHHHHHHHLLL---LHHHHLHHHHHHHHlLLLLLLHHHHHHHHHHHHHHHHH
+Query KGHGKKVADALTNAVAHVD---DMPNALSALSDLHAhKLRVDPVNFKLLSHCLLVTLAAH  112
+ident           |   |        |   ||     |     |    |           |  
+Sbjct RDVSSRIFTRLNEFVNNAAnagKMSAMLSQFAKEHV-GFGVGSAQFENVRSMFPGFVASV  119
+DSSP  HHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHHH-HLLLLHHHHHHHHHHHHHHHHLL
+
+DSSP  LLllLLHHHHHHHHHHHHHHHHHHLLLLl
+Query LPaeFTPAVHASLDKFLASVSTVLTSKYr  141
+ident           |   |        |     
+Sbjct AA--PPAGADAAWTKLFGLIIDALKAAGa  146
+DSSP  LL--LLLLHHHHHHHHHHHHHHHHHHLLl
+
+
+# Structural equivalences
+   1: 1K1K-A 1MBA-A     1 -  46 <=>    1 -  46   (VAL    1  - PHE   46  <=> SER    1  - PHE   46 )                          
+   1: 1K1K-A 1MBA-A    49 -  74 <=>   54 -  79   (SER   49  - ASP   74  <=> ILE   54  - ALA   79 )                          
+   1: 1K1K-A 1MBA-A    75 -  88 <=>   83 -  96   (ASP   75  - ALA   88  <=> LYS   83  - VAL   96 )                          
+   1: 1K1K-A 1MBA-A    90 - 114 <=>   97 - 121   (LYS   90  - PRO  114  <=> GLY   97  - ALA  121 )                          
+   1: 1K1K-A 1MBA-A   117 - 140 <=>  122 - 145   (PHE  117  - TYR  140  <=> PRO  122  - GLY  145 )                          
+
+# Translation-rotation matrices
+-matrix  "1K1K-A 1MBA-A  U(1,.)  -0.692196  0.716943  0.082812            3.203980"
+-matrix  "1K1K-A 1MBA-A  U(2,.)   0.292049  0.383185 -0.876286           54.237164"
+-matrix  "1K1K-A 1MBA-A  U(3,.)  -0.659979 -0.582377 -0.474621          -43.514164"
+

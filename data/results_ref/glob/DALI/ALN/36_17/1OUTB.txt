@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1OUTB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HDS-C 19.7  1.7  138   141   36   MOLECULE: HEMOGLOBIN S (DEOXY) (ALPHA CHAIN);                        
+
+# Pairwise alignments
+
+No 1: Query=1OUTB Sbjct=1HDSC Z-score=19.7
+
+DSSP  lLLLHHHHHHHHHHHHLL--LHHHHHHHHHHHHHHHLHHHHHHLHHHLllllhhhHHHLH
+Query vEWTDAEKSTISAVWGKV--NIDEIGPLALARVLIVYPWTQRYFGSFGnvstpaaIMGNP   58
+ident      | ||   | ||||  |    |  || |     | |  ||  |          |  
+Sbjct -VLSAANKSNVKAAWGKVggNAPAYGAQALQRMFLSFPTTKTYFPHFD------lSHGSA   53
+DSSP  -LLLLLHHHHHHHHHHHHllLLHHHHHHHHLHHHHHLHHHHHHLLLLL------lLLLLH
+
+DSSP  HHHHHHHHHHHLHHHHHHLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+Query KVAAHGKVVCGALDKAVKNMGNILATYKSLSETHANKLFVDPDNFRVLADVLTIVIAAKF  118
+ident    |||  |  || ||         |   ||  || || | | ||  |   |    |   
+Sbjct QQKAHGQKVANALTKAQGHLNDLPGTLSNLSNLHAHKLRVNPVNFKLLSHSLLVTLASHL  113
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHLLLLLHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHLLLLL
+Query GASFTPEIQATWQKFMKVVVAAMGSRYF  146
+ident    |||   |   ||         | | 
+Sbjct PTNFTPAVHANLNKFLANDSTVLTSKYR  141
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHHHHHL
+
+
+# Structural equivalences
+   1: 1OUT-B 1HDS-C     2 -  18 <=>    1 -  17   (GLU    2  - VAL   18  <=> VAL    1  - VAL   17 )                          
+   1: 1OUT-B 1HDS-C    19 -  46 <=>   20 -  47   (ASN   19  - GLY   46  <=> ASN   20  - ASP   47 )                          
+   1: 1OUT-B 1HDS-C    54 - 146 <=>   49 - 141   (ILE   54  - PHE  146  <=> SER   49  - ARG  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1OUT-B 1HDS-C  U(1,.)  -0.030304 -0.007021  0.999516           27.035368"
+-matrix  "1OUT-B 1HDS-C  U(2,.)   0.936773  0.348576  0.030850           19.599983"
+-matrix  "1OUT-B 1HDS-C  U(3,.)  -0.348624  0.937254 -0.003986           62.250671"
+

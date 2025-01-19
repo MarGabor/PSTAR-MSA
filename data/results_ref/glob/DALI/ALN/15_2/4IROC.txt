@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 4IROC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBS-A 16.6  2.2  141   153   22   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=4IROC Sbjct=1MBSA Z-score=16.6
+
+DSSP  lLLHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHHLL-LLLL---LLLL-HH
+Query sLSDKDKAAVRALWSKIGKSADAIGNDALSRMIVVYPQTKTYFSH-WPDV---TPGS-PH   55
+ident  |||     |   | |        |   | |     | |   |                 
+Sbjct gLSDGEWHLVLNVWGKVETDLAGHGQEVLIRLFKSHPETLEKFDKfKHLKsedDMRRsED   60
+DSSP  lLHHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLLHHHHHLLLlLLLLlhhHHHLlHH
+
+DSSP  HHHHHHHHHHHHHHHHHHHHLHHHHLHHHHHHLLLLLLLLLHHHHHHHHHHHHHHHHHLL
+Query IKAHGKKVMGGIALAVSKIDDLKTGLMELSEQHAYKLRVDPANFKILNHCILVVISTMFP  115
+ident    ||  |         |       |  |   || |              |  |     |
+Sbjct LRKHGNTVLTALGGILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSKHP  120
+DSSP  HHHHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHLL
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHLLLLL------
+Query KEFTPEAHVSLDKFLSGVALALAERYR------  142
+ident  ||   |     | |       |  |       
+Sbjct AEFGADAQAAMKKALELFRNDIAAKYKelgfhg  153
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHHHHHhhllll
+
+
+# Structural equivalences
+   1: 4IRO-C 1MBS-A     2 -  45 <=>    2 -  45   (LEU    2  - HIS   45  <=> LEU    2  - LYS   45 )                          
+   1: 4IRO-C 1MBS-A    46 -  49 <=>   47 -  50   (TRP   46  - VAL   49  <=> LYS   47  - LYS   50 )                          
+   1: 4IRO-C 1MBS-A    50 -  53 <=>   54 -  57   (THR   50  - SER   53  <=> ASP   54  - ARG   57 )                          
+   1: 4IRO-C 1MBS-A    54 - 142 <=>   59 - 147   (PRO   54  - ARG  142  <=> GLU   59  - LYS  147 )                          
+
+# Translation-rotation matrices
+-matrix  "4IRO-C 1MBS-A  U(1,.)  -0.501277 -0.286333 -0.816538            2.952965"
+-matrix  "4IRO-C 1MBS-A  U(2,.)  -0.147096 -0.901728  0.406509            3.828093"
+-matrix  "4IRO-C 1MBS-A  U(3,.)  -0.852692  0.323883  0.409897           23.221554"
+

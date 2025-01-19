@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MWC-A 18.5  1.7  136   153   21   MOLECULE: PROTEIN (MYOGLOBIN);                                       
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1MWCA Z-score=18.5
+
+DSSP  -LLHHHHHHHHHHHHLLLL----LHHHHHHHHHHHLHHHHLLLLLLLLLL-HHHHLLLHH
+Query -LSADQISTVQASFDKVKG----DPVGILYAVFKADPSIMAKFTQFAGKD-LESIKGTAP   54
+ident  ||      |     ||           |   ||  |    ||  |         |    
+Sbjct gLSDGEWQLVLNVWGKVEAdvagHGQEVLIRLFKGHPETLEKFDKFKHLKsEDEMKASED   60
+DSSP  lLLHHHHHHHHHHHHHHHLlhhhHHHHHHHHHHHHLHHHHLLLHHHLLLLlHHHHHHLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHH-HLLLHHHHHHHHHHHHHHHHHHL-
+Query FETHANRIVGFFSKIIGELPNIEADVNTFVASHKP-RGVTHDQLNNFRAGFVSYMKAHT-  112
+ident    | |        |       ||       ||          |                
+Sbjct LKKHGNTVLTALGGILKKKGHHEAELTPLAQSHATkHKIPVKYLEFISEAIIQVLQSKHp  120
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHLlLLLLHHHHHHHHHHHHHHHHHHLl
+
+DSSP  -LHHH-HHHHHHHHHHHHHHHHHLLL-------
+Query -DFAG-AEAAWGATLDTFFGMIFSKM-------  136
+ident  ||   |  |    |  |      |        
+Sbjct gDFGAdAQGAMSKALELFRNDMAAKYkelgfqg  153
+DSSP  lLLLHhHHHHHHHHHHHHHHHHHHHHhhlllll
+
+
+# Structural equivalences
+   1: 1ECN-A 1MWC-A     1 -  18 <=>    2 -  19   (LEU    1  - GLY   18  <=> LEU    2  - ALA   19 )                          
+   1: 1ECN-A 1MWC-A    19 -  45 <=>   24 -  50   (ASP   19  - ASP   45  <=> HIS   24  - LYS   50 )                          
+   1: 1ECN-A 1MWC-A    46 -  89 <=>   52 -  95   (LEU   46  - PRO   89  <=> GLU   52  - THR   95 )                          
+   1: 1ECN-A 1MWC-A    90 - 112 <=>   97 - 119   (ARG   90  - THR  112  <=> HIS   97  - HIS  119 )                          
+   1: 1ECN-A 1MWC-A   113 - 116 <=>  122 - 125   (ASP  113  - GLY  116  <=> ASP  122  - ALA  125 )                          
+   1: 1ECN-A 1MWC-A   117 - 136 <=>  127 - 146   (ALA  117  - MET  136  <=> ALA  127  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1MWC-A  U(1,.)  -0.338866 -0.376688  0.862134           -9.655599"
+-matrix  "1ECN-A 1MWC-A  U(2,.)  -0.343161  0.902708  0.259535           -5.073926"
+-matrix  "1ECN-A 1MWC-A  U(3,.)  -0.876020 -0.207903 -0.435162           89.656746"
+

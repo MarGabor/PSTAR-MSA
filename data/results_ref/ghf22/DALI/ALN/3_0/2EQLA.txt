@@ -1,0 +1,38 @@
+# Job: ghf22
+# Query: 2EQLA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1GHL-B 23.1  1.2  128   130   49   MOLECULE: PHEASANT EGG WHITE LYSOZYME;                               
+
+# Pairwise alignments
+
+No 1: Query=2EQLA Sbjct=1GHLB Z-score=23.1
+
+DSSP  -LLLLHHHHHHHHHLLLLLLHHHLLHHHHHHHHHHHHLLLLLLEEELLlLLLEEELLLLE
+Query -KVFSKCELAHKLKAQEMDGFGGYSLANWVCMAEYESNFNTRAFNGKNaNGSSDYGLFQL   59
+ident  ||   ||||   |    |   |||| |||| |  |||||| | |     || |||  | 
+Sbjct gKVYGRCELAAAMKRMGLDNYRGYSLGNWVCAAKFESNFNTGATNRNT-DGSTDYGILQI   59
+DSSP  lLLLLHHHHHHHHHHLLLLLLLLLLHHHHHHHHHHHHLLLLLLEEELL-LLLEEELLLLE
+
+DSSP  EHHHHEELLL-LLLLLLLLEEHHHHLLLLLHHHHHHHHHHLLLLLHHHHLHHHHHHLLLL
+Query NNKWWCKDNK-RSSSNACNIMCSKLLDENIDDDISCAKRVVRDPKGMSAWKAWVKHCKDK  118
+ident |  ||| |     | | | | || ||   |     |||  | |  || || || ||||  
+Sbjct NSRWWCNDGRtPGSKNLCHIPCSALLSSDITASVNCAKKIVSDGNGMNAWVAWRKHCKGT  119
+DSSP  ELLLLLLLLLlLLLLLLLLLLHHHHHLLLLHHHHHHHHHHHLLLLHHHHLHHHHHHLLLL
+
+DSSP  LLLLLLLLLLL
+Query DLSEYLASCNL  129
+ident |       | |
+Sbjct DVNVWIRGCRL  130
+DSSP  LHHHHHLLLLL
+
+
+# Structural equivalences
+   1: 2EQL-A 1GHL-B     1 -  47 <=>    2 -  48   (LYS    1  - ASN   47  <=> LYS    1  - THR   47 )                          
+   1: 2EQL-A 1GHL-B    49 -  69 <=>   49 -  69   (ASN   49  - LYS   69  <=> ASP   48  - ARG   68 )                          
+   1: 2EQL-A 1GHL-B    70 - 129 <=>   71 - 130   (ARG   70  - LEU  129  <=> PRO   70  - LEU  129 )                          
+
+# Translation-rotation matrices
+-matrix  "2EQL-A 1GHL-B  U(1,.)   0.760469 -0.333366  0.557273           31.444895"
+-matrix  "2EQL-A 1GHL-B  U(2,.)   0.138678  0.921745  0.362153          -87.270447"
+-matrix  "2EQL-A 1GHL-B  U(3,.)  -0.634394 -0.198125  0.747189           53.186962"
+

@@ -1,0 +1,37 @@
+# Job: glob
+# Query: 1HBRC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBS-A 17.7  2.0  140   153   26   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1HBRC Sbjct=1MBSA Z-score=17.7
+
+DSSP  LLLHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHLLLLL------LLLLLHH
+Query MLTAEDKKLIQQAWEKAASHQEEFGAEALTRMFTTYPQTKTYFPHFD------LSPGSDQ   54
+ident  |      |    | |        | | | | |   | |   |  |           |  
+Sbjct GLSDGEWHLVLNVWGKVETDLAGHGQEVLIRLFKSHPETLEKFDKFKhlksedDMRRSED   60
+DSSP  LLHHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLLHHHHHLLLLLllllhhHHHLLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHHH
+Query VRGHGKKVLGALGNAVKNVDNLSQAMAELSNLHAYNLRVDPVNFKLLSQCIQVVLAVHMG  114
+ident  | ||  || |||   |           |   ||             |  |  ||     
+Sbjct LRKHGNTVLTALGGILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSKHP  120
+DSSP  HHHHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHLL
+
+DSSP  HHLLHHHHHHHHHHHHHHHHHHLLLL-------
+Query KDYTPEVHAAFDKFLSAVSAVLAEKY-------  140
+ident         ||  | |       | ||       
+Sbjct AEFGADAQAAMKKALELFRNDIAAKYkelgfhg  153
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHHHHhhhllll
+
+
+# Structural equivalences
+   1: 1HBR-C 1MBS-A     1 -  47 <=>    1 -  47   (MET    1  - ASP   47  <=> GLY    1  - LYS   47 )                          
+   1: 1HBR-C 1MBS-A    48 - 140 <=>   54 - 146   (LEU   48  - TYR  140  <=> ASP   54  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1HBR-C 1MBS-A  U(1,.)  -0.422652  0.609852  0.670407            7.624010"
+-matrix  "1HBR-C 1MBS-A  U(2,.)  -0.774728 -0.626966  0.081915            5.348021"
+-matrix  "1HBR-C 1MBS-A  U(3,.)   0.470279 -0.484761  0.737458           18.286287"
+

@@ -1,0 +1,35 @@
+# Job: toxin
+# Query: 1NORA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CDT-B  6.6  2.2   54    60   41   MOLECULE: CARDIOTOXIN VII4;                                          
+
+# Pairwise alignments
+
+No 1: Query=1NORA Sbjct=1CDTB Z-score=6.6
+
+DSSP  LEEELLlllllLLEEELLL-LLLEEEEEEELLlLEEE-EEEEL--LLLLLLLLEEEEELL
+Query LECHNQqssqpPTTKTCSG-ETNCYKKWWSDHrGTII-ERGCG--CPKVKPGVNLNCCRT   56
+ident | |           |||      |||             |||   |||    |   || |
+Sbjct LKCNKL---ipIAYKTCPEgKNLCYKMMLASK-KMVPvKRGCInvCPKNSALVKYVCCST   56
+DSSP  LEEELL---llLLEEELLLlLLEEEEEEELLL-LLEEeEEEEEllLLLLLLLEEEEEELL
+
+DSSP  LLLLl
+Query DRCNn   61
+ident |||| 
+Sbjct DRCN-   60
+DSSP  LLLL-
+
+
+# Structural equivalences
+   1: 1NOR-A 1CDT-B     1 -   6 <=>    1 -   6   (LEU    1  - GLN    6  <=> LEU    1  - LEU    6 )                          
+   1: 1NOR-A 1CDT-B    12 -  19 <=>    9 -  16   (PRO   12  - GLY   19  <=> ILE    9  - GLU   16 )                          
+   1: 1NOR-A 1CDT-B    20 -  31 <=>   18 -  29   (GLU   20  - HIS   31  <=> LYS   18  - LYS   29 )                          
+   1: 1NOR-A 1CDT-B    33 -  36 <=>   30 -  33   (GLY   33  - ILE   36  <=> LYS   30  - PRO   33 )                          
+   1: 1NOR-A 1CDT-B    37 -  41 <=>   35 -  39   (GLU   37  - GLY   41  <=> LYS   35  - ILE   39 )                          
+   1: 1NOR-A 1CDT-B    42 -  60 <=>   42 -  60   (CYS   42  - ASN   60  <=> CYS   42  - ASN   60 )                          
+
+# Translation-rotation matrices
+-matrix  "1NOR-A 1CDT-B  U(1,.)   0.676412 -0.448382  0.584312            3.275858"
+-matrix  "1NOR-A 1CDT-B  U(2,.)  -0.695404 -0.127426  0.707231           28.172293"
+-matrix  "1NOR-A 1CDT-B  U(3,.)  -0.242653 -0.884712 -0.397999           16.330889"
+

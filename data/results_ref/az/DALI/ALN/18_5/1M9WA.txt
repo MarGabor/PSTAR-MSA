@@ -1,0 +1,32 @@
+# Job: az
+# Query: 1M9WA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1KDI-A 15.5  1.7   95   102   36   MOLECULE: PLASTOCYANIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=1M9WA Sbjct=1KDIA Z-score=15.5
+
+DSSP  llLLLEELLLLLLLLEELLEEEELLLLEELLEELLLLLLLLEELLL------LLLLHHHL
+Query anATVKMGSDSGALVFEPSTVTIKAGEEVKWVNNKLSPHNIVFAAD------GVDADTAA   54
+ident   | |  |   |   | |   |  ||| |         |||||               ||
+Sbjct --AKVEVGDEVGNFKFYPDSITVSAGEAVEFTLVGETGHNIVFDIPagapgtVASELKAA   58
+DSSP  --LEEEELLLLLLLLEELLEEEELLLLLEEEEELLLLLLLLEELLLllllhhHHHHHHHL
+
+DSSP  LLLLLLLLLLlLLLLLEELLLLLEEEEELHHHHHHLLEEEEEEL
+Query KLSHKGLAFAaGESFTSTFTEPGTYTYYCEPHRGAGMVGKVVVE   98
+ident       |      ||      ||||| || ||  | | |   | 
+Sbjct SMDENDLLSEdEPSFKAKVSTPGTYTFYCTPHKSANMKGTLTVK  102
+DSSP  LLLLLLLLLLlLLEEEELLLLLEEEEEELLLLHHHLLEEEEEEL
+
+
+# Structural equivalences
+   1: 1M9W-A 1KDI-A     3 -  46 <=>    1 -  44   (ALA    3  - ASP   46  <=> ALA    1  - PRO   44 )                          
+   1: 1M9W-A 1KDI-A    47 -  64 <=>   51 -  68   (GLY   47  - ALA   64  <=> VAL   51  - GLU   68 )                          
+   1: 1M9W-A 1KDI-A    66 -  98 <=>   70 - 102   (GLY   66  - GLU   98  <=> GLU   70  - LYS  102 )                          
+
+# Translation-rotation matrices
+-matrix  "1M9W-A 1KDI-A  U(1,.)   0.688334  0.709585  0.150618          -49.816772"
+-matrix  "1M9W-A 1KDI-A  U(2,.)   0.216596 -0.002887 -0.976257           -6.315097"
+-matrix  "1M9W-A 1KDI-A  U(3,.)  -0.692303  0.704614 -0.155681           -5.464155"
+

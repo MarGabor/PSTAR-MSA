@@ -1,0 +1,33 @@
+# Job: cyt3
+# Query: 3CYRA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1WAD-A 15.4  1.8  105   111   39   MOLECULE: CYTOCHROME C3;                                             
+
+# Pairwise alignments
+
+No 1: Query=3CYRA Sbjct=1WADA Z-score=15.4
+
+DSSP  lLLLLLLLEEEELLL-----LEEEELLHHHLLLLHHHHLLLLlLLLLLLLLLLLLLLLLL
+Query aPAVPNKPVEVKGSQ-----KTVMFPHAPHEKVECVTCHHLVdGKESYAKCGSSGCHDDL   55
+ident    ||                || | |  |  | |  |||   |   || |   |||  |
+Sbjct -VDVPADGAKIDFIAggeknLTVVFNHSTHKDVKCDDCHHDP-GDKQYAGCTTDGCHNIL   58
+DSSP  -LLLLLLLEEELLLLlllllLLEEELLHHHLLLLHHHLLLLL-LLLLLLLLLLLLLLLLL
+
+DSSP  LL-LLLLLLHHHHHHLLLLLLLLLHHHHHHHHHHHLHHHHHHHHLLLLLLLLL
+Query TA-KKGEKSLYYVVHAKGELKHTSCLACHSKVVAEKPELKKDLTGCAKSKCHP  107
+ident     |   | | |||         |  ||        |||| ||||  | |||
+Sbjct DKaDKSVNSWYKVVHDAKGGAKPTCISCHKDKAGDDKELKKKLTGCKGSACHP  111
+DSSP  LLlLLLLLLHHHHHHLLLLLLLLLHHHHHHHHHLLLHHHHHHHHLLLLLLLLL
+
+
+# Structural equivalences
+   1: 3CYR-A 1WAD-A     2 -  15 <=>    1 -  14   (PRO    2  - GLN   15  <=> VAL    1  - ALA   14 )                          
+   1: 3CYR-A 1WAD-A    16 -  37 <=>   20 -  41   (LYS   16  - VAL   37  <=> LEU   20  - PRO   41 )                          
+   1: 3CYR-A 1WAD-A    39 -  57 <=>   42 -  60   (GLY   39  - ALA   57  <=> GLY   42  - LYS   60 )                          
+   1: 3CYR-A 1WAD-A    58 - 107 <=>   62 - 111   (LYS   58  - PRO  107  <=> ASP   62  - PRO  111 )                          
+
+# Translation-rotation matrices
+-matrix  "3CYR-A 1WAD-A  U(1,.)   0.787324  0.017174  0.616301           14.444615"
+-matrix  "3CYR-A 1WAD-A  U(2,.)  -0.384599  0.794960  0.469172           49.875072"
+-matrix  "3CYR-A 1WAD-A  U(3,.)  -0.481877 -0.606418  0.632496           42.215637"
+

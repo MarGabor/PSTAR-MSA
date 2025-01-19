@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1A4F-A 15.3  2.3  129   141   19   MOLECULE: HEMOGLOBIN (ALPHA CHAIN);                                  
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1A4FA Z-score=15.3
+
+DSSP  -LLHHHHHHHHHHHHLLLLL----HHHHHHHHHHHLHHHHLLLLLLllllhhhHLLLHHH
+Query -LSADQISTVQASFDKVKGD----PVGILYAVFKADPSIMAKFTQFagkdlesIKGTAPF   55
+ident  |||     |   | |  |         |   | | |     |  |         | |  
+Sbjct vLSAADKTNVKGVFSKISGHaeeyGAETLERMFTAYPQTKTYFPHF-----dlQHGSAQI   55
+DSSP  lLLHHHHHHHHHHHHHHLLLhhhhHHHHHHHHHHHLHHHHHHLLLL-----llLLLLHHH
+
+DSSP  HHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHH-HHLLLHHHHHHHHHHHHHHHHHHL--
+Query ETHANRIVGFFSKIIGELPNIEADVNTFVASHK-PRGVTHDQLNNFRAGFVSYMKAHT--  112
+ident   |    |            |          |     |           |      |   
+Sbjct KAHGKKVVAALVEAVNHIDDIAGALSKLSDLHAqKLRVDPVNFKFLGHCFLVVVAIHHps  115
+DSSP  HHHHHHHHHHHHHHHLLLLLHHHHLHHHHHHHHlLLLLLLHHHHHHHHHHHHHHHHHLll
+
+DSSP  LHHH-HHHHHHHHHHHHHHHHHLLL-
+Query DFAG-AEAAWGATLDTFFGMIFSKM-  136
+ident        |     |         |  
+Sbjct ALTAeVHASLDKFLCAVGTVLTAKYr  141
+DSSP  LLLHhHHHHHHHHHHHHHHHLLLLLl
+
+
+# Structural equivalences
+   1: 1ECN-A 1A4F-A     1 -  19 <=>    2 -  20   (LEU    1  - ASP   19  <=> LEU    2  - HIS   20 )                          
+   1: 1ECN-A 1A4F-A    20 -  41 <=>   25 -  46   (PRO   20  - PHE   41  <=> GLY   25  - PHE   46 )                          
+   1: 1ECN-A 1A4F-A    49 -  88 <=>   49 -  88   (ILE   49  - LYS   88  <=> GLN   49  - ALA   88 )                          
+   1: 1ECN-A 1A4F-A    89 - 112 <=>   90 - 113   (PRO   89  - THR  112  <=> LYS   90  - HIS  113 )                          
+   1: 1ECN-A 1A4F-A   113 - 116 <=>  116 - 119   (ASP  113  - GLY  116  <=> ALA  116  - ALA  119 )                          
+   1: 1ECN-A 1A4F-A   117 - 136 <=>  121 - 140   (ALA  117  - MET  136  <=> VAL  121  - TYR  140 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1A4F-A  U(1,.)  -0.588101  0.773573 -0.236056           25.848394"
+-matrix  "1ECN-A 1A4F-A  U(2,.)  -0.278726 -0.467833 -0.838716           69.326012"
+-matrix  "1ECN-A 1A4F-A  U(3,.)  -0.759243 -0.427454  0.490748           41.358299"
+

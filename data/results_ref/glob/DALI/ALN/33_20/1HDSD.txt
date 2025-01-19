@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1HDSD
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1SPG-B 21.3  1.4  143   146   44   MOLECULE: HEMOGLOBIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1HDSD Sbjct=1SPGB Z-score=21.3
+
+DSSP  -LLLLLLLlLLLL-LLLLLLLLHHHHHHHHHHHHHLLLHHHHLLLLLLLLLLHHHHHLLH
+Query -MLTAEEKaAVTG-FWGKVDVDVVGAQALGRLLVVYPWTQRFFQHFGNLSSAGAVMNNPK   58
+ident    |  |  |     ||| ||   | ||| ||| ||||||| |  ||| |   |   | |
+Sbjct vDWTDAER-AAIKaLWGKIDVGEIGPQALSRLLIVYPWTQRHFKGFGNISTNAAILGNAK   59
+DSSP  lLLLHHHH-HHHHhHHLLLLHHHHHHHHHHHHHHHLHHHHHHLHHHLLLLLHHHHHHLHH
+
+DSSP  HHHHHHHHHHHHLLLLLLLLLHHHHLLLLLLHHHHLLLLLHHHHHHHHHHHHLLLHHHHH
+Query VKAHGKRVLDAFTQGLKHLDDLKGAFAQLSGLHCNKLHVNPQNFRLLGNVLALVVARNFG  118
+ident |  ||| |           |  |    |||  |  | || | ||||||      |   ||
+Sbjct VAEHGKTVMGGLDRAVQNMDNIKNVYKQLSIKHSEKIHVDPDNFRLLGEIITMCVGAKFG  119
+DSSP  HHHHHHHHHHHHHHHHLLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+
+DSSP  H-HHLHHHHHHHHLHHHHHHHHLlLLLL
+Query G-QFTPNVQALFQKVVAGVANALaHKYH  145
+ident    |||      ||  | |  ||     
+Sbjct PsAFTPEIHEAWQKFLAVVVSAL-GRQY  146
+DSSP  LlLLLHHHHHHHHHHHHHHHHHH-LLLL
+
+
+# Structural equivalences
+   1: 1HDS-D 1SPG-B     1 -   7 <=>    2 -   8   (MET    1  - LYS    7  <=> ASP    2  - ARG    8 )                          
+   1: 1HDS-D 1SPG-B     9 -  12 <=>    9 -  12   (ALA    9  - GLY   12  <=> ALA    9  - LYS   12 )                          
+   1: 1HDS-D 1SPG-B    13 - 119 <=>   14 - 120   (PHE   13  - GLY  119  <=> LEU   14  - PRO  120 )                          
+   1: 1HDS-D 1SPG-B   120 - 140 <=>  122 - 142   (GLN  120  - LEU  140  <=> ALA  122  - LEU  142 )                          
+   1: 1HDS-D 1SPG-B   142 - 145 <=>  143 - 146   (HIS  142  - HIS  145  <=> GLY  143  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1HDS-D 1SPG-B  U(1,.)  -0.135818  0.756989  0.639156           26.499220"
+-matrix  "1HDS-D 1SPG-B  U(2,.)  -0.729566  0.360052 -0.581460           -0.454386"
+-matrix  "1HDS-D 1SPG-B  U(3,.)  -0.670289 -0.545280  0.503372           12.488610"
+

@@ -1,0 +1,163 @@
+A length: 217
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            217
+Total number of atoms read in:              1805
+Total number of ignored atom records:        236
+ HEADER    TRANSFERASE(GLUTATHIONE)                15-OCT-93   1HNA              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.RAGHUNATHAN,R.J.CHANDROSS,R.H.KRETSINGER,T.J.ALLISON,C.J.PENINGTON, 
+  Reading DSSP file
+ HEADER    TRANSFERASE(GLUTATHIONE)                15-OCT-93   1HNA              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.RAGHUNATHAN,R.J.CHANDROSS,R.H.KRETSINGER,T.J.ALLISON,C.J.P          
+         217  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2062
+ selectset done           0
+ eigen done           0
+ tau           1   2.19777584              82
+ #popped           2           1
+ #selectset contacts        2062
+ selectset done           1
+ eigen done           1
+ tau           3   1.49991059              32          51
+ #popped           4           1
+ #selectset contacts        2062
+ selectset done           1
+ eigen done           1
+ tau           5   1.41765165              70
+ #popped           6           1
+ #selectset contacts        2062
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        2062
+ selectset done           0
+ eigen done           0
+ tau           7   1.94180655             188         204
+ #popped           8           0
+ #selectset contacts        2062
+ selectset done           0
+ eigen done           0
+ tau           9   1.30806029             106         136         188
+ #popped          10           1
+ #selectset contacts        2062
+ selectset done           1
+ eigen done           1
+ tau          11   1.66095972             159
+ #popped          12           2
+ #selectset contacts        2062
+ selectset done           2
+ eigen done           2
+ tau          13   1.18060005             106
+ #popped          14           3
+ #selectset contacts        2062
+ selectset done           3
+ eigen done           3
+ tau          15  0.909567356              96
+ #popped          15           2
+ #selectset contacts        2062
+ selectset done           2
+ eigen done           2
+ tau          17   1.05200458             149
+ #popped          13           1
+ #selectset contacts        2062
+ selectset done           1
+ eigen done           1
+ tau          19  0.951219499             169
+ #popped          11           0
+ #selectset contacts        2062
+ selectset done           0
+ eigen done           0
+ tau          21   1.88068426             117         136
+ #popped          22           0
+ #selectset contacts        2062
+ selectset done           0
+ eigen done           0
+ tau          23  0.738636374             117
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE(GLUTATHIONE)                15-OCT-93   1HNA              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.RAGHUNATHAN,R.J.CHANDROSS,R.H.KRETSINGER,T.J.ALLISON,C.J.P          
+           0
+         217
+         217  residues read 1HNA.dssp                                                   
+  exclude short helix          43          46
+  exclude short helix          49          51
+  grow short strand          61          64
+  grow short strand          67          70
+  exclude short helix         171         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7  9 10  8 11
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1  8  9  5  7  9 10  8 11
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  0  0  5  1  2  3  4  5
+   7     2  0  0  1  6
+   8     3 10 11  4  7  9 10  8
+   9     3  0  0  1 11
+  10     8 12 13  3  7  9 10
+  11     8  0  0  1  8
+  12    10  0  0  1  7
+  13    10 20 21  2  9 10
+  14     0  0  0  1  7
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  0
+  20    13  0  0  1  9
+  21    13  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  1  1  6
+   3 -   1  6  7  5  1  7 11
+   4 -   2  0  0  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   3  8  9  4  1  7 10
+   7 -   3  0  0  1  1 11 11
+   8 -   6 10 11  3  2  7  7  9 10
+   9 -   6  0  0  1  1  8  8
+  10 -   8  0  0  1  1  7  7
+  11 -   8 12 13  2  1  9 10
+  12 -  11  0  0  1  1  9  9
+  13 -  11  0  0  1  1 10 10
+
+ CHAIN : 1HNAA
+

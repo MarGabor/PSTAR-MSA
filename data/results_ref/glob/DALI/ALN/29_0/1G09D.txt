@@ -1,0 +1,43 @@
+# Job: glob
+# Query: 1G09D
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1BIN-B 13.4  2.7  135   143   17   MOLECULE: LEGHEMOGLOBIN A;                                           
+
+# Pairwise alignments
+
+No 1: Query=1G09D Sbjct=1BINB Z-score=13.4
+
+DSSP  -LLLHHHHHHHHHHHLLLL--HHHHHHHHHHHHHHHLHHHHHHLHHHLLlllhhHHHH-L
+Query -MLTAEEKAAVTAFWGKVK--VDEVGGEALGRLLVVYPWTQRFFESFGDlstadAVMN-N   56
+ident    |    | |       |              |   |     |           |   |
+Sbjct vAFTEKQDALVSSSFEAFKanIPQYSVVFYTSILEKAPAAKDLFSFLAN-----GVDPtN   55
+DSSP  lLLLHHHHHHHHHHHHHHHhhHHHHHHHHHHHHHHHLHHHHHLLHHHLL-----LLLLlL
+
+DSSP  HHHHHHHHHHHHHHHHHHHL---LLLHhhHLHH-HHHHHHhLLLLLLHHHHHHHHHHHHH
+Query PKVKAHGKKVLDSFSNGMKH---LDDLkgTFAA-LSELHCdKLHVDPENFKLLGNVLVVV  112
+ident ||   |  |                       | |   |     |    |      |   
+Sbjct PKLTGHAEKLFALVRDSAGQlkaSGTV--VADAaLGSVHA-QKAVTDPQFVVVKEALLKT  112
+DSSP  HHHHHHHHHHHHHHHHHHHHhhhHLLL--LLLHhHHHHHH-LLLLLHHHHHHHHHHHHHH
+
+DSSP  HHHHHHHHLLHHHHHHHHHHHHHHHHHHHHHll
+Query LARNFGKEFTPVLQADFQKVVAGVANALAHRyh  145
+ident      |      |           | |      
+Sbjct IKAAVGDKWSDELSRAWEVAYDELAAAIKKA--  143
+DSSP  HHHHHHHHLLHHHHHHHHHHHHHHHHHHHLL--
+
+
+# Structural equivalences
+   1: 1G09-D 1BIN-B     1 -  18 <=>    2 -  19   (MET    2  - LYS   19  <=> ALA    2  - LYS   19 )                          
+   1: 1G09-D 1BIN-B    19 -  46 <=>   22 -  49   (VAL   20  - ASP   47  <=> ILE   22  - ASN   49 )                          
+   1: 1G09-D 1BIN-B    52 -  55 <=>   50 -  53   (ALA   53  - ASN   56  <=> GLY   50  - PRO   53 )                          
+   1: 1G09-D 1BIN-B    56 -  76 <=>   55 -  75   (ASN   57  - HIS   77  <=> ASN   55  - GLN   75 )                          
+   1: 1G09-D 1BIN-B    77 -  80 <=>   79 -  82   (LEU   78  - LEU   81  <=> SER   79  - VAL   82 )                          
+   1: 1G09-D 1BIN-B    83 -  86 <=>   83 -  86   (THR   84  - ALA   87  <=> VAL   83  - ALA   86 )                          
+   1: 1G09-D 1BIN-B    87 -  92 <=>   88 -  93   (LEU   88  - CYS   93  <=> LEU   88  - ALA   93 )                          
+   1: 1G09-D 1BIN-B    94 - 143 <=>   94 - 143   (LYS   95  - ARG  144  <=> GLN   94  - ALA  143 )                          
+
+# Translation-rotation matrices
+-matrix  "1G09-D 1BIN-B  U(1,.)   0.307789 -0.949815  0.055827           13.849466"
+-matrix  "1G09-D 1BIN-B  U(2,.)  -0.922836 -0.312300 -0.225483           91.485970"
+-matrix  "1G09-D 1BIN-B  U(3,.)   0.231602  0.017882 -0.972646           26.226496"
+

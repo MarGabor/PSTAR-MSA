@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HLM-A 13.7  2.3  135   158   19   MOLECULE: HEMOGLOBIN (CYANO MET);                                    
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1HLMA Z-score=13.7
+
+DSSP  -----------LLHHHHHHHHHHHHLLLLLHHHHHHHHHHHLH----HHHLLLLLLLLLL
+Query -----------LSADQISTVQASFDKVKGDPVGILYAVFKADP----SIMAKFTQFAGKD   45
+ident            |            |       |    ||            || | ||  
+Sbjct gatqsfqsvgdLTPAEKDLIRSTWDQLMTHRTGFVADVFIRIFhndpTAQRKFPQMAGLS   60
+DSSP  lllllllllllLLHHHHHHHHHHHHHHLLLLHHHHHHHHHHHLllllLLLLLLLLLLLLL
+
+DSSP  HHHHLLLHHHHHHHHHHHHHHHHHHHLLLL--LHHHHHHHHHHHHHHLLLHHHHHHHHHH
+Query LESIKGTAPFETHANRIVGFFSKIIGELPN--IEADVNTFVASHKPRGVTHDQLNNFRAG  103
+ident             || |        | |           |    |    |       |   
+Sbjct PAELRTSRQMHAHAIRVSALMTTYIDEMDTevLPELLATLTRTHDKNHVGKKNYDLFGKV  120
+DSSP  LLLLLLLHHHHHHHHHHHHHHHHHHHLLLLllHHHHHHHHHHHHHHHLLLHHHHHHHHHH
+
+DSSP  HHHHHHHHL--LHHH-HHHHHHHHHHHHHHHhHLLL---
+Query FVSYMKAHT--DFAG-AEAAWGATLDTFFGMiFSKM---  136
+ident      ||     |      ||  |     |         
+Sbjct LMEAIKAELgvGFTKqVHDAWAKTFAIVQGV-LITKhas  158
+DSSP  HHHHLLLLLllLLLLlHHHHHHHHHHHHHHH-HLLLlll
+
+
+# Structural equivalences
+   1: 1ECN-A 1HLM-A     1 -  32 <=>   12 -  43   (LEU    1  - PRO   32  <=> LEU   12  - PHE   43 )                          
+   1: 1ECN-A 1HLM-A    33 -  75 <=>   48 -  90   (SER   33  - ASN   75  <=> THR   48  - THR   90 )                          
+   1: 1ECN-A 1HLM-A    76 - 112 <=>   93 - 129   (ILE   76  - THR  112  <=> LEU   93  - LEU  129 )                          
+   1: 1ECN-A 1HLM-A   113 - 116 <=>  132 - 135   (ASP  113  - GLY  116  <=> GLY  132  - LYS  135 )                          
+   1: 1ECN-A 1HLM-A   117 - 131 <=>  137 - 151   (ALA  117  - MET  131  <=> VAL  137  - VAL  151 )                          
+   1: 1ECN-A 1HLM-A   133 - 136 <=>  152 - 155   (PHE  133  - MET  136  <=> LEU  152  - LYS  155 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1HLM-A  U(1,.)   0.202332  0.364229 -0.909065           -3.394280"
+-matrix  "1ECN-A 1HLM-A  U(2,.)   0.093544  0.916832  0.388161          -17.285736"
+-matrix  "1ECN-A 1HLM-A  U(3,.)   0.974839 -0.163575  0.151433            7.809748"
+

@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CG8-B 15.4  2.2  133   141   18   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1CG8B Z-score=15.4
+
+DSSP  --LLHHHHHHHHHHHHLLLL--LHHHHHHHHHHHLHHHHLLLLLLlLLLHhhHLLLHHHH
+Query --LSADQISTVQASFDKVKG--DPVGILYAVFKADPSIMAKFTQFaGKDLesIKGTAPFE   56
+ident   || ||          |         |  ||   |     |                  
+Sbjct vkLSEDQEHYIKGVWKDVDHkqITAKALERVFVVYPWTTRLFSKL-QGLF--SANDIGVQ   57
+DSSP  llLLHHHHHHHHHHHHHLLHhhHHHHHHHHHHHHLHHHHLLLHHH-LLLL--LLLLHHHH
+
+DSSP  HHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHHHL--LH
+Query THANRIVGFFSKIIGELPNIEADVNTFVASHKPRGVTHDQLNNFRAGFVSYMKAHT--DF  114
+ident  ||          |  |   |         |   ||           |      |    |
+Sbjct QHADKVQRALGEAIDDLKKVEINFQNLSGKHQEIGVDTQNFKLLGQTFMVELALHYkkTF  117
+DSSP  HHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHHHLLLLLHHHHHHHHHHHHHHHHHhhHL
+
+DSSP  HH-HHHHHHHHHHHHHHHHHLLL-
+Query AG-AEAAWGATLDTFFGMIFSKM-  136
+ident      ||             |   
+Sbjct RPkEHAAAYKFFRLVAEALSSNYh  141
+DSSP  LHhHHHHHHHHHHHHHHHHHHLLl
+
+
+# Structural equivalences
+   1: 1ECN-A 1CG8-B     1 -  18 <=>    3 -  20   (LEU    1  - GLY   18  <=> LEU    3  - HIS   20 )                          
+   1: 1ECN-A 1CG8-B    19 -  41 <=>   23 -  45   (ASP   19  - PHE   41  <=> ILE   23  - LEU   45 )                          
+   1: 1ECN-A 1CG8-B    43 -  46 <=>   46 -  49   (GLY   43  - LEU   46  <=> GLN   46  - PHE   49 )                          
+   1: 1ECN-A 1CG8-B    49 - 112 <=>   50 - 113   (ILE   49  - THR  112  <=> SER   50  - TYR  113 )                          
+   1: 1ECN-A 1CG8-B   113 - 116 <=>  116 - 119   (ASP  113  - GLY  116  <=> THR  116  - PRO  119 )                          
+   1: 1ECN-A 1CG8-B   117 - 136 <=>  121 - 140   (ALA  117  - MET  136  <=> GLU  121  - TYR  140 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1CG8-B  U(1,.)   0.956129  0.198398 -0.215536           -5.377285"
+-matrix  "1ECN-A 1CG8-B  U(2,.)  -0.040677  0.818539  0.573009          -11.892287"
+-matrix  "1ECN-A 1CG8-B  U(3,.)   0.290109 -0.539103  0.790699           23.116890"
+

@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 1HLMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBA-A 14.3  2.4  143   146   16   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1HLMA Sbjct=1MBAA Z-score=14.3
+
+DSSP  llllllllllLLLHHHHHHHHHHHHHHLLLLHHHHHHHHHHHLLLLLLLLLLLLLLLLLL
+Query gatqsfqsvgDLTPAEKDLIRSTWDQLMTHRTGFVADVFIRIFHNDPTAQRKFPQMAGLS   60
+ident            |  || ||    |            |     |   |     |    | |
+Sbjct ----------SLSAAEADLAGKSWAPVFANKNANGLDFLVALFEKFPDSANFFADFKGKS   50
+DSSP  ----------LLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLLLLLLLL
+
+DSSP  LLLLLLLHHHHHHHHHHHHHHHHHHHLL-LLLLHHHHHHHHHHHHHHHLLLHHHHHHHHH
+Query PAELRTSRQMHAHAIRVSALMTTYIDEM-DTEVLPELLATLTRTHDKNHVGKKNYDLFGK  119
+ident  |    |        |                     |      |    ||         
+Sbjct VADIKASPKLRDVSSRIFTRLNEFVNNAaNAGKMSAMLSQFAKEHVGFGVGSAQFENVRS  110
+DSSP  HHHHHLLLLHHHHHHHHHHHHHHHHHHLlLHHHHHHHHHHHHHHHHHLLLLHHHHHHHHH
+
+DSSP  HHHHHLLLLLlllLLLLHHHHHHHHHHHHHHH-HLLLLll
+Query VLMEAIKAELgvgFTKQVHDAWAKTFAIVQGV-LITKHas  158
+ident                     || | |              
+Sbjct MFPGFVASVA--aPPAGADAAWTKLFGLIIDAlKAAGA--  146
+DSSP  HHHHHHHLLL--lLLLLHHHHHHHHHHHHHHHhHHLLL--
+
+
+# Structural equivalences
+   1: 1HLM-A 1MBA-A    11 -  88 <=>    1 -  78   (ASP   11  - MET   88  <=> SER    1  - ALA   78 )                          
+   1: 1HLM-A 1MBA-A    89 - 129 <=>   80 - 120   (ASP   89  - LEU  129  <=> ASN   80  - ALA  120 )                          
+   1: 1HLM-A 1MBA-A   133 - 151 <=>  122 - 140   (PHE  133  - VAL  151  <=> PRO  122  - ALA  140 )                          
+   1: 1HLM-A 1MBA-A   152 - 156 <=>  142 - 146   (LEU  152  - HIS  156  <=> LYS  142  - ALA  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1HLM-A 1MBA-A  U(1,.)  -0.818951  0.365520 -0.442397          -25.642094"
+-matrix  "1HLM-A 1MBA-A  U(2,.)   0.456833 -0.051314 -0.888071           28.673250"
+-matrix  "1HLM-A 1MBA-A  U(3,.)  -0.347309 -0.929388 -0.124958          -54.588951"
+

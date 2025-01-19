@@ -1,0 +1,40 @@
+# Job: ghf22
+# Query: 1ALCA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4EOF-A 20.0  1.4  121   131   36   MOLECULE: LYSOZYME;                                                  
+
+# Pairwise alignments
+
+No 1: Query=1ALCA Sbjct=4EOFA Z-score=20.0
+
+DSSP  LLLLHHHHHHHLH--HHLLHHHLLHHHHHHHHHHHHLLLLLLEEELL-LLEEELLLLEEL
+Query KQFTKCELSQNLY--DIDGYGRIALPELICTMFHTSGYDTQAIVEND-ESTEYGLFQISN   57
+ident | |  |||         | |    |    |     |   |||   |   || ||  ||  
+Sbjct KVFGRCELAAAMKrhGLDNYRGYSLGNWVCAAKFESNFNTQATNRNTdGSTDYGILQINS   60
+DSSP  LLLLHHHHHHHHHhlLLLLLLLLLHHHHHHHHHHHHLLLLLLEEELLlLLEEELLLLEEL
+
+DSSP  LLLLLLLLLLLLLLLLLLLHHHHHLLLLHHHHHHHHHHHHH-LLHHHLHHHHHHLL-LLL
+Query ALWCKSSQSPQSRNICDITCDKFLDDDITDDIMCAKKILDI-KGIDYWIAHKALCT-EKL  115
+ident   ||     | ||| | | |   |  |||    |||||     |   | |    |     
+Sbjct RWWCNDGRTPGSRNLCNIPCSALLSSDITASVNCAKKIVSDgNGMNAWVAWRNRCKgTDV  120
+DSSP  LLLLLLLLLLLLLLLLLLLHHHHHLLLLHHHHHHHHHHHHLlLHHHHLHHHHHHLLlLLH
+
+DSSP  HHHLLL----l
+Query EQWLCE----k  122
+ident   |        
+Sbjct QAWIRGcrlrr  131
+DSSP  HHHHLLlllll
+
+
+# Structural equivalences
+   1: 1ALC-A 4EOF-A     1 -  13 <=>    1 -  13   (LYS    1  - TYR   13  <=> LYS    1  - LYS   13 )                          
+   1: 1ALC-A 4EOF-A    14 -  45 <=>   16 -  47   (ASP   14  - ASP   45  <=> GLY   16  - THR   47 )                          
+   1: 1ALC-A 4EOF-A    46 -  98 <=>   49 - 101   (GLU   46  - ILE   98  <=> GLY   49  - ASP  101 )                          
+   1: 1ALC-A 4EOF-A    99 - 112 <=>  103 - 116   (LYS   99  - THR  112  <=> ASN  103  - LYS  116 )                          
+   1: 1ALC-A 4EOF-A   113 - 121 <=>  118 - 126   (GLU  113  - GLU  121  <=> THR  118  - GLY  126 )                          
+
+# Translation-rotation matrices
+-matrix  "1ALC-A 4EOF-A  U(1,.)  -0.850058 -0.277283 -0.447790            9.106022"
+-matrix  "1ALC-A 4EOF-A  U(2,.)   0.470153 -0.016271 -0.882435            2.087753"
+-matrix  "1ALC-A 4EOF-A  U(3,.)   0.237398 -0.960651  0.144197           26.750368"
+

@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1LHTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3LHB-A 18.2  1.6  135   149   27   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1LHTA Sbjct=3LHBA Z-score=18.2
+
+DSSP  ---------LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHLHHHLLLLL
+Query ---------GLSDDEWNHVLGIWAKVEPDLSAHGQEVIIRLFQLHPETQERFAKFKNLTT   51
+ident           ||  |       || |       |       |   |  || | ||| |||
+Sbjct pivdtgsvaPLSAAEKTKIRSAWAPVYSTYETSGVDILVKFFTSTPAAQEFFPKFKGLTT   60
+DSSP  lllllllllLLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLHHHLLLLL
+
+DSSP  HHHHHHLHHHHHHHHHHHHHHHHHHHLLLL---LHHHHHHHHHHHHHLLLLLHHHHHHHH
+Query IDALKSSEEVKKHGTTVLTALGRILKQKNN---HEQELKPLAESHATKHKIPVKYLEFIC  108
+ident  | || |  |  |      |                 |  |   ||        |     
+Sbjct ADELKKSADVRWHAERIINAVDDAVASMDDtekMSMKLRNLSGKHAKSFQVDPEYFKVLA  120
+DSSP  HHHHHHLHHHHHHHHHHHHHHHHHHHLLLLhhhHHHHHHHHHHHHHHLLLLLHHHHHHHH
+
+DSSP  HHHHHHHHhhllllllhhhHHHHHHHHHHHHHHHHHHHhllllll
+Query EIIVKVIAekhpsdfgadsQAAMKKALELFRNDMASKYkefgfqg  153
+ident   |    |            |   |          | |       
+Sbjct AVIADTVA---------agDAGFEKLMSMICILLRSAY-------  149
+DSSP  HHHHHHHH---------llLHHHHHHHHHHHHHHHLLL-------
+
+
+# Structural equivalences
+   1: 1LHT-A 3LHB-A     1 -  81 <=>   10 -  90   (GLY    1  - ASN   81  <=> PRO   10  - ASP   90 )                          
+   1: 1LHT-A 3LHB-A    82 - 116 <=>   94 - 128   (HIS   82  - ALA  116  <=> MET   94  - ALA  128 )                          
+   1: 1LHT-A 3LHB-A   128 - 146 <=>  131 - 149   (GLN  128  - TYR  146  <=> ASP  131  - TYR  149 )                          
+
+# Translation-rotation matrices
+-matrix  "1LHT-A 3LHB-A  U(1,.)   0.132819  0.375435  0.917283          -73.313225"
+-matrix  "1LHT-A 3LHB-A  U(2,.)   0.403599 -0.865763  0.295909          181.818512"
+-matrix  "1LHT-A 3LHB-A  U(3,.)   0.905244  0.330912 -0.266515          -73.314362"
+

@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 1HDSC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3LHB-A 15.0  2.0  128   149   31   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1HDSC Sbjct=3LHBA Z-score=15.0
+
+DSSP  ---------LLLLLHHHHHHHHHHHHLLLLHHHHHHHHLHHHHHLHHHHHHLLLLL----
+Query ---------VLSAANKSNVKAAWGKVGGNAPAYGAQALQRMFLSFPTTKTYFPHFD----   47
+ident           |||| |     ||  |       |   |   | | |     || |     
+Sbjct pivdtgsvaPLSAAEKTKIRSAWAPVYSTYETSGVDILVKFFTSTPAAQEFFPKFKgltt   60
+DSSP  lllllllllLLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLHHHLllll
+
+DSSP  --lLLLLHHHHHHHHHHHHHHHHHLLLLL---LHHHHLLLLLHHHHLLLLLLHHHHHHHH
+Query --lSHGSAQQKAHGQKVANALTKAQGHLN---DLPGTLSNLSNLHAHKLRVNPVNFKLLS  102
+ident       ||    |     ||   |             | |||  ||    | |  || | 
+Sbjct adeLKKSADVRWHAERIINAVDDAVASMDdteKMSMKLRNLSGKHAKSFQVDPEYFKVLA  120
+DSSP  hhhHHHLHHHHHHHHHHHHHHHHHHHLLLlhhHHHHHHHHHHHHHHHLLLLLHHHHHHHH
+
+DSSP  HHHHHHHHhhllllllhhhHHHHHHHHHHHHHHHHHHHl
+Query HSLLVTLAshlptnftpavHANLNKFLANDSTVLTSKYr  141
+ident      | |            |   |        | | | 
+Sbjct AVIADTVA---------agDAGFEKLMSMICILLRSAY-  149
+DSSP  HHHHHHHH---------llLHHHHHHHHHHHHHHHLLL-
+
+
+# Structural equivalences
+   1: 1HDS-C 3LHB-A     1 -  47 <=>   10 -  56   (VAL    1  - ASP   47  <=> PRO   10  - LYS   56 )                          
+   1: 1HDS-C 3LHB-A    49 -  74 <=>   64 -  89   (SER   49  - ASN   74  <=> LEU   64  - ASP   89 )                          
+   1: 1HDS-C 3LHB-A    75 - 110 <=>   93 - 128   (ASP   75  - ALA  110  <=> LYS   93  - ALA  128 )                          
+   1: 1HDS-C 3LHB-A   122 - 140 <=>  131 - 149   (HIS  122  - TYR  140  <=> ASP  131  - TYR  149 )                          
+
+# Translation-rotation matrices
+-matrix  "1HDS-C 3LHB-A  U(1,.)  -0.274933  0.431256  0.859319          -67.275452"
+-matrix  "1HDS-C 3LHB-A  U(2,.)   0.785116  0.616603 -0.058255         -140.089081"
+-matrix  "1HDS-C 3LHB-A  U(3,.)  -0.554982  0.658649 -0.508111         -137.315903"
+

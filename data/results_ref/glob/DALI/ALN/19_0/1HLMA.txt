@@ -1,0 +1,42 @@
+# Job: glob
+# Query: 1HLMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1BIN-B 11.5  2.7  134   143   15   MOLECULE: LEGHEMOGLOBIN A;                                           
+
+# Pairwise alignments
+
+No 1: Query=1HLMA Sbjct=1BINB Z-score=11.5
+
+DSSP  lllllllllLLLLHHHHHHHHHHHHHHLLLLHHHHHHHHHHHLLLLLLLLLLLLLLLLll
+Query gatqsfqsvGDLTPAEKDLIRSTWDQLMTHRTGFVADVFIRIFHNDPTAQRKFPQMAGls   60
+ident             |     |  |                   |    | |   |   |   
+Sbjct ---------VAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLAN--   49
+DSSP  ---------LLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHLLHHHLL--
+
+DSSP  lllLLLLhhHHHHHHHHHHHHHHHHHLLLL----llHHHHhHHHHHHHHHHLLLHHHHHH
+Query paeLRTSrqMHAHAIRVSALMTTYIDEMDT----evLPELlATLTRTHDKNHVGKKNYDL  116
+ident                    |     |               | |   |    |       
+Sbjct --gVDPT--NPKLTGHAEKLFALVRDSAGQlkasgtVVAD-AALGSVHAQKAVTDPQFVV  104
+DSSP  --lLLLL--LHHHHHHHHHHHHHHHHHHHHhhhhllLLLL-HHHHHHHHLLLLLHHHHHH
+
+DSSP  HHHHHHHHLLL-LLLLlLLLLHHHHHHHHHHHHHHHHLLllll
+Query FGKVLMEAIKA-ELGVgFTKQVHDAWAKTFAIVQGVLITkhas  158
+ident     |   |||             ||                 
+Sbjct VKEALLKTIKAaVGDK-WSDELSRAWEVAYDELAAAIKK---a  143
+DSSP  HHHHHHHHHHHhHHHH-LLHHHHHHHHHHHHHHHHHHHL---l
+
+
+# Structural equivalences
+   1: 1HLM-A 1BIN-B    10 -  58 <=>    1 -  49   (GLY   10  - GLY   58  <=> VAL    1  - ASN   49 )                          
+   1: 1HLM-A 1BIN-B    64 -  67 <=>   51 -  54   (LEU   64  - SER   67  <=> VAL   51  - THR   54 )                          
+   1: 1HLM-A 1BIN-B    70 -  90 <=>   55 -  75   (MET   70  - THR   90  <=> ASN   55  - GLN   75 )                          
+   1: 1HLM-A 1BIN-B    93 -  96 <=>   82 -  85   (LEU   93  - LEU   96  <=> VAL   82  - ASP   85 )                          
+   1: 1HLM-A 1BIN-B    98 - 127 <=>   86 - 115   (ALA   98  - ALA  127  <=> ALA   86  - ALA  115 )                          
+   1: 1HLM-A 1BIN-B   128 - 131 <=>  117 - 120   (GLU  128  - VAL  131  <=> VAL  117  - LYS  120 )                          
+   1: 1HLM-A 1BIN-B   133 - 154 <=>  121 - 142   (PHE  133  - THR  154  <=> TRP  121  - LYS  142 )                          
+
+# Translation-rotation matrices
+-matrix  "1HLM-A 1BIN-B  U(1,.)   0.686105 -0.481553  0.545313            7.259945"
+-matrix  "1HLM-A 1BIN-B  U(2,.)  -0.572201 -0.820102 -0.004276           74.116623"
+-matrix  "1HLM-A 1BIN-B  U(3,.)   0.449272 -0.309095 -0.838221           35.597824"
+

@@ -1,0 +1,43 @@
+# Job: glob
+# Query: 1G09C
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1BIN-B 13.8  2.7  132   143    9   MOLECULE: LEGHEMOGLOBIN A;                                           
+
+# Pairwise alignments
+
+No 1: Query=1G09C Sbjct=1BINB Z-score=13.8
+
+DSSP  -LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHLL-lLLLLlLLHHhHHH
+Query -VLSAADKGNVKAAWGKVGGHAAEYGAEALERMFLSFPTTKTYFP-hFDLShGSAQvKGH   58
+ident           |             |            |  |  |                
+Sbjct vAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSflANGV-DPTN-PKL   58
+DSSP  lLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHLLHhhLLLL-LLLL-HHH
+
+DSSP  HHHHHHHHHHHLLLL------LLHHhhLHHHHHHHHllLLLL-LHHHHHHHHHHHHHHHH
+Query GAKVAAALTKAVEHL------DDLPgaLSELSDLHAhkLRVD-PVNFKLLSHSLLVTLAS  111
+ident                               |   ||          |      || |   
+Sbjct TGHAEKLFALVRDSAgqlkasGTVV-aDAALGSVHA--QKAVtDPQFVVVKEALLKTIKA  115
+DSSP  HHHHHHHHHHHHHHHhhhhhhLLLL-lLHHHHHHHH--LLLLlHHHHHHHHHHHHHHHHH
+
+DSSP  HLLLLLLHHHHHHHHHHHHHHHHHHLLLll
+Query HLPSDFTPAVHASLDKFLANVSTVLTSKyr  141
+ident                               
+Sbjct AVGDKWSDELSRAWEVAYDELAAAIKKA--  143
+DSSP  HHHHHLLHHHHHHHHHHHHHHHHHHHLL--
+
+
+# Structural equivalences
+   1: 1G09-C 1BIN-B     1 -  44 <=>    2 -  45   (VAL    1  - PRO   44  <=> ALA    2  - SER   45 )                          
+   1: 1G09-C 1BIN-B    46 -  49 <=>   48 -  51   (PHE   46  - SER   49  <=> ALA   48  - VAL   51 )                          
+   1: 1G09-C 1BIN-B    51 -  54 <=>   52 -  55   (GLY   51  - GLN   54  <=> ASP   52  - ASN   55 )                          
+   1: 1G09-C 1BIN-B    56 -  73 <=>   56 -  73   (LYS   56  - LEU   73  <=> PRO   56  - ALA   73 )                          
+   1: 1G09-C 1BIN-B    74 -  77 <=>   80 -  83   (ASP   74  - PRO   77  <=> GLY   80  - VAL   83 )                          
+   1: 1G09-C 1BIN-B    80 -  88 <=>   85 -  93   (LEU   80  - ALA   88  <=> ASP   85  - ALA   93 )                          
+   1: 1G09-C 1BIN-B    91 -  94 <=>   94 -  97   (LEU   91  - ASP   94  <=> GLN   94  - VAL   97 )                          
+   1: 1G09-C 1BIN-B    95 - 139 <=>   99 - 143   (PRO   95  - LYS  139  <=> ASP   99  - ALA  143 )                          
+
+# Translation-rotation matrices
+-matrix  "1G09-C 1BIN-B  U(1,.)   0.727760 -0.653685  0.207512           -5.289302"
+-matrix  "1G09-C 1BIN-B  U(2,.)   0.611436  0.755460  0.235425           23.289064"
+-matrix  "1G09-C 1BIN-B  U(3,.)  -0.310661 -0.044453  0.949481            4.078350"
+

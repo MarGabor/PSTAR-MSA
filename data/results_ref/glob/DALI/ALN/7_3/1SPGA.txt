@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 1SPGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3LHB-A 16.5  1.9  130   149   28   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1SPGA Sbjct=3LHBA Z-score=16.5
+
+DSSP  ---------LLLHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHHLLLLLL--
+Query ---------SLSATDKARVKALWDKIEGKSAELGAEALGRMLVSFPQTKIYFSEWGQD--   49
+ident           |||  |      |          |   |     | |     |        
+Sbjct pivdtgsvaPLSAAEKTKIRSAWAPVYSTYETSGVDILVKFFTSTPAAQEFFPKFKGLtt   60
+DSSP  lllllllllLLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLHHHLLLll
+
+DSSP  --lLLLLHHHHHHHHHHHHHHHHHHHLLL---LHHHHHHHHHHHHHLLLLLLLHHHHHHH
+Query --lGPQTPQVRNHGAVIMAAVGKAVKSID---NLVGGLSQLSELHAFKLRVDPANFKILA  104
+ident          || |   |  ||  || | |        |  ||  ||    |||  || ||
+Sbjct adeLKKSADVRWHAERIINAVDDAVASMDdteKMSMKLRNLSGKHAKSFQVDPEYFKVLA  120
+DSSP  hhhHHHLHHHHHHHHHHHHHHHHHHHLLLlhhHHHHHHHHHHHHHHHLLLLLHHHHHHHH
+
+DSSP  HHHHHHHHhhllllllhhhHHHHHHHHHHHHHHHLLLL
+Query HNIILVISmyfpgdftpevHLSVDKFLACLALALSEKY  142
+ident   |                     |        |   |
+Sbjct AVIADTVA---------agDAGFEKLMSMICILLRSAY  149
+DSSP  HHHHHHHH---------llLHHHHHHHHHHHHHHHLLL
+
+
+# Structural equivalences
+   1: 1SPG-A 3LHB-A     1 -  49 <=>   10 -  58   (SER    1  - ASP   49  <=> PRO   10  - LEU   58 )                          
+   1: 1SPG-A 3LHB-A    51 -  76 <=>   64 -  89   (GLY   51  - ASP   76  <=> LEU   64  - ASP   89 )                          
+   1: 1SPG-A 3LHB-A    77 - 112 <=>   93 - 128   (ASN   77  - SER  112  <=> LYS   93  - ALA  128 )                          
+   1: 1SPG-A 3LHB-A   124 - 142 <=>  131 - 149   (HIS  124  - TYR  142  <=> ASP  131  - TYR  149 )                          
+
+# Translation-rotation matrices
+-matrix  "1SPG-A 3LHB-A  U(1,.)  -0.203946 -0.952399  0.226589          215.147125"
+-matrix  "1SPG-A 3LHB-A  U(2,.)   0.327148  0.151845  0.932694          -31.309067"
+-matrix  "1SPG-A 3LHB-A  U(3,.)  -0.922703  0.264347  0.280607          -56.947216"
+

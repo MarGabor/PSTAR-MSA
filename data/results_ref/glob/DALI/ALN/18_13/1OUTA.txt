@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1OUTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MWC-A 20.3  1.7  141   153   25   MOLECULE: PROTEIN (MYOGLOBIN);                                       
+
+# Pairwise alignments
+
+No 1: Query=1OUTA Sbjct=1MWCA Z-score=20.3
+
+DSSP  LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHHL-LLLL----lLLLLHH
+Query SLTAKDKSVVKAFWGKISGKADVVGAEALGRMLTAYPQTKTYFS-HWAD----lSPGSGP   55
+ident  |       |   |||        | | | |     | |   |              |  
+Sbjct GLSDGEWQLVLNVWGKVEADVAGHGQEVLIRLFKGHPETLEKFDkFKHLksedeMKASED   60
+DSSP  LLLHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLHHHHLLLHhHLLLllhhhHHHLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHLL
+Query VKKHGGIIMGAIGKAVGLMDDLVGGMSALSDLHAFKLRVDPGNFKILSHNILVTLAIHFP  115
+ident  ||||     | |               |   || |           |  |   |    |
+Sbjct LKKHGNTVLTALGGILKKKGHHEAELTPLAQSHATKHKIPVKYLEFISEAIIQVLQSKHP  120
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHHLL
+
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHLLLL------
+Query SDFTPEVHIAVDKFLAAVSAALADKYR------  142
+ident  ||      |  | |       | ||       
+Sbjct GDFGADAQGAMSKALELFRNDMAAKYKelgfqg  153
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHHHHHhlllll
+
+
+# Structural equivalences
+   1: 1OUT-A 1MWC-A     1 -  44 <=>    1 -  44   (SER    1  - SER   44  <=> GLY    1  - ASP   44 )                          
+   1: 1OUT-A 1MWC-A    45 -  48 <=>   46 -  49   (HIS   45  - ASP   48  <=> PHE   46  - LEU   49 )                          
+   1: 1OUT-A 1MWC-A    50 - 142 <=>   55 - 147   (SER   50  - ARG  142  <=> MET   55  - LYS  147 )                          
+
+# Translation-rotation matrices
+-matrix  "1OUT-A 1MWC-A  U(1,.)  -0.885453 -0.119080 -0.449213          100.331047"
+-matrix  "1OUT-A 1MWC-A  U(2,.)  -0.385401  0.728297  0.566612            3.539872"
+-matrix  "1OUT-A 1MWC-A  U(3,.)   0.259688  0.674836 -0.690766           40.624889"
+

@@ -1,0 +1,32 @@
+# Job: toxin
+# Query: 1COEA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1TFS-A  4.5  3.7   55    60   40   MOLECULE: TOXIN FS2;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1COEA Sbjct=1TFSA Z-score=4.5
+
+DSSP  LLLEELLLLLLLEELLLLllLLLEEEEEELLlllleEELLLLLLLLLLLLEEEEELLLLL
+Query LECHNQQSSQTPTTTGCSggETNCYKKRWRDhrgyrTERGCGCPSVKNGIEINCCTTDRC   60
+ident   |     |    |  |   |  |||   |       |||||||         ||  |||
+Sbjct RICYSHKASLPRATKTCV--ENTCYKMFIRThreyiSERGCGCPTAMWPYQTECCKGDRC   58
+DSSP  LEEELLLLLLLLLEEELL--LLEEEEEEELLeeeeeEEEEELLLLLLLLEEEEEEELLLL
+
+DSSP  LL
+Query NN   62
+ident | 
+Sbjct NK   60
+DSSP  LL
+
+
+# Structural equivalences
+   1: 1COE-A 1TFS-A     1 -  18 <=>    1 -  18   (LEU    1  - SER   18  <=> ARG    1  - VAL   18 )                          
+   1: 1COE-A 1TFS-A    21 -  31 <=>   19 -  29   (GLU   21  - ASP   31  <=> GLU   19  - THR   29 )                          
+   1: 1COE-A 1TFS-A    37 -  62 <=>   35 -  60   (THR   37  - ASN   62  <=> SER   35  - LYS   60 )                          
+
+# Translation-rotation matrices
+-matrix  "1COE-A 1TFS-A  U(1,.)  -0.984674  0.082539  0.153638           -0.188390"
+-matrix  "1COE-A 1TFS-A  U(2,.)   0.102841  0.986263  0.129261            0.579256"
+-matrix  "1COE-A 1TFS-A  U(3,.)  -0.140858  0.143081 -0.979636           -3.620512"
+

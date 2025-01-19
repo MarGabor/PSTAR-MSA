@@ -1,0 +1,43 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1SPG-A 15.4  2.5  133   142   19   MOLECULE: HEMOGLOBIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1SPGA Z-score=15.4
+
+DSSP  -LLHHHHHHHHHHHHLLLLL-HHHHHHHHHHH---LHHHHLLLLLLlLLLHhhHLLLHHH
+Query -LSADQISTVQASFDKVKGD-PVGILYAVFKA---DPSIMAKFTQFaGKDLesIKGTAPF   55
+ident  |||     | |  ||  |        |        |     |    | ||     |   
+Sbjct sLSATDKARVKALWDKIEGKsAELGAEALGRMlvsFPQTKIYFSEW-GQDL--GPQTPQV   57
+DSSP  lLLHHHHHHHHHHHHHHLLLhHHHHHHHHHHHhhhLHHHHHHHLLL-LLLL--LLLLHHH
+
+DSSP  HHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHH-HHLLLHHHHHHHHHHHHHHHHHHL--
+Query ETHANRIVGFFSKIIGELPNIEADVNTFVASHK-PRGVTHDQLNNFRAGFVSYMKAHT--  112
+ident   |   |     |      |           |     |                      
+Sbjct RNHGAVIMAAVGKAVKSIDNLVGGLSQLSELHAfKLRVDPANFKILAHNIILVISMYFpg  117
+DSSP  HHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHlLLLLLLHHHHHHHHHHHHHHHHHLll
+
+DSSP  LHHH-HHHHHHHHHHHHHHHHHLLL
+Query DFAG-AEAAWGATLDTFFGMIFSKM  136
+ident ||           |         | 
+Sbjct DFTPeVHLSVDKFLACLALALSEKY  142
+DSSP  LLLHhHHHHHHHHHHHHHHHHLLLL
+
+
+# Structural equivalences
+   1: 1ECN-A 1SPG-A     1 -  19 <=>    2 -  20   (LEU    1  - ASP   19  <=> LEU    2  - LYS   20 )                          
+   1: 1ECN-A 1SPG-A    20 -  30 <=>   22 -  32   (PRO   20  - ALA   30  <=> ALA   22  - MET   32 )                          
+   1: 1ECN-A 1SPG-A    31 -  41 <=>   36 -  46   (ASP   31  - PHE   41  <=> PHE   36  - TRP   46 )                          
+   1: 1ECN-A 1SPG-A    43 -  46 <=>   47 -  50   (GLY   43  - LEU   46  <=> GLY   47  - LEU   50 )                          
+   1: 1ECN-A 1SPG-A    49 -  88 <=>   51 -  90   (ILE   49  - LYS   88  <=> GLY   51  - ALA   90 )                          
+   1: 1ECN-A 1SPG-A    89 - 112 <=>   92 - 115   (PRO   89  - THR  112  <=> LYS   92  - PHE  115 )                          
+   1: 1ECN-A 1SPG-A   113 - 116 <=>  118 - 121   (ASP  113  - GLY  116  <=> ASP  118  - PRO  121 )                          
+   1: 1ECN-A 1SPG-A   117 - 136 <=>  123 - 142   (ALA  117  - MET  136  <=> VAL  123  - TYR  142 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1SPG-A  U(1,.)  -0.339872 -0.263267 -0.902872           -5.231294"
+-matrix  "1ECN-A 1SPG-A  U(2,.)  -0.383484 -0.837791  0.388647           32.269516"
+-matrix  "1ECN-A 1SPG-A  U(3,.)  -0.858736  0.478327  0.183783           25.270773"
+

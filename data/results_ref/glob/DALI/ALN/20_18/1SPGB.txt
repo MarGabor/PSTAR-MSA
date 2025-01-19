@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 1SPGB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1OUT-A 21.5  1.6  139   142   37   MOLECULE: HEMOGLOBIN I;                                              
+
+# Pairwise alignments
+
+No 1: Query=1SPGB Sbjct=1OUTA Z-score=21.5
+
+DSSP  lLLLHHHHHHHHHHHLLL--LHHHHHHHHHHHHHHHLHHHHHHLHHHLLLllhhhHHHLH
+Query vDWTDAERAAIKALWGKI--DVGEIGPQALSRLLIVYPWTQRHFKGFGNIstnaaILGNA   58
+ident    |       || ||||       |  || | |  || |   |             |  
+Sbjct -SLTAKDKSVVKAFWGKIsgKADVVGAEALGRMLTAYPQTKTYFSHWADL-----SPGSG   54
+DSSP  -LLLHHHHHHHHHHHHHHhhHHHHHHHHHHHHHHHHLHHHHHHHLLLLLL-----LLLLH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+Query KVAEHGKTVMGGLDRAVQNMDNIKNVYKQLSIKHSEKIHVDPDNFRLLGEIITMCVGAKF  118
+ident  |  ||   ||    ||  ||        ||  |  |  ||| ||  |   |       |
+Sbjct PVKKHGGIIMGAIGKAVGLMDDLVGGMSALSDLHAFKLRVDPGNFKILSHNILVTLAIHF  114
+DSSP  HHHHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHL
+
+DSSP  LLlLLLHHHHHHHHHHHHHHHHHHLLLL-
+Query GPsAFTPEIHEAWQKFLAVVVSALGRQY-  146
+ident     |||| | |  |||| |  ||   | 
+Sbjct PS-DFTPEVHIAVDKFLAAVSAALADKYr  142
+DSSP  LL-LLLHHHHHHHHHHHHHHHHHHHLLLl
+
+
+# Structural equivalences
+   1: 1SPG-B 1OUT-A     2 -  18 <=>    1 -  17   (ASP    2  - ILE   18  <=> SER    1  - ILE   17 )                          
+   1: 1SPG-B 1OUT-A    19 -  48 <=>   20 -  49   (ASP   19  - ILE   48  <=> LYS   20  - LEU   49 )                          
+   1: 1SPG-B 1OUT-A    54 - 120 <=>   50 - 116   (ILE   54  - PRO  120  <=> SER   50  - SER  116 )                          
+   1: 1SPG-B 1OUT-A   122 - 146 <=>  117 - 141   (ALA  122  - TYR  146  <=> ASP  117  - TYR  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1SPG-B 1OUT-A  U(1,.)  -0.703017 -0.414518 -0.577877           75.962982"
+-matrix  "1SPG-B 1OUT-A  U(2,.)  -0.562017  0.821735  0.094283          -19.277834"
+-matrix  "1SPG-B 1OUT-A  U(3,.)   0.435780  0.391059 -0.810660            6.930860"
+
