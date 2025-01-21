@@ -20,6 +20,7 @@ import shutil
 import json
 #import svg_stack
 from itertools import tee
+#import rsync
 #import lxml
 import traceback
 import contextlib
@@ -2311,7 +2312,11 @@ def get_exact_matches(TSV_file_full_path, aln_entry_list):
         exact_match_dict[str(row.qseqid)].append(row)    
 
     return exact_match_dict
-  
+ 
+def remove_pdb_entry_from_fasta(pdb_id):
+    pass
+
+
 #copies PDB files from local PDB database to <job_dir>/DALI/PDB_lib
 #mainly implemented for consistency, no real advantage
 # void ([str,str,...],str,str)
@@ -2332,7 +2337,7 @@ def cp_PDB_files_to_job_dir(chain_list, pdb_db_path, pdb_out_path):
         except:
             errMsg = "Error while copying file %s to %s." % (src_pdb_full_path, dest_pdb_full_path)
             errorFct(errMsg)
-            raise
+            remove_pdb_entry_from_fasta(pdb_id)
 
 #assigns numbers (temporary ids) to headers and sequences in alignment file, return dict
 #this function is very similar to import_seq_list_from_fasta_aln(), but i dont want to change the latter at the moment
@@ -3632,8 +3637,28 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mp
     dali_dat_lib_path = os.path.join(dali_job_dir, "DAT_lib")
     create_dir_safely(dali_dat_lib_path)
 
-    #import data for DALI
-    DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
+    #retrying import might be necessary sometimes, if DALI behaves unexpectedly
+    #for sbatch it is advisable to create a copy of the DALI program for each
+    #sbatch call to prevent them from interfering with each other, if they are doing so at all
+    retry_import_counter = 0
+    small_pdb_lib_list = os.listdir(small_pdb_lib_path)
+    small_pdb_id_set = set()
+    small_pdb_id_set.clear()
+    for file_name in small_pdb_lib_list:
+        small_pdb_id_set.add(file_name[3:7].upper())
+    while retry_import_counter<10:
+        #import data for DALI
+        DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
+        dat_file_set = set()
+        dat_file_set.clear()
+        for file_name in os.listdir(dali_dat_lib_path):
+            if file_name.endswith('.dat'):
+                dat_file_set.add(file_name[0:4].upper())
+        if len(dat_file_set.difference(small_pdb_id_set)) == 0 and len(small_pdb_id_set.difference(dat_file_set)) == 0:
+            break
+        err_msg = "Could not import all PDB files into DALI DAT format. [%s/%s] DAT files present. Retrying." % (len(dat_file_set), len(small_pdb_id_set))
+        errorFct(err_msg)
+        retry_import_counter += 1
     
     #start pairwise structural alignment
     try:
@@ -4230,13 +4255,13 @@ def main():
                            "If not provided, diamond will try to auto-detect number of available cores and DALI will run on one core only."), required=False)
     argParser.add_argument("-dmp", "--diamondmp", default=0, action="count", help="Provide this flag to use diamond in a multiprocessing cluster environment across multiple nodes.", required=False)
     argParser.add_argument("-mpi", "--mpibin", default = "", help="Provide path to \"openmpi/bin\" path.", required=False)
-    argParser.add_argument("-bl", "--baseline", default=0, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
+    argParser.add_argument("-bl", "--baseline", default=1, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing ", required=False)
 
     args = argParser.parse_args()
 
-    if len(args.jobname) > 11:
+    if args.jobname is not None and len(args.jobname) > 11:
         errMsg = "Job title must be shorter than 12 characters. Due to DALI longer names are not possible at the moment."
         errorFct(errMsg)
         exit(1)
