@@ -1050,6 +1050,11 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
         #close files
         close_file_safely(err_file, err_file_path, "")
         close_file_safely(out_file, out_file_path, "")
+
+        if os.path.exists(os.path.join(SCRIPT_DIR,'dali.lock')):
+            err_msg = "Error while importing pdb file %s with import.pl. Skipping." % pdb_name.upper()
+            errorFct(err_msg)
+            os.remove(os.path.join(SCRIPT_DIR,'dali.lock'))
     
     #rewrite a sufficient check of whether import has been successful
     for file_name in os.listdir(DAT_path):
@@ -3646,19 +3651,30 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mp
     small_pdb_id_set.clear()
     for file_name in small_pdb_lib_list:
         small_pdb_id_set.add(file_name[3:7].upper())
-    while retry_import_counter<10:
-        #import data for DALI
-        DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
-        dat_file_set = set()
-        dat_file_set.clear()
-        for file_name in os.listdir(dali_dat_lib_path):
-            if file_name.endswith('.dat'):
-                dat_file_set.add(file_name[0:4].upper())
-        if len(dat_file_set.difference(small_pdb_id_set)) == 0 and len(small_pdb_id_set.difference(dat_file_set)) == 0:
-            break
-        err_msg = "Could not import all PDB files into DALI DAT format. [%s/%s] DAT files present. Retrying." % (len(dat_file_set), len(small_pdb_id_set))
+    
+    #remove dali.lock, if it was accidentally written to SCRIPT_DIR
+    if os.path.exists(os.path.join(SCRIPT_DIR,'dali.lock')):
+        os.remove(os.path.join(SCRIPT_DIR,'dali.lock'))
+
+    #import data for DALI
+    DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
+
+    #start of a quite elaborate check, if there is a mismatch between PDB files to do alignments with and
+    # ones that have successfully been imported into DAT format
+    dat_file_set = set()
+    dat_file_set.clear()
+    for file_name in os.listdir(dali_dat_lib_path):
+        if file_name.endswith('.dat'):
+            dat_file_set.add(file_name[0:4].upper())
+    if len(dat_file_set.difference(small_pdb_id_set)) != 0 or len(small_pdb_id_set.difference(dat_file_set)) != 0:
+        if len(dat_file_set.difference(small_pdb_id_set)) != 0:
+            mis_msg_1 = "Too many DAT file(s) present. %s" % str(dat_file_set.difference(small_pdb_id_set))
+            errorFct(mis_msg_1)
+        if len(small_pdb_id_set.difference(dat_file_set)) != 0:
+            mis_msg_2 = "Skipped DAT files for PDB entries %s." % str(small_pdb_id_set.difference(dat_file_set))
+            errorFct(mis_msg_2)
+        err_msg = "Could not import all PDB files into DALI DAT format. [%s/%s] DAT files present." % (len(dat_file_set), len(small_pdb_id_set))
         errorFct(err_msg)
-        retry_import_counter += 1
     
     #start pairwise structural alignment
     try:
