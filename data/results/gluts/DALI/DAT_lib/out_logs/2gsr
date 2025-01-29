@@ -1,0 +1,332 @@
+A length: 207
+B length: 207
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            207
+Total number of atoms read in:              1658
+Total number of ignored atom records:        287
+ HEADER    TRANSFERASE/TRANSFERASE INHIBITOR       21-MAR-96   2GSR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.REINEMER,H.W.DIRR,R.HUBER                                           
+  Reading DSSP file
+ HEADER    TRANSFERASE/TRANSFERASE INHIBITOR       21-MAR-96   2GSR              COMPND   2 MOLECULE: CLASS PI GST GLUTATHIONE S-TRANSFERASE;                    SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    P.REINEMER,H.W.DIRR,R.HUBER                                           
+         207  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1964
+ selectset done           0
+ eigen done           0
+ tau           1   2.24058604              10          27          61
+ #popped           2           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau           3  0.526235163              44
+ #popped           4           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        1964
+ selectset done           0
+ eigen done           0
+ tau           5   1.67581046              27          89
+ #popped           6           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau           7   1.06451154             107         124
+ #popped           8           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau           9   1.78661156             107         184
+ #popped          10           2
+ #selectset contacts        1964
+ selectset done           2
+ eigen done           2
+ tau          11   1.22465110              27         107         197
+ #popped          12           3
+ #selectset contacts        1964
+ selectset done           3
+ eigen done           3
+ tau          13   1.37122595              27
+ #popped          13           2
+ #selectset contacts        1964
+ selectset done           2
+ eigen done           2
+ tau          15   2.00687790             107
+ #popped          11           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau          17   1.21910143             152         169
+ #popped          18           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau          19   1.35524476             139         152
+ #popped          20           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           7           0
+ #selectset contacts        1964
+ selectset done           0
+ eigen done           0
+ tau          21   1.86918688              76
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE/TRANSFERASE INHIBITOR       21-MAR-96   2GSR              COMPND   2 MOLECULE: CLASS PI GST GLUTATHIONE S-TRANSFERASE;                    SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    P.REINEMER,H.W.DIRR,R.HUBER                                           
+           0
+         207
+         207  residues read 2GSR.dssp                                                   
+  grow short strand           3           7
+  grow short strand          29          32
+  grow short helix          38          44
+  grow short strand          52          55
+  grow short strand          58          61
+  exclude short helix         135         137
+  exclude short helix         167         170
+  exclude short helix         194         197
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  5  6  2 12  8 11 10  9  7
+   2     1  4  5  5  1  3  4  5  6
+   3     1  6  7  7  2 12  8 11 10  9  7
+   4     2  0  0  3  1  3  4
+   5     2  0  0  2  5  6
+   6     3  8  9  6  2 12  8 11 10  9
+   7     3  0  0  1  7
+   8     6 10 11  5  2 12  8 11 10
+   9     6  0  0  1  9
+  10     8 12 13  3  2 12  8
+  11     8 18 19  2 11 10
+  12    10 14 15  2  2 12
+  13    10  0  0  1  8
+  14    12  0  0  1  2
+  15    12  0  0  1 12
+  16     0  0  0  1  8
+  17     0  0  0  0
+  18    11  0  0  1 11
+  19    11  0  0  1 10
+  20     0  0  0  1 11
+  21     0  0  0  0
+  22     0  0  0  1  7
+  23     0  0  0  0
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  5  2  1  1  3  6
+   3 -   1  6  7  7  2  2  2  7 12
+   4 -   2  0  0  3  2  1  1  3  4
+   5 -   2  0  0  2  1  5  6
+   6 -   3  8  9  6  2  2  2  8 12
+   7 -   3  0  0  1  1  7  7
+   8 -   6 10 11  5  3  2  2  8  8 10 12
+   9 -   6  0  0  1  1  9  9
+  10 -   8 12 13  3  3  2  2  8  8 12 12
+  11 -   8 16 17  2  1 10 11
+  12 -  10 14 15  2  2  2  2 12 12
+  13 -  10  0  0  1  1  8  8
+  14 -  12  0  0  1  1  2  2
+  15 -  12  0  0  1  1 12 12
+  16 -  11  0  0  1  1 11 11
+  17 -  11  0  0  1  1 10 10
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            207
+Total number of atoms read in:              1658
+Total number of ignored atom records:        267
+ HEADER    TRANSFERASE/TRANSFERASE INHIBITOR       21-MAR-96   2GSR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.REINEMER,H.W.DIRR,R.HUBER                                           
+  Reading DSSP file
+ HEADER    TRANSFERASE/TRANSFERASE INHIBITOR       21-MAR-96   2GSR              COMPND   2 MOLECULE: CLASS PI GST GLUTATHIONE S-TRANSFERASE;                    SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    P.REINEMER,H.W.DIRR,R.HUBER                                           
+         207  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau           1   2.39634395              10          26          62
+ #popped           2           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           3  0.558238089              44
+ #popped           4           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau           5   1.57277846              26          89
+ #popped           6           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           7  0.988025546             123
+ #popped           8           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau           9   8.78431416              26
+ #popped          11           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau          11   1.45714283             107
+ #popped           9           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          13   1.86984241             192
+ #popped          14           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          15   1.54998267             182
+ #popped          16           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          17   1.14072049             138         165
+ #popped          18           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          19   1.30277932             151
+ #popped           7           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          21   1.73971295              76
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE/TRANSFERASE INHIBITOR       21-MAR-96   2GSR              COMPND   2 MOLECULE: CLASS PI GST GLUTATHIONE S-TRANSFERASE;                    SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    P.REINEMER,H.W.DIRR,R.HUBER                                           
+           0
+         207
+         207  residues read 2GSR.dssp                                                   
+  grow short strand           3           7
+  grow short strand          29          32
+  grow short helix          38          44
+  grow short strand          52          55
+  grow short strand          58          61
+  exclude short helix         135         137
+  exclude short helix         194         197
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  5  6  2  8  9 11 10 12  7
+   2     1  4  5  5  1  3  4  5  6
+   3     1  6  7  7  2  8  9 11 10 12  7
+   4     2  0  0  3  1  3  4
+   5     2  0  0  2  5  6
+   6     3  8  9  6  2  8  9 11 10 12
+   7     3  0  0  1  7
+   8     6 10 11  3  2  8  9
+   9     6 16 17  3 11 10 12
+  10     8  0  0  1  2
+  11     8 12 13  2  8  9
+  12    11  0  0  1  8
+  13    11  0  0  1  9
+  14     0  0  0  3 11 10 12
+  15     0  0  0  0
+  16     9 18 19  2 11 10
+  17     9  0  0  1 12
+  18    16  0  0  1 11
+  19    16  0  0  1 10
+  20     0  0  0  0
+  21     0  0  0  1 10
+  22     0  0  0  1  7
+  23     0  0  0  0
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  5  2  1  1  3  6
+   3 -   1  6  7  7  2  2  2  7 12
+   4 -   2  0  0  3  2  1  1  3  4
+   5 -   2  0  0  2  1  5  6
+   6 -   3  8  9  6  2  2  2  8 12
+   7 -   3  0  0  1  1  7  7
+   8 -   6 10 11  3  2  2  2  8  9
+   9 -   6 14 15  3  1 10 12
+  10 -   8  0  0  1  1  2  2
+  11 -   8 12 13  2  1  8  9
+  12 -  11  0  0  1  1  8  8
+  13 -  11  0  0  1  1  9  9
+  14 -   9 16 17  2  1 10 11
+  15 -   9  0  0  1  1 12 12
+  16 -  14  0  0  1  1 11 11
+  17 -  14  0  0  1  1 10 10
+
+ CHAIN : 2GSRA
+ CHAIN : 2GSRB
+

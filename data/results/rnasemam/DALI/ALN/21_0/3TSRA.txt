@@ -1,0 +1,41 @@
+# Job: rnasemam
+# Query: 3TSRA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1AGI-A 16.7  1.9  115   125   36   MOLECULE: ANGIOGENIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=3TSRA Sbjct=1AGIA Z-score=16.7
+
+DSSP  --LLLHHHHHHHHHLLLLLLLLlLLLHHHHHHHHLLLLLlLLLLEEEEELLLHHHHHHHH
+Query --RESAAQKFQRQHMDPDGSSInSPTYCNQMMKRRDMTNgSCKPVNTFVHEPLADVQAVC   58
+ident          |  || |          ||  ||| |  |   ||  ||| |    |  | |
+Sbjct aqDDYRYIHFLTQHYDAKPKGR-NDEYCFNMMKNRRLTR-PCKDRNTFIHGNKNDIKAIC   58
+DSSP  llLLHHHHHHHHHHLLLLLLLL-LHHHHHHHHHHLLLLL-LLLLEEEEELLLHHHHHHHH
+
+DSSP  H---LEEELlllllLLEEELLLLEEEEEEEELLLLLLLLLLEEEEEEEELEEEEEELllL
+Query S---QENVTcknrkSNCYKSSSALHITDCHLKGNSKYPNCDYKTTQYQKHIIVACEGnpY  115
+ident                    | |   || |  || |  | | |  |     | | ||    
+Sbjct EdrnGQPYR-----GDLRISKSEFQITICKHKGGSSRPPCRYGATEDSRVIVVGCEN--G  111
+DSSP  LlllEEEEL-----LLEEEELLLEEEEEEEELLLLLLLLLLEEEEEEEELLEEEEEL--L
+
+DSSP  EEEEEEEEL-----
+Query VPVHFDATV-----  124
+ident  |||||        
+Sbjct LPVHFDESFitprh  125
+DSSP  EEEEELLLLlllll
+
+
+# Structural equivalences
+   1: 3TSR-A 1AGI-A     1 -  20 <=>    3 -  22   (ARG    2  - ILE   21  <=> ASP    3  - ARG   22 )                          
+   1: 3TSR-A 1AGI-A    22 -  37 <=>   23 -  38   (SER   23  - ASN   38  <=> ASN   23  - ARG   38 )                          
+   1: 3TSR-A 1AGI-A    39 -  59 <=>   39 -  59   (SER   40  - SER   60  <=> PRO   39  - GLU   59 )                          
+   1: 3TSR-A 1AGI-A    60 -  64 <=>   63 -  67   (GLN   61  - THR   65  <=> GLY   63  - ARG   67 )                          
+   1: 3TSR-A 1AGI-A    70 - 112 <=>   68 - 110   (SER   71  - GLY  113  <=> GLY   68  - ASN  110 )                          
+   1: 3TSR-A 1AGI-A   115 - 124 <=>  111 - 120   (TYR  116  - VAL  125  <=> GLY  111  - PHE  120 )                          
+
+# Translation-rotation matrices
+-matrix  "3TSR-A 1AGI-A  U(1,.)  -0.352560  0.555553 -0.753036           -9.118025"
+-matrix  "3TSR-A 1AGI-A  U(2,.)   0.819648  0.571608  0.037957           57.783516"
+-matrix  "3TSR-A 1AGI-A  U(3,.)   0.451528 -0.603842 -0.656884           39.588257"
+

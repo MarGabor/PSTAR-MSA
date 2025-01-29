@@ -1,0 +1,33 @@
+# Job: hr
+# Query: 1HCPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2NLL-B  8.6  2.4   71   103   48   MOLECULE: DNA (5'-D(*CP*AP*GP*GP*TP*CP*AP*TP*TP*(5IU)                
+
+# Pairwise alignments
+
+No 1: Query=1HCPA Sbjct=2NLLB Z-score=8.6
+
+DSSP  lllLLLLLLLLLLLLEELLLLEELLHHHHHHHHHL--LLLLLLLLLLLLLLLLL-LLLLl
+Query mkeTRYCAVCNDYASGYHYGVWSCEGCKAFFKRSI--QGHNDYMCPATNQCTID-KNRRk   57
+ident       | || | | ||||    ||||| || | |    |  | |     | ||   |  
+Sbjct ---DELCVVCGDKATGYHYRCITCEGCKGFFRRTIqkNLHPSYSCKYEGKCVIDkVTRN-   56
+DSSP  ---LLLLLLLLLLLLLEELLEELLHHHHHHHHHHHhlLLHHHLLLLLLLLLLLLlLLLL-
+
+DSSP  LLHHHHHHHHHHHLLLLL-----------------------------
+Query SCQACRLRKCYEVGMMKG-----------------------------   75
+ident  || ||  ||  |||                                
+Sbjct QCQECRFKKCIYVGMATDlvlddskrlakrklieenrekrrreelek  103
+DSSP  LLHHHHHHHHHHLLLLHHhlllhhhhhhhhhhhhhhllhhhhhhhhl
+
+
+# Structural equivalences
+   1: 1HCP-A 2NLL-B     4 -  35 <=>    1 -  32   (THR    4  - ILE   35  <=> ASP  300  - ILE  331 )                          
+   1: 1HCP-A 2NLL-B    36 -  52 <=>   35 -  51   (GLN   36  - ASP   52  <=> ASN  334  - ASP  350 )                          
+   1: 1HCP-A 2NLL-B    53 -  56 <=>   53 -  56   (LYS   53  - ARG   56  <=> VAL  352  - ASN  355 )                          
+   1: 1HCP-A 2NLL-B    58 -  75 <=>   57 -  74   (SER   58  - GLY   75  <=> GLN  356  - ASP  373 )                          
+
+# Translation-rotation matrices
+-matrix  "1HCP-A 2NLL-B  U(1,.)   0.213458 -0.497242  0.840943          -95.469727"
+-matrix  "1HCP-A 2NLL-B  U(2,.)   0.717836  0.663711  0.210237          -30.016623"
+-matrix  "1HCP-A 2NLL-B  U(3,.)  -0.662682  0.558782  0.498613          -36.868195"
+

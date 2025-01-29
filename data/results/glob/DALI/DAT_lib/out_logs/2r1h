@@ -1,0 +1,629 @@
+A length: 139
+B length: 142
+C length: 139
+D length: 141
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:    6  CA BSER A   1 
+ Alternate location indication is not blank or A, ignore atom:   10  CB BSER A   1 
+ Alternate location indication is not blank or A, ignore atom:   12  OG BSER A   1 
+ Alternate location indication is not blank or A, ignore atom:  777  CA BLYS A 100 
+ Alternate location indication is not blank or A, ignore atom:  781  CB BLYS A 100 
+ Alternate location indication is not blank or A, ignore atom:  783  CG BLYS A 100 
+ Alternate location indication is not blank or A, ignore atom:  785  CD BLYS A 100 
+ Alternate location indication is not blank or A, ignore atom:  787  CE BLYS A 100 
+ Alternate location indication is not blank or A, ignore atom:  789  NZ BLYS A 100 
+ Alternate location indication is not blank or A, ignore atom: 1041  CA BGLN A 132 
+ Alternate location indication is not blank or A, ignore atom: 1045  CB BGLN A 132 
+ Alternate location indication is not blank or A, ignore atom: 1047  CG BGLN A 132 
+ Alternate location indication is not blank or A, ignore atom: 1049  CD BGLN A 132 
+ Alternate location indication is not blank or A, ignore atom: 1051  OE1BGLN A 132 
+ Alternate location indication is not blank or A, ignore atom: 1053  NE2BGLN A 132 
+
+Total number of residues read in:            142
+Total number of atoms read in:              1118
+Total number of ignored atom records:        230
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+  Reading DSSP file
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-4;                                SOURCE   2 ORGANISM_SCIENTIFIC: ONCORHYNCHUS MYKISS;                            AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+         142  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1398
+ selectset done           0
+ eigen done           0
+ tau           1   1.41929913              20          65
+ #popped           2           1
+ #selectset contacts        1398
+ selectset done           1
+ eigen done           1
+ tau           3   1.39406204              20
+ #popped           4           2
+ #selectset contacts        1398
+ selectset done           2
+ eigen done           2
+ tau           5  0.886456847              10
+ #popped           5           1
+ #selectset contacts        1398
+ selectset done           1
+ eigen done           1
+ tau           7   1.61194134              94         132
+ #popped           8           2
+ #selectset contacts        1398
+ selectset done           2
+ eigen done           2
+ tau           9   1.16235387              80
+ #popped          11           2
+ #selectset contacts        1398
+ selectset done           2
+ eigen done           2
+ tau          11  0.734455943              94
+ #popped           9           1
+ #selectset contacts        1398
+ selectset done           1
+ eigen done           1
+ tau          13   1.90293920             118
+ #popped          14           1
+ #selectset contacts        1398
+ selectset done           1
+ eigen done           1
+ tau          15  0.954895854             105
+ #popped           3           0
+ #selectset contacts        1398
+ selectset done           0
+ eigen done           0
+ tau          17  0.971730590              31          47
+ #popped          18           0
+ #selectset contacts        1398
+ selectset done           0
+ eigen done           0
+ tau          19   1.01795518              31
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-4;                                SOURCE   2 ORGANISM_SCIENTIFIC: ONCORHYNCHUS MYKISS;                            AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+           0
+         142
+         142  residues read 2R1H.dssp                                                   
+  exclude short helix          37          42
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  3  4  5  2
+   2     1  4  5  4  1  3  4  5
+   3     1  0  0  1  2
+   4     2  0  0  1  1
+   5     2  8  9  3  3  4  5
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     5  0  0  1  3
+   9     5 14 15  2  4  5
+  10     0  0  0  0
+  11     0  0  0  1  3
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     9  0  0  1  4
+  15     9  0  0  1  5
+  16     0  0  0  1  4
+  17     0  0  0  0
+  18     0  0  0  1  2
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  2
+   1 *   0  2  3  5  1  1  5
+   2 -   1  4  5  4  2  1  1  3  5
+   3 -   1  0  0  1  1  2  2
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  3  1  3  5
+   6 -   5  0  0  1  1  3  3
+   7 -   5  8  9  2  1  4  5
+   8 -   7  0  0  1  1  4  4
+   9 -   7  0  0  1  1  5  5
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1207  CA BSER B   9 
+ Alternate location indication is not blank or A, ignore atom: 1211  CB BSER B   9 
+ Alternate location indication is not blank or A, ignore atom: 1213  OG BSER B   9 
+ Alternate location indication is not blank or A, ignore atom: 1504  CA BASN B  47 
+ Alternate location indication is not blank or A, ignore atom: 1508  CB BASN B  47 
+ Alternate location indication is not blank or A, ignore atom: 1510  CG BASN B  47 
+ Alternate location indication is not blank or A, ignore atom: 1512  OD1BASN B  47 
+ Alternate location indication is not blank or A, ignore atom: 1514  ND2BASN B  47 
+ Alternate location indication is not blank or A, ignore atom: 1683  CA BASP B  72 
+ Alternate location indication is not blank or A, ignore atom: 1687  CB BASP B  72 
+ Alternate location indication is not blank or A, ignore atom: 1689  CG BASP B  72 
+ Alternate location indication is not blank or A, ignore atom: 1691  OD1BASP B  72 
+ Alternate location indication is not blank or A, ignore atom: 1693  OD2BASP B  72 
+ Alternate location indication is not blank or A, ignore atom: 2160  CA BLYS B 133 
+ Alternate location indication is not blank or A, ignore atom: 2164  CB BLYS B 133 
+ Alternate location indication is not blank or A, ignore atom: 2166  CG BLYS B 133 
+ Alternate location indication is not blank or A, ignore atom: 2168  CD BLYS B 133 
+ Alternate location indication is not blank or A, ignore atom: 2170  CE BLYS B 133 
+ Alternate location indication is not blank or A, ignore atom: 2172  NZ BLYS B 133 
+ Alternate location indication is not blank or A, ignore atom: 2275  CA BHIS B 147 
+ Alternate location indication is not blank or A, ignore atom: 2279  CB BHIS B 147 
+ Alternate location indication is not blank or A, ignore atom: 2281  CG BHIS B 147 
+ Alternate location indication is not blank or A, ignore atom: 2283  ND1BHIS B 147 
+ Alternate location indication is not blank or A, ignore atom: 2285  CD2BHIS B 147 
+ Alternate location indication is not blank or A, ignore atom: 2287  CE1BHIS B 147 
+ Alternate location indication is not blank or A, ignore atom: 2289  NE2BHIS B 147 
+ Alternate location indication is not blank or A, ignore atom: 2291  OXTBHIS B 147 
+
+Total number of residues read in:            147
+Total number of atoms read in:              1130
+Total number of ignored atom records:        227
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+  Reading DSSP file
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-4;                                SOURCE   2 ORGANISM_SCIENTIFIC: ONCORHYNCHUS MYKISS;                            AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+         147  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1396
+ selectset done           0
+ eigen done           0
+ tau           1   1.96179652              18          69
+ #popped           2           1
+ #selectset contacts        1396
+ selectset done           1
+ eigen done           1
+ tau           3   1.75794721              85
+ #popped           4           2
+ #selectset contacts        1396
+ selectset done           2
+ eigen done           2
+ tau           5   1.97995651              18
+ #popped           5           1
+ #selectset contacts        1396
+ selectset done           1
+ eigen done           1
+ tau           7   1.17905629              97
+ #popped           9           1
+ #selectset contacts        1396
+ selectset done           1
+ eigen done           1
+ tau           9  0.944842100             108         136
+ #popped          10           2
+ #selectset contacts        1396
+ selectset done           2
+ eigen done           2
+ tau          11   2.09496760             108
+ #popped          11           1
+ #selectset contacts        1396
+ selectset done           1
+ eigen done           1
+ tau          13   1.67901230             118
+ #popped           3           0
+ #selectset contacts        1396
+ selectset done           0
+ eigen done           0
+ tau          15  0.911126733              29          56
+ #popped          16           1
+ #selectset contacts        1396
+ selectset done           1
+ eigen done           1
+ tau          17   1.11627913              29
+ #popped          17           0
+ #selectset contacts        1396
+ selectset done           0
+ eigen done           0
+ tau          19   2.46196055              45
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-4;                                SOURCE   2 ORGANISM_SCIENTIFIC: ONCORHYNCHUS MYKISS;                            AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+           0
+         147
+         147  residues read 2R1H.dssp                                                   
+  exclude short helix          36          41
+  exclude short helix          51          56
+  exclude short helix          81          84
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  4  5  6  2  3
+   2     1  4  5  4  1  4  5  6
+   3     1 18 19  2  2  3
+   4     2  0  0  1  1
+   5     2  8  9  3  4  5  6
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     5  0  0  1  4
+   9     5 14 15  2  5  6
+  10     0  0  0  0
+  11     0  0  0  2  5  6
+  12     0  0  0  0
+  13     0  0  0  0
+  14     9  0  0  1  5
+  15     9  0  0  1  6
+  16     0  0  0  2  2  3
+  17     0  0  0  0
+  18     3  0  0  1  2
+  19     3  0  0  1  3
+  20     0  0  0  0
+  21     0  0  0  0
+   1 *   0  2  3  6  1  1  6
+   2 -   1  4  5  4  2  1  1  4  6
+   3 -   1 10 11  2  1  2  3
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  3  1  4  6
+   6 -   5  0  0  1  1  4  4
+   7 -   5  8  9  2  1  5  6
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  1  1  6  6
+  10 -   3  0  0  1  1  2  2
+  11 -   3  0  0  1  1  3  3
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2485  CA BGLU C  26 
+ Alternate location indication is not blank or A, ignore atom: 2489  CB BGLU C  26 
+ Alternate location indication is not blank or A, ignore atom: 2491  CG BGLU C  26 
+ Alternate location indication is not blank or A, ignore atom: 2493  CD BGLU C  26 
+ Alternate location indication is not blank or A, ignore atom: 2495  OE1BGLU C  26 
+ Alternate location indication is not blank or A, ignore atom: 2497  OE2BGLU C  26 
+ Alternate location indication is not blank or A, ignore atom: 2826  CA BASP C  69 
+ Alternate location indication is not blank or A, ignore atom: 2830  CB BASP C  69 
+ Alternate location indication is not blank or A, ignore atom: 2832  CG BASP C  69 
+ Alternate location indication is not blank or A, ignore atom: 2834  OD1BASP C  69 
+ Alternate location indication is not blank or A, ignore atom: 2836  OD2BASP C  69 
+ Alternate location indication is not blank or A, ignore atom: 2890  CA BLEU C  77 
+ Alternate location indication is not blank or A, ignore atom: 2894  CB BLEU C  77 
+ Alternate location indication is not blank or A, ignore atom: 2896  CG BLEU C  77 
+ Alternate location indication is not blank or A, ignore atom: 2898  CD1BLEU C  77 
+ Alternate location indication is not blank or A, ignore atom: 2900  CD2BLEU C  77 
+
+Total number of residues read in:            142
+Total number of atoms read in:              1118
+Total number of ignored atom records:        266
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+  Reading DSSP file
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-4;                                SOURCE   2 ORGANISM_SCIENTIFIC: ONCORHYNCHUS MYKISS;                            AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+         142  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1406
+ selectset done           0
+ eigen done           0
+ tau           1   1.46411479              19          63
+ #popped           2           1
+ #selectset contacts        1406
+ selectset done           1
+ eigen done           1
+ tau           3   1.49627733              19         101         130
+ #popped           4           2
+ #selectset contacts        1406
+ selectset done           2
+ eigen done           2
+ tau           5   1.51306462              19         118
+ #popped           6           2
+ #selectset contacts        1406
+ selectset done           2
+ eigen done           2
+ tau           7   1.61983466              19
+ #popped           5           1
+ #selectset contacts        1406
+ selectset done           1
+ eigen done           1
+ tau           9   1.44477952              82
+ #popped          11           1
+ #selectset contacts        1406
+ selectset done           1
+ eigen done           1
+ tau          11  0.943959177             101
+ #popped           3           0
+ #selectset contacts        1406
+ selectset done           0
+ eigen done           0
+ tau          13   1.21064115              47
+ #popped          14           0
+ #selectset contacts        1406
+ selectset done           0
+ eigen done           0
+ tau          15   1.06902921              36
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-4;                                SOURCE   2 ORGANISM_SCIENTIFIC: ONCORHYNCHUS MYKISS;                            AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+           0
+         142
+         142  residues read 2R1H.dssp                                                   
+  exclude short helix          37          42
+  exclude short helix          77          80
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  5  4  3  2
+   2     1  4  5  4  1  5  4  3
+   3     1  0  0  1  2
+   4     2  6  7  3  1  5  4
+   5     2  0  0  1  3
+   6     4  8  9  2  1  5
+   7     4  0  0  1  4
+   8     6  0  0  1  1
+   9     6  0  0  1  5
+  10     0  0  0  0
+  11     0  0  0  1  3
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  1  2
+  16     0  0  0  0
+  17     0  0  0  0
+   1 *   0  2  3  5  1  1  5
+   2 -   1  4  5  4  2  1  1  3  5
+   3 -   1  0  0  1  1  2  2
+   4 -   2  6  7  3  2  1  1  4  5
+   5 -   2  0  0  1  1  3  3
+   6 -   4  8  9  2  2  1  1  5  5
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  5  5
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3489  CA BARG D   8 
+ Alternate location indication is not blank or A, ignore atom: 3493  CB BARG D   8 
+ Alternate location indication is not blank or A, ignore atom: 3495  CG BARG D   8 
+ Alternate location indication is not blank or A, ignore atom: 3497  CD BARG D   8 
+ Alternate location indication is not blank or A, ignore atom: 3499  NE BARG D   8 
+ Alternate location indication is not blank or A, ignore atom: 3501  CZ BARG D   8 
+ Alternate location indication is not blank or A, ignore atom: 3503  NH1BARG D   8 
+ Alternate location indication is not blank or A, ignore atom: 3505  NH2BARG D   8 
+ Alternate location indication is not blank or A, ignore atom: 3564  CA BLYS D  17 
+ Alternate location indication is not blank or A, ignore atom: 3568  CB BLYS D  17 
+ Alternate location indication is not blank or A, ignore atom: 3570  CG BLYS D  17 
+ Alternate location indication is not blank or A, ignore atom: 3572  CD BLYS D  17 
+ Alternate location indication is not blank or A, ignore atom: 3574  CE BLYS D  17 
+ Alternate location indication is not blank or A, ignore atom: 3576  NZ BLYS D  17 
+ Alternate location indication is not blank or A, ignore atom: 3748  CA BARG D  40 
+ Alternate location indication is not blank or A, ignore atom: 3752  CB BARG D  40 
+ Alternate location indication is not blank or A, ignore atom: 3754  CG BARG D  40 
+ Alternate location indication is not blank or A, ignore atom: 3756  CD BARG D  40 
+ Alternate location indication is not blank or A, ignore atom: 3758  NE BARG D  40 
+ Alternate location indication is not blank or A, ignore atom: 3760  CZ BARG D  40 
+ Alternate location indication is not blank or A, ignore atom: 3762  NH1BARG D  40 
+ Alternate location indication is not blank or A, ignore atom: 3764  NH2BARG D  40 
+ Alternate location indication is not blank or A, ignore atom: 3982  CA BLEU D  71 
+ Alternate location indication is not blank or A, ignore atom: 3986  CB BLEU D  71 
+ Alternate location indication is not blank or A, ignore atom: 3988  CG BLEU D  71 
+ Alternate location indication is not blank or A, ignore atom: 3990  CD1BLEU D  71 
+ Alternate location indication is not blank or A, ignore atom: 3992  CD2BLEU D  71 
+ Alternate location indication is not blank or A, ignore atom: 4170  CA BGLU D  94 
+ Alternate location indication is not blank or A, ignore atom: 4174  CB BGLU D  94 
+ Alternate location indication is not blank or A, ignore atom: 4176  CG BGLU D  94 
+ Alternate location indication is not blank or A, ignore atom: 4178  CD BGLU D  94 
+ Alternate location indication is not blank or A, ignore atom: 4180  OE1BGLU D  94 
+ Alternate location indication is not blank or A, ignore atom: 4182  OE2BGLU D  94 
+ Alternate location indication is not blank or A, ignore atom: 4582  CA BHIS D 147 
+ Alternate location indication is not blank or A, ignore atom: 4586  CB BHIS D 147 
+ Alternate location indication is not blank or A, ignore atom: 4588  CG BHIS D 147 
+ Alternate location indication is not blank or A, ignore atom: 4590  ND1BHIS D 147 
+ Alternate location indication is not blank or A, ignore atom: 4592  CD2BHIS D 147 
+ Alternate location indication is not blank or A, ignore atom: 4594  CE1BHIS D 147 
+ Alternate location indication is not blank or A, ignore atom: 4596  NE2BHIS D 147 
+ Alternate location indication is not blank or A, ignore atom: 4598  OXTBHIS D 147 
+
+Total number of residues read in:            147
+Total number of atoms read in:              1130
+Total number of ignored atom records:        184
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+  Reading DSSP file
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-4;                                SOURCE   2 ORGANISM_SCIENTIFIC: ONCORHYNCHUS MYKISS;                            AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+         147  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1393
+ selectset done           0
+ eigen done           0
+ tau           1   2.10201383              18          70
+ #popped           2           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau           3   1.64078379              85
+ #popped           4           2
+ #selectset contacts        1393
+ selectset done           2
+ eigen done           2
+ tau           5   2.75814533              18
+ #popped           5           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau           7   1.16305435             108         137
+ #popped           8           2
+ #selectset contacts        1393
+ selectset done           2
+ eigen done           2
+ tau           9   1.45195937              98         108
+ #popped          10           2
+ #selectset contacts        1393
+ selectset done           2
+ eigen done           2
+ tau          11  0.938069165              98
+ #popped           9           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau          13   1.70686328             118
+ #popped           3           0
+ #selectset contacts        1393
+ selectset done           0
+ eigen done           0
+ tau          15   1.19022560              41
+ #popped          16           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau          17  0.926777303              30
+ #popped          17           0
+ #selectset contacts        1393
+ selectset done           0
+ eigen done           0
+ tau          19   1.13864505              55
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXYGEN BINDING                          22-AUG-07   2R1H              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-4;                                SOURCE   2 ORGANISM_SCIENTIFIC: ONCORHYNCHUS MYKISS;                            AUTHOR    R.ARANDA IV,C.E.WORLEY,M.P.RICHARDS,G.N.PHILLIPS JR.                  
+           0
+         147
+         147  residues read 2R1H.dssp                                                   
+  exclude short helix          36          41
+  exclude short helix          51          55
+  exclude short helix          81          84
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  4  5  6  2  3
+   2     1  4  5  4  1  4  5  6
+   3     1 16 17  2  2  3
+   4     2  0  0  1  1
+   5     2  8  9  3  4  5  6
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     5  0  0  1  4
+   9     5 14 15  2  5  6
+  10     0  0  0  1  4
+  11     0  0  0  0
+  12     0  0  0  1  4
+  13     0  0  0  0
+  14     9  0  0  1  5
+  15     9  0  0  1  6
+  16     3  0  0  1  2
+  17     3  0  0  1  3
+  18     0  0  0  1  2
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  3
+   1 *   0  2  3  6  1  1  6
+   2 -   1  4  5  4  2  1  1  4  6
+   3 -   1 10 11  2  1  2  3
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  3  1  4  6
+   6 -   5  0  0  1  1  4  4
+   7 -   5  8  9  2  1  5  6
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  1  1  6  6
+  10 -   3  0  0  1  1  2  2
+  11 -   3  0  0  1  1  3  3
+
+ CHAIN : 2R1HA
+ CHAIN : 2R1HB
+ CHAIN : 2R1HC
+ CHAIN : 2R1HD
+

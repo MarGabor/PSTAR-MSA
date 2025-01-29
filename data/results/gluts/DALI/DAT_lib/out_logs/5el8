@@ -1,0 +1,180 @@
+A length: 213
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1667
+Total number of ignored atom records:        120
+ HEADER    TRANSFERASE                             04-NOV-15   5EL8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.MENAULT,A.W.ROSZAK,A.J.LAPTHORN                                     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             04-NOV-15   5EL8              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE DHAR1, MITOCHONDRIAL;            SOURCE   2 ORGANISM_SCIENTIFIC: ARABIDOPSIS THALIANA;                           AUTHOR    M.MENAULT,A.W.ROSZAK,A.J.LAPTHORN                                     
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1997
+ selectset done           0
+ eigen done           0
+ tau           1   3.04563189              89
+ #popped           2           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau           3   1.88474572              41          58
+ #popped           4           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau           5   1.51486313              70
+ #popped           6           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau           7  0.728255510              41
+ #popped           8           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau           9  0.412569225              17
+ #popped          11           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau          11   1.07388616              31
+ #popped           3           0
+ #selectset contacts        1997
+ selectset done           0
+ eigen done           0
+ tau          13   1.87468851             196
+ #popped          14           0
+ #selectset contacts        1997
+ selectset done           0
+ eigen done           0
+ tau          15   1.24596167              99         126
+ #popped          16           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau          17   1.99544251              99
+ #popped          19           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau          19   1.22734737             152
+ #popped          20           2
+ #selectset contacts        1997
+ selectset done           2
+ eigen done           2
+ tau          21   1.98724496             136
+ #popped          21           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau          23   1.08182883             180
+ #popped          24           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau          25   1.91664159             169
+ #popped          17           0
+ #selectset contacts        1997
+ selectset done           0
+ eigen done           0
+ tau          27  0.995169044             112
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             04-NOV-15   5EL8              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE DHAR1, MITOCHONDRIAL;            SOURCE   2 ORGANISM_SCIENTIFIC: ARABIDOPSIS THALIANA;                           AUTHOR    M.MENAULT,A.W.ROSZAK,A.J.LAPTHORN                                     
+           0
+         213
+         213  residues read 5EL8.dssp                                                   
+  grow short strand          12          16
+  exclude short helix          48          51
+  grow short strand          61          63
+  grow short strand          68          70
+ crowded segment excluded!
+  exclude short helix          92          94
+  exclude short helix         190         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  9 10  7  8 11
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1 14 15  5  9 10  7  8 11
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  8  9  5  1  2  3  4  5
+   7     2  0  0  1  6
+   8     6 10 11  4  1  2  3  4
+   9     6  0  0  1  5
+  10     8  0  0  2  1  2
+  11     8 12 13  2  3  4
+  12    11  0  0  1  3
+  13    11  0  0  1  4
+  14     3 16 17  4  9 10  7  8
+  15     3  0  0  1 11
+  16    14 24 25  2  9 10
+  17    14 28 29  2  7  8
+  18     0  0  0  0
+  19     0  0  0  2  9 10
+  20     0  0  0  0
+  21     0  0  0  2  9 10
+  22     0  0  0  0
+  23     0  0  0  0
+  24    16  0  0  1  9
+  25    16  0  0  1 10
+  26     0  0  0  1  9
+  27     0  0  0  0
+  28    17  0  0  1  7
+  29    17  0  0  1  8
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  4  1  1  4
+   7 -   4  0  0  1  1  5  5
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  2  1  3  4
+  10 -   9  0  0  1  1  3  3
+  11 -   9  0  0  1  1  4  4
+  12 -   3 14 15  4  1  7 10
+  13 -   3  0  0  1  1 11 11
+  14 -  12 16 17  2  1  9 10
+  15 -  12 18 19  2  1  7  8
+  16 -  14  0  0  1  1  9  9
+  17 -  14  0  0  1  1 10 10
+  18 -  15  0  0  1  1  7  7
+  19 -  15  0  0  1  1  8  8
+
+ CHAIN : 5EL8A
+

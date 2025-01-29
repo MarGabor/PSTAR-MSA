@@ -1,0 +1,44 @@
+# Job: rvp
+# Query: 1FMBA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2WHH-A 12.3  1.8   98   202   32   MOLECULE: POL PROTEIN;                                               
+
+# Pairwise alignments
+
+No 1: Query=1FMBA Sbjct=2WHHA Z-score=12.3
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------    0
+ident                                                             
+Sbjct pqvtlwqrplvtikiggqlkealldtgaddtvleemslpgrwkpkmiggiggfikvrqyd   60
+DSSP  leeellllleeeeeelleeeeeeellllllleellllllllleeeeeeelleeeeeeeee
+
+DSSP  ---------------------------------------LLLLLLLLLEEEEEELLEEEE
+Query ---------------------------------------VTYNLEKRPTTIVLINDTPLN   21
+ident                                            |  ||     |      
+Sbjct qilieicghkaigtvlvgptpvniigrnlltqigmtlnfPQVTLWQRPLVTIKIGGQLKE  120
+DSSP  eeeeeelleeeeeeeeelllllleelhhhhhhhlleeelLEEELLLLLEEEEEELLEEEE
+
+DSSP  EEELLLLLLLEEEHHhhhhllLLLLLEELLLEEELLEEELLEEEE-EEEEELLEEEEEEE
+Query VLLDTGADTSVLTTAhynrlkYRGRKYQGTGIGGVGGNVETFSTP-VTIKKKGRHIKTRM   80
+ident  |||||||  ||                   ||| ||           |   |       
+Sbjct ALLDTGADDTVLEEM------SLPGRWKPKMIGGIGGFIKVRQYDqILIEICGHKAIGTV  174
+DSSP  EEELLLLLLLEELLL------LLLLLLEEEEEEELLEEEEEEEEEeEEEEELLEEEEEEE
+
+DSSP  EEELLLLLEELHHHHHHLLLLLLL----
+Query LVADIPVTILGRDILQDLGAKLVL----  104
+ident ||   || | ||  |   || |      
+Sbjct LVGPTPVNIIGRNLLTQIGATLNFxexe  202
+DSSP  EELLLLLLEELHHHHHHHLLEEELllll
+
+
+# Structural equivalences
+   1: 1FMB-A 2WHH-A     1 -  36 <=>  100 - 135   (VAL    1  - ALA   36  <=> PRO 1001  - MET 1036 )                          
+   1: 1FMB-A 2WHH-A    43 -  66 <=>  136 - 159   (TYR   43  - PRO   66  <=> SER 1037  - ASP 1060 )                          
+   1: 1FMB-A 2WHH-A    67 - 104 <=>  161 - 198   (VAL   67  - LEU  104  <=> ILE 1062  - PHE 1099 )                          
+
+# Translation-rotation matrices
+-matrix  "1FMB-A 2WHH-A  U(1,.)   0.829934 -0.457448 -0.319298           -0.573362"
+-matrix  "1FMB-A 2WHH-A  U(2,.)  -0.484483 -0.874780 -0.006022           37.485844"
+-matrix  "1FMB-A 2WHH-A  U(3,.)  -0.276561  0.159692 -0.947635            0.107454"
+

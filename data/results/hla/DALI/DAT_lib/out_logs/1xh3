@@ -1,0 +1,320 @@
+A length: 276
+B length: 99
+C length: 14
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            276
+Total number of atoms read in:              2255
+Total number of ignored atom records:        823
+ HEADER    IMMUNE SYSTEM                           17-SEP-04   1XH3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.PROBST-KEPPER,H.J.HECHT,H.HERRMANN,V.JANKE,F.OCKLENBURG,            
+  calculate residue outside grid:         196
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           17-SEP-04   1XH3              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-35 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.PROBST-KEPPER,H.J.HECHT,H.HERRMANN,V.JANKE,F.OCKLENBURG,            
+         276  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau           1   9.45729446             180
+ #popped           2           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau           3   1.19492185             161
+ #popped           4           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau           5   1.34338522              75          96         115
+ #popped           6           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau           7  0.887842178              11          21
+ #popped           8           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau           9   1.66946375              48          75
+ #popped          10           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau          11  0.548743844              48
+ #popped          12           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau          13  0.412771791              23
+ #popped          15           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau          15  0.555458307              34
+ #popped          11           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau          17   1.10491240              61
+ #popped           7           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          19   1.76240051             150
+ #popped          20           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          21   1.02267838             134
+ #popped          22           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau          23  0.719522595             190         201         217         228         246
+ #popped          24           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          25  0.403669238             217
+ #popped          26           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          27  0.311761618             190
+ #popped          25           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau          29  0.807239771             201         228
+ #popped          30           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau          31   2.12905216             257
+ #popped          32           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau          33  0.408865184             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           17-SEP-04   1XH3              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-35 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.PROBST-KEPPER,H.J.HECHT,H.HERRMANN,V.JANKE,F.OCKLENBURG,            
+           0
+         276
+         276  residues read 1XH3.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          52
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+ crowded segment excluded!
+  exclude short helix         225         227
+  grow short strand         229         230
+  grow short strand         234         235
+  exclude short helix         254         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  6  7  5  8  9 10 11 12 13 14 15 16 17 18 19 20
+   2     1  4  5 12  1  2  3  4  6  7  5  8  9 10 11 12
+   3     1 24 25  8 13 14 15 16 17 18 19 20
+   4     2  6  7 11  1  2  3  4  6  7  5  8  9 10 11
+   5     2  0  0  1 12
+   6     4 10 11  7  1  2  3  4  6  7  5
+   7     4 20 21  4  8  9 10 11
+   8     0  0  0  7  1  2  3  4  6  7  5
+   9     0  0  0  0
+  10     6 12 13  6  1  2  3  4  6  7
+  11     6  0  0  1  5
+  12    10 14 15  4  1  2  3  4
+  13    10  0  0  2  6  7
+  14    12  0  0  1  1
+  15    12 16 17  3  2  3  4
+  16    15  0  0  2  2  3
+  17    15  0  0  1  4
+  18     0  0  0  0
+  19     0  0  0  1  5
+  20     7 22 23  3  8  9 10
+  21     7  0  0  1 11
+  22    20  0  0  2  8  9
+  23    20  0  0  1 10
+  24     3 26 27  6 13 14 15 16 17 18
+  25     3  0  0  2 19 20
+  26    24 28 29  3 13 14 15
+  27    24  0  0  3 16 17 18
+  28    26  0  0  1 13
+  29    26  0  0  2 14 15
+  30     0  0  0  2 19 20
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  2 19 20
+  34     0  0  0  0
+  35     0  0  0  0
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 12  1  1 12
+   3 *   1 20 21  8  1 13 20
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  7  1  1  7
+   7 -   4 16 17  4  1  8 11
+   8 -   6 10 11  6  2  1  4  6  7
+   9 -   6  0  0  1  1  5  5
+  10 -   8 12 13  4  1  1  4
+  11 -   8  0  0  2  1  6  7
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  3  1  2  4
+  14 -  13  0  0  2  1  2  3
+  15 -  13  0  0  1  1  4  4
+  16 -   7 18 19  3  1  8 10
+  17 -   7  0  0  1  1 11 11
+  18 -  16  0  0  2  1  8  9
+  19 -  16  0  0  1  1 10 10
+  20 -   3 22 23  6  1 13 18
+  21 -   3  0  0  2  1 19 20
+  22 -  20 24 25  3  1 13 15
+  23 -  20  0  0  3  1 16 18
+  24 -  22  0  0  1  1 13 13
+  25 -  22  0  0  2  1 14 15
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               830
+Total number of ignored atom records:        273
+ HEADER    IMMUNE SYSTEM                           17-SEP-04   1XH3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.PROBST-KEPPER,H.J.HECHT,H.HERRMANN,V.JANKE,F.OCKLENBURG,            
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           17-SEP-04   1XH3              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-35 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.PROBST-KEPPER,H.J.HECHT,H.HERRMANN,V.JANKE,F.OCKLENBURG,            
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         769
+ selectset done           0
+ eigen done           0
+ tau           1  0.750796497              10          23          67
+ #popped           2           1
+ #selectset contacts         769
+ selectset done           1
+ eigen done           1
+ tau           3   1.87879443              37          49
+ #popped           4           1
+ #selectset contacts         769
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts         769
+ selectset done           0
+ eigen done           0
+ tau           5   2.15696120              77
+ #popped           6           1
+ #selectset contacts         769
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           7           0
+ #selectset contacts         769
+ selectset done           0
+ eigen done           0
+ tau           7  0.399193525              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           17-SEP-04   1XH3              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-35 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.PROBST-KEPPER,H.J.HECHT,H.HERRMANN,V.JANKE,F.OCKLENBURG,            
+           0
+          99
+          99  residues read 1XH3.dssp                                                   
+  grow short strand          44          45
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  5  6  7  3  4  8  9
+   2     1  4  5  7  1  2  5  6  7  3  4
+   3     1  8  9  2  8  9
+   4     2  0  0  5  1  2  5  6  7
+   5     2  0  0  2  3  4
+   6     0  0  0  0
+   7     0  0  0  2  8  9
+   8     3  0  0  1  8
+   9     3  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  7  1  1  7
+   3 -   1  6  7  2  1  8  9
+   4 -   2  0  0  5  2  1  2  5  7
+   5 -   2  0  0  2  1  3  4
+   6 -   3  0  0  1  1  8  8
+   7 -   3  0  0  1  1  9  9
+
+ CHAIN : 1XH3A
+ CHAIN : 1XH3B
+

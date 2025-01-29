@@ -1,0 +1,541 @@
+A length: 189
+B length: 75
+C length: 191
+D length: 75
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            189
+Total number of atoms read in:              1425
+Total number of ignored atom records:         11
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+  Reading DSSP file
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              COMPND   2 MOLECULE: HARMONIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+         189  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1614
+ selectset done           0
+ eigen done           0
+ tau           1   6.40090656              82
+ #popped           2           1
+ #selectset contacts        1614
+ selectset done           1
+ eigen done           1
+ tau           3   2.26261497              37
+ #popped           4           2
+ #selectset contacts        1614
+ selectset done           2
+ eigen done           2
+ tau           5   1.98248589              16
+ #popped           7           2
+ #selectset contacts        1614
+ selectset done           2
+ eigen done           2
+ tau           7  0.762754619              27
+ #popped           5           1
+ #selectset contacts        1614
+ selectset done           1
+ eigen done           1
+ tau           9   1.35823429              57
+ #popped          10           2
+ #selectset contacts        1614
+ selectset done           2
+ eigen done           2
+ tau          11   1.03870368              47
+ #popped          11           1
+ #selectset contacts        1614
+ selectset done           1
+ eigen done           1
+ tau          13  0.788047314              71
+ #popped           3           0
+ #selectset contacts        1614
+ selectset done           0
+ eigen done           0
+ tau          15   2.51751685             166
+ #popped          16           1
+ #selectset contacts        1614
+ selectset done           1
+ eigen done           1
+ tau          17  0.767888963             137         154
+ #popped          18           1
+ #selectset contacts        1614
+ selectset done           1
+ eigen done           1
+ tau          19  0.422661871             116
+ #popped          20           2
+ #selectset contacts        1614
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          21           1
+ #selectset contacts        1614
+ selectset done           1
+ eigen done           1
+ tau          21   2.41617012             127
+ #popped          23           1
+ #selectset contacts        1614
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          17           0
+ #selectset contacts        1614
+ selectset done           0
+ eigen done           0
+ tau          23  0.315892041             178
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              COMPND   2 MOLECULE: HARMONIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+           0
+         189
+         189  residues read 5F3X.dssp                                                   
+  exclude short helix         105         107
+  exclude short helix         121         125
+  grow short strand         139         140
+  grow short strand         168         171
+  grow short strand         180         183
+ crowded segment excluded!
+  exclude short helix         184         187
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  5  6  7  8  9 12 10 11 13
+   2     1  4  5  5  1  2  3  4  5
+   3     1 16 17  8  6  7  8  9 12 10 11 13
+   4     2  6  7  2  1  2
+   5     2 10 11  3  3  4  5
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     0  0  0  0
+   9     0  0  0  1  2
+  10     5  0  0  1  3
+  11     5 14 15  2  4  5
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14    11  0  0  1  4
+  15    11  0  0  1  5
+  16     3 18 19  7  6  7  8  9 12 10 11
+  17     3  0  0  1 13
+  18    16 20 21  5  6  7  8  9 12
+  19    16  0  0  2 10 11
+  20    18  0  0  3  6  7  8
+  21    18  0  0  2  9 12
+  22     0  0  0  0
+  23     0  0  0  2  9 12
+  24     0  0  0  1 13
+  25     0  0  0  0
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  5  1  1  5
+   3 +   1 12 13  8  1  6 13
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  3  1  3  5
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  1  1  3  3
+   9 -   5 10 11  2  1  4  5
+  10 -   9  0  0  1  1  4  4
+  11 -   9  0  0  1  1  5  5
+  12 *   3 14 15  7  1  6 12
+  13 =   3  0  0  1  1 13 13
+  14 -  12 16 17  5  2  6  9 12 12
+  15 -  12  0  0  2  1 10 11
+  16 -  14  0  0  3  1  6  8
+  17 -  14  0  0  2  2  9  9 12 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             75
+Total number of atoms read in:               595
+Total number of ignored atom records:          9
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+  Reading DSSP file
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              COMPND   2 MOLECULE: HARMONIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+          75  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         613
+ selectset done           0
+ eigen done           0
+ tau           1   2.10696530              45
+ #popped           2           1
+ #selectset contacts         613
+ selectset done           1
+ eigen done           1
+ tau           3   2.64485765              35
+ #popped           4           1
+ #selectset contacts         613
+ selectset done           1
+ eigen done           1
+ tau           5   1.36654794              16
+ #popped           3           0
+ #selectset contacts         613
+ selectset done           0
+ eigen done           0
+ tau           7   1.39393938              65
+ #popped           8           0
+ #selectset contacts         613
+ selectset done           0
+ eigen done           0
+ tau           9  0.788454533              55
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              COMPND   2 MOLECULE: HARMONIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+           0
+          75
+          75  residues read 5F3X.dssp                                                   
+  exclude short helix          29          33
+  exclude short helix          37          42
+  grow short strand          73          74
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  3  1  2  3
+   2     1  6  7  2  1  2
+   3     1  0  0  1  3
+   4     0  0  0  2  1  2
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  0  0  1  2
+   8     0  0  0  1  3
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  1  3
+   1 *   0  2  3  3  1  1  3
+   2 -   1  4  5  2  1  1  2
+   3 -   1  0  0  1  1  3  3
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            191
+Total number of atoms read in:              1447
+Total number of ignored atom records:          9
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+  Reading DSSP file
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              COMPND   2 MOLECULE: HARMONIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+         191  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1641
+ selectset done           0
+ eigen done           0
+ tau           1   5.65878487              81
+ #popped           2           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau           3   2.02450562              17
+ #popped           5           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau           5   1.74081409              36
+ #popped           7           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau           7   1.33920789              60
+ #popped           8           2
+ #selectset contacts        1641
+ selectset done           2
+ eigen done           2
+ tau           9   1.16539872              49
+ #popped           9           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          11  0.861702144              70
+ #popped           3           0
+ #selectset contacts        1641
+ selectset done           0
+ eigen done           0
+ tau          13   2.71067095             166
+ #popped          14           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          15   1.36193442             144         156
+ #popped          16           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          17  0.767872870             101         112
+ #popped          18           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          19   1.10071027              91         124
+ #popped          20           2
+ #selectset contacts        1641
+ selectset done           2
+ eigen done           2
+ tau          21  0.308560997              91
+ #popped          23           2
+ #selectset contacts        1641
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          21           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          23  0.505102515             114
+ #popped          15           0
+ #selectset contacts        1641
+ selectset done           0
+ eigen done           0
+ tau          25  0.583794832             181
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              COMPND   2 MOLECULE: HARMONIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+           0
+         191
+         191  residues read 5F3X.dssp                                                   
+  exclude short helix          52          54
+  exclude short helix         105         107
+  exclude short helix         121         125
+  grow short strand         139         140
+  grow short strand         168         171
+  grow short strand         180         183
+ crowded segment excluded!
+  grow short helix         184         190
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  5  6  9 10 12  7  8 11 13 14
+   2     1  4  5  5  1  2  3  4  5
+   3     1 14 15  9  6  9 10 12  7  8 11 13 14
+   4     2  0  0  1  1
+   5     2  6  7  4  2  3  4  5
+   6     5  0  0  1  2
+   7     5  8  9  3  3  4  5
+   8     7 10 11  2  3  4
+   9     7  0  0  1  5
+  10     8  0  0  1  3
+  11     8  0  0  1  4
+  12     0  0  0  0
+  13     0  0  0  1  5
+  14     3 16 17  7  6  9 10 12  7  8 11
+  15     3 26 27  2 13 14
+  16    14 18 19  6  6  9 10 12  7  8
+  17    14  0  0  1 11
+  18    16 20 21  5  6  9 10 12  7
+  19    16  0  0  1  8
+  20    18 22 23  4  6  9 10 12
+  21    18  0  0  1  7
+  22    20  0  0  1  6
+  23    20  0  0  3  9 10 12
+  24     0  0  0  1  7
+  25     0  0  0  0
+  26    15  0  0  1 13
+  27    15  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  5  1  1  5
+   3 +   1 12 13  9  1  6 14
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  4  1  2  5
+   6 -   5  0  0  1  1  2  2
+   7 -   5  8  9  3  1  3  5
+   8 -   7 10 11  2  1  3  4
+   9 -   7  0  0  1  1  5  5
+  10 -   8  0  0  1  1  3  3
+  11 -   8  0  0  1  1  4  4
+  12 *   3 14 15  7  1  6 12
+  13 =   3 22 23  2  1 13 14
+  14 -  12 16 17  6  2  6 10 12 12
+  15 -  12  0  0  1  1 11 11
+  16 -  14 18 19  5  3  6  7  9 10 12 12
+  17 -  14  0  0  1  1  8  8
+  18 -  16 20 21  4  3  6  6  9 10 12 12
+  19 -  16  0  0  1  1  7  7
+  20 -  18  0  0  1  1  6  6
+  21 -  18  0  0  3  2  9 10 12 12
+  22 -  13  0  0  1  1 13 13
+  23 -  13  0  0  1  1 14 14
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             75
+Total number of atoms read in:               597
+Total number of ignored atom records:          9
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+  Reading DSSP file
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              COMPND   2 MOLECULE: HARMONIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+          75  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         615
+ selectset done           0
+ eigen done           0
+ tau           1   1.96560395              61
+ #popped           2           0
+ #selectset contacts         615
+ selectset done           0
+ eigen done           0
+ tau           3   2.49234176              34
+ #popped           4           1
+ #selectset contacts         615
+ selectset done           1
+ eigen done           1
+ tau           5   1.45195723              16
+ #popped           5           0
+ #selectset contacts         615
+ selectset done           0
+ eigen done           0
+ tau           7   1.17140388              44
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL PROTEIN/PROTEIN BINDING      03-DEC-15   5F3X              COMPND   2 MOLECULE: HARMONIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.LI,Y.HE,Q.LU,M.ZHANG                                                
+           0
+          75
+          75  residues read 5F3X.dssp                                                   
+  exclude short helix          29          33
+  exclude short helix          37          42
+  grow short strand          73          74
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5  3  1  2  3
+   2     0  0  0  3  1  2  3
+   3     0  0  0  0
+   4     1  6  7  2  1  2
+   5     1  0  0  1  3
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     0  0  0  0
+   9     0  0  0  1  3
+   1 *   0  2  3  3  1  1  3
+   2 -   1  4  5  2  1  1  2
+   3 -   1  0  0  1  1  3  3
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+
+ CHAIN : 5F3XA
+ CHAIN : 5F3XB
+ CHAIN : 5F3XC
+ CHAIN : 5F3XD
+

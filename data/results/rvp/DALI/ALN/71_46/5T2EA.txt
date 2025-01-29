@@ -1,0 +1,33 @@
+# Job: rvp
+# Query: 5T2EA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1FMB-A 13.2  2.3   98   104   31   MOLECULE: EIAV PROTEASE;                                             
+
+# Pairwise alignments
+
+No 1: Query=5T2EA Sbjct=1FMBA Z-score=13.2
+
+DSSP  LLLLLLLLLEEEEEELLEEEEEEELLLLLLLEE-LLLL-----LLLLLEEEEEEELLEEE
+Query PQITLWQRPIVTIKIGGQLREALLDTGADDTVL-EDID-----LPGRWKPKLIVGIGGFV   54
+ident     |  ||     |       |||||||  ||                   | | || |
+Sbjct VTYNLEKRPTTIVLINDTPLNVLLDTGADTSVLtTAHYnrlkyRGRKYQGTGIGGVGGNV   60
+DSSP  LLLLLLLLLEEEEEELLEEEEEEELLLLLLLEEeHHHHhhlllLLLLEELLLEEELLEEE
+
+DSSP  EEEEEEeEEEEELLEEEEEEEEELLLLLLEELHHHHHHHLLLLLL
+Query KVRQYEqVPIEIAGHKVVGTVLIGPTPSNIIGRNLMTQLGATLNF   99
+ident        | |   |       |    |  | ||     ||| |  
+Sbjct ETFSTP-VTIKKKGRHIKTRMLVADIPVTILGRDILQDLGAKLVL  104
+DSSP  LLEEEE-EEEEELLEEEEEEEEEELLLLLEELHHHHHHLLLLLLL
+
+
+# Structural equivalences
+   1: 5T2E-A 1FMB-A     1 -  33 <=>    1 -  33   (PRO    1  - LEU   33  <=> VAL    1  - LEU   33 )                          
+   1: 5T2E-A 1FMB-A    34 -  37 <=>   35 -  38   (GLU   34  - ASP   37  <=> THR   35  - TYR   38 )                          
+   1: 5T2E-A 1FMB-A    38 -  60 <=>   44 -  66   (LEU   38  - GLU   60  <=> ARG   44  - PRO   66 )                          
+   1: 5T2E-A 1FMB-A    62 -  99 <=>   67 - 104   (VAL   62  - PHE   99  <=> VAL   67  - LEU  104 )                          
+
+# Translation-rotation matrices
+-matrix  "5T2E-A 1FMB-A  U(1,.)   0.702871  0.402069 -0.586782            0.129321"
+-matrix  "5T2E-A 1FMB-A  U(2,.)  -0.387034  0.908294  0.158766           -1.490499"
+-matrix  "5T2E-A 1FMB-A  U(3,.)   0.596805  0.115512  0.794028           -1.231523"
+

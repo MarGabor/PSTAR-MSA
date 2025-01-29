@@ -1,0 +1,39 @@
+# Job: bowman
+# Query: 2BBIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1C2A-A  4.4  3.8   60   120   35   MOLECULE: BOWMAN-BIRK TRYPSIN INHIBITOR;                             
+
+# Pairwise alignments
+
+No 1: Query=2BBIA Sbjct=1C2AA Z-score=4.4
+
+DSSP  ------------------------------------------------------lLLLL-
+Query ------------------------------------------------------dDESS-    5
+ident                                                             
+Sbjct krpwkccdeavctrsippictcmdevfecpktckscgpsmgdpsrricqdqyvgdPGPIc   60
+DSSP  llllllllleeelllllleeeellllllllllllleeeelleeeeeeelleeellLLLLl
+
+DSSP  --lLLLLLEEEELLLLLEEEElLEELLLLLLLLLLEEEELLLLLEEEELLLLL-LLLLLL
+Query --kPCCDQCACTKSNPPQCRCsDMRLNSCHSACKSCICALSYPAQCFCVDITD-FCYEPC   62
+ident     |||   || |||| |||       |   || |    | |    | |         |
+Sbjct rpwECCDKAICTRSNPPTCRC-VDEVKKCAPTCKTCLPSRSRPSRRVCIDSYFgPVPPRC  119
+DSSP  lllLLLLLEEELLLLLLEEEE-LLEELLLLLLLLLEEELLLLLLLEEELLLEElLLLLLL
+
+DSSP  Lllllllll
+Query Kpseddken   71
+ident          
+Sbjct T--------  120
+DSSP  L--------
+
+
+# Structural equivalences
+   1: 2BBI-A 1C2A-A     2 -   5 <=>   56 -  59   (ASP    2  - SER    5  <=> PRO   59  - ILE   62 )                          
+   1: 2BBI-A 1C2A-A     7 -  24 <=>   64 -  81   (PRO    7  - CYS   24  <=> GLU   67  - CYS   84 )                          
+   1: 2BBI-A 1C2A-A    26 -  56 <=>   82 - 112   (ASP   26  - ASP   56  <=> VAL   85  - PHE  115 )                          
+   1: 2BBI-A 1C2A-A    57 -  63 <=>  114 - 120   (PHE   57  - LYS   63  <=> PRO  117  - THR  123 )                          
+
+# Translation-rotation matrices
+-matrix  "2BBI-A 1C2A-A  U(1,.)   0.197770  0.256876 -0.945992           58.685913"
+-matrix  "2BBI-A 1C2A-A  U(2,.)  -0.927164 -0.264253 -0.265589           24.112371"
+-matrix  "2BBI-A 1C2A-A  U(3,.)  -0.318205  0.929615  0.185905            2.256190"
+

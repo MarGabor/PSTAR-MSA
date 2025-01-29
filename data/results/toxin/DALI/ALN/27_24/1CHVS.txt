@@ -1,0 +1,30 @@
+# Job: toxin
+# Query: 1CHVS
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5T8A-A  6.9  2.4   60    61   85   MOLECULE: CYTOTOXIN 1;                                               
+
+# Pairwise alignments
+
+No 1: Query=1CHVS Sbjct=5T8AA Z-score=6.9
+
+DSSP  -LLLLLLLLLLLLLLLLLLLLEEEEEELLLLLEEEEEEELLLLLLLLLLLEELLLLLLLL
+Query -LKCNKLVPLFYKTCPAGKNLCYKMFMVSNKMVPVKRGCIDVCPKSSLLVKYVCCNTDRC   59
+ident  ||||||||  ||||| |||||||||| |    |||||||||||| ||||||||||||||
+Sbjct mLKCNKLVPIAYKTCPEGKNLCYKMFMMSDLTIPVKRGCIDVCPKNSLLVKYVCCNTDRC   60
+DSSP  lLEEELLLLLLEEELLLLLLEEEEEEELLLLLLLLEEEEELLLLLLLLLEEEEEELLLLL
+
+DSSP  L
+Query N   60
+ident |
+Sbjct N   61
+DSSP  L
+
+
+# Structural equivalences
+   1: 1CHV-S 5T8A-A     1 -  60 <=>    2 -  61   (LEU    1  - ASN   60  <=> LEU    1  - ASN   60 )                          
+
+# Translation-rotation matrices
+-matrix  "1CHV-S 5T8A-A  U(1,.)   0.534482  0.717738 -0.446297           17.389307"
+-matrix  "1CHV-S 5T8A-A  U(2,.)  -0.744131  0.650000  0.154170           47.328396"
+-matrix  "1CHV-S 5T8A-A  U(3,.)   0.400747  0.249702  0.881505           27.335575"
+

@@ -1,0 +1,446 @@
+A length: 180
+B length: 181
+C length: 183
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   47  CA BLYS A  28 
+ Alternate location indication is not blank or A, ignore atom:   51  CB BLYS A  28 
+ Alternate location indication is not blank or A, ignore atom:   53  CG BLYS A  28 
+ Alternate location indication is not blank or A, ignore atom:   55  CD BLYS A  28 
+ Alternate location indication is not blank or A, ignore atom:   57  CE BLYS A  28 
+ Alternate location indication is not blank or A, ignore atom:   59  NZ BLYS A  28 
+ Alternate location indication is not blank or A, ignore atom: 1151  N  BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1153  CA BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1155  C  BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1157  O  BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1159  CB BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1161  CG BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1163  CD BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1165  OE1BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1167  NE2BGLN A 168 
+ Alternate location indication is not blank or A, ignore atom: 1177  CA BSER A 170 
+ Alternate location indication is not blank or A, ignore atom: 1181  CB BSER A 170 
+ Alternate location indication is not blank or A, ignore atom: 1183  OG BSER A 170 
+ Alternate location indication is not blank or A, ignore atom: 4425  O  BHOH A 514 
+ Alternate location indication is not blank or A, ignore atom: 4491  O  BHOH A 579 
+
+Total number of residues read in:            183
+Total number of atoms read in:              1413
+Total number of ignored atom records:        400
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SEATTLE     
+  Reading DSSP file
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              COMPND   2 MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE;                       SOURCE   2 ORGANISM_SCIENTIFIC: BRUGIA MALAYI;                                  AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SE          
+         183  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1687
+ selectset done           0
+ eigen done           0
+ tau           1   1.12739193              27         134
+ #popped           2           1
+ #selectset contacts        1687
+ selectset done           1
+ eigen done           1
+ tau           3   1.72774875             149         159
+ #popped           4           1
+ #selectset contacts        1687
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        1687
+ selectset done           0
+ eigen done           0
+ tau           5  0.958423138              37          55          69          86
+ #popped           6           1
+ #selectset contacts        1687
+ selectset done           1
+ eigen done           1
+ tau           7  0.465432823             104         115
+ #popped           8           1
+ #selectset contacts        1687
+ selectset done           1
+ eigen done           1
+ tau           9  0.767857134              37          69
+ #popped          10           1
+ #selectset contacts        1687
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           7           0
+ #selectset contacts        1687
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              COMPND   2 MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE;                       SOURCE   2 ORGANISM_SCIENTIFIC: BRUGIA MALAYI;                                  AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SE          
+           0
+         183
+         183  residues read 8CU5.dssp                                                   
+  grow short strand           3           6
+  grow short strand          57          61
+  grow short strand          65          68
+  grow short strand         101         104
+  grow short strand         116         119
+  exclude short helix         124         126
+  grow short strand         175         178
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  9 10 11 12  7  8  5  6  4
+   2     1  0  0  7  1  2  3  9 10 11 12
+   3     1  6  7  5  7  8  5  6  4
+   4     0  0  0  7  1  2  3  9 10 11 12
+   5     0  0  0  0
+   6     3 10 11  4  7  8  5  6
+   7     3  0  0  1  4
+   8     0  0  0  4  7  8  5  6
+   9     0  0  0  0
+  10     6  0  0  2  7  8
+  11     6  0  0  2  5  6
+   1 *   0  2  3 12  1  1 12
+   2 -   1  0  0  7  2  1  3  9 12
+   3 -   1  4  5  5  1  4  8
+   4 -   3  6  7  4  1  5  8
+   5 -   3  0  0  1  1  4  4
+   6 -   4  0  0  2  1  7  8
+   7 -   4  0  0  2  1  5  6
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1448  CA BMET B  23 
+ Alternate location indication is not blank or A, ignore atom: 1452  CB BMET B  23 
+ Alternate location indication is not blank or A, ignore atom: 1454  CG BMET B  23 
+ Alternate location indication is not blank or A, ignore atom: 1456  SD BMET B  23 
+ Alternate location indication is not blank or A, ignore atom: 1458  CE BMET B  23 
+ Alternate location indication is not blank or A, ignore atom: 2706  CA BVAL B 184 
+ Alternate location indication is not blank or A, ignore atom: 2710  CB BVAL B 184 
+ Alternate location indication is not blank or A, ignore atom: 2712  CG1BVAL B 184 
+ Alternate location indication is not blank or A, ignore atom: 2714  CG2BVAL B 184 
+ Alternate location indication is not blank or A, ignore atom: 4528  O  BHOH B 425 
+ Alternate location indication is not blank or A, ignore atom: 4590  O  BHOH B 486 
+ Alternate location indication is not blank or A, ignore atom: 4648  O  BHOH B 543 
+ Alternate location indication is not blank or A, ignore atom: 4702  O  BHOH B 596 
+ Alternate location indication is not blank or A, ignore atom: 4715  O  BHOH B 608 
+
+Total number of residues read in:            183
+Total number of atoms read in:              1413
+Total number of ignored atom records:        452
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SEATTLE     
+  Reading DSSP file
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              COMPND   2 MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE;                       SOURCE   2 ORGANISM_SCIENTIFIC: BRUGIA MALAYI;                                  AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SE          
+         183  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1674
+ selectset done           0
+ eigen done           0
+ tau           1   1.23266578              32          52          68          90         104         115
+ #popped           2           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau           3   1.11329329             148         159
+ #popped           4           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau           5  0.564154923             121         131
+ #popped           6           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau           7  0.409329146              12          22
+ #popped           8           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau           9  0.364041418              32
+ #popped          10           2
+ #selectset contacts        1674
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped          11           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau          11  0.564194143              68
+ #popped          13           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau          13   3.83320928             148         170
+ #popped          14           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau          15   1.10969543             148
+ #popped          16           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1674
+ selectset done           0
+ eigen done           0
+ tau          17  0.995045602              52          79
+ #popped          18           0
+ #selectset contacts        1674
+ selectset done           0
+ eigen done           0
+ tau          19  0.912889481              52
+ #popped          20           1
+ #selectset contacts        1674
+ selectset done           1
+ eigen done           1
+ tau          21  0.540790200              42
+ #popped          21           0
+ #selectset contacts        1674
+ selectset done           0
+ eigen done           0
+ tau          23  0.454199016              90
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              COMPND   2 MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE;                       SOURCE   2 ORGANISM_SCIENTIFIC: BRUGIA MALAYI;                                  AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SE          
+           0
+         183
+         183  residues read 8CU5.dssp                                                   
+  grow short strand           3           6
+  grow short strand          59          61
+  grow short strand          65          68
+  grow short strand         101         104
+  grow short strand         116         119
+  exclude short helix         124         126
+  grow short strand         175         178
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  5  6  7  8  9 10 12 11  4
+   2     1 10 11 11  1  2  3  5  6  7  8  9 10 12 11
+   3     1  0  0  1  4
+   4     0  0  0 11  1  2  3  5  6  7  8  9 10 12 11
+   5     0  0  0  0
+   6     0  0  0 11  1  2  3  5  6  7  8  9 10 12 11
+   7     0  0  0  0
+   8     0  0  0 11  1  2  3  5  6  7  8  9 10 12 11
+   9     0  0  0  0
+  10     2  0  0  3  1  2  3
+  11     2 12 13  8  5  6  7  8  9 10 12 11
+  12    11  0  0  2  5  6
+  13    11 14 15  6  7  8  9 10 12 11
+  14    13 16 17  5  7  8  9 10 12
+  15    13  0  0  1 11
+  16    14  0  0  4  7  8  9 10
+  17    14  0  0  1 12
+  18     0  0  0  1  4
+  19     0  0  0  0
+  20     0  0  0  1  4
+  21     0  0  0  0
+  22     0  0  0  1  4
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 11  2  1  3  5 12
+   3 -   1  0  0  1  1  4  4
+   4 -   2  0  0  3  1  1  3
+   5 -   2  6  7  8  1  5 12
+   6 -   5  0  0  2  1  5  6
+   7 -   5  8  9  6  1  7 12
+   8 -   7 10 11  5  2  7 10 12 12
+   9 -   7  0  0  1  1 11 11
+  10 -   8  0  0  4  1  7 10
+  11 -   8  0  0  1  1 12 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 4782  O  BHOH C 453 
+
+Total number of residues read in:            183
+Total number of atoms read in:              1413
+Total number of ignored atom records:        249
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SEATTLE     
+  Reading DSSP file
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              COMPND   2 MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE;                       SOURCE   2 ORGANISM_SCIENTIFIC: BRUGIA MALAYI;                                  AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SE          
+         183  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1681
+ selectset done           0
+ eigen done           0
+ tau           1   1.05164123              12          23         138         165
+ #popped           2           1
+ #selectset contacts        1681
+ selectset done           1
+ eigen done           1
+ tau           3  0.751391470              54          79
+ #popped           4           2
+ #selectset contacts        1681
+ selectset done           2
+ eigen done           2
+ tau           5   1.06373823              54          89         104         115
+ #popped           6           3
+ #selectset contacts        1681
+ selectset done           3
+ eigen done           3
+ tau           7   1.20183754              37          54
+ #popped           8           3
+ #selectset contacts        1681
+ selectset done           3
+ eigen done           3
+ tau           9  0.220782265              12
+ #popped          11           3
+ #selectset contacts        1681
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        1681
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1681
+ selectset done           1
+ eigen done           1
+ tau          11   2.03902912              68
+ #popped           3           0
+ #selectset contacts        1681
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               16-MAY-22   8CU5              COMPND   2 MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE;                       SOURCE   2 ORGANISM_SCIENTIFIC: BRUGIA MALAYI;                                  AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE,SE          
+           0
+         183
+         183  residues read 8CU5.dssp                                                   
+  grow short strand           3           6
+  grow short strand          57          61
+  grow short strand          65          68
+  grow short strand         101         104
+  grow short strand         116         119
+  exclude short helix         124         126
+  grow short strand         175         178
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  7  8  9 12  4  5  6  3 10 11
+   2     1  4  5  9  1  2  7  8  9 12  4  5  6
+   3     1  0  0  3  3 10 11
+   4     2  8  9  7  1  2  7  8  9 12  4
+   5     2  0  0  2  5  6
+   6     0  0  0  7  1  2  7  8  9 12  4
+   7     0  0  0  0
+   8     4 10 11  6  1  2  7  8  9 12
+   9     4  0  0  1  4
+  10     8  0  0  2  1  2
+  11     8  0  0  4  7  8  9 12
+  12     0  0  0  2  5  6
+  13     0  0  0  0
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  9  3  1  2  4  9 12 12
+   3 -   1  0  0  3  2  3  3 10 11
+   4 -   2  6  7  7  4  1  2  4  4  7  9 12 12
+   5 -   2  0  0  2  1  5  6
+   6 -   4  8  9  6  3  1  2  7  9 12 12
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  4  2  7  9 12 12
+
+ CHAIN : 8CU5A
+ CHAIN : 8CU5B
+ CHAIN : 8CU5C
+

@@ -1,0 +1,350 @@
+A length: 205
+D length: 206
+# 2 chains A D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1624
+Total number of ignored atom records:        186
+ HEADER    TRANSFERASE                             16-APR-14   4Q5F              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-APR-14   4Q5F              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ASCARIS SUUM;                                   AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau           1   2.41052032              33          49
+ #popped           2           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau           3   2.71236539              77         191
+ #popped           4           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau           5   1.67746234              61          77
+ #popped           6           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau           7  0.940823078              61
+ #popped           8           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau           9  0.564635277              33
+ #popped          10           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          11  0.335849047              10
+ #popped          13           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          13  0.639946342              20
+ #popped           5           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau          15   1.58388257              96         131
+ #popped          16           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          17   2.51409078              96
+ #popped          19           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          19   1.11702132             157         175
+ #popped          20           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          21   1.14488363             157
+ #popped          22           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          23   1.20652044             143
+ #popped          17           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau          25   1.32841325             113
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-APR-14   4Q5F              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ASCARIS SUUM;                                   AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+           0
+         205
+         205  residues read 4Q5F.dssp                                                   
+  grow short strand          29          33
+  grow short strand          52          55
+  grow short strand          58          61
+  grow short helix         116         122
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  5  6 13  7  8 10 12 11  9  4
+   2     1  4  5 12  1  2  3  5  6 13  7  8 10 12 11  9
+   3     1  0  0  1  4
+   4     2  6  7  7  1  2  3  5  6 13  7
+   5     2 16 17  5  8 10 12 11  9
+   6     4  8  9  6  1  2  3  5  6 13
+   7     4  0  0  1  7
+   8     6 10 11  5  1  2  3  5  6
+   9     6  0  0  1 13
+  10     8 12 13  3  1  2  3
+  11     8  0  0  2  5  6
+  12    10  0  0  1  1
+  13    10 14 15  2  2  3
+  14    13  0  0  1  2
+  15    13  0  0  1  3
+  16     5 18 19  4  8 10 12 11
+  17     5  0  0  1  9
+  18    16  0  0  1  8
+  19    16 20 21  3 10 12 11
+  20    19 22 23  2 10 12
+  21    19  0  0  1 11
+  22    20  0  0  1 10
+  23    20  0  0  1 12
+  24     0  0  0  1 10
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1  9
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 12  2  1  3  5 13
+   3 -   1  0  0  1  1  4  4
+   4 -   2  6  7  7  3  1  3  5  7 13 13
+   5 -   2 16 17  5  1  8 12
+   6 -   4  8  9  6  3  1  3  5  6 13 13
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1 13 13
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  5  6
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  2  1  2  3
+  14 -  13  0  0  1  1  2  2
+  15 -  13  0  0  1  1  3  3
+  16 -   5 18 19  4  2  8  8 10 12
+  17 -   5  0  0  1  1  9  9
+  18 -  16  0  0  1  1  8  8
+  19 -  16 20 21  3  1 10 12
+  20 -  19 22 23  2  2 10 10 12 12
+  21 -  19  0  0  1  1 11 11
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  1  1 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1641
+Total number of ignored atom records:        133
+ HEADER    TRANSFERASE                             16-APR-14   4Q5F              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-APR-14   4Q5F              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ASCARIS SUUM;                                   AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1915
+ selectset done           0
+ eigen done           0
+ tau           1   2.19734311              34          50
+ #popped           2           0
+ #selectset contacts        1915
+ selectset done           0
+ eigen done           0
+ tau           3   2.31468749              85         190
+ #popped           4           1
+ #selectset contacts        1915
+ selectset done           1
+ eigen done           1
+ tau           5   2.21014285              62          85
+ #popped           6           2
+ #selectset contacts        1915
+ selectset done           2
+ eigen done           2
+ tau           7   1.14199317              62
+ #popped           8           2
+ #selectset contacts        1915
+ selectset done           2
+ eigen done           2
+ tau           9  0.581230700              34
+ #popped          10           2
+ #selectset contacts        1915
+ selectset done           2
+ eigen done           2
+ tau          11  0.373962373              14
+ #popped          13           2
+ #selectset contacts        1915
+ selectset done           2
+ eigen done           2
+ tau          13  0.552061498              24
+ #popped           7           1
+ #selectset contacts        1915
+ selectset done           1
+ eigen done           1
+ tau          15   1.19244933              75
+ #popped           5           0
+ #selectset contacts        1915
+ selectset done           0
+ eigen done           0
+ tau          17   1.66171825             134
+ #popped          18           1
+ #selectset contacts        1915
+ selectset done           1
+ eigen done           1
+ tau          19   1.38509285              97
+ #popped          21           1
+ #selectset contacts        1915
+ selectset done           1
+ eigen done           1
+ tau          21   1.36511374             115
+ #popped          19           0
+ #selectset contacts        1915
+ selectset done           0
+ eigen done           0
+ tau          23   1.23620212             153
+ #popped          25           0
+ #selectset contacts        1915
+ selectset done           0
+ eigen done           0
+ tau          25   1.49789226             176
+ #popped          26           0
+ #selectset contacts        1915
+ selectset done           0
+ eigen done           0
+ tau          27   1.00671554             166
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-APR-14   4Q5F              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ASCARIS SUUM;                                   AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+           0
+         206
+         206  residues read 4Q5F.dssp                                                   
+  grow short strand          30          34
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         117         123
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  5  6 13  7  8  9 10 11 12  4
+   2     1  4  5 12  1  2  3  5  6 13  7  8  9 10 11 12
+   3     1  0  0  1  4
+   4     2  6  7  7  1  2  3  5  6 13  7
+   5     2 18 19  5  8  9 10 11 12
+   6     4  8  9  6  1  2  3  5  6 13
+   7     4  0  0  1  7
+   8     6 10 11  5  1  2  3  5  6
+   9     6  0  0  1 13
+  10     8 12 13  3  1  2  3
+  11     8  0  0  2  5  6
+  12    10  0  0  1  1
+  13    10 14 15  2  2  3
+  14    13  0  0  1  2
+  15    13  0  0  1  3
+  16     0  0  0  1  7
+  17     0  0  0  0
+  18     5 20 21  3  8  9 10
+  19     5 26 27  2 11 12
+  20    18  0  0  1  8
+  21    18  0  0  2  9 10
+  22     0  0  0  0
+  23     0  0  0  2  9 10
+  24     0  0  0  0
+  25     0  0  0  2 11 12
+  26    19  0  0  1 11
+  27    19  0  0  1 12
+  28     0  0  0  1 11
+  29     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 12  2  1  3  5 13
+   3 -   1  0  0  1  1  4  4
+   4 -   2  6  7  7  3  1  3  5  7 13 13
+   5 -   2 16 17  5  1  8 12
+   6 -   4  8  9  6  3  1  3  5  6 13 13
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1 13 13
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  5  6
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  2  1  2  3
+  14 -  13  0  0  1  1  2  2
+  15 -  13  0  0  1  1  3  3
+  16 -   5 18 19  3  1  8 10
+  17 -   5 20 21  2  1 11 12
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  2  1  9 10
+  20 -  17  0  0  1  1 11 11
+  21 -  17  0  0  1  1 12 12
+
+ CHAIN : 4Q5FA
+ CHAIN : 4Q5FD
+

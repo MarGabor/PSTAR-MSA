@@ -1,0 +1,40 @@
+# Job: msb
+# Query: 3GPRB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6GHV-E 11.7  2.1  100   133   25   MOLECULE: CD209 ANTIGEN;                                             
+
+# Pairwise alignments
+
+No 1: Query=3GPRB Sbjct=6GHVE Z-score=11.7
+
+DSSP  --LLLLLLLEELLLLEEEEEEEEELHHHHHHHHHHHLllLEELLLLLHHHHHHHHHHHLL
+Query --FRCPTTWSASKLYCYKPFKEKKTWIEAERFCAKQAenGHLVSIGSAAEADFLDLVIVV   58
+ident     ||  |      ||        |      |        || | || |  || |    
+Sbjct lcHPCPWEWTFFQGNCYFMSNSQRNWHDSITACKEVG--AQLVVIKSAEEQNFLQLQSSR   58
+DSSP  llLLLLLLLEEELLEEEEELLLLLLHHHHHHHHHLLL--LEELLLLLHHHHHHHHHHHHH
+
+DSSP  llllLLLLEELLEEELLL------------lllllllllllllllllLLLEEEEEEllll
+Query nfdkQRYRAWTGLTERNL------------kwtngasvsyenlyepyIRKCFVVQPwegk  106
+ident          | ||   |                                 |         
+Sbjct ----SNRFTWMGLSDLNQegtwqwvdgspllpsfkqywnrgepnnvgEEDCAEFSG----  110
+DSSP  ----HLLLEEEEEEEEEElleeeelllllllhhhhhhllllllllllLLLEEEEEL----
+
+DSSP  EELLEELLLLLEEEEEELLLL--
+Query SKWYKADCEEKNAFLCKFPKP--  127
+ident   |    |       ||      
+Sbjct NGWNDDKCNLAKFWICKKSAAsc  133
+DSSP  LEEEEELLLLLLEEEEEEELLll
+
+
+# Structural equivalences
+   1: 3GPR-B 6GHV-E     1 -  35 <=>    3 -  37   (PHE 2002  - ALA 2036  <=> HIS  254  - GLY  288 )                          
+   1: 3GPR-B 6GHV-E    38 -  58 <=>   38 -  58   (GLY 2039  - VAL 2059  <=> ALA  289  - ARG  309 )                          
+   1: 3GPR-B 6GHV-E    63 -  76 <=>   59 -  72   (GLN 2064  - LEU 2077  <=> SER  310  - GLN  323 )                          
+   1: 3GPR-B 6GHV-E    94 - 102 <=>  102 - 110   (ILE 2095  - PRO 2103  <=> GLU  353  - GLY  361 )                          
+   1: 3GPR-B 6GHV-E   107 - 127 <=>  111 - 131   (SER 2108  - PRO 2128  <=> ASN  362  - ALA  382 )                          
+
+# Translation-rotation matrices
+-matrix  "3GPR-B 6GHV-E  U(1,.)   0.050408  0.968829 -0.242547           77.075989"
+-matrix  "3GPR-B 6GHV-E  U(2,.)  -0.731876 -0.129414 -0.669036           60.348003"
+-matrix  "3GPR-B 6GHV-E  U(3,.)  -0.679571  0.211239  0.702539          -39.948151"
+

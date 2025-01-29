@@ -1,0 +1,329 @@
+A length: 192
+B length: 194
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            192
+Total number of atoms read in:              1536
+Total number of ignored atom records:        486
+ HEADER    STRUCTURAL PROTEIN                      27-APR-99   1CK4              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.NOLTE,R.B.PEPINSKY,S.Y.VENYAMINOV,V.KOTELIANSKY,P.J.GOTWALS,        
+  Reading DSSP file
+ HEADER    STRUCTURAL PROTEIN                      27-APR-99   1CK4              COMPND   2 MOLECULE: INTEGRIN ALPHA-1;                                          SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    M.NOLTE,R.B.PEPINSKY,S.Y.VENYAMINOV,V.KOTELIANSKY,P.J.GOTWAL          
+         192  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1828
+ selectset done           0
+ eigen done           0
+ tau           1   1.21290624              16          39          57          72
+ #popped           2           1
+ #selectset contacts        1828
+ selectset done           1
+ eigen done           1
+ tau           3   1.29623735             137
+ #popped           4           2
+ #selectset contacts        1828
+ selectset done           2
+ eigen done           2
+ tau           5  0.508630097              57          91         108
+ #popped           6           3
+ #selectset contacts        1828
+ selectset done           3
+ eigen done           3
+ tau           7  0.293517262              16
+ #popped           9           3
+ #selectset contacts        1828
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1828
+ selectset done           2
+ eigen done           2
+ tau           9  0.821914077             120
+ #popped          10           2
+ #selectset contacts        1828
+ selectset done           2
+ eigen done           2
+ tau          11   1.60683763              91
+ #popped           5           1
+ #selectset contacts        1828
+ selectset done           1
+ eigen done           1
+ tau          13  0.760389030             155         172         182
+ #popped          14           2
+ #selectset contacts        1828
+ selectset done           2
+ eigen done           2
+ tau          15  0.719611287             155
+ #popped          15           1
+ #selectset contacts        1828
+ selectset done           1
+ eigen done           1
+ tau          17   2.12121224             172
+ #popped           3           0
+ #selectset contacts        1828
+ selectset done           0
+ eigen done           0
+ tau          19   1.06675100              29
+ #popped          21           0
+ #selectset contacts        1828
+ selectset done           0
+ eigen done           0
+ tau          21   2.08121824              39
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL PROTEIN                      27-APR-99   1CK4              COMPND   2 MOLECULE: INTEGRIN ALPHA-1;                                          SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    M.NOLTE,R.B.PEPINSKY,S.Y.VENYAMINOV,V.KOTELIANSKY,P.J.GOTWAL          
+           0
+         192
+         192  residues read 1CK4.dssp                                                   
+  grow short strand          50          54
+  exclude short helix          96          98
+  exclude short helix         143         147
+  exclude short helix         167         170
+  grow short strand         171         174
+  exclude short helix         178         182
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  6  7  8  9 11 10 12  2  5
+   2     1  4  5 10  1  3  4  6  7  8  9 11 10 12
+   3     1 20 21  2  2  5
+   4     2  6  7  7  1  3  4  6  7  8  9
+   5     2 14 15  3 11 10 12
+   6     4  8  9  3  1  3  4
+   7     4 10 11  4  6  7  8  9
+   8     6  0  0  1  1
+   9     6  0  0  2  3  4
+  10     7 12 13  2  6  7
+  11     7  0  0  2  8  9
+  12    10  0  0  1  6
+  13    10  0  0  1  7
+  14     5  0  0  1 11
+  15     5 18 19  2 10 12
+  16     0  0  0  0
+  17     0  0  0  1 11
+  18    15  0  0  1 10
+  19    15  0  0  1 12
+  20     3  0  0  1  2
+  21     3  0  0  1  5
+  22     0  0  0  0
+  23     0  0  0  1  5
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 10  3  1  1  3  4  6 12
+   3 -   1 18 19  2  2  2  2  5  5
+   4 -   2  6  7  7  3  1  1  3  4  6  9
+   5 -   2 14 15  3  1 10 12
+   6 -   4  8  9  3  2  1  1  3  4
+   7 -   4 10 11  4  1  6  9
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  3  4
+  10 -   7 12 13  2  1  6  7
+  11 -   7  0  0  2  1  8  9
+  12 -  10  0  0  1  1  6  6
+  13 -  10  0  0  1  1  7  7
+  14 -   5  0  0  1  1 11 11
+  15 -   5 16 17  2  2 10 10 12 12
+  16 -  15  0  0  1  1 10 10
+  17 -  15  0  0  1  1 12 12
+  18 -   3  0  0  1  1  2  2
+  19 -   3  0  0  1  1  5  5
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            194
+Total number of atoms read in:              1549
+Total number of ignored atom records:        614
+ HEADER    STRUCTURAL PROTEIN                      27-APR-99   1CK4              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.NOLTE,R.B.PEPINSKY,S.Y.VENYAMINOV,V.KOTELIANSKY,P.J.GOTWALS,        
+  Reading DSSP file
+ HEADER    STRUCTURAL PROTEIN                      27-APR-99   1CK4              COMPND   2 MOLECULE: INTEGRIN ALPHA-1;                                          SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    M.NOLTE,R.B.PEPINSKY,S.Y.VENYAMINOV,V.KOTELIANSKY,P.J.GOTWAL          
+         194  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1845
+ selectset done           0
+ eigen done           0
+ tau           1   1.12295961             109         183
+ #popped           2           1
+ #selectset contacts        1845
+ selectset done           1
+ eigen done           1
+ tau           3   2.49504519             109
+ #popped           4           1
+ #selectset contacts        1845
+ selectset done           1
+ eigen done           1
+ tau           5   1.31136382              13          39          58          74
+ #popped           6           2
+ #selectset contacts        1845
+ selectset done           2
+ eigen done           2
+ tau           7  0.633896649              58          93
+ #popped           8           2
+ #selectset contacts        1845
+ selectset done           2
+ eigen done           2
+ tau           9  0.225560293              13
+ #popped          11           2
+ #selectset contacts        1845
+ selectset done           2
+ eigen done           2
+ tau          11  0.982929409              58
+ #popped           7           1
+ #selectset contacts        1845
+ selectset done           1
+ eigen done           1
+ tau          13  0.980070889              39
+ #popped          14           1
+ #selectset contacts        1845
+ selectset done           1
+ eigen done           1
+ tau          15   1.30065596              29
+ #popped           3           0
+ #selectset contacts        1845
+ selectset done           0
+ eigen done           0
+ tau          17   1.46075463             119         134
+ #popped          18           0
+ #selectset contacts        1845
+ selectset done           0
+ eigen done           0
+ tau          19  0.543075323             159
+ #popped          20           1
+ #selectset contacts        1845
+ selectset done           1
+ eigen done           1
+ tau          21  0.396573216             119
+ #popped          23           1
+ #selectset contacts        1845
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        1845
+ selectset done           0
+ eigen done           0
+ tau          23   2.88131642             172
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL PROTEIN                      27-APR-99   1CK4              COMPND   2 MOLECULE: INTEGRIN ALPHA-1;                                          SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    M.NOLTE,R.B.PEPINSKY,S.Y.VENYAMINOV,V.KOTELIANSKY,P.J.GOTWAL          
+           0
+         194
+         194  residues read 1CK4.dssp                                                   
+  grow short strand          50          54
+  exclude short helix         143         147
+  exclude short helix         167         170
+  grow short strand         171         174
+  exclude short helix         177         182
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  7  6  2  5 12  9 10 11  8
+   2     1  4  5  8  1  3  4  7  6  2  5 12
+   3     1 18 19  4  9 10 11  8
+   4     2  6  7  7  1  3  4  7  6  2  5
+   5     2  0  0  1 12
+   6     4  8  9  5  1  3  4  7  6
+   7     4 14 15  2  2  5
+   8     6 10 11  4  1  3  4  7
+   9     6  0  0  1  6
+  10     8  0  0  1  1
+  11     8 12 13  3  3  4  7
+  12    11  0  0  2  3  4
+  13    11  0  0  1  7
+  14     7  0  0  1  2
+  15     7  0  0  1  5
+  16     0  0  0  1  2
+  17     0  0  0  0
+  18     3 20 21  3  9 10 11
+  19     3  0  0  1  8
+  20    18  0  0  2  9 10
+  21    18  0  0  1 11
+  22     0  0  0  0
+  23     0  0  0  2  9 10
+  24     0  0  0  0
+  25     0  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  2  1  7 12 12
+   3 *   1 16 17  4  1  8 11
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  5  3  1  1  3  4  6  7
+   7 -   4 14 15  2  2  2  2  5  5
+   8 -   6 10 11  4  3  1  1  3  4  7  7
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  3  2  3  4  7  7
+  12 -  11  0  0  2  1  3  4
+  13 -  11  0  0  1  1  7  7
+  14 -   7  0  0  1  1  2  2
+  15 -   7  0  0  1  1  5  5
+  16 -   3 18 19  3  1  9 11
+  17 -   3  0  0  1  1  8  8
+  18 -  16  0  0  2  1  9 10
+  19 -  16  0  0  1  1 11 11
+
+ CHAIN : 1CK4A
+ CHAIN : 1CK4B
+

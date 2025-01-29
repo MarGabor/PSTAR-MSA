@@ -1,0 +1,32 @@
+# Job: rvp
+# Query: 1FMBA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1AID-A 14.1  1.9   97    99   31   MOLECULE: HUMAN IMMUNODEFICIENCY VIRUS PROTEASE;                     
+
+# Pairwise alignments
+
+No 1: Query=1FMBA Sbjct=1AIDA Z-score=14.1
+
+DSSP  LLLLLLLLLEEEEEELLEEEEEEELLLLLLLEEEHHhhhhlllLLLLEELLLEEELLEEE
+Query VTYNLEKRPTTIVLINDTPLNVLLDTGADTSVLTTAhynrlkyRGRKYQGTGIGGVGGNV   60
+ident     |  ||     |       |||||||  ||             |     ||| ||  
+Sbjct PQITLWQRPLVTIRIGGQLKEALLDTGADDTVLEEM------nLPGKWKPKMIGGIGGFI   54
+DSSP  LEEELLLLLEEEEEELLEEEEEEELLLLLLLEELLL------lLLLLLEEEEEEELLEEE
+
+DSSP  LLEEEE-EEEEELLEEEEEEEEEELLLLLEELHHHHHHLLLLLLL
+Query ETFSTP-VTIKKKGRHIKTRMLVADIPVTILGRDILQDLGAKLVL  104
+ident              |       ||   || | ||  |   |  |  
+Sbjct KVRQYDqIPVEICGHKAIGTVLVGPTPVNIIGRNLLTQIGCTLNF   99
+DSSP  EEEEEEeEEEEELLEEEEEEEEELLLLLLEELHHHHHHLLLEEEL
+
+
+# Structural equivalences
+   1: 1FMB-A 1AID-A     1 -  36 <=>    1 -  36   (VAL    1  - ALA   36  <=> PRO    1  - MET   36 )                          
+   1: 1FMB-A 1AID-A    44 -  66 <=>   38 -  60   (ARG   44  - PRO   66  <=> LEU   38  - ASP   60 )                          
+   1: 1FMB-A 1AID-A    67 - 104 <=>   62 -  99   (VAL   67  - LEU  104  <=> ILE   62  - PHE   99 )                          
+
+# Translation-rotation matrices
+-matrix  "1FMB-A 1AID-A  U(1,.)   0.630009 -0.658847  0.411109          -14.153086"
+-matrix  "1FMB-A 1AID-A  U(2,.)  -0.692814 -0.715999 -0.085756           93.565071"
+-matrix  "1FMB-A 1AID-A  U(3,.)   0.350853 -0.230795 -0.907544          -14.128141"
+

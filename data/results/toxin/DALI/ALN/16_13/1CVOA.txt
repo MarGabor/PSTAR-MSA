@@ -1,0 +1,33 @@
+# Job: toxin
+# Query: 1CVOA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1COE-A  5.5  3.5   58    62   33   MOLECULE: COBROTOXIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1CVOA Sbjct=1COEA Z-score=5.5
+
+DSSP  LEELLL--lLLLLLEELLLLLLEEEEEEElLLLLLLLEEEEEEllLLLLLLLEEEEEELL
+Query LKCHNT--qLPFIYKTCPEGKNLCFKATLkKFPLKFPVKRGCAdnCPKNSALLKYVCCST   58
+ident | |||           |  |   | |             |||   ||         || |
+Sbjct LECHNQqssQTPTTTGCSGGETNCYKKRW-RDHRGYRTERGCG--CPSVKNGIEINCCTT   57
+DSSP  LLLEELlllLLLEELLLLLLLLLEEEEEE-LLLLLLEEELLLL--LLLLLLLLEEEEELL
+
+DSSP  LLLL-
+Query DKCN-   62
+ident | || 
+Sbjct DRCNn   62
+DSSP  LLLLl
+
+
+# Structural equivalences
+   1: 1CVO-A 1COE-A     1 -   6 <=>    1 -   6   (LEU    1  - THR    6  <=> LEU    1  - GLN    6 )                          
+   1: 1CVO-A 1COE-A     8 -  27 <=>   10 -  29   (LEU    8  - LEU   27  <=> GLN   10  - TRP   29 )                          
+   1: 1CVO-A 1COE-A    29 -  41 <=>   30 -  42   (LYS   29  - ALA   41  <=> ARG   30  - GLY   42 )                          
+   1: 1CVO-A 1COE-A    44 -  62 <=>   43 -  61   (CYS   44  - ASN   62  <=> CYS   43  - ASN   61 )                          
+
+# Translation-rotation matrices
+-matrix  "1CVO-A 1COE-A  U(1,.)   0.268621  0.865864 -0.422045           -1.004963"
+-matrix  "1CVO-A 1COE-A  U(2,.)  -0.820854  0.435034  0.370059            0.462996"
+-matrix  "1CVO-A 1COE-A  U(3,.)   0.504025  0.247032  0.827608            1.300075"
+

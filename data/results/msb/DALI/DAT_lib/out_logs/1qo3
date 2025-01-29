@@ -1,0 +1,581 @@
+A length: 274
+B length: 100
+C length: 128
+D length: 121
+P length: 10
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            274
+Total number of atoms read in:              2249
+Total number of ignored atom records:        328
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+  Reading DSSP file
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              COMPND   2 MOLECULE: MHC CLASS I H-2DD HEAVY CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+         274  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2400
+ selectset done           0
+ eigen done           0
+ tau           1   21.9559803             179
+ #popped           2           1
+ #selectset contacts        2400
+ selectset done           1
+ eigen done           1
+ tau           3   1.36864603             121         154
+ #popped           4           2
+ #selectset contacts        2400
+ selectset done           2
+ eigen done           2
+ tau           5   1.51848805             121
+ #popped           6           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau           7   1.10110855              47          64
+ #popped           8           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau           9   1.04127049              78          89
+ #popped          10           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau          11  0.824158967              10          20
+ #popped          12           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau          13   1.56524503              47          78
+ #popped          14           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau          15  0.755518675             100         110
+ #popped          16           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau          17  0.355129927             111
+ #popped          18           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau          19  0.217945948              23
+ #popped          21           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau          21   999.999023              47
+ #popped          22           3
+ #selectset contacts        2400
+ selectset done           3
+ eigen done           3
+ tau          23   0.00000000    
+ #popped           7           2
+ #selectset contacts        2400
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped           5           1
+ #selectset contacts        2400
+ selectset done           1
+ eigen done           1
+ tau          23  0.817740738             133
+ #popped          25           1
+ #selectset contacts        2400
+ selectset done           1
+ eigen done           1
+ tau          25  0.604385495             144
+ #popped           3           0
+ #selectset contacts        2400
+ selectset done           0
+ eigen done           0
+ tau          27  0.886700153             189         199         246         256
+ #popped          28           1
+ #selectset contacts        2400
+ selectset done           1
+ eigen done           1
+ tau          29  0.912514210             216         226
+ #popped          30           1
+ #selectset contacts        2400
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          29           0
+ #selectset contacts        2400
+ selectset done           0
+ eigen done           0
+ tau          31  0.749752045             199
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              COMPND   2 MOLECULE: MHC CLASS I H-2DD HEAVY CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+           0
+         274
+         274  residues read 1QO3.dssp                                                   
+  grow short strand          45          46
+  exclude short helix          49          51
+  grow short strand         132         134
+  exclude short helix         175         178
+  grow short strand         228         229
+  grow short strand         233         234
+  exclude short helix         253         255
+  grow short strand         269         271
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  6  7  5 11 12  8  9 10 13 14 15 16 17 18 19 20
+   2     1  4  5 12  1  2  3  4  6  7  5 11 12  8  9 10
+   3     1  0  0  8 13 14 15 16 17 18 19 20
+   4     2  6  7  9  1  2  3  4  6  7  5 11 12
+   5     2 24 25  3  8  9 10
+   6     4 14 15  7  1  2  3  4  6  7  5
+   7     4  0  0  2 11 12
+   8     0  0  0  7  1  2  3  4  6  7  5
+   9     0  0  0  0
+  10     0  0  0  7  1  2  3  4  6  7  5
+  11     0  0  0  0
+  12     0  0  0  7  1  2  3  4  6  7  5
+  13     0  0  0  0
+  14     6 18 19  6  1  2  3  4  6  7
+  15     6  0  0  1  5
+  16     0  0  0  6  1  2  3  4  6  7
+  17     0  0  0  0
+  18    14 20 21  5  1  2  3  4  6
+  19    14  0  0  1  7
+  20    18  0  0  2  1  2
+  21    18 22 23  3  3  4  6
+  22    21  0  0  2  3  4
+  23    21  0  0  1  6
+  24     5  0  0  2  8  9
+  25     5  0  0  1 10
+  26     0  0  0  1 10
+  27     0  0  0  0
+  28     0  0  0  8 13 14 15 16 17 18 19 20
+  29     0  0  0  0
+  30     0  0  0  8 13 14 15 16 17 18 19 20
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+   1 +   0  2  3 20  1  1 20
+   2 +   1  4  5 12  1  1 12
+   3 *   1  0  0  8  1 13 20
+   4 *   2  6  7  9  2  1  7 11 12
+   5 =   2 16 17  3  1  8 10
+   6 -   4  8  9  7  1  1  7
+   7 -   4  0  0  2  1 11 12
+   8 -   6 10 11  6  2  1  4  6  7
+   9 -   6  0  0  1  1  5  5
+  10 -   8 12 13  5  2  1  4  6  6
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  2  1  1  2
+  13 -  10 14 15  3  2  3  4  6  6
+  14 -  13  0  0  2  1  3  4
+  15 -  13  0  0  1  1  6  6
+  16 -   5  0  0  2  1  8  9
+  17 -   5  0  0  1  1 10 10
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            100
+Total number of atoms read in:               827
+Total number of ignored atom records:        127
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+  Reading DSSP file
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              COMPND   2 MOLECULE: MHC CLASS I H-2DD HEAVY CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+         100  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           1  0.926961541              53          64
+ #popped           2           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           3  0.581563950              12          23
+ #popped           4           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           5  0.410015643              25
+ #popped           7           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           7  0.653706849              36
+ #popped           9           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           9  0.514342904              74
+ #popped          10           1
+ #selectset contacts         781
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped          11           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau          11  0.436486065              90
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              COMPND   2 MOLECULE: MHC CLASS I H-2DD HEAVY CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+           0
+         100
+         100  residues read 1QO3.dssp                                                   
+  grow short strand          45          46
+  grow short strand          51          52
+  grow short strand          56          57
+  grow short strand          92          95
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  7  8  9  6
+   2     1  6  7  8  1  2  3  4  5  7  8  9
+   3     1  0  0  1  6
+   4     0  0  0  8  1  2  3  4  5  7  8  9
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  8  9  7  2  3  4  5  7  8  9
+   8     7  0  0  1  2
+   9     7 10 11  6  3  4  5  7  8  9
+  10     9  0  0  4  3  4  5  7
+  11     9 12 13  2  8  9
+  12    11  0  0  1  8
+  13    11  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  5  7  9
+   3 -   1  0  0  1  1  6  6
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  7  2  2  5  7  9
+   6 -   5  0  0  1  1  2  2
+   7 -   5  8  9  6  2  3  5  7  9
+   8 -   7  0  0  4  2  3  5  7  7
+   9 -   7 10 11  2  1  8  9
+  10 -   9  0  0  1  1  8  8
+  11 -   9  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            128
+Total number of atoms read in:              1041
+Total number of ignored atom records:        141
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+  Reading DSSP file
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              COMPND   2 MOLECULE: MHC CLASS I H-2DD HEAVY CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+         128  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1081
+ selectset done           0
+ eigen done           0
+ tau           1  0.986478090              68          79          89         117
+ #popped           2           1
+ #selectset contacts        1081
+ selectset done           1
+ eigen done           1
+ tau           3  0.713426948              25
+ #popped           4           2
+ #selectset contacts        1081
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1081
+ selectset done           1
+ eigen done           1
+ tau           5  0.816402256              42
+ #popped           7           1
+ #selectset contacts        1081
+ selectset done           1
+ eigen done           1
+ tau           7  0.631712258              89
+ #popped           8           1
+ #selectset contacts        1081
+ selectset done           1
+ eigen done           1
+ tau           9  0.904075205              68
+ #popped          10           1
+ #selectset contacts        1081
+ selectset done           1
+ eigen done           1
+ tau          11  0.936699092              58
+ #popped           3           0
+ #selectset contacts        1081
+ selectset done           0
+ eigen done           0
+ tau          13   1.07799101              79
+ #popped          15           0
+ #selectset contacts        1081
+ selectset done           0
+ eigen done           0
+ tau          15   1.32954550              99
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              COMPND   2 MOLECULE: MHC CLASS I H-2DD HEAVY CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+           0
+         128
+         128  residues read 1QO3.dssp                                                   
+  grow short strand          43          44
+  exclude short helix          73          75
+  grow short strand          77          80
+  exclude short helix          97          99
+  grow short strand         102         105
+  grow short strand         110         113
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6 10  7  8  9
+   2     1  4  5  7  1  2  3  4  5  6 10
+   3     1 14 15  3  7  8  9
+   4     2  0  0  2  1  2
+   5     2  6  7  5  3  4  5  6 10
+   6     5  0  0  1  3
+   7     5  8  9  4  4  5  6 10
+   8     7 12 13  3  4  5  6
+   9     7  0  0  1 10
+  10     0  0  0  3  4  5  6
+  11     0  0  0  0
+  12     8  0  0  2  4  5
+  13     8  0  0  1  6
+  14     3  0  0  1  7
+  15     3  0  0  2  8  9
+  16     0  0  0  0
+  17     0  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  7  2  1  6 10 10
+   3 -   1 12 13  3  1  7  9
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  5  2  3  6 10 10
+   6 -   5  0  0  1  1  3  3
+   7 -   5  8  9  4  2  4  6 10 10
+   8 -   7 10 11  3  1  4  6
+   9 -   7  0  0  1  1 10 10
+  10 -   8  0  0  2  1  4  5
+  11 -   8  0  0  1  1  6  6
+  12 -   3  0  0  1  1  7  7
+  13 -   3  0  0  2  1  8  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            121
+Total number of atoms read in:               989
+Total number of ignored atom records:        113
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+  Reading DSSP file
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              COMPND   2 MOLECULE: MHC CLASS I H-2DD HEAVY CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+         121  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1041
+ selectset done           0
+ eigen done           0
+ tau           1   1.12254739              61          71          82          93
+ #popped           2           1
+ #selectset contacts        1041
+ selectset done           1
+ eigen done           1
+ tau           3  0.606704891              16          33
+ #popped           4           1
+ #selectset contacts        1041
+ selectset done           1
+ eigen done           1
+ tau           5  0.587516725              16
+ #popped           7           1
+ #selectset contacts        1041
+ selectset done           1
+ eigen done           1
+ tau           7  0.494994551             111
+ #popped           8           1
+ #selectset contacts        1041
+ selectset done           1
+ eigen done           1
+ tau           9   1.16565239              51          61          82
+ #popped          10           2
+ #selectset contacts        1041
+ selectset done           2
+ eigen done           2
+ tau          11   1.35427785              51
+ #popped          11           1
+ #selectset contacts        1041
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1041
+ selectset done           0
+ eigen done           0
+ tau          13   1.64794004              71
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    RECEPTOR/IMMUNE SYSTEM                  01-NOV-99   1QO3              COMPND   2 MOLECULE: MHC CLASS I H-2DD HEAVY CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.TORMO,R.A.MARIUZZA                                                  
+           0
+         121
+         121  residues read 1QO3.dssp                                                   
+  grow short strand          35          36
+  grow short strand          69          72
+  exclude short helix          84          86
+  exclude short helix          89          91
+  grow short strand          94          97
+  grow short strand         102         105
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  4  5  6  8  9 10  3  7
+   2     1  4  5  9  1  2  4  5  6  8  9 10  3
+   3     1  0  0  1  7
+   4     2  6  7  8  1  2  4  5  6  8  9 10
+   5     2  0  0  1  3
+   6     4  0  0  2  1  2
+   7     4  8  9  6  4  5  6  8  9 10
+   8     7 10 11  5  4  5  6  8  9
+   9     7  0  0  1 10
+  10     8  0  0  2  4  5
+  11     8  0  0  3  6  8  9
+  12     0  0  0  2  4  5
+  13     0  0  0  0
+  14     0  0  0  1  7
+  15     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  9  2  1  6  8 10
+   3 -   1  0  0  1  1  7  7
+   4 -   2  6  7  8  3  1  2  4  6  8 10
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  6  2  4  6  8 10
+   8 -   7 10 11  5  2  4  6  8  9
+   9 -   7  0  0  1  1 10 10
+  10 -   8  0  0  2  1  4  5
+  11 -   8  0  0  3  2  6  6  8  9
+
+ CHAIN : 1QO3A
+ CHAIN : 1QO3B
+ CHAIN : 1QO3C
+ CHAIN : 1QO3D
+

@@ -1,0 +1,32 @@
+# Job: biotin_lipo
+# Query: 1LABA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DNC-A  7.2  3.0   74    98   34   MOLECULE: PYRUVATE DEHYDROGENASE PROTEIN X COMPONENT;                
+
+# Pairwise alignments
+
+No 1: Query=1LABA Sbjct=2DNCA Z-score=7.2
+
+DSSP  ------LLLLLlllllLLLLLEEEEELLLLLLLEELLLLLLEEEELLLLEEEELLLLLEE
+Query ------AFEFKlpdigEGIHEGEIVKWFVKPGDEVNEDDVLCEVQNDKAVVEIPSPVKGK   54
+ident                     || ||||  | |  |   | |||   |||||       | 
+Sbjct gssgssGIKILmpslsPTMEEGNIVKWLKKEGEAVSAGDALCEIETDKAVVTLDASDDGI   60
+DSSP  llllllLEEEElllllLLLLEELEEEELLLLLLEELLLLEEEEEELLLLEEEEELLLLEE
+
+DSSP  LLLLLLLLLLE-ELLLLLLLLLLLLL-----------l
+Query VLEILVPEGTV-ATVGQTLITLDAPG-----------y   80
+ident    | | ||      |         |            
+Sbjct LAKIVVEEGSKnIRLGSLIGLIVEEGedwkhvsgpssg   98
+DSSP  EEELLLLLLLLlEELLLEEEEEELLLllllllllllll
+
+
+# Structural equivalences
+   1: 1LAB-A 2DNC-A     1 -   5 <=>    7 -  11   (ALA    1  - LYS    5  <=> GLY    7  - LEU   11 )                          
+   1: 1LAB-A 2DNC-A    11 -  65 <=>   17 -  71   (GLU   11  - VAL   65  <=> PRO   17  - LYS   71 )                          
+   1: 1LAB-A 2DNC-A    66 -  79 <=>   73 -  86   (ALA   66  - GLY   79  <=> ILE   73  - GLY   86 )                          
+
+# Translation-rotation matrices
+-matrix  "1LAB-A 2DNC-A  U(1,.)   0.386162  0.723377  0.572368            2.269515"
+-matrix  "1LAB-A 2DNC-A  U(2,.)  -0.079814 -0.591970  0.801998           -0.357301"
+-matrix  "1LAB-A 2DNC-A  U(3,.)   0.918971 -0.355384 -0.170861           -2.787616"
+

@@ -1,0 +1,32 @@
+# Job: az
+# Query: 7ZQEM
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2GIM-C 17.7  1.2   98   106   52   MOLECULE: PLASTOCYANIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=7ZQEM Sbjct=2GIMC Z-score=17.7
+
+DSSP  --LEEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLLLLEELLLLLLLLL--LLLLL
+Query --DATVKLGADSGALEFVPKTLTIKSGETVNFVNNAGFPHNIVFDEDAIPSGV--NADAI   56
+ident     ||||| | | | | |  |||| | || | ||   ||| |||    |      |   
+Sbjct meTYTVKLGSDKGLLVFEPAKLTIKPGDTVEFLNNKVPPHNVVFDAALNPAKSadLAKSL   60
+DSSP  llEEEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLEEEEELLLLLLLLLhhHHHHH
+
+DSSP  LLLLLLLLLLLEEEEELL---LLEEEEEELHHHHHHLLEEEEEEL-
+Query SRDDYLNAPGETYSVKLT---AAGEYGYYCEPHQGAGMVGKIIVQ-   98
+ident |    |  ||   |        ||||  ||||| |||||||| |  
+Sbjct SHKQLLMSPGQSTSTTFPadaPAGEYTFYCEPHRGAGMVGKITVAg  106
+DSSP  LEEEEELLLLLEEEEELLlllLLEEEEEELLLLHHHLLEEEEEELl
+
+
+# Structural equivalences
+   1: 7ZQE-M 2GIM-C     1 -  51 <=>    3 -  53   (ASP    1  - VAL   51  <=> THR    2  - SER   52 )                          
+   1: 7ZQE-M 2GIM-C    52 -  74 <=>   56 -  78   (ASN   52  - THR   74  <=> LEU   55  - PRO   77 )                          
+   1: 7ZQE-M 2GIM-C    75 -  98 <=>   82 - 105   (ALA   75  - GLN   98  <=> PRO   81  - ALA  104 )                          
+
+# Translation-rotation matrices
+-matrix  "7ZQE-M 2GIM-C  U(1,.)  -0.059865  0.158324  0.985571          346.530273"
+-matrix  "7ZQE-M 2GIM-C  U(2,.)   0.145987 -0.975337  0.165547          264.557831"
+-matrix  "7ZQE-M 2GIM-C  U(3,.)   0.987474  0.153791  0.035275          342.703369"
+

@@ -1,0 +1,14 @@
+head: cannot open '/home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib//1CWNA.dat' for reading: No such file or directory
+# sub wolf(SOAP,/home/mg164811/Bachelor/Tools/DaliLite.v5/bin/serialcompare,/home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/,/home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/,0)
+wolf: /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/serialcompare /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ SOAP > /dev/null ; cat fort.1[0-9][0-9] > wolf_output ; rm fort.1[0-9][0-9] ; /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/serialcompare /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ DP < wolf_output > /dev/null ; cat fort.1[0-9][0-9] | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/dccp2dalicon.pl > dalicon_input ; rm -f fort.1[0-9][0-9] 
+cat: 'fort.1[0-9][0-9]': No such file or directory
+rm: cannot remove 'fort.1[0-9][0-9]': No such file or directory
+cat: 'fort.1[0-9][0-9]': No such file or directory
+# sub dalicon(dalicon_input,T,/home/mg164811/Bachelor/Tools/DaliLite.v5/bin/serialcompare,/home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/,/home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/,0)
+# /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/serialcompare /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ DALICON T < dalicon_input > /dev/null
+# cat fort.1[0-9][0-9] > dp_input ; rm fort.* ; /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/serialcompare /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ DP < dp_input > /dev/null
+cat: 'fort.1[0-9][0-9]': No such file or directory
+rm: cannot remove 'fort.*': No such file or directory
+# 1CWNA generate_FSSP
+perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/sortdccp.pl < 1CWNA.dccp | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fsspfilter.pl 1CWNA 2 1 1 | /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fssp 1CWNA 1 /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fsspselect.pl input2.list 2 1 | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/htmljs.pl /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results/aldosered/DALI/DAT_lib/ test "aldosered" "summary,alignments,equivalences,transrot"  > 1CWNA.html 2> 1CWNA.txt
+sh: 1: cannot open 1CWNA.dccp: No such file

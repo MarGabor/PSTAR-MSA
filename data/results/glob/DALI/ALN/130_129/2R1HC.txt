@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 2R1HC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3LHB-A 17.2  1.9  130   149   28   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=2R1HC Sbjct=3LHBA Z-score=17.2
+
+DSSP  ---------LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHLLL-LLLL-
+Query ---------SLSAKDKANVKAIWGKILPKSDEIGEQALSRMLVVYPQTKAYFSH-WASV-   49
+ident           |||  |      |          |   |       |     |        
+Sbjct pivdtgsvaPLSAAEKTKIRSAWAPVYSTYETSGVDILVKFFTSTPAAQEFFPKfKGLTt   60
+DSSP  lllllllllLLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLHHhLLLLl
+
+DSSP  ---LLLLHHHHHHHHHHHHHHHHHHHHLL---LHHHHLHHHHHHHHHLLLLLLHHHHHHH
+Query ---APGSAPVKKHGITIMNQIDDCVGHMD---DLFGFLTKLSELHATKLRVDPTNFKILA  103
+ident       || |  |   | |  || |  ||        |  ||  ||    |||  || ||
+Sbjct adeLKKSADVRWHAERIINAVDDAVASMDdteKMSMKLRNLSGKHAKSFQVDPEYFKVLA  120
+DSSP  hhhHHHLHHHHHHHHHHHHHHHHHHHLLLlhhHHHHHHHHHHHHHHHLLLLLHHHHHHHH
+
+DSSP  HHHHHHHHhhllllllhhhHHHHHHHHHHHHHHHLLLLl
+Query HNLIVVIAayfpaeftpeiHLSVDKFLQQLALALAEKYr  142
+ident        |                |        |   | 
+Sbjct AVIADTVA---------agDAGFEKLMSMICILLRSAY-  149
+DSSP  HHHHHHHH---------llLHHHHHHHHHHHHHHHLLL-
+
+
+# Structural equivalences
+   1: 2R1H-C 3LHB-A     1 -  45 <=>   10 -  54   (SER    1  - HIS   45  <=> PRO   10  - LYS   54 )                          
+   1: 2R1H-C 3LHB-A    46 -  49 <=>   56 -  59   (TRP   46  - VAL   49  <=> LYS   56  - THR   59 )                          
+   1: 2R1H-C 3LHB-A    50 -  75 <=>   64 -  89   (ALA   50  - ASP   75  <=> LEU   64  - ASP   89 )                          
+   1: 2R1H-C 3LHB-A    76 - 111 <=>   93 - 128   (ASP   76  - ALA  111  <=> LYS   93  - ALA  128 )                          
+   1: 2R1H-C 3LHB-A   123 - 141 <=>  131 - 149   (HIS  123  - TYR  141  <=> ASP  131  - TYR  149 )                          
+
+# Translation-rotation matrices
+-matrix  "2R1H-C 3LHB-A  U(1,.)  -0.819888 -0.446615  0.358215          117.171173"
+-matrix  "2R1H-C 3LHB-A  U(2,.)   0.569483 -0.700574  0.429982          168.573471"
+-matrix  "2R1H-C 3LHB-A  U(3,.)   0.058920  0.556535  0.828732         -102.098999"
+

@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 1HOMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1FTZ-A  7.4  2.7   58    70   78   MOLECULE: FUSHI TARAZU PROTEIN;                                      
+
+# Pairwise alignments
+
+No 1: Query=1HOMA Sbjct=1FTZA Z-score=7.4
+
+DSSP  -llllllLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHHL-LLL
+Query -mrkrgrQTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALCLTERQIKIWFQNRRM-KWK   58
+ident        |||||||||||||||||||| |||||| || || | |||||||||||||   |
+Sbjct mdskrtrQTYTRYQTLELEKEFHFNRYITRRRRIDIANALSLSERQIKIWFQNRRMkSKK   60
+DSSP  lllllllLLLLHHHHHHHHHHHLLLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHLLlLLL
+
+DSSP  LLlLLLL-lll
+Query KEnKTKG-epg   68
+ident            
+Sbjct DR-TLDSspeh   70
+DSSP  LL-LHHHllll
+
+
+# Structural equivalences
+   1: 1HOM-A 1FTZ-A     7 -  55 <=>    8 -  56   (GLN    6  - MET   54  <=> GLN    6  - MET   54 )                          
+   1: 1HOM-A 1FTZ-A    56 -  60 <=>   58 -  62   (LYS   55  - GLU   59  <=> SER   56  - ARG   60 )                          
+   1: 1HOM-A 1FTZ-A    62 -  65 <=>   63 -  66   (LYS   61  - GLY   64  <=> THR   61  - SER   64 )                          
+
+# Translation-rotation matrices
+-matrix  "1HOM-A 1FTZ-A  U(1,.)   0.047704 -0.978914 -0.198625           -1.322561"
+-matrix  "1HOM-A 1FTZ-A  U(2,.)  -0.876927  0.054165 -0.477562            1.105959"
+-matrix  "1HOM-A 1FTZ-A  U(3,.)   0.478251  0.196961 -0.855852           -0.203370"
+

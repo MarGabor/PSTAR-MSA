@@ -1,0 +1,31 @@
+# Job: scorptoxin
+# Query: 1CHZA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  8BO0-A 10.7  2.3   63    65   75   MOLECULE: ALPHA-TOXIN LQQ4;                                          
+
+# Pairwise alignments
+
+No 1: Query=1CHZA Sbjct=8BO0A Z-score=10.7
+
+DSSP  -LEEEELEELLLEELLLLLHHHHHHHHHHLLLLEEEEEEEELLEEEEEEEEELLLLLLLL
+Query -VRDAYIAKPHNCVYECARNEYCNNLCTKNGAKSGYCQWSGKYGNGCWCIELPDNVPIRV   59
+ident  |||||||   |||| |  | |||  |||||| |||||| ||||| |||| ||| |||| 
+Sbjct gVRDAYIADDKNCVYTCGSNSYCNTECTKNGAESGYCQWLGKYGNACWCIKLPDKVPIRI   60
+DSSP  lEEEEEELLLLLLLLLLLLHHHHHHHHHHLLLLEEEELLLLLLLLLEEEEEEELLLLEEL
+
+DSSP  lLLLL
+Query pGKCH   64
+ident  ||| 
+Sbjct pGKCR   65
+DSSP  lLLLL
+
+
+# Structural equivalences
+   1: 1CHZ-A 8BO0-A     1 -  59 <=>    2 -  60   (VAL    1  - VAL   59  <=> VAL    2  - ILE   60 )                          
+   1: 1CHZ-A 8BO0-A    61 -  64 <=>   62 -  65   (GLY   61  - HIS   64  <=> GLY   62  - ARG   65 )                          
+
+# Translation-rotation matrices
+-matrix  "1CHZ-A 8BO0-A  U(1,.)  -0.469108 -0.817607 -0.333851            5.245074"
+-matrix  "1CHZ-A 8BO0-A  U(2,.)  -0.777045  0.202476  0.595990           15.109384"
+-matrix  "1CHZ-A 8BO0-A  U(3,.)  -0.419688  0.539001 -0.730301            8.526685"
+

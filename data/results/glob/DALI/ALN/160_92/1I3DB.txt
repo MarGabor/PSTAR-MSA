@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1I3DB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1K1K-A 22.6  1.1  138   141   41   MOLECULE: HEMOGLOBIN ALPHA CHAIN;                                    
+
+# Pairwise alignments
+
+No 1: Query=1I3DB Sbjct=1K1KA Z-score=22.6
+
+DSSP  lLLLHHHHHHHHHHHHLL--LLLLHHHHHHHHHHHHLHHHHHHHLLLLllllhhhHHHLH
+Query gHFTEEDKATITSLWGKV--NVEDAGGETLGRLLVVYPWTQRFFDSFGnlssasaIMGNP   58
+ident       ||      ||||       | | | |     | |   |  |          |  
+Sbjct -VLSPADKTNVKAAWGKVgaHAGEYGAEALERMFLSFPTTKTYFPHFD------lSHGSA   53
+DSSP  -LLLHHHHHHHHHHHHHHhhHHHHHHHHHHHHHHHHLHHHHHHLLLLL------lLLLLH
+
+DSSP  HHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+Query KVKAHGKKVLTSLGDAIKHLDDLKGTFAQLSELHCDKLHVDPENFKLLGNVLVTVLAIHF  118
+ident  || |||||   |  |  | ||       || ||  || ||| |||||   |   || | 
+Sbjct QVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHL  113
+DSSP  HHHHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHL
+
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHLHHHL
+Query GKEFTPEVQASWQKMVTAVASALSSRYH  146
+ident   |||| | ||  |    |   | | | 
+Sbjct PAEFTPAVHASLDKFLASVSTVLTSKYR  141
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHLLLLL
+
+
+# Structural equivalences
+   1: 1I3D-B 1K1K-A     2 -  18 <=>    1 -  17   (HIS    2  - VAL   18  <=> VAL    1  - VAL   17 )                          
+   1: 1I3D-B 1K1K-A    19 -  46 <=>   20 -  47   (ASN   19  - GLY   46  <=> HIS   20  - ASP   47 )                          
+   1: 1I3D-B 1K1K-A    54 - 146 <=>   49 - 141   (ILE   54  - HIS  146  <=> SER   49  - ARG  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1I3D-B 1K1K-A  U(1,.)  -0.260982 -0.353925 -0.898123           61.980129"
+-matrix  "1I3D-B 1K1K-A  U(2,.)  -0.620984 -0.650768  0.436899           55.070717"
+-matrix  "1I3D-B 1K1K-A  U(3,.)  -0.739099  0.671743 -0.049943          -18.753408"
+

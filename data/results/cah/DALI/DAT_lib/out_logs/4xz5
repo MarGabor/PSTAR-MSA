@@ -1,0 +1,812 @@
+A length: 230
+B length: 230
+C length: 230
+D length: 230
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7446  C  BBCT A 402 
+ Alternate location indication is not blank or A, ignore atom: 7447  O1 BBCT A 402 
+ Alternate location indication is not blank or A, ignore atom: 7448  O2 BBCT A 402 
+ Alternate location indication is not blank or A, ignore atom: 7449  O3 BBCT A 402 
+
+Total number of residues read in:            230
+Total number of atoms read in:              1861
+Total number of ignored atom records:         13
+ HEADER    LYASE                                   03-FEB-15   4XZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+  Reading DSSP file
+ HEADER    LYASE                                   03-FEB-15   4XZ5              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA FAMILY;                          SOURCE   2 ORGANISM_SCIENTIFIC: THIOMICROSPIRA CRUNOGENA (STRAIN XCL-2          AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+         230  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2051
+ selectset done           0
+ eigen done           0
+ tau           1   1.37036872              27          57          68         127         157         195         212
+ #popped           2           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau           3   3.47163892              27
+ #popped           4           2
+ #selectset contacts        2051
+ selectset done           2
+ eigen done           2
+ tau           5   1.27044904              17
+ #popped           5           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau           7   1.96781826              68         145         157
+ #popped           8           2
+ #selectset contacts        2051
+ selectset done           2
+ eigen done           2
+ tau           9  0.467579275              68
+ #popped           9           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        2051
+ selectset done           0
+ eigen done           0
+ tau          11  0.978780687              45          91
+ #popped          12           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          13   1.30348921             127         168
+ #popped          14           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          15  0.503762364             106
+ #popped          16           2
+ #selectset contacts        2051
+ selectset done           2
+ eigen done           2
+ tau          17  0.744241714              45
+ #popped          17           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          19   1.33069277             195
+ #popped          20           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          21  0.208514035             184
+ #popped          22           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          23   70.6829300             127
+ #popped          24           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          25  0.173048884             117
+ #popped          13           0
+ #selectset contacts        2051
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   03-FEB-15   4XZ5              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA FAMILY;                          SOURCE   2 ORGANISM_SCIENTIFIC: THIOMICROSPIRA CRUNOGENA (STRAIN XCL-2          AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+           0
+         230
+         230  residues read 4XZ5.dssp                                                   
+  exclude short helix           8          10
+  exclude short helix          12          17
+  exclude short helix          20          22
+  exclude short helix          24          27
+  grow short strand          35          36
+  grow short strand          50          53
+  grow short strand          68          71
+  grow short strand          77          80
+  grow short strand          99         100
+  grow short strand         103         104
+ crowded segment excluded!
+  grow short helix         134         140
+  exclude short helix         160         163
+  grow short strand         195         197
+ crowded segment excluded!
+  grow short strand         225         226
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  3 11 10 14  1  7  8  9 12 13 15  2  4  5  6
+   2     1  8  9  4  3 11 10 14
+   3     1 12 13 11  1  7  8  9 12 13 15  2  4  5  6
+   4     0  0  0  0
+   5     0  0  0  4  3 11 10 14
+   6     0  0  0  0
+   7     0  0  0  0
+   8     2 10 11  2  3 11
+   9     2  0  0  2 10 14
+  10     8  0  0  1  3
+  11     8  0  0  1 11
+  12     3 16 17  7  1  7  8  9 12 13 15
+  13     3  0  0  4  2  4  5  6
+  14     0  0  0  7  1  7  8  9 12 13 15
+  15     0  0  0  0
+  16    12 18 19  2  1  7
+  17    12 20 21  5  8  9 12 13 15
+  18    16  0  0  1  1
+  19    16  0  0  1  7
+  20    17 22 23  4  8  9 12 13
+  21    17  0  0  1 15
+  22    20 24 25  3  8  9 12
+  23    20  0  0  1 13
+  24    22 26 27  2  8  9
+  25    22  0  0  1 12
+  26    24  0  0  1  8
+  27    24  0  0  1  9
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  4  3  3  3 10 11 14 14
+   3 -   1  8  9 11  4  1  2  4  9 12 13 15 15
+   4 -   2  6  7  2  2  3  3 11 11
+   5 -   2  0  0  2  2 10 10 14 14
+   6 -   4  0  0  1  1  3  3
+   7 -   4  0  0  1  1 11 11
+   8 -   3 10 11  7  4  1  1  7  9 12 13 15 15
+   9 -   3  0  0  4  2  2  2  4  6
+  10 -   8 12 13  2  2  1  1  7  7
+  11 -   8 14 15  5  3  8  9 12 13 15 15
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  7  7
+  14 -  11 16 17  4  2  8  9 12 13
+  15 -  11  0  0  1  1 15 15
+  16 -  14 18 19  3  2  8  9 12 12
+  17 -  14  0  0  1  1 13 13
+  18 -  16 20 21  2  1  8  9
+  19 -  16  0  0  1  1 12 12
+  20 -  18  0  0  1  1  8  8
+  21 -  18  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7451  C  BBCT B 402 
+ Alternate location indication is not blank or A, ignore atom: 7452  O1 BBCT B 402 
+ Alternate location indication is not blank or A, ignore atom: 7453  O2 BBCT B 402 
+ Alternate location indication is not blank or A, ignore atom: 7454  O3 BBCT B 402 
+
+Total number of residues read in:            230
+Total number of atoms read in:              1861
+Total number of ignored atom records:         35
+ HEADER    LYASE                                   03-FEB-15   4XZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+  Reading DSSP file
+ HEADER    LYASE                                   03-FEB-15   4XZ5              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA FAMILY;                          SOURCE   2 ORGANISM_SCIENTIFIC: THIOMICROSPIRA CRUNOGENA (STRAIN XCL-2          AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+         230  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2049
+ selectset done           0
+ eigen done           0
+ tau           1   1.46505380              28
+ #popped           2           1
+ #selectset contacts        2049
+ selectset done           1
+ eigen done           1
+ tau           3   1.61985183              18
+ #popped           3           0
+ #selectset contacts        2049
+ selectset done           0
+ eigen done           0
+ tau           5   1.26459360              44          91         110         123         146         162
+ #popped           6           1
+ #selectset contacts        2049
+ selectset done           1
+ eigen done           1
+ tau           7   2.42727470             127         146         195         211
+ #popped           8           2
+ #selectset contacts        2049
+ selectset done           2
+ eigen done           2
+ tau           9  0.471727997             195
+ #popped          10           2
+ #selectset contacts        2049
+ selectset done           2
+ eigen done           2
+ tau          11  0.629795611             104
+ #popped          12           3
+ #selectset contacts        2049
+ selectset done           3
+ eigen done           3
+ tau          13  0.665075660              44
+ #popped          13           2
+ #selectset contacts        2049
+ selectset done           2
+ eigen done           2
+ tau          15   1.32916641             175         185
+ #popped          16           2
+ #selectset contacts        2049
+ selectset done           2
+ eigen done           2
+ tau          17  0.842656016             127
+ #popped          19           2
+ #selectset contacts        2049
+ selectset done           2
+ eigen done           2
+ tau          19  0.284428060             175
+ #popped           9           1
+ #selectset contacts        2049
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           7           0
+ #selectset contacts        2049
+ selectset done           0
+ eigen done           0
+ tau          21   1.17992675              55          68         123
+ #popped          22           1
+ #selectset contacts        2049
+ selectset done           1
+ eigen done           1
+ tau          23  0.553664923              91
+ #popped          24           1
+ #selectset contacts        2049
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          23           0
+ #selectset contacts        2049
+ selectset done           0
+ eigen done           0
+ tau          25  0.435164839              68
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   03-FEB-15   4XZ5              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA FAMILY;                          SOURCE   2 ORGANISM_SCIENTIFIC: THIOMICROSPIRA CRUNOGENA (STRAIN XCL-2          AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+           0
+         230
+         230  residues read 4XZ5.dssp                                                   
+  exclude short helix           8          10
+  grow short helix          12          18
+  exclude short helix          20          22
+  exclude short helix          24          27
+  grow short strand          35          36
+  grow short strand          50          53
+  grow short strand          68          71
+  grow short strand          77          80
+  grow short strand          99         100
+  grow short strand         103         104
+ crowded segment excluded!
+  grow short helix         134         140
+  exclude short helix         160         163
+  grow short strand         195         197
+ crowded segment excluded!
+  grow short strand         225         226
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  8  9 10 13 14 16 11 15  3  5  6  7  4 12
+   2     1  0  0  1  1
+   3     1  6  7 15  2  8  9 10 13 14 16 11 15  3  5  6  7  4 12
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  9  2  8  9 10 13 14 16 11 15
+   7     3 22 23  6  3  5  6  7  4 12
+   8     6 10 11  7  2  8  9 10 13 14 16
+   9     6  0  0  2 11 15
+  10     8 12 13  6  2  8  9 10 13 14
+  11     8  0  0  1 16
+  12    10 14 15  2  2  8
+  13    10 18 19  4  9 10 13 14
+  14    12  0  0  1  2
+  15    12  0  0  1  8
+  16     0  0  0  4  9 10 13 14
+  17     0  0  0  0
+  18    13  0  0  2  9 10
+  19    13 20 21  2 13 14
+  20    19  0  0  1 13
+  21    19  0  0  1 14
+  22     7  0  0  4  3  5  6  7
+  23     7 26 27  2  4 12
+  24     0  0  0  4  3  5  6  7
+  25     0  0  0  0
+  26    23  0  0  1  4
+  27    23  0  0  1 12
+   1 *   0  2  3 16  1  1 16
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5 15  1  2 16
+   4 -   3  6  7  9  3  2  2  8 11 13 16
+   5 -   3 18 19  6  2  3  7 12 12
+   6 -   4  8  9  7  4  2  2  8 10 13 14 16 16
+   7 -   4  0  0  2  2 11 11 15 15
+   8 -   6 10 11  6  3  2  2  8 10 13 14
+   9 -   6  0  0  1  1 16 16
+  10 -   8 12 13  2  2  2  2  8  8
+  11 -   8 14 15  4  2  9 10 13 14
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  8  8
+  14 -  11  0  0  2  1  9 10
+  15 -  11 16 17  2  1 13 14
+  16 -  15  0  0  1  1 13 13
+  17 -  15  0  0  1  1 14 14
+  18 -   5  0  0  4  2  3  3  5  7
+  19 -   5 20 21  2  2  4  4 12 12
+  20 -  19  0  0  1  1  4  4
+  21 -  19  0  0  1  1 12 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7456  C  BBCT C 402 
+ Alternate location indication is not blank or A, ignore atom: 7457  O1 BBCT C 402 
+ Alternate location indication is not blank or A, ignore atom: 7458  O2 BBCT C 402 
+ Alternate location indication is not blank or A, ignore atom: 7459  O3 BBCT C 402 
+
+Total number of residues read in:            230
+Total number of atoms read in:              1861
+Total number of ignored atom records:         15
+ HEADER    LYASE                                   03-FEB-15   4XZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+  Reading DSSP file
+ HEADER    LYASE                                   03-FEB-15   4XZ5              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA FAMILY;                          SOURCE   2 ORGANISM_SCIENTIFIC: THIOMICROSPIRA CRUNOGENA (STRAIN XCL-2          AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+         230  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau           1   1.59501815              28
+ #popped           2           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau           3   1.18525743              18
+ #popped           3           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau           5   1.68683219             127         146         195         211
+ #popped           6           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau           7   1.23830473              49          90         127         162
+ #popped           8           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau           9  0.690863311              49         127
+ #popped          10           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          11  0.604833305             175         185
+ #popped          12           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          13  0.552529216              39
+ #popped          15           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          15  0.690271258             195
+ #popped          16           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          17   11.9141788              49
+ #popped          19           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          11           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau          19  0.576028645             106
+ #popped          21           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau          21  0.167937741             117
+ #popped           9           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          23  0.529264152              60          70
+ #popped          24           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          25  0.340171218              60
+ #popped          27           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          27   74.1129532              90
+ #popped          28           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          29   0.00000000    
+ #popped           7           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau          29  0.616921306             146
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   03-FEB-15   4XZ5              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA FAMILY;                          SOURCE   2 ORGANISM_SCIENTIFIC: THIOMICROSPIRA CRUNOGENA (STRAIN XCL-2          AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+           0
+         230
+         230  residues read 4XZ5.dssp                                                   
+  exclude short helix           8          10
+  exclude short helix          12          17
+  exclude short helix          20          22
+  exclude short helix          24          27
+  grow short strand          35          36
+  grow short strand          50          53
+  grow short strand          68          71
+  grow short strand          77          80
+  grow short strand          99         100
+  grow short strand         103         104
+ crowded segment excluded!
+  grow short helix         134         140
+  exclude short helix         160         163
+  grow short strand         195         197
+ crowded segment excluded!
+  grow short strand         225         226
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 15  1 12 13 15  7  8  9  2  3  5  6 11  4 10 14
+   2     0  0  0  0
+   3     0  0  0 15  1 12 13 15  7  8  9  2  3  5  6 11  4 10 14
+   4     0  0  0  0
+   5     0  0  0  0
+   6     1  8  9 13  1 12 13 15  7  8  9  2  3  5  6 11  4
+   7     1 30 31  2 10 14
+   8     6 10 11  7  1 12 13 15  7  8  9
+   9     6 24 25  6  2  3  5  6 11  4
+  10     8 14 15  4  1 12 13 15
+  11     8 20 21  3  7  8  9
+  12     0  0  0  4  1 12 13 15
+  13     0  0  0  0
+  14    10  0  0  1  1
+  15    10 16 17  3 12 13 15
+  16    15  0  0  2 12 13
+  17    15  0  0  1 15
+  18     0  0  0  0
+  19     0  0  0  2 12 13
+  20    11  0  0  1  7
+  21    11 22 23  2  8  9
+  22    21  0  0  1  8
+  23    21  0  0  1  9
+  24     9 26 27  5  2  3  5  6 11
+  25     9  0  0  1  4
+  26    24  0  0  2  2  3
+  27    24 28 29  3  5  6 11
+  28    27  0  0  2  5  6
+  29    27  0  0  1 11
+  30     7  0  0  1 10
+  31     7  0  0  1 14
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 13  3  1  9 11 13 15 15
+   3 -   1 22 23  2  2 10 10 14 14
+   4 -   2  6  7  7  4  1  1  7  9 12 13 15 15
+   5 -   2 16 17  6  2  2  6 11 11
+   6 -   4  8  9  4  3  1  1 12 13 15 15
+   7 -   4 12 13  3  1  7  9
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  2 12 13 15 15
+  10 -   9  0  0  2  1 12 13
+  11 -   9  0  0  1  1 15 15
+  12 -   7  0  0  1  1  7  7
+  13 -   7 14 15  2  1  8  9
+  14 -  13  0  0  1  1  8  8
+  15 -  13  0  0  1  1  9  9
+  16 -   5 18 19  5  3  2  3  5  6 11 11
+  17 -   5  0  0  1  1  4  4
+  18 -  16  0  0  2  1  2  3
+  19 -  16 20 21  3  2  5  6 11 11
+  20 -  19  0  0  2  1  5  6
+  21 -  19  0  0  1  1 11 11
+  22 -   3  0  0  1  1 10 10
+  23 -   3  0  0  1  1 14 14
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7461  C  BBCT D 402 
+ Alternate location indication is not blank or A, ignore atom: 7462  O1 BBCT D 402 
+ Alternate location indication is not blank or A, ignore atom: 7463  O2 BBCT D 402 
+ Alternate location indication is not blank or A, ignore atom: 7464  O3 BBCT D 402 
+
+Total number of residues read in:            230
+Total number of atoms read in:              1861
+Total number of ignored atom records:         15
+ HEADER    LYASE                                   03-FEB-15   4XZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+  Reading DSSP file
+ HEADER    LYASE                                   03-FEB-15   4XZ5              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA FAMILY;                          SOURCE   2 ORGANISM_SCIENTIFIC: THIOMICROSPIRA CRUNOGENA (STRAIN XCL-2          AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+         230  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau           1   1.60798585              28
+ #popped           2           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau           3   1.47259259              18
+ #popped           3           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau           5   1.78367066             127         145         195         211
+ #popped           6           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau           7   1.28604746              49          90         127         162
+ #popped           8           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau           9  0.647966564              49         127
+ #popped          10           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          11  0.637351274             175         185
+ #popped          12           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          13  0.717741072              49
+ #popped          14           4
+ #selectset contacts        2055
+ selectset done           4
+ eigen done           4
+ tau          15   1.39897430              39
+ #popped          15           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          17   1.09045827             195
+ #popped          18           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          11           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau          19  0.567300916             106
+ #popped          21           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau          21  0.168649331             117
+ #popped           9           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          23  0.578125000              60          70
+ #popped          24           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          25  0.337472618              60
+ #popped          27           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          27   25.4231586              90
+ #popped          28           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          29   0.00000000    
+ #popped           7           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau          29   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   03-FEB-15   4XZ5              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA FAMILY;                          SOURCE   2 ORGANISM_SCIENTIFIC: THIOMICROSPIRA CRUNOGENA (STRAIN XCL-2          AUTHOR    B.P.MAHON,N.A.DIAZ-TORRES,M.A.PINARD,R.MCKENNA                        
+           0
+         230
+         230  residues read 4XZ5.dssp                                                   
+  exclude short helix           8          10
+  grow short helix          12          18
+  exclude short helix          20          22
+  exclude short helix          24          27
+  grow short strand          35          36
+  grow short strand          50          53
+  grow short strand          68          71
+  grow short strand          77          80
+  grow short strand          99         100
+  grow short strand         103         104
+ crowded segment excluded!
+  exclude short helix         160         163
+  grow short strand         195         197
+ crowded segment excluded!
+  grow short strand         225         226
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2 13 14 16  8  9 10  3  4  6  7 12  5 11 15
+   2     1  0  0  1  1
+   3     1  6  7 15  2 13 14 16  8  9 10  3  4  6  7 12  5 11 15
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9 13  2 13 14 16  8  9 10  3  4  6  7 12  5
+   7     3  0  0  2 11 15
+   8     6 10 11  7  2 13 14 16  8  9 10
+   9     6 24 25  6  3  4  6  7 12  5
+  10     8 14 15  4  2 13 14 16
+  11     8 20 21  3  8  9 10
+  12     0  0  0  4  2 13 14 16
+  13     0  0  0  0
+  14    10  0  0  1  2
+  15    10 18 19  3 13 14 16
+  16     0  0  0  1  2
+  17     0  0  0  0
+  18    15  0  0  2 13 14
+  19    15  0  0  1 16
+  20    11  0  0  1  8
+  21    11 22 23  2  9 10
+  22    21  0  0  1  9
+  23    21  0  0  1 10
+  24     9 26 27  5  3  4  6  7 12
+  25     9  0  0  1  5
+  26    24  0  0  2  3  4
+  27    24 28 29  3  6  7 12
+  28    27  0  0  2  6  7
+  29    27  0  0  1 12
+   1 *   0  2  3 16  1  1 16
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5 15  1  2 16
+   4 -   3  6  7 13  3  2 10 12 14 16 16
+   5 -   3  0  0  2  2 11 11 15 15
+   6 -   4  8  9  7  4  2  2  8 10 13 14 16 16
+   7 -   4 18 19  6  2  3  7 12 12
+   8 -   6 10 11  4  3  2  2 13 14 16 16
+   9 -   6 14 15  3  1  8 10
+  10 -   8  0  0  1  1  2  2
+  11 -   8 12 13  3  2 13 14 16 16
+  12 -  11  0  0  2  1 13 14
+  13 -  11  0  0  1  1 16 16
+  14 -   9  0  0  1  1  8  8
+  15 -   9 16 17  2  1  9 10
+  16 -  15  0  0  1  1  9  9
+  17 -  15  0  0  1  1 10 10
+  18 -   7 20 21  5  3  3  4  6  7 12 12
+  19 -   7  0  0  1  1  5  5
+  20 -  18  0  0  2  1  3  4
+  21 -  18 22 23  3  2  6  7 12 12
+  22 -  21  0  0  2  1  6  7
+  23 -  21  0  0  1  1 12 12
+
+ CHAIN : 4XZ5A
+ CHAIN : 4XZ5B
+ CHAIN : 4XZ5C
+ CHAIN : 4XZ5D
+

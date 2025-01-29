@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 4IROC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  8WIX-B 21.5  1.4  140   146   36   MOLECULE: HEMOGLOBIN SUBUNIT ALPHA;                                  
+
+# Pairwise alignments
+
+No 1: Query=4IROC Sbjct=8WIXB Z-score=21.5
+
+DSSP  -LLLHHHHHHHHHHHHHHllLHHHHHHHHHHHHHHHLHHHHHHHLLLLLL----LLLL-H
+Query -SLSDKDKAAVRALWSKIgkSADAIGNDALSRMIVVYPQTKTYFSHWPDV----TPGS-P   54
+ident  |           || |        | ||||||  |||    || |              
+Sbjct aSFDAHERKFIVDLWAKV--DVAQCGADALSRMLIVYPWKRRYFEHFGKMcnahDILHnS   58
+DSSP  lLLLHHHHHHHHHHHLLL--LHHHHHHHHHHHHHHHLHHHHHHHHHHLLLllhhHHHLlH
+
+DSSP  HHHHHHHHHHHHHHHHHHHHHLHHHHLHHHHHHLLLLLLLLLHHHHHHHHHHHHHHHHHL
+Query HIKAHGKKVMGGIALAVSKIDDLKTGLMELSEQHAYKLRVDPANFKILNHCILVVISTMF  114
+ident     |||||      ||   |  |     ||  |  |  ||| ||| |   |  |     
+Sbjct KVQEHGKKVLASFGEAVKHLDNIKGHFANLSKLHCEKFHVDPENFKLLGDIIIIVLAAHH  118
+DSSP  HHHHHHHHHHHHHLLHHHLHHHHHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHL
+
+DSSP  LLLLLLHHHHHHHHHHHHHHHHHLLLLL
+Query PKEFTPEAHVSLDKFLSGVALALAERYR  142
+ident |  |  | |    |    || |||  | 
+Sbjct PEDFSVECHAAFQKLVRQVAAALAAEYH  146
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHLLLLL
+
+
+# Structural equivalences
+   1: 4IRO-C 8WIX-B     1 -  17 <=>    2 -  18   (SER    1  - ILE   17  <=> SER    2  - VAL   18 )                          
+   1: 4IRO-C 8WIX-B    20 -  49 <=>   19 -  48   (SER   20  - VAL   49  <=> ASP   19  - MET   48 )                          
+   1: 4IRO-C 8WIX-B    50 -  53 <=>   53 -  56   (THR   50  - SER   53  <=> ASP   53  - HIS   56 )                          
+   1: 4IRO-C 8WIX-B    54 - 142 <=>   58 - 146   (PRO   54  - ARG  142  <=> SER   58  - HIS  146 )                          
+
+# Translation-rotation matrices
+-matrix  "4IRO-C 8WIX-B  U(1,.)   0.181138 -0.594431  0.783480          -53.458576"
+-matrix  "4IRO-C 8WIX-B  U(2,.)  -0.979052 -0.184317  0.086511          141.292358"
+-matrix  "4IRO-C 8WIX-B  U(3,.)   0.092984 -0.782738 -0.615366          199.621521"
+

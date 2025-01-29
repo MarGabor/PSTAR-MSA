@@ -1,0 +1,659 @@
+A length: 274
+B length: 100
+C length: 9
+F length: 274
+H length: 100
+J length: 9
+# 4 chains A B F H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            274
+Total number of atoms read in:              2243
+Total number of ignored atom records:        811
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.X.LIU                                                               
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-46 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.X.LIU                                                               
+         274  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2433
+ selectset done           0
+ eigen done           0
+ tau           1   11.1350574             181
+ #popped           2           1
+ #selectset contacts        2433
+ selectset done           1
+ eigen done           1
+ tau           3   1.24665177             161
+ #popped           4           2
+ #selectset contacts        2433
+ selectset done           2
+ eigen done           2
+ tau           5  0.981243432              10          22          68          95
+ #popped           6           3
+ #selectset contacts        2433
+ selectset done           3
+ eigen done           3
+ tau           7   2.39147949              48          68
+ #popped           8           4
+ #selectset contacts        2433
+ selectset done           4
+ eigen done           4
+ tau           9   1.43048775             113
+ #popped          10           5
+ #selectset contacts        2433
+ selectset done           5
+ eigen done           5
+ tau          11   0.00000000    
+ #popped          11           4
+ #selectset contacts        2433
+ selectset done           4
+ eigen done           4
+ tau          11   1.29985011             150
+ #popped          12           4
+ #selectset contacts        2433
+ selectset done           4
+ eigen done           4
+ tau          13  0.856788754             124         134
+ #popped          14           4
+ #selectset contacts        2433
+ selectset done           4
+ eigen done           4
+ tau          15   1.09017861             136
+ #popped           9           3
+ #selectset contacts        2433
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped           7           2
+ #selectset contacts        2433
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           5           1
+ #selectset contacts        2433
+ selectset done           1
+ eigen done           1
+ tau          17  0.739775479             171
+ #popped           3           0
+ #selectset contacts        2433
+ selectset done           0
+ eigen done           0
+ tau          19  0.648946166             231         242
+ #popped          20           0
+ #selectset contacts        2433
+ selectset done           0
+ eigen done           0
+ tau          21  0.522285581             257
+ #popped          22           0
+ #selectset contacts        2433
+ selectset done           0
+ eigen done           0
+ tau          23  0.504000008             204         215
+ #popped          24           0
+ #selectset contacts        2433
+ selectset done           0
+ eigen done           0
+ tau          25  0.537755072             204
+ #popped          26           1
+ #selectset contacts        2433
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          27           0
+ #selectset contacts        2433
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-46 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.X.LIU                                                               
+           0
+         274
+         274  residues read 4LCY.dssp                                                   
+  grow short strand          45          47
+  exclude short helix          50          52
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+ crowded segment excluded!
+  exclude short helix         225         227
+  grow short strand         229         230
+  grow short strand         234         235
+  exclude short helix         254         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  6  7  8 10  9 11  5 12 13 14 15 16 18 19 20 17
+   2     1  4  5 12  1  2  3  4  6  7  8 10  9 11  5 12
+   3     1 20 21  8 13 14 15 16 18 19 20 17
+   4     2  6  7 11  1  2  3  4  6  7  8 10  9 11  5
+   5     2  0  0  1 12
+   6     4 10 11 10  1  2  3  4  6  7  8 10  9 11
+   7     4  0  0  1  5
+   8     0  0  0 10  1  2  3  4  6  7  8 10  9 11
+   9     0  0  0  0
+  10     6  0  0  6  1  2  3  4  6  7
+  11     6 12 13  4  8 10  9 11
+  12    11 14 15  3  8 10  9
+  13    11  0  0  1 11
+  14    12 16 17  2  8 10
+  15    12  0  0  1  9
+  16    14  0  0  1  8
+  17    14  0  0  1 10
+  18     0  0  0  1 12
+  19     0  0  0  0
+  20     3 22 23  7 13 14 15 16 18 19 20
+  21     3  0  0  1 17
+  22    20 26 27  5 13 14 15 16 18
+  23    20  0  0  2 19 20
+  24     0  0  0  5 13 14 15 16 18
+  25     0  0  0  0
+  26    22  0  0  2 13 14
+  27    22  0  0  3 15 16 18
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 12  1  1 12
+   3 *   1 16 17  8  1 13 20
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9 10  2  1  4  6 11
+   7 -   4  0  0  1  1  5  5
+   8 -   6  0  0  6  2  1  4  6  7
+   9 -   6 10 11  4  1  8 11
+  10 -   9 12 13  3  1  8 10
+  11 -   9  0  0  1  1 11 11
+  12 -  10 14 15  2  2  8  8 10 10
+  13 -  10  0  0  1  1  9  9
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1 10 10
+  16 -   3 18 19  7  2 13 16 18 20
+  17 -   3  0  0  1  1 17 17
+  18 -  16 20 21  5  2 13 16 18 18
+  19 -  16  0  0  2  1 19 20
+  20 -  18  0  0  2  1 13 14
+  21 -  18  0  0  3  2 15 16 18 18
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            100
+Total number of atoms read in:               838
+Total number of ignored atom records:        335
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.X.LIU                                                               
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-46 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.X.LIU                                                               
+         100  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         790
+ selectset done           0
+ eigen done           0
+ tau           1  0.881227851              10          25          39          51          67
+ #popped           2           1
+ #selectset contacts         790
+ selectset done           1
+ eigen done           1
+ tau           3  0.455323368              39
+ #popped           4           1
+ #selectset contacts         790
+ selectset done           1
+ eigen done           1
+ tau           5  0.798491359              29
+ #popped           3           0
+ #selectset contacts         790
+ selectset done           0
+ eigen done           0
+ tau           7  0.969536483              77
+ #popped           8           1
+ #selectset contacts         790
+ selectset done           1
+ eigen done           1
+ tau           9  0.521403670              25
+ #popped          11           1
+ #selectset contacts         790
+ selectset done           1
+ eigen done           1
+ tau          11   1.04594600              51
+ #popped           9           0
+ #selectset contacts         790
+ selectset done           0
+ eigen done           0
+ tau          13  0.436590463              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-46 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.X.LIU                                                               
+           0
+         100
+         100  residues read 4LCY.dssp                                                   
+  grow short strand          45          46
+  grow short strand          51          52
+  grow short strand          56          57
+  grow short strand          92          95
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  6  7  4  5  8  9
+   2     1  4  5  5  1  2  3  6  7
+   3     1  8  9  4  4  5  8  9
+   4     2  6  7  3  1  2  3
+   5     2  0  0  2  6  7
+   6     4  0  0  2  1  2
+   7     4  0  0  1  3
+   8     3  0  0  2  4  5
+   9     3 14 15  2  8  9
+  10     0  0  0  0
+  11     0  0  0  2  4  5
+  12     0  0  0  2  4  5
+  13     0  0  0  0
+  14     9  0  0  1  8
+  15     9  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  5  2  1  3  6  7
+   3 -   1  8  9  4  2  4  5  8  9
+   4 -   2  6  7  3  1  1  3
+   5 -   2  0  0  2  1  6  7
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  1  1  3  3
+   8 -   3  0  0  2  1  4  5
+   9 -   3 10 11  2  1  8  9
+  10 -   9  0  0  1  1  8  8
+  11 -   9  0  0  1  1  9  9
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            274
+Total number of atoms read in:              2242
+Total number of ignored atom records:        701
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.X.LIU                                                               
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-46 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.X.LIU                                                               
+         274  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2420
+ selectset done           0
+ eigen done           0
+ tau           1   9.27107620             181
+ #popped           2           1
+ #selectset contacts        2420
+ selectset done           1
+ eigen done           1
+ tau           3   1.24172270             162
+ #popped           4           1
+ #selectset contacts        2420
+ selectset done           1
+ eigen done           1
+ tau           5  0.989607453              11          21          68          94
+ #popped           6           2
+ #selectset contacts        2420
+ selectset done           2
+ eigen done           2
+ tau           7   1.98883057              48          68
+ #popped           8           3
+ #selectset contacts        2420
+ selectset done           3
+ eigen done           3
+ tau           9   1.45489383             115
+ #popped          10           4
+ #selectset contacts        2420
+ selectset done           4
+ eigen done           4
+ tau          11  0.214142680              24
+ #popped          13           4
+ #selectset contacts        2420
+ selectset done           4
+ eigen done           4
+ tau          13   999.999023              48
+ #popped          14           5
+ #selectset contacts        2420
+ selectset done           5
+ eigen done           5
+ tau          15   0.00000000    
+ #popped          15           4
+ #selectset contacts        2420
+ selectset done           4
+ eigen done           4
+ tau          15   0.00000000    
+ #popped          11           3
+ #selectset contacts        2420
+ selectset done           3
+ eigen done           3
+ tau          15   1.51328373             151
+ #popped          16           3
+ #selectset contacts        2420
+ selectset done           3
+ eigen done           3
+ tau          17  0.978209734             134
+ #popped           9           2
+ #selectset contacts        2420
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           7           1
+ #selectset contacts        2420
+ selectset done           1
+ eigen done           1
+ tau          19   1.35731530              21          84
+ #popped          20           1
+ #selectset contacts        2420
+ selectset done           1
+ eigen done           1
+ tau          21  0.819010794              21
+ #popped           3           0
+ #selectset contacts        2420
+ selectset done           0
+ eigen done           0
+ tau          23  0.662251651             232         242
+ #popped          24           0
+ #selectset contacts        2420
+ selectset done           0
+ eigen done           0
+ tau          25  0.462682664             252
+ #popped          26           1
+ #selectset contacts        2420
+ selectset done           1
+ eigen done           1
+ tau          27  0.495867759             204         215
+ #popped          28           1
+ #selectset contacts        2420
+ selectset done           1
+ eigen done           1
+ tau          29  0.213910252             232
+ #popped          30           1
+ #selectset contacts        2420
+ selectset done           1
+ eigen done           1
+ tau          31   6.21884489             204
+ #popped          32           1
+ #selectset contacts        2420
+ selectset done           1
+ eigen done           1
+ tau          33   0.00000000    
+ #popped          27           0
+ #selectset contacts        2420
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-46 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.X.LIU                                                               
+           0
+         274
+         274  residues read 4LCY.dssp                                                   
+  grow short strand          45          47
+  exclude short helix          50          54
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+  grow short strand         229         230
+  grow short strand         234         235
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  3  4  6  7  8  9 10 11  5 12 13 14 15 16 17 19 20 21 18
+   2     1  4  5 12  1  2  3  4  6  7  8  9 10 11  5 12
+   3     1 24 25  9 13 14 15 16 17 19 20 21 18
+   4     2  6  7 11  1  2  3  4  6  7  8  9 10 11  5
+   5     2  0  0  1 12
+   6     4 10 11 10  1  2  3  4  6  7  8  9 10 11
+   7     4  0  0  1  5
+   8     0  0  0 10  1  2  3  4  6  7  8  9 10 11
+   9     0  0  0  0
+  10     6 12 13  6  1  2  3  4  6  7
+  11     6 16 17  4  8  9 10 11
+  12    10  0  0  2  1  2
+  13    10 14 15  4  3  4  6  7
+  14    13  0  0  2  3  4
+  15    13  0  0  2  6  7
+  16    11 18 19  3  8  9 10
+  17    11  0  0  1 11
+  18    16  0  0  2  8  9
+  19    16  0  0  1 10
+  20     0  0  0  0
+  21     0  0  0  1  5
+  22     0  0  0  0
+  23     0  0  0  0
+  24     3 26 27  8 13 14 15 16 17 19 20 21
+  25     3  0  0  1 18
+  26    24 30 31  6 13 14 15 16 17 19
+  27    24  0  0  2 20 21
+  28     0  0  0  6 13 14 15 16 17 19
+  29     0  0  0  0
+  30    26 32 33  5 13 14 15 16 17
+  31    26  0  0  1 19
+  32    30  0  0  2 13 14
+  33    30  0  0  3 15 16 17
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 12  1  1 12
+   3 *   1 18 19  9  1 13 21
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9 10  2  1  4  6 11
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  6  2  1  4  6  7
+   9 -   6 14 15  4  1  8 11
+  10 -   8  0  0  2  1  1  2
+  11 -   8 12 13  4  2  3  4  6  7
+  12 -  11  0  0  2  1  3  4
+  13 -  11  0  0  2  1  6  7
+  14 -   9 16 17  3  1  8 10
+  15 -   9  0  0  1  1 11 11
+  16 -  14  0  0  2  1  8  9
+  17 -  14  0  0  1  1 10 10
+  18 -   3 20 21  8  2 13 17 19 21
+  19 -   3  0  0  1  1 18 18
+  20 -  18 22 23  6  2 13 17 19 19
+  21 -  18  0  0  2  1 20 21
+  22 -  20 24 25  5  1 13 17
+  23 -  20  0  0  1  1 19 19
+  24 -  22  0  0  2  1 13 14
+  25 -  22  0  0  3  1 15 17
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            100
+Total number of atoms read in:               838
+Total number of ignored atom records:        377
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.X.LIU                                                               
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-46 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.X.LIU                                                               
+         100  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         784
+ selectset done           0
+ eigen done           0
+ tau           1  0.885109901              10          25          39          51          67
+ #popped           2           1
+ #selectset contacts         784
+ selectset done           1
+ eigen done           1
+ tau           3  0.460439354              39
+ #popped           4           1
+ #selectset contacts         784
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts         784
+ selectset done           0
+ eigen done           0
+ tau           5  0.599679232              25
+ #popped           7           0
+ #selectset contacts         784
+ selectset done           0
+ eigen done           0
+ tau           7  0.581015050              51
+ #popped           9           0
+ #selectset contacts         784
+ selectset done           0
+ eigen done           0
+ tau           9   2.54831648              79
+ #popped          11           0
+ #selectset contacts         784
+ selectset done           0
+ eigen done           0
+ tau          11  0.374554098              90
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        24-JUN-13   4LCY              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-46 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.X.LIU                                                               
+           0
+         100
+         100  residues read 4LCY.dssp                                                   
+  grow short strand          45          46
+  grow short strand          51          52
+  grow short strand          56          57
+  grow short strand          92          95
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  6  7  4  5  8  9
+   2     1  4  5  5  1  2  3  6  7
+   3     1  8  9  4  4  5  8  9
+   4     2  0  0  3  1  2  3
+   5     2  0  0  2  6  7
+   6     0  0  0  0
+   7     0  0  0  4  4  5  8  9
+   8     3  0  0  2  4  5
+   9     3 12 13  2  8  9
+  10     0  0  0  0
+  11     0  0  0  2  8  9
+  12     9  0  0  1  8
+  13     9  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  5  2  1  3  6  7
+   3 -   1  6  7  4  2  4  5  8  9
+   4 -   2  0  0  3  1  1  3
+   5 -   2  0  0  2  1  6  7
+   6 -   3  0  0  2  1  4  5
+   7 -   3  8  9  2  1  8  9
+   8 -   7  0  0  1  1  8  8
+   9 -   7  0  0  1  1  9  9
+
+ CHAIN : 4LCYA
+ CHAIN : 4LCYB
+ CHAIN : 4LCYF
+ CHAIN : 4LCYH
+

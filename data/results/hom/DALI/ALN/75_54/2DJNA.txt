@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 2DJNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DMT-A  6.9  4.7   61    80   48   MOLECULE: HOMEOBOX PROTEIN BARH-LIKE 1;                              
+
+# Pairwise alignments
+
+No 1: Query=2DJNA Sbjct=2DMTA Z-score=6.9
+
+DSSP  ---------LLLLL-lllllLLLLLHHHHHHHHHHHLLLLLLLHHHHHHHHHHLLLLHHH
+Query ---------GSSGS-sgrkpRTIYSSFQLAALQRRFQKTQYLALPERAELAASLGLTQTQ   50
+ident                     ||     ||  |  || |  ||  | |  || |||| | |
+Sbjct gssgssggePGTKAkkgrrsRTVFTELQLMGLEKRFEKQKYLSTPDRIDLAESLGLSQLQ   60
+DSSP  lllllllllLLLLLllllllLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLHHH
+
+DSSP  HHHHHHHHHHLLllllLLLL----
+Query VKIWFQNKRSKIkksgPSSG----   70
+ident || | || | |       ||    
+Sbjct VKTWYQNRRMKW----KKSGpssg   80
+DSSP  HHHHHHHHHHHH----LLLLllll
+
+
+# Structural equivalences
+   1: 2DJN-A 2DMT-A     1 -   5 <=>   10 -  14   (GLY    1  - SER    5  <=> PRO   10  - ALA   14 )                          
+   1: 2DJN-A 2DMT-A    11 -  62 <=>   21 -  72   (ARG   11  - ILE   62  <=> ARG   21  - TRP   72 )                          
+   1: 2DJN-A 2DMT-A    67 -  70 <=>   73 -  76   (PRO   67  - GLY   70  <=> LYS   73  - GLY   76 )                          
+
+# Translation-rotation matrices
+-matrix  "2DJN-A 2DMT-A  U(1,.)   0.313593  0.612030 -0.726002            2.917408"
+-matrix  "2DJN-A 2DMT-A  U(2,.)  -0.916274  0.395693 -0.062205           -1.164390"
+-matrix  "2DJN-A 2DMT-A  U(3,.)   0.249203  0.684724  0.684873           -1.121753"
+

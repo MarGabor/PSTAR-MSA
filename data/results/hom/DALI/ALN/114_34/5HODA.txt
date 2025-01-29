@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 5HODA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1OCP-A  6.7  2.7   56    67   30   MOLECULE: OCT-3;                                                     
+
+# Pairwise alignments
+
+No 1: Query=5HODA Sbjct=1OCPA Z-score=6.7
+
+DSSP  ----llllLLLL--LHHHHHHHHHHHHLLLLLLLHHHHHHHHHHHLLLHHHHHHHHHHHH
+Query ----gakrPRTT--ITAKQLETLKNAYKNSPKPARHVREQLSSETGLDMRVVQVWFQNRR   54
+ident          |    |       |       |||            ||   || ||| |||
+Sbjct metlvqarKRKRtsIENRVRWSLETMFLKCPKPSLQQITHIANQLGLEKDVVRVWFCNRR   60
+DSSP  llllllllLLLLllLLHHHHHHHHHHHLLLLLLLHHHHHHHHHHHLLLHHHHHHHHHHHH
+
+DSSP  HHhHHLL-
+Query AKeKRLK-   61
+ident  |      
+Sbjct QK-GKRSs   67
+DSSP  LL-LLLLl
+
+
+# Structural equivalences
+   1: 5HOD-A 1OCP-A     5 -   8 <=>    9 -  12   (PRO   88  - THR   91  <=> LYS    9  - ARG   12 )                          
+   1: 5HOD-A 1OCP-A     9 -  56 <=>   15 -  62   (ILE   92  - LYS  139  <=> ILE   15  - LYS   62 )                          
+   1: 5HOD-A 1OCP-A    58 -  61 <=>   63 -  66   (LYS  141  - LYS  144  <=> GLY   63  - SER   66 )                          
+
+# Translation-rotation matrices
+-matrix  "5HOD-A 1OCP-A  U(1,.)   0.009535 -0.411579  0.911324           48.875477"
+-matrix  "5HOD-A 1OCP-A  U(2,.)   0.337310  0.859273  0.384542           -4.536307"
+-matrix  "5HOD-A 1OCP-A  U(3,.)  -0.941345  0.303732  0.147023           62.154610"
+

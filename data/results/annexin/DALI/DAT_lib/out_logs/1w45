@@ -1,0 +1,477 @@
+A length: 320
+B length: 320
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            320
+Total number of atoms read in:              2514
+Total number of ignored atom records:         29
+ HEADER    COAGULATION                             22-JUL-04   1W45              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.RETY,J.SOPKOVA-DE OLIVEIRA SANTOS,C.RAGUENES-NICOL,L.DREYFUSS,      
+  Reading DSSP file
+ HEADER    COAGULATION                             22-JUL-04   1W45              COMPND   2 MOLECULE: ANNEXIN A8;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.RETY,J.SOPKOVA-DE OLIVEIRA SANTOS,C.RAGUENES-NICOL,L.DREYF          
+         320  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3011
+ selectset done           0
+ eigen done           0
+ tau           1   5.47239590             162         229
+ #popped           2           1
+ #selectset contacts        3011
+ selectset done           1
+ eigen done           1
+ tau           3   3.51618314              87         162
+ #popped           4           2
+ #selectset contacts        3011
+ selectset done           2
+ eigen done           2
+ tau           5   3.29689550              87         245
+ #popped           6           2
+ #selectset contacts        3011
+ selectset done           2
+ eigen done           2
+ tau           7   2.32175636              87
+ #popped           8           3
+ #selectset contacts        3011
+ selectset done           3
+ eigen done           3
+ tau           9   1.65401697              62
+ #popped          10           4
+ #selectset contacts        3011
+ selectset done           4
+ eigen done           4
+ tau          11  0.993736982              21          39
+ #popped          12           4
+ #selectset contacts        3011
+ selectset done           4
+ eigen done           4
+ tau          13  0.832947910              49
+ #popped          14           4
+ #selectset contacts        3011
+ selectset done           4
+ eigen done           4
+ tau          15   1.88882244              11          21
+ #popped          16           4
+ #selectset contacts        3011
+ selectset done           4
+ eigen done           4
+ tau          17  0.654815555              11
+ #popped          11           3
+ #selectset contacts        3011
+ selectset done           3
+ eigen done           3
+ tau          19   1.58793974              72
+ #popped           9           2
+ #selectset contacts        3011
+ selectset done           2
+ eigen done           2
+ tau          21   2.07930779             294
+ #popped          22           3
+ #selectset contacts        3011
+ selectset done           3
+ eigen done           3
+ tau          23   1.13766217             261         279
+ #popped          24           3
+ #selectset contacts        3011
+ selectset done           3
+ eigen done           3
+ tau          25   1.29678130             261
+ #popped          23           2
+ #selectset contacts        3011
+ selectset done           2
+ eigen done           2
+ tau          27   0.00000000    
+ #popped           5           1
+ #selectset contacts        3011
+ selectset done           1
+ eigen done           1
+ tau          27   2.06226063             133
+ #popped          28           2
+ #selectset contacts        3011
+ selectset done           2
+ eigen done           2
+ tau          29   1.50276923             101         116
+ #popped          30           2
+ #selectset contacts        3011
+ selectset done           2
+ eigen done           2
+ tau          31  0.947244167             101
+ #popped          29           1
+ #selectset contacts        3011
+ selectset done           1
+ eigen done           1
+ tau          33   2.08982158             144
+ #popped           3           0
+ #selectset contacts        3011
+ selectset done           0
+ eigen done           0
+ tau          35   1.56088233             181         200         218
+ #popped          36           1
+ #selectset contacts        3011
+ selectset done           1
+ eigen done           1
+ tau          37   0.00000000    
+ #popped          37           0
+ #selectset contacts        3011
+ selectset done           0
+ eigen done           0
+ tau          37   1.85251522             200
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    COAGULATION                             22-JUL-04   1W45              COMPND   2 MOLECULE: ANNEXIN A8;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.RETY,J.SOPKOVA-DE OLIVEIRA SANTOS,C.RAGUENES-NICOL,L.DREYF          
+           0
+         320
+         320  residues read 1W45.dssp                                                   
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  3  1  2  4  5 16 18 17 19 20 15  6  8  7  9 10 11 13 12 14
+   2     1  4  5 16  3  1  2  4  5 16 18 17 19 20 15  6  8  7  9 10
+   3     1 36 37  4 11 13 12 14
+   4     2  6  7 11  3  1  2  4  5 16 18 17 19 20 15
+   5     2 28 29  5  6  8  7  9 10
+   6     4  8  9 10  3  1  2  4  5 16 18 17 19 20
+   7     4  0  0  1 15
+   8     6 10 11  5  3  1  2  4  5
+   9     6 22 23  5 16 18 17 19 20
+  10     8 12 13  3  3  1  2
+  11     8 20 21  2  4  5
+  12    10  0  0  1  3
+  13    10  0  0  2  1  2
+  14     0  0  0  0
+  15     0  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  0
+  20    11  0  0  1  4
+  21    11  0  0  1  5
+  22     9 24 25  3 16 18 17
+  23     9  0  0  2 19 20
+  24    22 26 27  2 16 18
+  25    22  0  0  1 17
+  26    24  0  0  1 16
+  27    24  0  0  1 18
+  28     5 30 31  3  6  8  7
+  29     5 34 35  2  9 10
+  30    28 32 33  2  6  8
+  31    28  0  0  1  7
+  32    30  0  0  1  6
+  33    30  0  0  1  8
+  34    29  0  0  1  9
+  35    29  0  0  1 10
+  36     3  0  0  2 11 13
+  37     3 38 39  2 12 14
+  38    37  0  0  1 12
+  39    37  0  0  1 14
+   1 +   0  2  3 20  1  1 20
+   2 +   1  4  5 16  2  1 10 15 20
+   3 *   1 30 31  4  1 11 14
+   4 +   2  6  7 11  2  1  5 15 20
+   5 *   2 22 23  5  1  6 10
+   6 *   4  8  9 10  2  1  5 16 20
+   7 =   4  0  0  1  1 15 15
+   8 -   6 10 11  5  1  1  5
+   9 -   6 16 17  5  1 16 20
+  10 -   8 12 13  3  1  1  3
+  11 -   8 14 15  2  1  4  5
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  2  1  1  2
+  14 -  11  0  0  1  1  4  4
+  15 -  11  0  0  1  1  5  5
+  16 -   9 18 19  3  1 16 18
+  17 -   9  0  0  2  1 19 20
+  18 -  16 20 21  2  2 16 16 18 18
+  19 -  16  0  0  1  1 17 17
+  20 -  18  0  0  1  1 16 16
+  21 -  18  0  0  1  1 18 18
+  22 -   5 24 25  3  1  6  8
+  23 -   5 28 29  2  1  9 10
+  24 -  22 26 27  2  2  6  6  8  8
+  25 -  22  0  0  1  1  7  7
+  26 -  24  0  0  1  1  6  6
+  27 -  24  0  0  1  1  8  8
+  28 -  23  0  0  1  1  9  9
+  29 -  23  0  0  1  1 10 10
+  30 -   3  0  0  2  2 11 11 13 13
+  31 -   3 32 33  2  2 12 12 14 14
+  32 -  31  0  0  1  1 12 12
+  33 -  31  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            320
+Total number of atoms read in:              2514
+Total number of ignored atom records:         23
+ HEADER    COAGULATION                             22-JUL-04   1W45              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.RETY,J.SOPKOVA-DE OLIVEIRA SANTOS,C.RAGUENES-NICOL,L.DREYFUSS,      
+  Reading DSSP file
+ HEADER    COAGULATION                             22-JUL-04   1W45              COMPND   2 MOLECULE: ANNEXIN A8;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.RETY,J.SOPKOVA-DE OLIVEIRA SANTOS,C.RAGUENES-NICOL,L.DREYF          
+         320  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3020
+ selectset done           0
+ eigen done           0
+ tau           1   6.39849377             162         229
+ #popped           2           1
+ #selectset contacts        3020
+ selectset done           1
+ eigen done           1
+ tau           3   2.52726150             162         263         279
+ #popped           4           2
+ #selectset contacts        3020
+ selectset done           2
+ eigen done           2
+ tau           5   3.90276957              87         162
+ #popped           6           3
+ #selectset contacts        3020
+ selectset done           3
+ eigen done           3
+ tau           7   1.32390809              10          41
+ #popped           8           4
+ #selectset contacts        3020
+ selectset done           4
+ eigen done           4
+ tau           9   1.65004086              51          72
+ #popped          10           5
+ #selectset contacts        3020
+ selectset done           5
+ eigen done           5
+ tau          11  0.916597247              87
+ #popped          12           5
+ #selectset contacts        3020
+ selectset done           5
+ eigen done           5
+ tau          13   1.23662627              51
+ #popped          14           5
+ #selectset contacts        3020
+ selectset done           5
+ eigen done           5
+ tau          15  0.370397329              10
+ #popped          11           4
+ #selectset contacts        3020
+ selectset done           4
+ eigen done           4
+ tau          17   1.64703035              62
+ #popped           9           3
+ #selectset contacts        3020
+ selectset done           3
+ eigen done           3
+ tau          19   2.07508469              31
+ #popped          20           3
+ #selectset contacts        3020
+ selectset done           3
+ eigen done           3
+ tau          21  0.881621242              20
+ #popped           7           2
+ #selectset contacts        3020
+ selectset done           2
+ eigen done           2
+ tau          23   2.13324761             134
+ #popped          24           3
+ #selectset contacts        3020
+ selectset done           3
+ eigen done           3
+ tau          25   1.48257935             100         115
+ #popped          26           3
+ #selectset contacts        3020
+ selectset done           3
+ eigen done           3
+ tau          27   1.26898706             100
+ #popped          25           2
+ #selectset contacts        3020
+ selectset done           2
+ eigen done           2
+ tau          29   1.24506879             144
+ #popped           5           1
+ #selectset contacts        3020
+ selectset done           1
+ eigen done           1
+ tau          31   3.26586628             245
+ #popped          33           1
+ #selectset contacts        3020
+ selectset done           1
+ eigen done           1
+ tau          33   2.41814923             293
+ #popped          34           2
+ #selectset contacts        3020
+ selectset done           2
+ eigen done           2
+ tau          35   1.19012010             263
+ #popped          35           1
+ #selectset contacts        3020
+ selectset done           1
+ eigen done           1
+ tau          37   0.00000000    
+ #popped           3           0
+ #selectset contacts        3020
+ selectset done           0
+ eigen done           0
+ tau          37   1.29185951             181         191         219
+ #popped          38           1
+ #selectset contacts        3020
+ selectset done           1
+ eigen done           1
+ tau          39   1.19774425             181         201
+ #popped          40           1
+ #selectset contacts        3020
+ selectset done           1
+ eigen done           1
+ tau          41   0.00000000    
+ #popped          39           0
+ #selectset contacts        3020
+ selectset done           0
+ eigen done           0
+ tau          41   2.34333324             191
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    COAGULATION                             22-JUL-04   1W45              COMPND   2 MOLECULE: ANNEXIN A8;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.RETY,J.SOPKOVA-DE OLIVEIRA SANTOS,C.RAGUENES-NICOL,L.DREYF          
+           0
+         320
+         320  residues read 1W45.dssp                                                   
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  5 17  3  4  1  2  6  8  7  9 10 15 16 18 19 20 11 13 12 14
+   2     1  4  5 16  5 17  3  4  1  2  6  8  7  9 10 15 16 18 19 20
+   3     1 38 39  4 11 13 12 14
+   4     2  6  7 11  5 17  3  4  1  2  6  8  7  9 10
+   5     2 32 33  5 15 16 18 19 20
+   6     4  8  9  6  5 17  3  4  1  2
+   7     4 24 25  5  6  8  7  9 10
+   8     6 10 11  4  5 17  3  4
+   9     6 20 21  2  1  2
+  10     8 12 13  2  5 17
+  11     8 18 19  2  3  4
+  12    10  0  0  1  5
+  13    10  0  0  1 17
+  14     0  0  0  0
+  15     0  0  0  1  5
+  16     0  0  0  0
+  17     0  0  0  0
+  18    11  0  0  1  3
+  19    11  0  0  1  4
+  20     9  0  0  1  1
+  21     9  0  0  1  2
+  22     0  0  0  0
+  23     0  0  0  1  1
+  24     7 26 27  3  6  8  7
+  25     7 30 31  2  9 10
+  26    24 28 29  2  6  8
+  27    24  0  0  1  7
+  28    26  0  0  1  6
+  29    26  0  0  1  8
+  30    25  0  0  1  9
+  31    25  0  0  1 10
+  32     5  0  0  1 15
+  33     5 34 35  4 16 18 19 20
+  34    33 36 37  2 16 18
+  35    33  0  0  2 19 20
+  36    34  0  0  1 16
+  37    34  0  0  1 18
+  38     3 40 41  3 11 13 12
+  39     3  0  0  1 14
+  40    38  0  0  2 11 13
+  41    38  0  0  1 12
+  42     0  0  0  0
+  43     0  0  0  1 14
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 16  2  1 10 15 20
+   3 *   1 32 33  4  1 11 14
+   4 -   2  6  7 11  2  1 10 17 17
+   5 -   2 26 27  5  2 15 16 18 20
+   6 -   4  8  9  6  2  1  5 17 17
+   7 -   4 18 19  5  1  6 10
+   8 -   6 10 11  4  2  3  5 17 17
+   9 -   6 16 17  2  1  1  2
+  10 -   8 12 13  2  2  5  5 17 17
+  11 -   8 14 15  2  1  3  4
+  12 -  10  0  0  1  1  5  5
+  13 -  10  0  0  1  1 17 17
+  14 -  11  0  0  1  1  3  3
+  15 -  11  0  0  1  1  4  4
+  16 -   9  0  0  1  1  1  1
+  17 -   9  0  0  1  1  2  2
+  18 -   7 20 21  3  1  6  8
+  19 -   7 24 25  2  1  9 10
+  20 -  18 22 23  2  2  6  6  8  8
+  21 -  18  0  0  1  1  7  7
+  22 -  20  0  0  1  1  6  6
+  23 -  20  0  0  1  1  8  8
+  24 -  19  0  0  1  1  9  9
+  25 -  19  0  0  1  1 10 10
+  26 -   5  0  0  1  1 15 15
+  27 -   5 28 29  4  2 16 16 18 20
+  28 -  27 30 31  2  2 16 16 18 18
+  29 -  27  0  0  2  1 19 20
+  30 -  28  0  0  1  1 16 16
+  31 -  28  0  0  1  1 18 18
+  32 -   3 34 35  3  1 11 13
+  33 -   3  0  0  1  1 14 14
+  34 -  32  0  0  2  2 11 11 13 13
+  35 -  32  0  0  1  1 12 12
+
+ CHAIN : 1W45A
+ CHAIN : 1W45B
+

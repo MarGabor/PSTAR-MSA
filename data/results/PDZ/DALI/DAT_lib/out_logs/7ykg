@@ -1,0 +1,353 @@
+A length: 188
+B length: 11
+C length: 188
+D length: 11
+# 2 chains A C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            188
+Total number of atoms read in:              1465
+Total number of ignored atom records:        213
+ HEADER    PEPTIDE BINDING PROTEIN                 22-JUL-22   7YKG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.ZHANG,L.LIN,J.ZHU                                                   
+  Reading DSSP file
+ HEADER    PEPTIDE BINDING PROTEIN                 22-JUL-22   7YKG              COMPND   2 MOLECULE: MEMBRANE-ASSOCIATED GUANYLATE KINASE, WW AND PDZ           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    M.ZHANG,L.LIN,J.ZHU                                                   
+         188  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau           1   2.39192271             106
+ #popped           2           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau           3   1.03544092              24          35          65          80          91
+ #popped           4           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau           5   1.21973491              13          43
+ #popped           6           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau           7  0.340039223              13
+ #popped           9           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau           9   1.56081080              55
+ #popped          11           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          11   2.00843883              35          80
+ #popped          12           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          13  0.980784297              35
+ #popped           3           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau          15   3.43269229             129
+ #popped          16           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          17  0.811895609             119
+ #popped          17           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau          19   2.89075637             178
+ #popped          20           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau          21  0.868359268             150
+ #popped          22           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          23  0.300818384             139
+ #popped          23           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau          25   1.12346017             163
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PEPTIDE BINDING PROTEIN                 22-JUL-22   7YKG              COMPND   2 MOLECULE: MEMBRANE-ASSOCIATED GUANYLATE KINASE, WW AND PDZ           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    M.ZHANG,L.LIN,J.ZHU                                                   
+           0
+         188
+         188  residues read 7YKG.dssp                                                   
+  grow short strand          24          26
+ crowded segment excluded!
+  exclude short helix          28          30
+  grow short strand          34          36
+  grow short strand          45          46
+  grow short strand          57          61
+  grow short strand          64          65
+  exclude short helix         100         104
+  grow short strand         132         133
+  grow short strand         148         149
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  4  5  7  2  6  8  9 10 11 12 13
+   2     1  4  5  7  1  3  4  5  7  2  6
+   3     1 16 17  6  8  9 10 11 12 13
+   4     2  8  9  5  1  3  4  5  7
+   5     2 12 13  2  2  6
+   6     0  0  0  5  1  3  4  5  7
+   7     0  0  0  0
+   8     4  0  0  1  1
+   9     4 10 11  4  3  4  5  7
+  10     9  0  0  1  3
+  11     9  0  0  3  4  5  7
+  12     5  0  0  1  2
+  13     5  0  0  1  6
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     3  0  0  1  8
+  17     3 22 23  5  9 10 11 12 13
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     0  0  0  5  9 10 11 12 13
+  21     0  0  0  0
+  22    17 24 25  2  9 10
+  23    17 26 27  3 11 12 13
+  24    22  0  0  1  9
+  25    22  0  0  1 10
+  26    23  0  0  1 11
+  27    23  0  0  2 12 13
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  7  1  1  7
+   3 +   1 12 13  6  1  8 13
+   4 -   2  6  7  5  3  1  1  3  5  7  7
+   5 -   2 10 11  2  2  2  2  6  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  2  3  5  7  7
+   8 -   7  0  0  1  1  3  3
+   9 -   7  0  0  3  2  4  5  7  7
+  10 -   5  0  0  1  1  2  2
+  11 -   5  0  0  1  1  6  6
+  12 =   3  0  0  1  1  8  8
+  13 *   3 14 15  5  1  9 13
+  14 -  13 16 17  2  1  9 10
+  15 -  13 18 19  3  1 11 13
+  16 -  14  0  0  1  1  9  9
+  17 -  14  0  0  1  1 10 10
+  18 -  15  0  0  1  1 11 11
+  19 -  15  0  0  2  1 12 13
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            188
+Total number of atoms read in:              1465
+Total number of ignored atom records:        189
+ HEADER    PEPTIDE BINDING PROTEIN                 22-JUL-22   7YKG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.ZHANG,L.LIN,J.ZHU                                                   
+  Reading DSSP file
+ HEADER    PEPTIDE BINDING PROTEIN                 22-JUL-22   7YKG              COMPND   2 MOLECULE: MEMBRANE-ASSOCIATED GUANYLATE KINASE, WW AND PDZ           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    M.ZHANG,L.LIN,J.ZHU                                                   
+         188  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1625
+ selectset done           0
+ eigen done           0
+ tau           1   4.06712532             129         178
+ #popped           2           1
+ #selectset contacts        1625
+ selectset done           1
+ eigen done           1
+ tau           3   1.37975860              98
+ #popped           4           2
+ #selectset contacts        1625
+ selectset done           2
+ eigen done           2
+ tau           5  0.674274087              10          22          73          86
+ #popped           6           3
+ #selectset contacts        1625
+ selectset done           3
+ eigen done           3
+ tau           7  0.741877258              10          41
+ #popped           8           3
+ #selectset contacts        1625
+ selectset done           3
+ eigen done           3
+ tau           9   1.14963508              60          73
+ #popped          10           3
+ #selectset contacts        1625
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        1625
+ selectset done           2
+ eigen done           2
+ tau          11  0.660108805              22
+ #popped           5           1
+ #selectset contacts        1625
+ selectset done           1
+ eigen done           1
+ tau          13   5.13445854             129
+ #popped          14           1
+ #selectset contacts        1625
+ selectset done           1
+ eigen done           1
+ tau          15  0.979452908             108
+ #popped          17           1
+ #selectset contacts        1625
+ selectset done           1
+ eigen done           1
+ tau          17  0.732438505             119
+ #popped           3           0
+ #selectset contacts        1625
+ selectset done           0
+ eigen done           0
+ tau          19  0.808984280             150
+ #popped          20           1
+ #selectset contacts        1625
+ selectset done           1
+ eigen done           1
+ tau          21  0.312213033             139
+ #popped          21           0
+ #selectset contacts        1625
+ selectset done           0
+ eigen done           0
+ tau          23   1.10099101             163
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PEPTIDE BINDING PROTEIN                 22-JUL-22   7YKG              COMPND   2 MOLECULE: MEMBRANE-ASSOCIATED GUANYLATE KINASE, WW AND PDZ           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    M.ZHANG,L.LIN,J.ZHU                                                   
+           0
+         188
+         188  residues read 7YKG.dssp                                                   
+  exclude short helix           3           6
+  grow short strand          24          26
+ crowded segment excluded!
+  exclude short helix          28          30
+  grow short strand          34          36
+  grow short strand          45          46
+  grow short strand          57          61
+  grow short strand          64          65
+  exclude short helix         100         104
+  grow short strand         132         133
+  grow short strand         148         149
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  4  7  5  2  6  8  9 10 11 12 13
+   2     1  4  5  8  1  3  4  7  5  2  6  8
+   3     1 20 21  5  9 10 11 12 13
+   4     2  6  7  7  1  3  4  7  5  2  6
+   5     2  0  0  1  8
+   6     4  8  9  6  1  3  4  7  5  2
+   7     4  0  0  1  6
+   8     6 10 11  5  1  3  4  7  5
+   9     6  0  0  1  2
+  10     8  0  0  4  1  3  4  7
+  11     8  0  0  1  5
+  12     0  0  0  0
+  13     0  0  0  1  6
+  14     0  0  0  1  8
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     3 22 23  2  9 10
+  21     3 24 25  3 11 12 13
+  22    20  0  0  1  9
+  23    20  0  0  1 10
+  24    21  0  0  1 11
+  25    21  0  0  2 12 13
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  8  1  1  8
+   3 *   1 12 13  5  1  9 13
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  5  3  1  1  3  5  7  7
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  4  3  1  1  3  4  7  7
+  11 -   8  0  0  1  1  5  5
+  12 -   3 14 15  2  1  9 10
+  13 -   3 16 17  3  1 11 13
+  14 -  12  0  0  1  1  9  9
+  15 -  12  0  0  1  1 10 10
+  16 -  13  0  0  1  1 11 11
+  17 -  13  0  0  2  1 12 13
+
+ CHAIN : 7YKGA
+ CHAIN : 7YKGC
+

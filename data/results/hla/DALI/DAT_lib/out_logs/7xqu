@@ -1,0 +1,649 @@
+A length: 274
+B length: 99
+C length: 9
+D length: 272
+E length: 99
+F length: 9
+# 4 chains A B D E
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            274
+Total number of atoms read in:              2248
+Total number of ignored atom records:         57
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.QI,        
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: FELIS CATUS;                                    AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.Q          
+         274  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2424
+ selectset done           0
+ eigen done           0
+ tau           1   12.0131607             180
+ #popped           2           1
+ #selectset contacts        2424
+ selectset done           1
+ eigen done           1
+ tau           3   1.09766841              98         114         124
+ #popped           4           2
+ #selectset contacts        2424
+ selectset done           2
+ eigen done           2
+ tau           5  0.863535941              23          68
+ #popped           6           3
+ #selectset contacts        2424
+ selectset done           3
+ eigen done           3
+ tau           7  0.451646268              98
+ #popped           8           3
+ #selectset contacts        2424
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2424
+ selectset done           2
+ eigen done           2
+ tau           9  0.819422185              35          45          55
+ #popped          10           3
+ #selectset contacts        2424
+ selectset done           3
+ eigen done           3
+ tau          11  0.659150600              35
+ #popped          11           2
+ #selectset contacts        2424
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2424
+ selectset done           1
+ eigen done           1
+ tau          13   2.24082899             161
+ #popped          14           1
+ #selectset contacts        2424
+ selectset done           1
+ eigen done           1
+ tau          15   1.54890347             134         150
+ #popped          16           1
+ #selectset contacts        2424
+ selectset done           1
+ eigen done           1
+ tau          17   1.45302415             114
+ #popped          19           1
+ #selectset contacts        2424
+ selectset done           1
+ eigen done           1
+ tau          19   1.73964500             134
+ #popped           3           0
+ #selectset contacts        2424
+ selectset done           0
+ eigen done           0
+ tau          21   1.04052281             190         201         246         256
+ #popped          22           1
+ #selectset contacts        2424
+ selectset done           1
+ eigen done           1
+ tau          23  0.768393993             217         227
+ #popped          24           1
+ #selectset contacts        2424
+ selectset done           1
+ eigen done           1
+ tau          25  0.357887477             217
+ #popped          26           2
+ #selectset contacts        2424
+ selectset done           2
+ eigen done           2
+ tau          27   0.00000000    
+ #popped          27           1
+ #selectset contacts        2424
+ selectset done           1
+ eigen done           1
+ tau          27   999.999023             246
+ #popped          23           0
+ #selectset contacts        2424
+ selectset done           0
+ eigen done           0
+ tau          29   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: FELIS CATUS;                                    AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.Q          
+           0
+         274
+         274  residues read 7XQU.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          52
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         229         230
+  grow short strand         234         235
+  exclude short helix         254         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  5  6  8  2  3  4  7  9 11 10 12 13 14 15 16 17 18 19 20
+   2     1  4  5 12  1  5  6  8  2  3  4  7  9 11 10 12
+   3     1 26 27  8 13 14 15 16 17 18 19 20
+   4     2  6  7  7  1  5  6  8  2  3  4
+   5     2 14 15  5  7  9 11 10 12
+   6     4  8  9  4  1  5  6  8
+   7     4 12 13  3  2  3  4
+   8     6  0  0  3  1  5  6
+   9     6  0  0  1  8
+  10     0  0  0  3  2  3  4
+  11     0  0  0  0
+  12     7  0  0  2  2  3
+  13     7  0  0  1  4
+  14     5 16 17  4  7  9 11 10
+  15     5  0  0  1 12
+  16    14 18 19  3  7  9 11
+  17    14  0  0  1 10
+  18    16  0  0  1  7
+  19    16 20 21  2  9 11
+  20    19  0  0  1  9
+  21    19  0  0  1 11
+  22     0  0  0  8 13 14 15 16 17 18 19 20
+  23     0  0  0  0
+  24     0  0  0  8 13 14 15 16 17 18 19 20
+  25     0  0  0  0
+  26     3  0  0  3 13 14 15
+  27     3 28 29  5 16 17 18 19 20
+  28    27  0  0  3 16 17 18
+  29    27  0  0  2 19 20
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 12  1  1 12
+   3 *   1 20 21  8  1 13 20
+   4 -   2  6  7  7  2  1  6  8  8
+   5 -   2 12 13  5  2  7  7  9 12
+   6 -   4  8  9  4  3  1  1  5  6  8  8
+   7 -   4 10 11  3  1  2  4
+   8 -   6  0  0  3  2  1  1  5  6
+   9 -   6  0  0  1  1  8  8
+  10 -   7  0  0  2  1  2  3
+  11 -   7  0  0  1  1  4  4
+  12 -   5 14 15  4  2  7  7  9 11
+  13 -   5  0  0  1  1 12 12
+  14 -  12 16 17  3  3  7  7  9  9 11 11
+  15 -  12  0  0  1  1 10 10
+  16 -  14  0  0  1  1  7  7
+  17 -  14 18 19  2  2  9  9 11 11
+  18 -  17  0  0  1  1  9  9
+  19 -  17  0  0  1  1 11 11
+  20 -   3  0  0  3  1 13 15
+  21 -   3 22 23  5  1 16 20
+  22 -  21  0  0  3  1 16 18
+  23 -  21  0  0  2  1 19 20
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               816
+Total number of ignored atom records:         29
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.QI,        
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: FELIS CATUS;                                    AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.Q          
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         782
+ selectset done           0
+ eigen done           0
+ tau           1  0.919419765              10          25          39          50          66
+ #popped           2           1
+ #selectset contacts         782
+ selectset done           1
+ eigen done           1
+ tau           3  0.474029988              10
+ #popped           5           1
+ #selectset contacts         782
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts         782
+ selectset done           0
+ eigen done           0
+ tau           5  0.595305324              25
+ #popped           7           0
+ #selectset contacts         782
+ selectset done           0
+ eigen done           0
+ tau           7   1.46516395              79
+ #popped           8           1
+ #selectset contacts         782
+ selectset done           1
+ eigen done           1
+ tau           9  0.475958377              50
+ #popped           9           0
+ #selectset contacts         782
+ selectset done           0
+ eigen done           0
+ tau          11  0.419047594              89
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: FELIS CATUS;                                    AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.Q          
+           0
+          99
+          99  residues read 7XQU.dssp                                                   
+  grow short strand          45          46
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  5  6  7  4  8  9
+   2     1  4  5  6  1  2  3  5  6  7
+   3     1  8  9  3  4  8  9
+   4     2  0  0  1  1
+   5     2  0  0  5  2  3  5  6  7
+   6     0  0  0  0
+   7     0  0  0  3  4  8  9
+   8     3  0  0  1  4
+   9     3 12 13  2  8  9
+  10     0  0  0  1  4
+  11     0  0  0  0
+  12     9  0  0  1  8
+  13     9  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  6  2  1  3  5  7
+   3 -   1  6  7  3  2  4  4  8  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  5  2  2  3  5  7
+   6 -   3  0  0  1  1  4  4
+   7 -   3  8  9  2  1  8  9
+   8 -   7  0  0  1  1  8  8
+   9 -   7  0  0  1  1  9  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            272
+Total number of atoms read in:              2239
+Total number of ignored atom records:         43
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.QI,        
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: FELIS CATUS;                                    AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.Q          
+         272  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2402
+ selectset done           0
+ eigen done           0
+ tau           1   12.8197794             179
+ #popped           2           1
+ #selectset contacts        2402
+ selectset done           1
+ eigen done           1
+ tau           3   1.19426680              47          59         164
+ #popped           4           2
+ #selectset contacts        2402
+ selectset done           2
+ eigen done           2
+ tau           5   1.19255376             122         132         148
+ #popped           6           3
+ #selectset contacts        2402
+ selectset done           3
+ eigen done           3
+ tau           7   1.76994038             122
+ #popped           8           3
+ #selectset contacts        2402
+ selectset done           3
+ eigen done           3
+ tau           9  0.898476481              77          90
+ #popped          10           3
+ #selectset contacts        2402
+ selectset done           3
+ eigen done           3
+ tau          11  0.705842078              77
+ #popped          12           4
+ #selectset contacts        2402
+ selectset done           4
+ eigen done           4
+ tau          13   1.53599310              47
+ #popped          14           4
+ #selectset contacts        2402
+ selectset done           4
+ eigen done           4
+ tau          15   1.06013083              10          20
+ #popped          16           4
+ #selectset contacts        2402
+ selectset done           4
+ eigen done           4
+ tau          17  0.390989810              23
+ #popped          19           4
+ #selectset contacts        2402
+ selectset done           4
+ eigen done           4
+ tau          19  0.756774127              33
+ #popped          13           3
+ #selectset contacts        2402
+ selectset done           3
+ eigen done           3
+ tau          21  0.233989134             105
+ #popped           7           2
+ #selectset contacts        2402
+ selectset done           2
+ eigen done           2
+ tau          23   1.71111107             132
+ #popped           5           1
+ #selectset contacts        2402
+ selectset done           1
+ eigen done           1
+ tau          25   1.82464123              59
+ #popped           3           0
+ #selectset contacts        2402
+ selectset done           0
+ eigen done           0
+ tau          27  0.689928651             202         212         228         241
+ #popped          28           1
+ #selectset contacts        2402
+ selectset done           1
+ eigen done           1
+ tau          29  0.674430728             255
+ #popped          30           1
+ #selectset contacts        2402
+ selectset done           1
+ eigen done           1
+ tau          31  0.578386605             202
+ #popped          32           2
+ #selectset contacts        2402
+ selectset done           2
+ eigen done           2
+ tau          33   0.00000000    
+ #popped          33           1
+ #selectset contacts        2402
+ selectset done           1
+ eigen done           1
+ tau          33   0.00000000    
+ #popped          29           0
+ #selectset contacts        2402
+ selectset done           0
+ eigen done           0
+ tau          33  0.411582649             212
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: FELIS CATUS;                                    AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.Q          
+           0
+         272
+         272  residues read 7XQU.dssp                                                   
+  grow short strand          45          46
+  exclude short helix          49          51
+  grow short strand         131         133
+  exclude short helix         174         177
+  grow short strand         227         228
+  grow short strand         232         233
+  exclude short helix         252         254
+  grow short strand         268         270
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  5  6  7  8 10  9 11 12 13 14 15 16 18 19 20 17
+   2     1  4  5 12  1  2  3  4  5  6  7  8 10  9 11 12
+   3     1 28 29  8 13 14 15 16 18 19 20 17
+   4     2  6  7 11  1  2  3  4  5  6  7  8 10  9 11
+   5     2  0  0  1 12
+   6     4  8  9  9  1  2  3  4  5  6  7  8 10
+   7     4 24 25  2  9 11
+   8     6 12 13  8  1  2  3  4  5  6  7  8
+   9     6  0  0  1 10
+  10     0  0  0  8  1  2  3  4  5  6  7  8
+  11     0  0  0  0
+  12     8 14 15  5  1  2  3  4  5
+  13     8 22 23  3  6  7  8
+  14    12 18 19  4  1  2  3  4
+  15    12  0  0  1  5
+  16     0  0  0  4  1  2  3  4
+  17     0  0  0  0
+  18    14  0  0  2  1  2
+  19    14 20 21  2  3  4
+  20    19  0  0  1  3
+  21    19  0  0  1  4
+  22    13  0  0  1  6
+  23    13  0  0  2  7  8
+  24     7  0  0  1  9
+  25     7  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  1 12
+  28     3 30 31  7 13 14 15 16 18 19 20
+  29     3  0  0  1 17
+  30    28 32 33  5 13 14 15 16 18
+  31    28  0  0  2 19 20
+  32    30  0  0  2 13 14
+  33    30  0  0  3 15 16 18
+  34     0  0  0  0
+  35     0  0  0  1 17
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 12  1  1 12
+   3 *   1 22 23  8  1 13 20
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  9  2  1  8 10 10
+   7 -   4 20 21  2  2  9  9 11 11
+   8 -   6 10 11  8  1  1  8
+   9 -   6  0  0  1  1 10 10
+  10 -   8 12 13  5  1  1  5
+  11 -   8 18 19  3  1  6  8
+  12 -  10 14 15  4  1  1  4
+  13 -  10  0  0  1  1  5  5
+  14 -  12  0  0  2  1  1  2
+  15 -  12 16 17  2  1  3  4
+  16 -  15  0  0  1  1  3  3
+  17 -  15  0  0  1  1  4  4
+  18 -  11  0  0  1  1  6  6
+  19 -  11  0  0  2  1  7  8
+  20 -   7  0  0  1  1  9  9
+  21 -   7  0  0  1  1 11 11
+  22 -   3 24 25  7  2 13 16 18 20
+  23 -   3  0  0  1  1 17 17
+  24 -  22 26 27  5  2 13 16 18 18
+  25 -  22  0  0  2  1 19 20
+  26 -  24  0  0  2  1 13 14
+  27 -  24  0  0  3  2 15 16 18 18
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               816
+Total number of ignored atom records:         25
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.QI,        
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: FELIS CATUS;                                    AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.Q          
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         777
+ selectset done           0
+ eigen done           0
+ tau           1  0.802542686              10          25          39          49          67
+ #popped           2           1
+ #selectset contacts         777
+ selectset done           1
+ eigen done           1
+ tau           3  0.494494528              28
+ #popped           5           1
+ #selectset contacts         777
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts         777
+ selectset done           0
+ eigen done           0
+ tau           5  0.695341468              25
+ #popped           7           0
+ #selectset contacts         777
+ selectset done           0
+ eigen done           0
+ tau           7   1.39608681              79
+ #popped           8           1
+ #selectset contacts         777
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           9           0
+ #selectset contacts         777
+ selectset done           0
+ eigen done           0
+ tau           9  0.441577047              89
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           08-MAY-22   7XQU              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: FELIS CATUS;                                    AUTHOR    P.W.QIAO,C.YUE,W.Y.PENG,K.F.LIU,S.T.HUO,D.ZHANG,Y.CHAI,J.X.Q          
+           0
+          99
+          99  residues read 7XQU.dssp                                                   
+  grow short strand          45          47
+  grow short strand          50          51
+ crowded segment excluded!
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  5  6  4  7  8
+   2     1  4  5  5  1  2  3  5  6
+   3     1  8  9  3  4  7  8
+   4     2  0  0  2  1  2
+   5     2  0  0  3  3  5  6
+   6     0  0  0  0
+   7     0  0  0  3  4  7  8
+   8     3  0  0  1  4
+   9     3 10 11  2  7  8
+  10     9  0  0  1  7
+  11     9  0  0  1  8
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  5  2  1  3  5  6
+   3 -   1  6  7  3  2  4  4  7  8
+   4 -   2  0  0  2  1  1  2
+   5 -   2  0  0  3  2  3  3  5  6
+   6 -   3  0  0  1  1  4  4
+   7 -   3  8  9  2  1  7  8
+   8 -   7  0  0  1  1  7  7
+   9 -   7  0  0  1  1  8  8
+
+ CHAIN : 7XQUA
+ CHAIN : 7XQUB
+ CHAIN : 7XQUD
+ CHAIN : 7XQUE
+

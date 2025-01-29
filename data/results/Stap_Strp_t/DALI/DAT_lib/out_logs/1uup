@@ -1,0 +1,680 @@
+A length: 221
+B length: 221
+C length: 221
+D length: 221
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            221
+Total number of atoms read in:              1813
+Total number of ignored atom records:         73
+ HEADER    TOXIN                                   08-JAN-04   1UUP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+  Reading DSSP file
+ HEADER    TOXIN                                   08-JAN-04   1UUP              COMPND   2 MOLECULE: EXOTOXIN TYPE A;                                           SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PYOGENES;                         AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+         221  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1925
+ selectset done           0
+ eigen done           0
+ tau           1   2.17943025              29         107
+ #popped           2           1
+ #selectset contacts        1925
+ selectset done           1
+ eigen done           1
+ tau           3  0.778039396              29         118         131         145
+ #popped           4           2
+ #selectset contacts        1925
+ selectset done           2
+ eigen done           2
+ tau           5   1.12142038              10          29         131         168         187         197
+ #popped           6           3
+ #selectset contacts        1925
+ selectset done           3
+ eigen done           3
+ tau           7   2.98828125             187         207
+ #popped           8           3
+ #selectset contacts        1925
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1925
+ selectset done           2
+ eigen done           2
+ tau           9  0.772007704             156
+ #popped          10           3
+ #selectset contacts        1925
+ selectset done           3
+ eigen done           3
+ tau          11   1.12984490              29
+ #popped          11           2
+ #selectset contacts        1925
+ selectset done           2
+ eigen done           2
+ tau          13   999.999023             168
+ #popped           5           1
+ #selectset contacts        1925
+ selectset done           1
+ eigen done           1
+ tau          15  0.533480883             135
+ #popped           3           0
+ #selectset contacts        1925
+ selectset done           0
+ eigen done           0
+ tau          17   1.00614405              84          95
+ #popped          18           0
+ #selectset contacts        1925
+ selectset done           0
+ eigen done           0
+ tau          19  0.946783543              61          74
+ #popped          20           0
+ #selectset contacts        1925
+ selectset done           0
+ eigen done           0
+ tau          21  0.381855428              61
+ #popped          22           1
+ #selectset contacts        1925
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          23           0
+ #selectset contacts        1925
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TOXIN                                   08-JAN-04   1UUP              COMPND   2 MOLECULE: EXOTOXIN TYPE A;                                           SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PYOGENES;                         AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+           0
+         221
+         221  residues read 1UUP.dssp                                                   
+  exclude short helix           6           8
+  exclude short helix          12          14
+  grow short strand          45          48
+  grow short strand          57          61
+  grow short strand          76          80
+  grow short strand          96         100
+  grow short strand         103         105
+  grow short strand         139         141
+ crowded segment excluded!
+  grow short strand         182         185
+  grow short strand         206         208
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16 10 12 13 16 15  1 11 14  9  2  3  4  6  7  8  5
+   2     1  4  5  9 10 12 13 16 15  1 11 14  9
+   3     1 20 21  7  2  3  4  6  7  8  5
+   4     2  6  7  8 10 12 13 16 15  1 11 14
+   5     2  0  0  1  9
+   6     4  8  9  5 10 12 13 16 15
+   7     4 10 11  3  1 11 14
+   8     6  0  0  4 10 12 13 16
+   9     6  0  0  1 15
+  10     7 12 13  2  1 11
+  11     7  0  0  1 14
+  12    10  0  0  1  1
+  13    10  0  0  1 11
+  14     0  0  0  0
+  15     0  0  0  1 14
+  16     0  0  0  1  9
+  17     0  0  0  0
+  18     0  0  0  7  2  3  4  6  7  8  5
+  19     0  0  0  0
+  20     3 22 23  6  2  3  4  6  7  8
+  21     3  0  0  1  5
+  22    20  0  0  3  2  3  4
+  23    20  0  0  3  6  7  8
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5  9  2  1  1  9 16
+   3 *   1 14 15  7  1  2  8
+   4 -   2  6  7  8  2  1  1 10 16
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  5  3 10 10 12 13 15 16
+   7 -   4 10 11  3  3  1  1 11 11 14 14
+   8 -   6  0  0  4  3 10 10 12 13 16 16
+   9 -   6  0  0  1  1 15 15
+  10 -   7 12 13  2  2  1  1 11 11
+  11 -   7  0  0  1  1 14 14
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1 11 11
+  14 -   3 16 17  6  2  2  4  6  8
+  15 -   3  0  0  1  1  5  5
+  16 -  14  0  0  3  1  2  4
+  17 -  14  0  0  3  1  6  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            221
+Total number of atoms read in:              1813
+Total number of ignored atom records:         55
+ HEADER    TOXIN                                   08-JAN-04   1UUP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+  Reading DSSP file
+ HEADER    TOXIN                                   08-JAN-04   1UUP              COMPND   2 MOLECULE: EXOTOXIN TYPE A;                                           SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PYOGENES;                         AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+         221  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau           1   2.35478663              29         107
+ #popped           2           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau           3  0.710320890              29         118         131         141
+ #popped           4           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           5  0.535161257             172         183
+ #popped           6           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           7  0.874517798              29
+ #popped           8           3
+ #selectset contacts        1947
+ selectset done           3
+ eigen done           3
+ tau           9   3.15661764              10
+ #popped           9           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          11  0.627287269             131         151
+ #popped          12           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          13   1.13740599              84          94
+ #popped          14           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          15  0.941284418              61          74
+ #popped          16           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          17  0.357628793              61
+ #popped          18           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TOXIN                                   08-JAN-04   1UUP              COMPND   2 MOLECULE: EXOTOXIN TYPE A;                                           SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PYOGENES;                         AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+           0
+         221
+         221  residues read 1UUP.dssp                                                   
+  exclude short helix          12          14
+  grow short strand          45          48
+  grow short strand          57          61
+  grow short helix          65          71
+  grow short strand          76          80
+  grow short strand          96         100
+  grow short strand         103         105
+  grow short strand         139         141
+ crowded segment excluded!
+  grow short strand         182         185
+  grow short strand         206         208
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1 10 12 14 15 16 11 13  9  2  3  4  6  7  8  5
+   2     1  4  5  9  1 10 12 14 15 16 11 13  9
+   3     1 16 17  7  2  3  4  6  7  8  5
+   4     2  6  7  8  1 10 12 14 15 16 11 13
+   5     2  0  0  1  9
+   6     4  8  9  7  1 10 12 14 15 16 11
+   7     4  0  0  1 13
+   8     6  0  0  1  1
+   9     6 12 13  6 10 12 14 15 16 11
+  10     0  0  0  0
+  11     0  0  0  1  1
+  12     9  0  0  5 10 12 14 15 16
+  13     9  0  0  1 11
+  14     0  0  0  7  2  3  4  6  7  8  5
+  15     0  0  0  0
+  16     3 18 19  6  2  3  4  6  7  8
+  17     3  0  0  1  5
+  18    16  0  0  3  2  3  4
+  19    16  0  0  3  6  7  8
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5  9  2  1  1  9 16
+   3 *   1 12 13  7  1  2  8
+   4 -   2  6  7  8  2  1  1 10 16
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  7  3  1  1 10 12 14 16
+   7 -   4  0  0  1  1 13 13
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  6  2 10 12 14 16
+  10 -   9  0  0  5  3 10 10 12 12 14 16
+  11 -   9  0  0  1  1 11 11
+  12 -   3 14 15  6  2  2  4  6  8
+  13 -   3  0  0  1  1  5  5
+  14 -  12  0  0  3  1  2  4
+  15 -  12  0  0  3  1  6  8
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            221
+Total number of atoms read in:              1813
+Total number of ignored atom records:         75
+ HEADER    TOXIN                                   08-JAN-04   1UUP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+  Reading DSSP file
+ HEADER    TOXIN                                   08-JAN-04   1UUP              COMPND   2 MOLECULE: EXOTOXIN TYPE A;                                           SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PYOGENES;                         AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+         221  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau           1   2.27049875              29         108
+ #popped           2           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau           3  0.990570426              11          29         187         199
+ #popped           4           2
+ #selectset contacts        1911
+ selectset done           2
+ eigen done           2
+ tau           5  0.964168131              11
+ #popped           7           2
+ #selectset contacts        1911
+ selectset done           2
+ eigen done           2
+ tau           7  0.756207824             119         129         156
+ #popped           8           3
+ #selectset contacts        1911
+ selectset done           3
+ eigen done           3
+ tau           9   1.60381126             139
+ #popped          10           3
+ #selectset contacts        1911
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1911
+ selectset done           2
+ eigen done           2
+ tau          11   2.09570289             187         211
+ #popped          12           2
+ #selectset contacts        1911
+ selectset done           2
+ eigen done           2
+ tau          13   1.15347254             129         167
+ #popped          14           2
+ #selectset contacts        1911
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau          15   1.94787097              29
+ #popped           3           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          17   1.28337669              84          94
+ #popped          18           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          19  0.825176239              61          72
+ #popped          20           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          21  0.352463156              61
+ #popped          22           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          23           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TOXIN                                   08-JAN-04   1UUP              COMPND   2 MOLECULE: EXOTOXIN TYPE A;                                           SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PYOGENES;                         AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+           0
+         221
+         221  residues read 1UUP.dssp                                                   
+  exclude short helix          12          14
+  grow short strand          45          48
+  grow short strand          57          61
+  grow short strand          76          80
+  grow short strand          96         100
+  grow short strand         103         105
+  grow short strand         139         141
+ crowded segment excluded!
+  grow short strand         182         185
+  grow short strand         206         208
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  9 10 11 12 13 16 15  1 14  2  3  4  6  7  8  5
+   2     1  4  5  9  9 10 11 12 13 16 15  1 14
+   3     1 20 21  7  2  3  4  6  7  8  5
+   4     2  8  9  7  9 10 11 12 13 16 15
+   5     2 16 17  2  1 14
+   6     0  0  0  0
+   7     0  0  0  7  9 10 11 12 13 16 15
+   8     4 10 11  3  9 10 11
+   9     4 12 13  4 12 13 16 15
+  10     8  0  0  2  9 10
+  11     8  0  0  1 11
+  12     9  0  0  3 12 13 16
+  13     9  0  0  1 15
+  14     0  0  0  3 12 13 16
+  15     0  0  0  0
+  16     5  0  0  1  1
+  17     5  0  0  1 14
+  18     0  0  0  7  2  3  4  6  7  8  5
+  19     0  0  0  0
+  20     3 22 23  6  2  3  4  6  7  8
+  21     3  0  0  1  5
+  22    20  0  0  3  2  3  4
+  23    20  0  0  3  6  7  8
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5  9  2  1  1  9 16
+   3 *   1 14 15  7  1  2  8
+   4 -   2  6  7  7  2  9 13 15 16
+   5 -   2 12 13  2  2  1  1 14 14
+   6 -   4  8  9  3  1  9 11
+   7 -   4 10 11  4  2 12 13 15 16
+   8 -   6  0  0  2  1  9 10
+   9 -   6  0  0  1  1 11 11
+  10 -   7  0  0  3  2 12 13 16 16
+  11 -   7  0  0  1  1 15 15
+  12 -   5  0  0  1  1  1  1
+  13 -   5  0  0  1  1 14 14
+  14 -   3 16 17  6  2  2  4  6  8
+  15 -   3  0  0  1  1  5  5
+  16 -  14  0  0  3  1  2  4
+  17 -  14  0  0  3  1  6  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            221
+Total number of atoms read in:              1813
+Total number of ignored atom records:         73
+ HEADER    TOXIN                                   08-JAN-04   1UUP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+  Reading DSSP file
+ HEADER    TOXIN                                   08-JAN-04   1UUP              COMPND   2 MOLECULE: EXOTOXIN TYPE A;                                           SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PYOGENES;                         AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+         221  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1917
+ selectset done           0
+ eigen done           0
+ tau           1   2.37549281              29         108
+ #popped           2           1
+ #selectset contacts        1917
+ selectset done           1
+ eigen done           1
+ tau           3  0.729548752              29         118         131         148
+ #popped           4           2
+ #selectset contacts        1917
+ selectset done           2
+ eigen done           2
+ tau           5   1.45299077              10          29         131         168         185         202
+ #popped           6           3
+ #selectset contacts        1917
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1917
+ selectset done           2
+ eigen done           2
+ tau           7   1.39244807             168
+ #popped           8           2
+ #selectset contacts        1917
+ selectset done           2
+ eigen done           2
+ tau           9  0.789981306              29
+ #popped          11           2
+ #selectset contacts        1917
+ selectset done           2
+ eigen done           2
+ tau          11   1.08838618             158
+ #popped           5           1
+ #selectset contacts        1917
+ selectset done           1
+ eigen done           1
+ tau          13   1.08015692             138
+ #popped           3           0
+ #selectset contacts        1917
+ selectset done           0
+ eigen done           0
+ tau          15   1.05351818              84          94
+ #popped          16           0
+ #selectset contacts        1917
+ selectset done           0
+ eigen done           0
+ tau          17  0.556360960              60          72
+ #popped          18           0
+ #selectset contacts        1917
+ selectset done           0
+ eigen done           0
+ tau          19  0.406666815              60
+ #popped          20           1
+ #selectset contacts        1917
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        1917
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TOXIN                                   08-JAN-04   1UUP              COMPND   2 MOLECULE: EXOTOXIN TYPE A;                                           SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PYOGENES;                         AUTHOR    M.D.BAKER,I.GENDLINA,C.M.COLLINS,K.R.ACHARYA                          
+           0
+         221
+         221  residues read 1UUP.dssp                                                   
+  exclude short helix          12          14
+  grow short strand          37          39
+  grow short strand          45          48
+  grow short strand          57          61
+  grow short helix          65          71
+  grow short strand          76          80
+  grow short strand          96         100
+  grow short strand         103         105
+  grow short strand         139         141
+ crowded segment excluded!
+  grow short strand         182         185
+  grow short strand         206         208
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17 11 13 14 16 17  1 12 15 10  2  3  4  5  7  8  9  6
+   2     1  4  5  9 11 13 14 16 17  1 12 15 10
+   3     1 18 19  8  2  3  4  5  7  8  9  6
+   4     2  6  7  8 11 13 14 16 17  1 12 15
+   5     2  0  0  1 10
+   6     4  0  0  5 11 13 14 16 17
+   7     4  8  9  3  1 12 15
+   8     7 10 11  2  1 12
+   9     7  0  0  1 15
+  10     8  0  0  1  1
+  11     8  0  0  1 12
+  12     0  0  0  1 12
+  13     0  0  0  0
+  14     0  0  0  1 10
+  15     0  0  0  0
+  16     0  0  0  8  2  3  4  5  7  8  9  6
+  17     0  0  0  0
+  18     3 20 21  7  2  3  4  5  7  8  9
+  19     3  0  0  1  6
+  20    18  0  0  4  2  3  4  5
+  21    18  0  0  3  7  8  9
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5  9  2  1  1 10 17
+   3 *   1 12 13  8  1  2  9
+   4 -   2  6  7  8  2  1  1 11 17
+   5 -   2  0  0  1  1 10 10
+   6 -   4  0  0  5  3 11 11 13 14 16 17
+   7 -   4  8  9  3  3  1  1 12 12 15 15
+   8 -   7 10 11  2  2  1  1 12 12
+   9 -   7  0  0  1  1 15 15
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1 12 12
+  12 -   3 14 15  7  2  2  5  7  9
+  13 -   3  0  0  1  1  6  6
+  14 -  12  0  0  4  1  2  5
+  15 -  12  0  0  3  1  7  9
+
+ CHAIN : 1UUPA
+ CHAIN : 1UUPB
+ CHAIN : 1UUPC
+ CHAIN : 1UUPD
+

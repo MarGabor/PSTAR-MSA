@@ -1,0 +1,1026 @@
+A length: 317
+B length: 319
+C length: 319
+D length: 319
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            317
+Total number of atoms read in:              2516
+Total number of ignored atom records:        396
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              COMPND   2 MOLECULE: XYLOSE REDUCTASE;                                          SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA TENUIS;                                 AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+         317  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3013
+ selectset done           0
+ eigen done           0
+ tau           1   2.27894616              18         185         305
+ #popped           2           1
+ #selectset contacts        3013
+ selectset done           1
+ eigen done           1
+ tau           3   2.57796955              18         265         281
+ #popped           4           2
+ #selectset contacts        3013
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        3013
+ selectset done           1
+ eigen done           1
+ tau           5   1.10499907             235         293
+ #popped           6           2
+ #selectset contacts        3013
+ selectset done           2
+ eigen done           2
+ tau           7   1.23640537             196         208
+ #popped           8           2
+ #selectset contacts        3013
+ selectset done           2
+ eigen done           2
+ tau           9  0.305030346             196
+ #popped          11           2
+ #selectset contacts        3013
+ selectset done           2
+ eigen done           2
+ tau          11   1.64867997             235
+ #popped          12           2
+ #selectset contacts        3013
+ selectset done           2
+ eigen done           2
+ tau          13   1.29611647             220
+ #popped           7           1
+ #selectset contacts        3013
+ selectset done           1
+ eigen done           1
+ tau          15   1.35905051             249
+ #popped          17           1
+ #selectset contacts        3013
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        3013
+ selectset done           0
+ eigen done           0
+ tau          17   1.64649594              76
+ #popped          18           1
+ #selectset contacts        3013
+ selectset done           1
+ eigen done           1
+ tau          19  0.862455189              28          43          57
+ #popped          20           2
+ #selectset contacts        3013
+ selectset done           2
+ eigen done           2
+ tau          21  0.727487683              28
+ #popped          21           1
+ #selectset contacts        3013
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          19           0
+ #selectset contacts        3013
+ selectset done           0
+ eigen done           0
+ tau          23   1.56152201             185
+ #popped          24           0
+ #selectset contacts        3013
+ selectset done           0
+ eigen done           0
+ tau          25   1.59033585             168
+ #popped          26           0
+ #selectset contacts        3013
+ selectset done           0
+ eigen done           0
+ tau          27   1.33074951             114         140
+ #popped          28           1
+ #selectset contacts        3013
+ selectset done           1
+ eigen done           1
+ tau          29  0.780046225              94         104
+ #popped          30           1
+ #selectset contacts        3013
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          29           0
+ #selectset contacts        3013
+ selectset done           0
+ eigen done           0
+ tau          31  0.575143814             128
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              COMPND   2 MOLECULE: XYLOSE REDUCTASE;                                          SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA TENUIS;                                 AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+           0
+         317
+         317  residues read 1K8C.dssp                                                   
+  grow short strand           4           6
+  grow short strand          12          14
+  grow short strand          18          19
+  grow short strand          42          44
+  exclude short helix          47          49
+  exclude short helix          70          72
+  exclude short helix          81          83
+  grow short strand         186         190
+  grow short strand         210         214
+  exclude short helix         226         229
+  exclude short helix         234         236
+  grow short strand         265         266
+  exclude short helix         273         278
+  exclude short helix         307         311
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2 13 15 14 16 17 18 19  3  4  5  6  7  8  9 10 11 12
+   2     1  4  5  9  1  2 13 15 14 16 17 18 19
+   3     1 18 19 10  3  4  5  6  7  8  9 10 11 12
+   4     2  0  0  2  1  2
+   5     2  6  7  7 13 15 14 16 17 18 19
+   6     5  8  9  3 13 15 14
+   7     5 16 17  4 16 17 18 19
+   8     6 10 11  2 13 15
+   9     6  0  0  1 14
+  10     8  0  0  1 13
+  11     8  0  0  1 15
+  12     0  0  0  1 15
+  13     0  0  0  0
+  14     0  0  0  1 15
+  15     0  0  0  0
+  16     7  0  0  1 16
+  17     7  0  0  3 17 18 19
+  18     3 20 21  5  3  4  5  6  7
+  19     3 26 27  5  8  9 10 11 12
+  20    18  0  0  1  3
+  21    18  0  0  4  4  5  6  7
+  22     0  0  0  1  3
+  23     0  0  0  0
+  24     0  0  0  5  8  9 10 11 12
+  25     0  0  0  0
+  26    19  0  0  4  8  9 10 11
+  27    19  0  0  1 12
+  28     0  0  0  4  8  9 10 11
+  29     0  0  0  0
+  30     0  0  0  4  8  9 10 11
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+   1 +   0  2  3 19  1  1 19
+   2 *   1  4  5  9  2  1  2 13 19
+   3 *   1 14 15 10  1  3 12
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  7  1 13 19
+   6 -   5  8  9  3  1 13 15
+   7 -   5 12 13  4  1 16 19
+   8 -   6 10 11  2  2 13 13 15 15
+   9 -   6  0  0  1  1 14 14
+  10 -   8  0  0  1  1 13 13
+  11 -   8  0  0  1  1 15 15
+  12 -   7  0  0  1  1 16 16
+  13 -   7  0  0  3  1 17 19
+  14 -   3 16 17  5  1  3  7
+  15 -   3 18 19  5  1  8 12
+  16 -  14  0  0  1  1  3  3
+  17 -  14  0  0  4  1  4  7
+  18 -  15  0  0  4  1  8 11
+  19 -  15  0  0  1  1 12 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            319
+Total number of atoms read in:              2533
+Total number of ignored atom records:        520
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              COMPND   2 MOLECULE: XYLOSE REDUCTASE;                                          SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA TENUIS;                                 AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+         319  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3059
+ selectset done           0
+ eigen done           0
+ tau           1   2.19655704             188         267         283
+ #popped           2           1
+ #selectset contacts        3059
+ selectset done           1
+ eigen done           1
+ tau           3   1.78844678              76         188
+ #popped           4           2
+ #selectset contacts        3059
+ selectset done           2
+ eigen done           2
+ tau           5   2.05088305              15
+ #popped           7           2
+ #selectset contacts        3059
+ selectset done           2
+ eigen done           2
+ tau           7   1.06691730              76
+ #popped           8           2
+ #selectset contacts        3059
+ selectset done           2
+ eigen done           2
+ tau           9  0.622518241              51          65
+ #popped          10           2
+ #selectset contacts        3059
+ selectset done           2
+ eigen done           2
+ tau          11  0.785911620              51
+ #popped          12           2
+ #selectset contacts        3059
+ selectset done           2
+ eigen done           2
+ tau          13   1.02806818              27          41
+ #popped          14           2
+ #selectset contacts        3059
+ selectset done           2
+ eigen done           2
+ tau          15  0.550441742              27
+ #popped           5           1
+ #selectset contacts        3059
+ selectset done           1
+ eigen done           1
+ tau          17   1.16690505             164
+ #popped          18           2
+ #selectset contacts        3059
+ selectset done           2
+ eigen done           2
+ tau          19   1.37852395             114         140
+ #popped          20           3
+ #selectset contacts        3059
+ selectset done           3
+ eigen done           3
+ tau          21  0.840261161              92         104
+ #popped          22           3
+ #selectset contacts        3059
+ selectset done           3
+ eigen done           3
+ tau          23  0.614138186              92
+ #popped          25           3
+ #selectset contacts        3059
+ selectset done           3
+ eigen done           3
+ tau          25  0.544856310             114
+ #popped          27           3
+ #selectset contacts        3059
+ selectset done           3
+ eigen done           3
+ tau          27  0.711917937             152
+ #popped          21           2
+ #selectset contacts        3059
+ selectset done           2
+ eigen done           2
+ tau          29  0.636766315             128
+ #popped          19           1
+ #selectset contacts        3059
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped           3           0
+ #selectset contacts        3059
+ selectset done           0
+ eigen done           0
+ tau          31   2.09214044             307
+ #popped          32           0
+ #selectset contacts        3059
+ selectset done           0
+ eigen done           0
+ tau          33   1.30525470             198         210
+ #popped          34           0
+ #selectset contacts        3059
+ selectset done           0
+ eigen done           0
+ tau          35  0.963675797             220         232
+ #popped          36           0
+ #selectset contacts        3059
+ selectset done           0
+ eigen done           0
+ tau          37  0.698063850             267         296
+ #popped          38           0
+ #selectset contacts        3059
+ selectset done           0
+ eigen done           0
+ tau          39  0.653256714             267
+ #popped          40           0
+ #selectset contacts        3059
+ selectset done           0
+ eigen done           0
+ tau          41   1.32027650             220         257
+ #popped          42           1
+ #selectset contacts        3059
+ selectset done           1
+ eigen done           1
+ tau          43  0.865525007             220
+ #popped          44           1
+ #selectset contacts        3059
+ selectset done           1
+ eigen done           1
+ tau          45  0.570292950             198
+ #popped          43           0
+ #selectset contacts        3059
+ selectset done           0
+ eigen done           0
+ tau          47  0.867015719             244
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              COMPND   2 MOLECULE: XYLOSE REDUCTASE;                                          SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA TENUIS;                                 AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+           0
+         319
+         319  residues read 1K8C.dssp                                                   
+  grow short strand           4           6
+  grow short strand          12          14
+  grow short strand          18          19
+  grow short strand          42          44
+  exclude short helix          47          49
+  exclude short helix          70          72
+  exclude short helix          81          83
+  grow short strand         186         190
+  grow short strand         210         214
+  exclude short helix         220         223
+  exclude short helix         228         231
+  grow short strand         267         268
+  exclude short helix         275         280
+  exclude short helix         309         313
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  3  5  4  7  6  9 10 11  8 12 13 15 18 16 17 19 14
+   2     1  4  5 13  1  2  3  5  4  7  6  9 10 11  8 12 13
+   3     1 34 35  6 15 18 16 17 19 14
+   4     2  6  7  7  1  2  3  5  4  7  6
+   5     2 18 19  6  9 10 11  8 12 13
+   6     4  0  0  2  1  2
+   7     4 10 11  5  3  5  4  7  6
+   8     0  0  0  5  3  5  4  7  6
+   9     0  0  0  0
+  10     7 12 13  4  3  5  4  7
+  11     7  0  0  1  6
+  12    10 14 15  3  3  5  4
+  13    10  0  0  1  7
+  14    12 16 17  2  3  5
+  15    12  0  0  1  4
+  16    14  0  0  1  3
+  17    14  0  0  1  5
+  18     5 22 23  4  9 10 11  8
+  19     5  0  0  2 12 13
+  20     0  0  0  4  9 10 11  8
+  21     0  0  0  0
+  22    18 26 27  3  9 10 11
+  23    18  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  3  9 10 11
+  26    22  0  0  1  9
+  27    22 28 29  2 10 11
+  28    27  0  0  1 10
+  29    27  0  0  1 11
+  30     0  0  0  0
+  31     0  0  0  0
+  32     0  0  0  6 15 18 16 17 19 14
+  33     0  0  0  0
+  34     3 38 39  5 15 18 16 17 19
+  35     3  0  0  1 14
+  36     0  0  0  5 15 18 16 17 19
+  37     0  0  0  0
+  38    34 42 43  4 15 18 16 17
+  39    34  0  0  1 19
+  40     0  0  0  4 15 18 16 17
+  41     0  0  0  0
+  42    38 44 45  2 15 18
+  43    38 48 49  2 16 17
+  44    42  0  0  1 15
+  45    42  0  0  1 18
+  46     0  0  0  0
+  47     0  0  0  1 15
+  48    43  0  0  1 16
+  49    43  0  0  1 17
+   1 *   0  2  3 19  1  1 19
+   2 -   1  4  5 13  1  1 13
+   3 -   1 24 25  6  1 14 19
+   4 -   2  6  7  7  1  1  7
+   5 -   2 16 17  6  1  8 13
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  5  1  3  7
+   8 -   7 10 11  4  2  3  5  7  7
+   9 -   7  0  0  1  1  6  6
+  10 -   8 12 13  3  1  3  5
+  11 -   8  0  0  1  1  7  7
+  12 -  10 14 15  2  2  3  3  5  5
+  13 -  10  0  0  1  1  4  4
+  14 -  12  0  0  1  1  3  3
+  15 -  12  0  0  1  1  5  5
+  16 -   5 18 19  4  1  8 11
+  17 -   5  0  0  2  1 12 13
+  18 -  16 20 21  3  1  9 11
+  19 -  16  0  0  1  1  8  8
+  20 -  18  0  0  1  1  9  9
+  21 -  18 22 23  2  1 10 11
+  22 -  21  0  0  1  1 10 10
+  23 -  21  0  0  1  1 11 11
+  24 -   3 26 27  5  1 15 19
+  25 -   3  0  0  1  1 14 14
+  26 -  24 28 29  4  1 15 18
+  27 -  24  0  0  1  1 19 19
+  28 -  26 30 31  2  2 15 15 18 18
+  29 -  26 32 33  2  1 16 17
+  30 -  28  0  0  1  1 15 15
+  31 -  28  0  0  1  1 18 18
+  32 -  29  0  0  1  1 16 16
+  33 -  29  0  0  1  1 17 17
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            319
+Total number of atoms read in:              2533
+Total number of ignored atom records:        442
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              COMPND   2 MOLECULE: XYLOSE REDUCTASE;                                          SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA TENUIS;                                 AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+         319  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3058
+ selectset done           0
+ eigen done           0
+ tau           1   1.70076954             113         140         189         199         213         264         286
+ #popped           2           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau           3   1.29173994             168         179
+ #popped           4           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau           5   1.08584905              16          76
+ #popped           6           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau           7   1.84136844              16
+ #popped           9           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau           9   1.95712209             274
+ #popped          10           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau          11   1.06221759              89         103
+ #popped          12           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau          13   1.20359600             213
+ #popped          14           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau          15  0.843959451             189
+ #popped          16           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau          17  0.693835795              89
+ #popped          19           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau          19  0.370203853             158
+ #popped          20           3
+ #selectset contacts        3058
+ selectset done           3
+ eigen done           3
+ tau          21   9.05286312             113
+ #popped          21           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau          23  0.626660585             168
+ #popped           7           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau          25  0.723821938              26          45          58
+ #popped          26           2
+ #selectset contacts        3058
+ selectset done           2
+ eigen done           2
+ tau          27   1.60723984              26
+ #popped          27           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau          29  0.571698844              45
+ #popped           3           0
+ #selectset contacts        3058
+ selectset done           0
+ eigen done           0
+ tau          31   4.72331905             140         307
+ #popped          32           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau          33   1.70264769             140
+ #popped          34           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau          35  0.626783550             128
+ #popped          33           0
+ #selectset contacts        3058
+ selectset done           0
+ eigen done           0
+ tau          37   1.16770887             243         297
+ #popped          38           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau          39   1.12695527             233         243
+ #popped          40           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau          41  0.542944789             199
+ #popped          43           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau          43   1.35593224             233
+ #popped          44           1
+ #selectset contacts        3058
+ selectset done           1
+ eigen done           1
+ tau          45  0.906827688             223
+ #popped          39           0
+ #selectset contacts        3058
+ selectset done           0
+ eigen done           0
+ tau          47  0.654794872             253
+ #popped          49           0
+ #selectset contacts        3058
+ selectset done           0
+ eigen done           0
+ tau          49   1.21069050             264
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              COMPND   2 MOLECULE: XYLOSE REDUCTASE;                                          SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA TENUIS;                                 AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+           0
+         319
+         319  residues read 1K8C.dssp                                                   
+  grow short strand           4           6
+  grow short strand          12          14
+  grow short strand          18          19
+  grow short strand          42          44
+  exclude short helix          47          49
+  exclude short helix          70          72
+  exclude short helix          81          83
+  grow short strand         186         190
+  grow short strand         210         214
+  exclude short helix         220         223
+  exclude short helix         228         231
+  grow short strand         267         268
+  exclude short helix         275         280
+  exclude short helix         310         313
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  9 10 11 13 14 15 18  8  3  6  4  5  7 12 16 17 19
+   2     1  4  5 16  1  2  9 10 11 13 14 15 18  8  3  6  4  5  7 12
+   3     1 48 49  3 16 17 19
+   4     2  6  7 15  1  2  9 10 11 13 14 15 18  8  3  6  4  5  7
+   5     2  0  0  1 12
+   6     4  8  9 10  1  2  9 10 11 13 14 15 18  8
+   7     4 26 27  5  3  6  4  5  7
+   8     6  0  0  2  1  2
+   9     6 12 13  8  9 10 11 13 14 15 18  8
+  10     0  0  0  8  9 10 11 13 14 15 18  8
+  11     0  0  0  0
+  12     9 14 15  7  9 10 11 13 14 15 18
+  13     9  0  0  1  8
+  14    12 16 17  6  9 10 11 13 14 15
+  15    12  0  0  1 18
+  16    14 20 21  4  9 10 11 13
+  17    14  0  0  2 14 15
+  18     0  0  0  0
+  19     0  0  0  4  9 10 11 13
+  20    16 22 23  2  9 10
+  21    16 24 25  2 11 13
+  22    20  0  0  1  9
+  23    20  0  0  1 10
+  24    21  0  0  1 11
+  25    21  0  0  1 13
+  26     7 28 29  2  3  6
+  27     7 30 31  3  4  5  7
+  28    26  0  0  1  3
+  29    26  0  0  1  6
+  30    27  0  0  2  4  5
+  31    27  0  0  1  7
+  32     0  0  0  0
+  33     0  0  0  3 16 17 19
+  34     0  0  0  0
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  0
+  38     0  0  0  0
+  39     0  0  0  3 16 17 19
+  40     0  0  0  0
+  41     0  0  0  0
+  42     0  0  0  0
+  43     0  0  0  0
+  44     0  0  0  0
+  45     0  0  0  0
+  46     0  0  0  0
+  47     0  0  0  0
+  48     3  0  0  1 16
+  49     3 50 51  2 17 19
+  50    49  0  0  1 17
+  51    49  0  0  1 19
+   1 *   0  2  3 19  1  1 19
+   2 -   1  4  5 16  2  1 15 18 18
+   3 -   1 28 29  3  2 16 17 19 19
+   4 -   2  6  7 15  3  1 11 13 15 18 18
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9 10  4  1  2  8 11 13 15 18 18
+   7 -   4 22 23  5  1  3  7
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  8  3  8 11 13 15 18 18
+  10 -   9 12 13  7  3  9 11 13 15 18 18
+  11 -   9  0  0  1  1  8  8
+  12 -  10 14 15  6  2  9 11 13 15
+  13 -  10  0  0  1  1 18 18
+  14 -  12 16 17  4  2  9 11 13 13
+  15 -  12  0  0  2  1 14 15
+  16 -  14 18 19  2  1  9 10
+  17 -  14 20 21  2  2 11 11 13 13
+  18 -  16  0  0  1  1  9  9
+  19 -  16  0  0  1  1 10 10
+  20 -  17  0  0  1  1 11 11
+  21 -  17  0  0  1  1 13 13
+  22 -   7 24 25  2  2  3  3  6  6
+  23 -   7 26 27  3  2  4  5  7  7
+  24 -  22  0  0  1  1  3  3
+  25 -  22  0  0  1  1  6  6
+  26 -  23  0  0  2  1  4  5
+  27 -  23  0  0  1  1  7  7
+  28 -   3  0  0  1  1 16 16
+  29 -   3 30 31  2  2 17 17 19 19
+  30 -  29  0  0  1  1 17 17
+  31 -  29  0  0  1  1 19 19
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            319
+Total number of atoms read in:              2533
+Total number of ignored atom records:        302
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              COMPND   2 MOLECULE: XYLOSE REDUCTASE;                                          SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA TENUIS;                                 AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+         319  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3055
+ selectset done           0
+ eigen done           0
+ tau           1   2.07488251             188
+ #popped           2           1
+ #selectset contacts        3055
+ selectset done           1
+ eigen done           1
+ tau           3   1.57093120              76
+ #popped           4           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau           5   3.22342682              16
+ #popped           7           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau           7  0.753039300              45          57
+ #popped           8           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau           9  0.599447072              31
+ #popped          11           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau          11  0.544664681              45
+ #popped           5           1
+ #selectset contacts        3055
+ selectset done           1
+ eigen done           1
+ tau          13   1.39369059             114         140
+ #popped          14           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau          15   1.16044247              89         103
+ #popped          16           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau          17  0.913989723             164
+ #popped          18           3
+ #selectset contacts        3055
+ selectset done           3
+ eigen done           3
+ tau          19  0.697419167             114
+ #popped          20           4
+ #selectset contacts        3055
+ selectset done           4
+ eigen done           4
+ tau          21  0.483468920              89
+ #popped          21           3
+ #selectset contacts        3055
+ selectset done           3
+ eigen done           3
+ tau          23  0.760183573             152
+ #popped          19           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped          15           1
+ #selectset contacts        3055
+ selectset done           1
+ eigen done           1
+ tau          25  0.581395328             128
+ #popped           3           0
+ #selectset contacts        3055
+ selectset done           0
+ eigen done           0
+ tau          27   1.88060594             307
+ #popped          28           0
+ #selectset contacts        3055
+ selectset done           0
+ eigen done           0
+ tau          29   2.11024642             270         283
+ #popped          30           0
+ #selectset contacts        3055
+ selectset done           0
+ eigen done           0
+ tau          31   1.18601894             222         232
+ #popped          32           0
+ #selectset contacts        3055
+ selectset done           0
+ eigen done           0
+ tau          33   1.23389828             198         210
+ #popped          34           0
+ #selectset contacts        3055
+ selectset done           0
+ eigen done           0
+ tau          35  0.673175097             270
+ #popped          36           1
+ #selectset contacts        3055
+ selectset done           1
+ eigen done           1
+ tau          37   1.40584135             222         257
+ #popped          38           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau          39  0.803782523             222
+ #popped          40           2
+ #selectset contacts        3055
+ selectset done           2
+ eigen done           2
+ tau          41  0.576638222             198
+ #popped          39           1
+ #selectset contacts        3055
+ selectset done           1
+ eigen done           1
+ tau          43  0.861304104             243
+ #popped          37           0
+ #selectset contacts        3055
+ selectset done           0
+ eigen done           0
+ tau          45   1.10109234             295
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          23-OCT-01   1K8C              COMPND   2 MOLECULE: XYLOSE REDUCTASE;                                          SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA TENUIS;                                 AUTHOR    K.L.KAVANAGH,M.KLIMACEK,B.NIDETZKY,D.K.WILSON                         
+           0
+         319
+         319  residues read 1K8C.dssp                                                   
+  grow short strand           4           6
+  grow short strand          12          14
+  grow short strand          17          19
+  grow short strand          42          44
+  exclude short helix          47          49
+  exclude short helix          70          72
+  exclude short helix          81          83
+  grow short strand         186         190
+  grow short strand         210         214
+  exclude short helix         227         231
+  grow short strand         267         268
+  exclude short helix         275         280
+  exclude short helix         310         313
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  3  4  5  6  7  9 10 11 12 13  8 15 18 16 17 19 14
+   2     1  4  5 13  1  2  3  4  5  6  7  9 10 11 12 13  8
+   3     1 34 35  6 15 18 16 17 19 14
+   4     2  6  7  7  1  2  3  4  5  6  7
+   5     2 16 17  6  9 10 11 12 13  8
+   6     4  0  0  2  1  2
+   7     4 10 11  5  3  4  5  6  7
+   8     0  0  0  5  3  4  5  6  7
+   9     0  0  0  0
+  10     7  0  0  2  3  4
+  11     7 12 13  3  5  6  7
+  12    11  0  0  1  5
+  13    11  0  0  2  6  7
+  14     0  0  0  6  9 10 11 12 13  8
+  15     0  0  0  0
+  16     5 18 19  5  9 10 11 12 13
+  17     5  0  0  1  8
+  18    16 20 21  3  9 10 11
+  19    16  0  0  2 12 13
+  20    18  0  0  1  9
+  21    18 24 25  2 10 11
+  22     0  0  0  0
+  23     0  0  0  1  9
+  24    21  0  0  1 10
+  25    21  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  6 15 18 16 17 19 14
+  29     0  0  0  0
+  30     0  0  0  6 15 18 16 17 19 14
+  31     0  0  0  0
+  32     0  0  0  6 15 18 16 17 19 14
+  33     0  0  0  0
+  34     3 36 37  5 15 18 16 17 19
+  35     3  0  0  1 14
+  36    34 38 39  4 15 18 16 17
+  37    34  0  0  1 19
+  38    36 40 41  2 15 18
+  39    36  0  0  2 16 17
+  40    38  0  0  1 15
+  41    38  0  0  1 18
+  42     0  0  0  0
+  43     0  0  0  1 15
+  44     0  0  0  0
+  45     0  0  0  2 16 17
+  46     0  0  0  1 19
+  47     0  0  0  0
+   1 *   0  2  3 19  1  1 19
+   2 -   1  4  5 13  1  1 13
+   3 -   1 20 21  6  1 14 19
+   4 -   2  6  7  7  1  1  7
+   5 -   2 12 13  6  1  8 13
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  5  1  3  7
+   8 -   7  0  0  2  1  3  4
+   9 -   7 10 11  3  1  5  7
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  2  1  6  7
+  12 -   5 14 15  5  1  9 13
+  13 -   5  0  0  1  1  8  8
+  14 -  12 16 17  3  1  9 11
+  15 -  12  0  0  2  1 12 13
+  16 -  14  0  0  1  1  9  9
+  17 -  14 18 19  2  1 10 11
+  18 -  17  0  0  1  1 10 10
+  19 -  17  0  0  1  1 11 11
+  20 -   3 22 23  5  1 15 19
+  21 -   3  0  0  1  1 14 14
+  22 -  20 24 25  4  1 15 18
+  23 -  20  0  0  1  1 19 19
+  24 -  22 26 27  2  2 15 15 18 18
+  25 -  22  0  0  2  1 16 17
+  26 -  24  0  0  1  1 15 15
+  27 -  24  0  0  1  1 18 18
+
+ CHAIN : 1K8CA
+ CHAIN : 1K8CB
+ CHAIN : 1K8CC
+ CHAIN : 1K8CD
+

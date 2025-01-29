@@ -1,0 +1,39 @@
+# Job: HMG_box
+# Query: 2GZKA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1K99-A  8.0  3.1   75    91   21   MOLECULE: UPSTREAM BINDING FACTOR 1;                                 
+
+# Pairwise alignments
+
+No 1: Query=2GZKA Sbjct=1K99A Z-score=8.0
+
+DSSP  --lLLLL----LLLLLHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHLLHHHHHHH
+Query --vQDRV----KRPMNAFIVWSRDQRRKMALENPRMRNSEISKQLGYQWKMLTEAEKWPF   54
+ident            | |           | | |   | | |    | |    | | |  |   
+Sbjct mkkLKKHpdfpKKPLTPYFRFFMEKRAKYAKLHPEMSNLDLTKILSKKYKELPEKKKMKY   60
+DSSP  lllLLLLllllLLLLLHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHHHHLLLLLHHHH
+
+DSSP  HHHHHHHHHHHHH-HLLLL-----lllLLLLhhhllllllllllllhhhhhhhhhhhhhh
+Query FQEAQKLQAMHRE-KYPNY-----kyrKGETkkkfkdpnapkrppsafflfcseyrpkik  108
+ident  |  |                                                       
+Sbjct IQDFQREKQEFERnLARFRedhpdliqNAKK-----------------------------   91
+DSSP  HHHHHHHHHHHHHhHHHHHhlllllllLLLL-----------------------------
+
+DSSP  hhlllllhhhhhhhhhhhhhhllhhhhhhhhhhhhhhhhhhhhhhhhhhll
+Query gehpglsigdvakklgemwnntaaddkqpyekkaaklkekyekdiaayrak  159
+ident                                                    
+Sbjct ---------------------------------------------------   91
+DSSP  ---------------------------------------------------
+
+
+# Structural equivalences
+   1: 2GZK-A 1K99-A     2 -   5 <=>    4 -   7   (GLN    2  - VAL    5  <=> LEU    4  - HIS    7 )                          
+   1: 2GZK-A 1K99-A     6 -  67 <=>   12 -  73   (LYS    6  - GLU   67  <=> LYS   12  - ARG   73 )                          
+   1: 2GZK-A 1K99-A    68 -  72 <=>   75 -  79   (LYS   68  - TYR   72  <=> LEU   75  - ARG   79 )                          
+   1: 2GZK-A 1K99-A    76 -  79 <=>   88 -  91   (LYS   76  - THR   79  <=> ASN   88  - LYS   91 )                          
+
+# Translation-rotation matrices
+-matrix  "2GZK-A 1K99-A  U(1,.)  -0.726794 -0.067781 -0.683503           12.006141"
+-matrix  "2GZK-A 1K99-A  U(2,.)   0.348719 -0.893740 -0.282177           -2.609015"
+-matrix  "2GZK-A 1K99-A  U(3,.)  -0.591748 -0.443435  0.673201           -8.060920"
+

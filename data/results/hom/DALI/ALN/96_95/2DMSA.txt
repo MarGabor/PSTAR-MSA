@@ -1,0 +1,31 @@
+# Job: hom
+# Query: 2DMSA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3A01-A  7.5  4.4   68    78   32   MOLECULE: HOMEODOMAIN-CONTAINING PROTEIN;                            
+
+# Pairwise alignments
+
+No 1: Query=2DMSA Sbjct=3A01A Z-score=7.5
+
+DSSP  ---------LLLLLLLLLLLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHH
+Query ---------GSSGSSGRRERTTFTRAQLDVLEALFAKTRYPDIFMREEVALKINLPESRV   51
+ident                    || ||| |   ||  | |  |     |   |         |
+Sbjct arrighpyqNRTPPKRKKPRTSFTRIQVAELEKRFHKQKYLASAERAALARGLKMTDAQV   60
+DSSP  lllllllllLLLLLLLLLLLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHLLLLLHHHH
+
+DSSP  HHHHHHHHLH-HHHLLLLllllllllllll
+Query QVWFKNRRAK-CRQQQQQqqnggqsgpssg   80
+ident   || ||| |  ||                
+Sbjct KTWFQNRRTKwRRQTAEE------------   78
+DSSP  HHHHHHHHHHhHHHHLLL------------
+
+
+# Structural equivalences
+   1: 2DMS-A 3A01-A     1 -  61 <=>   10 -  70   (GLY    1  - LYS   61  <=> ASN  179  - LYS  239 )                          
+   1: 2DMS-A 3A01-A    62 -  68 <=>   72 -  78   (CYS   62  - GLN   68  <=> ARG  241  - GLU  247 )                          
+
+# Translation-rotation matrices
+-matrix  "2DMS-A 3A01-A  U(1,.)  -0.329181  0.756949  0.564506           22.410385"
+-matrix  "2DMS-A 3A01-A  U(2,.)   0.293517  0.650235 -0.700744           13.047007"
+-matrix  "2DMS-A 3A01-A  U(3,.)  -0.897490 -0.064980 -0.436223           -7.255206"
+

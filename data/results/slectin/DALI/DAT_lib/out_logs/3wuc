@@ -1,0 +1,295 @@
+A length: 131
+B length: 134
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   43  CA BASP A   6 
+ Alternate location indication is not blank or A, ignore atom:   47  CB BASP A   6 
+ Alternate location indication is not blank or A, ignore atom:   49  CG BASP A   6 
+ Alternate location indication is not blank or A, ignore atom:   51  OD1BASP A   6 
+ Alternate location indication is not blank or A, ignore atom:   53  OD2BASP A   6 
+ Alternate location indication is not blank or A, ignore atom:  297  CA BLEU A  37 
+ Alternate location indication is not blank or A, ignore atom:  301  CB BLEU A  37 
+ Alternate location indication is not blank or A, ignore atom:  303  CG BLEU A  37 
+ Alternate location indication is not blank or A, ignore atom:  305  CD1BLEU A  37 
+ Alternate location indication is not blank or A, ignore atom:  307  CD2BLEU A  37 
+ Alternate location indication is not blank or A, ignore atom:  471  CA BLYS A  58 
+ Alternate location indication is not blank or A, ignore atom:  475  CB BLYS A  58 
+ Alternate location indication is not blank or A, ignore atom:  477  CG BLYS A  58 
+ Alternate location indication is not blank or A, ignore atom:  479  CD BLYS A  58 
+ Alternate location indication is not blank or A, ignore atom:  481  CE BLYS A  58 
+ Alternate location indication is not blank or A, ignore atom:  483  NZ BLYS A  58 
+ Alternate location indication is not blank or A, ignore atom:  907  CA BTHR A 111 
+ Alternate location indication is not blank or A, ignore atom:  911  CB BTHR A 111 
+ Alternate location indication is not blank or A, ignore atom:  913  OG1BTHR A 111 
+ Alternate location indication is not blank or A, ignore atom:  915  CG2BTHR A 111 
+
+Total number of residues read in:            135
+Total number of atoms read in:              1091
+Total number of ignored atom records:        277
+ HEADER    SUGAR BINDING PROTEIN                   23-APR-14   3WUC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.NONAKA,H.YOSHIDA,S.KAMITORI,T.NAKAMURA                              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   23-APR-14   3WUC              COMPND   2 MOLECULE: GALECTIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: XENOPUS LAEVIS;                                 AUTHOR    Y.NONAKA,H.YOSHIDA,S.KAMITORI,T.NAKAMURA                              
+         135  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1180
+ selectset done           0
+ eigen done           0
+ tau           1  0.901881516              24          34          48          62          75          87
+ #popped           2           1
+ #selectset contacts        1180
+ selectset done           1
+ eigen done           1
+ tau           3  0.890847445              24          75
+ #popped           4           2
+ #selectset contacts        1180
+ selectset done           2
+ eigen done           2
+ tau           5  0.292808205             116
+ #popped           6           2
+ #selectset contacts        1180
+ selectset done           2
+ eigen done           2
+ tau           7   3.95894265              12
+ #popped           9           2
+ #selectset contacts        1180
+ selectset done           2
+ eigen done           2
+ tau           9  0.357378066              24
+ #popped          11           2
+ #selectset contacts        1180
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1180
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1180
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   23-APR-14   3WUC              COMPND   2 MOLECULE: GALECTIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: XENOPUS LAEVIS;                                 AUTHOR    Y.NONAKA,H.YOSHIDA,S.KAMITORI,T.NAKAMURA                              
+           0
+         135
+         135  residues read 3WUC.dssp                                                   
+  grow short strand          14          15
+  grow short strand          70          71
+  grow short strand          75          77
+  grow short strand          97         101
+  grow short strand         107         111
+  grow short strand         118         119
+ crowded segment excluded!
+  grow short strand         121         125
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  9 10 11 12 13  4  5  7  6  8
+   2     1  4  5 11  1  2  3  9 10 11 12 13  4  5  7
+   3     1  0  0  2  6  8
+   4     2  6  7  8  1  2  3  9 10 11 12 13
+   5     2  0  0  3  4  5  7
+   6     4  8  9  6  1  2  3  9 10 11
+   7     4  0  0  2 12 13
+   8     6  0  0  1  1
+   9     6 10 11  5  2  3  9 10 11
+  10     9  0  0  2  2  3
+  11     9  0  0  3  9 10 11
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 11  3  1  5  7  7  9 13
+   3 -   1  0  0  2  2  6  6  8  8
+   4 -   2  6  7  8  2  1  3  9 13
+   5 -   2  0  0  3  2  4  5  7  7
+   6 -   4  8  9  6  2  1  3  9 11
+   7 -   4  0  0  2  1 12 13
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  5  2  2  3  9 11
+  10 -   9  0  0  2  1  2  3
+  11 -   9  0  0  3  1  9 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1164  CA BASP B   6 
+ Alternate location indication is not blank or A, ignore atom: 1168  CB BASP B   6 
+ Alternate location indication is not blank or A, ignore atom: 1170  CG BASP B   6 
+ Alternate location indication is not blank or A, ignore atom: 1172  OD1BASP B   6 
+ Alternate location indication is not blank or A, ignore atom: 1174  OD2BASP B   6 
+ Alternate location indication is not blank or A, ignore atom: 1626  CA BLEU B  63 
+ Alternate location indication is not blank or A, ignore atom: 1630  CB BLEU B  63 
+ Alternate location indication is not blank or A, ignore atom: 1632  CG BLEU B  63 
+ Alternate location indication is not blank or A, ignore atom: 1634  CD1BLEU B  63 
+ Alternate location indication is not blank or A, ignore atom: 1636  CD2BLEU B  63 
+ Alternate location indication is not blank or A, ignore atom: 1996  CA BILE B 108 
+ Alternate location indication is not blank or A, ignore atom: 2000  CB BILE B 108 
+ Alternate location indication is not blank or A, ignore atom: 2002  CG1BILE B 108 
+ Alternate location indication is not blank or A, ignore atom: 2004  CG2BILE B 108 
+ Alternate location indication is not blank or A, ignore atom: 2006  CD1BILE B 108 
+
+Total number of residues read in:            137
+Total number of atoms read in:              1101
+Total number of ignored atom records:        283
+ HEADER    SUGAR BINDING PROTEIN                   23-APR-14   3WUC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.NONAKA,H.YOSHIDA,S.KAMITORI,T.NAKAMURA                              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   23-APR-14   3WUC              COMPND   2 MOLECULE: GALECTIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: XENOPUS LAEVIS;                                 AUTHOR    Y.NONAKA,H.YOSHIDA,S.KAMITORI,T.NAKAMURA                              
+         137  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1203
+ selectset done           0
+ eigen done           0
+ tau           1  0.830916166              26          36          50          64          77          89
+ #popped           2           1
+ #selectset contacts        1203
+ selectset done           1
+ eigen done           1
+ tau           3  0.588625073              10
+ #popped           5           1
+ #selectset contacts        1203
+ selectset done           1
+ eigen done           1
+ tau           5  0.873574793              26          77         113         125
+ #popped           6           2
+ #selectset contacts        1203
+ selectset done           2
+ eigen done           2
+ tau           7  0.476682395             113
+ #popped           8           2
+ #selectset contacts        1203
+ selectset done           2
+ eigen done           2
+ tau           9  0.571170866              99
+ #popped          10           2
+ #selectset contacts        1203
+ selectset done           2
+ eigen done           2
+ tau          11  0.264964789              26
+ #popped           7           1
+ #selectset contacts        1203
+ selectset done           1
+ eigen done           1
+ tau          13  0.474683553              77
+ #popped          14           1
+ #selectset contacts        1203
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1203
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   23-APR-14   3WUC              COMPND   2 MOLECULE: GALECTIN;                                                  SOURCE   2 ORGANISM_SCIENTIFIC: XENOPUS LAEVIS;                                 AUTHOR    Y.NONAKA,H.YOSHIDA,S.KAMITORI,T.NAKAMURA                              
+           0
+         137
+         137  residues read 3WUC.dssp                                                   
+  grow short strand          16          17
+  grow short strand          72          73
+  grow short strand          77          79
+  grow short strand          99         103
+  grow short strand         109         113
+  grow short strand         120         121
+ crowded segment excluded!
+  grow short strand         123         127
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  9 10 11 13  4  5  7 12  6  8
+   2     1  4  5 11  1  2  3  9 10 11 13  4  5  7 12
+   3     1  0  0  2  6  8
+   4     2  0  0  1  1
+   5     2  6  7 10  2  3  9 10 11 13  4  5  7 12
+   6     5  8  9  6  2  3  9 10 11 13
+   7     5 14 15  4  4  5  7 12
+   8     6 10 11  5  2  3  9 10 11
+   9     6  0  0  1 13
+  10     8 12 13  3  2  3  9
+  11     8  0  0  2 10 11
+  12    10  0  0  2  2  3
+  13    10  0  0  1  9
+  14     7  0  0  3  4  5  7
+  15     7  0  0  1 12
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 11  3  1  5  7  7  9 13
+   3 -   1  0  0  2  2  6  6  8  8
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7 10  3  2  5  7  7  9 13
+   6 -   5  8  9  6  3  2  3  9 11 13 13
+   7 -   5 14 15  4  3  4  5  7  7 12 12
+   8 -   6 10 11  5  2  2  3  9 11
+   9 -   6  0  0  1  1 13 13
+  10 -   8 12 13  3  2  2  3  9  9
+  11 -   8  0  0  2  1 10 11
+  12 -  10  0  0  2  1  2  3
+  13 -  10  0  0  1  1  9  9
+  14 -   7  0  0  3  2  4  5  7  7
+  15 -   7  0  0  1  1 12 12
+
+ CHAIN : 3WUCA
+ CHAIN : 3WUCB
+

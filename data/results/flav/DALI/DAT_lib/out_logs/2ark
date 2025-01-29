@@ -1,0 +1,947 @@
+A length: 180
+B length: 179
+C length: 179
+D length: 180
+E length: 178
+F length: 178
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            187
+Total number of atoms read in:              1446
+Total number of ignored atom records:        157
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK,MIDWEST  
+  Reading DSSP file
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+         187  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1764
+ selectset done           0
+ eigen done           0
+ tau           1   1.31256902             124         136         170
+ #popped           2           1
+ #selectset contacts        1764
+ selectset done           1
+ eigen done           1
+ tau           3   1.11082590              57         143
+ #popped           4           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau           5   1.36132479              10          33          57
+ #popped           6           3
+ #selectset contacts        1764
+ selectset done           3
+ eigen done           3
+ tau           7  0.387746722              45
+ #popped           8           3
+ #selectset contacts        1764
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau           9   1.26493919              23
+ #popped          11           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau          11   1.11036789              33         153
+ #popped          12           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        1764
+ selectset done           1
+ eigen done           1
+ tau          13   1.20331490              68          89
+ #popped          14           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau          15  0.421948910             101
+ #popped          16           3
+ #selectset contacts        1764
+ selectset done           3
+ eigen done           3
+ tau          17  0.348785847              68
+ #popped          17           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          15           1
+ #selectset contacts        1764
+ selectset done           1
+ eigen done           1
+ tau          19   1.75644445              79
+ #popped           3           0
+ #selectset contacts        1764
+ selectset done           0
+ eigen done           0
+ tau          21   1.10691822             136
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+           0
+         187
+         187  residues read 2ARK.dssp                                                   
+  exclude short helix          47          52
+  exclude short helix          79          81
+  grow short strand         121         122
+  grow short strand         133         135
+  grow short strand         139         142
+  grow short helix         175         181
+  exclude short helix         183         185
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  2 12  4  6  7  8 11  5  9 10 13
+   2     1  4  5 10  1  3  2 12  4  6  7  8 11  5
+   3     1 22 23  3  9 10 13
+   4     2  6  7  4  1  3  2 12
+   5     2 14 15  6  4  6  7  8 11  5
+   6     4  0  0  2  1  3
+   7     4 10 11  2  2 12
+   8     0  0  0  2  1  3
+   9     0  0  0  0
+  10     7  0  0  1  2
+  11     7  0  0  1 12
+  12     0  0  0  1 12
+  13     0  0  0  0
+  14     5 16 17  5  4  6  7  8 11
+  15     5  0  0  1  5
+  16    14 18 19  2  4  6
+  17    14  0  0  3  7  8 11
+  18    16  0  0  1  4
+  19    16  0  0  1  6
+  20     0  0  0  1  5
+  21     0  0  0  0
+  22     3  0  0  2  9 10
+  23     3  0  0  1 13
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 10  2  1  8 11 12
+   3 -   1 16 17  3  2  9 10 13 13
+   4 -   2  6  7  4  2  1  3 12 12
+   5 -   2 10 11  6  2  4  8 11 11
+   6 -   4  0  0  2  2  1  1  3  3
+   7 -   4  8  9  2  2  2  2 12 12
+   8 -   7  0  0  1  1  2  2
+   9 -   7  0  0  1  1 12 12
+  10 -   5 12 13  5  3  4  4  6  8 11 11
+  11 -   5  0  0  1  1  5  5
+  12 -  10 14 15  2  2  4  4  6  6
+  13 -  10  0  0  3  2  7  8 11 11
+  14 -  12  0  0  1  1  4  4
+  15 -  12  0  0  1  1  6  6
+  16 -   3  0  0  2  1  9 10
+  17 -   3  0  0  1  1 13 13
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            186
+Total number of atoms read in:              1440
+Total number of ignored atom records:        202
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK,MIDWEST  
+  Reading DSSP file
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+         186  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1769
+ selectset done           0
+ eigen done           0
+ tau           1   1.51876807             121         136         146
+ #popped           2           1
+ #selectset contacts        1769
+ selectset done           1
+ eigen done           1
+ tau           3  0.922636747              10          20          57          67          92         109         121
+ #popped           4           2
+ #selectset contacts        1769
+ selectset done           2
+ eigen done           2
+ tau           5   1.49150765              57          80
+ #popped           6           2
+ #selectset contacts        1769
+ selectset done           2
+ eigen done           2
+ tau           7   1.33878875              10          33
+ #popped           8           2
+ #selectset contacts        1769
+ selectset done           2
+ eigen done           2
+ tau           9  0.987244427              57
+ #popped          10           3
+ #selectset contacts        1769
+ selectset done           3
+ eigen done           3
+ tau          11  0.362661362              44
+ #popped          12           3
+ #selectset contacts        1769
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          11           2
+ #selectset contacts        1769
+ selectset done           2
+ eigen done           2
+ tau          13  0.527736127              92
+ #popped           5           1
+ #selectset contacts        1769
+ selectset done           1
+ eigen done           1
+ tau          15  0.386543840             109
+ #popped          16           1
+ #selectset contacts        1769
+ selectset done           1
+ eigen done           1
+ tau          17   1.54689085              20
+ #popped          19           1
+ #selectset contacts        1769
+ selectset done           1
+ eigen done           1
+ tau          19  0.391713738              67
+ #popped           3           0
+ #selectset contacts        1769
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+           0
+         186
+         186  residues read 2ARK.dssp                                                   
+  exclude short helix          46          51
+  exclude short helix          79          81
+  grow short strand         120         121
+  grow short strand         132         134
+  grow short strand         138         141
+  grow short helix         173         179
+  exclude short helix         182         184
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  4  6  8  2  5  7 11  9 10 12 13
+   2     1  4  5  9  1  3  4  6  8  2  5  7 11
+   3     1  0  0  4  9 10 12 13
+   4     2  6  7  7  1  3  4  6  8  2  5
+   5     2 16 17  2  7 11
+   6     4  8  9  6  1  3  4  6  8  2
+   7     4  0  0  1  5
+   8     6 10 11  5  1  3  4  6  8
+   9     6  0  0  1  2
+  10     8 12 13  3  1  3  4
+  11     8 14 15  2  6  8
+  12    10  0  0  2  1  3
+  13    10  0  0  1  4
+  14    11  0  0  1  6
+  15    11  0  0  1  8
+  16     5  0  0  1  7
+  17     5  0  0  1 11
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  1  7
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  9  2  1  8 11 11
+   3 -   1  0  0  4  2  9 10 12 13
+   4 -   2  6  7  7  2  1  6  8  8
+   5 -   2 16 17  2  2  7  7 11 11
+   6 -   4  8  9  6  3  1  4  6  6  8  8
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  5  4  1  1  3  4  6  6  8  8
+   9 -   6  0  0  1  1  2  2
+  10 -   8 12 13  3  2  1  1  3  4
+  11 -   8 14 15  2  2  6  6  8  8
+  12 -  10  0  0  2  2  1  1  3  3
+  13 -  10  0  0  1  1  4  4
+  14 -  11  0  0  1  1  6  6
+  15 -  11  0  0  1  1  8  8
+  16 -   5  0  0  1  1  7  7
+  17 -   5  0  0  1  1 11 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            186
+Total number of atoms read in:              1440
+Total number of ignored atom records:        129
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK,MIDWEST  
+  Reading DSSP file
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+         186  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1764
+ selectset done           0
+ eigen done           0
+ tau           1   1.48830068              59          86         100         118
+ #popped           2           1
+ #selectset contacts        1764
+ selectset done           1
+ eigen done           1
+ tau           3   1.04216957             100         136         148
+ #popped           4           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau           5  0.308134615              26
+ #popped           6           3
+ #selectset contacts        1764
+ selectset done           3
+ eigen done           3
+ tau           7   1.39613760              10
+ #popped           7           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau           9   1.35689199              47
+ #popped          10           3
+ #selectset contacts        1764
+ selectset done           3
+ eigen done           3
+ tau          11   2.58019567              36
+ #popped          11           2
+ #selectset contacts        1764
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        1764
+ selectset done           1
+ eigen done           1
+ tau          13  0.724411905             162         176
+ #popped          14           1
+ #selectset contacts        1764
+ selectset done           1
+ eigen done           1
+ tau          15   1.55466175             136         162
+ #popped          16           1
+ #selectset contacts        1764
+ selectset done           1
+ eigen done           1
+ tau          17  0.940122008             136
+ #popped           3           0
+ #selectset contacts        1764
+ selectset done           0
+ eigen done           0
+ tau          19   1.40903640              86
+ #popped          20           0
+ #selectset contacts        1764
+ selectset done           0
+ eigen done           0
+ tau          21   1.45044315              76
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+           0
+         186
+         186  residues read 2ARK.dssp                                                   
+  exclude short helix          45          50
+  exclude short helix          77          80
+  grow short strand         119         120
+  grow short strand         131         133
+  grow short strand         137         140
+  exclude short helix         181         183
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  6 11  8  9 10 12 13  5  7
+   2     1  4  5 11  1  2  3  4  6 11  8  9 10 12 13
+   3     1 20 21  2  5  7
+   4     2  6  7  6  1  2  3  4  6 11
+   5     2 14 15  5  8  9 10 12 13
+   6     4  8  9  2  1  2
+   7     4 10 11  4  3  4  6 11
+   8     6  0  0  1  1
+   9     6  0  0  1  2
+  10     7  0  0  1  3
+  11     7  0  0  3  4  6 11
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     5 16 17  4  8  9 10 12
+  15     5  0  0  1 13
+  16    14  0  0  3  8  9 10
+  17    14  0  0  1 12
+  18     0  0  0  3  8  9 10
+  19     0  0  0  0
+  20     3  0  0  1  5
+  21     3  0  0  1  7
+  22     0  0  0  1  5
+  23     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 11  3  1  4  6  6  8 13
+   3 -   1 16 17  2  2  5  5  7  7
+   4 -   2  6  7  6  3  1  4  6  6 11 11
+   5 -   2 12 13  5  2  8 10 12 13
+   6 -   4  8  9  2  1  1  2
+   7 -   4 10 11  4  3  3  4  6  6 11 11
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  2  2
+  10 -   7  0  0  1  1  3  3
+  11 -   7  0  0  3  3  4  4  6  6 11 11
+  12 -   5 14 15  4  2  8 10 12 12
+  13 -   5  0  0  1  1 13 13
+  14 -  12  0  0  3  1  8 10
+  15 -  12  0  0  1  1 12 12
+  16 -   3  0  0  1  1  5  5
+  17 -   3  0  0  1  1  7  7
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            187
+Total number of atoms read in:              1446
+Total number of ignored atom records:        162
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK,MIDWEST  
+  Reading DSSP file
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+         187  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1748
+ selectset done           0
+ eigen done           0
+ tau           1   1.45036077              67          87
+ #popped           2           1
+ #selectset contacts        1748
+ selectset done           1
+ eigen done           1
+ tau           3   1.36279655             122         136         155
+ #popped           4           2
+ #selectset contacts        1748
+ selectset done           2
+ eigen done           2
+ tau           5  0.708518505             108         122
+ #popped           6           2
+ #selectset contacts        1748
+ selectset done           2
+ eigen done           2
+ tau           7  0.872320592              10          31          57
+ #popped           8           3
+ #selectset contacts        1748
+ selectset done           3
+ eigen done           3
+ tau           9  0.396080106              45
+ #popped          10           3
+ #selectset contacts        1748
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1748
+ selectset done           2
+ eigen done           2
+ tau          11  0.573089719              21
+ #popped          13           2
+ #selectset contacts        1748
+ selectset done           2
+ eigen done           2
+ tau          13   2.05357146              31
+ #popped          15           2
+ #selectset contacts        1748
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        1748
+ selectset done           1
+ eigen done           1
+ tau          15  0.901619732             136
+ #popped          17           1
+ #selectset contacts        1748
+ selectset done           1
+ eigen done           1
+ tau          17   1.68038607             174
+ #popped           3           0
+ #selectset contacts        1748
+ selectset done           0
+ eigen done           0
+ tau          19  0.911327064              77
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+           0
+         187
+         187  residues read 2ARK.dssp                                                   
+  exclude short helix          47          52
+  exclude short helix          80          82
+  grow short strand         121         122
+  grow short strand         133         135
+  grow short strand         139         142
+  grow short helix         174         180
+  exclude short helix         183         185
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  2  4  6 11  7  8  9 10 12 13  5
+   2     1  4  5 12  1  3  2  4  6 11  7  8  9 10 12 13
+   3     1  0  0  1  5
+   4     2  6  7  8  1  3  2  4  6 11  7  8
+   5     2 16 17  4  9 10 12 13
+   6     4  8  9  6  1  3  2  4  6 11
+   7     4  0  0  2  7  8
+   8     6  0  0  2  1  3
+   9     6 14 15  4  2  4  6 11
+  10     0  0  0  2  1  3
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  4  2  4  6 11
+  14     9  0  0  1  2
+  15     9  0  0  3  4  6 11
+  16     5  0  0  2  9 10
+  17     5 18 19  2 12 13
+  18    17  0  0  1 12
+  19    17  0  0  1 13
+  20     0  0  0  1  5
+  21     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 12  2  1  4  6 13
+   3 -   1  0  0  1  1  5  5
+   4 -   2  6  7  8  3  1  4  6  8 11 11
+   5 -   2 12 13  4  2  9 10 12 13
+   6 -   4  8  9  6  3  1  4  6  6 11 11
+   7 -   4  0  0  2  1  7  8
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6 10 11  4  4  2  2  4  4  6  6 11 11
+  10 -   9  0  0  1  1  2  2
+  11 -   9  0  0  3  3  4  4  6  6 11 11
+  12 -   5  0  0  2  1  9 10
+  13 -   5 14 15  2  1 12 13
+  14 -  13  0  0  1  1 12 12
+  15 -  13  0  0  1  1 13 13
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            185
+Total number of atoms read in:              1435
+Total number of ignored atom records:         89
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK,MIDWEST  
+  Reading DSSP file
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+         185  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1745
+ selectset done           0
+ eigen done           0
+ tau           1  0.771659672             161         174
+ #popped           2           0
+ #selectset contacts        1745
+ selectset done           0
+ eigen done           0
+ tau           3   1.44730914             121         133         161
+ #popped           4           1
+ #selectset contacts        1745
+ selectset done           1
+ eigen done           1
+ tau           5   1.31779706              59          85         101         117
+ #popped           6           2
+ #selectset contacts        1745
+ selectset done           2
+ eigen done           2
+ tau           7   1.09246576             142
+ #popped           8           2
+ #selectset contacts        1745
+ selectset done           2
+ eigen done           2
+ tau           9  0.400539249             101
+ #popped          10           2
+ #selectset contacts        1745
+ selectset done           2
+ eigen done           2
+ tau          11  0.298317999              25
+ #popped          12           3
+ #selectset contacts        1745
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          13           2
+ #selectset contacts        1745
+ selectset done           2
+ eigen done           2
+ tau          13   2.79296875              49
+ #popped          14           3
+ #selectset contacts        1745
+ selectset done           3
+ eigen done           3
+ tau          15   1.16487181              35
+ #popped          15           2
+ #selectset contacts        1745
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           7           1
+ #selectset contacts        1745
+ selectset done           1
+ eigen done           1
+ tau          17   1.39319634              75
+ #popped          19           1
+ #selectset contacts        1745
+ selectset done           1
+ eigen done           1
+ tau          19   1.65881073              85
+ #popped           5           0
+ #selectset contacts        1745
+ selectset done           0
+ eigen done           0
+ tau          21  0.741809487             133
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+           0
+         185
+         185  residues read 2ARK.dssp                                                   
+  exclude short helix          44          49
+  exclude short helix          76          79
+  grow short strand         118         119
+  grow short strand         130         132
+  grow short strand         136         139
+  exclude short helix         180         182
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  6  8 11 12  5  7  9 10 13
+   2     1  4  5 12  1  2  3  4  6  8 11 12  5  7  9 10
+   3     1  0  0  1 13
+   4     2  6  7 10  1  2  3  4  6  8 11 12  5  7
+   5     2  0  0  2  9 10
+   6     4  8  9  8  1  2  3  4  6  8 11 12
+   7     4 18 19  2  5  7
+   8     6 10 11  7  1  2  3  4  6  8 11
+   9     6  0  0  1 12
+  10     8 12 13  5  1  2  3  4  6
+  11     8  0  0  2  8 11
+  12    10  0  0  2  1  2
+  13    10 14 15  3  3  4  6
+  14    13  0  0  1  3
+  15    13  0  0  2  4  6
+  16     0  0  0  1  3
+  17     0  0  0  0
+  18     7  0  0  1  5
+  19     7  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  1  7
+  22     0  0  0  2  9 10
+  23     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 12  1  1 12
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7 10  2  1  8 11 12
+   5 -   2  0  0  2  1  9 10
+   6 -   4  8  9  8  4  1  4  6  6  8  8 11 12
+   7 -   4 16 17  2  2  5  5  7  7
+   8 -   6 10 11  7  4  1  4  6  6  8  8 11 11
+   9 -   6  0  0  1  1 12 12
+  10 -   8 12 13  5  2  1  4  6  6
+  11 -   8  0  0  2  2  8  8 11 11
+  12 -  10  0  0  2  1  1  2
+  13 -  10 14 15  3  2  3  4  6  6
+  14 -  13  0  0  1  1  3  3
+  15 -  13  0  0  2  2  4  4  6  6
+  16 -   7  0  0  1  1  5  5
+  17 -   7  0  0  1  1  7  7
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            185
+Total number of atoms read in:              1432
+Total number of ignored atom records:        173
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK,MIDWEST  
+  Reading DSSP file
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+         185  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1756
+ selectset done           0
+ eigen done           0
+ tau           1   1.42010367             120         135         153
+ #popped           2           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau           3   1.12526906              64          89         106         120
+ #popped           4           2
+ #selectset contacts        1756
+ selectset done           2
+ eigen done           2
+ tau           5  0.571608126              43          53
+ #popped           6           2
+ #selectset contacts        1756
+ selectset done           2
+ eigen done           2
+ tau           7  0.673122942              64
+ #popped           8           3
+ #selectset contacts        1756
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1756
+ selectset done           2
+ eigen done           2
+ tau           9  0.501691103             106
+ #popped           5           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau          11   1.69641352              79
+ #popped          13           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1756
+ selectset done           0
+ eigen done           0
+ tau          13   1.03626597             135
+ #popped          15           0
+ #selectset contacts        1756
+ selectset done           0
+ eigen done           0
+ tau          15   1.73318183             170
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ELECTRON TRANSPORT                      19-AUG-05   2ARK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: AQUIFEX AEOLICUS;                               AUTHOR    M.E.CUFF,P.QUARTEY,M.ZHOU,M.CYMBOROWSKI,W.MINOR,A.JOACHIMIAK          
+           0
+         185
+         185  residues read 2ARK.dssp                                                   
+  exclude short helix          40          42
+  exclude short helix          45          50
+  exclude short helix          78          80
+  grow short strand         119         120
+  grow short strand         131         133
+  grow short strand         137         140
+  grow short helix         173         179
+  exclude short helix         181         183
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  6 11  5  7  8  9 10 12 13
+   2     1  4  5  9  1  2  3  4  6 11  5  7  8
+   3     1 14 15  4  9 10 12 13
+   4     2  8  9  6  1  2  3  4  6 11
+   5     2 12 13  3  5  7  8
+   6     0  0  0  6  1  2  3  4  6 11
+   7     0  0  0  0
+   8     4  0  0  4  1  2  3  4
+   9     4 10 11  2  6 11
+  10     9  0  0  1  6
+  11     9  0  0  1 11
+  12     5  0  0  1  5
+  13     5  0  0  2  7  8
+  14     3  0  0  2  9 10
+  15     3 16 17  2 12 13
+  16    15  0  0  1 12
+  17    15  0  0  1 13
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  9  2  1  8 11 11
+   3 -   1 12 13  4  2  9 10 12 13
+   4 -   2  6  7  6  3  1  4  6  6 11 11
+   5 -   2 10 11  3  2  5  5  7  8
+   6 -   4  0  0  4  1  1  4
+   7 -   4  8  9  2  2  6  6 11 11
+   8 -   7  0  0  1  1  6  6
+   9 -   7  0  0  1  1 11 11
+  10 -   5  0  0  1  1  5  5
+  11 -   5  0  0  2  1  7  8
+  12 -   3  0  0  2  1  9 10
+  13 -   3 14 15  2  1 12 13
+  14 -  13  0  0  1  1 12 12
+  15 -  13  0  0  1  1 13 13
+
+ CHAIN : 2ARKA
+ CHAIN : 2ARKB
+ CHAIN : 2ARKC
+ CHAIN : 2ARKD
+ CHAIN : 2ARKE
+ CHAIN : 2ARKF
+

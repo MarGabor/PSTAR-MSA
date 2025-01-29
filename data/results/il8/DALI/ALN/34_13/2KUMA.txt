@@ -1,0 +1,33 @@
+# Job: il8
+# Query: 2KUMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1DON-B  5.3  2.7   63    76   14   MOLECULE: MCP-1;                                                     
+
+# Pairwise alignments
+
+No 1: Query=2KUMA Sbjct=1DONB Z-score=5.3
+
+DSSP  --lllllllLLLLLLLLLLLLhhhHLLLLEEEEELLLLlLLLLEEEEEELL-EEEEELLL
+Query --fllppstACCTQLYRKPLSdklLRKVIQVELQEADGdCHLQAFVLHLAQ-RSICIHPQ   57
+ident           ||        |                  |   |          ||  | 
+Sbjct qpdainapvTCCYNFTNRKIS---VQRLASYRRITSSK-CPKEAVIFKTIVaKEICADPK   56
+DSSP  lllllllleEELLLLLLLLLL---LLLLLEELLLLLLL-LLLLLEEEELLLlLEEEELLL
+
+DSSP  LHHHHHHHHHHHHLHHHllllllllllllll
+Query NPSLSQWFEHQERKLHGtlpklnfgmlrkmg   88
+ident          |                     
+Sbjct QKWVQDSMDHLDKQTQT-----------pkt   76
+DSSP  LLLHHHHHHHHHLLLLL-----------lll
+
+
+# Structural equivalences
+   1: 2KUM-A 1DON-B     8 -  19 <=>   10 -  21   (ALA    8  - SER   19  <=> THR   10  - SER   21 )                          
+   1: 2KUM-A 1DON-B    23 -  36 <=>   22 -  35   (LEU   23  - GLY   36  <=> VAL   22  - LYS   35 )                          
+   1: 2KUM-A 1DON-B    38 -  49 <=>   36 -  47   (CYS   38  - GLN   49  <=> CYS   36  - VAL   47 )                          
+   1: 2KUM-A 1DON-B    50 -  74 <=>   49 -  73   (ARG   50  - GLY   74  <=> LYS   49  - THR   73 )                          
+
+# Translation-rotation matrices
+-matrix  "2KUM-A 1DON-B  U(1,.)   0.482896 -0.245151  0.840662          -19.219263"
+-matrix  "2KUM-A 1DON-B  U(2,.)   0.480778  0.876602 -0.020539          -30.058094"
+-matrix  "2KUM-A 1DON-B  U(3,.)  -0.731891  0.414090  0.541171           54.007633"
+

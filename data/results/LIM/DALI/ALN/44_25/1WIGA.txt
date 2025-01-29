@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 1WIGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X6A-A  6.5  4.0   67    81   24   MOLECULE: LIM DOMAIN KINASE 2;                                       
+
+# Pairwise alignments
+
+No 1: Query=1WIGA Sbjct=1X6AA Z-score=6.5
+
+DSSP  ----------LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLEEE
+Query ----------GSSGSSGCDSCEKYITGRVLEAGEKHYHPSCALCVRCGQMFAEGEEMYLQ   50
+ident                  |  |    ||    |||  ||| |  |  |      |    | 
+Sbjct gssgssgkdyWGKFGEFCHGCSLLMTGPFMVAGEFKYHPECFACMSCKVIIEDGDAYALV   60
+DSSP  llllllllllLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLEEEL
+
+DSSP  -LLEEELLLHHHHLLLLLllllll
+Query -GSSIWHPACRQAARTEDsgpssg   73
+ident          |              
+Sbjct qHATLYCGKCHNEVVSGP---ssg   81
+DSSP  lLLLEEEHHHHHHHHLLL---lll
+
+
+# Structural equivalences
+   1: 1WIG-A 1X6A-A     1 -  50 <=>   11 -  60   (GLY    1  - GLN   50  <=> TRP   11  - VAL   60 )                          
+   1: 1WIG-A 1X6A-A    51 -  67 <=>   62 -  78   (GLY   51  - ASP   67  <=> HIS   62  - PRO   78 )                          
+
+# Translation-rotation matrices
+-matrix  "1WIG-A 1X6A-A  U(1,.)   0.195923 -0.780532 -0.593619            0.709561"
+-matrix  "1WIG-A 1X6A-A  U(2,.)   0.080177 -0.590574  0.802991            3.028735"
+-matrix  "1WIG-A 1X6A-A  U(3,.)  -0.977336 -0.204919 -0.053126           -0.805538"
+

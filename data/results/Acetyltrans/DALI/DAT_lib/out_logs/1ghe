@@ -1,0 +1,299 @@
+A length: 166
+B length: 167
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            170
+Total number of atoms read in:              1299
+Total number of ignored atom records:        217
+ HEADER    TRANSFERASE                             13-DEC-00   1GHE              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.HE,Y.DING,M.BARTLAM,F.SUN,Y.LE,X.QIN,H.TANG,R.ZHANG,A.JOACHIMIAK,   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-DEC-00   1GHE              COMPND   2 MOLECULE: ACETYLTRANSFERASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS SYRINGAE PV. TABACI;                AUTHOR    H.HE,Y.DING,M.BARTLAM,F.SUN,Y.LE,X.QIN,H.TANG,R.ZHANG,A.JOAC          
+         170  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1562
+ selectset done           0
+ eigen done           0
+ tau           1   1.93077266              75          90         102
+ #popped           2           1
+ #selectset contacts        1562
+ selectset done           1
+ eigen done           1
+ tau           3   1.60679615              14          59
+ #popped           4           2
+ #selectset contacts        1562
+ selectset done           2
+ eigen done           2
+ tau           5  0.743001044              75
+ #popped           6           2
+ #selectset contacts        1562
+ selectset done           2
+ eigen done           2
+ tau           7  0.483432412              14
+ #popped           5           1
+ #selectset contacts        1562
+ selectset done           1
+ eigen done           1
+ tau           9   1.65124619              49
+ #popped          10           1
+ #selectset contacts        1562
+ selectset done           1
+ eigen done           1
+ tau          11  0.947005808              34
+ #popped          12           1
+ #selectset contacts        1562
+ selectset done           1
+ eigen done           1
+ tau          13  0.607545018              24
+ #popped           3           0
+ #selectset contacts        1562
+ selectset done           0
+ eigen done           0
+ tau          15   1.63791883              90         120
+ #popped          16           0
+ #selectset contacts        1562
+ selectset done           0
+ eigen done           0
+ tau          17  0.523665249             130
+ #popped          18           1
+ #selectset contacts        1562
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1562
+ selectset done           0
+ eigen done           0
+ tau          19   1.18311405             142
+ #popped          21           0
+ #selectset contacts        1562
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-DEC-00   1GHE              COMPND   2 MOLECULE: ACETYLTRANSFERASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS SYRINGAE PV. TABACI;                AUTHOR    H.HE,Y.DING,M.BARTLAM,F.SUN,Y.LE,X.QIN,H.TANG,R.ZHANG,A.JOAC          
+           0
+         170
+         170  residues read 1GHE.dssp                                                   
+  grow short strand           2           5
+  exclude short helix          51          56
+  exclude short helix          97          99
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  2  3  8  9 10 11  7
+   2     1  4  5  6  1  4  5  6  2  3
+   3     1 16 17  5  8  9 10 11  7
+   4     2  6  7  4  1  4  5  6
+   5     2 12 13  2  2  3
+   6     4  8  9  3  1  4  5
+   7     4  0  0  1  6
+   8     6  0  0  1  1
+   9     6  0  0  2  4  5
+  10     0  0  0  2  2  3
+  11     0  0  0  0
+  12     5  0  0  1  2
+  13     5  0  0  1  3
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     3 18 19  4  8  9 10 11
+  17     3  0  0  1  7
+  18    16  0  0  1  8
+  19    16 20 21  3  9 10 11
+  20    19  0  0  1  9
+  21    19  0  0  2 10 11
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  1  1  6
+   3 -   1 12 13  5  1  7 11
+   4 -   2  6  7  4  2  1  1  4  6
+   5 -   2 10 11  2  1  2  3
+   6 -   4  8  9  3  2  1  1  4  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  4  5
+  10 -   5  0  0  1  1  2  2
+  11 -   5  0  0  1  1  3  3
+  12 -   3 14 15  4  1  8 11
+  13 -   3  0  0  1  1  7  7
+  14 -  12  0  0  1  1  8  8
+  15 -  12 16 17  3  1  9 11
+  16 -  15  0  0  1  1  9  9
+  17 -  15  0  0  2  1 10 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            171
+Total number of atoms read in:              1309
+Total number of ignored atom records:        209
+ HEADER    TRANSFERASE                             13-DEC-00   1GHE              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.HE,Y.DING,M.BARTLAM,F.SUN,Y.LE,X.QIN,H.TANG,R.ZHANG,A.JOACHIMIAK,   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-DEC-00   1GHE              COMPND   2 MOLECULE: ACETYLTRANSFERASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS SYRINGAE PV. TABACI;                AUTHOR    H.HE,Y.DING,M.BARTLAM,F.SUN,Y.LE,X.QIN,H.TANG,R.ZHANG,A.JOAC          
+         171  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1556
+ selectset done           0
+ eigen done           0
+ tau           1   2.04220176              76          91         103
+ #popped           2           1
+ #selectset contacts        1556
+ selectset done           1
+ eigen done           1
+ tau           3   1.44593251              15          50
+ #popped           4           2
+ #selectset contacts        1556
+ selectset done           2
+ eigen done           2
+ tau           5   1.67567575              15          60
+ #popped           6           2
+ #selectset contacts        1556
+ selectset done           2
+ eigen done           2
+ tau           7  0.768594980              76
+ #popped           8           2
+ #selectset contacts        1556
+ selectset done           2
+ eigen done           2
+ tau           9  0.449158490              15
+ #popped           5           1
+ #selectset contacts        1556
+ selectset done           1
+ eigen done           1
+ tau          11  0.805169284              39
+ #popped          12           1
+ #selectset contacts        1556
+ selectset done           1
+ eigen done           1
+ tau          13   1.03474581              29
+ #popped           3           0
+ #selectset contacts        1556
+ selectset done           0
+ eigen done           0
+ tau          15   1.26534593             126
+ #popped          16           1
+ #selectset contacts        1556
+ selectset done           1
+ eigen done           1
+ tau          17   1.30709088              91         115
+ #popped          18           1
+ #selectset contacts        1556
+ selectset done           1
+ eigen done           1
+ tau          19  0.430196851              91
+ #popped          17           0
+ #selectset contacts        1556
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-DEC-00   1GHE              COMPND   2 MOLECULE: ACETYLTRANSFERASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS SYRINGAE PV. TABACI;                AUTHOR    H.HE,Y.DING,M.BARTLAM,F.SUN,Y.LE,X.QIN,H.TANG,R.ZHANG,A.JOAC          
+           0
+         171
+         171  residues read 1GHE.dssp                                                   
+  grow short strand           3           7
+  exclude short helix          98         100
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  2  3  7  8  9 10 11
+   2     1  4  5  6  1  4  5  6  2  3
+   3     1 16 17  5  7  8  9 10 11
+   4     2  8  9  4  1  4  5  6
+   5     2 12 13  2  2  3
+   6     0  0  0  4  1  4  5  6
+   7     0  0  0  0
+   8     4 10 11  3  1  4  5
+   9     4  0  0  1  6
+  10     8  0  0  1  1
+  11     8  0  0  2  4  5
+  12     5  0  0  1  2
+  13     5  0  0  1  3
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     3  0  0  1  7
+  17     3  0  0  4  8  9 10 11
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  1  1  6
+   3 -   1 12 13  5  1  7 11
+   4 -   2  6  7  4  2  1  1  4  6
+   5 -   2 10 11  2  1  2  3
+   6 -   4  8  9  3  2  1  1  4  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  4  5
+  10 -   5  0  0  1  1  2  2
+  11 -   5  0  0  1  1  3  3
+  12 -   3  0  0  1  1  7  7
+  13 -   3  0  0  4  1  8 11
+
+ CHAIN : 1GHEA
+ CHAIN : 1GHEB
+

@@ -1,0 +1,33 @@
+# Job: scorptoxin
+# Query: 1T1TA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1LQH-A  6.9  2.5   59    65   39   MOLECULE: INSECT TOXIN ALPHA;                                        
+
+# Pairwise alignments
+
+No 1: Query=1T1TA Sbjct=1LQHA Z-score=6.9
+
+DSSP  -LEEELLLLLLLlllLLLL-LLHHHHHHHHHLLLLEEEELLL---LLLEEEEEELLLLLL
+Query -KIDGYPVDYWNckrICWY-NNKYCNDLCKGLKADSGYCWGW---TLSCYCQGLPDNARI   55
+ident    | |     |           ||| ||    | ||||         | |  ||||  |
+Sbjct mVRDAYIAKNYN--cVYECfRDAYCNELCTKNGASSGYCQWAgkyGNACWCYALPDNVPI   58
+DSSP  lLEEEELLLLLL--lLLLLlLHHHHHHHHHHHLLLEEEEELLlllLLEEEEEEELLLLLL
+
+DSSP  LLLLLLL
+Query KRSGRCR   62
+ident    | ||
+Sbjct RVPGKCR   65
+DSSP  LLLLLLL
+
+
+# Structural equivalences
+   1: 1T1T-A 1LQH-A     1 -  11 <=>    2 -  12   (LYS    1  - ASN   11  <=> VAL    2  - ASN   12 )                          
+   1: 1T1T-A 1LQH-A    15 -  18 <=>   14 -  17   (ILE   15  - TYR   18  <=> VAL   14  - CYS   17 )                          
+   1: 1T1T-A 1LQH-A    19 -  40 <=>   19 -  40   (ASN   19  - TRP   40  <=> ARG   19  - ALA   40 )                          
+   1: 1T1T-A 1LQH-A    41 -  62 <=>   44 -  65   (THR   41  - ARG   62  <=> GLY   44  - ARG   65 )                          
+
+# Translation-rotation matrices
+-matrix  "1T1T-A 1LQH-A  U(1,.)   0.053948 -0.997802  0.038469            0.055427"
+-matrix  "1T1T-A 1LQH-A  U(2,.)  -0.905567 -0.032655  0.422945           -0.488403"
+-matrix  "1T1T-A 1LQH-A  U(3,.)  -0.420760 -0.057653 -0.905338           -0.433094"
+

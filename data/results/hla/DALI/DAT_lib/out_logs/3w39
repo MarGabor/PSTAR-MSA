@@ -1,0 +1,581 @@
+A length: 277
+B length: 99
+C length: 8
+D length: 277
+E length: 99
+F length: 8
+# 4 chains A B D E
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            277
+Total number of atoms read in:              2267
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.L.BRUMME, 
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-52 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.          
+         277  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2439
+ selectset done           0
+ eigen done           0
+ tau           1   11.1358633             181
+ #popped           2           1
+ #selectset contacts        2439
+ selectset done           1
+ eigen done           1
+ tau           3   1.12081563              10          24          71          97         116         151
+ #popped           4           2
+ #selectset contacts        2439
+ selectset done           2
+ eigen done           2
+ tau           5   1.78006876             116         162
+ #popped           6           2
+ #selectset contacts        2439
+ selectset done           2
+ eigen done           2
+ tau           7   1.28948522              35          71
+ #popped           8           3
+ #selectset contacts        2439
+ selectset done           3
+ eigen done           3
+ tau           9   2.07624817             116
+ #popped          10           3
+ #selectset contacts        2439
+ selectset done           3
+ eigen done           3
+ tau          11  0.206654370              25
+ #popped          13           3
+ #selectset contacts        2439
+ selectset done           3
+ eigen done           3
+ tau          13   999.999023              35
+ #popped           9           2
+ #selectset contacts        2439
+ selectset done           2
+ eigen done           2
+ tau          15  0.858756542              47          57
+ #popped          16           2
+ #selectset contacts        2439
+ selectset done           2
+ eigen done           2
+ tau          17   1.16234553              47
+ #popped           5           1
+ #selectset contacts        2439
+ selectset done           1
+ eigen done           1
+ tau          19   1.16960001             135
+ #popped          20           1
+ #selectset contacts        2439
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           3           0
+ #selectset contacts        2439
+ selectset done           0
+ eigen done           0
+ tau          21  0.764315784             205         215         232         244
+ #popped          22           1
+ #selectset contacts        2439
+ selectset done           1
+ eigen done           1
+ tau          23  0.564364552             257
+ #popped          24           2
+ #selectset contacts        2439
+ selectset done           2
+ eigen done           2
+ tau          25  0.625966668             205
+ #popped          26           3
+ #selectset contacts        2439
+ selectset done           3
+ eigen done           3
+ tau          27   0.00000000    
+ #popped          27           2
+ #selectset contacts        2439
+ selectset done           2
+ eigen done           2
+ tau          27  0.454865783             232
+ #popped          25           1
+ #selectset contacts        2439
+ selectset done           1
+ eigen done           1
+ tau          29  0.624221444             267
+ #popped          23           0
+ #selectset contacts        2439
+ selectset done           0
+ eigen done           0
+ tau          31  0.403816938             215
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-52 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.          
+           0
+         277
+         277  residues read 3W39.dssp                                                   
+  exclude short helix         177         180
+  exclude short helix         226         228
+  grow short strand         229         231
+  grow short strand         235         236
+  exclude short helix         254         257
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  3  5  6 10  9  4  7  8 11 12 13 14 16 17 15
+   2     1  4  5 10  1  2  3  5  6 10  9  4  7  8
+   3     1 22 23  7 11 12 13 14 16 17 15
+   4     2  6  7  7  1  2  3  5  6 10  9
+   5     2 20 21  3  4  7  8
+   6     4 10 11  6  1  2  3  5  6 10
+   7     4  0  0  1  9
+   8     0  0  0  6  1  2  3  5  6 10
+   9     0  0  0  0
+  10     6 12 13  5  1  2  3  5  6
+  11     6  0  0  1 10
+  12    10  0  0  2  1  2
+  13    10 14 15  3  3  5  6
+  14    13  0  0  1  3
+  15    13  0  0  2  5  6
+  16     0  0  0  0
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  0
+  20     5  0  0  2  4  7
+  21     5  0  0  1  8
+  22     3 24 25  6 11 12 13 14 16 17
+  23     3  0  0  1 15
+  24    22 26 27  5 11 12 13 14 16
+  25    22  0  0  1 17
+  26    24  0  0  2 11 12
+  27    24 28 29  3 13 14 16
+  28    27  0  0  2 13 14
+  29    27  0  0  1 16
+  30     0  0  0  1 17
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 15
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5 10  1  1 10
+   3 *   1 16 17  7  1 11 17
+   4 -   2  6  7  7  3  1  3  5  6  9 10
+   5 -   2 14 15  3  2  4  4  7  8
+   6 -   4  8  9  6  3  1  3  5  6 10 10
+   7 -   4  0  0  1  1  9  9
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1 10 10
+  10 -   8  0  0  2  1  1  2
+  11 -   8 12 13  3  2  3  3  5  6
+  12 -  11  0  0  1  1  3  3
+  13 -  11  0  0  2  1  5  6
+  14 -   5  0  0  2  2  4  4  7  7
+  15 -   5  0  0  1  1  8  8
+  16 -   3 18 19  6  2 11 14 16 17
+  17 -   3  0  0  1  1 15 15
+  18 -  16 20 21  5  2 11 14 16 16
+  19 -  16  0  0  1  1 17 17
+  20 -  18  0  0  2  1 11 12
+  21 -  18 22 23  3  2 13 14 16 16
+  22 -  21  0  0  2  1 13 14
+  23 -  21  0  0  1  1 16 16
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               829
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.L.BRUMME, 
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-52 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.          
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         791
+ selectset done           0
+ eigen done           0
+ tau           1  0.805676162              10          23          38          49          67
+ #popped           2           1
+ #selectset contacts         791
+ selectset done           1
+ eigen done           1
+ tau           3   0.00000000    
+ #popped           3           0
+ #selectset contacts         791
+ selectset done           0
+ eigen done           0
+ tau           3  0.754473984              23          49
+ #popped           4           0
+ #selectset contacts         791
+ selectset done           0
+ eigen done           0
+ tau           5   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-52 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.          
+           0
+          99
+          99  residues read 3W39.dssp                                                   
+  grow short strand          44          45
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  5  6  7  8  9  4
+   2     1  0  0  6  1  2  3  5  6  7
+   3     1  4  5  3  8  9  4
+   4     3  0  0  2  8  9
+   5     3  0  0  1  4
+   1 *   0  2  3  9  1  1  9
+   2 -   1  0  0  6  2  1  3  5  7
+   3 -   1  4  5  3  2  4  4  8  9
+   4 -   3  0  0  2  1  8  9
+   5 -   3  0  0  1  1  4  4
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            277
+Total number of atoms read in:              2267
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.L.BRUMME, 
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-52 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.          
+         277  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2423
+ selectset done           0
+ eigen done           0
+ tau           1   11.3833265             181
+ #popped           2           1
+ #selectset contacts        2423
+ selectset done           1
+ eigen done           1
+ tau           3   1.24859262              11          21          75          97         117         152
+ #popped           4           2
+ #selectset contacts        2423
+ selectset done           2
+ eigen done           2
+ tau           5   1.63122106             117
+ #popped           6           3
+ #selectset contacts        2423
+ selectset done           3
+ eigen done           3
+ tau           7   1.03362513              38          75
+ #popped           8           4
+ #selectset contacts        2423
+ selectset done           4
+ eigen done           4
+ tau           9  0.492424250              38
+ #popped          10           5
+ #selectset contacts        2423
+ selectset done           5
+ eigen done           5
+ tau          11   0.00000000    
+ #popped          11           4
+ #selectset contacts        2423
+ selectset done           4
+ eigen done           4
+ tau          11  0.195383325             107
+ #popped           9           3
+ #selectset contacts        2423
+ selectset done           3
+ eigen done           3
+ tau          13   1.19020629              56
+ #popped           7           2
+ #selectset contacts        2423
+ selectset done           2
+ eigen done           2
+ tau          15   1.45150280             167
+ #popped           5           1
+ #selectset contacts        2423
+ selectset done           1
+ eigen done           1
+ tau          17   1.26168954             135
+ #popped          18           1
+ #selectset contacts        2423
+ selectset done           1
+ eigen done           1
+ tau          19  0.759780765              21
+ #popped          21           1
+ #selectset contacts        2423
+ selectset done           1
+ eigen done           1
+ tau          21   1.30212092              87
+ #popped          23           1
+ #selectset contacts        2423
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2423
+ selectset done           0
+ eigen done           0
+ tau          23  0.741492748             191         202         218         229         247
+ #popped          24           1
+ #selectset contacts        2423
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          25           0
+ #selectset contacts        2423
+ selectset done           0
+ eigen done           0
+ tau          25   1.45358241             258
+ #popped          26           0
+ #selectset contacts        2423
+ selectset done           0
+ eigen done           0
+ tau          27  0.702765584             202
+ #popped          29           0
+ #selectset contacts        2423
+ selectset done           0
+ eigen done           0
+ tau          29  0.614563704             229
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-52 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.          
+           0
+         277
+         277  residues read 3W39.dssp                                                   
+  grow short strand          47          48
+  grow short strand         122         126
+  exclude short helix         177         180
+  exclude short helix         226         228
+  grow short strand         229         231
+  grow short strand         235         236
+  exclude short helix         254         257
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  3  6  7  4  5 10 11  8  9 12 13 14 15 16 17 18
+   2     1  4  5 11  1  2  3  6  7  4  5 10 11  8  9
+   3     1 24 25  7 12 13 14 15 16 17 18
+   4     2  6  7  9  1  2  3  6  7  4  5 10 11
+   5     2 18 19  2  8  9
+   6     4  8  9  7  1  2  3  6  7  4  5
+   7     4 16 17  2 10 11
+   8     6 10 11  5  1  2  3  6  7
+   9     6 14 15  2  4  5
+  10     8  0  0  3  1  2  3
+  11     8 12 13  2  6  7
+  12    11  0  0  1  6
+  13    11  0  0  1  7
+  14     9  0  0  1  4
+  15     9  0  0  1  5
+  16     7  0  0  1 10
+  17     7  0  0  1 11
+  18     5  0  0  1  8
+  19     5  0  0  1  9
+  20     0  0  0  0
+  21     0  0  0  1  8
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     3  0  0  6 12 13 14 15 16 17
+  25     3  0  0  1 18
+  26     0  0  0  0
+  27     0  0  0  1 18
+  28     0  0  0  0
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5 11  1  1 11
+   3 *   1 20 21  7  1 12 18
+   4 -   2  6  7  9  2  1  7 10 11
+   5 -   2 18 19  2  1  8  9
+   6 -   4  8  9  7  1  1  7
+   7 -   4 16 17  2  1 10 11
+   8 -   6 10 11  5  2  1  3  6  7
+   9 -   6 14 15  2  1  4  5
+  10 -   8  0  0  3  1  1  3
+  11 -   8 12 13  2  1  6  7
+  12 -  11  0  0  1  1  6  6
+  13 -  11  0  0  1  1  7  7
+  14 -   9  0  0  1  1  4  4
+  15 -   9  0  0  1  1  5  5
+  16 -   7  0  0  1  1 10 10
+  17 -   7  0  0  1  1 11 11
+  18 -   5  0  0  1  1  8  8
+  19 -   5  0  0  1  1  9  9
+  20 -   3  0  0  6  1 12 17
+  21 -   3  0  0  1  1 18 18
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               829
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.L.BRUMME, 
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-52 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.          
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         793
+ selectset done           0
+ eigen done           0
+ tau           1  0.815305710              10          23          38          49          67
+ #popped           2           1
+ #selectset contacts         793
+ selectset done           1
+ eigen done           1
+ tau           3   0.00000000    
+ #popped           3           0
+ #selectset contacts         793
+ selectset done           0
+ eigen done           0
+ tau           3  0.795928597              23          49
+ #popped           4           0
+ #selectset contacts         793
+ selectset done           0
+ eigen done           0
+ tau           5   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           13-DEC-12   3W39              COMPND   2 MOLECULE: HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, B-52 ALPH          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Y.YAGITA,N.KUSE,K.KUROKI,H.GATANAGA,J.M.CARLSON,T.CHIKATA,Z.          
+           0
+          99
+          99  residues read 3W39.dssp                                                   
+  grow short strand          44          45
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  5  6  7  8  9  4
+   2     1  0  0  6  1  2  3  5  6  7
+   3     1  4  5  3  8  9  4
+   4     3  0  0  2  8  9
+   5     3  0  0  1  4
+   1 *   0  2  3  9  1  1  9
+   2 -   1  0  0  6  2  1  3  5  7
+   3 -   1  4  5  3  2  4  4  8  9
+   4 -   3  0  0  2  1  8  9
+   5 -   3  0  0  1  1  4  4
+
+ CHAIN : 3W39A
+ CHAIN : 3W39B
+ CHAIN : 3W39D
+ CHAIN : 3W39E
+

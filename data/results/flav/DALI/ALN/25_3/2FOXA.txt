@@ -1,0 +1,40 @@
+# Job: flav
+# Query: 2FOXA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6GAQ-B 20.9  1.8  137   146   31   MOLECULE: FLAVODOXIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=2FOXA Sbjct=6GAQB Z-score=20.9
+
+DSSP  --LEEEEELLLLHHHHHHHHHHHHHHHLLLLLEEEEHHHLLHHHHLLLLEEEEEELLLLL
+Query --MKIVYWSGTGNTEKMAELIAKGIIESGKDVNTINVSDVNIDELLNEDILILGCSAMGD   58
+ident     | | |  ||||  | ||          |           |||  |  |||    ||
+Sbjct akILIAYASMSGNTESIADLIKVSLDAFDHEVVLQEMEGMDAEELLAYDGIILGSYTWGD   60
+DSSP  leEEEEEELLLLHHHHHHHHHHHHHHHLLLEEEEEELLLLLHHHHHHLLEEEEEELLLHH
+
+DSSP  LLLLLlLHHHHHHHHLLL-LLLLEEEEEEEELL---LLLHHHHHHHHHHHHLLLEELLLL
+Query EVLEEsEFEPFIEEISTK-ISGKKVALFGSYGW---GDGKWMRDFEERMNGYGCVVVETP  114
+ident   |   | | |          ||||| |||              ||||    |   |   
+Sbjct GELPF-EAEDFHDDLENIdLAGKKVAVFGSGDTayeLFCEAVTIFEERLVERGAELVQEG  119
+DSSP  HLLLL-LHHHHHHLLLLLlLLLLEEEEEEEELLlllLLLHHHHHHHHHHHLLLLEELLLL
+
+DSSP  EEEELLLLL--LHHHHHHHHHHHLLL-
+Query LIVQNEPDE--AEQDCIEFGKKIANI-  138
+ident |     |        |  |    |   
+Sbjct LKIELAPEDeeDVEKCSNFAIAFAEKf  146
+DSSP  EEEELLLLLhhHHHHHHHHHHHHHHLl
+
+
+# Structural equivalences
+   1: 2FOX-A 6GAQ-B     1 -  63 <=>    3 -  65   (MET    1  - GLU   63  <=> ILE   11  - PHE   73 )                          
+   1: 2FOX-A 6GAQ-B    65 -  76 <=>   66 -  77   (GLU   65  - LYS   76  <=> GLU   74  - ILE   85 )                          
+   1: 2FOX-A 6GAQ-B    77 -  90 <=>   79 -  92   (ILE   77  - TRP   90  <=> LEU   87  - THR  100 )                          
+   1: 2FOX-A 6GAQ-B    91 - 123 <=>   96 - 128   (GLY   91  - GLU  123  <=> LEU  104  - ASP  136 )                          
+   1: 2FOX-A 6GAQ-B   124 - 138 <=>  131 - 145   (ALA  124  - ILE  138  <=> ASP  139  - LYS  153 )                          
+
+# Translation-rotation matrices
+-matrix  "2FOX-A 6GAQ-B  U(1,.)   0.535587 -0.795757  0.282696            5.798070"
+-matrix  "2FOX-A 6GAQ-B  U(2,.)  -0.651700 -0.176580  0.737636            9.165657"
+-matrix  "2FOX-A 6GAQ-B  U(3,.)  -0.537060 -0.579301 -0.613169          -31.722616"
+

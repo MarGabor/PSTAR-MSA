@@ -1,0 +1,38 @@
+# Job: ghf22
+# Query: 2EQLA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4EOF-A 22.9  1.1  128   131   49   MOLECULE: LYSOZYME;                                                  
+
+# Pairwise alignments
+
+No 1: Query=2EQLA Sbjct=4EOFA Z-score=22.9
+
+DSSP  LLLLHHHHHHHHHLLLLLLHHHLLHHHHHHHHHHHHLLLLLLEEELLlLLLEEELLLLEE
+Query KVFSKCELAHKLKAQEMDGFGGYSLANWVCMAEYESNFNTRAFNGKNaNGSSDYGLFQLN   60
+ident |||  ||||   |    |   |||| |||| |  |||||| | |     || |||  | |
+Sbjct KVFGRCELAAAMKRHGLDNYRGYSLGNWVCAAKFESNFNTQATNRNT-DGSTDYGILQIN   59
+DSSP  LLLLHHHHHHHHHHLLLLLLLLLLHHHHHHHHHHHHLLLLLLEEELL-LLLEEELLLLEE
+
+DSSP  HHHHEELLL-LLLLLLLLEEHHHHLLLLLHHHHHHHHHHLLLLLHHHHLHHHHHHLLLLL
+Query NKWWCKDNK-RSSSNACNIMCSKLLDENIDDDISCAKRVVRDPKGMSAWKAWVKHCKDKD  119
+ident   ||| |     | | ||| || ||   |     |||  | |  || || ||   ||  |
+Sbjct SRWWCNDGRtPGSRNLCNIPCSALLSSDITASVNCAKKIVSDGNGMNAWVAWRNRCKGTD  119
+DSSP  LLLLLLLLLlLLLLLLLLLLHHHHHLLLLHHHHHHHHHHHHLLLHHHHLHHHHHHLLLLL
+
+DSSP  LLLLLLLLLL--
+Query LSEYLASCNL--  129
+ident        | |  
+Sbjct VQAWIRGCRLrr  131
+DSSP  HHHHHLLLLLll
+
+
+# Structural equivalences
+   1: 2EQL-A 4EOF-A     1 -  47 <=>    1 -  47   (LYS    1  - ASN   47  <=> LYS    1  - THR   47 )                          
+   1: 2EQL-A 4EOF-A    49 -  69 <=>   48 -  68   (ASN   49  - LYS   69  <=> ASP   48  - ARG   68 )                          
+   1: 2EQL-A 4EOF-A    70 - 129 <=>   70 - 129   (ARG   70  - LEU  129  <=> PRO   70  - LEU  129 )                          
+
+# Translation-rotation matrices
+-matrix  "2EQL-A 4EOF-A  U(1,.)  -0.045508 -0.974941 -0.217758           35.550255"
+-matrix  "2EQL-A 4EOF-A  U(2,.)   0.998611 -0.050194  0.016034            0.660937"
+-matrix  "2EQL-A 4EOF-A  U(3,.)  -0.026562 -0.216725  0.975871           38.056225"
+

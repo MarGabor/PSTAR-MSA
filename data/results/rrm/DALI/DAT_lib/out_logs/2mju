@@ -1,0 +1,168 @@
+A length: 207
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ detected ENDMDL record in NMR entry - skip rest 
+
+Total number of residues read in:            207
+Total number of atoms read in:              1801
+Total number of ignored atom records:       1431
+ HEADER    SPLICING                                16-JAN-14   2MJU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.ESTEVE,M.BLATTER,F.H.-T.ALLAIN                                      
+  Reading DSSP file
+ HEADER    SPLICING                                16-JAN-14   2MJU              COMPND   2 MOLECULE: POLYPYRIMIDINE TRACT-BINDING PROTEIN 2;                    SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    V.ESTEVE,M.BLATTER,F.H.-T.ALLAIN                                      
+         207  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1757
+ selectset done           0
+ eigen done           0
+ tau           1   2.44513488             129
+ #popped           2           1
+ #selectset contacts        1757
+ selectset done           1
+ eigen done           1
+ tau           3   1.31138599              11
+ #popped           5           1
+ #selectset contacts        1757
+ selectset done           1
+ eigen done           1
+ tau           5   1.10618412              90         104
+ #popped           6           1
+ #selectset contacts        1757
+ selectset done           1
+ eigen done           1
+ tau           7   1.30498374             115
+ #popped           8           1
+ #selectset contacts        1757
+ selectset done           1
+ eigen done           1
+ tau           9  0.783134699              90
+ #popped          10           1
+ #selectset contacts        1757
+ selectset done           1
+ eigen done           1
+ tau          11  0.438409150              28          44          55
+ #popped          12           2
+ #selectset contacts        1757
+ selectset done           2
+ eigen done           2
+ tau          13  0.484693885              28
+ #popped          13           1
+ #selectset contacts        1757
+ selectset done           1
+ eigen done           1
+ tau          15  0.749978483              38
+ #popped          17           1
+ #selectset contacts        1757
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1757
+ selectset done           0
+ eigen done           0
+ tau          17  0.819944382             142         153
+ #popped          18           0
+ #selectset contacts        1757
+ selectset done           0
+ eigen done           0
+ tau          19  0.351536274             172
+ #popped          20           1
+ #selectset contacts        1757
+ selectset done           1
+ eigen done           1
+ tau          21  0.407250136             142
+ #popped          21           0
+ #selectset contacts        1757
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SPLICING                                16-JAN-14   2MJU              COMPND   2 MOLECULE: POLYPYRIMIDINE TRACT-BINDING PROTEIN 2;                    SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    V.ESTEVE,M.BLATTER,F.H.-T.ALLAIN                                      
+           0
+         207
+         207  residues read 2MJU.dssp                                                   
+  grow short strand          16          19
+  grow short strand          82          84
+  grow short strand         104         105
+ crowded segment excluded!
+  exclude short helix         107         109
+  grow short strand         132         136
+  grow short strand         160         163
+  grow short strand         169         173
+  grow short strand         199         201
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  2  3  5  6  7  9 10 11 12  8
+   2     1 12 13  6  1  4  2  3  5  6
+   3     1 18 19  6  7  9 10 11 12  8
+   4     0  0  0  0
+   5     0  0  0  6  1  4  2  3  5  6
+   6     0  0  0  6  1  4  2  3  5  6
+   7     0  0  0  0
+   8     0  0  0  6  1  4  2  3  5  6
+   9     0  0  0  0
+  10     0  0  0  6  1  4  2  3  5  6
+  11     0  0  0  0
+  12     2 14 15  2  1  4
+  13     2 16 17  4  2  3  5  6
+  14    12  0  0  1  1
+  15    12  0  0  1  4
+  16    13  0  0  1  2
+  17    13  0  0  3  3  5  6
+  18     3 20 21  5  7  9 10 11 12
+  19     3  0  0  1  8
+  20    18 22 23  3  7  9 10
+  21    18  0  0  2 11 12
+  22    20  0  0  1  7
+  23    20  0  0  2  9 10
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  6  1  7 12
+   4 -   2  6  7  2  2  1  1  4  4
+   5 -   2  8  9  4  2  2  3  5  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  4  4
+   8 -   5  0  0  1  1  2  2
+   9 -   5  0  0  3  2  3  3  5  6
+  10 -   3 12 13  5  2  7  7  9 12
+  11 -   3  0  0  1  1  8  8
+  12 -  10 14 15  3  2  7  7  9 10
+  13 -  10  0  0  2  1 11 12
+  14 -  12  0  0  1  1  7  7
+  15 -  12  0  0  2  1  9 10
+
+ CHAIN : 2MJUA
+

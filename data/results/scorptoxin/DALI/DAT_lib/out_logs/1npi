@@ -1,0 +1,125 @@
+A length: 61
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   15  CB BGLU A   2 
+ Alternate location indication is not blank or A, ignore atom:   17  CG BGLU A   2 
+ Alternate location indication is not blank or A, ignore atom:   19  CD BGLU A   2 
+ Alternate location indication is not blank or A, ignore atom:   21  OE1BGLU A   2 
+ Alternate location indication is not blank or A, ignore atom:   23  OE2BGLU A   2 
+ Alternate location indication is not blank or A, ignore atom:  101  CE BLYS A  12 
+ Alternate location indication is not blank or A, ignore atom:  103  NZ BLYS A  12 
+ Alternate location indication is not blank or A, ignore atom:  167  OG BSER A  20 
+ Alternate location indication is not blank or A, ignore atom:  348  CB BTYR A  45 
+ Alternate location indication is not blank or A, ignore atom:  350  CG BTYR A  45 
+ Alternate location indication is not blank or A, ignore atom:  352  CD1BTYR A  45 
+ Alternate location indication is not blank or A, ignore atom:  354  CD2BTYR A  45 
+ Alternate location indication is not blank or A, ignore atom:  356  CE1BTYR A  45 
+ Alternate location indication is not blank or A, ignore atom:  358  CE2BTYR A  45 
+ Alternate location indication is not blank or A, ignore atom:  360  CZ BTYR A  45 
+ Alternate location indication is not blank or A, ignore atom:  362  OH BTYR A  45 
+ Alternate location indication is not blank or A, ignore atom:  432  CB BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  434  CG BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  436  CD1BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  438  CD2BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  440  NE1BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  442  CE2BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  444  CE3BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  446  CZ2BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  448  CZ3BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  450  CH2BTRP A  54 
+ Alternate location indication is not blank or A, ignore atom:  487  CB BASN A  59 
+ Alternate location indication is not blank or A, ignore atom:  489  CG BASN A  59 
+ Alternate location indication is not blank or A, ignore atom:  491  OD1BASN A  59 
+ Alternate location indication is not blank or A, ignore atom:  493  ND2BASN A  59 
+ Alternate location indication is not blank or A, ignore atom:  507  O  BCYS A  61 
+
+Total number of residues read in:             61
+Total number of atoms read in:               479
+Total number of ignored atom records:        239
+ HEADER    TOXIN                                   17-JAN-03   1NPI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.B.PINHEIRO,S.MARANGONI,M.H.TOYAMA,I.POLIKARPOV                      
+  Reading DSSP file
+ HEADER    TOXIN                                   17-JAN-03   1NPI              COMPND   2 MOLECULE: TOXIN VII;                                                 SOURCE   2 ORGANISM_SCIENTIFIC: TITYUS SERRULATUS;                              AUTHOR    C.B.PINHEIRO,S.MARANGONI,M.H.TOYAMA,I.POLIKARPOV                      
+          61  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         491
+ selectset done           0
+ eigen done           0
+ tau           1  0.933459282              16          31
+ #popped           2           0
+ #selectset contacts         491
+ selectset done           0
+ eigen done           0
+ tau           3   1.15384614              51
+ #popped           4           0
+ #selectset contacts         491
+ selectset done           0
+ eigen done           0
+ tau           5  0.485289723              16
+ #popped           7           0
+ #selectset contacts         491
+ selectset done           0
+ eigen done           0
+ tau           7  0.329411775              41
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TOXIN                                   17-JAN-03   1NPI              COMPND   2 MOLECULE: TOXIN VII;                                                 SOURCE   2 ORGANISM_SCIENTIFIC: TITYUS SERRULATUS;                              AUTHOR    C.B.PINHEIRO,S.MARANGONI,M.H.TOYAMA,I.POLIKARPOV                      
+           0
+          61
+          61  residues read 1NPI.dssp                                                   
+  grow short strand           3           4
+  grow short strand          34          38
+  grow short strand          41          45
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  4  1  3  4  2
+   2     1  6  7  3  1  3  4
+   3     1  0  0  1  2
+   4     0  0  0  3  1  3  4
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  8  9  2  3  4
+   8     7  0  0  1  3
+   9     7  0  0  1  4
+   1 *   0  2  3  4  1  1  4
+   2 -   1  4  5  3  2  1  1  3  4
+   3 -   1  0  0  1  1  2  2
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  3  4
+   6 -   5  0  0  1  1  3  3
+   7 -   5  0  0  1  1  4  4
+
+ CHAIN : 1NPIA
+

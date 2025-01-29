@@ -1,0 +1,897 @@
+A length: 295
+B length: 295
+C length: 295
+D length: 295
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            296
+Total number of atoms read in:              2433
+Total number of ignored atom records:        261
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              COMPND   2 MOLECULE: THYMIDYLATE SYNTHASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: PNEUMOCYSTIS CARINII;                           AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+         296  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2744
+ selectset done           0
+ eigen done           0
+ tau           1   2.00783539              61         134         156         170
+ #popped           2           1
+ #selectset contacts        2744
+ selectset done           1
+ eigen done           1
+ tau           3   1.63318944              35          46          61         196         210         234         259         280
+ #popped           4           2
+ #selectset contacts        2744
+ selectset done           2
+ eigen done           2
+ tau           5  0.826423287              35
+ #popped           6           3
+ #selectset contacts        2744
+ selectset done           3
+ eigen done           3
+ tau           7   2.56554747              17
+ #popped           7           2
+ #selectset contacts        2744
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2744
+ selectset done           1
+ eigen done           1
+ tau           9   2.06347394             234
+ #popped          10           2
+ #selectset contacts        2744
+ selectset done           2
+ eigen done           2
+ tau          11  0.613325834              46
+ #popped          13           2
+ #selectset contacts        2744
+ selectset done           2
+ eigen done           2
+ tau          13   1.26424873             156
+ #popped          14           3
+ #selectset contacts        2744
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          15           2
+ #selectset contacts        2744
+ selectset done           2
+ eigen done           2
+ tau          15   1.32218730             196         224
+ #popped          16           2
+ #selectset contacts        2744
+ selectset done           2
+ eigen done           2
+ tau          17  0.308164239             196
+ #popped          18           2
+ #selectset contacts        2744
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          11           1
+ #selectset contacts        2744
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2744
+ selectset done           0
+ eigen done           0
+ tau          19   1.59331834             108
+ #popped          20           1
+ #selectset contacts        2744
+ selectset done           1
+ eigen done           1
+ tau          21   1.45119202              71
+ #popped          23           1
+ #selectset contacts        2744
+ selectset done           1
+ eigen done           1
+ tau          23   1.07674789              86
+ #popped          25           1
+ #selectset contacts        2744
+ selectset done           1
+ eigen done           1
+ tau          25  0.750602365              98
+ #popped          21           0
+ #selectset contacts        2744
+ selectset done           0
+ eigen done           0
+ tau          27   1.63888121             134
+ #popped          28           0
+ #selectset contacts        2744
+ selectset done           0
+ eigen done           0
+ tau          29  0.570644200             118
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              COMPND   2 MOLECULE: THYMIDYLATE SYNTHASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: PNEUMOCYSTIS CARINII;                           AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+           0
+         296
+         296  residues read 1F28.dssp                                                   
+  grow short strand          19          22
+  grow short strand          38          41
+  exclude short helix          43          45
+  exclude short helix          74          78
+  exclude short helix          86          89
+  exclude short helix          91          96
+  grow short helix         111         117
+  grow short strand         154         156
+  exclude short helix         163         165
+  exclude short helix         250         252
+  grow short strand         260         263
+  exclude short helix         270         272
+  exclude short helix         275         277
+  grow short strand         278         281
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3 13  4  7  8  9 10 12 11 14 15  5  6
+   2     1  4  5 13  1  2  3 13  4  7  8  9 10 12 11 14 15
+   3     1 20 21  2  5  6
+   4     2  6  7  4  1  2  3 13
+   5     2 10 11  9  4  7  8  9 10 12 11 14 15
+   6     4  8  9  3  1  2  3
+   7     4  0  0  1 13
+   8     6  0  0  1  1
+   9     6  0  0  2  2  3
+  10     5 12 13  7  4  7  8  9 10 12 11
+  11     5  0  0  2 14 15
+  12    10  0  0  1  4
+  13    10 14 15  6  7  8  9 10 12 11
+  14    13  0  0  2  7  8
+  15    13 16 17  4  9 10 12 11
+  16    15 18 19  3  9 10 12
+  17    15  0  0  1 11
+  18    16  0  0  2  9 10
+  19    16  0  0  1 12
+  20     3  0  0  1  5
+  21     3  0  0  1  6
+  22     0  0  0  1  5
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  1  6
+  29     0  0  0  0
+  30     0  0  0  1  6
+  31     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 13  2  1  4  7 15
+   3 -   1 20 21  2  1  5  6
+   4 -   2  6  7  4  2  1  3 13 13
+   5 -   2 10 11  9  3  4  4  7 12 14 15
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  1  1 13 13
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  2  3
+  10 -   5 12 13  7  2  4  4  7 12
+  11 -   5  0  0  2  1 14 15
+  12 -  10  0  0  1  1  4  4
+  13 -  10 14 15  6  1  7 12
+  14 -  13  0  0  2  1  7  8
+  15 -  13 16 17  4  1  9 12
+  16 -  15 18 19  3  2  9 10 12 12
+  17 -  15  0  0  1  1 11 11
+  18 -  16  0  0  2  1  9 10
+  19 -  16  0  0  1  1 12 12
+  20 -   3  0  0  1  1  5  5
+  21 -   3  0  0  1  1  6  6
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            296
+Total number of atoms read in:              2442
+Total number of ignored atom records:        269
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              COMPND   2 MOLECULE: THYMIDYLATE SYNTHASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: PNEUMOCYSTIS CARINII;                           AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+         296  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2774
+ selectset done           0
+ eigen done           0
+ tau           1   1.56464875              36          48         107         196         208         233         258         281
+ #popped           2           1
+ #selectset contacts        2774
+ selectset done           1
+ eigen done           1
+ tau           3   3.18776679              58         107
+ #popped           4           2
+ #selectset contacts        2774
+ selectset done           2
+ eigen done           2
+ tau           5  0.767372787              36
+ #popped           6           3
+ #selectset contacts        2774
+ selectset done           3
+ eigen done           3
+ tau           7   2.44524050              17
+ #popped           7           2
+ #selectset contacts        2774
+ selectset done           2
+ eigen done           2
+ tau           9  0.785599768              58
+ #popped          11           2
+ #selectset contacts        2774
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2774
+ selectset done           1
+ eigen done           1
+ tau          11   1.46785474              86
+ #popped          12           2
+ #selectset contacts        2774
+ selectset done           2
+ eigen done           2
+ tau          13   1.09453034              72
+ #popped          13           1
+ #selectset contacts        2774
+ selectset done           1
+ eigen done           1
+ tau          15  0.651632786              97
+ #popped           3           0
+ #selectset contacts        2774
+ selectset done           0
+ eigen done           0
+ tau          17   1.89115167              48         135         156         171
+ #popped          18           1
+ #selectset contacts        2774
+ selectset done           1
+ eigen done           1
+ tau          19   2.32877994             233
+ #popped          20           2
+ #selectset contacts        2774
+ selectset done           2
+ eigen done           2
+ tau          21  0.644427180             156
+ #popped          22           3
+ #selectset contacts        2774
+ selectset done           3
+ eigen done           3
+ tau          23   999.999023              48
+ #popped          25           3
+ #selectset contacts        2774
+ selectset done           3
+ eigen done           3
+ tau          25   0.00000000    
+ #popped          23           2
+ #selectset contacts        2774
+ selectset done           2
+ eigen done           2
+ tau          25  0.453960389             186
+ #popped          27           2
+ #selectset contacts        2774
+ selectset done           2
+ eigen done           2
+ tau          27  0.276107550             196
+ #popped          29           2
+ #selectset contacts        2774
+ selectset done           2
+ eigen done           2
+ tau          29   1.20534718             223
+ #popped          21           1
+ #selectset contacts        2774
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          19           0
+ #selectset contacts        2774
+ selectset done           0
+ eigen done           0
+ tau          31   1.46366894             135
+ #popped          32           0
+ #selectset contacts        2774
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              COMPND   2 MOLECULE: THYMIDYLATE SYNTHASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: PNEUMOCYSTIS CARINII;                           AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+           0
+         296
+         296  residues read 1F28.dssp                                                   
+  grow short strand          19          22
+  grow short strand          38          41
+  exclude short helix          43          45
+  exclude short helix          75          78
+  exclude short helix          91          96
+  grow short helix         111         117
+  grow short strand         154         156
+  exclude short helix         160         165
+  grow short strand         260         263
+  exclude short helix         270         272
+  exclude short helix         275         277
+  grow short strand         278         281
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3 13  5  4  7  8  9 10 11 12 14 15  6
+   2     1  4  5  5  1  2  3 13  5
+   3     1 18 19 10  4  7  8  9 10 11 12 14 15  6
+   4     2  6  7  4  1  2  3 13
+   5     2  0  0  1  5
+   6     4  8  9  3  1  2  3
+   7     4  0  0  1 13
+   8     6  0  0  1  1
+   9     6  0  0  2  2  3
+  10     0  0  0  0
+  11     0  0  0  1 13
+  12     0  0  0  1  5
+  13     0  0  0  0
+  14     0  0  0  1  5
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  0
+  18     3 20 21  9  4  7  8  9 10 11 12 14 15
+  19     3  0  0  1  6
+  20    18 22 23  7  4  7  8  9 10 11 12
+  21    18  0  0  2 14 15
+  22    20 24 25  3  4  7  8
+  23    20 26 27  4  9 10 11 12
+  24    22  0  0  1  4
+  25    22  0  0  2  7  8
+  26    23  0  0  1  9
+  27    23 28 29  3 10 11 12
+  28    27  0  0  1 10
+  29    27 30 31  2 11 12
+  30    29  0  0  1 11
+  31    29  0  0  1 12
+  32     0  0  0  1  6
+  33     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  5  3  1  3  5  5 13 13
+   3 -   1 10 11 10  3  4  4  6 12 14 15
+   4 -   2  6  7  4  2  1  3 13 13
+   5 -   2  0  0  1  1  5  5
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  1  1 13 13
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  2  3
+  10 -   3 12 13  9  3  4  4  7 12 14 15
+  11 -   3  0  0  1  1  6  6
+  12 -  10 14 15  7  2  4  4  7 12
+  13 -  10  0  0  2  1 14 15
+  14 -  12 16 17  3  2  4  4  7  8
+  15 -  12 18 19  4  1  9 12
+  16 -  14  0  0  1  1  4  4
+  17 -  14  0  0  2  1  7  8
+  18 -  15  0  0  1  1  9  9
+  19 -  15 20 21  3  1 10 12
+  20 -  19  0  0  1  1 10 10
+  21 -  19 22 23  2  1 11 12
+  22 -  21  0  0  1  1 11 11
+  23 -  21  0  0  1  1 12 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            296
+Total number of atoms read in:              2433
+Total number of ignored atom records:        255
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              COMPND   2 MOLECULE: THYMIDYLATE SYNTHASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: PNEUMOCYSTIS CARINII;                           AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+         296  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2746
+ selectset done           0
+ eigen done           0
+ tau           1   1.93439686              60         174
+ #popped           2           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau           3   1.90583134             262         278
+ #popped           4           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau           5  0.995075524              17          30         238
+ #popped           6           2
+ #selectset contacts        2746
+ selectset done           2
+ eigen done           2
+ tau           7  0.689614415              60         194
+ #popped           8           3
+ #selectset contacts        2746
+ selectset done           3
+ eigen done           3
+ tau           9   1.41861415             211         227
+ #popped          10           3
+ #selectset contacts        2746
+ selectset done           3
+ eigen done           3
+ tau          11   1.14642262              41          60
+ #popped          12           3
+ #selectset contacts        2746
+ selectset done           3
+ eigen done           3
+ tau          13   2.39294791              17
+ #popped          15           3
+ #selectset contacts        2746
+ selectset done           3
+ eigen done           3
+ tau          15  0.333226025              41
+ #popped          17           3
+ #selectset contacts        2746
+ selectset done           3
+ eigen done           3
+ tau          17  0.375681341             211
+ #popped           9           2
+ #selectset contacts        2746
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           7           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau          19  0.757986069             262
+ #popped          20           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau          21   2.17627120             252
+ #popped          22           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau          23  0.895374596              30
+ #popped           3           0
+ #selectset contacts        2746
+ selectset done           0
+ eigen done           0
+ tau          25   2.15427899             107
+ #popped          26           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau          27   1.51015210              71
+ #popped          29           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau          29   1.14968300              86
+ #popped          31           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau          31  0.684766650              97
+ #popped          27           0
+ #selectset contacts        2746
+ selectset done           0
+ eigen done           0
+ tau          33   1.61415195             136         154
+ #popped          34           0
+ #selectset contacts        2746
+ selectset done           0
+ eigen done           0
+ tau          35  0.995762765             136
+ #popped          36           1
+ #selectset contacts        2746
+ selectset done           1
+ eigen done           1
+ tau          37   0.00000000    
+ #popped          37           0
+ #selectset contacts        2746
+ selectset done           0
+ eigen done           0
+ tau          37  0.484548271             164
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              COMPND   2 MOLECULE: THYMIDYLATE SYNTHASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: PNEUMOCYSTIS CARINII;                           AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+           0
+         296
+         296  residues read 1F28.dssp                                                   
+  grow short strand          19          22
+  grow short strand          38          41
+  exclude short helix          43          45
+  exclude short helix          74          78
+  exclude short helix          86          89
+  exclude short helix          91          96
+  grow short helix         111         117
+  grow short strand         154         156
+  exclude short helix         163         165
+  exclude short helix         250         252
+  grow short strand         260         263
+  exclude short helix         270         272
+  exclude short helix         275         277
+  grow short strand         278         281
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  4 12 11  9 10  2  3 13 14 15  5  6  8  7
+   2     1  6  7 11  1  4 12 11  9 10  2  3 13 14 15
+   3     1 26 27  4  5  6  8  7
+   4     0  0  0 11  1  4 12 11  9 10  2  3 13 14 15
+   5     0  0  0  0
+   6     2  8  9  6  1  4 12 11  9 10
+   7     2 20 21  5  2  3 13 14 15
+   8     6 10 11  4  1  4 12 11
+   9     6  0  0  2  9 10
+  10     8 14 15  3  1  4 12
+  11     8  0  0  1 11
+  12     0  0  0  3  1  4 12
+  13     0  0  0  0
+  14    10  0  0  1  1
+  15    10 16 17  2  4 12
+  16    15  0  0  1  4
+  17    15  0  0  1 12
+  18     0  0  0  0
+  19     0  0  0  1 12
+  20     7 22 23  4  2  3 13 14
+  21     7  0  0  1 15
+  22    20 24 25  3  2  3 13
+  23    20  0  0  1 14
+  24    22  0  0  2  2  3
+  25    22  0  0  1 13
+  26     3  0  0  1  5
+  27     3 34 35  3  6  8  7
+  28     0  0  0  1  5
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+  34    27 36 37  2  6  8
+  35    27  0  0  1  7
+  36    34  0  0  1  6
+  37    34  0  0  1  8
+  38     0  0  0  1  8
+  39     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 11  2  1  4  9 15
+   3 -   1 20 21  4  1  5  8
+   4 -   2  6  7  6  3  1  1  4  4  9 12
+   5 -   2 14 15  5  2  2  3 13 15
+   6 -   4  8  9  4  3  1  1  4  4 11 12
+   7 -   4  0  0  2  1  9 10
+   8 -   6 10 11  3  3  1  1  4  4 12 12
+   9 -   6  0  0  1  1 11 11
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  2  2  4  4 12 12
+  12 -  11  0  0  1  1  4  4
+  13 -  11  0  0  1  1 12 12
+  14 -   5 16 17  4  2  2  3 13 14
+  15 -   5  0  0  1  1 15 15
+  16 -  14 18 19  3  2  2  3 13 13
+  17 -  14  0  0  1  1 14 14
+  18 -  16  0  0  2  1  2  3
+  19 -  16  0  0  1  1 13 13
+  20 -   3  0  0  1  1  5  5
+  21 -   3 22 23  3  1  6  8
+  22 -  21 24 25  2  2  6  6  8  8
+  23 -  21  0  0  1  1  7  7
+  24 -  22  0  0  1  1  6  6
+  25 -  22  0  0  1  1  8  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            296
+Total number of atoms read in:              2442
+Total number of ignored atom records:        291
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              COMPND   2 MOLECULE: THYMIDYLATE SYNTHASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: PNEUMOCYSTIS CARINII;                           AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+         296  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2777
+ selectset done           0
+ eigen done           0
+ tau           1   1.62301815              33          48          60         197         207         235         258         281
+ #popped           2           1
+ #selectset contacts        2777
+ selectset done           1
+ eigen done           1
+ tau           3   1.09735930              17
+ #popped           5           1
+ #selectset contacts        2777
+ selectset done           1
+ eigen done           1
+ tau           5  0.847352028              33          60
+ #popped           6           1
+ #selectset contacts        2777
+ selectset done           1
+ eigen done           1
+ tau           7  0.436274499             207
+ #popped           8           2
+ #selectset contacts        2777
+ selectset done           2
+ eigen done           2
+ tau           9   999.999023              33
+ #popped           9           1
+ #selectset contacts        2777
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        2777
+ selectset done           0
+ eigen done           0
+ tau          11   2.60465550              48         134         156         170
+ #popped          12           1
+ #selectset contacts        2777
+ selectset done           1
+ eigen done           1
+ tau          13   2.33498931             235
+ #popped          14           2
+ #selectset contacts        2777
+ selectset done           2
+ eigen done           2
+ tau          15  0.641052008              48
+ #popped          17           2
+ #selectset contacts        2777
+ selectset done           2
+ eigen done           2
+ tau          17   1.25564778             156
+ #popped          18           3
+ #selectset contacts        2777
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          19           2
+ #selectset contacts        2777
+ selectset done           2
+ eigen done           2
+ tau          19  0.429280043             197
+ #popped          20           3
+ #selectset contacts        2777
+ selectset done           3
+ eigen done           3
+ tau          21   0.00000000    
+ #popped          21           2
+ #selectset contacts        2777
+ selectset done           2
+ eigen done           2
+ tau          21   2.17985129             225
+ #popped          15           1
+ #selectset contacts        2777
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          13           0
+ #selectset contacts        2777
+ selectset done           0
+ eigen done           0
+ tau          23   1.52565873             108
+ #popped          24           1
+ #selectset contacts        2777
+ selectset done           1
+ eigen done           1
+ tau          25   1.39730632              86
+ #popped          26           2
+ #selectset contacts        2777
+ selectset done           2
+ eigen done           2
+ tau          27   1.03905141              72
+ #popped          27           1
+ #selectset contacts        2777
+ selectset done           1
+ eigen done           1
+ tau          29  0.737198770              98
+ #popped          25           0
+ #selectset contacts        2777
+ selectset done           0
+ eigen done           0
+ tau          31   1.53427172             134
+ #popped          32           0
+ #selectset contacts        2777
+ selectset done           0
+ eigen done           0
+ tau          33  0.570644200             118
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-MAY-00   1F28              COMPND   2 MOLECULE: THYMIDYLATE SYNTHASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: PNEUMOCYSTIS CARINII;                           AUTHOR    A.C.ANDERSON,R.H.O'NEIL,T.S.SURTI,R.M.STROUD                          
+           0
+         296
+         296  residues read 1F28.dssp                                                   
+  grow short strand          19          22
+  grow short strand          38          41
+  exclude short helix          43          45
+  exclude short helix          75          78
+  exclude short helix          86          89
+  exclude short helix          91          96
+  grow short helix         111         117
+  grow short strand         154         156
+  exclude short helix         160         165
+  grow short strand         260         263
+  exclude short helix         270         272
+  exclude short helix         275         277
+  grow short strand         278         281
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3 13  4  7  8  9 10 11 12 14 15  5  6
+   2     1  4  5  4  1  2  3 13
+   3     1 12 13 11  4  7  8  9 10 11 12 14 15  5  6
+   4     2  0  0  1  1
+   5     2  8  9  3  2  3 13
+   6     0  0  0  3  2  3 13
+   7     0  0  0  0
+   8     5  0  0  2  2  3
+   9     5  0  0  1 13
+  10     0  0  0  2  2  3
+  11     0  0  0  0
+  12     3 14 15  9  4  7  8  9 10 11 12 14 15
+  13     3 24 25  2  5  6
+  14    12 16 17  7  4  7  8  9 10 11 12
+  15    12  0  0  2 14 15
+  16    14  0  0  1  4
+  17    14 18 19  6  7  8  9 10 11 12
+  18    17  0  0  2  7  8
+  19    17 20 21  4  9 10 11 12
+  20    19  0  0  2  9 10
+  21    19 22 23  2 11 12
+  22    21  0  0  1 11
+  23    21  0  0  1 12
+  24    13  0  0  1  5
+  25    13  0  0  1  6
+  26     0  0  0  1  5
+  27     0  0  0  0
+  28     0  0  0  1  5
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+  32     0  0  0  1  6
+  33     0  0  0  0
+  34     0  0  0  1  6
+  35     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  4  2  1  3 13 13
+   3 -   1  8  9 11  2  4 12 14 15
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  3  2  2  3 13 13
+   6 -   5  0  0  2  1  2  3
+   7 -   5  0  0  1  1 13 13
+   8 -   3 10 11  9  3  4  4  7 12 14 15
+   9 -   3 20 21  2  1  5  6
+  10 -   8 12 13  7  2  4  4  7 12
+  11 -   8  0  0  2  1 14 15
+  12 -  10  0  0  1  1  4  4
+  13 -  10 14 15  6  1  7 12
+  14 -  13  0  0  2  1  7  8
+  15 -  13 16 17  4  1  9 12
+  16 -  15  0  0  2  1  9 10
+  17 -  15 18 19  2  1 11 12
+  18 -  17  0  0  1  1 11 11
+  19 -  17  0  0  1  1 12 12
+  20 -   9  0  0  1  1  5  5
+  21 -   9  0  0  1  1  6  6
+
+ CHAIN : 1F28A
+ CHAIN : 1F28B
+ CHAIN : 1F28C
+ CHAIN : 1F28D
+

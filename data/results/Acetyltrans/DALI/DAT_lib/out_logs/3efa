@@ -1,0 +1,143 @@
+A length: 140
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  250  CA BASP A  32 
+ Alternate location indication is not blank or A, ignore atom:  254  CB BASP A  32 
+ Alternate location indication is not blank or A, ignore atom:  256  CG BASP A  32 
+ Alternate location indication is not blank or A, ignore atom:  258  OD1BASP A  32 
+ Alternate location indication is not blank or A, ignore atom:  260  OD2BASP A  32 
+ Alternate location indication is not blank or A, ignore atom:  328  N  BASP A  41 
+ Alternate location indication is not blank or A, ignore atom:  330  CA BASP A  41 
+ Alternate location indication is not blank or A, ignore atom:  332  C  BASP A  41 
+ Alternate location indication is not blank or A, ignore atom:  334  O  BASP A  41 
+ Alternate location indication is not blank or A, ignore atom:  336  CB BASP A  41 
+ Alternate location indication is not blank or A, ignore atom:  338  CG BASP A  41 
+ Alternate location indication is not blank or A, ignore atom:  340  OD1BASP A  41 
+ Alternate location indication is not blank or A, ignore atom:  342  OD2BASP A  41 
+ Alternate location indication is not blank or A, ignore atom:  345  CA BGLN A  42 
+ Alternate location indication is not blank or A, ignore atom:  349  CB BGLN A  42 
+ Alternate location indication is not blank or A, ignore atom:  351  CG BGLN A  42 
+ Alternate location indication is not blank or A, ignore atom:  353  CD BGLN A  42 
+ Alternate location indication is not blank or A, ignore atom:  355  OE1BGLN A  42 
+ Alternate location indication is not blank or A, ignore atom:  357  NE2BGLN A  42 
+
+Total number of residues read in:            146
+Total number of atoms read in:              1161
+Total number of ignored atom records:        160
+ HEADER    TRANSFERASE                             08-SEP-08   3EFA              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.CHANG,H.LI,G.COBB,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL        
+  Reading DSSP file
+ HEADER    TRANSFERASE                             08-SEP-08   3EFA              COMPND   2 MOLECULE: PUTATIVE ACETYLTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: LACTOBACILLUS PLANTARUM WCFS1;                  AUTHOR    C.CHANG,H.LI,G.COBB,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTUR          
+         146  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1264
+ selectset done           0
+ eigen done           0
+ tau           1   2.47729397              62          73          95
+ #popped           2           1
+ #selectset contacts        1264
+ selectset done           1
+ eigen done           1
+ tau           3   1.67268872              83
+ #popped           4           1
+ #selectset contacts        1264
+ selectset done           1
+ eigen done           1
+ tau           5  0.973086476              20          41
+ #popped           6           2
+ #selectset contacts        1264
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1264
+ selectset done           1
+ eigen done           1
+ tau           7  0.777777791              31
+ #popped           3           0
+ #selectset contacts        1264
+ selectset done           0
+ eigen done           0
+ tau           9   1.01851737              73         105
+ #popped          10           0
+ #selectset contacts        1264
+ selectset done           0
+ eigen done           0
+ tau          11  0.486018956             115
+ #popped          12           1
+ #selectset contacts        1264
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped          13           0
+ #selectset contacts        1264
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             08-SEP-08   3EFA              COMPND   2 MOLECULE: PUTATIVE ACETYLTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: LACTOBACILLUS PLANTARUM WCFS1;                  AUTHOR    C.CHANG,H.LI,G.COBB,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTUR          
+           0
+         146
+         146  residues read 3EFA.dssp                                                   
+  grow short strand           4           8
+  exclude short helix          33          36
+  exclude short helix          80          82
+  grow short strand         125         128
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6  7  8  9 10
+   2     1  4  5  6  1  2  3  4  5  6
+   3     1 12 13  4  7  8  9 10
+   4     2  0  0  5  1  2  3  4  5
+   5     2  0  0  1  6
+   6     0  0  0  5  1  2  3  4  5
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  4  7  8  9 10
+  11     0  0  0  0
+  12     3  0  0  1  7
+  13     3  0  0  3  8  9 10
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  1  1  6
+   3 -   1  6  7  4  1  7 10
+   4 -   2  0  0  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   3  0  0  1  1  7  7
+   7 -   3  0  0  3  1  8 10
+
+ CHAIN : 3EFAA
+

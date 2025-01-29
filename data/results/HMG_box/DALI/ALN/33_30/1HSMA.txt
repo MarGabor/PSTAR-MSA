@@ -1,0 +1,32 @@
+# Job: HMG_box
+# Query: 1HSMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1K99-A  6.5  3.9   75    91   24   MOLECULE: UPSTREAM BINDING FACTOR 1;                                 
+
+# Pairwise alignments
+
+No 1: Query=1HSMA Sbjct=1K99A Z-score=6.5
+
+DSSP  --------LLLLLLLLLHHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHLLLLLLLHHH
+Query --------NAPKRPPSAFFLFCSEYRPKIKGEHPGLSIGDVAKKLGEMWNNTAADDKQPY   52
+ident           || |    | |  | | |    ||  |  |  | |           |  |
+Sbjct mkklkkhpDFPKKPLTPYFRFFMEKRAKYAKLHPEMSNLDLTKILSKKYKELPEKKKMKY   60
+DSSP  llllllllLLLLLLLLHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHHHHLLLLLHHHH
+
+DSSP  HHHHHHHHHHHHH-HHHHHhhhLLLLL------l
+Query EKKAAKLKEKYEK-DIAAYrakGKPDA------a   79
+ident        |   |                      
+Sbjct IQDFQREKQEFERnLARFR---EDHPDliqnakk   91
+DSSP  HHHHHHHHHHHHHhHHHHH---HLLLLlllllll
+
+
+# Structural equivalences
+   1: 1HSM-A 1K99-A     1 -  65 <=>    9 -  73   (ASN    3  - LYS   67  <=> ASP    9  - ARG   73 )                          
+   1: 1HSM-A 1K99-A    66 -  70 <=>   75 -  79   (ASP   68  - TYR   72  <=> LEU   75  - ARG   79 )                          
+   1: 1HSM-A 1K99-A    74 -  78 <=>   80 -  84   (GLY   76  - ALA   80  <=> GLU   80  - ASP   84 )                          
+
+# Translation-rotation matrices
+-matrix  "1HSM-A 1K99-A  U(1,.)   0.955137  0.239083 -0.174796            1.686044"
+-matrix  "1HSM-A 1K99-A  U(2,.)   0.092627 -0.801735 -0.590458            3.605196"
+-matrix  "1HSM-A 1K99-A  U(3,.)  -0.281308  0.547777 -0.787912            1.915218"
+

@@ -1,0 +1,31 @@
+# Job: hom
+# Query: 1SANA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DMQ-A  8.5  2.9   61    80   21   MOLECULE: LIM/HOMEOBOX PROTEIN LHX9;                                 
+
+# Pairwise alignments
+
+No 1: Query=1SANA Sbjct=2DMQA Z-score=8.5
+
+DSSP  -----------LLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLLHHHHHHHHHHHH
+Query -----------MTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALSLTERQIKIWFQNRRM   49
+ident                  |       |  |           |    || |    |||| | 
+Sbjct gssgssgkrmrTSFKHHQLRTMKSYFAINHNPDAKDLKQLAQKTGLTKRVLQVWFQNARA   60
+DSSP  lllllllllllLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHHH
+
+DSSP  LLLLLL-LLLLLL------l
+Query KWKKEN-KTKGEP------g   62
+ident |                   
+Sbjct KFRRNLlRQENGGvsgpssg   80
+DSSP  HHHHHHhLLLLLLlllllll
+
+
+# Structural equivalences
+   1: 1SAN-A 2DMQ-A     1 -  55 <=>   12 -  66   (MET    6  - ASN   60  <=> THR   12  - LEU   66 )                          
+   1: 1SAN-A 2DMQ-A    56 -  61 <=>   68 -  73   (LYS   61  - PRO   66  <=> ARG   68  - GLY   73 )                          
+
+# Translation-rotation matrices
+-matrix  "1SAN-A 2DMQ-A  U(1,.)   0.437130 -0.201568 -0.876520            2.393991"
+-matrix  "1SAN-A 2DMQ-A  U(2,.)  -0.566429 -0.818708 -0.094212           -3.751928"
+-matrix  "1SAN-A 2DMQ-A  U(3,.)  -0.698624  0.537669 -0.472056            2.759436"
+

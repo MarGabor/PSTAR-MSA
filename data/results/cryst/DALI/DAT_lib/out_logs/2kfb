@@ -1,0 +1,161 @@
+A length: 174
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ detected ENDMDL record in NMR entry - skip rest 
+
+Total number of residues read in:            174
+Total number of atoms read in:              1559
+Total number of ignored atom records:       1264
+ HEADER    STRUCTURAL PROTEIN                      12-FEB-09   2KFB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.JUNG,I.L.BYEON,Y.WANG,J.KING,A.M.GRONENBORN                         
+  Reading DSSP file
+ HEADER    STRUCTURAL PROTEIN                      12-FEB-09   2KFB              COMPND   2 MOLECULE: GAMMA-CRYSTALLIN D;                                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.JUNG,I.L.BYEON,Y.WANG,J.KING,A.M.GRONENBORN                         
+         174  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau           1   2.09937382              81
+ #popped           2           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau           3   1.03227627              20          32          43          57          71
+ #popped           4           2
+ #selectset contacts        1534
+ selectset done           2
+ eigen done           2
+ tau           5  0.483172506              43
+ #popped           6           2
+ #selectset contacts        1534
+ selectset done           2
+ eigen done           2
+ tau           7  0.161138341              10
+ #popped           9           2
+ #selectset contacts        1534
+ selectset done           2
+ eigen done           2
+ tau           9   1.70947373              20
+ #popped           5           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          11  0.619469047              32
+ #popped          13           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau          13  0.995729327             151         161
+ #popped          14           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau          15  0.603328943              91         123
+ #popped          16           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          17  0.394504696             151
+ #popped          18           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          17           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL PROTEIN                      12-FEB-09   2KFB              COMPND   2 MOLECULE: GAMMA-CRYSTALLIN D;                                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.JUNG,I.L.BYEON,Y.WANG,J.KING,A.M.GRONENBORN                         
+           0
+         174
+         174  residues read 2KFB.dssp                                                   
+  grow short strand          42          46
+  grow short strand          55          58
+  grow short strand          61          63
+  exclude short helix          66          69
+  grow short strand          78          82
+  exclude short helix         112         114
+  grow short strand         131         134
+  grow short strand         143         146
+  grow short strand         149         151
+  exclude short helix         154         157
+  grow short strand         166         169
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  6  4  5  7 10 11 12 13 14  8  9
+   2     1  4  5  7  1  2  3  6  4  5  7
+   3     1 16 17  7 10 11 12 13 14  8  9
+   4     2  6  7  4  1  2  3  6
+   5     2  0  0  3  4  5  7
+   6     4  8  9  3  1  2  3
+   7     4  0  0  1  6
+   8     6  0  0  1  1
+   9     6 10 11  2  2  3
+  10     9  0  0  1  2
+  11     9  0  0  1  3
+  12     0  0  0  0
+  13     0  0  0  3  4  5  7
+  14     0  0  0  7 10 11 12 13 14  8  9
+  15     0  0  0  0
+  16     3 18 19  5 10 11 12 13 14
+  17     3  0  0  2  8  9
+  18    16  0  0  4 10 11 12 13
+  19    16  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  7  1  8 14
+   4 -   2  6  7  4  2  1  3  6  6
+   5 -   2  0  0  3  2  4  5  7  7
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  2  1  2  3
+  10 -   9  0  0  1  1  2  2
+  11 -   9  0  0  1  1  3  3
+  12 -   3 14 15  5  1 10 14
+  13 -   3  0  0  2  1  8  9
+  14 -  12  0  0  4  1 10 13
+  15 -  12  0  0  1  1 14 14
+
+ CHAIN : 2KFBA
+

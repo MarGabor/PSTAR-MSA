@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1XQ5C
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1C40-B 21.9  1.4  140   146   38   MOLECULE: PROTEIN (HEMOGLOBIN (ALPHA CHAIN));                        
+
+# Pairwise alignments
+
+No 1: Query=1XQ5C Sbjct=1C40B Z-score=21.9
+
+DSSP  -LLLHHHHHHHHHHHHHLhhHHHHHHHHHHHHHHHHLHHHHHHHLLLLLL-----LLLLH
+Query -SLSSKDKDTVKALWGKIadKAEEIGSDALSRMLAVYPQTKTYFSHWKDL-----SPGSA   54
+ident    |   |     ||||        |  || | | ||| |   ||    |       |  
+Sbjct vHWSAEEKQLITGLWGKV--NVADCGAEALARLLIVYPWTQRFFSSFGNLssptaILGNP   58
+DSSP  lLLLHHHHHHHHHHHLLL--LHHHHHHHHHHHHHHHLHHHHHHHHHHLLLllhhhHHHLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+Query PVNKHGKTIMGGIVDAVASIDDLNAGLLALSELHAFTLRVDPANFKILSHCILVLLAVKF  114
+ident  |  |||       |||   |        |||||   | ||| ||  |       ||  |
+Sbjct MVRAHGKKVLTSFGDAVKNLDNIKNTFAQLSELHCDKLHVDPENFRLLGDILIIVLAAHF  118
+DSSP  HHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHHLLLL
+Query PKDFTPEVHISYDKFFSALARALAEKYR  142
+ident  | |||       |     | ||| || 
+Sbjct AKEFTPDCQAAWQKLVRVVAHALARKYH  146
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHLLLLL
+
+
+# Structural equivalences
+   1: 1XQ5-C 1C40-B     1 -  17 <=>    2 -  18   (SER    1  - ILE   17  <=> HIS    2  - VAL   18 )                          
+   1: 1XQ5-C 1C40-B    20 -  49 <=>   19 -  48   (LYS   20  - LEU   49  <=> ASN   19  - LEU   48 )                          
+   1: 1XQ5-C 1C40-B    50 - 142 <=>   54 - 146   (SER   50  - ARG  142  <=> ILE   54  - HIS  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1XQ5-C 1C40-B  U(1,.)  -0.734938  0.677231  0.034989           -6.562027"
+-matrix  "1XQ5-C 1C40-B  U(2,.)   0.121891  0.182680 -0.975587           17.351271"
+-matrix  "1XQ5-C 1C40-B  U(3,.)  -0.667090 -0.712731 -0.216807           87.770050"
+

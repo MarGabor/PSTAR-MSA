@@ -1,0 +1,317 @@
+A length: 182
+B length: 182
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            182
+Total number of atoms read in:              1439
+Total number of ignored atom records:         33
+ HEADER    STRUCTURAL GENOMICS, TRANSFERASE        27-JUL-06   2HUZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.MIN,H.WU,H.ZENG,P.LOPPNAU,J.WEIGELT,M.SUNDSTROM,C.H.ARROWSMITH,     
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, TRANSFERASE        27-JUL-06   2HUZ              COMPND   2 MOLECULE: GLUCOSAMINE 6-PHOSPHATE N-ACETYLTRANSFERASE;               SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.MIN,H.WU,H.ZENG,P.LOPPNAU,J.WEIGELT,M.SUNDSTROM,C.H.ARROWS          
+         182  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1541
+ selectset done           0
+ eigen done           0
+ tau           1   2.38029003             154
+ #popped           2           1
+ #selectset contacts        1541
+ selectset done           1
+ eigen done           1
+ tau           3   1.25597835             101         116         142
+ #popped           4           2
+ #selectset contacts        1541
+ selectset done           2
+ eigen done           2
+ tau           5   1.96632445              14          33         128
+ #popped           6           3
+ #selectset contacts        1541
+ selectset done           3
+ eigen done           3
+ tau           7   1.32688522              64          82
+ #popped           8           3
+ #selectset contacts        1541
+ selectset done           3
+ eigen done           3
+ tau           9   1.76532400              49          64
+ #popped          10           3
+ #selectset contacts        1541
+ selectset done           3
+ eigen done           3
+ tau          11  0.973230124              14
+ #popped          13           3
+ #selectset contacts        1541
+ selectset done           3
+ eigen done           3
+ tau          13  0.686222017             118
+ #popped          14           3
+ #selectset contacts        1541
+ selectset done           3
+ eigen done           3
+ tau          15  0.264037073              92
+ #popped          16           3
+ #selectset contacts        1541
+ selectset done           3
+ eigen done           3
+ tau          17  0.359695435              49
+ #popped           7           2
+ #selectset contacts        1541
+ selectset done           2
+ eigen done           2
+ tau          19   1.08013082              33
+ #popped           5           1
+ #selectset contacts        1541
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           3           0
+ #selectset contacts        1541
+ selectset done           0
+ eigen done           0
+ tau          21   3.52720594             168
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, TRANSFERASE        27-JUL-06   2HUZ              COMPND   2 MOLECULE: GLUCOSAMINE 6-PHOSPHATE N-ACETYLTRANSFERASE;               SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.MIN,H.WU,H.ZENG,P.LOPPNAU,J.WEIGELT,M.SUNDSTROM,C.H.ARROWS          
+           0
+         182
+         182  residues read 2HUZ.dssp                                                   
+  exclude short helix          10          13
+  exclude short helix          17          19
+  grow short strand          37          41
+  exclude short helix          44          49
+  exclude short helix         108         111
+  exclude short helix         124         126
+  grow short strand         169         170
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  2  3  7  8  9 10 11
+   2     1  4  5  8  1  4  5  6  2  3  7  8
+   3     1 22 23  3  9 10 11
+   4     2  6  7  7  1  4  5  6  2  3  7
+   5     2  0  0  1  8
+   6     4  8  9  6  1  4  5  6  2  3
+   7     4  0  0  1  7
+   8     6 10 11  5  1  4  5  6  2
+   9     6  0  0  1  3
+  10     8 16 17  4  1  4  5  6
+  11     8  0  0  1  2
+  12     0  0  0  0
+  13     0  0  0  4  1  4  5  6
+  14     0  0  0  4  1  4  5  6
+  15     0  0  0  0
+  16    10 18 19  2  1  4
+  17    10  0  0  2  5  6
+  18    16  0  0  1  1
+  19    16  0  0  1  4
+  20     0  0  0  0
+  21     0  0  0  1  7
+  22     3  0  0  1  9
+  23     3  0  0  2 10 11
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  8  1  1  8
+   3 -   1 16 17  3  1  9 11
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  6  1  1  6
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  5  2  1  2  4  6
+   9 -   6  0  0  1  1  3  3
+  10 -   8 12 13  4  2  1  1  4  6
+  11 -   8  0  0  1  1  2  2
+  12 -  10 14 15  2  2  1  1  4  4
+  13 -  10  0  0  2  1  5  6
+  14 -  12  0  0  1  1  1  1
+  15 -  12  0  0  1  1  4  4
+  16 -   3  0  0  1  1  9  9
+  17 -   3  0  0  2  1 10 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            182
+Total number of atoms read in:              1439
+Total number of ignored atom records:         47
+ HEADER    STRUCTURAL GENOMICS, TRANSFERASE        27-JUL-06   2HUZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.MIN,H.WU,H.ZENG,P.LOPPNAU,J.WEIGELT,M.SUNDSTROM,C.H.ARROWSMITH,     
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, TRANSFERASE        27-JUL-06   2HUZ              COMPND   2 MOLECULE: GLUCOSAMINE 6-PHOSPHATE N-ACETYLTRANSFERASE;               SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.MIN,H.WU,H.ZENG,P.LOPPNAU,J.WEIGELT,M.SUNDSTROM,C.H.ARROWS          
+         182  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau           1   3.67732978             169
+ #popped           2           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau           3   2.09935713             152
+ #popped           4           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau           5   1.20377994              49          72
+ #popped           6           1
+ #selectset contacts        1539
+ selectset done           1
+ eigen done           1
+ tau           7   1.36679411              15          33         127         141
+ #popped           8           2
+ #selectset contacts        1539
+ selectset done           2
+ eigen done           2
+ tau           9  0.851825893              15          49          82
+ #popped          10           3
+ #selectset contacts        1539
+ selectset done           3
+ eigen done           3
+ tau          11   2.49609756              15
+ #popped          11           2
+ #selectset contacts        1539
+ selectset done           2
+ eigen done           2
+ tau          13   2.40289998             101         116         127
+ #popped          14           3
+ #selectset contacts        1539
+ selectset done           3
+ eigen done           3
+ tau          15  0.633028328             101
+ #popped          16           3
+ #selectset contacts        1539
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        1539
+ selectset done           2
+ eigen done           2
+ tau          17  0.484496117             116
+ #popped           9           1
+ #selectset contacts        1539
+ selectset done           1
+ eigen done           1
+ tau          19   1.09220839              33
+ #popped           7           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau          21   1.91648257              61
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, TRANSFERASE        27-JUL-06   2HUZ              COMPND   2 MOLECULE: GLUCOSAMINE 6-PHOSPHATE N-ACETYLTRANSFERASE;               SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.MIN,H.WU,H.ZENG,P.LOPPNAU,J.WEIGELT,M.SUNDSTROM,C.H.ARROWS          
+           0
+         182
+         182  residues read 2HUZ.dssp                                                   
+  exclude short helix          10          13
+  exclude short helix          17          19
+  grow short strand          38          41
+  exclude short helix          44          48
+  exclude short helix          51          55
+  exclude short helix         108         111
+  grow short strand         169         170
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  3  4  5  7  6  2  8  9 10
+   2     1  4  5  9  1  3  4  5  7  6  2  8  9
+   3     1  0  0  1 10
+   4     2  6  7  7  1  3  4  5  7  6  2
+   5     2  0  0  2  8  9
+   6     4  8  9  6  1  3  4  5  7  6
+   7     4  0  0  1  2
+   8     6 14 15  5  1  3  4  5  7
+   9     6  0  0  1  6
+  10     0  0  0  0
+  11     0  0  0  5  1  3  4  5  7
+  12     0  0  0  0
+  13     0  0  0  0
+  14     8 16 17  4  1  3  4  5
+  15     8  0  0  1  7
+  16    14  0  0  3  1  3  4
+  17    14  0  0  1  5
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  1  6
+  22     0  0  0  0
+  23     0  0  0  1  2
+   1 +   0  2  3 10  1  1 10
+   2 *   1  4  5  9  1  1  9
+   3 =   1  0  0  1  1 10 10
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  2  1  8  9
+   6 -   4  8  9  6  2  1  1  3  7
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  5  3  1  1  3  5  7  7
+   9 -   6  0  0  1  1  6  6
+  10 -   8 12 13  4  2  1  1  3  5
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  3  2  1  1  3  4
+  13 -  10  0  0  1  1  5  5
+
+ CHAIN : 2HUZA
+ CHAIN : 2HUZB
+

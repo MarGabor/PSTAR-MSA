@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1BINB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6BMG-B 15.9  2.5  139   154   13   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1BINB Sbjct=6BMGB Z-score=15.9
+
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHLLHHHLLL----lLLLLH
+Query VAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLANG----vDPTNP   56
+ident     |    ||        | |               |     |                
+Sbjct MVLSEGEWQLVLHVWAKVEADIAGHGQDILIRLFKHHPETLEKFDRFKHLkseaeMKASE   60
+DSSP  LLLLHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLHHHHHHLLLLLLLllhhhHHHLH
+
+DSSP  HHHHHHHHHHHHHHHHHHHHhhhLLLL-LLHHHHHHHHL-LLLLHHHHHHHHHHHHHHHH
+Query KLTGHAEKLFALVRDSAGQLkasGTVV-ADAALGSVHAQ-KAVTDPQFVVVKEALLKTIK  114
+ident  |  |                  |        |   ||              ||      
+Sbjct DLKKHGVTVLTALGAILKKK---GHHEaELKPLAQSHATkHKIPIKYLEFISEAIIHVLH  117
+DSSP  HHHHHHHHHHHHHHHHHHLL---LLLHhHHHHHHHHHHHlLLLLHHHHHHHHHHHHHHHH
+
+DSSP  HHHHHHLLHHHHHHHHHHHHHHHHHHHLL--------
+Query AAVGDKWSDELSRAWEVAYDELAAAIKKA--------  143
+ident              |   |       |           
+Sbjct SRHPADFGADAQGAMSKALELFRKDIAAKykelgyqg  154
+DSSP  HHLHHHLLHHHHHHHHHHHHHHHHHHHHHhhhhllll
+
+
+# Structural equivalences
+   1: 1BIN-B 6BMG-B     1 -  50 <=>    1 -  50   (VAL    1  - GLY   50  <=> MET    0  - LEU   49 )                          
+   1: 1BIN-B 6BMG-B    52 -  76 <=>   56 -  80   (ASP   52  - LEU   76  <=> MET   55  - LYS   79 )                          
+   1: 1BIN-B 6BMG-B    80 -  83 <=>   81 -  84   (GLY   80  - VAL   83  <=> GLY   80  - GLU   83 )                          
+   1: 1BIN-B 6BMG-B    84 -  94 <=>   86 -  96   (ALA   84  - GLN   94  <=> GLU   85  - THR   95 )                          
+   1: 1BIN-B 6BMG-B    95 - 143 <=>   98 - 146   (LYS   95  - ALA  143  <=> HIS   97  - LYS  145 )                          
+
+# Translation-rotation matrices
+-matrix  "1BIN-B 6BMG-B  U(1,.)  -0.345465  0.937056 -0.050798          -23.215895"
+-matrix  "1BIN-B 6BMG-B  U(2,.)   0.540549  0.242950  0.805470           21.014402"
+-matrix  "1BIN-B 6BMG-B  U(3,.)   0.767112  0.250803 -0.590455           -2.503734"
+

@@ -1,0 +1,365 @@
+A length: 210
+B length: 209
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            210
+Total number of atoms read in:              1646
+Total number of ignored atom records:        340
+ HEADER    TRANSFERASE                             17-FEB-97   1PGT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.JI                                                                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             17-FEB-97   1PGT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    X.JI                                                                  
+         210  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau           1   2.41279578              10          27          64
+ #popped           2           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           3  0.589375019              47
+ #popped           4           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           5  0.998082519              37
+ #popped           6           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau           7   1.51523066              27          92
+ #popped           8           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           9   1.37210882              27         185         200
+ #popped          10           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau          11   1.70652664              27
+ #popped          11           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          13   1.83174884             122         185
+ #popped          14           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau          15   1.41539681             122
+ #popped          16           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau          17   1.31271219             110
+ #popped          15           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          19   1.28341651             148         172
+ #popped          20           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau          21  0.851351380             148
+ #popped          22           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau          23   1.48148155             136
+ #popped          21           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          25  0.876757622             161
+ #popped           9           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau          27   1.69395065              79
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             17-FEB-97   1PGT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    X.JI                                                                  
+           0
+         210
+         210  residues read 1PGT.dssp                                                   
+  grow short strand           4           8
+  grow short strand          30          33
+  exclude short helix          36          41
+  exclude short helix          43          47
+  grow short strand          55          58
+  grow short strand          61          64
+  exclude short helix         138         140
+  exclude short helix         170         173
+  grow short helix         188         194
+  exclude short helix         197         200
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  2 11  7  8 10  9  6
+   2     1  4  5  4  1  3  4  5
+   3     1  8  9  7  2 11  7  8 10  9  6
+   4     2  0  0  2  1  3
+   5     2  0  0  2  4  5
+   6     0  0  0  2  1  3
+   7     0  0  0  0
+   8     3 10 11  6  2 11  7  8 10  9
+   9     3  0  0  1  6
+  10     8 12 13  2  2 11
+  11     8 14 15  4  7  8 10  9
+  12    10  0  0  1  2
+  13    10  0  0  1 11
+  14    11  0  0  1  7
+  15    11 20 21  3  8 10  9
+  16     0  0  0  1  7
+  17     0  0  0  0
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20    15 22 23  2  8 10
+  21    15  0  0  1  9
+  22    20  0  0  1  8
+  23    20  0  0  1 10
+  24     0  0  0  1  8
+  25     0  0  0  0
+  26     0  0  0  1  9
+  27     0  0  0  0
+  28     0  0  0  1  6
+  29     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  4  2  1  1  3  5
+   3 -   1  6  7  7  2  2  2  6 11
+   4 -   2  0  0  2  2  1  1  3  3
+   5 -   2  0  0  2  1  4  5
+   6 -   3  8  9  6  2  2  2  7 11
+   7 -   3  0  0  1  1  6  6
+   8 -   6 10 11  2  2  2  2 11 11
+   9 -   6 12 13  4  1  7 10
+  10 -   8  0  0  1  1  2  2
+  11 -   8  0  0  1  1 11 11
+  12 -   9  0  0  1  1  7  7
+  13 -   9 14 15  3  1  8 10
+  14 -  13 16 17  2  2  8  8 10 10
+  15 -  13  0  0  1  1  9  9
+  16 -  14  0  0  1  1  8  8
+  17 -  14  0  0  1  1 10 10
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            209
+Total number of atoms read in:              1638
+Total number of ignored atom records:        396
+ HEADER    TRANSFERASE                             17-FEB-97   1PGT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.JI                                                                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             17-FEB-97   1PGT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    X.JI                                                                  
+         209  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1964
+ selectset done           0
+ eigen done           0
+ tau           1   2.18852401              78
+ #popped           2           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau           3   1.73930800              33          51
+ #popped           4           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau           5   1.73608911              63
+ #popped           6           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau           7  0.637824535              33
+ #popped           8           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau           9  0.375849068              12
+ #popped          11           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1964
+ selectset done           0
+ eigen done           0
+ tau          11   1.51622415             177
+ #popped          12           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau          13   1.39316082              91
+ #popped          15           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau          15   1.67706776             125
+ #popped          16           2
+ #selectset contacts        1964
+ selectset done           2
+ eigen done           2
+ tau          17   1.67100370             109
+ #popped          17           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau          19   1.29945409             147         167
+ #popped          20           2
+ #selectset contacts        1964
+ selectset done           2
+ eigen done           2
+ tau          21   1.64315343             135         147
+ #popped          22           2
+ #selectset contacts        1964
+ selectset done           2
+ eigen done           2
+ tau          23  0.884936929             135
+ #popped          21           1
+ #selectset contacts        1964
+ selectset done           1
+ eigen done           1
+ tau          25  0.740277767             157
+ #popped          13           0
+ #selectset contacts        1964
+ selectset done           0
+ eigen done           0
+ tau          27   1.80117166             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             17-FEB-97   1PGT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    X.JI                                                                  
+           0
+         209
+         209  residues read 1PGT.dssp                                                   
+  grow short strand           3           7
+  grow short strand          28          32
+  exclude short helix          35          40
+  exclude short helix          42          46
+  grow short strand          54          57
+  grow short strand          60          63
+  exclude short helix         137         139
+  exclude short helix         196         199
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7  8  9 10 11
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1 12 13  5  7  8  9 10 11
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  8  9  5  1  2  3  4  5
+   7     2  0  0  1  6
+   8     6 10 11  3  1  2  3
+   9     6  0  0  2  4  5
+  10     8  0  0  1  1
+  11     8  0  0  2  2  3
+  12     3 16 17  3  7  8  9
+  13     3  0  0  2 10 11
+  14     0  0  0  0
+  15     0  0  0  3  7  8  9
+  16    12 18 19  2  7  8
+  17    12  0  0  1  9
+  18    16  0  0  1  7
+  19    16  0  0  1  8
+  20     0  0  0  0
+  21     0  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  1  9
+  27     0  0  0  0
+  28     0  0  0  2 10 11
+  29     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  1  1  6
+   3 -   1 10 11  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  2  3
+  10 -   3 12 13  3  1  7  9
+  11 -   3  0  0  2  1 10 11
+  12 -  10 14 15  2  1  7  8
+  13 -  10  0  0  1  1  9  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12  0  0  1  1  8  8
+
+ CHAIN : 1PGTA
+ CHAIN : 1PGTB
+

@@ -1,0 +1,33 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X6A-A  6.1  4.4   69    81   29   MOLECULE: LIM DOMAIN KINASE 2;                                       
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=1X6AA Z-score=6.1
+
+DSSP  ---------LLLL-LLLLLLLLLLLLLLLEEELLEEELLLLLLLLLLLLLLL-LLLEEEL
+Query ---------GSSG-SSGCVKCNKAITSGGITYQDQPWHADCFVCVTCSKKLA-GQRFTAV   49
+ident                  |  |    |           |  || |  |      |     |
+Sbjct gssgssgkdYWGKfGEFCHGCSLLMTGPFMVAGEFKYHPECFACMSCKVIIEdGDAYALV   60
+DSSP  lllllllllLLLLlLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLlLLLEEEL
+
+DSSP  LL-LEEEHHHHHHHHLLLLLL
+Query ED-QYYCVDCYKNFVSGPSSG   69
+ident      ||  |    |||||||
+Sbjct QHaTLYCGKCHNEVVSGPSSG   81
+DSSP  LLlLEEEHHHHHHHHLLLLLL
+
+
+# Structural equivalences
+   1: 2CUR-A 1X6A-A     1 -   4 <=>   10 -  13   (GLY    1  - GLY    4  <=> TYR   10  - LYS   13 )                          
+   1: 2CUR-A 1X6A-A     5 -  42 <=>   15 -  52   (SER    5  - ALA   42  <=> GLY   15  - GLU   52 )                          
+   1: 2CUR-A 1X6A-A    43 -  51 <=>   54 -  62   (GLY   43  - ASP   51  <=> GLY   54  - HIS   62 )                          
+   1: 2CUR-A 1X6A-A    52 -  69 <=>   64 -  81   (GLN   52  - GLY   69  <=> THR   64  - GLY   81 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 1X6A-A  U(1,.)  -0.625655 -0.489240 -0.607618            1.781515"
+-matrix  "2CUR-A 1X6A-A  U(2,.)   0.205339  0.648147 -0.733308           -2.595657"
+-matrix  "2CUR-A 1X6A-A  U(3,.)   0.752590 -0.583566 -0.305057           -5.402243"
+

@@ -1,0 +1,39 @@
+# Job: PDZ
+# Query: 2KV8A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1I16-A  6.9  2.6   81   130   21   MOLECULE: INTERLEUKIN 16;                                            
+
+# Pairwise alignments
+
+No 1: Query=2KV8A Sbjct=1I16A Z-score=6.9
+
+DSSP  ---------------------------LLEEEEEELLLLLLLLLLLLLL-------LLLL
+Query ---------------------------PRVRSVEVARGRAGYGFTLSGQ-------APCV   26
+ident                              |  |      || || | |         |  
+Sbjct mpdlnsstdsaasasaasdvsvestaeATVCTVTLEKMSAGLGFSLEGGkgslhgdKPLT   60
+DSSP  lllllllllllllllllllllllllllEEEEEEEEELLLLLLLEEEELLlllllllLLLE
+
+DSSP  LLLLLLLLL-llLLLLLLLLEEEEELLEELLLLLHHHHHHHHLLLLL-LEEEEEELLLL-
+Query LSCVMRGSP-adFVGLRAGDQILAVNEINVKKASHEDVVKLIGKCSG-VLHMVIAEGVG-   83
+ident       |           || ||                  |          ||      
+Sbjct INRIFKGAAseqSETVQPGDEILQLGGTAMQGLTRFEAWNIIKALPDgPVTIVIRRKSLq  120
+DSSP  EEEELLLLLlllLLLLLLLLLEEELLLLLHHHLLHHHHHHHHHLLLLlEEEEEEEEELLl
+
+DSSP  ----------
+Query ----------   83
+ident           
+Sbjct skettaagds  130
+DSSP  llllllllll
+
+
+# Structural equivalences
+   1: 2KV8-A 1I16-A     1 -  22 <=>   28 -  49   (PRO    1  - GLN   22  <=> ALA   28  - GLY   49 )                          
+   1: 2KV8-A 1I16-A    23 -  35 <=>   57 -  69   (ALA   23  - PRO   35  <=> LYS   57  - ALA   69 )                          
+   1: 2KV8-A 1I16-A    38 -  72 <=>   73 - 107   (PHE   38  - GLY   72  <=> SER   73  - ASP  107 )                          
+   1: 2KV8-A 1I16-A    73 -  83 <=>  109 - 119   (VAL   73  - GLY   83  <=> PRO  109  - LEU  119 )                          
+
+# Translation-rotation matrices
+-matrix  "2KV8-A 1I16-A  U(1,.)   0.765407  0.497493 -0.408231           -2.086011"
+-matrix  "2KV8-A 1I16-A  U(2,.)  -0.528855  0.847698  0.041480            4.612495"
+-matrix  "2KV8-A 1I16-A  U(3,.)   0.366693  0.184146  0.911936           -0.237242"
+

@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1HDSC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5KER-H 20.4  1.5  138   146   40   MOLECULE: ALPHA-GLOBIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=1HDSC Sbjct=5KERH Z-score=20.4
+
+DSSP  -LLLLLHHHHHHHHHHHHllLLHHHHHHHHLHHHHHLHHHHHHLLLLL------lLLLLH
+Query -VLSAANKSNVKAAWGKVggNAPAYGAQALQRMFLSFPTTKTYFPHFD------lSHGSA   53
+ident   |  | |  |   ||||       |  || |     | |   |  |          | |
+Sbjct vHLTDAEKALVTGLWGKV--KPEEIGGEALGRLLAVYPWTQRFFDSFGdlssasaIMGNA   58
+DSSP  lLLLHHHHHHHHHHHLLL--LHHHHHHHHHHHHHHHLHHHHHHHHHHLllllhhhHHLLH
+
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHLLLLLHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+Query QQKAHGQKVANALTKAQGHLNDLPGTLSNLSNLHAHKLRVNPVNFKLLSHSLLVTLASHL  113
+ident   | || ||         ||  | ||   || ||  || | | |||||        | ||
+Sbjct KVKGHGKKVIDSFGEGLKHLDNLKGTFASLSELHCDKLHVDPENFKLLGNMIVIVMAHHL  118
+DSSP  HHHHHHHHHHHHHHHHLLLHHHHHHHLHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHH
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHHHHHL
+Query PTNFTPAVHANLNKFLANDSTVLTSKYR  141
+ident    ||||  |   |  |   | |  || 
+Sbjct GKDFTPAAQAAYQKVVAGVATALAHKYH  146
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHLLLLL
+
+
+# Structural equivalences
+   1: 1HDS-C 5KER-H     1 -  17 <=>    2 -  18   (VAL    1  - VAL   17  <=> HIS    2  - VAL   18 )                          
+   1: 1HDS-C 5KER-H    20 -  47 <=>   19 -  46   (ASN   20  - ASP   47  <=> LYS   19  - GLY   46 )                          
+   1: 1HDS-C 5KER-H    49 - 141 <=>   54 - 146   (SER   49  - ARG  141  <=> ILE   54  - HIS  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1HDS-C 5KER-H  U(1,.)  -0.416531 -0.269830 -0.868155          105.082710"
+-matrix  "1HDS-C 5KER-H  U(2,.)  -0.897953  0.271336  0.346494           41.593792"
+-matrix  "1HDS-C 5KER-H  U(3,.)   0.142067  0.923888 -0.355314           60.387321"
+

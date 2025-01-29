@@ -1,0 +1,31 @@
+# Job: hom
+# Query: 2LP0A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1FTZ-A  6.6  2.5   54    70   65   MOLECULE: FUSHI TARAZU PROTEIN;                                      
+
+# Pairwise alignments
+
+No 1: Query=2LP0A Sbjct=1FTZA Z-score=6.6
+
+DSSP  --lllllLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHHHH--H
+Query --trkkrCPYTKYQTLELEKEFLFNMYLTRDRRYEVARVLNLTERQVKIWFQNRRMK--M   56
+ident          || |||||||||| || | || ||   |  | | ||| ||||||||||   
+Sbjct mdskrtrQTYTRYQTLELEKEFHFNRYITRRRRIDIANALSLSERQIKIWFQNRRMKskK   60
+DSSP  lllllllLLLLHHHHHHHHHHHLLLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHLLLllL
+
+DSSP  HLL------l
+Query KKM------n   60
+ident           
+Sbjct DRTldsspeh   70
+DSSP  LLLhhhllll
+
+
+# Structural equivalences
+   1: 2LP0-A 1FTZ-A     6 -  55 <=>    8 -  57   (CYS   22  - LYS   71  <=> GLN    6  - LYS   55 )                          
+   1: 2LP0-A 1FTZ-A    56 -  59 <=>   60 -  63   (MET   72  - MET   75  <=> LYS   58  - THR   61 )                          
+
+# Translation-rotation matrices
+-matrix  "2LP0-A 1FTZ-A  U(1,.)   0.369472  0.222347 -0.902249           -4.566794"
+-matrix  "2LP0-A 1FTZ-A  U(2,.)   0.550215 -0.834793  0.019591           -3.812927"
+-matrix  "2LP0-A 1FTZ-A  U(3,.)  -0.748835 -0.503669 -0.430771           -0.469711"
+

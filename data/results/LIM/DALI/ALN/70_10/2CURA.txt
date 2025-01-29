@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CUQ-A  7.8  3.2   67    80   40   MOLECULE: FOUR AND A HALF LIM DOMAINS 3;                             
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=2CUQA Z-score=7.8
+
+DSSP  ---------LLLL-LLLLLLLLLLLLLLLEEELLEEELLLLLLLLLLLLLLLLLLEEELL
+Query ---------GSSG-SSGCVKCNKAITSGGITYQDQPWHADCFVCVTCSKKLAGQRFTAVE   50
+ident                  |  | |  | || || |||||  | ||  |   |||| ||   
+Sbjct gssgssgpcYENKfAPRCARCSKTLTQGGVTYRDQPWHRECLVCTGCQTPLAGQQFTSRD   60
+DSSP  lllllllllLLLLlLLLLLLLLLLLLLLLEELLLLEELLLLLLLLLLLLLLLLLLEEELL
+
+DSSP  LLEEEHHHHHHHHLLLL-ll
+Query DQYYCVDCYKNFVSGPS-sg   69
+ident    ||| |            
+Sbjct EDPYCVACFGELFASGPssg   80
+DSSP  LLEEEHHHHHHHLLLLLlll
+
+
+# Structural equivalences
+   1: 2CUR-A 2CUQ-A     1 -   4 <=>   10 -  13   (GLY    1  - GLY    4  <=> TYR   10  - LYS   13 )                          
+   1: 2CUR-A 2CUQ-A     5 -  67 <=>   15 -  77   (SER    5  - SER   67  <=> ALA   15  - PRO   77 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 2CUQ-A  U(1,.)   0.150211  0.439426  0.885630            2.829318"
+-matrix  "2CUR-A 2CUQ-A  U(2,.)   0.115204 -0.897472  0.425761           -5.050869"
+-matrix  "2CUR-A 2CUQ-A  U(3,.)   0.981919  0.038074 -0.185434           -3.109670"
+

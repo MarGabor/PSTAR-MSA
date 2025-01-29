@@ -1,0 +1,358 @@
+A length: 219
+B length: 219
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            220
+Total number of atoms read in:              1784
+Total number of ignored atom records:        362
+ HEADER    TRANSFERASE                             30-AUG-02   1ML6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.GU,B.XIAO,H.L.WARGO,M.H.BUCHER,S.V.SINGH,X.JI                       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             30-AUG-02   1ML6              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE GT41A;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    Y.GU,B.XIAO,H.L.WARGO,M.H.BUCHER,S.V.SINGH,X.JI                       
+         220  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2070
+ selectset done           0
+ eigen done           0
+ tau           1   2.47590208              80         193
+ #popped           2           1
+ #selectset contacts        2070
+ selectset done           1
+ eigen done           1
+ tau           3   2.56321573              33          52         205
+ #popped           4           2
+ #selectset contacts        2070
+ selectset done           2
+ eigen done           2
+ tau           5   1.33487928              64          80
+ #popped           6           2
+ #selectset contacts        2070
+ selectset done           2
+ eigen done           2
+ tau           7  0.868821919              64
+ #popped           8           2
+ #selectset contacts        2070
+ selectset done           2
+ eigen done           2
+ tau           9  0.675623238              33
+ #popped          10           2
+ #selectset contacts        2070
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2070
+ selectset done           1
+ eigen done           1
+ tau          11   4.40030813              52
+ #popped           3           0
+ #selectset contacts        2070
+ selectset done           0
+ eigen done           0
+ tau          13   1.68062580             105
+ #popped          14           1
+ #selectset contacts        2070
+ selectset done           1
+ eigen done           1
+ tau          15   1.04972124              93
+ #popped          15           0
+ #selectset contacts        2070
+ selectset done           0
+ eigen done           0
+ tau          17   2.37297702             129
+ #popped          18           1
+ #selectset contacts        2070
+ selectset done           1
+ eigen done           1
+ tau          19   1.06427562             119
+ #popped          19           0
+ #selectset contacts        2070
+ selectset done           0
+ eigen done           0
+ tau          21   1.15304649             144         175
+ #popped          22           1
+ #selectset contacts        2070
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          23           0
+ #selectset contacts        2070
+ selectset done           0
+ eigen done           0
+ tau          23   1.29980075             158
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             30-AUG-02   1ML6              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE GT41A;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    Y.GU,B.XIAO,H.L.WARGO,M.H.BUCHER,S.V.SINGH,X.JI                       
+           0
+         220
+         220  residues read 1ML6.dssp                                                   
+  grow short strand           4           8
+  grow short strand          29          33
+  grow short strand          55          58
+  grow short strand          61          64
+  grow short helix         190         196
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  5  6  7  4 14  8  9 10 12 13 11
+   2     1  4  5  8  1  2  3  5  6  7  4 14
+   3     1 14 15  6  8  9 10 12 13 11
+   4     2  6  7  6  1  2  3  5  6  7
+   5     2 12 13  2  4 14
+   6     4 10 11  5  1  2  3  5  6
+   7     4  0  0  1  7
+   8     0  0  0  5  1  2  3  5  6
+   9     0  0  0  0
+  10     6  0  0  3  1  2  3
+  11     6  0  0  2  5  6
+  12     5  0  0  1  4
+  13     5  0  0  1 14
+  14     3  0  0  1  8
+  15     3 18 19  5  9 10 12 13 11
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18    15  0  0  1  9
+  19    15 22 23  4 10 12 13 11
+  20     0  0  0  0
+  21     0  0  0  1  9
+  22    19  0  0  3 10 12 13
+  23    19  0  0  1 11
+  24     0  0  0  0
+  25     0  0  0  1 11
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  8  2  1  7 14 14
+   3 -   1 12 13  6  1  8 13
+   4 -   2  6  7  6  2  1  3  5  7
+   5 -   2 10 11  2  2  4  4 14 14
+   6 -   4  8  9  5  2  1  3  5  6
+   7 -   4  0  0  1  1  7  7
+   8 -   6  0  0  3  1  1  3
+   9 -   6  0  0  2  1  5  6
+  10 -   5  0  0  1  1  4  4
+  11 -   5  0  0  1  1 14 14
+  12 -   3  0  0  1  1  8  8
+  13 -   3 14 15  5  1  9 13
+  14 -  13  0  0  1  1  9  9
+  15 -  13 16 17  4  1 10 13
+  16 -  15  0  0  3  2 10 10 12 13
+  17 -  15  0  0  1  1 11 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            220
+Total number of atoms read in:              1784
+Total number of ignored atom records:        386
+ HEADER    TRANSFERASE                             30-AUG-02   1ML6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.GU,B.XIAO,H.L.WARGO,M.H.BUCHER,S.V.SINGH,X.JI                       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             30-AUG-02   1ML6              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE GT41A;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    Y.GU,B.XIAO,H.L.WARGO,M.H.BUCHER,S.V.SINGH,X.JI                       
+         220  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau           1   1.93520284              99         129         205
+ #popped           2           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau           3   2.56905985              78         188
+ #popped           4           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau           5   2.25014782              33          52
+ #popped           6           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau           7   1.03167927              33          78
+ #popped           8           3
+ #selectset contacts        2068
+ selectset done           3
+ eigen done           3
+ tau           9  0.854295135              33
+ #popped          10           3
+ #selectset contacts        2068
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau          11   1.15612650              64
+ #popped           5           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau          13   2.28990054              99
+ #popped          14           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau          15  0.723956823              88
+ #popped          15           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau          17   1.38852370             144         168
+ #popped          18           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau          19  0.510463238             144         178
+ #popped          20           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          19           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau          21   1.04702973             157
+ #popped           3           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau          23   20.8520546             129
+ #popped          24           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau          25   1.17103243             109
+ #popped          27           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau          27  0.888750017             119
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             30-AUG-02   1ML6              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE GT41A;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    Y.GU,B.XIAO,H.L.WARGO,M.H.BUCHER,S.V.SINGH,X.JI                       
+           0
+         220
+         220  residues read 1ML6.dssp                                                   
+  grow short strand           4           7
+  grow short strand          29          32
+  grow short strand          55          58
+  grow short strand          61          64
+  exclude short helix         170         173
+  grow short helix         190         196
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3 13  5  6  7  4  8 10 12 11  9 14
+   2     1  4  5 12  1  2  3 13  5  6  7  4  8 10 12 11
+   3     1 24 25  2  9 14
+   4     2  6  7  8  1  2  3 13  5  6  7  4
+   5     2 14 15  4  8 10 12 11
+   6     4  8  9  7  1  2  3 13  5  6  7
+   7     4  0  0  1  4
+   8     6 10 11  4  1  2  3 13
+   9     6 12 13  3  5  6  7
+  10     8  0  0  3  1  2  3
+  11     8  0  0  1 13
+  12     9  0  0  2  5  6
+  13     9  0  0  1  7
+  14     5  0  0  1  8
+  15     5 18 19  3 10 12 11
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18    15  0  0  2 10 12
+  19    15  0  0  1 11
+  20     0  0  0  2 10 12
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1 11
+  24     3  0  0  1  9
+  25     3  0  0  1 14
+  26     0  0  0  0
+  27     0  0  0  1  9
+  28     0  0  0  0
+  29     0  0  0  1  9
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 12  2  1  8 10 13
+   3 -   1 18 19  2  2  9  9 14 14
+   4 -   2  6  7  8  2  1  7 13 13
+   5 -   2 14 15  4  2  8  8 10 12
+   6 -   4  8  9  7  3  1  3  5  7 13 13
+   7 -   4  0  0  1  1  4  4
+   8 -   6 10 11  4  2  1  3 13 13
+   9 -   6 12 13  3  1  5  7
+  10 -   8  0  0  3  1  1  3
+  11 -   8  0  0  1  1 13 13
+  12 -   9  0  0  2  1  5  6
+  13 -   9  0  0  1  1  7  7
+  14 -   5  0  0  1  1  8  8
+  15 -   5 16 17  3  1 10 12
+  16 -  15  0  0  2  2 10 10 12 12
+  17 -  15  0  0  1  1 11 11
+  18 -   3  0  0  1  1  9  9
+  19 -   3  0  0  1  1 14 14
+
+ CHAIN : 1ML6A
+ CHAIN : 1ML6B
+

@@ -1,0 +1,46 @@
+# Job: rvp
+# Query: 1FMBA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HVC-A 13.5  1.9   98   203   33   MOLECULE: HIV-1 PROTEASE;                                            
+
+# Pairwise alignments
+
+No 1: Query=1FMBA Sbjct=1HVCA Z-score=13.5
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------    0
+ident                                                             
+Sbjct pqitlwqrplvtiriggqlkealldtgaddtvleemnlpgkwkpkmiggiggfikvrqyd   60
+DSSP  leelllllleeeeelllleeeeeelllllleeeellllllleeeeeeeelleeeeeeeee
+
+DSSP  --------------------------------------------LLLLLLLLLEEEEEEL
+Query --------------------------------------------VTYNLEKRPTTIVLIN   16
+ident                                                 |  ||     | 
+Sbjct qilieicghkaigtvlvgptpvniigrnlltqigctlnfggssgPQITLWQRPLVTIKIG  120
+DSSP  eeeeeelleeeeeeeeeellllleelhhhhhhhlleeellllllLEELLLLLLEEEEEEL
+
+DSSP  LEEEEEEELLLLLLLEEEHhhHHHLlllLLLEELlLEEELLEEELLEEEE-EEEEELLEE
+Query DTPLNVLLDTGADTSVLTTahYNRLkyrGRKYQGtGIGGVGGNVETFSTP-VTIKKKGRH   75
+ident       |||||||  ||           ||      ||| ||           |   |  
+Sbjct GQLKEALLDTGADDTVLEE--MSLP---GRWKPK-MIGGIGGFIKVRQYDqILIEICGHK  174
+DSSP  LEEEEEEELLLLLLLEEEL--LLLL---LLLEEE-EEEELLEEEEEEEEEeEEEEELLEE
+
+DSSP  EEEEEEEELLLLLEELHHHHHHLLLLLLL
+Query IKTRMLVADIPVTILGRDILQDLGAKLVL  104
+ident      ||   || | ||  |   |  |  
+Sbjct AIGTVLVGPTPVNIIGRNLLTQIGCTLNF  203
+DSSP  EEEEEEEELLLLLEELHHHHLLLLLEEEL
+
+
+# Structural equivalences
+   1: 1FMB-A 1HVC-A     1 -  35 <=>  105 - 139   (VAL    1  - THR   35  <=> PRO   1A  - GLU  35A )                          
+   1: 1FMB-A 1HVC-A    38 -  41 <=>  140 - 143   (TYR   38  - LEU   41  <=> MET  36A  - PRO  39A )                          
+   1: 1FMB-A 1HVC-A    45 -  50 <=>  144 - 149   (GLY   45  - GLY   50  <=> GLY  40A  - LYS  45A )                          
+   1: 1FMB-A 1HVC-A    52 -  66 <=>  150 - 164   (GLY   52  - PRO   66  <=> MET  46A  - ASP  60A )                          
+   1: 1FMB-A 1HVC-A    67 - 104 <=>  166 - 203   (VAL   67  - LEU  104  <=> ILE  62A  - PHE  99A )                          
+
+# Translation-rotation matrices
+-matrix  "1FMB-A 1HVC-A  U(1,.)   0.446603  0.739022 -0.504373            6.347158"
+-matrix  "1FMB-A 1HVC-A  U(2,.)   0.019668 -0.571686 -0.820237           29.855284"
+-matrix  "1FMB-A 1HVC-A  U(3,.)  -0.894516  0.356400 -0.269851            9.352080"
+

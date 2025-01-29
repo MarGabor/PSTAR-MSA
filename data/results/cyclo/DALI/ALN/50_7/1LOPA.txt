@@ -1,0 +1,42 @@
+# Job: cyclo
+# Query: 1LOPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2MVZ-A 19.2  1.8  137   146   32   MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE;                       
+
+# Pairwise alignments
+
+No 1: Query=1LOPA Sbjct=2MVZA Z-score=19.2
+
+DSSP  ---LEEEEELL-EEEEEEELLLLLHHHHHHHHHHHHLLLLLLEELLEEELLLEEEELLEE
+Query ---MVTFHTNH-GDIVIKTFDDKAPETVKNFLDYCREGFYNNTIFHRVINGFMIQGGGFE   56
+ident             | |    |   || || ||     |||||   ||||| ||  |||   
+Sbjct makKGYILMENgGKIEFELFPNEAPVTVANFEKLANEGFYNGLTFHRVIPGFVSQGGCPR   60
+DSSP  lleEEEEEELLlLEEEEEELLLLLHHHHHHHHHHHLLLLLLLEELLLLLLLLEEEELEEL
+
+DSSP  LlLEELLLLLLLLLLLL-LLLLLLLLEEEELLLlLLLLLLLLEEEELLLLHHHLLlllll
+Query PgMKQKATKEPIKNEAN-NGLKNTRGTLAMARTqAPHSATAQFFINVVDNDFLNFsgesl  115
+ident            |  |   |      |   ||          ||||       |       
+Sbjct G-NGTGDAGYTIPCETDnNPHRHVTGAMSMAHR-GRDTGSCQFFIVHEPQPHLDG-----  113
+DSSP  L-LLLLLLLLLLLLLLLlLLLLLLLLEEEELLL-LLLLLLLLEEEELLLLHHHLL-----
+
+DSSP  lllLLLEEEEEEELHHHHHHHhllleeeelleeeeellLLEEEEEEELL--
+Query qgwGYCVFAEVVDGMDEVDKIkgvatgrsgmhqdvpkeDVIIESVTVSE--  164
+ident       ||  |  ||| |                          | |    
+Sbjct ---VHTVFGQVTSGMDVVRTM---------------knGDVMKEVKVFDep  146
+DSSP  ---LLEEEEEEEELLHHHHLL---------------llLLLEEEEEEEEll
+
+
+# Structural equivalences
+   1: 1LOP-A 2MVZ-A     1 -   8 <=>    4 -  11   (MET    1  - HIS    8  <=> LYS    4  - ASN   11 )                          
+   1: 1LOP-A 2MVZ-A     9 -  57 <=>   13 -  61   (GLY    9  - PRO   57  <=> GLY   13  - GLY   61 )                          
+   1: 1LOP-A 2MVZ-A    59 -  73 <=>   62 -  76   (MET   59  - ASN   73  <=> ASN   62  - ASP   76 )                          
+   1: 1LOP-A 2MVZ-A    74 -  88 <=>   78 -  92   (ASN   74  - THR   88  <=> ASN   78  - ARG   92 )                          
+   1: 1LOP-A 2MVZ-A    90 - 110 <=>   93 - 113   (ALA   90  - PHE  110  <=> GLY   93  - GLY  113 )                          
+   1: 1LOP-A 2MVZ-A   119 - 136 <=>  114 - 131   (GLY  119  - ILE  136  <=> VAL  114  - MET  131 )                          
+   1: 1LOP-A 2MVZ-A   154 - 164 <=>  134 - 144   (ASP  154  - GLU  164  <=> GLY  134  - ASP  144 )                          
+
+# Translation-rotation matrices
+-matrix  "1LOP-A 2MVZ-A  U(1,.)   0.012488 -0.137301 -0.990451            0.545541"
+-matrix  "1LOP-A 2MVZ-A  U(2,.)  -0.945630  0.320329 -0.056328           28.438107"
+-matrix  "1LOP-A 2MVZ-A  U(3,.)   0.325004  0.937303 -0.125835           14.716202"
+

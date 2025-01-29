@@ -1,0 +1,1907 @@
+A length: 189
+B length: 177
+C length: 185
+D length: 176
+E length: 182
+F length: 176
+G length: 176
+H length: 177
+I length: 178
+J length: 179
+K length: 184
+L length: 178
+# 12 chains A B C D E F G H I J K L
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            189
+Total number of atoms read in:              1489
+Total number of ignored atom records:        165
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         189  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1665
+ selectset done           0
+ eigen done           0
+ tau           1   2.34661579              72          89         103
+ #popped           2           1
+ #selectset contacts        1665
+ selectset done           1
+ eigen done           1
+ tau           3   1.32685924              41          53
+ #popped           4           1
+ #selectset contacts        1665
+ selectset done           1
+ eigen done           1
+ tau           5  0.700250149              18
+ #popped           7           1
+ #selectset contacts        1665
+ selectset done           1
+ eigen done           1
+ tau           7  0.897737563              41
+ #popped           8           2
+ #selectset contacts        1665
+ selectset done           2
+ eigen done           2
+ tau           9  0.967741966              30
+ #popped           9           1
+ #selectset contacts        1665
+ selectset done           1
+ eigen done           1
+ tau          11  0.609036982              72
+ #popped           3           0
+ #selectset contacts        1665
+ selectset done           0
+ eigen done           0
+ tau          13   1.58853185              89         117
+ #popped          14           0
+ #selectset contacts        1665
+ selectset done           0
+ eigen done           0
+ tau          15  0.834978878             147         161
+ #popped          16           0
+ #selectset contacts        1665
+ selectset done           0
+ eigen done           0
+ tau          17  0.585304081             179
+ #popped          18           0
+ #selectset contacts        1665
+ selectset done           0
+ eigen done           0
+ tau          19  0.629058480             130
+ #popped          20           1
+ #selectset contacts        1665
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        1665
+ selectset done           0
+ eigen done           0
+ tau          21  0.417325228             147
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         189
+         189  residues read 5US1.dssp                                                   
+  grow short strand           7          11
+  exclude short helix          21          23
+  grow short helix          46          52
+  exclude short helix          96          98
+  grow short strand         121         125
+  exclude short helix         131         135
+  grow short strand         140         141
+  grow short strand         146         150
+  grow short strand         153         156
+  exclude short helix         158         160
+  grow short strand         164         168
+  grow short strand         179         180
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  5  6  4  7  9 10 13 14 11 12  8
+   2     1  4  5  6  1  2  3  5  6  4
+   3     1 14 15  8  7  9 10 13 14 11 12  8
+   4     2  6  7  5  1  2  3  5  6
+   5     2  0  0  1  4
+   6     4  0  0  2  1  2
+   7     4  8  9  3  3  5  6
+   8     7  0  0  1  3
+   9     7  0  0  2  5  6
+  10     0  0  0  0
+  11     0  0  0  1  3
+  12     0  0  0  2  5  6
+  13     0  0  0  0
+  14     3 16 17  7  7  9 10 13 14 11 12
+  15     3  0  0  1  8
+  16    14 20 21  5  7  9 10 13 14
+  17    14  0  0  2 11 12
+  18     0  0  0  5  7  9 10 13 14
+  19     0  0  0  0
+  20    16  0  0  2  7  9
+  21    16 22 23  3 10 13 14
+  22    21  0  0  1 10
+  23    21  0  0  2 13 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  8  1  7 14
+   4 -   2  6  7  5  2  1  3  5  6
+   5 -   2  0  0  1  1  4  4
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  3  2  3  3  5  6
+   8 -   7  0  0  1  1  3  3
+   9 -   7  0  0  2  1  5  6
+  10 -   3 12 13  7  2  7  7  9 14
+  11 -   3  0  0  1  1  8  8
+  12 -  10 14 15  5  3  7  7  9 10 13 14
+  13 -  10  0  0  2  1 11 12
+  14 -  12  0  0  2  2  7  7  9  9
+  15 -  12 16 17  3  2 10 10 13 14
+  16 -  15  0  0  1  1 10 10
+  17 -  15  0  0  2  1 13 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1981  CA BGLN B  63 
+ Alternate location indication is not blank or A, ignore atom: 1985  CB BGLN B  63 
+ Alternate location indication is not blank or A, ignore atom: 1987  CG BGLN B  63 
+ Alternate location indication is not blank or A, ignore atom: 1989  CD BGLN B  63 
+ Alternate location indication is not blank or A, ignore atom: 1991  OE1BGLN B  63 
+ Alternate location indication is not blank or A, ignore atom: 1993  NE2BGLN B  63 
+
+Total number of residues read in:            178
+Total number of atoms read in:              1414
+Total number of ignored atom records:        142
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau           1   1.94320309              61          78         100
+ #popped           2           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           3   1.87474751              28          42
+ #popped           4           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           5   1.71119285              13          28
+ #popped           6           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           7   1.40313578              88
+ #popped           8           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           9  0.690269351              61
+ #popped          10           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          11  0.307157964              13
+ #popped           3           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          13   1.21216142             115         127
+ #popped          14           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          15  0.332326293             151         166
+ #popped          16           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          17  0.671243310             137         151
+ #popped          18           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          19  0.843393266             115
+ #popped          20           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         178
+         178  residues read 5US1.dssp                                                   
+  exclude short helix          10          12
+  grow short helix          35          41
+  exclude short helix          85          87
+  grow short strand         110         114
+  exclude short helix         124         126
+  grow short strand         129         130
+  grow short strand         135         139
+  grow short strand         142         145
+  grow short strand         153         157
+  grow short strand         168         169
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  4  5  7  2  3  6  8  9 10 13 11 12
+   2     1  4  5  6  1  4  5  7  2  3
+   3     1 16 17  7  6  8  9 10 13 11 12
+   4     2  6  7  5  1  4  5  7  2
+   5     2  0  0  1  3
+   6     4  8  9  4  1  4  5  7
+   7     4  0  0  1  2
+   8     6 12 13  3  1  4  5
+   9     6  0  0  1  7
+  10     0  0  0  3  1  4  5
+  11     0  0  0  0
+  12     8  0  0  1  1
+  13     8  0  0  2  4  5
+  14     0  0  0  7  6  8  9 10 13 11 12
+  15     0  0  0  0
+  16     3 18 19  6  6  8  9 10 13 11
+  17     3  0  0  1 12
+  18    16 20 21  5  6  8  9 10 13
+  19    16  0  0  1 11
+  20    18  0  0  2  6  8
+  21    18  0  0  3  9 10 13
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  6  2  1  5  7  7
+   3 *   1 12 13  7  2  6  6  8 13
+   4 -   2  6  7  5  3  1  2  4  5  7  7
+   5 -   2  0  0  1  1  3  3
+   6 -   4  8  9  4  3  1  1  4  5  7  7
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  3  2  1  1  4  5
+   9 -   6  0  0  1  1  7  7
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  4  5
+  12 -   3 14 15  6  3  6  6  8 11 13 13
+  13 -   3  0  0  1  1 12 12
+  14 -  12 16 17  5  3  6  6  8 10 13 13
+  15 -  12  0  0  1  1 11 11
+  16 -  14  0  0  2  2  6  6  8  8
+  17 -  14  0  0  3  2  9 10 13 13
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:17935  O  BHOH C 339 
+
+Total number of residues read in:            185
+Total number of atoms read in:              1463
+Total number of ignored atom records:        160
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         185  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau           1   2.58811903              68          84         113
+ #popped           2           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           3   1.86789477              39          49
+ #popped           4           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           5   1.82774496              97
+ #popped           6           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           7  0.650791943              15          27
+ #popped           8           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           9   1.91695464              15          39
+ #popped          10           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          11  0.914814830             140         157         173
+ #popped          12           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau          13  0.591620862             128
+ #popped          14           2
+ #selectset contacts        1629
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          13           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         185
+         185  residues read 5US1.dssp                                                   
+  grow short strand           4           7
+  exclude short helix          17          19
+  exclude short helix          42          46
+  exclude short helix          92          94
+  grow short strand         117         121
+  exclude short helix         127         131
+  grow short strand         136         137
+  grow short strand         142         146
+  grow short strand         149         152
+  exclude short helix         154         156
+  grow short strand         160         164
+  grow short strand         175         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  4  5  3  7  6  8  9 12 10 11 13
+   2     1  6  7  6  1  2  4  5  3  7
+   3     1 12 13  7  6  8  9 12 10 11 13
+   4     0  0  0  6  1  2  4  5  3  7
+   5     0  0  0  0
+   6     2 10 11  5  1  2  4  5  3
+   7     2  0  0  1  7
+   8     0  0  0  5  1  2  4  5  3
+   9     0  0  0  0
+  10     6  0  0  4  1  2  4  5
+  11     6  0  0  1  3
+  12     3 14 15  4  6  8  9 12
+  13     3  0  0  3 10 11 13
+  14    12  0  0  2  6  8
+  15    12  0  0  2  9 12
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  6  2  1  5  7  7
+   3 *   1  8  9  7  2  6  6  8 13
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  7  7
+   6 -   4  0  0  4  2  1  2  4  5
+   7 -   4  0  0  1  1  3  3
+   8 -   3 10 11  4  3  6  6  8  9 12 12
+   9 -   3  0  0  3  2 10 11 13 13
+  10 -   8  0  0  2  2  6  6  8  8
+  11 -   8  0  0  2  2  9  9 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5375  CA BGLN D 129 
+ Alternate location indication is not blank or A, ignore atom: 5379  CB BGLN D 129 
+ Alternate location indication is not blank or A, ignore atom: 5381  CG BGLN D 129 
+ Alternate location indication is not blank or A, ignore atom: 5383  CD BGLN D 129 
+ Alternate location indication is not blank or A, ignore atom: 5385  OE1BGLN D 129 
+ Alternate location indication is not blank or A, ignore atom: 5387  NE2BGLN D 129 
+
+Total number of residues read in:            177
+Total number of atoms read in:              1406
+Total number of ignored atom records:        129
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         177  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau           1   2.18689489              60          76          99
+ #popped           2           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau           3   2.28652239              12          41
+ #popped           4           2
+ #selectset contacts        1553
+ selectset done           2
+ eigen done           2
+ tau           5  0.647058785              55
+ #popped           6           3
+ #selectset contacts        1553
+ selectset done           3
+ eigen done           3
+ tau           7  0.299129933              12
+ #popped           7           2
+ #selectset contacts        1553
+ selectset done           2
+ eigen done           2
+ tau           9   1.71536040              89
+ #popped           5           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau          11   1.92307687              31
+ #popped           3           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau          13   1.19252932             114         126
+ #popped          14           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau          15  0.352654576             149         165
+ #popped          16           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau          17   1.05595171             114
+ #popped          18           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         177
+         177  residues read 5US1.dssp                                                   
+  exclude short helix           9          11
+  exclude short helix          34          38
+  grow short strand         109         113
+  exclude short helix         119         124
+  grow short strand         128         129
+  grow short strand         134         138
+  grow short strand         141         144
+  grow short strand         152         155
+  grow short strand         167         169
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  6  2  5  7  8  9 10 12 11
+   2     1  4  5  5  1  3  4  6  2
+   3     1 16 17  7  5  7  8  9 10 12 11
+   4     2  6  7  4  1  3  4  6
+   5     2  0  0  1  2
+   6     4  8  9  2  1  3
+   7     4 10 11  2  4  6
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     7  0  0  1  4
+  11     7  0  0  1  6
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     0  0  0  7  5  7  8  9 10 12 11
+  15     0  0  0  0
+  16     3 18 19  6  5  7  8  9 10 12
+  17     3  0  0  1 11
+  18    16  0  0  2  5  7
+  19    16  0  0  4  8  9 10 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  5  2  1  4  6  6
+   3 -   1 12 13  7  2  5  5  7 12
+   4 -   2  6  7  4  3  1  1  3  4  6  6
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4 10 11  2  2  4  4  6  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+  10 -   7  0  0  1  1  4  4
+  11 -   7  0  0  1  1  6  6
+  12 -   3 14 15  6  3  5  5  7 10 12 12
+  13 -   3  0  0  1  1 11 11
+  14 -  12  0  0  2  2  5  5  7  7
+  15 -  12  0  0  4  2  8 10 12 12
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5845  CA BGLU E   4 
+ Alternate location indication is not blank or A, ignore atom: 5849  CB BGLU E   4 
+ Alternate location indication is not blank or A, ignore atom: 5851  CG BGLU E   4 
+ Alternate location indication is not blank or A, ignore atom: 5853  CD BGLU E   4 
+ Alternate location indication is not blank or A, ignore atom: 5855  OE1BGLU E   4 
+ Alternate location indication is not blank or A, ignore atom: 5857  OE2BGLU E   4 
+ Alternate location indication is not blank or A, ignore atom: 6320  CA BGLN E  63 
+ Alternate location indication is not blank or A, ignore atom: 6324  CB BGLN E  63 
+ Alternate location indication is not blank or A, ignore atom: 6326  CG BGLN E  63 
+ Alternate location indication is not blank or A, ignore atom: 6328  CD BGLN E  63 
+ Alternate location indication is not blank or A, ignore atom: 6330  OE1BGLN E  63 
+ Alternate location indication is not blank or A, ignore atom: 6332  NE2BGLN E  63 
+
+Total number of residues read in:            184
+Total number of atoms read in:              1452
+Total number of ignored atom records:        187
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         184  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1635
+ selectset done           0
+ eigen done           0
+ tau           1   2.38460755              67          83         106
+ #popped           2           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau           3   1.49683833              18          49
+ #popped           4           2
+ #selectset contacts        1635
+ selectset done           2
+ eigen done           2
+ tau           5  0.681865335              62
+ #popped           6           3
+ #selectset contacts        1635
+ selectset done           3
+ eigen done           3
+ tau           7  0.334919304              18
+ #popped           7           2
+ #selectset contacts        1635
+ selectset done           2
+ eigen done           2
+ tau           9   1.65818179              96
+ #popped           5           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau          11   1.88401079              38
+ #popped          12           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau          13  0.717721462              28
+ #popped           3           0
+ #selectset contacts        1635
+ selectset done           0
+ eigen done           0
+ tau          15   1.17811418             120         133
+ #popped          16           0
+ #selectset contacts        1635
+ selectset done           0
+ eigen done           0
+ tau          17  0.332307696             157         172
+ #popped          18           0
+ #selectset contacts        1635
+ selectset done           0
+ eigen done           0
+ tau          19  0.436461478             143
+ #popped          20           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau          21   3.20552135             120
+ #popped          22           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        1635
+ selectset done           0
+ eigen done           0
+ tau          23   2.05319929             157
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         184
+         184  residues read 5US1.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          16          18
+  exclude short helix          41          45
+  exclude short helix          91          93
+  grow short strand         116         120
+  exclude short helix         126         130
+  grow short strand         135         136
+  grow short strand         141         145
+  grow short strand         148         151
+  grow short strand         159         163
+  grow short strand         174         176
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  4  5  7  3  6  8  9 10 11 13 12
+   2     1  4  5  6  1  2  4  5  7  3
+   3     1 18 19  7  6  8  9 10 11 13 12
+   4     2  6  7  5  1  2  4  5  7
+   5     2  0  0  1  3
+   6     4  8  9  3  1  2  4
+   7     4 10 11  2  5  7
+   8     6  0  0  2  1  2
+   9     6  0  0  1  4
+  10     7  0  0  1  5
+  11     7  0  0  1  7
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     0  0  0  1  3
+  15     0  0  0  0
+  16     0  0  0  7  6  8  9 10 11 13 12
+  17     0  0  0  0
+  18     3 20 21  6  6  8  9 10 11 13
+  19     3  0  0  1 12
+  20    18 22 23  4  6  8  9 10
+  21    18 24 25  2 11 13
+  22    20  0  0  2  6  8
+  23    20  0  0  2  9 10
+  24    21  0  0  1 11
+  25    21  0  0  1 13
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  6  2  1  5  7  7
+   3 *   1 12 13  7  2  6  6  8 13
+   4 -   2  6  7  5  3  1  2  4  5  7  7
+   5 -   2  0  0  1  1  3  3
+   6 -   4  8  9  3  2  1  2  4  4
+   7 -   4 10 11  2  2  5  5  7  7
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  1  1  4  4
+  10 -   7  0  0  1  1  5  5
+  11 -   7  0  0  1  1  7  7
+  12 -   3 14 15  6  3  6  6  8 11 13 13
+  13 -   3  0  0  1  1 12 12
+  14 -  12 16 17  4  2  6  6  8 10
+  15 -  12 18 19  2  2 11 11 13 13
+  16 -  14  0  0  2  2  6  6  8  8
+  17 -  14  0  0  2  1  9 10
+  18 -  15  0  0  1  1 11 11
+  19 -  15  0  0  1  1 13 13
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            176
+Total number of atoms read in:              1402
+Total number of ignored atom records:         85
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau           1   2.29455471              59          75          98
+ #popped           2           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau           3   1.97898769              11          40
+ #popped           4           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau           5  0.695600212              54
+ #popped           6           3
+ #selectset contacts        1526
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau           7   1.91328669              88
+ #popped           5           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau           9   1.53846157              30
+ #popped           3           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          11  0.991358697             131         149         164
+ #popped          12           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau          13  0.992570341             108
+ #popped          14           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau          15  0.354759455             120
+ #popped          17           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          13           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          17  0.665382445             149
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         176
+         176  residues read 5US1.dssp                                                   
+  exclude short helix           8          10
+  grow short helix          33          39
+  exclude short helix          83          85
+  grow short strand         108         112
+  exclude short helix         118         122
+  grow short strand         127         128
+  grow short strand         133         137
+  grow short strand         140         143
+  exclude short helix         145         147
+  grow short strand         151         155
+  grow short strand         166         167
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  4  5  7  2  3  6  8  9 12 10 11 13
+   2     1  4  5  6  1  4  5  7  2  3
+   3     1 12 13  7  6  8  9 12 10 11 13
+   4     2  6  7  4  1  4  5  7
+   5     2 10 11  2  2  3
+   6     4  0  0  2  1  4
+   7     4  8  9  2  5  7
+   8     7  0  0  1  5
+   9     7  0  0  1  7
+  10     5  0  0  1  2
+  11     5  0  0  1  3
+  12     3 14 15  4  6  8  9 12
+  13     3 18 19  3 10 11 13
+  14    12  0  0  1  6
+  15    12 16 17  3  8  9 12
+  16    15  0  0  1  8
+  17    15  0  0  2  9 12
+  18    13  0  0  2 10 11
+  19    13  0  0  1 13
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  6  2  1  5  7  7
+   3 *   1 12 13  7  2  6  6  8 13
+   4 -   2  6  7  4  3  1  1  4  5  7  7
+   5 -   2 10 11  2  1  2  3
+   6 -   4  0  0  2  2  1  1  4  4
+   7 -   4  8  9  2  2  5  5  7  7
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  1  1  7  7
+  10 -   5  0  0  1  1  2  2
+  11 -   5  0  0  1  1  3  3
+  12 -   3 14 15  4  3  6  6  8  9 12 12
+  13 -   3 18 19  3  2 10 11 13 13
+  14 -  12  0  0  1  1  6  6
+  15 -  12 16 17  3  2  8  9 12 12
+  16 -  15  0  0  1  1  8  8
+  17 -  15  0  0  2  2  9  9 12 12
+  18 -  13  0  0  2  1 10 11
+  19 -  13  0  0  1  1 13 13
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 9612  CA BHIS G 124 
+ Alternate location indication is not blank or A, ignore atom: 9616  CB BHIS G 124 
+ Alternate location indication is not blank or A, ignore atom: 9618  CG BHIS G 124 
+ Alternate location indication is not blank or A, ignore atom: 9620  ND1BHIS G 124 
+ Alternate location indication is not blank or A, ignore atom: 9622  CD2BHIS G 124 
+ Alternate location indication is not blank or A, ignore atom: 9624  CE1BHIS G 124 
+ Alternate location indication is not blank or A, ignore atom: 9626  NE2BHIS G 124 
+
+Total number of residues read in:            177
+Total number of atoms read in:              1406
+Total number of ignored atom records:        142
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         177  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1567
+ selectset done           0
+ eigen done           0
+ tau           1   1.99944687              60          76          99
+ #popped           2           1
+ #selectset contacts        1567
+ selectset done           1
+ eigen done           1
+ tau           3   1.92462683              12          42
+ #popped           4           2
+ #selectset contacts        1567
+ selectset done           2
+ eigen done           2
+ tau           5  0.636579573              55
+ #popped           6           3
+ #selectset contacts        1567
+ selectset done           3
+ eigen done           3
+ tau           7  0.300712019              12
+ #popped           7           2
+ #selectset contacts        1567
+ selectset done           2
+ eigen done           2
+ tau           9   2.16284585              89
+ #popped           5           1
+ #selectset contacts        1567
+ selectset done           1
+ eigen done           1
+ tau          11   1.84873950              31
+ #popped           3           0
+ #selectset contacts        1567
+ selectset done           0
+ eigen done           0
+ tau          13   1.20379329             113         125
+ #popped          14           0
+ #selectset contacts        1567
+ selectset done           0
+ eigen done           0
+ tau          15  0.683038712             135         147
+ #popped          16           0
+ #selectset contacts        1567
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         177
+         177  residues read 5US1.dssp                                                   
+  exclude short helix           9          11
+  exclude short helix          34          38
+  grow short strand         109         113
+  grow short strand         128         129
+  grow short strand         134         138
+  grow short strand         141         144
+  exclude short helix         146         148
+  grow short strand         152         156
+  grow short strand         167         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  4  6  2  5  7  9 12 13 10 11  8
+   2     1  4  5  5  1  3  4  6  2
+   3     1 14 15  8  5  7  9 12 13 10 11  8
+   4     2  6  7  4  1  3  4  6
+   5     2  0  0  1  2
+   6     4  8  9  2  1  3
+   7     4 10 11  2  4  6
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     7  0  0  1  4
+  11     7  0  0  1  6
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     3 16 17  7  5  7  9 12 13 10 11
+  15     3  0  0  1  8
+  16    14  0  0  5  5  7  9 12 13
+  17    14  0  0  2 10 11
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  5  2  1  4  6  6
+   3 -   1 12 13  8  2  5  5  7 13
+   4 -   2  6  7  4  3  1  1  3  4  6  6
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4 10 11  2  2  4  4  6  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+  10 -   7  0  0  1  1  4  4
+  11 -   7  0  0  1  1  6  6
+  12 -   3 14 15  7  3  5  5  7  7  9 13
+  13 -   3  0  0  1  1  8  8
+  14 -  12  0  0  5  4  5  5  7  7  9  9 12 13
+  15 -  12  0  0  2  1 10 11
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:10107  CA BARG H   6 
+ Alternate location indication is not blank or A, ignore atom:10111  CB BARG H   6 
+ Alternate location indication is not blank or A, ignore atom:10113  CG BARG H   6 
+ Alternate location indication is not blank or A, ignore atom:10115  CD BARG H   6 
+ Alternate location indication is not blank or A, ignore atom:10117  NE BARG H   6 
+ Alternate location indication is not blank or A, ignore atom:10119  CZ BARG H   6 
+ Alternate location indication is not blank or A, ignore atom:10121  NH1BARG H   6 
+ Alternate location indication is not blank or A, ignore atom:10123  NH2BARG H   6 
+ Alternate location indication is not blank or A, ignore atom:18144  O  BHOH H 328 
+
+Total number of residues read in:            178
+Total number of atoms read in:              1414
+Total number of ignored atom records:        119
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1575
+ selectset done           0
+ eigen done           0
+ tau           1   2.37936330              61          77         100
+ #popped           2           1
+ #selectset contacts        1575
+ selectset done           1
+ eigen done           1
+ tau           3   1.55062091              88
+ #popped           4           1
+ #selectset contacts        1575
+ selectset done           1
+ eigen done           1
+ tau           5   1.35932827              28          42
+ #popped           6           1
+ #selectset contacts        1575
+ selectset done           1
+ eigen done           1
+ tau           7  0.440804839              54
+ #popped           8           1
+ #selectset contacts        1575
+ selectset done           1
+ eigen done           1
+ tau           9   3.36075950              13          28
+ #popped          10           1
+ #selectset contacts        1575
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1575
+ selectset done           0
+ eigen done           0
+ tau          11   1.30260825             115         126
+ #popped          12           0
+ #selectset contacts        1575
+ selectset done           0
+ eigen done           0
+ tau          13  0.512833297             155         165
+ #popped          14           0
+ #selectset contacts        1575
+ selectset done           0
+ eigen done           0
+ tau          15  0.396171421             155
+ #popped          16           0
+ #selectset contacts        1575
+ selectset done           0
+ eigen done           0
+ tau          17  0.319035321             144
+ #popped          18           0
+ #selectset contacts        1575
+ selectset done           0
+ eigen done           0
+ tau          19   3.34124947             115
+ #popped          20           0
+ #selectset contacts        1575
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         178
+         178  residues read 5US1.dssp                                                   
+  exclude short helix          10          12
+  exclude short helix          35          40
+  exclude short helix          85          87
+  grow short strand         110         114
+  exclude short helix         120         124
+  grow short strand         129         130
+  grow short strand         135         139
+  grow short strand         142         145
+  grow short strand         153         157
+  grow short strand         168         169
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  2  4  6  5  7  8  9 10 11 12
+   2     1  4  5  5  1  3  2  4  6
+   3     1 16 17  7  5  7  8  9 10 11 12
+   4     2  8  9  4  1  3  2  4
+   5     2  0  0  1  6
+   6     0  0  0  4  1  3  2  4
+   7     0  0  0  0
+   8     4 10 11  3  1  3  2
+   9     4  0  0  1  4
+  10     8  0  0  2  1  3
+  11     8  0  0  1  2
+  12     0  0  0  7  5  7  8  9 10 11 12
+  13     0  0  0  0
+  14     0  0  0  7  5  7  8  9 10 11 12
+  15     0  0  0  0
+  16     3 18 19  6  5  7  8  9 10 11
+  17     3  0  0  1 12
+  18    16 20 21  5  5  7  8  9 10
+  19    16  0  0  1 11
+  20    18  0  0  2  5  7
+  21    18  0  0  3  8  9 10
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  5  2  1  4  6  6
+   3 -   1 10 11  7  2  5  5  7 12
+   4 -   2  6  7  4  1  1  4
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6  0  0  1  1  2  2
+  10 -   3 12 13  6  2  5  5  7 11
+  11 -   3  0  0  1  1 12 12
+  12 -  10 14 15  5  2  5  5  7 10
+  13 -  10  0  0  1  1 11 11
+  14 -  12  0  0  2  2  5  5  7  7
+  15 -  12  0  0  3  1  8 10
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            178
+Total number of atoms read in:              1414
+Total number of ignored atom records:        234
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1549
+ selectset done           0
+ eigen done           0
+ tau           1   1.33879983              13          43          63          74         130         151         162
+ #popped           2           1
+ #selectset contacts        1549
+ selectset done           1
+ eigen done           1
+ tau           3   1.44435894              90
+ #popped           4           2
+ #selectset contacts        1549
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1549
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        1549
+ selectset done           0
+ eigen done           0
+ tau           5   5.30410767              43
+ #popped           6           1
+ #selectset contacts        1549
+ selectset done           1
+ eigen done           1
+ tau           7   2.13316107              32
+ #popped           7           0
+ #selectset contacts        1549
+ selectset done           0
+ eigen done           0
+ tau           9  0.269161224             141
+ #popped          10           1
+ #selectset contacts        1549
+ selectset done           1
+ eigen done           1
+ tau          11   999.999023              74
+ #popped          11           0
+ #selectset contacts        1549
+ selectset done           0
+ eigen done           0
+ tau          13   2.98385787             151
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         178
+         178  residues read 5US1.dssp                                                   
+  exclude short helix          10          12
+  exclude short helix          35          40
+  exclude short helix          85          87
+  grow short strand         110         114
+  exclude short helix         120         124
+  grow short strand         129         130
+  grow short strand         135         139
+  grow short strand         142         145
+  exclude short helix         147         149
+  grow short strand         153         156
+  grow short strand         168         169
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  5  6  7  8 11  2  9 10 12
+   2     1  4  5  8  1  3  4  5  6  7  8 11
+   3     1  6  7  4  2  9 10 12
+   4     2  0  0  4  1  3  4  5
+   5     2  0  0  4  6  7  8 11
+   6     3  0  0  1  2
+   7     3 10 11  3  9 10 12
+   8     0  0  0  1  2
+   9     0  0  0  0
+  10     7  0  0  1  9
+  11     7 14 15  2 10 12
+  12     0  0  0  0
+  13     0  0  0  1  9
+  14    11  0  0  1 10
+  15    11  0  0  1 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  8  3  1  1  3  8 11 11
+   3 -   1  6  7  4  3  2  2  9 10 12 12
+   4 -   2  0  0  4  2  1  1  3  5
+   5 -   2  0  0  4  2  6  8 11 11
+   6 -   3  0  0  1  1  2  2
+   7 -   3  8  9  3  2  9 10 12 12
+   8 -   7  0  0  1  1  9  9
+   9 -   7 10 11  2  2 10 10 12 12
+  10 -   9  0  0  1  1 10 10
+  11 -   9  0  0  1  1 12 12
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            179
+Total number of atoms read in:              1413
+Total number of ignored atom records:        116
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         179  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1564
+ selectset done           0
+ eigen done           0
+ tau           1   2.54107642              19          36
+ #popped           2           0
+ #selectset contacts        1564
+ selectset done           0
+ eigen done           0
+ tau           3   2.17770815              62          78         108
+ #popped           4           1
+ #selectset contacts        1564
+ selectset done           1
+ eigen done           1
+ tau           5   1.46961629              83
+ #popped           6           2
+ #selectset contacts        1564
+ selectset done           2
+ eigen done           2
+ tau           7  0.457554102              46
+ #popped           8           3
+ #selectset contacts        1564
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1564
+ selectset done           2
+ eigen done           2
+ tau           9  0.376811594              57
+ #popped           7           1
+ #selectset contacts        1564
+ selectset done           1
+ eigen done           1
+ tau          11   1.25692308              93
+ #popped           5           0
+ #selectset contacts        1564
+ selectset done           0
+ eigen done           0
+ tau          13  0.971606016             134         151         167
+ #popped          14           1
+ #selectset contacts        1564
+ selectset done           1
+ eigen done           1
+ tau          15  0.699387550             120
+ #popped          16           2
+ #selectset contacts        1564
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          17           1
+ #selectset contacts        1564
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          15           0
+ #selectset contacts        1564
+ selectset done           0
+ eigen done           0
+ tau          17  0.665317178             151
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         179
+         179  residues read 5US1.dssp                                                   
+  grow short strand           4           6
+  exclude short helix          16          18
+  exclude short helix          38          42
+  exclude short helix          86          88
+  grow short strand         111         115
+  exclude short helix         121         126
+  grow short strand         130         131
+  grow short strand         136         140
+  grow short strand         143         146
+  exclude short helix         148         150
+  grow short strand         154         157
+  grow short strand         169         170
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  4  5  7  6  8  9 12 10 11 13  3
+   2     1  4  5 12  1  2  4  5  7  6  8  9 12 10 11 13
+   3     1  0  0  1  3
+   4     2  6  7  5  1  2  4  5  7
+   5     2 14 15  7  6  8  9 12 10 11 13
+   6     4  8  9  4  1  2  4  5
+   7     4  0  0  1  7
+   8     6  0  0  2  1  2
+   9     6 10 11  2  4  5
+  10     9  0  0  1  4
+  11     9  0  0  1  5
+  12     0  0  0  0
+  13     0  0  0  1  7
+  14     5 16 17  4  6  8  9 12
+  15     5 18 19  3 10 11 13
+  16    14  0  0  2  6  8
+  17    14  0  0  2  9 12
+  18    15  0  0  2 10 11
+  19    15  0  0  1 13
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 12  2  1  2  4 13
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  5  3  1  2  4  5  7  7
+   5 -   2 12 13  7  2  6  6  8 13
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  1  1  7  7
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  2  1  4  5
+  10 -   9  0  0  1  1  4  4
+  11 -   9  0  0  1  1  5  5
+  12 -   5 14 15  4  3  6  6  8  9 12 12
+  13 -   5 16 17  3  2 10 11 13 13
+  14 -  12  0  0  2  2  6  6  8  8
+  15 -  12  0  0  2  2  9  9 12 12
+  16 -  13  0  0  2  1 10 11
+  17 -  13  0  0  1  1 13 13
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            184
+Total number of atoms read in:              1452
+Total number of ignored atom records:        155
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         184  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau           1   2.32346392              67          83         106
+ #popped           2           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau           3   2.05699873              19          48
+ #popped           4           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau           5  0.697856605              62
+ #popped           6           3
+ #selectset contacts        1628
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau           7   1.22073174              89
+ #popped           5           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau           9   1.41700399              38
+ #popped           3           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau          11   1.02338481             139         158         172
+ #popped          12           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          13   1.26141381             118
+ #popped          14           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau          15  0.503225803              83
+ #popped          15           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          17  0.453467131             128
+ #popped          19           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          13           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau          19  0.711627901             158
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         184
+         184  residues read 5US1.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          16          18
+  grow short helix          41          47
+  exclude short helix          91          93
+  grow short strand         116         120
+  exclude short helix         126         131
+  grow short strand         135         136
+  grow short strand         141         145
+  grow short strand         148         151
+  exclude short helix         153         155
+  grow short strand         159         162
+  grow short strand         174         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  5  6  8  3  4  7  9 10 13 11 12 14
+   2     1  4  5  7  1  2  5  6  8  3  4
+   3     1 12 13  7  7  9 10 13 11 12 14
+   4     2  6  7  5  1  2  5  6  8
+   5     2 10 11  2  3  4
+   6     4  0  0  3  1  2  5
+   7     4  8  9  2  6  8
+   8     7  0  0  1  6
+   9     7  0  0  1  8
+  10     5  0  0  1  3
+  11     5  0  0  1  4
+  12     3 14 15  4  7  9 10 13
+  13     3 20 21  3 11 12 14
+  14    12 16 17  2  7  9
+  15    12  0  0  2 10 13
+  16    14  0  0  1  7
+  17    14  0  0  1  9
+  18     0  0  0  0
+  19     0  0  0  2 10 13
+  20    13  0  0  2 11 12
+  21    13  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  7  2  1  6  8  8
+   3 *   1 12 13  7  2  7  7  9 14
+   4 -   2  6  7  5  3  1  2  5  6  8  8
+   5 -   2 10 11  2  1  3  4
+   6 -   4  0  0  3  2  1  2  5  5
+   7 -   4  8  9  2  2  6  6  8  8
+   8 -   7  0  0  1  1  6  6
+   9 -   7  0  0  1  1  8  8
+  10 -   5  0  0  1  1  3  3
+  11 -   5  0  0  1  1  4  4
+  12 -   3 14 15  4  3  7  7  9 10 13 13
+  13 -   3 18 19  3  2 11 12 14 14
+  14 -  12 16 17  2  2  7  7  9  9
+  15 -  12  0  0  2  2 10 10 13 13
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  9  9
+  18 -  13  0  0  2  1 11 12
+  19 -  13  0  0  1  1 14 14
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            178
+Total number of atoms read in:              1414
+Total number of ignored atom records:        137
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDERSON,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1576
+ selectset done           0
+ eigen done           0
+ tau           1   1.68508673              12          39
+ #popped           2           1
+ #selectset contacts        1576
+ selectset done           1
+ eigen done           1
+ tau           3   1.90176415              61          77         107
+ #popped           4           2
+ #selectset contacts        1576
+ selectset done           2
+ eigen done           2
+ tau           5   1.69288576              83
+ #popped           6           3
+ #selectset contacts        1576
+ selectset done           3
+ eigen done           3
+ tau           7  0.421527982              57
+ #popped           8           3
+ #selectset contacts        1576
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1576
+ selectset done           2
+ eigen done           2
+ tau           9   1.12632620              93
+ #popped           5           1
+ #selectset contacts        1576
+ selectset done           1
+ eigen done           1
+ tau          11  0.989710450             133         150         166
+ #popped          12           2
+ #selectset contacts        1576
+ selectset done           2
+ eigen done           2
+ tau          13  0.682329297             119
+ #popped          14           3
+ #selectset contacts        1576
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          15           2
+ #selectset contacts        1576
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          13           1
+ #selectset contacts        1576
+ selectset done           1
+ eigen done           1
+ tau          15  0.617304564             150
+ #popped           3           0
+ #selectset contacts        1576
+ selectset done           0
+ eigen done           0
+ tau          17   1.25806451              28
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             13-FEB-17   5US1              COMPND   2 MOLECULE: AMINOGLYCOSIDE 2'-N-ACETYLTRANSFERASE;                     SOURCE   2 ORGANISM_SCIENTIFIC: PROVIDENCIA STUARTII;                           AUTHOR    P.J.STOGIOS,E.EVDOKIMOVA,Z.XU,Z.WAWRZAK,A.SAVCHENKO,W.F.ANDE          
+           0
+         178
+         178  residues read 5US1.dssp                                                   
+  exclude short helix          10          12
+  exclude short helix          35          39
+  exclude short helix          85          87
+  grow short strand         110         114
+  exclude short helix         120         124
+  grow short strand         129         130
+  grow short strand         135         139
+  grow short strand         142         145
+  exclude short helix         147         149
+  grow short strand         153         157
+  grow short strand         168         169
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  6  5  7  8 11  9 10 12  2
+   2     1  4  5 11  1  3  4  6  5  7  8 11  9 10 12
+   3     1  0  0  1  2
+   4     2  6  7  4  1  3  4  6
+   5     2 12 13  7  5  7  8 11  9 10 12
+   6     4  8  9  3  1  3  4
+   7     4  0  0  1  6
+   8     6  0  0  2  1  3
+   9     6  0  0  1  4
+  10     0  0  0  0
+  11     0  0  0  1  6
+  12     5 14 15  4  5  7  8 11
+  13     5 16 17  3  9 10 12
+  14    12  0  0  2  5  7
+  15    12  0  0  2  8 11
+  16    13  0  0  2  9 10
+  17    13  0  0  1 12
+  18     0  0  0  1  2
+  19     0  0  0  0
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 11  2  1  1  3 12
+   3 -   1  0  0  1  1  2  2
+   4 -   2  6  7  4  3  1  1  3  4  6  6
+   5 -   2 10 11  7  2  5  5  7 12
+   6 -   4  8  9  3  2  1  1  3  4
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6  0  0  1  1  4  4
+  10 -   5 12 13  4  3  5  5  7  8 11 11
+  11 -   5 14 15  3  2  9 10 12 12
+  12 -  10  0  0  2  2  5  5  7  7
+  13 -  10  0  0  2  2  8  8 11 11
+  14 -  11  0  0  2  1  9 10
+  15 -  11  0  0  1  1 12 12
+
+ CHAIN : 5US1A
+ CHAIN : 5US1B
+ CHAIN : 5US1C
+ CHAIN : 5US1D
+ CHAIN : 5US1E
+ CHAIN : 5US1F
+ CHAIN : 5US1G
+ CHAIN : 5US1H
+ CHAIN : 5US1I
+ CHAIN : 5US1J
+ CHAIN : 5US1K
+ CHAIN : 5US1L
+

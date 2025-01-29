@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1G0BA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DC3-A 17.4  2.0  139   172   31   MOLECULE: CYTOGLOBIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1G0BA Sbjct=2DC3A Z-score=17.4
+
+DSSP  -LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHLLLL------llLLLLH
+Query -VLSAADKTNVKAAWSKVGGHAGEYGAEALERMFLGFPTTKTYFPHF------dlSHGSA   53
+ident   || |    | | |          |   | | |  ||  | ||  |           | 
+Sbjct eELSEAERKAVQAMWARLYANCEDVGVAILVRFFVNFPSAKQYFSQFkhmedpleMERSP   60
+DSSP  lLLLHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLHHHHHHLLLLlllllhhhHLLLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLL---LHHHHLHHHHHHHHLLLLLLLHHHHHHHHHHHHHHH
+Query QVKAHGKKVGDALTLAVGHLD---DLPGALSDLSNLHAHKLRVDPVNFKLLSHCLLSTLA  110
+ident |   |   |  ||   |  |         |      || |  | || || ||   |   |
+Sbjct QLRKHACRVMGALNTVVENLHdpdKVSSVLALVGKAHALKHKVEPVYFKILSGVILEVVA  120
+DSSP  HHHHHHHHHHHHHHHHHHLLLlhhHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHHH
+
+DSSP  HHLLLLLLHHHHHHHHHHHHHHHHHHLLLLL---------------------
+Query VHLPNDFTPAVHASLDKFLSSVSTVLTSKYR---------------------  141
+ident      || |       |         |  |                      
+Sbjct EEFASDFPPETQRAWAKLRGLIYSHVTAAYKevgwvqqvpnattppatlpss  172
+DSSP  HHLHHHLLHHHHHHHHHHHHHHHHHHHHHHHhllllllllllllllllllll
+
+
+# Structural equivalences
+   1: 1G0B-A 2DC3-A     1 -  46 <=>    2 -  47   (VAL    1  - PHE   46  <=> GLU   18  - PHE   63 )                          
+   1: 1G0B-A 2DC3-A    49 -  74 <=>   56 -  81   (SER   49  - ASP   74  <=> MET   72  - HIS   97 )                          
+   1: 1G0B-A 2DC3-A    75 - 141 <=>   85 - 151   (ASP   75  - ARG  141  <=> LYS  101  - LYS  167 )                          
+
+# Translation-rotation matrices
+-matrix  "1G0B-A 2DC3-A  U(1,.)  -0.613520 -0.773337 -0.159822           50.568707"
+-matrix  "1G0B-A 2DC3-A  U(2,.)   0.747785 -0.633994  0.197155          -26.771669"
+-matrix  "1G0B-A 2DC3-A  U(3,.)  -0.253794  0.001446  0.967257          -11.288284"
+

@@ -1,0 +1,599 @@
+A length: 227
+B length: 227
+C length: 227
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            227
+Total number of atoms read in:              1736
+Total number of ignored atom records:        219
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+  Reading DSSP file
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              COMPND   2 MOLECULE: UPF0173 METAL-DEPENDENT HYDROLASE TM_1162;                 SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA MSB8;                       AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+         227  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2087
+ selectset done           0
+ eigen done           0
+ tau           1   1.50465643             191         214
+ #popped           2           1
+ #selectset contacts        2087
+ selectset done           1
+ eigen done           1
+ tau           3   1.17772734              71          84         110         123
+ #popped           4           2
+ #selectset contacts        2087
+ selectset done           2
+ eigen done           2
+ tau           5   1.16503084              24          40
+ #popped           6           2
+ #selectset contacts        2087
+ selectset done           2
+ eigen done           2
+ tau           7   1.02886510             142
+ #popped           8           3
+ #selectset contacts        2087
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        2087
+ selectset done           2
+ eigen done           2
+ tau           9   1.31614482             191
+ #popped          10           2
+ #selectset contacts        2087
+ selectset done           2
+ eigen done           2
+ tau          11   1.21323526             156
+ #popped          13           2
+ #selectset contacts        2087
+ selectset done           2
+ eigen done           2
+ tau          13  0.871212125             170         181
+ #popped          14           2
+ #selectset contacts        2087
+ selectset done           2
+ eigen done           2
+ tau          15  0.319312632             170
+ #popped           5           1
+ #selectset contacts        2087
+ selectset done           1
+ eigen done           1
+ tau          17   1.78083241              84
+ #popped           3           0
+ #selectset contacts        2087
+ selectset done           0
+ eigen done           0
+ tau          19   1.32440996             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              COMPND   2 MOLECULE: UPF0173 METAL-DEPENDENT HYDROLASE TM_1162;                 SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA MSB8;                       AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+           0
+         227
+         227  residues read 3X2Z.dssp                                                   
+  grow short strand           3           6
+  grow short strand          12          15
+  grow short strand          19          22
+  exclude short helix          36          38
+  grow short strand          44          46
+  exclude short helix          52          55
+  grow short strand          68          72
+ crowded segment excluded!
+  grow short strand          85          89
+  grow short strand          94          96
+  grow short strand         112         115
+  grow short strand         118         121
+  grow short strand         135         139
+  grow short strand         159         163
+  grow short strand         186         190
+  exclude short helix         196         198
+  grow short strand         215         216
+  grow short strand         224         226
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  3  4  5  7  8  9 12 13 14 15 17 16 19  6 10 11 18
+   2     1  4  5 18  1  2  3  4  5  7  8  9 12 13 14 15 17 16 19  6 10 11
+   3     1  0  0  1 18
+   4     2  8  9 15  1  2  3  4  5  7  8  9 12 13 14 15 17 16 19
+   5     2 18 19  3  6 10 11
+   6     0  0  0 15  1  2  3  4  5  7  8  9 12 13 14 15 17 16 19
+   7     0  0  0  0
+   8     4  0  0 10  1  2  3  4  5  7  8  9 12 13
+   9     4 10 11  5 14 15 17 16 19
+  10     9 12 13  4 14 15 17 16
+  11     9  0  0  1 19
+  12    10  0  0  1 14
+  13    10 14 15  3 15 17 16
+  14    13 16 17  2 15 17
+  15    13  0  0  1 16
+  16    14  0  0  1 15
+  17    14  0  0  1 17
+  18     5  0  0  1  6
+  19     5  0  0  2 10 11
+  20     0  0  0  0
+  21     0  0  0  1 18
+   1 *   0  2  3 19  1  1 19
+   2 -   1  4  5 18  2  1 17 19 19
+   3 -   1  0  0  1  1 18 18
+   4 -   2  6  7 15  4  1  5  7  9 12 17 19 19
+   5 -   2 16 17  3  2  6  6 10 11
+   6 -   4  0  0 10  3  1  5  7  9 12 13
+   7 -   4  8  9  5  2 14 17 19 19
+   8 -   7 10 11  4  1 14 17
+   9 -   7  0  0  1  1 19 19
+  10 -   8  0  0  1  1 14 14
+  11 -   8 12 13  3  1 15 17
+  12 -  11 14 15  2  2 15 15 17 17
+  13 -  11  0  0  1  1 16 16
+  14 -  12  0  0  1  1 15 15
+  15 -  12  0  0  1  1 17 17
+  16 -   5  0  0  1  1  6  6
+  17 -   5  0  0  2  1 10 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            227
+Total number of atoms read in:              1736
+Total number of ignored atom records:        227
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+  Reading DSSP file
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              COMPND   2 MOLECULE: UPF0173 METAL-DEPENDENT HYDROLASE TM_1162;                 SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA MSB8;                       AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+         227  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2093
+ selectset done           0
+ eigen done           0
+ tau           1   1.80113673             142         217
+ #popped           2           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau           3   1.24501109              68         142
+ #popped           4           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau           5  0.635993659              68
+ #popped           6           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau           7  0.784313738              57
+ #popped           8           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau           9   1.03340173              22          37          47
+ #popped          10           3
+ #selectset contacts        2093
+ selectset done           3
+ eigen done           3
+ tau          11  0.601421714              22
+ #popped          12           3
+ #selectset contacts        2093
+ selectset done           3
+ eigen done           3
+ tau          13  0.387343764              11
+ #popped          11           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau          15  0.679916859              37
+ #popped           5           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau          17   1.23619044             110         123
+ #popped          18           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau          19   1.79364407              89
+ #popped          20           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          21           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau          21  0.440987557             110
+ #popped          22           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau          23  0.385212600             100
+ #popped           3           0
+ #selectset contacts        2093
+ selectset done           0
+ eigen done           0
+ tau          25   1.54235697             156
+ #popped          27           0
+ #selectset contacts        2093
+ selectset done           0
+ eigen done           0
+ tau          27  0.646253765             170         189         200
+ #popped          28           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau          29  0.937517762             170
+ #popped          29           0
+ #selectset contacts        2093
+ selectset done           0
+ eigen done           0
+ tau          31  0.823151290             189
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              COMPND   2 MOLECULE: UPF0173 METAL-DEPENDENT HYDROLASE TM_1162;                 SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA MSB8;                       AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+           0
+         227
+         227  residues read 3X2Z.dssp                                                   
+  grow short strand          11          15
+  grow short strand          19          22
+  exclude short helix          36          38
+  grow short strand          44          46
+  exclude short helix          52          55
+  grow short strand          68          72
+ crowded segment excluded!
+  grow short strand          85          89
+  grow short strand          94          96
+  grow short strand         112         115
+  grow short strand         118         121
+  grow short strand         135         139
+  grow short strand         159         163
+  grow short strand         186         190
+  exclude short helix         196         198
+  grow short strand         215         216
+  grow short strand         224         226
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  3  4  5  6  7  8  9 12 13 10 11 14 15 16 17 18 19
+   2     1  4  5 13  1  2  3  4  5  6  7  8  9 12 13 10 11
+   3     1 26 27  6 14 15 16 17 18 19
+   4     2  8  9  5  1  2  3  4  5
+   5     2 18 19  8  6  7  8  9 12 13 10 11
+   6     0  0  0  5  1  2  3  4  5
+   7     0  0  0  0
+   8     4 12 13  4  1  2  3  4
+   9     4  0  0  1  5
+  10     0  0  0  4  1  2  3  4
+  11     0  0  0  0
+  12     8 14 15  3  1  2  3
+  13     8  0  0  1  4
+  14    12  0  0  1  1
+  15    12  0  0  2  2  3
+  16     0  0  0  0
+  17     0  0  0  0
+  18     5 20 21  6  6  7  8  9 12 13
+  19     5  0  0  2 10 11
+  20    18  0  0  2  6  7
+  21    18 22 23  4  8  9 12 13
+  22    21 24 25  2  8  9
+  23    21  0  0  2 12 13
+  24    22  0  0  1  8
+  25    22  0  0  1  9
+  26     3  0  0  1 14
+  27     3 28 29  5 15 16 17 18 19
+  28    27  0  0  1 15
+  29    27 32 33  4 16 17 18 19
+  30     0  0  0  1 15
+  31     0  0  0  0
+  32    29  0  0  2 16 17
+  33    29  0  0  2 18 19
+   1 *   0  2  3 19  1  1 19
+   2 -   1  4  5 13  1  1 13
+   3 -   1 20 21  6  1 14 19
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  8  1  6 13
+   6 -   4  8  9  4  1  1  4
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  1  1  4  4
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  2  3
+  12 -   5 14 15  6  2  6  9 12 13
+  13 -   5  0  0  2  1 10 11
+  14 -  12  0  0  2  1  6  7
+  15 -  12 16 17  4  2  8  9 12 13
+  16 -  15 18 19  2  1  8  9
+  17 -  15  0  0  2  1 12 13
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+  20 -   3  0  0  1  1 14 14
+  21 -   3 22 23  5  1 15 19
+  22 -  21  0  0  1  1 15 15
+  23 -  21 24 25  4  1 16 19
+  24 -  23  0  0  2  1 16 17
+  25 -  23  0  0  2  1 18 19
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            227
+Total number of atoms read in:              1736
+Total number of ignored atom records:        209
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+  Reading DSSP file
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              COMPND   2 MOLECULE: UPF0173 METAL-DEPENDENT HYDROLASE TM_1162;                 SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA MSB8;                       AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+         227  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2075
+ selectset done           0
+ eigen done           0
+ tau           1   1.80114186             144         217
+ #popped           2           1
+ #selectset contacts        2075
+ selectset done           1
+ eigen done           1
+ tau           3   1.27401495              68         144
+ #popped           4           2
+ #selectset contacts        2075
+ selectset done           2
+ eigen done           2
+ tau           5  0.944771945              22          35          46          58
+ #popped           6           3
+ #selectset contacts        2075
+ selectset done           3
+ eigen done           3
+ tau           7   1.13232076              46          68
+ #popped           8           3
+ #selectset contacts        2075
+ selectset done           3
+ eigen done           3
+ tau           9  0.684942007              22          46
+ #popped          10           3
+ #selectset contacts        2075
+ selectset done           3
+ eigen done           3
+ tau          11  0.270500690              12
+ #popped          13           3
+ #selectset contacts        2075
+ selectset done           3
+ eigen done           3
+ tau          13   999.999023              22
+ #popped           7           2
+ #selectset contacts        2075
+ selectset done           2
+ eigen done           2
+ tau          15  0.669568837              35
+ #popped           5           1
+ #selectset contacts        2075
+ selectset done           1
+ eigen done           1
+ tau          17   1.38326561              89         109         125
+ #popped          18           2
+ #selectset contacts        2075
+ selectset done           2
+ eigen done           2
+ tau          19   2.03319597              89
+ #popped          20           2
+ #selectset contacts        2075
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          19           1
+ #selectset contacts        2075
+ selectset done           1
+ eigen done           1
+ tau          21  0.483221471              99
+ #popped          23           1
+ #selectset contacts        2075
+ selectset done           1
+ eigen done           1
+ tau          23  0.291418642             109
+ #popped           3           0
+ #selectset contacts        2075
+ selectset done           0
+ eigen done           0
+ tau          25   1.78354895             156
+ #popped          27           0
+ #selectset contacts        2075
+ selectset done           0
+ eigen done           0
+ tau          27   1.01173222             190         200
+ #popped          28           0
+ #selectset contacts        2075
+ selectset done           0
+ eigen done           0
+ tau          29  0.490737021             180
+ #popped          30           1
+ #selectset contacts        2075
+ selectset done           1
+ eigen done           1
+ tau          31   1.28415585             170
+ #popped          31           0
+ #selectset contacts        2075
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               07-JAN-15   3X2Z              COMPND   2 MOLECULE: UPF0173 METAL-DEPENDENT HYDROLASE TM_1162;                 SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA MSB8;                       AUTHOR    H.J.CHOI,H.J.KIM,A.MATSUURA,B.MIKAMI,H.J.YOON,H.H.LEE                 
+           0
+         227
+         227  residues read 3X2Z.dssp                                                   
+  grow short strand           3           6
+  grow short strand          12          15
+  grow short strand          19          22
+  exclude short helix          36          38
+  grow short strand          44          46
+  exclude short helix          52          55
+  grow short strand          68          72
+ crowded segment excluded!
+  grow short strand          85          89
+  grow short strand          94          96
+  grow short strand         112         115
+  grow short strand         118         121
+  grow short strand         135         139
+  grow short strand         159         163
+  grow short strand         186         190
+  exclude short helix         196         198
+  grow short strand         215         216
+  grow short strand         224         226
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  3  4  5  6  7 10 11  8  9 12 13 14 15 16 17 18 19
+   2     1  4  5 13  1  2  3  4  5  6  7 10 11  8  9 12 13
+   3     1 26 27  6 14 15 16 17 18 19
+   4     2  8  9  5  1  2  3  4  5
+   5     2 18 19  8  6  7 10 11  8  9 12 13
+   6     0  0  0  5  1  2  3  4  5
+   7     0  0  0  0
+   8     4 10 11  4  1  2  3  4
+   9     4  0  0  1  5
+  10     8 12 13  3  1  2  3
+  11     8  0  0  1  4
+  12    10  0  0  1  1
+  13    10  0  0  2  2  3
+  14     0  0  0  2  2  3
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  0
+  18     5 20 21  4  6  7 10 11
+  19     5 22 23  4  8  9 12 13
+  20    18  0  0  2  6  7
+  21    18  0  0  2 10 11
+  22    19  0  0  1  8
+  23    19 24 25  3  9 12 13
+  24    23  0  0  1  9
+  25    23  0  0  2 12 13
+  26     3  0  0  1 14
+  27     3 30 31  5 15 16 17 18 19
+  28     0  0  0  5 15 16 17 18 19
+  29     0  0  0  0
+  30    27 32 33  2 15 16
+  31    27  0  0  3 17 18 19
+  32    30  0  0  1 15
+  33    30  0  0  1 16
+   1 *   0  2  3 19  1  1 19
+   2 -   1  4  5 13  1  1 13
+   3 -   1 20 21  6  1 14 19
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  8  1  6 13
+   6 -   4  8  9  4  1  1  4
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  1  1  4  4
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  2  3
+  12 -   5 14 15  4  2  6  7 10 11
+  13 -   5 16 17  4  2  8  9 12 13
+  14 -  12  0  0  2  1  6  7
+  15 -  12  0  0  2  1 10 11
+  16 -  13  0  0  1  1  8  8
+  17 -  13 18 19  3  2  9  9 12 13
+  18 -  17  0  0  1  1  9  9
+  19 -  17  0  0  2  1 12 13
+  20 -   3  0  0  1  1 14 14
+  21 -   3 22 23  5  1 15 19
+  22 -  21 24 25  2  1 15 16
+  23 -  21  0  0  3  1 17 19
+  24 -  22  0  0  1  1 15 15
+  25 -  22  0  0  1  1 16 16
+
+ CHAIN : 3X2ZA
+ CHAIN : 3X2ZB
+ CHAIN : 3X2ZC
+

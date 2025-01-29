@@ -1,0 +1,33 @@
+# Job: hip
+# Query: 1HPIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CKU-A 12.3  1.5   69    85   38   MOLECULE: PROTEIN (HIPIP);                                           
+
+# Pairwise alignments
+
+No 1: Query=1HPIA Sbjct=1CKUA Z-score=12.3
+
+DSSP  ---LEELLLLLHHHHHLLLLLLHHHLL-LLLL-----LLLLLHHHLLLLLL---llLLLE
+Query ---MERLSEDDPAAQALEYRHDASSVQ-HPAY-----EEGQTCLNCLLYTD---asAQDW   48
+ident          ||  | || |  ||       |       | | | ||             |
+Sbjct sapANAVAADDATAIALKYNQDATKSErVAAArpglpPEEQHCANCQFMQAdaagaTDEW   60
+DSSP  lllLLLLLLLLHHHHHHLLLLLHHHLLhHHHLlllllHHHLLHHHLLLEELlllllLLLE
+
+DSSP  EELLLLLLEEEELLLLLLLLLLL--
+Query GPCSVFPGKLVSANGWCTAWVAR--   71
+ident   |  |||||   ||||  |     
+Sbjct KGCQLFPGKLINVNGWCASWTLKag   85
+DSSP  EEELLLLLLLEELLLLLLLLLLLll
+
+
+# Structural equivalences
+   1: 1HPI-A 1CKU-A     1 -  24 <=>    4 -  27   (MET    1  - GLN   24  <=> ALA    4  - GLU   27 )                          
+   1: 1HPI-A 1CKU-A    25 -  28 <=>   29 -  32   (HIS   25  - TYR   28  <=> VAL   29  - ALA   32 )                          
+   1: 1HPI-A 1CKU-A    29 -  42 <=>   38 -  51   (GLU   29  - ASP   42  <=> PRO   38  - ALA   51 )                          
+   1: 1HPI-A 1CKU-A    45 -  71 <=>   57 -  83   (ALA   45  - ARG   71  <=> THR   57  - LYS   83 )                          
+
+# Translation-rotation matrices
+-matrix  "1HPI-A 1CKU-A  U(1,.)   0.626308 -0.298424 -0.720196           57.237686"
+-matrix  "1HPI-A 1CKU-A  U(2,.)   0.388931  0.920259 -0.043095           57.244049"
+-matrix  "1HPI-A 1CKU-A  U(3,.)   0.675627 -0.253115  0.692431           -1.803171"
+

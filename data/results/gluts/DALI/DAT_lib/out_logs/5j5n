@@ -1,0 +1,373 @@
+A length: 218
+B length: 218
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            218
+Total number of atoms read in:              1783
+Total number of ignored atom records:         24
+ HEADER    TRANSFERASE                             03-APR-16   5J5N              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Q.YANG,J.GU,M.YANG,Q.ZENG                                             
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-APR-16   5J5N              COMPND   2 MOLECULE: GLUTATHIONE TRANSFERASE FAMILY PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: POPULUS TRICHOCARPA;                            AUTHOR    Q.YANG,J.GU,M.YANG,Q.ZENG                                             
+         218  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2065
+ selectset done           0
+ eigen done           0
+ tau           1   3.14354920              83
+ #popped           2           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau           3   2.13710022              33          52
+ #popped           4           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau           5   1.23470104              64
+ #popped           6           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau           7  0.620268345              33
+ #popped           8           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau           9  0.371748507              20
+ #popped          10           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        2065
+ selectset done           0
+ eigen done           0
+ tau          11   2.59791970             199
+ #popped          12           0
+ #selectset contacts        2065
+ selectset done           0
+ eigen done           0
+ tau          13   1.52920699              95
+ #popped          15           0
+ #selectset contacts        2065
+ selectset done           0
+ eigen done           0
+ tau          15   1.13051641             106         130         161         177
+ #popped          16           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau          17   2.82197285             106
+ #popped          19           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau          19   1.19442165             189
+ #popped          20           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau          21   1.18622446             142         161
+ #popped          22           1
+ #selectset contacts        2065
+ selectset done           1
+ eigen done           1
+ tau          23   1.22311819             142
+ #popped          17           0
+ #selectset contacts        2065
+ selectset done           0
+ eigen done           0
+ tau          25   2.63440847             130
+ #popped          26           0
+ #selectset contacts        2065
+ selectset done           0
+ eigen done           0
+ tau          27  0.806377530             116
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-APR-16   5J5N              COMPND   2 MOLECULE: GLUTATHIONE TRANSFERASE FAMILY PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: POPULUS TRICHOCARPA;                            AUTHOR    Q.YANG,J.GU,M.YANG,Q.ZENG                                             
+           0
+         218
+         218  residues read 5J5N.dssp                                                   
+  grow short strand           4           8
+  grow short strand          30          33
+  exclude short helix          41          46
+  grow short strand          55          58
+  grow short strand          61          64
+  exclude short helix         174         177
+  exclude short helix         192         197
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  7 11 10  8  9 12
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1 12 13  6  7 11 10  8  9 12
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  8  9  5  1  2  3  4  5
+   7     2  0  0  1  6
+   8     6 10 11  3  1  2  3
+   9     6  0  0  2  4  5
+  10     8  0  0  2  1  2
+  11     8  0  0  1  3
+  12     3 14 15  5  7 11 10  8  9
+  13     3  0  0  1 12
+  14    12  0  0  1  7
+  15    12 16 17  4 11 10  8  9
+  16    15 22 23  2 11 10
+  17    15 28 29  2  8  9
+  18     0  0  0  0
+  19     0  0  0  2 11 10
+  20     0  0  0  2 11 10
+  21     0  0  0  0
+  22    16  0  0  1 11
+  23    16  0  0  1 10
+  24     0  0  0  0
+  25     0  0  0  1 11
+  26     0  0  0  2  8  9
+  27     0  0  0  0
+  28    17  0  0  1  8
+  29    17  0  0  1  9
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  6  1  7 12
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  1  1  3  3
+  10 -   3 12 13  5  1  7 11
+  11 -   3  0  0  1  1 12 12
+  12 -  10  0  0  1  1  7  7
+  13 -  10 14 15  4  1  8 11
+  14 -  13 16 17  2  1 10 11
+  15 -  13 18 19  2  1  8  9
+  16 -  14  0  0  1  1 11 11
+  17 -  14  0  0  1  1 10 10
+  18 -  15  0  0  1  1  8  8
+  19 -  15  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            218
+Total number of atoms read in:              1783
+Total number of ignored atom records:         22
+ HEADER    TRANSFERASE                             03-APR-16   5J5N              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Q.YANG,J.GU,M.YANG,Q.ZENG                                             
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-APR-16   5J5N              COMPND   2 MOLECULE: GLUTATHIONE TRANSFERASE FAMILY PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: POPULUS TRICHOCARPA;                            AUTHOR    Q.YANG,J.GU,M.YANG,Q.ZENG                                             
+         218  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2063
+ selectset done           0
+ eigen done           0
+ tau           1   2.63598943              33          52
+ #popped           2           0
+ #selectset contacts        2063
+ selectset done           0
+ eigen done           0
+ tau           3   2.45861745             199
+ #popped           4           0
+ #selectset contacts        2063
+ selectset done           0
+ eigen done           0
+ tau           5   2.80003405              84
+ #popped           6           1
+ #selectset contacts        2063
+ selectset done           1
+ eigen done           1
+ tau           7   1.09762216              66
+ #popped           8           1
+ #selectset contacts        2063
+ selectset done           1
+ eigen done           1
+ tau           9  0.569142282              33
+ #popped          10           1
+ #selectset contacts        2063
+ selectset done           1
+ eigen done           1
+ tau          11  0.385185182              20
+ #popped          12           1
+ #selectset contacts        2063
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           7           0
+ #selectset contacts        2063
+ selectset done           0
+ eigen done           0
+ tau          13   1.77629423             188
+ #popped          14           0
+ #selectset contacts        2063
+ selectset done           0
+ eigen done           0
+ tau          15   1.89353681             137
+ #popped          16           1
+ #selectset contacts        2063
+ selectset done           1
+ eigen done           1
+ tau          17   1.64429772              95
+ #popped          19           1
+ #selectset contacts        2063
+ selectset done           1
+ eigen done           1
+ tau          19  0.916607618             105         127
+ #popped          20           2
+ #selectset contacts        2063
+ selectset done           2
+ eigen done           2
+ tau          21   1.53692615             105
+ #popped          21           1
+ #selectset contacts        2063
+ selectset done           1
+ eigen done           1
+ tau          23   1.13296616             115
+ #popped          17           0
+ #selectset contacts        2063
+ selectset done           0
+ eigen done           0
+ tau          25   1.64011717             156
+ #popped          27           0
+ #selectset contacts        2063
+ selectset done           0
+ eigen done           0
+ tau          27  0.630187154             166         177
+ #popped          28           0
+ #selectset contacts        2063
+ selectset done           0
+ eigen done           0
+ tau          29   5.09601450             166
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-APR-16   5J5N              COMPND   2 MOLECULE: GLUTATHIONE TRANSFERASE FAMILY PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: POPULUS TRICHOCARPA;                            AUTHOR    Q.YANG,J.GU,M.YANG,Q.ZENG                                             
+           0
+         218
+         218  residues read 5J5N.dssp                                                   
+  grow short strand           4           8
+  grow short strand          30          33
+  exclude short helix          41          46
+  grow short strand          55          58
+  grow short strand          61          64
+  exclude short helix         192         197
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 12  1  2  3  4  5  6  7  8  9 10 11 12
+   2     0  0  0 12  1  2  3  4  5  6  7  8  9 10 11 12
+   3     0  0  0  0
+   4     1  6  7 11  1  2  3  4  5  6  7  8  9 10 11
+   5     1  0  0  1 12
+   6     4  8  9  6  1  2  3  4  5  6
+   7     4 16 17  5  7  8  9 10 11
+   8     6 10 11  5  1  2  3  4  5
+   9     6  0  0  1  6
+  10     8 12 13  3  1  2  3
+  11     8  0  0  2  4  5
+  12    10  0  0  2  1  2
+  13    10  0  0  1  3
+  14     0  0  0  5  7  8  9 10 11
+  15     0  0  0  0
+  16     7 18 19  3  7  8  9
+  17     7 30 31  2 10 11
+  18    16  0  0  1  7
+  19    16 24 25  2  8  9
+  20     0  0  0  0
+  21     0  0  0  2  8  9
+  22     0  0  0  0
+  23     0  0  0  0
+  24    19  0  0  1  8
+  25    19  0  0  1  9
+  26     0  0  0  0
+  27     0  0  0  2 10 11
+  28     0  0  0  2 10 11
+  29     0  0  0  0
+  30    17  0  0  1 10
+  31    17  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 -   1  4  5 11  1  1 11
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7  6  1  1  6
+   5 -   2 12 13  5  1  7 11
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  1  1  3  3
+  12 -   5 14 15  3  1  7  9
+  13 -   5 18 19  2  1 10 11
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  2  1  8  9
+  16 -  15  0  0  1  1  8  8
+  17 -  15  0  0  1  1  9  9
+  18 -  13  0  0  1  1 10 10
+  19 -  13  0  0  1  1 11 11
+
+ CHAIN : 5J5NA
+ CHAIN : 5J5NB
+

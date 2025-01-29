@@ -1,0 +1,31 @@
+# Job: hom
+# Query: 1HOMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2H1K-B  9.3  2.3   59    60   69   MOLECULE: 15-MER DNA;                                                
+
+# Pairwise alignments
+
+No 1: Query=1HOMA Sbjct=2H1KB Z-score=9.3
+
+DSSP  -LLLLllLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHHLLLLL
+Query -MRKRgrQTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALCLTERQIKIWFQNRRMKWKK   59
+ident   | |    ||| | ||||||| || |  | || | |  | |||| ||||||||||||||
+Sbjct nKRTR--TAYTRAQLLELEKEFLFNKYISRPRRVELAVMLNLTERHIKIWFQNRRMKWKK   58
+DSSP  lLLLL--LLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHL
+
+DSSP  LLlllllll
+Query ENktkgepg   68
+ident |        
+Sbjct EE-------   60
+DSSP  LL-------
+
+
+# Structural equivalences
+   1: 1HOM-A 2H1K-B     1 -   4 <=>    2 -   5   (MET    0  - ARG    3  <=> LYS    2  - ARG    5 )                          
+   1: 1HOM-A 2H1K-B     7 -  61 <=>    6 -  60   (GLN    6  - ASN   60  <=> THR    6  - GLU   60 )                          
+
+# Translation-rotation matrices
+-matrix  "1HOM-A 2H1K-B  U(1,.)  -0.815366  0.565681  0.123222          -72.014801"
+-matrix  "1HOM-A 2H1K-B  U(2,.)   0.457290  0.498744  0.736301          -49.856529"
+-matrix  "1HOM-A 2H1K-B  U(3,.)   0.355056  0.656703 -0.665340          -75.755898"
+

@@ -1,0 +1,44 @@
+# Job: LIM
+# Query: 1IMLA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1B8T-A  7.2  2.4   65   192   37   MOLECULE: PROTEIN (CRP1);                                            
+
+# Pairwise alignments
+
+No 1: Query=1IMLA Sbjct=1B8TA Z-score=7.2
+
+DSSP  -------LLLLLLLLLLLHHHEEEELLEEEELLLLLLLLLLLLLLLLLEEEELLEEEELL
+Query -------PKCPKCDKEVYFAERVTSLGKDWHRPCLKCEKCGKTLTSGGHAEHEGKPYCNH   53
+ident         ||  | | ||||| |   |   |  |  |  | | | |   | |    ||  
+Sbjct mpnwgggKKCGVCQKAVYFAEEVQCEGSSFHKSCFLCMVCKKNLDSTTVAVHGDEIYCKS   60
+DSSP  lllllllEELLLLLLEELLLLLEEELLEEELLLLLLLLLLLLLLLLLLEEEELLEEEEHH
+
+DSSP  lHHHHHlLLLLLLL----------------------------------------------
+Query pCYSAMfGPKGFGR----------------------------------------------   67
+ident  ||                                                         
+Sbjct -CYGKK-YGPKGKGkgmgagtlstdkgeslgikyeegqshrptnpnasrmaqkvggsdgc  118
+DSSP  -HHHHH-HLLLLLLllllllllllllllllllllllllllllllllllllllllllleel
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------   67
+ident                                                             
+Sbjct prcgqavyaaekvigagkswhkscfrcakcgkslesttladkdgeiyckgcyaknfgpkg  178
+DSSP  llllleellllleeelleeelllllllllllllllllleeeelleeeehhhhhhhlllll
+
+DSSP  -----lllllllll
+Query -----ggaeshtfk   76
+ident               
+Sbjct fgfgqgagalihsq  192
+DSSP  llllllllllllll
+
+
+# Structural equivalences
+   1: 1IML-A 1B8T-A     1 -  53 <=>    8 -  60   (PRO    1  - HIS   53  <=> LYS    8  - SER   60 )                          
+   1: 1IML-A 1B8T-A    55 -  59 <=>   61 -  65   (CYS   55  - MET   59  <=> CYS   61  - LYS   65 )                          
+   1: 1IML-A 1B8T-A    61 -  67 <=>   66 -  72   (GLY   61  - ARG   67  <=> TYR   66  - GLY   72 )                          
+
+# Translation-rotation matrices
+-matrix  "1IML-A 1B8T-A  U(1,.)   0.870349 -0.038216  0.490951           34.694370"
+-matrix  "1IML-A 1B8T-A  U(2,.)  -0.443675 -0.493409  0.748131            8.848386"
+-matrix  "1IML-A 1B8T-A  U(3,.)   0.213649 -0.868958 -0.446393           -8.306283"
+

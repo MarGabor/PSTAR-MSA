@@ -1,0 +1,43 @@
+# Job: glob
+# Query: 1K1KA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1YHU-X 17.6  1.8  135   149   16   MOLECULE: HEMOGLOBIN A1 CHAIN;                                       
+
+# Pairwise alignments
+
+No 1: Query=1K1KA Sbjct=1YHUX Z-score=17.6
+
+DSSP  --LLLHHHHHHHHHHHHHHHH-----HHHHHHHHHHHHHHHHLHHHHHHLLLLL-LLLLL
+Query --VLSPADKTNVKAAWGKVGA-----HAGEYGAEALERMFLSFPTTKTYFPHFD-LSHGS   52
+ident        |       || |                    |   |     |         |
+Sbjct aaSCTTEDRREMQLMWGNVWSaqftgRRIAIAQAVFKDLFANVPDAVGLFGAVKgDEVNS   60
+DSSP  llLLLHHHHHHHHHHHHHHLLllllhHHHHHHHHHHHHHHHHLHHHHHHHHHHLlLLLLL
+
+DSSP  HHHHHHHHHHHHHHHHHHHLLL---LHHHHLHHHHHHHhLLLL-LLLHHHHHHHHHHHHH
+Query AQVKGHGKKVADALTNAVAHVD---DMPNALSALSDLHaHKLR-VDPVNFKLLSHCLLVT  108
+ident    | |   |   |                || |   |      |    |       |  
+Sbjct NEFKAHCIRVVNGLDSSIGLLSdpaTLNEQLSHLATQH-KARSgVTKGGFSAIAQSFLRV  119
+DSSP  HHHHHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHH-HLLLlLLHHHHHHHHHHHHHH
+
+DSSP  HHHHLlLLLLhhhHHHHHHHHHHHHHHHLLLL-l
+Query LAAHLpAEFTpavHASLDKFLASVSTVLTSKY-r  141
+ident         |                |  |     
+Sbjct MPQVA-SCFN---PDAWSRCFNRITTGMTEPLpa  149
+DSSP  HHHHL-LLLL---HHHHHHHHHHHHHHHLLLLll
+
+
+# Structural equivalences
+   1: 1K1K-A 1YHU-X     1 -  19 <=>    3 -  21   (VAL    1  - ALA   19  <=> SER    3  - SER   21 )                          
+   1: 1K1K-A 1YHU-X    20 -  47 <=>   27 -  54   (HIS   20  - ASP   47  <=> ARG   27  - LYS   54 )                          
+   1: 1K1K-A 1YHU-X    48 -  74 <=>   56 -  82   (LEU   48  - ASP   74  <=> ASP   56  - SER   82 )                          
+   1: 1K1K-A 1YHU-X    75 -  87 <=>   86 -  98   (ASP   75  - HIS   87  <=> THR   86  - HIS   98 )                          
+   1: 1K1K-A 1YHU-X    89 -  92 <=>   99 - 102   (HIS   89  - ARG   92  <=> LYS   99  - SER  102 )                          
+   1: 1K1K-A 1YHU-X    93 - 113 <=>  104 - 124   (VAL   93  - LEU  113  <=> VAL  104  - ALA  124 )                          
+   1: 1K1K-A 1YHU-X   115 - 118 <=>  125 - 128   (ALA  115  - THR  118  <=> SER  125  - ASN  128 )                          
+   1: 1K1K-A 1YHU-X   122 - 140 <=>  129 - 147   (HIS  122  - TYR  140  <=> PRO  129  - LEU  147 )                          
+
+# Translation-rotation matrices
+-matrix  "1K1K-A 1YHU-X  U(1,.)  -0.448375  0.869556 -0.206959         -101.908836"
+-matrix  "1K1K-A 1YHU-X  U(2,.)  -0.697298 -0.485137 -0.527653          107.149986"
+-matrix  "1K1K-A 1YHU-X  U(3,.)  -0.559227 -0.092275  0.823863           45.751537"
+

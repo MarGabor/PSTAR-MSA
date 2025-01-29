@@ -1,0 +1,423 @@
+A length: 249
+B length: 249
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            249
+Total number of atoms read in:              1992
+Total number of ignored atom records:         61
+ HEADER    RIBOSOME-INACTIVATING PROTEIN           24-MAR-99   1CF5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.-R.YUAN,Y.-N.HE,J.-P.XIONG,Z.-X.XIA                                 
+  Reading DSSP file
+ HEADER    RIBOSOME-INACTIVATING PROTEIN           24-MAR-99   1CF5              COMPND   2 MOLECULE: PROTEIN (BETA-MOMORCHARIN);                                SOURCE   2 ORGANISM_SCIENTIFIC: MOMORDICA CHARANTIA;                            AUTHOR    Y.-R.YUAN,Y.-N.HE,J.-P.XIONG,Z.-X.XIA                                 
+         249  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2328
+ selectset done           0
+ eigen done           0
+ tau           1   1.93700790              26          39         177
+ #popped           2           1
+ #selectset contacts        2328
+ selectset done           1
+ eigen done           1
+ tau           3   1.55060375             107
+ #popped           4           2
+ #selectset contacts        2328
+ selectset done           2
+ eigen done           2
+ tau           5   1.89795661              26          50          60
+ #popped           6           3
+ #selectset contacts        2328
+ selectset done           3
+ eigen done           3
+ tau           7   1.11223900              10          26
+ #popped           8           3
+ #selectset contacts        2328
+ selectset done           3
+ eigen done           3
+ tau           9  0.455488086              10
+ #popped           7           2
+ #selectset contacts        2328
+ selectset done           2
+ eigen done           2
+ tau          11   1.05619311              73
+ #popped          12           3
+ #selectset contacts        2328
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          13           2
+ #selectset contacts        2328
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2328
+ selectset done           1
+ eigen done           1
+ tau          13   2.16020942             123
+ #popped          15           1
+ #selectset contacts        2328
+ selectset done           1
+ eigen done           1
+ tau          15  0.837422431             151
+ #popped          16           2
+ #selectset contacts        2328
+ selectset done           2
+ eigen done           2
+ tau          17   1.38180828             139
+ #popped          17           1
+ #selectset contacts        2328
+ selectset done           1
+ eigen done           1
+ tau          19   1.51162791             162
+ #popped           3           0
+ #selectset contacts        2328
+ selectset done           0
+ eigen done           0
+ tau          21   2.12212563              39         189         211         222
+ #popped          22           1
+ #selectset contacts        2328
+ selectset done           1
+ eigen done           1
+ tau          23   1.15130198              39
+ #popped          25           1
+ #selectset contacts        2328
+ selectset done           1
+ eigen done           1
+ tau          25  0.837070942             233
+ #popped          26           1
+ #selectset contacts        2328
+ selectset done           1
+ eigen done           1
+ tau          27  0.781675041             201
+ #popped          29           1
+ #selectset contacts        2328
+ selectset done           1
+ eigen done           1
+ tau          29  0.549295783             211
+ #popped          23           0
+ #selectset contacts        2328
+ selectset done           0
+ eigen done           0
+ tau          31   1.27762675             189
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    RIBOSOME-INACTIVATING PROTEIN           24-MAR-99   1CF5              COMPND   2 MOLECULE: PROTEIN (BETA-MOMORCHARIN);                                SOURCE   2 ORGANISM_SCIENTIFIC: MOMORDICA CHARANTIA;                            AUTHOR    Y.-R.YUAN,Y.-N.HE,J.-P.XIONG,Z.-X.XIA                                 
+           0
+         249
+         249  residues read 1CF5.dssp                                                   
+  grow short strand           2           5
+ crowded segment excluded!
+  exclude short helix           6           8
+  grow short strand          27          31
+  grow short strand          34          37
+  grow short strand          79          83
+  exclude short helix          88          93
+  grow short strand          99         103
+  exclude short helix         120         122
+  grow short strand         125         126
+ crowded segment excluded!
+  exclude short helix         157         161
+  grow short strand         176         177
+  exclude short helix         182         187
+  exclude short helix         229         233
+  exclude short helix         241         246
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  4  5  6  7  8  9 10 11 12 13  2  3 14 15 16
+   2     1  4  5 11  1  4  5  6  7  8  9 10 11 12 13
+   3     1 22 23  5  2  3 14 15 16
+   4     2  6  7  6  1  4  5  6  7  8
+   5     2 14 15  5  9 10 11 12 13
+   6     4  0  0  1  1
+   7     4 12 13  5  4  5  6  7  8
+   8     0  0  0  0
+   9     0  0  0  1  1
+  10     0  0  0  0
+  11     0  0  0  0
+  12     7  0  0  3  4  5  6
+  13     7  0  0  2  7  8
+  14     5  0  0  1  9
+  15     5 16 17  4 10 11 12 13
+  16    15 18 19  2 10 11
+  17    15  0  0  2 12 13
+  18    16  0  0  1 10
+  19    16  0  0  1 11
+  20     0  0  0  0
+  21     0  0  0  2 12 13
+  22     3 24 25  4  2  3 14 15
+  23     3  0  0  1 16
+  24    22  0  0  2  2  3
+  25    22 28 29  2 14 15
+  26     0  0  0  2 14 15
+  27     0  0  0  0
+  28    25  0  0  1 14
+  29    25  0  0  1 15
+  30     0  0  0  1 15
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5 11  2  1  1  4 13
+   3 *   1 16 17  5  2  2  3 14 16
+   4 -   2  6  7  6  2  1  1  4  8
+   5 -   2 10 11  5  1  9 13
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  5  1  4  8
+   8 -   7  0  0  3  1  4  6
+   9 -   7  0  0  2  1  7  8
+  10 -   5  0  0  1  1  9  9
+  11 -   5 12 13  4  1 10 13
+  12 -  11 14 15  2  1 10 11
+  13 -  11  0  0  2  1 12 13
+  14 -  12  0  0  1  1 10 10
+  15 -  12  0  0  1  1 11 11
+  16 -   3 18 19  4  2  2  3 14 15
+  17 -   3  0  0  1  1 16 16
+  18 -  16  0  0  2  1  2  3
+  19 -  16 20 21  2  1 14 15
+  20 -  19  0  0  1  1 14 14
+  21 -  19  0  0  1  1 15 15
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            249
+Total number of atoms read in:              1992
+Total number of ignored atom records:         73
+ HEADER    RIBOSOME-INACTIVATING PROTEIN           24-MAR-99   1CF5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.-R.YUAN,Y.-N.HE,J.-P.XIONG,Z.-X.XIA                                 
+  Reading DSSP file
+ HEADER    RIBOSOME-INACTIVATING PROTEIN           24-MAR-99   1CF5              COMPND   2 MOLECULE: PROTEIN (BETA-MOMORCHARIN);                                SOURCE   2 ORGANISM_SCIENTIFIC: MOMORDICA CHARANTIA;                            AUTHOR    Y.-R.YUAN,Y.-N.HE,J.-P.XIONG,Z.-X.XIA                                 
+         249  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2312
+ selectset done           0
+ eigen done           0
+ tau           1   2.02542782              26          37         177
+ #popped           2           1
+ #selectset contacts        2312
+ selectset done           1
+ eigen done           1
+ tau           3   1.74724472             107         123
+ #popped           4           1
+ #selectset contacts        2312
+ selectset done           1
+ eigen done           1
+ tau           5   1.57770288             107
+ #popped           6           2
+ #selectset contacts        2312
+ selectset done           2
+ eigen done           2
+ tau           7  0.959557235              49          62          73
+ #popped           8           3
+ #selectset contacts        2312
+ selectset done           3
+ eigen done           3
+ tau           9   4.64613724              26
+ #popped          10           4
+ #selectset contacts        2312
+ selectset done           4
+ eigen done           4
+ tau          11  0.786428869              13
+ #popped          11           3
+ #selectset contacts        2312
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           9           2
+ #selectset contacts        2312
+ selectset done           2
+ eigen done           2
+ tau          13   1.16718471              62
+ #popped          15           2
+ #selectset contacts        2312
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           7           1
+ #selectset contacts        2312
+ selectset done           1
+ eigen done           1
+ tau          15  0.983063459             133         147
+ #popped          16           1
+ #selectset contacts        2312
+ selectset done           1
+ eigen done           1
+ tau          17   1.42126620             133         161
+ #popped          18           1
+ #selectset contacts        2312
+ selectset done           1
+ eigen done           1
+ tau          19  0.570388377             133
+ #popped           3           0
+ #selectset contacts        2312
+ selectset done           0
+ eigen done           0
+ tau          21   1.94164968              37         225
+ #popped          22           1
+ #selectset contacts        2312
+ selectset done           1
+ eigen done           1
+ tau          23   3.01947188             238
+ #popped          24           1
+ #selectset contacts        2312
+ selectset done           1
+ eigen done           1
+ tau          25  0.954764426              37
+ #popped          23           0
+ #selectset contacts        2312
+ selectset done           0
+ eigen done           0
+ tau          27   1.28921008             195
+ #popped          29           0
+ #selectset contacts        2312
+ selectset done           0
+ eigen done           0
+ tau          29   1.01293635             205
+ #popped          31           0
+ #selectset contacts        2312
+ selectset done           0
+ eigen done           0
+ tau          31   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    RIBOSOME-INACTIVATING PROTEIN           24-MAR-99   1CF5              COMPND   2 MOLECULE: PROTEIN (BETA-MOMORCHARIN);                                SOURCE   2 ORGANISM_SCIENTIFIC: MOMORDICA CHARANTIA;                            AUTHOR    Y.-R.YUAN,Y.-N.HE,J.-P.XIONG,Z.-X.XIA                                 
+           0
+         249
+         249  residues read 1CF5.dssp                                                   
+  grow short strand           2           5
+ crowded segment excluded!
+  exclude short helix           6           8
+  grow short strand          27          31
+  grow short strand          34          37
+  grow short strand          79          83
+  exclude short helix          88          93
+  grow short strand          99         103
+  exclude short helix         120         122
+  grow short helix         127         133
+  exclude short helix         135         138
+  exclude short helix         157         161
+  exclude short helix         229         233
+  exclude short helix         241         244
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  6  4  5  7  8 10 12 11  9  2  3 13 14 15
+   2     1  4  5 10  1  6  4  5  7  8 10 12 11  9
+   3     1 22 23  5  2  3 13 14 15
+   4     2  6  7  9  1  6  4  5  7  8 10 12 11
+   5     2  0  0  1  9
+   6     4  8  9  6  1  6  4  5  7  8
+   7     4 18 19  3 10 12 11
+   8     6 10 11  2  1  6
+   9     6 14 15  4  4  5  7  8
+  10     8  0  0  1  1
+  11     8  0  0  1  6
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     9  0  0  2  4  5
+  15     9  0  0  2  7  8
+  16     0  0  0  3 10 12 11
+  17     0  0  0  0
+  18     7 20 21  2 10 12
+  19     7  0  0  1 11
+  20    18  0  0  1 10
+  21    18  0  0  1 12
+  22     3  0  0  2  2  3
+  23     3 28 29  3 13 14 15
+  24     0  0  0  2  2  3
+  25     0  0  0  0
+  26     0  0  0  2  2  3
+  27     0  0  0  0
+  28    23  0  0  1 13
+  29    23  0  0  2 14 15
+  30     0  0  0  0
+  31     0  0  0  2 14 15
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 10  2  1  1  4 12
+   3 -   1 18 19  5  2  2  3 13 15
+   4 -   2  6  7  9  3  1  1  4  8 10 12
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  6  2  1  1  4  8
+   7 -   4 14 15  3  1 10 12
+   8 -   6 10 11  2  2  1  1  6  6
+   9 -   6 12 13  4  2  4  5  7  8
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  6  6
+  12 -   9  0  0  2  1  4  5
+  13 -   9  0  0  2  1  7  8
+  14 -   7 16 17  2  2 10 10 12 12
+  15 -   7  0  0  1  1 11 11
+  16 -  14  0  0  1  1 10 10
+  17 -  14  0  0  1  1 12 12
+  18 -   3  0  0  2  1  2  3
+  19 -   3 20 21  3  1 13 15
+  20 -  19  0  0  1  1 13 13
+  21 -  19  0  0  2  1 14 15
+
+ CHAIN : 1CF5A
+ CHAIN : 1CF5B
+

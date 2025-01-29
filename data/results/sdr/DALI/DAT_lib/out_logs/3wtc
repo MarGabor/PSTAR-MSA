@@ -1,0 +1,370 @@
+A length: 259
+B length: 259
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            259
+Total number of atoms read in:              1899
+Total number of ignored atom records:        383
+ HEADER    OXIDOREDUCTASE                          09-APR-14   3WTC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.A.YUAN,J.P.LIN                                                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          09-APR-14   3WTC              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: GLUCONOBACTER OXYDANS;                          AUTHOR    Y.A.YUAN,J.P.LIN                                                      
+         259  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2460
+ selectset done           0
+ eigen done           0
+ tau           1   2.73534250             188         218
+ #popped           2           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau           3   1.71451390              60
+ #popped           4           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau           5  0.592789590              35
+ #popped           6           3
+ #selectset contacts        2460
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau           7   1.61023998              82          92         123
+ #popped           8           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau           9   2.08077717              82         113
+ #popped          10           3
+ #selectset contacts        2460
+ selectset done           3
+ eigen done           3
+ tau          11   1.05153930              70          82
+ #popped          12           3
+ #selectset contacts        2460
+ selectset done           3
+ eigen done           3
+ tau          13  0.866168499              70
+ #popped          11           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau          15  0.730328798             102
+ #popped           9           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau          17   1.49558473              92         134
+ #popped          18           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau          19  0.910797596             188         232
+ #popped          20           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau          21   1.56749892             188         245
+ #popped          22           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2460
+ selectset done           0
+ eigen done           0
+ tau          23  0.881744146             206
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          09-APR-14   3WTC              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: GLUCONOBACTER OXYDANS;                          AUTHOR    Y.A.YUAN,J.P.LIN                                                      
+           0
+         259
+         259  residues read 3WTC.dssp                                                   
+  grow short strand           7          11
+  grow short strand          56          60
+  grow short strand          85          88
+  exclude short helix          98         100
+  grow short strand         136         140
+  exclude short helix         143         145
+  exclude short helix         210         215
+  exclude short helix         240         242
+  grow short strand         249         252
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  5  9  6  8  7 10 11 12 15 14 13
+   2     1  4  5 14  1  2  3  4  5  9  6  8  7 10 11 12 15 14
+   3     1  0  0  1 13
+   4     2  6  7  5  1  2  3  4  5
+   5     2  8  9  9  9  6  8  7 10 11 12 15 14
+   6     4  0  0  3  1  2  3
+   7     4  0  0  2  4  5
+   8     5 10 11  3  9  6  8
+   9     5 20 21  6  7 10 11 12 15 14
+  10     8 12 13  2  9  6
+  11     8  0  0  1  8
+  12    10  0  0  1  9
+  13    10  0  0  1  6
+  14     0  0  0  0
+  15     0  0  0  1  9
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18     0  0  0  6  7 10 11 12 15 14
+  19     0  0  0  0
+  20     9  0  0  5  7 10 11 12 15
+  21     9  0  0  1 14
+  22     0  0  0  5  7 10 11 12 15
+  23     0  0  0  0
+  24     0  0  0  1 13
+  25     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5 14  2  1 12 14 15
+   3 =   1  0  0  1  1 13 13
+   4 *   2  6  7  5  1  1  5
+   5 *   2  8  9  9  2  6 12 14 15
+   6 -   4  0  0  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   5 10 11  3  2  6  6  8  9
+   9 -   5 14 15  6  3  7  7 10 12 14 15
+  10 -   8 12 13  2  2  6  6  9  9
+  11 -   8  0  0  1  1  8  8
+  12 -  10  0  0  1  1  9  9
+  13 -  10  0  0  1  1  6  6
+  14 -   9  0  0  5  3  7  7 10 12 15 15
+  15 -   9  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            259
+Total number of atoms read in:              1899
+Total number of ignored atom records:        349
+ HEADER    OXIDOREDUCTASE                          09-APR-14   3WTC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.A.YUAN,J.P.LIN                                                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          09-APR-14   3WTC              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: GLUCONOBACTER OXYDANS;                          AUTHOR    Y.A.YUAN,J.P.LIN                                                      
+         259  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2436
+ selectset done           0
+ eigen done           0
+ tau           1   3.11077452             189         217
+ #popped           2           1
+ #selectset contacts        2436
+ selectset done           1
+ eigen done           1
+ tau           3   1.90595615              85
+ #popped           4           2
+ #selectset contacts        2436
+ selectset done           2
+ eigen done           2
+ tau           5   1.36213231              61          75
+ #popped           6           2
+ #selectset contacts        2436
+ selectset done           2
+ eigen done           2
+ tau           7  0.742625773              61
+ #popped           8           2
+ #selectset contacts        2436
+ selectset done           2
+ eigen done           2
+ tau           9  0.621603966              33
+ #popped          10           3
+ #selectset contacts        2436
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped          11           2
+ #selectset contacts        2436
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2436
+ selectset done           1
+ eigen done           1
+ tau          11   1.08225620             123         141         165
+ #popped          12           2
+ #selectset contacts        2436
+ selectset done           2
+ eigen done           2
+ tau          13   1.82546496             123
+ #popped          14           3
+ #selectset contacts        2436
+ selectset done           3
+ eigen done           3
+ tau          15   1.15840518             113
+ #popped          16           3
+ #selectset contacts        2436
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        2436
+ selectset done           2
+ eigen done           2
+ tau          17  0.534019887             151
+ #popped          13           1
+ #selectset contacts        2436
+ selectset done           1
+ eigen done           1
+ tau          19  0.866313577             179
+ #popped          20           2
+ #selectset contacts        2436
+ selectset done           2
+ eigen done           2
+ tau          21   1.18975842             141
+ #popped          21           1
+ #selectset contacts        2436
+ selectset done           1
+ eigen done           1
+ tau          23  0.875186145             232         247
+ #popped          24           1
+ #selectset contacts        2436
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped           3           0
+ #selectset contacts        2436
+ selectset done           0
+ eigen done           0
+ tau          25  0.905973434             206
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          09-APR-14   3WTC              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: GLUCONOBACTER OXYDANS;                          AUTHOR    Y.A.YUAN,J.P.LIN                                                      
+           0
+         259
+         259  residues read 3WTC.dssp                                                   
+  grow short strand           7          11
+  grow short strand          56          60
+  grow short strand          85          88
+  exclude short helix          98         100
+  grow short strand         136         140
+  exclude short helix         143         145
+  exclude short helix         240         242
+  grow short strand         249         252
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  4  5  6  7  8  9 11 10 12 15 16 13 14
+   2     1  4  5 14  1  2  3  4  5  6  7  8  9 11 10 12 15 16
+   3     1 26 27  2 13 14
+   4     2  6  7  6  1  2  3  4  5  6
+   5     2 12 13  8  7  8  9 11 10 12 15 16
+   6     4 10 11  5  1  2  3  4  5
+   7     4  0  0  1  6
+   8     0  0  0  5  1  2  3  4  5
+   9     0  0  0  0
+  10     6  0  0  3  1  2  3
+  11     6  0  0  2  4  5
+  12     5 14 15  4  7  8  9 11
+  13     5 20 21  4 10 12 15 16
+  14    12 16 17  3  7  8  9
+  15    12  0  0  1 11
+  16    14  0  0  2  7  8
+  17    14  0  0  1  9
+  18     0  0  0  0
+  19     0  0  0  1 11
+  20    13  0  0  1 10
+  21    13  0  0  3 12 15 16
+  22     0  0  0  1 10
+  23     0  0  0  0
+  24     0  0  0  3 12 15 16
+  25     0  0  0  0
+  26     3  0  0  1 13
+  27     3  0  0  1 14
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5 14  2  1 12 15 16
+   3 =   1 18 19  2  1 13 14
+   4 -   2  6  7  6  1  1  6
+   5 -   2 10 11  8  2  7 12 15 16
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   5 12 13  4  2  7  9 11 11
+  11 -   5 16 17  4  3 10 10 12 12 15 16
+  12 -  10 14 15  3  1  7  9
+  13 -  10  0  0  1  1 11 11
+  14 -  12  0  0  2  1  7  8
+  15 -  12  0  0  1  1  9  9
+  16 -  11  0  0  1  1 10 10
+  17 -  11  0  0  3  2 12 12 15 16
+  18 -   3  0  0  1  1 13 13
+  19 -   3  0  0  1  1 14 14
+
+ CHAIN : 3WTCA
+ CHAIN : 3WTCB
+

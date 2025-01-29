@@ -1,0 +1,1983 @@
+D length: 955
+K length: 1270
+C length: 191
+# 3 chains C D K
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            191
+Total number of atoms read in:              1518
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              COMPND   2 MOLECULE: VOLTAGE-DEPENDENT CALCIUM CHANNEL SUBUNIT ALPHA-2          SOURCE   2 ORGANISM_SCIENTIFIC: ORYCTOLAGUS CUNICULUS;                          AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+         191  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1513
+ selectset done           0
+ eigen done           0
+ tau           1   3.53006864             122         163
+ #popped           2           1
+ #selectset contacts        1513
+ selectset done           1
+ eigen done           1
+ tau           3   3.10529447              56          75
+ #popped           4           1
+ #selectset contacts        1513
+ selectset done           1
+ eigen done           1
+ tau           5   2.10433245              15          39
+ #popped           6           2
+ #selectset contacts        1513
+ selectset done           2
+ eigen done           2
+ tau           7   1.33928573             100         110
+ #popped           8           2
+ #selectset contacts        1513
+ selectset done           2
+ eigen done           2
+ tau           9   1.16011691             122
+ #popped          10           3
+ #selectset contacts        1513
+ selectset done           3
+ eigen done           3
+ tau          11   4.01557922              15         100
+ #popped          12           4
+ #selectset contacts        1513
+ selectset done           4
+ eigen done           4
+ tau          13  0.353375971              15
+ #popped          13           3
+ #selectset contacts        1513
+ selectset done           3
+ eigen done           3
+ tau          15  0.409000933              85
+ #popped          16           3
+ #selectset contacts        1513
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          11           2
+ #selectset contacts        1513
+ selectset done           2
+ eigen done           2
+ tau          17   1.13839662             181
+ #popped           7           1
+ #selectset contacts        1513
+ selectset done           1
+ eigen done           1
+ tau          19  0.980392158              28
+ #popped           3           0
+ #selectset contacts        1513
+ selectset done           0
+ eigen done           0
+ tau          21   1.69512355             138
+ #popped          23           0
+ #selectset contacts        1513
+ selectset done           0
+ eigen done           0
+ tau          23   1.13285744             148
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              COMPND   2 MOLECULE: VOLTAGE-DEPENDENT CALCIUM CHANNEL SUBUNIT ALPHA-2          SOURCE   2 ORGANISM_SCIENTIFIC: ORYCTOLAGUS CUNICULUS;                          AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+           0
+         191
+         191  residues read 8EOG.dssp                                                   
+  grow short strand          10          13
+  grow short strand          43          46
+  grow short strand          97         100
+  exclude short helix         107         109
+  grow short strand         118         122
+  exclude short helix         140         143
+  grow short strand         165         167
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  6  3  4  5  9 10  2  7  8
+   2     1  6  7  8  1  6  3  4  5  9 10  2
+   3     1 22 23  2  7  8
+   4     0  0  0  8  1  6  3  4  5  9 10  2
+   5     0  0  0  0
+   6     2 10 11  7  1  6  3  4  5  9 10
+   7     2  0  0  1  2
+   8     0  0  0  7  1  6  3  4  5  9 10
+   9     0  0  0  0
+  10     6 12 13  5  1  6  3  4  5
+  11     6  0  0  2  9 10
+  12    10 14 15  2  1  6
+  13    10 16 17  3  3  4  5
+  14    12  0  0  1  1
+  15    12  0  0  1  6
+  16    13  0  0  2  3  4
+  17    13  0  0  1  5
+  18     0  0  0  2  9 10
+  19     0  0  0  0
+  20     0  0  0  1  2
+  21     0  0  0  0
+  22     3  0  0  1  7
+  23     3  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  1  8
+   1 +   0  2  3 10  1  1 10
+   2 +   1  4  5  8  2  1  6  9 10
+   3 *   1 14 15  2  1  7  8
+   4 -   2  6  7  7  3  1  1  3  6  9 10
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  5  2  1  1  3  6
+   7 -   4  0  0  2  1  9 10
+   8 -   6 10 11  2  2  1  1  6  6
+   9 -   6 12 13  3  1  3  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  6  6
+  12 -   9  0  0  2  1  3  4
+  13 -   9  0  0  1  1  5  5
+  14 -   3  0  0  1  1  7  7
+  15 -   3  0  0  1  1  8  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            956
+Total number of atoms read in:              7640
+Total number of ignored atom records:         78
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:          10
+  calculate residue outside grid:          86
+  calculate residue outside grid:          92
+  calculate residue outside grid:         106
+  calculate residue outside grid:         300
+  calculate residue outside grid:         301
+  calculate residue outside grid:         336
+  calculate residue outside grid:         337
+  calculate residue outside grid:         338
+  calculate residue outside grid:         340
+  calculate residue outside grid:         341
+  calculate residue outside grid:         344
+  calculate residue outside grid:         357
+  calculate residue outside grid:         358
+  calculate residue outside grid:         359
+  calculate residue outside grid:         437
+  calculate residue outside grid:         438
+  calculate residue outside grid:         439
+  calculate residue outside grid:         440
+  calculate residue outside grid:         441
+  calculate residue outside grid:         442
+  calculate residue outside grid:         605
+  calculate residue outside grid:         780
+  calculate residue outside grid:         781
+  calculate residue outside grid:         782
+  calculate residue outside grid:         783
+  calculate residue outside grid:         784
+  calculate residue outside grid:         785
+  calculate residue outside grid:         786
+  calculate residue outside grid:         787
+  calculate residue outside grid:         788
+  calculate residue outside grid:         802
+  calculate residue outside grid:         803
+  calculate residue outside grid:         804
+  calculate residue outside grid:         805
+  calculate residue outside grid:         872
+  calculate residue outside grid:         873
+  calculate residue outside grid:         874
+  calculate residue outside grid:         875
+  calculate residue outside grid:         876
+  calculate residue outside grid:         877
+  calculate residue outside grid:         878
+  calculate residue outside grid:         879
+  calculate residue outside grid:         880
+  calculate residue outside grid:         881
+  calculate residue outside grid:         896
+  calculate residue outside grid:         897
+  calculate residue outside grid:         898
+  calculate residue outside grid:         899
+  calculate residue outside grid:         900
+  calculate residue outside grid:         901
+  calculate residue outside grid:         902
+  calculate residue outside grid:         903
+  calculate residue outside grid:         904
+  calculate residue outside grid:         905
+  calculate residue outside grid:         906
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              COMPND   2 MOLECULE: VOLTAGE-DEPENDENT CALCIUM CHANNEL SUBUNIT ALPHA-2          SOURCE   2 ORGANISM_SCIENTIFIC: ORYCTOLAGUS CUNICULUS;                          AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+         956  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        7946
+ selectset done           0
+ eigen done           0
+ tau           1   2.09481001              65         188         429         456         620         651
+ #popped           2           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau           3   3.52352715              47          65         202         577         832         860         910
+ #popped           4           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau           5   4.21547747              20         730         744         770
+ #popped           6           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau           7   3.14152503             744
+ #popped           8           4
+ #selectset contacts        7946
+ selectset done           4
+ eigen done           4
+ tau           9   999.999023              20
+ #popped          10           4
+ #selectset contacts        7946
+ selectset done           4
+ eigen done           4
+ tau          11  0.784313738              10
+ #popped           9           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          13  0.882337034             871         881
+ #popped          14           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          15   2.79889989             781
+ #popped          17           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          17  0.979622006             800         810
+ #popped          18           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          19  0.464545965             893
+ #popped          20           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          21  0.991323531             832
+ #popped          22           4
+ #selectset contacts        7946
+ selectset done           4
+ eigen done           4
+ tau          23   1.55689943             800
+ #popped          25           4
+ #selectset contacts        7946
+ selectset done           4
+ eigen done           4
+ tau          25  0.892655373             820
+ #popped          23           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          27   0.00000000    
+ #popped           7           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          27   999.999023              47         202
+ #popped          28           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          29   2.06825018             588
+ #popped          30           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          31   2.64458752              37
+ #popped          33           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          33   0.00000000    
+ #popped          31           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          33   2.05773163             601
+ #popped          35           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          35   1.31739509             672
+ #popped          36           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          37   4.27530336             620
+ #popped          39           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          39  0.854040384             662
+ #popped          37           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          41   1.47362471             682
+ #popped          43           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          43   1.28557980             697         714
+ #popped          44           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          45  0.163622439             760
+ #popped          46           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          47   5.63273525             697
+ #popped          49           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          49   0.00000000    
+ #popped           5           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau          49   5.35017586              65         410         541         559         935
+ #popped          50           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          51   4.07193661              65         476
+ #popped          52           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          53   4.04396915              65
+ #popped          55           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          55   1.90983772             920
+ #popped          56           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          57   2.83355188             489         518         577
+ #popped          58           4
+ #selectset contacts        7946
+ selectset done           4
+ eigen done           4
+ tau          59   1.82555783             489         534
+ #popped          60           4
+ #selectset contacts        7946
+ selectset done           4
+ eigen done           4
+ tau          61  0.571038246             489
+ #popped          63           4
+ #selectset contacts        7946
+ selectset done           4
+ eigen done           4
+ tau          63   0.00000000    
+ #popped          59           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          63  0.949921846             506
+ #popped          65           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          65   11.7655439             518
+ #popped          67           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          67  0.875922024             860
+ #popped          68           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          69  0.223054662             848
+ #popped          53           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          71   2.11571050             466
+ #popped          72           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          73  0.713043451             429
+ #popped          51           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau          75   999.999023             410         559
+ #popped          76           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau          77   2.68548250             217         381
+ #popped          78           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          79   0.00000000    
+ #popped          79           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau          79   1.63074327             228         248         322
+ #popped          80           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          81   2.19759035             297
+ #popped          82           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          83  0.895367324             276         287
+ #popped          84           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          85   1.54768395             276
+ #popped          86           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          87  0.718074322             266
+ #popped          88           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau          89  0.374291688             228
+ #popped          83           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          91   2.30769229             311
+ #popped          81           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau          93   8.16893196             248
+ #popped          94           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau          95  0.728780091             238
+ #popped          95           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau          97   1.68543756             334         347
+ #popped          98           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau          99  0.457119226             364
+ #popped         100           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau         101  0.393025994             334
+ #popped           3           0
+ #selectset contacts        7946
+ selectset done           0
+ eigen done           0
+ tau         103   999.999023             456
+ #popped         104           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau         105   1.39414048             133         153
+ #popped         106           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau         107   1.24559259             133
+ #popped         108           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau         109   6.78737116              86
+ #popped         110           4
+ #selectset contacts        7946
+ selectset done           4
+ eigen done           4
+ tau         111  0.903885484              75
+ #popped         111           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau         113  0.794936657             104
+ #popped         115           3
+ #selectset contacts        7946
+ selectset done           3
+ eigen done           3
+ tau         115   0.00000000    
+ #popped         109           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau         115   2.76132727             170
+ #popped         117           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau         117  0.783547103             188
+ #popped         119           2
+ #selectset contacts        7946
+ selectset done           2
+ eigen done           2
+ tau         119  0.454254210             442
+ #popped         107           1
+ #selectset contacts        7946
+ selectset done           1
+ eigen done           1
+ tau         121  0.862455547             143
+ #popped         105           0
+ #selectset contacts        7946
+ selectset done           0
+ eigen done           0
+ tau         123  0.715505719             636
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              COMPND   2 MOLECULE: VOLTAGE-DEPENDENT CALCIUM CHANNEL SUBUNIT ALPHA-2          SOURCE   2 ORGANISM_SCIENTIFIC: ORYCTOLAGUS CUNICULUS;                          AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+           0
+         956
+         956  residues read 8EOG.dssp                                                   
+  grow short strand          42          46
+  grow short strand          96          97
+ crowded segment excluded!
+  grow short strand          99         100
+  grow short strand         108         109
+  grow short strand         116         117
+  grow short strand         124         125
+  grow short strand         131         133
+  grow short strand         172         176
+  grow short strand         181         184
+  exclude short helix         204         206
+  grow short helix         208         214
+  grow short strand         221         225
+  exclude short helix         228         230
+  grow short strand         256         260
+  grow short strand         264         266
+  grow short helix         336         342
+  grow short strand         375         379
+  grow short helix         382         388
+  exclude short helix         393         396
+  grow short strand         411         412
+  grow short strand         416         417
+  exclude short helix         446         448
+  exclude short helix         460         464
+  grow short strand         477         481
+  grow short strand         487         489
+  grow short strand         504         505
+  grow short strand         572         576
+  exclude short helix         579         581
+  grow short strand         583         587
+  exclude short helix         607         609
+  grow short strand         612         613
+  grow short strand         695         697
+  exclude short helix         700         705
+  exclude short helix         712         714
+  grow short strand         728         730
+  grow short strand         798         801
+  exclude short helix         806         808
+  exclude short helix         814         816
+  grow short strand         846         847
+  grow short strand         871         873
+  grow short strand         880         882
+  grow short strand         885         886
+  grow short strand         915         916
+  exclude short helix         922         925
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 61  1 50 51 52 53 59 60 57 58  2  3 39 40 41 43 44 45 46 47 48 49 32 33 38 35 34 54 55 56 61 28 29 30 14 26 27 15 17 18 19 20 16 21 23 24 25 22 36 37  4  5  6  7  8  9 11 12 13 31 10 42
+   2     1  4  5 49  1 50 51 52 53 59 60 57 58  2  3 39 40 41 43 44 45 46 47 48 49 32 33 38 35 34 54 55 56 61 28 29 30 14 26 27 15 17 18 19 20 16 21 23 24 25 22 36 37
+   3     1104105 12  4  5  6  7  8  9 11 12 13 31 10 42
+   4     2  6  7 21  1 50 51 52 53 59 60 57 58  2  3 39 40 41 43 44 45 46 47 48 49
+   5     2 50 51 28 32 33 38 35 34 54 55 56 61 28 29 30 14 26 27 15 17 18 19 20 16 21 23 24 25 22 36 37
+   6     4  8  9  9  1 50 51 52 53 59 60 57 58
+   7     4 30 31 12  2  3 39 40 41 43 44 45 46 47 48 49
+   8     6  0  0  1  1
+   9     6 14 15  8 50 51 52 53 59 60 57 58
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     9 16 17  6 50 51 52 53 59 60
+  15     9  0  0  2 57 58
+  16    14  0  0  1 50
+  17    14 20 21  5 51 52 53 59 60
+  18     0  0  0  5 51 52 53 59 60
+  19     0  0  0  0
+  20    17 22 23  4 51 52 53 59
+  21    17  0  0  1 60
+  22    20 24 25  3 51 52 53
+  23    20  0  0  1 59
+  24    22  0  0  2 51 52
+  25    22  0  0  1 53
+  26     0  0  0  0
+  27     0  0  0  1 53
+  28     0  0  0 12  2  3 39 40 41 43 44 45 46 47 48 49
+  29     0  0  0  0
+  30     7 32 33  3  2  3 39
+  31     7 34 35  9 40 41 43 44 45 46 47 48 49
+  32    30  0  0  1  2
+  33    30  0  0  2  3 39
+  34    31  0  0  1 40
+  35    31 36 37  8 41 43 44 45 46 47 48 49
+  36    35 38 39  2 41 43
+  37    35 46 47  6 44 45 46 47 48 49
+  38    36  0  0  1 41
+  39    36  0  0  1 43
+  40     0  0  0  1 43
+  41     0  0  0  0
+  42     0  0  0  0
+  43     0  0  0  6 44 45 46 47 48 49
+  44     0  0  0  6 44 45 46 47 48 49
+  45     0  0  0  0
+  46    37 48 49  5 44 45 46 47 48
+  47    37  0  0  1 49
+  48    46  0  0  2 44 45
+  49    46  0  0  3 46 47 48
+  50     5 52 53 12 32 33 38 35 34 54 55 56 61 28 29 30
+  51     5 76 77 16 14 26 27 15 17 18 19 20 16 21 23 24 25 22 36 37
+  52    50 58 59  9 32 33 38 35 34 54 55 56 61
+  53    50  0  0  3 28 29 30
+  54     0  0  0  0
+  55     0  0  0  9 32 33 38 35 34 54 55 56 61
+  56     0  0  0  9 32 33 38 35 34 54 55 56 61
+  57     0  0  0  0
+  58    52 60 61  4 32 33 38 35
+  59    52 64 65  5 34 54 55 56 61
+  60    58 62 63  3 32 33 38
+  61    58  0  0  1 35
+  62    60  0  0  2 32 33
+  63    60  0  0  1 38
+  64    59  0  0  1 34
+  65    59 68 69  4 54 55 56 61
+  66     0  0  0  0
+  67     0  0  0  4 54 55 56 61
+  68    65 70 71  3 54 55 56
+  69    65  0  0  1 61
+  70    68  0  0  2 54 55
+  71    68  0  0  1 56
+  72     0  0  0  3 28 29 30
+  73     0  0  0  0
+  74     0  0  0  3 28 29 30
+  75     0  0  0  0
+  76    51 78 79 14 14 26 27 15 17 18 19 20 16 21 23 24 25 22
+  77    51  0  0  2 36 37
+  78    76  0  0  3 14 26 27
+  79    76 80 81 11 15 17 18 19 20 16 21 23 24 25 22
+  80    79 82 83  5 15 17 18 19 20
+  81    79 94 95  6 16 21 23 24 25 22
+  82    80 84 85  4 15 17 18 19
+  83    80  0  0  1 20
+  84    82 90 91  3 15 17 18
+  85    82  0  0  1 19
+  86     0  0  0  3 15 17 18
+  87     0  0  0  0
+  88     0  0  0  3 15 17 18
+  89     0  0  0  0
+  90    84  0  0  1 15
+  91    84  0  0  2 17 18
+  92     0  0  0  1 20
+  93     0  0  0  0
+  94    81  0  0  1 16
+  95    81 98 99  5 21 23 24 25 22
+  96     0  0  0  0
+  97     0  0  0  1 16
+  98    95100101  4 21 23 24 25
+  99    95  0  0  1 22
+ 100    98102103  2 21 23
+ 101    98  0  0  2 24 25
+ 102   100  0  0  1 21
+ 103   100  0  0  1 23
+ 104     3106107 11  4  5  6  7  8  9 11 12 13 31 10
+ 105     3  0  0  1 42
+ 106   104108109 10  4  5  6  7  8  9 11 12 13 31
+ 107   104  0  0  1 10
+ 108   106110111  6  4  5  6  7  8  9
+ 109   106116117  4 11 12 13 31
+ 110   108  0  0  1  4
+ 111   108114115  5  5  6  7  8  9
+ 112     0  0  0  1  4
+ 113     0  0  0  0
+ 114   111  0  0  1  5
+ 115   111  0  0  4  6  7  8  9
+ 116   109  0  0  1 11
+ 117   109118119  3 12 13 31
+ 118   117  0  0  2 12 13
+ 119   117  0  0  1 31
+ 120     0  0  0  0
+ 121     0  0  0  1 31
+ 122     0  0  0  0
+ 123     0  0  0  1 10
+ 124     0  0  0  0
+ 125     0  0  0  1 42
+   1 +   0  2  3 61  1  1 61
+   2 +   1  4  5 49  4  1  3 14 30 32 41 43 61
+   3 +   1 70 71 12  3  4 13 31 31 42 42
+   4 +   2  6  7 21  4  1  3 39 41 43 53 57 60
+   5 +   2 34 35 28  4 14 30 32 38 54 56 61 61
+   6 +   4  8  9  9  3  1  1 50 53 57 60
+   7 +   4 20 21 12  3  2  3 39 41 43 49
+   8 =   6  0  0  1  1  1  1
+   9 +   6 10 11  8  2 50 53 57 60
+  10 +   9 12 13  6  2 50 53 59 60
+  11 =   9  0  0  2  1 57 58
+  12 =  10  0  0  1  1 50 50
+  13 *  10 14 15  5  2 51 53 59 60
+  14 -  13 16 17  4  2 51 53 59 59
+  15 -  13  0  0  1  1 60 60
+  16 -  14 18 19  3  1 51 53
+  17 -  14  0  0  1  1 59 59
+  18 -  16  0  0  2  1 51 52
+  19 -  16  0  0  1  1 53 53
+  20 =   7 22 23  3  2  2  3 39 39
+  21 *   7 24 25  9  2 40 41 43 49
+  22 -  20  0  0  1  1  2  2
+  23 -  20  0  0  2  2  3  3 39 39
+  24 -  21  0  0  1  1 40 40
+  25 -  21 26 27  8  2 41 41 43 49
+  26 -  25 28 29  2  2 41 41 43 43
+  27 -  25 30 31  6  1 44 49
+  28 -  26  0  0  1  1 41 41
+  29 -  26  0  0  1  1 43 43
+  30 -  27 32 33  5  1 44 48
+  31 -  27  0  0  1  1 49 49
+  32 -  30  0  0  2  1 44 45
+  33 -  30  0  0  3  1 46 48
+  34 +   5 36 37 12  5 28 30 32 35 38 38 54 56 61 61
+  35 +   5 50 51 16  2 14 27 36 37
+  36 +  34 38 39  9  4 32 35 38 38 54 56 61 61
+  37 =  34  0  0  3  1 28 30
+  38 *  36 40 41  4  3 32 33 35 35 38 38
+  39 *  36 44 45  5  3 34 34 54 56 61 61
+  40 -  38 42 43  3  2 32 33 38 38
+  41 -  38  0  0  1  1 35 35
+  42 -  40  0  0  2  1 32 33
+  43 -  40  0  0  1  1 38 38
+  44 -  39  0  0  1  1 34 34
+  45 -  39 46 47  4  2 54 56 61 61
+  46 -  45 48 49  3  1 54 56
+  47 -  45  0  0  1  1 61 61
+  48 -  46  0  0  2  1 54 55
+  49 -  46  0  0  1  1 56 56
+  50 +  35 52 53 14  1 14 27
+  51 =  35  0  0  2  1 36 37
+  52 *  50  0  0  3  2 14 14 26 27
+  53 +  50 54 55 11  1 15 25
+  54 *  53 56 57  5  2 15 15 17 20
+  55 *  53 62 63  6  2 16 16 21 25
+  56 -  54 58 59  4  2 15 15 17 19
+  57 -  54  0  0  1  1 20 20
+  58 -  56 60 61  3  2 15 15 17 18
+  59 -  56  0  0  1  1 19 19
+  60 -  58  0  0  1  1 15 15
+  61 -  58  0  0  2  1 17 18
+  62 -  55  0  0  1  1 16 16
+  63 -  55 64 65  5  1 21 25
+  64 -  63 66 67  4  2 21 21 23 25
+  65 -  63  0  0  1  1 22 22
+  66 -  64 68 69  2  2 21 21 23 23
+  67 -  64  0  0  2  1 24 25
+  68 -  66  0  0  1  1 21 21
+  69 -  66  0  0  1  1 23 23
+  70 +   3 72 73 11  2  4 13 31 31
+  71 =   3  0  0  1  1 42 42
+  72 +  70 74 75 10  3  4  9 11 13 31 31
+  73 =  70  0  0  1  1 10 10
+  74 *  72 76 77  6  1  4  9
+  75 *  72 80 81  4  2 11 13 31 31
+  76 -  74  0  0  1  1  4  4
+  77 -  74 78 79  5  1  5  9
+  78 -  77  0  0  1  1  5  5
+  79 -  77  0  0  4  1  6  9
+  80 -  75  0  0  1  1 11 11
+  81 -  75 82 83  3  2 12 13 31 31
+  82 -  81  0  0  2  1 12 13
+  83 -  81  0  0  1  1 31 31
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:           1270
+Total number of atoms read in:             10231
+Total number of ignored atom records:        181
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  calculate residue outside grid:          14
+  calculate residue outside grid:          15
+  calculate residue outside grid:          18
+  calculate residue outside grid:          38
+  calculate residue outside grid:          39
+  calculate residue outside grid:          40
+  calculate residue outside grid:          57
+  calculate residue outside grid:          60
+  calculate residue outside grid:          61
+  calculate residue outside grid:          62
+  calculate residue outside grid:          63
+  calculate residue outside grid:          64
+  calculate residue outside grid:          65
+  calculate residue outside grid:          66
+  calculate residue outside grid:          67
+  calculate residue outside grid:          68
+  calculate residue outside grid:          69
+  calculate residue outside grid:          70
+  calculate residue outside grid:          71
+  calculate residue outside grid:          72
+  calculate residue outside grid:          73
+  calculate residue outside grid:          74
+  calculate residue outside grid:          75
+  calculate residue outside grid:          98
+  calculate residue outside grid:          99
+  calculate residue outside grid:         100
+  calculate residue outside grid:         168
+  calculate residue outside grid:         169
+  calculate residue outside grid:         309
+  calculate residue outside grid:         310
+  calculate residue outside grid:         311
+  calculate residue outside grid:         312
+  calculate residue outside grid:         313
+  calculate residue outside grid:         314
+  calculate residue outside grid:         315
+  calculate residue outside grid:         316
+  calculate residue outside grid:         317
+  calculate residue outside grid:         318
+  calculate residue outside grid:         319
+  calculate residue outside grid:         320
+  calculate residue outside grid:         321
+  calculate residue outside grid:         322
+  calculate residue outside grid:         323
+  calculate residue outside grid:         324
+  calculate residue outside grid:         325
+  calculate residue outside grid:         326
+  calculate residue outside grid:         327
+  calculate residue outside grid:         328
+  calculate residue outside grid:         329
+  calculate residue outside grid:         330
+  calculate residue outside grid:         331
+  calculate residue outside grid:         332
+  calculate residue outside grid:         333
+  calculate residue outside grid:         335
+  calculate residue outside grid:         336
+  calculate residue outside grid:         338
+  calculate residue outside grid:         339
+  calculate residue outside grid:         342
+  calculate residue outside grid:         346
+  calculate residue outside grid:         355
+  calculate residue outside grid:         356
+  calculate residue outside grid:         357
+  calculate residue outside grid:         358
+  calculate residue outside grid:         359
+  calculate residue outside grid:         360
+  calculate residue outside grid:         361
+  calculate residue outside grid:         362
+  calculate residue outside grid:         363
+  calculate residue outside grid:         364
+  calculate residue outside grid:         365
+  calculate residue outside grid:         366
+  calculate residue outside grid:         367
+  calculate residue outside grid:         368
+  calculate residue outside grid:         369
+  calculate residue outside grid:         370
+  calculate residue outside grid:         371
+  calculate residue outside grid:         372
+  calculate residue outside grid:         373
+  calculate residue outside grid:         374
+  calculate residue outside grid:         375
+  calculate residue outside grid:         376
+  calculate residue outside grid:         377
+  calculate residue outside grid:         378
+  calculate residue outside grid:         379
+  calculate residue outside grid:         380
+  calculate residue outside grid:         381
+  calculate residue outside grid:         382
+  calculate residue outside grid:         383
+  calculate residue outside grid:         384
+  calculate residue outside grid:         385
+  calculate residue outside grid:         386
+  calculate residue outside grid:         387
+  calculate residue outside grid:         406
+  calculate residue outside grid:         407
+  calculate residue outside grid:         408
+  calculate residue outside grid:         409
+  calculate residue outside grid:         410
+  calculate residue outside grid:         411
+  calculate residue outside grid:         412
+  calculate residue outside grid:         413
+  calculate residue outside grid:         414
+  calculate residue outside grid:         415
+  calculate residue outside grid:         416
+  calculate residue outside grid:         417
+  calculate residue outside grid:         422
+  calculate residue outside grid:         425
+  calculate residue outside grid:         426
+  calculate residue outside grid:         429
+  calculate residue outside grid:         487
+  calculate residue outside grid:         571
+  calculate residue outside grid:         572
+  calculate residue outside grid:         573
+  calculate residue outside grid:         574
+  calculate residue outside grid:         607
+  calculate residue outside grid:         608
+  calculate residue outside grid:         609
+  calculate residue outside grid:         610
+  calculate residue outside grid:         611
+  calculate residue outside grid:         612
+  calculate residue outside grid:         613
+  calculate residue outside grid:         614
+  calculate residue outside grid:         615
+  calculate residue outside grid:         616
+  calculate residue outside grid:         617
+  calculate residue outside grid:         618
+  calculate residue outside grid:         619
+  calculate residue outside grid:         620
+  calculate residue outside grid:         621
+  calculate residue outside grid:         622
+  calculate residue outside grid:         623
+  calculate residue outside grid:         624
+  calculate residue outside grid:         625
+  calculate residue outside grid:         626
+  calculate residue outside grid:         627
+  calculate residue outside grid:         628
+  calculate residue outside grid:         629
+  calculate residue outside grid:         631
+  calculate residue outside grid:         632
+  calculate residue outside grid:         635
+  calculate residue outside grid:         655
+  calculate residue outside grid:         658
+  calculate residue outside grid:         659
+  calculate residue outside grid:         660
+  calculate residue outside grid:         661
+  calculate residue outside grid:         662
+  calculate residue outside grid:         663
+  calculate residue outside grid:         664
+  calculate residue outside grid:         665
+  calculate residue outside grid:         666
+  calculate residue outside grid:         667
+  calculate residue outside grid:         668
+  calculate residue outside grid:         669
+  calculate residue outside grid:         671
+  calculate residue outside grid:         672
+  calculate residue outside grid:         756
+  calculate residue outside grid:         758
+  calculate residue outside grid:         761
+  calculate residue outside grid:         762
+  calculate residue outside grid:         763
+  calculate residue outside grid:         764
+  calculate residue outside grid:         765
+  calculate residue outside grid:         766
+  calculate residue outside grid:         767
+  calculate residue outside grid:         768
+  calculate residue outside grid:         882
+  calculate residue outside grid:         883
+  calculate residue outside grid:         884
+  calculate residue outside grid:         885
+  calculate residue outside grid:         886
+  calculate residue outside grid:         887
+  calculate residue outside grid:         888
+  calculate residue outside grid:         889
+  calculate residue outside grid:         890
+  calculate residue outside grid:         891
+  calculate residue outside grid:         892
+  calculate residue outside grid:         893
+  calculate residue outside grid:         894
+  calculate residue outside grid:         895
+  calculate residue outside grid:         896
+  calculate residue outside grid:         897
+  calculate residue outside grid:         898
+  calculate residue outside grid:         899
+  calculate residue outside grid:         900
+  calculate residue outside grid:         904
+  calculate residue outside grid:         935
+  calculate residue outside grid:         938
+  calculate residue outside grid:         939
+  calculate residue outside grid:         941
+  calculate residue outside grid:         942
+  calculate residue outside grid:         943
+  calculate residue outside grid:         944
+  calculate residue outside grid:         945
+  calculate residue outside grid:         946
+  calculate residue outside grid:         947
+  calculate residue outside grid:         948
+  calculate residue outside grid:         949
+  calculate residue outside grid:         950
+  calculate residue outside grid:         951
+  calculate residue outside grid:         952
+  calculate residue outside grid:         953
+  calculate residue outside grid:         954
+  calculate residue outside grid:         955
+  calculate residue outside grid:         956
+  calculate residue outside grid:         957
+  calculate residue outside grid:         958
+  calculate residue outside grid:         959
+  calculate residue outside grid:         960
+  calculate residue outside grid:         977
+  calculate residue outside grid:         980
+  calculate residue outside grid:         981
+  calculate residue outside grid:        1096
+  calculate residue outside grid:        1097
+  calculate residue outside grid:        1098
+  calculate residue outside grid:        1099
+  calculate residue outside grid:        1101
+  calculate residue outside grid:        1165
+  calculate residue outside grid:        1166
+  calculate residue outside grid:        1167
+  calculate residue outside grid:        1168
+  calculate residue outside grid:        1169
+  calculate residue outside grid:        1171
+  calculate residue outside grid:        1173
+  calculate residue outside grid:        1174
+  calculate residue outside grid:        1175
+  calculate residue outside grid:        1176
+  calculate residue outside grid:        1204
+  calculate residue outside grid:        1207
+  calculate residue outside grid:        1209
+  calculate residue outside grid:        1210
+  calculate residue outside grid:        1211
+  calculate residue outside grid:        1212
+  calculate residue outside grid:        1213
+  calculate residue outside grid:        1214
+  calculate residue outside grid:        1233
+  calculate residue outside grid:        1234
+  calculate residue outside grid:        1235
+  calculate residue outside grid:        1236
+  calculate residue outside grid:        1237
+  calculate residue outside grid:        1238
+  calculate residue outside grid:        1239
+  calculate residue outside grid:        1240
+  calculate residue outside grid:        1241
+  calculate residue outside grid:        1242
+  calculate residue outside grid:        1243
+  calculate residue outside grid:        1244
+  calculate residue outside grid:        1245
+  calculate residue outside grid:        1246
+  calculate residue outside grid:        1247
+  calculate residue outside grid:        1248
+  calculate residue outside grid:        1249
+  calculate residue outside grid:        1250
+  calculate residue outside grid:        1251
+  calculate residue outside grid:        1252
+  calculate residue outside grid:        1254
+  calculate residue outside grid:        1255
+  calculate residue outside grid:        1256
+  calculate residue outside grid:        1257
+  calculate residue outside grid:        1258
+  calculate residue outside grid:        1259
+  calculate residue outside grid:        1260
+  calculate residue outside grid:        1261
+  calculate residue outside grid:        1262
+  calculate residue outside grid:        1263
+  calculate residue outside grid:        1264
+  calculate residue outside grid:        1265
+  calculate residue outside grid:        1266
+  calculate residue outside grid:        1267
+  calculate residue outside grid:        1268
+  calculate residue outside grid:        1269
+  calculate residue outside grid:        1270
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              COMPND   2 MOLECULE: VOLTAGE-DEPENDENT CALCIUM CHANNEL SUBUNIT ALPHA-2          SOURCE   2 ORGANISM_SCIENTIFIC: ORYCTOLAGUS CUNICULUS;                          AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+        1270  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts       11100
+ selectset done           0
+ eigen done           0
+ tau           1   3.31495452             316
+ #popped           2           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau           3   9.18468761             273
+ #popped           4           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau           5   18.0154171             134
+ #popped           6           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau           7   5.25830650             117
+ #popped           8           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau           9   2.42865062              21
+ #popped          10           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          11   1.91205525              11
+ #popped          11           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          13   1.99610901              81
+ #popped          14           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          15   3.27572012              71
+ #popped          16           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          17   2.69748759              41
+ #popped          18           5
+ #selectset contacts       11100
+ selectset done           5
+ eigen done           5
+ tau          19   1.19318187              31
+ #popped          19           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          21   1.17236757              56
+ #popped          15           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          23   2.15587449             100
+ #popped           7           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          25   2.91716909             158         208
+ #popped          26           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          27   2.02552867             225
+ #popped          28           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          29   3.32421494             158
+ #popped          30           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          31   1.02039468             147
+ #popped          29           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          33   2.73448396             246
+ #popped          34           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          35  0.753781497             235
+ #popped          35           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          37   1.21359718             257
+ #popped          27           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          39   1.23167157             180         197
+ #popped          40           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          41  0.425802231             170
+ #popped          43           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          43   4.33121014             180
+ #popped           5           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau          45   1.91141558             284
+ #popped          47           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau          47   1.50394797             301
+ #popped           3           0
+ #selectset contacts       11100
+ selectset done           0
+ eigen done           0
+ tau          49   6.18950224             570
+ #popped          50           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau          51   5.14690590             464         550
+ #popped          52           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          53   6.94477606             442
+ #popped          54           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          55   2.41798830             329
+ #popped          57           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          57   2.86882639             373         416
+ #popped          58           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          59   1.80050230             342
+ #popped          61           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          61   2.97479916             373
+ #popped          62           5
+ #selectset contacts       11100
+ selectset done           5
+ eigen done           5
+ tau          63   1.91935480             356
+ #popped          63           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          65   1.11391437             432
+ #popped          59           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          67   2.32941175             384
+ #popped          69           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          69   1.62771511             401
+ #popped          55           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          71   2.54302835             464
+ #popped          72           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          73  0.904573679             452
+ #popped          73           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          75  0.883095086             560
+ #popped          53           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau          77   2.63881516             526
+ #popped          78           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          79   1.84358263             511
+ #popped          80           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          81   1.57002580             482         492
+ #popped          82           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          83   1.93340504             482
+ #popped          79           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau          85   1.16093838             537
+ #popped          51           0
+ #selectset contacts       11100
+ selectset done           0
+ eigen done           0
+ tau          87   2.42590857             698         835         882        1002        1029        1123
+ #popped          88           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau          89   10.8110638             698        1233
+ #popped          90           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau          91   999.999023             698
+ #popped          92           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau          93   2.62234521             581         634
+ #popped          94           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          95   11.6169052             581
+ #popped          97           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          97   3.98856854             644
+ #popped          99           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau          99   1.54115164             662         681
+ #popped         100           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau         101   1.61235607             662
+ #popped          95           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         103   2.88182449             602
+ #popped         104           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau         105  0.658831656             591
+ #popped         105           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         107   1.30381680             617
+ #popped          93           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         109   1.89419794            1255
+ #popped         110           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         111  0.685760379            1244
+ #popped          91           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         113   6.65936899             860         882        1147
+ #popped         114           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         115   7.80243015             860
+ #popped         116           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         117   1.01847374             845
+ #popped         117           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         119   3.38333321            1029
+ #popped         120           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         121   2.13556075            1018
+ #popped         121           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         123   1.73772717            1137
+ #popped         115           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         125   2.51304340            1189        1210
+ #popped         126           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         127   2.66207576             882
+ #popped         128           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         129   1.01663637             871
+ #popped         129           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         131   2.39671755            1189
+ #popped         132           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         133   1.19585371            1163        1179
+ #popped         134           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         135   2.32623959            1163
+ #popped         133           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         137  0.795274794            1221
+ #popped         127           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         139   1.04878044            1199
+ #popped          89           0
+ #selectset contacts       11100
+ selectset done           0
+ eigen done           0
+ tau         141   999.999023             835        1002
+ #popped         142           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         143   11.3209162             835
+ #popped         144           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         145   3.73087263             738         774
+ #popped         146           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         147   3.46453691             711
+ #popped         149           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         149   2.04591298             731
+ #popped         150           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau         151  0.813912988             721
+ #popped         151           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         153   1.31114686             785         807         821
+ #popped         154           4
+ #selectset contacts       11100
+ selectset done           4
+ eigen done           4
+ tau         155   3.68649340             785
+ #popped         155           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         157   2.68198347             797         807
+ #popped         158           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         159   2.60377359             797
+ #popped         147           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         161  0.546190798             750
+ #popped         163           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         163  0.303036809             764
+ #popped         145           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         165   1.80517709            1085        1108
+ #popped         166           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         167   1.61900306            1075
+ #popped         168           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         169   1.36839235            1042        1058
+ #popped         170           3
+ #selectset contacts       11100
+ selectset done           3
+ eigen done           3
+ tau         171   1.71734273            1042
+ #popped         169           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         173   5.47008562            1085
+ #popped         167           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         175  0.503471375            1098
+ #popped         143           0
+ #selectset contacts       11100
+ selectset done           0
+ eigen done           0
+ tau         177   2.23241138             899         945
+ #popped         178           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         179   3.92101908             962
+ #popped         180           2
+ #selectset contacts       11100
+ selectset done           2
+ eigen done           2
+ tau         181   1.43092096             899
+ #popped         181           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         183   2.31208110             983
+ #popped         184           1
+ #selectset contacts       11100
+ selectset done           1
+ eigen done           1
+ tau         185  0.741303325             973
+ #popped         179           0
+ #selectset contacts       11100
+ selectset done           0
+ eigen done           0
+ tau         187   1.76910985             917
+ #popped         189           0
+ #selectset contacts       11100
+ selectset done           0
+ eigen done           0
+ tau         189   1.08972979             929
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        03-OCT-22   8EOG              COMPND   2 MOLECULE: VOLTAGE-DEPENDENT CALCIUM CHANNEL SUBUNIT ALPHA-2          SOURCE   2 ORGANISM_SCIENTIFIC: ORYCTOLAGUS CUNICULUS;                          AUTHOR    Z.CHEN,A.MONDAL,F.ABDEREMANE-ALI,D.L.MINOR                            
+           0
+        1270
+        1270  residues read 8EOG.dssp                                                   
+  exclude short helix         309         314
+  exclude short helix         386         389
+  exclude short helix         396         399
+  grow short helix         573         579
+  exclude short helix         695         697
+  grow short strand         739         740
+  exclude short helix         748         750
+  grow short strand         754         757
+  grow short strand         767         770
+  grow short strand         773         774
+  exclude short helix         893         896
+  exclude short helix         957         960
+  exclude short helix        1078        1083
+  exclude short helix        1139        1142
+  exclude short helix        1201        1205
+  grow short helix        1238        1244
+  exclude short helix        1246        1248
+  exclude short helix        1259        1262
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 47  1  2  3  4  5  6  7  8  9 10 11 12 15 13 14 16 19 17 18 20 23 24 21 22 47 34 40 43 35 44 45 46 25 26 31 33 32 27 28 29 30 41 42 38 39 36 37
+   2     1  4  5 10  1  2  3  4  5  6  7  8  9 10
+   3     1 50 51 37 11 12 15 13 14 16 19 17 18 20 23 24 21 22 47 34 40 43 35 44 45 46 25 26 31 33 32 27 28 29 30 41 42 38 39 36 37
+   4     2  6  7  9  1  2  3  4  5  6  7  8  9
+   5     2  0  0  1 10
+   6     4 10 11  5  1  2  3  4  5
+   7     4 28 29  4  6  7  8  9
+   8     0  0  0  5  1  2  3  4  5
+   9     0  0  0  0
+  10     6  0  0  1  1
+  11     6 14 15  4  2  3  4  5
+  12     0  0  0  1  1
+  13     0  0  0  0
+  14    11 18 19  2  2  3
+  15    11 24 25  2  4  5
+  16     0  0  0  2  2  3
+  17     0  0  0  0
+  18    14  0  0  1  2
+  19    14  0  0  1  3
+  20     0  0  0  1  2
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1  3
+  24    15  0  0  1  4
+  25    15  0  0  1  5
+  26     0  0  0  4  6  7  8  9
+  27     0  0  0  0
+  28     7 30 31  2  6  7
+  29     7 34 35  2  8  9
+  30    28  0  0  1  6
+  31    28  0  0  1  7
+  32     0  0  0  1  6
+  33     0  0  0  0
+  34    29  0  0  1  8
+  35    29  0  0  1  9
+  36     0  0  0  0
+  37     0  0  0  1  8
+  38     0  0  0  0
+  39     0  0  0  1  9
+  40     0  0  0  0
+  41     0  0  0  0
+  42     0  0  0  0
+  43     0  0  0  0
+  44     0  0  0  0
+  45     0  0  0  0
+  46     0  0  0  0
+  47     0  0  0  1 10
+  48     0  0  0  1 10
+  49     0  0  0  0
+  50     3 52 53  9 11 12 15 13 14 16 19 17 18
+  51     3 88 89 28 20 23 24 21 22 47 34 40 43 35 44 45 46 25 26 31 33 32 27 28 29 30 41 42 38 39 36 37
+  52    50 54 55  7 11 12 15 13 14 16 19
+  53    50 80 81  2 17 18
+  54    52 58 59  5 11 12 15 13 14
+  55    52 72 73  2 16 19
+  56     0  0  0  0
+  57     0  0  0  5 11 12 15 13 14
+  58    54 60 61  3 11 12 15
+  59    54 68 69  2 13 14
+  60    58  0  0  1 11
+  61    58 62 63  2 12 15
+  62    61  0  0  1 12
+  63    61  0  0  1 15
+  64     0  0  0  0
+  65     0  0  0  1 12
+  66     0  0  0  1 15
+  67     0  0  0  0
+  68    59  0  0  1 13
+  69    59  0  0  1 14
+  70     0  0  0  0
+  71     0  0  0  1 14
+  72    55  0  0  1 16
+  73    55  0  0  1 19
+  74     0  0  0  0
+  75     0  0  0  1 16
+  76     0  0  0  1 19
+  77     0  0  0  0
+  78     0  0  0  2 17 18
+  79     0  0  0  0
+  80    53  0  0  1 17
+  81    53  0  0  1 18
+  82     0  0  0  1 17
+  83     0  0  0  0
+  84     0  0  0  0
+  85     0  0  0  1 17
+  86     0  0  0  0
+  87     0  0  0  0
+  88    51 90 91 13 20 23 24 21 22 47 34 40 43 35 44 45 46
+  89    51142143 15 25 26 31 33 32 27 28 29 30 41 42 38 39 36 37
+  90    88 92 93  6 20 23 24 21 22 47
+  91    88114115  7 34 40 43 35 44 45 46
+  92    90 94 95  5 20 23 24 21 22
+  93    90  0  0  1 47
+  94    92 96 97  3 20 23 24
+  95    92104105  2 21 22
+  96    94  0  0  1 20
+  97    94102103  2 23 24
+  98     0  0  0  0
+  99     0  0  0  2 23 24
+ 100     0  0  0  2 23 24
+ 101     0  0  0  0
+ 102    97  0  0  1 23
+ 103    97  0  0  1 24
+ 104    95  0  0  1 21
+ 105    95  0  0  1 22
+ 106     0  0  0  1 21
+ 107     0  0  0  0
+ 108     0  0  0  0
+ 109     0  0  0  1 22
+ 110     0  0  0  1 47
+ 111     0  0  0  0
+ 112     0  0  0  1 47
+ 113     0  0  0  0
+ 114    91116117  3 34 40 43
+ 115    91128129  4 35 44 45 46
+ 116   114  0  0  1 34
+ 117   114120121  2 40 43
+ 118     0  0  0  0
+ 119     0  0  0  1 34
+ 120   117  0  0  1 40
+ 121   117  0  0  1 43
+ 122     0  0  0  1 40
+ 123     0  0  0  0
+ 124     0  0  0  1 43
+ 125     0  0  0  0
+ 126     0  0  0  4 35 44 45 46
+ 127     0  0  0  0
+ 128   115  0  0  1 35
+ 129   115132133  3 44 45 46
+ 130     0  0  0  1 35
+ 131     0  0  0  0
+ 132   129134135  2 44 45
+ 133   129  0  0  1 46
+ 134   132  0  0  1 44
+ 135   132  0  0  1 45
+ 136     0  0  0  1 44
+ 137     0  0  0  0
+ 138     0  0  0  0
+ 139     0  0  0  1 46
+ 140     0  0  0  0
+ 141     0  0  0  0
+ 142    89144145 11 25 26 31 33 32 27 28 29 30 41 42
+ 143    89178179  4 38 39 36 37
+ 144   142146147  9 25 26 31 33 32 27 28 29 30
+ 145   142172173  2 41 42
+ 146   144148149  5 25 26 31 33 32
+ 147   144162163  4 27 28 29 30
+ 148   146  0  0  1 25
+ 149   146150151  4 26 31 33 32
+ 150   149  0  0  1 26
+ 151   149158159  3 31 33 32
+ 152     0  0  0  0
+ 153     0  0  0  1 26
+ 154     0  0  0  0
+ 155     0  0  0  3 31 33 32
+ 156     0  0  0  0
+ 157     0  0  0  0
+ 158   151160161  2 31 33
+ 159   151  0  0  1 32
+ 160   158  0  0  1 31
+ 161   158  0  0  1 33
+ 162   147  0  0  1 27
+ 163   147164165  3 28 29 30
+ 164   163  0  0  1 28
+ 165   163  0  0  2 29 30
+ 166     0  0  0  2 41 42
+ 167     0  0  0  0
+ 168     0  0  0  2 41 42
+ 169     0  0  0  0
+ 170     0  0  0  2 41 42
+ 171     0  0  0  0
+ 172   145  0  0  1 41
+ 173   145  0  0  1 42
+ 174     0  0  0  0
+ 175     0  0  0  0
+ 176     0  0  0  0
+ 177     0  0  0  0
+ 178   143184185  2 38 39
+ 179   143188189  2 36 37
+ 180     0  0  0  0
+ 181     0  0  0  2 38 39
+ 182     0  0  0  0
+ 183     0  0  0  0
+ 184   178  0  0  1 38
+ 185   178  0  0  1 39
+ 186     0  0  0  1 38
+ 187     0  0  0  0
+ 188   179  0  0  1 36
+ 189   179  0  0  1 37
+ 190     0  0  0  0
+ 191     0  0  0  1 37
+   1 +   0  2  3 47  1  1 47
+   2 +   1  4  5 10  1  1 10
+   3 +   1 22 23 37  1 11 47
+   4 +   2  6  7  9  1  1  9
+   5 *   2  0  0  1  1 10 10
+   6 +   4  8  9  5  1  1  5
+   7 +   4 16 17  4  1  6  9
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  4  1  2  5
+  10 -   9 12 13  2  1  2  3
+  11 -   9 14 15  2  1  4  5
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  3  3
+  14 -  11  0  0  1  1  4  4
+  15 -  11  0  0  1  1  5  5
+  16 *   7 18 19  2  1  6  7
+  17 *   7 20 21  2  1  8  9
+  18 -  16  0  0  1  1  6  6
+  19 -  16  0  0  1  1  7  7
+  20 -  17  0  0  1  1  8  8
+  21 -  17  0  0  1  1  9  9
+  22 +   3 24 25  9  1 11 19
+  23 +   3 40 41 28  1 20 47
+  24 +  22 26 27  7  2 11 16 19 19
+  25 +  22 38 39  2  1 17 18
+  26 +  24 28 29  5  1 11 15
+  27 *  24 36 37  2  2 16 16 19 19
+  28 *  26 30 31  3  2 11 12 15 15
+  29 *  26 34 35  2  1 13 14
+  30 -  28  0  0  1  1 11 11
+  31 -  28 32 33  2  2 12 12 15 15
+  32 -  31  0  0  1  1 12 12
+  33 -  31  0  0  1  1 15 15
+  34 -  29  0  0  1  1 13 13
+  35 -  29  0  0  1  1 14 14
+  36 -  27  0  0  1  1 16 16
+  37 -  27  0  0  1  1 19 19
+  38 -  25  0  0  1  1 17 17
+  39 -  25  0  0  1  1 18 18
+  40 +  23 42 43 13  4 20 24 34 35 40 40 43 47
+  41 +  23 66 67 15  3 25 33 36 39 41 42
+  42 +  40 44 45  6  2 20 24 47 47
+  43 +  40 54 55  7  3 34 35 40 40 43 46
+  44 +  42 46 47  5  1 20 24
+  45 =  42  0  0  1  1 47 47
+  46 *  44 48 49  3  2 20 20 23 24
+  47 *  44 52 53  2  1 21 22
+  48 -  46  0  0  1  1 20 20
+  49 -  46 50 51  2  1 23 24
+  50 -  49  0  0  1  1 23 23
+  51 -  49  0  0  1  1 24 24
+  52 -  47  0  0  1  1 21 21
+  53 -  47  0  0  1  1 22 22
+  54 *  43 56 57  3  3 34 34 40 40 43 43
+  55 +  43 60 61  4  2 35 35 44 46
+  56 -  54  0  0  1  1 34 34
+  57 -  54 58 59  2  2 40 40 43 43
+  58 -  57  0  0  1  1 40 40
+  59 -  57  0  0  1  1 43 43
+  60 =  55  0  0  1  1 35 35
+  61 *  55 62 63  3  1 44 46
+  62 -  61 64 65  2  1 44 45
+  63 -  61  0  0  1  1 46 46
+  64 -  62  0  0  1  1 44 44
+  65 -  62  0  0  1  1 45 45
+  66 +  41 68 69 11  2 25 33 41 42
+  67 *  41 86 87  4  1 36 39
+  68 +  66 70 71  9  1 25 33
+  69 +  66 84 85  2  1 41 42
+  70 +  68 72 73  5  2 25 26 31 33
+  71 =  68 80 81  4  1 27 30
+  72 =  70  0  0  1  1 25 25
+  73 *  70 74 75  4  2 26 26 31 33
+  74 -  73  0  0  1  1 26 26
+  75 -  73 76 77  3  1 31 33
+  76 -  75 78 79  2  2 31 31 33 33
+  77 -  75  0  0  1  1 32 32
+  78 -  76  0  0  1  1 31 31
+  79 -  76  0  0  1  1 33 33
+  80 -  71  0  0  1  1 27 27
+  81 -  71 82 83  3  1 28 30
+  82 -  81  0  0  1  1 28 28
+  83 -  81  0  0  2  1 29 30
+  84 -  69  0  0  1  1 41 41
+  85 -  69  0  0  1  1 42 42
+  86 -  67 88 89  2  1 38 39
+  87 -  67 90 91  2  1 36 37
+  88 -  86  0  0  1  1 38 38
+  89 -  86  0  0  1  1 39 39
+  90 -  87  0  0  1  1 36 36
+  91 -  87  0  0  1  1 37 37
+
+ CHAIN : 8EOGC
+ CHAIN : 8EOGD
+ CHAIN : 8EOGK
+

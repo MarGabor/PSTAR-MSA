@@ -1,0 +1,34 @@
+# Job: hip
+# Query: 1ISUB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HPI-A  8.2  1.7   57    71   26   MOLECULE: HIGH POTENTIAL IRON SULFUR PROTEIN;                        
+
+# Pairwise alignments
+
+No 1: Query=1ISUB Sbjct=1HPIA Z-score=8.2
+
+DSSP  -LLLH---HHHHHLLLLLLL--------lLLLLHHHLLLEELllLLLLLLEELLLLLLlL
+Query -GTNA---AMRKAFNYQDTA--------kNGKKCSGCAQFVPgaSPTAAGGCKVIPGDnQ   48
+ident             |  |   |          |  |  |       |    | | | ||   
+Sbjct mERLSeddPAAQALEYRHDAssvqhpayeEGQTCLNCLLYTD-aSAQDWGPCSVFPGK-L   58
+DSSP  lEELLlllHHHHHLLLLLLHhhlllllllLLLLHHHLLLLLL-lLLLLEEELLLLLLE-E
+
+DSSP  LLLLLLLLLLLLLl
+Query IAPGGYCDAFIVKk   62
+ident     | | |     
+Sbjct VSANGWCTAWVAR-   71
+DSSP  EELLLLLLLLLLL-
+
+
+# Structural equivalences
+   1: 1ISU-B 1HPI-A     1 -   4 <=>    2 -   5   (GLY    1  - ALA    4  <=> GLU    2  - SER    5 )                          
+   1: 1ISU-B 1HPI-A     5 -  16 <=>    9 -  20   (ALA    5  - ALA   16  <=> PRO    9  - ALA   20 )                          
+   1: 1ISU-B 1HPI-A    18 -  30 <=>   30 -  42   (ASN   18  - PRO   30  <=> GLU   30  - ASP   42 )                          
+   1: 1ISU-B 1HPI-A    33 -  46 <=>   44 -  57   (SER   33  - ASP   46  <=> SER   44  - LYS   57 )                          
+   1: 1ISU-B 1HPI-A    48 -  61 <=>   58 -  71   (GLN   48  - LYS   61  <=> LEU   58  - ARG   71 )                          
+
+# Translation-rotation matrices
+-matrix  "1ISU-B 1HPI-A  U(1,.)  -0.327712  0.203279  0.922650           17.679234"
+-matrix  "1ISU-B 1HPI-A  U(2,.)   0.087741 -0.965810  0.243953          101.798256"
+-matrix  "1ISU-B 1HPI-A  U(3,.)   0.940694  0.160901  0.298672          -39.187363"
+

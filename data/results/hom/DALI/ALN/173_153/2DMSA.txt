@@ -1,0 +1,33 @@
+# Job: hom
+# Query: 2DMSA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HOM-A  7.6  2.7   64    68   33   MOLECULE: ANTENNAPEDIA PROTEIN;                                      
+
+# Pairwise alignments
+
+No 1: Query=2DMSA Sbjct=1HOMA Z-score=7.6
+
+DSSP  llllllllLLLL---LLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHH
+Query gssgssgrRERT---TFTRAQLDVLEALFAKTRYPDIFMREEVALKINLPESRVQVWFKN   57
+ident                | || |   ||  |   ||     | | |    | |     || |
+Sbjct --------MRKRgrqTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALCLTERQIKIWFQN   52
+DSSP  --------LLLLlllLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHH
+
+DSSP  HHLH-HHHLLlLLLLLLlllllll
+Query RRAK-CRQQQqQQQNGGqsgpssg   80
+ident || |            |       
+Sbjct RRMKwKKENK-TKGEPG-------   68
+DSSP  HHLLlLLLLL-LLLLLL-------
+
+
+# Structural equivalences
+   1: 2DMS-A 1HOM-A     9 -  12 <=>    1 -   4   (ARG    9  - THR   12  <=> MET    0  - ARG    3 )                          
+   1: 2DMS-A 1HOM-A    13 -  61 <=>    8 -  56   (THR   13  - LYS   61  <=> THR    7  - LYS   55 )                          
+   1: 2DMS-A 1HOM-A    62 -  66 <=>   58 -  62   (CYS   62  - GLN   66  <=> LYS   57  - LYS   61 )                          
+   1: 2DMS-A 1HOM-A    68 -  73 <=>   63 -  68   (GLN   68  - GLY   73  <=> THR   62  - GLY   67 )                          
+
+# Translation-rotation matrices
+-matrix  "2DMS-A 1HOM-A  U(1,.)   0.396051  0.096173 -0.913178            0.874797"
+-matrix  "2DMS-A 1HOM-A  U(2,.)   0.574019 -0.802153  0.164476           -3.048611"
+-matrix  "2DMS-A 1HOM-A  U(3,.)  -0.716691 -0.589322 -0.372899            3.909121"
+

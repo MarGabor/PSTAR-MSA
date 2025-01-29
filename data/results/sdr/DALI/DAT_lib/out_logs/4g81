@@ -1,0 +1,863 @@
+D length: 253
+A length: 253
+B length: 253
+C length: 253
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1911
+Total number of ignored atom records:        324
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              COMPND   2 MOLECULE: PUTATIVE HEXONATE DEHYDROGENASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: SALMONELLA ENTERICA SUBSP. ENTERICA SE          AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA          
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2371
+ selectset done           0
+ eigen done           0
+ tau           1   2.60328579             185         222         243
+ #popped           2           1
+ #selectset contacts        2371
+ selectset done           1
+ eigen done           1
+ tau           3   1.53417909              60
+ #popped           4           2
+ #selectset contacts        2371
+ selectset done           2
+ eigen done           2
+ tau           5  0.649995685              36
+ #popped           6           3
+ #selectset contacts        2371
+ selectset done           3
+ eigen done           3
+ tau           7  0.707903266              12          23
+ #popped           8           3
+ #selectset contacts        2371
+ selectset done           3
+ eigen done           3
+ tau           9  0.356140345              12
+ #popped           7           2
+ #selectset contacts        2371
+ selectset done           2
+ eigen done           2
+ tau          11  0.944899797              47
+ #popped           5           1
+ #selectset contacts        2371
+ selectset done           1
+ eigen done           1
+ tau          13   1.28236032              82          92         121         148         160
+ #popped          14           2
+ #selectset contacts        2371
+ selectset done           2
+ eigen done           2
+ tau          15   8.30769253              82
+ #popped          16           3
+ #selectset contacts        2371
+ selectset done           3
+ eigen done           3
+ tau          17  0.899451256              71
+ #popped          17           2
+ #selectset contacts        2371
+ selectset done           2
+ eigen done           2
+ tau          19   1.12250280             121
+ #popped          20           2
+ #selectset contacts        2371
+ selectset done           2
+ eigen done           2
+ tau          21  0.835062265             107
+ #popped          15           1
+ #selectset contacts        2371
+ selectset done           1
+ eigen done           1
+ tau          23   1.53201652              92         136
+ #popped          24           1
+ #selectset contacts        2371
+ selectset done           1
+ eigen done           1
+ tau          25  0.729729712             185
+ #popped          26           2
+ #selectset contacts        2371
+ selectset done           2
+ eigen done           2
+ tau          27  0.525932789             148
+ #popped          28           3
+ #selectset contacts        2371
+ selectset done           3
+ eigen done           3
+ tau          29   0.00000000    
+ #popped          29           2
+ #selectset contacts        2371
+ selectset done           2
+ eigen done           2
+ tau          29  0.934787214             173
+ #popped          27           1
+ #selectset contacts        2371
+ selectset done           1
+ eigen done           1
+ tau          31  0.991946101             232
+ #popped           3           0
+ #selectset contacts        2371
+ selectset done           0
+ eigen done           0
+ tau          33  0.657650530             222
+ #popped          34           0
+ #selectset contacts        2371
+ selectset done           0
+ eigen done           0
+ tau          35  0.799408376             201         211
+ #popped          36           0
+ #selectset contacts        2371
+ selectset done           0
+ eigen done           0
+ tau          37  0.954844236             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              COMPND   2 MOLECULE: PUTATIVE HEXONATE DEHYDROGENASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: SALMONELLA ENTERICA SUBSP. ENTERICA SE          AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA          
+           0
+         253
+         253  residues read 4G81.dssp                                                   
+  grow short strand           9          12
+  grow short strand          33          36
+  grow short strand          58          60
+  grow short strand          87          90
+  exclude short helix         100         102
+  exclude short helix         145         147
+  exclude short helix         196         200
+  exclude short helix         233         235
+  grow short strand         242         245
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  2  4  5  6  8  7 10 11 12 14 15  9 13
+   2     1  4  5 14  1  3  2  4  5  6  8  7 10 11 12 14 15  9
+   3     1  0  0  1 13
+   4     2  6  7  5  1  3  2  4  5
+   5     2 14 15  9  6  8  7 10 11 12 14 15  9
+   6     4  8  9  3  1  3  2
+   7     4 12 13  2  4  5
+   8     6 10 11  2  1  3
+   9     6  0  0  1  2
+  10     8  0  0  1  1
+  11     8  0  0  1  3
+  12     7  0  0  1  4
+  13     7  0  0  1  5
+  14     5 16 17  2  6  8
+  15     5 24 25  7  7 10 11 12 14 15  9
+  16    14  0  0  1  6
+  17    14  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  1  6
+  20     0  0  0  1  8
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24    15 26 27  6  7 10 11 12 14 15
+  25    15  0  0  1  9
+  26    24 28 29  4  7 10 11 12
+  27    24 32 33  2 14 15
+  28    26  0  0  2  7 10
+  29    26 30 31  2 11 12
+  30    29  0  0  1 11
+  31    29  0  0  1 12
+  32    27  0  0  1 14
+  33    27  0  0  1 15
+  34     0  0  0  1 13
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  1 13
+  38     0  0  0  0
+  39     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  2  1 12 14 15
+   3 *   1  0  0  1  1 13 13
+   4 -   2  6  7  5  1  1  5
+   5 -   2 14 15  9  2  6 12 14 15
+   6 -   4  8  9  3  1  1  3
+   7 -   4 12 13  2  1  4  5
+   8 -   6 10 11  2  2  1  1  3  3
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  3  3
+  12 -   7  0  0  1  1  4  4
+  13 -   7  0  0  1  1  5  5
+  14 -   5 16 17  2  2  6  6  8  8
+  15 -   5 18 19  7  3  7  7  9 12 14 15
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  1  1  8  8
+  18 -  15 20 21  6  3  7  7 10 12 14 15
+  19 -  15  0  0  1  1  9  9
+  20 -  18 22 23  4  2  7  7 10 12
+  21 -  18 26 27  2  1 14 15
+  22 -  20  0  0  2  2  7  7 10 10
+  23 -  20 24 25  2  1 11 12
+  24 -  23  0  0  1  1 11 11
+  25 -  23  0  0  1  1 12 12
+  26 -  21  0  0  1  1 14 14
+  27 -  21  0  0  1  1 15 15
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1911
+Total number of ignored atom records:        274
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              COMPND   2 MOLECULE: PUTATIVE HEXONATE DEHYDROGENASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: SALMONELLA ENTERICA SUBSP. ENTERICA SE          AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA          
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2343
+ selectset done           0
+ eigen done           0
+ tau           1   1.54295254              65          82          92         134
+ #popped           2           1
+ #selectset contacts        2343
+ selectset done           1
+ eigen done           1
+ tau           3   2.41088605              92
+ #popped           4           2
+ #selectset contacts        2343
+ selectset done           2
+ eigen done           2
+ tau           5  0.803116798              36          65
+ #popped           6           3
+ #selectset contacts        2343
+ selectset done           3
+ eigen done           3
+ tau           7  0.424986064              10
+ #popped           9           3
+ #selectset contacts        2343
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2343
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2343
+ selectset done           1
+ eigen done           1
+ tau           9   2.07353878             185         223         243
+ #popped          10           2
+ #selectset contacts        2343
+ selectset done           2
+ eigen done           2
+ tau          11  0.927974582             144         160
+ #popped          12           2
+ #selectset contacts        2343
+ selectset done           2
+ eigen done           2
+ tau          13  0.741911471             144         170
+ #popped          14           2
+ #selectset contacts        2343
+ selectset done           2
+ eigen done           2
+ tau          15  0.577634454             185
+ #popped          16           3
+ #selectset contacts        2343
+ selectset done           3
+ eigen done           3
+ tau          17  0.289917558             144
+ #popped          17           2
+ #selectset contacts        2343
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          11           1
+ #selectset contacts        2343
+ selectset done           1
+ eigen done           1
+ tau          19  0.647460938             223
+ #popped          20           1
+ #selectset contacts        2343
+ selectset done           1
+ eigen done           1
+ tau          21  0.803810120             200
+ #popped          23           1
+ #selectset contacts        2343
+ selectset done           1
+ eigen done           1
+ tau          23   1.47412586             211
+ #popped           3           0
+ #selectset contacts        2343
+ selectset done           0
+ eigen done           0
+ tau          25   2.84166670              82
+ #popped          27           0
+ #selectset contacts        2343
+ selectset done           0
+ eigen done           0
+ tau          27   1.11066520             102
+ #popped          29           0
+ #selectset contacts        2343
+ selectset done           0
+ eigen done           0
+ tau          29   1.57976651             115
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              COMPND   2 MOLECULE: PUTATIVE HEXONATE DEHYDROGENASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: SALMONELLA ENTERICA SUBSP. ENTERICA SE          AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA          
+           0
+         253
+         253  residues read 4G81.dssp                                                   
+  grow short strand           9          12
+  grow short strand          33          36
+  grow short strand          58          60
+  grow short strand          87          90
+  exclude short helix         100         102
+  exclude short helix         145         147
+  exclude short helix         220         222
+  exclude short helix         233         235
+  grow short strand         242         245
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  7  4  5 10 12 15 16 11 13 14  6  8  9
+   2     1  4  5 13  1  2  3  7  4  5 10 12 15 16 11 13 14
+   3     1 26 27  3  6  8  9
+   4     2  6  7  6  1  2  3  7  4  5
+   5     2 10 11  7 10 12 15 16 11 13 14
+   6     4  8  9  4  1  2  3  7
+   7     4  0  0  2  4  5
+   8     6  0  0  1  1
+   9     6  0  0  3  2  3  7
+  10     5 14 15  5 10 12 15 16 11
+  11     5 22 23  2 13 14
+  12     0  0  0  5 10 12 15 16 11
+  13     0  0  0  0
+  14    10 16 17  4 10 12 15 16
+  15    10  0  0  1 11
+  16    14 18 19  2 10 12
+  17    14  0  0  2 15 16
+  18    16  0  0  1 10
+  19    16  0  0  1 12
+  20     0  0  0  2 13 14
+  21     0  0  0  0
+  22    11  0  0  1 13
+  23    11  0  0  1 14
+  24     0  0  0  1 14
+  25     0  0  0  0
+  26     3  0  0  1  6
+  27     3 30 31  2  8  9
+  28     0  0  0  0
+  29     0  0  0  2  8  9
+  30    27  0  0  1  8
+  31    27  0  0  1  9
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 13  3  1  5  7  7 10 16
+   3 -   1 20 21  3  2  6  6  8  9
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2 10 11  7  1 10 16
+   6 -   4  8  9  4  2  1  3  7  7
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  3  2  2  3  7  7
+  10 -   5 12 13  5  2 10 12 15 16
+  11 -   5 18 19  2  1 13 14
+  12 -  10 14 15  4  3 10 10 12 12 15 16
+  13 -  10  0  0  1  1 11 11
+  14 -  12 16 17  2  2 10 10 12 12
+  15 -  12  0  0  2  1 15 16
+  16 -  14  0  0  1  1 10 10
+  17 -  14  0  0  1  1 12 12
+  18 -  11  0  0  1  1 13 13
+  19 -  11  0  0  1  1 14 14
+  20 -   3  0  0  1  1  6  6
+  21 -   3 22 23  2  1  8  9
+  22 -  21  0  0  1  1  8  8
+  23 -  21  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1911
+Total number of ignored atom records:        241
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              COMPND   2 MOLECULE: PUTATIVE HEXONATE DEHYDROGENASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: SALMONELLA ENTERICA SUBSP. ENTERICA SE          AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA          
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2345
+ selectset done           0
+ eigen done           0
+ tau           1   2.71502566             185         223         243
+ #popped           2           1
+ #selectset contacts        2345
+ selectset done           1
+ eigen done           1
+ tau           3   1.58784401              62          85         116         136
+ #popped           4           2
+ #selectset contacts        2345
+ selectset done           2
+ eigen done           2
+ tau           5   2.08957100              62
+ #popped           6           3
+ #selectset contacts        2345
+ selectset done           3
+ eigen done           3
+ tau           7  0.761008441              37
+ #popped           8           4
+ #selectset contacts        2345
+ selectset done           4
+ eigen done           4
+ tau           9  0.568681300              10
+ #popped          11           4
+ #selectset contacts        2345
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped           9           3
+ #selectset contacts        2345
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        2345
+ selectset done           2
+ eigen done           2
+ tau          11   1.09811378             116
+ #popped          12           3
+ #selectset contacts        2345
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          13           2
+ #selectset contacts        2345
+ selectset done           2
+ eigen done           2
+ tau          13  0.817460358             147         160
+ #popped          14           2
+ #selectset contacts        2345
+ selectset done           2
+ eigen done           2
+ tau          15  0.682265878             185
+ #popped          16           3
+ #selectset contacts        2345
+ selectset done           3
+ eigen done           3
+ tau          17  0.331221700             161
+ #popped          19           3
+ #selectset contacts        2345
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          17           2
+ #selectset contacts        2345
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           5           1
+ #selectset contacts        2345
+ selectset done           1
+ eigen done           1
+ tau          19   1.40160179              85
+ #popped          20           2
+ #selectset contacts        2345
+ selectset done           2
+ eigen done           2
+ tau          21  0.892128289              73
+ #popped          21           1
+ #selectset contacts        2345
+ selectset done           1
+ eigen done           1
+ tau          23  0.816326559             126
+ #popped           3           0
+ #selectset contacts        2345
+ selectset done           0
+ eigen done           0
+ tau          25  0.668346763             223
+ #popped          26           0
+ #selectset contacts        2345
+ selectset done           0
+ eigen done           0
+ tau          27  0.951989591             200         211
+ #popped          28           0
+ #selectset contacts        2345
+ selectset done           0
+ eigen done           0
+ tau          29  0.984350562             200
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              COMPND   2 MOLECULE: PUTATIVE HEXONATE DEHYDROGENASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: SALMONELLA ENTERICA SUBSP. ENTERICA SE          AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA          
+           0
+         253
+         253  residues read 4G81.dssp                                                   
+  grow short strand           9          12
+  grow short strand          33          36
+  grow short strand          58          60
+  grow short strand          87          90
+  exclude short helix         100         102
+  exclude short helix         145         147
+  exclude short helix         220         222
+  exclude short helix         233         235
+  grow short strand         242         245
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  4  5  7  8 10 11 12 15 16  6  9 13 14
+   2     1  4  5 14  1  2  3  4  5  7  8 10 11 12 15 16  6  9
+   3     1 28 29  2 13 14
+   4     2  6  7 12  1  2  3  4  5  7  8 10 11 12 15 16
+   5     2 20 21  2  6  9
+   6     4  8  9  5  1  2  3  4  5
+   7     4 12 13  7  7  8 10 11 12 15 16
+   8     6 10 11  3  1  2  3
+   9     6  0  0  2  4  5
+  10     8  0  0  1  1
+  11     8  0  0  2  2  3
+  12     7  0  0  2  7  8
+  13     7 16 17  5 10 11 12 15 16
+  14     0  0  0  5 10 11 12 15 16
+  15     0  0  0  0
+  16    13 18 19  3 10 11 12
+  17    13  0  0  2 15 16
+  18    16  0  0  1 10
+  19    16  0  0  2 11 12
+  20     5  0  0  1  6
+  21     5  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1  6
+  24     0  0  0  1  9
+  25     0  0  0  0
+  26     0  0  0  2 13 14
+  27     0  0  0  0
+  28     3  0  0  1 13
+  29     3  0  0  1 14
+  30     0  0  0  1 13
+  31     0  0  0  0
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5 14  2  1 12 15 16
+   3 *   1 20 21  2  1 13 14
+   4 -   2  6  7 12  4  1  5  7  8 10 12 15 16
+   5 -   2 18 19  2  2  6  6  9  9
+   6 -   4  8  9  5  1  1  5
+   7 -   4 12 13  7  3  7  8 10 12 15 16
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  2  3
+  12 -   7  0  0  2  1  7  8
+  13 -   7 14 15  5  2 10 12 15 16
+  14 -  13 16 17  3  1 10 12
+  15 -  13  0  0  2  1 15 16
+  16 -  14  0  0  1  1 10 10
+  17 -  14  0  0  2  1 11 12
+  18 -   5  0  0  1  1  6  6
+  19 -   5  0  0  1  1  9  9
+  20 -   3  0  0  1  1 13 13
+  21 -   3  0  0  1  1 14 14
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1911
+Total number of ignored atom records:        314
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              COMPND   2 MOLECULE: PUTATIVE HEXONATE DEHYDROGENASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: SALMONELLA ENTERICA SUBSP. ENTERICA SE          AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA          
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2381
+ selectset done           0
+ eigen done           0
+ tau           1   2.05303478              93         115         143         162         185         222         243
+ #popped           2           1
+ #selectset contacts        2381
+ selectset done           1
+ eigen done           1
+ tau           3   1.31776869              63          83
+ #popped           4           2
+ #selectset contacts        2381
+ selectset done           2
+ eigen done           2
+ tau           5   1.73399818              63
+ #popped           6           3
+ #selectset contacts        2381
+ selectset done           3
+ eigen done           3
+ tau           7  0.713209212              10          24          34
+ #popped           8           4
+ #selectset contacts        2381
+ selectset done           4
+ eigen done           4
+ tau           9   0.00000000    
+ #popped           9           3
+ #selectset contacts        2381
+ selectset done           3
+ eigen done           3
+ tau           9  0.750052214              24
+ #popped          11           3
+ #selectset contacts        2381
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        2381
+ selectset done           2
+ eigen done           2
+ tau          11  0.800271749             185
+ #popped          12           3
+ #selectset contacts        2381
+ selectset done           3
+ eigen done           3
+ tau          13  0.624390364             143
+ #popped          14           4
+ #selectset contacts        2381
+ selectset done           4
+ eigen done           4
+ tau          15   1.09352529              93         132
+ #popped          16           4
+ #selectset contacts        2381
+ selectset done           4
+ eigen done           4
+ tau          17  0.348382413              93
+ #popped          15           3
+ #selectset contacts        2381
+ selectset done           3
+ eigen done           3
+ tau          19  0.882332385             175
+ #popped          13           2
+ #selectset contacts        2381
+ selectset done           2
+ eigen done           2
+ tau          21  0.991946101             232
+ #popped           5           1
+ #selectset contacts        2381
+ selectset done           1
+ eigen done           1
+ tau          23  0.781878710              73
+ #popped           3           0
+ #selectset contacts        2381
+ selectset done           0
+ eigen done           0
+ tau          25   5.43857145             162
+ #popped          26           1
+ #selectset contacts        2381
+ selectset done           1
+ eigen done           1
+ tau          27   1.42222226             115
+ #popped          28           1
+ #selectset contacts        2381
+ selectset done           1
+ eigen done           1
+ tau          29   1.08333337             103
+ #popped          27           0
+ #selectset contacts        2381
+ selectset done           0
+ eigen done           0
+ tau          31  0.657650530             222
+ #popped          32           0
+ #selectset contacts        2381
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          20-JUL-12   4G81              COMPND   2 MOLECULE: PUTATIVE HEXONATE DEHYDROGENASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: SALMONELLA ENTERICA SUBSP. ENTERICA SE          AUTHOR    M.W.VETTING,D.WICHELECKI,L.L.MORISCO,S.R.WASSERMAN,S.SOJITRA          
+           0
+         253
+         253  residues read 4G81.dssp                                                   
+  grow short strand           9          12
+  grow short strand          33          36
+  grow short strand          58          60
+  grow short strand          87          90
+  exclude short helix         100         102
+  exclude short helix         145         147
+  grow short helix         193         199
+  exclude short helix         233         235
+  grow short strand         242         245
+  exclude short helix         249         251
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  2  4  5  7 10  9 11 12 15 16  6  8 13 14
+   2     1  4  5 13  1  3  2  4  5  7 10  9 11 12 15 16  6
+   3     1 26 27  3  8 13 14
+   4     2  6  7 12  1  3  2  4  5  7 10  9 11 12 15 16
+   5     2  0  0  1  6
+   6     4  8  9  5  1  3  2  4  5
+   7     4 12 13  7  7 10  9 11 12 15 16
+   8     6  0  0  2  1  3
+   9     6 10 11  3  2  4  5
+  10     9  0  0  1  2
+  11     9  0  0  2  4  5
+  12     7 14 15  5  7 10  9 11 12
+  13     7 22 23  2 15 16
+  14    12 16 17  3  7 10  9
+  15    12 20 21  2 11 12
+  16    14 18 19  2  7 10
+  17    14  0  0  1  9
+  18    16  0  0  1  7
+  19    16  0  0  1 10
+  20    15  0  0  1 11
+  21    15  0  0  1 12
+  22    13  0  0  1 15
+  23    13  0  0  1 16
+  24     0  0  0  0
+  25     0  0  0  1  6
+  26     3  0  0  1  8
+  27     3  0  0  2 13 14
+  28     0  0  0  1  8
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1  8
+  32     0  0  0  2 13 14
+  33     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 13  3  1  7  9 12 15 16
+   3 -   1 24 25  3  2  8  8 13 14
+   4 -   2  6  7 12  4  1  5  7  7  9 12 15 16
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  5  1  1  5
+   7 -   4 12 13  7  3  7  7  9 12 15 16
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6 10 11  3  2  2  2  4  5
+  10 -   9  0  0  1  1  2  2
+  11 -   9  0  0  2  1  4  5
+  12 -   7 14 15  5  2  7  7  9 12
+  13 -   7 22 23  2  1 15 16
+  14 -  12 16 17  3  2  7  7  9 10
+  15 -  12 20 21  2  1 11 12
+  16 -  14 18 19  2  2  7  7 10 10
+  17 -  14  0  0  1  1  9  9
+  18 -  16  0  0  1  1  7  7
+  19 -  16  0  0  1  1 10 10
+  20 -  15  0  0  1  1 11 11
+  21 -  15  0  0  1  1 12 12
+  22 -  13  0  0  1  1 15 15
+  23 -  13  0  0  1  1 16 16
+  24 -   3  0  0  1  1  8  8
+  25 -   3  0  0  2  1 13 14
+
+ CHAIN : 4G81A
+ CHAIN : 4G81B
+ CHAIN : 4G81C
+ CHAIN : 4G81D
+

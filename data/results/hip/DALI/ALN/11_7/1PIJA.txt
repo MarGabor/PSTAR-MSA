@@ -1,0 +1,33 @@
+# Job: hip
+# Query: 1PIJA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HPI-A 10.0  2.1   67    71   36   MOLECULE: HIGH POTENTIAL IRON SULFUR PROTEIN;                        
+
+# Pairwise alignments
+
+No 1: Query=1PIJA Sbjct=1HPIA Z-score=10.0
+
+DSSP  llLLLLLL----LLLLLLLLLHHHHhHLLLLLLLLLHHHLLLEEEEEELLEEEELLhhHH
+Query asEPRAED----GHAHDYVNEAADAsGHPRYQEGQLCENCAFWGEAVQDGWGRCTHpdFD   56
+ident     |         |  |   |     || | ||| | ||     |    || |    | 
+Sbjct --MERLSEddpaAQALEYRHDASSV-QHPAYEEGQTCLNCLLYTDASAQDWGPCSV--FP   55
+DSSP  --LEELLLllhhHHHLLLLLLHHHL-LLLLLLLLLLHHHLLLLLLLLLLLEEELLL--LL
+
+DSSP  LLLEELLLLLLLLLLLl
+Query EVLVKAEGWCSVYAPAs   73
+ident   || | |||       
+Sbjct GKLVSANGWCTAWVAR-   71
+DSSP  LEEEELLLLLLLLLLL-
+
+
+# Structural equivalences
+   1: 1PIJ-A 1HPI-A     3 -   8 <=>    1 -   6   (GLU    3  - ASP    8  <=> MET    1  - GLU    6 )                          
+   1: 1PIJ-A 1HPI-A     9 -  21 <=>   11 -  23   (GLY    9  - ALA   21  <=> ALA   11  - VAL   23 )                          
+   1: 1PIJ-A 1HPI-A    23 -  52 <=>   24 -  53   (GLY   23  - HIS   52  <=> GLN   24  - VAL   53 )                          
+   1: 1PIJ-A 1HPI-A    55 -  72 <=>   54 -  71   (PHE   55  - ALA   72  <=> PHE   54  - ARG   71 )                          
+
+# Translation-rotation matrices
+-matrix  "1PIJ-A 1HPI-A  U(1,.)   0.284692 -0.411919 -0.865606           20.526226"
+-matrix  "1PIJ-A 1HPI-A  U(2,.)   0.292910  0.897166 -0.330601          -83.019615"
+-matrix  "1PIJ-A 1HPI-A  U(3,.)   0.912773 -0.159425  0.376071          -33.538563"
+

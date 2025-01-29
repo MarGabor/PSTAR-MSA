@@ -1,0 +1,162 @@
+A length: 196
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ detected ENDMDL record in NMR entry - skip rest 
+
+Total number of residues read in:            196
+Total number of atoms read in:              1731
+Total number of ignored atom records:       1258
+ HEADER    PROTEIN BINDING                         12-APR-03   1P1D              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.FENG,Y.SHI,M.LI,M.ZHANG                                             
+  Reading DSSP file
+ HEADER    PROTEIN BINDING                         12-APR-03   1P1D              COMPND   2 MOLECULE: GLUTAMATE RECEPTOR INTERACTING PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    W.FENG,Y.SHI,M.LI,M.ZHANG                                             
+         196  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1610
+ selectset done           0
+ eigen done           0
+ tau           1   4.11993074              98
+ #popped           2           1
+ #selectset contacts        1610
+ selectset done           1
+ eigen done           1
+ tau           3   1.12258315              24          39
+ #popped           4           1
+ #selectset contacts        1610
+ selectset done           1
+ eigen done           1
+ tau           5   1.08243871              12          57
+ #popped           6           2
+ #selectset contacts        1610
+ selectset done           2
+ eigen done           2
+ tau           7   1.19512939              71          88
+ #popped           8           2
+ #selectset contacts        1610
+ selectset done           2
+ eigen done           2
+ tau           9  0.231238306              12
+ #popped          11           2
+ #selectset contacts        1610
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        1610
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1610
+ selectset done           0
+ eigen done           0
+ tau          11  0.649378717             113         123         172         186
+ #popped          12           1
+ #selectset contacts        1610
+ selectset done           1
+ eigen done           1
+ tau          13   1.17696619             113         142
+ #popped          14           1
+ #selectset contacts        1610
+ selectset done           1
+ eigen done           1
+ tau          15  0.885545611             160         172
+ #popped          16           1
+ #selectset contacts        1610
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          13           0
+ #selectset contacts        1610
+ selectset done           0
+ eigen done           0
+ tau          17   1.13365543             123
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PROTEIN BINDING                         12-APR-03   1P1D              COMPND   2 MOLECULE: GLUTAMATE RECEPTOR INTERACTING PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    W.FENG,Y.SHI,M.LI,M.ZHANG                                             
+           0
+         196
+         196  residues read 1P1D.dssp                                                   
+  grow short strand          23          26
+  grow short strand          38          42
+  exclude short helix          48          51
+  grow short strand          61          64
+  grow short strand         109         113
+  grow short strand         124         126
+  grow short strand         138         141
+  exclude short helix         147         150
+  grow short strand         159         163
+  grow short strand         166         167
+ crowded segment excluded!
+  exclude short helix         168         170
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  6  5  2  3  7 12 10  8  9 11
+   2     1  6  7  6  1  4  6  5  2  3
+   3     1 12 13  6  7 12 10  8  9 11
+   4     0  0  0  6  1  4  6  5  2  3
+   5     0  0  0  0
+   6     2  8  9  4  1  4  6  5
+   7     2  0  0  2  2  3
+   8     6 10 11  3  1  4  6
+   9     6  0  0  1  5
+  10     8  0  0  1  1
+  11     8  0  0  2  4  6
+  12     3 14 15  5  7 12 10  8  9
+  13     3  0  0  1 11
+  14    12 16 17  3  7 12 10
+  15    12  0  0  2  8  9
+  16    14  0  0  2  7 12
+  17    14  0  0  1 10
+  18     0  0  0  0
+  19     0  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  6  1  7 12
+   4 -   2  6  7  4  2  1  1  4  6
+   5 -   2  0  0  2  1  2  3
+   6 -   4  8  9  3  3  1  1  4  4  6  6
+   7 -   4  0  0  1  1  5  5
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  2  4  4  6  6
+  10 -   3 12 13  5  2  7 10 12 12
+  11 -   3  0  0  1  1 11 11
+  12 -  10 14 15  3  3  7  7 10 10 12 12
+  13 -  10  0  0  2  1  8  9
+  14 -  12  0  0  2  2  7  7 12 12
+  15 -  12  0  0  1  1 10 10
+
+ CHAIN : 1P1DA
+

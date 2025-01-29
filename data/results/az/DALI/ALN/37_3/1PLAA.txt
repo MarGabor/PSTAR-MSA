@@ -1,0 +1,40 @@
+# Job: az
+# Query: 1PLAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5B1J-C 10.8  2.0   89   124   27   MOLECULE: COPPER-CONTAINING NITRITE REDUCTASE;                       
+
+# Pairwise alignments
+
+No 1: Query=1PLAA Sbjct=5B1JC Z-score=10.8
+
+DSSP  --LEEEELLLL---LLLLEELLEEEELLLLLEEEEELlLLLEEEEELLLLLLLLLLLllL
+Query --AEVKLGSDD---GGLVFSPSSFTVAAGEKITFKNNaGFPHNIVFDEDEVPAGVNAekI   55
+ident     |     |      || |    | ||    |       ||        | ||     
+Sbjct aeHIVEMRNKDdagNTMVFQPGFVKVEAGDTVKFVPT-DKSHNAESVREVWPEGVAP--V   57
+DSSP  leEEEEEEEELlllLEEEEELLEEEELLLLEEEEELL-LLLLEEEELLLLLLLLLLL--L
+
+DSSP  LEEEEElllllEEEELLLLLEEEEEELLLHHHLLLEEEEEEL------------------
+Query SQPEYLngageTYEVTLTEKGTYKFYCEPHAGAGMKGEVTVN------------------   97
+ident                     | |   | || | ||   | |                   
+Sbjct KGGFSK-----EVVFNAEKEGLYVLKCAPHYGMGMVVLVQVGkpvnldqikeykatglak  112
+DSSP  EEEELL-----LEEEELLLLLEEEEELHHHHHHLLEEEEEELllllhhhhhhlllllhhh
+
+DSSP  ------------
+Query ------------   97
+ident             
+Sbjct krldgeiakvvq  124
+DSSP  hhhhhhhhllll
+
+
+# Structural equivalences
+   1: 1PLA-A 5B1J-C     1 -   9 <=>    3 -  11   (ALA    1  - ASP    9  <=> HIS    3  - ASP   11 )                          
+   1: 1PLA-A 5B1J-C    10 -  32 <=>   15 -  37   (GLY   10  - ASN   32  <=> ASN   15  - THR   37 )                          
+   1: 1PLA-A 5B1J-C    34 -  52 <=>   38 -  56   (GLY   34  - ALA   52  <=> ASP   38  - PRO   56 )                          
+   1: 1PLA-A 5B1J-C    55 -  61 <=>   57 -  63   (ILE   55  - LEU   61  <=> VAL   57  - LYS   63 )                          
+   1: 1PLA-A 5B1J-C    67 -  97 <=>   64 -  94   (THR   67  - ASN   97  <=> GLU   64  - GLY   94 )                          
+
+# Translation-rotation matrices
+-matrix  "1PLA-A 5B1J-C  U(1,.)  -0.199113  0.867379  0.456078          -32.121048"
+-matrix  "1PLA-A 5B1J-C  U(2,.)  -0.887767 -0.356739  0.290874          -18.322716"
+-matrix  "1PLA-A 5B1J-C  U(3,.)   0.414999 -0.346974  0.841062          -44.746483"
+

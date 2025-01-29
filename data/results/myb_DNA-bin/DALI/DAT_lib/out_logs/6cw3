@@ -1,0 +1,1325 @@
+A length: 222
+B length: 213
+C length: 220
+D length: 213
+F length: 199
+E length: 120
+H length: 191
+G length: 92
+# 8 chains A B C D E F G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            222
+Total number of atoms read in:              1664
+Total number of ignored atom records:        237
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         222  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1807
+ selectset done           0
+ eigen done           0
+ tau           1   15.6601143             123
+ #popped           2           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau           3   1.22459173              98         110
+ #popped           4           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau           5  0.469252944              21          35          49          59
+ #popped           6           2
+ #selectset contacts        1807
+ selectset done           2
+ eigen done           2
+ tau           7  0.444862753              49          69
+ #popped           8           2
+ #selectset contacts        1807
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau           9   1.80105817              32
+ #popped           3           0
+ #selectset contacts        1807
+ selectset done           0
+ eigen done           0
+ tau          11   1.12370002             135         145         190         200
+ #popped          12           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau          13  0.457975984             157
+ #popped          14           2
+ #selectset contacts        1807
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau          15   3.90360498             167         190
+ #popped          16           2
+ #selectset contacts        1807
+ selectset done           2
+ eigen done           2
+ tau          17  0.320050091             212
+ #popped          18           2
+ #selectset contacts        1807
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          17           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          13           0
+ #selectset contacts        1807
+ selectset done           0
+ eigen done           0
+ tau          19  0.460022122             145
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         222
+         222  residues read 6CW3.dssp                                                   
+  grow short strand           3           7
+  grow short strand          11          12
+  exclude short helix          29          31
+  grow short strand          57          60
+  exclude short helix          74          76
+  exclude short helix          88          90
+  grow short strand         110         113
+  grow short strand         117         121
+  grow short strand         130         134
+  grow short strand         159         162
+ crowded segment excluded!
+  exclude short helix         163         165
+  grow short strand         171         173
+  grow short strand         177         178
+  exclude short helix         194         196
+  exclude short helix         209         211
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  3  4  5  7  8  9 10 11  6 12 13 17 18 14 15 16
+   2     1  6  7 11  1  2  3  4  5  7  8  9 10 11  6
+   3     1 14 15  7 12 13 17 18 14 15 16
+   4     0  0  0 11  1  2  3  4  5  7  8  9 10 11  6
+   5     0  0  0  0
+   6     2  0  0 10  1  2  3  4  5  7  8  9 10 11
+   7     2  0  0  1  6
+   8     0  0  0 10  1  2  3  4  5  7  8  9 10 11
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  1  6
+  12     0  0  0  7 12 13 17 18 14 15 16
+  13     0  0  0  0
+  14     3  0  0  2 12 13
+  15     3 16 17  5 17 18 14 15 16
+  16    15 18 19  2 17 18
+  17    15  0  0  3 14 15 16
+  18    16  0  0  1 17
+  19    16  0  0  1 18
+  20     0  0  0  0
+  21     0  0  0  0
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5 11  1  1 11
+   3 *   1  6  7  7  1 12 18
+   4 -   2  0  0 10  2  1  5  7 11
+   5 -   2  0  0  1  1  6  6
+   6 -   3  0  0  2  1 12 13
+   7 -   3  8  9  5  1 14 18
+   8 -   7 10 11  2  1 17 18
+   9 -   7  0  0  3  1 14 16
+  10 -   8  0  0  1  1 17 17
+  11 -   8  0  0  1  1 18 18
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1614
+Total number of ignored atom records:        259
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1705
+ selectset done           0
+ eigen done           0
+ tau           1   6.95258379             107
+ #popped           2           1
+ #selectset contacts        1705
+ selectset done           1
+ eigen done           1
+ tau           3   1.05841064              17          35          47          76          87          97
+ #popped           4           2
+ #selectset contacts        1705
+ selectset done           2
+ eigen done           2
+ tau           5  0.495962203              17
+ #popped           7           2
+ #selectset contacts        1705
+ selectset done           2
+ eigen done           2
+ tau           7  0.731942236              47
+ #popped           9           2
+ #selectset contacts        1705
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1705
+ selectset done           1
+ eigen done           1
+ tau           9  0.747631729              76
+ #popped          10           1
+ #selectset contacts        1705
+ selectset done           1
+ eigen done           1
+ tau          11  0.408548027              35
+ #popped          13           1
+ #selectset contacts        1705
+ selectset done           1
+ eigen done           1
+ tau          13   1.51855409              59
+ #popped           3           0
+ #selectset contacts        1705
+ selectset done           0
+ eigen done           0
+ tau          15  0.836862266             117         133         147         160         177
+ #popped          16           1
+ #selectset contacts        1705
+ selectset done           1
+ eigen done           1
+ tau          17  0.490414947             147
+ #popped          18           1
+ #selectset contacts        1705
+ selectset done           1
+ eigen done           1
+ tau          19  0.553191483             137
+ #popped          17           0
+ #selectset contacts        1705
+ selectset done           0
+ eigen done           0
+ tau          21  0.772077918             187
+ #popped          22           1
+ #selectset contacts        1705
+ selectset done           1
+ eigen done           1
+ tau          23   1.09094071             133         160
+ #popped          24           1
+ #selectset contacts        1705
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          23           0
+ #selectset contacts        1705
+ selectset done           0
+ eigen done           0
+ tau          25  0.287239015             203
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         213
+         213  residues read 6CW3.dssp                                                   
+  grow short strand           9          13
+  grow short strand          19          23
+  grow short strand          45          49
+  grow short strand          53          54
+  exclude short helix          80          82
+  exclude short helix          93          95
+  grow short strand          97          98
+  grow short strand         102         106
+  grow short strand         114         118
+  exclude short helix         122         126
+  grow short strand         153         156
+  grow short strand         159         163
+  exclude short helix         183         186
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  4  8  9 10  2  3  5  6  7 11 12 13 15 16 14 17 18
+   2     1  4  5 10  1  4  8  9 10  2  3  5  6  7
+   3     1 16 17  8 11 12 13 15 16 14 17 18
+   4     2  6  7  5  1  4  8  9 10
+   5     2 12 13  5  2  3  5  6  7
+   6     4  0  0  1  1
+   7     4  8  9  4  4  8  9 10
+   8     7  0  0  1  4
+   9     7  0  0  3  8  9 10
+  10     0  0  0  5  2  3  5  6  7
+  11     0  0  0  0
+  12     5  0  0  2  2  3
+  13     5 14 15  3  5  6  7
+  14    13  0  0  1  5
+  15    13  0  0  2  6  7
+  16     3 18 19  5 11 12 13 15 16
+  17     3 22 23  3 14 17 18
+  18    16 20 21  3 11 12 13
+  19    16  0  0  2 15 16
+  20    18  0  0  2 11 12
+  21    18  0  0  1 13
+  22    17  0  0  1 14
+  23    17 26 27  2 17 18
+  24     0  0  0  0
+  25     0  0  0  1 14
+  26    23  0  0  1 17
+  27    23  0  0  1 18
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5 10  1  1 10
+   3 *   1 14 15  8  1 11 18
+   4 -   2  6  7  5  3  1  1  4  4  8 10
+   5 -   2 10 11  5  2  2  3  5  7
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  2  4  4  8 10
+   8 -   7  0  0  1  1  4  4
+   9 -   7  0  0  3  1  8 10
+  10 -   5  0  0  2  1  2  3
+  11 -   5 12 13  3  1  5  7
+  12 -  11  0  0  1  1  5  5
+  13 -  11  0  0  2  1  6  7
+  14 -   3 16 17  5  2 11 13 15 16
+  15 -   3 20 21  3  2 14 14 17 18
+  16 -  14 18 19  3  1 11 13
+  17 -  14  0  0  2  1 15 16
+  18 -  16  0  0  2  1 11 12
+  19 -  16  0  0  1  1 13 13
+  20 -  15  0  0  1  1 14 14
+  21 -  15 22 23  2  1 17 18
+  22 -  21  0  0  1  1 17 17
+  23 -  21  0  0  1  1 18 18
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            220
+Total number of atoms read in:              1663
+Total number of ignored atom records:        309
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  calculate residue outside grid:         195
+  calculate residue outside grid:         219
+  calculate residue outside grid:         220
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         220  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1829
+ selectset done           0
+ eigen done           0
+ tau           1   15.6075172             123
+ #popped           2           1
+ #selectset contacts        1829
+ selectset done           1
+ eigen done           1
+ tau           3   1.17839253              98         110
+ #popped           4           1
+ #selectset contacts        1829
+ selectset done           1
+ eigen done           1
+ tau           5  0.479068220              21          35          49          59
+ #popped           6           2
+ #selectset contacts        1829
+ selectset done           2
+ eigen done           2
+ tau           7  0.358062059              62
+ #popped           8           3
+ #selectset contacts        1829
+ selectset done           3
+ eigen done           3
+ tau           9   14.1413422              21
+ #popped          10           3
+ #selectset contacts        1829
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1829
+ selectset done           2
+ eigen done           2
+ tau          11   2.30263162              85
+ #popped          12           3
+ #selectset contacts        1829
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          13           2
+ #selectset contacts        1829
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           7           1
+ #selectset contacts        1829
+ selectset done           1
+ eigen done           1
+ tau          13   1.60808766              32
+ #popped           3           0
+ #selectset contacts        1829
+ selectset done           0
+ eigen done           0
+ tau          15  0.656848073             154         169         183
+ #popped          16           1
+ #selectset contacts        1829
+ selectset done           1
+ eigen done           1
+ tau          17  0.543044925             154
+ #popped          18           1
+ #selectset contacts        1829
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          17           0
+ #selectset contacts        1829
+ selectset done           0
+ eigen done           0
+ tau          19   1.02312386             186         196
+ #popped          20           0
+ #selectset contacts        1829
+ selectset done           0
+ eigen done           0
+ tau          21  0.619672120             186
+ #popped          23           0
+ #selectset contacts        1829
+ selectset done           0
+ eigen done           0
+ tau          23  0.386691779             210
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         220
+         220  residues read 6CW3.dssp                                                   
+  grow short strand           3           7
+  grow short strand          11          12
+  exclude short helix          29          31
+  grow short strand          57          60
+  exclude short helix          74          76
+  exclude short helix          88          90
+  grow short strand         110         113
+  grow short strand         117         121
+  grow short strand         130         134
+  grow short strand         155         158
+ crowded segment excluded!
+  exclude short helix         159         161
+  grow short strand         167         169
+  grow short strand         173         174
+  exclude short helix         190         192
+  exclude short helix         205         207
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  3  4  5  7  8  9 10 11  6 12 13 15 14 16 17 18
+   2     1  6  7 11  1  2  3  4  5  7  8  9 10 11  6
+   3     1 16 17  7 12 13 15 14 16 17 18
+   4     0  0  0 11  1  2  3  4  5  7  8  9 10 11  6
+   5     0  0  0  0
+   6     2  8  9 10  1  2  3  4  5  7  8  9 10 11
+   7     2  0  0  1  6
+   8     6 10 11  5  1  2  3  4  5
+   9     6 12 13  5  7  8  9 10 11
+  10     8  0  0  3  1  2  3
+  11     8  0  0  2  4  5
+  12     9  0  0  2  7  8
+  13     9  0  0  3  9 10 11
+  14     0  0  0  0
+  15     0  0  0  1  6
+  16     3 18 19  3 12 13 15
+  17     3 22 23  4 14 16 17 18
+  18    16  0  0  2 12 13
+  19    16  0  0  1 15
+  20     0  0  0  4 14 16 17 18
+  21     0  0  0  0
+  22    17  0  0  2 14 16
+  23    17 24 25  2 17 18
+  24    23  0  0  1 17
+  25    23  0  0  1 18
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5 11  1  1 11
+   3 *   1 12 13  7  1 12 18
+   4 -   2  6  7 10  2  1  5  7 11
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  5  1  1  5
+   7 -   4 10 11  5  1  7 11
+   8 -   6  0  0  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   7  0  0  2  1  7  8
+  11 -   7  0  0  3  1  9 11
+  12 -   3 14 15  3  2 12 13 15 15
+  13 -   3 16 17  4  2 14 14 16 18
+  14 -  12  0  0  2  1 12 13
+  15 -  12  0  0  1  1 15 15
+  16 -  13  0  0  2  2 14 14 16 16
+  17 -  13 18 19  2  1 17 18
+  18 -  17  0  0  1  1 17 17
+  19 -  17  0  0  1  1 18 18
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1621
+Total number of ignored atom records:        293
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1710
+ selectset done           0
+ eigen done           0
+ tau           1   7.94117641             107
+ #popped           2           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau           3  0.851133049              10
+ #popped           5           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau           5  0.619855344              20          73
+ #popped           6           2
+ #selectset contacts        1710
+ selectset done           2
+ eigen done           2
+ tau           7  0.655403614              78
+ #popped           9           2
+ #selectset contacts        1710
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau           9   1.19541144              32          58
+ #popped          10           2
+ #selectset contacts        1710
+ selectset done           2
+ eigen done           2
+ tau          11  0.484877020              32
+ #popped          11           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau          13  0.754950523              47
+ #popped           3           0
+ #selectset contacts        1710
+ selectset done           0
+ eigen done           0
+ tau          15  0.842560410             117         133         147         160         177
+ #popped          16           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau          17  0.497799248             147
+ #popped          18           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau          19  0.554263592             137
+ #popped          17           0
+ #selectset contacts        1710
+ selectset done           0
+ eigen done           0
+ tau          21  0.722436845             188
+ #popped          22           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau          23   1.16526914             133         160
+ #popped          24           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          23           0
+ #selectset contacts        1710
+ selectset done           0
+ eigen done           0
+ tau          25  0.289307982             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         213
+         213  residues read 6CW3.dssp                                                   
+  grow short strand           9          13
+  grow short strand          19          23
+  grow short strand          45          49
+  grow short strand          53          54
+  exclude short helix          80          82
+  exclude short helix          93          95
+  grow short strand         102         106
+  grow short strand         114         118
+  exclude short helix         122         126
+  grow short strand         153         156
+  grow short strand         159         163
+  exclude short helix         183         187
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  8  9  2  6  7  3  4  5 10 11 12 14 15 13 16 17
+   2     1  6  7  9  1  8  9  2  6  7  3  4  5
+   3     1 16 17  8 10 11 12 14 15 13 16 17
+   4     0  0  0  0
+   5     0  0  0  9  1  8  9  2  6  7  3  4  5
+   6     2  8  9  3  1  8  9
+   7     2 10 11  6  2  6  7  3  4  5
+   8     6  0  0  1  1
+   9     6  0  0  2  8  9
+  10     7 12 13  3  2  6  7
+  11     7 14 15  3  3  4  5
+  12    10  0  0  1  2
+  13    10  0  0  2  6  7
+  14    11  0  0  2  3  4
+  15    11  0  0  1  5
+  16     3 18 19  5 10 11 12 14 15
+  17     3 22 23  3 13 16 17
+  18    16 20 21  3 10 11 12
+  19    16  0  0  2 14 15
+  20    18  0  0  2 10 11
+  21    18  0  0  1 12
+  22    17  0  0  1 13
+  23    17 26 27  2 16 17
+  24     0  0  0  0
+  25     0  0  0  1 13
+  26    23  0  0  1 16
+  27    23  0  0  1 17
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5  9  1  1  9
+   3 *   1 14 15  8  1 10 17
+   4 -   2  6  7  3  2  1  1  8  9
+   5 -   2  8  9  6  1  2  7
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  2  1  8  9
+   8 -   5 10 11  3  2  2  2  6  7
+   9 -   5 12 13  3  1  3  5
+  10 -   8  0  0  1  1  2  2
+  11 -   8  0  0  2  1  6  7
+  12 -   9  0  0  2  1  3  4
+  13 -   9  0  0  1  1  5  5
+  14 -   3 16 17  5  2 10 12 14 15
+  15 -   3 20 21  3  2 13 13 16 17
+  16 -  14 18 19  3  1 10 12
+  17 -  14  0  0  2  1 14 15
+  18 -  16  0  0  2  1 10 11
+  19 -  16  0  0  1  1 12 12
+  20 -  15  0  0  1  1 13 13
+  21 -  15 22 23  2  1 16 17
+  22 -  21  0  0  1  1 16 16
+  23 -  21  0  0  1  1 17 17
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            120
+Total number of atoms read in:               941
+Total number of ignored atom records:         39
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         120  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1000
+ selectset done           0
+ eigen done           0
+ tau           1   12.1245241              54
+ #popped           2           1
+ #selectset contacts        1000
+ selectset done           1
+ eigen done           1
+ tau           3   1.11168718              18
+ #popped           5           1
+ #selectset contacts        1000
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        1000
+ selectset done           0
+ eigen done           0
+ tau           5   2.02388072             110
+ #popped           6           0
+ #selectset contacts        1000
+ selectset done           0
+ eigen done           0
+ tau           7  0.878519714              74          93
+ #popped           8           0
+ #selectset contacts        1000
+ selectset done           0
+ eigen done           0
+ tau           9  0.847512543              74
+ #popped          10           0
+ #selectset contacts        1000
+ selectset done           0
+ eigen done           0
+ tau          11  0.661844909              64
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         120
+         120  residues read 6CW3.dssp                                                   
+  grow short strand          19          22
+  grow short strand          29          30
+ crowded segment excluded!
+  exclude short helix          32          36
+  grow short strand          50          53
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  2  3  5  4
+   2     1  0  0  2  1  2
+   3     1  8  9  3  3  5  4
+   4     0  0  0  0
+   5     0  0  0  2  1  2
+   6     0  0  0  3  3  5  4
+   7     0  0  0  0
+   8     3 10 11  2  3  5
+   9     3  0  0  1  4
+  10     8  0  0  1  3
+  11     8  0  0  1  5
+  12     0  0  0  0
+  13     0  0  0  1  3
+   1 +   0  2  3  5  1  1  5
+   2 *   1  0  0  2  1  1  2
+   3 *   1  4  5  3  1  3  5
+   4 -   3  6  7  2  2  3  3  5  5
+   5 -   3  0  0  1  1  4  4
+   6 -   4  0  0  1  1  3  3
+   7 -   4  0  0  1  1  5  5
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            199
+Total number of atoms read in:              1536
+Total number of ignored atom records:         97
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  calculate residue outside grid:         173
+  calculate residue outside grid:         174
+  calculate residue outside grid:         175
+  calculate residue outside grid:         176
+  calculate residue outside grid:         177
+  calculate residue outside grid:         178
+  calculate residue outside grid:         179
+  calculate residue outside grid:         180
+  calculate residue outside grid:         181
+  calculate residue outside grid:         182
+  calculate residue outside grid:         183
+  calculate residue outside grid:         184
+  calculate residue outside grid:         185
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1641
+ selectset done           0
+ eigen done           0
+ tau           1   10.4483614             171
+ #popped           2           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau           3   2.64029813             149
+ #popped           4           2
+ #selectset contacts        1641
+ selectset done           2
+ eigen done           2
+ tau           5   1.64689910              10          44
+ #popped           6           3
+ #selectset contacts        1641
+ selectset done           3
+ eigen done           3
+ tau           7   1.12413871              81
+ #popped           8           4
+ #selectset contacts        1641
+ selectset done           4
+ eigen done           4
+ tau           9  0.500128388              55
+ #popped          10           5
+ #selectset contacts        1641
+ selectset done           5
+ eigen done           5
+ tau          11   0.00000000    
+ #popped          11           4
+ #selectset contacts        1641
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped           9           3
+ #selectset contacts        1641
+ selectset done           3
+ eigen done           3
+ tau          11   2.15293217             119         130
+ #popped          12           3
+ #selectset contacts        1641
+ selectset done           3
+ eigen done           3
+ tau          13  0.508435011             104
+ #popped          14           4
+ #selectset contacts        1641
+ selectset done           4
+ eigen done           4
+ tau          15   1.92287183              94
+ #popped          15           3
+ #selectset contacts        1641
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped           7           2
+ #selectset contacts        1641
+ selectset done           2
+ eigen done           2
+ tau          17   1.09028566              30
+ #popped          18           2
+ #selectset contacts        1641
+ selectset done           2
+ eigen done           2
+ tau          19  0.734126985              20
+ #popped           5           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          21  0.938678086             160
+ #popped           3           0
+ #selectset contacts        1641
+ selectset done           0
+ eigen done           0
+ tau          23   1.68948698             186
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         199
+         199  residues read 6CW3.dssp                                                   
+  grow short strand           4           8
+  exclude short helix          68          70
+  grow short strand          99         103
+  exclude short helix         106         109
+  grow short strand         113         114
+  exclude short helix         121         124
+  grow short strand         133         137
+  exclude short helix         176         178
+  exclude short helix         181         183
+  exclude short helix         194         197
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 11  1  4  5  6  7  8  9 10  2  3 11
+   2     0  0  0 11  1  4  5  6  7  8  9 10  2  3 11
+   3     0  0  0  0
+   4     1  6  7 10  1  4  5  6  7  8  9 10  2  3
+   5     1  0  0  1 11
+   6     4  8  9  8  1  4  5  6  7  8  9 10
+   7     4 18 19  2  2  3
+   8     6 10 11  4  1  4  5  6
+   9     6 14 15  4  7  8  9 10
+  10     8  0  0  2  1  4
+  11     8  0  0  2  5  6
+  12     0  0  0  4  7  8  9 10
+  13     0  0  0  0
+  14     9 16 17  2  7  8
+  15     9  0  0  2  9 10
+  16    14  0  0  1  7
+  17    14  0  0  1  8
+  18     7  0  0  1  2
+  19     7  0  0  1  3
+  20     0  0  0  0
+  21     0  0  0  1  2
+  22     0  0  0  1 11
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 +   1  4  5 10  1  1 10
+   3 =   1  0  0  1  1 11 11
+   4 +   2  6  7  8  2  1  1  4 10
+   5 =   2 14 15  2  1  2  3
+   6 *   4  8  9  4  2  1  1  4  6
+   7 *   4 10 11  4  1  7 10
+   8 -   6  0  0  2  2  1  1  4  4
+   9 -   6  0  0  2  1  5  6
+  10 -   7 12 13  2  1  7  8
+  11 -   7  0  0  2  1  9 10
+  12 -  10  0  0  1  1  7  7
+  13 -  10  0  0  1  1  8  8
+  14 -   5  0  0  1  1  2  2
+  15 -   5  0  0  1  1  3  3
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             92
+Total number of atoms read in:               691
+Total number of ignored atom records:         45
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+          92  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         661
+ selectset done           0
+ eigen done           0
+ tau           1   8.28535461              58
+ #popped           2           1
+ #selectset contacts         661
+ selectset done           1
+ eigen done           1
+ tau           3  0.841044009              48
+ #popped           4           1
+ #selectset contacts         661
+ selectset done           1
+ eigen done           1
+ tau           5   1.07738686              16
+ #popped           7           1
+ #selectset contacts         661
+ selectset done           1
+ eigen done           1
+ tau           7  0.774173617              26          36
+ #popped           8           1
+ #selectset contacts         661
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts         661
+ selectset done           0
+ eigen done           0
+ tau           9   4.19047642              73
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+          92
+          92  residues read 6CW3.dssp                                                   
+  grow short strand          16          19
+  grow short strand          26          28
+ crowded segment excluded!
+  exclude short helix          29          33
+  grow short strand          47          50
+  grow short helix          75          81
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  3  1  2  3
+   2     1  0  0  2  1  2
+   3     1  0  0  1  3
+   4     0  0  0  2  1  2
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  2  1  2
+   8     0  0  0  2  1  2
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  1  3
+   1 +   0  2  3  3  1  1  3
+   2 *   1  0  0  2  1  1  2
+   3 =   1  0  0  1  1  3  3
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            191
+Total number of atoms read in:              1449
+Total number of ignored atom records:         45
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.USATYUK,  
+  calculate residue outside grid:         164
+  calculate residue outside grid:         167
+  calculate residue outside grid:         170
+  calculate residue outside grid:         171
+  calculate residue outside grid:         173
+  calculate residue outside grid:         174
+  Reading DSSP file
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+         191  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1497
+ selectset done           0
+ eigen done           0
+ tau           1   8.54627037             162
+ #popped           2           1
+ #selectset contacts        1497
+ selectset done           1
+ eigen done           1
+ tau           3   4.63189220             136
+ #popped           4           2
+ #selectset contacts        1497
+ selectset done           2
+ eigen done           2
+ tau           5   1.59924650              28          44          55
+ #popped           6           3
+ #selectset contacts        1497
+ selectset done           3
+ eigen done           3
+ tau           7   1.03293812              17          28
+ #popped           8           3
+ #selectset contacts        1497
+ selectset done           3
+ eigen done           3
+ tau           9  0.511363626              17
+ #popped           7           2
+ #selectset contacts        1497
+ selectset done           2
+ eigen done           2
+ tau          11   1.43924737             108         122
+ #popped          12           2
+ #selectset contacts        1497
+ selectset done           2
+ eigen done           2
+ tau          13   1.16245234              73
+ #popped          14           3
+ #selectset contacts        1497
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          15           2
+ #selectset contacts        1497
+ selectset done           2
+ eigen done           2
+ tau          15  0.525255322              98
+ #popped          16           3
+ #selectset contacts        1497
+ selectset done           3
+ eigen done           3
+ tau          17   1.10727274              88
+ #popped          17           2
+ #selectset contacts        1497
+ selectset done           2
+ eigen done           2
+ tau          19  0.692714691             108
+ #popped           5           1
+ #selectset contacts        1497
+ selectset done           1
+ eigen done           1
+ tau          21   1.24804878             148
+ #popped           3           0
+ #selectset contacts        1497
+ selectset done           0
+ eigen done           0
+ tau          23   1.50841749             178
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    GENE REGULATION                         29-MAR-18   6CW3              COMPND   2 MOLECULE: ANTIBODY HEAVY CHAIN;                                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.SUN,M.PADUCH,S.A.KIM,R.M.KRAMER,A.F.BARRIOS,V.LU,J.LUKE,S.          
+           0
+         191
+         191  residues read 6CW3.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          31          36
+  exclude short helix          62          64
+  grow short strand          94          97
+  exclude short helix         100         102
+  grow short strand         104         105
+  exclude short helix         112         114
+  grow short strand         125         128
+  exclude short helix         167         169
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 10  1  3  2  4  5  6  7  8  9 10
+   2     0  0  0 10  1  3  2  4  5  6  7  8  9 10
+   3     0  0  0  0
+   4     1  6  7  9  1  3  2  4  5  6  7  8  9
+   5     1  0  0  1 10
+   6     4  8  9  3  1  3  2
+   7     4 14 15  6  4  5  6  7  8  9
+   8     6 10 11  2  1  3
+   9     6  0  0  1  2
+  10     8  0  0  1  1
+  11     8  0  0  1  3
+  12     0  0  0  6  4  5  6  7  8  9
+  13     0  0  0  0
+  14     7  0  0  2  4  5
+  15     7 16 17  4  6  7  8  9
+  16    15 18 19  2  6  7
+  17    15 20 21  2  8  9
+  18    16  0  0  1  6
+  19    16  0  0  1  7
+  20    17  0  0  1  8
+  21    17  0  0  1  9
+  22     0  0  0  1 10
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+   1 +   0  2  3 10  1  1 10
+   2 *   1  4  5  9  1  1  9
+   3 =   1  0  0  1  1 10 10
+   4 -   2  6  7  3  1  1  3
+   5 -   2 10 11  6  1  4  9
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+  10 -   5  0  0  2  1  4  5
+  11 -   5 12 13  4  1  6  9
+  12 -  11 14 15  2  1  6  7
+  13 -  11 16 17  2  1  8  9
+  14 -  12  0  0  1  1  6  6
+  15 -  12  0  0  1  1  7  7
+  16 -  13  0  0  1  1  8  8
+  17 -  13  0  0  1  1  9  9
+
+ CHAIN : 6CW3A
+ CHAIN : 6CW3B
+ CHAIN : 6CW3C
+ CHAIN : 6CW3D
+ CHAIN : 6CW3E
+ CHAIN : 6CW3F
+ CHAIN : 6CW3G
+ CHAIN : 6CW3H
+

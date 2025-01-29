@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 1FTTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CUF-A  6.2  3.2   61    95   26   MOLECULE: FLJ21616 PROTEIN;                                          
+
+# Pairwise alignments
+
+No 1: Query=1FTTA Sbjct=2CUFA Z-score=6.2
+
+DSSP  -----lllllLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHL---------------
+Query -----mrrkrRVLFSQAQVYELERRFKQQKYLSAPEREHLASMIH---------------   40
+ident           |           |  |    |     ||  |                   
+Sbjct gssgssgrgsRFTWRKECLAVMESYFNENQYPDEAKREEIANACNaviqkpgkklsdler   60
+DSSP  llllllllllLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHhhhllllllllllll
+
+DSSP  LLHHHHHHHHHHHHHHHHHLllLLLLLL---------
+Query LTPTQVKIWFQNHRYKMKRQakDKAAQQ---------   68
+ident  |   |  || | |   ||      |           
+Sbjct VTSLKVYNWFANRRKEIKRR--ANIAAIlessgpssg   95
+DSSP  LLHHHHHHHHHHHHHHHHHH--HHLLLLlllllllll
+
+
+# Structural equivalences
+   1: 1FTT-A 2CUF-A     6 -  40 <=>   11 -  45   (ARG    5  - HIS   39  <=> ARG   11  - ASN   45 )                          
+   1: 1FTT-A 2CUF-A    41 -  60 <=>   61 -  80   (LEU   40  - GLN   59  <=> VAL   61  - ARG   80 )                          
+   1: 1FTT-A 2CUF-A    63 -  68 <=>   81 -  86   (ASP   62  - GLN   67  <=> ALA   81  - ILE   86 )                          
+
+# Translation-rotation matrices
+-matrix  "1FTT-A 2CUF-A  U(1,.)   0.751919  0.387874  0.533077           -6.754699"
+-matrix  "1FTT-A 2CUF-A  U(2,.)  -0.592665  0.043568  0.804270            8.585804"
+-matrix  "1FTT-A 2CUF-A  U(3,.)   0.288731 -0.920682  0.262639          -30.408314"
+

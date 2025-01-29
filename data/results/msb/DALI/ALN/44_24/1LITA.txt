@@ -1,0 +1,41 @@
+# Job: msb
+# Query: 1LITA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1SB2-A 15.9  1.9  104   132   32   MOLECULE: RHODOCETIN ALPHA SUBUNIT;                                  
+
+# Pairwise alignments
+
+No 1: Query=1LITA Sbjct=1SB2A Z-score=15.9
+
+DSSP  -LLLLLEEELLEEEEEEEEEELHHHHHHHHHHH-HLLEELLLLLHHHHHHHHHHHHLLLL
+Query -CPEGTNAYRSYCYYFNEDRETWVDADLYCQNM-NSGNLVSVLTQAEGAFVASLIKESGT   58
+ident  || |     ||||       ||  |   |        |||     |  ||         
+Sbjct dCPDGWSSTKSYCYRPFKEKKTWEEAERFCTEQeKEAHLVSMENRLEAVFVDMVMENNFE   60
+DSSP  lLLLLLEELLLEEEEEEEEEELHHHHHHHHHLLlLLLEELLLLLHHHHHHHHHHHHHHLL
+
+DSSP  -LLLEEEEEEELL----LLLLlleellllllllllllllllllllllLEEEEEHHHLlLL
+Query -DDFNVWIGLHDP----KKNRrwhwssgslvsykswgigapssvnpgYCVSLTSSTGfQK  113
+ident       ||||         |                            |       |  |
+Sbjct nKIYRSWIGLKIEnkgqRSNL-------ewsdgssisyenlyepymeKCFLMDHQSGlPK  113
+DSSP  lLLEEEEEEEEEEllllLLLE-------eelllllllllllllllleEEEEEEELLLlLE
+
+DSSP  EEEELLLLLEEEEEEELL-
+Query WKDVPCEDKFSFVCKFKN-  131
+ident |    || |  | |||   
+Sbjct WHTADCEEKNVFMCKFQLp  132
+DSSP  EEEELLLLLEEEEEEEELl
+
+
+# Structural equivalences
+   1: 1LIT-A 1SB2-A     1 -  32 <=>    2 -  33   (CYS   14  - MET   45  <=> CYS    2  - GLN   33 )                          
+   1: 1LIT-A 1SB2-A    33 -  58 <=>   35 -  60   (ASN   46  - THR   71  <=> LYS   35  - GLU   60 )                          
+   1: 1LIT-A 1SB2-A    59 -  70 <=>   62 -  73   (ASP   72  - PRO   83  <=> LYS   62  - GLU   73 )                          
+   1: 1LIT-A 1SB2-A    71 -  74 <=>   78 -  81   (LYS   84  - ARG   87  <=> ARG   78  - LEU   81 )                          
+   1: 1LIT-A 1SB2-A   101 - 110 <=>  101 - 110   (TYR  114  - GLY  123  <=> LYS  101  - GLY  110 )                          
+   1: 1LIT-A 1SB2-A   112 - 131 <=>  112 - 131   (GLN  125  - ASN  144  <=> PRO  112  - LEU  131 )                          
+
+# Translation-rotation matrices
+-matrix  "1LIT-A 1SB2-A  U(1,.)   0.816640 -0.312646 -0.485131            9.051540"
+-matrix  "1LIT-A 1SB2-A  U(2,.)   0.171804 -0.670774  0.721488           12.165705"
+-matrix  "1LIT-A 1SB2-A  U(3,.)  -0.550983 -0.672544 -0.494067           60.510590"
+

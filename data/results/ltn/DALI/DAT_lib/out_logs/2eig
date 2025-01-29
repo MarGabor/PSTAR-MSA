@@ -1,0 +1,749 @@
+A length: 230
+B length: 230
+C length: 230
+D length: 230
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            230
+Total number of atoms read in:              1808
+Total number of ignored atom records:        316
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.BEZERRA,   
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              COMPND   2 MOLECULE: LECTIN;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: LOTUS TETRAGONOLOBUS;                           AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.B          
+         230  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2093
+ selectset done           0
+ eigen done           0
+ tau           1   1.10889494              17          41          67          82         118         136         148         159         205         219
+ #popped           2           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau           3  0.412438244              67         172
+ #popped           4           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau           5   7.19638014              67         187
+ #popped           6           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau           7  0.468737304              11
+ #popped           9           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau           9  0.344862372             205
+ #popped          10           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau          11  0.479104698              67
+ #popped          12           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau          13   8.89297771             148
+ #popped          14           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau          15  0.589938939             108
+ #popped          16           2
+ #selectset contacts        2093
+ selectset done           2
+ eigen done           2
+ tau          17   2.07268667              92
+ #popped          17           1
+ #selectset contacts        2093
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2093
+ selectset done           0
+ eigen done           0
+ tau          19  0.478132844              27
+ #popped          21           0
+ #selectset contacts        2093
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              COMPND   2 MOLECULE: LECTIN;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: LOTUS TETRAGONOLOBUS;                           AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.B          
+           0
+         230
+         230  residues read 2EIG.dssp                                                   
+  grow short strand           2           5
+  grow short strand          14          18
+  grow short strand          21          23
+ crowded segment excluded!
+  exclude short helix          24          26
+  grow short strand          27          29
+  exclude short helix          34          36
+  grow short strand          49          50
+  exclude short helix          99         101
+  grow short strand         147         150
+  exclude short helix         192         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  4  5  6 14 15 12 13  7  8  9 10 11  3
+   2     1  4  5 14  1  2  4  5  6 14 15 12 13  7  8  9 10 11
+   3     1  0  0  1  3
+   4     2  6  7  9  1  2  4  5  6 14 15 12 13
+   5     2 14 15  5  7  8  9 10 11
+   6     4  8  9  7  1  2  4  5  6 14 15
+   7     4  0  0  2 12 13
+   8     6  0  0  1  1
+   9     6 10 11  6  2  4  5  6 14 15
+  10     9 12 13  5  2  4  5  6 14
+  11     9  0  0  1 15
+  12    10  0  0  4  2  4  5  6
+  13    10  0  0  1 14
+  14     5 16 17  4  7  8  9 10
+  15     5  0  0  1 11
+  16    14  0  0  1  7
+  17    14  0  0  3  8  9 10
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  3
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1  2  4 15
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  9  3  1  2  4  6 12 15
+   5 -   2 14 15  5  1  7 11
+   6 -   4  8  9  7  3  1  2  4  6 14 15
+   7 -   4  0  0  2  1 12 13
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  6  3  2  2  4  6 14 15
+  10 -   9 12 13  5  3  2  2  4  6 14 14
+  11 -   9  0  0  1  1 15 15
+  12 -  10  0  0  4  2  2  2  4  6
+  13 -  10  0  0  1  1 14 14
+  14 -   5 16 17  4  1  7 10
+  15 -   5  0  0  1  1 11 11
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  3  1  8 10
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            230
+Total number of atoms read in:              1808
+Total number of ignored atom records:        380
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.BEZERRA,   
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              COMPND   2 MOLECULE: LECTIN;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: LOTUS TETRAGONOLOBUS;                           AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.B          
+         230  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2082
+ selectset done           0
+ eigen done           0
+ tau           1   1.15330780              14          44          66         159         200         220
+ #popped           2           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau           3  0.694367468             173         186
+ #popped           4           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau           5  0.621668220              45
+ #popped           7           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau           7  0.341042399              55
+ #popped           9           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau           9   1.74415588             190         200
+ #popped          10           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        2082
+ selectset done           0
+ eigen done           0
+ tau          11  0.850636244              85         116         137         147
+ #popped          12           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau          13  0.455609500              32
+ #popped          15           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau          15  0.420427203              44
+ #popped          17           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau          17  0.267581463             210
+ #popped          18           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau          19  0.441438019             159
+ #popped          20           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau          21  0.400460720             126
+ #popped          22           2
+ #selectset contacts        2082
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          23           1
+ #selectset contacts        2082
+ selectset done           1
+ eigen done           1
+ tau          23  0.642964602             149
+ #popped          13           0
+ #selectset contacts        2082
+ selectset done           0
+ eigen done           0
+ tau          25  0.771112084              95
+ #popped          27           0
+ #selectset contacts        2082
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              COMPND   2 MOLECULE: LECTIN;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: LOTUS TETRAGONOLOBUS;                           AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.B          
+           0
+         230
+         230  residues read 2EIG.dssp                                                   
+  grow short strand           2           5
+  grow short strand          14          18
+  grow short strand          21          23
+ crowded segment excluded!
+  exclude short helix          24          26
+  grow short strand          27          29
+  grow short strand          49          50
+  exclude short helix          99         101
+  grow short strand         147         150
+  exclude short helix         192         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  5  6 11 12 13  2  3  4  7  8  9 10 14 15
+   2     1  4  5  6  1  5  6 11 12 13
+   3     1 14 15  9  2  3  4  7  8  9 10 14 15
+   4     2  6  7  4  1  5  6 11
+   5     2  0  0  2 12 13
+   6     4  0  0  1  1
+   7     4  8  9  3  5  6 11
+   8     7  0  0  1  5
+   9     7  0  0  2  6 11
+  10     0  0  0  2  6 11
+  11     0  0  0  0
+  12     0  0  0  9  2  3  4  7  8  9 10 14 15
+  13     0  0  0  0
+  14     3  0  0  2  2  3
+  15     3 16 17  7  4  7  8  9 10 14 15
+  16    15  0  0  1  4
+  17    15 18 19  6  7  8  9 10 14 15
+  18    17 20 21  5  7  8  9 10 14
+  19    17  0  0  1 15
+  20    18 22 23  4  7  8  9 10
+  21    18  0  0  1 14
+  22    20  0  0  2  7  8
+  23    20  0  0  2  9 10
+  24     0  0  0  2  9 10
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  6  3  1  1  5  6 11 13
+   3 -   1 10 11  9  3  2  4  7 10 14 15
+   4 -   2  6  7  4  3  1  1  5  6 11 11
+   5 -   2  0  0  2  1 12 13
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  3  2  5  6 11 11
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  2  2  6  6 11 11
+  10 -   3  0  0  2  1  2  3
+  11 -   3 12 13  7  3  4  4  7 10 14 15
+  12 -  11  0  0  1  1  4  4
+  13 -  11 14 15  6  2  7 10 14 15
+  14 -  13 16 17  5  2  7 10 14 14
+  15 -  13  0  0  1  1 15 15
+  16 -  14 18 19  4  1  7 10
+  17 -  14  0  0  1  1 14 14
+  18 -  16  0  0  2  1  7  8
+  19 -  16  0  0  2  1  9 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            230
+Total number of atoms read in:              1808
+Total number of ignored atom records:        296
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.BEZERRA,   
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              COMPND   2 MOLECULE: LECTIN;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: LOTUS TETRAGONOLOBUS;                           AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.B          
+         230  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2080
+ selectset done           0
+ eigen done           0
+ tau           1  0.755005956              42          65          83         117         137         147         161         174         185         204         220
+ #popped           2           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau           3   1.96427155              14
+ #popped           5           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau           5   1.01214778             121         133
+ #popped           6           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau           7  0.867929161             161         185
+ #popped           8           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau           9  0.486886472              29
+ #popped          11           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau          11  0.232235342              80
+ #popped          12           2
+ #selectset contacts        2080
+ selectset done           2
+ eigen done           2
+ tau          13   13.9657078              42
+ #popped          13           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau          15   1.38056290             151         161
+ #popped          16           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau          17  0.761324048             151
+ #popped           3           0
+ #selectset contacts        2080
+ selectset done           0
+ eigen done           0
+ tau          19   1.32971525              93         111
+ #popped          20           0
+ #selectset contacts        2080
+ selectset done           0
+ eigen done           0
+ tau          21  0.423131198             204
+ #popped          22           0
+ #selectset contacts        2080
+ selectset done           0
+ eigen done           0
+ tau          23  0.394989073              65
+ #popped          24           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          25           0
+ #selectset contacts        2080
+ selectset done           0
+ eigen done           0
+ tau          25  0.583703637             147
+ #popped          26           1
+ #selectset contacts        2080
+ selectset done           1
+ eigen done           1
+ tau          27  0.665507257              93
+ #popped          27           0
+ #selectset contacts        2080
+ selectset done           0
+ eigen done           0
+ tau          29  0.500528932             174
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              COMPND   2 MOLECULE: LECTIN;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: LOTUS TETRAGONOLOBUS;                           AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.B          
+           0
+         230
+         230  residues read 2EIG.dssp                                                   
+  grow short strand           2           5
+  grow short strand          14          18
+  grow short strand          21          23
+ crowded segment excluded!
+  exclude short helix          24          26
+  grow short strand          27          29
+  exclude short helix          34          36
+  grow short strand          49          50
+  exclude short helix          99         101
+  grow short strand         147         150
+  exclude short helix         192         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  6  9 10 15  5  7  8 11 12 13 14
+   2     1  4  5  8  1  2  3  4  6  9 10 15
+   3     1 24 25  7  5  7  8 11 12 13 14
+   4     2  0  0  1  1
+   5     2 10 11  7  2  3  4  6  9 10 15
+   6     0  0  0  7  2  3  4  6  9 10 15
+   7     0  0  0  0
+   8     0  0  0  7  2  3  4  6  9 10 15
+   9     0  0  0  0
+  10     5  0  0  2  2  3
+  11     5 12 13  5  4  6  9 10 15
+  12    11 14 15  2  4  6
+  13    11 18 19  3  9 10 15
+  14    12  0  0  1  4
+  15    12  0  0  1  6
+  16     0  0  0  3  9 10 15
+  17     0  0  0  0
+  18    13  0  0  2  9 10
+  19    13  0  0  1 15
+  20     0  0  0  7  5  7  8 11 12 13 14
+  21     0  0  0  0
+  22     0  0  0  7  5  7  8 11 12 13 14
+  23     0  0  0  0
+  24     3  0  0  1  5
+  25     3 26 27  6  7  8 11 12 13 14
+  26    25 28 29  2  7  8
+  27    25 30 31  4 11 12 13 14
+  28    26  0  0  1  7
+  29    26  0  0  1  8
+  30    27  0  0  2 11 12
+  31    27  0  0  2 13 14
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  4  1  4  6  6  9 10 15 15
+   3 -   1 14 15  7  3  5  5  7  8 11 14
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  7  4  2  4  6  6  9 10 15 15
+   6 -   5  0  0  2  1  2  3
+   7 -   5  8  9  5  4  4  4  6  6  9 10 15 15
+   8 -   7 10 11  2  2  4  4  6  6
+   9 -   7 12 13  3  2  9 10 15 15
+  10 -   8  0  0  1  1  4  4
+  11 -   8  0  0  1  1  6  6
+  12 -   9  0  0  2  1  9 10
+  13 -   9  0  0  1  1 15 15
+  14 -   3  0  0  1  1  5  5
+  15 -   3 16 17  6  2  7  8 11 14
+  16 -  15 18 19  2  1  7  8
+  17 -  15 20 21  4  1 11 14
+  18 -  16  0  0  1  1  7  7
+  19 -  16  0  0  1  1  8  8
+  20 -  17  0  0  2  1 11 12
+  21 -  17  0  0  2  1 13 14
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            230
+Total number of atoms read in:              1808
+Total number of ignored atom records:        261
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.BEZERRA,   
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              COMPND   2 MOLECULE: LECTIN;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: LOTUS TETRAGONOLOBUS;                           AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.B          
+         230  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau           1  0.991784096              17          41          67          82          93         108         118         136         148         158         205         218
+ #popped           2           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau           3  0.638595760              67         205
+ #popped           4           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau           5  0.532100677              44
+ #popped           6           3
+ #selectset contacts        2068
+ selectset done           3
+ eigen done           3
+ tau           7   1.25748503              10
+ #popped           7           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau           9  0.842961371              55
+ #popped          11           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau          11   1.40225005             148         189
+ #popped          12           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau          13  0.494620889             118         148
+ #popped          14           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau          15  0.415807575             118
+ #popped          16           2
+ #selectset contacts        2068
+ selectset done           2
+ eigen done           2
+ tau          17  0.445139319              93
+ #popped          13           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau          19  0.318848312             171
+ #popped           3           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau          21  0.510820806              28
+ #popped          23           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau          23  0.294096917             108
+ #popped          24           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau          25   3.04756737              82
+ #popped          26           1
+ #selectset contacts        2068
+ selectset done           1
+ eigen done           1
+ tau          27   13.2837210              41
+ #popped          25           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau          29   5.85467577             158
+ #popped          30           0
+ #selectset contacts        2068
+ selectset done           0
+ eigen done           0
+ tau          31   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   13-MAR-07   2EIG              COMPND   2 MOLECULE: LECTIN;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: LOTUS TETRAGONOLOBUS;                           AUTHOR    F.B.M.B.MORENO,M.M.VICOTI,J.R.B.ABREGO,T.M.DE OLIVEIRA,G.A.B          
+           0
+         230
+         230  residues read 2EIG.dssp                                                   
+  grow short strand           2           5
+  grow short strand          14          18
+  grow short strand          21          23
+  grow short strand          27          29
+  grow short strand          49          50
+  exclude short helix          99         101
+  grow short strand         147         150
+  exclude short helix         192         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  5  6  7 16  8  9 15 10 11 12 13 14  3  4
+   2     1  4  5 14  1  2  5  6  7 16  8  9 15 10 11 12 13 14
+   3     1  0  0  2  3  4
+   4     2  6  7  6  1  2  5  6  7 16
+   5     2 12 13  8  8  9 15 10 11 12 13 14
+   6     4  8  9  3  1  2  5
+   7     4 10 11  3  6  7 16
+   8     6  0  0  1  1
+   9     6  0  0  2  2  5
+  10     7  0  0  1  6
+  11     7  0  0  2  7 16
+  12     5 14 15  5  8  9 15 10 11
+  13     5 20 21  3 12 13 14
+  14    12 16 17  3  8  9 15
+  15    12  0  0  2 10 11
+  16    14 18 19  2  8  9
+  17    14  0  0  1 15
+  18    16  0  0  1  8
+  19    16  0  0  1  9
+  20    13  0  0  1 12
+  21    13  0  0  2 13 14
+  22     0  0  0  2  3  4
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1  2  5 16
+   3 -   1  0  0  2  1  3  4
+   4 -   2  6  7  6  3  1  2  5  7 16 16
+   5 -   2 12 13  8  1  8 15
+   6 -   4  8  9  3  2  1  2  5  5
+   7 -   4 10 11  3  2  6  7 16 16
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  2  2  2  5  5
+  10 -   7  0  0  1  1  6  6
+  11 -   7  0  0  2  2  7  7 16 16
+  12 -   5 14 15  5  2  8 11 15 15
+  13 -   5 20 21  3  1 12 14
+  14 -  12 16 17  3  2  8  9 15 15
+  15 -  12  0  0  2  1 10 11
+  16 -  14 18 19  2  1  8  9
+  17 -  14  0  0  1  1 15 15
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+  20 -  13  0  0  1  1 12 12
+  21 -  13  0  0  2  1 13 14
+
+ CHAIN : 2EIGA
+ CHAIN : 2EIGB
+ CHAIN : 2EIGC
+ CHAIN : 2EIGD
+

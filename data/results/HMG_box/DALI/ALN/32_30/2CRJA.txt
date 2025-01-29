@@ -1,0 +1,33 @@
+# Job: HMG_box
+# Query: 2CRJA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1K99-A  6.3  4.7   78    91   26   MOLECULE: UPSTREAM BINDING FACTOR 1;                                 
+
+# Pairwise alignments
+
+No 1: Query=2CRJA Sbjct=1K99A Z-score=6.3
+
+DSSP  --LLLLL-lLLLLLLLHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHLLLLLHHHHH
+Query --GSSGS-sGPKAPVTGYVRFLNERREQIRTRHPDLPFPEITKMLGAEWSKLQPAEKQRY   57
+ident           || | | | ||  | |      ||       || |      |    |  |
+Sbjct mkKLKKHpdFPKKPLTPYFRFFMEKRAKYAKLHPEMSNLDLTKILSKKYKELPEKKKMKY   60
+DSSP  llLLLLLllLLLLLLLHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHHHHLLLLLHHHH
+
+DSSP  HHHHHHHHHHHH-HHHHhHHLLHHhhllllllllll
+Query LDEAEKEKQQYL-KELWaYQQSEAykvctesgpssg   92
+ident       |||                           
+Sbjct IQDFQREKQEFErNLAR-FREDHP----dliqnakk   91
+DSSP  HHHHHHHHHHHHhHHHH-HHHLLL----llllllll
+
+
+# Structural equivalences
+   1: 2CRJ-A 1K99-A     1 -   5 <=>    3 -   7   (GLY    1  - SER    5  <=> LYS    3  - HIS    7 )                          
+   1: 2CRJ-A 1K99-A     7 -  69 <=>   10 -  72   (GLY    7  - LEU   69  <=> PHE   10  - GLU   72 )                          
+   1: 2CRJ-A 1K99-A    70 -  73 <=>   74 -  77   (LYS   70  - TRP   73  <=> ASN   74  - ARG   77 )                          
+   1: 2CRJ-A 1K99-A    75 -  80 <=>   78 -  83   (TYR   75  - ALA   80  <=> PHE   78  - PRO   83 )                          
+
+# Translation-rotation matrices
+-matrix  "2CRJ-A 1K99-A  U(1,.)  -0.995071 -0.096140 -0.024291           -1.414888"
+-matrix  "2CRJ-A 1K99-A  U(2,.)   0.099005 -0.949481 -0.297799           -1.788580"
+-matrix  "2CRJ-A 1K99-A  U(3,.)   0.005566 -0.298736  0.954320           -7.023239"
+

@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1ITH-B 16.0  2.0  133   141   20   MOLECULE: HEMOGLOBIN (CYANO MET);                                    
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1ITHB Z-score=16.0
+
+DSSP  -LLHHHHHHHHHHHH-LLLL----LHHHHHHHHHHHLHHHHLLLLLLLLLLHHHHLLLHH
+Query -LSADQISTVQASFD-KVKG----DPVGILYAVFKADPSIMAKFTQFAGKDLESIKGTAP   54
+ident  | | ||   |       ||        |      | |   | |  |    |        
+Sbjct gLTAAQIKAIQDHWFlNIKGclqaAADSIFFKYLTAYPGDLAFFHKFSSVPLYGLRSNPA   60
+DSSP  lLLHHHHHHHHHHHHhHLHHhhhhHHHHHHHHHHHHLHHHHHHLLLLLLLLHHHHHHLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLL-LHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHHHLL
+Query FETHANRIVGFFSKIIGELPN-IEADVNTFVASHKPRGVTHDQLNNFRAGFVSYMKAHTD  113
+ident              |    |     |     | ||   | |                    
+Sbjct YKAQTLTVINYLDKVVDALGGnAGALMKAKVPSHDAMGITPKHFGQLLKLVGGVFQEEFS  120
+DSSP  HHHHHHHHHHHHHHHHHLLLLlHHHHHHLLHHHHHHHLLLHHHHHHHHLLHHHHHHHHHL
+
+DSSP  HHH-HHHHHHHHHHHHHHHHHlll
+Query FAG-AEAAWGATLDTFFGMIFskm  136
+ident       ||||              
+Sbjct ADPtTVAAWGDAAGVLVAAMK---  141
+DSSP  LLHhHHHHHHHHHHHHHHLLL---
+
+
+# Structural equivalences
+   1: 1ECN-A 1ITH-B     1 -  14 <=>    2 -  15   (LEU    1  - ASP   14  <=> LEU    2  - PHE   15 )                          
+   1: 1ECN-A 1ITH-B    15 -  18 <=>   17 -  20   (LYS   15  - GLY   18  <=> ASN   17  - GLY   20 )                          
+   1: 1ECN-A 1ITH-B    19 -  75 <=>   25 -  81   (ASP   19  - ASN   75  <=> ALA   25  - GLY   81 )                          
+   1: 1ECN-A 1ITH-B    76 - 116 <=>   83 - 123   (ILE   76  - GLY  116  <=> ALA   83  - PRO  123 )                          
+   1: 1ECN-A 1ITH-B   117 - 133 <=>  125 - 141   (ALA  117  - PHE  133  <=> THR  125  - LYS  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1ITH-B  U(1,.)  -0.435606 -0.861329  0.261458           43.835716"
+-matrix  "1ECN-A 1ITH-B  U(2,.)   0.893226 -0.449551  0.007203           -4.690707"
+-matrix  "1ECN-A 1ITH-B  U(3,.)   0.111334  0.236678  0.965188           -5.438305"
+

@@ -1,0 +1,33 @@
+# Job: scorptoxin
+# Query: 1NPIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1NRB-A  8.3  1.8   57    63   42   MOLECULE: NEUROTOXIN V, CSE-V;                                       
+
+# Pairwise alignments
+
+No 1: Query=1NPIA Sbjct=1NRBA Z-score=8.3
+
+DSSP  -LLEELLLLLLLLLLLllLLLLHHHHHHHHLLLLEEEEEL--LEEEEELLLLLLLLLLll
+Query -KEGYLMDHEGCKLSCfiRPSGYCGRECGIKKGSSGYCAW--PACYCYGLPNWVKVWDra   57
+ident  | ||  |   ||  |      ||   |   |   ||| |    |||||||         
+Sbjct kKDGYPVDSGNCKYEC--LKDDYCNDLCLERKADKGYCYWgkVSCYCYGLPDNSPTKT--   56
+DSSP  lEEELLLLLLLLLLLL--LLHHHHHHHHHHHLLLEEEEELllLEEEEEEELLLLLLLL--
+
+DSSP  LLLL---
+Query TNKC---   61
+ident   ||   
+Sbjct SGKCnpa   63
+DSSP  LLLLlll
+
+
+# Structural equivalences
+   1: 1NPI-A 1NRB-A     1 -  15 <=>    2 -  16   (LYS    1  - CYS   15  <=> LYS    2  - CYS   16 )                          
+   1: 1NPI-A 1NRB-A    18 -  39 <=>   17 -  38   (ARG   18  - TRP   39  <=> LEU   17  - TRP   38 )                          
+   1: 1NPI-A 1NRB-A    40 -  55 <=>   41 -  56   (PRO   40  - ASP   55  <=> VAL   41  - THR   56 )                          
+   1: 1NPI-A 1NRB-A    58 -  61 <=>   57 -  60   (THR   58  - CYS   61  <=> SER   57  - CYS   60 )                          
+
+# Translation-rotation matrices
+-matrix  "1NPI-A 1NRB-A  U(1,.)  -0.265628  0.272621  0.924727            4.148553"
+-matrix  "1NPI-A 1NRB-A  U(2,.)  -0.037976 -0.961399  0.272524            0.429406"
+-matrix  "1NPI-A 1NRB-A  U(3,.)   0.963327  0.037273  0.265728            7.132430"
+

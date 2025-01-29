@@ -1,0 +1,613 @@
+A length: 160
+B length: 160
+C length: 159
+D length: 160
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1316
+Total number of ignored atom records:         10
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              COMPND   2 MOLECULE: P-SELECTIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1415
+ selectset done           0
+ eigen done           0
+ tau           1   4.44014645             119
+ #popped           2           1
+ #selectset contacts        1415
+ selectset done           1
+ eigen done           1
+ tau           3  0.727974832              52          90
+ #popped           4           2
+ #selectset contacts        1415
+ selectset done           2
+ eigen done           2
+ tau           5  0.434122711              26
+ #popped           6           3
+ #selectset contacts        1415
+ selectset done           3
+ eigen done           3
+ tau           7  0.832618058              15
+ #popped           7           2
+ #selectset contacts        1415
+ selectset done           2
+ eigen done           2
+ tau           9  0.437725574              52
+ #popped          10           3
+ #selectset contacts        1415
+ selectset done           3
+ eigen done           3
+ tau          11   2.13306999              41
+ #popped          11           2
+ #selectset contacts        1415
+ selectset done           2
+ eigen done           2
+ tau          13   2.53765035             106
+ #popped           5           1
+ #selectset contacts        1415
+ selectset done           1
+ eigen done           1
+ tau          15   1.46166706              68
+ #popped          17           1
+ #selectset contacts        1415
+ selectset done           1
+ eigen done           1
+ tau          17   1.09742546              79
+ #popped           3           0
+ #selectset contacts        1415
+ selectset done           0
+ eigen done           0
+ tau          19  0.740542412             144
+ #popped          20           0
+ #selectset contacts        1415
+ selectset done           0
+ eigen done           0
+ tau          21  0.608614206             130
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              COMPND   2 MOLECULE: P-SELECTIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+           0
+         160
+         160  residues read 1G1R.dssp                                                   
+  grow short strand          25          26
+  grow short strand          49          50
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short strand          90          93
+  grow short strand         104         107
+  exclude short helix         126         129
+  grow short strand         148         149
+  grow short strand         155         156
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  5  8  9 10  6  7 11 12 13 14
+   2     1  4  5 10  1  2  3  4  5  8  9 10  6  7
+   3     1 20 21  4 11 12 13 14
+   4     2  6  7  8  1  2  3  4  5  8  9 10
+   5     2  0  0  2  6  7
+   6     4  8  9  3  1  2  3
+   7     4 10 11  5  4  5  8  9 10
+   8     6  0  0  1  1
+   9     6  0  0  2  2  3
+  10     7 12 13  2  4  5
+  11     7 14 15  3  8  9 10
+  12    10  0  0  1  4
+  13    10  0  0  1  5
+  14    11  0  0  2  8  9
+  15    11  0  0  1 10
+  16     0  0  0  2  6  7
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  0
+  20     3  0  0  2 11 12
+  21     3  0  0  2 13 14
+  22     0  0  0  0
+  23     0  0  0  2 11 12
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5 10  1  1 10
+   3 *   1 16 17  4  1 11 14
+   4 -   2  6  7  8  2  1  5  8 10
+   5 -   2  0  0  2  1  6  7
+   6 -   4  8  9  3  1  1  3
+   7 -   4 10 11  5  2  4  5  8 10
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  2  3
+  10 -   7 12 13  2  1  4  5
+  11 -   7 14 15  3  1  8 10
+  12 -  10  0  0  1  1  4  4
+  13 -  10  0  0  1  1  5  5
+  14 -  11  0  0  2  1  8  9
+  15 -  11  0  0  1  1 10 10
+  16 -   3  0  0  2  1 11 12
+  17 -   3  0  0  2  1 13 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1320
+Total number of ignored atom records:          1
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              COMPND   2 MOLECULE: P-SELECTIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1391
+ selectset done           0
+ eigen done           0
+ tau           1   3.94667268             120
+ #popped           2           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau           3  0.898954153              29          42
+ #popped           4           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau           5  0.962278485              67         110
+ #popped           6           2
+ #selectset contacts        1391
+ selectset done           2
+ eigen done           2
+ tau           7   1.52136338              52          67
+ #popped           8           2
+ #selectset contacts        1391
+ selectset done           2
+ eigen done           2
+ tau           9  0.337830991              18
+ #popped          11           2
+ #selectset contacts        1391
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau          11  0.624396145              81
+ #popped          13           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1391
+ selectset done           0
+ eigen done           0
+ tau          13  0.865463078             131         143
+ #popped          14           0
+ #selectset contacts        1391
+ selectset done           0
+ eigen done           0
+ tau          15  0.725200117             130
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              COMPND   2 MOLECULE: P-SELECTIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+           0
+         160
+         160  residues read 1G1R.dssp                                                   
+  grow short strand           2           5
+  grow short strand          25          26
+  grow short strand          49          50
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short strand          90          93
+  grow short strand         104         107
+  exclude short helix         127         129
+  grow short strand         148         149
+  grow short strand         155         156
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  5 10  6  7  8  9  4 13 14 11 12
+   2     1  4  5 10  1  2  3  5 10  6  7  8  9  4
+   3     1 14 15  4 13 14 11 12
+   4     2  6  7  9  1  2  3  5 10  6  7  8  9
+   5     2  0  0  1  4
+   6     4  8  9  7  1  2  3  5 10  6  7
+   7     4  0  0  2  8  9
+   8     6 10 11  5  1  2  3  5 10
+   9     6  0  0  2  6  7
+  10     8  0  0  2  1  2
+  11     8  0  0  3  3  5 10
+  12     0  0  0  0
+  13     0  0  0  2  8  9
+  14     3  0  0  2 13 14
+  15     3  0  0  2 11 12
+  16     0  0  0  0
+  17     0  0  0  2 13 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5 10  1  1 10
+   3 =   1 12 13  4  1 11 14
+   4 -   2  6  7  9  2  1  3  5 10
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  7  3  1  3  5  7 10 10
+   7 -   4  0  0  2  1  8  9
+   8 -   6 10 11  5  3  1  3  5  5 10 10
+   9 -   6  0  0  2  1  6  7
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  3  3  3  3  5  5 10 10
+  12 -   3  0  0  2  1 13 14
+  13 -   3  0  0  2  1 11 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            159
+Total number of atoms read in:              1308
+Total number of ignored atom records:         10
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              COMPND   2 MOLECULE: P-SELECTIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+         159  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1388
+ selectset done           0
+ eigen done           0
+ tau           1   3.47742915             120
+ #popped           2           1
+ #selectset contacts        1388
+ selectset done           1
+ eigen done           1
+ tau           3  0.833944976              77          89
+ #popped           4           1
+ #selectset contacts        1388
+ selectset done           1
+ eigen done           1
+ tau           5  0.735597014              27         104
+ #popped           6           2
+ #selectset contacts        1388
+ selectset done           2
+ eigen done           2
+ tau           7  0.305606186              15
+ #popped           9           2
+ #selectset contacts        1388
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1388
+ selectset done           1
+ eigen done           1
+ tau           9  0.713326454              38
+ #popped          11           1
+ #selectset contacts        1388
+ selectset done           1
+ eigen done           1
+ tau          11  0.976190448              53          67
+ #popped          12           1
+ #selectset contacts        1388
+ selectset done           1
+ eigen done           1
+ tau          13  0.792682886              53          77
+ #popped          14           1
+ #selectset contacts        1388
+ selectset done           1
+ eigen done           1
+ tau          15  0.506048799              53
+ #popped           3           0
+ #selectset contacts        1388
+ selectset done           0
+ eigen done           0
+ tau          17  0.704800785             131         143
+ #popped          18           0
+ #selectset contacts        1388
+ selectset done           0
+ eigen done           0
+ tau          19  0.762194157             130
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              COMPND   2 MOLECULE: P-SELECTIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+           0
+         159
+         159  residues read 1G1R.dssp                                                   
+  grow short strand           2           5
+  grow short strand          25          26
+  grow short strand          49          51
+  grow short strand          54          55
+  grow short strand          60          62
+  grow short strand          67          68
+  grow short strand          90          93
+  grow short strand         104         107
+  exclude short helix         126         129
+  grow short strand         133         135
+  grow short strand         140         142
+  grow short strand         148         149
+  grow short strand         155         156
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3 10 11  4  5  9  8  6  7 14 15 12 13
+   2     1  6  7 11  1  2  3 10 11  4  5  9  8  6  7
+   3     1 18 19  4 14 15 12 13
+   4     0  0  0 11  1  2  3 10 11  4  5  9  8  6  7
+   5     0  0  0  0
+   6     2  8  9  5  1  2  3 10 11
+   7     2 10 11  6  4  5  9  8  6  7
+   8     6  0  0  1  1
+   9     6  0  0  4  2  3 10 11
+  10     7  0  0  1  4
+  11     7 12 13  5  5  9  8  6  7
+  12    11 14 15  3  5  9  8
+  13    11  0  0  2  6  7
+  14    12 16 17  2  5  9
+  15    12  0  0  1  8
+  16    14  0  0  1  5
+  17    14  0  0  1  9
+  18     3  0  0  2 14 15
+  19     3  0  0  2 12 13
+  20     0  0  0  0
+  21     0  0  0  2 14 15
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 11  1  1 11
+   3 =   1 16 17  4  1 12 15
+   4 -   2  6  7  5  2  1  3 10 11
+   5 -   2  8  9  6  1  4  9
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  4  2  2  3 10 11
+   8 -   5  0  0  1  1  4  4
+   9 -   5 10 11  5  1  5  9
+  10 -   9 12 13  3  2  5  5  8  9
+  11 -   9  0  0  2  1  6  7
+  12 -  10 14 15  2  2  5  5  9  9
+  13 -  10  0  0  1  1  8  8
+  14 -  12  0  0  1  1  5  5
+  15 -  12  0  0  1  1  9  9
+  16 -   3  0  0  2  1 14 15
+  17 -   3  0  0  2  1 12 13
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1320
+Total number of ignored atom records:          1
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              COMPND   2 MOLECULE: P-SELECTIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1393
+ selectset done           0
+ eigen done           0
+ tau           1   3.92575169             119
+ #popped           2           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau           3  0.972636044              76          88
+ #popped           4           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau           5  0.847520947              10          23
+ #popped           6           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau           7  0.475793540              10          40
+ #popped           8           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau           9  0.340262473              51
+ #popped          10           2
+ #selectset contacts        1393
+ selectset done           2
+ eigen done           2
+ tau          11   2.35113025              10
+ #popped          11           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau          13  0.586359084              61
+ #popped          15           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau          15   1.81633067             107
+ #popped          16           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau          17   1.09003901              76
+ #popped           3           0
+ #selectset contacts        1393
+ selectset done           0
+ eigen done           0
+ tau          19  0.849833429             143
+ #popped          20           0
+ #selectset contacts        1393
+ selectset done           0
+ eigen done           0
+ tau          21  0.626881003             130
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM, MEMBRANE PROTEIN         13-OCT-00   1G1R              COMPND   2 MOLECULE: P-SELECTIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.S.SOMERS,R.T.CAMPHAUSEN                                             
+           0
+         160
+         160  residues read 1G1R.dssp                                                   
+  grow short strand           2           5
+  grow short strand          25          26
+  grow short strand          90          93
+  grow short strand         104         107
+  exclude short helix         126         129
+  grow short strand         132         136
+  grow short strand         139         143
+  grow short strand         148         149
+  grow short strand         155         156
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  5  6  7  8  3  4  2  9 10 11 12
+   2     1  6  7  8  1  5  6  7  8  3  4  2
+   3     1 20 21  4  9 10 11 12
+   4     0  0  0  8  1  5  6  7  8  3  4  2
+   5     0  0  0  0
+   6     2  8  9  7  1  5  6  7  8  3  4
+   7     2  0  0  1  2
+   8     6 10 11  5  1  5  6  7  8
+   9     6  0  0  2  3  4
+  10     8 12 13  2  1  5
+  11     8 16 17  3  6  7  8
+  12    10  0  0  1  1
+  13    10  0  0  1  5
+  14     0  0  0  0
+  15     0  0  0  3  6  7  8
+  16    11  0  0  2  6  7
+  17    11  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  2  6  7
+  20     3  0  0  2  9 10
+  21     3  0  0  2 11 12
+  22     0  0  0  0
+  23     0  0  0  2  9 10
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  1  1  8
+   3 *   1 14 15  4  1  9 12
+   4 -   2  6  7  7  2  1  1  3  8
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  5  2  1  1  5  8
+   7 -   4  0  0  2  1  3  4
+   8 -   6 10 11  2  2  1  1  5  5
+   9 -   6 12 13  3  1  6  8
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  5  5
+  12 -   9  0  0  2  1  6  7
+  13 -   9  0  0  1  1  8  8
+  14 -   3  0  0  2  1  9 10
+  15 -   3  0  0  2  1 11 12
+
+ CHAIN : 1G1RA
+ CHAIN : 1G1RB
+ CHAIN : 1G1RC
+ CHAIN : 1G1RD
+

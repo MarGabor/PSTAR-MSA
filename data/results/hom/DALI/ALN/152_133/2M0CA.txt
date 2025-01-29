@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 2M0CA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DMU-A  8.0  3.7   63    70   54   MOLECULE: HOMEOBOX PROTEIN GOOSECOID;                                
+
+# Pairwise alignments
+
+No 1: Query=2M0CA Sbjct=2DMUA Z-score=8.0
+
+DSSP  ---LLLLLllllllllLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLHHHHHHHH
+Query ---SHMSNkgkkrrnrTTFTSYQLEELEKVFQKTHYPDVYAREQLAMRTDLTEARVQVWF   57
+ident                 | ||  ||| ||  || | ||||  |||||    | |  | |||
+Sbjct gssGSSGR-----rhrTIFTDEQLEALENLFQETKYPDVGTREQLARKVHLREEKVEVWF   55
+DSSP  lllLLLLL-----lllLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLHHHHHHHH
+
+DSSP  HHHHHHHL-LLLLLLllll
+Query QNRRAKWR-KRERFGqmqq   75
+ident  |||||||      |    
+Sbjct KNRRAKWRrSGPSSG----   70
+DSSP  HHHHHHHHhLLLLLL----
+
+
+# Structural equivalences
+   1: 2M0C-A 2DMU-A     1 -   5 <=>    4 -   8   (SER    1  - ASN    5  <=> GLY    4  - ARG    8 )                          
+   1: 2M0C-A 2DMU-A    14 -  65 <=>   12 -  63   (THR   14  - ARG   65  <=> THR   12  - ARG   63 )                          
+   1: 2M0C-A 2DMU-A    66 -  71 <=>   65 -  70   (LYS   66  - GLY   71  <=> SER   65  - GLY   70 )                          
+
+# Translation-rotation matrices
+-matrix  "2M0C-A 2DMU-A  U(1,.)   0.212255  0.906432 -0.365141            3.482533"
+-matrix  "2M0C-A 2DMU-A  U(2,.)  -0.952189  0.107819 -0.285851            0.694625"
+-matrix  "2M0C-A 2DMU-A  U(3,.)  -0.219735  0.408357  0.885980           -2.929489"
+

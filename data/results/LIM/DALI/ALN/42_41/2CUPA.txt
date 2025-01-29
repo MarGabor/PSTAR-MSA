@@ -1,0 +1,33 @@
+# Job: LIM
+# Query: 2CUPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CUR-A  7.4  3.5   67    69   37   MOLECULE: SKELETAL MUSCLE LIM-PROTEIN 1;                             
+
+# Pairwise alignments
+
+No 1: Query=2CUPA Sbjct=2CURA Z-score=7.4
+
+DSSP  lLLLLLLLLLLLLLLLlLLLEeEELLEEEELLLLLLLLLLLLLLLLLLEEELLEEELHHH
+Query gSSGSSGCVECRKPIGaDSKEvHYKNRFWHDTCFRCAKCLHPLANETFVAKDNKILCNKC   60
+ident  |||||||| | | |        |    ||  || |  |   ||   | |      |  |
+Sbjct gSSGSSGCVKCNKAIT-SGGI-TYQDQPWHADCFVCVTCSKKLAGQRFTAVEDQYYCVDC   58
+DSSP  lLLLLLLLLLLLLLLL-LLLE-EELLEEELLLLLLLLLLLLLLLLLLEEELLLLEEEHHH
+
+DSSP  HLL-LLLLLLLllllllllllleeelllleeellllllllll
+Query TTR-EDSPKCKgcfkaivagdqnveykgtvwhkdcfsgpssg  101
+ident        |                                  
+Sbjct YKNfVSGPSSG-------------------------------   69
+DSSP  HHHhHLLLLLL-------------------------------
+
+
+# Structural equivalences
+   1: 2CUP-A 2CUR-A     2 -  16 <=>    2 -  16   (SER    2  - GLY   16  <=> SER    2  - THR   16 )                          
+   1: 2CUP-A 2CUR-A    18 -  21 <=>   17 -  20   (ASP   18  - GLU   21  <=> SER   17  - ILE   20 )                          
+   1: 2CUP-A 2CUR-A    23 -  63 <=>   21 -  61   (HIS   23  - ARG   63  <=> THR   21  - ASN   61 )                          
+   1: 2CUP-A 2CUR-A    64 -  70 <=>   63 -  69   (GLU   64  - LYS   70  <=> VAL   63  - GLY   69 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUP-A 2CUR-A  U(1,.)  -0.868003 -0.024236  0.495967            2.919114"
+-matrix  "2CUP-A 2CUR-A  U(2,.)   0.333773 -0.767989  0.546616            5.817630"
+-matrix  "2CUP-A 2CUR-A  U(3,.)   0.367649  0.640005  0.674706           -6.771714"
+

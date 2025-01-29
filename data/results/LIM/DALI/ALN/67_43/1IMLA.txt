@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 1IMLA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1IBI-A  4.4  3.7   55    59   45   MOLECULE: CYSTEINE-RICH PROTEIN 2;                                   
+
+# Pairwise alignments
+
+No 1: Query=1IMLA Sbjct=1IBIA Z-score=4.4
+
+DSSP  -LLLLLLLLLLLHHHEEEELLEEEELLLLLLLLLLLLLLLLLEEEElleEEELLlHHHHH
+Query -PKCPKCDKEVYFAERVTSLGKDWHRPCLKCEKCGKTLTSGGHAEHegkPYCNHpCYSAM   59
+ident   ||  |   || || |   || ||  |  | |||| | |    |     ||   ||   
+Sbjct aEKCSRCGDSVYAAEKVIGAGKPWHKNCFRCAKCGKSLESTTLTEKegeIYCKG-CYAKN   59
+DSSP  lEELLLLLLEELLLLLEELLLLEELLLLEELLLLLLEELLLLLEEElleEELHH-HHHHL
+
+DSSP  lllllllllllllllll
+Query fgpkgfgrggaeshtfk   76
+ident                  
+Sbjct -----------------   59
+DSSP  -----------------
+
+
+# Structural equivalences
+   1: 1IML-A 1IBI-A     1 -  45 <=>    2 -  46   (PRO    1  - HIS   45  <=> GLU  118  - LYS  162 )                          
+   1: 1IML-A 1IBI-A    49 -  53 <=>   50 -  54   (PRO   49  - HIS   53  <=> ILE  166  - GLY  170 )                          
+   1: 1IML-A 1IBI-A    55 -  59 <=>   55 -  59   (CYS   55  - MET   59  <=> CYS  171  - ASN  175 )                          
+
+# Translation-rotation matrices
+-matrix  "1IML-A 1IBI-A  U(1,.)   0.046674 -0.988014 -0.147136            2.697181"
+-matrix  "1IML-A 1IBI-A  U(2,.)  -0.537757 -0.148983  0.829832            1.453012"
+-matrix  "1IML-A 1IBI-A  U(3,.)  -0.841807  0.040392 -0.538265           -0.980925"
+

@@ -1,0 +1,32 @@
+# Job: kunitz
+# Query: 2M99A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1JC6-A  6.7  1.9   55    65   51   MOLECULE: VENOM BASIC PROTEASE INHIBITORS IX AND VIIIB;              
+
+# Pairwise alignments
+
+No 1: Query=2M99A Sbjct=1JC6A Z-score=6.7
+
+DSSP  --lLHHHHLLLLHHhLLLLEE-EEEEEHHHLEEEEEEELLLLLLLLLLLLHHHHHHHHLL
+Query --rPRFCELAPSAGsCFAFVP-SYYYNQYSNTCHSFTYSGCGGNANRFRTIDECNRTCVG   57
+ident    | || | |  |          |||     |  | | ||||||| | ||||| |||  
+Sbjct knrPTFCNLLPETG-RCNALIpAFYYNSHLHKCQKFNYGGCGGNANNFKTIDECQRTCAA   59
+DSSP  lllLLHHHLLLLLL-LLLLLLlEEEEELLLLEEEEELLLLLLLLLLLLLLHHHHHHHLLL
+
+DSSP  ------
+Query ------   57
+ident       
+Sbjct kygrss   65
+DSSP  llllll
+
+
+# Structural equivalences
+   1: 2M99-A 1JC6-A     2 -  12 <=>    4 -  14   (PRO    2  - GLY   12  <=> PRO    4  - GLY   14 )                          
+   1: 2M99-A 1JC6-A    14 -  19 <=>   15 -  20   (CYS   14  - PRO   19  <=> ARG   15  - ILE   20 )                          
+   1: 2M99-A 1JC6-A    20 -  57 <=>   22 -  59   (SER   20  - GLY   57  <=> ALA   22  - ALA   59 )                          
+
+# Translation-rotation matrices
+-matrix  "2M99-A 1JC6-A  U(1,.)   0.022696 -0.934181  0.356077            3.123531"
+-matrix  "2M99-A 1JC6-A  U(2,.)  -0.896616  0.138528  0.420583            1.913903"
+-matrix  "2M99-A 1JC6-A  U(3,.)  -0.442227 -0.328809 -0.834458           -3.201136"
+

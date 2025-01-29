@@ -1,0 +1,32 @@
+# Job: hip
+# Query: 1HLQA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1EYT-A 11.7  2.0   73    83   33   MOLECULE: HIGH-POTENTIAL IRON-SULFUR PROTEIN;                        
+
+# Pairwise alignments
+
+No 1: Query=1HLQA Sbjct=1EYTA Z-score=11.7
+
+DSSP  --LLLLLLLLLHHHHHLLLLLLHHHLLLLLLLL---lLLLLLHHHLLLLLLL--lLLEEL
+Query --AAPLVAETDANAKSLGYVADTTKADKTKYPK---hTKDQSCSTCALYQGK--tAPQGA   53
+ident    |  |   |  |  | |  | ||               | |  |   |          
+Sbjct aaPANAVTADDPTAIALKYNQDATKSERVAAARpglpPEEQHCANCQFMQANvgeGDWKG   60
+DSSP  llLLLLLLLLLHHHHHLLLLLLHHHLLHHHHLLllllHHHLLHHHLLLEEEEeeeLLEEE
+
+DSSP  LLLLLLLLEELLLLLLLLLLLL-
+Query CPLFAGKEVVAKGWCSAWAKKA-   75
+ident | || ||     |||  |  || 
+Sbjct CQLFPGKLINVNGWCASWTLKAg   83
+DSSP  ELLLLLLLEELLLLLLLLLLLLl
+
+
+# Structural equivalences
+   1: 1HLQ-A 1EYT-A     1 -  31 <=>    3 -  33   (ALA    1  - LYS   31  <=> PRO    3  - ARG   33 )                          
+   1: 1HLQ-A 1EYT-A    33 -  47 <=>   38 -  52   (THR   33  - LYS   47  <=> PRO   38  - ASN   52 )                          
+   1: 1HLQ-A 1EYT-A    49 -  75 <=>   56 -  82   (ALA   49  - ALA   75  <=> GLY   56  - ALA   82 )                          
+
+# Translation-rotation matrices
+-matrix  "1HLQ-A 1EYT-A  U(1,.)  -0.905537  0.259724  0.335479            1.901503"
+-matrix  "1HLQ-A 1EYT-A  U(2,.)  -0.111492  0.617261 -0.778819           26.112246"
+-matrix  "1HLQ-A 1EYT-A  U(3,.)  -0.409356 -0.742653 -0.529995           36.771366"
+

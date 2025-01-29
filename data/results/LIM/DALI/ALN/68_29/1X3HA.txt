@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 1X3HA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X4K-A  6.5  2.9   66    72   27   MOLECULE: SKELETAL MUSCLE LIM-PROTEIN 3;                             
+
+# Pairwise alignments
+
+No 1: Query=1X3HA Sbjct=1X4KA Z-score=6.5
+
+DSSP  llllllllllLLLLLLLLLLLLLLLL--LLLEEELLEEELLLLLLLLLLLLLLLLLLLEE
+Query gssgssgkdfLAMFSPKCGGCNRPVL--ENYLSAMDTVWHPECFVCGDCFTSFSTGSFFE   58
+ident               |  |  |                 ||  || |  |     | ||  
+Sbjct ----------GSSGSSGCQECKKTIMpgTRKMEYKGSSWHETCFICHRCQQPIGTKSFIP   50
+DSSP  ----------LLLLLLLLLLLLLLLLllLLEEEELLEEEELLLLLLLLLLLLLLLLLEEE
+
+DSSP  LLLLEELHHHHHHHHLLLllll
+Query LDGRPFCELHYHHRRGSGpssg   80
+ident  |   ||   |     ||    
+Sbjct KDNQNFCVPCYEKQHASGpssg   72
+DSSP  ELLEEEEHHHHHHHLLLLllll
+
+
+# Structural equivalences
+   1: 1X3H-A 1X4K-A    11 -  26 <=>    1 -  16   (LEU   11  - LEU   26  <=> GLY    1  - MET   16 )                          
+   1: 1X3H-A 1X4K-A    27 -  76 <=>   19 -  68   (GLU   27  - GLY   76  <=> THR   19  - GLY   68 )                          
+
+# Translation-rotation matrices
+-matrix  "1X3H-A 1X4K-A  U(1,.)   0.982750  0.176129 -0.056406           10.895958"
+-matrix  "1X3H-A 1X4K-A  U(2,.)  -0.119347  0.836965  0.534084          -11.048944"
+-matrix  "1X3H-A 1X4K-A  U(3,.)   0.141278 -0.518139  0.843548          -13.487807"
+

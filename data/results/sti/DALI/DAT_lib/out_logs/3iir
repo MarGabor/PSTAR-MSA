@@ -1,0 +1,317 @@
+A length: 190
+B length: 190
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            190
+Total number of atoms read in:              1459
+Total number of ignored atom records:         57
+ HEADER    HYDROLASE INHIBITOR                     03-AUG-09   3IIR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.GAHLOTH,P.SELVAKUMAR,C.SHEE,P.KUMAR,A.K.SHARMA                      
+  Reading DSSP file
+ HEADER    HYDROLASE INHIBITOR                     03-AUG-09   3IIR              COMPND   2 MOLECULE: TRYPSIN INHIBITOR;                                         SOURCE   2 ORGANISM_SCIENTIFIC: MURRAYA KOENIGII;                               AUTHOR    D.GAHLOTH,P.SELVAKUMAR,C.SHEE,P.KUMAR,A.K.SHARMA                      
+         190  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1506
+ selectset done           0
+ eigen done           0
+ tau           1   1.64898634             180
+ #popped           2           0
+ #selectset contacts        1506
+ selectset done           0
+ eigen done           0
+ tau           3   1.11820173              32          46          82         124         136         170
+ #popped           4           1
+ #selectset contacts        1506
+ selectset done           1
+ eigen done           1
+ tau           5   1.02675545              19          56
+ #popped           6           2
+ #selectset contacts        1506
+ selectset done           2
+ eigen done           2
+ tau           7   1.19659483              82
+ #popped           8           3
+ #selectset contacts        1506
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1506
+ selectset done           2
+ eigen done           2
+ tau           9   1.25977564             136
+ #popped           7           1
+ #selectset contacts        1506
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           5           0
+ #selectset contacts        1506
+ selectset done           0
+ eigen done           0
+ tau          11   1.55597746             110         152
+ #popped          12           1
+ #selectset contacts        1506
+ selectset done           1
+ eigen done           1
+ tau          13   1.00574780              46         110
+ #popped          14           2
+ #selectset contacts        1506
+ selectset done           2
+ eigen done           2
+ tau          15   1.19888401              46
+ #popped          15           1
+ #selectset contacts        1506
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          13           0
+ #selectset contacts        1506
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE INHIBITOR                     03-AUG-09   3IIR              COMPND   2 MOLECULE: TRYPSIN INHIBITOR;                                         SOURCE   2 ORGANISM_SCIENTIFIC: MURRAYA KOENIGII;                               AUTHOR    D.GAHLOTH,P.SELVAKUMAR,C.SHEE,P.KUMAR,A.K.SHARMA                      
+           0
+         190
+         190  residues read 3IIR.dssp                                                   
+  grow short strand          44          47
+  grow short strand          58          62
+  grow short strand          75          79
+  grow short strand          92          93
+  grow short strand         105         106
+  exclude short helix         119         121
+  grow short strand         124         127
+  grow short strand         135         139
+  exclude short helix         158         160
+  grow short strand         163         167
+  grow short strand         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 12  4  5  8 12  1  2  3 10 11  6  7  9
+   2     0  0  0 12  4  5  8 12  1  2  3 10 11  6  7  9
+   3     0  0  0  0
+   4     1  6  7  6  4  5  8 12  1  2
+   5     1 12 13  6  3 10 11  6  7  9
+   6     4  8  9  4  4  5  8 12
+   7     4  0  0  2  1  2
+   8     6  0  0  2  4  5
+   9     6 10 11  2  8 12
+  10     9  0  0  1  8
+  11     9  0  0  1 12
+  12     5 14 15  5  3 10 11  6  7
+  13     5  0  0  1  9
+  14    12 16 17  3  3 10 11
+  15    12  0  0  2  6  7
+  16    14  0  0  1  3
+  17    14  0  0  2 10 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  6  4  1  2  4  5  8  8 12 12
+   3 -   1 10 11  6  3  3  3  6  7  9 11
+   4 -   2  6  7  4  3  4  5  8  8 12 12
+   5 -   2  0  0  2  1  1  2
+   6 -   4  0  0  2  1  4  5
+   7 -   4  8  9  2  2  8  8 12 12
+   8 -   7  0  0  1  1  8  8
+   9 -   7  0  0  1  1 12 12
+  10 -   3 12 13  5  3  3  3  6  7 10 11
+  11 -   3  0  0  1  1  9  9
+  12 -  10 14 15  3  2  3  3 10 11
+  13 -  10  0  0  2  1  6  7
+  14 -  12  0  0  1  1  3  3
+  15 -  12  0  0  2  1 10 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            190
+Total number of atoms read in:              1459
+Total number of ignored atom records:         79
+ HEADER    HYDROLASE INHIBITOR                     03-AUG-09   3IIR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.GAHLOTH,P.SELVAKUMAR,C.SHEE,P.KUMAR,A.K.SHARMA                      
+  Reading DSSP file
+ HEADER    HYDROLASE INHIBITOR                     03-AUG-09   3IIR              COMPND   2 MOLECULE: TRYPSIN INHIBITOR;                                         SOURCE   2 ORGANISM_SCIENTIFIC: MURRAYA KOENIGII;                               AUTHOR    D.GAHLOTH,P.SELVAKUMAR,C.SHEE,P.KUMAR,A.K.SHARMA                      
+         190  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1508
+ selectset done           0
+ eigen done           0
+ tau           1   1.24603045              31          46          80         125         135         171
+ #popped           2           1
+ #selectset contacts        1508
+ selectset done           1
+ eigen done           1
+ tau           3   1.19454598              80         135
+ #popped           4           1
+ #selectset contacts        1508
+ selectset done           1
+ eigen done           1
+ tau           5   1.02979124              19          55
+ #popped           6           2
+ #selectset contacts        1508
+ selectset done           2
+ eigen done           2
+ tau           7   1.08737838              80
+ #popped           8           2
+ #selectset contacts        1508
+ selectset done           2
+ eigen done           2
+ tau           9  0.583344400              19
+ #popped          11           2
+ #selectset contacts        1508
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        1508
+ selectset done           1
+ eigen done           1
+ tau          11  0.574626863              30
+ #popped           3           0
+ #selectset contacts        1508
+ selectset done           0
+ eigen done           0
+ tau          13   1.19732678             109
+ #popped          14           1
+ #selectset contacts        1508
+ selectset done           1
+ eigen done           1
+ tau          15   1.02657998              46
+ #popped          17           1
+ #selectset contacts        1508
+ selectset done           1
+ eigen done           1
+ tau          17   1.28535271              90
+ #popped          15           0
+ #selectset contacts        1508
+ selectset done           0
+ eigen done           0
+ tau          19   1.88793147             153
+ #popped          20           0
+ #selectset contacts        1508
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE INHIBITOR                     03-AUG-09   3IIR              COMPND   2 MOLECULE: TRYPSIN INHIBITOR;                                         SOURCE   2 ORGANISM_SCIENTIFIC: MURRAYA KOENIGII;                               AUTHOR    D.GAHLOTH,P.SELVAKUMAR,C.SHEE,P.KUMAR,A.K.SHARMA                      
+           0
+         190
+         190  residues read 3IIR.dssp                                                   
+  grow short strand          18          21
+  grow short strand          31          34
+  grow short strand          44          47
+  grow short strand          58          62
+  grow short strand          75          79
+  grow short strand          92          93
+  grow short strand         105         106
+  exclude short helix         119         121
+  grow short strand         124         127
+  grow short strand         135         139
+  exclude short helix         158         160
+  grow short strand         163         167
+  grow short strand         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5 12  2  3  6  7  8  9 10 11
+   2     1  8  9  4  1  4  5 12
+   3     1 14 15  8  2  3  6  7  8  9 10 11
+   4     0  0  0  4  1  4  5 12
+   5     0  0  0  0
+   6     0  0  0  4  1  4  5 12
+   7     0  0  0  0
+   8     2 10 11  3  1  4  5
+   9     2  0  0  1 12
+  10     8  0  0  1  1
+  11     8  0  0  2  4  5
+  12     0  0  0  0
+  13     0  0  0  0
+  14     3 16 17  4  2  3  6  7
+  15     3 20 21  4  8  9 10 11
+  16    14  0  0  2  2  3
+  17    14  0  0  2  6  7
+  18     0  0  0  0
+  19     0  0  0  2  6  7
+  20    15  0  0  2  8  9
+  21    15  0  0  2 10 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  4  3  1  1  4  5 12 12
+   3 -   1  8  9  8  2  2  3  6 11
+   4 -   2  6  7  3  2  1  1  4  5
+   5 -   2  0  0  1  1 12 12
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  2  1  4  5
+   8 -   3 10 11  4  2  2  3  6  7
+   9 -   3 12 13  4  1  8 11
+  10 -   8  0  0  2  1  2  3
+  11 -   8  0  0  2  1  6  7
+  12 -   9  0  0  2  1  8  9
+  13 -   9  0  0  2  1 10 11
+
+ CHAIN : 3IIRA
+ CHAIN : 3IIRB
+

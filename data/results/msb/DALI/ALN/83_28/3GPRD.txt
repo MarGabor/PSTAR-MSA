@@ -1,0 +1,41 @@
+# Job: msb
+# Query: 3GPRD
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1IOD-B 14.9  2.9  113   123   40   MOLECULE: COAGULATION FACTOR X BINDING PROTEIN;                      
+
+# Pairwise alignments
+
+No 1: Query=3GPRD Sbjct=1IODB Z-score=14.9
+
+DSSP  -LLLLLLLLLLEEEEEEEEEEELHHHHHHHHHHLLLLLLLLLLLHHHHHHHHHHHHHLLL
+Query -CPLHWSSYNGYCYRVFSELKTWEDAESFCYAQHKGSRLASIHSREEEAFVGKLASQTLK   59
+ident  ||  |||| | ||  | | | | ||| ||  || || | |  | ||  || ||| ||  
+Sbjct dCPSDWSSYEGHCYKPFNEPKNWADAENFCTQQHTGSHLVSFQSTEEADFVVKLAFQTFD   60
+DSSP  lLLLLLEEELLEEEEEEEEEELHHHHHHHHHHHLLLLEELLLLLHHHHHHHHHHHHHHHL
+
+DSSP  LLLLLLLEE-LLLLLlllllllLLLL-----LLLLLLL-LLLEELLLllllLLLLLEELL
+Query YTSMWLGLN-NAWAAckwewsdDAKL-----DYKVWLR-RAYCAVMVvktdRIFWYNRGC  112
+ident |   | ||                                 ||           |    |
+Sbjct YGIFWMGLSkIWNQC-------NWQWsnaamLKYTDWAeESYCVYFK--stNNKWRSITC  111
+DSSP  LLEEELLLLlLLLLL-------LEEElllllLLLLLLLlLLEEEEEE--llEEEEEEEEL
+
+DSSP  LLEEEEEEEEEL
+Query EKTVSFLCKFYS  124
+ident      | | |  
+Sbjct RMIANFVCEFQA  123
+DSSP  LLLEEEEEEEEL
+
+
+# Structural equivalences
+   1: 3GPR-D 1IOD-B     1 -  68 <=>    2 -  69   (CYS 4001  - ASN 4068  <=> CYS  202  - SER  269 )                          
+   1: 3GPR-D 1IOD-B    69 -  73 <=>   71 -  75   (ASN 4069  - ALA 4073  <=> ILE  271  - CYS  275 )                          
+   1: 3GPR-D 1IOD-B    81 -  84 <=>   76 -  79   (ASP 4081  - LEU 4084  <=> ASN  276  - TRP  279 )                          
+   1: 3GPR-D 1IOD-B    85 -  91 <=>   85 -  91   (ASP 4085  - ARG 4091  <=> LEU  285  - ALA  291 )                          
+   1: 3GPR-D 1IOD-B    92 -  99 <=>   93 - 100   (ARG 4092  - VAL 4099  <=> GLU  293  - LYS  300 )                          
+   1: 3GPR-D 1IOD-B   104 - 124 <=>  103 - 123   (ARG 4104  - SER 4124  <=> ASN  303  - ALA  323 )                          
+
+# Translation-rotation matrices
+-matrix  "3GPR-D 1IOD-B  U(1,.)   0.391055 -0.909781 -0.139190           70.580528"
+-matrix  "3GPR-D 1IOD-B  U(2,.)  -0.451853 -0.058028 -0.890203           75.625626"
+-matrix  "3GPR-D 1IOD-B  U(3,.)   0.801814  0.411012 -0.433779          -75.808212"
+

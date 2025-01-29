@@ -1,0 +1,32 @@
+# Job: rvp
+# Query: 1G2KA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1FMB-A 15.0  1.6   97   104   31   MOLECULE: EIAV PROTEASE;                                             
+
+# Pairwise alignments
+
+No 1: Query=1G2KA Sbjct=1FMBA Z-score=15.0
+
+DSSP  LEELLLLLLEEEEEELLEEEEEEELLLLLLEEELLL------lLLLLLEEEEEEELLEEE
+Query PQITLWQRPLVTIKIGGQLKEALLDTGADDTVLEEM------sLPGRWKPKMIGGIGGFI   54
+ident     |  ||     |       |||||||  ||                   ||| ||  
+Sbjct VTYNLEKRPTTIVLINDTPLNVLLDTGADTSVLTTAhynrlkyRGRKYQGTGIGGVGGNV   60
+DSSP  LLLLLLLLLEEEEEELLEEEEEEELLLLLLLEEEHHhhhhlllLLLLEELLLEEELLEEE
+
+DSSP  EEEEEEeEEEEELLEEEEEEEEELLLLLLEELHHHHHHHLLEEEL
+Query KVRQYDqILIEICGHKAIGTVLVGPTPVNIIGRNLLTQIGCTLNF   99
+ident          |   |       ||   || | ||  |   |  |  
+Sbjct ETFSTP-VTIKKKGRHIKTRMLVADIPVTILGRDILQDLGAKLVL  104
+DSSP  LLEEEE-EEEEELLEEEEEEEEEELLLLLEELHHHHHHLLLLLLL
+
+
+# Structural equivalences
+   1: 1G2K-A 1FMB-A     1 -  36 <=>    1 -  36   (PRO    1  - MET   36  <=> VAL    1  - ALA   36 )                          
+   1: 1G2K-A 1FMB-A    38 -  60 <=>   44 -  66   (LEU   38  - ASP   60  <=> ARG   44  - PRO   66 )                          
+   1: 1G2K-A 1FMB-A    62 -  99 <=>   67 - 104   (ILE   62  - PHE   99  <=> VAL   67  - LEU  104 )                          
+
+# Translation-rotation matrices
+-matrix  "1G2K-A 1FMB-A  U(1,.)  -0.718216 -0.615155 -0.325193           24.603294"
+-matrix  "1G2K-A 1FMB-A  U(2,.)   0.288299 -0.688430  0.665543           35.911034"
+-matrix  "1G2K-A 1FMB-A  U(3,.)  -0.633284  0.384251  0.671790           -1.903706"
+

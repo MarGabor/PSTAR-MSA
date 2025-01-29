@@ -1,0 +1,571 @@
+A length: 218
+B length: 237
+C length: 239
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            218
+Total number of atoms read in:              1724
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   13-AUG-12   3J22              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.L.SHINGLER                                                          
+  calculate residue outside grid:         215
+  calculate residue outside grid:         216
+  Reading DSSP file
+ HEADER    VIRUS                                   13-AUG-12   3J22              COMPND   2 MOLECULE: CAPSID PROTEIN VP1;                                        SOURCE   2 ORGANISM_SCIENTIFIC: HUMAN ENTEROVIRUS 71;                           AUTHOR    K.L.SHINGLER                                                          
+         218  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1716
+ selectset done           0
+ eigen done           0
+ tau           1   3.89637613             208
+ #popped           2           0
+ #selectset contacts        1716
+ selectset done           0
+ eigen done           0
+ tau           3   2.42838478              14
+ #popped           5           0
+ #selectset contacts        1716
+ selectset done           0
+ eigen done           0
+ tau           5   2.18702745             186
+ #popped           6           1
+ #selectset contacts        1716
+ selectset done           1
+ eigen done           1
+ tau           7   2.49353433              43          61         119         151         175
+ #popped           8           2
+ #selectset contacts        1716
+ selectset done           2
+ eigen done           2
+ tau           9  0.769471824              78         109         119         163
+ #popped          10           3
+ #selectset contacts        1716
+ selectset done           3
+ eigen done           3
+ tau          11  0.254405051              73
+ #popped          12           4
+ #selectset contacts        1716
+ selectset done           4
+ eigen done           4
+ tau          13   63.1788063              43
+ #popped          14           4
+ #selectset contacts        1716
+ selectset done           4
+ eigen done           4
+ tau          15   1.32393861              29
+ #popped          13           3
+ #selectset contacts        1716
+ selectset done           3
+ eigen done           3
+ tau          17   3.59876537             119
+ #popped          11           2
+ #selectset contacts        1716
+ selectset done           2
+ eigen done           2
+ tau          19  0.224284187              90
+ #popped          21           2
+ #selectset contacts        1716
+ selectset done           2
+ eigen done           2
+ tau          21   1.20873690             109
+ #popped           9           1
+ #selectset contacts        1716
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           7           0
+ #selectset contacts        1716
+ selectset done           0
+ eigen done           0
+ tau          23  0.855769217             196
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   13-AUG-12   3J22              COMPND   2 MOLECULE: CAPSID PROTEIN VP1;                                        SOURCE   2 ORGANISM_SCIENTIFIC: HUMAN ENTEROVIRUS 71;                           AUTHOR    K.L.SHINGLER                                                          
+           0
+         218
+         218  residues read 3J22.dssp                                                   
+  exclude short helix           8          12
+  grow short strand          34          38
+  exclude short helix          41          43
+  exclude short helix          47          51
+  exclude short helix          97          99
+  grow short strand         106         110
+  grow short strand         116         120
+  grow short strand         129         130
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  8  9  9  1  2  6  4  5  8  3  7  9
+   2     0  0  0  9  1  2  6  4  5  8  3  7  9
+   3     0  0  0  0
+   4     0  0  0  0
+   5     0  0  0  9  1  2  6  4  5  8  3  7  9
+   6     0  0  0  9  1  2  6  4  5  8  3  7  9
+   7     0  0  0  0
+   8     1 10 11  6  1  2  6  4  5  8
+   9     1  0  0  3  3  7  9
+  10     8 12 13  3  1  2  6
+  11     8 20 21  3  4  5  8
+  12    10 16 17  2  1  2
+  13    10  0  0  1  6
+  14     0  0  0  2  1  2
+  15     0  0  0  0
+  16    12  0  0  1  1
+  17    12  0  0  1  2
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20    11  0  0  1  4
+  21    11 22 23  2  5  8
+  22    21  0  0  1  5
+  23    21  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  0
+   1 +   0  2  3  9  1  1  9
+   2 -   1  4  5  6  3  1  2  4  6  8  8
+   3 -   1  0  0  3  3  3  3  7  7  9  9
+   4 -   2  6  7  3  2  1  2  6  6
+   5 -   2 10 11  3  2  4  5  8  8
+   6 -   4  8  9  2  1  1  2
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  2  2
+  10 -   5  0  0  1  1  4  4
+  11 -   5 12 13  2  2  5  5  8  8
+  12 -  11  0  0  1  1  5  5
+  13 -  11  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            237
+Total number of atoms read in:              1834
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   13-AUG-12   3J22              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.L.SHINGLER                                                          
+  Reading DSSP file
+ HEADER    VIRUS                                   13-AUG-12   3J22              COMPND   2 MOLECULE: CAPSID PROTEIN VP1;                                        SOURCE   2 ORGANISM_SCIENTIFIC: HUMAN ENTEROVIRUS 71;                           AUTHOR    K.L.SHINGLER                                                          
+         237  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau           1   1.50788152             147         166
+ #popped           2           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau           3   1.94342065             121         134
+ #popped           4           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau           5   1.47753060              30          41
+ #popped           6           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau           7   1.46293795              51          72          95         181         199         226
+ #popped           8           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau           9   1.80751538              16
+ #popped          11           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          11   1.07310116              51
+ #popped          12           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          13   2.95660615              30
+ #popped          13           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          15   1.78166187              86
+ #popped          17           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          17  0.858388722             185         199
+ #popped          18           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           9           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          19  0.328501225              72
+ #popped          20           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          21   1.40406525              62
+ #popped          21           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          23   42.3129997             121         147
+ #popped          24           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          25   1.14422548             107         209
+ #popped          26           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          27           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          27  0.208507955             121
+ #popped          29           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          29   15.3164129             181
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   13-AUG-12   3J22              COMPND   2 MOLECULE: CAPSID PROTEIN VP1;                                        SOURCE   2 ORGANISM_SCIENTIFIC: HUMAN ENTEROVIRUS 71;                           AUTHOR    K.L.SHINGLER                                                          
+           0
+         237
+         237  residues read 3J22.dssp                                                   
+  grow short strand           2           5
+  grow short strand          10          13
+  grow short strand          20          21
+ crowded segment excluded!
+  exclude short helix          22          24
+  grow short strand          66          70
+  exclude short helix         136         139
+  exclude short helix         142         144
+  exclude short helix         151         153
+  exclude short helix         160         165
+  grow short strand         168         172
+  grow short strand         179         183
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  8  9 10  1  2  5 10  3  4  6  7  8  9
+   2     0  0  0 10  1  2  5 10  3  4  6  7  8  9
+   3     0  0  0  0
+   4     0  0  0 10  1  2  5 10  3  4  6  7  8  9
+   5     0  0  0  0
+   6     0  0  0 10  1  2  5 10  3  4  6  7  8  9
+   7     0  0  0  0
+   8     1 10 11  4  1  2  5 10
+   9     1 20 21  6  3  4  6  7  8  9
+  10     8  0  0  2  1  2
+  11     8  0  0  2  5 10
+  12     0  0  0  0
+  13     0  0  0  2  5 10
+  14     0  0  0  0
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  2  5 10
+  18     0  0  0  2  5 10
+  19     0  0  0  0
+  20     9 22 23  2  3  4
+  21     9 28 29  4  6  7  8  9
+  22    20  0  0  1  3
+  23    20  0  0  1  4
+  24     0  0  0  4  6  7  8  9
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  4  6  7  8  9
+  28    21  0  0  1  6
+  29    21 30 31  3  7  8  9
+  30    29  0  0  2  7  8
+  31    29  0  0  1  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  4  3  1  2  5  5 10 10
+   3 -   1  6  7  6  2  3  4  6  9
+   4 -   2  0  0  2  1  1  2
+   5 -   2  0  0  2  2  5  5 10 10
+   6 -   3  8  9  2  1  3  4
+   7 -   3 10 11  4  1  6  9
+   8 -   6  0  0  1  1  3  3
+   9 -   6  0  0  1  1  4  4
+  10 -   7  0  0  1  1  6  6
+  11 -   7 12 13  3  1  7  9
+  12 -  11  0  0  2  1  7  8
+  13 -  11  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            239
+Total number of atoms read in:              1839
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   13-AUG-12   3J22              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.L.SHINGLER                                                          
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           6
+  calculate residue outside grid:          11
+  calculate residue outside grid:          24
+  calculate residue outside grid:          25
+  calculate residue outside grid:          26
+  calculate residue outside grid:          27
+  Reading DSSP file
+ HEADER    VIRUS                                   13-AUG-12   3J22              COMPND   2 MOLECULE: CAPSID PROTEIN VP1;                                        SOURCE   2 ORGANISM_SCIENTIFIC: HUMAN ENTEROVIRUS 71;                           AUTHOR    K.L.SHINGLER                                                          
+         239  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1803
+ selectset done           0
+ eigen done           0
+ tau           1   3.25349355              21         228
+ #popped           2           1
+ #selectset contacts        1803
+ selectset done           1
+ eigen done           1
+ tau           3   999.999023              21
+ #popped           4           1
+ #selectset contacts        1803
+ selectset done           1
+ eigen done           1
+ tau           5   1.55769229              11
+ #popped           3           0
+ #selectset contacts        1803
+ selectset done           0
+ eigen done           0
+ tau           7   7.85236931              38
+ #popped           9           0
+ #selectset contacts        1803
+ selectset done           0
+ eigen done           0
+ tau           9   1.98634672              69          86         118         165         192         216
+ #popped          10           1
+ #selectset contacts        1803
+ selectset done           1
+ eigen done           1
+ tau          11   2.48386240              53          69
+ #popped          12           1
+ #selectset contacts        1803
+ selectset done           1
+ eigen done           1
+ tau          13   1.00296938             172         192
+ #popped          14           2
+ #selectset contacts        1803
+ selectset done           2
+ eigen done           2
+ tau          15  0.843372107             102
+ #popped          16           3
+ #selectset contacts        1803
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          17           2
+ #selectset contacts        1803
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          15           1
+ #selectset contacts        1803
+ selectset done           1
+ eigen done           1
+ tau          17  0.317016304             182
+ #popped          11           0
+ #selectset contacts        1803
+ selectset done           0
+ eigen done           0
+ tau          19  0.635804117             134         144
+ #popped          20           0
+ #selectset contacts        1803
+ selectset done           0
+ eigen done           0
+ tau          21  0.202494428             134
+ #popped          22           1
+ #selectset contacts        1803
+ selectset done           1
+ eigen done           1
+ tau          23   30.4918041              86
+ #popped          23           0
+ #selectset contacts        1803
+ selectset done           0
+ eigen done           0
+ tau          25   4.34700012             165
+ #popped          26           1
+ #selectset contacts        1803
+ selectset done           1
+ eigen done           1
+ tau          27   2.34709525             154
+ #popped          27           0
+ #selectset contacts        1803
+ selectset done           0
+ eigen done           0
+ tau          29   2.14478111             203
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   13-AUG-12   3J22              COMPND   2 MOLECULE: CAPSID PROTEIN VP1;                                        SOURCE   2 ORGANISM_SCIENTIFIC: HUMAN ENTEROVIRUS 71;                           AUTHOR    K.L.SHINGLER                                                          
+           0
+         239
+         239  residues read 3J22.dssp                                                   
+  grow short strand          22          23
+  grow short strand          39          40
+  exclude short helix          44          47
+  grow short strand          51          52
+  exclude short helix          62          67
+  grow short strand          70          74
+  exclude short helix          95          98
+  exclude short helix         100         105
+  exclude short helix         146         149
+  grow short strand         154         157
+  grow short strand         176         178
+  grow short strand         185         187
+  grow short strand         225         229
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  8  9 14  1  2  3  6  9 14 10 11  4  5  7  8 12 13
+   2     0  0  0  0
+   3     0  0  0 14  1  2  3  6  9 14 10 11  4  5  7  8 12 13
+   4     0  0  0  0
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  0
+   8     1  0  0  1  1
+   9     1 10 11 13  2  3  6  9 14 10 11  4  5  7  8 12 13
+  10     9 14 15  7  2  3  6  9 14 10 11
+  11     9 22 23  6  4  5  7  8 12 13
+  12     0  0  0  7  2  3  6  9 14 10 11
+  13     0  0  0  0
+  14    10 16 17  5  2  3  6  9 14
+  15    10 18 19  2 10 11
+  16    14  0  0  2  2  3
+  17    14  0  0  3  6  9 14
+  18    15  0  0  1 10
+  19    15  0  0  1 11
+  20     0  0  0  6  4  5  7  8 12 13
+  21     0  0  0  0
+  22    11 24 25  3  4  5  7
+  23    11 26 27  3  8 12 13
+  24    22  0  0  2  4  5
+  25    22  0  0  1  7
+  26    23  0  0  1  8
+  27    23 30 31  2 12 13
+  28     0  0  0  0
+  29     0  0  0  1  8
+  30    27  0  0  1 12
+  31    27  0  0  1 13
+   1 +   0  2  3 14  1  1 14
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 13  1  2 14
+   4 -   3  6  7  7  4  2  3  6  6  9 11 14 14
+   5 -   3 12 13  6  3  4  5  7  8 12 13
+   6 -   4  8  9  5  4  2  3  6  6  9  9 14 14
+   7 -   4 10 11  2  1 10 11
+   8 -   6  0  0  2  1  2  3
+   9 -   6  0  0  3  3  6  6  9  9 14 14
+  10 -   7  0  0  1  1 10 10
+  11 -   7  0  0  1  1 11 11
+  12 -   5 14 15  3  2  4  5  7  7
+  13 -   5 16 17  3  2  8  8 12 13
+  14 -  12  0  0  2  1  4  5
+  15 -  12  0  0  1  1  7  7
+  16 -  13  0  0  1  1  8  8
+  17 -  13 18 19  2  1 12 13
+  18 -  17  0  0  1  1 12 12
+  19 -  17  0  0  1  1 13 13
+
+ CHAIN : 3J22A
+ CHAIN : 3J22B
+ CHAIN : 3J22C
+

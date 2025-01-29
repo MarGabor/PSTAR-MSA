@@ -1,0 +1,33 @@
+# Job: scorptoxin
+# Query: 1OZZA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1SNB-A  3.1  2.1   36    64   33   MOLECULE: NEUROTOXIN BMK M8;                                         
+
+# Pairwise alignments
+
+No 1: Query=1OZZA Sbjct=1SNBA Z-score=3.1
+
+DSSP  --LEEE-------EELLllllllllLHHHHHHHHLLLEEEEELHH--HLEEEEEL-----
+Query --DKLI-------GSCVwgavnytsNCNAECKRRGYKGGHCGSFA--NVNCWCET-----   44
+ident   |  |         |          ||  |   | | | |         | |       
+Sbjct grDAYIadsenctYFCG-----snpYCNDVCTENGAKSGYCQWAGryGNACYCIDlpase   55
+DSSP  leEEELlllllllLLLL-----lhhHHHHHHHHLLLLEEEEEEEEllEEEEEEEEellll
+
+DSSP  ---------
+Query ---------   44
+ident          
+Sbjct rikeggrcg   64
+DSSP  lllllllll
+
+
+# Structural equivalences
+   1: 1OZZ-A 1SNB-A     1 -   4 <=>    3 -   6   (ASP    1  - ILE    4  <=> ASP    3  - ILE    6 )                          
+   1: 1OZZ-A 1SNB-A     5 -   8 <=>   14 -  17   (GLY    5  - VAL    8  <=> TYR   14  - GLY   17 )                          
+   1: 1OZZ-A 1SNB-A    17 -  36 <=>   21 -  40   (ASN   17  - ALA   36  <=> TYR   21  - GLY   40 )                          
+   1: 1OZZ-A 1SNB-A    37 -  44 <=>   43 -  50   (ASN   37  - THR   44  <=> GLY   43  - ASP   50 )                          
+
+# Translation-rotation matrices
+-matrix  "1OZZ-A 1SNB-A  U(1,.)   0.752574  0.525128  0.397333            2.790163"
+-matrix  "1OZZ-A 1SNB-A  U(2,.)   0.336577 -0.825358  0.453321            3.126163"
+-matrix  "1OZZ-A 1SNB-A  U(3,.)   0.565993 -0.207424 -0.797889           -6.152089"
+

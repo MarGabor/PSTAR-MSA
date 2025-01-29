@@ -1,0 +1,38 @@
+# Job: rnasemam
+# Query: 3TSRA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2RNF-B 19.1  1.3  117   120   45   MOLECULE: RIBONUCLEASE 4;                                            
+
+# Pairwise alignments
+
+No 1: Query=3TSRA Sbjct=2RNFB Z-score=19.1
+
+DSSP  -llLHHHHHHHHHLLLLLLLLlLLLHHHHHHHHLLLLLLLLLLEEEEELLLHHHHHHHHH
+Query -reSAAQKFQRQHMDPDGSSInSPTYCNQMMKRRDMTNGSCKPVNTFVHEPLADVQAVCS   59
+ident       | | |||  |      |  ||| || || ||   ||  ||| ||        ||
+Sbjct mqdGMYQRFLRQHVHPEETGG-SDRYCNLMMQRRKMTLYHCKRFNTFIHEDIWNIRSICS   59
+DSSP  lhhHHHHHHHHHHLLLLLLLL-LHHHHHHHHHHLLLLLLLLLLEEEEELLLHHHHHHHHH
+
+DSSP  LEEELLLLLLLLEEELllLEEEEEEEELLLLLLLLLLEEEEEEEELEEEEEELLLLEEEE
+Query QENVTCKNRKSNCYKSssALHITDCHLKGNSKYPNCDYKTTQYQKHIIVACEGNPYVPVH  119
+ident   |  ||| | ||         |||   | |  ||| |           |||||| ||||
+Sbjct TTNIQCKNGKMNCHEG--VVKVTDCRDTGSSRAPNCRYRAIASTRRVVIACEGNPQVPVH  117
+DSSP  LLLLLLLLLLLLEEEE--EEEEEEEEELLLLLLLLLLEEEEEEEEEEEEEEELLLLEEEE
+
+DSSP  EEEel
+Query FDAtv  124
+ident ||   
+Sbjct FDG--  120
+DSSP  ELL--
+
+
+# Structural equivalences
+   1: 3TSR-A 2RNF-B     3 -  20 <=>    4 -  21   (SER    4  - ILE   21  <=> GLY    3  - GLY   20 )                          
+   1: 3TSR-A 2RNF-B    22 -  75 <=>   22 -  75   (SER   23  - SER   76  <=> SER   21  - GLY   74 )                          
+   1: 3TSR-A 2RNF-B    78 - 122 <=>   76 - 120   (ALA   79  - ALA  123  <=> VAL   75  - GLY  119 )                          
+
+# Translation-rotation matrices
+-matrix  "3TSR-A 2RNF-B  U(1,.)  -0.417507  0.677588  0.605443          -38.906910"
+-matrix  "3TSR-A 2RNF-B  U(2,.)   0.840326  0.034392  0.540990           64.694672"
+-matrix  "3TSR-A 2RNF-B  U(3,.)   0.345746  0.734637 -0.583754           33.705433"
+

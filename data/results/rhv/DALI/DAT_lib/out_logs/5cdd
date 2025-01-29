@@ -1,0 +1,581 @@
+A length: 208
+B length: 301
+C length: 200
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            208
+Total number of atoms read in:              1683
+Total number of ignored atom records:         19
+ HEADER    VIRUS                                   03-JUL-15   5CDD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+  Reading DSSP file
+ HEADER    VIRUS                                   03-JUL-15   5CDD              COMPND   2 MOLECULE: STRUCTURAL POLYPROTEIN, VP1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ISRAELI ACUTE PARALYSIS VIRUS;                  AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+         208  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau           1   6.95642471              16
+ #popped           3           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau           3   6.38919306              37         198
+ #popped           4           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau           5   999.999023              37
+ #popped           6           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau           7  0.855255961              27
+ #popped           5           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau           9   1.50201416              47          61          94         112         130         142         169         181
+ #popped          10           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          11  0.885989010              47
+ #popped          13           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          13  0.494678855              71         158         169
+ #popped          14           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau          15   1.39899909              71
+ #popped          15           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          17  0.373378247             130
+ #popped          18           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau          19   21.0085964              94
+ #popped          20           2
+ #selectset contacts        1628
+ selectset done           2
+ eigen done           2
+ tau          21   1.92432332              83
+ #popped          19           1
+ #selectset contacts        1628
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          11           0
+ #selectset contacts        1628
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   03-JUL-15   5CDD              COMPND   2 MOLECULE: STRUCTURAL POLYPROTEIN, VP1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ISRAELI ACUTE PARALYSIS VIRUS;                  AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+           0
+         208
+         208  residues read 5CDD.dssp                                                   
+  grow short strand          11          13
+  exclude short helix          39          43
+  grow short strand          61          62
+ crowded segment excluded!
+  exclude short helix          77          82
+  grow short strand          87          89
+  exclude short helix         121         123
+  grow short strand         131         133
+  grow short strand         154         155
+  grow short strand         189         191
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2 14  4 11  5  7 10 13  3  6  8  9 12
+   2     1  0  0  1  1
+   3     1  4  5 13  2 14  4 11  5  7 10 13  3  6  8  9 12
+   4     3  6  7  2  2 14
+   5     3 10 11 11  4 11  5  7 10 13  3  6  8  9 12
+   6     4  0  0  1  2
+   7     4  0  0  1 14
+   8     0  0  0  1  2
+   9     0  0  0  0
+  10     5 14 15  6  4 11  5  7 10 13
+  11     5  0  0  5  3  6  8  9 12
+  12     0  0  0  0
+  13     0  0  0  6  4 11  5  7 10 13
+  14    10 16 17  2  4 11
+  15    10 18 19  4  5  7 10 13
+  16    14  0  0  1  4
+  17    14  0  0  1 11
+  18    15 20 21  2  5  7
+  19    15  0  0  2 10 13
+  20    18  0  0  1  5
+  21    18  0  0  1  7
+  22     0  0  0  0
+  23     0  0  0  1  5
+   1 +   0  2  3 14  1  1 14
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5 13  1  2 14
+   4 =   3  6  7  2  2  2  2 14 14
+   5 *   3  8  9 11  1  3 13
+   6 -   4  0  0  1  1  2  2
+   7 -   4  0  0  1  1 14 14
+   8 -   5 10 11  6  4  4  5  7  7 10 11 13 13
+   9 -   5  0  0  5  4  3  3  6  6  8  9 12 12
+  10 -   8 12 13  2  2  4  4 11 11
+  11 -   8 14 15  4  4  5  5  7  7 10 10 13 13
+  12 -  10  0  0  1  1  4  4
+  13 -  10  0  0  1  1 11 11
+  14 -  11 16 17  2  2  5  5  7  7
+  15 -  11  0  0  2  2 10 10 13 13
+  16 -  14  0  0  1  1  5  5
+  17 -  14  0  0  1  1  7  7
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            301
+Total number of atoms read in:              2346
+Total number of ignored atom records:          1
+ HEADER    VIRUS                                   03-JUL-15   5CDD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  calculate residue outside grid:          14
+  calculate residue outside grid:         250
+  Reading DSSP file
+ HEADER    VIRUS                                   03-JUL-15   5CDD              COMPND   2 MOLECULE: STRUCTURAL POLYPROTEIN, VP1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ISRAELI ACUTE PARALYSIS VIRUS;                  AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+         301  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2348
+ selectset done           0
+ eigen done           0
+ tau           1   23.1487560              41
+ #popped           2           1
+ #selectset contacts        2348
+ selectset done           1
+ eigen done           1
+ tau           3   6.95228720              24
+ #popped           4           1
+ #selectset contacts        2348
+ selectset done           1
+ eigen done           1
+ tau           5   3.51559091              12
+ #popped           3           0
+ #selectset contacts        2348
+ selectset done           0
+ eigen done           0
+ tau           7   3.19858289              54
+ #popped           9           0
+ #selectset contacts        2348
+ selectset done           0
+ eigen done           0
+ tau           9   3.17837524             100         117         275
+ #popped          10           1
+ #selectset contacts        2348
+ selectset done           1
+ eigen done           1
+ tau          11   1.39178026              67          81         140         155         190         201         239         259
+ #popped          12           2
+ #selectset contacts        2348
+ selectset done           2
+ eigen done           2
+ tau          13   1.10480189             174         190
+ #popped          14           2
+ #selectset contacts        2348
+ selectset done           2
+ eigen done           2
+ tau          15   1.67049122              67         100         140         174         216         239
+ #popped          16           3
+ #selectset contacts        2348
+ selectset done           3
+ eigen done           3
+ tau          17  0.610839188              67
+ #popped          19           3
+ #selectset contacts        2348
+ selectset done           3
+ eigen done           3
+ tau          19  0.375192761             135         206
+ #popped          20           3
+ #selectset contacts        2348
+ selectset done           3
+ eigen done           3
+ tau          21   0.00000000    
+ #popped          17           2
+ #selectset contacts        2348
+ selectset done           2
+ eigen done           2
+ tau          21  0.616981685             174         229
+ #popped          22           2
+ #selectset contacts        2348
+ selectset done           2
+ eigen done           2
+ tau          23  0.295001924             174
+ #popped          24           2
+ #selectset contacts        2348
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped          13           1
+ #selectset contacts        2348
+ selectset done           1
+ eigen done           1
+ tau          25  0.463956296              81
+ #popped          27           1
+ #selectset contacts        2348
+ selectset done           1
+ eigen done           1
+ tau          27  0.217623144             155
+ #popped          29           1
+ #selectset contacts        2348
+ selectset done           1
+ eigen done           1
+ tau          29   56.1087875             201
+ #popped          31           1
+ #selectset contacts        2348
+ selectset done           1
+ eigen done           1
+ tau          31   1.48832214             249
+ #popped          11           0
+ #selectset contacts        2348
+ selectset done           0
+ eigen done           0
+ tau          33   2.87326837             117
+ #popped          35           0
+ #selectset contacts        2348
+ selectset done           0
+ eigen done           0
+ tau          35   1.76761985             291
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   03-JUL-15   5CDD              COMPND   2 MOLECULE: STRUCTURAL POLYPROTEIN, VP1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ISRAELI ACUTE PARALYSIS VIRUS;                  AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+           0
+         301
+         301  residues read 5CDD.dssp                                                   
+  grow short strand          30          31
+  exclude short helix          56          60
+  grow short strand          90          92
+  exclude short helix         122         127
+  grow short strand         164         166
+  grow short strand         171         173
+ crowded segment excluded!
+  exclude short helix         175         178
+  grow short strand         202         205
+  grow short strand         214         215
+  exclude short helix         228         231
+  grow short strand         282         283
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1 11 13  6 10  3  8  2  7  9 12  4  5 14
+   2     1  0  0  1  1
+   3     1 10 11 13 11 13  6 10  3  8  2  7  9 12  4  5 14
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0 13 11 13  6 10  3  8  2  7  9 12  4  5 14
+  10     3 12 13 10 11 13  6 10  3  8  2  7  9 12
+  11     3 34 35  3  4  5 14
+  12    10 16 17  6 11 13  6 10  3  8
+  13    10 26 27  4  2  7  9 12
+  14     0  0  0  6 11 13  6 10  3  8
+  15     0  0  0  0
+  16    12 20 21  4 11 13  6 10
+  17    12  0  0  2  3  8
+  18     0  0  0  0
+  19     0  0  0  4 11 13  6 10
+  20    16  0  0  2 11 13
+  21    16  0  0  2  6 10
+  22     0  0  0  2  3  8
+  23     0  0  0  0
+  24     0  0  0  2  3  8
+  25     0  0  0  0
+  26    13  0  0  1  2
+  27    13 28 29  3  7  9 12
+  28    27  0  0  1  7
+  29    27 30 31  2  9 12
+  30    29  0  0  1  9
+  31    29  0  0  1 12
+  32     0  0  0  1 12
+  33     0  0  0  0
+  34    11  0  0  2  4  5
+  35    11  0  0  1 14
+  36     0  0  0  1 14
+  37     0  0  0  0
+   1 +   0  2  3 14  1  1 14
+   2 *   1  0  0  1  1  1  1
+   3 +   1  4  5 13  1  2 14
+   4 *   3  6  7 10  2  2  3  6 13
+   5 *   3 18 19  3  2  4  5 14 14
+   6 -   4  8  9  6  5  3  3  6  6  8  8 10 11 13 13
+   7 -   4 12 13  4  4  2  2  7  7  9  9 12 12
+   8 -   6 10 11  4  3  6  6 10 11 13 13
+   9 -   6  0  0  2  2  3  3  8  8
+  10 -   8  0  0  2  2 11 11 13 13
+  11 -   8  0  0  2  2  6  6 10 10
+  12 -   7  0  0  1  1  2  2
+  13 -   7 14 15  3  3  7  7  9  9 12 12
+  14 -  13  0  0  1  1  7  7
+  15 -  13 16 17  2  2  9  9 12 12
+  16 -  15  0  0  1  1  9  9
+  17 -  15  0  0  1  1 12 12
+  18 -   5  0  0  2  1  4  5
+  19 -   5  0  0  1  1 14 14
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            200
+Total number of atoms read in:              1578
+Total number of ignored atom records:          3
+ HEADER    VIRUS                                   03-JUL-15   5CDD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+  Reading DSSP file
+ HEADER    VIRUS                                   03-JUL-15   5CDD              COMPND   2 MOLECULE: STRUCTURAL POLYPROTEIN, VP1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ISRAELI ACUTE PARALYSIS VIRUS;                  AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+         200  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1658
+ selectset done           0
+ eigen done           0
+ tau           1   1.90449834              13          51          77         133         154         182
+ #popped           2           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau           3  0.322898418              77
+ #popped           4           2
+ #selectset contacts        1658
+ selectset done           2
+ eigen done           2
+ tau           5   2.51100993              67
+ #popped           6           2
+ #selectset contacts        1658
+ selectset done           2
+ eigen done           2
+ tau           7   1.61026061              13
+ #popped           5           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau           9   6.58044195             154
+ #popped          10           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau          11  0.954004288             143
+ #popped           3           0
+ #selectset contacts        1658
+ selectset done           0
+ eigen done           0
+ tau          13   1.05484378              95         119
+ #popped          14           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau          15  0.563988030              51
+ #popped          16           2
+ #selectset contacts        1658
+ selectset done           2
+ eigen done           2
+ tau          17   2.30954146              25
+ #popped          19           2
+ #selectset contacts        1658
+ selectset done           2
+ eigen done           2
+ tau          19   1.68997741              35
+ #popped          17           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau          21  0.734464586             166
+ #popped          22           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau          23  0.449853927             133
+ #popped          24           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau          25  0.246427000              95
+ #popped          15           0
+ #selectset contacts        1658
+ selectset done           0
+ eigen done           0
+ tau          27   1.07576954             107
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   03-JUL-15   5CDD              COMPND   2 MOLECULE: STRUCTURAL POLYPROTEIN, VP1;                               SOURCE   2 ORGANISM_SCIENTIFIC: ISRAELI ACUTE PARALYSIS VIRUS;                  AUTHOR    E.MULLAPUDI,P.PLEVKA                                                  
+           0
+         200
+         200  residues read 5CDD.dssp                                                   
+  exclude short helix          39          41
+  grow short strand          47          51
+  exclude short helix          53          57
+  exclude short helix         104         106
+  exclude short helix         108         110
+  exclude short helix         113         116
+  grow short strand         121         125
+  grow short strand         145         146
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  4  8 10  2  3  5  6  7  9
+   2     1  4  5  4  1  4  8 10
+   3     1 16 17  6  2  3  5  6  7  9
+   4     2  6  7  2  1  4
+   5     2 10 11  2  8 10
+   6     4  0  0  1  1
+   7     4  0  0  1  4
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     5  0  0  1  8
+  11     5  0  0  1 10
+  12     0  0  0  0
+  13     0  0  0  1  8
+  14     0  0  0  6  2  3  5  6  7  9
+  15     0  0  0  0
+  16     3 18 19  2  2  3
+  17     3 24 25  4  5  6  7  9
+  18    16  0  0  1  2
+  19    16  0  0  1  3
+  20     0  0  0  0
+  21     0  0  0  1  3
+  22     0  0  0  4  5  6  7  9
+  23     0  0  0  0
+  24    17 26 27  3  5  6  7
+  25    17  0  0  1  9
+  26    24  0  0  1  5
+  27    24  0  0  2  6  7
+  28     0  0  0  0
+  29     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  4  4  1  1  4  4  8  8 10 10
+   3 -   1 10 11  6  3  2  3  5  7  9  9
+   4 -   2  6  7  2  2  1  1  4  4
+   5 -   2  8  9  2  2  8  8 10 10
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  4  4
+   8 -   5  0  0  1  1  8  8
+   9 -   5  0  0  1  1 10 10
+  10 -   3 12 13  2  1  2  3
+  11 -   3 14 15  4  2  5  7  9  9
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  3  3
+  14 -  11 16 17  3  1  5  7
+  15 -  11  0  0  1  1  9  9
+  16 -  14  0  0  1  1  5  5
+  17 -  14  0  0  2  1  6  7
+
+ CHAIN : 5CDDA
+ CHAIN : 5CDDB
+ CHAIN : 5CDDC
+

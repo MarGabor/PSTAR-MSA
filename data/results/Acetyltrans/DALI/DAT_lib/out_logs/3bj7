@@ -1,0 +1,602 @@
+A length: 162
+B length: 161
+C length: 162
+D length: 161
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            162
+Total number of atoms read in:              1329
+Total number of ignored atom records:        144
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.J.MONTEMAYOR                                                        
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              COMPND   2 MOLECULE: DIAMINE ACETYLTRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    E.J.MONTEMAYOR                                                        
+         162  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1320
+ selectset done           0
+ eigen done           0
+ tau           1   8.42394543             138
+ #popped           2           1
+ #selectset contacts        1320
+ selectset done           1
+ eigen done           1
+ tau           3   4.35898781             119
+ #popped           4           1
+ #selectset contacts        1320
+ selectset done           1
+ eigen done           1
+ tau           5   1.44146085              68          86          98
+ #popped           6           2
+ #selectset contacts        1320
+ selectset done           2
+ eigen done           2
+ tau           7  0.900312066              88
+ #popped           8           2
+ #selectset contacts        1320
+ selectset done           2
+ eigen done           2
+ tau           9  0.525128901              58
+ #popped          10           2
+ #selectset contacts        1320
+ selectset done           2
+ eigen done           2
+ tau          11  0.625587106              33
+ #popped          12           3
+ #selectset contacts        1320
+ selectset done           3
+ eigen done           3
+ tau          13   1.67738533              11
+ #popped          15           3
+ #selectset contacts        1320
+ selectset done           3
+ eigen done           3
+ tau          15  0.785088480              21
+ #popped          13           2
+ #selectset contacts        1320
+ selectset done           2
+ eigen done           2
+ tau          17   1.35830879              45
+ #popped           7           1
+ #selectset contacts        1320
+ selectset done           1
+ eigen done           1
+ tau          19   1.11123657              86         109
+ #popped          20           1
+ #selectset contacts        1320
+ selectset done           1
+ eigen done           1
+ tau          21  0.661057711              86
+ #popped           3           0
+ #selectset contacts        1320
+ selectset done           0
+ eigen done           0
+ tau          23   4.49954081             150
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              COMPND   2 MOLECULE: DIAMINE ACETYLTRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    E.J.MONTEMAYOR                                                        
+           0
+         162
+         162  residues read 3BJ7.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          29          31
+  exclude short helix          91          93
+  exclude short helix         142         144
+  grow short strand         150         153
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6  8  7  9 10
+   2     1  4  5  9  1  2  3  4  5  6  8  7  9
+   3     1  0  0  1 10
+   4     2  6  7  8  1  2  3  4  5  6  8  7
+   5     2  0  0  1  9
+   6     4 12 13  4  1  2  3  4
+   7     4 20 21  4  5  6  8  7
+   8     0  0  0  4  1  2  3  4
+   9     0  0  0  0
+  10     0  0  0  4  1  2  3  4
+  11     0  0  0  0
+  12     6 14 15  2  1  2
+  13     6 18 19  2  3  4
+  14    12  0  0  1  1
+  15    12  0  0  1  2
+  16     0  0  0  1  2
+  17     0  0  0  0
+  18    13  0  0  1  3
+  19    13  0  0  1  4
+  20     7 22 23  3  5  6  8
+  21     7  0  0  1  7
+  22    20  0  0  2  5  6
+  23    20  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  1 10
+   1 +   0  2  3 10  1  1 10
+   2 +   1  4  5  9  1  1  9
+   3 =   1  0  0  1  1 10 10
+   4 *   2  6  7  8  1  1  8
+   5 =   2  0  0  1  1  9  9
+   6 -   4  8  9  4  1  1  4
+   7 -   4 14 15  4  1  5  8
+   8 -   6 10 11  2  1  1  2
+   9 -   6 12 13  2  1  3  4
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  2  2
+  12 -   9  0  0  1  1  3  3
+  13 -   9  0  0  1  1  4  4
+  14 -   7 16 17  3  2  5  6  8  8
+  15 -   7  0  0  1  1  7  7
+  16 -  14  0  0  2  1  5  6
+  17 -  14  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1338
+Total number of ignored atom records:        220
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.J.MONTEMAYOR                                                        
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              COMPND   2 MOLECULE: DIAMINE ACETYLTRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    E.J.MONTEMAYOR                                                        
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1333
+ selectset done           0
+ eigen done           0
+ tau           1   999.999023             146
+ #popped           2           0
+ #selectset contacts        1333
+ selectset done           0
+ eigen done           0
+ tau           3   3.91257286             124
+ #popped           4           1
+ #selectset contacts        1333
+ selectset done           1
+ eigen done           1
+ tau           5   1.59581029              74          90         103
+ #popped           6           2
+ #selectset contacts        1333
+ selectset done           2
+ eigen done           2
+ tau           7   1.41695654              27          51
+ #popped           8           3
+ #selectset contacts        1333
+ selectset done           3
+ eigen done           3
+ tau           9  0.906265140              17          27
+ #popped          10           3
+ #selectset contacts        1333
+ selectset done           3
+ eigen done           3
+ tau          11  0.563503802              62
+ #popped          12           4
+ #selectset contacts        1333
+ selectset done           4
+ eigen done           4
+ tau          13  0.500289381              17
+ #popped          13           3
+ #selectset contacts        1333
+ selectset done           3
+ eigen done           3
+ tau          15  0.635065854              93
+ #popped           9           2
+ #selectset contacts        1333
+ selectset done           2
+ eigen done           2
+ tau          17  0.968355656              41
+ #popped           7           1
+ #selectset contacts        1333
+ selectset done           1
+ eigen done           1
+ tau          19   1.15546215              90         113
+ #popped          20           1
+ #selectset contacts        1333
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           5           0
+ #selectset contacts        1333
+ selectset done           0
+ eigen done           0
+ tau          21  0.608534873             135
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              COMPND   2 MOLECULE: DIAMINE ACETYLTRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    E.J.MONTEMAYOR                                                        
+           0
+         161
+         161  residues read 3BJ7.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          29          31
+  exclude short helix          59          61
+  exclude short helix          96          98
+  grow short strand         122         125
+  grow short strand         144         145
+  exclude short helix         155         160
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  5  3  6  8  7  9 10 11
+   2     1  4  5 10  1  2  4  5  3  6  8  7  9 10
+   3     1  0  0  1 11
+   4     2  6  7  8  1  2  4  5  3  6  8  7
+   5     2 22 23  2  9 10
+   6     4  8  9  5  1  2  4  5  3
+   7     4 20 21  3  6  8  7
+   8     6 12 13  4  1  2  4  5
+   9     6  0  0  1  3
+  10     0  0  0  4  1  2  4  5
+  11     0  0  0  0
+  12     8 14 15  3  1  2  4
+  13     8  0  0  1  5
+  14    12  0  0  2  1  2
+  15    12  0  0  1  4
+  16     0  0  0  1  5
+  17     0  0  0  0
+  18     0  0  0  1  3
+  19     0  0  0  0
+  20     7  0  0  2  6  8
+  21     7  0  0  1  7
+  22     5  0  0  1  9
+  23     5  0  0  1 10
+   1 +   0  2  3 11  1  1 11
+   2 +   1  4  5 10  1  1 10
+   3 =   1  0  0  1  1 11 11
+   4 *   2  6  7  8  1  1  8
+   5 =   2 16 17  2  1  9 10
+   6 -   4  8  9  5  1  1  5
+   7 -   4 14 15  3  1  6  8
+   8 -   6 10 11  4  2  1  2  4  5
+   9 -   6  0  0  1  1  3  3
+  10 -   8 12 13  3  2  1  2  4  4
+  11 -   8  0  0  1  1  5  5
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  1  1  4  4
+  14 -   7  0  0  2  2  6  6  8  8
+  15 -   7  0  0  1  1  7  7
+  16 -   5  0  0  1  1  9  9
+  17 -   5  0  0  1  1 10 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            162
+Total number of atoms read in:              1329
+Total number of ignored atom records:        208
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.J.MONTEMAYOR                                                        
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              COMPND   2 MOLECULE: DIAMINE ACETYLTRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    E.J.MONTEMAYOR                                                        
+         162  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1318
+ selectset done           0
+ eigen done           0
+ tau           1   9.35993958             138
+ #popped           2           1
+ #selectset contacts        1318
+ selectset done           1
+ eigen done           1
+ tau           3   2.99165606             121
+ #popped           4           1
+ #selectset contacts        1318
+ selectset done           1
+ eigen done           1
+ tau           5   1.61189997              69          85         102
+ #popped           6           2
+ #selectset contacts        1318
+ selectset done           2
+ eigen done           2
+ tau           7  0.790697694              69
+ #popped           8           2
+ #selectset contacts        1318
+ selectset done           2
+ eigen done           2
+ tau           9   1.48334408              19          34
+ #popped          10           2
+ #selectset contacts        1318
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        1318
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1318
+ selectset done           0
+ eigen done           0
+ tau          11   4.49954081             150
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              COMPND   2 MOLECULE: DIAMINE ACETYLTRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    E.J.MONTEMAYOR                                                        
+           0
+         162
+         162  residues read 3BJ7.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          29          31
+  exclude short helix          91          93
+  grow short strand         139         140
+ crowded segment excluded!
+  exclude short helix         142         144
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7  8  9 10 11
+   2     1  4  5  9  1  2  3  4  5  6  7  8  9
+   3     1 12 13  2 10 11
+   4     2  6  7  8  1  2  3  4  5  6  7  8
+   5     2  0  0  1  9
+   6     4  0  0  5  1  2  3  4  5
+   7     4  0  0  3  6  7  8
+   8     0  0  0  5  1  2  3  4  5
+   9     0  0  0  0
+  10     0  0  0  5  1  2  3  4  5
+  11     0  0  0  0
+  12     3  0  0  1 10
+  13     3  0  0  1 11
+   1 +   0  2  3 11  1  1 11
+   2 +   1  4  5  9  1  1  9
+   3 =   1  8  9  2  1 10 11
+   4 *   2  6  7  8  1  1  8
+   5 =   2  0  0  1  1  9  9
+   6 -   4  0  0  5  1  1  5
+   7 -   4  0  0  3  1  6  8
+   8 -   3  0  0  1  1 10 10
+   9 -   3  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1338
+Total number of ignored atom records:        282
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.J.MONTEMAYOR                                                        
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              COMPND   2 MOLECULE: DIAMINE ACETYLTRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    E.J.MONTEMAYOR                                                        
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1333
+ selectset done           0
+ eigen done           0
+ tau           1   999.999023             146
+ #popped           2           0
+ #selectset contacts        1333
+ selectset done           0
+ eigen done           0
+ tau           3   2.02983522              74          90         103
+ #popped           4           1
+ #selectset contacts        1333
+ selectset done           1
+ eigen done           1
+ tau           5   1.37012422              22          51
+ #popped           6           2
+ #selectset contacts        1333
+ selectset done           2
+ eigen done           2
+ tau           7  0.582012355              74
+ #popped           8           2
+ #selectset contacts        1333
+ selectset done           2
+ eigen done           2
+ tau           9  0.637660623              22
+ #popped          10           3
+ #selectset contacts        1333
+ selectset done           3
+ eigen done           3
+ tau          11   1.28638661              11
+ #popped          11           2
+ #selectset contacts        1333
+ selectset done           2
+ eigen done           2
+ tau          13  0.273602694              61
+ #popped           7           1
+ #selectset contacts        1333
+ selectset done           1
+ eigen done           1
+ tau          15   3.27710843              33
+ #popped           5           0
+ #selectset contacts        1333
+ selectset done           0
+ eigen done           0
+ tau          17   1.56822813              90         113         124
+ #popped          18           1
+ #selectset contacts        1333
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1333
+ selectset done           0
+ eigen done           0
+ tau          19   10.6730766             113
+ #popped          21           0
+ #selectset contacts        1333
+ selectset done           0
+ eigen done           0
+ tau          21  0.685760379             136
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-DEC-07   3BJ7              COMPND   2 MOLECULE: DIAMINE ACETYLTRANSFERASE 1;                               SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    E.J.MONTEMAYOR                                                        
+           0
+         161
+         161  residues read 3BJ7.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          29          31
+  exclude short helix          59          61
+  exclude short helix          96          98
+  grow short strand         144         145
+  exclude short helix         155         160
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  5  3  6  7  8  9 10 11
+   2     1  4  5 10  1  2  4  5  3  6  7  8  9 10
+   3     1  0  0  1 11
+   4     2  6  7  5  1  2  4  5  3
+   5     2 18 19  5  6  7  8  9 10
+   6     4 10 11  4  1  2  4  5
+   7     4  0  0  1  3
+   8     0  0  0  4  1  2  4  5
+   9     0  0  0  0
+  10     6 12 13  2  1  2
+  11     6 14 15  2  4  5
+  12    10  0  0  1  1
+  13    10  0  0  1  2
+  14    11  0  0  1  4
+  15    11  0  0  1  5
+  16     0  0  0  0
+  17     0  0  0  1  3
+  18     5  0  0  1  6
+  19     5 20 21  4  7  8  9 10
+  20    19  0  0  1  7
+  21    19 22 23  3  8  9 10
+  22    21  0  0  2  8  9
+  23    21  0  0  1 10
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5 10  1  1 10
+   3 =   1  0  0  1  1 11 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2 14 15  5  1  6 10
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  1  1  3  3
+   8 -   6 10 11  2  1  1  2
+   9 -   6 12 13  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  2  2
+  12 -   9  0  0  1  1  4  4
+  13 -   9  0  0  1  1  5  5
+  14 -   5  0  0  1  1  6  6
+  15 -   5 16 17  4  1  7 10
+  16 -  15  0  0  1  1  7  7
+  17 -  15 18 19  3  1  8 10
+  18 -  17  0  0  2  1  8  9
+  19 -  17  0  0  1  1 10 10
+
+ CHAIN : 3BJ7A
+ CHAIN : 3BJ7B
+ CHAIN : 3BJ7C
+ CHAIN : 3BJ7D
+

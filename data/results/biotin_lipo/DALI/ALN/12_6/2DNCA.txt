@@ -1,0 +1,33 @@
+# Job: biotin_lipo
+# Query: 2DNCA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1PMR-A  6.3  2.7   78    80   32   MOLECULE: DIHYDROLIPOYL SUCCINYLTRANSFERASE;                         
+
+# Pairwise alignments
+
+No 1: Query=2DNCA Sbjct=1PMRA Z-score=6.3
+
+DSSP  lllllLLEEEELLLLLLLLLEELEEEELLLLLLEELLLLEEEEEELLLLEEEEELlLLEE
+Query gssgsSGIKILMPSLSPTMEEGNIVKWLKKEGEAVSAGDALCEIETDKAVVTLDAsDDGI   60
+ident      |   || | |           | || | ||     | |||||| |    |     
+Sbjct -----SSVDILVPDLPESVADATVATWHKKPGDAVVRDEVLVEIETDKVVLEVPA-SADG   54
+DSSP  -----LLLLEELLLLLLLLLLEELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL-LLLL
+
+DSSP  -EEELLLLLLLLlEELLLEEEEEELLlllllllllllll
+Query -LAKIVVEEGSKnIRLGSLIGLIVEEgedwkhvsgpssg   98
+ident  |      ||          |   |              
+Sbjct iLDAVLEDEGTT-VTSRQILGRLREG------------n   80
+DSSP  lLLLLLLLLLLE-ELLLLEEELLLLL------------l
+
+
+# Structural equivalences
+   1: 2DNC-A 1PMR-A     6 -  55 <=>    1 -  50   (SER    6  - ALA   55  <=> SER    1  - ALA   50 )                          
+   1: 2DNC-A 1PMR-A    57 -  60 <=>   51 -  54   (ASP   57  - ILE   60  <=> SER   51  - GLY   54 )                          
+   1: 2DNC-A 1PMR-A    61 -  71 <=>   56 -  66   (LEU   61  - LYS   71  <=> LEU   56  - THR   66 )                          
+   1: 2DNC-A 1PMR-A    73 -  85 <=>   67 -  79   (ILE   73  - GLU   85  <=> VAL   67  - GLY   79 )                          
+
+# Translation-rotation matrices
+-matrix  "2DNC-A 1PMR-A  U(1,.)   0.202741  0.927952 -0.312733            1.571255"
+-matrix  "2DNC-A 1PMR-A  U(2,.)   0.976593 -0.168175  0.134098           -2.761750"
+-matrix  "2DNC-A 1PMR-A  U(3,.)   0.071842 -0.332600 -0.940328           -1.401952"
+

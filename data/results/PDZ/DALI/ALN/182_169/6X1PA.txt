@@ -1,0 +1,44 @@
+# Job: PDZ
+# Query: 6X1PA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6IRD-C 14.8  1.2   85   180   35   MOLECULE: 1-PHOSPHATIDYLINOSITOL 4,5-BISPHOSPHATE PHOSPHODI          
+
+# Pairwise alignments
+
+No 1: Query=6X1PA Sbjct=6IRDC Z-score=14.8
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------    0
+ident                                                             
+Sbjct atcpivpgqemiieiskgrsglglsivggkdtplnaivihevyeegaaardgrlwagdqi   60
+DSSP  lllllllllleeeeeellllllleeeellllllllleeeeeellllhhhhhlllllllee
+
+DSSP  ----------------------------------LEEEEEELLLLLLLLLEEEEElllll
+Query ----------------------------------GPETISLHRQHGRGLGFTIAGgqgsp   26
+ident                                         |    |||||  | |     
+Sbjct levngvdlrnssheeaitalrqtpqkvrlvvyrlEIFPVDLQKKAGRGLGLSIVG-----  115
+DSSP  eeelleelllllhhhhhhhhhlllleeeeeeellEEEEEEEELLLLLLLLLEEEL-----
+
+DSSP  LLLLlLLEEEEEELLLLHHHHHLLLLLLLEEEEELLEELLLLLHHHHHHHHLLLLLLEEE
+Query HIAGdDGIFISKIIPDSAAKEDGRLAVGDRVLSVQGESCEKITHERAVEMLRNPASPIVL   86
+ident    |  | ||| |    ||  ||||  ||  ||| ||       |     |        |
+Sbjct KRNG-SGVFISDIVKGGAADLDGRLIQGDQILSVNGEDMRNASQETVATILKCAQGLVQL  174
+DSSP  LLLL-LLLEELLLLLLLHHHHHLLLLLLLEEEEELLEELLLLLHHHHHHHHHHLLLEEEE
+
+DSSP  EEELL-
+Query VVEHN-   91
+ident       
+Sbjct EIGRLr  180
+DSSP  EEEELl
+
+
+# Structural equivalences
+   1: 6X1P-A 6IRD-C     1 -  21 <=>   95 - 115   (GLY   91  - GLY  111  <=> GLU  374  - GLY  394 )                          
+   1: 6X1P-A 6IRD-C    27 -  30 <=>  116 - 119   (HIS  117  - GLY  120  <=> LYS  395  - GLY  398 )                          
+   1: 6X1P-A 6IRD-C    32 -  91 <=>  120 - 179   (ASP  122  - ASN  181  <=> SER  399  - LEU  458 )                          
+
+# Translation-rotation matrices
+-matrix  "6X1P-A 6IRD-C  U(1,.)   0.022165 -0.975262 -0.219940          -29.407059"
+-matrix  "6X1P-A 6IRD-C  U(2,.)  -0.854515  0.095714 -0.510532           12.678565"
+-matrix  "6X1P-A 6IRD-C  U(3,.)   0.518953  0.199258 -0.831254           -1.891983"
+

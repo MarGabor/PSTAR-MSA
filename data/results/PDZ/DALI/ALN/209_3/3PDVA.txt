@@ -1,0 +1,32 @@
+# Job: PDZ
+# Query: 3PDVA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1WI2-A 12.5  2.6   88   104   24   MOLECULE: RIKEN CDNA 2700099C19;                                     
+
+# Pairwise alignments
+
+No 1: Query=3PDVA Sbjct=1WI2A Z-score=12.5
+
+DSSP  --------------LEEEEEELLL--LLLLEEEEEEHHHLEEEEEEEELLLLHHHHLLLL
+Query --------------MALTVDVAGP--APWGFRITGGRDFHTPIMVTKVAERGKAKDADLR   44
+ident                   |    |  |  || | ||      |   ||     |  | | 
+Sbjct gssgssgnneltqfLPRIVTLKKPpgAQLGFNIRGGKASQLGIFISKVIPDSDAHRAGLQ   60
+DSSP  llllllllllllllLLEEEEELLLllLLLLEEEELLLLLLLLLEEEEELLLLHHHHHLLL
+
+DSSP  LLLEEEEELLEELLLLLHHHHHHHHHLLLlLEEEEEELLLLLLLL
+Query PGDIIVAINGESAEGMLHAEAQSKIRQSPsPLRLQLDRSTIESEV   89
+ident  ||   | |        |  |                     |  
+Sbjct EGDQVLAVNDVDFQDIEHSKAVEILKTAR-EISMRVRFFSGPSSG  104
+DSSP  LLLEEEEELLEELLLLLHHHHHHHHHHLL-LEEEEEELLLLLLLL
+
+
+# Structural equivalences
+   1: 3PDV-A 1WI2-A     1 -  10 <=>   15 -  24   (MET    1  - PRO   10  <=> LEU   15  - PRO   24 )                          
+   1: 3PDV-A 1WI2-A    11 -  73 <=>   27 -  89   (ALA   11  - PRO   73  <=> ALA   27  - ARG   89 )                          
+   1: 3PDV-A 1WI2-A    75 -  89 <=>   90 - 104   (PRO   75  - VAL   89  <=> GLU   90  - GLY  104 )                          
+
+# Translation-rotation matrices
+-matrix  "3PDV-A 1WI2-A  U(1,.)  -0.401416 -0.768988  0.497517            6.755507"
+-matrix  "3PDV-A 1WI2-A  U(2,.)   0.796808 -0.025360  0.603700          -17.380678"
+-matrix  "3PDV-A 1WI2-A  U(3,.)  -0.451621  0.638761  0.622916          -31.678909"
+

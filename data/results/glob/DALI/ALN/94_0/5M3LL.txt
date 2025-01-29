@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 5M3LL
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2OLP-B 15.7  2.0  134   151   20   MOLECULE: HEMOGLOBIN II;                                             
+
+# Pairwise alignments
+
+No 1: Query=5M3LL Sbjct=2OLPB Z-score=15.7
+
+DSSP  -LLLHHHHHHHHHHHHHHHLllhHHHHHHHHHHHHHHHHLHHHHLHHHHLL----lLLLL
+Query -ECLVTESLKVKLQWASAFGhahERVAFGLELWRDIIDDHPEIKAPFSRVR----gDNIY   55
+ident               |          |  |     |    |||   ||             
+Sbjct tTLTNPQKAAIRSSWSKFMD---NGVSNGQGFYMDLFKAHPETLTPFKSLFggltlAQLQ   57
+DSSP  lLLLHHHHHHHHHHHHHHHL---LHHHHHHHHHHHHHHHLHHHHHHHHHHHllllhHHLL
+
+DSSP  -LLLHHHHHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHH
+Query -SPEFGAHSQRVLSGLDITISMLDTPDMLAAQLAHLKVQHVERNLKPEFFDIFLKHLLHV  114
+ident   |   | |     |       ||  |||          |  |             | | 
+Sbjct dNPKMKAQSLVFCNGMSSFVDHLDDNDMLVVLIQKMAKLHNNRGIRASDLRTAYDILIHY  117
+DSSP  lLHHHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHH
+
+DSSP  HHHHH-llLLLHHHHHHHHHHHHHHHL-------
+Query LGDRL-gtHFDFGAWHDCVDQIIDGIK-------  140
+ident   |          ||   |  |            
+Sbjct MEDHNhmvGGAKDAWEVFVGFICKTLGdymkels  151
+DSSP  HHHLLlllLLHHHHHHHHHHHHHHHHHhhhhhhl
+
+
+# Structural equivalences
+   1: 5M3L-L 2OLP-B     1 -  19 <=>    2 -  20   (GLU    8  - GLY   26  <=> THR    2  - ASP   20 )                          
+   1: 5M3L-L 2OLP-B    23 -  50 <=>   21 -  48   (GLU   30  - ARG   57  <=> ASN   21  - PHE   48 )                          
+   1: 5M3L-L 2OLP-B    52 -  55 <=>   54 -  57   (ASP   59  - TYR   62  <=> ALA   54  - GLN   57 )                          
+   1: 5M3L-L 2OLP-B    56 - 119 <=>   59 - 122   (SER   63  - LEU  126  <=> ASN   59  - ASN  122 )                          
+   1: 5M3L-L 2OLP-B   122 - 140 <=>  126 - 144   (HIS  129  - LYS  147  <=> GLY  126  - GLY  144 )                          
+
+# Translation-rotation matrices
+-matrix  "5M3L-L 2OLP-B  U(1,.)  -0.702042 -0.680893 -0.208617           42.993446"
+-matrix  "5M3L-L 2OLP-B  U(2,.)  -0.327335  0.048375  0.943669           39.968941"
+-matrix  "5M3L-L 2OLP-B  U(3,.)  -0.632446  0.730783 -0.256841           68.424606"
+

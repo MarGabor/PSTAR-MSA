@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 2CRAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4CYC-A  8.1  5.7   63    66   41   MOLECULE: HOMEOTIC PROTEIN ULTRABITHORAX;                            
+
+# Pairwise alignments
+
+No 1: Query=2CRAA Sbjct=4CYCA Z-score=8.1
+
+DSSP  -LLLLLlllllLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHH
+Query -GSSGSsgrkkRIPYSKGQLRELEREYAANKFITKDKRRKISAATSLSERQITIWFQNRR   59
+ident            |  |   |  ||| |   |   |   |     |  | |||| |||||||
+Sbjct fYPWMA-----RQTYTRYQTLELEKEFHTNHYLTRRRRIEMAHALCLTERQIKIWFQNRR   55
+DSSP  lLHHHL-----LLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLHHHHHHHHHHHH
+
+DSSP  HLLLLlLLLLl
+Query VKEKKsGPSSg   70
+ident  | ||      
+Sbjct MKLKKeIQAIk   66
+DSSP  HHHHHhHHLLl
+
+
+# Structural equivalences
+   1: 2CRA-A 4CYC-A     1 -   5 <=>    2 -   6   (GLY    1  - SER    5  <=> TYR  -11  - ALA   -7 )                          
+   1: 2CRA-A 4CYC-A    11 -  64 <=>    7 -  60   (ARG   11  - LYS   64  <=> ARG    5  - LYS   58 )                          
+   1: 2CRA-A 4CYC-A    66 -  69 <=>   62 -  65   (GLY   66  - SER   69  <=> ILE   60  - ILE   63 )                          
+
+# Translation-rotation matrices
+-matrix  "2CRA-A 4CYC-A  U(1,.)   0.190993  0.693967  0.694213          -12.483244"
+-matrix  "2CRA-A 4CYC-A  U(2,.)   0.606703 -0.639424  0.472280           28.765884"
+-matrix  "2CRA-A 4CYC-A  U(3,.)   0.771643  0.330979 -0.543157           34.127979"
+

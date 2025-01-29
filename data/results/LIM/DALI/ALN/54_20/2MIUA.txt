@@ -1,0 +1,35 @@
+# Job: LIM
+# Query: 2MIUA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2COR-A  2.4  8.1   61    79   18   MOLECULE: PINCH PROTEIN;                                             
+
+# Pairwise alignments
+
+No 1: Query=2MIUA Sbjct=2CORA Z-score=2.4
+
+DSSP  -LLLLLLLlllllllllllleeelleeELHHhhhhHHLEELLLLLLEELllLLEEEELLE
+Query -MTERFDChhcneslfgkkyilreespYCVVcfetLFANTCEECGKPIGcdCKDLSYKDR   59
+ident                                    |    |  |   |      |  |  
+Sbjct gSSGSSGE-------------------KARG----LGKYICQKCHAIID--EQPLIFKND   35
+DSSP  lLLLLLLL-------------------LLLL----LLLLLLLLLLLLLL--LLLLLLLLL
+
+DSSP  EEELLLLLLLLLLLLL---LLLLLEElllleelhhhhhHHHL------
+Query HWHEACFHCSQCRNSL---VDKPFAAkedqllctdcysNEYS------   98
+ident   |   | |  |   |                                
+Sbjct PYHPDHFNCANCGKELtadARELKGE----lyclpchdKMGVsgpssg   79
+DSSP  LLLLLLLLLLLLLLLLlllLEEELLE----eelhhhhhLLLLllllll
+
+
+# Structural equivalences
+   1: 2MIU-A 2COR-A     1 -   7 <=>    2 -   8   (MET    1  - CYS    7  <=> SER    2  - GLU    8 )                          
+   1: 2MIU-A 2COR-A    27 -  30 <=>    9 -  12   (TYR   27  - VAL   30  <=> LYS    9  - GLY   12 )                          
+   1: 2MIU-A 2COR-A    35 -  48 <=>   13 -  26   (LEU   35  - GLY   48  <=> LEU   13  - ASP   26 )                          
+   1: 2MIU-A 2COR-A    51 -  75 <=>   27 -  51   (CYS   51  - LEU   75  <=> GLU   27  - LEU   51 )                          
+   1: 2MIU-A 2COR-A    76 -  82 <=>   55 -  61   (VAL   76  - ALA   82  <=> ALA   55  - GLU   61 )                          
+   1: 2MIU-A 2COR-A    95 -  98 <=>   70 -  73   (ASN   95  - SER   98  <=> LYS   70  - VAL   73 )                          
+
+# Translation-rotation matrices
+-matrix  "2MIU-A 2COR-A  U(1,.)  -0.139123 -0.599665 -0.788065          -11.431253"
+-matrix  "2MIU-A 2COR-A  U(2,.)  -0.788436  0.548586 -0.278249          -17.634441"
+-matrix  "2MIU-A 2COR-A  U(3,.)   0.599177  0.582628 -0.549119            0.179043"
+

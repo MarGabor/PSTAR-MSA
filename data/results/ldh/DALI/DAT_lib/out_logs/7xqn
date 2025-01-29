@@ -1,0 +1,453 @@
+A length: 310
+B length: 310
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            310
+Total number of atoms read in:              2262
+Total number of ignored atom records:        507
+ HEADER    BIOSYNTHETIC PROTEIN                    08-MAY-22   7XQN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TOLEDO-PATINO,P.LAURINO                                             
+  Reading DSSP file
+ HEADER    BIOSYNTHETIC PROTEIN                    08-MAY-22   7XQN              COMPND   2 MOLECULE: MALATE DEHYDROGENASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    S.TOLEDO-PATINO,P.LAURINO                                             
+         310  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2860
+ selectset done           0
+ eigen done           0
+ tau           1   1.87197757              59
+ #popped           2           1
+ #selectset contacts        2860
+ selectset done           1
+ eigen done           1
+ tau           3  0.739712715              11          26
+ #popped           4           1
+ #selectset contacts        2860
+ selectset done           1
+ eigen done           1
+ tau           5  0.465863019              11
+ #popped           7           1
+ #selectset contacts        2860
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        2860
+ selectset done           0
+ eigen done           0
+ tau           7   1.75575948             190         219
+ #popped           8           1
+ #selectset contacts        2860
+ selectset done           1
+ eigen done           1
+ tau           9   1.76259172             190         244
+ #popped          10           2
+ #selectset contacts        2860
+ selectset done           2
+ eigen done           2
+ tau          11   2.25442839             144         190         277         293
+ #popped          12           3
+ #selectset contacts        2860
+ selectset done           3
+ eigen done           3
+ tau          13   1.53019083              75          92
+ #popped          14           3
+ #selectset contacts        2860
+ selectset done           3
+ eigen done           3
+ tau          15   1.66570926             277
+ #popped          16           3
+ #selectset contacts        2860
+ selectset done           3
+ eigen done           3
+ tau          17   1.78707623             144
+ #popped          18           4
+ #selectset contacts        2860
+ selectset done           4
+ eigen done           4
+ tau          19   1.18329370              75         109
+ #popped          20           4
+ #selectset contacts        2860
+ selectset done           4
+ eigen done           4
+ tau          21   0.00000000    
+ #popped          19           3
+ #selectset contacts        2860
+ selectset done           3
+ eigen done           3
+ tau          21  0.634241223             265
+ #popped          22           3
+ #selectset contacts        2860
+ selectset done           3
+ eigen done           3
+ tau          23   0.00000000    
+ #popped          13           2
+ #selectset contacts        2860
+ selectset done           2
+ eigen done           2
+ tau          23   2.31245375             170
+ #popped          24           3
+ #selectset contacts        2860
+ selectset done           3
+ eigen done           3
+ tau          25  0.712985218             155
+ #popped          25           2
+ #selectset contacts        2860
+ selectset done           2
+ eigen done           2
+ tau          27   1.29814076             190
+ #popped          28           2
+ #selectset contacts        2860
+ selectset done           2
+ eigen done           2
+ tau          29  0.547319710             180
+ #popped          11           1
+ #selectset contacts        2860
+ selectset done           1
+ eigen done           1
+ tau          31  0.934855342             231
+ #popped           9           0
+ #selectset contacts        2860
+ selectset done           0
+ eigen done           0
+ tau          33   1.26361418             206
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    BIOSYNTHETIC PROTEIN                    08-MAY-22   7XQN              COMPND   2 MOLECULE: MALATE DEHYDROGENASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    S.TOLEDO-PATINO,P.LAURINO                                             
+           0
+         310
+         310  residues read 7XQN.dssp                                                   
+  grow short strand           3           7
+  exclude short helix          62          65
+  grow short strand          70          73
+  grow short strand         111         114
+  grow short strand         141         143
+  exclude short helix         164         166
+  grow short strand         171         173
+  exclude short helix         177         179
+  grow short strand         180         182
+ crowded segment excluded!
+  exclude short helix         184         186
+  grow short strand         272         276
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  3  4  5  2  6  8  9 10  7 16 17 18 19 11 12 15 13 14
+   2     1  4  5  5  1  3  4  5  2
+   3     1  8  9 14  6  8  9 10  7 16 17 18 19 11 12 15 13 14
+   4     2  6  7  4  1  3  4  5
+   5     2  0  0  1  2
+   6     4  0  0  1  1
+   7     4  0  0  3  3  4  5
+   8     3 10 11 12  6  8  9 10  7 16 17 18 19 11 12 15
+   9     3 34 35  2 13 14
+  10     8 12 13 11  6  8  9 10  7 16 17 18 19 11 12
+  11     8  0  0  1 15
+  12    10 16 17  9  6  8  9 10  7 16 17 18 19
+  13    10 24 25  2 11 12
+  14     0  0  0  9  6  8  9 10  7 16 17 18 19
+  15     0  0  0  0
+  16    12 18 19  8  6  8  9 10  7 16 17 18
+  17    12  0  0  1 19
+  18    16 20 21  5  6  8  9 10  7
+  19    16 22 23  3 16 17 18
+  20    18  0  0  4  6  8  9 10
+  21    18  0  0  1  7
+  22    19  0  0  2 16 17
+  23    19  0  0  1 18
+  24    13  0  0  1 11
+  25    13  0  0  1 12
+  26     0  0  0  1 11
+  27     0  0  0  0
+  28     0  0  0  1 12
+  29     0  0  0  0
+  30     0  0  0  1 12
+  31     0  0  0  0
+  32     0  0  0  1 15
+  33     0  0  0  0
+  34     9  0  0  1 13
+  35     9  0  0  1 14
+   1 +   0  2  3 19  1  1 19
+   2 *   1  4  5  5  1  1  5
+   3 *   1  8  9 14  1  6 19
+   4 -   2  6  7  4  2  1  1  3  5
+   5 -   2  0  0  1  1  2  2
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  3  1  3  5
+   8 -   3 10 11 12  2  6 12 15 19
+   9 -   3 24 25  2  1 13 14
+  10 -   8 12 13 11  2  6 12 16 19
+  11 -   8  0  0  1  1 15 15
+  12 -  10 14 15  9  2  6 10 16 19
+  13 -  10 22 23  2  1 11 12
+  14 -  12 16 17  8  2  6 10 16 18
+  15 -  12  0  0  1  1 19 19
+  16 -  14 18 19  5  1  6 10
+  17 -  14 20 21  3  1 16 18
+  18 -  16  0  0  4  2  6  6  8 10
+  19 -  16  0  0  1  1  7  7
+  20 -  17  0  0  2  1 16 17
+  21 -  17  0  0  1  1 18 18
+  22 -  13  0  0  1  1 11 11
+  23 -  13  0  0  1  1 12 12
+  24 -   9  0  0  1  1 13 13
+  25 -   9  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            310
+Total number of atoms read in:              2262
+Total number of ignored atom records:        461
+ HEADER    BIOSYNTHETIC PROTEIN                    08-MAY-22   7XQN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TOLEDO-PATINO,P.LAURINO                                             
+  Reading DSSP file
+ HEADER    BIOSYNTHETIC PROTEIN                    08-MAY-22   7XQN              COMPND   2 MOLECULE: MALATE DEHYDROGENASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    S.TOLEDO-PATINO,P.LAURINO                                             
+         310  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2861
+ selectset done           0
+ eigen done           0
+ tau           1   2.30465627             116
+ #popped           2           1
+ #selectset contacts        2861
+ selectset done           1
+ eigen done           1
+ tau           3   2.06584549              75         101
+ #popped           4           2
+ #selectset contacts        2861
+ selectset done           2
+ eigen done           2
+ tau           5   1.10857761              10          24          34          51
+ #popped           6           3
+ #selectset contacts        2861
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        2861
+ selectset done           2
+ eigen done           2
+ tau           7   1.68490779              24
+ #popped           5           1
+ #selectset contacts        2861
+ selectset done           1
+ eigen done           1
+ tau           9   1.35052788              85
+ #popped           3           0
+ #selectset contacts        2861
+ selectset done           0
+ eigen done           0
+ tau          11   1.87876749             145         170         186         229
+ #popped          12           1
+ #selectset contacts        2861
+ selectset done           1
+ eigen done           1
+ tau          13   2.06645441             186         250         263         277
+ #popped          14           2
+ #selectset contacts        2861
+ selectset done           2
+ eigen done           2
+ tau          15   1.05756783             263         299
+ #popped          16           3
+ #selectset contacts        2861
+ selectset done           3
+ eigen done           3
+ tau          17   1.54255319             263
+ #popped          18           3
+ #selectset contacts        2861
+ selectset done           3
+ eigen done           3
+ tau          19   1.37793112             145         186
+ #popped          20           3
+ #selectset contacts        2861
+ selectset done           3
+ eigen done           3
+ tau          21   1.13365543             135
+ #popped          23           3
+ #selectset contacts        2861
+ selectset done           3
+ eigen done           3
+ tau          23   1.20819986             145
+ #popped          17           2
+ #selectset contacts        2861
+ selectset done           2
+ eigen done           2
+ tau          25  0.951219499             289
+ #popped          15           1
+ #selectset contacts        2861
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          13           0
+ #selectset contacts        2861
+ selectset done           0
+ eigen done           0
+ tau          27   1.56857145             219
+ #popped          28           0
+ #selectset contacts        2861
+ selectset done           0
+ eigen done           0
+ tau          29   1.39035559             207
+ #popped          30           0
+ #selectset contacts        2861
+ selectset done           0
+ eigen done           0
+ tau          31   2.50198293             170
+ #popped          32           1
+ #selectset contacts        2861
+ selectset done           1
+ eigen done           1
+ tau          33  0.690870106             155
+ #popped          33           0
+ #selectset contacts        2861
+ selectset done           0
+ eigen done           0
+ tau          35  0.731112421             197
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    BIOSYNTHETIC PROTEIN                    08-MAY-22   7XQN              COMPND   2 MOLECULE: MALATE DEHYDROGENASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    S.TOLEDO-PATINO,P.LAURINO                                             
+           0
+         310
+         310  residues read 7XQN.dssp                                                   
+  grow short strand           3           7
+  grow short strand          27          31
+  grow short strand          52          56
+  exclude short helix          62          65
+  grow short strand          70          73
+  grow short strand         111         114
+  grow short strand         141         143
+  exclude short helix         164         166
+  grow short strand         171         173
+  exclude short helix         177         179
+  grow short strand         180         182
+ crowded segment excluded!
+  exclude short helix         184         186
+  grow short strand         272         276
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  3  5  6  8  2  4  7  9 10 12 19 15 16 17 18 11 13 14
+   2     1  4  5  8  1  3  5  6  8  2  4  7
+   3     1 12 13 11  9 10 12 19 15 16 17 18 11 13 14
+   4     2  6  7  7  1  3  5  6  8  2  4
+   5     2  0  0  1  7
+   6     4  0  0  5  1  3  5  6  8
+   7     4  8  9  2  2  4
+   8     7  0  0  1  2
+   9     7  0  0  1  4
+  10     0  0  0  0
+  11     0  0  0  1  7
+  12     3 14 15  8  9 10 12 19 15 16 17 18
+  13     3 30 31  3 11 13 14
+  14    12 16 17  4  9 10 12 19
+  15    12  0  0  4 15 16 17 18
+  16    14 20 21  3  9 10 12
+  17    14  0  0  1 19
+  18     0  0  0  3  9 10 12
+  19     0  0  0  0
+  20    16 22 23  2  9 10
+  21    16  0  0  1 12
+  22    20  0  0  1  9
+  23    20  0  0  1 10
+  24     0  0  0  1 10
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1 19
+  28     0  0  0  3 11 13 14
+  29     0  0  0  0
+  30    13 32 33  2 11 13
+  31    13  0  0  1 14
+  32    30  0  0  1 11
+  33    30  0  0  1 13
+  34     0  0  0  1 11
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  1 13
+   1 +   0  2  3 19  1  1 19
+   2 *   1  4  5  8  1  1  8
+   3 *   1 10 11 11  1  9 19
+   4 -   2  6  7  7  2  1  6  8  8
+   5 -   2  0  0  1  1  7  7
+   6 -   4  0  0  5  4  1  1  3  3  5  6  8  8
+   7 -   4  8  9  2  2  2  2  4  4
+   8 -   7  0  0  1  1  2  2
+   9 -   7  0  0  1  1  4  4
+  10 -   3 12 13  8  3  9 10 12 12 15 19
+  11 -   3 20 21  3  2 11 11 13 14
+  12 -  10 14 15  4  3  9 10 12 12 19 19
+  13 -  10  0  0  4  1 15 18
+  14 -  12 16 17  3  2  9 10 12 12
+  15 -  12  0  0  1  1 19 19
+  16 -  14 18 19  2  1  9 10
+  17 -  14  0  0  1  1 12 12
+  18 -  16  0  0  1  1  9  9
+  19 -  16  0  0  1  1 10 10
+  20 -  11 22 23  2  2 11 11 13 13
+  21 -  11  0  0  1  1 14 14
+  22 -  20  0  0  1  1 11 11
+  23 -  20  0  0  1  1 13 13
+
+ CHAIN : 7XQNA
+ CHAIN : 7XQNB
+

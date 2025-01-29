@@ -1,0 +1,40 @@
+# Job: egf
+# Query: 4TGFA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4ZMA-L  2.5  5.1   42   141   24   MOLECULE: COAGULATION FACTOR VII;                                    
+
+# Pairwise alignments
+
+No 1: Query=4TGFA Sbjct=4ZMAL Z-score=2.5
+
+DSSP  ------------------------------------------LLLLLLLLLlllLLLLLL
+Query ------------------------------------------VVSHFNDCPdshTQFCFH   18
+ident                                             |    |       |  
+Sbjct anaflxxlrpgslxrxckxxqcsfxxarxifkdaxrtklfwiSYSDGDQCA---SSPCQN   57
+DSSP  lllllhhhllllhhhhhllllllhhhhhhhhllhhhhhhhhhHHHLLLHHH---HLLLLL
+
+DSSP  -LEEEEELllLEEEEELLLLEELllLLEELLL----------------------------
+Query -GTCRFLVqeDKPACVCHSGYVGarCEHADLL----------------------------   49
+ident  | |          | |     |  ||                                 
+Sbjct gGSCKDQL--QSYICFCLPAFEGrnCETHKDDqlicvnenggceqycsdhkrscrchegy  115
+DSSP  lLEEEEEL--LEEEEELLLLEELllLLEELHHhlllllhhhhllleeelllleeelllle
+
+DSSP  -------------------------l
+Query -------------------------a   50
+ident                           
+Sbjct slladgvsctptveypcgkipilekr  141
+DSSP  eelllllleeelllllllllhhhlll
+
+
+# Structural equivalences
+   1: 4TGF-A 4ZMA-L     1 -   9 <=>   43 -  51   (VAL    1  - PRO    9  <=> SER   43  - ALA   51 )                          
+   1: 4TGF-A 4ZMA-L    13 -  18 <=>   52 -  57   (THR   13  - HIS   18  <=> SER   52  - ASN   57 )                          
+   1: 4TGF-A 4ZMA-L    19 -  25 <=>   59 -  65   (GLY   19  - VAL   25  <=> GLY   59  - LEU   65 )                          
+   1: 4TGF-A 4ZMA-L    28 -  40 <=>   66 -  78   (ASP   28  - GLY   40  <=> GLN   66  - GLY   78 )                          
+   1: 4TGF-A 4ZMA-L    43 -  49 <=>   81 -  87   (CYS   43  - LEU   49  <=> CYS   81  - ASP   87 )                          
+
+# Translation-rotation matrices
+-matrix  "4TGF-A 4ZMA-L  U(1,.)   0.097689  0.499616 -0.860721           16.410563"
+-matrix  "4TGF-A 4ZMA-L  U(2,.)   0.020282 -0.865678 -0.500191          -25.150097"
+-matrix  "4TGF-A 4ZMA-L  U(3,.)  -0.995010  0.031406 -0.094700            0.082235"
+

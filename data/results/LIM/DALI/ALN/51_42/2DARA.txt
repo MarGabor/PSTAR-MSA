@@ -1,0 +1,39 @@
+# Job: LIM
+# Query: 2DARA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CUP-A  6.9  4.4   66   101   24   MOLECULE: SKELETAL MUSCLE LIM-PROTEIN 1;                             
+
+# Pairwise alignments
+
+No 1: Query=2DARA Sbjct=2CUPA Z-score=6.9
+
+DSSP  lllllllllllllllleeellllLLLLLLLLLLLLL--LLEEEELLEEELLLLLLLLLLL
+Query gssgssgdqdtlvqraehipagkRTPMCAHCNQVIR--GPFLVALGKSWHPEEFNCAHCK   58
+ident                            |  |   |             ||   | || | 
+Sbjct --------------------gssGSSGCVECRKPIGadSKEVHYKNRFWHDTCFRCAKCL   40
+DSSP  --------------------lllLLLLLLLLLLLLLllLLEEEELLEEEELLLLLLLLLL
+
+DSSP  LLLLLLLLEELLLLEELHHHHHhHLLLL--------LLLL--------------------
+Query NTMAYIGFVEEKGALYCELCYEkFFASG--------PSSG--------------------   90
+ident    |   ||       |  |      |            |                    
+Sbjct HPLANETFVAKDNKILCNKCTT-REDSPkckgcfkaIVAGdqnveykgtvwhkdcfsgps   99
+DSSP  LLLLLLLLEEELLEEELHHHHL-LLLLLllllllllLLLLlleeelllleeellllllll
+
+DSSP  --
+Query --   90
+ident   
+Sbjct sg  101
+DSSP  ll
+
+
+# Structural equivalences
+   1: 2DAR-A 2CUP-A    24 -  36 <=>    4 -  16   (ARG   24  - ARG   36  <=> GLY    4  - GLY   16 )                          
+   1: 2DAR-A 2CUP-A    37 -  80 <=>   19 -  62   (GLY   37  - GLU   80  <=> SER   19  - THR   62 )                          
+   1: 2DAR-A 2CUP-A    82 -  86 <=>   63 -  67   (PHE   82  - GLY   86  <=> ARG   63  - PRO   67 )                          
+   1: 2DAR-A 2CUP-A    87 -  90 <=>   76 -  79   (PRO   87  - GLY   90  <=> ILE   76  - GLY   79 )                          
+
+# Translation-rotation matrices
+-matrix  "2DAR-A 2CUP-A  U(1,.)  -0.085826 -0.984091 -0.155557           -1.049301"
+-matrix  "2DAR-A 2CUP-A  U(2,.)  -0.635517  0.174319 -0.752151           -5.933810"
+-matrix  "2DAR-A 2CUP-A  U(3,.)   0.767302  0.034305 -0.640368           -9.224618"
+

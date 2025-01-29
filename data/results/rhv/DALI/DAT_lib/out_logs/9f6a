@@ -1,0 +1,642 @@
+A length: 293
+B length: 242
+C length: 249
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            293
+Total number of atoms read in:              2246
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   30-APR-24   9F6A              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMAN,        
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  Reading DSSP file
+ HEADER    VIRUS                                   30-APR-24   9F6A              COMPND   2 MOLECULE: VP0;                                                       SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROVIRUS A71;                                AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMA          
+         293  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2559
+ selectset done           0
+ eigen done           0
+ tau           1   999.999023              34
+ #popped           2           1
+ #selectset contacts        2559
+ selectset done           1
+ eigen done           1
+ tau           3   0.00000000    
+ #popped           3           0
+ #selectset contacts        2559
+ selectset done           0
+ eigen done           0
+ tau           3   1.97209573             172         184
+ #popped           4           0
+ #selectset contacts        2559
+ selectset done           0
+ eigen done           0
+ tau           5   1.60525596              78         100         125         143         235         247         280
+ #popped           6           1
+ #selectset contacts        2559
+ selectset done           1
+ eigen done           1
+ tau           7   1.42851782              78
+ #popped           8           2
+ #selectset contacts        2559
+ selectset done           2
+ eigen done           2
+ tau           9   1.68311691              53          63
+ #popped          10           2
+ #selectset contacts        2559
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           9           1
+ #selectset contacts        2559
+ selectset done           1
+ eigen done           1
+ tau          11  0.273695290             158         260         270
+ #popped          12           2
+ #selectset contacts        2559
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          13           1
+ #selectset contacts        2559
+ selectset done           1
+ eigen done           1
+ tau          13   16.2526245             260
+ #popped          14           1
+ #selectset contacts        2559
+ selectset done           1
+ eigen done           1
+ tau          15   3.50902343             172         198
+ #popped          16           1
+ #selectset contacts        2559
+ selectset done           1
+ eigen done           1
+ tau          17  0.343600273             218
+ #popped          18           2
+ #selectset contacts        2559
+ selectset done           2
+ eigen done           2
+ tau          19  0.848670900             208
+ #popped          20           2
+ #selectset contacts        2559
+ selectset done           2
+ eigen done           2
+ tau          21   2.57766032             172
+ #popped          19           1
+ #selectset contacts        2559
+ selectset done           1
+ eigen done           1
+ tau          23   11.4262714             235
+ #popped           7           0
+ #selectset contacts        2559
+ selectset done           0
+ eigen done           0
+ tau          25  0.848016620              88
+ #popped          27           0
+ #selectset contacts        2559
+ selectset done           0
+ eigen done           0
+ tau          27  0.841150463             143         247
+ #popped          28           0
+ #selectset contacts        2559
+ selectset done           0
+ eigen done           0
+ tau          29  0.780300915             100
+ #popped          31           0
+ #selectset contacts        2559
+ selectset done           0
+ eigen done           0
+ tau          31   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   30-APR-24   9F6A              COMPND   2 MOLECULE: VP0;                                                       SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROVIRUS A71;                                AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMA          
+           0
+         293
+         293  residues read 9F6A.dssp                                                   
+  exclude short helix          25          27
+  exclude short helix          37          39
+  exclude short helix          43          46
+  grow short strand          56          57
+  grow short strand          60          61
+  exclude short helix          67          69
+  grow short strand          70          72
+ crowded segment excluded!
+  exclude short helix          73          75
+  grow short strand         117         121
+  exclude short helix         123         125
+  exclude short helix         175         179
+  exclude short helix         187         190
+  grow short strand         197         198
+  exclude short helix         212         216
+  grow short strand         219         221
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 12  1  2  3  4  6  7  9 10 11  8 12  5
+   2     0  0  0  0
+   3     0  0  0 12  1  2  3  4  6  7  9 10 11  8 12  5
+   4     0  0  0 12  1  2  3  4  6  7  9 10 11  8 12  5
+   5     0  0  0  0
+   6     1  8  9 11  1  2  3  4  6  7  9 10 11  8 12
+   7     1  0  0  1  5
+   8     6  0  0  2  1  2
+   9     6 12 13  9  3  4  6  7  9 10 11  8 12
+  10     0  0  0  0
+  11     0  0  0  2  1  2
+  12     9  0  0  3  3  4  6
+  13     9 14 15  6  7  9 10 11  8 12
+  14    13 16 17  5  7  9 10 11  8
+  15    13  0  0  1 12
+  16    14 18 19  4  7  9 10 11
+  17    14  0  0  1  8
+  18    16  0  0  1  7
+  19    16 24 25  3  9 10 11
+  20     0  0  0  1  7
+  21     0  0  0  0
+  22     0  0  0  1  7
+  23     0  0  0  0
+  24    19  0  0  2  9 10
+  25    19  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  1  5
+  28     0  0  0  1  5
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1  5
+   1 +   0  2  3 12  1  1 12
+   2 -   1  4  5 11  2  1  4  6 12
+   3 -   1  0  0  1  1  5  5
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  9  2  3  4  6 12
+   6 -   5  0  0  3  2  3  4  6  6
+   7 -   5  8  9  6  1  7 12
+   8 -   7 10 11  5  1  7 11
+   9 -   7  0  0  1  1 12 12
+  10 -   8 12 13  4  2  7  7  9 11
+  11 -   8  0  0  1  1  8  8
+  12 -  10  0  0  1  1  7  7
+  13 -  10 14 15  3  1  9 11
+  14 -  13  0  0  2  1  9 10
+  15 -  13  0  0  1  1 11 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            242
+Total number of atoms read in:              1867
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   30-APR-24   9F6A              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMAN,        
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  Reading DSSP file
+ HEADER    VIRUS                                   30-APR-24   9F6A              COMPND   2 MOLECULE: VP0;                                                       SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROVIRUS A71;                                AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMA          
+         242  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1956
+ selectset done           0
+ eigen done           0
+ tau           1   18.3082695              37
+ #popped           2           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau           3   5.38214302              19
+ #popped           3           0
+ #selectset contacts        1956
+ selectset done           0
+ eigen done           0
+ tau           5   1.77098274              50          87         116         167         191         218
+ #popped           6           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau           7   1.46260297             232
+ #popped           8           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau           9   1.57180536              50
+ #popped          11           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau          11  0.822207153             104
+ #popped          13           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau          13  0.291141331             178
+ #popped          14           2
+ #selectset contacts        1956
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau          15   999.999023             191
+ #popped           7           0
+ #selectset contacts        1956
+ selectset done           0
+ eigen done           0
+ tau          17  0.558581114              65
+ #popped          19           0
+ #selectset contacts        1956
+ selectset done           0
+ eigen done           0
+ tau          19   1.09672749              75          87         129         157         167         201
+ #popped          20           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau          21  0.256233126             167
+ #popped          22           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau          23   11.1541500              75
+ #popped          25           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau          25  0.292225420             129
+ #popped          21           0
+ #selectset contacts        1956
+ selectset done           0
+ eigen done           0
+ tau          27  0.193381652             141
+ #popped          28           1
+ #selectset contacts        1956
+ selectset done           1
+ eigen done           1
+ tau          29   21.7471256              87
+ #popped          29           0
+ #selectset contacts        1956
+ selectset done           0
+ eigen done           0
+ tau          31   1.25095689             157
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   30-APR-24   9F6A              COMPND   2 MOLECULE: VP0;                                                       SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROVIRUS A71;                                AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMA          
+           0
+         242
+         242  residues read 9F6A.dssp                                                   
+  grow short strand          22          23
+  exclude short helix          43          47
+  grow short strand          51          53
+  grow short strand          71          74
+  exclude short helix          95          98
+  exclude short helix         100         105
+  grow short strand         108         112
+  exclude short helix         146         149
+  grow short strand         178         179
+  exclude short helix         185         189
+  grow short strand         225         229
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  6 11 14  2  3  4  7 10 13  5  8  9 12
+   2     1  0  0  1  1
+   3     1  6  7 13  6 11 14  2  3  4  7 10 13  5  8  9 12
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     3 14 15  3  6 11 14
+   7     3 18 19 10  2  3  4  7 10 13  5  8  9 12
+   8     0  0  0  3  6 11 14
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  3  6 11 14
+  12     0  0  0  0
+  13     0  0  0  3  6 11 14
+  14     6  0  0  2  6 11
+  15     6  0  0  1 14
+  16     0  0  0  0
+  17     0  0  0  1 14
+  18     7  0  0  2  2  3
+  19     7 20 21  8  4  7 10 13  5  8  9 12
+  20    19 22 23  4  4  7 10 13
+  21    19 28 29  4  5  8  9 12
+  22    20 24 25  3  4  7 10
+  23    20  0  0  1 13
+  24    22  0  0  1  4
+  25    22 26 27  2  7 10
+  26    25  0  0  1  7
+  27    25  0  0  1 10
+  28    21 30 31  2  5  8
+  29    21 32 33  2  9 12
+  30    28  0  0  1  5
+  31    28  0  0  1  8
+  32    29  0  0  1  9
+  33    29  0  0  1 12
+   1 +   0  2  3 14  1  1 14
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 13  1  2 14
+   4 -   3  6  7  3  3  6  6 11 11 14 14
+   5 -   3  8  9 10  3  2  5  7 10 12 13
+   6 -   4  0  0  2  2  6  6 11 11
+   7 -   4  0  0  1  1 14 14
+   8 -   5  0  0  2  1  2  3
+   9 -   5 10 11  8  3  4  5  7 10 12 13
+  10 -   9 12 13  4  4  4  4  7  7 10 10 13 13
+  11 -   9 18 19  4  3  5  5  8  9 12 12
+  12 -  10 14 15  3  3  4  4  7  7 10 10
+  13 -  10  0  0  1  1 13 13
+  14 -  12  0  0  1  1  4  4
+  15 -  12 16 17  2  2  7  7 10 10
+  16 -  15  0  0  1  1  7  7
+  17 -  15  0  0  1  1 10 10
+  18 -  11 20 21  2  2  5  5  8  8
+  19 -  11 22 23  2  2  9  9 12 12
+  20 -  18  0  0  1  1  5  5
+  21 -  18  0  0  1  1  8  8
+  22 -  19  0  0  1  1  9  9
+  23 -  19  0  0  1  1 12 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            249
+Total number of atoms read in:              1970
+Total number of ignored atom records:         21
+ HEADER    VIRUS                                   30-APR-24   9F6A              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMAN,        
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  Reading DSSP file
+ HEADER    VIRUS                                   30-APR-24   9F6A              COMPND   2 MOLECULE: VP0;                                                       SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROVIRUS A71;                                AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMA          
+         249  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau           1   5.33593798             239
+ #popped           2           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau           3   10.8850155              25
+ #popped           4           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           5           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau           5   2.69622350              39          63          86         142         182         205
+ #popped           6           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau           7   2.52183414              39          76         217
+ #popped           8           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau           9   1.77653956              39
+ #popped          11           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau          11   1.59708416             155         182
+ #popped          12           3
+ #selectset contacts        2001
+ selectset done           3
+ eigen done           3
+ tau          13  0.207123637             145
+ #popped          15           3
+ #selectset contacts        2001
+ selectset done           3
+ eigen done           3
+ tau          15   23.4659691             155
+ #popped          13           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau          17  0.732732773             169
+ #popped           9           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau          19  0.800199807              76
+ #popped          21           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau          21  0.584269643             229
+ #popped           7           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau          23   1.32902920              51          63         103         132         142         193
+ #popped          24           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau          25  0.323977530              51
+ #popped          27           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau          27  0.224221811             103
+ #popped          29           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau          29   21.4431820             142
+ #popped          25           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau          31  0.234874398             113
+ #popped          32           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau          33   21.3641624              63
+ #popped          33           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau          35   1.07563972             132
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   30-APR-24   9F6A              COMPND   2 MOLECULE: VP0;                                                       SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROVIRUS A71;                                AUTHOR    N.J.KINGSTON,N.J.STONEHOUSE,D.J.ROWLANDS,J.M.HOGLE,D.J.FILMA          
+           0
+         249
+         249  residues read 9F6A.dssp                                                   
+  exclude short helix          28          30
+  exclude short helix          32          35
+  grow short strand          58          62
+  exclude short helix          65          67
+  grow short helix          69          75
+  exclude short helix         121         124
+  grow short strand         130         134
+  grow short strand         140         144
+  grow short strand         153         154
+  exclude short helix         171         173
+  exclude short helix         233         235
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 10  4  8  3  1  7 10  2  5  6  9
+   2     0  0  0 10  4  8  3  1  7 10  2  5  6  9
+   3     0  0  0  0
+   4     0  0  0  0
+   5     0  0  0 10  4  8  3  1  7 10  2  5  6  9
+   6     1  8  9  3  4  8  3
+   7     1 24 25  7  1  7 10  2  5  6  9
+   8     6 14 15  2  4  8
+   9     6  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  2  4  8
+  12     0  0  0  2  4  8
+  13     0  0  0  0
+  14     8  0  0  1  4
+  15     8  0  0  1  8
+  16     0  0  0  1  8
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  0
+  20     0  0  0  1  3
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  0
+  24     7 26 27  3  1  7 10
+  25     7 32 33  4  2  5  6  9
+  26    24  0  0  1  1
+  27    24 30 31  2  7 10
+  28     0  0  0  0
+  29     0  0  0  2  7 10
+  30    27  0  0  1  7
+  31    27  0  0  1 10
+  32    25 34 35  2  2  5
+  33    25 36 37  2  6  9
+  34    32  0  0  1  2
+  35    32  0  0  1  5
+  36    33  0  0  1  6
+  37    33  0  0  1  9
+   1 +   0  2  3 10  1  1 10
+   2 *   1  4  5  3  2  3  4  8  8
+   3 *   1  8  9  7  3  1  2  5  7  9 10
+   4 -   2  6  7  2  2  4  4  8  8
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  1  1  4  4
+   7 -   4  0  0  1  1  8  8
+   8 -   3 10 11  3  3  1  1  7  7 10 10
+   9 -   3 14 15  4  3  2  2  5  6  9  9
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  2  2  7  7 10 10
+  12 -  11  0  0  1  1  7  7
+  13 -  11  0  0  1  1 10 10
+  14 -   9 16 17  2  2  2  2  5  5
+  15 -   9 18 19  2  2  6  6  9  9
+  16 -  14  0  0  1  1  2  2
+  17 -  14  0  0  1  1  5  5
+  18 -  15  0  0  1  1  6  6
+  19 -  15  0  0  1  1  9  9
+
+ CHAIN : 9F6AA
+ CHAIN : 9F6AB
+ CHAIN : 9F6AC
+

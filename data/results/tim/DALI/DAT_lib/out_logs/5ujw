@@ -1,0 +1,1631 @@
+A length: 244
+B length: 239
+C length: 245
+D length: 247
+E length: 245
+F length: 243
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            247
+Total number of atoms read in:              1877
+Total number of ignored atom records:         67
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSON,CENTER  
+  Reading DSSP file
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+         247  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau           1   2.01484203              58         221
+ #popped           2           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau           3   1.16153944             231
+ #popped           4           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau           5   1.45649266              11          26          37          48
+ #popped           6           2
+ #selectset contacts        2223
+ selectset done           2
+ eigen done           2
+ tau           7  0.274302065              11
+ #popped           9           2
+ #selectset contacts        2223
+ selectset done           2
+ eigen done           2
+ tau           9   999.999023              58
+ #popped          10           2
+ #selectset contacts        2223
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          11   1.48958337              26
+ #popped           3           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          13   2.85763836              81
+ #popped          14           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          15   1.06803977              71
+ #popped          15           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          17   1.00605845             112
+ #popped          18           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          19   1.83235121              97
+ #popped          19           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          21  0.952419281             146         160         170
+ #popped          22           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          23   1.45872033             146
+ #popped          24           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          25  0.842655659             123
+ #popped          27           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          27   1.08658540             133
+ #popped          23           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          29  0.878984094             185         198
+ #popped          30           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          31  0.907874465             160
+ #popped          33           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          33   1.07868826             185
+ #popped          35           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          35  0.882466018             210
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+           0
+         247
+         247  residues read 5UJW.dssp                                                   
+  grow short strand          53          56
+  exclude short helix          73          78
+  grow short strand          83          86
+  exclude short helix          89          93
+  exclude short helix         123         127
+  grow short helix         131         137
+  exclude short helix         140         145
+  exclude short helix         148         153
+  grow short strand         155         158
+  exclude short helix         191         194
+  grow short strand         199         201
+  grow short strand         221         224
+  exclude short helix         226         229
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  5 13  2  4 14  6  7  8  9 10 11 12
+   2     1  4  5  7  1  3  5 13  2  4 14
+   3     1 18 19  7  6  7  8  9 10 11 12
+   4     2  6  7  6  1  3  5 13  2  4
+   5     2  0  0  1 14
+   6     4  8  9  4  1  3  5 13
+   7     4 12 13  2  2  4
+   8     6  0  0  1  1
+   9     6 10 11  3  3  5 13
+  10     9  0  0  2  3  5
+  11     9  0  0  1 13
+  12     7  0  0  1  2
+  13     7  0  0  1  4
+  14     0  0  0  0
+  15     0  0  0  7  6  7  8  9 10 11 12
+  16     0  0  0  0
+  17     0  0  0  0
+  18     3 20 21  2  6  7
+  19     3 22 23  5  8  9 10 11 12
+  20    18  0  0  1  6
+  21    18  0  0  1  7
+  22    19 26 27  2  8  9
+  23    19 32 33  3 10 11 12
+  24     0  0  0  2  8  9
+  25     0  0  0  0
+  26    22  0  0  1  8
+  27    22  0  0  1  9
+  28     0  0  0  0
+  29     0  0  0  1  9
+  30     0  0  0  3 10 11 12
+  31     0  0  0  0
+  32    23  0  0  1 10
+  33    23 34 35  2 11 12
+  34    33  0  0  1 11
+  35    33  0  0  1 12
+  36     0  0  0  1 12
+  37     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  7  2  1  5 13 14
+   3 -   1 14 15  7  1  6 12
+   4 -   2  6  7  6  2  1  5 13 13
+   5 -   2  0  0  1  1 14 14
+   6 -   4  8  9  4  4  1  1  3  3  5  5 13 13
+   7 -   4 12 13  2  2  2  2  4  4
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  3  3  3  5  5 13 13
+  10 -   9  0  0  2  2  3  3  5  5
+  11 -   9  0  0  1  1 13 13
+  12 -   7  0  0  1  1  2  2
+  13 -   7  0  0  1  1  4  4
+  14 -   3 16 17  2  1  6  7
+  15 -   3 18 19  5  1  8 12
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  1  1  7  7
+  18 -  15 20 21  2  1  8  9
+  19 -  15 22 23  3  1 10 12
+  20 -  18  0  0  1  1  8  8
+  21 -  18  0  0  1  1  9  9
+  22 -  19  0  0  1  1 10 10
+  23 -  19 24 25  2  1 11 12
+  24 -  23  0  0  1  1 11 11
+  25 -  23  0  0  1  1 12 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            243
+Total number of atoms read in:              1847
+Total number of ignored atom records:         63
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSON,CENTER  
+  Reading DSSP file
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+         243  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2153
+ selectset done           0
+ eigen done           0
+ tau           1   1.90181530             118         221
+ #popped           2           1
+ #selectset contacts        2153
+ selectset done           1
+ eigen done           1
+ tau           3   3.01038122              55         118
+ #popped           4           2
+ #selectset contacts        2153
+ selectset done           2
+ eigen done           2
+ tau           5  0.893070281             231
+ #popped           6           2
+ #selectset contacts        2153
+ selectset done           2
+ eigen done           2
+ tau           7   1.28980398              12          27
+ #popped           8           2
+ #selectset contacts        2153
+ selectset done           2
+ eigen done           2
+ tau           9  0.504118681              55
+ #popped          10           2
+ #selectset contacts        2153
+ selectset done           2
+ eigen done           2
+ tau          11  0.499116659              12
+ #popped          13           2
+ #selectset contacts        2153
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2153
+ selectset done           1
+ eigen done           1
+ tau          13   1.32551491              72          82
+ #popped          14           1
+ #selectset contacts        2153
+ selectset done           1
+ eigen done           1
+ tau          15   1.01113725              72
+ #popped          17           1
+ #selectset contacts        2153
+ selectset done           1
+ eigen done           1
+ tau          17  0.611064851              98
+ #popped          19           1
+ #selectset contacts        2153
+ selectset done           1
+ eigen done           1
+ tau          19   1.04402506             108
+ #popped           3           0
+ #selectset contacts        2153
+ selectset done           0
+ eigen done           0
+ tau          21   1.39144838             140         155
+ #popped          22           0
+ #selectset contacts        2153
+ selectset done           0
+ eigen done           0
+ tau          23   1.20069003             180         198
+ #popped          24           0
+ #selectset contacts        2153
+ selectset done           0
+ eigen done           0
+ tau          25   1.35488510             165
+ #popped          26           1
+ #selectset contacts        2153
+ selectset done           1
+ eigen done           1
+ tau          27  0.760975599             128         140
+ #popped          28           1
+ #selectset contacts        2153
+ selectset done           1
+ eigen done           1
+ tau          29  0.284250408             128
+ #popped          27           0
+ #selectset contacts        2153
+ selectset done           0
+ eigen done           0
+ tau          31  0.984015286             180
+ #popped          33           0
+ #selectset contacts        2153
+ selectset done           0
+ eigen done           0
+ tau          33  0.710418046             209
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+           0
+         243
+         243  residues read 5UJW.dssp                                                   
+  grow short strand           4           8
+  grow short strand          33          36
+  grow short strand          53          57
+  exclude short helix          74          79
+  grow short strand          84          87
+  exclude short helix          90          95
+  exclude short helix         125         129
+  exclude short helix         150         153
+  grow short strand         157         160
+  exclude short helix         193         196
+  grow short strand         199         201
+  grow short strand         221         224
+  exclude short helix         226         229
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5 14  2 15  6  7  8 10  9 12 13 11
+   2     1  4  5 10  1  3  4  5 14  2 15  6  7  8
+   3     1 24 25  5 10  9 12 13 11
+   4     2  6  7  7  1  3  4  5 14  2 15
+   5     2 18 19  3  6  7  8
+   6     4  8  9  6  1  3  4  5 14  2
+   7     4  0  0  1 15
+   8     6 10 11  5  1  3  4  5 14
+   9     6  0  0  1  2
+  10     8 12 13  4  1  3  4  5
+  11     8  0  0  1 14
+  12    10  0  0  1  1
+  13    10  0  0  3  3  4  5
+  14     0  0  0  3  6  7  8
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  3  6  7  8
+  18     5  0  0  1  6
+  19     5 20 21  2  7  8
+  20    19  0  0  1  7
+  21    19  0  0  1  8
+  22     0  0  0  5 10  9 12 13 11
+  23     0  0  0  0
+  24     3 26 27  4 10  9 12 13
+  25     3  0  0  1 11
+  26    24 28 29  2 10  9
+  27    24 34 35  2 12 13
+  28    26  0  0  1 10
+  29    26  0  0  1  9
+  30     0  0  0  0
+  31     0  0  0  1 10
+  32     0  0  0  0
+  33     0  0  0  2 12 13
+  34    27  0  0  1 12
+  35    27  0  0  1 13
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 10  2  1  8 14 15
+   3 -   1 18 19  5  1  9 13
+   4 -   2  6  7  7  2  1  5 14 15
+   5 -   2 14 15  3  1  6  8
+   6 -   4  8  9  6  2  1  5 14 14
+   7 -   4  0  0  1  1 15 15
+   8 -   6 10 11  5  3  1  1  3  5 14 14
+   9 -   6  0  0  1  1  2  2
+  10 -   8 12 13  4  2  1  1  3  5
+  11 -   8  0  0  1  1 14 14
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  3  1  3  5
+  14 -   5  0  0  1  1  6  6
+  15 -   5 16 17  2  1  7  8
+  16 -  15  0  0  1  1  7  7
+  17 -  15  0  0  1  1  8  8
+  18 -   3 20 21  4  2  9 10 12 13
+  19 -   3  0  0  1  1 11 11
+  20 -  18 22 23  2  1  9 10
+  21 -  18 24 25  2  1 12 13
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  1  1  9  9
+  24 -  21  0  0  1  1 12 12
+  25 -  21  0  0  1  1 13 13
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            248
+Total number of atoms read in:              1880
+Total number of ignored atom records:         92
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSON,CENTER  
+  Reading DSSP file
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+         248  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2236
+ selectset done           0
+ eigen done           0
+ tau           1   1.67471302             117
+ #popped           2           1
+ #selectset contacts        2236
+ selectset done           1
+ eigen done           1
+ tau           3   2.24686861              54
+ #popped           4           2
+ #selectset contacts        2236
+ selectset done           2
+ eigen done           2
+ tau           5   1.74707842              12          26
+ #popped           6           2
+ #selectset contacts        2236
+ selectset done           2
+ eigen done           2
+ tau           7  0.438962460              12
+ #popped           9           2
+ #selectset contacts        2236
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2236
+ selectset done           1
+ eigen done           1
+ tau           9  0.772192240              76
+ #popped          10           2
+ #selectset contacts        2236
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped          11           1
+ #selectset contacts        2236
+ selectset done           1
+ eigen done           1
+ tau          11   1.48420179              86          97
+ #popped          12           1
+ #selectset contacts        2236
+ selectset done           1
+ eigen done           1
+ tau          13  0.442146063             107
+ #popped          14           1
+ #selectset contacts        2236
+ selectset done           1
+ eigen done           1
+ tau          15   10.1188269              86
+ #popped           3           0
+ #selectset contacts        2236
+ selectset done           0
+ eigen done           0
+ tau          17   3.34612226             224
+ #popped          18           1
+ #selectset contacts        2236
+ selectset done           1
+ eigen done           1
+ tau          19   1.28723156             139         155         186         198
+ #popped          20           2
+ #selectset contacts        2236
+ selectset done           2
+ eigen done           2
+ tau          21  0.996745706             171
+ #popped          22           3
+ #selectset contacts        2236
+ selectset done           3
+ eigen done           3
+ tau          23  0.439444363             139
+ #popped          24           3
+ #selectset contacts        2236
+ selectset done           3
+ eigen done           3
+ tau          25   0.00000000    
+ #popped          23           2
+ #selectset contacts        2236
+ selectset done           2
+ eigen done           2
+ tau          25   1.05537927             186
+ #popped          27           2
+ #selectset contacts        2236
+ selectset done           2
+ eigen done           2
+ tau          27  0.485851169             210
+ #popped          21           1
+ #selectset contacts        2236
+ selectset done           1
+ eigen done           1
+ tau          29   2.55242467             155
+ #popped          19           0
+ #selectset contacts        2236
+ selectset done           0
+ eigen done           0
+ tau          31  0.719696999             235
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+           0
+         248
+         248  residues read 5UJW.dssp                                                   
+  exclude short helix          41          45
+  grow short strand          55          56
+  exclude short helix          73          78
+  grow short strand          83          86
+  exclude short helix          89          93
+  exclude short helix         124         128
+  exclude short helix         143         145
+  exclude short helix         149         152
+  grow short strand         156         159
+  exclude short helix         162         164
+  grow short strand         199         202
+  exclude short helix         211         214
+  grow short strand         223         225
+  exclude short helix         228         230
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  2  4  5  6  7  8  9 10 11 12 13
+   2     1  4  5  7  1  3  2  4  5  6  7
+   3     1 18 19  6  8  9 10 11 12 13
+   4     2  6  7  3  1  3  2
+   5     2 10 11  4  4  5  6  7
+   6     4  8  9  2  1  3
+   7     4  0  0  1  2
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     5  0  0  1  4
+  11     5 14 15  3  5  6  7
+  12     0  0  0  3  5  6  7
+  13     0  0  0  0
+  14    11 16 17  2  5  6
+  15    11  0  0  1  7
+  16    14  0  0  1  5
+  17    14  0  0  1  6
+  18     3 22 23  5  8  9 10 11 12
+  19     3  0  0  1 13
+  20     0  0  0  5  8  9 10 11 12
+  21     0  0  0  0
+  22    18 24 25  2  8  9
+  23    18 26 27  3 10 11 12
+  24    22  0  0  1  8
+  25    22  0  0  1  9
+  26    23  0  0  1 10
+  27    23 28 29  2 11 12
+  28    27  0  0  1 11
+  29    27  0  0  1 12
+  30     0  0  0  0
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 13
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  7  1  1  7
+   3 +   1 16 17  6  1  8 13
+   4 -   2  6  7  3  1  1  3
+   5 -   2 10 11  4  1  4  7
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+  10 -   5  0  0  1  1  4  4
+  11 -   5 12 13  3  1  5  7
+  12 -  11 14 15  2  1  5  6
+  13 -  11  0  0  1  1  7  7
+  14 -  12  0  0  1  1  5  5
+  15 -  12  0  0  1  1  6  6
+  16 *   3 18 19  5  1  8 12
+  17 =   3  0  0  1  1 13 13
+  18 -  16 20 21  2  1  8  9
+  19 -  16 22 23  3  1 10 12
+  20 -  18  0  0  1  1  8  8
+  21 -  18  0  0  1  1  9  9
+  22 -  19  0  0  1  1 10 10
+  23 -  19 24 25  2  1 11 12
+  24 -  23  0  0  1  1 11 11
+  25 -  23  0  0  1  1 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            250
+Total number of atoms read in:              1884
+Total number of ignored atom records:         57
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSON,CENTER  
+  Reading DSSP file
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+         250  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2227
+ selectset done           0
+ eigen done           0
+ tau           1   1.77761090              60          82
+ #popped           2           1
+ #selectset contacts        2227
+ selectset done           1
+ eigen done           1
+ tau           3   1.58406413             119         224
+ #popped           4           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau           5   1.40424466             238
+ #popped           6           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau           7  0.731563389             119
+ #popped           8           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau           9   1.04023302              93         109
+ #popped          10           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau          11   1.00586462              50
+ #popped          12           3
+ #selectset contacts        2227
+ selectset done           3
+ eigen done           3
+ tau          13   1.06903708              39
+ #popped          14           3
+ #selectset contacts        2227
+ selectset done           3
+ eigen done           3
+ tau          15   3.68347692              11          29
+ #popped          16           3
+ #selectset contacts        2227
+ selectset done           3
+ eigen done           3
+ tau          17  0.340813249              11
+ #popped          13           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau          19  0.546200156              93
+ #popped          20           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped           5           1
+ #selectset contacts        2227
+ selectset done           1
+ eigen done           1
+ tau          21   1.30273080             168
+ #popped          22           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau          23   1.30399263             148         158
+ #popped          24           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau          25   1.23564422             132         148
+ #popped          26           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau          27  0.360713065             132
+ #popped          23           1
+ #selectset contacts        2227
+ selectset done           1
+ eigen done           1
+ tau          29  0.968568444             178
+ #popped          31           1
+ #selectset contacts        2227
+ selectset done           1
+ eigen done           1
+ tau          31   1.03844893             202
+ #popped          32           2
+ #selectset contacts        2227
+ selectset done           2
+ eigen done           2
+ tau          33  0.794838667             188
+ #popped          33           1
+ #selectset contacts        2227
+ selectset done           1
+ eigen done           1
+ tau          35  0.799793303             212
+ #popped           3           0
+ #selectset contacts        2227
+ selectset done           0
+ eigen done           0
+ tau          37   1.23269904              72
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+           0
+         250
+         250  residues read 5UJW.dssp                                                   
+  grow short strand           3           7
+  exclude short helix          14          19
+  exclude short helix          21          25
+  grow short strand          33          37
+  grow short helix          43          49
+  grow short strand          55          58
+  grow short helix          75          81
+  grow short strand          85          88
+  exclude short helix          91          94
+  exclude short helix         126         129
+  exclude short helix         151         154
+  grow short strand         158         161
+  exclude short helix         194         199
+  grow short strand         201         204
+  exclude short helix         213         217
+  grow short strand         224         227
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  6  8  7 13 14 10  9 11 12  5
+   2     1  4  5 13  1  2  3  4  6  8  7 13 14 10  9 11 12
+   3     1  0  0  1  5
+   4     2  6  7  9  1  2  3  4  6  8  7 13 14
+   5     2 22 23  4 10  9 11 12
+   6     4  8  9  8  1  2  3  4  6  8  7 13
+   7     4  0  0  1 14
+   8     6 10 11  7  1  2  3  4  6  8  7
+   9     6  0  0  1 13
+  10     8 12 13  6  1  2  3  4  6  8
+  11     8  0  0  1  7
+  12    10 14 15  3  1  2  3
+  13    10 20 21  3  4  6  8
+  14    12 18 19  2  1  2
+  15    12  0  0  1  3
+  16     0  0  0  2  1  2
+  17     0  0  0  0
+  18    14  0  0  1  1
+  19    14  0  0  1  2
+  20    13  0  0  2  4  6
+  21    13  0  0  1  8
+  22     5 26 27  2 10  9
+  23     5 34 35  2 11 12
+  24     0  0  0  2 10  9
+  25     0  0  0  0
+  26    22  0  0  1 10
+  27    22  0  0  1  9
+  28     0  0  0  0
+  29     0  0  0  1 10
+  30     0  0  0  0
+  31     0  0  0  2 11 12
+  32     0  0  0  2 11 12
+  33     0  0  0  0
+  34    23  0  0  1 11
+  35    23  0  0  1 12
+  36     0  0  0  0
+  37     0  0  0  0
+  38     0  0  0  0
+  39     0  0  0  1  5
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1  4  6 14
+   3 -   1  0  0  1  1  5  5
+   4 -   2  6  7  9  3  1  4  6  8 13 14
+   5 -   2 20 21  4  1  9 12
+   6 -   4  8  9  8  3  1  4  6  8 13 13
+   7 -   4  0  0  1  1 14 14
+   8 -   6 10 11  7  2  1  4  6  8
+   9 -   6  0  0  1  1 13 13
+  10 -   8 12 13  6  3  1  4  6  6  8  8
+  11 -   8  0  0  1  1  7  7
+  12 -  10 14 15  3  1  1  3
+  13 -  10 18 19  3  3  4  4  6  6  8  8
+  14 -  12 16 17  2  1  1  2
+  15 -  12  0  0  1  1  3  3
+  16 -  14  0  0  1  1  1  1
+  17 -  14  0  0  1  1  2  2
+  18 -  13  0  0  2  2  4  4  6  6
+  19 -  13  0  0  1  1  8  8
+  20 -   5 22 23  2  1  9 10
+  21 -   5 24 25  2  1 11 12
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  1  1  9  9
+  24 -  21  0  0  1  1 11 11
+  25 -  21  0  0  1  1 12 12
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            248
+Total number of atoms read in:              1851
+Total number of ignored atom records:         23
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSON,CENTER  
+  calculate residue outside grid:          19
+  Reading DSSP file
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+         248  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2121
+ selectset done           0
+ eigen done           0
+ tau           1   2.50132465              11          26          37          49
+ #popped           2           1
+ #selectset contacts        2121
+ selectset done           1
+ eigen done           1
+ tau           3   1.34414852             171         222
+ #popped           4           2
+ #selectset contacts        2121
+ selectset done           2
+ eigen done           2
+ tau           5   2.46474171             119         147         158         171
+ #popped           6           3
+ #selectset contacts        2121
+ selectset done           3
+ eigen done           3
+ tau           7   1.83701324             235
+ #popped           8           3
+ #selectset contacts        2121
+ selectset done           3
+ eigen done           3
+ tau           9   1.06938422              59          71
+ #popped          10           3
+ #selectset contacts        2121
+ selectset done           3
+ eigen done           3
+ tau          11   1.95193183              86         108
+ #popped          12           4
+ #selectset contacts        2121
+ selectset done           4
+ eigen done           4
+ tau          13   1.14113593              86         158
+ #popped          14           5
+ #selectset contacts        2121
+ selectset done           5
+ eigen done           5
+ tau          15  0.774883032              86
+ #popped          16           5
+ #selectset contacts        2121
+ selectset done           5
+ eigen done           5
+ tau          17  0.493219227              11
+ #popped          19           5
+ #selectset contacts        2121
+ selectset done           5
+ eigen done           5
+ tau          19   0.00000000    
+ #popped          15           4
+ #selectset contacts        2121
+ selectset done           4
+ eigen done           4
+ tau          19  0.458823532             119
+ #popped          13           3
+ #selectset contacts        2121
+ selectset done           3
+ eigen done           3
+ tau          21   2.06793213              97
+ #popped           7           2
+ #selectset contacts        2121
+ selectset done           2
+ eigen done           2
+ tau          23   1.59400642             130         147
+ #popped          24           2
+ #selectset contacts        2121
+ selectset done           2
+ eigen done           2
+ tau          25  0.725142837             130
+ #popped           5           1
+ #selectset contacts        2121
+ selectset done           1
+ eigen done           1
+ tau          27   1.14821279             200
+ #popped          28           2
+ #selectset contacts        2121
+ selectset done           2
+ eigen done           2
+ tau          29   1.16159725             189
+ #popped          29           1
+ #selectset contacts        2121
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped           3           0
+ #selectset contacts        2121
+ selectset done           0
+ eigen done           0
+ tau          31   1.46024239              26
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+           0
+         248
+         248  residues read 5UJW.dssp                                                   
+  grow short strand           3           6
+  grow short strand          31          34
+  exclude short helix          42          45
+  grow short strand          53          56
+  exclude short helix          73          78
+  grow short strand          83          86
+  exclude short helix          89          94
+  grow short strand         117         120
+  exclude short helix         124         128
+  exclude short helix         149         152
+  grow short strand         156         159
+  grow short strand         200         202
+  grow short strand         222         225
+  exclude short helix         228         230
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5 13  7  9  6 14  8 10 11 12  2
+   2     1  4  5 13  1  3  4  5 13  7  9  6 14  8 10 11 12
+   3     1  0  0  1  2
+   4     2  6  7 10  1  3  4  5 13  7  9  6 14  8
+   5     2 28 29  3 10 11 12
+   6     4  8  9  9  1  3  4  5 13  7  9  6 14
+   7     4  0  0  1  8
+   8     6 12 13  8  1  3  4  5 13  7  9  6
+   9     6  0  0  1 14
+  10     0  0  0  8  1  3  4  5 13  7  9  6
+  11     0  0  0  0
+  12     8 14 15  7  1  3  4  5 13  7  9
+  13     8  0  0  1  6
+  14    12 16 17  5  1  3  4  5 13
+  15    12 20 21  2  7  9
+  16    14 18 19  4  1  3  4  5
+  17    14  0  0  1 13
+  18    16  0  0  1  1
+  19    16  0  0  3  3  4  5
+  20    15  0  0  1  7
+  21    15  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1  6
+  24     0  0  0  0
+  25     0  0  0  1  8
+  26     0  0  0  0
+  27     0  0  0  0
+  28     5  0  0  1 10
+  29     5  0  0  2 11 12
+  30     0  0  0  1 10
+  31     0  0  0  0
+  32     0  0  0  1  2
+  33     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1  1  3 14
+   3 -   1  0  0  1  1  2  2
+   4 -   2  6  7 10  3  1  1  3  9 13 14
+   5 -   2 20 21  3  1 10 12
+   6 -   4  8  9  9  4  1  1  3  7  9  9 13 14
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  8  4  1  1  3  7  9  9 13 13
+   9 -   6  0  0  1  1 14 14
+  10 -   8 12 13  7  5  1  1  3  5  7  7  9  9 13 13
+  11 -   8  0  0  1  1  6  6
+  12 -  10 14 15  5  3  1  1  3  5 13 13
+  13 -  10 18 19  2  2  7  7  9  9
+  14 -  12 16 17  4  2  1  1  3  5
+  15 -  12  0  0  1  1 13 13
+  16 -  14  0  0  1  1  1  1
+  17 -  14  0  0  3  1  3  5
+  18 -  13  0  0  1  1  7  7
+  19 -  13  0  0  1  1  9  9
+  20 -   5  0  0  1  1 10 10
+  21 -   5  0  0  2  1 11 12
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            246
+Total number of atoms read in:              1811
+Total number of ignored atom records:         27
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSON,CENTER  
+  calculate residue outside grid:          59
+  calculate residue outside grid:          60
+  calculate residue outside grid:          87
+  calculate residue outside grid:          89
+  calculate residue outside grid:          90
+  calculate residue outside grid:          91
+  calculate residue outside grid:          92
+  calculate residue outside grid:          93
+  calculate residue outside grid:          94
+  calculate residue outside grid:          95
+  calculate residue outside grid:          96
+  calculate residue outside grid:          97
+  calculate residue outside grid:          98
+  calculate residue outside grid:          99
+  calculate residue outside grid:         100
+  calculate residue outside grid:         101
+  calculate residue outside grid:         102
+  calculate residue outside grid:         118
+  calculate residue outside grid:         119
+  calculate residue outside grid:         120
+  calculate residue outside grid:         121
+  calculate residue outside grid:         122
+  calculate residue outside grid:         123
+  calculate residue outside grid:         124
+  calculate residue outside grid:         125
+  calculate residue outside grid:         126
+  calculate residue outside grid:         127
+  calculate residue outside grid:         128
+  calculate residue outside grid:         129
+  calculate residue outside grid:         130
+  calculate residue outside grid:         131
+  calculate residue outside grid:         132
+  calculate residue outside grid:         133
+  calculate residue outside grid:         134
+  calculate residue outside grid:         135
+  calculate residue outside grid:         136
+  calculate residue outside grid:         137
+  calculate residue outside grid:         138
+  calculate residue outside grid:         139
+  calculate residue outside grid:         140
+  calculate residue outside grid:         141
+  calculate residue outside grid:         142
+  calculate residue outside grid:         143
+  calculate residue outside grid:         144
+  calculate residue outside grid:         145
+  calculate residue outside grid:         157
+  calculate residue outside grid:         158
+  calculate residue outside grid:         159
+  calculate residue outside grid:         160
+  calculate residue outside grid:         161
+  calculate residue outside grid:         162
+  calculate residue outside grid:         163
+  calculate residue outside grid:         164
+  calculate residue outside grid:         165
+  calculate residue outside grid:         166
+  calculate residue outside grid:         167
+  calculate residue outside grid:         168
+  calculate residue outside grid:         170
+  calculate residue outside grid:         172
+  calculate residue outside grid:         173
+  calculate residue outside grid:         174
+  calculate residue outside grid:         175
+  calculate residue outside grid:         176
+  calculate residue outside grid:         177
+  calculate residue outside grid:         178
+  calculate residue outside grid:         179
+  calculate residue outside grid:         180
+  calculate residue outside grid:         181
+  calculate residue outside grid:         182
+  calculate residue outside grid:         183
+  calculate residue outside grid:         184
+  calculate residue outside grid:         185
+  calculate residue outside grid:         186
+  calculate residue outside grid:         187
+  calculate residue outside grid:         188
+  calculate residue outside grid:         189
+  calculate residue outside grid:         190
+  Reading DSSP file
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+         246  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        5942
+ mismatching:          92          88   0.00000000       1.00000000    
+ mismatching:         100          84   0.00000000       4.00000000    
+ mismatching:         103          95   1.00000000       0.00000000    
+ mismatching:         103          99   6.00000000       0.00000000    
+ mismatching:         103         100   6.00000000       0.00000000    
+ mismatching:         103         101   3.00000000       0.00000000    
+ mismatching:         104         100   4.00000000       0.00000000    
+ mismatching:         104         101   5.00000000       0.00000000    
+ mismatching:         105         101   4.00000000       0.00000000    
+ mismatching:         145         108   0.00000000       1.00000000    
+ mismatching:         146         145   7.00000000       0.00000000    
+ mismatching:         149         145   6.00000000       0.00000000    
+ mismatching:         150         145   4.00000000       0.00000000    
+ mismatching:         169         168   3.00000000       0.00000000    
+ mismatching:         174         169   0.00000000       1.00000000    
+ mismatching:         185         155   0.00000000       1.00000000    
+ mismatching:         191         190   8.00000000       0.00000000    
+ mismatching:         192         189   7.00000000       0.00000000    
+ mismatching:         192         190   2.00000000       0.00000000    
+ mismatching:         193         182   10.0000000       0.00000000    
+ mismatching:         193         190   2.00000000       0.00000000    
+ mismatching:         196         185   3.00000000       0.00000000    
+ mismatching:         198         178   3.00000000       0.00000000    
+ mismatching:         198         182   3.00000000       0.00000000    
+ mismatching:         199         178   1.00000000       0.00000000    
+ mismatching:         200         174   1.00000000       0.00000000    
+ mismatching:         200         178   3.00000000       0.00000000    
+ mismatching:         202         163   2.00000000       0.00000000    
+ mismatching:         203         163   1.00000000       0.00000000    
+ mismatching:         216         182   1.00000000       0.00000000    
+ mismatching:         217         178   7.00000000       0.00000000    
+ mismatching:         217         179   3.00000000       0.00000000    
+ mismatching:         217         182   7.00000000       0.00000000    
+ mismatching:         218         178   6.00000000       0.00000000    
+ selectset done           0
+ mismatch          84   131.000000       127.000000    
+ mismatch          88   87.0000000       86.0000000    
+ mismatch          92   3235.00000       3236.00000    
+ mismatch          95   2781.00000       2782.00000    
+ mismatch          99   3238.00000       3244.00000    
+ mismatch         100   1409.00000       1423.00000    
+ mismatch         101   4166.00000       4178.00000    
+ mismatch         103   119.000000       103.000000    
+ mismatch         104   75.0000000       66.0000000    
+ mismatch         105   98.0000000       94.0000000    
+ mismatch         108   103.000000       102.000000    
+ mismatch         145   956.000000       974.000000    
+ mismatch         146   54.0000000       47.0000000    
+ mismatch         149   108.000000       102.000000    
+ mismatch         150   98.0000000       94.0000000    
+ mismatch         155   135.000000       134.000000    
+ mismatch         163   1411.00000       1414.00000    
+ mismatch         168   1857.00000       1860.00000    
+ mismatch         169   32.0000000       28.0000000    
+ mismatch         174   513.000000       515.000000    
+ mismatch         178   1439.00000       1459.00000    
+ mismatch         179   3698.00000       3701.00000    
+ mismatch         182   1894.00000       1915.00000    
+ mismatch         185   1864.00000       1868.00000    
+ mismatch         189   2319.00000       2326.00000    
+ mismatch         190   3238.00000       3250.00000    
+ mismatch         191   114.000000       106.000000    
+ mismatch         192   105.000000       96.0000000    
+ mismatch         193   72.0000000       60.0000000    
+ mismatch         196   106.000000       103.000000    
+ mismatch         198   137.000000       131.000000    
+ mismatch         199   121.000000       120.000000    
+ mismatch         200   174.000000       170.000000    
+ mismatch         202   56.0000000       54.0000000    
+ mismatch         203   67.0000000       66.0000000    
+ mismatch         216   86.0000000       85.0000000    
+ mismatch         217   119.000000       102.000000    
+ mismatch         218   92.0000000       86.0000000    
+ eigen done           0
+ tau           1   1.75877237              10          24         222
+ #popped           2           1
+ #selectset contacts        5942
+ mismatching:          78          74   0.00000000       1.00000000    
+ mismatching:          86          70   0.00000000       4.00000000    
+ mismatching:          89          81   1.00000000       0.00000000    
+ mismatching:          89          85   6.00000000       0.00000000    
+ mismatching:          89          86   6.00000000       0.00000000    
+ mismatching:          89          87   3.00000000       0.00000000    
+ mismatching:          90          86   4.00000000       0.00000000    
+ mismatching:          90          87   5.00000000       0.00000000    
+ mismatching:          91          87   4.00000000       0.00000000    
+ mismatching:         131          94   0.00000000       1.00000000    
+ mismatching:         132         131   7.00000000       0.00000000    
+ mismatching:         135         131   6.00000000       0.00000000    
+ mismatching:         136         131   4.00000000       0.00000000    
+ mismatching:         155         154   3.00000000       0.00000000    
+ mismatching:         160         155   0.00000000       1.00000000    
+ mismatching:         171         141   0.00000000       1.00000000    
+ mismatching:         177         176   8.00000000       0.00000000    
+ mismatching:         178         175   7.00000000       0.00000000    
+ mismatching:         178         176   2.00000000       0.00000000    
+ mismatching:         179         168   10.0000000       0.00000000    
+ mismatching:         179         176   2.00000000       0.00000000    
+ mismatching:         182         171   3.00000000       0.00000000    
+ mismatching:         184         164   3.00000000       0.00000000    
+ mismatching:         184         168   3.00000000       0.00000000    
+ mismatching:         185         164   1.00000000       0.00000000    
+ mismatching:         186         160   1.00000000       0.00000000    
+ mismatching:         186         164   3.00000000       0.00000000    
+ mismatching:         188         149   2.00000000       0.00000000    
+ mismatching:         189         149   1.00000000       0.00000000    
+ mismatching:         202         168   1.00000000       0.00000000    
+ mismatching:         203         164   7.00000000       0.00000000    
+ mismatching:         203         165   3.00000000       0.00000000    
+ mismatching:         203         168   7.00000000       0.00000000    
+ mismatching:         204         164   6.00000000       0.00000000    
+ selectset done           1
+ mismatch          70   131.000000       127.000000    
+ mismatch          74   87.0000000       86.0000000    
+ mismatch          78   3235.00000       3236.00000    
+ mismatch          81   2781.00000       2782.00000    
+ mismatch          85   3238.00000       3244.00000    
+ mismatch          86   1409.00000       1423.00000    
+ mismatch          87   4166.00000       4178.00000    
+ mismatch          89   119.000000       103.000000    
+ mismatch          90   75.0000000       66.0000000    
+ mismatch          91   98.0000000       94.0000000    
+ mismatch          94   103.000000       102.000000    
+ mismatch         131   956.000000       974.000000    
+ mismatch         132   54.0000000       47.0000000    
+ mismatch         135   108.000000       102.000000    
+ mismatch         136   98.0000000       94.0000000    
+ mismatch         141   135.000000       134.000000    
+ mismatch         149   1411.00000       1414.00000    
+ mismatch         154   1857.00000       1860.00000    
+ mismatch         155   32.0000000       28.0000000    
+ mismatch         160   513.000000       515.000000    
+ mismatch         164   1439.00000       1459.00000    
+ mismatch         165   3698.00000       3701.00000    
+ mismatch         168   1894.00000       1915.00000    
+ mismatch         171   1864.00000       1868.00000    
+ mismatch         175   2319.00000       2326.00000    
+ mismatch         176   3238.00000       3250.00000    
+ mismatch         177   114.000000       106.000000    
+ mismatch         178   105.000000       96.0000000    
+ mismatch         179   72.0000000       60.0000000    
+ mismatch         182   106.000000       103.000000    
+ mismatch         184   137.000000       131.000000    
+ mismatch         185   121.000000       120.000000    
+ mismatch         186   174.000000       170.000000    
+ mismatch         188   55.0000000       53.0000000    
+ mismatch         189   65.0000000       64.0000000    
+ mismatch         202   86.0000000       85.0000000    
+ mismatch         203   119.000000       102.000000    
+ mismatch         204   92.0000000       86.0000000    
+ eigen done           1
+ tau           3   2.36198187              53
+ #popped           4           2
+ #selectset contacts        5942
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        5942
+ mismatching:          39          35   0.00000000       1.00000000    
+ mismatching:          47          31   0.00000000       4.00000000    
+ mismatching:          50          42   1.00000000       0.00000000    
+ mismatching:          50          46   6.00000000       0.00000000    
+ mismatching:          50          47   6.00000000       0.00000000    
+ mismatching:          50          48   3.00000000       0.00000000    
+ mismatching:          51          47   4.00000000       0.00000000    
+ mismatching:          51          48   5.00000000       0.00000000    
+ mismatching:          52          48   4.00000000       0.00000000    
+ mismatching:          92          55   0.00000000       1.00000000    
+ mismatching:          93          92   7.00000000       0.00000000    
+ mismatching:          96          92   6.00000000       0.00000000    
+ mismatching:          97          92   4.00000000       0.00000000    
+ mismatching:         116         115   3.00000000       0.00000000    
+ mismatching:         121         116   0.00000000       1.00000000    
+ mismatching:         132         102   0.00000000       1.00000000    
+ mismatching:         138         137   8.00000000       0.00000000    
+ mismatching:         139         136   7.00000000       0.00000000    
+ mismatching:         139         137   2.00000000       0.00000000    
+ mismatching:         140         129   10.0000000       0.00000000    
+ mismatching:         140         137   2.00000000       0.00000000    
+ mismatching:         143         132   3.00000000       0.00000000    
+ mismatching:         145         125   3.00000000       0.00000000    
+ mismatching:         145         129   3.00000000       0.00000000    
+ mismatching:         146         125   1.00000000       0.00000000    
+ mismatching:         147         121   1.00000000       0.00000000    
+ mismatching:         147         125   3.00000000       0.00000000    
+ mismatching:         149         110   2.00000000       0.00000000    
+ mismatching:         150         110   1.00000000       0.00000000    
+ mismatching:         163         129   1.00000000       0.00000000    
+ mismatching:         164         125   7.00000000       0.00000000    
+ mismatching:         164         126   3.00000000       0.00000000    
+ mismatching:         164         129   7.00000000       0.00000000    
+ mismatching:         165         125   6.00000000       0.00000000    
+ selectset done           1
+ mismatch          31   131.000000       127.000000    
+ mismatch          35   87.0000000       86.0000000    
+ mismatch          39   3235.00000       3236.00000    
+ mismatch          42   2781.00000       2782.00000    
+ mismatch          46   3238.00000       3244.00000    
+ mismatch          47   1409.00000       1423.00000    
+ mismatch          48   4166.00000       4178.00000    
+ mismatch          50   119.000000       103.000000    
+ mismatch          51   75.0000000       66.0000000    
+ mismatch          52   98.0000000       94.0000000    
+ mismatch          55   103.000000       102.000000    
+ mismatch          92   956.000000       974.000000    
+ mismatch          93   54.0000000       47.0000000    
+ mismatch          96   108.000000       102.000000    
+ mismatch          97   98.0000000       94.0000000    
+ mismatch         102   135.000000       134.000000    
+ mismatch         110   1411.00000       1414.00000    
+ mismatch         115   1857.00000       1860.00000    
+ mismatch         116   32.0000000       28.0000000    
+ mismatch         121   513.000000       515.000000    
+ mismatch         125   1439.00000       1459.00000    
+ mismatch         126   3698.00000       3701.00000    
+ mismatch         129   1894.00000       1915.00000    
+ mismatch         132   1864.00000       1868.00000    
+ mismatch         136   2319.00000       2326.00000    
+ mismatch         137   3238.00000       3250.00000    
+ mismatch         138   114.000000       106.000000    
+ mismatch         139   105.000000       96.0000000    
+ mismatch         140   72.0000000       60.0000000    
+ mismatch         143   106.000000       103.000000    
+ mismatch         145   137.000000       131.000000    
+ mismatch         146   121.000000       120.000000    
+ mismatch         147   174.000000       170.000000    
+ mismatch         149   55.0000000       53.0000000    
+ mismatch         150   65.0000000       64.0000000    
+ mismatch         163   86.0000000       85.0000000    
+ mismatch         164   119.000000       102.000000    
+ mismatch         165   92.0000000       86.0000000    
+ eigen done           1
+ tau           5  0.951653481             190
+ #popped           6           2
+ #selectset contacts        5942
+ mismatching:          39          35   0.00000000       1.00000000    
+ mismatching:          47          31   0.00000000       4.00000000    
+ mismatching:          50          42   1.00000000       0.00000000    
+ mismatching:          50          46   6.00000000       0.00000000    
+ mismatching:          50          47   6.00000000       0.00000000    
+ mismatching:          50          48   3.00000000       0.00000000    
+ mismatching:          51          47   4.00000000       0.00000000    
+ mismatching:          51          48   5.00000000       0.00000000    
+ mismatching:          52          48   4.00000000       0.00000000    
+ mismatching:          92          55   0.00000000       1.00000000    
+ mismatching:          93          92   7.00000000       0.00000000    
+ mismatching:          96          92   6.00000000       0.00000000    
+ mismatching:          97          92   4.00000000       0.00000000    
+ mismatching:         116         115   3.00000000       0.00000000    
+ mismatching:         121         116   0.00000000       1.00000000    
+ mismatching:         132         102   0.00000000       1.00000000    
+ selectset done           2
+ mismatch          31   131.000000       127.000000    
+ mismatch          35   87.0000000       86.0000000    
+ mismatch          39   3235.00000       3236.00000    
+ mismatch          42   2781.00000       2782.00000    
+ mismatch          46   3238.00000       3244.00000    
+ mismatch          47   1409.00000       1423.00000    
+ mismatch          48   4166.00000       4178.00000    
+ mismatch          50   119.000000       103.000000    
+ mismatch          51   75.0000000       66.0000000    
+ mismatch          52   98.0000000       94.0000000    
+ mismatch          55   103.000000       102.000000    
+ mismatch          92   956.000000       974.000000    
+ mismatch          93   54.0000000       47.0000000    
+ mismatch          96   108.000000       102.000000    
+ mismatch          97   96.0000000       92.0000000    
+ mismatch         102   103.000000       102.000000    
+ mismatch         115   1857.00000       1860.00000    
+ mismatch         116   32.0000000       28.0000000    
+ mismatch         121   513.000000       514.000000    
+ mismatch         132   1864.00000       1865.00000    
+ eigen done           2
+ tau           7   2.88013602E-03         178
+ #popped           8           2
+ #selectset contacts        5942
+ mismatching:          39          35   0.00000000       1.00000000    
+ mismatching:          47          31   0.00000000       4.00000000    
+ mismatching:          50          42   1.00000000       0.00000000    
+ mismatching:          50          46   6.00000000       0.00000000    
+ mismatching:          50          47   6.00000000       0.00000000    
+ mismatching:          50          48   3.00000000       0.00000000    
+ mismatching:          51          47   4.00000000       0.00000000    
+ mismatching:          51          48   5.00000000       0.00000000    
+ mismatching:          52          48   4.00000000       0.00000000    
+ mismatching:          92          55   0.00000000       1.00000000    
+ mismatching:          93          92   7.00000000       0.00000000    
+ mismatching:          96          92   6.00000000       0.00000000    
+ mismatching:          97          92   4.00000000       0.00000000    
+ mismatching:         116         115   3.00000000       0.00000000    
+ mismatching:         121         116   0.00000000       1.00000000    
+ selectset done           2
+ mismatch          31   131.000000       127.000000    
+ mismatch          35   87.0000000       86.0000000    
+ mismatch          39   2661.00000       2662.00000    
+ mismatch          42   2289.00000       2290.00000    
+ mismatch          46   2664.00000       2670.00000    
+ mismatch          47   1163.00000       1177.00000    
+ mismatch          48   3428.00000       3440.00000    
+ mismatch          50   119.000000       103.000000    
+ mismatch          51   75.0000000       66.0000000    
+ mismatch          52   98.0000000       94.0000000    
+ mismatch          55   103.000000       102.000000    
+ mismatch          92   792.000000       810.000000    
+ mismatch          93   54.0000000       47.0000000    
+ mismatch          96   108.000000       102.000000    
+ mismatch          97   96.0000000       92.0000000    
+ mismatch         115   1529.00000       1532.00000    
+ mismatch         116   32.0000000       28.0000000    
+ mismatch         121   431.000000       432.000000    
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        5942
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        5942
+ selectset done           0
+ eigen done           0
+ tau           9   4.62658405              24
+ #popped          11           0
+ #selectset contacts        5942
+ selectset done           0
+ eigen done           0
+ tau          11  0.876799583             233
+ dostack done
+ mismatching:          92          88   0.00000000       1.00000000    
+ mismatching:         100          84   0.00000000       4.00000000    
+ mismatching:         103          95   1.00000000       0.00000000    
+ mismatching:         103          99   6.00000000       0.00000000    
+ mismatching:         103         100   6.00000000       0.00000000    
+ mismatching:         103         101   3.00000000       0.00000000    
+ mismatching:         104         100   4.00000000       0.00000000    
+ mismatching:         104         101   5.00000000       0.00000000    
+ mismatching:         105         101   4.00000000       0.00000000    
+ mismatching:         145         108   0.00000000       1.00000000    
+ mismatching:         146         145   7.00000000       0.00000000    
+ mismatching:         149         145   6.00000000       0.00000000    
+ mismatching:         150         145   4.00000000       0.00000000    
+ mismatching:         169         168   3.00000000       0.00000000    
+ mismatching:         174         169   0.00000000       1.00000000    
+ mismatching:         185         155   0.00000000       1.00000000    
+ mismatching:         191         190   8.00000000       0.00000000    
+ mismatching:         192         189   7.00000000       0.00000000    
+ mismatching:         192         190   2.00000000       0.00000000    
+ mismatching:         193         182   10.0000000       0.00000000    
+ mismatching:         193         190   2.00000000       0.00000000    
+ mismatching:         196         185   3.00000000       0.00000000    
+ mismatching:         198         178   3.00000000       0.00000000    
+ mismatching:         198         182   3.00000000       0.00000000    
+ mismatching:         199         178   1.00000000       0.00000000    
+ mismatching:         200         174   1.00000000       0.00000000    
+ mismatching:         200         178   3.00000000       0.00000000    
+ mismatching:         202         163   2.00000000       0.00000000    
+ mismatching:         203         163   1.00000000       0.00000000    
+ mismatching:         216         182   1.00000000       0.00000000    
+ mismatching:         217         178   7.00000000       0.00000000    
+ mismatching:         217         179   3.00000000       0.00000000    
+ mismatching:         217         182   7.00000000       0.00000000    
+ mismatching:         218         178   6.00000000       0.00000000    
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               19-JAN-17   5UJW              COMPND   2 MOLECULE: TRIOSEPHOSPHATE ISOMERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: FRANCISELLA TULARENSIS SUBSP. TULARENS          AUTHOR    C.CHANG,N.MALTSEVA,Y.KIM,S.SHATSMAN,A.JOACHIMIAK,W.F.ANDERSO          
+           0
+         246
+         246  residues read 5UJW.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          18          20
+  grow short strand          28          32
+  exclude short helix          39          42
+  grow short strand          51          52
+  grow short helix          71          77
+  grow short strand          82          84
+  exclude short helix          87          90
+  exclude short helix         122         126
+  exclude short helix         133         136
+  exclude short helix         147         150
+  grow short strand         154         158
+  exclude short helix         191         194
+  grow short strand         197         200
+  exclude short helix         207         212
+  grow short strand         221         223
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  7  8  9 10 11 12
+   2     1  4  5 11  1  2  3  4  5  6  7  8  9 10 11
+   3     1  0  0  1 12
+   4     2  0  0  3  1  2  3
+   5     2  6  7  8  4  5  6  7  8  9 10 11
+   6     5  0  0  6  4  5  6  7  8  9
+   7     5  0  0  2 10 11
+   8     0  0  0  6  4  5  6  7  8  9
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  1 12
+  12     0  0  0  0
+  13     0  0  0  1 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 11  1  1 11
+   3 -   1  0  0  1  1 12 12
+   4 -   2  0  0  3  1  1  3
+   5 -   2  6  7  8  1  4 11
+   6 -   5  0  0  6  1  4  9
+   7 -   5  0  0  2  1 10 11
+
+ CHAIN : 5UJWA
+ CHAIN : 5UJWB
+ CHAIN : 5UJWC
+ CHAIN : 5UJWD
+ CHAIN : 5UJWE
+ CHAIN : 5UJWF
+

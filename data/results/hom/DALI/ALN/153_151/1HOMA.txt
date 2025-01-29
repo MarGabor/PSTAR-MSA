@@ -1,0 +1,31 @@
+# Job: hom
+# Query: 1HOMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CUE-A  7.7  3.5   63    80   37   MOLECULE: PAIRED BOX PROTEIN PAX6;                                   
+
+# Pairwise alignments
+
+No 1: Query=1HOMA Sbjct=2CUEA Z-score=7.7
+
+DSSP  -----lllllLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHHL
+Query -----mrkrgRQTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALCLTERQIKIWFQNRRM   55
+ident           |   |  |   |||||    |     |   |    | |  |  || ||| 
+Sbjct gssgssgqrnRTSFTQEQIEALEKEFERTHYPDVFARERLAAKIDLPEARIQVWFSNRRA   60
+DSSP  llllllllllLLLLLHHHHHHHHHHHLLLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHHH
+
+DSSP  LLLLLLLL-LLLLL------
+Query KWKKENKT-KGEPG------   68
+ident ||  | |             
+Sbjct KWRREEKLrNQRRQsgpssg   80
+DSSP  HHHHHHHHhHHHLLllllll
+
+
+# Structural equivalences
+   1: 1HOM-A 2CUE-A     6 -  63 <=>   11 -  68   (ARG    5  - THR   62  <=> ARG   11  - LEU   68 )                          
+   1: 1HOM-A 2CUE-A    64 -  68 <=>   70 -  74   (LYS   63  - GLY   67  <=> ASN   70  - GLN   74 )                          
+
+# Translation-rotation matrices
+-matrix  "1HOM-A 2CUE-A  U(1,.)  -0.509258  0.312966  0.801691            5.722632"
+-matrix  "1HOM-A 2CUE-A  U(2,.)  -0.215789 -0.948211  0.233090           -3.680164"
+-matrix  "1HOM-A 2CUE-A  U(3,.)   0.833122 -0.054294  0.550418            0.622827"
+

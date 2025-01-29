@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 3GOUC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1V4W-D 21.2  1.6  139   146   35   MOLECULE: HEMOGLOBIN ALPHA CHAIN;                                    
+
+# Pairwise alignments
+
+No 1: Query=3GOUC Sbjct=1V4WD Z-score=21.2
+
+DSSP  -LLLHHHHHHHHHHHHHHllHHHHHHHHHHHHHHHHLHHHHHHLLLLLLL------LLLH
+Query -VLSPADKTNIKSTWDKIggHAGDYGGEALDRTFQSFPTTKTYFPHFDLS------PGSA   53
+ident           |            | |  || |     | |  ||             | |
+Sbjct vEWTQQERSIIAGIFANL--NYEDIGPKALARCLIVYPWTQRYFGAYGDLstpdaiKGNA   58
+DSSP  lLLLHHHHHHHHHHHHHL--LHHHHHHHHHHHHHHHLHHHHHHHLLLLLLllhhhhHHLH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHLHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+Query QVKAHGKKVADALTTAVAHLDDLPGALSALSDLHAYKLRVDPVNFKLLSHCLLVTLACHH  113
+ident    ||| ||   |  ||   |    | | || ||  || ||| ||  |  || |  |   
+Sbjct KIAAHGVKVLHGLDRAVKNMDNINEAYSELSVLHSDKLHVDPDNFRILGDCLTVVIAANL  118
+DSSP  HHHHHHHHHHHLLHHHHHLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHLLLLL
+Query PTEFTPAVHASLDKFFAAVSTVLTSKYR  141
+ident    ||        || | |   |  || 
+Sbjct GDAFTVETQCAFQKFLAVVVFALGRKYH  146
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHHLLLL
+
+
+# Structural equivalences
+   1: 3GOU-C 1V4W-D     1 -  17 <=>    2 -  18   (VAL    1  - ILE   17  <=> GLU    2  - LEU   18 )                          
+   1: 3GOU-C 1V4W-D    20 -  49 <=>   19 -  48   (HIS   20  - SER   49  <=> ASN   19  - LEU   48 )                          
+   1: 3GOU-C 1V4W-D    50 - 141 <=>   55 - 146   (PRO   50  - ARG  141  <=> LYS   55  - HIS  146 )                          
+
+# Translation-rotation matrices
+-matrix  "3GOU-C 1V4W-D  U(1,.)  -0.518879 -0.670132  0.530742          -30.586937"
+-matrix  "3GOU-C 1V4W-D  U(2,.)  -0.678831  0.700362  0.220641          -26.122595"
+-matrix  "3GOU-C 1V4W-D  U(3,.)  -0.519570 -0.245798 -0.818309           79.557961"
+

@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X68-A  6.9  4.6   66    76   39   MOLECULE: FHL5 PROTEIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=1X68A Z-score=6.9
+
+DSSP  lLLLLLLLLLLLLLLL----LLLEEELLEEELLLLLLLLLLLLLLLLLLEEELLLLEEEH
+Query gSSGSSGCVKCNKAIT----SGGITYQDQPWHADCFVCVTCSKKLAGQRFTAVEDQYYCV   56
+ident  |||||||| | | |        |  ||  ||  || |  ||  | |  |        | 
+Sbjct gSSGSSGCVACSKPISgltgAKFICFQDSQWHSECFNCGKCSVSLVGKGFLTQNKEIFCQ   60
+DSSP  lLLLLLLLLLLLLLLLllllLLEEEELLEEEEHHHLLLLLLLLLLLLLLEEEELLEEEEL
+
+DSSP  HHHHhhHLLLLLL-----
+Query DCYKnfVSGPSSG-----   69
+ident  |                
+Sbjct KCGS--GMDTDISgpssg   76
+DSSP  LLLL--LLLLLLLlllll
+
+
+# Structural equivalences
+   1: 2CUR-A 1X68-A     2 -  16 <=>    2 -  16   (SER    2  - THR   16  <=> SER    2  - SER   16 )                          
+   1: 2CUR-A 1X68-A    17 -  60 <=>   21 -  64   (SER   17  - LYS   60  <=> ALA   21  - SER   64 )                          
+   1: 2CUR-A 1X68-A    63 -  69 <=>   65 -  71   (VAL   63  - GLY   69  <=> GLY   65  - SER   71 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 1X68-A  U(1,.)   0.629253 -0.397424  0.667903            0.683693"
+-matrix  "2CUR-A 1X68-A  U(2,.)  -0.105563  0.807702  0.580064           -3.726056"
+-matrix  "2CUR-A 1X68-A  U(3,.)  -0.769998 -0.435513  0.466296          -12.260960"
+

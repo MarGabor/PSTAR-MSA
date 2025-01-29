@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 2DJNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2E1O-A  7.7  5.8   63    70   37   MOLECULE: HOMEOBOX PROTEIN PRH;                                      
+
+# Pairwise alignments
+
+No 1: Query=2DJNA Sbjct=2E1OA Z-score=7.7
+
+DSSP  -llLLLLLLllLLLLLHHHHHHHHHHHLLLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHH
+Query -gsSGSSGRkpRTIYSSFQLAALQRRFQKTQYLALPERAELAASLGLTQTQVKIWFQNKR   59
+ident      |         |  |   |   |    ||  |||  ||  | |   ||| |||| |
+Sbjct gssGSSGKG-gQVRFSNDQTIELEKKFETQKYLSPPERKRLAKMLQLSERQVKTWFQNRR   59
+DSSP  lllLLLLLL-lLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHH
+
+DSSP  HLLL-LLLLlll
+Query SKIK-KSGPssg   70
+ident  |          
+Sbjct AKWRrSGPS-sg   70
+DSSP  HHHHhHLLL-ll
+
+
+# Structural equivalences
+   1: 2DJN-A 2E1O-A     3 -   8 <=>    4 -   9   (SER    3  - ARG    8  <=> GLY    4  - GLY    9 )                          
+   1: 2DJN-A 2E1O-A    11 -  63 <=>   11 -  63   (ARG   11  - LYS   63  <=> GLN   11  - ARG   63 )                          
+   1: 2DJN-A 2E1O-A    64 -  67 <=>   65 -  68   (LYS   64  - PRO   67  <=> SER   65  - SER   68 )                          
+
+# Translation-rotation matrices
+-matrix  "2DJN-A 2E1O-A  U(1,.)   0.369488  0.831462 -0.414908            5.333661"
+-matrix  "2DJN-A 2E1O-A  U(2,.)  -0.817806  0.502973  0.279661            5.280784"
+-matrix  "2DJN-A 2E1O-A  U(3,.)   0.441216  0.235983  0.865818           -1.552289"
+

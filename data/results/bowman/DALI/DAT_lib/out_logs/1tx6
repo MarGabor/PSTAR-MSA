@@ -1,0 +1,916 @@
+A length: 223
+B length: 223
+C length: 223
+D length: 223
+I length: 110
+J length: 114
+# 6 chains A B C D I J
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            223
+Total number of atoms read in:              1643
+Total number of ignored atom records:        205
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+  Reading DSSP file
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+         223  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1995
+ selectset done           0
+ eigen done           0
+ tau           1   1.38214672              72          84         103         118         137
+ #popped           2           1
+ #selectset contacts        1995
+ selectset done           1
+ eigen done           1
+ tau           3   1.79599011              12          50          62         103
+ #popped           4           2
+ #selectset contacts        1995
+ selectset done           2
+ eigen done           2
+ tau           5  0.459075809              12
+ #popped           7           2
+ #selectset contacts        1995
+ selectset done           2
+ eigen done           2
+ tau           7  0.930121899              62
+ #popped           5           1
+ #selectset contacts        1995
+ selectset done           1
+ eigen done           1
+ tau           9  0.438273311              26
+ #popped          11           1
+ #selectset contacts        1995
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1995
+ selectset done           0
+ eigen done           0
+ tau          11   1.99095988              84         211
+ #popped          12           1
+ #selectset contacts        1995
+ selectset done           1
+ eigen done           1
+ tau          13   2.12843847              84
+ #popped          13           0
+ #selectset contacts        1995
+ selectset done           0
+ eigen done           0
+ tau          15  0.553726196             155
+ #popped          16           1
+ #selectset contacts        1995
+ selectset done           1
+ eigen done           1
+ tau          17  0.555370867             118
+ #popped          17           0
+ #selectset contacts        1995
+ selectset done           0
+ eigen done           0
+ tau          19  0.540064454             170
+ #popped          21           0
+ #selectset contacts        1995
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+           0
+         223
+         223  residues read 1TX6.dssp                                                   
+  grow short strand           5           6
+  grow short strand          15          19
+  grow short strand          34          37
+  exclude short helix          39          41
+  grow short strand          47          50
+  grow short strand          86          90
+  grow short helix         145         151
+  grow short strand         160         163
+  grow short strand         180         183
+  grow short strand         204         208
+ crowded segment excluded!
+  exclude short helix         209         211
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  5  6  7 14  8  9 10 11 12 13
+   2     1  4  5  7  1  2  3  4  5  6  7
+   3     1 12 13  7 14  8  9 10 11 12 13
+   4     2  0  0  1  1
+   5     2 10 11  6  2  3  4  5  6  7
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     5  0  0  2  2  3
+  11     5  0  0  4  4  5  6  7
+  12     3  0  0  1 14
+  13     3 16 17  6  8  9 10 11 12 13
+  14     0  0  0  0
+  15     0  0  0  1 14
+  16    13 18 19  3  8  9 10
+  17    13 20 21  3 11 12 13
+  18    16  0  0  1  8
+  19    16  0  0  2  9 10
+  20    17  0  0  1 11
+  21    17  0  0  2 12 13
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  7  1  1  7
+   3 -   1  8  9  7  1  8 14
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  6  1  2  7
+   6 -   5  0  0  2  1  2  3
+   7 -   5  0  0  4  1  4  7
+   8 -   3  0  0  1  1 14 14
+   9 -   3 10 11  6  1  8 13
+  10 -   9 12 13  3  1  8 10
+  11 -   9 14 15  3  1 11 13
+  12 -  10  0  0  1  1  8  8
+  13 -  10  0  0  2  1  9 10
+  14 -  11  0  0  1  1 11 11
+  15 -  11  0  0  2  1 12 13
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            223
+Total number of atoms read in:              1643
+Total number of ignored atom records:        217
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+  Reading DSSP file
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+         223  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1960
+ selectset done           0
+ eigen done           0
+ tau           1   1.30740297              72          84         103         118         137         213
+ #popped           2           1
+ #selectset contacts        1960
+ selectset done           1
+ eigen done           1
+ tau           3   2.19227004             137
+ #popped           4           1
+ #selectset contacts        1960
+ selectset done           1
+ eigen done           1
+ tau           5   1.90268266              12          50          62         103
+ #popped           6           2
+ #selectset contacts        1960
+ selectset done           2
+ eigen done           2
+ tau           7  0.497653604              12
+ #popped           9           2
+ #selectset contacts        1960
+ selectset done           2
+ eigen done           2
+ tau           9   1.05533063              62
+ #popped           7           1
+ #selectset contacts        1960
+ selectset done           1
+ eigen done           1
+ tau          11  0.418351799              26
+ #popped          13           1
+ #selectset contacts        1960
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1960
+ selectset done           0
+ eigen done           0
+ tau          13  0.666063488             150
+ #popped          14           1
+ #selectset contacts        1960
+ selectset done           1
+ eigen done           1
+ tau          15   999.999023              84
+ #popped          17           1
+ #selectset contacts        1960
+ selectset done           1
+ eigen done           1
+ tau          17  0.483533263             118
+ #popped          15           0
+ #selectset contacts        1960
+ selectset done           0
+ eigen done           0
+ tau          19  0.969014764             163         174         193         203
+ #popped          20           1
+ #selectset contacts        1960
+ selectset done           1
+ eigen done           1
+ tau          21  0.247468814             193
+ #popped          22           1
+ #selectset contacts        1960
+ selectset done           1
+ eigen done           1
+ tau          23   9.09226131             163
+ #popped          21           0
+ #selectset contacts        1960
+ selectset done           0
+ eigen done           0
+ tau          25   1.01915169             174
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+           0
+         223
+         223  residues read 1TX6.dssp                                                   
+  grow short strand           5           6
+  grow short strand          15          19
+  grow short strand          34          37
+  exclude short helix          39          41
+  grow short strand          47          50
+  grow short strand          86          90
+  grow short helix         145         151
+  grow short strand         160         163
+  grow short strand         180         183
+  grow short strand         204         208
+ crowded segment excluded!
+  exclude short helix         209         211
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  5  6  7 14  8  9 10 11 12 13
+   2     1  4  5  8  1  2  3  4  5  6  7 14
+   3     1 14 15  6  8  9 10 11 12 13
+   4     2  6  7  7  1  2  3  4  5  6  7
+   5     2  0  0  1 14
+   6     4  0  0  1  1
+   7     4 12 13  6  2  3  4  5  6  7
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+  12     7  0  0  2  2  3
+  13     7  0  0  4  4  5  6  7
+  14     3 18 19  3  8  9 10
+  15     3 24 25  3 11 12 13
+  16     0  0  0  0
+  17     0  0  0  3  8  9 10
+  18    14  0  0  1  8
+  19    14  0  0  2  9 10
+  20     0  0  0  3 11 12 13
+  21     0  0  0  0
+  22     0  0  0  3 11 12 13
+  23     0  0  0  0
+  24    15  0  0  1 11
+  25    15  0  0  2 12 13
+  26     0  0  0  0
+  27     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  8  2  1  7 14 14
+   3 -   1 10 11  6  1  8 13
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  1  1 14 14
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  6  1  2  7
+   8 -   7  0  0  2  1  2  3
+   9 -   7  0  0  4  1  4  7
+  10 -   3 12 13  3  1  8 10
+  11 -   3 14 15  3  1 11 13
+  12 -  10  0  0  1  1  8  8
+  13 -  10  0  0  2  1  9 10
+  14 -  11  0  0  1  1 11 11
+  15 -  11  0  0  2  1 12 13
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            223
+Total number of atoms read in:              1643
+Total number of ignored atom records:        167
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+  Reading DSSP file
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+         223  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1977
+ selectset done           0
+ eigen done           0
+ tau           1   1.04780757             140         170         192         205
+ #popped           2           1
+ #selectset contacts        1977
+ selectset done           1
+ eigen done           1
+ tau           3   1.05811417              27          46          65          93
+ #popped           4           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau           5   1.17366850             192
+ #popped           6           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau           7  0.791491985             104         115
+ #popped           8           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau           9  0.640634537             104
+ #popped          10           3
+ #selectset contacts        1977
+ selectset done           3
+ eigen done           3
+ tau          11   1.24285710              11
+ #popped          13           3
+ #selectset contacts        1977
+ selectset done           3
+ eigen done           3
+ tau          13   1.27580094              65
+ #popped          14           3
+ #selectset contacts        1977
+ selectset done           3
+ eigen done           3
+ tau          15  0.799359798              27
+ #popped          11           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau          17  0.757619739             140
+ #popped          18           3
+ #selectset contacts        1977
+ selectset done           3
+ eigen done           3
+ tau          19  0.266265064             130
+ #popped          19           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped           5           1
+ #selectset contacts        1977
+ selectset done           1
+ eigen done           1
+ tau          21  0.186744928              83
+ #popped          22           1
+ #selectset contacts        1977
+ selectset done           1
+ eigen done           1
+ tau          23   3.99054813              46
+ #popped           3           0
+ #selectset contacts        1977
+ selectset done           0
+ eigen done           0
+ tau          25  0.549338996             170
+ #popped          26           0
+ #selectset contacts        1977
+ selectset done           0
+ eigen done           0
+ tau          27  0.732606113             160
+ #popped          28           0
+ #selectset contacts        1977
+ selectset done           0
+ eigen done           0
+ tau          29  0.656885803             150
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+           0
+         223
+         223  residues read 1TX6.dssp                                                   
+  grow short strand           5           6
+  grow short strand          15          19
+  grow short strand          34          37
+  exclude short helix          39          41
+  grow short strand          47          50
+  grow short strand          86          90
+  grow short helix         145         151
+  grow short strand         160         163
+  grow short strand         180         183
+  grow short strand         204         208
+ crowded segment excluded!
+  exclude short helix         209         211
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  5  8  9 12 13 14  4  6  7 10 11
+   2     1  4  5 12  1  2  3  5  8  9 12 13 14  4  6  7
+   3     1 28 29  2 10 11
+   4     2  6  7  9  1  2  3  5  8  9 12 13 14
+   5     2 22 23  3  4  6  7
+   6     4 10 11  8  1  2  3  5  8  9 12 13
+   7     4  0  0  1 14
+   8     0  0  0  8  1  2  3  5  8  9 12 13
+   9     0  0  0  0
+  10     6 12 13  4  1  2  3  5
+  11     6 18 19  4  8  9 12 13
+  12    10  0  0  1  1
+  13    10 16 17  3  2  3  5
+  14     0  0  0  3  2  3  5
+  15     0  0  0  0
+  16    13  0  0  2  2  3
+  17    13  0  0  1  5
+  18    11 20 21  2  8  9
+  19    11  0  0  2 12 13
+  20    18  0  0  1  8
+  21    18  0  0  1  9
+  22     5 24 25  2  4  6
+  23     5  0  0  1  7
+  24    22  0  0  1  4
+  25    22  0  0  1  6
+  26     0  0  0  2 10 11
+  27     0  0  0  0
+  28     3  0  0  1 10
+  29     3  0  0  1 11
+  30     0  0  0  1 10
+  31     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 12  2  1  9 12 14
+   3 -   1 22 23  2  1 10 11
+   4 -   2  6  7  9  4  1  3  5  5  8  9 12 14
+   5 -   2 18 19  3  2  4  4  6  7
+   6 -   4  8  9  8  4  1  3  5  5  8  9 12 13
+   7 -   4  0  0  1  1 14 14
+   8 -   6 10 11  4  2  1  3  5  5
+   9 -   6 14 15  4  2  8  9 12 13
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  3  2  2  3  5  5
+  12 -  11  0  0  2  1  2  3
+  13 -  11  0  0  1  1  5  5
+  14 -   9 16 17  2  1  8  9
+  15 -   9  0  0  2  1 12 13
+  16 -  14  0  0  1  1  8  8
+  17 -  14  0  0  1  1  9  9
+  18 -   5 20 21  2  2  4  4  6  6
+  19 -   5  0  0  1  1  7  7
+  20 -  18  0  0  1  1  4  4
+  21 -  18  0  0  1  1  6  6
+  22 -   3  0  0  1  1 10 10
+  23 -   3  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            223
+Total number of atoms read in:              1643
+Total number of ignored atom records:        249
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+  Reading DSSP file
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+         223  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1966
+ selectset done           0
+ eigen done           0
+ tau           1   1.07205069             103         211
+ #popped           2           1
+ #selectset contacts        1966
+ selectset done           1
+ eigen done           1
+ tau           3   1.68862784              11          50          62
+ #popped           4           2
+ #selectset contacts        1966
+ selectset done           2
+ eigen done           2
+ tau           5   2.37589669              11
+ #popped           5           1
+ #selectset contacts        1966
+ selectset done           1
+ eigen done           1
+ tau           7   1.07625329              72          83
+ #popped           8           1
+ #selectset contacts        1966
+ selectset done           1
+ eigen done           1
+ tau           9   2.42161059             103
+ #popped          10           1
+ #selectset contacts        1966
+ selectset done           1
+ eigen done           1
+ tau          11  0.706144094              93
+ #popped          12           1
+ #selectset contacts        1966
+ selectset done           1
+ eigen done           1
+ tau          13  0.609093130              27
+ #popped          15           1
+ #selectset contacts        1966
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1966
+ selectset done           0
+ eigen done           0
+ tau          15   2.25756454             119         136
+ #popped          16           0
+ #selectset contacts        1966
+ selectset done           0
+ eigen done           0
+ tau          17  0.969082832             143         156
+ #popped          18           0
+ #selectset contacts        1966
+ selectset done           0
+ eigen done           0
+ tau          19  0.503106773             170
+ #popped          20           1
+ #selectset contacts        1966
+ selectset done           1
+ eigen done           1
+ tau          21   1.52819407             113
+ #popped          23           1
+ #selectset contacts        1966
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        1966
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+           0
+         223
+         223  residues read 1TX6.dssp                                                   
+  grow short strand           5           6
+  grow short strand          15          19
+  grow short strand          34          37
+  exclude short helix          39          41
+  grow short strand          47          50
+  grow short strand          86          90
+  grow short helix         145         151
+  grow short strand         160         163
+  grow short strand         180         183
+  grow short strand         204         208
+ crowded segment excluded!
+  exclude short helix         209         211
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  5  6  7 14  8  9 11 12 13 10
+   2     1  4  5  8  1  2  3  4  5  6  7 14
+   3     1 18 19  6  8  9 11 12 13 10
+   4     2  0  0  1  1
+   5     2 10 11  7  2  3  4  5  6  7 14
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     0  0  0  7  2  3  4  5  6  7 14
+   9     0  0  0  0
+  10     5 14 15  6  2  3  4  5  6  7
+  11     5  0  0  1 14
+  12     0  0  0  6  2  3  4  5  6  7
+  13     0  0  0  0
+  14    10  0  0  2  2  3
+  15    10  0  0  4  4  5  6  7
+  16     0  0  0  6  8  9 11 12 13 10
+  17     0  0  0  0
+  18     3 20 21  5  8  9 11 12 13
+  19     3  0  0  1 10
+  20    18  0  0  3  8  9 11
+  21    18  0  0  2 12 13
+  22     0  0  0  0
+  23     0  0  0  3  8  9 11
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  8  2  1  7 14 14
+   3 *   1 10 11  6  1  8 13
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  7  2  2  7 14 14
+   6 -   5  8  9  6  1  2  7
+   7 -   5  0  0  1  1 14 14
+   8 -   6  0  0  2  1  2  3
+   9 -   6  0  0  4  1  4  7
+  10 -   3 12 13  5  2  8  9 11 13
+  11 -   3  0  0  1  1 10 10
+  12 -  10  0  0  3  2  8  9 11 11
+  13 -  10  0  0  2  1 12 13
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            110
+Total number of atoms read in:               835
+Total number of ignored atom records:         61
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+  Reading DSSP file
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+         110  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         819
+ selectset done           0
+ eigen done           0
+ tau           1   4.08785915              56
+ #popped           2           1
+ #selectset contacts         819
+ selectset done           1
+ eigen done           1
+ tau           3  0.390107602              46
+ #popped           4           1
+ #selectset contacts         819
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts         819
+ selectset done           0
+ eigen done           0
+ tau           5   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+           0
+         110
+         110  residues read 1TX6.dssp                                                   
+  grow short strand           9          12
+  grow short strand          18          21
+  grow short strand          32          34
+  grow short strand          42          44
+  grow short strand          47          49
+  grow short strand          65          68
+  grow short strand          74          77
+  grow short strand          99         100
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  6  7  8
+   2     1  4  5  5  1  2  3  4  5
+   3     1  0  0  3  6  7  8
+   4     2  0  0  4  1  2  3  4
+   5     2  0  0  1  5
+   1 +   0  2  3  8  1  1  8
+   2 *   1  4  5  5  1  1  5
+   3 *   1  0  0  3  1  6  8
+   4 -   2  0  0  4  1  1  4
+   5 -   2  0  0  1  1  5  5
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            114
+Total number of atoms read in:               872
+Total number of ignored atom records:         87
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+  Reading DSSP file
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+         114  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         878
+ selectset done           0
+ eigen done           0
+ tau           1   4.44359064              58
+ #popped           2           1
+ #selectset contacts         878
+ selectset done           1
+ eigen done           1
+ tau           3  0.439472824              48
+ #popped           4           1
+ #selectset contacts         878
+ selectset done           1
+ eigen done           1
+ tau           5  0.277601868              38
+ #popped           6           1
+ #selectset contacts         878
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts         878
+ selectset done           0
+ eigen done           0
+ tau           7  0.326929510              95
+ #popped           8           0
+ #selectset contacts         878
+ selectset done           0
+ eigen done           0
+ tau           9   2.19638968              80
+ #popped          10           0
+ #selectset contacts         878
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/PROTEIN BINDING               02-JUL-04   1TX6              COMPND   2 MOLECULE: TRYPSIN;                                                   SOURCE   2 ORGANISM_SCIENTIFIC: SUS SCROFA;                                     AUTHOR    H.K.SONG,E.Y.PARK,J.A.KIM,H.W.KIM,Y.S.KIM                             
+           0
+         114
+         114  residues read 1TX6.dssp                                                   
+  grow short strand           9          12
+  grow short strand          18          21
+  grow short strand          33          34
+  grow short strand          44          45
+  grow short strand          48          50
+  grow short strand          66          69
+  grow short strand          75          78
+  grow short strand          92          94
+  grow short strand          97          99
+  grow short strand         103         104
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6  7  8  9 10
+   2     1  4  5  5  1  2  3  4  5
+   3     1  8  9  5  6  7  8  9 10
+   4     2  6  7  4  1  2  3  4
+   5     2  0  0  1  5
+   6     4  0  0  3  1  2  3
+   7     4  0  0  1  4
+   8     3 10 11  3  6  7  8
+   9     3  0  0  2  9 10
+  10     8  0  0  2  6  7
+  11     8  0  0  1  8
+   1 +   0  2  3 10  1  1 10
+   2 *   1  4  5  5  1  1  5
+   3 *   1  8  9  5  1  6 10
+   4 -   2  6  7  4  1  1  4
+   5 -   2  0  0  1  1  5  5
+   6 -   4  0  0  3  1  1  3
+   7 -   4  0  0  1  1  4  4
+   8 -   3 10 11  3  1  6  8
+   9 -   3  0  0  2  1  9 10
+  10 -   8  0  0  2  1  6  7
+  11 -   8  0  0  1  1  8  8
+
+ CHAIN : 1TX6A
+ CHAIN : 1TX6B
+ CHAIN : 1TX6C
+ CHAIN : 1TX6D
+ CHAIN : 1TX6I
+ CHAIN : 1TX6J
+

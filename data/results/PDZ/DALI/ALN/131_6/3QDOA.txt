@@ -1,0 +1,33 @@
+# Job: PDZ
+# Query: 3QDOA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DLS-A 12.0  2.6   83    93   46   MOLECULE: RHO GUANINE NUCLEOTIDE EXCHANGE FACTOR 11;                 
+
+# Pairwise alignments
+
+No 1: Query=3QDOA Sbjct=2DLSA Z-score=12.0
+
+DSSP  ---LLLLlLEEEEEEELLLLLLLEEEELLllllllleeelleeelLLLEEEEELLLLHHH
+Query ---GSHGgSPRVVRIVKSESGYGFNVRGQvseggqlrsingelyaPLQHVSAVLPGGAAD   57
+ident    || |   | | | |   | || | |                     |  | ||||| 
+Sbjct gssGSSG-VQRCVIIQKDQHGFGFTVSGD----------------RIVLVQSVRPGGAAM   43
+DSSP  lllLLLL-LEEEEEEELLLLLLLEEEELL----------------LLLEEEEELLLLLLL
+
+DSSP  HHLLLLLLEEEEELLEELLLLLHHHHHHHHLLlLLEEEEEEELLllllllll
+Query RAGVRKGDRILEVNGVNVEGATHKQVVDLIRAgEKELILTVLSVggeseskv  109
+ident  |||  ||||  |||  |    |  || ||        || |          
+Sbjct KAGVKEGDRIIKVNGTMVTNSSHLEVVKLIKS-GAYVALTLLGS-ssgpssg   93
+DSSP  LLLLLLLLEEEEELLEELLLLLHHHHHHHHLL-LLEEEEEEELL-lllllll
+
+
+# Structural equivalences
+   1: 3QDO-A 2DLS-A     1 -   4 <=>    4 -   7   (GLY    1  - GLY    4  <=> GLY    4  - GLY    7 )                          
+   1: 3QDO-A 2DLS-A     6 -  26 <=>    8 -  28   (SER    6  - GLN   58  <=> VAL    8  - ASP   28 )                          
+   1: 3QDO-A 2DLS-A    43 -  89 <=>   29 -  75   (PRO   75  - ALA  121  <=> ARG   29  - SER   75 )                          
+   1: 3QDO-A 2DLS-A    91 - 101 <=>   76 -  86   (GLU  123  - VAL  133  <=> GLY   76  - SER   86 )                          
+
+# Translation-rotation matrices
+-matrix  "3QDO-A 2DLS-A  U(1,.)   0.605964  0.378945 -0.699434           11.859929"
+-matrix  "3QDO-A 2DLS-A  U(2,.)   0.766124 -0.514705  0.384880           29.600719"
+-matrix  "3QDO-A 2DLS-A  U(3,.)  -0.214154 -0.769077 -0.602212           10.613458"
+

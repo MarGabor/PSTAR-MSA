@@ -1,0 +1,377 @@
+A length: 187
+B length: 188
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+D length: 0
+ length: 0
+D length: 0
+ length: 0
+D length: 0
+ length: 0
+D length: 0
+ length: 0
+D length: 0
+ length: 0
+D length: 0
+ length: 0
+D length: 0
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            187
+Total number of atoms read in:              1540
+Total number of ignored atom records:        143
+ HEADER    RNA BINDING PROTEIN                     15-FEB-08   2VOD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.KOTIK-KOGAN,E.R.VALENTINE,D.SANFELICE,M.R.CONTE,S.CURRY             
+  Reading DSSP file
+ HEADER    RNA BINDING PROTEIN                     15-FEB-08   2VOD              COMPND   2 MOLECULE: LUPUS LA PROTEIN;                                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    O.KOTIK-KOGAN,E.R.VALENTINE,D.SANFELICE,M.R.CONTE,S.CURRY             
+         187  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1658
+ selectset done           0
+ eigen done           0
+ tau           1   7.85148048              93
+ #popped           2           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau           3   1.74311924              22          37
+ #popped           4           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau           5   1.04442143              11
+ #popped           7           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau           7  0.732353568              47          66
+ #popped           8           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau           9   1.65340912              22
+ #popped          11           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau          11  0.555598795              47
+ #popped          13           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1658
+ selectset done           0
+ eigen done           0
+ tau          13   1.48905730             105
+ #popped          15           0
+ #selectset contacts        1658
+ selectset done           0
+ eigen done           0
+ tau          15  0.962742805             117         134         151         174
+ #popped          16           1
+ #selectset contacts        1658
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          17           0
+ #selectset contacts        1658
+ selectset done           0
+ eigen done           0
+ tau          17   1.35000002             164
+ #popped          18           0
+ #selectset contacts        1658
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    RNA BINDING PROTEIN                     15-FEB-08   2VOD              COMPND   2 MOLECULE: LUPUS LA PROTEIN;                                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    O.KOTIK-KOGAN,E.R.VALENTINE,D.SANFELICE,M.R.CONTE,S.CURRY             
+           0
+         187
+         187  residues read 2VOD.dssp                                                   
+  exclude short helix          25          27
+  grow short strand          42          43
+ crowded segment excluded!
+  exclude short helix          44          47
+  exclude short helix          51          56
+  grow short strand          75          77
+  grow short strand          83          86
+  grow short strand         107         111
+  grow short strand         176         179
+ crowded segment excluded!
+  grow short helix         180         186
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  3  2  6  7  9 10 12  8 11
+   2     1  4  5  5  1  4  5  3  2
+   3     1 14 15  7  6  7  9 10 12  8 11
+   4     2  6  7  4  1  4  5  3
+   5     2  0  0  1  2
+   6     4  0  0  1  1
+   7     4  8  9  3  4  5  3
+   8     7  0  0  2  4  5
+   9     7  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  2  4  5
+  12     0  0  0  0
+  13     0  0  0  2  4  5
+  14     3  0  0  1  6
+  15     3 16 17  6  7  9 10 12  8 11
+  16    15  0  0  4  7  9 10 12
+  17    15  0  0  2  8 11
+  18     0  0  0  2  8 11
+  19     0  0  0  0
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  5  1  1  5
+   3 *   1 10 11  7  1  6 12
+   4 -   2  6  7  4  2  1  1  3  5
+   5 -   2  0  0  1  1  2  2
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  3  1  3  5
+   8 -   7  0  0  2  1  4  5
+   9 -   7  0  0  1  1  3  3
+  10 -   3  0  0  1  1  6  6
+  11 -   3 12 13  6  1  7 12
+  12 -  11  0  0  4  3  7  7  9 10 12 12
+  13 -  11  0  0  2  2  8  8 11 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            188
+Total number of atoms read in:              1525
+Total number of ignored atom records:        145
+ HEADER    RNA BINDING PROTEIN                     15-FEB-08   2VOD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.KOTIK-KOGAN,E.R.VALENTINE,D.SANFELICE,M.R.CONTE,S.CURRY             
+  Reading DSSP file
+ HEADER    RNA BINDING PROTEIN                     15-FEB-08   2VOD              COMPND   2 MOLECULE: LUPUS LA PROTEIN;                                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    O.KOTIK-KOGAN,E.R.VALENTINE,D.SANFELICE,M.R.CONTE,S.CURRY             
+         188  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau           1   8.28169537              94
+ #popped           2           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau           3   1.64040589              38
+ #popped           4           2
+ #selectset contacts        1637
+ selectset done           2
+ eigen done           2
+ tau           5   2.00727987              22
+ #popped           6           2
+ #selectset contacts        1637
+ selectset done           2
+ eigen done           2
+ tau           7  0.890033185              10
+ #popped           5           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau           9   1.08566308              48          59
+ #popped          10           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau          11   1.34884334              48          70
+ #popped          12           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau          13  0.485654116              48
+ #popped          15           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau          15  0.462962955              84
+ #popped           3           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          17   1.53950787             106
+ #popped          19           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          19  0.862311780             154         167
+ #popped          20           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          21  0.933357954             154         177
+ #popped          22           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          23   1.91646004             118         130
+ #popped          24           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          25  0.694516957             154
+ #popped          26           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          27  0.420957804             118
+ #popped          29           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          29   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    RNA BINDING PROTEIN                     15-FEB-08   2VOD              COMPND   2 MOLECULE: LUPUS LA PROTEIN;                                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    O.KOTIK-KOGAN,E.R.VALENTINE,D.SANFELICE,M.R.CONTE,S.CURRY             
+           0
+         188
+         188  residues read 2VOD.dssp                                                   
+  exclude short helix          26          28
+  grow short strand          43          44
+ crowded segment excluded!
+  exclude short helix          45          48
+  exclude short helix          52          57
+  grow short strand          76          78
+  grow short strand          84          87
+  grow short strand         108         112
+  grow short strand         170         171
+  grow short strand         174         175
+ crowded segment excluded!
+  grow short strand         177         180
+ crowded segment excluded!
+  exclude short helix         181         186
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  4  5  3  6  7  9 10  8 12 11
+   2     1  4  5  5  1  2  4  5  3
+   3     1 18 19  7  6  7  9 10  8 12 11
+   4     2  6  7  2  1  2
+   5     2 12 13  3  4  5  3
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     0  0  0  0
+   9     0  0  0  1  1
+  10     0  0  0  3  4  5  3
+  11     0  0  0  0
+  12     5 16 17  2  4  5
+  13     5  0  0  1  3
+  14     0  0  0  0
+  15     0  0  0  2  4  5
+  16    12  0  0  1  4
+  17    12  0  0  1  5
+  18     3  0  0  1  6
+  19     3 20 21  6  7  9 10  8 12 11
+  20    19 22 23  5  7  9 10  8 12
+  21    19  0  0  1 11
+  22    20 24 25  4  7  9 10  8
+  23    20  0  0  1 12
+  24    22 28 29  3  7  9 10
+  25    22  0  0  1  8
+  26     0  0  0  3  7  9 10
+  27     0  0  0  0
+  28    24  0  0  1  7
+  29    24  0  0  2  9 10
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  5  1  1  5
+   3 *   1 12 13  7  1  6 12
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  3  1  3  5
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  2  1  4  5
+   9 -   5  0  0  1  1  3  3
+  10 -   8  0  0  1  1  4  4
+  11 -   8  0  0  1  1  5  5
+  12 -   3  0  0  1  1  6  6
+  13 -   3 14 15  6  1  7 12
+  14 -  13 16 17  5  2  7 10 12 12
+  15 -  13  0  0  1  1 11 11
+  16 -  14 18 19  4  1  7 10
+  17 -  14  0  0  1  1 12 12
+  18 -  16 20 21  3  2  7  7  9 10
+  19 -  16  0  0  1  1  8  8
+  20 -  18  0  0  1  1  7  7
+  21 -  18  0  0  2  1  9 10
+
+ CHAIN : 2VODA
+ CHAIN : 2VODB
+

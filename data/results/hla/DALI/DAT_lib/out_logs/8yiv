@@ -1,0 +1,658 @@
+A length: 275
+C length: 10
+B length: 100
+D length: 202
+E length: 247
+# 4 chains A B D E
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            275
+Total number of atoms read in:              2228
+Total number of ignored atom records:        303
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+         275  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2414
+ selectset done           0
+ eigen done           0
+ tau           1   12.8530970             180
+ #popped           2           1
+ #selectset contacts        2414
+ selectset done           1
+ eigen done           1
+ tau           3   1.11617744              48          60         166
+ #popped           4           2
+ #selectset contacts        2414
+ selectset done           2
+ eigen done           2
+ tau           5   1.09047782             135         151
+ #popped           6           2
+ #selectset contacts        2414
+ selectset done           2
+ eigen done           2
+ tau           7   1.72404933             135
+ #popped           8           2
+ #selectset contacts        2414
+ selectset done           2
+ eigen done           2
+ tau           9   1.30810809              48          93
+ #popped          10           3
+ #selectset contacts        2414
+ selectset done           3
+ eigen done           3
+ tau          11   1.28659701             122
+ #popped          12           3
+ #selectset contacts        2414
+ selectset done           3
+ eigen done           3
+ tau          13  0.802269101              11          21
+ #popped          14           3
+ #selectset contacts        2414
+ selectset done           3
+ eigen done           3
+ tau          15  0.443581015             112
+ #popped          16           3
+ #selectset contacts        2414
+ selectset done           3
+ eigen done           3
+ tau          17  0.212712407              24
+ #popped          19           3
+ #selectset contacts        2414
+ selectset done           3
+ eigen done           3
+ tau          19   999.999023              48
+ #popped          20           3
+ #selectset contacts        2414
+ selectset done           3
+ eigen done           3
+ tau          21  0.780656278              34
+ #popped          11           2
+ #selectset contacts        2414
+ selectset done           2
+ eigen done           2
+ tau          23   1.59164822              78
+ #popped           5           1
+ #selectset contacts        2414
+ selectset done           1
+ eigen done           1
+ tau          25   1.24196434              60
+ #popped           3           0
+ #selectset contacts        2414
+ selectset done           0
+ eigen done           0
+ tau          27  0.813993216             190         200         247         257
+ #popped          28           1
+ #selectset contacts        2414
+ selectset done           1
+ eigen done           1
+ tau          29  0.810377777             217         227
+ #popped          30           1
+ #selectset contacts        2414
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          29           0
+ #selectset contacts        2414
+ selectset done           0
+ eigen done           0
+ tau          31  0.551348567             200
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+           0
+         275
+         275  residues read 8YIV.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          52
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+  grow short strand         228         230
+  grow short strand         234         235
+  exclude short helix         254         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  3  4  6  7  8  9  5 11 10 12 13 14 15 17 18 19 20 21 16
+   2     1  4  5 12  1  2  3  4  6  7  8  9  5 11 10 12
+   3     1 30 31  9 13 14 15 17 18 19 20 21 16
+   4     2  6  7 11  1  2  3  4  6  7  8  9  5 11 10
+   5     2  0  0  1 12
+   6     4  8  9 10  1  2  3  4  6  7  8  9  5 11
+   7     4  0  0  1 10
+   8     6 10 11  9  1  2  3  4  6  7  8  9  5
+   9     6  0  0  1 11
+  10     8 12 13  8  1  2  3  4  6  7  8  9
+  11     8  0  0  1  5
+  12    10 16 17  6  1  2  3  4  6  7
+  13    10  0  0  2  8  9
+  14     0  0  0  6  1  2  3  4  6  7
+  15     0  0  0  0
+  16    12 18 19  5  1  2  3  4  6
+  17    12  0  0  1  7
+  18    16  0  0  2  1  2
+  19    16 20 21  3  3  4  6
+  20    19 22 23  2  3  4
+  21    19  0  0  1  6
+  22    20  0  0  1  3
+  23    20  0  0  1  4
+  24     0  0  0  1  5
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1 12
+  28     0  0  0  9 13 14 15 17 18 19 20 21 16
+  29     0  0  0  0
+  30     3  0  0  8 13 14 15 17 18 19 20 21
+  31     3  0  0  1 16
+  32     0  0  0  0
+  33     0  0  0  0
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 12  1  1 12
+   3 *   1 22 23  9  1 13 21
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9 10  2  1  9 11 11
+   7 -   4  0  0  1  1 10 10
+   8 -   6 10 11  9  1  1  9
+   9 -   6  0  0  1  1 11 11
+  10 -   8 12 13  8  2  1  4  6  9
+  11 -   8  0  0  1  1  5  5
+  12 -  10 14 15  6  2  1  4  6  7
+  13 -  10  0  0  2  1  8  9
+  14 -  12 16 17  5  2  1  4  6  6
+  15 -  12  0  0  1  1  7  7
+  16 -  14  0  0  2  1  1  2
+  17 -  14 18 19  3  2  3  4  6  6
+  18 -  17 20 21  2  1  3  4
+  19 -  17  0  0  1  1  6  6
+  20 -  18  0  0  1  1  3  3
+  21 -  18  0  0  1  1  4  4
+  22 -   3  0  0  8  2 13 15 17 21
+  23 -   3  0  0  1  1 16 16
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            100
+Total number of atoms read in:               825
+Total number of ignored atom records:         89
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+         100  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           1   1.01754987              10          25          38          51          67
+ #popped           2           1
+ #selectset contacts         781
+ selectset done           1
+ eigen done           1
+ tau           3  0.474398643              10
+ #popped           5           1
+ #selectset contacts         781
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           5  0.632133007              25
+ #popped           7           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           7  0.498646468              51
+ #popped           9           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           9   1.90931368              77
+ #popped          11           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau          11  0.392280698              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+           0
+         100
+         100  residues read 8YIV.dssp                                                   
+  grow short strand          45          46
+  grow short strand          51          52
+  grow short strand          56          57
+  grow short strand          92          95
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  6  7  3  4  5  8  9
+   2     1  4  5  4  1  2  6  7
+   3     1  8  9  5  3  4  5  8  9
+   4     2  0  0  1  1
+   5     2  0  0  3  2  6  7
+   6     0  0  0  0
+   7     0  0  0  5  3  4  5  8  9
+   8     3  0  0  3  3  4  5
+   9     3 12 13  2  8  9
+  10     0  0  0  0
+  11     0  0  0  2  8  9
+  12     9  0  0  1  8
+  13     9  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  4  2  1  2  6  7
+   3 -   1  6  7  5  2  3  5  8  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  3  2  2  2  6  7
+   6 -   3  0  0  3  1  3  5
+   7 -   3  8  9  2  1  8  9
+   8 -   7  0  0  1  1  8  8
+   9 -   7  0  0  1  1  9  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1568
+Total number of ignored atom records:        264
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1599
+ selectset done           0
+ eigen done           0
+ tau           1   14.8961754             111
+ #popped           2           1
+ #selectset contacts        1599
+ selectset done           1
+ eigen done           1
+ tau           3  0.551796198              18          78
+ #popped           4           2
+ #selectset contacts        1599
+ selectset done           2
+ eigen done           2
+ tau           5   1.06379640              91         101
+ #popped           6           2
+ #selectset contacts        1599
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1599
+ selectset done           1
+ eigen done           1
+ tau           7   1.61674869              36          48
+ #popped           8           1
+ #selectset contacts        1599
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1599
+ selectset done           0
+ eigen done           0
+ tau           9   1.97725868             161         171
+ #popped          10           0
+ #selectset contacts        1599
+ selectset done           0
+ eigen done           0
+ tau          11   1.54727173             123         134
+ #popped          12           0
+ #selectset contacts        1599
+ selectset done           0
+ eigen done           0
+ tau          13  0.789637387             145         192
+ #popped          14           1
+ #selectset contacts        1599
+ selectset done           1
+ eigen done           1
+ tau          15  0.900346100             145
+ #popped          16           1
+ #selectset contacts        1599
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          15           0
+ #selectset contacts        1599
+ selectset done           0
+ eigen done           0
+ tau          17   1.33381331             155         176
+ #popped          18           0
+ #selectset contacts        1599
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+           0
+         202
+         202  residues read 8YIV.dssp                                                   
+  grow short strand           3           5
+  grow short strand          10          14
+  grow short strand          19          21
+  grow short strand          24          26
+  grow short strand          59          60
+  exclude short helix          83          85
+  grow short strand         100         102
+  grow short strand         154         156
+  grow short strand         160         164
+ crowded segment excluded!
+  exclude short helix         165         167
+  exclude short helix         185         188
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2 10 12 11  3  4  5  7  8  9  6 13 14 15 16
+   2     1  4  5 12  1  2 10 12 11  3  4  5  7  8  9  6
+   3     1 14 15  4 13 14 15 16
+   4     2  6  7  5  1  2 10 12 11
+   5     2  8  9  7  3  4  5  7  8  9  6
+   6     4  0  0  4  1  2 10 12
+   7     4  0  0  1 11
+   8     5  0  0  6  3  4  5  7  8  9
+   9     5  0  0  1  6
+  10     0  0  0  4 13 14 15 16
+  11     0  0  0  0
+  12     0  0  0  4 13 14 15 16
+  13     0  0  0  0
+  14     3  0  0  2 13 14
+  15     3 18 19  2 15 16
+  16     0  0  0  2 13 14
+  17     0  0  0  0
+  18    15  0  0  1 15
+  19    15  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5 12  1  1 12
+   3 *   1 10 11  4  1 13 16
+   4 -   2  6  7  5  2  1  2 10 12
+   5 -   2  8  9  7  1  3  9
+   6 -   4  0  0  4  3  1  2 10 10 12 12
+   7 -   4  0  0  1  1 11 11
+   8 -   5  0  0  6  2  3  5  7  9
+   9 -   5  0  0  1  1  6  6
+  10 -   3  0  0  2  1 13 14
+  11 -   3 12 13  2  1 15 16
+  12 -  11  0  0  1  1 15 15
+  13 -  11  0  0  1  1 16 16
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            247
+Total number of atoms read in:              1986
+Total number of ignored atom records:        480
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+         247  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau           1   7.27578926             117
+ #popped           2           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau           3  0.910447776              95         106
+ #popped           4           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau           5  0.366563618              20
+ #popped           6           2
+ #selectset contacts        2107
+ selectset done           2
+ eigen done           2
+ tau           7   1.80674672              10
+ #popped           7           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau           9  0.488178343              35          46
+ #popped          10           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          11  0.471319884              95
+ #popped          12           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          13  0.336681187              57
+ #popped          14           2
+ #selectset contacts        2107
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          15   1.07608700              77
+ #popped          16           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          17  0.999852180              67
+ #popped           3           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau          19   1.62838423             127         149         159         177         192         215         237
+ #popped          20           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          21   1.00022852             192
+ #popped          22           2
+ #selectset contacts        2107
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          23           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           29-FEB-24   8YIV              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.C.WU,R.A.MARIUZZA                                                   
+           0
+         247
+         247  residues read 8YIV.dssp                                                   
+  grow short strand           5           8
+  grow short strand          11          15
+  grow short strand          55          58
+  grow short strand          66          67
+  grow short strand          77          79
+  exclude short helix          84          86
+  grow short strand         107         108
+  grow short strand         127         131
+  grow short helix         135         141
+  grow short strand         167         169
+  grow short strand         173         175
+  grow short strand         180         181
+  exclude short helix         201         205
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  3  4  5  6  7  8  9 10 11 18 12 13 14 15 16 17 19 20 21
+   2     1  6  7 11  1  2  3  4  5  6  7  8  9 10 11
+   3     1 20 21 10 18 12 13 14 15 16 17 19 20 21
+   4     0  0  0 11  1  2  3  4  5  6  7  8  9 10 11
+   5     0  0  0  0
+   6     2  8  9  2  1  2
+   7     2 12 13  9  3  4  5  6  7  8  9 10 11
+   8     6  0  0  1  1
+   9     6  0  0  1  2
+  10     0  0  0  9  3  4  5  6  7  8  9 10 11
+  11     0  0  0  0
+  12     7 14 15  7  3  4  5  6  7  8  9
+  13     7  0  0  2 10 11
+  14    12  0  0  4  3  4  5  6
+  15    12 16 17  3  7  8  9
+  16    15  0  0  1  7
+  17    15  0  0  2  8  9
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20     3  0  0  1 18
+  21     3  0  0  9 12 13 14 15 16 17 19 20 21
+  22     0  0  0  1 18
+  23     0  0  0  0
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 11  1  1 11
+   3 *   1 14 15 10  1 12 21
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  9  1  3 11
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  7  1  3  9
+   9 -   5  0  0  2  1 10 11
+  10 -   8  0  0  4  1  3  6
+  11 -   8 12 13  3  1  7  9
+  12 -  11  0  0  1  1  7  7
+  13 -  11  0  0  2  1  8  9
+  14 -   3  0  0  1  1 18 18
+  15 -   3  0  0  9  2 12 17 19 21
+
+ CHAIN : 8YIVA
+ CHAIN : 8YIVB
+ CHAIN : 8YIVD
+ CHAIN : 8YIVE
+

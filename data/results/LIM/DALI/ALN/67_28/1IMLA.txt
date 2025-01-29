@@ -1,0 +1,38 @@
+# Job: LIM
+# Query: 1IMLA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2XQN-T  6.0  7.2   70   125   21   MOLECULE: ACTIN-LIKE PROTEIN 7A;                                     
+
+# Pairwise alignments
+
+No 1: Query=1IMLA Sbjct=2XQNT Z-score=6.0
+
+DSSP  --LLLLLLLLLLLHHHEEEELLEEEELLLLLLLLLLLLLLLLLEEEELLEEEELLlHHHH
+Query --PKCPKCDKEVYFAERVTSLGKDWHRPCLKCEKCGKTLTSGGHAEHEGKPYCNHpCYSA   58
+ident   | |  ||      |        ||     |  |   |          || |   ||  
+Sbjct ekPRCAGCDELIFSNEYTQAENQNWHLKHFCCFDCDSILAGEIYVMVNDKPVCKP-CYVK   59
+DSSP  llLLLLLLLLLLLLLLEEEELLEEELHHHLLLLLLLLLLLLLEEEEELLEEEEHH-HHHH
+
+DSSP  HLLLLLL------------------LLLLLL-----------------------------
+Query MFGPKGF------------------GRGGAE-----------------------------   71
+ident                                                             
+Sbjct NHAVVCQgchnaidpevqrvtynnfSWHASTecflcsccskcligqkfmpvegmvfcsve  119
+DSSP  HLLLLLLllllllllllleeeelleEEELLLllllllllllllllleeeeelleeellhh
+
+DSSP  -lllll
+Query -shtfk   76
+ident       
+Sbjct ckkrms  125
+DSSP  hhhlll
+
+
+# Structural equivalences
+   1: 1IML-A 2XQN-T     1 -  53 <=>    3 -  55   (PRO    1  - HIS   53  <=> PRO  299  - PRO  351 )                          
+   1: 1IML-A 2XQN-T    55 -  65 <=>   56 -  66   (CYS   55  - PHE   65  <=> CYS  352  - GLN  362 )                          
+   1: 1IML-A 2XQN-T    66 -  71 <=>   85 -  90   (GLY   66  - GLU   71  <=> SER  381  - THR  386 )                          
+
+# Translation-rotation matrices
+-matrix  "1IML-A 2XQN-T  U(1,.)   0.658687  0.322147  0.679965          -28.618526"
+-matrix  "1IML-A 2XQN-T  U(2,.)  -0.182411 -0.808378  0.559689           -8.068109"
+-matrix  "1IML-A 2XQN-T  U(3,.)   0.729971 -0.492693 -0.473705          -24.032660"
+

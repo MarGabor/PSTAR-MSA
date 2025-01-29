@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 2DMUA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2MGQ-A  5.0  3.6   61    68   44   MOLECULE: HOMEOBOX PROTEIN CEH-37;                                   
+
+# Pairwise alignments
+
+No 1: Query=2DMUA Sbjct=2MGQA Z-score=5.0
+
+DSSP  lllllllllLLLLLL--HHHHHHH-HHHHHHLLLLLHHHHHHHHHHHLLLHHHHHHHHHH
+Query gssgssgrrHRTIFT--DEQLEAL-ENLFQETKYPDVGTREQLARKVHLREEKVEVWFKN   57
+ident           |   |    |     | || || ||||  ||  |    | |    |||||
+Sbjct -----gprkNRRERTtySRQQLEIlETLFNETQYPDVFARERVADQIRLQESRIQVWFKN   55
+DSSP  -----llllLLLLLLllLLHHHHHhHHHHHHLLLLLHHHHHHHHHHHLLLLLLHHHHLHH
+
+DSSP  HHHHHHHLLLLLL
+Query RRAKWRRSGPSSG   70
+ident |||| |       
+Sbjct RRAKYRLQEKQKP   68
+DSSP  HHHHHHHHHHHLL
+
+
+# Structural equivalences
+   1: 2DMU-A 2MGQ-A    10 -  15 <=>    5 -  10   (HIS   10  - THR   15  <=> ASN    5  - THR   10 )                          
+   1: 2DMU-A 2MGQ-A    16 -  22 <=>   13 -  19   (ASP   16  - LEU   22  <=> SER   13  - ILE   19 )                          
+   1: 2DMU-A 2MGQ-A    23 -  70 <=>   21 -  68   (GLU   23  - GLY   70  <=> GLU   21  - PRO   68 )                          
+
+# Translation-rotation matrices
+-matrix  "2DMU-A 2MGQ-A  U(1,.)   0.217901  0.289330  0.932098           -4.266463"
+-matrix  "2DMU-A 2MGQ-A  U(2,.)   0.000440 -0.955076  0.296360           10.052584"
+-matrix  "2DMU-A 2MGQ-A  U(3,.)   0.975971 -0.064167 -0.208240           -6.971113"
+

@@ -1,0 +1,42 @@
+# Job: egf
+# Query: 1WHEA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4ZMA-L  3.6  3.7   72   141   35   MOLECULE: COAGULATION FACTOR VII;                                    
+
+# Pairwise alignments
+
+No 1: Query=1WHEA Sbjct=4ZMAL Z-score=3.6
+
+DSSP  ---lLLLLLllLLLL---LLLLllllllLLLHHHHL----lLLLLLLLLLlllLLLLlLL
+Query ---aNSFLXxvKQGN---LXRXclxxacSLXXARXV----fXDAXQTDXFwskYKDGdQC   50
+ident        |             |      | |||||                       ||
+Sbjct anafLXXLR--PGSLxrxCKXX----qcSFXXARXIfkdaxRTKLFWISY---SDGD-QC   50
+DSSP  llllLHHHL--LLLHhhhHLLL----llLHHHHHHHhllhhHHHHHHHHH---HLLL-HH
+
+DSSP  LLLLLLLLLLLLLLLLLLLLLLLLLEELLLLLEELL------------------------
+Query EGHPCLNQGHCKXGIGDYTCTCAEGFEGKNCEFSTR------------------------   86
+ident    || | | ||     | | |   ||| |||                            
+Sbjct ASSPCQNGGSCKDQLQSYICFCLPAFEGRNCETHKDdqlicvnenggceqycsdhkrscr  110
+DSSP  HHLLLLLLLEEEEELLEEEEELLLLEELLLLLEELHhhlllllhhhhllleeelllleee
+
+DSSP  -------------------------------
+Query -------------------------------   86
+ident                                
+Sbjct chegyslladgvsctptveypcgkipilekr  141
+DSSP  lllleeelllllleeelllllllllhhhlll
+
+
+# Structural equivalences
+   1: 1WHE-A 4ZMA-L     2 -   6 <=>    5 -   9   (ASN    2  - UNK    6  <=> LEU    5  - ARG    9 )                          
+   1: 1WHE-A 4ZMA-L     9 -  12 <=>   10 -  13   (LYS    9  - ASN   12  <=> PRO   10  - LEU   13 )                          
+   1: 1WHE-A 4ZMA-L    13 -  16 <=>   17 -  20   (LEU   13  - UNK   16  <=> CYS   17  - UNK   20 )                          
+   1: 1WHE-A 4ZMA-L    23 -  30 <=>   23 -  30   (SER   23  - VAL   30  <=> SER   23  - ILE   30 )                          
+   1: 1WHE-A 4ZMA-L    32 -  40 <=>   36 -  44   (UNK   32  - PHE   40  <=> ARG   36  - TYR   44 )                          
+   1: 1WHE-A 4ZMA-L    44 -  47 <=>   45 -  48   (TYR   44  - GLY   47  <=> SER   45  - ASP   48 )                          
+   1: 1WHE-A 4ZMA-L    49 -  86 <=>   49 -  86   (GLN   49  - ARG   86  <=> GLN   49  - ASP   86 )                          
+
+# Translation-rotation matrices
+-matrix  "1WHE-A 4ZMA-L  U(1,.)   0.346553  0.287132 -0.893004           -4.164045"
+-matrix  "1WHE-A 4ZMA-L  U(2,.)  -0.805372 -0.396997 -0.440193          -12.624646"
+-matrix  "1WHE-A 4ZMA-L  U(3,.)  -0.480914  0.871750  0.093668           25.383661"
+

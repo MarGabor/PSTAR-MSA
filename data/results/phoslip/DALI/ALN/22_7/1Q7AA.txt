@@ -1,0 +1,38 @@
+# Job: phoslip
+# Query: 1Q7AA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1AYP-A 21.1  1.2  121   124   51   MOLECULE: PHOSPHOLIPASE A2;                                          
+
+# Pairwise alignments
+
+No 1: Query=1Q7AA Sbjct=1AYPA Z-score=21.1
+
+DSSP  LHHHHHHHHHHHHLLLHHHHLLLLLLLLLLLLLLLLLLHHHHHHHHHHHHHHLLL--LLL
+Query SLLEFGKMILEETGKLAIPSYSSYGCYCGWGGKGTPKDATDRCCFVHDCCYGNLP--DCN   58
+ident  |  |  ||   ||| |  ||  ||| || || | |||||||||  |||||  |    | 
+Sbjct NLVNFHRMIKLTTGKEAALSYGFYGCHCGVGGRGSPKDATDRCCVTHDCCYKRLEkrGCG   60
+DSSP  LHHHHHHHHHHHHLLLHHHHLLLLLLLLLLLLLLLLLLLLHHHHHHHHHHHHHHHhhLLL
+
+DSSP  LLLLLLLEEEELLEEEELLLLHHHHHHHHHHHHHHHHHHHLHHHLLHHHLLLLHHHLLL-
+Query PKSDRYKYKRVNGAIVCEKGTSCENRICECDKAAAICFRQNLNTYSKKYMLYPDFLCKG-  117
+ident  |   ||       | | |  ||    |||||||| ||  |  || |||  |    | | 
+Sbjct TKFLSYKFSNSGSRITCAKQDSCRSQLCECDKAAATCFARNKTTYNKKYQYYSNKHCRGs  120
+DSSP  LLLLLLLEEEELLEEEELLLLHHHHHHHHHHHHHHHHHHHLLLLLLLLHHHLLHHHLLLl
+
+DSSP  LLLL
+Query ELKC  121
+ident    |
+Sbjct TPRC  124
+DSSP  LLLL
+
+
+# Structural equivalences
+   1: 1Q7A-A 1AYP-A     1 -  55 <=>    1 -  55   (SER    1  - PRO   55  <=> ASN    1  - GLU   55 )                          
+   1: 1Q7A-A 1AYP-A    56 - 117 <=>   58 - 119   (ASP   56  - GLY  117  <=> GLY   58  - GLY  119 )                          
+   1: 1Q7A-A 1AYP-A   118 - 121 <=>  121 - 124   (GLU  118  - CYS  121  <=> THR  121  - CYS  124 )                          
+
+# Translation-rotation matrices
+-matrix  "1Q7A-A 1AYP-A  U(1,.)   0.860443 -0.427816 -0.276788           50.874699"
+-matrix  "1Q7A-A 1AYP-A  U(2,.)  -0.425968 -0.305837 -0.851478           78.610458"
+-matrix  "1Q7A-A 1AYP-A  U(3,.)   0.279624  0.850551 -0.445391          -23.503647"
+

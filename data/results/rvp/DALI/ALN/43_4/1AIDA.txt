@@ -1,0 +1,42 @@
+# Job: rvp
+# Query: 1AIDA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2WHH-A 16.3  1.1   99   202   93   MOLECULE: POL PROTEIN;                                               
+
+# Pairwise alignments
+
+No 1: Query=1AIDA Sbjct=2WHHA Z-score=16.3
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------    0
+ident                                                             
+Sbjct pqvtlwqrplvtikiggqlkealldtgaddtvleemslpgrwkpkmiggiggfikvrqyd   60
+DSSP  leeellllleeeeeelleeeeeeellllllleellllllllleeeeeeelleeeeeeeee
+
+DSSP  ---------------------------------------LEEELLLLLEEEEEELLEEEE
+Query ---------------------------------------PQITLWQRPLVTIRIGGQLKE   21
+ident                                        || |||||||||| |||||||
+Sbjct qilieicghkaigtvlvgptpvniigrnlltqigmtlnfPQVTLWQRPLVTIKIGGQLKE  120
+DSSP  eeeeeelleeeeeeeeelllllleelhhhhhhhlleeelLEEELLLLLEEEEEELLEEEE
+
+DSSP  EEELLLLLLLEELLLLLLLLLEEEEEEELLEEEEEEEEEEEEEEELLEEEEEEEEELLLL
+Query ALLDTGADDTVLEEMNLPGKWKPKMIGGIGGFIKVRQYDQIPVEICGHKAIGTVLVGPTP   81
+ident ||||||||||||||| ||| |||||||||||||||||||||  |||||||||||||||||
+Sbjct ALLDTGADDTVLEEMSLPGRWKPKMIGGIGGFIKVRQYDQILIEICGHKAIGTVLVGPTP  180
+DSSP  EEELLLLLLLEELLLLLLLLLEEEEEEELLEEEEEEEEEEEEEEELLEEEEEEEEELLLL
+
+DSSP  LLEELHHHHHHLLLEEEL----
+Query VNIIGRNLLTQIGCTLNF----   99
+ident ||||||||||||| ||||    
+Sbjct VNIIGRNLLTQIGATLNFxexe  202
+DSSP  LLEELHHHHHHHLLEEELllll
+
+
+# Structural equivalences
+   1: 1AID-A 2WHH-A     1 -  99 <=>  100 - 198   (PRO    1  - PHE   99  <=> PRO 1001  - PHE 1099 )                          
+
+# Translation-rotation matrices
+-matrix  "1AID-A 2WHH-A  U(1,.)   0.766279  0.370149 -0.525172           52.462757"
+-matrix  "1AID-A 2WHH-A  U(2,.)  -0.130861  0.890158  0.436456           27.883253"
+-matrix  "1AID-A 2WHH-A  U(3,.)   0.629040 -0.265723  0.730548           -2.263238"
+

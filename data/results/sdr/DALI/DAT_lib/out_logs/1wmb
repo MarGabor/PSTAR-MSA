@@ -1,0 +1,378 @@
+A length: 260
+B length: 260
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            260
+Total number of atoms read in:              1880
+Total number of ignored atom records:        459
+ HEADER    OXIDOREDUCTASE                          06-JUL-04   1WMB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.ITO,Y.NAKAJIMA,E.ICHIHARA,K.OGAWA,T.YOSHIMOTO                       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          06-JUL-04   1WMB              COMPND   2 MOLECULE: D(-)-3-HYDROXYBUTYRATE DEHYDROGENASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS FRAGI;                              AUTHOR    K.ITO,Y.NAKAJIMA,E.ICHIHARA,K.OGAWA,T.YOSHIMOTO                       
+         260  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2485
+ selectset done           0
+ eigen done           0
+ tau           1   2.39215374             188         215
+ #popped           2           1
+ #selectset contacts        2485
+ selectset done           1
+ eigen done           1
+ tau           3   1.56290412              36          54
+ #popped           4           1
+ #selectset contacts        2485
+ selectset done           1
+ eigen done           1
+ tau           5   1.71506131              91         115         141         163
+ #popped           6           2
+ #selectset contacts        2485
+ selectset done           2
+ eigen done           2
+ tau           7   1.47466004              91
+ #popped           8           3
+ #selectset contacts        2485
+ selectset done           3
+ eigen done           3
+ tau           9   1.02949905              65          79
+ #popped          10           3
+ #selectset contacts        2485
+ selectset done           3
+ eigen done           3
+ tau          11  0.553537428              65
+ #popped          12           3
+ #selectset contacts        2485
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           9           2
+ #selectset contacts        2485
+ selectset done           2
+ eigen done           2
+ tau          13   1.19203603             131
+ #popped          15           2
+ #selectset contacts        2485
+ selectset done           2
+ eigen done           2
+ tau          15   1.40350878             141         177
+ #popped          16           2
+ #selectset contacts        2485
+ selectset done           2
+ eigen done           2
+ tau          17  0.589071035             236         249
+ #popped          18           2
+ #selectset contacts        2485
+ selectset done           2
+ eigen done           2
+ tau          19   1.68328691             226         236
+ #popped          20           2
+ #selectset contacts        2485
+ selectset done           2
+ eigen done           2
+ tau          21  0.615501821             188         226
+ #popped          22           2
+ #selectset contacts        2485
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped           7           1
+ #selectset contacts        2485
+ selectset done           1
+ eigen done           1
+ tau          23  0.648456872             103
+ #popped          25           1
+ #selectset contacts        2485
+ selectset done           1
+ eigen done           1
+ tau          25   2.10381722             115
+ #popped          27           1
+ #selectset contacts        2485
+ selectset done           1
+ eigen done           1
+ tau          27  0.591827929             151
+ #popped           3           0
+ #selectset contacts        2485
+ selectset done           0
+ eigen done           0
+ tau          29  0.564837396             199
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          06-JUL-04   1WMB              COMPND   2 MOLECULE: D(-)-3-HYDROXYBUTYRATE DEHYDROGENASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS FRAGI;                              AUTHOR    K.ITO,Y.NAKAJIMA,E.ICHIHARA,K.OGAWA,T.YOSHIMOTO                       
+           0
+         260
+         260  residues read 1WMB.dssp                                                   
+  grow short strand           6           9
+  grow short strand          30          34
+  grow short strand          57          60
+  grow short strand          86          89
+  exclude short helix          99         101
+  exclude short helix         143         145
+  exclude short helix         241         243
+  grow short strand         250         253
+  exclude short helix         257         259
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  5  7  6  9 10 12 16 15  8 11  4 13 14
+   2     1  4  5 14  1  2  3  5  7  6  9 10 12 16 15  8 11  4
+   3     1 30 31  2 13 14
+   4     2  6  7 13  1  2  3  5  7  6  9 10 12 16 15  8 11
+   5     2  0  0  1  4
+   6     4  8  9 11  1  2  3  5  7  6  9 10 12 16 15
+   7     4 26 27  2  8 11
+   8     6 10 11  6  1  2  3  5  7  6
+   9     6 14 15  5  9 10 12 16 15
+  10     8 12 13  5  1  2  3  5  7
+  11     8  0  0  1  6
+  12    10  0  0  4  1  2  3  5
+  13    10  0  0  1  7
+  14     9  0  0  1  9
+  15     9 20 21  4 10 12 16 15
+  16     0  0  0  4 10 12 16 15
+  17     0  0  0  0
+  18     0  0  0  4 10 12 16 15
+  19     0  0  0  0
+  20    15  0  0  3 10 12 16
+  21    15  0  0  1 15
+  22     0  0  0  3 10 12 16
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  2  8 11
+  26     7  0  0  1  8
+  27     7  0  0  1 11
+  28     0  0  0  0
+  29     0  0  0  1 11
+  30     3  0  0  1 13
+  31     3  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1 20 21  2  1 13 14
+   4 -   2  6  7 13  3  1  3  5 12 15 16
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9 11  5  1  3  5  7  9 10 12 12 15 16
+   7 -   4 18 19  2  2  8  8 11 11
+   8 -   6 10 11  6  2  1  3  5  7
+   9 -   6 14 15  5  3  9 10 12 12 15 16
+  10 -   8 12 13  5  3  1  3  5  5  7  7
+  11 -   8  0  0  1  1  6  6
+  12 -  10  0  0  4  2  1  3  5  5
+  13 -  10  0  0  1  1  7  7
+  14 -   9  0  0  1  1  9  9
+  15 -   9 16 17  4  3 10 10 12 12 15 16
+  16 -  15  0  0  3  3 10 10 12 12 16 16
+  17 -  15  0  0  1  1 15 15
+  18 -   7  0  0  1  1  8  8
+  19 -   7  0  0  1  1 11 11
+  20 -   3  0  0  1  1 13 13
+  21 -   3  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            260
+Total number of atoms read in:              1880
+Total number of ignored atom records:        411
+ HEADER    OXIDOREDUCTASE                          06-JUL-04   1WMB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.ITO,Y.NAKAJIMA,E.ICHIHARA,K.OGAWA,T.YOSHIMOTO                       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          06-JUL-04   1WMB              COMPND   2 MOLECULE: D(-)-3-HYDROXYBUTYRATE DEHYDROGENASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS FRAGI;                              AUTHOR    K.ITO,Y.NAKAJIMA,E.ICHIHARA,K.OGAWA,T.YOSHIMOTO                       
+         260  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2467
+ selectset done           0
+ eigen done           0
+ tau           1   2.19280767             188         215
+ #popped           2           1
+ #selectset contacts        2467
+ selectset done           1
+ eigen done           1
+ tau           3   2.15380168              86
+ #popped           4           2
+ #selectset contacts        2467
+ selectset done           2
+ eigen done           2
+ tau           5   1.41239011              36          55
+ #popped           6           2
+ #selectset contacts        2467
+ selectset done           2
+ eigen done           2
+ tau           7  0.708259404              71
+ #popped           8           2
+ #selectset contacts        2467
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2467
+ selectset done           1
+ eigen done           1
+ tau           9   1.24032784             178
+ #popped          10           2
+ #selectset contacts        2467
+ selectset done           2
+ eigen done           2
+ tau          11  0.953563571             120         137         168
+ #popped          12           3
+ #selectset contacts        2467
+ selectset done           3
+ eigen done           3
+ tau          13  0.919286549             120
+ #popped          14           4
+ #selectset contacts        2467
+ selectset done           4
+ eigen done           4
+ tau          15  0.888247967             101
+ #popped          15           3
+ #selectset contacts        2467
+ selectset done           3
+ eigen done           3
+ tau          17  0.496850282             154
+ #popped          13           2
+ #selectset contacts        2467
+ selectset done           2
+ eigen done           2
+ tau          19  0.844582081             137
+ #popped          11           1
+ #selectset contacts        2467
+ selectset done           1
+ eigen done           1
+ tau          21  0.741850376             231         249
+ #popped          22           1
+ #selectset contacts        2467
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2467
+ selectset done           0
+ eigen done           0
+ tau          23  0.605669022             199
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          06-JUL-04   1WMB              COMPND   2 MOLECULE: D(-)-3-HYDROXYBUTYRATE DEHYDROGENASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS FRAGI;                              AUTHOR    K.ITO,Y.NAKAJIMA,E.ICHIHARA,K.OGAWA,T.YOSHIMOTO                       
+           0
+         260
+         260  residues read 1WMB.dssp                                                   
+  grow short strand           6           9
+  grow short strand          30          34
+  grow short strand          57          60
+  grow short strand          86          89
+  exclude short helix          99         101
+  exclude short helix         143         145
+  exclude short helix         241         243
+  grow short strand         250         253
+  exclude short helix         257         259
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  5  6  4  7  8 11  9 10 12 16 15 13 14
+   2     1  4  5 14  1  2  3  5  6  4  7  8 11  9 10 12 16 15
+   3     1 24 25  2 13 14
+   4     2  6  7  6  1  2  3  5  6  4
+   5     2 10 11  8  7  8 11  9 10 12 16 15
+   6     4  8  9  5  1  2  3  5  6
+   7     4  0  0  1  4
+   8     6  0  0  4  1  2  3  5
+   9     6  0  0  1  6
+  10     5 12 13  5  7  8 11  9 10
+  11     5 22 23  3 12 16 15
+  12    10 14 15  3  7  8 11
+  13    10  0  0  2  9 10
+  14    12 16 17  2  7  8
+  15    12  0  0  1 11
+  16    14  0  0  1  7
+  17    14  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  1 11
+  20     0  0  0  2  9 10
+  21     0  0  0  0
+  22    11  0  0  2 12 16
+  23    11  0  0  1 15
+  24     3  0  0  1 13
+  25     3  0  0  1 14
+   1 +   0  2  3 16  1  1 16
+   2 +   1  4  5 14  2  1 12 15 16
+   3 =   1 20 21  2  1 13 14
+   4 *   2  6  7  6  1  1  6
+   5 *   2 10 11  8  2  7 12 15 16
+   6 -   4  8  9  5  2  1  3  5  6
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  4  2  1  3  5  5
+   9 -   6  0  0  1  1  6  6
+  10 -   5 12 13  5  1  7 11
+  11 -   5 18 19  3  2 12 12 15 16
+  12 -  10 14 15  3  2  7  8 11 11
+  13 -  10  0  0  2  1  9 10
+  14 -  12 16 17  2  1  7  8
+  15 -  12  0  0  1  1 11 11
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  8  8
+  18 -  11  0  0  2  2 12 12 16 16
+  19 -  11  0  0  1  1 15 15
+  20 -   3  0  0  1  1 13 13
+  21 -   3  0  0  1  1 14 14
+
+ CHAIN : 1WMBA
+ CHAIN : 1WMBB
+

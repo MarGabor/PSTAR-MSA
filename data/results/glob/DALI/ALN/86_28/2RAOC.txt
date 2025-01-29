@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 2RAOC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3FH9-B 20.2  2.0  139   146   40   MOLECULE: HEMOGLOBIN ALPHA CHAIN;                                    
+
+# Pairwise alignments
+
+No 1: Query=2RAOC Sbjct=3FH9B Z-score=20.2
+
+DSSP  -LLLHHHHHHHHHHHHHHhhHHHHHHHHHHHHHHHHLHHHHHHLLLLL------LLLLLH
+Query -VLSPADKTNIKTAWEKIgsHGGEYGAEAVERMFLGFPTTKTYFPHFD------FTHGSE   53
+ident   ||   |      | |      | | ||  |     | |   |  |          |  
+Sbjct vHLSGEEKAAVTGLWGKV--KVDEVGGEALGRLLVVYPWTQRFFDSFGdlssasAVMGNP   58
+DSSP  lLLLHHHHHHHHHHHLLL--LLLLHHHHHHHHHHHHLHHHHHHHHHHLllllhhHHHLLH
+
+DSSP  HHHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHL
+Query QIKAHGKKVSEALTKAVGHLDDLPGALSTLSDLHAHKLRVDPVNFKLLSHCLLVTLANHH  113
+ident   |||||||         ||| | |    || ||  || ||| || ||   |   || | 
+Sbjct KVKAHGKKVLDSFSEGLQHLDNLKGTFAKLSELHCDKLHVDPENFRLLGNVLVCVLARHF  118
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHLLLLL
+Query PSEFTPAVHASLDKFLANVSTVLTSKYR  141
+ident   |||| | |   |  | |   |  || 
+Sbjct GKEFTPQVQAAYQKVVAGVANALAHKYH  146
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHHHHHL
+
+
+# Structural equivalences
+   1: 2RAO-C 3FH9-B     1 -  17 <=>    2 -  18   (VAL    1  - ILE   17  <=> HIS    2  - VAL   18 )                          
+   1: 2RAO-C 3FH9-B    20 -  47 <=>   19 -  46   (HIS   20  - ASP   47  <=> LYS   19  - GLY   46 )                          
+   1: 2RAO-C 3FH9-B    48 - 141 <=>   53 - 146   (PHE   48  - ARG  141  <=> ALA   53  - HIS  146 )                          
+
+# Translation-rotation matrices
+-matrix  "2RAO-C 3FH9-B  U(1,.)  -0.897435 -0.049844  0.438321            3.019374"
+-matrix  "2RAO-C 3FH9-B  U(2,.)  -0.057983 -0.971649 -0.229210           -5.762552"
+-matrix  "2RAO-C 3FH9-B  U(3,.)   0.437319 -0.231116  0.869102           -1.424365"
+

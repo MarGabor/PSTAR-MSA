@@ -1,0 +1,33 @@
+# Job: PDZ
+# Query: 2KOMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2OPG-B 12.5  2.1   89    98   38   MOLECULE: MULTIPLE PDZ DOMAIN PROTEIN;                               
+
+# Pairwise alignments
+
+No 1: Query=2KOMA Sbjct=2OPGB Z-score=12.5
+
+DSSP  llllllLLLEEEEEEEELLLLLLLEEEEL--LLLLllllLLEEEEEELLLLHHHHHLLLL
+Query gsyntkKIGKRLNIQLKKGTEGLGFSITS--RDVTiggsAPIYVKNILPRGAAIQDGRLK   58
+ident         |    |   ||  ||| ||              |        |||  |||| 
+Sbjct ------SMGCETTIEISKGRTGLGLSIVGgsDTLL----GAIIIHEVYEEGAACKDGRLW   50
+DSSP  ------LLEEEEEEEEELLLLLLLEEEEEllLLLL----LLEEEEEELLLLHHHHHLLLL
+
+DSSP  LLLEEEEELLEELLLLLHHHHHHHHHHLLllLEEEEEEEELLL-------
+Query AGDRLIEVNGVDLVGKSQEEVVSLLRSTKmeGTVSLLVFRQED-------  101
+ident |||   |||| ||      |    || |     | |   | |        
+Sbjct AGDQILEVNGIDLRKATHDEAINVLRQTP--QRVRLTLYRDEApykstrl   98
+DSSP  LLLEEEEELLEELLLLLHHHHHHHHHLLL--LEEEEEEEEELLllleeel
+
+
+# Structural equivalences
+   1: 2KOM-A 2OPG-B     7 -  29 <=>    1 -  23   (LYS  455  - SER  477  <=> SER 1623  - GLY 1645 )                          
+   1: 2KOM-A 2OPG-B    30 -  33 <=>   26 -  29   (ARG  478  - THR  481  <=> ASP 1648  - LEU 1651 )                          
+   1: 2KOM-A 2OPG-B    38 -  87 <=>   30 -  79   (ALA  486  - LYS  535  <=> GLY 1652  - PRO 1701 )                          
+   1: 2KOM-A 2OPG-B    90 - 101 <=>   80 -  91   (GLY  538  - ASP  549  <=> GLN 1702  - ALA 1713 )                          
+
+# Translation-rotation matrices
+-matrix  "2KOM-A 2OPG-B  U(1,.)  -0.348869  0.161211 -0.923202           17.214468"
+-matrix  "2KOM-A 2OPG-B  U(2,.)  -0.326494  0.902473  0.280971          -21.724962"
+-matrix  "2KOM-A 2OPG-B  U(3,.)   0.878460  0.399442 -0.262211          -22.964893"
+

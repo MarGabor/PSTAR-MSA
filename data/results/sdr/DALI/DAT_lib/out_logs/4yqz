@@ -1,0 +1,766 @@
+A length: 228
+B length: 226
+C length: 229
+D length: 229
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1046  N  BSER A 141 
+ Alternate location indication is not blank or A, ignore atom: 1048  CA BSER A 141 
+ Alternate location indication is not blank or A, ignore atom: 1050  C  BSER A 141 
+ Alternate location indication is not blank or A, ignore atom: 1052  O  BSER A 141 
+ Alternate location indication is not blank or A, ignore atom: 1054  CB BSER A 141 
+ Alternate location indication is not blank or A, ignore atom: 1056  OG BSER A 141 
+ Alternate location indication is not blank or A, ignore atom: 6956  O  BHOH A 392 
+
+Total number of residues read in:            234
+Total number of atoms read in:              1723
+Total number of ignored atom records:        401
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENACH,       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENA          
+         234  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau           1   3.49197721             171         205
+ #popped           2           1
+ #selectset contacts        2163
+ selectset done           1
+ eigen done           1
+ tau           3   1.56084895              76         100         126         146
+ #popped           4           2
+ #selectset contacts        2163
+ selectset done           2
+ eigen done           2
+ tau           5   1.43738437              50          66          76         110
+ #popped           6           3
+ #selectset contacts        2163
+ selectset done           3
+ eigen done           3
+ tau           7  0.874380410             171         224
+ #popped           8           3
+ #selectset contacts        2163
+ selectset done           3
+ eigen done           3
+ tau           9   1.48798978              50
+ #popped          10           4
+ #selectset contacts        2163
+ selectset done           4
+ eigen done           4
+ tau          11  0.619632185              14          32
+ #popped          12           4
+ #selectset contacts        2163
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          11           3
+ #selectset contacts        2163
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2163
+ selectset done           2
+ eigen done           2
+ tau          13  0.999901891              66
+ #popped           5           1
+ #selectset contacts        2163
+ selectset done           1
+ eigen done           1
+ tau          15   1.13682711             100
+ #popped          16           2
+ #selectset contacts        2163
+ selectset done           2
+ eigen done           2
+ tau          17   1.15204585              87
+ #popped          17           1
+ #selectset contacts        2163
+ selectset done           1
+ eigen done           1
+ tau          19  0.794439495             136
+ #popped           3           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau          21  0.750071526             183         194
+ #popped          22           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau          23   1.17276168             183
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENA          
+           0
+         234
+         234  residues read 4YQZ.dssp                                                   
+  grow short strand           7          11
+  exclude short helix          39          42
+  grow short strand          48          50
+  grow short strand          71          74
+  exclude short helix         128         130
+  grow short helix         176         182
+  exclude short helix         216         218
+  grow short strand         225         228
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  2  6  9 10 11 15 14  5  8  7 12 13
+   2     1  4  5 13  1  3  4  2  6  9 10 11 15 14  5  8  7
+   3     1 22 23  2 12 13
+   4     2  6  7 12  1  3  4  2  6  9 10 11 15 14  5  8
+   5     2  0  0  1  7
+   6     4  8  9 10  1  3  4  2  6  9 10 11 15 14
+   7     4 14 15  2  5  8
+   8     6 10 11  9  1  3  4  2  6  9 10 11 15
+   9     6  0  0  1 14
+  10     8 12 13  4  1  3  4  2
+  11     8  0  0  5  6  9 10 11 15
+  12    10  0  0  3  1  3  4
+  13    10  0  0  1  2
+  14     7  0  0  1  5
+  15     7  0  0  1  8
+  16     0  0  0  1  7
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  0
+  22     3  0  0  1 12
+  23     3  0  0  1 13
+  24     0  0  0  1 12
+  25     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 13  2  1 11 14 15
+   3 =   1 16 17  2  1 12 13
+   4 -   2  6  7 12  3  1  6  8 11 14 15
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9 10  4  1  4  6  6  9 11 14 15
+   7 -   4 14 15  2  2  5  5  8  8
+   8 -   6 10 11  9  4  1  4  6  6  9 11 15 15
+   9 -   6  0  0  1  1 14 14
+  10 -   8 12 13  4  1  1  4
+  11 -   8  0  0  5  3  6  6  9 11 15 15
+  12 -  10  0  0  3  2  1  1  3  4
+  13 -  10  0  0  1  1  2  2
+  14 -   7  0  0  1  1  5  5
+  15 -   7  0  0  1  1  8  8
+  16 -   3  0  0  1  1 12 12
+  17 -   3  0  0  1  1 13 13
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7221  O  BHOH B 455 
+
+Total number of residues read in:            231
+Total number of atoms read in:              1696
+Total number of ignored atom records:        377
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENACH,       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENA          
+         231  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2100
+ selectset done           0
+ eigen done           0
+ tau           1   1.37743926              76          99         123         171         214
+ #popped           2           1
+ #selectset contacts        2100
+ selectset done           1
+ eigen done           1
+ tau           3   3.98546505             123
+ #popped           4           2
+ #selectset contacts        2100
+ selectset done           2
+ eigen done           2
+ tau           5   1.28522623              54          65          76         109
+ #popped           6           3
+ #selectset contacts        2100
+ selectset done           3
+ eigen done           3
+ tau           7   1.12257457              33          54
+ #popped           8           4
+ #selectset contacts        2100
+ selectset done           4
+ eigen done           4
+ tau           9  0.785542190              76
+ #popped          10           4
+ #selectset contacts        2100
+ selectset done           4
+ eigen done           4
+ tau          11  0.649147093              13          23
+ #popped          12           4
+ #selectset contacts        2100
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped           9           3
+ #selectset contacts        2100
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2100
+ selectset done           2
+ eigen done           2
+ tau          13   1.10134709              65
+ #popped           5           1
+ #selectset contacts        2100
+ selectset done           1
+ eigen done           1
+ tau          15   2.55406499             198
+ #popped          16           1
+ #selectset contacts        2100
+ selectset done           1
+ eigen done           1
+ tau          17   1.08906710             182
+ #popped           3           0
+ #selectset contacts        2100
+ selectset done           0
+ eigen done           0
+ tau          19   1.93434596              99         133         143
+ #popped          20           1
+ #selectset contacts        2100
+ selectset done           1
+ eigen done           1
+ tau          21  0.737769067              99
+ #popped          22           1
+ #selectset contacts        2100
+ selectset done           1
+ eigen done           1
+ tau          23   1.13078594              87
+ #popped          21           0
+ #selectset contacts        2100
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENA          
+           0
+         231
+         231  residues read 4YQZ.dssp                                                   
+  grow short strand           7          11
+  exclude short helix          39          41
+  grow short strand          48          50
+  grow short strand          71          74
+  exclude short helix         128         130
+  exclude short helix         176         181
+  exclude short helix         185         190
+  exclude short helix         213         215
+  grow short strand         222         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  6  2  9  4  5  8 12  7 10 11 13
+   2     1  4  5  9  1  3  6  2  9  4  5  8 12
+   3     1 20 21  4  7 10 11 13
+   4     2  6  7  8  1  3  6  2  9  4  5  8
+   5     2  0  0  1 12
+   6     4  8  9  6  1  3  6  2  9  4
+   7     4 14 15  2  5  8
+   8     6 10 11  5  1  3  6  2  9
+   9     6  0  0  1  4
+  10     8 12 13  4  1  3  6  2
+  11     8  0  0  1  9
+  12    10  0  0  3  1  3  6
+  13    10  0  0  1  2
+  14     7  0  0  1  5
+  15     7  0  0  1  8
+  16     0  0  0  0
+  17     0  0  0  1 12
+  18     0  0  0  0
+  19     0  0  0  0
+  20     3  0  0  1  7
+  21     3  0  0  3 10 11 13
+  22     0  0  0  1  7
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  1  7
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  9  3  1  6  8  9 12 12
+   3 -   1 16 17  4  3  7  7 10 11 13 13
+   4 -   2  6  7  8  2  1  6  8  9
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  6  3  1  4  6  6  9  9
+   7 -   4 14 15  2  2  5  5  8  8
+   8 -   6 10 11  5  3  1  3  6  6  9  9
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  4  2  1  3  6  6
+  11 -   8  0  0  1  1  9  9
+  12 -  10  0  0  3  3  1  1  3  3  6  6
+  13 -  10  0  0  1  1  2  2
+  14 -   7  0  0  1  1  5  5
+  15 -   7  0  0  1  1  8  8
+  16 -   3  0  0  1  1  7  7
+  17 -   3  0  0  3  2 10 11 13 13
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7264  O  BHOH C 408 
+
+Total number of residues read in:            234
+Total number of atoms read in:              1714
+Total number of ignored atom records:        343
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENACH,       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENA          
+         234  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2141
+ selectset done           0
+ eigen done           0
+ tau           1   2.41636109             173         200
+ #popped           2           1
+ #selectset contacts        2141
+ selectset done           1
+ eigen done           1
+ tau           3   1.58098030              77          99         132         143
+ #popped           4           2
+ #selectset contacts        2141
+ selectset done           2
+ eigen done           2
+ tau           5   1.72044730             119
+ #popped           6           3
+ #selectset contacts        2141
+ selectset done           3
+ eigen done           3
+ tau           7   2.55997300              51          67          77
+ #popped           8           4
+ #selectset contacts        2141
+ selectset done           4
+ eigen done           4
+ tau           9  0.484024644              15          33
+ #popped          10           4
+ #selectset contacts        2141
+ selectset done           4
+ eigen done           4
+ tau          11  0.456687897              51
+ #popped          12           4
+ #selectset contacts        2141
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped           9           3
+ #selectset contacts        2141
+ selectset done           3
+ eigen done           3
+ tau          13   1.19368720             109
+ #popped          14           3
+ #selectset contacts        2141
+ selectset done           3
+ eigen done           3
+ tau          15   1.11352718              67
+ #popped           7           2
+ #selectset contacts        2141
+ selectset done           2
+ eigen done           2
+ tau          17  0.858922362             166
+ #popped          18           3
+ #selectset contacts        2141
+ selectset done           3
+ eigen done           3
+ tau          19  0.497342229             132
+ #popped          21           3
+ #selectset contacts        2141
+ selectset done           3
+ eigen done           3
+ tau          21  0.751035452             153
+ #popped          19           2
+ #selectset contacts        2141
+ selectset done           2
+ eigen done           2
+ tau          23  0.536984205             219
+ #popped          24           2
+ #selectset contacts        2141
+ selectset done           2
+ eigen done           2
+ tau          25   1.06464481             206
+ #popped           5           1
+ #selectset contacts        2141
+ selectset done           1
+ eigen done           1
+ tau          27   1.18431365              87          99
+ #popped          28           1
+ #selectset contacts        2141
+ selectset done           1
+ eigen done           1
+ tau          29  0.774006605              87
+ #popped           3           0
+ #selectset contacts        2141
+ selectset done           0
+ eigen done           0
+ tau          31   3.05825233             184
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENA          
+           0
+         234
+         234  residues read 4YQZ.dssp                                                   
+  grow short strand           7          11
+  exclude short helix          39          42
+  grow short strand          48          50
+  grow short strand          71          74
+  exclude short helix         128         130
+  grow short helix         176         182
+  exclude short helix         189         194
+  exclude short helix         216         218
+  grow short strand         225         228
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  4  6  2  3  5  8  9 10 11 13 14  7 12
+   2     1  4  5 13  1  4  6  2  3  5  8  9 10 11 13 14  7
+   3     1  0  0  1 12
+   4     2  6  7 12  1  4  6  2  3  5  8  9 10 11 13 14
+   5     2  0  0  1  7
+   6     4  8  9  7  1  4  6  2  3  5  8
+   7     4 18 19  5  9 10 11 13 14
+   8     6 10 11  5  1  4  6  2  3
+   9     6 16 17  2  5  8
+  10     8 12 13  3  1  4  6
+  11     8  0  0  2  2  3
+  12    10  0  0  2  1  4
+  13    10  0  0  1  6
+  14     0  0  0  2  5  8
+  15     0  0  0  0
+  16     9  0  0  1  5
+  17     9  0  0  1  8
+  18     7 20 21  3  9 10 11
+  19     7 24 25  2 13 14
+  20    18  0  0  1  9
+  21    18 22 23  2 10 11
+  22    21  0  0  1 10
+  23    21  0  0  1 11
+  24    19  0  0  1 13
+  25    19  0  0  1 14
+  26     0  0  0  0
+  27     0  0  0  1 13
+  28     0  0  0  0
+  29     0  0  0  1  7
+  30     0  0  0  0
+  31     0  0  0  0
+  32     0  0  0  1 12
+  33     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1 11 13 14
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7 12  3  1  6  8 11 13 14
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  7  2  1  6  8  8
+   7 -   4 16 17  5  2  9 11 13 14
+   8 -   6 10 11  5  2  1  4  6  6
+   9 -   6 14 15  2  2  5  5  8  8
+  10 -   8 12 13  3  3  1  1  4  4  6  6
+  11 -   8  0  0  2  1  2  3
+  12 -  10  0  0  2  2  1  1  4  4
+  13 -  10  0  0  1  1  6  6
+  14 -   9  0  0  1  1  5  5
+  15 -   9  0  0  1  1  8  8
+  16 -   7 18 19  3  1  9 11
+  17 -   7 22 23  2  1 13 14
+  18 -  16  0  0  1  1  9  9
+  19 -  16 20 21  2  1 10 11
+  20 -  19  0  0  1  1 10 10
+  21 -  19  0  0  1  1 11 11
+  22 -  17  0  0  1  1 13 13
+  23 -  17  0  0  1  1 14 14
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7570  O  BHOH D 442 
+ Alternate location indication is not blank or A, ignore atom: 7575  O  BHOH D 446 
+
+Total number of residues read in:            234
+Total number of atoms read in:              1723
+Total number of ignored atom records:        331
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENACH,       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENA          
+         234  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2151
+ selectset done           0
+ eigen done           0
+ tau           1   2.75990796             171         201
+ #popped           2           1
+ #selectset contacts        2151
+ selectset done           1
+ eigen done           1
+ tau           3   1.05162942              54          69         103         120
+ #popped           4           2
+ #selectset contacts        2151
+ selectset done           2
+ eigen done           2
+ tau           5   1.67502308              54
+ #popped           6           3
+ #selectset contacts        2151
+ selectset done           3
+ eigen done           3
+ tau           7  0.882148325              33
+ #popped           8           4
+ #selectset contacts        2151
+ selectset done           4
+ eigen done           4
+ tau           9  0.730265021              10          23
+ #popped          10           4
+ #selectset contacts        2151
+ selectset done           4
+ eigen done           4
+ tau          11  0.343692034              10
+ #popped           9           3
+ #selectset contacts        2151
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2151
+ selectset done           2
+ eigen done           2
+ tau          13  0.736461282              79          93
+ #popped          14           2
+ #selectset contacts        2151
+ selectset done           2
+ eigen done           2
+ tau          15   1.90187991             171         221
+ #popped          16           3
+ #selectset contacts        2151
+ selectset done           3
+ eigen done           3
+ tau          17  0.867991328             103
+ #popped          18           4
+ #selectset contacts        2151
+ selectset done           4
+ eigen done           4
+ tau          19   0.00000000    
+ #popped          19           3
+ #selectset contacts        2151
+ selectset done           3
+ eigen done           3
+ tau          19  0.275302529             130
+ #popped          21           3
+ #selectset contacts        2151
+ selectset done           3
+ eigen done           3
+ tau          21   1.73957360             161
+ #popped          22           4
+ #selectset contacts        2151
+ selectset done           4
+ eigen done           4
+ tau          23   1.26049471             144
+ #popped          23           3
+ #selectset contacts        2151
+ selectset done           3
+ eigen done           3
+ tau          25   0.00000000    
+ #popped          17           2
+ #selectset contacts        2151
+ selectset done           2
+ eigen done           2
+ tau          25  0.798876047             211
+ #popped           5           1
+ #selectset contacts        2151
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped           3           0
+ #selectset contacts        2151
+ selectset done           0
+ eigen done           0
+ tau          27  0.849785388             183
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          13-MAR-15   4YQZ              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    U.YADAVA,M.W.VETTING,N.F.AL OBAIDI,R.TORO,L.L.MORISCO,J.BENA          
+           0
+         234
+         234  residues read 4YQZ.dssp                                                   
+  grow short strand           7          11
+  exclude short helix          39          42
+  grow short strand          48          50
+  grow short strand          71          74
+  exclude short helix         128         130
+  exclude short helix         176         181
+  exclude short helix         216         218
+  grow short strand         225         228
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  2  4  6  7  9 10 11 14 13  5  8 12
+   2     1  4  5 13  1  3  2  4  6  7  9 10 11 14 13  5  8
+   3     1  0  0  1 12
+   4     2  6  7 11  1  3  2  4  6  7  9 10 11 14 13
+   5     2  0  0  2  5  8
+   6     4  8  9  4  1  3  2  4
+   7     4 16 17  7  6  7  9 10 11 14 13
+   8     6 10 11  3  1  3  2
+   9     6  0  0  1  4
+  10     8 12 13  2  1  3
+  11     8  0  0  1  2
+  12    10  0  0  1  1
+  13    10  0  0  1  3
+  14     0  0  0  7  6  7  9 10 11 14 13
+  15     0  0  0  0
+  16     7 18 19  6  6  7  9 10 11 14
+  17     7  0  0  1 13
+  18    16  0  0  2  6  7
+  19    16 20 21  4  9 10 11 14
+  20    19  0  0  1  9
+  21    19 22 23  3 10 11 14
+  22    21  0  0  1 10
+  23    21  0  0  2 11 14
+  24     0  0  0  0
+  25     0  0  0  1 10
+  26     0  0  0  1 13
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1 12
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5 13  2  1 11 13 14
+   3 =   1  0  0  1  1 12 12
+   4 -   2  6  7 11  4  1  4  6  7  9 11 13 14
+   5 -   2  0  0  2  2  5  5  8  8
+   6 -   4  8  9  4  1  1  4
+   7 -   4 14 15  7  3  6  7  9 11 13 14
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  2  2  1  1  3  3
+  11 -   8  0  0  1  1  2  2
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  3  3
+  14 -   7 16 17  6  3  6  7  9 11 14 14
+  15 -   7  0  0  1  1 13 13
+  16 -  14  0  0  2  1  6  7
+  17 -  14 18 19  4  2  9 11 14 14
+  18 -  17  0  0  1  1  9  9
+  19 -  17 20 21  3  2 10 11 14 14
+  20 -  19  0  0  1  1 10 10
+  21 -  19  0  0  2  2 11 11 14 14
+
+ CHAIN : 4YQZA
+ CHAIN : 4YQZB
+ CHAIN : 4YQZC
+ CHAIN : 4YQZD
+

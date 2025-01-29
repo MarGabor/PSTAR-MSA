@@ -1,0 +1,45 @@
+# Job: cyclo
+# Query: 6LXQA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3ICI-B 29.9  2.3  175   186   60   MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE B;                     
+
+# Pairwise alignments
+
+No 1: Query=6LXQA Sbjct=3ICIB Z-score=29.9
+
+DSSP  --LLLLLlLLLLLLEEEEEEEEELLEEEEEEEEEELLLLLHHHHHHHHHHHHLLLLllll
+Query --FATRViSAPKVTKKVFFKISINGEDAGTIKFGLFGDDVPKTAENFRALCTGEKGmgkl   58
+ident           |||| || |   |  || |   |||||  ||||  || || |||||    
+Sbjct gpLGSDE-KGPKVTVKVYFDLRIGDEDVGRVIFGLFGKTVPKTVDNFVALATGEKG----   55
+DSSP  llLLLLL-LLLEEEEEEEEEEEELLEEEEEEEEEELLLLLHHHHHHHHHHHHLLLL----
+
+DSSP  lllLLLLLLLEEEEELLLEEEELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLEEEELL
+Query gkpLHYKGSPFHRVIPNFMIQGGDITSGNGYGGESIYGSKFADESFKITHDGPGLLSMAN  118
+ident      || | |||||  ||||||| | | | || ||||  | || ||  | |||  ||||
+Sbjct ---FGYKNSKFHRVIKDFMIQGGDFTRGDGTGGKSIYGERFPDENFKLKHYGPGWVSMAN  112
+DSSP  ---LLLLLLLLLEEELLLEEEELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLEEEELL
+
+DSSP  LLLLLLLLLEEEELLLLHHHLLLLLEEEEEEELHHHHHHHHLLLL-LLLLLLLLEEEEEE
+Query SGPNTNGSQFFITTVPCPWLNGKHVVFGKVIEGMEIVKKIESLGS-QSGTPKAKIIIADC  177
+ident  |  |||||||||||   || ||||||||| |||| | | ||        |    |||||
+Sbjct AGKDTNGSQFFITTVKTAWLDGKHVVFGKVLEGMEVVRKVESTKTdSRDKPLKDVIIADC  172
+DSSP  LLLLLLLLLEEEELLLLHHHLLLLLEEEEEEELHHHHHHHHLLLLlLLLLLLLLEEEEEE
+
+DSSP  EELLLL--------
+Query GEITEL--------  183
+ident | |           
+Sbjct GKIEVEkpfaiake  186
+DSSP  EEEEEEeeeellll
+
+
+# Structural equivalences
+   1: 6LXQ-A 3ICI-B     1 -   5 <=>    3 -   7   (PHE    5  - VAL    9  <=> LEU   -1  - GLU    3 )                          
+   1: 6LXQ-A 3ICI-B     7 -  54 <=>    8 -  55   (SER   11  - GLY   58  <=> LYS    6  - GLY   53 )                          
+   1: 6LXQ-A 3ICI-B    62 - 163 <=>   56 - 157   (LEU   66  - SER  167  <=> PHE   54  - THR  155 )                          
+   1: 6LXQ-A 3ICI-B   164 - 183 <=>  159 - 178   (GLN  168  - LEU  187  <=> SER  157  - GLU  176 )                          
+
+# Translation-rotation matrices
+-matrix  "6LXQ-A 3ICI-B  U(1,.)   0.522813  0.739316 -0.424357          -28.566948"
+-matrix  "6LXQ-A 3ICI-B  U(2,.)   0.852426 -0.456927  0.254141          -21.571404"
+-matrix  "6LXQ-A 3ICI-B  U(3,.)  -0.006009 -0.494601 -0.869099           37.582390"
+

@@ -1,0 +1,33 @@
+# Job: az
+# Query: 4DP4X
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2W88-C 17.0  1.2   97   106   43   MOLECULE: PLASTOCYANIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=4DP4X Sbjct=2W88C Z-score=17.0
+
+DSSP  ---LEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLLLLEELLLLLLLLL--LHHHL
+Query ---VDVLLGADDGSLAFVPSEFSVPAGEKIVFKNNAGFPHNVLFDEDAVPSGV--DVSKI   55
+ident      |  ||| | | | |    |  |      ||   ||| |||   ||        | 
+Sbjct metFTVKMGADSGLLQFEPANVTVHPGDTVKWVNNKLPPHNILFDDKQVPGASkeLADKL   60
+DSSP  lleEEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLEEELLLHHHLHHHLhhHHHHH
+
+DSSP  LLLllLLLLLLLLEEEEEL---LLLEEEEEELLLLHHHLLEEEEEEL-
+Query SMSeeDLLNAKGETFEVAL---SDKGEYTFYCSPHQGAGMVGKVIVN-   99
+ident | |   |    ||  |         | || || || |||||||  |  
+Sbjct SHS--QLMFSPGESYEITFssdFPAGTYTYYCAPHRGAGMVGKITVEg  106
+DSSP  LEE--EEELLLLLEEEEELlllLLLEEEEEELLLLHHHLLEEEEEELl
+
+
+# Structural equivalences
+   1: 4DP4-X 2W88-C     1 -  50 <=>    4 -  53   (VAL    1  - VAL   50  <=> PHE    3  - SER   52 )                          
+   1: 4DP4-X 2W88-C    51 -  58 <=>   56 -  63   (ASP   51  - SER   58  <=> LEU   55  - SER   62 )                          
+   1: 4DP4-X 2W88-C    61 -  74 <=>   64 -  77   (ASP   61  - LEU   74  <=> GLN   63  - PHE   76 )                          
+   1: 4DP4-X 2W88-C    75 -  99 <=>   81 - 105   (SER   75  - ASN   99  <=> PHE   80  - GLU  104 )                          
+
+# Translation-rotation matrices
+-matrix  "4DP4-X 2W88-C  U(1,.)   0.660077 -0.436725 -0.611204           33.874554"
+-matrix  "4DP4-X 2W88-C  U(2,.)  -0.575834  0.228336 -0.785033          -15.610099"
+-matrix  "4DP4-X 2W88-C  U(3,.)   0.482404  0.870134 -0.100762           14.268095"
+

@@ -1,0 +1,1419 @@
+A length: 206
+B length: 206
+C length: 206
+D length: 206
+E length: 206
+F length: 206
+G length: 206
+H length: 206
+# 8 chains A B C D E F G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1676
+Total number of ignored atom records:        561
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1987
+ selectset done           0
+ eigen done           0
+ tau           1   2.12825251              68
+ #popped           2           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau           3   1.44431102              34          50
+ #popped           4           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau           5  0.643658578              34
+ #popped           6           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau           7  0.342756182              10
+ #popped           9           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1987
+ selectset done           0
+ eigen done           0
+ tau           9   1.78106332              90
+ #popped          10           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          11   1.43530262              78
+ #popped          11           0
+ #selectset contacts        1987
+ selectset done           0
+ eigen done           0
+ tau          13   1.73897099             185
+ #popped          14           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          15   1.54180658             132
+ #popped          16           2
+ #selectset contacts        1987
+ selectset done           2
+ eigen done           2
+ tau          17  0.840943754             104
+ #popped          19           2
+ #selectset contacts        1987
+ selectset done           2
+ eigen done           2
+ tau          19   1.87531340             115
+ #popped          17           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          21   1.47025406             152
+ #popped          22           2
+ #selectset contacts        1987
+ selectset done           2
+ eigen done           2
+ tau          23  0.911218345             142
+ #popped          23           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          25  0.941949606             169
+ #popped          15           0
+ #selectset contacts        1987
+ selectset done           0
+ eigen done           0
+ tau          27  0.754565001             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+           0
+         206
+         206  residues read 2ON5.dssp                                                   
+  grow short strand          30          34
+  grow short helix          39          45
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         117         123
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  5  6  4  7  8  9 10 11 12 13 14
+   2     1  4  5  6  1  2  3  5  6  4
+   3     1 10 11  8  7  8  9 10 11 12 13 14
+   4     2  6  7  5  1  2  3  5  6
+   5     2  0  0  1  4
+   6     4  8  9  3  1  2  3
+   7     4  0  0  2  5  6
+   8     6  0  0  1  1
+   9     6  0  0  2  2  3
+  10     3  0  0  1  7
+  11     3 14 15  7  8  9 10 11 12 13 14
+  12     0  0  0  1  7
+  13     0  0  0  0
+  14    11 16 17  6  8  9 10 11 12 13
+  15    11  0  0  1 14
+  16    14 18 19  3  8  9 10
+  17    14 22 23  3 11 12 13
+  18    16  0  0  1  8
+  19    16 20 21  2  9 10
+  20    19  0  0  1  9
+  21    19  0  0  1 10
+  22    17  0  0  1 11
+  23    17 26 27  2 12 13
+  24     0  0  0  1 11
+  25     0  0  0  0
+  26    23  0  0  1 12
+  27    23  0  0  1 13
+  28     0  0  0  0
+  29     0  0  0  1 14
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  6  1  1  6
+   3 -   1 10 11  8  1  7 14
+   4 -   2  6  7  5  2  1  3  5  6
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  5  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  2  3
+  10 -   3  0  0  1  1  7  7
+  11 -   3 12 13  7  1  8 14
+  12 -  11 14 15  6  1  8 13
+  13 -  11  0  0  1  1 14 14
+  14 -  12 16 17  3  1  8 10
+  15 -  12 20 21  3  1 11 13
+  16 -  14  0  0  1  1  8  8
+  17 -  14 18 19  2  1  9 10
+  18 -  17  0  0  1  1  9  9
+  19 -  17  0  0  1  1 10 10
+  20 -  15  0  0  1  1 11 11
+  21 -  15 22 23  2  1 12 13
+  22 -  21  0  0  1  1 12 12
+  23 -  21  0  0  1  1 13 13
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1676
+Total number of ignored atom records:        600
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2004
+ selectset done           0
+ eigen done           0
+ tau           1   3.25911379              78         190
+ #popped           2           1
+ #selectset contacts        2004
+ selectset done           1
+ eigen done           1
+ tau           3   1.61152923              78
+ #popped           4           1
+ #selectset contacts        2004
+ selectset done           1
+ eigen done           1
+ tau           5   1.50099361              62
+ #popped           6           1
+ #selectset contacts        2004
+ selectset done           1
+ eigen done           1
+ tau           7  0.895241737              10          26
+ #popped           8           1
+ #selectset contacts        2004
+ selectset done           1
+ eigen done           1
+ tau           9  0.524056733              42
+ #popped          10           2
+ #selectset contacts        2004
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped          11           1
+ #selectset contacts        2004
+ selectset done           1
+ eigen done           1
+ tau          11   1.39194131              52
+ #popped           3           0
+ #selectset contacts        2004
+ selectset done           0
+ eigen done           0
+ tau          13   1.30255675              93
+ #popped          15           0
+ #selectset contacts        2004
+ selectset done           0
+ eigen done           0
+ tau          15   1.66711712             132
+ #popped          16           1
+ #selectset contacts        2004
+ selectset done           1
+ eigen done           1
+ tau          17  0.706561446             106         122
+ #popped          18           1
+ #selectset contacts        2004
+ selectset done           1
+ eigen done           1
+ tau          19  0.960138202             106
+ #popped          17           0
+ #selectset contacts        2004
+ selectset done           0
+ eigen done           0
+ tau          21   1.24582720             159
+ #popped          22           1
+ #selectset contacts        2004
+ selectset done           1
+ eigen done           1
+ tau          23   1.35849059             144
+ #popped          23           0
+ #selectset contacts        2004
+ selectset done           0
+ eigen done           0
+ tau          25   1.03788888             176
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+           0
+         206
+         206  residues read 2ON5.dssp                                                   
+  grow short strand          30          34
+  grow short helix          39          45
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         117         123
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  6  2  7 14  8  9 10 11 12 13
+   2     1  4  5  8  1  3  4  5  6  2  7 14
+   3     1 14 15  6  8  9 10 11 12 13
+   4     2  6  7  7  1  3  4  5  6  2  7
+   5     2  0  0  1 14
+   6     4  8  9  6  1  3  4  5  6  2
+   7     4  0  0  1  7
+   8     6 10 11  5  1  3  4  5  6
+   9     6  0  0  1  2
+  10     8  0  0  3  1  3  4
+  11     8  0  0  2  5  6
+  12     0  0  0  0
+  13     0  0  0  2  5  6
+  14     3  0  0  1  8
+  15     3 16 17  5  9 10 11 12 13
+  16    15 18 19  2  9 10
+  17    15 22 23  3 11 12 13
+  18    16  0  0  1  9
+  19    16  0  0  1 10
+  20     0  0  0  1  9
+  21     0  0  0  0
+  22    17  0  0  1 11
+  23    17 26 27  2 12 13
+  24     0  0  0  1 11
+  25     0  0  0  0
+  26    23  0  0  1 12
+  27    23  0  0  1 13
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  8  2  1  7 14 14
+   3 *   1 12 13  6  1  8 13
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  1  1 14 14
+   6 -   4  8  9  6  1  1  6
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  5  2  1  1  3  6
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  3  2  1  1  3  4
+  11 -   8  0  0  2  1  5  6
+  12 -   3  0  0  1  1  8  8
+  13 -   3 14 15  5  1  9 13
+  14 -  13 16 17  2  1  9 10
+  15 -  13 18 19  3  1 11 13
+  16 -  14  0  0  1  1  9  9
+  17 -  14  0  0  1  1 10 10
+  18 -  15  0  0  1  1 11 11
+  19 -  15 20 21  2  1 12 13
+  20 -  19  0  0  1  1 12 12
+  21 -  19  0  0  1  1 13 13
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1676
+Total number of ignored atom records:        529
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1990
+ selectset done           0
+ eigen done           0
+ tau           1   3.22565794              78         192
+ #popped           2           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau           3   1.46559250              78
+ #popped           4           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau           5   1.52274704              62
+ #popped           6           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau           7   1.32981968              34          50
+ #popped           8           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau           9  0.525635839              34
+ #popped          10           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau          11  0.350635648              10
+ #popped          13           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1990
+ selectset done           0
+ eigen done           0
+ tau          13   1.29580903             101         127
+ #popped          14           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau          15   1.38707519             159
+ #popped          16           2
+ #selectset contacts        1990
+ selectset done           2
+ eigen done           2
+ tau          17   1.18616307             137
+ #popped          18           3
+ #selectset contacts        1990
+ selectset done           3
+ eigen done           3
+ tau          19   1.52906930             101
+ #popped          20           3
+ #selectset contacts        1990
+ selectset done           3
+ eigen done           3
+ tau          21  0.943188131              90
+ #popped          19           2
+ #selectset contacts        1990
+ selectset done           2
+ eigen done           2
+ tau          23  0.740994513             147
+ #popped          17           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau          25   1.14983833             176
+ #popped          15           0
+ #selectset contacts        1990
+ selectset done           0
+ eigen done           0
+ tau          27   1.80168283             114
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+           0
+         206
+         206  residues read 2ON5.dssp                                                   
+  grow short strand          30          34
+  exclude short helix          40          45
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         117         123
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6 12  7  9 10 11  8
+   2     1  4  5  7  1  2  3  4  5  6 12
+   3     1 14 15  5  7  9 10 11  8
+   4     2  6  7  6  1  2  3  4  5  6
+   5     2  0  0  1 12
+   6     4 10 11  5  1  2  3  4  5
+   7     4  0  0  1  6
+   8     0  0  0  5  1  2  3  4  5
+   9     0  0  0  0
+  10     6 12 13  3  1  2  3
+  11     6  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10  0  0  2  2  3
+  14     3 16 17  4  7  9 10 11
+  15     3  0  0  1  8
+  16    14 20 21  2  7  9
+  17    14 26 27  2 10 11
+  18     0  0  0  2  7  9
+  19     0  0  0  0
+  20    16  0  0  1  7
+  21    16  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1  7
+  24     0  0  0  0
+  25     0  0  0  0
+  26    17  0  0  1 10
+  27    17  0  0  1 11
+  28     0  0  0  0
+  29     0  0  0  1  8
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  7  2  1  6 12 12
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  2  3
+  12 -   3 14 15  4  2  7  7  9 11
+  13 -   3  0  0  1  1  8  8
+  14 -  12 16 17  2  2  7  7  9  9
+  15 -  12 18 19  2  1 10 11
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  9  9
+  18 -  15  0  0  1  1 10 10
+  19 -  15  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1676
+Total number of ignored atom records:        453
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau           1   2.69341469              77
+ #popped           2           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           3   1.29485977              33          50
+ #popped           4           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           5   1.40322924              62
+ #popped           6           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           7  0.516093254              33
+ #popped           8           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           9  0.390275657              14
+ #popped           3           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau          11   2.40592456             190
+ #popped          12           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau          13   1.32346952             101         127
+ #popped          14           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          15   1.31717014             144
+ #popped          16           2
+ #selectset contacts        1976
+ selectset done           2
+ eigen done           2
+ tau          17   1.81544185             101
+ #popped          18           2
+ #selectset contacts        1976
+ selectset done           2
+ eigen done           2
+ tau          19  0.969387770              90
+ #popped          17           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          21   1.19821000             159
+ #popped          23           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          23   1.13768589             176
+ #popped          15           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau          25   2.08995199             114
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+           0
+         206
+         206  residues read 2ON5.dssp                                                   
+  grow short strand          30          34
+  exclude short helix          39          43
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         103         109
+  grow short helix         117         123
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  5  6  7 10 11 12  8  9 13
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1 12 13  7  7 10 11 12  8  9 13
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  8  9  5  1  2  3  4  5
+   7     2  0  0  1  6
+   8     6 10 11  3  1  2  3
+   9     6  0  0  2  4  5
+  10     8  0  0  1  1
+  11     8  0  0  2  2  3
+  12     3 14 15  6  7 10 11 12  8  9
+  13     3  0  0  1 13
+  14    12 16 17  4  7 10 11 12
+  15    12 26 27  2  8  9
+  16    14 18 19  2  7 10
+  17    14 24 25  2 11 12
+  18    16  0  0  1  7
+  19    16  0  0  1 10
+  20     0  0  0  0
+  21     0  0  0  1  7
+  22     0  0  0  0
+  23     0  0  0  2 11 12
+  24    17  0  0  1 11
+  25    17  0  0  1 12
+  26    15  0  0  1  8
+  27    15  0  0  1  9
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  7  1  7 13
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  2  3
+  10 -   3 12 13  6  1  7 12
+  11 -   3  0  0  1  1 13 13
+  12 -  10 14 15  4  2  7  7 10 12
+  13 -  10 20 21  2  1  8  9
+  14 -  12 16 17  2  2  7  7 10 10
+  15 -  12 18 19  2  1 11 12
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1 10 10
+  18 -  15  0  0  1  1 11 11
+  19 -  15  0  0  1  1 12 12
+  20 -  13  0  0  1  1  8  8
+  21 -  13  0  0  1  1  9  9
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1676
+Total number of ignored atom records:        444
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1975
+ selectset done           0
+ eigen done           0
+ tau           1   3.15234756              78         192
+ #popped           2           1
+ #selectset contacts        1975
+ selectset done           1
+ eigen done           1
+ tau           3   1.63284743              62          78
+ #popped           4           1
+ #selectset contacts        1975
+ selectset done           1
+ eigen done           1
+ tau           5   1.57645321              10          29          62
+ #popped           6           2
+ #selectset contacts        1975
+ selectset done           2
+ eigen done           2
+ tau           7  0.469698817              45
+ #popped           8           2
+ #selectset contacts        1975
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1975
+ selectset done           1
+ eigen done           1
+ tau           9  0.989146948              29
+ #popped           3           0
+ #selectset contacts        1975
+ selectset done           0
+ eigen done           0
+ tau          11   1.35532188             102         125
+ #popped          12           1
+ #selectset contacts        1975
+ selectset done           1
+ eigen done           1
+ tau          13   1.45485747             102
+ #popped          14           2
+ #selectset contacts        1975
+ selectset done           2
+ eigen done           2
+ tau          15   1.00518131              91
+ #popped          15           1
+ #selectset contacts        1975
+ selectset done           1
+ eigen done           1
+ tau          17   1.29159975             145
+ #popped          18           2
+ #selectset contacts        1975
+ selectset done           2
+ eigen done           2
+ tau          19  0.817194581             135
+ #popped          19           1
+ #selectset contacts        1975
+ selectset done           1
+ eigen done           1
+ tau          21   1.15385640             159
+ #popped          23           1
+ #selectset contacts        1975
+ selectset done           1
+ eigen done           1
+ tau          23   1.10949314             176
+ #popped          13           0
+ #selectset contacts        1975
+ selectset done           0
+ eigen done           0
+ tau          25   1.71246517             115
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+           0
+         206
+         206  residues read 2ON5.dssp                                                   
+  grow short strand          30          34
+  exclude short helix          40          45
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         117         123
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  3  4  5  2 13  6  7 10 11 12  8  9
+   2     1  4  5  7  1  3  4  5  2 13  6
+   3     1 12 13  6  7 10 11 12  8  9
+   4     2  6  7  6  1  3  4  5  2 13
+   5     2  0  0  1  6
+   6     4  8  9  4  1  3  4  5
+   7     4 10 11  2  2 13
+   8     6  0  0  2  1  3
+   9     6  0  0  2  4  5
+  10     7  0  0  1  2
+  11     7  0  0  1 13
+  12     3 14 15  4  7 10 11 12
+  13     3 26 27  2  8  9
+  14    12  0  0  1  7
+  15    12 18 19  3 10 11 12
+  16     0  0  0  1  7
+  17     0  0  0  0
+  18    15  0  0  1 10
+  19    15 24 25  2 11 12
+  20     0  0  0  1 10
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  2 11 12
+  24    19  0  0  1 11
+  25    19  0  0  1 12
+  26    13  0  0  1  8
+  27    13  0  0  1  9
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  7  2  1  6 13 13
+   3 *   1 12 13  6  1  7 12
+   4 -   2  6  7  6  2  1  5 13 13
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4 10 11  2  2  2  2 13 13
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6  0  0  2  1  4  5
+  10 -   7  0  0  1  1  2  2
+  11 -   7  0  0  1  1 13 13
+  12 -   3 14 15  4  2  7  7 10 12
+  13 -   3 20 21  2  1  8  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  3  1 10 12
+  16 -  15  0  0  1  1 10 10
+  17 -  15 18 19  2  1 11 12
+  18 -  17  0  0  1  1 11 11
+  19 -  17  0  0  1  1 12 12
+  20 -  13  0  0  1  1  8  8
+  21 -  13  0  0  1  1  9  9
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1676
+Total number of ignored atom records:        491
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1978
+ selectset done           0
+ eigen done           0
+ tau           1   2.88909626              79         193
+ #popped           2           1
+ #selectset contacts        1978
+ selectset done           1
+ eigen done           1
+ tau           3   1.80611646              62          79
+ #popped           4           1
+ #selectset contacts        1978
+ selectset done           1
+ eigen done           1
+ tau           5   1.62523663              10          29          62
+ #popped           6           2
+ #selectset contacts        1978
+ selectset done           2
+ eigen done           2
+ tau           7  0.483169734              42
+ #popped           8           3
+ #selectset contacts        1978
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1978
+ selectset done           2
+ eigen done           2
+ tau           9   1.34394336              52
+ #popped           7           1
+ #selectset contacts        1978
+ selectset done           1
+ eigen done           1
+ tau          11   1.06069613              29
+ #popped           3           0
+ #selectset contacts        1978
+ selectset done           0
+ eigen done           0
+ tau          13   1.49829865             134
+ #popped          14           1
+ #selectset contacts        1978
+ selectset done           1
+ eigen done           1
+ tau          15   1.72406626              93
+ #popped          17           1
+ #selectset contacts        1978
+ selectset done           1
+ eigen done           1
+ tau          17  0.863724470             103         123
+ #popped          18           2
+ #selectset contacts        1978
+ selectset done           2
+ eigen done           2
+ tau          19   1.15594602             103
+ #popped          19           1
+ #selectset contacts        1978
+ selectset done           1
+ eigen done           1
+ tau          21   1.20221078             113
+ #popped          15           0
+ #selectset contacts        1978
+ selectset done           0
+ eigen done           0
+ tau          23   1.65390015             153
+ #popped          25           0
+ #selectset contacts        1978
+ selectset done           0
+ eigen done           0
+ tau          25   1.11056566             176
+ #popped          26           0
+ #selectset contacts        1978
+ selectset done           0
+ eigen done           0
+ tau          27  0.798744142             166
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+           0
+         206
+         206  residues read 2ON5.dssp                                                   
+  grow short strand          30          34
+  grow short helix          39          45
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         117         123
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  6  2 14  7  8 11  9 10 12 13
+   2     1  4  5  8  1  3  4  5  6  2 14  7
+   3     1 14 15  6  8 11  9 10 12 13
+   4     2  6  7  7  1  3  4  5  6  2 14
+   5     2  0  0  1  7
+   6     4  8  9  5  1  3  4  5  6
+   7     4 12 13  2  2 14
+   8     6  0  0  3  1  3  4
+   9     6  0  0  2  5  6
+  10     0  0  0  0
+  11     0  0  0  2  5  6
+  12     7  0  0  1  2
+  13     7  0  0  1 14
+  14     3 16 17  4  8 11  9 10
+  15     3 26 27  2 12 13
+  16    14  0  0  1  8
+  17    14 18 19  3 11  9 10
+  18    17  0  0  1 11
+  19    17 22 23  2  9 10
+  20     0  0  0  0
+  21     0  0  0  1 11
+  22    19  0  0  1  9
+  23    19  0  0  1 10
+  24     0  0  0  0
+  25     0  0  0  2 12 13
+  26    15  0  0  1 12
+  27    15  0  0  1 13
+  28     0  0  0  1 12
+  29     0  0  0  0
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  8  2  1  7 14 14
+   3 *   1 12 13  6  1  8 13
+   4 -   2  6  7  7  2  1  6 14 14
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  5  2  1  1  3  6
+   7 -   4 10 11  2  2  2  2 14 14
+   8 -   6  0  0  3  2  1  1  3  4
+   9 -   6  0  0  2  1  5  6
+  10 -   7  0  0  1  1  2  2
+  11 -   7  0  0  1  1 14 14
+  12 -   3 14 15  4  1  8 11
+  13 -   3 20 21  2  1 12 13
+  14 -  12  0  0  1  1  8  8
+  15 -  12 16 17  3  1  9 11
+  16 -  15  0  0  1  1 11 11
+  17 -  15 18 19  2  1  9 10
+  18 -  17  0  0  1  1  9  9
+  19 -  17  0  0  1  1 10 10
+  20 -  13  0  0  1  1 12 12
+  21 -  13  0  0  1  1 13 13
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1676
+Total number of ignored atom records:        539
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau           1   3.08170247              79         193
+ #popped           2           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           3   1.57781529              34          50
+ #popped           4           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           5   1.63991690              62          79
+ #popped           6           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           7   1.30834579              62
+ #popped           8           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           9  0.529679179              34
+ #popped          10           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          11  0.352846861              14
+ #popped          13           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          13  0.571405113              24
+ #popped           3           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau          15   1.41410959             142
+ #popped          16           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          17   1.62610102              93
+ #popped          19           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          19   1.29722667             132
+ #popped          20           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          17           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau          21   1.22797155             160
+ #popped          23           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau          23   1.13454545             176
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+           0
+         206
+         206  residues read 2ON5.dssp                                                   
+  grow short strand          30          34
+  exclude short helix          40          45
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         117         123
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  5 13  6  7  8  9 10 11 12
+   2     1  6  7  7  1  2  3  4  5 13  6
+   3     1 16 17  6  7  8  9 10 11 12
+   4     0  0  0  7  1  2  3  4  5 13  6
+   5     0  0  0  0
+   6     2  8  9  6  1  2  3  4  5 13
+   7     2  0  0  1  6
+   8     6 10 11  5  1  2  3  4  5
+   9     6  0  0  1 13
+  10     8 12 13  3  1  2  3
+  11     8  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10 14 15  2  2  3
+  14    13  0  0  1  2
+  15    13  0  0  1  3
+  16     3 18 19  4  7  8  9 10
+  17     3 24 25  2 11 12
+  18    16  0  0  1  7
+  19    16 20 21  3  8  9 10
+  20    19  0  0  2  8  9
+  21    19  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  2 11 12
+  24    17  0  0  1 11
+  25    17  0  0  1 12
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  7  2  1  6 13 13
+   3 *   1 14 15  6  1  7 12
+   4 -   2  6  7  6  2  1  5 13 13
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1 13 13
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  2  1  2  3
+  12 -  11  0  0  1  1  2  2
+  13 -  11  0  0  1  1  3  3
+  14 -   3 16 17  4  1  7 10
+  15 -   3 20 21  2  1 11 12
+  16 -  14  0  0  1  1  7  7
+  17 -  14 18 19  3  1  8 10
+  18 -  17  0  0  2  1  8  9
+  19 -  17  0  0  1  1 10 10
+  20 -  15  0  0  1  1 11 11
+  21 -  15  0  0  1  1 12 12
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1676
+Total number of ignored atom records:        465
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau           1   3.26096082              79         190
+ #popped           2           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           3   1.61328220              79
+ #popped           4           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           5   1.73529553              62
+ #popped           6           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           7   1.23615670              33          50
+ #popped           8           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           9  0.500914037              33
+ #popped          10           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          11  0.412092328              14
+ #popped           3           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          13   1.36032569             138
+ #popped          14           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          15   1.65856266              93
+ #popped          17           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          17  0.935814857             103         123
+ #popped          18           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau          19   1.08396387             103
+ #popped          19           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          21   1.41689122             113
+ #popped          15           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          23   1.49497485             159
+ #popped          24           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          25           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          25   1.11622012             176
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             23-JAN-07   2ON5              COMPND   2 MOLECULE: NA GLUTATHIONE S-TRANSFERASE 2;                            SOURCE   2 ORGANISM_SCIENTIFIC: NECATOR AMERICANUS;                             AUTHOR    O.A.ASOJO,M.NGAMELUE,H.HOMMA,G.GOUD,B.ZHAN,P.J.HOTEZ                  
+           0
+         206
+         206  residues read 2ON5.dssp                                                   
+  grow short strand          30          34
+  exclude short helix          40          45
+  grow short strand          53          56
+  grow short strand          59          62
+  grow short helix         117         123
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6 12  7  9  8 10 11
+   2     1  4  5  7  1  2  3  4  5  6 12
+   3     1 14 15  5  7  9  8 10 11
+   4     2  6  7  6  1  2  3  4  5  6
+   5     2  0  0  1 12
+   6     4 10 11  5  1  2  3  4  5
+   7     4  0  0  1  6
+   8     0  0  0  5  1  2  3  4  5
+   9     0  0  0  0
+  10     6 12 13  3  1  2  3
+  11     6  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10  0  0  2  2  3
+  14     3 18 19  3  7  9  8
+  15     3 26 27  2 10 11
+  16     0  0  0  0
+  17     0  0  0  3  7  9  8
+  18    14 20 21  2  7  9
+  19    14  0  0  1  8
+  20    18  0  0  1  7
+  21    18  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  2 10 11
+  26    15  0  0  1 10
+  27    15  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  7  2  1  6 12 12
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  2  3
+  12 -   3 14 15  3  1  7  9
+  13 -   3 18 19  2  1 10 11
+  14 -  12 16 17  2  2  7  7  9  9
+  15 -  12  0  0  1  1  8  8
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  9  9
+  18 -  13  0  0  1  1 10 10
+  19 -  13  0  0  1  1 11 11
+
+ CHAIN : 2ON5A
+ CHAIN : 2ON5B
+ CHAIN : 2ON5C
+ CHAIN : 2ON5D
+ CHAIN : 2ON5E
+ CHAIN : 2ON5F
+ CHAIN : 2ON5G
+ CHAIN : 2ON5H
+

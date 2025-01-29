@@ -1,0 +1,666 @@
+A length: 279
+B length: 277
+C length: 276
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            280
+Total number of atoms read in:              2220
+Total number of ignored atom records:        282
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              COMPND   2 MOLECULE: 3-MERCAPTOPYRUVATE SULFURTRANSFERASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+         280  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2587
+ selectset done           0
+ eigen done           0
+ tau           1   1.40185618              23         156
+ #popped           2           1
+ #selectset contacts        2587
+ selectset done           1
+ eigen done           1
+ tau           3   29.7061367              23
+ #popped           4           2
+ #selectset contacts        2587
+ selectset done           2
+ eigen done           2
+ tau           5   1.46719217              13
+ #popped           5           1
+ #selectset contacts        2587
+ selectset done           1
+ eigen done           1
+ tau           7   1.81718600             207         230
+ #popped           8           2
+ #selectset contacts        2587
+ selectset done           2
+ eigen done           2
+ tau           9   1.20900285             170         268
+ #popped          10           3
+ #selectset contacts        2587
+ selectset done           3
+ eigen done           3
+ tau          11   1.81730771             170
+ #popped          11           2
+ #selectset contacts        2587
+ selectset done           2
+ eigen done           2
+ tau          13  0.846658707             182         194
+ #popped          14           2
+ #selectset contacts        2587
+ selectset done           2
+ eigen done           2
+ tau          15  0.669932127             207
+ #popped          16           3
+ #selectset contacts        2587
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          17           2
+ #selectset contacts        2587
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           9           1
+ #selectset contacts        2587
+ selectset done           1
+ eigen done           1
+ tau          17  0.796523273             217
+ #popped           3           0
+ #selectset contacts        2587
+ selectset done           0
+ eigen done           0
+ tau          19   1.73430729              51          91         101         119         139
+ #popped          20           1
+ #selectset contacts        2587
+ selectset done           1
+ eigen done           1
+ tau          21   1.11110103             101
+ #popped          22           2
+ #selectset contacts        2587
+ selectset done           2
+ eigen done           2
+ tau          23  0.921068847              35          51
+ #popped          24           2
+ #selectset contacts        2587
+ selectset done           2
+ eigen done           2
+ tau          25  0.608614206              35
+ #popped          23           1
+ #selectset contacts        2587
+ selectset done           1
+ eigen done           1
+ tau          27  0.694495022             129
+ #popped          21           0
+ #selectset contacts        2587
+ selectset done           0
+ eigen done           0
+ tau          29   1.52186859              81
+ #popped          30           1
+ #selectset contacts        2587
+ selectset done           1
+ eigen done           1
+ tau          31  0.906540215              69
+ #popped          31           0
+ #selectset contacts        2587
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              COMPND   2 MOLECULE: 3-MERCAPTOPYRUVATE SULFURTRANSFERASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+           0
+         280
+         280  residues read 4JGT.dssp                                                   
+  grow short strand           2           3
+ crowded segment excluded!
+  grow short strand          21          25
+  exclude short helix          31          33
+  grow short helix          37          43
+  grow short strand          50          51
+  grow short strand          88          92
+  grow short strand         117         120
+  grow short helix         123         129
+  exclude short helix         152         154
+  grow short strand         155         156
+ crowded segment excluded!
+  grow short strand         171         174
+  exclude short helix         178         182
+  grow short strand         201         202
+  exclude short helix         205         208
+  grow short strand         236         239
+  grow short strand         263         264
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2 10 17 11 12 14 15 16 13  3  4  9  5  6  7  8
+   2     1  4  5 10  1  2 10 17 11 12 14 15 16 13
+   3     1 20 21  7  3  4  9  5  6  7  8
+   4     2  6  7  2  1  2
+   5     2  8  9  8 10 17 11 12 14 15 16 13
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     5 10 11  7 10 17 11 12 14 15 16
+   9     5  0  0  1 13
+  10     8 12 13  2 10 17
+  11     8 16 17  5 11 12 14 15 16
+  12    10  0  0  1 10
+  13    10  0  0  1 17
+  14     0  0  0  5 11 12 14 15 16
+  15     0  0  0  0
+  16    11  0  0  2 11 12
+  17    11  0  0  3 14 15 16
+  18     0  0  0  0
+  19     0  0  0  1 13
+  20     3 22 23  3  3  4  9
+  21     3 30 31  4  5  6  7  8
+  22    20  0  0  2  3  4
+  23    20  0  0  1  9
+  24     0  0  0  0
+  25     0  0  0  2  3  4
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  1  9
+  29     0  0  0  0
+  30    21  0  0  1  5
+  31    21  0  0  3  6  7  8
+  32     0  0  0  0
+  33     0  0  0  1  5
+   1 +   0  2  3 17  1  1 17
+   2 +   1  4  5 10  2  1  2 10 17
+   3 *   1 16 17  7  1  3  9
+   4 =   2  6  7  2  1  1  2
+   5 *   2  8  9  8  1 10 17
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  7  2 10 12 14 17
+   9 -   5  0  0  1  1 13 13
+  10 -   8 12 13  2  2 10 10 17 17
+  11 -   8 14 15  5  2 11 12 14 16
+  12 -  10  0  0  1  1 10 10
+  13 -  10  0  0  1  1 17 17
+  14 -  11  0  0  2  1 11 12
+  15 -  11  0  0  3  1 14 16
+  16 -   3 18 19  3  2  3  4  9  9
+  17 -   3 20 21  4  1  5  8
+  18 -  16  0  0  2  1  3  4
+  19 -  16  0  0  1  1  9  9
+  20 -  17  0  0  1  1  5  5
+  21 -  17  0  0  3  1  6  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            278
+Total number of atoms read in:              2204
+Total number of ignored atom records:        226
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              COMPND   2 MOLECULE: 3-MERCAPTOPYRUVATE SULFURTRANSFERASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+         278  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2542
+ selectset done           0
+ eigen done           0
+ tau           1   3.23065662             152
+ #popped           2           1
+ #selectset contacts        2542
+ selectset done           1
+ eigen done           1
+ tau           3   1.73706698              16         117         132
+ #popped           4           2
+ #selectset contacts        2542
+ selectset done           2
+ eigen done           2
+ tau           5   1.48620546              16
+ #popped           5           1
+ #selectset contacts        2542
+ selectset done           1
+ eigen done           1
+ tau           7  0.985163629              54          85
+ #popped           8           2
+ #selectset contacts        2542
+ selectset done           2
+ eigen done           2
+ tau           9  0.973812819              99
+ #popped          10           3
+ #selectset contacts        2542
+ selectset done           3
+ eigen done           3
+ tau          11  0.470085442              54
+ #popped          12           3
+ #selectset contacts        2542
+ selectset done           3
+ eigen done           3
+ tau          13  0.749305844              33
+ #popped          15           3
+ #selectset contacts        2542
+ selectset done           3
+ eigen done           3
+ tau          15  0.905296922              43
+ #popped          11           2
+ #selectset contacts        2542
+ selectset done           2
+ eigen done           2
+ tau          17   3.60264897             117         142
+ #popped          18           2
+ #selectset contacts        2542
+ selectset done           2
+ eigen done           2
+ tau          19   1.26402187             117
+ #popped           9           1
+ #selectset contacts        2542
+ selectset done           1
+ eigen done           1
+ tau          21   1.41921401              67
+ #popped           3           0
+ #selectset contacts        2542
+ selectset done           0
+ eigen done           0
+ tau          23   1.79721951             204         228
+ #popped          24           1
+ #selectset contacts        2542
+ selectset done           1
+ eigen done           1
+ tau          25   1.10180163             244         260
+ #popped          26           1
+ #selectset contacts        2542
+ selectset done           1
+ eigen done           1
+ tau          27  0.724986315             169
+ #popped          29           1
+ #selectset contacts        2542
+ selectset done           1
+ eigen done           1
+ tau          29  0.309474438             183
+ #popped          31           1
+ #selectset contacts        2542
+ selectset done           1
+ eigen done           1
+ tau          31   2.03997421             193         204
+ #popped          32           1
+ #selectset contacts        2542
+ selectset done           1
+ eigen done           1
+ tau          33   0.00000000    
+ #popped          25           0
+ #selectset contacts        2542
+ selectset done           0
+ eigen done           0
+ tau          33   1.62266004             214
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              COMPND   2 MOLECULE: 3-MERCAPTOPYRUVATE SULFURTRANSFERASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+           0
+         278
+         278  residues read 4JGT.dssp                                                   
+  grow short strand           3           4
+ crowded segment excluded!
+  grow short strand          19          23
+  exclude short helix          29          31
+  grow short helix          35          41
+  grow short strand          48          49
+  grow short strand          86          90
+  grow short strand         115         118
+  grow short helix         121         127
+  exclude short helix         150         152
+  grow short strand         153         154
+ crowded segment excluded!
+  grow short strand         169         172
+  exclude short helix         176         180
+  grow short strand         199         200
+  exclude short helix         203         206
+  grow short strand         234         237
+  grow short strand         261         262
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  9  2  3  4  6  7  8  5 10 11 14 16 17 12 15 13
+   2     1  4  5  9  1  9  2  3  4  6  7  8  5
+   3     1 24 25  8 10 11 14 16 17 12 15 13
+   4     2  6  7  2  1  9
+   5     2  8  9  7  2  3  4  6  7  8  5
+   6     4  0  0  1  1
+   7     4  0  0  1  9
+   8     5 10 11  6  2  3  4  6  7  8
+   9     5  0  0  1  5
+  10     8 12 13  4  2  3  4  6
+  11     8  0  0  2  7  8
+  12    10 14 15  3  2  3  4
+  13    10  0  0  1  6
+  14    12  0  0  1  2
+  15    12 16 17  2  3  4
+  16    15  0  0  1  3
+  17    15  0  0  1  4
+  18     0  0  0  2  7  8
+  19     0  0  0  0
+  20     0  0  0  2  7  8
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1  5
+  24     3 26 27  7 10 11 14 16 17 12 15
+  25     3  0  0  1 13
+  26    24 28 29  6 10 11 14 16 17 12
+  27    24  0  0  1 15
+  28    26  0  0  1 10
+  29    26 30 31  5 11 14 16 17 12
+  30    29  0  0  1 11
+  31    29 32 33  4 14 16 17 12
+  32    31  0  0  3 14 16 17
+  33    31  0  0  1 12
+  34     0  0  0  0
+  35     0  0  0  1 13
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5  9  1  1  9
+   3 *   1 18 19  8  1 10 17
+   4 -   2  6  7  2  2  1  1  9  9
+   5 -   2  8  9  7  1  2  8
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  9  9
+   8 -   5 10 11  6  2  2  4  6  8
+   9 -   5  0  0  1  1  5  5
+  10 -   8 12 13  4  2  2  4  6  6
+  11 -   8  0  0  2  1  7  8
+  12 -  10 14 15  3  1  2  4
+  13 -  10  0  0  1  1  6  6
+  14 -  12  0  0  1  1  2  2
+  15 -  12 16 17  2  1  3  4
+  16 -  15  0  0  1  1  3  3
+  17 -  15  0  0  1  1  4  4
+  18 -   3 20 21  7  2 10 12 14 17
+  19 -   3  0  0  1  1 13 13
+  20 -  18 22 23  6  3 10 12 14 14 16 17
+  21 -  18  0  0  1  1 15 15
+  22 -  20  0  0  1  1 10 10
+  23 -  20 24 25  5  3 11 12 14 14 16 17
+  24 -  23  0  0  1  1 11 11
+  25 -  23 26 27  4  3 12 12 14 14 16 17
+  26 -  25  0  0  3  2 14 14 16 17
+  27 -  25  0  0  1  1 12 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            277
+Total number of atoms read in:              2199
+Total number of ignored atom records:        269
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              COMPND   2 MOLECULE: 3-MERCAPTOPYRUVATE SULFURTRANSFERASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+         277  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2553
+ selectset done           0
+ eigen done           0
+ tau           1   2.92984104             151
+ #popped           2           1
+ #selectset contacts        2553
+ selectset done           1
+ eigen done           1
+ tau           3   1.44648314              48          79         100         110         134
+ #popped           4           2
+ #selectset contacts        2553
+ selectset done           2
+ eigen done           2
+ tau           5   1.23966944              20
+ #popped           6           3
+ #selectset contacts        2553
+ selectset done           3
+ eigen done           3
+ tau           7  0.796595693              10
+ #popped           7           2
+ #selectset contacts        2553
+ selectset done           2
+ eigen done           2
+ tau           9  0.928974092             120
+ #popped          10           2
+ #selectset contacts        2553
+ selectset done           2
+ eigen done           2
+ tau          11  0.688693643              48
+ #popped          12           3
+ #selectset contacts        2553
+ selectset done           3
+ eigen done           3
+ tau          13  0.726405978              31
+ #popped          13           2
+ #selectset contacts        2553
+ selectset done           2
+ eigen done           2
+ tau          15   1.29090905              89         100
+ #popped          16           2
+ #selectset contacts        2553
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           5           1
+ #selectset contacts        2553
+ selectset done           1
+ eigen done           1
+ tau          17   1.57463002              79
+ #popped          18           2
+ #selectset contacts        2553
+ selectset done           2
+ eigen done           2
+ tau          19  0.976598620              66
+ #popped          19           1
+ #selectset contacts        2553
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           3           0
+ #selectset contacts        2553
+ selectset done           0
+ eigen done           0
+ tau          21   1.75622559             201         227
+ #popped          22           1
+ #selectset contacts        2553
+ selectset done           1
+ eigen done           1
+ tau          23   1.15372753             240         259
+ #popped          24           1
+ #selectset contacts        2553
+ selectset done           1
+ eigen done           1
+ tau          25  0.759707808             168
+ #popped          27           1
+ #selectset contacts        2553
+ selectset done           1
+ eigen done           1
+ tau          27  0.294274807             181
+ #popped          29           1
+ #selectset contacts        2553
+ selectset done           1
+ eigen done           1
+ tau          29   1.47679329             191         201
+ #popped          30           1
+ #selectset contacts        2553
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          23           0
+ #selectset contacts        2553
+ selectset done           0
+ eigen done           0
+ tau          31   2.27714944             213
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             03-MAR-13   4JGT              COMPND   2 MOLECULE: 3-MERCAPTOPYRUVATE SULFURTRANSFERASE;                      SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.KOUTMOS,K.YAMADA,P.K.YADAV,T.CHIKU,R.BANERJEE                       
+           0
+         277
+         277  residues read 4JGT.dssp                                                   
+  grow short strand           2           3
+ crowded segment excluded!
+  grow short strand          21          25
+  grow short helix          34          40
+  grow short strand          47          48
+  grow short strand          85          89
+  grow short strand         114         117
+  grow short helix         120         126
+  exclude short helix         149         151
+  grow short strand         152         153
+ crowded segment excluded!
+  grow short strand         168         171
+  exclude short helix         175         179
+  grow short strand         198         199
+  exclude short helix         202         205
+  grow short strand         233         236
+  grow short strand         260         261
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  3  4  6  8  9  5  7 10 11 14 16 17 12 15 13
+   2     1  4  5  9  1  2  3  4  6  8  9  5  7
+   3     1 22 23  8 10 11 14 16 17 12 15 13
+   4     2  6  7  7  1  2  3  4  6  8  9
+   5     2 18 19  2  5  7
+   6     4  0  0  1  1
+   7     4 10 11  6  2  3  4  6  8  9
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     7 12 13  5  2  3  4  6  8
+  11     7  0  0  1  9
+  12    10 14 15  3  2  3  4
+  13    10  0  0  2  6  8
+  14    12  0  0  1  2
+  15    12  0  0  2  3  4
+  16     0  0  0  2  6  8
+  17     0  0  0  0
+  18     5  0  0  1  5
+  19     5  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  1  5
+  22     3 24 25  7 10 11 14 16 17 12 15
+  23     3  0  0  1 13
+  24    22 26 27  6 10 11 14 16 17 12
+  25    22  0  0  1 15
+  26    24  0  0  1 10
+  27    24 28 29  5 11 14 16 17 12
+  28    27  0  0  1 11
+  29    27 30 31  4 14 16 17 12
+  30    29  0  0  3 14 16 17
+  31    29  0  0  1 12
+  32     0  0  0  0
+  33     0  0  0  1 13
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5  9  1  1  9
+   3 *   1 16 17  8  1 10 17
+   4 -   2  6  7  7  3  1  4  6  6  8  9
+   5 -   2 14 15  2  2  5  5  7  7
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  6  3  2  4  6  6  8  9
+   8 -   7 10 11  5  3  2  4  6  6  8  8
+   9 -   7  0  0  1  1  9  9
+  10 -   8 12 13  3  1  2  4
+  11 -   8  0  0  2  2  6  6  8  8
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  2  1  3  4
+  14 -   5  0  0  1  1  5  5
+  15 -   5  0  0  1  1  7  7
+  16 -   3 18 19  7  2 10 12 14 17
+  17 -   3  0  0  1  1 13 13
+  18 -  16 20 21  6  3 10 12 14 14 16 17
+  19 -  16  0  0  1  1 15 15
+  20 -  18  0  0  1  1 10 10
+  21 -  18 22 23  5  3 11 12 14 14 16 17
+  22 -  21  0  0  1  1 11 11
+  23 -  21 24 25  4  3 12 12 14 14 16 17
+  24 -  23  0  0  3  2 14 14 16 17
+  25 -  23  0  0  1  1 12 12
+
+ CHAIN : 4JGTA
+ CHAIN : 4JGTB
+ CHAIN : 4JGTC
+

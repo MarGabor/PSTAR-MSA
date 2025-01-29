@@ -1,0 +1,758 @@
+A length: 232
+B length: 228
+C length: 227
+D length: 229
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            241
+Total number of atoms read in:              1802
+Total number of ignored atom records:         81
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              COMPND   2 MOLECULE: PROBABLE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+         241  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2180
+ selectset done           0
+ eigen done           0
+ tau           1   2.15471101              80
+ #popped           2           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau           3   1.08861184              10
+ #popped           5           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau           5   1.03167832              56          70
+ #popped           6           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau           7  0.934835255              56
+ #popped           8           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau           9   1.01314831              20          34
+ #popped          10           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau          11  0.431398124              20
+ #popped          13           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2180
+ selectset done           0
+ eigen done           0
+ tau          13   1.40070939             207         225
+ #popped          14           0
+ #selectset contacts        2180
+ selectset done           0
+ eigen done           0
+ tau          15   2.10037160             182         207
+ #popped          16           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau          17   1.26359558             129
+ #popped          18           2
+ #selectset contacts        2180
+ selectset done           2
+ eigen done           2
+ tau          19  0.779644430              97         119
+ #popped          20           3
+ #selectset contacts        2180
+ selectset done           3
+ eigen done           3
+ tau          21   22.0484695              97
+ #popped          21           2
+ #selectset contacts        2180
+ selectset done           2
+ eigen done           2
+ tau          23   1.20911980             108
+ #popped          19           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau          25   1.14512646             142         154
+ #popped          26           1
+ #selectset contacts        2180
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          17           0
+ #selectset contacts        2180
+ selectset done           0
+ eigen done           0
+ tau          27  0.544236302             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              COMPND   2 MOLECULE: PROBABLE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+           0
+         241
+         241  residues read 3UN1.dssp                                                   
+  exclude short helix           2           6
+  grow short strand          11          14
+  grow short strand          51          55
+  grow short strand          80          83
+  exclude short helix          93          95
+  grow short strand         229         232
+  exclude short helix         236         238
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  2  5  6  7  8  9 10 11 14 12 13
+   2     1  6  7  5  1  3  4  2  5
+   3     1 14 15  9  6  7  8  9 10 11 14 12 13
+   4     0  0  0  0
+   5     0  0  0  5  1  3  4  2  5
+   6     2 10 11  4  1  3  4  2
+   7     2  0  0  1  5
+   8     0  0  0  4  1  3  4  2
+   9     0  0  0  0
+  10     6 12 13  3  1  3  4
+  11     6  0  0  1  2
+  12    10  0  0  1  1
+  13    10  0  0  2  3  4
+  14     3 16 17  8  6  7  8  9 10 11 14 12
+  15     3  0  0  1 13
+  16    14 18 19  7  6  7  8  9 10 11 14
+  17    14  0  0  1 12
+  18    16 20 21  3  6  7  8
+  19    16  0  0  4  9 10 11 14
+  20    18  0  0  1  6
+  21    18 24 25  2  7  8
+  22     0  0  0  1  6
+  23     0  0  0  0
+  24    21  0  0  1  7
+  25    21  0  0  1  8
+  26     0  0  0  4  9 10 11 14
+  27     0  0  0  0
+  28     0  0  0  1 12
+  29     0  0  0  0
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  5  1  1  5
+   3 *   1 10 11  9  1  6 14
+   4 -   2  6  7  4  1  1  4
+   5 -   2  0  0  1  1  5  5
+   6 -   4  8  9  3  2  1  1  3  4
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  3  4
+  10 -   3 12 13  8  2  6 12 14 14
+  11 -   3  0  0  1  1 13 13
+  12 -  10 14 15  7  2  6 11 14 14
+  13 -  10  0  0  1  1 12 12
+  14 -  12 16 17  3  1  6  8
+  15 -  12  0  0  4  2  9 11 14 14
+  16 -  14  0  0  1  1  6  6
+  17 -  14 18 19  2  1  7  8
+  18 -  17  0  0  1  1  7  7
+  19 -  17  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            235
+Total number of atoms read in:              1744
+Total number of ignored atom records:         95
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              COMPND   2 MOLECULE: PROBABLE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+         235  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2145
+ selectset done           0
+ eigen done           0
+ tau           1   1.94997823             173         206         224
+ #popped           2           1
+ #selectset contacts        2145
+ selectset done           1
+ eigen done           1
+ tau           3   2.10868430              79         104         129         152
+ #popped           4           2
+ #selectset contacts        2145
+ selectset done           2
+ eigen done           2
+ tau           5   1.30145633             114
+ #popped           6           3
+ #selectset contacts        2145
+ selectset done           3
+ eigen done           3
+ tau           7   1.78307509              79
+ #popped           8           3
+ #selectset contacts        2145
+ selectset done           3
+ eigen done           3
+ tau           9   1.08747065              48          67
+ #popped          10           3
+ #selectset contacts        2145
+ selectset done           3
+ eigen done           3
+ tau          11   1.03076100              12          28
+ #popped          12           3
+ #selectset contacts        2145
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2145
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2145
+ selectset done           1
+ eigen done           1
+ tau          13   1.71095991             104         139
+ #popped          14           1
+ #selectset contacts        2145
+ selectset done           1
+ eigen done           1
+ tau          15   1.15412927              90         104
+ #popped          16           1
+ #selectset contacts        2145
+ selectset done           1
+ eigen done           1
+ tau          17   1.15536594              90
+ #popped           3           0
+ #selectset contacts        2145
+ selectset done           0
+ eigen done           0
+ tau          19  0.617413282             206
+ #popped          20           0
+ #selectset contacts        2145
+ selectset done           0
+ eigen done           0
+ tau          21  0.628008962             191
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              COMPND   2 MOLECULE: PROBABLE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+           0
+         235
+         235  residues read 3UN1.dssp                                                   
+  grow short strand           5           8
+  grow short strand          45          49
+  grow short strand          74          77
+  exclude short helix          87          89
+  exclude short helix         164         166
+  grow short strand         223         226
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  6  2  5  8  9 11 13 14 10  7 12
+   2     1  4  5 13  1  3  4  6  2  5  8  9 11 13 14 10  7
+   3     1  0  0  1 12
+   4     2  6  7 11  1  3  4  6  2  5  8  9 11 13 14
+   5     2 16 17  2 10  7
+   6     4  8  9  7  1  3  4  6  2  5  8
+   7     4  0  0  4  9 11 13 14
+   8     6 10 11  6  1  3  4  6  2  5
+   9     6  0  0  1  8
+  10     8 12 13  5  1  3  4  6  2
+  11     8  0  0  1  5
+  12    10  0  0  4  1  3  4  6
+  13    10  0  0  1  2
+  14     0  0  0  2 10  7
+  15     0  0  0  0
+  16     5  0  0  1 10
+  17     5  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  1 10
+  20     0  0  0  1 12
+  21     0  0  0  0
+  22     0  0  0  1 12
+  23     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1 11 13 14
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7 11  4  1  6  8  9 11 11 13 14
+   5 -   2 14 15  2  2  7  7 10 10
+   6 -   4  8  9  7  2  1  6  8  8
+   7 -   4  0  0  4  3  9  9 11 11 13 14
+   8 -   6 10 11  6  1  1  6
+   9 -   6  0  0  1  1  8  8
+  10 -   8 12 13  5  2  1  4  6  6
+  11 -   8  0  0  1  1  5  5
+  12 -  10  0  0  4  3  1  1  3  4  6  6
+  13 -  10  0  0  1  1  2  2
+  14 -   5  0  0  1  1 10 10
+  15 -   5  0  0  1  1  7  7
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            234
+Total number of atoms read in:              1747
+Total number of ignored atom records:         79
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              COMPND   2 MOLECULE: PROBABLE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+         234  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2104
+ selectset done           0
+ eigen done           0
+ tau           1   2.01036263              80          98         128         149         172         200         223
+ #popped           2           1
+ #selectset contacts        2104
+ selectset done           1
+ eigen done           1
+ tau           3   1.18321061              11          27         118
+ #popped           4           2
+ #selectset contacts        2104
+ selectset done           2
+ eigen done           2
+ tau           5  0.865179121              49
+ #popped           6           3
+ #selectset contacts        2104
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        2104
+ selectset done           2
+ eigen done           2
+ tau           7   1.92911947              69
+ #popped           8           3
+ #selectset contacts        2104
+ selectset done           3
+ eigen done           3
+ tau           9  0.614999950              59
+ #popped           9           2
+ #selectset contacts        2104
+ selectset done           2
+ eigen done           2
+ tau          11  0.749936342             108
+ #popped          12           2
+ #selectset contacts        2104
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2104
+ selectset done           1
+ eigen done           1
+ tau          13   3.48070383              27
+ #popped          15           1
+ #selectset contacts        2104
+ selectset done           1
+ eigen done           1
+ tau          15   1.28487742             172         211
+ #popped          16           1
+ #selectset contacts        2104
+ selectset done           1
+ eigen done           1
+ tau          17  0.332493156             128
+ #popped          19           1
+ #selectset contacts        2104
+ selectset done           1
+ eigen done           1
+ tau          19   1.00971651             161
+ #popped          21           1
+ #selectset contacts        2104
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           3           0
+ #selectset contacts        2104
+ selectset done           0
+ eigen done           0
+ tau          21   5.01433802             149
+ #popped          22           1
+ #selectset contacts        2104
+ selectset done           1
+ eigen done           1
+ tau          23   2.56607270              98
+ #popped          25           1
+ #selectset contacts        2104
+ selectset done           1
+ eigen done           1
+ tau          25   1.09069872             138
+ #popped          23           0
+ #selectset contacts        2104
+ selectset done           0
+ eigen done           0
+ tau          27  0.585692406             200
+ #popped          28           0
+ #selectset contacts        2104
+ selectset done           0
+ eigen done           0
+ tau          29  0.517802179             189
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              COMPND   2 MOLECULE: PROBABLE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+           0
+         234
+         234  residues read 3UN1.dssp                                                   
+  grow short strand           4           7
+  grow short strand          44          48
+  grow short strand          73          76
+  exclude short helix          86          88
+  grow short strand         222         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  6  8  2  9 10 11 14 13  7 12
+   2     1  4  5 12  1  3  4  5  6  8  2  9 10 11 14 13
+   3     1 22 23  2  7 12
+   4     2  6  7  6  1  3  4  5  6  8
+   5     2 14 15  6  2  9 10 11 14 13
+   6     4  0  0  3  1  3  4
+   7     4  8  9  3  5  6  8
+   8     7  0  0  1  5
+   9     7 12 13  2  6  8
+  10     0  0  0  0
+  11     0  0  0  1  5
+  12     9  0  0  1  6
+  13     9  0  0  1  8
+  14     5  0  0  1  2
+  15     5 16 17  5  9 10 11 14 13
+  16    15 18 19  4  9 10 11 14
+  17    15  0  0  1 13
+  18    16  0  0  1  9
+  19    16 20 21  3 10 11 14
+  20    19  0  0  1 10
+  21    19  0  0  2 11 14
+  22     3  0  0  1  7
+  23     3  0  0  1 12
+  24     0  0  0  1  7
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  1 12
+  29     0  0  0  0
+  30     0  0  0  1 12
+  31     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 12  3  1  6  8 11 13 14
+   3 -   1 20 21  2  2  7  7 12 12
+   4 -   2  6  7  6  3  1  1  3  6  8  8
+   5 -   2 12 13  6  3  2  2  9 11 13 14
+   6 -   4  0  0  3  2  1  1  3  4
+   7 -   4  8  9  3  2  5  6  8  8
+   8 -   7  0  0  1  1  5  5
+   9 -   7 10 11  2  2  6  6  8  8
+  10 -   9  0  0  1  1  6  6
+  11 -   9  0  0  1  1  8  8
+  12 -   5  0  0  1  1  2  2
+  13 -   5 14 15  5  2  9 11 13 14
+  14 -  13 16 17  4  2  9 11 14 14
+  15 -  13  0  0  1  1 13 13
+  16 -  14  0  0  1  1  9  9
+  17 -  14 18 19  3  2 10 11 14 14
+  18 -  17  0  0  1  1 10 10
+  19 -  17  0  0  2  2 11 11 14 14
+  20 -   3  0  0  1  1  7  7
+  21 -   3  0  0  1  1 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            236
+Total number of atoms read in:              1745
+Total number of ignored atom records:         69
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              COMPND   2 MOLECULE: PROBABLE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+         236  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2127
+ selectset done           0
+ eigen done           0
+ tau           1   2.03836656              81         103         130         151         174         202         225
+ #popped           2           1
+ #selectset contacts        2127
+ selectset done           1
+ eigen done           1
+ tau           3   1.30689573             113
+ #popped           4           2
+ #selectset contacts        2127
+ selectset done           2
+ eigen done           2
+ tau           5   2.08740473              81
+ #popped           6           2
+ #selectset contacts        2127
+ selectset done           2
+ eigen done           2
+ tau           7   1.22803915              50          65
+ #popped           8           2
+ #selectset contacts        2127
+ selectset done           2
+ eigen done           2
+ tau           9  0.567444205              50
+ #popped          10           2
+ #selectset contacts        2127
+ selectset done           2
+ eigen done           2
+ tau          11  0.459456444              18          30
+ #popped          12           2
+ #selectset contacts        2127
+ selectset done           2
+ eigen done           2
+ tau          13  0.773540556              18
+ #popped          15           2
+ #selectset contacts        2127
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2127
+ selectset done           1
+ eigen done           1
+ tau          15   1.29257643             174         214
+ #popped          16           1
+ #selectset contacts        2127
+ selectset done           1
+ eigen done           1
+ tau          17  0.656949818             174
+ #popped          18           1
+ #selectset contacts        2127
+ selectset done           1
+ eigen done           1
+ tau          19  0.434276998             130
+ #popped          21           1
+ #selectset contacts        2127
+ selectset done           1
+ eigen done           1
+ tau          21  0.782160878             163
+ #popped           3           0
+ #selectset contacts        2127
+ selectset done           0
+ eigen done           0
+ tau          23   4.39572811             103         140         151
+ #popped          24           1
+ #selectset contacts        2127
+ selectset done           1
+ eigen done           1
+ tau          25   1.67537940             103
+ #popped          26           1
+ #selectset contacts        2127
+ selectset done           1
+ eigen done           1
+ tau          27   1.01464641              91
+ #popped          25           0
+ #selectset contacts        2127
+ selectset done           0
+ eigen done           0
+ tau          29   1.56037581             140
+ #popped          31           0
+ #selectset contacts        2127
+ selectset done           0
+ eigen done           0
+ tau          31  0.608100176             202
+ #popped          32           0
+ #selectset contacts        2127
+ selectset done           0
+ eigen done           0
+ tau          33  0.591365397             187
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          15-NOV-11   3UN1              COMPND   2 MOLECULE: PROBABLE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    R.AGARWAL,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+           0
+         236
+         236  residues read 3UN1.dssp                                                   
+  grow short strand           5           9
+  grow short strand          46          50
+  grow short strand          75          78
+  exclude short helix          88          90
+  grow short strand         224         227
+  exclude short helix         231         233
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  2  6  5  8  9 10 11 14 13  7 12
+   2     1  4  5 12  1  3  4  2  6  5  8  9 10 11 14 13
+   3     1 24 25  2  7 12
+   4     2  6  7  7  1  3  4  2  6  5  8
+   5     2 16 17  5  9 10 11 14 13
+   6     4  8  9  6  1  3  4  2  6  5
+   7     4  0  0  1  8
+   8     6 10 11  5  1  3  4  2  6
+   9     6  0  0  1  5
+  10     8 12 13  4  1  3  4  2
+  11     8  0  0  1  6
+  12    10 14 15  3  1  3  4
+  13    10  0  0  1  2
+  14    12  0  0  1  1
+  15    12  0  0  2  3  4
+  16     5 18 19  4  9 10 11 14
+  17     5  0  0  1 13
+  18    16 20 21  3  9 10 11
+  19    16  0  0  1 14
+  20    18  0  0  1  9
+  21    18 22 23  2 10 11
+  22    21  0  0  1 10
+  23    21  0  0  1 11
+  24     3  0  0  1  7
+  25     3  0  0  1 12
+  26     0  0  0  1  7
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1  7
+  30     0  0  0  0
+  31     0  0  0  1 12
+  32     0  0  0  1 12
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1 12
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 12  3  1  6  8 11 13 14
+   3 -   1 24 25  2  2  7  7 12 12
+   4 -   2  6  7  7  2  1  6  8  8
+   5 -   2 16 17  5  2  9 11 13 14
+   6 -   4  8  9  6  1  1  6
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  5  2  1  4  6  6
+   9 -   6  0  0  1  1  5  5
+  10 -   8 12 13  4  1  1  4
+  11 -   8  0  0  1  1  6  6
+  12 -  10 14 15  3  2  1  1  3  4
+  13 -  10  0  0  1  1  2  2
+  14 -  12  0  0  1  1  1  1
+  15 -  12  0  0  2  1  3  4
+  16 -   5 18 19  4  2  9 11 14 14
+  17 -   5  0  0  1  1 13 13
+  18 -  16 20 21  3  1  9 11
+  19 -  16  0  0  1  1 14 14
+  20 -  18  0  0  1  1  9  9
+  21 -  18 22 23  2  1 10 11
+  22 -  21  0  0  1  1 10 10
+  23 -  21  0  0  1  1 11 11
+  24 -   3  0  0  1  1  7  7
+  25 -   3  0  0  1  1 12 12
+
+ CHAIN : 3UN1A
+ CHAIN : 3UN1B
+ CHAIN : 3UN1C
+ CHAIN : 3UN1D
+

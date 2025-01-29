@@ -1,0 +1,555 @@
+A length: 278
+B length: 100
+C length: 9
+D length: 197
+E length: 197
+# 4 chains A B D E
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            278
+Total number of atoms read in:              2275
+Total number of ignored atom records:        149
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              COMPND   2 MOLECULE: HLA-CW3 (HEAVY CHAIN);                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+         278  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2407
+ selectset done           0
+ eigen done           0
+ tau           1   13.8754549             181
+ #popped           2           1
+ #selectset contacts        2407
+ selectset done           1
+ eigen done           1
+ tau           3   1.17262876             165
+ #popped           4           1
+ #selectset contacts        2407
+ selectset done           1
+ eigen done           1
+ tau           5   1.08258688              10          21          71          96         115         154
+ #popped           6           2
+ #selectset contacts        2407
+ selectset done           2
+ eigen done           2
+ tau           7   2.19426274             115
+ #popped           8           2
+ #selectset contacts        2407
+ selectset done           2
+ eigen done           2
+ tau           9   1.15482712              54          71
+ #popped          10           2
+ #selectset contacts        2407
+ selectset done           2
+ eigen done           2
+ tau          11  0.618175387              54
+ #popped          12           2
+ #selectset contacts        2407
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           7           1
+ #selectset contacts        2407
+ selectset done           1
+ eigen done           1
+ tau          13  0.876266599              21
+ #popped          15           1
+ #selectset contacts        2407
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        2407
+ selectset done           0
+ eigen done           0
+ tau          15  0.797962129             231         242
+ #popped          16           0
+ #selectset contacts        2407
+ selectset done           0
+ eigen done           0
+ tau          17  0.470557958             204         214
+ #popped          18           0
+ #selectset contacts        2407
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              COMPND   2 MOLECULE: HLA-CW3 (HEAVY CHAIN);                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+           0
+         278
+         278  residues read 1EFX.dssp                                                   
+  grow short strand          45          47
+  exclude short helix          50          53
+  grow short strand         122         126
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+  grow short strand         229         230
+  grow short strand         234         235
+  grow short strand         241         242
+ crowded segment excluded!
+  exclude short helix         253         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  3  4  6  7  5 11  8  9 10 12 13 14 15 16 17 19 20 21 18
+   2     1  4  5 12  1  2  3  4  6  7  5 11  8  9 10 12
+   3     1 16 17  9 13 14 15 16 17 19 20 21 18
+   4     2  6  7 11  1  2  3  4  6  7  5 11  8  9 10
+   5     2  0  0  1 12
+   6     4  8  9  8  1  2  3  4  6  7  5 11
+   7     4  0  0  3  8  9 10
+   8     6 10 11  7  1  2  3  4  6  7  5
+   9     6  0  0  1 11
+  10     8 12 13  6  1  2  3  4  6  7
+  11     8  0  0  1  5
+  12    10  0  0  4  1  2  3  4
+  13    10  0  0  2  6  7
+  14     0  0  0  0
+  15     0  0  0  3  8  9 10
+  16     3  0  0  8 13 14 15 16 17 19 20 21
+  17     3  0  0  1 18
+  18     0  0  0  8 13 14 15 16 17 19 20 21
+  19     0  0  0  0
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 12  1  1 12
+   3 *   1 14 15  9  1 13 21
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  8  2  1  7 11 11
+   7 -   4  0  0  3  1  8 10
+   8 -   6 10 11  7  1  1  7
+   9 -   6  0  0  1  1 11 11
+  10 -   8 12 13  6  2  1  4  6  7
+  11 -   8  0  0  1  1  5  5
+  12 -  10  0  0  4  1  1  4
+  13 -  10  0  0  2  1  6  7
+  14 -   3  0  0  8  2 13 17 19 21
+  15 -   3  0  0  1  1 18 18
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            100
+Total number of atoms read in:               838
+Total number of ignored atom records:         55
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              COMPND   2 MOLECULE: HLA-CW3 (HEAVY CHAIN);                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+         100  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           1  0.909274161              53          64
+ #popped           2           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           3  0.541577995              75
+ #popped           4           1
+ #selectset contacts         781
+ selectset done           1
+ eigen done           1
+ tau           5  0.495766222              10
+ #popped           7           1
+ #selectset contacts         781
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           5           0
+ #selectset contacts         781
+ selectset done           0
+ eigen done           0
+ tau           7  0.495283008              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              COMPND   2 MOLECULE: HLA-CW3 (HEAVY CHAIN);                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+           0
+         100
+         100  residues read 1EFX.dssp                                                   
+  grow short strand          45          46
+  grow short strand          51          52
+  grow short strand          56          57
+  grow short strand          70          71
+  grow short strand          92          95
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  7  8  9 10  6
+   2     1  4  5  9  1  2  3  4  5  7  8  9 10
+   3     1  0  0  1  6
+   4     2  6  7  7  1  2  3  4  5  7  8
+   5     2  8  9  2  9 10
+   6     4  0  0  1  1
+   7     4  0  0  6  2  3  4  5  7  8
+   8     5  0  0  1  9
+   9     5  0  0  1 10
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  9  2  1  5  7 10
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  7  2  1  5  7  8
+   5 -   2  8  9  2  1  9 10
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  6  2  2  5  7  8
+   8 -   5  0  0  1  1  9  9
+   9 -   5  0  0  1  1 10 10
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            197
+Total number of atoms read in:              1528
+Total number of ignored atom records:         91
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              COMPND   2 MOLECULE: HLA-CW3 (HEAVY CHAIN);                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+         197  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1634
+ selectset done           0
+ eigen done           0
+ tau           1   4.14646530              99
+ #popped           2           1
+ #selectset contacts        1634
+ selectset done           1
+ eigen done           1
+ tau           3  0.875495732              24          35          46          59          76          89
+ #popped           4           2
+ #selectset contacts        1634
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1634
+ selectset done           1
+ eigen done           1
+ tau           5  0.585050821              59
+ #popped           6           1
+ #selectset contacts        1634
+ selectset done           1
+ eigen done           1
+ tau           7  0.417724997              49
+ #popped           3           0
+ #selectset contacts        1634
+ selectset done           0
+ eigen done           0
+ tau           9  0.814063728             125         135         145         158         174         187
+ #popped          10           1
+ #selectset contacts        1634
+ selectset done           1
+ eigen done           1
+ tau          11  0.438958555             125
+ #popped          12           2
+ #selectset contacts        1634
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          13           1
+ #selectset contacts        1634
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped          11           0
+ #selectset contacts        1634
+ selectset done           0
+ eigen done           0
+ tau          13  0.730093718             148         158
+ #popped          14           0
+ #selectset contacts        1634
+ selectset done           0
+ eigen done           0
+ tau          15  0.459349602             148
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              COMPND   2 MOLECULE: HLA-CW3 (HEAVY CHAIN);                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+           0
+         197
+         197  residues read 1EFX.dssp                                                   
+  grow short strand           6          10
+  grow short strand          14          16
+  grow short strand          51          53
+  exclude short helix          68          70
+  grow short strand         106         110
+  grow short strand         114         115
+  grow short strand         145         148
+  grow short strand         150         153
+  grow short strand         156         158
+ crowded segment excluded!
+  grow short strand         181         185
+  grow short strand         192         196
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  3  4  5  8  9  6  7 10 11 12 16 17 19 13 14 18 15
+   2     1  4  5  9  1  2  3  4  5  8  9  6  7
+   3     1 10 11 10 10 11 12 16 17 19 13 14 18 15
+   4     2  0  0  7  1  2  3  4  5  8  9
+   5     2  0  0  2  6  7
+   6     0  0  0  2  6  7
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  2  6  7
+  10     3 12 13  6 10 11 12 16 17 19
+  11     3 14 15  4 13 14 18 15
+  12    10  0  0  3 10 11 12
+  13    10  0  0  3 16 17 19
+  14    11 16 17  3 13 14 18
+  15    11  0  0  1 15
+  16    14  0  0  2 13 14
+  17    14  0  0  1 18
+   1 +   0  2  3 19  1  1 19
+   2 *   1  4  5  9  1  1  9
+   3 *   1  6  7 10  1 10 19
+   4 -   2  0  0  7  2  1  5  8  9
+   5 -   2  0  0  2  1  6  7
+   6 -   3  8  9  6  3 10 12 16 17 19 19
+   7 -   3 10 11  4  2 13 15 18 18
+   8 -   6  0  0  3  1 10 12
+   9 -   6  0  0  3  2 16 17 19 19
+  10 -   7 12 13  3  2 13 14 18 18
+  11 -   7  0  0  1  1 15 15
+  12 -  10  0  0  2  1 13 14
+  13 -  10  0  0  1  1 18 18
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            197
+Total number of atoms read in:              1528
+Total number of ignored atom records:         61
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              COMPND   2 MOLECULE: HLA-CW3 (HEAVY CHAIN);                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+         197  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1636
+ selectset done           0
+ eigen done           0
+ tau           1   4.70956516              99
+ #popped           2           1
+ #selectset contacts        1636
+ selectset done           1
+ eigen done           1
+ tau           3  0.610861123              11          21          62
+ #popped           4           2
+ #selectset contacts        1636
+ selectset done           2
+ eigen done           2
+ tau           5   1.66825604              35          46
+ #popped           6           2
+ #selectset contacts        1636
+ selectset done           2
+ eigen done           2
+ tau           7  0.495522380              11
+ #popped           9           2
+ #selectset contacts        1636
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1636
+ selectset done           1
+ eigen done           1
+ tau           9   1.80169010              77          88
+ #popped          10           1
+ #selectset contacts        1636
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1636
+ selectset done           0
+ eigen done           0
+ tau          11  0.785374224             125         135         145         158         174         187
+ #popped          12           1
+ #selectset contacts        1636
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped          13           0
+ #selectset contacts        1636
+ selectset done           0
+ eigen done           0
+ tau          13   1.10259056             148         158
+ #popped          14           0
+ #selectset contacts        1636
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           10-FEB-00   1EFX              COMPND   2 MOLECULE: HLA-CW3 (HEAVY CHAIN);                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.C.BOYINGTON,S.A.MOTYKA,P.SCHUCK,A.G.BROOKS,P.D.SUN                  
+           0
+         197
+         197  residues read 1EFX.dssp                                                   
+  grow short strand           6          10
+  grow short strand          15          16
+  grow short strand          51          53
+  exclude short helix          68          70
+  grow short strand          94          96
+ crowded segment excluded!
+  grow short strand          98          99
+  grow short strand         106         110
+  grow short strand         114         115
+  grow short strand         145         148
+  grow short strand         192         196
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  3  6  7  4  5  2  8  9 10 11 12 15 16 17 13 14
+   2     1  4  5  8  1  3  6  7  4  5  2  8
+   3     1 12 13  9  9 10 11 12 15 16 17 13 14
+   4     2  6  7  6  1  3  6  7  4  5
+   5     2  0  0  2  2  8
+   6     4  8  9  4  1  3  6  7
+   7     4  0  0  2  4  5
+   8     6  0  0  1  1
+   9     6  0  0  3  3  6  7
+  10     0  0  0  2  2  8
+  11     0  0  0  0
+  12     3  0  0  7  9 10 11 12 15 16 17
+  13     3  0  0  2 13 14
+  14     0  0  0  2 13 14
+  15     0  0  0  0
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5  8  1  1  8
+   3 *   1 10 11  9  1  9 17
+   4 -   2  6  7  6  2  1  1  3  7
+   5 -   2  0  0  2  2  2  2  8  8
+   6 -   4  8  9  4  3  1  1  3  3  6  7
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  3  2  3  3  6  7
+  10 -   3  0  0  7  2  9 12 15 17
+  11 -   3  0  0  2  1 13 14
+
+ CHAIN : 1EFXA
+ CHAIN : 1EFXB
+ CHAIN : 1EFXD
+ CHAIN : 1EFXE
+

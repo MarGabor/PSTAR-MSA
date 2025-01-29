@@ -1,0 +1,32 @@
+# Job: kringle
+# Query: 2HPPP
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4BVV-A 10.6  2.2   73    81   37   MOLECULE: APOLIPOPROTEIN(A);                                         
+
+# Pairwise alignments
+
+No 1: Query=2HPPP Sbjct=4BVVA Z-score=10.6
+
+DSSP  -LLLLLLLLLLLLLLLLLLLLLLLLLLLLLllLLLLL--llllLLLLLLLLLLLLLLLLL
+Query -CVPDRGREYRGRLAVTTSGSRCLAWSSEQakALSKD--qdfnPAVPLAENFCRNPDGDE   57
+ident  |    |  |||  | |  |  |  |                     |  | ||||||| 
+Sbjct dCMFGNGKGYRGKKATTVTGTPCQEWAAQE-pHRHSTfipgtnKWAGLEKNYCRNPDGDI   59
+DSSP  lLLLLLLLLLLLLLLLLLLLLLLLLLLLLL-lLLLLLllllllLLLLLLLLLLLLLLLLL
+
+DSSP  LLLEEELLLLLLLEEELLLLLL
+Query EGAWCYVADQPGDFEYCNLNYC   79
+ident  | |||       | ||    |
+Sbjct NGPWCYTMNPRKLFDYCDIPLC   81
+DSSP  LLLEEELLLLLLLEEELLLLLL
+
+
+# Structural equivalences
+   1: 2HPP-P 4BVV-A     1 -  29 <=>    2 -  30   (CYS  301  - GLN  329  <=> CYS    1  - GLU   29 )                          
+   1: 2HPP-P 4BVV-A    32 -  36 <=>   32 -  36   (ALA  332  - ASP  336  <=> HIS   31  - THR   35 )                          
+   1: 2HPP-P 4BVV-A    41 -  79 <=>   43 -  81   (PRO  341  - CYS  379  <=> LYS   42  - CYS   80 )                          
+
+# Translation-rotation matrices
+-matrix  "2HPP-P 4BVV-A  U(1,.)  -0.931074 -0.074395  0.357165          143.917526"
+-matrix  "2HPP-P 4BVV-A  U(2,.)  -0.273086  0.791286 -0.547074           31.930965"
+-matrix  "2HPP-P 4BVV-A  U(3,.)  -0.241921 -0.606903 -0.757062           35.109344"
+

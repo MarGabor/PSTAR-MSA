@@ -1,0 +1,315 @@
+A length: 182
+Q length: 188
+# 2 chains A Q
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            183
+Total number of atoms read in:              1491
+Total number of ignored atom records:        112
+ HEADER    TRANSFERASE                             20-DEC-23   8XJ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.T.AROLD,U.F.S.HAMEED                                                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             20-DEC-23   8XJ5              COMPND   2 MOLECULE: L-ORNITHINE N5-ACETYLTRANSFERASE NATA1;                    SOURCE   2 ORGANISM_SCIENTIFIC: ARABIDOPSIS THALIANA;                           AUTHOR    S.T.AROLD,U.F.S.HAMEED                                                
+         183  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1514
+ selectset done           0
+ eigen done           0
+ tau           1   4.89753294             160
+ #popped           2           1
+ #selectset contacts        1514
+ selectset done           1
+ eigen done           1
+ tau           3   3.00096655             141
+ #popped           4           1
+ #selectset contacts        1514
+ selectset done           1
+ eigen done           1
+ tau           5   1.86017513              46          56          88         109         120
+ #popped           6           2
+ #selectset contacts        1514
+ selectset done           2
+ eigen done           2
+ tau           7   1.29896510              19          46
+ #popped           8           3
+ #selectset contacts        1514
+ selectset done           3
+ eigen done           3
+ tau           9  0.905515432              66
+ #popped          10           4
+ #selectset contacts        1514
+ selectset done           4
+ eigen done           4
+ tau          11  0.315014571              19
+ #popped          11           3
+ #selectset contacts        1514
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           9           2
+ #selectset contacts        1514
+ selectset done           2
+ eigen done           2
+ tau          13   2.61576486              35
+ #popped           7           1
+ #selectset contacts        1514
+ selectset done           1
+ eigen done           1
+ tau          15   1.05543244             109         130
+ #popped          16           1
+ #selectset contacts        1514
+ selectset done           1
+ eigen done           1
+ tau          17  0.838033855             109
+ #popped          18           1
+ #selectset contacts        1514
+ selectset done           1
+ eigen done           1
+ tau          19  0.289950997              98
+ #popped          20           1
+ #selectset contacts        1514
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           3           0
+ #selectset contacts        1514
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             20-DEC-23   8XJ5              COMPND   2 MOLECULE: L-ORNITHINE N5-ACETYLTRANSFERASE NATA1;                    SOURCE   2 ORGANISM_SCIENTIFIC: ARABIDOPSIS THALIANA;                           AUTHOR    S.T.AROLD,U.F.S.HAMEED                                                
+           0
+         183
+         183  residues read 8XJ5.dssp                                                   
+  exclude short helix          30          32
+  grow short helix          37          43
+  exclude short helix          72          75
+  exclude short helix         113         115
+  grow short strand         161         162
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  4  3  5  6  7  8  9 10 11 12
+   2     1  4  5  9  1  2  4  3  5  6  7  8  9
+   3     1  0  0  3 10 11 12
+   4     2  6  7  7  1  2  4  3  5  6  7
+   5     2  0  0  2  8  9
+   6     4  8  9  4  1  2  4  3
+   7     4 16 17  3  5  6  7
+   8     6 12 13  3  1  2  4
+   9     6  0  0  1  3
+  10     0  0  0  3  1  2  4
+  11     0  0  0  0
+  12     8  0  0  2  1  2
+  13     8  0  0  1  4
+  14     0  0  0  0
+  15     0  0  0  1  3
+  16     7 20 21  2  5  6
+  17     7  0  0  1  7
+  18     0  0  0  2  5  6
+  19     0  0  0  0
+  20    16  0  0  1  5
+  21    16  0  0  1  6
+   1 +   0  2  3 12  1  1 12
+   2 +   1  4  5  9  1  1  9
+   3 =   1  0  0  3  1 10 12
+   4 *   2  6  7  7  1  1  7
+   5 =   2  0  0  2  1  8  9
+   6 -   4  8  9  4  1  1  4
+   7 -   4 12 13  3  1  5  7
+   8 -   6 10 11  3  2  1  2  4  4
+   9 -   6  0  0  1  1  3  3
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  1  1  4  4
+  12 -   7 14 15  2  1  5  6
+  13 -   7  0  0  1  1  7  7
+  14 -  12  0  0  1  1  5  5
+  15 -  12  0  0  1  1  6  6
+
+ CHAIN Q
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            189
+Total number of atoms read in:              1534
+Total number of ignored atom records:        106
+ HEADER    TRANSFERASE                             20-DEC-23   8XJ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.T.AROLD,U.F.S.HAMEED                                                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             20-DEC-23   8XJ5              COMPND   2 MOLECULE: L-ORNITHINE N5-ACETYLTRANSFERASE NATA1;                    SOURCE   2 ORGANISM_SCIENTIFIC: ARABIDOPSIS THALIANA;                           AUTHOR    S.T.AROLD,U.F.S.HAMEED                                                
+         189  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1565
+ selectset done           0
+ eigen done           0
+ tau           1   3.87465930             148
+ #popped           2           1
+ #selectset contacts        1565
+ selectset done           1
+ eigen done           1
+ tau           3   1.46665823              16          47
+ #popped           4           2
+ #selectset contacts        1565
+ selectset done           2
+ eigen done           2
+ tau           5   1.85679734              16          57          94         115         130
+ #popped           6           3
+ #selectset contacts        1565
+ selectset done           3
+ eigen done           3
+ tau           7  0.917770088              94
+ #popped           8           3
+ #selectset contacts        1565
+ selectset done           3
+ eigen done           3
+ tau           9   1.42318809              68          81
+ #popped          10           3
+ #selectset contacts        1565
+ selectset done           3
+ eigen done           3
+ tau          11  0.421221048              16
+ #popped          13           3
+ #selectset contacts        1565
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        1565
+ selectset done           2
+ eigen done           2
+ tau          13  0.601774454              57
+ #popped          15           2
+ #selectset contacts        1565
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        1565
+ selectset done           1
+ eigen done           1
+ tau          15   1.73660254              36
+ #popped          16           1
+ #selectset contacts        1565
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1565
+ selectset done           0
+ eigen done           0
+ tau          17   4.88635588             166
+ #popped          19           0
+ #selectset contacts        1565
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             20-DEC-23   8XJ5              COMPND   2 MOLECULE: L-ORNITHINE N5-ACETYLTRANSFERASE NATA1;                    SOURCE   2 ORGANISM_SCIENTIFIC: ARABIDOPSIS THALIANA;                           AUTHOR    S.T.AROLD,U.F.S.HAMEED                                                
+           0
+         189
+         189  residues read 8XJ5.dssp                                                   
+  exclude short helix          31          33
+  grow short helix          38          44
+  exclude short helix          78          81
+  exclude short helix         119         121
+  grow short strand         167         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  6  7  8  2  3  9 10 11 12
+   2     1  4  5  8  1  4  5  6  7  8  2  3
+   3     1 18 19  4  9 10 11 12
+   4     2  6  7  6  1  4  5  6  7  8
+   5     2 16 17  2  2  3
+   6     4 12 13  2  1  4
+   7     4  0  0  4  5  6  7  8
+   8     0  0  0  2  1  4
+   9     0  0  0  0
+  10     0  0  0  2  1  4
+  11     0  0  0  0
+  12     6  0  0  1  1
+  13     6  0  0  1  4
+  14     0  0  0  0
+  15     0  0  0  4  5  6  7  8
+  16     5  0  0  1  2
+  17     5  0  0  1  3
+  18     3  0  0  1  9
+  19     3  0  0  3 10 11 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  1  1  8
+   3 *   1 12 13  4  1  9 12
+   4 -   2  6  7  6  2  1  1  4  8
+   5 -   2 10 11  2  1  2  3
+   6 -   4  8  9  2  2  1  1  4  4
+   7 -   4  0  0  4  1  5  8
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  4  4
+  10 -   5  0  0  1  1  2  2
+  11 -   5  0  0  1  1  3  3
+  12 -   3  0  0  1  1  9  9
+  13 -   3  0  0  3  1 10 12
+
+ CHAIN : 8XJ5A
+ CHAIN : 8XJ5Q
+

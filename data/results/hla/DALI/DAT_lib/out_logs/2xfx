@@ -1,0 +1,301 @@
+A length: 277
+B length: 99
+C length: 11
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            277
+Total number of atoms read in:              2274
+Total number of ignored atom records:        199
+ HEADER    IMMUNE SYSTEM                           28-MAY-10   2XFX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    I.K.MACDONALD,M.HARKIOLAKI,L.HUNT,W.I.MORRISON,T.CONNELLEY,           
+  calculate residue outside grid:         196
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           28-MAY-10   2XFX              COMPND   2 MOLECULE: MHC CLASS 1;                                               SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    I.K.MACDONALD,M.HARKIOLAKI,L.HUNT,W.I.MORRISON,T.CONNELLEY,           
+         277  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2481
+ selectset done           0
+ eigen done           0
+ tau           1   2.73278952             187         204         214         232         243
+ #popped           2           1
+ #selectset contacts        2481
+ selectset done           1
+ eigen done           1
+ tau           3   3.91235042             180
+ #popped           4           2
+ #selectset contacts        2481
+ selectset done           2
+ eigen done           2
+ tau           5   1.37314689              10          21          72          96         115         152
+ #popped           6           3
+ #selectset contacts        2481
+ selectset done           3
+ eigen done           3
+ tau           7   1.51953077             115
+ #popped           8           4
+ #selectset contacts        2481
+ selectset done           4
+ eigen done           4
+ tau           9   1.21150947              54          72
+ #popped          10           4
+ #selectset contacts        2481
+ selectset done           4
+ eigen done           4
+ tau          11  0.887028813              34          54
+ #popped          12           5
+ #selectset contacts        2481
+ selectset done           5
+ eigen done           5
+ tau          13   0.00000000    
+ #popped          13           4
+ #selectset contacts        2481
+ selectset done           4
+ eigen done           4
+ tau          13  0.785308421              44
+ #popped           9           3
+ #selectset contacts        2481
+ selectset done           3
+ eigen done           3
+ tau          15   1.34297514             166
+ #popped           7           2
+ #selectset contacts        2481
+ selectset done           2
+ eigen done           2
+ tau          17   1.19198394             134
+ #popped          18           2
+ #selectset contacts        2481
+ selectset done           2
+ eigen done           2
+ tau          19  0.835271776              21
+ #popped          21           2
+ #selectset contacts        2481
+ selectset done           2
+ eigen done           2
+ tau          21  0.797328413              83
+ #popped          23           2
+ #selectset contacts        2481
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped           5           1
+ #selectset contacts        2481
+ selectset done           1
+ eigen done           1
+ tau          23  0.437447846             214
+ #popped           3           0
+ #selectset contacts        2481
+ selectset done           0
+ eigen done           0
+ tau          25  0.842754364             257
+ #popped          26           1
+ #selectset contacts        2481
+ selectset done           1
+ eigen done           1
+ tau          27  0.272853643             232
+ #popped          28           1
+ #selectset contacts        2481
+ selectset done           1
+ eigen done           1
+ tau          29   7.42087555             204
+ #popped          27           0
+ #selectset contacts        2481
+ selectset done           0
+ eigen done           0
+ tau          31  0.422428966             267
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           28-MAY-10   2XFX              COMPND   2 MOLECULE: MHC CLASS 1;                                               SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    I.K.MACDONALD,M.HARKIOLAKI,L.HUNT,W.I.MORRISON,T.CONNELLEY,           
+           0
+         277
+         277  residues read 2XFX.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          54
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         214         218
+  grow short strand         229         230
+  grow short strand         234         235
+  exclude short helix         254         256
+  grow short strand         258         262
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  6  7  4  5 11 12  8  9 10 17 13 14 15 16 18 19 20
+   2     1  4  5 13  1  2  3  6  7  4  5 11 12  8  9 10 17
+   3     1 26 27  7 13 14 15 16 18 19 20
+   4     2  6  7 12  1  2  3  6  7  4  5 11 12  8  9 10
+   5     2  0  0  1 17
+   6     4  8  9  9  1  2  3  6  7  4  5 11 12
+   7     4 18 19  3  8  9 10
+   8     6 10 11  7  1  2  3  6  7  4  5
+   9     6 16 17  2 11 12
+  10     8 12 13  6  1  2  3  6  7  4
+  11     8  0  0  1  5
+  12    10  0  0  5  1  2  3  6  7
+  13    10  0  0  1  4
+  14     0  0  0  0
+  15     0  0  0  1  4
+  16     9  0  0  1 11
+  17     9  0  0  1 12
+  18     7  0  0  2  8  9
+  19     7  0  0  1 10
+  20     0  0  0  0
+  21     0  0  0  2  8  9
+  22     0  0  0  0
+  23     0  0  0  2  8  9
+  24     0  0  0  0
+  25     0  0  0  1 17
+  26     3 28 29  5 13 14 15 16 18
+  27     3 32 33  2 19 20
+  28    26 30 31  4 13 14 15 16
+  29    26  0  0  1 18
+  30    28  0  0  2 13 14
+  31    28  0  0  2 15 16
+  32    27  0  0  1 19
+  33    27  0  0  1 20
+   1 +   0  2  3 20  1  1 20
+   2 +   1  4  5 13  2  1 12 17 17
+   3 *   1 18 19  7  2 13 16 18 20
+   4 *   2  6  7 12  1  1 12
+   5 =   2  0  0  1  1 17 17
+   6 -   4  8  9  9  2  1  7 11 12
+   7 -   4 16 17  3  1  8 10
+   8 -   6 10 11  7  1  1  7
+   9 -   6 14 15  2  1 11 12
+  10 -   8 12 13  6  2  1  4  6  7
+  11 -   8  0  0  1  1  5  5
+  12 -  10  0  0  5  2  1  3  6  7
+  13 -  10  0  0  1  1  4  4
+  14 -   9  0  0  1  1 11 11
+  15 -   9  0  0  1  1 12 12
+  16 -   7  0  0  2  1  8  9
+  17 -   7  0  0  1  1 10 10
+  18 -   3 20 21  5  2 13 16 18 18
+  19 -   3 24 25  2  1 19 20
+  20 -  18 22 23  4  1 13 16
+  21 -  18  0  0  1  1 18 18
+  22 -  20  0  0  2  1 13 14
+  23 -  20  0  0  2  1 15 16
+  24 -  19  0  0  1  1 19 19
+  25 -  19  0  0  1  1 20 20
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               830
+Total number of ignored atom records:         77
+ HEADER    IMMUNE SYSTEM                           28-MAY-10   2XFX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    I.K.MACDONALD,M.HARKIOLAKI,L.HUNT,W.I.MORRISON,T.CONNELLEY,           
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           28-MAY-10   2XFX              COMPND   2 MOLECULE: MHC CLASS 1;                                               SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    I.K.MACDONALD,M.HARKIOLAKI,L.HUNT,W.I.MORRISON,T.CONNELLEY,           
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         773
+ selectset done           0
+ eigen done           0
+ tau           1  0.928382337              11          24          39          49          67
+ #popped           2           1
+ #selectset contacts         773
+ selectset done           1
+ eigen done           1
+ tau           3   0.00000000    
+ #popped           3           0
+ #selectset contacts         773
+ selectset done           0
+ eigen done           0
+ tau           3  0.710526347              24          49
+ #popped           4           0
+ #selectset contacts         773
+ selectset done           0
+ eigen done           0
+ tau           5   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           28-MAY-10   2XFX              COMPND   2 MOLECULE: MHC CLASS 1;                                               SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    I.K.MACDONALD,M.HARKIOLAKI,L.HUNT,W.I.MORRISON,T.CONNELLEY,           
+           0
+          99
+          99  residues read 2XFX.dssp                                                   
+  grow short strand          45          46
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  5  6  7  8  9  4
+   2     1  0  0  6  1  2  3  5  6  7
+   3     1  4  5  3  8  9  4
+   4     3  0  0  2  8  9
+   5     3  0  0  1  4
+   1 *   0  2  3  9  1  1  9
+   2 -   1  0  0  6  2  1  3  5  7
+   3 -   1  4  5  3  2  4  4  8  9
+   4 -   3  0  0  2  1  8  9
+   5 -   3  0  0  1  1  4  4
+
+ CHAIN : 2XFXA
+ CHAIN : 2XFXB
+

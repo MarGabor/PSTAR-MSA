@@ -1,0 +1,39 @@
+# Job: uce
+# Query: 4GPRA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4CCG-A 24.2  1.4  149   157   38   MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 T;                         
+
+# Pairwise alignments
+
+No 1: Query=4GPRA Sbjct=4CCGA Z-score=24.2
+
+DSSP  ---LHHHHHHHHHHHHHHHHLLLLLEEEEEL-LLLLlEEEEEEELLLLLLLLLLEEEEEE
+Query ---AAMAMRRIQKELREIQQDPPCNCSAGPV-GDDIfHWTATITGPDDSPYQGGLFFLDV   56
+ident          |   ||      ||                 | | |    ||  | | | |
+Sbjct ytqGMQRASRLKRELHMLATEPPPGITCWQDkDQMD-DLRAQILGGANTPYEKGVFKLEV   59
+DSSP  lllLHHHHHHHHHHHHHHHHLLLLLEEEEELlLLLL-LEEEEEELLLLLLLLLLEEEEEE
+
+DSSP  ELLLLLLLLLLEEEELLLLLLLLLLLLLLLLLHHHL----LLLLLLLLHHHHHHHHHHHH
+Query HFPVDYPFKAPRVTFMTKVYHPNINKNGVICLDILK----DQWSPALTLSRVLLSISSLL  112
+ident   |  |||  |   | |  |||||   | |||| ||      | | |    || ||  | 
+Sbjct IIPERYPFEPPQIRFLTPIYHPNIDSAGRICLDVLKlppkGAWRPSLNIATVLTSIQLLM  119
+DSSP  ELLLLLLLLLLEEEELLLLLLLLLLLLLLLLLHHHLllllLLLLLLLLHHHHHHHHHHHH
+
+DSSP  HLLLLLLLLLHHHHHHHHHLHHHHHHHHHHHHHHHLLL
+Query TDPNPSDPLDPEVANVLRANKKQFEDTAREWTRMYARP  150
+ident   ||| |||          ||  |   || ||   || 
+Sbjct SEPNPDDPLMADISSEFKYNKPAFLKNARQWTEKHARQ  157
+DSSP  HLLLLLLLLLHHHHHHHHHLHHHHHHHHHHHHHHHLLL
+
+
+# Structural equivalences
+   1: 4GPR-A 4CCG-A     1 -  28 <=>    4 -  31   (ALA   -1  - VAL   26  <=> GLY    0  - ASP   27 )                          
+   1: 4GPR-A 4CCG-A    29 -  32 <=>   33 -  36   (GLY   27  - ILE   30  <=> ASP   29  - ASP   32 )                          
+   1: 4GPR-A 4CCG-A    34 -  92 <=>   37 -  95   (HIS   32  - LYS   90  <=> ASP   33  - LYS   91 )                          
+   1: 4GPR-A 4CCG-A    93 - 150 <=>  100 - 157   (ASP   91  - PRO  148  <=> GLY   96  - GLN  153 )                          
+
+# Translation-rotation matrices
+-matrix  "4GPR-A 4CCG-A  U(1,.)  -0.554950 -0.668307 -0.495375           59.681644"
+-matrix  "4GPR-A 4CCG-A  U(2,.)   0.124119 -0.655339  0.745068           30.535120"
+-matrix  "4GPR-A 4CCG-A  U(3,.)  -0.822572  0.351990  0.446630          -22.363110"
+

@@ -1,0 +1,621 @@
+A length: 145
+B length: 146
+C length: 143
+D length: 144
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1099  CA BARG A 142 
+ Alternate location indication is not blank or A, ignore atom: 1103  CB BARG A 142 
+ Alternate location indication is not blank or A, ignore atom: 1105  CG BARG A 142 
+ Alternate location indication is not blank or A, ignore atom: 1107  CD BARG A 142 
+ Alternate location indication is not blank or A, ignore atom: 1109  NE BARG A 142 
+ Alternate location indication is not blank or A, ignore atom: 1111  CZ BARG A 142 
+ Alternate location indication is not blank or A, ignore atom: 1113  NH1BARG A 142 
+ Alternate location indication is not blank or A, ignore atom: 1115  NH2BARG A 142 
+
+Total number of residues read in:            152
+Total number of atoms read in:              1189
+Total number of ignored atom records:        115
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENTER FOR    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              COMPND   2 MOLECULE: IAA ACETYLTRANSFERASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS CEREUS ATCC 14579;                     AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENT          
+         152  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau           1   2.30085754              52          63          91
+ #popped           2           1
+ #selectset contacts        1340
+ selectset done           1
+ eigen done           1
+ tau           3   1.58866990              74
+ #popped           4           1
+ #selectset contacts        1340
+ selectset done           1
+ eigen done           1
+ tau           5   1.18353319              21          35
+ #popped           6           1
+ #selectset contacts        1340
+ selectset done           1
+ eigen done           1
+ tau           7  0.584206164              52
+ #popped           8           1
+ #selectset contacts        1340
+ selectset done           1
+ eigen done           1
+ tau           9  0.483097404              21
+ #popped          10           1
+ #selectset contacts        1340
+ selectset done           1
+ eigen done           1
+ tau          11   1.20609832              11
+ #popped           3           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau          13   1.19946420             123         142
+ #popped          14           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau          15  0.409677088             105
+ #popped          16           1
+ #selectset contacts        1340
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          17           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau          17   1.87012982             116
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              COMPND   2 MOLECULE: IAA ACETYLTRANSFERASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS CEREUS ATCC 14579;                     AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENT          
+           0
+         152
+         152  residues read 1Y9K.dssp                                                   
+  grow short strand           4           8
+  exclude short helix          10          12
+  grow short helix          15          21
+  exclude short helix          69          71
+  exclude short helix         125         129
+  grow short strand         134         136
+  grow short strand         139         141
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  4  5  3  7  6  8  9 10 12 11
+   2     1  4  5  6  1  2  4  5  3  7
+   3     1 14 15  6  6  8  9 10 12 11
+   4     2  6  7  5  1  2  4  5  3
+   5     2  0  0  1  7
+   6     4 10 11  4  1  2  4  5
+   7     4  0  0  1  3
+   8     0  0  0  4  1  2  4  5
+   9     0  0  0  0
+  10     6 12 13  2  1  2
+  11     6  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10  0  0  1  2
+  14     3 16 17  5  6  8  9 10 12
+  15     3  0  0  1 11
+  16    14  0  0  2  6  8
+  17    14 18 19  3  9 10 12
+  18    17  0  0  1  9
+  19    17  0  0  2 10 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  6  2  1  5  7  7
+   3 -   1 12 13  6  2  6  6  8 12
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  1  1  3  3
+   8 -   6 10 11  2  1  1  2
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  2  2
+  12 -   3 14 15  5  3  6  6  8 10 12 12
+  13 -   3  0  0  1  1 11 11
+  14 -  12  0  0  2  2  6  6  8  8
+  15 -  12 16 17  3  2  9 10 12 12
+  16 -  15  0  0  1  1  9  9
+  17 -  15  0  0  2  2 10 10 12 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2137  CA BASP B 122 
+ Alternate location indication is not blank or A, ignore atom: 2141  CB BASP B 122 
+ Alternate location indication is not blank or A, ignore atom: 2143  CG BASP B 122 
+ Alternate location indication is not blank or A, ignore atom: 2145  OD1BASP B 122 
+ Alternate location indication is not blank or A, ignore atom: 2147  OD2BASP B 122 
+ Alternate location indication is not blank or A, ignore atom: 2398  CA BASN B 152 
+ Alternate location indication is not blank or A, ignore atom: 2402  CB BASN B 152 
+ Alternate location indication is not blank or A, ignore atom: 2404  CG BASN B 152 
+ Alternate location indication is not blank or A, ignore atom: 2406  OD1BASN B 152 
+ Alternate location indication is not blank or A, ignore atom: 2408  ND2BASN B 152 
+
+Total number of residues read in:            154
+Total number of atoms read in:              1202
+Total number of ignored atom records:        185
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENTER FOR    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              COMPND   2 MOLECULE: IAA ACETYLTRANSFERASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS CEREUS ATCC 14579;                     AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENT          
+         154  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1346
+ selectset done           0
+ eigen done           0
+ tau           1   1.68588424              99
+ #popped           2           1
+ #selectset contacts        1346
+ selectset done           1
+ eigen done           1
+ tau           3   1.03343511              23          38          53          65          89
+ #popped           4           2
+ #selectset contacts        1346
+ selectset done           2
+ eigen done           2
+ tau           5   1.23542118              76
+ #popped           6           2
+ #selectset contacts        1346
+ selectset done           2
+ eigen done           2
+ tau           7   1.18585169              10          23
+ #popped           8           2
+ #selectset contacts        1346
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1346
+ selectset done           1
+ eigen done           1
+ tau           9   1.87370217              38
+ #popped          11           1
+ #selectset contacts        1346
+ selectset done           1
+ eigen done           1
+ tau          11  0.399498314              65
+ #popped           3           0
+ #selectset contacts        1346
+ selectset done           0
+ eigen done           0
+ tau          13   1.04468107             125         144
+ #popped          14           0
+ #selectset contacts        1346
+ selectset done           0
+ eigen done           0
+ tau          15  0.355573267             111
+ #popped          17           0
+ #selectset contacts        1346
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              COMPND   2 MOLECULE: IAA ACETYLTRANSFERASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS CEREUS ATCC 14579;                     AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENT          
+           0
+         154
+         154  residues read 1Y9K.dssp                                                   
+  grow short strand           6           9
+  exclude short helix          12          14
+  grow short helix          17          23
+  exclude short helix          71          73
+  grow short strand         137         138
+  grow short strand         141         142
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  2  7  3  6  8  9 10 12 11
+   2     1  4  5  7  1  4  5  2  7  3  6
+   3     1 14 15  5  8  9 10 12 11
+   4     2  6  7  5  1  4  5  2  7
+   5     2 10 11  2  3  6
+   6     4  8  9  4  1  4  5  2
+   7     4  0  0  1  7
+   8     6  0  0  3  1  4  5
+   9     6  0  0  1  2
+  10     5  0  0  1  3
+  11     5  0  0  1  6
+  12     0  0  0  1  6
+  13     0  0  0  0
+  14     3 16 17  4  8  9 10 12
+  15     3  0  0  1 11
+  16    14  0  0  2  8  9
+  17    14  0  0  2 10 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  5  1  8 12
+   4 -   2  6  7  5  3  1  2  4  5  7  7
+   5 -   2 10 11  2  2  3  3  6  6
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  1  1  7  7
+   8 -   6  0  0  3  2  1  1  4  5
+   9 -   6  0  0  1  1  2  2
+  10 -   5  0  0  1  1  3  3
+  11 -   5  0  0  1  1  6  6
+  12 -   3 14 15  4  2  8 10 12 12
+  13 -   3  0  0  1  1 11 11
+  14 -  12  0  0  2  1  8  9
+  15 -  12  0  0  2  2 10 10 12 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2513  CA BLYS C  15 
+ Alternate location indication is not blank or A, ignore atom: 2517  CB BLYS C  15 
+ Alternate location indication is not blank or A, ignore atom: 2519  CG BLYS C  15 
+ Alternate location indication is not blank or A, ignore atom: 2521  CD BLYS C  15 
+ Alternate location indication is not blank or A, ignore atom: 2523  CE BLYS C  15 
+ Alternate location indication is not blank or A, ignore atom: 2525  NZ BLYS C  15 
+ Alternate location indication is not blank or A, ignore atom: 3541  CA BARG C 146 
+ Alternate location indication is not blank or A, ignore atom: 3545  CB BARG C 146 
+ Alternate location indication is not blank or A, ignore atom: 3547  CG BARG C 146 
+ Alternate location indication is not blank or A, ignore atom: 3549  CD BARG C 146 
+ Alternate location indication is not blank or A, ignore atom: 3551  NE BARG C 146 
+ Alternate location indication is not blank or A, ignore atom: 3553  CZ BARG C 146 
+ Alternate location indication is not blank or A, ignore atom: 3555  NH1BARG C 146 
+ Alternate location indication is not blank or A, ignore atom: 3557  NH2BARG C 146 
+
+Total number of residues read in:            150
+Total number of atoms read in:              1173
+Total number of ignored atom records:        117
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENTER FOR    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              COMPND   2 MOLECULE: IAA ACETYLTRANSFERASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS CEREUS ATCC 14579;                     AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENT          
+         150  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1339
+ selectset done           0
+ eigen done           0
+ tau           1   2.48044062              51          62          91
+ #popped           2           1
+ #selectset contacts        1339
+ selectset done           1
+ eigen done           1
+ tau           3   1.57215130              73
+ #popped           4           1
+ #selectset contacts        1339
+ selectset done           1
+ eigen done           1
+ tau           5   1.17735672              20          34
+ #popped           6           1
+ #selectset contacts        1339
+ selectset done           1
+ eigen done           1
+ tau           7  0.575183570              51
+ #popped           8           1
+ #selectset contacts        1339
+ selectset done           1
+ eigen done           1
+ tau           9  0.433487177              20
+ #popped          10           1
+ #selectset contacts        1339
+ selectset done           1
+ eigen done           1
+ tau          11   1.19117641              10
+ #popped           3           0
+ #selectset contacts        1339
+ selectset done           0
+ eigen done           0
+ tau          13   1.17593992             122         140
+ #popped          14           0
+ #selectset contacts        1339
+ selectset done           0
+ eigen done           0
+ tau          15  0.411899298             104
+ #popped          16           1
+ #selectset contacts        1339
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          17           0
+ #selectset contacts        1339
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              COMPND   2 MOLECULE: IAA ACETYLTRANSFERASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS CEREUS ATCC 14579;                     AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENT          
+           0
+         150
+         150  residues read 1Y9K.dssp                                                   
+  grow short strand           3           7
+  exclude short helix           9          11
+  grow short helix          14          20
+  exclude short helix          68          70
+  exclude short helix         124         128
+  grow short strand         134         135
+  grow short strand         138         139
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  4  5  3  7  6  8  9 10 12 11
+   2     1  4  5  6  1  2  4  5  3  7
+   3     1 14 15  6  6  8  9 10 12 11
+   4     2  6  7  5  1  2  4  5  3
+   5     2  0  0  1  7
+   6     4 10 11  4  1  2  4  5
+   7     4  0  0  1  3
+   8     0  0  0  4  1  2  4  5
+   9     0  0  0  0
+  10     6 12 13  2  1  2
+  11     6  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10  0  0  1  2
+  14     3 16 17  5  6  8  9 10 12
+  15     3  0  0  1 11
+  16    14  0  0  2  6  8
+  17    14  0  0  3  9 10 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  6  2  1  5  7  7
+   3 *   1 12 13  6  2  6  6  8 12
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  1  1  3  3
+   8 -   6 10 11  2  1  1  2
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  2  2
+  12 -   3 14 15  5  3  6  6  8 10 12 12
+  13 -   3  0  0  1  1 11 11
+  14 -  12  0  0  2  2  6  6  8  8
+  15 -  12  0  0  3  2  9 10 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3802  N  BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3804  CA BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3806  C  BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3808  O  BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3810  CB BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3812  CG BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3814  CD BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3816  NE BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3818  CZ BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3820  NH1BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 3822  NH2BARG D  26 
+ Alternate location indication is not blank or A, ignore atom: 4044  N  BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4046  CA BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4048  C  BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4050  O  BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4052  CB BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4054  CG BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4056  CD BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4058  NE BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4060  CZ BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4062  NH1BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4064  NH2BARG D  56 
+ Alternate location indication is not blank or A, ignore atom: 4254  N  BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4256  CA BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4258  C  BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4260  O  BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4262  CB BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4264  CG BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4266  CD BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4268  NE BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4270  CZ BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4272  NH1BARG D  82 
+ Alternate location indication is not blank or A, ignore atom: 4274  NH2BARG D  82 
+
+Total number of residues read in:            153
+Total number of atoms read in:              1194
+Total number of ignored atom records:        139
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENTER FOR    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              COMPND   2 MOLECULE: IAA ACETYLTRANSFERASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS CEREUS ATCC 14579;                     AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENT          
+         153  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1321
+ selectset done           0
+ eigen done           0
+ tau           1   2.36127400              54          65          94
+ #popped           2           1
+ #selectset contacts        1321
+ selectset done           1
+ eigen done           1
+ tau           3   1.68135810              10          37
+ #popped           4           2
+ #selectset contacts        1321
+ selectset done           2
+ eigen done           2
+ tau           5   1.37088430              76
+ #popped           6           2
+ #selectset contacts        1321
+ selectset done           2
+ eigen done           2
+ tau           7  0.677212596              54
+ #popped           8           2
+ #selectset contacts        1321
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1321
+ selectset done           1
+ eigen done           1
+ tau           9   1.30666661              25
+ #popped           3           0
+ #selectset contacts        1321
+ selectset done           0
+ eigen done           0
+ tau          11   1.09008956             126         143
+ #popped          12           0
+ #selectset contacts        1321
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             15-DEC-04   1Y9K              COMPND   2 MOLECULE: IAA ACETYLTRANSFERASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS CEREUS ATCC 14579;                     AUTHOR    B.P.NOCEK,J.OSIPIUK,H.LI,F.COLLART,A.JOACHIMIAK,MIDWEST CENT          
+           0
+         153
+         153  residues read 1Y9K.dssp                                                   
+  grow short strand           6           9
+  exclude short helix          12          14
+  grow short helix          17          23
+  exclude short helix          71          73
+  exclude short helix         127         131
+  grow short strand         136         138
+  grow short strand         141         143
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  7  2  3  6  8  9 10 12 11
+   2     1  4  5  6  1  4  5  7  2  3
+   3     1 12 13  6  6  8  9 10 12 11
+   4     2  6  7  4  1  4  5  7
+   5     2 10 11  2  2  3
+   6     4  0  0  3  1  4  5
+   7     4  0  0  1  7
+   8     0  0  0  3  1  4  5
+   9     0  0  0  0
+  10     5  0  0  1  2
+  11     5  0  0  1  3
+  12     3  0  0  5  6  8  9 10 12
+  13     3  0  0  1 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  6  2  1  5  7  7
+   3 -   1 10 11  6  2  6  6  8 12
+   4 -   2  6  7  4  3  1  1  4  5  7  7
+   5 -   2  8  9  2  1  2  3
+   6 -   4  0  0  3  2  1  1  4  5
+   7 -   4  0  0  1  1  7  7
+   8 -   5  0  0  1  1  2  2
+   9 -   5  0  0  1  1  3  3
+  10 -   3  0  0  5  3  6  6  8 10 12 12
+  11 -   3  0  0  1  1 11 11
+
+ CHAIN : 1Y9KA
+ CHAIN : 1Y9KB
+ CHAIN : 1Y9KC
+ CHAIN : 1Y9KD
+

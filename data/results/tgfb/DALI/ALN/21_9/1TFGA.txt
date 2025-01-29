@@ -1,0 +1,51 @@
+# Job: tgfb
+# Query: 1TFGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  8VSB-B 10.1  2.0   94   249   73   MOLECULE: TRANSFORMING GROWTH FACTOR BETA-3 PROPROTEIN;              
+
+# Pairwise alignments
+
+No 1: Query=1TFGA Sbjct=8VSBB Z-score=10.1
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------    0
+ident                                                             
+Sbjct lstcttldfghikkkrveairgqilsklrltsppeptvmthvpyqvlalynseseyyake   60
+DSSP  lllllllllhhhhhhhhhhhhhhhhhhllllllllllllllllhhhhhhhhlllllllle
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------    0
+ident                                                             
+Sbjct ihkfdmikvfrfnlfraefrvlrvpnpqrielfqiqryigwlsfdvtdtvrewllrresn  120
+DSSP  eeeeelllleellllllllllllllllllleeeellllllllllllllllhhhhhlllll
+
+DSSP  -----------------lllHHHHLLLLLLLLEEELLEEEHHHHHLLLLEEELLEEELLE
+Query -----------------aldAAYCFRNVQDNCCLRPLYIDFKRDLGWKWIHEPKGYNANF   43
+ident                       |||||   ||| |||||||  |||||| |||||| |||
+Sbjct lgleisinphlilmmipphrTNYCFRNLEENCCVRPLYIDFRQDLGWKWVHEPKGYYANF  180
+DSSP  lleeeellleeeeeelllllLLLLLLLLLLLLEEELLEEEHHHHLLLLLLLLLLEEELLE
+
+DSSP  EELLLLL---------------LLLLllhhHHHHhhhhhhlhhhlLLLLEEELLEEEEEE
+Query CAGACPY---------------LWSSdtqhSRVLslyntinpeasASPCCVSQDLEPLTI   88
+ident | | |||                                      |||||| ||||||||
+Sbjct CSGPCPYlrsadtthstvlglyNTLN----PEAS-----------ASPCCVPQDLEPLTI  225
+DSSP  EELLLLLllllllllllllllhHHHL----LLLL-----------LLLLEEELLEEEEEE
+
+DSSP  EEEELLEEEEEEEEEEEELLEEEL
+Query LYYIGKTPKIEQLSNMIVKSCKCS  112
+ident ||| | ||| |||||| |||||||
+Sbjct LYYVGRTPKVEQLSNMVVKSCKCS  249
+DSSP  EEEELLEEEEEEEEEEEELLEEEL
+
+
+# Structural equivalences
+   1: 1TFG-A 8VSB-B     4 -  50 <=>  141 - 187   (ALA    4  - TYR   50  <=> THR  281  - TYR  327 )                          
+   1: 1TFG-A 8VSB-B    51 -  54 <=>  203 - 206   (LEU   51  - SER   54  <=> ASN  343  - ASN  346 )                          
+   1: 1TFG-A 8VSB-B    59 -  62 <=>  207 - 210   (SER   59  - LEU   62  <=> PRO  347  - SER  350 )                          
+   1: 1TFG-A 8VSB-B    74 - 112 <=>  211 - 249   (ALA   74  - SER  112  <=> ALA  351  - SER  389 )                          
+
+# Translation-rotation matrices
+-matrix  "1TFG-A 8VSB-B  U(1,.)   0.604284 -0.239982  0.759770         -166.584824"
+-matrix  "1TFG-A 8VSB-B  U(2,.)   0.735960  0.533488 -0.416838          -60.046535"
+-matrix  "1TFG-A 8VSB-B  U(3,.)  -0.305294  0.811048  0.498995         -140.468903"
+

@@ -1,0 +1,32 @@
+# Job: scorptoxin
+# Query: 1T1TA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5CY0-A  7.3  2.5   60    63   53   MOLECULE: TS3 TOXIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1T1TA Sbjct=5CY0A Z-score=7.3
+
+DSSP  LEEELLLLLLLLllLLLL---LLHHHHHHHHHLLLLEEEELLLLLLEEEEEELLLLLLLL
+Query KIDGYPVDYWNCkrICWY---NNKYCNDLCKGLKADSGYCWGWTLSCYCQGLPDNARIKR   57
+ident | ||||| | ||          | ||  |||  |||||||      ||| ||||    | 
+Sbjct KKDGYPVEYDNC--AYICwnyDNAYCDKLCKDKKADSGYCYWVHILCYCYGLPDSEPTKT   58
+DSSP  LEEELLEELLLE--ELLLlllLHHHHHHHHHHLLLLEEEEELLLLEEEEEEELLLLLLLL
+
+DSSP  LLLLL
+Query SGRCR   62
+ident  | | 
+Sbjct NGKCK   63
+DSSP  LLLLL
+
+
+# Structural equivalences
+   1: 1T1T-A 5CY0-A     1 -  12 <=>    1 -  12   (LYS    1  - CYS   12  <=> LYS    1  - CYS   12 )                          
+   1: 1T1T-A 5CY0-A    15 -  18 <=>   13 -  16   (ILE   15  - TYR   18  <=> ALA   13  - CYS   16 )                          
+   1: 1T1T-A 5CY0-A    19 -  62 <=>   20 -  63   (ASN   19  - ARG   62  <=> ASP   20  - LYS   63 )                          
+
+# Translation-rotation matrices
+-matrix  "1T1T-A 5CY0-A  U(1,.)  -0.004200 -0.758608  0.651534           -5.672189"
+-matrix  "1T1T-A 5CY0-A  U(2,.)   0.037323  0.650967  0.758188          -15.046332"
+-matrix  "1T1T-A 5CY0-A  U(3,.)  -0.999294  0.027502  0.025580            2.688119"
+

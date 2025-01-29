@@ -1,0 +1,703 @@
+A length: 146
+B length: 146
+C length: 148
+D length: 146
+E length: 151
+# 5 chains A B C D E
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  720  N  BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  722  CA BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  724  C  BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  726  O  BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  728  CB BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  730  CG BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  732  ND1BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  734  CD2BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  736  CE1BHIS A 104 
+ Alternate location indication is not blank or A, ignore atom:  738  NE2BHIS A 104 
+
+Total number of residues read in:            147
+Total number of atoms read in:              1120
+Total number of ignored atom records:         79
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACHER,       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+         147  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1336
+ selectset done           0
+ eigen done           0
+ tau           1   2.01406646              77         101
+ #popped           2           1
+ #selectset contacts        1336
+ selectset done           1
+ eigen done           1
+ tau           3  0.868558407             128
+ #popped           4           1
+ #selectset contacts        1336
+ selectset done           1
+ eigen done           1
+ tau           5   2.46619463             113
+ #popped           6           1
+ #selectset contacts        1336
+ selectset done           1
+ eigen done           1
+ tau           7   1.10300338              21          43
+ #popped           8           2
+ #selectset contacts        1336
+ selectset done           2
+ eigen done           2
+ tau           9  0.561679780              10
+ #popped          11           2
+ #selectset contacts        1336
+ selectset done           2
+ eigen done           2
+ tau          11  0.360827267              77
+ #popped          12           2
+ #selectset contacts        1336
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           9           1
+ #selectset contacts        1336
+ selectset done           1
+ eigen done           1
+ tau          13  0.793107212              31
+ #popped           3           0
+ #selectset contacts        1336
+ selectset done           0
+ eigen done           0
+ tau          15   1.19106698              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+           0
+         147
+         147  residues read 1KYV.dssp                                                   
+  grow short strand           9          13
+  exclude short helix          40          42
+  grow short strand          43          47
+  exclude short helix         116         121
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  3  4  5  7  2  8  6
+   2     1  4  5  7  1  3  4  5  7  2  8
+   3     1  0  0  1  6
+   4     2  8  9  6  1  3  4  5  7  2
+   5     2  0  0  1  8
+   6     0  0  0  6  1  3  4  5  7  2
+   7     0  0  0  0
+   8     4 12 13  5  1  3  4  5  7
+   9     4  0  0  1  2
+  10     0  0  0  0
+  11     0  0  0  5  1  3  4  5  7
+  12     8  0  0  4  1  3  4  5
+  13     8  0  0  1  7
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  6
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  7  2  1  5  7  8
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  5  3  1  1  3  5  7  7
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  4  2  1  1  3  5
+   9 -   6  0  0  1  1  7  7
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1850  N  BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1852  CA BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1854  C  BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1856  O  BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1858  CB BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1860  CG BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1862  ND1BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1864  CD2BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1866  CE1BHIS B 104 
+ Alternate location indication is not blank or A, ignore atom: 1868  NE2BHIS B 104 
+
+Total number of residues read in:            147
+Total number of atoms read in:              1120
+Total number of ignored atom records:         65
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACHER,       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+         147  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1327
+ selectset done           0
+ eigen done           0
+ tau           1   1.82450724              77         101
+ #popped           2           1
+ #selectset contacts        1327
+ selectset done           1
+ eigen done           1
+ tau           3   1.38131344              49          66
+ #popped           4           1
+ #selectset contacts        1327
+ selectset done           1
+ eigen done           1
+ tau           5  0.876817882             130
+ #popped           6           1
+ #selectset contacts        1327
+ selectset done           1
+ eigen done           1
+ tau           7   2.33741236             113
+ #popped           8           1
+ #selectset contacts        1327
+ selectset done           1
+ eigen done           1
+ tau           9  0.414453089              10
+ #popped          11           1
+ #selectset contacts        1327
+ selectset done           1
+ eigen done           1
+ tau          11   1.40863419              49
+ #popped          12           2
+ #selectset contacts        1327
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          13           1
+ #selectset contacts        1327
+ selectset done           1
+ eigen done           1
+ tau          13  0.222187504              77
+ #popped           3           0
+ #selectset contacts        1327
+ selectset done           0
+ eigen done           0
+ tau          15   1.08027005              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+           0
+         147
+         147  residues read 1KYV.dssp                                                   
+  exclude short helix          40          42
+  exclude short helix         116         121
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  5  7  8  4  6
+   2     1  4  5  7  1  2  3  5  7  8  4
+   3     1  0  0  1  6
+   4     2  6  7  6  1  2  3  5  7  8
+   5     2  0  0  1  4
+   6     4 12 13  5  1  2  3  5  7
+   7     4  0  0  1  8
+   8     0  0  0  5  1  2  3  5  7
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  5  1  2  3  5  7
+  12     6  0  0  3  1  2  3
+  13     6 14 15  2  5  7
+  14    13  0  0  1  5
+  15    13  0  0  1  7
+  16     0  0  0  0
+  17     0  0  0  1  6
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  7  2  1  5  7  8
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  6  3  1  3  5  5  7  8
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  5  3  1  3  5  5  7  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6  0  0  3  1  1  3
+   9 -   6 10 11  2  2  5  5  7  7
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  1  1  7  7
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2986  N  BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 2988  CA BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 2990  C  BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 2992  O  BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 2994  CB BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 2996  CG BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 2998  ND1BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 3000  CD2BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 3002  CE1BHIS C 104 
+ Alternate location indication is not blank or A, ignore atom: 3004  NE2BHIS C 104 
+
+Total number of residues read in:            149
+Total number of atoms read in:              1138
+Total number of ignored atom records:         75
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACHER,       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+         149  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1368
+ selectset done           0
+ eigen done           0
+ tau           1   2.02766061              78         104
+ #popped           2           1
+ #selectset contacts        1368
+ selectset done           1
+ eigen done           1
+ tau           3   1.36634612              49          66
+ #popped           4           1
+ #selectset contacts        1368
+ selectset done           1
+ eigen done           1
+ tau           5  0.902092218             131
+ #popped           6           1
+ #selectset contacts        1368
+ selectset done           1
+ eigen done           1
+ tau           7  0.543411732              10
+ #popped           9           1
+ #selectset contacts        1368
+ selectset done           1
+ eigen done           1
+ tau           9   1.44224751             116
+ #popped          10           1
+ #selectset contacts        1368
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1368
+ selectset done           0
+ eigen done           0
+ tau          11   1.18715775              89
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+           0
+         149
+         149  residues read 1KYV.dssp                                                   
+  exclude short helix          41          43
+  exclude short helix         117         122
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  5  7  8  4  6
+   2     1  4  5  7  1  2  3  5  7  8  4
+   3     1  0  0  1  6
+   4     2  6  7  6  1  2  3  5  7  8
+   5     2  0  0  1  4
+   6     4  0  0  5  1  2  3  5  7
+   7     4  0  0  1  8
+   8     0  0  0  0
+   9     0  0  0  5  1  2  3  5  7
+  10     0  0  0  5  1  2  3  5  7
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  6
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  7  2  1  5  7  8
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  6  3  1  3  5  5  7  8
+   5 -   2  0  0  1  1  4  4
+   6 -   4  0  0  5  3  1  3  5  5  7  7
+   7 -   4  0  0  1  1  8  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 4128  N  BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4130  CA BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4132  C  BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4134  O  BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4136  CB BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4138  CG BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4140  ND1BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4142  CD2BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4144  CE1BHIS D 104 
+ Alternate location indication is not blank or A, ignore atom: 4146  NE2BHIS D 104 
+
+Total number of residues read in:            147
+Total number of atoms read in:              1120
+Total number of ignored atom records:         65
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACHER,       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+         147  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1331
+ selectset done           0
+ eigen done           0
+ tau           1   1.63639176              76         101
+ #popped           2           1
+ #selectset contacts        1331
+ selectset done           1
+ eigen done           1
+ tau           3   1.40498769             112         131
+ #popped           4           1
+ #selectset contacts        1331
+ selectset done           1
+ eigen done           1
+ tau           5   1.26153433             112
+ #popped           6           1
+ #selectset contacts        1331
+ selectset done           1
+ eigen done           1
+ tau           7  0.997113526              24          43
+ #popped           8           1
+ #selectset contacts        1331
+ selectset done           1
+ eigen done           1
+ tau           9  0.554269552              10
+ #popped          11           1
+ #selectset contacts        1331
+ selectset done           1
+ eigen done           1
+ tau          11  0.978966177              53          65
+ #popped          12           1
+ #selectset contacts        1331
+ selectset done           1
+ eigen done           1
+ tau          13   1.10932302              53
+ #popped          14           2
+ #selectset contacts        1331
+ selectset done           2
+ eigen done           2
+ tau          15  0.406956524              24
+ #popped          15           1
+ #selectset contacts        1331
+ selectset done           1
+ eigen done           1
+ tau          17  0.237335518              76
+ #popped           3           0
+ #selectset contacts        1331
+ selectset done           0
+ eigen done           0
+ tau          19   1.18280113              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+           0
+         147
+         147  residues read 1KYV.dssp                                                   
+  exclude short helix          40          42
+  exclude short helix         116         121
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  3  5  7  4  2  8  6
+   2     1  6  7  7  1  3  5  7  4  2  8
+   3     1  0  0  1  6
+   4     0  0  0  7  1  3  5  7  4  2  8
+   5     0  0  0  0
+   6     2  8  9  6  1  3  5  7  4  2
+   7     2  0  0  1  8
+   8     6 12 13  5  1  3  5  7  4
+   9     6  0  0  1  2
+  10     0  0  0  0
+  11     0  0  0  5  1  3  5  7  4
+  12     8 14 15  4  1  3  5  7
+  13     8  0  0  1  4
+  14    12 16 17  2  1  3
+  15    12 18 19  2  5  7
+  16    14  0  0  1  1
+  17    14  0  0  1  3
+  18    15  0  0  1  5
+  19    15  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  1  6
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  7  2  1  5  7  8
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  5  3  1  1  3  5  7  7
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  4  4  1  1  3  3  5  5  7  7
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  2  2  1  1  3  3
+  11 -   8 14 15  2  2  5  5  7  7
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  3  3
+  14 -  11  0  0  1  1  5  5
+  15 -  11  0  0  1  1  7  7
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5290  N  BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5292  CA BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5294  C  BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5296  O  BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5298  CB BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5300  CG BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5302  ND1BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5304  CD2BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5306  CE1BHIS E 104 
+ Alternate location indication is not blank or A, ignore atom: 5308  NE2BHIS E 104 
+
+Total number of residues read in:            152
+Total number of atoms read in:              1152
+Total number of ignored atom records:         69
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACHER,       
+  Reading DSSP file
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+         152  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1361
+ selectset done           0
+ eigen done           0
+ tau           1   1.31214273              79         105         115         133
+ #popped           2           1
+ #selectset contacts        1361
+ selectset done           1
+ eigen done           1
+ tau           3   1.10356283              12
+ #popped           5           1
+ #selectset contacts        1361
+ selectset done           1
+ eigen done           1
+ tau           5   2.05882359              22          43         115
+ #popped           6           2
+ #selectset contacts        1361
+ selectset done           2
+ eigen done           2
+ tau           7  0.553824067              58
+ #popped           8           3
+ #selectset contacts        1361
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1361
+ selectset done           2
+ eigen done           2
+ tau           9   1.60738635              69
+ #popped          11           2
+ #selectset contacts        1361
+ selectset done           2
+ eigen done           2
+ tau          11  0.297163934              79
+ #popped           7           1
+ #selectset contacts        1361
+ selectset done           1
+ eigen done           1
+ tau          13   1.70190275              43
+ #popped          14           1
+ #selectset contacts        1361
+ selectset done           1
+ eigen done           1
+ tau          15  0.856085598              33
+ #popped           3           0
+ #selectset contacts        1361
+ selectset done           0
+ eigen done           0
+ tau          17   1.47462690              93         105
+ #popped          18           0
+ #selectset contacts        1361
+ selectset done           0
+ eigen done           0
+ tau          19  0.839775920              93
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             06-FEB-02   1KYV              COMPND   2 MOLECULE: 6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE;                   SOURCE   2 ORGANISM_SCIENTIFIC: SCHIZOSACCHAROMYCES POMBE;                      AUTHOR    S.GERHARDT,I.HAASE,S.STEINBACHER,J.T.KAISER,M.CUSHMAN,A.BACH          
+           0
+         152
+         152  residues read 1KYV.dssp                                                   
+  grow short strand          14          18
+  exclude short helix          45          47
+  grow short strand          48          52
+  grow short helix         121         127
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  3  4  5  7  2  9  8  6
+   2     1  6  7  7  1  3  4  5  7  2  9
+   3     1 18 19  2  8  6
+   4     0  0  0  0
+   5     0  0  0  7  1  3  4  5  7  2  9
+   6     2  8  9  5  1  3  4  5  7
+   7     2 14 15  2  2  9
+   8     6  0  0  2  1  3
+   9     6 10 11  3  4  5  7
+  10     9  0  0  1  4
+  11     9 12 13  2  5  7
+  12    11  0  0  1  5
+  13    11  0  0  1  7
+  14     7  0  0  1  2
+  15     7  0  0  1  9
+  16     0  0  0  1  2
+  17     0  0  0  0
+  18     3  0  0  1  8
+  19     3  0  0  1  6
+  20     0  0  0  0
+  21     0  0  0  1  8
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  7  3  1  5  7  7  9  9
+   3 -   1 14 15  2  2  6  6  8  8
+   4 -   2  6  7  5  3  1  1  3  5  7  7
+   5 -   2 12 13  2  2  2  2  9  9
+   6 -   4  0  0  2  2  1  1  3  3
+   7 -   4  8  9  3  2  4  5  7  7
+   8 -   7  0  0  1  1  4  4
+   9 -   7 10 11  2  2  5  5  7  7
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  1  1  7  7
+  12 -   5  0  0  1  1  2  2
+  13 -   5  0  0  1  1  9  9
+  14 -   3  0  0  1  1  8  8
+  15 -   3  0  0  1  1  6  6
+
+ CHAIN : 1KYVA
+ CHAIN : 1KYVB
+ CHAIN : 1KYVC
+ CHAIN : 1KYVD
+ CHAIN : 1KYVE
+

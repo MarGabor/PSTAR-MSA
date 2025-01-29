@@ -1,0 +1,39 @@
+# Job: profilin
+# Query: 5NZBA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5EM1-A 20.6  2.3  127   135   65   MOLECULE: PROFILIN;                                                  
+
+# Pairwise alignments
+
+No 1: Query=5NZBA Sbjct=5EM1A Z-score=20.6
+
+DSSP  --lhhhHHHHHLLLL-LHHHhLLLE-EEEEEELLLLEEEELLLLLLLLHHHHHHHHHHHH
+Query --swqtYVDEHLMCD-IDGQgQQLA-ASAIVGHDGSVWAQSSSFPQFKPQEITGIMKDFE   56
+ident                 | |   |     || | || ||| ||||| | | ||  | | | 
+Sbjct gsgswqTYVDEHLMXdIEGT-GQHLaSAAIFGTDGNVWAXSSSFPEFXPDEINAIIKEFS   59
+DSSP  lllllhHHHHLLLLLlLLLL-LLLLlEEEEEELLLLEEEELLLLLLLLHHHHHHHHHHHH
+
+DSSP  LLLLLLLLLEEELLEEEEEEEEELLLEEEEEELLEEEEEEELLLEEEEEEELLLLLHHHH
+Query EPGHLAPTGLHLGGIKYMVIQGEAGAVIRGKKGSGGITIKKTGQALVFGIYEEPVTPGQC  116
+ident ||| |||||| | |  ||||||| ||||||  | ||| |  |||| ||||||||| ||||
+Sbjct EPGALAPTGLFLAGAXYMVIQGEPGAVIRGXXGAGGICIXXTGQAMVFGIYEEPVNPGQC  119
+DSSP  LLLLLLLLLEEELLEEEEEEEEELLLEEEEEELLEEEEEEELLLEEEEEEEELLLLHHHH
+
+DSSP  HHHHHHHHHHHHHLLL
+Query NMVVERLGDYLIDQGL  132
+ident ||||||||||| ||| 
+Sbjct NMVVERLGDYLVDQGM  135
+DSSP  HHHHHHHHHHHHHLLL
+
+
+# Structural equivalences
+   1: 5NZB-A 5EM1-A     5 -  13 <=>    7 -  15   (TYR    6  - ASP   14  <=> THR    5  - UNK   13 )                          
+   1: 5NZB-A 5EM1-A    14 -  17 <=>   17 -  20   (ILE   15  - GLN   18  <=> ILE   15  - THR   18 )                          
+   1: 5NZB-A 5EM1-A    19 -  22 <=>   21 -  24   (GLN   20  - ALA   23  <=> GLY   19  - LEU   22 )                          
+   1: 5NZB-A 5EM1-A    23 - 132 <=>   26 - 135   (ALA   24  - LEU  133  <=> SER   24  - MET  133 )                          
+
+# Translation-rotation matrices
+-matrix  "5NZB-A 5EM1-A  U(1,.)   0.967343 -0.124269  0.220919            4.128563"
+-matrix  "5NZB-A 5EM1-A  U(2,.)  -0.216320  0.049527  0.975066          -14.737736"
+-matrix  "5NZB-A 5EM1-A  U(3,.)  -0.132112 -0.991012  0.021028          -15.591240"
+

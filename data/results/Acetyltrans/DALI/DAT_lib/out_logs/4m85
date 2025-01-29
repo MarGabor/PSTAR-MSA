@@ -1,0 +1,623 @@
+A length: 185
+B length: 184
+C length: 183
+D length: 183
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            185
+Total number of atoms read in:              1514
+Total number of ignored atom records:        259
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              COMPND   2 MOLECULE: N-ACETYLTRANSFERASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS SUBSP. AUREUS;            AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+         185  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1697
+ selectset done           0
+ eigen done           0
+ tau           1   2.09412670             148
+ #popped           2           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau           3   1.34541869              12          60          73         118         137
+ #popped           4           2
+ #selectset contacts        1697
+ selectset done           2
+ eigen done           2
+ tau           5   1.34328365             122
+ #popped           6           2
+ #selectset contacts        1697
+ selectset done           2
+ eigen done           2
+ tau           7  0.469135821              12
+ #popped           5           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau           9   2.06908560              50          90         101
+ #popped          10           2
+ #selectset contacts        1697
+ selectset done           2
+ eigen done           2
+ tau          11   1.95840204              50
+ #popped          12           2
+ #selectset contacts        1697
+ selectset done           2
+ eigen done           2
+ tau          13   1.16458833              35
+ #popped          14           2
+ #selectset contacts        1697
+ selectset done           2
+ eigen done           2
+ tau          15  0.887142837              24
+ #popped          11           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau          17  0.850476861             118
+ #popped          18           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau          19  0.442023814              90
+ #popped          20           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau          21  0.740611792              76
+ #popped           3           0
+ #selectset contacts        1697
+ selectset done           0
+ eigen done           0
+ tau          23  0.284463555             158
+ #popped          25           0
+ #selectset contacts        1697
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              COMPND   2 MOLECULE: N-ACETYLTRANSFERASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS SUBSP. AUREUS;            AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+           0
+         185
+         185  residues read 4M85.dssp                                                   
+  grow short strand           4           7
+  exclude short helix          30          34
+  exclude short helix          57          59
+  exclude short helix          95          98
+  exclude short helix         123         125
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  8  2  3  6  7  9 10 11 12
+   2     1  4  5  8  1  4  5  8  2  3  6  7
+   3     1 24 25  4  9 10 11 12
+   4     2  6  7  4  1  4  5  8
+   5     2 10 11  4  2  3  6  7
+   6     4  8  9  3  1  4  5
+   7     4  0  0  1  8
+   8     6  0  0  1  1
+   9     6  0  0  2  4  5
+  10     5 14 15  2  2  3
+  11     5 20 21  2  6  7
+  12     0  0  0  2  2  3
+  13     0  0  0  0
+  14    10  0  0  1  2
+  15    10  0  0  1  3
+  16     0  0  0  1  2
+  17     0  0  0  0
+  18     0  0  0  2  6  7
+  19     0  0  0  0
+  20    11  0  0  1  6
+  21    11  0  0  1  7
+  22     0  0  0  0
+  23     0  0  0  1  6
+  24     3  0  0  1  9
+  25     3  0  0  3 10 11 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  1  1  8
+   3 =   1 16 17  4  1  9 12
+   4 -   2  6  7  4  3  1  1  4  5  8  8
+   5 -   2 10 11  4  2  2  3  6  7
+   6 -   4  8  9  3  2  1  1  4  5
+   7 -   4  0  0  1  1  8  8
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  4  5
+  10 -   5 12 13  2  1  2  3
+  11 -   5 14 15  2  1  6  7
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  3  3
+  14 -  11  0  0  1  1  6  6
+  15 -  11  0  0  1  1  7  7
+  16 -   3  0  0  1  1  9  9
+  17 -   3  0  0  3  1 10 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            184
+Total number of atoms read in:              1508
+Total number of ignored atom records:        299
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              COMPND   2 MOLECULE: N-ACETYLTRANSFERASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS SUBSP. AUREUS;            AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+         184  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau           1   1.71854424              18          58          73         116         140
+ #popped           2           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau           3   1.83690739             127
+ #popped           4           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau           5  0.531709552              73
+ #popped           6           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau           7  0.441532671              18
+ #popped           3           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau           9   2.14181876              58          83         104
+ #popped          10           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau          11   1.71758163              33
+ #popped          13           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau          13   1.38406026              58
+ #popped          14           2
+ #selectset contacts        1677
+ selectset done           2
+ eigen done           2
+ tau          15   1.06707323              46
+ #popped          15           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          11           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau          17  0.832496166             150         164
+ #popped          18           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              COMPND   2 MOLECULE: N-ACETYLTRANSFERASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS SUBSP. AUREUS;            AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+           0
+         184
+         184  residues read 4M85.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          29          33
+  exclude short helix          56          58
+  exclude short helix          94          97
+  exclude short helix         122         124
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  4  5  8  3  6  7  9 11 12 10
+   2     1  4  5  5  1  2  4  5  8
+   3     1 10 11  7  3  6  7  9 11 12 10
+   4     2  8  9  4  1  2  4  5
+   5     2  0  0  1  8
+   6     0  0  0  4  1  2  4  5
+   7     0  0  0  0
+   8     4  0  0  2  1  2
+   9     4  0  0  2  4  5
+  10     3  0  0  1  3
+  11     3 18 19  6  6  7  9 11 12 10
+  12     0  0  0  0
+  13     0  0  0  1  3
+  14     0  0  0  1  3
+  15     0  0  0  0
+  16     0  0  0  1  3
+  17     0  0  0  0
+  18    11  0  0  5  6  7  9 11 12
+  19    11  0  0  1 10
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  5  3  1  2  4  5  8  8
+   3 -   1  8  9  7  3  3  3  6  7  9 12
+   4 -   2  6  7  4  2  1  2  4  5
+   5 -   2  0  0  1  1  8  8
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  2  1  4  5
+   8 -   3  0  0  1  1  3  3
+   9 -   3 10 11  6  2  6  7  9 12
+  10 -   9  0  0  5  3  6  7  9  9 11 12
+  11 -   9  0  0  1  1 10 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            183
+Total number of atoms read in:              1500
+Total number of ignored atom records:        241
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              COMPND   2 MOLECULE: N-ACETYLTRANSFERASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS SUBSP. AUREUS;            AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+         183  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1663
+ selectset done           0
+ eigen done           0
+ tau           1   2.28630400             146
+ #popped           2           1
+ #selectset contacts        1663
+ selectset done           1
+ eigen done           1
+ tau           3   1.40427542              89          99
+ #popped           4           1
+ #selectset contacts        1663
+ selectset done           1
+ eigen done           1
+ tau           5   1.31547284              17          57          75         109
+ #popped           6           2
+ #selectset contacts        1663
+ selectset done           2
+ eigen done           2
+ tau           7  0.925974250             126
+ #popped           8           3
+ #selectset contacts        1663
+ selectset done           3
+ eigen done           3
+ tau           9  0.686940491              17
+ #popped          11           3
+ #selectset contacts        1663
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1663
+ selectset done           2
+ eigen done           2
+ tau          11  0.720411718             136
+ #popped           7           1
+ #selectset contacts        1663
+ selectset done           1
+ eigen done           1
+ tau          13   2.10807920              33
+ #popped          15           1
+ #selectset contacts        1663
+ selectset done           1
+ eigen done           1
+ tau          15   1.22250426              47
+ #popped          17           1
+ #selectset contacts        1663
+ selectset done           1
+ eigen done           1
+ tau          17  0.825168431              57
+ #popped          19           1
+ #selectset contacts        1663
+ selectset done           1
+ eigen done           1
+ tau          19  0.648336172              89
+ #popped           3           0
+ #selectset contacts        1663
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              COMPND   2 MOLECULE: N-ACETYLTRANSFERASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS SUBSP. AUREUS;            AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+           0
+         183
+         183  residues read 4M85.dssp                                                   
+  grow short strand           2           5
+  exclude short helix          28          32
+  exclude short helix          55          57
+  grow short strand          58          62
+  exclude short helix          93          96
+  exclude short helix         121         123
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  4  5  7  8  3  6  9 10 11 12
+   2     1  6  7  8  1  2  4  5  7  8  3  6
+   3     1  0  0  4  9 10 11 12
+   4     0  0  0  8  1  2  4  5  7  8  3  6
+   5     0  0  0  0
+   6     2  8  9  6  1  2  4  5  7  8
+   7     2 16 17  2  3  6
+   8     6 10 11  5  1  2  4  5  7
+   9     6  0  0  1  8
+  10     8  0  0  2  1  2
+  11     8  0  0  3  4  5  7
+  12     0  0  0  1  8
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  2  3  6
+  16     7  0  0  1  3
+  17     7  0  0  1  6
+  18     0  0  0  0
+  19     0  0  0  1  6
+  20     0  0  0  1  6
+  21     0  0  0  0
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  1  1  8
+   3 =   1  0  0  4  1  9 12
+   4 -   2  6  7  6  3  1  2  4  5  7  8
+   5 -   2 10 11  2  2  3  3  6  6
+   6 -   4  8  9  5  3  1  2  4  5  7  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  3  2  4  5  7  7
+  10 -   5  0  0  1  1  3  3
+  11 -   5  0  0  1  1  6  6
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            183
+Total number of atoms read in:              1500
+Total number of ignored atom records:        251
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              COMPND   2 MOLECULE: N-ACETYLTRANSFERASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS SUBSP. AUREUS;            AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+         183  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1670
+ selectset done           0
+ eigen done           0
+ tau           1   2.39948750             146
+ #popped           2           1
+ #selectset contacts        1670
+ selectset done           1
+ eigen done           1
+ tau           3   1.71421516              10          48          88          99
+ #popped           4           2
+ #selectset contacts        1670
+ selectset done           2
+ eigen done           2
+ tau           5   1.55067682              10          58          71         116         135
+ #popped           6           3
+ #selectset contacts        1670
+ selectset done           3
+ eigen done           3
+ tau           7   1.14226365             119
+ #popped           8           3
+ #selectset contacts        1670
+ selectset done           3
+ eigen done           3
+ tau           9  0.486818165              10
+ #popped           7           2
+ #selectset contacts        1670
+ selectset done           2
+ eigen done           2
+ tau          11  0.973572195             116
+ #popped          12           2
+ #selectset contacts        1670
+ selectset done           2
+ eigen done           2
+ tau          13  0.446488708              88
+ #popped          14           2
+ #selectset contacts        1670
+ selectset done           2
+ eigen done           2
+ tau          15  0.749986649              74
+ #popped           5           1
+ #selectset contacts        1670
+ selectset done           1
+ eigen done           1
+ tau          17   2.43111968              48
+ #popped          18           1
+ #selectset contacts        1670
+ selectset done           1
+ eigen done           1
+ tau          19   1.06215501              34
+ #popped          20           1
+ #selectset contacts        1670
+ selectset done           1
+ eigen done           1
+ tau          21   1.15627456              24
+ #popped           3           0
+ #selectset contacts        1670
+ selectset done           0
+ eigen done           0
+ tau          23  0.281575590             156
+ #popped          25           0
+ #selectset contacts        1670
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             12-AUG-13   4M85              COMPND   2 MOLECULE: N-ACETYLTRANSFERASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS SUBSP. AUREUS;            AUTHOR    P.SRIVASTAVA,Y.KHANDOKAR,J.K.FORWOOD                                  
+           0
+         183
+         183  residues read 4M85.dssp                                                   
+  grow short strand           2           5
+  exclude short helix          28          32
+  exclude short helix          55          57
+  exclude short helix          93          96
+  exclude short helix         121         123
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  8  6  7  2  3  9 10 11 12
+   2     1  4  5  8  1  4  5  8  6  7  2  3
+   3     1 24 25  4  9 10 11 12
+   4     2  6  7  6  1  4  5  8  6  7
+   5     2 20 21  2  2  3
+   6     4  8  9  4  1  4  5  8
+   7     4 14 15  2  6  7
+   8     6 10 11  3  1  4  5
+   9     6  0  0  1  8
+  10     8  0  0  1  1
+  11     8  0  0  2  4  5
+  12     0  0  0  2  6  7
+  13     0  0  0  0
+  14     7  0  0  1  6
+  15     7  0  0  1  7
+  16     0  0  0  0
+  17     0  0  0  1  6
+  18     0  0  0  2  2  3
+  19     0  0  0  0
+  20     5  0  0  1  2
+  21     5  0  0  1  3
+  22     0  0  0  1  2
+  23     0  0  0  0
+  24     3  0  0  1  9
+  25     3  0  0  3 10 11 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  1  1  8
+   3 =   1 16 17  4  1  9 12
+   4 -   2  6  7  6  2  1  1  4  8
+   5 -   2 14 15  2  1  2  3
+   6 -   4  8  9  4  3  1  1  4  5  8  8
+   7 -   4 12 13  2  1  6  7
+   8 -   6 10 11  3  2  1  1  4  5
+   9 -   6  0  0  1  1  8  8
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  4  5
+  12 -   7  0  0  1  1  6  6
+  13 -   7  0  0  1  1  7  7
+  14 -   5  0  0  1  1  2  2
+  15 -   5  0  0  1  1  3  3
+  16 -   3  0  0  1  1  9  9
+  17 -   3  0  0  3  1 10 12
+
+ CHAIN : 4M85A
+ CHAIN : 4M85B
+ CHAIN : 4M85C
+ CHAIN : 4M85D
+

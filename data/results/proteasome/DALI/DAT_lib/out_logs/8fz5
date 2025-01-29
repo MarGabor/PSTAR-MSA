@@ -1,0 +1,5086 @@
+A length: 245
+B length: 233
+C length: 251
+D length: 243
+E length: 236
+F length: 238
+G length: 241
+H length: 202
+I length: 220
+J length: 204
+K length: 199
+L length: 201
+M length: 213
+N length: 214
+O length: 245
+P length: 233
+Q length: 251
+R length: 243
+S length: 236
+T length: 238
+U length: 241
+V length: 202
+W length: 220
+X length: 204
+Y length: 199
+Z length: 201
+a length: 213
+b length: 214
+# 28 chains A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            245
+Total number of atoms read in:              1911
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         245  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau           1   3.59693003              31
+ #popped           2           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau           3  0.911910653              20
+ #popped           4           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau           5   2.07632399              54          66
+ #popped           6           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau           7   2.56996083              81         136
+ #popped           8           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau           9   1.86851287             170         214         230
+ #popped          10           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          11  0.707396984              54         170
+ #popped          12           3
+ #selectset contacts        2191
+ selectset done           3
+ eigen done           3
+ tau          13  0.582173645             218
+ #popped          14           3
+ #selectset contacts        2191
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          13           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          15  0.811187685             152
+ #popped          16           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          17  0.493435800              81
+ #popped          11           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          19   2.78922915             214
+ #popped          20           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          21   1.85754192             186
+ #popped          23           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          23   1.14140594             198
+ #popped           9           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau          25   1.15965104              92         126
+ #popped          26           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          27  0.716845930              92
+ #popped          27           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau          29   1.38208687             109
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         245
+         245  residues read 8FZ5.dssp                                                   
+  exclude short helix          63          65
+  grow short strand          69          71
+  grow short strand         160         162
+  grow short strand         165         169
+  grow short strand         228         229
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3 14 15  4  5  8  9 10 11 12 13 16  6  7
+   2     1  0  0  1  1
+   3     1  8  9 15  2  3 14 15  4  5  8  9 10 11 12 13 16  6  7
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     0  0  0 15  2  3 14 15  4  5  8  9 10 11 12 13 16  6  7
+   7     0  0  0  0
+   8     3 10 11 13  2  3 14 15  4  5  8  9 10 11 12 13 16
+   9     3 30 31  2  6  7
+  10     8 12 13 10  2  3 14 15  4  5  8  9 10 11
+  11     8 20 21  3 12 13 16
+  12    10 14 15  4  2  3 14 15
+  13    10 16 17  6  4  5  8  9 10 11
+  14    12  0  0  3  2  3 14
+  15    12  0  0  1 15
+  16    13 18 19  4  4  5  8  9
+  17    13  0  0  2 10 11
+  18    16  0  0  2  4  5
+  19    16  0  0  2  8  9
+  20    11 22 23  2 12 13
+  21    11  0  0  1 16
+  22    20  0  0  1 12
+  23    20  0  0  1 13
+  24     0  0  0  1 13
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  2  6  7
+  28     0  0  0  0
+  29     0  0  0  0
+  30     9  0  0  1  6
+  31     9  0  0  1  7
+   1 +   0  2  3 16  1  1 16
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 15  1  2 16
+   4 -   3  6  7 13  2  2  5  8 16
+   5 -   3 20 21  2  1  6  7
+   6 -   4  8  9 10  3  2  5  8 11 14 15
+   7 -   4 16 17  3  2 12 13 16 16
+   8 -   6 10 11  4  2  2  3 14 15
+   9 -   6 12 13  6  2  4  5  8 11
+  10 -   8  0  0  3  2  2  3 14 14
+  11 -   8  0  0  1  1 15 15
+  12 -   9 14 15  4  2  4  5  8  9
+  13 -   9  0  0  2  1 10 11
+  14 -  12  0  0  2  1  4  5
+  15 -  12  0  0  2  1  8  9
+  16 -   7 18 19  2  1 12 13
+  17 -   7  0  0  1  1 16 16
+  18 -  16  0  0  1  1 12 12
+  19 -  16  0  0  1  1 13 13
+  20 -   5  0  0  1  1  6  6
+  21 -   5  0  0  1  1  7  7
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            233
+Total number of atoms read in:              1820
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         233  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2115
+ selectset done           0
+ eigen done           0
+ tau           1   2.29246473              50          62
+ #popped           2           0
+ #selectset contacts        2115
+ selectset done           0
+ eigen done           0
+ tau           3   1.83913743              29          77         132
+ #popped           4           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau           5   3.44696975              10          29
+ #popped           6           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau           7   1.65103185              10
+ #popped           9           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau           9   1.05734265              87         113
+ #popped          10           2
+ #selectset contacts        2115
+ selectset done           2
+ eigen done           2
+ tau          11   1.02623451              87
+ #popped          11           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau          13   1.08591473             102
+ #popped           5           0
+ #selectset contacts        2115
+ selectset done           0
+ eigen done           0
+ tau          15   1.21507835             163         177
+ #popped          16           0
+ #selectset contacts        2115
+ selectset done           0
+ eigen done           0
+ tau          17   1.20033860             187         207         221
+ #popped          18           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau          19   1.75722539             163         187
+ #popped          20           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau          21  0.388951689             163
+ #popped          22           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau          23  0.686979592              50
+ #popped          24           2
+ #selectset contacts        2115
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped          25           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau          25  0.771402538             147
+ #popped          26           1
+ #selectset contacts        2115
+ selectset done           1
+ eigen done           1
+ tau          27  0.428257465              77
+ #popped          19           0
+ #selectset contacts        2115
+ selectset done           0
+ eigen done           0
+ tau          29   1.35218608             207
+ #popped          30           0
+ #selectset contacts        2115
+ selectset done           0
+ eigen done           0
+ tau          31   1.19696975             197
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         233
+         233  residues read 8FZ5.dssp                                                   
+  grow short strand          35          39
+  grow short strand          66          67
+  grow short strand         155         157
+  grow short strand         160         163
+  grow short strand         217         220
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 16  7  6  1  2  3  4  5  8  9 10 11 14 15 13 16 12
+   2     0  0  0 16  7  6  1  2  3  4  5  8  9 10 11 14 15 13 16 12
+   3     0  0  0  0
+   4     1  6  7  3  7  6  1
+   5     1 16 17 13  2  3  4  5  8  9 10 11 14 15 13 16 12
+   6     4 10 11  2  7  6
+   7     4  0  0  1  1
+   8     0  0  0  0
+   9     0  0  0  2  7  6
+  10     6  0  0  1  7
+  11     6  0  0  1  6
+  12     0  0  0  0
+  13     0  0  0  1  7
+  14     0  0  0  1  6
+  15     0  0  0  0
+  16     5 18 19 12  2  3  4  5  8  9 10 11 14 15 13 16
+  17     5  0  0  1 12
+  18    16 22 23 10  2  3  4  5  8  9 10 11 14 15
+  19    16 30 31  2 13 16
+  20     0  0  0 10  2  3  4  5  8  9 10 11 14 15
+  21     0  0  0  0
+  22    18 24 25  8  2  3  4  5  8  9 10 11
+  23    18  0  0  2 14 15
+  24    22  0  0  2  2  3
+  25    22 26 27  6  4  5  8  9 10 11
+  26    25 28 29  4  4  5  8  9
+  27    25  0  0  2 10 11
+  28    26  0  0  2  4  5
+  29    26  0  0  2  8  9
+  30    19  0  0  1 13
+  31    19  0  0  1 16
+  32     0  0  0  1 13
+  33     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  3  2  1  1  6  7
+   3 -   1  8  9 13  2  2  5  8 16
+   4 -   2  6  7  2  1  6  7
+   5 -   2  0  0  1  1  1  1
+   6 -   4  0  0  1  1  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   3 10 11 12  3  2  5  8 11 13 16
+   9 -   3  0  0  1  1 12 12
+  10 -   8 12 13 10  3  2  5  8 11 14 15
+  11 -   8 20 21  2  2 13 13 16 16
+  12 -  10 14 15  8  2  2  5  8 11
+  13 -  10  0  0  2  1 14 15
+  14 -  12  0  0  2  1  2  3
+  15 -  12 16 17  6  2  4  5  8 11
+  16 -  15 18 19  4  2  4  5  8  9
+  17 -  15  0  0  2  1 10 11
+  18 -  16  0  0  2  1  4  5
+  19 -  16  0  0  2  1  8  9
+  20 -  11  0  0  1  1 13 13
+  21 -  11  0  0  1  1 16 16
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            251
+Total number of atoms read in:              1979
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         251  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2235
+ selectset done           0
+ eigen done           0
+ tau           1   2.36425996              27
+ #popped           2           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau           3   2.63058519              11
+ #popped           3           0
+ #selectset contacts        2235
+ selectset done           0
+ eigen done           0
+ tau           5   3.65881848             228
+ #popped           6           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau           7   1.85602665              50          61
+ #popped           8           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau           9   2.41523671              50         159
+ #popped          10           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          11  0.916419744             215
+ #popped          12           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          13  0.701060176             177         192
+ #popped          14           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          15  0.388060719             205
+ #popped          16           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          11           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau          17   1.09848511              84         106
+ #popped          18           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          19   1.10170579              74         136         147
+ #popped          20           3
+ #selectset contacts        2235
+ selectset done           3
+ eigen done           3
+ tau          21   1.09610415              74
+ #popped          21           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          23  0.834581256              84         117
+ #popped          24           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          25  0.745726049             132
+ #popped          26           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          27   1.01506066              84
+ #popped          19           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau          29  0.997170627              96
+ #popped           7           0
+ #selectset contacts        2235
+ selectset done           0
+ eigen done           0
+ tau          31  0.868686855             238
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         251
+         251  residues read 8FZ5.dssp                                                   
+  exclude short helix           2           5
+  grow short strand          65          67
+  grow short strand         156         158
+  grow short strand         161         164
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3 11 12 13 14 15  4  9  5  8 10  7  6 16
+   2     1  0  0  1  1
+   3     1  6  7 15  2  3 11 12 13 14 15  4  9  5  8 10  7  6 16
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     3 10 11 14  2  3 11 12 13 14 15  4  9  5  8 10  7  6
+   7     3  0  0  1 16
+   8     0  0  0 14  2  3 11 12 13 14 15  4  9  5  8 10  7  6
+   9     0  0  0  0
+  10     6 12 13  7  2  3 11 12 13 14 15
+  11     6 18 19  7  4  9  5  8 10  7  6
+  12    10 16 17  6  2  3 11 12 13 14
+  13    10  0  0  1 15
+  14     0  0  0  6  2  3 11 12 13 14
+  15     0  0  0  0
+  16    12  0  0  5  2  3 11 12 13
+  17    12  0  0  1 14
+  18    11 20 21  6  4  9  5  8 10  7
+  19    11  0  0  1  6
+  20    18 22 23  2  4  9
+  21    18 24 25  4  5  8 10  7
+  22    20  0  0  1  4
+  23    20  0  0  1  9
+  24    21 26 27  3  5  8 10
+  25    21  0  0  1  7
+  26    24  0  0  1  5
+  27    24  0  0  2  8 10
+  28     0  0  0  1  5
+  29     0  0  0  0
+  30     0  0  0  1  6
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5 15  1  2 16
+   4 *   3  6  7 14  1  2 15
+   5 =   3  0  0  1  1 16 16
+   6 -   4  8  9  7  2  2  3 11 15
+   7 -   4 12 13  7  1  4 10
+   8 -   6 10 11  6  2  2  3 11 14
+   9 -   6  0  0  1  1 15 15
+  10 -   8  0  0  5  2  2  3 11 13
+  11 -   8  0  0  1  1 14 14
+  12 -   7 14 15  6  2  4  5  7 10
+  13 -   7  0  0  1  1  6  6
+  14 -  12 16 17  2  2  4  4  9  9
+  15 -  12 18 19  4  3  5  5  7  8 10 10
+  16 -  14  0  0  1  1  4  4
+  17 -  14  0  0  1  1  9  9
+  18 -  15 20 21  3  3  5  5  8  8 10 10
+  19 -  15  0  0  1  1  7  7
+  20 -  18  0  0  1  1  5  5
+  21 -  18  0  0  2  2  8  8 10 10
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            243
+Total number of atoms read in:              1922
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         243  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau           1   3.53610253             218
+ #popped           2           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau           3   2.35485172              27          61         154
+ #popped           4           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau           5   2.95453048              27
+ #popped           6           3
+ #selectset contacts        2191
+ selectset done           3
+ eigen done           3
+ tau           7   1.39538693              15
+ #popped           7           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau           9  0.906814814             114         127
+ #popped          10           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          11  0.776912868              73          85
+ #popped          12           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          13   1.48539269              73         114
+ #popped          14           3
+ #selectset contacts        2191
+ selectset done           3
+ eigen done           3
+ tau          15  0.588146508             143
+ #popped          16           3
+ #selectset contacts        2191
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          17   1.24801660             101
+ #popped           5           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          19   2.54940724              47          61
+ #popped          20           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          21  0.948837161             168         193
+ #popped          22           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          23   1.29696155             168         204
+ #popped          24           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          25  0.492679536             168
+ #popped          26           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          27  0.498555392              47
+ #popped          28           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          29  0.239605919              37
+ #popped          23           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          31   1.10858905             180
+ #popped           3           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau          33   1.02558136             232
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         243
+         243  residues read 8FZ5.dssp                                                   
+  grow short strand          31          35
+  exclude short helix          55          58
+  grow short strand          61          63
+  grow short strand         152         154
+  grow short strand         157         160
+  exclude short helix         178         180
+  grow short strand         217         218
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  4  5  8  9 10  6  7  2  3 11 14 15 12 13 16
+   2     1  4  5 15  1  4  5  8  9 10  6  7  2  3 11 14 15 12 13
+   3     1  0  0  1 16
+   4     2  6  7  8  1  4  5  8  9 10  6  7
+   5     2 22 23  7  2  3 11 14 15 12 13
+   6     4  0  0  1  1
+   7     4 14 15  7  4  5  8  9 10  6  7
+   8     0  0  0  0
+   9     0  0  0  1  1
+  10     0  0  0  7  4  5  8  9 10  6  7
+  11     0  0  0  0
+  12     0  0  0  7  4  5  8  9 10  6  7
+  13     0  0  0  0
+  14     7 16 17  5  4  5  8  9 10
+  15     7 18 19  2  6  7
+  16    14  0  0  4  4  5  8  9
+  17    14  0  0  1 10
+  18    15  0  0  1  6
+  19    15  0  0  1  7
+  20     0  0  0  7  2  3 11 14 15 12 13
+  21     0  0  0  0
+  22     5 26 27  5  2  3 11 14 15
+  23     5 32 33  2 12 13
+  24     0  0  0  5  2  3 11 14 15
+  25     0  0  0  0
+  26    22 28 29  3  2  3 11
+  27    22  0  0  2 14 15
+  28    26 30 31  2  2  3
+  29    26  0  0  1 11
+  30    28  0  0  1  2
+  31    28  0  0  1  3
+  32    23  0  0  1 12
+  33    23  0  0  1 13
+  34     0  0  0  1 16
+  35     0  0  0  0
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5 15  1  1 15
+   3 =   1  0  0  1  1 16 16
+   4 -   2  6  7  8  2  1  1  4 10
+   5 -   2 14 15  7  2  2  3 11 15
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  7  1  4 10
+   8 -   7 10 11  5  2  4  5  8 10
+   9 -   7 12 13  2  1  6  7
+  10 -   8  0  0  4  2  4  5  8  9
+  11 -   8  0  0  1  1 10 10
+  12 -   9  0  0  1  1  6  6
+  13 -   9  0  0  1  1  7  7
+  14 -   5 16 17  5  3  2  3 11 11 14 15
+  15 -   5 22 23  2  1 12 13
+  16 -  14 18 19  3  2  2  3 11 11
+  17 -  14  0  0  2  1 14 15
+  18 -  16 20 21  2  1  2  3
+  19 -  16  0  0  1  1 11 11
+  20 -  18  0  0  1  1  2  2
+  21 -  18  0  0  1  1  3  3
+  22 -  15  0  0  1  1 12 12
+  23 -  15  0  0  1  1 13 13
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            236
+Total number of atoms read in:              1805
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         236  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2088
+ selectset done           0
+ eigen done           0
+ tau           1   2.47996211              28          62         160
+ #popped           2           1
+ #selectset contacts        2088
+ selectset done           1
+ eigen done           1
+ tau           3   4.35743809              28
+ #popped           4           2
+ #selectset contacts        2088
+ selectset done           2
+ eigen done           2
+ tau           5  0.935496092              17
+ #popped           5           1
+ #selectset contacts        2088
+ selectset done           1
+ eigen done           1
+ tau           7   1.87996125             118         129
+ #popped           8           1
+ #selectset contacts        2088
+ selectset done           1
+ eigen done           1
+ tau           9   1.20308030              81         102
+ #popped          10           2
+ #selectset contacts        2088
+ selectset done           2
+ eigen done           2
+ tau          11  0.601107895             147
+ #popped          12           2
+ #selectset contacts        2088
+ selectset done           2
+ eigen done           2
+ tau          13  0.419394314             118
+ #popped          14           2
+ #selectset contacts        2088
+ selectset done           2
+ eigen done           2
+ tau          15   62.3559990              81
+ #popped          11           1
+ #selectset contacts        2088
+ selectset done           1
+ eigen done           1
+ tau          17  0.826373637              92
+ #popped           3           0
+ #selectset contacts        2088
+ selectset done           0
+ eigen done           0
+ tau          19   1.37849665              44          62         200         211
+ #popped          20           1
+ #selectset contacts        2088
+ selectset done           1
+ eigen done           1
+ tau          21   2.33873320             224
+ #popped          22           1
+ #selectset contacts        2088
+ selectset done           1
+ eigen done           1
+ tau          23  0.794802010             180
+ #popped          24           2
+ #selectset contacts        2088
+ selectset done           2
+ eigen done           2
+ tau          25  0.853128135             170
+ #popped          26           2
+ #selectset contacts        2088
+ selectset done           2
+ eigen done           2
+ tau          27   0.00000000    
+ #popped          25           1
+ #selectset contacts        2088
+ selectset done           1
+ eigen done           1
+ tau          27   7.81992340             200
+ #popped          28           1
+ #selectset contacts        2088
+ selectset done           1
+ eigen done           1
+ tau          29  0.726822376             190
+ #popped          21           0
+ #selectset contacts        2088
+ selectset done           0
+ eigen done           0
+ tau          31  0.639181554              62
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         236
+         236  residues read 8FZ5.dssp                                                   
+  grow short strand          32          36
+  exclude short helix          56          58
+  grow short strand          62          66
+  grow short strand         157         159
+  grow short strand         162         165
+  grow short strand         219         223
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  4  5  7  8  9 10  6  2  3 11 12 13 14 15 16
+   2     1  4  5  8  1  4  5  7  8  9 10  6
+   3     1 22 23  8  2  3 11 12 13 14 15 16
+   4     2  0  0  1  1
+   5     2 10 11  7  4  5  7  8  9 10  6
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     0  0  0  7  4  5  7  8  9 10  6
+   9     0  0  0  0
+  10     5 12 13  6  4  5  7  8  9 10
+  11     5  0  0  1  6
+  12    10 14 15  4  4  5  7  8
+  13    10  0  0  2  9 10
+  14    12 16 17  3  4  5  7
+  15    12  0  0  1  8
+  16    14  0  0  2  4  5
+  17    14  0  0  1  7
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20     0  0  0  8  2  3 11 12 13 14 15 16
+  21     0  0  0  0
+  22     3 24 25  7  2  3 11 12 13 14 15
+  23     3  0  0  1 16
+  24    22 26 27  4  2  3 11 12
+  25    22 28 29  3 13 14 15
+  26    24  0  0  3  2  3 11
+  27    24  0  0  1 12
+  28    25  0  0  1 13
+  29    25  0  0  2 14 15
+  30     0  0  0  0
+  31     0  0  0  1 13
+  32     0  0  0  0
+  33     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  8  2  1  1  4 10
+   3 -   1 14 15  8  2  2  3 11 16
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  7  1  4 10
+   6 -   5  8  9  6  2  4  5  7 10
+   7 -   5  0  0  1  1  6  6
+   8 -   6 10 11  4  2  4  5  7  8
+   9 -   6  0  0  2  1  9 10
+  10 -   8 12 13  3  2  4  5  7  7
+  11 -   8  0  0  1  1  8  8
+  12 -  10  0  0  2  1  4  5
+  13 -  10  0  0  1  1  7  7
+  14 -   3 16 17  7  2  2  3 11 15
+  15 -   3  0  0  1  1 16 16
+  16 -  14 18 19  4  2  2  3 11 12
+  17 -  14 20 21  3  1 13 15
+  18 -  16  0  0  3  2  2  3 11 11
+  19 -  16  0  0  1  1 12 12
+  20 -  17  0  0  1  1 13 13
+  21 -  17  0  0  2  1 14 15
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            238
+Total number of atoms read in:              1873
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2176
+ selectset done           0
+ eigen done           0
+ tau           1   2.61557627              28
+ #popped           2           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau           3   1.01648974              15
+ #popped           3           0
+ #selectset contacts        2176
+ selectset done           0
+ eigen done           0
+ tau           5   2.45507050              71         128
+ #popped           6           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau           7   1.21370065              45          58         188         207         222
+ #popped           8           2
+ #selectset contacts        2176
+ selectset done           2
+ eigen done           2
+ tau           9   1.06408596             158         172
+ #popped          10           2
+ #selectset contacts        2176
+ selectset done           2
+ eigen done           2
+ tau          11  0.602219880             158
+ #popped          12           3
+ #selectset contacts        2176
+ selectset done           3
+ eigen done           3
+ tau          13  0.451121271             140
+ #popped          14           3
+ #selectset contacts        2176
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          13           2
+ #selectset contacts        2176
+ selectset done           2
+ eigen done           2
+ tau          15   15.2816324             188
+ #popped           9           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau          17   1.88250661              58
+ #popped          19           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           7           0
+ #selectset contacts        2176
+ selectset done           0
+ eigen done           0
+ tau          19   1.06029356              81         109
+ #popped          20           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        2176
+ selectset done           0
+ eigen done           0
+ tau          21   1.41954017              99
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         238
+         238  residues read 8FZ5.dssp                                                   
+  grow short strand          32          36
+  grow short strand          60          64
+  grow short strand         150         153
+  grow short strand         155         158
+  grow short strand         219         221
+  exclude short helix         227         230
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  5  8  9 10 11 13 14 15 12  6  7
+   2     1  0  0  1  1
+   3     1  6  7 14  2  3  4  5  8  9 10 11 13 14 15 12  6  7
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     3 10 11 12  2  3  4  5  8  9 10 11 13 14 15 12
+   7     3 22 23  2  6  7
+   8     0  0  0 12  2  3  4  5  8  9 10 11 13 14 15 12
+   9     0  0  0  0
+  10     6 12 13 11  2  3  4  5  8  9 10 11 13 14 15
+  11     6  0  0  1 12
+  12    10 14 15  8  2  3  4  5  8  9 10 11
+  13    10 16 17  3 13 14 15
+  14    12  0  0  5  2  3  4  5  8
+  15    12  0  0  3  9 10 11
+  16    13  0  0  1 13
+  17    13  0  0  2 14 15
+  18     0  0  0  0
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  2  6  7
+  22     7  0  0  1  6
+  23     7  0  0  1  7
+   1 +   0  2  3 15  1  1 15
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 14  1  2 15
+   4 -   3  6  7 12  2  2  5  8 15
+   5 -   3 14 15  2  1  6  7
+   6 -   4  8  9 11  3  2  5  8 11 13 15
+   7 -   4  0  0  1  1 12 12
+   8 -   6 10 11  8  2  2  5  8 11
+   9 -   6 12 13  3  1 13 15
+  10 -   8  0  0  5  2  2  5  8  8
+  11 -   8  0  0  3  1  9 11
+  12 -   9  0  0  1  1 13 13
+  13 -   9  0  0  2  1 14 15
+  14 -   5  0  0  1  1  6  6
+  15 -   5  0  0  1  1  7  7
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            241
+Total number of atoms read in:              1888
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         241  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau           1   2.59508061              28          74         129
+ #popped           2           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau           3   4.50000000              28
+ #popped           4           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau           5  0.893750012              14
+ #popped           5           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau           7   1.15740740              88         110
+ #popped           8           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau           9   1.01694918              88
+ #popped           9           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          11  0.763643146             100
+ #popped           3           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau          13   1.64429665              46          59         196         206
+ #popped          14           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          15   1.78628016             223
+ #popped          16           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          17   1.72949004             164         196
+ #popped          18           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          19  0.478954673             164
+ #popped          20           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          21  0.497703582              46
+ #popped          23           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          23  0.856338799             145
+ #popped          24           2
+ #selectset contacts        2191
+ selectset done           2
+ eigen done           2
+ tau          25  0.433386087              74
+ #popped          19           1
+ #selectset contacts        2191
+ selectset done           1
+ eigen done           1
+ tau          27   1.96923089             180
+ #popped          15           0
+ #selectset contacts        2191
+ selectset done           0
+ eigen done           0
+ tau          29  0.789307594              59
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         241
+         241  residues read 8FZ5.dssp                                                   
+  grow short strand          32          36
+  grow short strand          62          66
+  grow short strand         153         155
+  grow short strand         158         161
+  exclude short helix         214         216
+  grow short strand         221         222
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  6  7  2  3  4  5  8  9 10 11 14 15 12 13 16
+   2     1  4  5  3  1  6  7
+   3     1 16 17 13  2  3  4  5  8  9 10 11 14 15 12 13 16
+   4     2  0  0  1  1
+   5     2 10 11  2  6  7
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     0  0  0  2  6  7
+   9     0  0  0  0
+  10     5  0  0  1  6
+  11     5  0  0  1  7
+  12     0  0  0  0
+  13     0  0  0  0
+  14     0  0  0 13  2  3  4  5  8  9 10 11 14 15 12 13 16
+  15     0  0  0  0
+  16     3 18 19 12  2  3  4  5  8  9 10 11 14 15 12 13
+  17     3  0  0  1 16
+  18    16 20 21 10  2  3  4  5  8  9 10 11 14 15
+  19    16 28 29  2 12 13
+  20    18 22 23  8  2  3  4  5  8  9 10 11
+  21    18  0  0  2 14 15
+  22    20  0  0  2  2  3
+  23    20 24 25  6  4  5  8  9 10 11
+  24    23 26 27  4  4  5  8  9
+  25    23  0  0  2 10 11
+  26    24  0  0  2  4  5
+  27    24  0  0  2  8  9
+  28    19  0  0  1 12
+  29    19  0  0  1 13
+  30     0  0  0  0
+  31     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  3  2  1  1  6  7
+   3 -   1  8  9 13  2  2  5  8 16
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  6  7
+   6 -   5  0  0  1  1  6  6
+   7 -   5  0  0  1  1  7  7
+   8 -   3 10 11 12  2  2  5  8 15
+   9 -   3  0  0  1  1 16 16
+  10 -   8 12 13 10  3  2  5  8 11 14 15
+  11 -   8 20 21  2  1 12 13
+  12 -  10 14 15  8  2  2  5  8 11
+  13 -  10  0  0  2  1 14 15
+  14 -  12  0  0  2  1  2  3
+  15 -  12 16 17  6  2  4  5  8 11
+  16 -  15 18 19  4  2  4  5  8  9
+  17 -  15  0  0  2  1 10 11
+  18 -  16  0  0  2  1  4  5
+  19 -  16  0  0  2  1  8  9
+  20 -  11  0  0  1  1 12 12
+  21 -  11  0  0  1  1 13 13
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1519
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1834
+ selectset done           0
+ eigen done           0
+ tau           1   2.43546653             189
+ #popped           2           0
+ #selectset contacts        1834
+ selectset done           0
+ eigen done           0
+ tau           3   2.19991255              34         122
+ #popped           4           1
+ #selectset contacts        1834
+ selectset done           1
+ eigen done           1
+ tau           5  0.991499245              16          34
+ #popped           6           1
+ #selectset contacts        1834
+ selectset done           1
+ eigen done           1
+ tau           7  0.807664692             142         155
+ #popped           8           1
+ #selectset contacts        1834
+ selectset done           1
+ eigen done           1
+ tau           9   1.04842341             132         170
+ #popped          10           2
+ #selectset contacts        1834
+ selectset done           2
+ eigen done           2
+ tau          11  0.594862461             132
+ #popped          12           2
+ #selectset contacts        1834
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          11           1
+ #selectset contacts        1834
+ selectset done           1
+ eigen done           1
+ tau          13   2.06101775             142
+ #popped           5           0
+ #selectset contacts        1834
+ selectset done           0
+ eigen done           0
+ tau          15  0.682720065              62          80
+ #popped          16           0
+ #selectset contacts        1834
+ selectset done           0
+ eigen done           0
+ tau          17   1.25778103              44          98
+ #popped          18           1
+ #selectset contacts        1834
+ selectset done           1
+ eigen done           1
+ tau          19  0.786982238             112
+ #popped          20           1
+ #selectset contacts        1834
+ selectset done           1
+ eigen done           1
+ tau          21  0.535753191              44
+ #popped          19           0
+ #selectset contacts        1834
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         202
+         202  residues read 8FZ5.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          38
+  grow short strand         121         122
+  grow short strand         125         128
+ crowded segment excluded!
+  exclude short helix         191         193
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 15  1  2 14 15 12 13  3  4  5  6  9 10 11  7  8
+   2     0  0  0 15  1  2 14 15 12 13  3  4  5  6  9 10 11  7  8
+   3     0  0  0  0
+   4     1  6  7  8  1  2 14 15 12 13  3  4
+   5     1 18 19  7  5  6  9 10 11  7  8
+   6     4 10 11  6  1  2 14 15 12 13
+   7     4  0  0  2  3  4
+   8     0  0  0  6  1  2 14 15 12 13
+   9     0  0  0  0
+  10     6 12 13  4  1  2 14 15
+  11     6 14 15  2 12 13
+  12    10  0  0  2  1  2
+  13    10  0  0  2 14 15
+  14    11  0  0  1 12
+  15    11  0  0  1 13
+  16     0  0  0  7  5  6  9 10 11  7  8
+  17     0  0  0  0
+  18     5 20 21  5  5  6  9 10 11
+  19     5  0  0  2  7  8
+  20    18 22 23  4  5  6  9 10
+  21    18  0  0  1 11
+  22    20  0  0  2  5  6
+  23    20  0  0  2  9 10
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5  8  2  1  4 12 15
+   3 *   1 12 13  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  8  9  4  2  1  2 14 15
+   7 -   4 10 11  2  1 12 13
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  2  1 14 15
+  10 -   7  0  0  1  1 12 12
+  11 -   7  0  0  1  1 13 13
+  12 -   3 14 15  5  2  5  6  9 11
+  13 -   3  0  0  2  1  7  8
+  14 -  12 16 17  4  2  5  6  9 10
+  15 -  12  0  0  1  1 11 11
+  16 -  14  0  0  2  1  5  6
+  17 -  14  0  0  2  1  9 10
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            220
+Total number of atoms read in:              1660
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  calculate residue outside grid:         210
+  calculate residue outside grid:         211
+  calculate residue outside grid:         212
+  calculate residue outside grid:         213
+  calculate residue outside grid:         214
+  calculate residue outside grid:         215
+  calculate residue outside grid:         216
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         220  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau           1   15.5961342             193
+ #popped           2           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau           3   2.66435981              33         122
+ #popped           4           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau           5   1.01571834              17          33
+ #popped           6           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau           7  0.775346935             132         158
+ #popped           8           3
+ #selectset contacts        1920
+ selectset done           3
+ eigen done           3
+ tau           9  0.614558101             169
+ #popped          10           4
+ #selectset contacts        1920
+ selectset done           4
+ eigen done           4
+ tau          11   1.04961824             132
+ #popped          12           4
+ #selectset contacts        1920
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          11           3
+ #selectset contacts        1920
+ selectset done           3
+ eigen done           3
+ tau          13  0.305668294             183
+ #popped           9           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          15   1.13915849             144
+ #popped           5           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          17   1.10313666              60          74
+ #popped          18           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          19   1.01516438              44          97
+ #popped          20           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          21  0.670663357             109
+ #popped          22           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          21           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          23   1.17650855              60          85
+ #popped          24           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          25  0.734061539              60
+ #popped           3           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau          27   3.49891496             208
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         220
+         220  residues read 8FZ5.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          38
+  grow short strand         119         121
+  grow short strand         124         128
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2 12 15 16 13 14  3  4  5  6  9 10 11  7  8 17
+   2     1  4  5 16  1  2 12 15 16 13 14  3  4  5  6  9 10 11  7  8
+   3     1  0  0  1 17
+   4     2  6  7  9  1  2 12 15 16 13 14  3  4
+   5     2 20 21  7  5  6  9 10 11  7  8
+   6     4  8  9  7  1  2 12 15 16 13 14
+   7     4  0  0  2  3  4
+   8     6 10 11  5  1  2 12 15 16
+   9     6 16 17  2 13 14
+  10     8  0  0  3  1  2 12
+  11     8 14 15  2 15 16
+  12     0  0  0  3  1  2 12
+  13     0  0  0  0
+  14    11  0  0  1 15
+  15    11  0  0  1 16
+  16     9  0  0  1 13
+  17     9  0  0  1 14
+  18     0  0  0  7  5  6  9 10 11  7  8
+  19     0  0  0  0
+  20     5 22 23  5  5  6  9 10 11
+  21     5 24 25  2  7  8
+  22    20  0  0  3  5  6  9
+  23    20  0  0  2 10 11
+  24    21  0  0  1  7
+  25    21  0  0  1  8
+  26     0  0  0  1  7
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1 17
+   1 +   0  2  3 17  1  1 17
+   2 +   1  4  5 16  1  1 16
+   3 =   1  0  0  1  1 17 17
+   4 *   2  6  7  9  2  1  4 12 16
+   5 *   2 16 17  7  1  5 11
+   6 -   4  8  9  7  2  1  2 12 16
+   7 -   4  0  0  2  1  3  4
+   8 -   6 10 11  5  3  1  2 12 12 15 16
+   9 -   6 14 15  2  1 13 14
+  10 -   8  0  0  3  2  1  2 12 12
+  11 -   8 12 13  2  1 15 16
+  12 -  11  0  0  1  1 15 15
+  13 -  11  0  0  1  1 16 16
+  14 -   9  0  0  1  1 13 13
+  15 -   9  0  0  1  1 14 14
+  16 -   5 18 19  5  2  5  6  9 11
+  17 -   5 20 21  2  1  7  8
+  18 -  16  0  0  3  2  5  6  9  9
+  19 -  16  0  0  2  1 10 11
+  20 -  17  0  0  1  1  7  7
+  21 -  17  0  0  1  1  8  8
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            204
+Total number of atoms read in:              1594
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         204  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1860
+ selectset done           0
+ eigen done           0
+ tau           1   2.18376613              37         131
+ #popped           2           1
+ #selectset contacts        1860
+ selectset done           1
+ eigen done           1
+ tau           3   1.48134959              24          37
+ #popped           4           1
+ #selectset contacts        1860
+ selectset done           1
+ eigen done           1
+ tau           5  0.737508953             146         172
+ #popped           6           2
+ #selectset contacts        1860
+ selectset done           2
+ eigen done           2
+ tau           7  0.755672991             146
+ #popped           8           3
+ #selectset contacts        1860
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1860
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1860
+ selectset done           1
+ eigen done           1
+ tau           9   1.74519229             157
+ #popped           3           0
+ #selectset contacts        1860
+ selectset done           0
+ eigen done           0
+ tau          11  0.855423331              71          81
+ #popped          12           0
+ #selectset contacts        1860
+ selectset done           0
+ eigen done           0
+ tau          13   1.18404865              51         106
+ #popped          14           1
+ #selectset contacts        1860
+ selectset done           1
+ eigen done           1
+ tau          15   1.09853840             121
+ #popped          16           1
+ #selectset contacts        1860
+ selectset done           1
+ eigen done           1
+ tau          17  0.600415945              51
+ #popped          15           0
+ #selectset contacts        1860
+ selectset done           0
+ eigen done           0
+ tau          19   1.53459120              71          96
+ #popped          20           0
+ #selectset contacts        1860
+ selectset done           0
+ eigen done           0
+ tau          21  0.948805213              61          71
+ #popped          22           0
+ #selectset contacts        1860
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         204
+         204  residues read 8FZ5.dssp                                                   
+  grow short strand          27          29
+  grow short strand          32          35
+  grow short strand          41          43
+  grow short strand         129         132
+  grow short strand         135         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2 12 15 16 13 14  3  4  5  6  9 10 11  7  8
+   2     1  4  5  9  1  2 12 15 16 13 14  3  4
+   3     1 14 15  7  5  6  9 10 11  7  8
+   4     2  6  7  7  1  2 12 15 16 13 14
+   5     2  0  0  2  3  4
+   6     4  8  9  5  1  2 12 15 16
+   7     4 10 11  2 13 14
+   8     6  0  0  3  1  2 12
+   9     6  0  0  2 15 16
+  10     7  0  0  1 13
+  11     7  0  0  1 14
+  12     0  0  0  7  5  6  9 10 11  7  8
+  13     0  0  0  0
+  14     3 16 17  5  5  6  9 10 11
+  15     3 20 21  2  7  8
+  16    14 18 19  4  5  6  9 10
+  17    14  0  0  1 11
+  18    16  0  0  2  5  6
+  19    16  0  0  2  9 10
+  20    15  0  0  1  7
+  21    15  0  0  1  8
+  22     0  0  0  0
+  23     0  0  0  1  7
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  9  2  1  4 12 16
+   3 -   1 12 13  7  1  5 11
+   4 -   2  6  7  7  2  1  2 12 16
+   5 -   2  0  0  2  1  3  4
+   6 -   4  8  9  5  3  1  2 12 12 15 16
+   7 -   4 10 11  2  1 13 14
+   8 -   6  0  0  3  2  1  2 12 12
+   9 -   6  0  0  2  1 15 16
+  10 -   7  0  0  1  1 13 13
+  11 -   7  0  0  1  1 14 14
+  12 -   3 14 15  5  2  5  6  9 11
+  13 -   3 18 19  2  1  7  8
+  14 -  12 16 17  4  2  5  6  9 10
+  15 -  12  0  0  1  1 11 11
+  16 -  14  0  0  2  1  5  6
+  17 -  14  0  0  2  1  9 10
+  18 -  13  0  0  1  1  7  7
+  19 -  13  0  0  1  1  8  8
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            199
+Total number of atoms read in:              1602
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1805
+ selectset done           0
+ eigen done           0
+ tau           1   1.42415726              20          31
+ #popped           2           0
+ #selectset contacts        1805
+ selectset done           0
+ eigen done           0
+ tau           3   2.11850548              47         100
+ #popped           4           1
+ #selectset contacts        1805
+ selectset done           1
+ eigen done           1
+ tau           5  0.716372609             132         146         158
+ #popped           6           2
+ #selectset contacts        1805
+ selectset done           2
+ eigen done           2
+ tau           7   1.52103448             132
+ #popped           8           2
+ #selectset contacts        1805
+ selectset done           2
+ eigen done           2
+ tau           9  0.588281989              20
+ #popped          10           3
+ #selectset contacts        1805
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped          11           2
+ #selectset contacts        1805
+ selectset done           2
+ eigen done           2
+ tau          11  0.743223727             114
+ #popped          12           2
+ #selectset contacts        1805
+ selectset done           2
+ eigen done           2
+ tau          13  0.439706862              47
+ #popped           7           1
+ #selectset contacts        1805
+ selectset done           1
+ eigen done           1
+ tau          15   2.41403508             146
+ #popped          17           1
+ #selectset contacts        1805
+ selectset done           1
+ eigen done           1
+ tau          17   1.59507525             173
+ #popped          19           1
+ #selectset contacts        1805
+ selectset done           1
+ eigen done           1
+ tau          19  0.457118362             189
+ #popped           5           0
+ #selectset contacts        1805
+ selectset done           0
+ eigen done           0
+ tau          21   1.13541663              63          75
+ #popped          22           0
+ #selectset contacts        1805
+ selectset done           0
+ eigen done           0
+ tau          23   1.22731912              63          90
+ #popped          24           0
+ #selectset contacts        1805
+ selectset done           0
+ eigen done           0
+ tau          25   1.16630495              63
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         199
+         199  residues read 8FZ5.dssp                                                   
+  grow short strand           4           8
+  grow short strand          21          23
+  grow short strand          26          29
+  grow short strand          35          39
+  grow short strand         124         126
+  grow short strand         129         132
+  grow short strand         187         190
+  grow short strand         194         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  5  6  9 10 11 12 13 14 15 16 17  7  8  3  4
+   2     1  4  5 15  1  2  5  6  9 10 11 12 13 14 15 16 17  7  8
+   3     1  0  0  2  3  4
+   4     2  6  7 13  1  2  5  6  9 10 11 12 13 14 15 16 17
+   5     2 24 25  2  7  8
+   6     4 10 11  8  1  2  5  6  9 10 11 12
+   7     4 16 17  5 13 14 15 16 17
+   8     0  0  0  8  1  2  5  6  9 10 11 12
+   9     0  0  0  0
+  10     6  0  0  2  1  2
+  11     6 12 13  6  5  6  9 10 11 12
+  12    11 14 15  3  5  6  9
+  13    11  0  0  3 10 11 12
+  14    12  0  0  2  5  6
+  15    12  0  0  1  9
+  16     7  0  0  1 13
+  17     7 18 19  4 14 15 16 17
+  18    17  0  0  1 14
+  19    17 20 21  3 15 16 17
+  20    19  0  0  2 15 16
+  21    19  0  0  1 17
+  22     0  0  0  2  7  8
+  23     0  0  0  0
+  24     5  0  0  1  7
+  25     5  0  0  1  8
+  26     0  0  0  1  7
+  27     0  0  0  0
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5 15  2  1  2  5 17
+   3 -   1  0  0  2  1  3  4
+   4 -   2  6  7 13  3  1  2  5  6  9 17
+   5 -   2 20 21  2  1  7  8
+   6 -   4  8  9  8  3  1  2  5  6  9 12
+   7 -   4 14 15  5  1 13 17
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  6  2  5  6  9 12
+  10 -   9 12 13  3  2  5  6  9  9
+  11 -   9  0  0  3  1 10 12
+  12 -  10  0  0  2  1  5  6
+  13 -  10  0  0  1  1  9  9
+  14 -   7  0  0  1  1 13 13
+  15 -   7 16 17  4  1 14 17
+  16 -  15  0  0  1  1 14 14
+  17 -  15 18 19  3  1 15 17
+  18 -  17  0  0  2  1 15 16
+  19 -  17  0  0  1  1 17 17
+  20 -   5  0  0  1  1  7  7
+  21 -   5  0  0  1  1  8  8
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            201
+Total number of atoms read in:              1557
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         201  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1831
+ selectset done           0
+ eigen done           0
+ tau           1   2.09937024              47          96
+ #popped           2           1
+ #selectset contacts        1831
+ selectset done           1
+ eigen done           1
+ tau           3   1.18846095              34         123
+ #popped           4           2
+ #selectset contacts        1831
+ selectset done           2
+ eigen done           2
+ tau           5  0.737863123             160         173         190
+ #popped           6           3
+ #selectset contacts        1831
+ selectset done           3
+ eigen done           3
+ tau           7   2.76798820              16          34
+ #popped           8           3
+ #selectset contacts        1831
+ selectset done           3
+ eigen done           3
+ tau           9  0.688919723             160
+ #popped          10           3
+ #selectset contacts        1831
+ selectset done           3
+ eigen done           3
+ tau          11   1.06300545             141
+ #popped          12           3
+ #selectset contacts        1831
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        1831
+ selectset done           2
+ eigen done           2
+ tau          13   1.72142565             171
+ #popped           5           1
+ #selectset contacts        1831
+ selectset done           1
+ eigen done           1
+ tau          15  0.750830591             101         111
+ #popped          16           1
+ #selectset contacts        1831
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1831
+ selectset done           0
+ eigen done           0
+ tau          17   1.90611827              73
+ #popped          18           1
+ #selectset contacts        1831
+ selectset done           1
+ eigen done           1
+ tau          19   1.14489496              60
+ #popped          19           0
+ #selectset contacts        1831
+ selectset done           0
+ eigen done           0
+ tau          21  0.968110263              86
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         201
+         201  residues read 8FZ5.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          38
+  grow short strand          41          44
+  grow short strand         120         122
+  grow short strand         125         128
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2 12 13 14 15 16  3  4 17  5  6  9 11 10  7  8
+   2     1  4  5 15  1  2 12 13 14 15 16  3  4 17  5  6  9 11 10
+   3     1 18 19  2  7  8
+   4     2  6  7 10  1  2 12 13 14 15 16  3  4 17
+   5     2 16 17  5  5  6  9 11 10
+   6     4  8  9  9  1  2 12 13 14 15 16  3  4
+   7     4  0  0  1 17
+   8     6 10 11  7  1  2 12 13 14 15 16
+   9     6  0  0  2  3  4
+  10     8 12 13  5  1  2 12 13 14
+  11     8  0  0  2 15 16
+  12    10  0  0  4  1  2 12 13
+  13    10  0  0  1 14
+  14     0  0  0  0
+  15     0  0  0  1 17
+  16     5  0  0  4  5  6  9 11
+  17     5  0  0  1 10
+  18     3  0  0  1  7
+  19     3  0  0  1  8
+  20     0  0  0  1  7
+  21     0  0  0  0
+  22     0  0  0  1  8
+  23     0  0  0  0
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5 15  2  1  6  9 17
+   3 -   1 16 17  2  1  7  8
+   4 -   2  6  7 10  2  1  4 12 17
+   5 -   2 14 15  5  2  5  6  9 11
+   6 -   4  8  9  9  2  1  4 12 16
+   7 -   4  0  0  1  1 17 17
+   8 -   6 10 11  7  2  1  2 12 16
+   9 -   6  0  0  2  1  3  4
+  10 -   8 12 13  5  2  1  2 12 14
+  11 -   8  0  0  2  1 15 16
+  12 -  10  0  0  4  2  1  2 12 13
+  13 -  10  0  0  1  1 14 14
+  14 -   5  0  0  4  3  5  6  9  9 11 11
+  15 -   5  0  0  1  1 10 10
+  16 -   3  0  0  1  1  7  7
+  17 -   3  0  0  1  1  8  8
+
+ CHAIN M
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1645
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1901
+ selectset done           0
+ eigen done           0
+ tau           1   2.49440503              42         133
+ #popped           2           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau           3   1.53822243              10
+ #popped           5           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau           5   1.56284678             153         165
+ #popped           6           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau           7   1.11894047              26          42
+ #popped           8           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau           9  0.730943978              26         183
+ #popped          10           2
+ #selectset contacts        1901
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped          11           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau          11   5.38434076             153
+ #popped          12           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau          13  0.558224618             143
+ #popped           3           0
+ #selectset contacts        1901
+ selectset done           0
+ eigen done           0
+ tau          15   1.70857084              56          82
+ #popped          16           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau          17  0.928040445              94         105
+ #popped          18           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau          19  0.536958516             120
+ #popped          20           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau          21  0.418795943              56
+ #popped          23           1
+ #selectset contacts        1901
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          17           0
+ #selectset contacts        1901
+ selectset done           0
+ eigen done           0
+ tau          23   1.09834123              69
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         213
+         213  residues read 8FZ5.dssp                                                   
+  grow short strand          29          31
+  grow short strand          34          37
+  grow short strand          43          47
+  grow short strand         130         133
+  grow short strand         135         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2 15 16 12 13 14  3  4  5  6  8  9 10 11  7
+   2     1  8  9  9  1  2 15 16 12 13 14  3  4
+   3     1 16 17  7  5  6  8  9 10 11  7
+   4     0  0  0  0
+   5     0  0  0  9  1  2 15 16 12 13 14  3  4
+   6     0  0  0  9  1  2 15 16 12 13 14  3  4
+   7     0  0  0  0
+   8     2 10 11  7  1  2 15 16 12 13 14
+   9     2  0  0  2  3  4
+  10     8  0  0  4  1  2 15 16
+  11     8 12 13  3 12 13 14
+  12    11 14 15  2 12 13
+  13    11  0  0  1 14
+  14    12  0  0  1 12
+  15    12  0  0  1 13
+  16     3 20 21  6  5  6  8  9 10 11
+  17     3  0  0  1  7
+  18     0  0  0  6  5  6  8  9 10 11
+  19     0  0  0  0
+  20    16 22 23  4  5  6  8  9
+  21    16  0  0  2 10 11
+  22    20  0  0  2  5  6
+  23    20  0  0  2  8  9
+  24     0  0  0  1  7
+  25     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  9  2  1  4 12 16
+   3 -   1 12 13  7  1  5 11
+   4 -   2  6  7  7  2  1  2 12 16
+   5 -   2  0  0  2  1  3  4
+   6 -   4  0  0  4  2  1  2 15 16
+   7 -   4  8  9  3  1 12 14
+   8 -   7 10 11  2  1 12 13
+   9 -   7  0  0  1  1 14 14
+  10 -   8  0  0  1  1 12 12
+  11 -   8  0  0  1  1 13 13
+  12 -   3 14 15  6  2  5  6  8 11
+  13 -   3  0  0  1  1  7  7
+  14 -  12 16 17  4  2  5  6  8  9
+  15 -  12  0  0  2  1 10 11
+  16 -  14  0  0  2  1  5  6
+  17 -  14  0  0  2  1  8  9
+
+ CHAIN N
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            214
+Total number of atoms read in:              1671
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         214  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau           1   2.16270185             139         179         204
+ #popped           2           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau           3   1.06665480              10          24          41          52         110
+ #popped           4           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau           5   1.43295217              67          95
+ #popped           6           3
+ #selectset contacts        1920
+ selectset done           3
+ eigen done           3
+ tau           7   1.06876802              10          41
+ #popped           8           3
+ #selectset contacts        1920
+ selectset done           3
+ eigen done           3
+ tau           9  0.642189860              67
+ #popped          10           3
+ #selectset contacts        1920
+ selectset done           3
+ eigen done           3
+ tau          11  0.607473314              10
+ #popped           7           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          13   2.14899087              83
+ #popped           5           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          15  0.950980365              24         139
+ #popped          16           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          17           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          17   1.03163528             123
+ #popped          18           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          19  0.485159457              52
+ #popped           3           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau          21   3.13135481             179
+ #popped          22           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau          23   2.18421054             160
+ #popped          24           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau          25  0.719509602             149
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         214
+         214  residues read 8FZ5.dssp                                                   
+  grow short strand           6           8
+  grow short strand          28          30
+  grow short strand          33          36
+  grow short strand          42          44
+  grow short strand         131         133
+  grow short strand         136         138
+  exclude short helix         142         145
+  exclude short helix         210         213
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  8  4  5  9  2  3 16 17  6  7 10 11 12 13 14 15
+   2     1  4  5 15  1  8  4  5  9  2  3 16 17  6  7 10 11 12 13
+   3     1 24 25  2 14 15
+   4     2  6  7  5  1  8  4  5  9
+   5     2 16 17 10  2  3 16 17  6  7 10 11 12 13
+   6     4  8  9  4  1  8  4  5
+   7     4  0  0  1  9
+   8     6 12 13  2  1  8
+   9     6  0  0  2  4  5
+  10     0  0  0  2  1  8
+  11     0  0  0  0
+  12     8  0  0  1  1
+  13     8  0  0  1  8
+  14     0  0  0  0
+  15     0  0  0  1  9
+  16     5  0  0  4  2  3 16 17
+  17     5 18 19  6  6  7 10 11 12 13
+  18    17 20 21  4  6  7 10 11
+  19    17  0  0  2 12 13
+  20    18  0  0  2  6  7
+  21    18  0  0  2 10 11
+  22     0  0  0  2 14 15
+  23     0  0  0  0
+  24     3  0  0  1 14
+  25     3  0  0  1 15
+  26     0  0  0  0
+  27     0  0  0  1 14
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5 15  2  1 13 16 17
+   3 -   1 18 19  2  1 14 15
+   4 -   2  6  7  5  3  1  1  4  5  8  9
+   5 -   2 12 13 10  4  2  3  6  7 10 13 16 17
+   6 -   4  8  9  4  3  1  1  4  5  8  8
+   7 -   4  0  0  1  1  9  9
+   8 -   6 10 11  2  2  1  1  8  8
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  8  8
+  12 -   5  0  0  4  2  2  3 16 17
+  13 -   5 14 15  6  2  6  7 10 13
+  14 -  13 16 17  4  2  6  7 10 11
+  15 -  13  0  0  2  1 12 13
+  16 -  14  0  0  2  1  6  7
+  17 -  14  0  0  2  1 10 11
+  18 -   3  0  0  1  1 14 14
+  19 -   3  0  0  1  1 15 15
+
+ CHAIN O
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            245
+Total number of atoms read in:              1911
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         245  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2187
+ selectset done           0
+ eigen done           0
+ tau           1   4.01438570              35
+ #popped           2           1
+ #selectset contacts        2187
+ selectset done           1
+ eigen done           1
+ tau           3   1.05803943              20
+ #popped           4           1
+ #selectset contacts        2187
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        2187
+ selectset done           0
+ eigen done           0
+ tau           5   2.81177163              81         136
+ #popped           6           1
+ #selectset contacts        2187
+ selectset done           1
+ eigen done           1
+ tau           7   2.02763772             229
+ #popped           8           1
+ #selectset contacts        2187
+ selectset done           1
+ eigen done           1
+ tau           9   2.16075444             170         210
+ #popped          10           2
+ #selectset contacts        2187
+ selectset done           2
+ eigen done           2
+ tau          11   2.08075857              54          66
+ #popped          12           2
+ #selectset contacts        2187
+ selectset done           2
+ eigen done           2
+ tau          13  0.323458403              54
+ #popped          15           2
+ #selectset contacts        2187
+ selectset done           2
+ eigen done           2
+ tau          15   1.80474055             170
+ #popped          16           2
+ #selectset contacts        2187
+ selectset done           2
+ eigen done           2
+ tau          17  0.819219232             152
+ #popped          18           2
+ #selectset contacts        2187
+ selectset done           2
+ eigen done           2
+ tau          19  0.493435800              81
+ #popped          11           1
+ #selectset contacts        2187
+ selectset done           1
+ eigen done           1
+ tau          21   1.00407755             184         199
+ #popped          22           1
+ #selectset contacts        2187
+ selectset done           1
+ eigen done           1
+ tau          23   2.27942944             184
+ #popped           7           0
+ #selectset contacts        2187
+ selectset done           0
+ eigen done           0
+ tau          25   1.15965104              92         126
+ #popped          26           1
+ #selectset contacts        2187
+ selectset done           1
+ eigen done           1
+ tau          27  0.759013295              92
+ #popped          27           0
+ #selectset contacts        2187
+ selectset done           0
+ eigen done           0
+ tau          29   1.38208687             109
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         245
+         245  residues read 8FZ5.dssp                                                   
+  exclude short helix          63          65
+  grow short strand          69          71
+  grow short strand         160         162
+  grow short strand         165         169
+  grow short strand         228         229
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  4  5  8  9 10 11 14 15 12 13 16  6  7
+   2     1  0  0  1  1
+   3     1  6  7 15  2  3  4  5  8  9 10 11 14 15 12 13 16  6  7
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     3  8  9 13  2  3  4  5  8  9 10 11 14 15 12 13 16
+   7     3 30 31  2  6  7
+   8     6 10 11 12  2  3  4  5  8  9 10 11 14 15 12 13
+   9     6  0  0  1 16
+  10     8 14 15 10  2  3  4  5  8  9 10 11 14 15
+  11     8 22 23  2 12 13
+  12     0  0  0 10  2  3  4  5  8  9 10 11 14 15
+  13     0  0  0  0
+  14    10  0  0  2  2  3
+  15    10 16 17  8  4  5  8  9 10 11 14 15
+  16    15 18 19  6  4  5  8  9 10 11
+  17    15  0  0  2 14 15
+  18    16 20 21  4  4  5  8  9
+  19    16  0  0  2 10 11
+  20    18  0  0  2  4  5
+  21    18  0  0  2  8  9
+  22    11  0  0  1 12
+  23    11  0  0  1 13
+  24     0  0  0  1 12
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  2  6  7
+  28     0  0  0  0
+  29     0  0  0  0
+  30     7  0  0  1  6
+  31     7  0  0  1  7
+   1 +   0  2  3 16  1  1 16
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5 15  1  2 16
+   4 *   3  6  7 13  2  2  5  8 16
+   5 *   3 20 21  2  1  6  7
+   6 -   4  8  9 12  2  2  5  8 15
+   7 -   4  0  0  1  1 16 16
+   8 -   6 10 11 10  3  2  5  8 11 14 15
+   9 -   6 18 19  2  1 12 13
+  10 -   8  0  0  2  1  2  3
+  11 -   8 12 13  8  3  4  5  8 11 14 15
+  12 -  11 14 15  6  2  4  5  8 11
+  13 -  11  0  0  2  1 14 15
+  14 -  12 16 17  4  2  4  5  8  9
+  15 -  12  0  0  2  1 10 11
+  16 -  14  0  0  2  1  4  5
+  17 -  14  0  0  2  1  8  9
+  18 -   9  0  0  1  1 12 12
+  19 -   9  0  0  1  1 13 13
+  20 -   5  0  0  1  1  6  6
+  21 -   5  0  0  1  1  7  7
+
+ CHAIN P
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            233
+Total number of atoms read in:              1820
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         233  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau           1   2.29246473              50          62
+ #popped           2           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau           3   1.87518752              12          78         131
+ #popped           4           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau           5   1.71102262              12         115
+ #popped           6           2
+ #selectset contacts        2107
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau           7   1.47920823              96
+ #popped           5           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau           9   2.72156715              31
+ #popped          11           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau          11   1.22844851             163         207
+ #popped          12           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          13   2.28408647             221
+ #popped          14           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          15  0.597517133              50         163
+ #popped          16           2
+ #selectset contacts        2107
+ selectset done           2
+ eigen done           2
+ tau          17  0.439458966              50
+ #popped          17           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          19  0.934376657              73         136         146
+ #popped          20           2
+ #selectset contacts        2107
+ selectset done           2
+ eigen done           2
+ tau          21  0.805914164              73
+ #popped          21           1
+ #selectset contacts        2107
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          13           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau          23   2.33144665             182
+ #popped          25           0
+ #selectset contacts        2107
+ selectset done           0
+ eigen done           0
+ tau          25   1.43393326             197
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         233
+         233  residues read 8FZ5.dssp                                                   
+  grow short strand          35          39
+  grow short strand          66          67
+  grow short strand         155         157
+  grow short strand         160         163
+  grow short strand         217         220
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 16  6  7  1  2  3 14 15  4  9  5  8 10 11 16 12 13
+   2     0  0  0 16  6  7  1  2  3 14 15  4  9  5  8 10 11 16 12 13
+   3     0  0  0  0
+   4     1  8  9  2  6  7
+   5     1 10 11 14  1  2  3 14 15  4  9  5  8 10 11 16 12 13
+   6     0  0  0  0
+   7     0  0  0  2  6  7
+   8     4  0  0  1  6
+   9     4  0  0  1  7
+  10     5  0  0  1  1
+  11     5 12 13 13  2  3 14 15  4  9  5  8 10 11 16 12 13
+  12    11 14 15 11  2  3 14 15  4  9  5  8 10 11 16
+  13    11 24 25  2 12 13
+  14    12 16 17 10  2  3 14 15  4  9  5  8 10 11
+  15    12  0  0  1 16
+  16    14 18 19  4  2  3 14 15
+  17    14 20 21  6  4  9  5  8 10 11
+  18    16  0  0  2  2  3
+  19    16  0  0  2 14 15
+  20    17 22 23  2  4  9
+  21    17  0  0  4  5  8 10 11
+  22    20  0  0  1  4
+  23    20  0  0  1  9
+  24    13  0  0  1 12
+  25    13  0  0  1 13
+  26     0  0  0  1 13
+  27     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  2  1  6  7
+   3 -   1  6  7 14  2  1  5  8 16
+   4 -   2  0  0  1  1  6  6
+   5 -   2  0  0  1  1  7  7
+   6 -   3  0  0  1  1  1  1
+   7 -   3  8  9 13  2  2  5  8 16
+   8 -   7 10 11 11  3  2  5  8 11 14 16
+   9 -   7 20 21  2  1 12 13
+  10 -   8 12 13 10  3  2  5  8 11 14 15
+  11 -   8  0  0  1  1 16 16
+  12 -  10 14 15  4  2  2  3 14 15
+  13 -  10 16 17  6  2  4  5  8 11
+  14 -  12  0  0  2  1  2  3
+  15 -  12  0  0  2  1 14 15
+  16 -  13 18 19  2  2  4  4  9  9
+  17 -  13  0  0  4  3  5  5  8  8 10 11
+  18 -  16  0  0  1  1  4  4
+  19 -  16  0  0  1  1  9  9
+  20 -   9  0  0  1  1 12 12
+  21 -   9  0  0  1  1 13 13
+
+ CHAIN Q
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            251
+Total number of atoms read in:              1979
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         251  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2235
+ selectset done           0
+ eigen done           0
+ tau           1   2.74719000              31          64         159
+ #popped           2           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau           3   3.65863466              31
+ #popped           4           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau           5   2.83183336              11
+ #popped           7           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau           7   1.19541562             118         130
+ #popped           8           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau           9   1.23709214              79         106
+ #popped          10           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          11  0.514319777              79
+ #popped          13           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          13  0.468505591             148
+ #popped          14           2
+ #selectset contacts        2235
+ selectset done           2
+ eigen done           2
+ tau          15   2.18474150             118
+ #popped          11           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau          17   1.13446426              96
+ #popped           3           0
+ #selectset contacts        2235
+ selectset done           0
+ eigen done           0
+ tau          19   3.28037739             228
+ #popped          20           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau          21   2.42764258              50          64
+ #popped          22           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau          23   1.03515828             213
+ #popped          24           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau          25  0.742481232             177         195
+ #popped          26           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau          27  0.468474984              50
+ #popped          29           1
+ #selectset contacts        2235
+ selectset done           1
+ eigen done           1
+ tau          29   4.64532042             177
+ #popped          21           0
+ #selectset contacts        2235
+ selectset done           0
+ eigen done           0
+ tau          31  0.868686855             238
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         251
+         251  residues read 8FZ5.dssp                                                   
+  exclude short helix           2           5
+  grow short strand          65          67
+  grow short strand         156         158
+  grow short strand         161         164
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  4  5  7  8  9 10  6  2  3 11 12 13 14 15 16
+   2     1  4  5  8  1  4  5  7  8  9 10  6
+   3     1 20 21  8  2  3 11 12 13 14 15 16
+   4     2  0  0  1  1
+   5     2 10 11  7  4  5  7  8  9 10  6
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     0  0  0  7  4  5  7  8  9 10  6
+   9     0  0  0  0
+  10     5 12 13  6  4  5  7  8  9 10
+  11     5  0  0  1  6
+  12    10  0  0  2  4  5
+  13    10 14 15  4  7  8  9 10
+  14    13 16 17  3  7  8  9
+  15    13  0  0  1 10
+  16    14  0  0  1  7
+  17    14  0  0  2  8  9
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20     3 24 25  7  2  3 11 12 13 14 15
+  21     3  0  0  1 16
+  22     0  0  0  7  2  3 11 12 13 14 15
+  23     0  0  0  0
+  24    20 26 27  5  2  3 11 12 13
+  25    20  0  0  2 14 15
+  26    24 28 29  4  2  3 11 12
+  27    24  0  0  1 13
+  28    26  0  0  2  2  3
+  29    26  0  0  2 11 12
+  30     0  0  0  2 11 12
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 +   1  4  5  8  2  1  1  4 10
+   3 +   1 14 15  8  2  2  3 11 16
+   4 =   2  0  0  1  1  1  1
+   5 *   2  6  7  7  1  4 10
+   6 -   5  8  9  6  2  4  5  7 10
+   7 -   5  0  0  1  1  6  6
+   8 -   6  0  0  2  1  4  5
+   9 -   6 10 11  4  1  7 10
+  10 -   9 12 13  3  1  7  9
+  11 -   9  0  0  1  1 10 10
+  12 -  10  0  0  1  1  7  7
+  13 -  10  0  0  2  1  8  9
+  14 *   3 16 17  7  2  2  3 11 15
+  15 =   3  0  0  1  1 16 16
+  16 -  14 18 19  5  2  2  3 11 13
+  17 -  14  0  0  2  1 14 15
+  18 -  16 20 21  4  2  2  3 11 12
+  19 -  16  0  0  1  1 13 13
+  20 -  18  0  0  2  1  2  3
+  21 -  18  0  0  2  1 11 12
+
+ CHAIN R
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            243
+Total number of atoms read in:              1922
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         243  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2193
+ selectset done           0
+ eigen done           0
+ tau           1   3.42048216             219
+ #popped           2           1
+ #selectset contacts        2193
+ selectset done           1
+ eigen done           1
+ tau           3   2.35541296              27          61         154
+ #popped           4           2
+ #selectset contacts        2193
+ selectset done           2
+ eigen done           2
+ tau           5   3.00728989              27
+ #popped           6           3
+ #selectset contacts        2193
+ selectset done           3
+ eigen done           3
+ tau           7   1.39538693              15
+ #popped           7           2
+ #selectset contacts        2193
+ selectset done           2
+ eigen done           2
+ tau           9  0.906814814             114         127
+ #popped          10           2
+ #selectset contacts        2193
+ selectset done           2
+ eigen done           2
+ tau          11  0.780776978              73          86
+ #popped          12           2
+ #selectset contacts        2193
+ selectset done           2
+ eigen done           2
+ tau          13  0.529093325             142
+ #popped          14           2
+ #selectset contacts        2193
+ selectset done           2
+ eigen done           2
+ tau          15   2.01161098              73         114
+ #popped          16           3
+ #selectset contacts        2193
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          17           2
+ #selectset contacts        2193
+ selectset done           2
+ eigen done           2
+ tau          17   1.30834317             101
+ #popped           5           1
+ #selectset contacts        2193
+ selectset done           1
+ eigen done           1
+ tau          19  0.685844898              43         173         192         206
+ #popped          20           2
+ #selectset contacts        2193
+ selectset done           2
+ eigen done           2
+ tau          21  0.600941122             192
+ #popped          22           2
+ #selectset contacts        2193
+ selectset done           2
+ eigen done           2
+ tau          23   2.31917620              43
+ #popped          21           1
+ #selectset contacts        2193
+ selectset done           1
+ eigen done           1
+ tau          25   1.06109726              61
+ #popped          27           1
+ #selectset contacts        2193
+ selectset done           1
+ eigen done           1
+ tau          27   4.33427429             173
+ #popped           3           0
+ #selectset contacts        2193
+ selectset done           0
+ eigen done           0
+ tau          29   1.01184046             232
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         243
+         243  residues read 8FZ5.dssp                                                   
+  grow short strand          31          35
+  exclude short helix          55          58
+  grow short strand          61          63
+  grow short strand         152         154
+  grow short strand         157         160
+  exclude short helix         178         180
+  grow short strand         217         218
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  4  5  8  7  9 10  6  2  3 13 14 15 11 12 16
+   2     1  4  5 15  1  4  5  8  7  9 10  6  2  3 13 14 15 11 12
+   3     1  0  0  1 16
+   4     2  6  7  8  1  4  5  8  7  9 10  6
+   5     2 20 21  7  2  3 13 14 15 11 12
+   6     4  0  0  1  1
+   7     4 12 13  7  4  5  8  7  9 10  6
+   8     0  0  0  0
+   9     0  0  0  1  1
+  10     0  0  0  7  4  5  8  7  9 10  6
+  11     0  0  0  0
+  12     7 14 15  6  4  5  8  7  9 10
+  13     7  0  0  1  6
+  14    12 16 17  4  4  5  8  7
+  15    12  0  0  2  9 10
+  16    14  0  0  3  4  5  8
+  17    14  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     5 22 23  5  2  3 13 14 15
+  21     5  0  0  2 11 12
+  22    20 24 25  3  2  3 13
+  23    20  0  0  2 14 15
+  24    22  0  0  2  2  3
+  25    22  0  0  1 13
+  26     0  0  0  0
+  27     0  0  0  2 11 12
+  28     0  0  0  2 11 12
+  29     0  0  0  0
+  30     0  0  0  1 16
+  31     0  0  0  0
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5 15  1  1 15
+   3 =   1  0  0  1  1 16 16
+   4 -   2  6  7  8  2  1  1  4 10
+   5 -   2 14 15  7  2  2  3 11 15
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  7  1  4 10
+   8 -   7 10 11  6  2  4  5  7 10
+   9 -   7  0  0  1  1  6  6
+  10 -   8 12 13  4  2  4  5  7  8
+  11 -   8  0  0  2  1  9 10
+  12 -  10  0  0  3  2  4  5  8  8
+  13 -  10  0  0  1  1  7  7
+  14 -   5 16 17  5  2  2  3 13 15
+  15 -   5  0  0  2  1 11 12
+  16 -  14 18 19  3  2  2  3 13 13
+  17 -  14  0  0  2  1 14 15
+  18 -  16  0  0  2  1  2  3
+  19 -  16  0  0  1  1 13 13
+
+ CHAIN S
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            236
+Total number of atoms read in:              1805
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         236  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2090
+ selectset done           0
+ eigen done           0
+ tau           1   2.88960218              28         115         131
+ #popped           2           1
+ #selectset contacts        2090
+ selectset done           1
+ eigen done           1
+ tau           3   3.55410004              28
+ #popped           4           1
+ #selectset contacts        2090
+ selectset done           1
+ eigen done           1
+ tau           5  0.951908290              17
+ #popped           3           0
+ #selectset contacts        2090
+ selectset done           0
+ eigen done           0
+ tau           7   2.08896494             224
+ #popped           8           0
+ #selectset contacts        2090
+ selectset done           0
+ eigen done           0
+ tau           9   1.44602072              45          59         200         210
+ #popped          10           1
+ #selectset contacts        2090
+ selectset done           1
+ eigen done           1
+ tau          11   1.75791276              75         100
+ #popped          12           2
+ #selectset contacts        2090
+ selectset done           2
+ eigen done           2
+ tau          13   2.13541412             167         200
+ #popped          14           3
+ #selectset contacts        2090
+ selectset done           3
+ eigen done           3
+ tau          15   1.60906243              75         115
+ #popped          16           3
+ #selectset contacts        2090
+ selectset done           3
+ eigen done           3
+ tau          17  0.539727926             167
+ #popped          18           3
+ #selectset contacts        2090
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          15           2
+ #selectset contacts        2090
+ selectset done           2
+ eigen done           2
+ tau          19   1.42857146             183
+ #popped          13           1
+ #selectset contacts        2090
+ selectset done           1
+ eigen done           1
+ tau          21  0.939682543              85
+ #popped          11           0
+ #selectset contacts        2090
+ selectset done           0
+ eigen done           0
+ tau          23   1.11715102              59
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         236
+         236  residues read 8FZ5.dssp                                                   
+  grow short strand          32          36
+  exclude short helix          56          58
+  grow short strand          62          66
+  grow short strand         157         159
+  grow short strand         162         165
+  grow short strand         219         223
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  4  5  8  9 10 11 14 15  7 12 13  6 16
+   2     1  0  0  1  1
+   3     1  8  9 15  2  3  4  5  8  9 10 11 14 15  7 12 13  6 16
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     3 12 13 14  2  3  4  5  8  9 10 11 14 15  7 12 13  6
+   9     3  0  0  1 16
+  10     0  0  0 14  2  3  4  5  8  9 10 11 14 15  7 12 13  6
+  11     0  0  0  0
+  12     8 14 15 13  2  3  4  5  8  9 10 11 14 15  7 12 13
+  13     8  0  0  1  6
+  14    12 16 17 11  2  3  4  5  8  9 10 11 14 15  7
+  15    12 20 21  2 12 13
+  16    14 18 19 10  2  3  4  5  8  9 10 11 14 15
+  17    14  0  0  1  7
+  18    16  0  0  8  2  3  4  5  8  9 10 11
+  19    16  0  0  2 14 15
+  20    15  0  0  1 12
+  21    15  0  0  1 13
+  22     0  0  0  0
+  23     0  0  0  1  6
+  24     0  0  0  0
+  25     0  0  0  0
+   1 +   0  2  3 16  1  1 16
+   2 *   1  0  0  1  1  1  1
+   3 *   1  4  5 15  1  2 16
+   4 -   3  6  7 14  1  2 15
+   5 -   3  0  0  1  1 16 16
+   6 -   4  8  9 13  2  2  5  7 15
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11 11  3  2  5  7 11 14 15
+   9 -   6 14 15  2  1 12 13
+  10 -   8 12 13 10  3  2  5  8 11 14 15
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  8  2  2  5  8 11
+  13 -  10  0  0  2  1 14 15
+  14 -   9  0  0  1  1 12 12
+  15 -   9  0  0  1  1 13 13
+
+ CHAIN T
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            238
+Total number of atoms read in:              1873
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2176
+ selectset done           0
+ eigen done           0
+ tau           1   2.52290821              28          71         128
+ #popped           2           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau           3   4.38611174              28
+ #popped           4           2
+ #selectset contacts        2176
+ selectset done           2
+ eigen done           2
+ tau           5   1.03464139              15
+ #popped           5           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau           7   1.06029356              81         109
+ #popped           8           2
+ #selectset contacts        2176
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           9           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau           9   1.46009851              99
+ #popped           3           0
+ #selectset contacts        2176
+ selectset done           0
+ eigen done           0
+ tau          11   1.22737932              45          58         187         207         221
+ #popped          12           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau          13   1.29414105             156         187
+ #popped          14           2
+ #selectset contacts        2176
+ selectset done           2
+ eigen done           2
+ tau          15  0.431285679             156
+ #popped          16           2
+ #selectset contacts        2176
+ selectset done           2
+ eigen done           2
+ tau          17  0.537195504             140
+ #popped          18           2
+ #selectset contacts        2176
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          15           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau          19   1.48351645             176
+ #popped          20           1
+ #selectset contacts        2176
+ selectset done           1
+ eigen done           1
+ tau          21  0.782014072             166
+ #popped          13           0
+ #selectset contacts        2176
+ selectset done           0
+ eigen done           0
+ tau          23   1.85711634              58
+ #popped          25           0
+ #selectset contacts        2176
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         238
+         238  residues read 8FZ5.dssp                                                   
+  grow short strand          32          36
+  grow short strand          60          64
+  grow short strand         150         153
+  grow short strand         155         158
+  grow short strand         219         221
+  exclude short helix         227         230
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  6  7  2  3  4  5  8  9 10 14 15 11 12 13
+   2     1  4  5  3  1  6  7
+   3     1 14 15 12  2  3  4  5  8  9 10 14 15 11 12 13
+   4     2  0  0  1  1
+   5     2 10 11  2  6  7
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     0  0  0  0
+   9     0  0  0  2  6  7
+  10     5  0  0  1  6
+  11     5  0  0  1  7
+  12     0  0  0 12  2  3  4  5  8  9 10 14 15 11 12 13
+  13     0  0  0  0
+  14     3 16 17  9  2  3  4  5  8  9 10 14 15
+  15     3 20 21  3 11 12 13
+  16    14 18 19  7  2  3  4  5  8  9 10
+  17    14  0  0  2 14 15
+  18    16  0  0  5  2  3  4  5  8
+  19    16  0  0  2  9 10
+  20    15 22 23  2 11 12
+  21    15  0  0  1 13
+  22    20  0  0  1 11
+  23    20  0  0  1 12
+  24     0  0  0  0
+  25     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  3  2  1  1  6  7
+   3 -   1  8  9 12  2  2  5  8 15
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  6  7
+   6 -   5  0  0  1  1  6  6
+   7 -   5  0  0  1  1  7  7
+   8 -   3 10 11  9  3  2  5  8 10 14 15
+   9 -   3 14 15  3  1 11 13
+  10 -   8 12 13  7  2  2  5  8 10
+  11 -   8  0  0  2  1 14 15
+  12 -  10  0  0  5  2  2  5  8  8
+  13 -  10  0  0  2  1  9 10
+  14 -   9 16 17  2  1 11 12
+  15 -   9  0  0  1  1 13 13
+  16 -  14  0  0  1  1 11 11
+  17 -  14  0  0  1  1 12 12
+
+ CHAIN U
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            241
+Total number of atoms read in:              1888
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         241  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2195
+ selectset done           0
+ eigen done           0
+ tau           1   2.61100149              28          74         129
+ #popped           2           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau           3   4.23529434              28
+ #popped           4           2
+ #selectset contacts        2195
+ selectset done           2
+ eigen done           2
+ tau           5  0.893750012              14
+ #popped           5           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau           7  0.998949766             103
+ #popped           8           2
+ #selectset contacts        2195
+ selectset done           2
+ eigen done           2
+ tau           9   1.22571003              88
+ #popped           9           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau          11   1.13096702             119
+ #popped           3           0
+ #selectset contacts        2195
+ selectset done           0
+ eigen done           0
+ tau          13   1.60070968              48          59
+ #popped          14           0
+ #selectset contacts        2195
+ selectset done           0
+ eigen done           0
+ tau          15   1.21381271             189         205         224
+ #popped          16           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau          17  0.913205445             159         174
+ #popped          18           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau          19  0.594769239             143         159
+ #popped          20           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau          21   1.64572918             143         189
+ #popped          22           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau          23  0.422638655              48
+ #popped          24           2
+ #selectset contacts        2195
+ selectset done           2
+ eigen done           2
+ tau          25  0.248084292              38
+ #popped          25           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau          27   1.20545447             143
+ #popped          28           1
+ #selectset contacts        2195
+ selectset done           1
+ eigen done           1
+ tau          29  0.395130038              74
+ #popped          17           0
+ #selectset contacts        2195
+ selectset done           0
+ eigen done           0
+ tau          31   3.62681174             205
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         241
+         241  residues read 8FZ5.dssp                                                   
+  grow short strand          32          36
+  grow short strand          62          66
+  grow short strand         153         155
+  grow short strand         158         161
+  exclude short helix         214         216
+  grow short strand         221         222
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  6  7  2  3  4  5  8 14 15 13  9 10 11 12 16
+   2     1  4  5  3  1  6  7
+   3     1 16 17 13  2  3  4  5  8 14 15 13  9 10 11 12 16
+   4     2  0  0  1  1
+   5     2  8  9  2  6  7
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     5  0  0  1  6
+   9     5  0  0  1  7
+  10     0  0  0  1  6
+  11     0  0  0  0
+  12     0  0  0  1  7
+  13     0  0  0  0
+  14     0  0  0 13  2  3  4  5  8 14 15 13  9 10 11 12 16
+  15     0  0  0  0
+  16     3 18 19 12  2  3  4  5  8 14 15 13  9 10 11 12
+  17     3  0  0  1 16
+  18    16 20 21 10  2  3  4  5  8 14 15 13  9 10
+  19    16  0  0  2 11 12
+  20    18 22 23  8  2  3  4  5  8 14 15 13
+  21    18  0  0  2  9 10
+  22    20 24 25  7  2  3  4  5  8 14 15
+  23    20  0  0  1 13
+  24    22 26 27  2  2  3
+  25    22 28 29  5  4  5  8 14 15
+  26    24  0  0  1  2
+  27    24  0  0  1  3
+  28    25 30 31  3  4  5  8
+  29    25  0  0  2 14 15
+  30    28  0  0  2  4  5
+  31    28  0  0  1  8
+  32     0  0  0  0
+  33     0  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 +   1  4  5  3  2  1  1  6  7
+   3 *   1  8  9 13  2  2  5  8 16
+   4 =   2  0  0  1  1  1  1
+   5 *   2  6  7  2  1  6  7
+   6 -   5  0  0  1  1  6  6
+   7 -   5  0  0  1  1  7  7
+   8 -   3 10 11 12  2  2  5  8 15
+   9 -   3  0  0  1  1 16 16
+  10 -   8 12 13 10  3  2  5  8 10 13 15
+  11 -   8  0  0  2  1 11 12
+  12 -  10 14 15  8  3  2  5  8  8 13 15
+  13 -  10  0  0  2  1  9 10
+  14 -  12 16 17  7  3  2  5  8  8 14 15
+  15 -  12  0  0  1  1 13 13
+  16 -  14 18 19  2  1  2  3
+  17 -  14 20 21  5  3  4  5  8  8 14 15
+  18 -  16  0  0  1  1  2  2
+  19 -  16  0  0  1  1  3  3
+  20 -  17 22 23  3  2  4  5  8  8
+  21 -  17  0  0  2  1 14 15
+  22 -  20  0  0  2  1  4  5
+  23 -  20  0  0  1  1  8  8
+
+ CHAIN V
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1519
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau           1   2.50129008             189
+ #popped           2           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau           3   2.19991255              34         122
+ #popped           4           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau           5   1.00027359              16          34
+ #popped           6           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau           7  0.810113490             142         156
+ #popped           8           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau           9   1.07178140             132         170
+ #popped          10           2
+ #selectset contacts        1832
+ selectset done           2
+ eigen done           2
+ tau          11  0.594862461             132
+ #popped          12           2
+ #selectset contacts        1832
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          11           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau          13   1.99691844             142
+ #popped           5           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau          15  0.682720065              62          80
+ #popped          16           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau          17   1.25778103              44          98
+ #popped          18           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau          19  0.786982238             112
+ #popped          20           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau          21  0.535753191              44
+ #popped          19           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         202
+         202  residues read 8FZ5.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          38
+  grow short strand         121         122
+  grow short strand         125         128
+ crowded segment excluded!
+  exclude short helix         191         193
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 15  1  2 14 15 12 13  3  4  5  6  9 10 11  7  8
+   2     0  0  0 15  1  2 14 15 12 13  3  4  5  6  9 10 11  7  8
+   3     0  0  0  0
+   4     1  6  7  8  1  2 14 15 12 13  3  4
+   5     1 18 19  7  5  6  9 10 11  7  8
+   6     4 10 11  6  1  2 14 15 12 13
+   7     4  0  0  2  3  4
+   8     0  0  0  6  1  2 14 15 12 13
+   9     0  0  0  0
+  10     6 12 13  4  1  2 14 15
+  11     6 14 15  2 12 13
+  12    10  0  0  2  1  2
+  13    10  0  0  2 14 15
+  14    11  0  0  1 12
+  15    11  0  0  1 13
+  16     0  0  0  7  5  6  9 10 11  7  8
+  17     0  0  0  0
+  18     5 20 21  5  5  6  9 10 11
+  19     5  0  0  2  7  8
+  20    18 22 23  4  5  6  9 10
+  21    18  0  0  1 11
+  22    20  0  0  2  5  6
+  23    20  0  0  2  9 10
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5  8  2  1  4 12 15
+   3 *   1 12 13  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  8  9  4  2  1  2 14 15
+   7 -   4 10 11  2  1 12 13
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  2  1 14 15
+  10 -   7  0  0  1  1 12 12
+  11 -   7  0  0  1  1 13 13
+  12 -   3 14 15  5  2  5  6  9 11
+  13 -   3  0  0  2  1  7  8
+  14 -  12 16 17  4  2  5  6  9 10
+  15 -  12  0  0  1  1 11 11
+  16 -  14  0  0  2  1  5  6
+  17 -  14  0  0  2  1  9 10
+
+ CHAIN W
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            220
+Total number of atoms read in:              1660
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  calculate residue outside grid:         210
+  calculate residue outside grid:         211
+  calculate residue outside grid:         212
+  calculate residue outside grid:         213
+  calculate residue outside grid:         214
+  calculate residue outside grid:         215
+  calculate residue outside grid:         216
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         220  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau           1   15.5961342             193
+ #popped           2           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau           3   2.66435981              33         122
+ #popped           4           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau           5   1.01571834              17          33
+ #popped           6           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau           7  0.618960261             132         150
+ #popped           8           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau           9  0.718088806             132         160
+ #popped          10           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          11  0.835615039             132         170
+ #popped          12           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          13  0.433245361             183
+ #popped          14           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          15  0.425798118             132
+ #popped          16           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           5           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          17   1.10313666              60          74
+ #popped          18           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          19   1.01516438              44          97
+ #popped          20           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          21  0.670663357             109
+ #popped          22           2
+ #selectset contacts        1920
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          21           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          23   1.17650855              60          85
+ #popped          24           1
+ #selectset contacts        1920
+ selectset done           1
+ eigen done           1
+ tau          25  0.713383734              60
+ #popped           3           0
+ #selectset contacts        1920
+ selectset done           0
+ eigen done           0
+ tau          27   3.49891496             208
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         220
+         220  residues read 8FZ5.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          38
+  grow short strand         119         121
+  grow short strand         124         128
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2 12 15 16 14 13  3  4  5  6  9 10 11  7  8 17
+   2     1  4  5 16  1  2 12 15 16 14 13  3  4  5  6  9 10 11  7  8
+   3     1  0  0  1 17
+   4     2  6  7  9  1  2 12 15 16 14 13  3  4
+   5     2 20 21  7  5  6  9 10 11  7  8
+   6     4  8  9  7  1  2 12 15 16 14 13
+   7     4  0  0  2  3  4
+   8     6 10 11  6  1  2 12 15 16 14
+   9     6  0  0  1 13
+  10     8 14 15  5  1  2 12 15 16
+  11     8  0  0  1 14
+  12     0  0  0  5  1  2 12 15 16
+  13     0  0  0  0
+  14    10 16 17  4  1  2 12 15
+  15    10  0  0  1 16
+  16    14  0  0  3  1  2 12
+  17    14  0  0  1 15
+  18     0  0  0  7  5  6  9 10 11  7  8
+  19     0  0  0  0
+  20     5 22 23  5  5  6  9 10 11
+  21     5 24 25  2  7  8
+  22    20  0  0  3  5  6  9
+  23    20  0  0  2 10 11
+  24    21  0  0  1  7
+  25    21  0  0  1  8
+  26     0  0  0  1  7
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1 17
+   1 +   0  2  3 17  1  1 17
+   2 +   1  4  5 16  1  1 16
+   3 =   1  0  0  1  1 17 17
+   4 *   2  6  7  9  2  1  4 12 16
+   5 *   2 16 17  7  1  5 11
+   6 -   4  8  9  7  2  1  2 12 16
+   7 -   4  0  0  2  1  3  4
+   8 -   6 10 11  6  3  1  2 12 12 14 16
+   9 -   6  0  0  1  1 13 13
+  10 -   8 12 13  5  3  1  2 12 12 15 16
+  11 -   8  0  0  1  1 14 14
+  12 -  10 14 15  4  3  1  2 12 12 15 15
+  13 -  10  0  0  1  1 16 16
+  14 -  12  0  0  3  2  1  2 12 12
+  15 -  12  0  0  1  1 15 15
+  16 -   5 18 19  5  2  5  6  9 11
+  17 -   5 20 21  2  1  7  8
+  18 -  16  0  0  3  2  5  6  9  9
+  19 -  16  0  0  2  1 10 11
+  20 -  17  0  0  1  1  7  7
+  21 -  17  0  0  1  1  8  8
+
+ CHAIN X
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            204
+Total number of atoms read in:              1594
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         204  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1864
+ selectset done           0
+ eigen done           0
+ tau           1   2.18376613              37         131
+ #popped           2           1
+ #selectset contacts        1864
+ selectset done           1
+ eigen done           1
+ tau           3   1.43505740              24          37
+ #popped           4           1
+ #selectset contacts        1864
+ selectset done           1
+ eigen done           1
+ tau           5  0.730746925             151         168
+ #popped           6           1
+ #selectset contacts        1864
+ selectset done           1
+ eigen done           1
+ tau           7  0.800915718             180
+ #popped           8           2
+ #selectset contacts        1864
+ selectset done           2
+ eigen done           2
+ tau           9   1.27202046             151
+ #popped          10           2
+ #selectset contacts        1864
+ selectset done           2
+ eigen done           2
+ tau          11  0.860294104             141
+ #popped          12           2
+ #selectset contacts        1864
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           9           1
+ #selectset contacts        1864
+ selectset done           1
+ eigen done           1
+ tau          13  0.315804631             194
+ #popped           3           0
+ #selectset contacts        1864
+ selectset done           0
+ eigen done           0
+ tau          15  0.826632202              49          69          86         108         120
+ #popped          16           1
+ #selectset contacts        1864
+ selectset done           1
+ eigen done           1
+ tau          17   1.14104044              86
+ #popped          18           1
+ #selectset contacts        1864
+ selectset done           1
+ eigen done           1
+ tau          19   3.23224711              49
+ #popped          17           0
+ #selectset contacts        1864
+ selectset done           0
+ eigen done           0
+ tau          21  0.623449683              69
+ #popped          22           1
+ #selectset contacts        1864
+ selectset done           1
+ eigen done           1
+ tau          23  0.737483442              59
+ #popped          23           0
+ #selectset contacts        1864
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         204
+         204  residues read 8FZ5.dssp                                                   
+  grow short strand          27          29
+  grow short strand          32          35
+  grow short strand          41          43
+  grow short strand         129         132
+  grow short strand         135         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2 12 13 15 16 14  3  4  5 10  6  7  8  9 11
+   2     1  4  5  9  1  2 12 13 15 16 14  3  4
+   3     1 16 17  7  5 10  6  7  8  9 11
+   4     2  6  7  7  1  2 12 13 15 16 14
+   5     2  0  0  2  3  4
+   6     4  8  9  6  1  2 12 13 15 16
+   7     4  0  0  1 14
+   8     6 12 13  4  1  2 12 13
+   9     6 14 15  2 15 16
+  10     0  0  0  4  1  2 12 13
+  11     0  0  0  0
+  12     8  0  0  3  1  2 12
+  13     8  0  0  1 13
+  14     9  0  0  1 15
+  15     9  0  0  1 16
+  16     3 18 19  2  5 10
+  17     3 22 23  5  6  7  8  9 11
+  18    16  0  0  1  5
+  19    16  0  0  1 10
+  20     0  0  0  1  5
+  21     0  0  0  0
+  22    17 24 25  2  6  7
+  23    17  0  0  3  8  9 11
+  24    22  0  0  1  6
+  25    22  0  0  1  7
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  9  2  1  4 12 16
+   3 -   1 14 15  7  1  5 11
+   4 -   2  6  7  7  2  1  2 12 16
+   5 -   2  0  0  2  1  3  4
+   6 -   4  8  9  6  3  1  2 12 13 15 16
+   7 -   4  0  0  1  1 14 14
+   8 -   6 10 11  4  2  1  2 12 13
+   9 -   6 12 13  2  1 15 16
+  10 -   8  0  0  3  2  1  2 12 12
+  11 -   8  0  0  1  1 13 13
+  12 -   9  0  0  1  1 15 15
+  13 -   9  0  0  1  1 16 16
+  14 -   3 16 17  2  2  5  5 10 10
+  15 -   3 18 19  5  2  6  9 11 11
+  16 -  14  0  0  1  1  5  5
+  17 -  14  0  0  1  1 10 10
+  18 -  15 20 21  2  1  6  7
+  19 -  15  0  0  3  2  8  9 11 11
+  20 -  18  0  0  1  1  6  6
+  21 -  18  0  0  1  1  7  7
+
+ CHAIN Y
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            199
+Total number of atoms read in:              1602
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1807
+ selectset done           0
+ eigen done           0
+ tau           1   1.69667149              19          31          47         100
+ #popped           2           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau           3   1.07265234              35         127
+ #popped           4           2
+ #selectset contacts        1807
+ selectset done           2
+ eigen done           2
+ tau           5  0.840678751             139         162
+ #popped           6           3
+ #selectset contacts        1807
+ selectset done           3
+ eigen done           3
+ tau           7  0.695783079             139
+ #popped           8           4
+ #selectset contacts        1807
+ selectset done           4
+ eigen done           4
+ tau           9  0.279917181              13
+ #popped          11           4
+ #selectset contacts        1807
+ selectset done           4
+ eigen done           4
+ tau          11   999.999023              35
+ #popped           9           3
+ #selectset contacts        1807
+ selectset done           3
+ eigen done           3
+ tau          13   1.46839821             173
+ #popped          15           3
+ #selectset contacts        1807
+ selectset done           3
+ eigen done           3
+ tau          15  0.441079110             189
+ #popped           7           2
+ #selectset contacts        1807
+ selectset done           2
+ eigen done           2
+ tau          17   1.21134019             150
+ #popped           5           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau          19  0.657980502             114
+ #popped          20           1
+ #selectset contacts        1807
+ selectset done           1
+ eigen done           1
+ tau          21  0.379103690              47
+ #popped           3           0
+ #selectset contacts        1807
+ selectset done           0
+ eigen done           0
+ tau          23   999.999023              31
+ #popped          25           0
+ #selectset contacts        1807
+ selectset done           0
+ eigen done           0
+ tau          25   1.13541663              63          75
+ #popped          26           0
+ #selectset contacts        1807
+ selectset done           0
+ eigen done           0
+ tau          27   1.22731912              63          90
+ #popped          28           0
+ #selectset contacts        1807
+ selectset done           0
+ eigen done           0
+ tau          29   1.16630495              63
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         199
+         199  residues read 8FZ5.dssp                                                   
+  grow short strand           4           8
+  grow short strand          21          23
+  grow short strand          26          29
+  grow short strand          35          39
+  grow short strand         124         126
+  grow short strand         129         132
+  grow short strand         187         190
+  grow short strand         194         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2 12 15 16 17 13 14  5  6  9 10 11  3  4  7  8
+   2     1  4  5 13  1  2 12 15 16 17 13 14  5  6  9 10 11
+   3     1 24 25  4  3  4  7  8
+   4     2  6  7  8  1  2 12 15 16 17 13 14
+   5     2 20 21  5  5  6  9 10 11
+   6     4  8  9  6  1  2 12 15 16 17
+   7     4 18 19  2 13 14
+   8     6 10 11  3  1  2 12
+   9     6 16 17  3 15 16 17
+  10     8  0  0  1  1
+  11     8 12 13  2  2 12
+  12    11  0  0  1  2
+  13    11  0  0  1 12
+  14     0  0  0  0
+  15     0  0  0  3 15 16 17
+  16     9  0  0  2 15 16
+  17     9  0  0  1 17
+  18     7  0  0  1 13
+  19     7  0  0  1 14
+  20     5 22 23  3  5  6  9
+  21     5  0  0  2 10 11
+  22    20  0  0  2  5  6
+  23    20  0  0  1  9
+  24     3  0  0  2  3  4
+  25     3 28 29  2  7  8
+  26     0  0  0  2  7  8
+  27     0  0  0  0
+  28    25  0  0  1  7
+  29    25  0  0  1  8
+  30     0  0  0  1  7
+  31     0  0  0  0
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5 13  3  1  2  5  6  9 17
+   3 -   1 22 23  4  2  3  4  7  8
+   4 -   2  6  7  8  2  1  2 12 17
+   5 -   2 18 19  5  2  5  6  9 11
+   6 -   4  8  9  6  3  1  2 12 12 15 17
+   7 -   4 16 17  2  1 13 14
+   8 -   6 10 11  3  2  1  2 12 12
+   9 -   6 14 15  3  1 15 17
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  2  2  2  2 12 12
+  12 -  11  0  0  1  1  2  2
+  13 -  11  0  0  1  1 12 12
+  14 -   9  0  0  2  1 15 16
+  15 -   9  0  0  1  1 17 17
+  16 -   7  0  0  1  1 13 13
+  17 -   7  0  0  1  1 14 14
+  18 -   5 20 21  3  2  5  6  9  9
+  19 -   5  0  0  2  1 10 11
+  20 -  18  0  0  2  1  5  6
+  21 -  18  0  0  1  1  9  9
+  22 -   3  0  0  2  1  3  4
+  23 -   3 24 25  2  1  7  8
+  24 -  23  0  0  1  1  7  7
+  25 -  23  0  0  1  1  8  8
+
+ CHAIN Z
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            201
+Total number of atoms read in:              1557
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         201  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1835
+ selectset done           0
+ eigen done           0
+ tau           1   2.09702015              34         122
+ #popped           2           1
+ #selectset contacts        1835
+ selectset done           1
+ eigen done           1
+ tau           3   1.04564500              16          34         163         173         190
+ #popped           4           2
+ #selectset contacts        1835
+ selectset done           2
+ eigen done           2
+ tau           5  0.696716368             163
+ #popped           6           2
+ #selectset contacts        1835
+ selectset done           2
+ eigen done           2
+ tau           7   1.08893120             141
+ #popped           8           3
+ #selectset contacts        1835
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1835
+ selectset done           2
+ eigen done           2
+ tau           9  0.793979526             153
+ #popped           5           1
+ #selectset contacts        1835
+ selectset done           1
+ eigen done           1
+ tau          11   2.07193828             173
+ #popped          12           1
+ #selectset contacts        1835
+ selectset done           1
+ eigen done           1
+ tau          13  0.914634109              34
+ #popped           3           0
+ #selectset contacts        1835
+ selectset done           0
+ eigen done           0
+ tau          15  0.879633486              63          75
+ #popped          16           0
+ #selectset contacts        1835
+ selectset done           0
+ eigen done           0
+ tau          17   1.40625000              47          63
+ #popped          18           0
+ #selectset contacts        1835
+ selectset done           0
+ eigen done           0
+ tau          19  0.897567570              85          95
+ #popped          20           0
+ #selectset contacts        1835
+ selectset done           0
+ eigen done           0
+ tau          21  0.693725586              85
+ #popped          22           1
+ #selectset contacts        1835
+ selectset done           1
+ eigen done           1
+ tau          23   39.1111107              47
+ #popped          23           0
+ #selectset contacts        1835
+ selectset done           0
+ eigen done           0
+ tau          25  0.413985103             112
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         201
+         201  residues read 8FZ5.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          38
+  grow short strand          41          44
+  grow short strand         120         122
+  grow short strand         125         128
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2 12 13 14 15 16  3  4 17  5  6  8  9 10 11  7
+   2     1  4  5 10  1  2 12 13 14 15 16  3  4 17
+   3     1 18 19  7  5  6  8  9 10 11  7
+   4     2  6  7  7  1  2 12 13 14 15 16
+   5     2 12 13  3  3  4 17
+   6     4  8  9  5  1  2 12 13 14
+   7     4  0  0  2 15 16
+   8     6  0  0  4  1  2 12 13
+   9     6  0  0  1 14
+  10     0  0  0  0
+  11     0  0  0  1 14
+  12     5  0  0  2  3  4
+  13     5  0  0  1 17
+  14     0  0  0  2  3  4
+  15     0  0  0  0
+  16     0  0  0  7  5  6  8  9 10 11  7
+  17     0  0  0  0
+  18     3 22 23  6  5  6  8  9 10 11
+  19     3  0  0  1  7
+  20     0  0  0  6  5  6  8  9 10 11
+  21     0  0  0  0
+  22    18 24 25  3  5  6  8
+  23    18 26 27  3  9 10 11
+  24    22  0  0  2  5  6
+  25    22  0  0  1  8
+  26    23  0  0  2  9 10
+  27    23  0  0  1 11
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5 10  2  1  4 12 17
+   3 *   1 12 13  7  1  5 11
+   4 -   2  6  7  7  2  1  2 12 16
+   5 -   2 10 11  3  2  3  4 17 17
+   6 -   4  8  9  5  2  1  2 12 14
+   7 -   4  0  0  2  1 15 16
+   8 -   6  0  0  4  2  1  2 12 13
+   9 -   6  0  0  1  1 14 14
+  10 -   5  0  0  2  1  3  4
+  11 -   5  0  0  1  1 17 17
+  12 -   3 14 15  6  2  5  6  8 11
+  13 -   3  0  0  1  1  7  7
+  14 -  12 16 17  3  2  5  6  8  8
+  15 -  12 18 19  3  1  9 11
+  16 -  14  0  0  2  1  5  6
+  17 -  14  0  0  1  1  8  8
+  18 -  15  0  0  2  1  9 10
+  19 -  15  0  0  1  1 11 11
+
+ CHAIN a
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1645
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau           1   1.85095572              56         105
+ #popped           2           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau           3   1.81754196             140         185
+ #popped           4           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau           5   1.35899651              10
+ #popped           7           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau           7  0.847609222              26          40
+ #popped           8           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau           9  0.360675067              51         110
+ #popped          10           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          11   2.56408763             165
+ #popped          12           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau          13   1.31001723             155
+ #popped          13           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          15  0.709793389             175
+ #popped           3           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          17   1.14195979              95
+ #popped          18           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          19   1.65128767              82
+ #popped          20           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          21   1.09834123              69
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         213
+         213  residues read 8FZ5.dssp                                                   
+  grow short strand          29          31
+  grow short strand          34          37
+  grow short strand          43          47
+  grow short strand         130         133
+  grow short strand         135         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  5 10 11 12 15 16  6  9  3  4 13 14  7  8
+   2     1  4  5 14  1  2  5 10 11 12 15 16  6  9  3  4 13 14
+   3     1 20 21  2  7  8
+   4     2  8  9 12  1  2  5 10 11 12 15 16  6  9  3  4
+   5     2 12 13  2 13 14
+   6     0  0  0  0
+   7     0  0  0 12  1  2  5 10 11 12 15 16  6  9  3  4
+   8     4 10 11 10  1  2  5 10 11 12 15 16  6  9
+   9     4  0  0  2  3  4
+  10     8  0  0  8  1  2  5 10 11 12 15 16
+  11     8  0  0  2  6  9
+  12     5  0  0  1 13
+  13     5  0  0  1 14
+  14     0  0  0  1 13
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1 14
+  18     0  0  0  2  7  8
+  19     0  0  0  0
+  20     3  0  0  1  7
+  21     3  0  0  1  8
+  22     0  0  0  1  7
+  23     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1  6  9 16
+   3 -   1 12 13  2  1  7  8
+   4 -   2  6  7 12  3  1  6  9 12 15 16
+   5 -   2 10 11  2  1 13 14
+   6 -   4  8  9 10  4  1  2  5  6  9 12 15 16
+   7 -   4  0  0  2  1  3  4
+   8 -   6  0  0  8  4  1  2  5  5 10 12 15 16
+   9 -   6  0  0  2  2  6  6  9  9
+  10 -   5  0  0  1  1 13 13
+  11 -   5  0  0  1  1 14 14
+  12 -   3  0  0  1  1  7  7
+  13 -   3  0  0  1  1  8  8
+
+ CHAIN b
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            214
+Total number of atoms read in:              1671
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.-C.HSU,H.LI                                                         
+  Reading DSSP file
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+         214  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1926
+ selectset done           0
+ eigen done           0
+ tau           1   1.95588613             145         179         204
+ #popped           2           1
+ #selectset contacts        1926
+ selectset done           1
+ eigen done           1
+ tau           3   1.65205455              61         106
+ #popped           4           2
+ #selectset contacts        1926
+ selectset done           2
+ eigen done           2
+ tau           5  0.682015300              26          38
+ #popped           6           2
+ #selectset contacts        1926
+ selectset done           2
+ eigen done           2
+ tau           7  0.475462407              10
+ #popped           9           2
+ #selectset contacts        1926
+ selectset done           2
+ eigen done           2
+ tau           9  0.659767091             145
+ #popped          10           3
+ #selectset contacts        1926
+ selectset done           3
+ eigen done           3
+ tau          11  0.587867022             122
+ #popped          12           4
+ #selectset contacts        1926
+ selectset done           4
+ eigen done           4
+ tau          13  0.540145993              21
+ #popped          15           4
+ #selectset contacts        1926
+ selectset done           4
+ eigen done           4
+ tau          15  0.428550094              61
+ #popped          16           4
+ #selectset contacts        1926
+ selectset done           4
+ eigen done           4
+ tau          17  0.946285725              51
+ #popped          13           3
+ #selectset contacts        1926
+ selectset done           3
+ eigen done           3
+ tau          19   1.81515241             133
+ #popped          11           2
+ #selectset contacts        1926
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped           5           1
+ #selectset contacts        1926
+ selectset done           1
+ eigen done           1
+ tau          21   2.93857718              83
+ #popped          22           2
+ #selectset contacts        1926
+ selectset done           2
+ eigen done           2
+ tau          23  0.800634921              73
+ #popped          23           1
+ #selectset contacts        1926
+ selectset done           1
+ eigen done           1
+ tau          25  0.967669189              94
+ #popped           3           0
+ #selectset contacts        1926
+ selectset done           0
+ eigen done           0
+ tau          27   3.18888903             179
+ #popped          28           0
+ #selectset contacts        1926
+ selectset done           0
+ eigen done           0
+ tau          29   2.12078977             160
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               27-JAN-23   8FZ5              COMPND   2 MOLECULE: PROTEASOME SUBUNIT ALPHA TYPE-6;                           SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    H.-C.HSU,H.LI                                                         
+           0
+         214
+         214  residues read 8FZ5.dssp                                                   
+  grow short strand           6           8
+  grow short strand          28          30
+  grow short strand          33          36
+  grow short strand          42          46
+  grow short strand         131         133
+  grow short strand         136         138
+  exclude short helix         142         145
+  exclude short helix         210         213
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  3  6  7 10 11 12 13 16 17  4  5  8  9 14 15
+   2     1  4  5 15  1  2  3  6  7 10 11 12 13 16 17  4  5  8  9
+   3     1 30 31  2 14 15
+   4     2  6  7 13  1  2  3  6  7 10 11 12 13 16 17  4  5
+   5     2 22 23  2  8  9
+   6     4  8  9 11  1  2  3  6  7 10 11 12 13 16 17
+   7     4  0  0  2  4  5
+   8     6  0  0  1  1
+   9     6 10 11 10  2  3  6  7 10 11 12 13 16 17
+  10     9 12 13  8  2  3  6  7 10 11 12 13
+  11     9  0  0  2 16 17
+  12    10 14 15  6  2  3  6  7 10 11
+  13    10 20 21  2 12 13
+  14    12  0  0  1  2
+  15    12 16 17  5  3  6  7 10 11
+  16    15 18 19  3  3  6  7
+  17    15  0  0  2 10 11
+  18    16  0  0  2  3  6
+  19    16  0  0  1  7
+  20    13  0  0  1 12
+  21    13  0  0  1 13
+  22     5  0  0  1  8
+  23     5  0  0  1  9
+  24     0  0  0  1  8
+  25     0  0  0  0
+  26     0  0  0  1  9
+  27     0  0  0  0
+  28     0  0  0  2 14 15
+  29     0  0  0  0
+  30     3  0  0  1 14
+  31     3  0  0  1 15
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5 15  2  1 13 16 17
+   3 -   1 24 25  2  1 14 15
+   4 -   2  6  7 13  3  1  7 10 13 16 17
+   5 -   2 22 23  2  1  8  9
+   6 -   4  8  9 11  4  1  3  6  7 10 13 16 17
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11 10  4  2  3  6  7 10 13 16 17
+  10 -   9 12 13  8  3  2  3  6  7 10 13
+  11 -   9  0  0  2  1 16 17
+  12 -  10 14 15  6  3  2  3  6  7 10 11
+  13 -  10 20 21  2  1 12 13
+  14 -  12  0  0  1  1  2  2
+  15 -  12 16 17  5  3  3  3  6  7 10 11
+  16 -  15 18 19  3  2  3  3  6  7
+  17 -  15  0  0  2  1 10 11
+  18 -  16  0  0  2  2  3  3  6  6
+  19 -  16  0  0  1  1  7  7
+  20 -  13  0  0  1  1 12 12
+  21 -  13  0  0  1  1 13 13
+  22 -   5  0  0  1  1  8  8
+  23 -   5  0  0  1  1  9  9
+  24 -   3  0  0  1  1 14 14
+  25 -   3  0  0  1  1 15 15
+
+ CHAIN : 8FZ5A
+ CHAIN : 8FZ5B
+ CHAIN : 8FZ5C
+ CHAIN : 8FZ5D
+ CHAIN : 8FZ5E
+ CHAIN : 8FZ5F
+ CHAIN : 8FZ5G
+ CHAIN : 8FZ5H
+ CHAIN : 8FZ5I
+ CHAIN : 8FZ5J
+ CHAIN : 8FZ5K
+ CHAIN : 8FZ5L
+ CHAIN : 8FZ5M
+ CHAIN : 8FZ5N
+ CHAIN : 8FZ5O
+ CHAIN : 8FZ5P
+ CHAIN : 8FZ5Q
+ CHAIN : 8FZ5R
+ CHAIN : 8FZ5S
+ CHAIN : 8FZ5T
+ CHAIN : 8FZ5U
+ CHAIN : 8FZ5V
+ CHAIN : 8FZ5W
+ CHAIN : 8FZ5X
+ CHAIN : 8FZ5Y
+ CHAIN : 8FZ5Z
+ CHAIN : 8FZ5a
+ CHAIN : 8FZ5b
+

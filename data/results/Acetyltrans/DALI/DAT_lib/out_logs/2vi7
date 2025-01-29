@@ -1,0 +1,472 @@
+A length: 161
+B length: 162
+C length: 164
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   78  N  BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:   80  CA BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:   82  C  BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:   84  O  BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:   86  CB BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:   88  CG BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:   90  CD BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:   92  NE BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:   94  CZ BARG A  16 
+ Alternate location indication is not blank or A, ignore atom:  721  N  BSER A 104 
+ Alternate location indication is not blank or A, ignore atom:  723  CA BSER A 104 
+ Alternate location indication is not blank or A, ignore atom:  725  C  BSER A 104 
+ Alternate location indication is not blank or A, ignore atom:  727  O  BSER A 104 
+ Alternate location indication is not blank or A, ignore atom:  729  CB BSER A 104 
+ Alternate location indication is not blank or A, ignore atom:  731  OG BSER A 104 
+
+Total number of residues read in:            163
+Total number of atoms read in:              1260
+Total number of ignored atom records:        182
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              COMPND   2 MOLECULE: ACETYLTRANSFERASE PA1377;                                  SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+         163  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1429
+ selectset done           0
+ eigen done           0
+ tau           1   1.70448768              11          46
+ #popped           2           1
+ #selectset contacts        1429
+ selectset done           1
+ eigen done           1
+ tau           3   1.70481646              69          85         112
+ #popped           4           2
+ #selectset contacts        1429
+ selectset done           2
+ eigen done           2
+ tau           5   1.41294670              99
+ #popped           6           2
+ #selectset contacts        1429
+ selectset done           2
+ eigen done           2
+ tau           7   1.01837206              69
+ #popped           8           2
+ #selectset contacts        1429
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1429
+ selectset done           1
+ eigen done           1
+ tau           9   1.00250089             143         153
+ #popped          10           1
+ #selectset contacts        1429
+ selectset done           1
+ eigen done           1
+ tau          11  0.421920806             126
+ #popped          12           2
+ #selectset contacts        1429
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          13           1
+ #selectset contacts        1429
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1429
+ selectset done           0
+ eigen done           0
+ tau          13   2.02651691              34
+ #popped          14           0
+ #selectset contacts        1429
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              COMPND   2 MOLECULE: ACETYLTRANSFERASE PA1377;                                  SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+           0
+         163
+         163  residues read 2VI7.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          22          25
+  exclude short helix          74          76
+  grow short strand          79          81
+  grow short strand          87          88
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  7  8  6  9 10 11 12  2  3
+   2     1  4  5 10  1  4  5  7  8  6  9 10 11 12
+   3     1 14 15  2  2  3
+   4     2  6  7  5  1  4  5  7  8
+   5     2 12 13  5  6  9 10 11 12
+   6     4  8  9  4  1  4  5  7
+   7     4  0  0  1  8
+   8     6  0  0  3  1  4  5
+   9     6  0  0  1  7
+  10     0  0  0  5  6  9 10 11 12
+  11     0  0  0  0
+  12     5  0  0  2  6  9
+  13     5  0  0  3 10 11 12
+  14     3  0  0  1  2
+  15     3  0  0  1  3
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 10  2  1  1  4 12
+   3 -   1 12 13  2  1  2  3
+   4 -   2  6  7  5  3  1  1  4  5  7  8
+   5 -   2 10 11  5  2  6  6  9 12
+   6 -   4  8  9  4  3  1  1  4  5  7  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6  0  0  3  2  1  1  4  5
+   9 -   6  0  0  1  1  7  7
+  10 -   5  0  0  2  2  6  6  9  9
+  11 -   5  0  0  3  1 10 12
+  12 -   3  0  0  1  1  2  2
+  13 -   3  0  0  1  1  3  3
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1359  N  BARG B  16 
+ Alternate location indication is not blank or A, ignore atom: 1361  CA BARG B  16 
+ Alternate location indication is not blank or A, ignore atom: 1363  C  BARG B  16 
+ Alternate location indication is not blank or A, ignore atom: 1365  O  BARG B  16 
+ Alternate location indication is not blank or A, ignore atom: 1367  CB BARG B  16 
+ Alternate location indication is not blank or A, ignore atom: 1369  CG BARG B  16 
+ Alternate location indication is not blank or A, ignore atom: 1371  CD BARG B  16 
+ Alternate location indication is not blank or A, ignore atom: 1373  NE BARG B  16 
+
+Total number of residues read in:            163
+Total number of atoms read in:              1267
+Total number of ignored atom records:        196
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              COMPND   2 MOLECULE: ACETYLTRANSFERASE PA1377;                                  SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+         163  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1416
+ selectset done           0
+ eigen done           0
+ tau           1   1.77013004              31          47
+ #popped           2           0
+ #selectset contacts        1416
+ selectset done           0
+ eigen done           0
+ tau           3   1.59493315              69          86         104
+ #popped           4           1
+ #selectset contacts        1416
+ selectset done           1
+ eigen done           1
+ tau           5   2.31681800              21          31
+ #popped           6           1
+ #selectset contacts        1416
+ selectset done           1
+ eigen done           1
+ tau           7  0.897462189              69
+ #popped           8           1
+ #selectset contacts        1416
+ selectset done           1
+ eigen done           1
+ tau           9  0.396855831              11
+ #popped          11           1
+ #selectset contacts        1416
+ selectset done           1
+ eigen done           1
+ tau          11   2.31304336              21
+ #popped          13           1
+ #selectset contacts        1416
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           5           0
+ #selectset contacts        1416
+ selectset done           0
+ eigen done           0
+ tau          13  0.871572077             114
+ #popped          14           1
+ #selectset contacts        1416
+ selectset done           1
+ eigen done           1
+ tau          15   4.24651194              86
+ #popped          15           0
+ #selectset contacts        1416
+ selectset done           0
+ eigen done           0
+ tau          17  0.305032700             130
+ #popped          19           0
+ #selectset contacts        1416
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              COMPND   2 MOLECULE: ACETYLTRANSFERASE PA1377;                                  SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+           0
+         163
+         163  residues read 2VI7.dssp                                                   
+  grow short strand           4           7
+  exclude short helix          23          26
+  exclude short helix          75          77
+  grow short strand          80          82
+  grow short strand          88          89
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  4  5  7  8  6  9 10 11 12  3
+   2     1  4  5 11  1  2  4  5  7  8  6  9 10 11 12
+   3     1  0  0  1  3
+   4     2  8  9  6  1  2  4  5  7  8
+   5     2 14 15  5  6  9 10 11 12
+   6     0  0  0  6  1  2  4  5  7  8
+   7     0  0  0  0
+   8     4 10 11  4  1  2  4  5
+   9     4  0  0  2  7  8
+  10     8  0  0  1  1
+  11     8 12 13  3  2  4  5
+  12    11  0  0  1  2
+  13    11  0  0  2  4  5
+  14     5  0  0  1  6
+  15     5 18 19  4  9 10 11 12
+  16     0  0  0  1  6
+  17     0  0  0  0
+  18    15  0  0  2  9 10
+  19    15  0  0  2 11 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 11  2  1  2  4 12
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  6  3  1  2  4  5  7  8
+   5 -   2 12 13  5  2  6  6  9 12
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  2  1  7  8
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  2  2  2  4  5
+  10 -   9  0  0  1  1  2  2
+  11 -   9  0  0  2  1  4  5
+  12 -   5  0  0  1  1  6  6
+  13 -   5 14 15  4  1  9 12
+  14 -  13  0  0  2  1  9 10
+  15 -  13  0  0  2  1 11 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3286  N  BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3288  CA BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3290  C  BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3292  O  BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3294  CB BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3296  CG BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3298  CD BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3300  NE BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3302  CZ BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3304  NH1BARG C 105 
+ Alternate location indication is not blank or A, ignore atom: 3306  NH2BARG C 105 
+
+Total number of residues read in:            165
+Total number of atoms read in:              1285
+Total number of ignored atom records:        236
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              COMPND   2 MOLECULE: ACETYLTRANSFERASE PA1377;                                  SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+         165  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1436
+ selectset done           0
+ eigen done           0
+ tau           1   1.83647418              32          48
+ #popped           2           0
+ #selectset contacts        1436
+ selectset done           0
+ eigen done           0
+ tau           3   1.49142396              70          86         105
+ #popped           4           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau           5   2.03443408              22          32
+ #popped           6           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau           7  0.972061217              70
+ #popped           8           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau           9  0.609924853              22
+ #popped          10           2
+ #selectset contacts        1436
+ selectset done           2
+ eigen done           2
+ tau          11  0.876479328              10
+ #popped          11           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           5           0
+ #selectset contacts        1436
+ selectset done           0
+ eigen done           0
+ tau          13   1.35971844              86         115
+ #popped          14           0
+ #selectset contacts        1436
+ selectset done           0
+ eigen done           0
+ tau          15   1.24604630             144         155
+ #popped          16           0
+ #selectset contacts        1436
+ selectset done           0
+ eigen done           0
+ tau          17  0.440706223             128
+ #popped          18           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1436
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             28-NOV-07   2VI7              COMPND   2 MOLECULE: ACETYLTRANSFERASE PA1377;                                  SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.M.DAVIES,R.TATA,F.X.CHAUVIAC,B.J.SUTTON,P.R.BROWN                   
+           0
+         165
+         165  residues read 2VI7.dssp                                                   
+  grow short strand           5           8
+  exclude short helix          24          27
+  exclude short helix          76          78
+  grow short strand          81          83
+  grow short strand          89          90
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  4  5  7  8  6  9 10 11 12  3
+   2     1  4  5 11  1  2  4  5  7  8  6  9 10 11 12
+   3     1  0  0  1  3
+   4     2  8  9  6  1  2  4  5  7  8
+   5     2 18 19  5  6  9 10 11 12
+   6     0  0  0  6  1  2  4  5  7  8
+   7     0  0  0  0
+   8     4 10 11  4  1  2  4  5
+   9     4  0  0  2  7  8
+  10     8 12 13  2  1  2
+  11     8  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10  0  0  1  2
+  14     0  0  0  5  6  9 10 11 12
+  15     0  0  0  0
+  16     0  0  0  5  6  9 10 11 12
+  17     0  0  0  0
+  18     5  0  0  2  6  9
+  19     5  0  0  3 10 11 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 11  2  1  2  4 12
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  6  3  1  2  4  5  7  8
+   5 -   2 12 13  5  2  6  6  9 12
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  2  1  7  8
+   8 -   6 10 11  2  1  1  2
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  2  2
+  12 -   5  0  0  2  2  6  6  9  9
+  13 -   5  0  0  3  1 10 12
+
+ CHAIN : 2VI7A
+ CHAIN : 2VI7B
+ CHAIN : 2VI7C
+

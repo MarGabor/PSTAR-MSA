@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 1SANA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1FTZ-A  8.0  1.9   58    70   79   MOLECULE: FUSHI TARAZU PROTEIN;                                      
+
+# Pairwise alignments
+
+No 1: Query=1SANA Sbjct=1FTZA Z-score=8.0
+
+DSSP  -------lLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLLHHHHHHHHHHHHLlLL
+Query -------mTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALSLTERQIKIWFQNRRMKwKK   53
+ident         ||||||||||||||||||| |||||| || |||| ||||||||||||||  |
+Sbjct mdskrtrqTYTRYQTLELEKEFHFNRYITRRRRIDIANALSLSERQIKIWFQNRRMK-SK   59
+DSSP  llllllllLLLHHHHHHHHHHHLLLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHLLL-LL
+
+DSSP  LLLllLLLL----
+Query ENKtkGEPG----   62
+ident              
+Sbjct KDR--TLDSspeh   70
+DSSP  LLL--LHHHllll
+
+
+# Structural equivalences
+   1: 1SAN-A 1FTZ-A     2 -  50 <=>    9 -  57   (THR    7  - LYS   55  <=> THR    7  - LYS   55 )                          
+   1: 1SAN-A 1FTZ-A    52 -  56 <=>   58 -  62   (LYS   57  - LYS   61  <=> SER   56  - ARG   60 )                          
+   1: 1SAN-A 1FTZ-A    59 -  62 <=>   63 -  66   (GLY   64  - GLY   67  <=> THR   61  - SER   64 )                          
+
+# Translation-rotation matrices
+-matrix  "1SAN-A 1FTZ-A  U(1,.)  -0.414831 -0.614201 -0.671321           -0.360615"
+-matrix  "1SAN-A 1FTZ-A  U(2,.)  -0.183227  0.779072 -0.599562            0.528236"
+-matrix  "1SAN-A 1FTZ-A  U(3,.)   0.891259 -0.125713 -0.435722           -0.447994"
+

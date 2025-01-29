@@ -1,0 +1,637 @@
+A length: 156
+B length: 154
+C length: 155
+D length: 161
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  338  CG BLYS A  43 
+ Alternate location indication is not blank or A, ignore atom:  340  CD BLYS A  43 
+ Alternate location indication is not blank or A, ignore atom:  342  CE BLYS A  43 
+ Alternate location indication is not blank or A, ignore atom:  344  NZ BLYS A  43 
+ Alternate location indication is not blank or A, ignore atom:  515  CE BMET A  65 
+ Alternate location indication is not blank or A, ignore atom:  522  CG1BVAL A  66 
+ Alternate location indication is not blank or A, ignore atom:  524  CG2BVAL A  66 
+ Alternate location indication is not blank or A, ignore atom:  920  CG BGLN A 118 
+ Alternate location indication is not blank or A, ignore atom:  922  CD BGLN A 118 
+ Alternate location indication is not blank or A, ignore atom:  924  OE1BGLN A 118 
+ Alternate location indication is not blank or A, ignore atom:  926  NE2BGLN A 118 
+
+Total number of residues read in:            156
+Total number of atoms read in:              1247
+Total number of ignored atom records:        378
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              COMPND   2 MOLECULE: GLUCOSAMINE-PHOSPHATE N-ACETYLTRANSFERASE;                 SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+         156  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1328
+ selectset done           0
+ eigen done           0
+ tau           1   3.08958125             131
+ #popped           2           1
+ #selectset contacts        1328
+ selectset done           1
+ eigen done           1
+ tau           3   1.08813715              76          96         115
+ #popped           4           2
+ #selectset contacts        1328
+ selectset done           2
+ eigen done           2
+ tau           5   1.44332266             104
+ #popped           6           2
+ #selectset contacts        1328
+ selectset done           2
+ eigen done           2
+ tau           7   1.08130074              17          31
+ #popped           8           2
+ #selectset contacts        1328
+ selectset done           2
+ eigen done           2
+ tau           9  0.869340003              17          42
+ #popped          10           2
+ #selectset contacts        1328
+ selectset done           2
+ eigen done           2
+ tau          11  0.776799142              63
+ #popped          12           3
+ #selectset contacts        1328
+ selectset done           3
+ eigen done           3
+ tau          13  0.395203918              53
+ #popped          14           3
+ #selectset contacts        1328
+ selectset done           3
+ eigen done           3
+ tau          15   6.51913309              17
+ #popped          13           2
+ #selectset contacts        1328
+ selectset done           2
+ eigen done           2
+ tau          17  0.607594967              73
+ #popped           5           1
+ #selectset contacts        1328
+ selectset done           1
+ eigen done           1
+ tau          19  0.584491491              96
+ #popped          20           1
+ #selectset contacts        1328
+ selectset done           1
+ eigen done           1
+ tau          21  0.196017548              86
+ #popped           3           0
+ #selectset contacts        1328
+ selectset done           0
+ eigen done           0
+ tau          23   3.52920485             145
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              COMPND   2 MOLECULE: GLUCOSAMINE-PHOSPHATE N-ACETYLTRANSFERASE;                 SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+           0
+         156
+         156  residues read 1I1D.dssp                                                   
+  grow short strand           7          11
+  grow short strand          49          50
+  grow short strand          56          57
+  grow short strand          62          66
+  exclude short helix          85          88
+  exclude short helix         101         103
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  6  7  3  2  9  8 10 11 12
+   2     1  4  5 10  1  4  5  6  7  3  2  9  8 10
+   3     1 24 25  2 11 12
+   4     2  6  7  8  1  4  5  6  7  3  2  9
+   5     2 20 21  2  8 10
+   6     4  8  9  7  1  4  5  6  7  3  2
+   7     4  0  0  1  9
+   8     6 10 11  6  1  4  5  6  7  3
+   9     6  0  0  1  2
+  10     8 12 13  5  1  4  5  6  7
+  11     8  0  0  1  3
+  12    10 14 15  3  1  4  5
+  13    10 18 19  2  6  7
+  14    12 16 17  2  1  4
+  15    12  0  0  1  5
+  16    14  0  0  1  1
+  17    14  0  0  1  4
+  18    13  0  0  1  6
+  19    13  0  0  1  7
+  20     5  0  0  1  8
+  21     5  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     3  0  0  1 11
+  25     3  0  0  1 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5 10  1  1 10
+   3 =   1 22 23  2  1 11 12
+   4 -   2  6  7  8  2  1  7  9  9
+   5 -   2 20 21  2  2  8  8 10 10
+   6 -   4  8  9  7  1  1  7
+   7 -   4  0  0  1  1  9  9
+   8 -   6 10 11  6  2  1  1  3  7
+   9 -   6  0  0  1  1  2  2
+  10 -   8 12 13  5  2  1  1  4  7
+  11 -   8  0  0  1  1  3  3
+  12 -  10 14 15  3  2  1  1  4  5
+  13 -  10 18 19  2  1  6  7
+  14 -  12 16 17  2  2  1  1  4  4
+  15 -  12  0  0  1  1  5  5
+  16 -  14  0  0  1  1  1  1
+  17 -  14  0  0  1  1  4  4
+  18 -  13  0  0  1  1  6  6
+  19 -  13  0  0  1  1  7  7
+  20 -   5  0  0  1  1  8  8
+  21 -   5  0  0  1  1 10 10
+  22 -   3  0  0  1  1 11 11
+  23 -   3  0  0  1  1 12 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1534  OG BSER B  37 
+ Alternate location indication is not blank or A, ignore atom: 1552  SG BCYS B  39 
+ Alternate location indication is not blank or A, ignore atom: 1713  CE BMET B  60 
+ Alternate location indication is not blank or A, ignore atom: 1942  CG BHIS B  89 
+ Alternate location indication is not blank or A, ignore atom: 1944  ND1BHIS B  89 
+ Alternate location indication is not blank or A, ignore atom: 1946  CD2BHIS B  89 
+ Alternate location indication is not blank or A, ignore atom: 1948  CE1BHIS B  89 
+ Alternate location indication is not blank or A, ignore atom: 1950  NE2BHIS B  89 
+
+Total number of residues read in:            154
+Total number of atoms read in:              1233
+Total number of ignored atom records:        405
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              COMPND   2 MOLECULE: GLUCOSAMINE-PHOSPHATE N-ACETYLTRANSFERASE;                 SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+         154  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1314
+ selectset done           0
+ eigen done           0
+ tau           1   3.88584042             128
+ #popped           2           1
+ #selectset contacts        1314
+ selectset done           1
+ eigen done           1
+ tau           3   1.40470123              10          38
+ #popped           4           2
+ #selectset contacts        1314
+ selectset done           2
+ eigen done           2
+ tau           5  0.914239943              76          91         117
+ #popped           6           3
+ #selectset contacts        1314
+ selectset done           3
+ eigen done           3
+ tau           7  0.674617171              97         107
+ #popped           8           3
+ #selectset contacts        1314
+ selectset done           3
+ eigen done           3
+ tau           9  0.569339991              61
+ #popped          10           4
+ #selectset contacts        1314
+ selectset done           4
+ eigen done           4
+ tau          11  0.397921920              51
+ #popped          12           4
+ #selectset contacts        1314
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          11           3
+ #selectset contacts        1314
+ selectset done           3
+ eigen done           3
+ tau          13   2.63829780              97
+ #popped          14           3
+ #selectset contacts        1314
+ selectset done           3
+ eigen done           3
+ tau          15   1.13396585              72
+ #popped           7           2
+ #selectset contacts        1314
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           5           1
+ #selectset contacts        1314
+ selectset done           1
+ eigen done           1
+ tau          17   1.34141886              28
+ #popped           3           0
+ #selectset contacts        1314
+ selectset done           0
+ eigen done           0
+ tau          19   1.95224202             143
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              COMPND   2 MOLECULE: GLUCOSAMINE-PHOSPHATE N-ACETYLTRANSFERASE;                 SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+           0
+         154
+         154  residues read 1I1D.dssp                                                   
+  grow short strand           5           9
+  grow short strand          47          48
+  grow short strand          54          55
+ crowded segment excluded!
+  exclude short helix          83          86
+  exclude short helix          99         101
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  6  7  8  9  2 10 11
+   2     1  4  5  9  1  3  4  5  6  7  8  9  2
+   3     1 20 21  2 10 11
+   4     2  6  7  8  1  3  4  5  6  7  8  9
+   5     2  0  0  1  2
+   6     4 10 11  7  1  3  4  5  6  7  8
+   7     4  0  0  1  9
+   8     0  0  0  7  1  3  4  5  6  7  8
+   9     0  0  0  0
+  10     6 12 13  4  1  3  4  5
+  11     6 14 15  3  6  7  8
+  12    10  0  0  3  1  3  4
+  13    10  0  0  1  5
+  14    11  0  0  2  6  7
+  15    11  0  0  1  8
+  16     0  0  0  0
+  17     0  0  0  2  6  7
+  18     0  0  0  1  2
+  19     0  0  0  0
+  20     3  0  0  1 10
+  21     3  0  0  1 11
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  9  1  1  9
+   3 =   1 14 15  2  1 10 11
+   4 -   2  6  7  8  2  1  1  3  9
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  7  2  1  1  3  8
+   7 -   4  0  0  1  1  9  9
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6 12 13  3  1  6  8
+  10 -   8  0  0  3  2  1  1  3  4
+  11 -   8  0  0  1  1  5  5
+  12 -   9  0  0  2  1  6  7
+  13 -   9  0  0  1  1  8  8
+  14 -   3  0  0  1  1 10 10
+  15 -   3  0  0  1  1 11 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2812  SG BCYS C  39 
+
+Total number of residues read in:            155
+Total number of atoms read in:              1236
+Total number of ignored atom records:        233
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              COMPND   2 MOLECULE: GLUCOSAMINE-PHOSPHATE N-ACETYLTRANSFERASE;                 SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+         155  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1305
+ selectset done           0
+ eigen done           0
+ tau           1   5.81177998             128
+ #popped           2           1
+ #selectset contacts        1305
+ selectset done           1
+ eigen done           1
+ tau           3   1.17592406              14          40
+ #popped           4           2
+ #selectset contacts        1305
+ selectset done           2
+ eigen done           2
+ tau           5  0.911625385              77
+ #popped           6           3
+ #selectset contacts        1305
+ selectset done           3
+ eigen done           3
+ tau           7  0.463501006              53
+ #popped           8           4
+ #selectset contacts        1305
+ selectset done           4
+ eigen done           4
+ tau           9   9.79148960              14
+ #popped           9           3
+ #selectset contacts        1305
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        1305
+ selectset done           2
+ eigen done           2
+ tau          11   1.34578133              96         107
+ #popped          12           2
+ #selectset contacts        1305
+ selectset done           2
+ eigen done           2
+ tau          13   1.03134799              96         118
+ #popped          14           2
+ #selectset contacts        1305
+ selectset done           2
+ eigen done           2
+ tau          15  0.593191504              96
+ #popped           5           1
+ #selectset contacts        1305
+ selectset done           1
+ eigen done           1
+ tau          17   1.14621639              29
+ #popped           3           0
+ #selectset contacts        1305
+ selectset done           0
+ eigen done           0
+ tau          19   2.08036518             144
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              COMPND   2 MOLECULE: GLUCOSAMINE-PHOSPHATE N-ACETYLTRANSFERASE;                 SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+           0
+         155
+         155  residues read 1I1D.dssp                                                   
+  grow short strand           2           4
+  grow short strand           8          12
+  exclude short helix          84          87
+  exclude short helix         100         102
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  5  6  7  9  8  3 10 11
+   2     1  4  5  9  1  2  4  5  6  7  9  8  3
+   3     1 20 21  2 10 11
+   4     2  6  7  8  1  2  4  5  6  7  9  8
+   5     2  0  0  1  3
+   6     4  8  9  5  1  2  4  5  6
+   7     4 14 15  3  7  9  8
+   8     6 10 11  3  1  2  4
+   9     6  0  0  2  5  6
+  10     8  0  0  2  1  2
+  11     8  0  0  1  4
+  12     0  0  0  3  7  9  8
+  13     0  0  0  0
+  14     7 16 17  2  7  9
+  15     7  0  0  1  8
+  16    14  0  0  1  7
+  17    14  0  0  1  9
+  18     0  0  0  1  3
+  19     0  0  0  0
+  20     3  0  0  1 10
+  21     3  0  0  1 11
+   1 +   0  2  3 11  1  1 11
+   2 +   1  4  5  9  1  1  9
+   3 =   1 16 17  2  1 10 11
+   4 +   2  6  7  8  2  1  2  4  9
+   5 =   2  0  0  1  1  3  3
+   6 *   4  8  9  5  2  1  2  4  6
+   7 *   4 12 13  3  1  7  9
+   8 -   6 10 11  3  2  1  2  4  4
+   9 -   6  0  0  2  1  5  6
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  1  1  4  4
+  12 -   7 14 15  2  2  7  7  9  9
+  13 -   7  0  0  1  1  8  8
+  14 -  12  0  0  1  1  7  7
+  15 -  12  0  0  1  1  9  9
+  16 -   3  0  0  1  1 10 10
+  17 -   3  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 4053  SG BCYS D  39 
+ Alternate location indication is not blank or A, ignore atom: 4579  OG BSER D 104 
+
+Total number of residues read in:            161
+Total number of atoms read in:              1282
+Total number of ignored atom records:        225
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+  Reading DSSP file
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              COMPND   2 MOLECULE: GLUCOSAMINE-PHOSPHATE N-ACETYLTRANSFERASE;                 SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1343
+ selectset done           0
+ eigen done           0
+ tau           1   3.79623556             136
+ #popped           2           1
+ #selectset contacts        1343
+ selectset done           1
+ eigen done           1
+ tau           3   1.60244143              13          49
+ #popped           4           2
+ #selectset contacts        1343
+ selectset done           2
+ eigen done           2
+ tau           5   1.62042117              13          66          81         100         120
+ #popped           6           3
+ #selectset contacts        1343
+ selectset done           3
+ eigen done           3
+ tau           7   1.14512897             110
+ #popped           8           3
+ #selectset contacts        1343
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1343
+ selectset done           2
+ eigen done           2
+ tau           9   1.36534405              62
+ #popped          11           2
+ #selectset contacts        1343
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1343
+ selectset done           1
+ eigen done           1
+ tau          11   1.80259514              33
+ #popped          12           1
+ #selectset contacts        1343
+ selectset done           1
+ eigen done           1
+ tau          13  0.725165606              23
+ #popped           3           0
+ #selectset contacts        1343
+ selectset done           0
+ eigen done           0
+ tau          15   3.80068207             150
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             01-FEB-01   1I1D              COMPND   2 MOLECULE: GLUCOSAMINE-PHOSPHATE N-ACETYLTRANSFERASE;                 SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    C.PENEFF,D.MENGIN-LECREULX,Y.BOURNE                                   
+           0
+         161
+         161  residues read 1I1D.dssp                                                   
+  grow short strand           2           5
+ crowded segment excluded!
+  exclude short helix           6           8
+  grow short strand           9          13
+  grow short strand          51          52
+  grow short strand          61          62
+  grow short strand          67          71
+  exclude short helix          90          93
+  exclude short helix         106         108
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  6  7  9  4  5  8 10  2  3 11 12
+   2     1  4  5 10  1  6  7  9  4  5  8 10  2  3
+   3     1 16 17  2 11 12
+   4     2  6  7  8  1  6  7  9  4  5  8 10
+   5     2 12 13  2  2  3
+   6     4  8  9  4  1  6  7  9
+   7     4 10 11  4  4  5  8 10
+   8     6  0  0  3  1  6  7
+   9     6  0  0  1  9
+  10     7  0  0  2  4  5
+  11     7  0  0  2  8 10
+  12     5  0  0  1  2
+  13     5  0  0  1  3
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     3  0  0  1 11
+  17     3  0  0  1 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5 10  1  1 10
+   3 =   1 14 15  2  1 11 12
+   4 -   2  6  7  8  2  1  1  4 10
+   5 -   2 12 13  2  1  2  3
+   6 -   4  8  9  4  3  1  1  6  7  9  9
+   7 -   4 10 11  4  3  4  5  8  8 10 10
+   8 -   6  0  0  3  2  1  1  6  7
+   9 -   6  0  0  1  1  9  9
+  10 -   7  0  0  2  1  4  5
+  11 -   7  0  0  2  2  8  8 10 10
+  12 -   5  0  0  1  1  2  2
+  13 -   5  0  0  1  1  3  3
+  14 -   3  0  0  1  1 11 11
+  15 -   3  0  0  1  1 12 12
+
+ CHAIN : 1I1DA
+ CHAIN : 1I1DB
+ CHAIN : 1I1DC
+ CHAIN : 1I1DD
+

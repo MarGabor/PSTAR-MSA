@@ -1,0 +1,145 @@
+A length: 125
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  330  CA BLEU A  45 
+ Alternate location indication is not blank or A, ignore atom:  334  CB BLEU A  45 
+ Alternate location indication is not blank or A, ignore atom:  336  CG BLEU A  45 
+ Alternate location indication is not blank or A, ignore atom:  338  CD1BLEU A  45 
+ Alternate location indication is not blank or A, ignore atom:  340  CD2BLEU A  45 
+ Alternate location indication is not blank or A, ignore atom:  544  OG BSER A  72 
+ Alternate location indication is not blank or A, ignore atom:  635  OG BSER A  82 
+ Alternate location indication is not blank or A, ignore atom:  813  SD BMET A 104 
+ Alternate location indication is not blank or A, ignore atom:  815  CE BMET A 104 
+ Alternate location indication is not blank or A, ignore atom:  952  OG BSER A 122 
+
+Total number of residues read in:            126
+Total number of atoms read in:               984
+Total number of ignored atom records:        579
+ HEADER    ANTIFREEZE PROTEIN                      27-FEB-19   6JK4              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.ARAI,S.TSUDA,H.KONDO,Y.NISHIMIYA                                    
+  Reading DSSP file
+ HEADER    ANTIFREEZE PROTEIN                      27-FEB-19   6JK4              COMPND   2 MOLECULE: TYPE II ANTIFREEZE PROTEIN;                                SOURCE   2 ORGANISM_SCIENTIFIC: HYPOMESUS NIPPONENSIS;                          AUTHOR    T.ARAI,S.TSUDA,H.KONDO,Y.NISHIMIYA                                    
+         126  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1133
+ selectset done           0
+ eigen done           0
+ tau           1  0.883626282              64          74
+ #popped           2           0
+ #selectset contacts        1133
+ selectset done           0
+ eigen done           0
+ tau           3  0.878686011              14
+ #popped           5           0
+ #selectset contacts        1133
+ selectset done           0
+ eigen done           0
+ tau           5  0.929650187              38         115
+ #popped           6           1
+ #selectset contacts        1133
+ selectset done           1
+ eigen done           1
+ tau           7  0.345900208              26
+ #popped           9           1
+ #selectset contacts        1133
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           7           0
+ #selectset contacts        1133
+ selectset done           0
+ eigen done           0
+ tau           9   1.27509892              52          62          84
+ #popped          10           1
+ #selectset contacts        1133
+ selectset done           1
+ eigen done           1
+ tau          11   1.01836538              52
+ #popped          11           0
+ #selectset contacts        1133
+ selectset done           0
+ eigen done           0
+ tau          13  0.543315291              62
+ #popped          15           0
+ #selectset contacts        1133
+ selectset done           0
+ eigen done           0
+ tau          15  0.418955803              96
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ANTIFREEZE PROTEIN                      27-FEB-19   6JK4              COMPND   2 MOLECULE: TYPE II ANTIFREEZE PROTEIN;                                SOURCE   2 ORGANISM_SCIENTIFIC: HYPOMESUS NIPPONENSIS;                          AUTHOR    T.ARAI,S.TSUDA,H.KONDO,Y.NISHIMIYA                                    
+           0
+         126
+         126  residues read 6JK4.dssp                                                   
+  grow short strand           7           9
+  grow short strand          36          37
+  grow short strand          74          75
+  exclude short helix          95          97
+  grow short strand         109         113
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4 10  5  6  8  9  7
+   2     1  4  5  9  1  2  3  4 10  5  6  8  9
+   3     1  0  0  1  7
+   4     2  0  0  1  1
+   5     2  6  7  8  2  3  4 10  5  6  8  9
+   6     5  8  9  4  2  3  4 10
+   7     5 10 11  4  5  6  8  9
+   8     6  0  0  1  2
+   9     6  0  0  3  3  4 10
+  10     7  0  0  1  5
+  11     7 14 15  3  6  8  9
+  12     0  0  0  1  5
+  13     0  0  0  0
+  14    11  0  0  1  6
+  15    11  0  0  2  8  9
+  16     0  0  0  0
+  17     0  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  9  2  1  6  8 10
+   3 -   1  0  0  1  1  7  7
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  8  2  2  6  8 10
+   6 -   5  8  9  4  2  2  4 10 10
+   7 -   5 10 11  4  2  5  6  8  9
+   8 -   6  0  0  1  1  2  2
+   9 -   6  0  0  3  2  3  4 10 10
+  10 -   7  0  0  1  1  5  5
+  11 -   7 12 13  3  2  6  6  8  9
+  12 -  11  0  0  1  1  6  6
+  13 -  11  0  0  2  1  8  9
+
+ CHAIN : 6JK4A
+

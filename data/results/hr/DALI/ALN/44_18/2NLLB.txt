@@ -1,0 +1,32 @@
+# Job: hr
+# Query: 2NLLB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  8CEF-K 14.4  2.0   81    88   51   MOLECULE: DNA (26-MER);                                              
+
+# Pairwise alignments
+
+No 1: Query=2NLLB Sbjct=8CEFK Z-score=14.4
+
+DSSP  --lLLLLLLLLLLLLEELLEELLHHHHHHHHHHHHLLLHhhLLLLLLLLLLLLLLLLLLL
+Query --dELCVVCGDKATGYHYRCITCEGCKGFFRRTIQKNLHpsYSCKYEGKCVIDKVTRNQC   58
+ident     || |||| | ||||    || || || ||||      |||     | | |  |  |
+Sbjct lpkRLCLVCGDVASGYHYGVASCEACKAFFKRTIQGSIE--YSCPASNECEITKRRRKAC   58
+DSSP  lllLLLLLLLLLLLEEELLEEELHHHHHHHHHHHHHLLL--LLLLLLLLLLLLLLLLLLL
+
+DSSP  HHHHHHHHHHLLLLHHHLLLHhhHHHHHhhhhhhllhhhhhhhhl
+Query QECRFKKCIYVGMATDLVLDDskRLAKRklieenrekrrreelek  103
+ident | ||| ||  |||    |  |  |                     
+Sbjct QACRFTKCLRVGMLKEGVRLD--RVRGG-------------rqky   88
+DSSP  HHHHHHHHHHHLLLHHHLLLL--LLLLL-------------llll
+
+
+# Structural equivalences
+   1: 2NLL-B 8CEF-K     2 -  37 <=>    4 -  39   (GLU  301  - HIS  336  <=> ARG   77  - GLU  112 )                          
+   1: 2NLL-B 8CEF-K    40 -  79 <=>   40 -  79   (TYR  339  - ASP  378  <=> TYR  113  - ASP  152 )                          
+   1: 2NLL-B 8CEF-K    82 -  86 <=>   80 -  84   (ARG  381  - ARG  385  <=> ARG  153  - GLY  157 )                          
+
+# Translation-rotation matrices
+-matrix  "2NLL-B 8CEF-K  U(1,.)  -0.117776 -0.854389 -0.506111          -35.818642"
+-matrix  "2NLL-B 8CEF-K  U(2,.)   0.020558 -0.511646  0.858950           29.422707"
+-matrix  "2NLL-B 8CEF-K  U(3,.)  -0.992827  0.090759  0.077824           66.940575"
+

@@ -1,0 +1,846 @@
+A length: 207
+B length: 207
+C length: 205
+D length: 206
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  309  CG1BILE A  36 
+ Alternate location indication is not blank or A, ignore atom:  312  CD1BILE A  36 
+ Alternate location indication is not blank or A, ignore atom:  444  CB BSER A  53 
+ Alternate location indication is not blank or A, ignore atom:  446  OG BSER A  53 
+ Alternate location indication is not blank or A, ignore atom:  887  CG1BILE A 107 
+ Alternate location indication is not blank or A, ignore atom:  890  CD1BILE A 107 
+ Alternate location indication is not blank or A, ignore atom: 1433  CG1BILE A 173 
+ Alternate location indication is not blank or A, ignore atom: 1436  CD1BILE A 173 
+
+Total number of residues read in:            209
+Total number of atoms read in:              1699
+Total number of ignored atom records:        301
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              COMPND   2 MOLECULE: HYPOTHETICAL PROTEIN TM0894;                               SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA;                            AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+         209  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau           1   1.81431746              12          23
+ #popped           2           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau           3   1.43292415             122
+ #popped           4           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau           5   1.75786769              89
+ #popped           6           2
+ #selectset contacts        1927
+ selectset done           2
+ eigen done           2
+ tau           7  0.882090390              42          56
+ #popped           8           2
+ #selectset contacts        1927
+ selectset done           2
+ eigen done           2
+ tau           9  0.672768056              42
+ #popped          10           3
+ #selectset contacts        1927
+ selectset done           3
+ eigen done           3
+ tau          11  0.287088096              12
+ #popped          11           2
+ #selectset contacts        1927
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           7           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           5           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau          13   1.01996648             161
+ #popped          14           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau          15   1.40957928             136         148
+ #popped          16           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau          17  0.850941300             136
+ #popped          15           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau          19   1.66273022             180         192
+ #popped          20           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau          21  0.848280072             180
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              COMPND   2 MOLECULE: HYPOTHETICAL PROTEIN TM0894;                               SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA;                            AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+           0
+         209
+         209  residues read 1ZTC.dssp                                                   
+  grow short strand          13          16
+  grow short strand          20          21
+  grow short strand          35          39
+  exclude short helix          61          63
+  grow short strand          66          68
+  grow short strand          87          91
+ crowded segment excluded!
+  exclude short helix          92          96
+  exclude short helix          99         102
+  grow short strand         120         123
+  grow short strand         128         129
+  grow short strand         134         138
+  grow short strand         157         161
+  exclude short helix         163         165
+  grow short strand         196         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  4  5  7  8  6  9 10 11 12 13 14 15 17 16  2  3
+   2     1  4  5 15  1  4  5  7  8  6  9 10 11 12 13 14 15 17 16
+   3     1  0  0  2  2  3
+   4     2  6  7  8  1  4  5  7  8  6  9 10
+   5     2 14 15  7 11 12 13 14 15 17 16
+   6     4  8  9  6  1  4  5  7  8  6
+   7     4  0  0  2  9 10
+   8     6 10 11  5  1  4  5  7  8
+   9     6  0  0  1  6
+  10     8 12 13  3  1  4  5
+  11     8  0  0  2  7  8
+  12    10  0  0  1  1
+  13    10  0  0  2  4  5
+  14     5 18 19  4 11 12 13 14
+  15     5 20 21  3 15 17 16
+  16     0  0  0  4 11 12 13 14
+  17     0  0  0  0
+  18    14  0  0  2 11 12
+  19    14  0  0  2 13 14
+  20    15 22 23  2 15 17
+  21    15  0  0  1 16
+  22    20  0  0  1 15
+  23    20  0  0  1 17
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5 15  2  1  1  4 17
+   3 =   1  0  0  2  1  2  3
+   4 -   2  6  7  8  2  1  1  4 10
+   5 -   2 14 15  7  1 11 17
+   6 -   4  8  9  6  2  1  1  4  8
+   7 -   4  0  0  2  1  9 10
+   8 -   6 10 11  5  3  1  1  4  5  7  8
+   9 -   6  0  0  1  1  6  6
+  10 -   8 12 13  3  2  1  1  4  5
+  11 -   8  0  0  2  1  7  8
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  2  1  4  5
+  14 -   5 16 17  4  1 11 14
+  15 -   5 18 19  3  1 15 17
+  16 -  14  0  0  2  1 11 12
+  17 -  14  0  0  2  1 13 14
+  18 -  15 20 21  2  2 15 15 17 17
+  19 -  15  0  0  1  1 16 16
+  20 -  18  0  0  1  1 15 15
+  21 -  18  0  0  1  1 17 17
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2081  CE BMSE B  45 
+ Alternate location indication is not blank or A, ignore atom: 2882  CB BARG B 142 
+ Alternate location indication is not blank or A, ignore atom: 2884  CG BARG B 142 
+ Alternate location indication is not blank or A, ignore atom: 2886  CD BARG B 142 
+ Alternate location indication is not blank or A, ignore atom: 2888  NE BARG B 142 
+ Alternate location indication is not blank or A, ignore atom: 2890  CZ BARG B 142 
+ Alternate location indication is not blank or A, ignore atom: 2892  NH1BARG B 142 
+ Alternate location indication is not blank or A, ignore atom: 2894  NH2BARG B 142 
+ Alternate location indication is not blank or A, ignore atom: 3003  CD BARG B 156 
+ Alternate location indication is not blank or A, ignore atom: 3005  NE BARG B 156 
+ Alternate location indication is not blank or A, ignore atom: 3007  CZ BARG B 156 
+ Alternate location indication is not blank or A, ignore atom: 3009  NH1BARG B 156 
+ Alternate location indication is not blank or A, ignore atom: 3011  NH2BARG B 156 
+ Alternate location indication is not blank or A, ignore atom: 3146  CB BILE B 173 
+ Alternate location indication is not blank or A, ignore atom: 3148  CG1BILE B 173 
+ Alternate location indication is not blank or A, ignore atom: 3150  CG2BILE B 173 
+ Alternate location indication is not blank or A, ignore atom: 3152  CD1BILE B 173 
+
+Total number of residues read in:            209
+Total number of atoms read in:              1699
+Total number of ignored atom records:        246
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              COMPND   2 MOLECULE: HYPOTHETICAL PROTEIN TM0894;                               SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA;                            AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+         209  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau           1   1.89870441              12          23
+ #popped           2           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau           3   1.45926464             122
+ #popped           4           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau           5   1.64707935              90         112
+ #popped           6           2
+ #selectset contacts        1927
+ selectset done           2
+ eigen done           2
+ tau           7   1.23972392              42          59
+ #popped           8           2
+ #selectset contacts        1927
+ selectset done           2
+ eigen done           2
+ tau           9  0.809121907              42          69          80
+ #popped          10           3
+ #selectset contacts        1927
+ selectset done           3
+ eigen done           3
+ tau          11  0.997905254              42
+ #popped          12           3
+ #selectset contacts        1927
+ selectset done           3
+ eigen done           3
+ tau          13  0.289944708              12
+ #popped          11           2
+ #selectset contacts        1927
+ selectset done           2
+ eigen done           2
+ tau          15  0.481481493              69
+ #popped          17           2
+ #selectset contacts        1927
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           7           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau          17   2.02766800             102
+ #popped           5           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau          19   1.09276974             167         180
+ #popped          20           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau          21  0.996188283             137         147         167         191
+ #popped          22           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau          23  0.945102096             137
+ #popped          25           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau          25  0.595966399             167
+ #popped          26           1
+ #selectset contacts        1927
+ selectset done           1
+ eigen done           1
+ tau          27  0.321106225             157
+ #popped          23           0
+ #selectset contacts        1927
+ selectset done           0
+ eigen done           0
+ tau          29   2.84375000             147
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              COMPND   2 MOLECULE: HYPOTHETICAL PROTEIN TM0894;                               SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA;                            AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+           0
+         209
+         209  residues read 1ZTC.dssp                                                   
+  grow short strand          13          16
+  grow short strand          20          21
+  grow short strand          35          39
+  exclude short helix          61          63
+  grow short strand          66          68
+  grow short strand          87          91
+ crowded segment excluded!
+  exclude short helix          92          96
+  exclude short helix          99         102
+  grow short strand         119         123
+  grow short strand         128         129
+  grow short strand         134         138
+  grow short strand         157         161
+  exclude short helix         163         165
+  grow short strand         196         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  4  5  8  7 10  6  9 11 12 13 14 17 16 15  2  3
+   2     1  4  5 15  1  4  5  8  7 10  6  9 11 12 13 14 17 16 15
+   3     1  0  0  2  2  3
+   4     2  6  7  8  1  4  5  8  7 10  6  9
+   5     2 20 21  7 11 12 13 14 17 16 15
+   6     4  8  9  7  1  4  5  8  7 10  6
+   7     4  0  0  1  9
+   8     6 10 11  6  1  4  5  8  7 10
+   9     6  0  0  1  6
+  10     8 12 13  4  1  4  5  8
+  11     8 16 17  2  7 10
+  12    10 14 15  3  1  4  5
+  13    10  0  0  1  8
+  14    12  0  0  1  1
+  15    12  0  0  2  4  5
+  16    11  0  0  1  7
+  17    11  0  0  1 10
+  18     0  0  0  0
+  19     0  0  0  1  9
+  20     5 22 23  6 11 12 13 14 17 16
+  21     5  0  0  1 15
+  22    20 24 25  5 11 12 13 14 17
+  23    20  0  0  1 16
+  24    22  0  0  2 11 12
+  25    22 26 27  3 13 14 17
+  26    25 28 29  2 13 14
+  27    25  0  0  1 17
+  28    26  0  0  1 13
+  29    26  0  0  1 14
+  30     0  0  0  0
+  31     0  0  0  1 16
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5 15  2  1  1  4 17
+   3 =   1  0  0  2  1  2  3
+   4 -   2  6  7  8  2  1  1  4 10
+   5 -   2 18 19  7  1 11 17
+   6 -   4  8  9  7  3  1  1  4  8 10 10
+   7 -   4  0  0  1  1  9  9
+   8 -   6 10 11  6  4  1  1  4  5  7  8 10 10
+   9 -   6  0  0  1  1  6  6
+  10 -   8 12 13  4  3  1  1  4  5  8  8
+  11 -   8 16 17  2  2  7  7 10 10
+  12 -  10 14 15  3  2  1  1  4  5
+  13 -  10  0  0  1  1  8  8
+  14 -  12  0  0  1  1  1  1
+  15 -  12  0  0  2  1  4  5
+  16 -  11  0  0  1  1  7  7
+  17 -  11  0  0  1  1 10 10
+  18 -   5 20 21  6  2 11 14 16 17
+  19 -   5  0  0  1  1 15 15
+  20 -  18 22 23  5  2 11 14 17 17
+  21 -  18  0  0  1  1 16 16
+  22 -  20  0  0  2  1 11 12
+  23 -  20 24 25  3  2 13 14 17 17
+  24 -  23 26 27  2  1 13 14
+  25 -  23  0  0  1  1 17 17
+  26 -  24  0  0  1  1 13 13
+  27 -  24  0  0  1  1 14 14
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3712  CB BARG C  34 
+ Alternate location indication is not blank or A, ignore atom: 3714  CG BARG C  34 
+ Alternate location indication is not blank or A, ignore atom: 3716  CD BARG C  34 
+ Alternate location indication is not blank or A, ignore atom: 3718  NE BARG C  34 
+ Alternate location indication is not blank or A, ignore atom: 3720  CZ BARG C  34 
+ Alternate location indication is not blank or A, ignore atom: 3722  NH1BARG C  34 
+ Alternate location indication is not blank or A, ignore atom: 3724  NH2BARG C  34 
+ Alternate location indication is not blank or A, ignore atom: 3773  CB BASN C  41 
+ Alternate location indication is not blank or A, ignore atom: 3775  CG BASN C  41 
+ Alternate location indication is not blank or A, ignore atom: 3777  OD1BASN C  41 
+ Alternate location indication is not blank or A, ignore atom: 3779  ND2BASN C  41 
+ Alternate location indication is not blank or A, ignore atom: 3808  CE BMSE C  45 
+ Alternate location indication is not blank or A, ignore atom: 4318  CG1BILE C 107 
+ Alternate location indication is not blank or A, ignore atom: 4321  CD1BILE C 107 
+ Alternate location indication is not blank or A, ignore atom: 4473  CB BSER C 126 
+ Alternate location indication is not blank or A, ignore atom: 4475  OG BSER C 126 
+ Alternate location indication is not blank or A, ignore atom: 4819  CB BLEU C 168 
+ Alternate location indication is not blank or A, ignore atom: 4821  CG BLEU C 168 
+ Alternate location indication is not blank or A, ignore atom: 4823  CD1BLEU C 168 
+ Alternate location indication is not blank or A, ignore atom: 4825  CD2BLEU C 168 
+
+Total number of residues read in:            207
+Total number of atoms read in:              1683
+Total number of ignored atom records:        216
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              COMPND   2 MOLECULE: HYPOTHETICAL PROTEIN TM0894;                               SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA;                            AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+         207  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau           1   1.81339669              12          23
+ #popped           2           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau           3   1.38459373              89
+ #popped           4           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau           5  0.842663288              37
+ #popped           6           2
+ #selectset contacts        1911
+ selectset done           2
+ eigen done           2
+ tau           7  0.258896142              12
+ #popped           7           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau           9   1.17224884              47          59
+ #popped          10           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau          11  0.707854033              47          69          79
+ #popped          12           2
+ #selectset contacts        1911
+ selectset done           2
+ eigen done           2
+ tau          13  0.494872600              47
+ #popped          13           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau          15  0.367676765              69
+ #popped           5           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          17   2.88256621             124
+ #popped          18           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau          19  0.774727821             103         113
+ #popped          20           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau          21  0.721746743             103
+ #popped          19           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          23   1.02274978             167         180
+ #popped          24           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          25   1.25110447             167         191
+ #popped          26           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          27   1.03510702             137         147
+ #popped          28           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          29  0.800321162             157
+ #popped          30           1
+ #selectset contacts        1911
+ selectset done           1
+ eigen done           1
+ tau          31  0.475498438             137
+ #popped          31           0
+ #selectset contacts        1911
+ selectset done           0
+ eigen done           0
+ tau          33  0.395083427             167
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              COMPND   2 MOLECULE: HYPOTHETICAL PROTEIN TM0894;                               SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA;                            AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+           0
+         207
+         207  residues read 1ZTC.dssp                                                   
+  grow short strand          13          16
+  grow short strand          20          21
+  grow short strand          35          39
+  exclude short helix          61          63
+  grow short strand          66          68
+  grow short strand          87          91
+ crowded segment excluded!
+  exclude short helix          92          96
+  exclude short helix          99         102
+  grow short strand         120         123
+  grow short strand         128         129
+  grow short strand         134         138
+  grow short strand         157         161
+  exclude short helix         163         165
+  grow short strand         196         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  4  5  8  7  6 10  9 11 12 13 14 17 16 15  2  3
+   2     1  4  5 15  1  4  5  8  7  6 10  9 11 12 13 14 17 16 15
+   3     1  0  0  2  2  3
+   4     2  6  7  6  1  4  5  8  7  6
+   5     2 18 19  9 10  9 11 12 13 14 17 16 15
+   6     4  8  9  3  1  4  5
+   7     4 10 11  3  8  7  6
+   8     6  0  0  1  1
+   9     6  0  0  2  4  5
+  10     7 12 13  2  8  7
+  11     7  0  0  1  6
+  12    10  0  0  1  8
+  13    10  0  0  1  7
+  14     0  0  0  0
+  15     0  0  0  1  8
+  16     0  0  0  1  7
+  17     0  0  0  0
+  18     5 20 21  2 10  9
+  19     5 24 25  7 11 12 13 14 17 16 15
+  20    18  0  0  1 10
+  21    18  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1 10
+  24    19 26 27  6 11 12 13 14 17 16
+  25    19  0  0  1 15
+  26    24 30 31  5 11 12 13 14 17
+  27    24  0  0  1 16
+  28     0  0  0  5 11 12 13 14 17
+  29     0  0  0  0
+  30    26 32 33  3 11 12 13
+  31    26 34 35  2 14 17
+  32    30  0  0  2 11 12
+  33    30  0  0  1 13
+  34    31  0  0  1 14
+  35    31  0  0  1 17
+   1 +   0  2  3 17  1  1 17
+   2 +   1  4  5 15  2  1  1  4 17
+   3 =   1  0  0  2  1  2  3
+   4 *   2  6  7  6  2  1  1  4  8
+   5 +   2 14 15  9  1  9 17
+   6 -   4  8  9  3  2  1  1  4  5
+   7 -   4 10 11  3  1  6  8
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  4  5
+  10 -   7 12 13  2  1  7  8
+  11 -   7  0  0  1  1  6  6
+  12 -  10  0  0  1  1  8  8
+  13 -  10  0  0  1  1  7  7
+  14 =   5 16 17  2  1  9 10
+  15 *   5 18 19  7  1 11 17
+  16 -  14  0  0  1  1 10 10
+  17 -  14  0  0  1  1  9  9
+  18 -  15 20 21  6  2 11 14 16 17
+  19 -  15  0  0  1  1 15 15
+  20 -  18 22 23  5  2 11 14 17 17
+  21 -  18  0  0  1  1 16 16
+  22 -  20 24 25  3  1 11 13
+  23 -  20 26 27  2  2 14 14 17 17
+  24 -  22  0  0  2  1 11 12
+  25 -  22  0  0  1  1 13 13
+  26 -  23  0  0  1  1 14 14
+  27 -  23  0  0  1  1 17 17
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5209  CB BTHR D   8 
+ Alternate location indication is not blank or A, ignore atom: 5211  OG1BTHR D   8 
+ Alternate location indication is not blank or A, ignore atom: 5213  CG2BTHR D   8 
+ Alternate location indication is not blank or A, ignore atom: 5473  CG BASN D  41 
+ Alternate location indication is not blank or A, ignore atom: 5475  OD1BASN D  41 
+ Alternate location indication is not blank or A, ignore atom: 5477  ND2BASN D  41 
+ Alternate location indication is not blank or A, ignore atom: 5503  CB BMSE D  45 
+ Alternate location indication is not blank or A, ignore atom: 5505  CG BMSE D  45 
+ Alternate location indication is not blank or A, ignore atom: 5507 SE  BMSE D  45 
+ Alternate location indication is not blank or A, ignore atom: 5509  CE BMSE D  45 
+ Alternate location indication is not blank or A, ignore atom: 6563  CG1BILE D 173 
+ Alternate location indication is not blank or A, ignore atom: 6566  CD1BILE D 173 
+
+Total number of residues read in:            208
+Total number of atoms read in:              1692
+Total number of ignored atom records:        232
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              COMPND   2 MOLECULE: HYPOTHETICAL PROTEIN TM0894;                               SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA;                            AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+         208  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1918
+ selectset done           0
+ eigen done           0
+ tau           1   1.81391692              12          23
+ #popped           2           0
+ #selectset contacts        1918
+ selectset done           0
+ eigen done           0
+ tau           3   1.72839725              89         102         121
+ #popped           4           1
+ #selectset contacts        1918
+ selectset done           1
+ eigen done           1
+ tau           5  0.921872079              39
+ #popped           6           2
+ #selectset contacts        1918
+ selectset done           2
+ eigen done           2
+ tau           7  0.270815820              12
+ #popped           7           1
+ #selectset contacts        1918
+ selectset done           1
+ eigen done           1
+ tau           9  0.990036964              63
+ #popped          10           2
+ #selectset contacts        1918
+ selectset done           2
+ eigen done           2
+ tau          11  0.934065878              50
+ #popped          11           1
+ #selectset contacts        1918
+ selectset done           1
+ eigen done           1
+ tau          13  0.542868197              77
+ #popped          15           1
+ #selectset contacts        1918
+ selectset done           1
+ eigen done           1
+ tau          15  0.740647137              89
+ #popped           5           0
+ #selectset contacts        1918
+ selectset done           0
+ eigen done           0
+ tau          17   1.25384402             150         180         192
+ #popped          18           1
+ #selectset contacts        1918
+ selectset done           1
+ eigen done           1
+ tau          19   2.15127897             150
+ #popped          20           1
+ #selectset contacts        1918
+ selectset done           1
+ eigen done           1
+ tau          21  0.858085811             134
+ #popped          22           1
+ #selectset contacts        1918
+ selectset done           1
+ eigen done           1
+ tau          23  0.831611574             102
+ #popped          19           0
+ #selectset contacts        1918
+ selectset done           0
+ eigen done           0
+ tau          25   1.05273032             167         180
+ #popped          26           0
+ #selectset contacts        1918
+ selectset done           0
+ eigen done           0
+ tau          27  0.509615719             167
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-MAY-05   1ZTC              COMPND   2 MOLECULE: HYPOTHETICAL PROTEIN TM0894;                               SOURCE   2 ORGANISM_SCIENTIFIC: THERMOTOGA MARITIMA;                            AUTHOR    JOINT CENTER FOR STRUCTURAL GENOMICS (JCSG)                           
+           0
+         208
+         208  residues read 1ZTC.dssp                                                   
+  grow short strand          13          16
+  grow short strand          20          21
+  grow short strand          35          39
+  exclude short helix          61          63
+  grow short strand          66          68
+  grow short strand          87          91
+ crowded segment excluded!
+  exclude short helix          92          96
+  exclude short helix          99         102
+  grow short strand         119         123
+  grow short strand         128         129
+  grow short strand         134         138
+  grow short strand         157         161
+  exclude short helix         163         165
+  grow short strand         196         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  4  5  6  7  8  9 10 11 12 13 16 14 17 15  2  3
+   2     1  4  5 15  1  4  5  6  7  8  9 10 11 12 13 16 14 17 15
+   3     1  0  0  2  2  3
+   4     2  6  7  8  1  4  5  6  7  8  9 10
+   5     2 18 19  7 11 12 13 16 14 17 15
+   6     4  8  9  3  1  4  5
+   7     4 10 11  5  6  7  8  9 10
+   8     6  0  0  1  1
+   9     6  0  0  2  4  5
+  10     7  0  0  1  6
+  11     7 14 15  4  7  8  9 10
+  12     0  0  0  1  6
+  13     0  0  0  0
+  14    11  0  0  1  7
+  15    11 16 17  3  8  9 10
+  16    15  0  0  1  8
+  17    15  0  0  2  9 10
+  18     5 20 21  4 11 12 13 16
+  19     5 26 27  3 14 17 15
+  20    18 22 23  3 11 12 13
+  21    18  0  0  1 16
+  22    20  0  0  1 11
+  23    20  0  0  2 12 13
+  24     0  0  0  0
+  25     0  0  0  1 11
+  26    19 28 29  2 14 17
+  27    19  0  0  1 15
+  28    26  0  0  1 14
+  29    26  0  0  1 17
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5 15  2  1  1  4 17
+   3 =   1  0  0  2  1  2  3
+   4 -   2  6  7  8  2  1  1  4 10
+   5 -   2 16 17  7  1 11 17
+   6 -   4  8  9  3  2  1  1  4  5
+   7 -   4 10 11  5  1  6 10
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  4  5
+  10 -   7  0  0  1  1  6  6
+  11 -   7 12 13  4  1  7 10
+  12 -  11  0  0  1  1  7  7
+  13 -  11 14 15  3  1  8 10
+  14 -  13  0  0  1  1  8  8
+  15 -  13  0  0  2  1  9 10
+  16 -   5 18 19  4  2 11 13 16 16
+  17 -   5 22 23  3  2 14 15 17 17
+  18 -  16 20 21  3  1 11 13
+  19 -  16  0  0  1  1 16 16
+  20 -  18  0  0  1  1 11 11
+  21 -  18  0  0  2  1 12 13
+  22 -  17 24 25  2  2 14 14 17 17
+  23 -  17  0  0  1  1 15 15
+  24 -  22  0  0  1  1 14 14
+  25 -  22  0  0  1  1 17 17
+
+ CHAIN : 1ZTCA
+ CHAIN : 1ZTCB
+ CHAIN : 1ZTCC
+ CHAIN : 1ZTCD
+

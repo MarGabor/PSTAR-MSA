@@ -1,0 +1,797 @@
+1 length: 183
+2 length: 206
+3 length: 219
+4 length: 44
+H length: 109
+L length: 85
+# 6 chains 1 2 3 4 H L
+
+ CHAIN 1
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            183
+Total number of atoms read in:              1432
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.HE,Z.LOU                                                            
+  Reading DSSP file
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+         183  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau           1   9.98789597              24
+ #popped           2           1
+ #selectset contacts        1229
+ selectset done           1
+ eigen done           1
+ tau           3   2.69176483              10
+ #popped           3           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau           5   9.15256596             166
+ #popped           6           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau           7   3.00521588              34
+ #popped           9           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau           9   1.20910323              90         103
+ #popped          10           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau          11   1.32314277              50          74         155
+ #popped          12           1
+ #selectset contacts        1229
+ selectset done           1
+ eigen done           1
+ tau          13  0.735891998             114         144
+ #popped          14           2
+ #selectset contacts        1229
+ selectset done           2
+ eigen done           2
+ tau          15  0.305396825              90
+ #popped          16           3
+ #selectset contacts        1229
+ selectset done           3
+ eigen done           3
+ tau          17   21.5752888              50
+ #popped          17           2
+ #selectset contacts        1229
+ selectset done           2
+ eigen done           2
+ tau          19   45.4780235             114
+ #popped          15           1
+ #selectset contacts        1229
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          13           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau          21   1.67567563              63
+ #popped          23           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+           0
+         183
+         183  residues read 7D3K.dssp                                                   
+  exclude short helix          31          34
+  grow short strand          39          41
+  exclude short helix          52          54
+  exclude short helix          60          63
+  grow short strand          68          72
+  grow short strand          77          79
+  grow short strand          85          86
+  grow short strand         104         105
+  grow short strand         112         114
+  grow short strand         125         126
+  grow short strand         151         153
+  grow short strand         159         163
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0 12 13  9  1  3  4  5  6  8  7  2  9
+   2     0  0  0  0
+   3     0  0  0  9  1  3  4  5  6  8  7  2  9
+   4     0  0  0  0
+   5     0  0  0  0
+   6     0  0  0  9  1  3  4  5  6  8  7  2  9
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  9  1  3  4  5  6  8  7  2  9
+  10     0  0  0  9  1  3  4  5  6  8  7  2  9
+  11     0  0  0  0
+  12     1 14 15  7  1  3  4  5  6  8  7
+  13     1  0  0  2  2  9
+  14    12 16 17  6  1  3  4  5  6  8
+  15    12  0  0  1  7
+  16    14 18 19  3  1  3  4
+  17    14 20 21  3  5  6  8
+  18    16  0  0  1  1
+  19    16  0  0  2  3  4
+  20    17  0  0  2  5  6
+  21    17  0  0  1  8
+  22     0  0  0  0
+  23     0  0  0  2  2  9
+   1 +   0  2  3  9  1  1  9
+   2 -   1  4  5  7  2  1  1  3  8
+   3 -   1  0  0  2  2  2  2  9  9
+   4 -   2  6  7  6  3  1  1  3  6  8  8
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  3  2  1  1  3  4
+   7 -   4 10 11  3  2  5  6  8  8
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  3  4
+  10 -   7  0  0  2  1  5  6
+  11 -   7  0  0  1  1  8  8
+
+ CHAIN 2
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1617
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.HE,Z.LOU                                                            
+  Reading DSSP file
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1464
+ selectset done           0
+ eigen done           0
+ tau           1   3.04381323              17
+ #popped           3           0
+ #selectset contacts        1464
+ selectset done           0
+ eigen done           0
+ tau           3  0.954054773              50          67          95         111         133         145         168
+ #popped           4           1
+ #selectset contacts        1464
+ selectset done           1
+ eigen done           1
+ tau           5   1.50245261              50
+ #popped           6           2
+ #selectset contacts        1464
+ selectset done           2
+ eigen done           2
+ tau           7   3.87386632              28
+ #popped           9           2
+ #selectset contacts        1464
+ selectset done           2
+ eigen done           2
+ tau           9   2.27563143              40
+ #popped           7           1
+ #selectset contacts        1464
+ selectset done           1
+ eigen done           1
+ tau          11  0.718460679              85
+ #popped          13           1
+ #selectset contacts        1464
+ selectset done           1
+ eigen done           1
+ tau          13  0.583884478              95
+ #popped          15           1
+ #selectset contacts        1464
+ selectset done           1
+ eigen done           1
+ tau          15  0.883154154             133
+ #popped          16           2
+ #selectset contacts        1464
+ selectset done           2
+ eigen done           2
+ tau          17  0.784090936             123
+ #popped          17           1
+ #selectset contacts        1464
+ selectset done           1
+ eigen done           1
+ tau          19   1.07970524             156
+ #popped           5           0
+ #selectset contacts        1464
+ selectset done           0
+ eigen done           0
+ tau          21   6.59561110             191
+ #popped          22           0
+ #selectset contacts        1464
+ selectset done           0
+ eigen done           0
+ tau          23  0.446559548             180
+ #popped          24           0
+ #selectset contacts        1464
+ selectset done           0
+ eigen done           0
+ tau          25   1.74983907              67
+ #popped          27           0
+ #selectset contacts        1464
+ selectset done           0
+ eigen done           0
+ tau          27  0.692142367             145
+ #popped          28           0
+ #selectset contacts        1464
+ selectset done           0
+ eigen done           0
+ tau          29   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+           0
+         206
+         206  residues read 7D3K.dssp                                                   
+  grow short strand          21          22
+  grow short strand          41          42
+  grow short strand          68          71
+  exclude short helix          83          85
+  exclude short helix         127         130
+  grow short strand         133         136
+  grow short strand         188         189
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 10  1  2  3  4  5  8  6  7  9 10
+   2     0  0  0  0
+   3     0  0  0 10  1  2  3  4  5  8  6  7  9 10
+   4     1  6  7  6  1  2  3  4  5  8
+   5     1 22 23  4  6  7  9 10
+   6     4  8  9  2  1  2
+   7     4 12 13  4  3  4  5  8
+   8     6  0  0  1  1
+   9     6  0  0  1  2
+  10     0  0  0  0
+  11     0  0  0  1  2
+  12     7  0  0  1  3
+  13     7 14 15  3  4  5  8
+  14    13  0  0  1  4
+  15    13 16 17  2  5  8
+  16    15  0  0  1  5
+  17    15  0  0  1  8
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  8
+  22     5 24 25  3  6  7  9
+  23     5  0  0  1 10
+  24    22  0  0  2  6  7
+  25    22  0  0  1  9
+  26     0  0  0  0
+  27     0  0  0  2  6  7
+  28     0  0  0  2  6  7
+  29     0  0  0  0
+   1 +   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5  8  8
+   3 -   1 14 15  4  2  6  7  9 10
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  4  2  3  5  8  8
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  1  1  3  3
+   9 -   5 10 11  3  2  4  5  8  8
+  10 -   9  0  0  1  1  4  4
+  11 -   9 12 13  2  2  5  5  8  8
+  12 -  11  0  0  1  1  5  5
+  13 -  11  0  0  1  1  8  8
+  14 -   3 16 17  3  2  6  7  9  9
+  15 -   3  0  0  1  1 10 10
+  16 -  14  0  0  2  1  6  7
+  17 -  14  0  0  1  1  9  9
+
+ CHAIN 3
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            219
+Total number of atoms read in:              1673
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.HE,Z.LOU                                                            
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  Reading DSSP file
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+         219  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1465
+ selectset done           0
+ eigen done           0
+ tau           1   18.5911999              40
+ #popped           2           1
+ #selectset contacts        1465
+ selectset done           1
+ eigen done           1
+ tau           3   5.28485155              26
+ #popped           4           1
+ #selectset contacts        1465
+ selectset done           1
+ eigen done           1
+ tau           5   3.48129487              12
+ #popped           3           0
+ #selectset contacts        1465
+ selectset done           0
+ eigen done           0
+ tau           7   1.92658079              53          76         107         156         183         202
+ #popped           8           1
+ #selectset contacts        1465
+ selectset done           1
+ eigen done           1
+ tau           9   1.61893141              53          87         169         183
+ #popped          10           2
+ #selectset contacts        1465
+ selectset done           2
+ eigen done           2
+ tau          11  0.371153504             107
+ #popped          12           3
+ #selectset contacts        1465
+ selectset done           3
+ eigen done           3
+ tau          13   3.04319048              53
+ #popped          15           3
+ #selectset contacts        1465
+ selectset done           3
+ eigen done           3
+ tau          15   1.40981007              97
+ #popped          13           2
+ #selectset contacts        1465
+ selectset done           2
+ eigen done           2
+ tau          17   999.999023             169
+ #popped          11           1
+ #selectset contacts        1465
+ selectset done           1
+ eigen done           1
+ tau          19   1.27387381              87
+ #popped           9           0
+ #selectset contacts        1465
+ selectset done           0
+ eigen done           0
+ tau          21   1.47119319             124         143
+ #popped          22           0
+ #selectset contacts        1465
+ selectset done           0
+ eigen done           0
+ tau          23  0.866479933              63
+ #popped          25           0
+ #selectset contacts        1465
+ selectset done           0
+ eigen done           0
+ tau          25  0.638871968              76
+ #popped          27           0
+ #selectset contacts        1465
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+           0
+         219
+         219  residues read 7D3K.dssp                                                   
+  grow short strand          53          54
+  grow short strand          63          65
+  exclude short helix          84          86
+  exclude short helix          90          95
+  grow short strand          98         101
+  exclude short helix         136         139
+  grow short strand         144         148
+  grow short strand         155         159
+  grow short strand         187         191
+  grow short strand         211         214
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  8  9 10  1  3  7 10  2  4  5  6  8  9
+   2     0  0  0  0
+   3     0  0  0 10  1  3  7 10  2  4  5  6  8  9
+   4     0  0  0  0
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  0
+   8     1 12 13  4  1  3  7 10
+   9     1 26 27  6  2  4  5  6  8  9
+  10     0  0  0  4  1  3  7 10
+  11     0  0  0  0
+  12     8 14 15  2  1  3
+  13     8 18 19  2  7 10
+  14    12  0  0  1  1
+  15    12  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  1  3
+  18    13  0  0  1  7
+  19    13  0  0  1 10
+  20     0  0  0  0
+  21     0  0  0  0
+  22     0  0  0  6  2  4  5  6  8  9
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  6  2  4  5  6  8  9
+  26     9  0  0  1  2
+  27     9  0  0  5  4  5  6  8  9
+   1 +   0  2  3 10  1  1 10
+   2 -   1  4  5  4  4  1  1  3  3  7  7 10 10
+   3 -   1 10 11  6  3  2  2  4  6  8  9
+   4 -   2  6  7  2  2  1  1  3  3
+   5 -   2  8  9  2  2  7  7 10 10
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  3  3
+   8 -   5  0  0  1  1  7  7
+   9 -   5  0  0  1  1 10 10
+  10 -   3  0  0  1  1  2  2
+  11 -   3  0  0  5  2  4  6  8  9
+
+ CHAIN 4
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             44
+Total number of atoms read in:               337
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.HE,Z.LOU                                                            
+  Reading DSSP file
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+          44  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         208
+ selectset done           0
+ eigen done           0
+ tau           1   999.999023              25
+ #popped           2           0
+ #selectset contacts         208
+ selectset done           0
+ eigen done           0
+ tau           3   2.56578946              12
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+           0
+          44
+          44  residues read 7D3K.dssp                                                   
+  exclude short helix          14          17
+  exclude short helix          28          31
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  0  0  0
+   2     0  0  0  0
+   3     0  0  0  0
+   4     0  0  0  0
+   5     0  0  0  0
+   1 *   0  0  0  0  0
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            109
+Total number of atoms read in:               819
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.HE,Z.LOU                                                            
+  Reading DSSP file
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+         109  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau           1   1.16677487              13          30          42          52          63          73          88
+ #popped           2           1
+ #selectset contacts         759
+ selectset done           1
+ eigen done           1
+ tau           3  0.768041253              13
+ #popped           5           1
+ #selectset contacts         759
+ selectset done           1
+ eigen done           1
+ tau           5  0.550005972              77
+ #popped           6           1
+ #selectset contacts         759
+ selectset done           1
+ eigen done           1
+ tau           7   2.37828517              42
+ #popped           3           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau           9   2.55394435              99
+ #popped          10           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau          11   1.72911525              24          52          73
+ #popped          12           1
+ #selectset contacts         759
+ selectset done           1
+ eigen done           1
+ tau          13  0.923504472              24
+ #popped          13           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau          15  0.337662339              52
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+           0
+         109
+         109  residues read 7D3K.dssp                                                   
+  exclude short helix          68          70
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  3  2  1  3
+   2     1  0  0  1  2
+   3     1 16 17  2  1  3
+   4     0  0  0  0
+   5     0  0  0  1  2
+   6     0  0  0  1  2
+   7     0  0  0  0
+   8     0  0  0  1  2
+   9     0  0  0  0
+  10     0  0  0  2  1  3
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  2  1  3
+  14     0  0  0  0
+  15     0  0  0  0
+  16     3  0  0  1  1
+  17     3  0  0  1  3
+   1 *   0  2  3  3  1  1  3
+   2 -   1  0  0  1  1  2  2
+   3 -   1  4  5  2  2  1  1  3  3
+   4 -   3  0  0  1  1  1  1
+   5 -   3  0  0  1  1  3  3
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             85
+Total number of atoms read in:               637
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.HE,Z.LOU                                                            
+  Reading DSSP file
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+          85  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         541
+ selectset done           0
+ eigen done           0
+ tau           1   1.34715164              18          45          56          68
+ #popped           2           1
+ #selectset contacts         541
+ selectset done           1
+ eigen done           1
+ tau           3   1.19518065              56
+ #popped           4           1
+ #selectset contacts         541
+ selectset done           1
+ eigen done           1
+ tau           5  0.856370151              18
+ #popped           3           0
+ #selectset contacts         541
+ selectset done           0
+ eigen done           0
+ tau           7   1.07655025              34
+ #popped           9           0
+ #selectset contacts         541
+ selectset done           0
+ eigen done           0
+ tau           9   1.13168192              45
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   19-SEP-20   7D3K              COMPND   2 MOLECULE: O/TIBET/99 VP1;                                            SOURCE   2 ORGANISM_SCIENTIFIC: FOOT-AND-MOUTH DISEASE VIRUS;                   AUTHOR    Y.HE,Z.LOU                                                            
+           0
+          85
+          85  residues read 7D3K.dssp                                                   
+  exclude short helix           7          10
+  grow short strand          71          72
+  grow short strand          81          82
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  0  0  2  1  2
+   2     0  0  0  2  1  2
+   3     0  0  0  0
+   4     0  0  0  0
+   5     0  0  0  2  1  2
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+   1 *   0  0  0  2  1  1  2
+
+ CHAIN : 7D3K1
+ CHAIN : 7D3K2
+ CHAIN : 7D3K3
+ CHAIN : 7D3K4
+ CHAIN : 7D3KH
+ CHAIN : 7D3KL
+

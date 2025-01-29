@@ -1,0 +1,1605 @@
+A length: 255
+B length: 255
+C length: 255
+D length: 255
+E length: 256
+F length: 255
+G length: 255
+H length: 255
+# 8 chains A B C D E F G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1863
+Total number of ignored atom records:        300
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2428
+ selectset done           0
+ eigen done           0
+ tau           1   1.58055425              86         112         144         154         182         221
+ #popped           2           1
+ #selectset contacts        2428
+ selectset done           1
+ eigen done           1
+ tau           3   1.92677283             130
+ #popped           4           2
+ #selectset contacts        2428
+ selectset done           2
+ eigen done           2
+ tau           5   1.70376730              57          75          86
+ #popped           6           3
+ #selectset contacts        2428
+ selectset done           3
+ eigen done           3
+ tau           7  0.812632143              10          27
+ #popped           8           3
+ #selectset contacts        2428
+ selectset done           3
+ eigen done           3
+ tau           9  0.481088430              57
+ #popped          10           3
+ #selectset contacts        2428
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        2428
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2428
+ selectset done           1
+ eigen done           1
+ tau          11   1.80440366             182         241
+ #popped          12           2
+ #selectset contacts        2428
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          13           1
+ #selectset contacts        2428
+ selectset done           1
+ eigen done           1
+ tau          13  0.841976762             231
+ #popped           3           0
+ #selectset contacts        2428
+ selectset done           0
+ eigen done           0
+ tau          15   5.21363497             154
+ #popped          16           1
+ #selectset contacts        2428
+ selectset done           1
+ eigen done           1
+ tau          17  0.934025168              96         112
+ #popped          18           1
+ #selectset contacts        2428
+ selectset done           1
+ eigen done           1
+ tau          19  0.918045163              96
+ #popped          17           0
+ #selectset contacts        2428
+ selectset done           0
+ eigen done           0
+ tau          21  0.752244353             211
+ #popped          22           0
+ #selectset contacts        2428
+ selectset done           0
+ eigen done           0
+ tau          23  0.662970662             192
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         255
+         255  residues read 1GEG.dssp                                                   
+  grow short strand           3           7
+  grow short strand          52          56
+  grow short strand          81          84
+  exclude short helix          94          96
+  exclude short helix         139         141
+  grow short helix         206         212
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  7  2  6  9 10 11 12 16 15  8 13 14
+   2     1  4  5 13  1  3  4  5  7  2  6  9 10 11 12 16 15
+   3     1 16 17  3  8 13 14
+   4     2  6  7  8  1  3  4  5  7  2  6  9
+   5     2 12 13  5 10 11 12 16 15
+   6     4  8  9  6  1  3  4  5  7  2
+   7     4  0  0  2  6  9
+   8     6 10 11  5  1  3  4  5  7
+   9     6  0  0  1  2
+  10     8  0  0  4  1  3  4  5
+  11     8  0  0  1  7
+  12     5  0  0  4 10 11 12 16
+  13     5  0  0  1 15
+  14     0  0  0  1 15
+  15     0  0  0  0
+  16     3  0  0  1  8
+  17     3  0  0  2 13 14
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     0  0  0  0
+  21     0  0  0  0
+  22     0  0  0  2 13 14
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  2 13 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 13  3  1  7  9 12 15 16
+   3 -   1 14 15  3  2  8  8 13 14
+   4 -   2  6  7  8  2  1  7  9  9
+   5 -   2 12 13  5  2 10 12 15 16
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  2  2  6  6  9  9
+   8 -   6 10 11  5  3  1  1  3  5  7  7
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  4  2  1  1  3  5
+  11 -   8  0  0  1  1  7  7
+  12 -   5  0  0  4  2 10 12 16 16
+  13 -   5  0  0  1  1 15 15
+  14 -   3  0  0  1  1  8  8
+  15 -   3  0  0  2  1 13 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1863
+Total number of ignored atom records:        278
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2430
+ selectset done           0
+ eigen done           0
+ tau           1   2.25623775             185         214
+ #popped           2           1
+ #selectset contacts        2430
+ selectset done           1
+ eigen done           1
+ tau           3   1.48478806              87         110         137         161
+ #popped           4           2
+ #selectset contacts        2430
+ selectset done           2
+ eigen done           2
+ tau           5   1.49645925              56          77          87         126
+ #popped           6           3
+ #selectset contacts        2430
+ selectset done           3
+ eigen done           3
+ tau           7   1.19409251             137         174
+ #popped           8           3
+ #selectset contacts        2430
+ selectset done           3
+ eigen done           3
+ tau           9   1.58679795              87
+ #popped          10           4
+ #selectset contacts        2430
+ selectset done           4
+ eigen done           4
+ tau          11  0.750924885              31          56
+ #popped          12           5
+ #selectset contacts        2430
+ selectset done           5
+ eigen done           5
+ tau          13  0.186830863              10
+ #popped          15           5
+ #selectset contacts        2430
+ selectset done           5
+ eigen done           5
+ tau          15   5.94036674              31
+ #popped          16           5
+ #selectset contacts        2430
+ selectset done           5
+ eigen done           5
+ tau          17  0.605560482              20
+ #popped          13           4
+ #selectset contacts        2430
+ selectset done           4
+ eigen done           4
+ tau          19   0.00000000    
+ #popped          11           3
+ #selectset contacts        2430
+ selectset done           3
+ eigen done           3
+ tau          19  0.669274092             229         244
+ #popped          20           3
+ #selectset contacts        2430
+ selectset done           3
+ eigen done           3
+ tau          21  0.483372808             229
+ #popped          22           3
+ #selectset contacts        2430
+ selectset done           3
+ eigen done           3
+ tau          23   0.00000000    
+ #popped           7           2
+ #selectset contacts        2430
+ selectset done           2
+ eigen done           2
+ tau          23   1.04072952              77
+ #popped          24           2
+ #selectset contacts        2430
+ selectset done           2
+ eigen done           2
+ tau          25  0.816073060              67
+ #popped           5           1
+ #selectset contacts        2430
+ selectset done           1
+ eigen done           1
+ tau          27   1.16332376             110
+ #popped          28           2
+ #selectset contacts        2430
+ selectset done           2
+ eigen done           2
+ tau          29   1.23529410              97
+ #popped          29           1
+ #selectset contacts        2430
+ selectset done           1
+ eigen done           1
+ tau          31  0.493394136             148
+ #popped           3           0
+ #selectset contacts        2430
+ selectset done           0
+ eigen done           0
+ tau          33  0.710035980             204
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         255
+         255  residues read 1GEG.dssp                                                   
+  grow short strand           3           7
+  grow short strand          52          56
+  grow short strand          81          84
+  exclude short helix          94          96
+  exclude short helix         139         141
+  grow short helix         206         212
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  7  4  5 10 12 15 16  6  9  8 11 13 14
+   2     1  4  5 14  1  2  3  7  4  5 10 12 15 16  6  9  8 11
+   3     1 34 35  2 13 14
+   4     2  6  7 12  1  2  3  7  4  5 10 12 15 16  6  9
+   5     2 28 29  2  8 11
+   6     4 10 11 10  1  2  3  7  4  5 10 12 15 16
+   7     4 24 25  2  6  9
+   8     0  0  0 10  1  2  3  7  4  5 10 12 15 16
+   9     0  0  0  0
+  10     6 12 13  6  1  2  3  7  4  5
+  11     6 22 23  4 10 12 15 16
+  12    10 14 15  4  1  2  3  7
+  13    10  0  0  2  4  5
+  14    12  0  0  1  1
+  15    12 16 17  3  2  3  7
+  16    15 18 19  2  2  3
+  17    15  0  0  1  7
+  18    16  0  0  1  2
+  19    16  0  0  1  3
+  20     0  0  0  4 10 12 15 16
+  21     0  0  0  0
+  22    11  0  0  3 10 12 15
+  23    11  0  0  1 16
+  24     7  0  0  1  6
+  25     7  0  0  1  9
+  26     0  0  0  0
+  27     0  0  0  1  6
+  28     5  0  0  1  8
+  29     5  0  0  1 11
+  30     0  0  0  0
+  31     0  0  0  1  8
+  32     0  0  0  0
+  33     0  0  0  1 11
+  34     3  0  0  1 13
+  35     3  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1 24 25  2  1 13 14
+   4 -   2  6  7 12  4  1  7  9 10 12 12 15 16
+   5 -   2 22 23  2  2  8  8 11 11
+   6 -   4  8  9 10  5  1  5  7  7 10 10 12 12 15 16
+   7 -   4 20 21  2  2  6  6  9  9
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6 18 19  4  3 10 10 12 12 15 16
+  10 -   8 12 13  4  2  1  3  7  7
+  11 -   8  0  0  2  1  4  5
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  3  2  2  3  7  7
+  14 -  13 16 17  2  1  2  3
+  15 -  13  0  0  1  1  7  7
+  16 -  14  0  0  1  1  2  2
+  17 -  14  0  0  1  1  3  3
+  18 -   9  0  0  3  3 10 10 12 12 15 15
+  19 -   9  0  0  1  1 16 16
+  20 -   7  0  0  1  1  6  6
+  21 -   7  0  0  1  1  9  9
+  22 -   5  0  0  1  1  8  8
+  23 -   5  0  0  1  1 11 11
+  24 -   3  0  0  1  1 13 13
+  25 -   3  0  0  1  1 14 14
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1863
+Total number of ignored atom records:        248
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2431
+ selectset done           0
+ eigen done           0
+ tau           1   2.30138040             185         220
+ #popped           2           1
+ #selectset contacts        2431
+ selectset done           1
+ eigen done           1
+ tau           3   1.61591172              82         113         130
+ #popped           4           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau           5   1.35868776              10          25
+ #popped           6           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau           7   1.24226022              56
+ #popped           8           3
+ #selectset contacts        2431
+ selectset done           3
+ eigen done           3
+ tau           9  0.392783225              39
+ #popped          10           3
+ #selectset contacts        2431
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau          11  0.717382073              72
+ #popped          13           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2431
+ selectset done           1
+ eigen done           1
+ tau          13   1.30843842             113         144         154
+ #popped          14           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau          15  0.786018431             113
+ #popped          16           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau          17   1.47808945              97
+ #popped          15           1
+ #selectset contacts        2431
+ selectset done           1
+ eigen done           1
+ tau          19  0.904290318             144         174
+ #popped          20           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau          21  0.731059849             230         241
+ #popped          22           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau          23  0.462159187             230
+ #popped          24           2
+ #selectset contacts        2431
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped          21           1
+ #selectset contacts        2431
+ selectset done           1
+ eigen done           1
+ tau          25  0.717887104             164
+ #popped           3           0
+ #selectset contacts        2431
+ selectset done           0
+ eigen done           0
+ tau          27   1.12469292             205
+ #popped          28           0
+ #selectset contacts        2431
+ selectset done           0
+ eigen done           0
+ tau          29  0.582433879             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         255
+         255  residues read 1GEG.dssp                                                   
+  grow short strand           3           7
+  grow short strand          52          56
+  grow short strand          81          84
+  exclude short helix          94          96
+  exclude short helix         139         141
+  grow short helix         206         212
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  6  7  9  2  8 10 12 15 16 11 13 14
+   2     1  4  5 14  1  3  4  5  6  7  9  2  8 10 12 15 16 11
+   3     1 28 29  2 13 14
+   4     2  6  7  8  1  3  4  5  6  7  9  2
+   5     2 14 15  6  8 10 12 15 16 11
+   6     4  8  9  7  1  3  4  5  6  7  9
+   7     4  0  0  1  2
+   8     6 10 11  4  1  3  4  5
+   9     6 12 13  3  6  7  9
+  10     8  0  0  2  1  3
+  11     8  0  0  2  4  5
+  12     9  0  0  1  6
+  13     9  0  0  2  7  9
+  14     5  0  0  1  8
+  15     5 20 21  5 10 12 15 16 11
+  16     0  0  0  1  8
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20    15 24 25  4 10 12 15 16
+  21    15  0  0  1 11
+  22     0  0  0  4 10 12 15 16
+  23     0  0  0  0
+  24    20  0  0  3 10 12 15
+  25    20  0  0  1 16
+  26     0  0  0  1 11
+  27     0  0  0  0
+  28     3  0  0  1 13
+  29     3  0  0  1 14
+  30     0  0  0  1 13
+  31     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1 20 21  2  1 13 14
+   4 -   2  6  7  8  2  1  7  9  9
+   5 -   2 14 15  6  3  8  8 10 12 15 16
+   6 -   4  8  9  7  3  1  1  3  7  9  9
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6 12 13  3  2  6  7  9  9
+  10 -   8  0  0  2  2  1  1  3  3
+  11 -   8  0  0  2  1  4  5
+  12 -   9  0  0  1  1  6  6
+  13 -   9  0  0  2  2  7  7  9  9
+  14 -   5  0  0  1  1  8  8
+  15 -   5 16 17  5  2 10 12 15 16
+  16 -  15 18 19  4  3 10 10 12 12 15 16
+  17 -  15  0  0  1  1 11 11
+  18 -  16  0  0  3  3 10 10 12 12 15 15
+  19 -  16  0  0  1  1 16 16
+  20 -   3  0  0  1  1 13 13
+  21 -   3  0  0  1  1 14 14
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1863
+Total number of ignored atom records:        284
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2416
+ selectset done           0
+ eigen done           0
+ tau           1   2.23434973             185         220
+ #popped           2           1
+ #selectset contacts        2416
+ selectset done           1
+ eigen done           1
+ tau           3   1.40641904              86         118         137         168
+ #popped           4           2
+ #selectset contacts        2416
+ selectset done           2
+ eigen done           2
+ tau           5   1.07844758              31          76
+ #popped           6           3
+ #selectset contacts        2416
+ selectset done           3
+ eigen done           3
+ tau           7  0.692925334             245
+ #popped           8           3
+ #selectset contacts        2416
+ selectset done           3
+ eigen done           3
+ tau           9  0.815493226             185
+ #popped          10           4
+ #selectset contacts        2416
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        2416
+ selectset done           3
+ eigen done           3
+ tau          11  0.998242140             231
+ #popped           7           2
+ #selectset contacts        2416
+ selectset done           2
+ eigen done           2
+ tau          13   2.34939742              57
+ #popped          14           2
+ #selectset contacts        2416
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2416
+ selectset done           1
+ eigen done           1
+ tau          15   1.64596128             118
+ #popped          16           2
+ #selectset contacts        2416
+ selectset done           2
+ eigen done           2
+ tau          17   1.38842976              97
+ #popped          19           2
+ #selectset contacts        2416
+ selectset done           2
+ eigen done           2
+ tau          19  0.835714281             108
+ #popped          17           1
+ #selectset contacts        2416
+ selectset done           1
+ eigen done           1
+ tau          21  0.863045990             156
+ #popped           3           0
+ #selectset contacts        2416
+ selectset done           0
+ eigen done           0
+ tau          23   1.15799260             209
+ #popped          24           0
+ #selectset contacts        2416
+ selectset done           0
+ eigen done           0
+ tau          25  0.488455385             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         255
+         255  residues read 1GEG.dssp                                                   
+  grow short strand           3           7
+  grow short strand          52          56
+  grow short strand          81          84
+  exclude short helix          94          96
+  exclude short helix         139         141
+  grow short helix         206         212
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  7  9 10 12 15 16  4  5  6  8 11 13 14
+   2     1  4  5 14  1  2  3  7  9 10 12 15 16  4  5  6  8 11
+   3     1 26 27  2 13 14
+   4     2  6  7 12  1  2  3  7  9 10 12 15 16  4  5  6
+   5     2 16 17  2  8 11
+   6     4  8  9  9  1  2  3  7  9 10 12 15 16
+   7     4 14 15  3  4  5  6
+   8     6 10 11  8  1  2  3  7  9 10 12 15
+   9     6  0  0  1 16
+  10     8  0  0  7  1  2  3  7  9 10 12
+  11     8  0  0  1 15
+  12     0  0  0  1 15
+  13     0  0  0  0
+  14     7  0  0  2  4  5
+  15     7  0  0  1  6
+  16     5  0  0  1  8
+  17     5  0  0  1 11
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     0  0  0  1  8
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1 11
+  24     0  0  0  2 13 14
+  25     0  0  0  0
+  26     3  0  0  1 13
+  27     3  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1 16 17  2  1 13 14
+   4 -   2  6  7 12  4  1  7  9 10 12 12 15 16
+   5 -   2 14 15  2  2  8  8 11 11
+   6 -   4  8  9  9  5  1  3  7  7  9 10 12 12 15 16
+   7 -   4 12 13  3  1  4  6
+   8 -   6 10 11  8  5  1  3  7  7  9 10 12 12 15 15
+   9 -   6  0  0  1  1 16 16
+  10 -   8  0  0  7  4  1  3  7  7  9 10 12 12
+  11 -   8  0  0  1  1 15 15
+  12 -   7  0  0  2  1  4  5
+  13 -   7  0  0  1  1  6  6
+  14 -   5  0  0  1  1  8  8
+  15 -   5  0  0  1  1 11 11
+  16 -   3  0  0  1  1 13 13
+  17 -   3  0  0  1  1 14 14
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            256
+Total number of atoms read in:              1871
+Total number of ignored atom records:        236
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         256  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2418
+ selectset done           0
+ eigen done           0
+ tau           1   2.24278569             183         222
+ #popped           2           1
+ #selectset contacts        2418
+ selectset done           1
+ eigen done           1
+ tau           3   1.66154861              57          80          93         131
+ #popped           4           2
+ #selectset contacts        2418
+ selectset done           2
+ eigen done           2
+ tau           5   1.72584176              57
+ #popped           6           3
+ #selectset contacts        2418
+ selectset done           3
+ eigen done           3
+ tau           7   1.23639381              11          27
+ #popped           8           3
+ #selectset contacts        2418
+ selectset done           3
+ eigen done           3
+ tau           9  0.383247674              40
+ #popped          10           3
+ #selectset contacts        2418
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        2418
+ selectset done           2
+ eigen done           2
+ tau          11   1.59907568             183         243
+ #popped          12           3
+ #selectset contacts        2418
+ selectset done           3
+ eigen done           3
+ tau          13  0.614945233              93         145         156
+ #popped          14           4
+ #selectset contacts        2418
+ selectset done           4
+ eigen done           4
+ tau          15   1.08914030              93
+ #popped          15           3
+ #selectset contacts        2418
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          13           2
+ #selectset contacts        2418
+ selectset done           2
+ eigen done           2
+ tau          17  0.874562979             232
+ #popped           5           1
+ #selectset contacts        2418
+ selectset done           1
+ eigen done           1
+ tau          19   2.19461131              80         110
+ #popped          20           1
+ #selectset contacts        2418
+ selectset done           1
+ eigen done           1
+ tau          21  0.840294838              68          80         120
+ #popped          22           2
+ #selectset contacts        2418
+ selectset done           2
+ eigen done           2
+ tau          23  0.805555582              68
+ #popped          23           1
+ #selectset contacts        2418
+ selectset done           1
+ eigen done           1
+ tau          25   1.33369887              80
+ #popped           3           0
+ #selectset contacts        2418
+ selectset done           0
+ eigen done           0
+ tau          27  0.723678112             212
+ #popped          28           0
+ #selectset contacts        2418
+ selectset done           0
+ eigen done           0
+ tau          29  0.638416171             193
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         256
+         256  residues read 1GEG.dssp                                                   
+  grow short strand           4           8
+  grow short strand          53          57
+  grow short strand          82          85
+  exclude short helix          95          97
+  exclude short helix         140         142
+  grow short helix         207         213
+  exclude short helix         237         239
+  grow short strand         246         249
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  2  7 10 11 12 16 15  9  6  8 13 14
+   2     1  4  5 14  1  3  4  5  2  7 10 11 12 16 15  9  6  8
+   3     1  0  0  2 13 14
+   4     2  6  7 11  1  3  4  5  2  7 10 11 12 16 15
+   5     2 20 21  3  9  6  8
+   6     4  8  9  5  1  3  4  5  2
+   7     4 12 13  6  7 10 11 12 16 15
+   8     6 10 11  4  1  3  4  5
+   9     6  0  0  1  2
+  10     8  0  0  2  1  3
+  11     8  0  0  2  4  5
+  12     7 14 15  5  7 10 11 12 16
+  13     7  0  0  1 15
+  14    12  0  0  1  7
+  15    12  0  0  4 10 11 12 16
+  16     0  0  0  1  7
+  17     0  0  0  0
+  18     0  0  0  1 15
+  19     0  0  0  0
+  20     5 22 23  2  9  6
+  21     5  0  0  1  8
+  22    20  0  0  1  9
+  23    20  0  0  1  6
+  24     0  0  0  0
+  25     0  0  0  1  9
+  26     0  0  0  1  6
+  27     0  0  0  0
+  28     0  0  0  2 13 14
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  2 13 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1  0  0  2  1 13 14
+   4 -   2  6  7 11  4  1  5  7  7 10 12 15 16
+   5 -   2 16 17  3  2  6  6  8  9
+   6 -   4  8  9  5  1  1  5
+   7 -   4 12 13  6  3  7  7 10 12 15 16
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  2  2  1  1  3  3
+  11 -   8  0  0  2  1  4  5
+  12 -   7 14 15  5  3  7  7 10 12 16 16
+  13 -   7  0  0  1  1 15 15
+  14 -  12  0  0  1  1  7  7
+  15 -  12  0  0  4  2 10 12 16 16
+  16 -   5 18 19  2  2  6  6  9  9
+  17 -   5  0  0  1  1  8  8
+  18 -  16  0  0  1  1  9  9
+  19 -  16  0  0  1  1  6  6
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1863
+Total number of ignored atom records:        292
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2432
+ selectset done           0
+ eigen done           0
+ tau           1   2.09733772             185         219
+ #popped           2           1
+ #selectset contacts        2432
+ selectset done           1
+ eigen done           1
+ tau           3   1.57685316              83         114         130
+ #popped           4           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau           5   1.25975657              10          24
+ #popped           6           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau           7   1.16332638              83
+ #popped           8           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau           9   1.05242682              57          73
+ #popped          10           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau          11  0.572549045              57
+ #popped          12           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau          13  0.390524477              39
+ #popped          14           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2432
+ selectset done           1
+ eigen done           1
+ tau          15   1.52487397             114
+ #popped          16           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau          17   1.45833337              97
+ #popped          17           1
+ #selectset contacts        2432
+ selectset done           1
+ eigen done           1
+ tau          19  0.778138697             143         155
+ #popped          20           1
+ #selectset contacts        2432
+ selectset done           1
+ eigen done           1
+ tau          21  0.669596314             175
+ #popped          22           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau          23  0.593006194             143
+ #popped          25           2
+ #selectset contacts        2432
+ selectset done           2
+ eigen done           2
+ tau          25  0.696816981             165
+ #popped          23           1
+ #selectset contacts        2432
+ selectset done           1
+ eigen done           1
+ tau          27  0.947308838             229         241
+ #popped          28           1
+ #selectset contacts        2432
+ selectset done           1
+ eigen done           1
+ tau          29  0.440452069             229
+ #popped          30           1
+ #selectset contacts        2432
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped           3           0
+ #selectset contacts        2432
+ selectset done           0
+ eigen done           0
+ tau          31   1.06802583             209
+ #popped          32           0
+ #selectset contacts        2432
+ selectset done           0
+ eigen done           0
+ tau          33  0.483146101             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         255
+         255  residues read 1GEG.dssp                                                   
+  grow short strand           3           7
+  grow short strand          52          56
+  grow short strand          81          84
+  exclude short helix          94          96
+  exclude short helix         139         141
+  grow short helix         206         212
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  7  6  9  2  8 10 11 12 15 16 13 14
+   2     1  4  5 14  1  3  4  5  7  6  9  2  8 10 11 12 15 16
+   3     1 34 35  2 13 14
+   4     2  6  7  8  1  3  4  5  7  6  9  2
+   5     2 16 17  6  8 10 11 12 15 16
+   6     4  8  9  7  1  3  4  5  7  6  9
+   7     4  0  0  1  2
+   8     6 10 11  6  1  3  4  5  7  6
+   9     6  0  0  1  9
+  10     8 12 13  5  1  3  4  5  7
+  11     8  0  0  1  6
+  12    10 14 15  4  1  3  4  5
+  13    10  0  0  1  7
+  14    12  0  0  2  1  3
+  15    12  0  0  2  4  5
+  16     5  0  0  1  8
+  17     5 22 23  5 10 11 12 15 16
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     0  0  0  5 10 11 12 15 16
+  21     0  0  0  0
+  22    17 24 25  2 10 11
+  23    17 30 31  3 12 15 16
+  24    22  0  0  1 10
+  25    22  0  0  1 11
+  26     0  0  0  1 11
+  27     0  0  0  0
+  28     0  0  0  3 12 15 16
+  29     0  0  0  0
+  30    23  0  0  2 12 15
+  31    23  0  0  1 16
+  32     0  0  0  2 13 14
+  33     0  0  0  0
+  34     3  0  0  1 13
+  35     3  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1 24 25  2  1 13 14
+   4 -   2  6  7  8  2  1  7  9  9
+   5 -   2 16 17  6  3  8  8 10 12 15 16
+   6 -   4  8  9  7  3  1  1  3  7  9  9
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  6  2  1  1  3  7
+   9 -   6  0  0  1  1  9  9
+  10 -   8 12 13  5  3  1  1  3  5  7  7
+  11 -   8  0  0  1  1  6  6
+  12 -  10 14 15  4  2  1  1  3  5
+  13 -  10  0  0  1  1  7  7
+  14 -  12  0  0  2  2  1  1  3  3
+  15 -  12  0  0  2  1  4  5
+  16 -   5  0  0  1  1  8  8
+  17 -   5 18 19  5  2 10 12 15 16
+  18 -  17 20 21  2  1 10 11
+  19 -  17 22 23  3  2 12 12 15 16
+  20 -  18  0  0  1  1 10 10
+  21 -  18  0  0  1  1 11 11
+  22 -  19  0  0  2  2 12 12 15 15
+  23 -  19  0  0  1  1 16 16
+  24 -   3  0  0  1  1 13 13
+  25 -   3  0  0  1  1 14 14
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1863
+Total number of ignored atom records:        288
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2403
+ selectset done           0
+ eigen done           0
+ tau           1   1.77721083             188         213
+ #popped           2           1
+ #selectset contacts        2403
+ selectset done           1
+ eigen done           1
+ tau           3   1.58581197              86         109         135         159         178         229         245
+ #popped           4           2
+ #selectset contacts        2403
+ selectset done           2
+ eigen done           2
+ tau           5   1.27479935              86
+ #popped           6           3
+ #selectset contacts        2403
+ selectset done           3
+ eigen done           3
+ tau           7   1.39383721              56          75
+ #popped           8           3
+ #selectset contacts        2403
+ selectset done           3
+ eigen done           3
+ tau           9  0.786195040              31          56
+ #popped          10           4
+ #selectset contacts        2403
+ selectset done           4
+ eigen done           4
+ tau          11  0.559135139              10          20
+ #popped          12           4
+ #selectset contacts        2403
+ selectset done           4
+ eigen done           4
+ tau          13  0.184659094              10
+ #popped          15           4
+ #selectset contacts        2403
+ selectset done           4
+ eigen done           4
+ tau          15   6.45806456              31
+ #popped          11           3
+ #selectset contacts        2403
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped           7           2
+ #selectset contacts        2403
+ selectset done           2
+ eigen done           2
+ tau          17   1.15686750             122
+ #popped          19           2
+ #selectset contacts        2403
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           5           1
+ #selectset contacts        2403
+ selectset done           1
+ eigen done           1
+ tau          19   1.96296370             159
+ #popped          20           2
+ #selectset contacts        2403
+ selectset done           2
+ eigen done           2
+ tau          21   1.24998951             109
+ #popped          22           3
+ #selectset contacts        2403
+ selectset done           3
+ eigen done           3
+ tau          23   1.13953495              97
+ #popped          23           2
+ #selectset contacts        2403
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped          21           1
+ #selectset contacts        2403
+ selectset done           1
+ eigen done           1
+ tau          25  0.436203361             188
+ #popped          27           1
+ #selectset contacts        2403
+ selectset done           1
+ eigen done           1
+ tau          27   1.31443298             229
+ #popped           3           0
+ #selectset contacts        2403
+ selectset done           0
+ eigen done           0
+ tau          29  0.686498821             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         255
+         255  residues read 1GEG.dssp                                                   
+  grow short strand           3           7
+  grow short strand          52          56
+  grow short strand          81          84
+  exclude short helix          94          96
+  exclude short helix         139         141
+  grow short helix         206         212
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  7  2  4  5  6  9 10 11 12  8 15 16 13 14
+   2     1  4  5 14  1  3  7  2  4  5  6  9 10 11 12  8 15 16
+   3     1 30 31  2 13 14
+   4     2  6  7 11  1  3  7  2  4  5  6  9 10 11 12
+   5     2 20 21  3  8 15 16
+   6     4  8  9  7  1  3  7  2  4  5  6
+   7     4 18 19  4  9 10 11 12
+   8     6 10 11  6  1  3  7  2  4  5
+   9     6  0  0  1  6
+  10     8 12 13  4  1  3  7  2
+  11     8  0  0  2  4  5
+  12    10 14 15  3  1  3  7
+  13    10  0  0  1  2
+  14    12  0  0  1  1
+  15    12 16 17  2  3  7
+  16    15  0  0  1  3
+  17    15  0  0  1  7
+  18     7  0  0  1  9
+  19     7  0  0  3 10 11 12
+  20     5  0  0  1  8
+  21     5 28 29  2 15 16
+  22     0  0  0  1  8
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  1  8
+  26     0  0  0  0
+  27     0  0  0  2 15 16
+  28    21  0  0  1 15
+  29    21  0  0  1 16
+  30     3  0  0  1 13
+  31     3  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1 24 25  2  1 13 14
+   4 -   2  6  7 11  2  1  7  9 12
+   5 -   2 20 21  3  2  8  8 15 16
+   6 -   4  8  9  7  1  1  7
+   7 -   4 18 19  4  1  9 12
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6  0  0  1  1  6  6
+  10 -   8 12 13  4  2  1  3  7  7
+  11 -   8  0  0  2  1  4  5
+  12 -  10 14 15  3  3  1  1  3  3  7  7
+  13 -  10  0  0  1  1  2  2
+  14 -  12  0  0  1  1  1  1
+  15 -  12 16 17  2  2  3  3  7  7
+  16 -  15  0  0  1  1  3  3
+  17 -  15  0  0  1  1  7  7
+  18 -   7  0  0  1  1  9  9
+  19 -   7  0  0  3  1 10 12
+  20 -   5  0  0  1  1  8  8
+  21 -   5 22 23  2  1 15 16
+  22 -  21  0  0  1  1 15 15
+  23 -  21  0  0  1  1 16 16
+  24 -   3  0  0  1  1 13 13
+  25 -   3  0  0  1  1 14 14
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1863
+Total number of ignored atom records:        256
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2427
+ selectset done           0
+ eigen done           0
+ tau           1   1.29127097              55          75          86         127         137         161
+ #popped           2           1
+ #selectset contacts        2427
+ selectset done           1
+ eigen done           1
+ tau           3   2.84695458             185         214
+ #popped           4           2
+ #selectset contacts        2427
+ selectset done           2
+ eigen done           2
+ tau           5   1.76651609              86
+ #popped           6           3
+ #selectset contacts        2427
+ selectset done           3
+ eigen done           3
+ tau           7   1.06380749              10          24
+ #popped           8           3
+ #selectset contacts        2427
+ selectset done           3
+ eigen done           3
+ tau           9  0.478846937              55
+ #popped          10           3
+ #selectset contacts        2427
+ selectset done           3
+ eigen done           3
+ tau          11  0.434977114              39
+ #popped          12           3
+ #selectset contacts        2427
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2427
+ selectset done           2
+ eigen done           2
+ tau          13   1.05967844             137         174
+ #popped          14           2
+ #selectset contacts        2427
+ selectset done           2
+ eigen done           2
+ tau          15  0.686455309             229         244
+ #popped          16           2
+ #selectset contacts        2427
+ selectset done           2
+ eigen done           2
+ tau          17  0.519309461             185
+ #popped          18           3
+ #selectset contacts        2427
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          19           2
+ #selectset contacts        2427
+ selectset done           2
+ eigen done           2
+ tau          19   1.59605908             229
+ #popped           5           1
+ #selectset contacts        2427
+ selectset done           1
+ eigen done           1
+ tau          21  0.752426207             204
+ #popped           3           0
+ #selectset contacts        2427
+ selectset done           0
+ eigen done           0
+ tau          23   3.24911928              75         110         127
+ #popped          24           1
+ #selectset contacts        2427
+ selectset done           1
+ eigen done           1
+ tau          25  0.658307195              65
+ #popped          27           1
+ #selectset contacts        2427
+ selectset done           1
+ eigen done           1
+ tau          27   1.44201684              75
+ #popped          25           0
+ #selectset contacts        2427
+ selectset done           0
+ eigen done           0
+ tau          29   1.20866156             110
+ #popped          30           1
+ #selectset contacts        2427
+ selectset done           1
+ eigen done           1
+ tau          31   1.20577288              97
+ #popped          31           0
+ #selectset contacts        2427
+ selectset done           0
+ eigen done           0
+ tau          33  0.517172158             148
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-00   1GEG              COMPND   2 MOLECULE: ACETOIN REDUCTASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: KLEBSIELLA PNEUMONIAE;                          AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         255
+         255  residues read 1GEG.dssp                                                   
+  grow short strand           3           7
+  grow short strand          52          56
+  grow short strand          81          84
+  exclude short helix          94          96
+  exclude short helix         139         141
+  grow short helix         206         212
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  7  2 10 12 15 16 13 14  6  9  8 11
+   2     1  4  5 12  1  3  4  5  7  2 10 12 15 16 13 14
+   3     1 24 25  4  6  9  8 11
+   4     2  6  7 10  1  3  4  5  7  2 10 12 15 16
+   5     2 22 23  2 13 14
+   6     4  8  9  6  1  3  4  5  7  2
+   7     4 18 19  4 10 12 15 16
+   8     6 10 11  5  1  3  4  5  7
+   9     6  0  0  1  2
+  10     8 12 13  4  1  3  4  5
+  11     8  0  0  1  7
+  12    10  0  0  2  1  3
+  13    10  0  0  2  4  5
+  14     0  0  0  4 10 12 15 16
+  15     0  0  0  0
+  16     0  0  0  4 10 12 15 16
+  17     0  0  0  0
+  18     7  0  0  2 10 12
+  19     7 20 21  2 15 16
+  20    19  0  0  1 15
+  21    19  0  0  1 16
+  22     5  0  0  1 13
+  23     5  0  0  1 14
+  24     3 28 29  2  6  9
+  25     3 30 31  2  8 11
+  26     0  0  0  0
+  27     0  0  0  2  6  9
+  28    24  0  0  1  6
+  29    24  0  0  1  9
+  30    25  0  0  1  8
+  31    25  0  0  1 11
+  32     0  0  0  0
+  33     0  0  0  1  8
+  34     0  0  0  0
+  35     0  0  0  1 11
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 12  4  1  5  7  7 10 10 12 16
+   3 -   1 20 21  4  3  6  6  8  9 11 11
+   4 -   2  6  7 10  5  1  5  7  7 10 10 12 12 15 16
+   5 -   2 18 19  2  1 13 14
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4 14 15  4  3 10 10 12 12 15 16
+   8 -   6 10 11  5  3  1  1  3  5  7  7
+   9 -   6  0  0  1  1  2  2
+  10 -   8 12 13  4  2  1  1  3  5
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  2  2  1  1  3  3
+  13 -  10  0  0  2  1  4  5
+  14 -   7  0  0  2  2 10 10 12 12
+  15 -   7 16 17  2  1 15 16
+  16 -  15  0  0  1  1 15 15
+  17 -  15  0  0  1  1 16 16
+  18 -   5  0  0  1  1 13 13
+  19 -   5  0  0  1  1 14 14
+  20 -   3 22 23  2  2  6  6  9  9
+  21 -   3 24 25  2  2  8  8 11 11
+  22 -  20  0  0  1  1  6  6
+  23 -  20  0  0  1  1  9  9
+  24 -  21  0  0  1  1  8  8
+  25 -  21  0  0  1  1 11 11
+
+ CHAIN : 1GEGA
+ CHAIN : 1GEGB
+ CHAIN : 1GEGC
+ CHAIN : 1GEGD
+ CHAIN : 1GEGE
+ CHAIN : 1GEGF
+ CHAIN : 1GEGG
+ CHAIN : 1GEGH
+

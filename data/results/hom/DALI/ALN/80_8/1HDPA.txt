@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 1HDPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2E1O-A  6.5  2.6   58    70   28   MOLECULE: HOMEOBOX PROTEIN PRH;                                      
+
+# Pairwise alignments
+
+No 1: Query=1HDPA Sbjct=2E1OA Z-score=6.5
+
+DSSP  -----llLLLLlLLLH--HHHHHHHHHHHLLLLLHHHHHHHHLLLLLLHHHHHHHHHHHH
+Query -----rrKKRTsIETN--VRFALEKSFLANQKPTSEEILLIAEQLHMEKEVIRVWFCNRR   53
+ident        |              ||| |         |    |  |         || |||
+Sbjct gssgssgKGGQ-VRFSndQTIELEKKFETQKYLSPPERKRLAKMLQLSERQVKTWFQNRR   59
+DSSP  lllllllLLLL-LLLLhhHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHH
+
+DSSP  HLLLLLLL--l
+Query QKEKRINP--s   62
+ident  |  |  |   
+Sbjct AKWRRSGPssg   70
+DSSP  HHHHHHLLlll
+
+
+# Structural equivalences
+   1: 1HDP-A 2E1O-A     3 -   6 <=>    8 -  11   (LYS    3  - THR    6  <=> LYS    8  - GLN   11 )                          
+   1: 1HDP-A 2E1O-A     8 -  11 <=>   12 -  15   (ILE    8  - ASN   11  <=> VAL   12  - SER   15 )                          
+   1: 1HDP-A 2E1O-A    12 -  61 <=>   18 -  67   (VAL   12  - PRO   61  <=> GLN   18  - PRO   67 )                          
+
+# Translation-rotation matrices
+-matrix  "1HDP-A 2E1O-A  U(1,.)   0.427535 -0.064114  0.901722           -3.244615"
+-matrix  "1HDP-A 2E1O-A  U(2,.)  -0.638442  0.684773  0.351394            7.254409"
+-matrix  "1HDP-A 2E1O-A  U(3,.)  -0.640004 -0.725931  0.251831           -1.711347"
+

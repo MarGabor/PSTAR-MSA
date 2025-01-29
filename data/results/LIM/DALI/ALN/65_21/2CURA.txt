@@ -1,0 +1,44 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1B8T-A  6.1  4.0   65   192   26   MOLECULE: PROTEIN (CRP1);                                            
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=1B8TA Z-score=6.1
+
+DSSP  --LLLLllLLLLLLLLLLLLL-EEELLEEELLLLLLLLLLLLLLLLLLEEELLLLEEEHH
+Query --GSSGssGCVKCNKAITSGG-ITYQDQPWHADCFVCVTCSKKLAGQRFTAVEDQYYCVD   57
+ident      |   |  | ||              |  || |  | | |         |  ||  
+Sbjct mpNWGGgkKCGVCQKAVYFAEeVQCEGSSFHKSCFLCMVCKKNLDSTTVAVHGDEIYCKS   60
+DSSP  llLLLLleELLLLLLEELLLLlEEELLEEELLLLLLLLLLLLLLLLLLEEEELLEEEEHH
+
+DSSP  HHHHHHLLLL--------------------------------------------------
+Query CYKNFVSGPS--------------------------------------------------   67
+ident ||                                                          
+Sbjct CYGKKYGPKGkgkgmgagtlstdkgeslgikyeegqshrptnpnasrmaqkvggsdgcpr  120
+DSSP  HHHHHHLLLLllllllllllllllllllllllllllllllllllllllllllllleelll
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------   67
+ident                                                             
+Sbjct cgqavyaaekvigagkswhkscfrcakcgkslesttladkdgeiyckgcyaknfgpkgfg  180
+DSSP  llleellllleeelleeelllllllllllllllllleeeelleeeehhhhhhhlllllll
+
+DSSP  ----------ll
+Query ----------sg   69
+ident             
+Sbjct fgqgagalihsq  192
+DSSP  llllllllllll
+
+
+# Structural equivalences
+   1: 2CUR-A 1B8T-A     1 -   4 <=>    3 -   6   (GLY    1  - GLY    4  <=> ASN    3  - GLY    6 )                          
+   1: 2CUR-A 1B8T-A     7 -  19 <=>    9 -  21   (GLY    7  - GLY   19  <=> LYS    9  - GLU   21 )                          
+   1: 2CUR-A 1B8T-A    20 -  67 <=>   23 -  70   (ILE   20  - SER   67  <=> VAL   23  - GLY   70 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 1B8T-A  U(1,.)   0.751931  0.658548 -0.030218           18.367182"
+-matrix  "2CUR-A 1B8T-A  U(2,.)  -0.639144  0.717010 -0.278194          -22.165720"
+-matrix  "2CUR-A 1B8T-A  U(3,.)  -0.161537  0.228496  0.960050           14.328680"
+
