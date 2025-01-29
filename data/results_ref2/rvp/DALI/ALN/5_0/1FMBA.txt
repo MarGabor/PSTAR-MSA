@@ -1,0 +1,33 @@
+# Job: rvp
+# Query: 1FMBA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1IVP-B 15.3  1.6   98   100   36   MOLECULE: HIV-2 PROTEASE;                                            
+
+# Pairwise alignments
+
+No 1: Query=1FMBA Sbjct=1IVPB Z-score=15.3
+
+DSSP  LLLLLLLLLEEEEEELLEEEEEEELLLLLLLEEeHHHHhhlllLLLLEELLLEEELLEEE
+Query VTYNLEKRPTTIVLINDTPLNVLLDTGADTSVLtTAHYnrlkyRGRKYQGTGIGGVGGNV   60
+ident     | |||     |   |  |||||||| |             |  |     || ||  
+Sbjct PQFSLWKRPVVTAYIEGQPVEVLLDTGADDSIV-AGIE-----LGNNYSPKIVGGIGGFI   54
+DSSP  LLLLLLLLLEEEEEELLEEEEEEELLLLLLLEE-LLLL-----LLLLLEEEEEEELLEEE
+
+DSSP  LLEEEE-EEEEELLEEEEEEEEEELLLLLEELHHHHHHLLLLLLL-
+Query ETFSTP-VTIKKKGRHIKTRMLVADIPVTILGRDILQDLGAKLVL-  104
+ident  |     | |              | |  | || ||  ||  | | 
+Sbjct NTLEYKnVEIEVLNKKVRATIMTGDTPINIFGRNILTALGMSLNLx  100
+DSSP  EEEEEEeEEEEELLEEEEEEEEELLLLLEEELHHHHHHHLLEEELl
+
+
+# Structural equivalences
+   1: 1FMB-A 1IVP-B     1 -  33 <=>    1 -  33   (VAL    1  - LEU   33  <=> PRO    1  - VAL   33 )                          
+   1: 1FMB-A 1IVP-B    35 -  38 <=>   34 -  37   (THR   35  - TYR   38  <=> ALA   34  - GLU   37 )                          
+   1: 1FMB-A 1IVP-B    44 -  66 <=>   38 -  60   (ARG   44  - PRO   66  <=> LEU   38  - LYS   60 )                          
+   1: 1FMB-A 1IVP-B    67 - 104 <=>   62 -  99   (VAL   67  - LEU  104  <=> VAL   62  - LEU   99 )                          
+
+# Translation-rotation matrices
+-matrix  "1FMB-A 1IVP-B  U(1,.)   0.636369 -0.752435  0.169930            9.194972"
+-matrix  "1FMB-A 1IVP-B  U(2,.)  -0.771299 -0.617375  0.154747           27.772728"
+-matrix  "1FMB-A 1IVP-B  U(3,.)  -0.011526 -0.229543 -0.973230           24.232925"
+

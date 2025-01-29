@@ -1,0 +1,160 @@
+A length: 176
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ detected ENDMDL record in NMR entry - skip rest 
+
+Total number of residues read in:            176
+Total number of atoms read in:              1550
+Total number of ignored atom records:       1203
+ HEADER    ELECTRON TRANSPORT                      27-APR-14   2MOK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.JIN,Y.HU,Q.YE                                                       
+  Reading DSSP file
+ HEADER    ELECTRON TRANSPORT                      27-APR-14   2MOK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI STR. K-12 SUBSTR. MC4          AUTHOR    C.JIN,Y.HU,Q.YE                                                       
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1657
+ selectset done           0
+ eigen done           0
+ tau           1   1.25676250              86          99         118         157
+ #popped           2           1
+ #selectset contacts        1657
+ selectset done           1
+ eigen done           1
+ tau           3  0.919256806             118
+ #popped           4           1
+ #selectset contacts        1657
+ selectset done           1
+ eigen done           1
+ tau           5  0.358484864              22          50
+ #popped           6           2
+ #selectset contacts        1657
+ selectset done           2
+ eigen done           2
+ tau           7  0.985948145              12          22
+ #popped           8           2
+ #selectset contacts        1657
+ selectset done           2
+ eigen done           2
+ tau           9  0.730483949              63
+ #popped          10           3
+ #selectset contacts        1657
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped          11           2
+ #selectset contacts        1657
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        1657
+ selectset done           1
+ eigen done           1
+ tau          11   2.63070107              34
+ #popped           3           0
+ #selectset contacts        1657
+ selectset done           0
+ eigen done           0
+ tau          13   1.56922674              99         141
+ #popped          14           1
+ #selectset contacts        1657
+ selectset done           1
+ eigen done           1
+ tau          15  0.615151525              99
+ #popped          15           0
+ #selectset contacts        1657
+ selectset done           0
+ eigen done           0
+ tau          17  0.388979495             130
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ELECTRON TRANSPORT                      27-APR-14   2MOK              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI STR. K-12 SUBSTR. MC4          AUTHOR    C.JIN,Y.HU,Q.YE                                                       
+           0
+         176
+         176  residues read 2MOK.dssp                                                   
+  grow short strand           4           8
+  grow short strand          31          34
+  exclude short helix          36          38
+  exclude short helix          41          45
+  grow short strand          49          53
+  grow short strand          56          57
+  grow short strand          61          62
+ crowded segment excluded!
+  grow short strand         115         117
+  grow short strand         120         121
+  grow short strand         133         135
+  grow short strand         138         139
+ crowded segment excluded!
+  grow short strand         142         144
+  exclude short helix         171         174
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  4  5  6  7  8  9  2  3 13 12 10 11
+   2     1  4  5 10  1  4  5  6  7  8  9  2  3 13
+   3     1 14 15  3 12 10 11
+   4     2  6  7  9  1  4  5  6  7  8  9  2  3
+   5     2  0  0  1 13
+   6     4  8  9  8  1  4  5  6  7  8  9  2
+   7     4  0  0  1  3
+   8     6 10 11  7  1  4  5  6  7  8  9
+   9     6  0  0  1  2
+  10     8  0  0  3  1  4  5
+  11     8  0  0  4  6  7  8  9
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     3  0  0  1 12
+  15     3 18 19  2 10 11
+  16     0  0  0  0
+  17     0  0  0  1 12
+  18    15  0  0  1 10
+  19    15  0  0  1 11
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 10  2  1  9 13 13
+   3 -   1 12 13  3  1 10 12
+   4 -   2  6  7  9  1  1  9
+   5 -   2  0  0  1  1 13 13
+   6 -   4  8  9  8  2  1  2  4  9
+   7 -   4  0  0  1  1  3  3
+   8 -   6 10 11  7  2  1  1  4  9
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  3  2  1  1  4  5
+  11 -   8  0  0  4  1  6  9
+  12 -   3  0  0  1  1 12 12
+  13 -   3 14 15  2  1 10 11
+  14 -  13  0  0  1  1 10 10
+  15 -  13  0  0  1  1 11 11
+
+ CHAIN : 2MOKA
+

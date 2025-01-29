@@ -1,0 +1,34 @@
+# Job: kunitz
+# Query: 1TAPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1DEM-A  3.0  2.8   45    60   24   MOLECULE: DENDROTOXIN I;                                             
+
+# Pairwise alignments
+
+No 1: Query=1TAPA Sbjct=1DEMA Z-score=3.0
+
+DSSP  --llLLLLLlllllllllllLLLLEEEEEEL-LLEEEEEELLLLlLLLLlLLLLHHHHHH
+Query --ynRLCIKprdwidecdsnEGGERAYFRNG-KGGCDSFWICPEdHTGAdYYSSYRDCFN   57
+ident      |||                 |   |  |  |  |                  |  
+Sbjct qplrKLCIL----hrnpgrcYQKIPAFYYNQkKKQCEGFTWSGC-GGNSnRFKTIEECRR   55
+DSSP  llllHHHLL----lllllllLLLEEEEEEELlLLEEEEEEELLL-LLLLlLLLLHHHHHH
+
+DSSP  HHL--
+Query ACI--   60
+ident  ||  
+Sbjct TCIrk   60
+DSSP  HHLll
+
+
+# Structural equivalences
+   1: 1TAP-A 1DEM-A     3 -   7 <=>    5 -   9   (ARG    3  - LYS    7  <=> LYS    5  - LEU    9 )                          
+   1: 1TAP-A 1DEM-A    19 -  29 <=>   17 -  27   (GLU   19  - GLY   29  <=> TYR   17  - GLN   27 )                          
+   1: 1TAP-A 1DEM-A    30 -  41 <=>   29 -  40   (LYS   30  - GLU   41  <=> LYS   29  - CYS   40 )                          
+   1: 1TAP-A 1DEM-A    43 -  46 <=>   41 -  44   (HIS   43  - ALA   46  <=> GLY   41  - SER   44 )                          
+   1: 1TAP-A 1DEM-A    48 -  60 <=>   46 -  58   (TYR   48  - ILE   60  <=> ARG   46  - ILE   58 )                          
+
+# Translation-rotation matrices
+-matrix  "1TAP-A 1DEM-A  U(1,.)   0.219391  0.293765  0.930360           -0.855244"
+-matrix  "1TAP-A 1DEM-A  U(2,.)  -0.838864 -0.430118  0.333626            2.226086"
+-matrix  "1TAP-A 1DEM-A  U(3,.)   0.498172 -0.853640  0.152065           -0.092447"
+

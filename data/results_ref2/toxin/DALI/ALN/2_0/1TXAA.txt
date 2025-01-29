@@ -1,0 +1,33 @@
+# Job: toxin
+# Query: 1TXAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CVO-A  4.5  2.7   57    62   25   MOLECULE: CARDIOTOXIN V;                                             
+
+# Pairwise alignments
+
+No 1: Query=1TXAA Sbjct=1CVOA Z-score=4.5
+
+DSSP  -LLLLLLLLLLLlLLLL-llLEEEEELLLLLLLLlllLLLEEEELLLLLLLLLLLLEEEE
+Query -TKCYVTPDATSqTCPD-gqDICYTKTWCDGFCSsrgKRIDLGCAATCPKVKPGVDIKCC   58
+ident                       |   |               |||  |||        ||
+Sbjct lKCHNTQLPFIY-KTCPegkNLCFKATLKKFPLK---FPVKRGCADNCPKNSALLKYVCC   56
+DSSP  lEELLLLLLLLL-EELLlllLEEEEEEELLLLLL---LLEEEEEELLLLLLLLLEEEEEE
+
+DSSP  ELLLLllllllllll
+Query STDNCnpfptwkrkh   73
+ident ||| |          
+Sbjct STDKC---------n   62
+DSSP  LLLLL---------l
+
+
+# Structural equivalences
+   1: 1TXA-A 1CVO-A     1 -  11 <=>    2 -  12   (THR    1  - SER   11  <=> LYS    2  - TYR   12 )                          
+   1: 1TXA-A 1CVO-A    13 -  16 <=>   13 -  16   (THR   13  - ASP   16  <=> LYS   13  - PRO   16 )                          
+   1: 1TXA-A 1CVO-A    19 -  32 <=>   20 -  33   (ASP   19  - SER   32  <=> ASN   20  - LYS   33 )                          
+   1: 1TXA-A 1CVO-A    36 -  63 <=>   34 -  61   (LYS   36  - CYS   63  <=> PHE   34  - CYS   61 )                          
+
+# Translation-rotation matrices
+-matrix  "1TXA-A 1CVO-A  U(1,.)   0.454804  0.887123 -0.078522            2.384207"
+-matrix  "1TXA-A 1CVO-A  U(2,.)  -0.884730  0.460150  0.074264            0.021420"
+-matrix  "1TXA-A 1CVO-A  U(3,.)   0.102014  0.035695  0.994142            0.837478"
+

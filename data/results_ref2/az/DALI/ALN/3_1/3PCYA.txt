@@ -1,0 +1,32 @@
+# Job: az
+# Query: 3PCYA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1M9W-A 17.7  1.1   96    98   42   MOLECULE: PLASTOCYANIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=3PCYA Sbjct=1M9WA Z-score=17.7
+
+DSSP  --LEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLLLLEELhhHLLLlLLHHHHLLL
+Query --IDVLLGADDGSLAFVPSEFSISPGEKIVFKNNAGFPHNIVFDedSIPSgVDASKISMS   58
+ident     |  | | | | | ||   |  ||     ||   ||||||                |
+Sbjct anATVKMGSDSGALVFEPSTVTIKAGEEVKWVNNKLSPHNIVFA--ADGV-DADTAAKLS   57
+DSSP  llLLLEELLLLLLLLEELLEEEELLLLEELLEELLLLLLLLEEL--LLLL-LLHHHLLLL
+
+DSSP  LLLLLLLLLLEEEEELLLLEEEEEELHHHLLLLLEEEEEEL
+Query EEDLLNAKGETFEVALSNKGEYSFYCSPHQGAGMVGKVTVN   99
+ident    |  | || |       | |  || || |||||||| | 
+Sbjct HKGLAFAAGESFTSTFTEPGTYTYYCEPHRGAGMVGKVVVE   98
+DSSP  LLLLLLLLLLLLLEELLLLLEEEEELHHHHHHLLEEEEEEL
+
+
+# Structural equivalences
+   1: 3PCY-A 1M9W-A     1 -  42 <=>    3 -  44   (ILE    1  - ASP   42  <=> ALA    3  - ALA   44 )                          
+   1: 3PCY-A 1M9W-A    45 -  48 <=>   45 -  48   (SER   45  - SER   48  <=> ALA   45  - VAL   48 )                          
+   1: 3PCY-A 1M9W-A    50 -  99 <=>   49 -  98   (VAL   50  - ASN   99  <=> ASP   49  - GLU   98 )                          
+
+# Translation-rotation matrices
+-matrix  "3PCY-A 1M9W-A  U(1,.)  -0.669560  0.721388  0.176886            6.424434"
+-matrix  "3PCY-A 1M9W-A  U(2,.)   0.539844  0.309072  0.782970           26.144350"
+-matrix  "3PCY-A 1M9W-A  U(3,.)   0.510155  0.619736 -0.596380           21.517464"
+

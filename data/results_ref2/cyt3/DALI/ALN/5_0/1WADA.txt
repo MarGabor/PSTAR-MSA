@@ -1,0 +1,33 @@
+# Job: cyt3
+# Query: 1WADA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CDV-A 17.7  1.4  104   107   51   MOLECULE: CYTOCHROME C3;                                             
+
+# Pairwise alignments
+
+No 1: Query=1WADA Sbjct=2CDVA Z-score=17.7
+
+DSSP  -LLLLLLLEEELLLlllllLLLEEELLHHHLLLLHHHLLLLLLL-lLLLLLLLLLLLLLL
+Query -VDVPADGAKIDFIaggekNLTVVFNHSTHKDVKCDDCHHDPGD-kQYAGCTTDGCHNIL   58
+ident     |||| | |          ||||||||| ||| ||||       |  | | |||   
+Sbjct aPKAPADGLKMDKT-----KQPVVFNHSTHKAVKCGDCHHPVNGkeNYQKCATAGCHDNM   55
+DSSP  lLLLLLLLEEELLL-----LLLEEELLHHHLLLLHHHHLLEELLeeLLLLLLLLLLLLLL
+
+DSSP  LLLLLLLLLHHHHHHLLLlLLLLLHHHHHHHHHLLLHHHHHHHHLLLLLLLLL
+Query DKADKSVNSWYKVVHDAKgGAKPTCISCHKDKAGDDKELKKKLTGCKGSACHP  111
+ident || |||    |   ||        |  ||   || |   || ||||||| || 
+Sbjct DKKDKSAKGYYHAMHDKG-TKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  107
+DSSP  LLLLLLLLLHHHHHHLLL-LLLLLHHHHHHHHHLLLHHHHHHHHLLLLLLLLL
+
+
+# Structural equivalences
+   1: 1WAD-A 2CDV-A     1 -  13 <=>    2 -  14   (VAL    1  - ILE   13  <=> PRO    2  - THR   14 )                          
+   1: 1WAD-A 2CDV-A    19 -  43 <=>   15 -  39   (ASN   19  - ASP   43  <=> LYS   15  - GLY   39 )                          
+   1: 1WAD-A 2CDV-A    45 -  76 <=>   42 -  73   (GLN   45  - LYS   76  <=> ASN   42  - GLY   73 )                          
+   1: 1WAD-A 2CDV-A    78 - 111 <=>   74 - 107   (GLY   78  - PRO  111  <=> THR   74  - SER  107 )                          
+
+# Translation-rotation matrices
+-matrix  "1WAD-A 2CDV-A  U(1,.)  -0.186160 -0.774251  0.604880           27.689713"
+-matrix  "1WAD-A 2CDV-A  U(2,.)   0.977164 -0.210093  0.031815          -21.648012"
+-matrix  "1WAD-A 2CDV-A  U(3,.)   0.102448  0.596990  0.795681          -55.764599"
+

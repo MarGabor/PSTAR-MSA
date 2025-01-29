@@ -1,0 +1,31 @@
+# Job: cytb
+# Query: 1CXYA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1EUE-A 13.4  1.2   77    86   36   MOLECULE: CYTOCHROME B5;                                             
+
+# Pairwise alignments
+
+No 1: Query=1CXYA Sbjct=1EUEA Z-score=13.4
+
+DSSP  --LLLLLLHHHHLLLEELLEEEEEELLEEEELLLLHHHLLLLLLLLHHHLLLLLHHHHHH
+Query --TLPVFTLEQVAEHHSPDDCWMAIHGKVYDLTPYVPNHPGPAGMMLVWCGQESTEAWET   58
+ident         || ||        || ||| ||| |     |||     |   |   ||  | 
+Sbjct dpAVTYYRLEEVAKRNTAEETWMVIHGRVYDITRFLSEHPGGEEILLEQAGADATESFED   60
+DSSP  llLLLEELHHHHLLLEELLEEEEEELLEEEELHHHHHHLLLLLHHHHLLLLLLLHHHHHH
+
+DSSP  LllllLLLHHHHHHHHHLEEEEL-------
+Query KsygePHSSLAARLLQRYLIGTL-------   81
+ident       ||  |   |  | ||         
+Sbjct I----GHSPDAREMLKQYYIGDVhpndlkp   86
+DSSP  H----LLLHHHHHHHHHHEEEEElhhhlll
+
+
+# Structural equivalences
+   1: 1CXY-A 1EUE-A     1 -  59 <=>    3 -  61   (THR    6  - LYS   64  <=> ALA    3  - ILE   61 )                          
+   1: 1CXY-A 1EUE-A    64 -  81 <=>   62 -  79   (PRO   69  - LEU   86  <=> GLY   62  - VAL   79 )                          
+
+# Translation-rotation matrices
+-matrix  "1CXY-A 1EUE-A  U(1,.)  -0.054431 -0.269929 -0.961340          101.568565"
+-matrix  "1CXY-A 1EUE-A  U(2,.)   0.826100  0.528633 -0.195206          -11.261353"
+-matrix  "1CXY-A 1EUE-A  U(3,.)   0.560888 -0.804789  0.194215            7.923295"
+

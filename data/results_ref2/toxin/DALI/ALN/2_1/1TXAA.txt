@@ -1,0 +1,33 @@
+# Job: toxin
+# Query: 1TXAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CDT-B  4.1  2.2   51    60   27   MOLECULE: CARDIOTOXIN VII4;                                          
+
+# Pairwise alignments
+
+No 1: Query=1TXAA Sbjct=1CDTB Z-score=4.1
+
+DSSP  -LLLLLLlllLLLLLLL-llLEEEEELLLLLlllllllLLEEEELLLLLLLLLLLLEEEE
+Query -TKCYVTpdaTSQTCPD-gqDICYTKTWCDGfcssrgkRIDLGCAATCPKVKPGVDIKCC   58
+ident                       ||                  ||   |||    |   ||
+Sbjct lKCNKLI--pIAYKTCPegkNLCYKMMLASK----kmvPVKRGCINVCPKNSALVKYVCC   54
+DSSP  lEEELLL--lLLEEELLlllLEEEEEEELLL----lleEEEEEEELLLLLLLLLEEEEEE
+
+DSSP  ELLLLllllllllll
+Query STDNCnpfptwkrkh   73
+ident ||| |          
+Sbjct STDRC---------n   60
+DSSP  LLLLL---------l
+
+
+# Structural equivalences
+   1: 1TXA-A 1CDT-B     1 -   6 <=>    2 -   7   (THR    1  - THR    6  <=> LYS    2  - ILE    7 )                          
+   1: 1TXA-A 1CDT-B    10 -  16 <=>    9 -  15   (THR   10  - ASP   16  <=> ILE    9  - PRO   15 )                          
+   1: 1TXA-A 1CDT-B    19 -  29 <=>   19 -  29   (ASP   19  - GLY   29  <=> ASN   19  - LYS   29 )                          
+   1: 1TXA-A 1CDT-B    37 -  63 <=>   33 -  59   (ARG   37  - CYS   63  <=> PRO   33  - CYS   59 )                          
+
+# Translation-rotation matrices
+-matrix  "1TXA-A 1CDT-B  U(1,.)  -0.901378 -0.425703 -0.079344           29.022165"
+-matrix  "1TXA-A 1CDT-B  U(2,.)   0.233241 -0.322903 -0.917242          -13.529480"
+-matrix  "1TXA-A 1CDT-B  U(3,.)   0.364852 -0.845287  0.390349           15.189607"
+

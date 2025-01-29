@@ -1,0 +1,31 @@
+# Job: az
+# Query: 1PLAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1AG6-A 18.2  1.2   97    99   71   MOLECULE: PLASTOCYANIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=1PLAA Sbjct=1AG6A Z-score=18.2
+
+DSSP  LEEEELLLLLLLLEELLEEEELLLLLEEEEELLLLLEEEEELLLLLLLLLLLLLLLEE--
+Query AEVKLGSDDGGLVFSPSSFTVAAGEKITFKNNAGFPHNIVFDEDEVPAGVNAEKISQP--   58
+ident  || || ||| | | |  | || || | |||||||||| |||||| | || | |||    
+Sbjct VEVLLGGDDGSLAFLPGDFSVASGEEIVFKNNAGFPHNVVFDEDEIPSGVDAAKISMSee   60
+DSSP  LEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLLLLEELHHHLLLLLLHHHHLLLll
+
+DSSP  EEELLLLLEEEELLLLLEEEEEELLLHHHLLLEEEEEEL
+Query EYLNGAGETYEVTLTEKGTYKFYCEPHAGAGMKGEVTVN   97
+ident   ||  |||| ||||||||||||| || |||| | ||||
+Sbjct DLLNAPGETYKVTLTEKGTYKFYCSPHQGAGMVGKVTVN   99
+DSSP  LLLLLLLLEEEEELLLLEEEEEELHHHLLLLLEEEEEEL
+
+
+# Structural equivalences
+   1: 1PLA-A 1AG6-A     1 -  58 <=>    1 -  58   (ALA    1  - PRO   58  <=> VAL    1  - SER   58 )                          
+   1: 1PLA-A 1AG6-A    59 -  97 <=>   61 -  99   (GLU   59  - ASN   97  <=> ASP   61  - ASN   99 )                          
+
+# Translation-rotation matrices
+-matrix  "1PLA-A 1AG6-A  U(1,.)   0.348755  0.014558 -0.937101          -16.104250"
+-matrix  "1PLA-A 1AG6-A  U(2,.)   0.859490  0.393712  0.325988          -21.043962"
+-matrix  "1PLA-A 1AG6-A  U(3,.)   0.373694 -0.919118  0.124797            4.646519"
+

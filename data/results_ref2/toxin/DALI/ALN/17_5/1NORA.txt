@@ -1,0 +1,31 @@
+# Job: toxin
+# Query: 1NORA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1COE-A  8.0  2.4   61    62   77   MOLECULE: COBROTOXIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1NORA Sbjct=1COEA Z-score=8.0
+
+DSSP  LEEELLLLLLLLLEEELL-LLLLEEEEEEELLLLEEEEEEELLLLLLLLLEEEEELLLLL
+Query LECHNQQSSQPPTTKTCS-GETNCYKKWWSDHRGTIIERGCGCPKVKPGVNLNCCRTDRC   59
+ident |||||||||| |||  || |||||||| | ||||   ||||||| || |   ||| ||||
+Sbjct LECHNQQSSQTPTTTGCSgGETNCYKKRWRDHRGYRTERGCGCPSVKNGIEINCCTTDRC   60
+DSSP  LLLEELLLLLLLEELLLLlLLLLEEEEEELLLLLLEEELLLLLLLLLLLLEEEEELLLLL
+
+DSSP  LL
+Query NN   61
+ident ||
+Sbjct NN   62
+DSSP  LL
+
+
+# Structural equivalences
+   1: 1NOR-A 1COE-A     1 -  18 <=>    1 -  18   (LEU    1  - SER   18  <=> LEU    1  - SER   18 )                          
+   1: 1NOR-A 1COE-A    19 -  61 <=>   20 -  62   (GLY   19  - ASN   61  <=> GLY   20  - ASN   62 )                          
+
+# Translation-rotation matrices
+-matrix  "1NOR-A 1COE-A  U(1,.)   0.861242  0.042161  0.506442            1.312836"
+-matrix  "1NOR-A 1COE-A  U(2,.)   0.166406  0.918217 -0.359426           -1.262609"
+-matrix  "1NOR-A 1COE-A  U(3,.)  -0.480178  0.393828  0.783791            1.503451"
+

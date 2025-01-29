@@ -1,0 +1,31 @@
+# Job: HMG_box
+# Query: 1HSMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HMA-A  8.2  3.4   71    73   41   MOLECULE: HMG-D;                                                     
+
+# Pairwise alignments
+
+No 1: Query=1HSMA Sbjct=1HMAA Z-score=8.2
+
+DSSP  -LLLLLLLLLHHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHLLLllLLHHHHHHHHHH
+Query -NAPKRPPSAFFLFCSEYRPKIKGEHPGLSIGDVAKKLGEMWNNTAadDKQPYEKKAAKL   59
+ident    |||| ||  |     |  || | ||     |||  || |      ||   | |||| 
+Sbjct sDKPKRPLSAYMLWLNSARESIKRENPGIKVTEVAKRGGELWRAMK--DKSEWEAKAAKA   58
+DSSP  lLLLLLLLLHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHLL--LLHHHHHHHHHH
+
+DSSP  HHHHHHHHHHHHHHllllll
+Query KEKYEKDIAAYRAKgkpdaa   79
+ident |  |        |       
+Sbjct KDDYDRAVKEFEAN-----g   73
+DSSP  HHHHHHHHHHHHLL-----l
+
+
+# Structural equivalences
+   1: 1HSM-A 1HMA-A     1 -  45 <=>    2 -  46   (ASN    3  - ALA   47  <=> ASP    3  - LYS   47 )                          
+   1: 1HSM-A 1HMA-A    48 -  73 <=>   47 -  72   (ASP   50  - LYS   75  <=> ASP   48  - ASN   73 )                          
+
+# Translation-rotation matrices
+-matrix  "1HSM-A 1HMA-A  U(1,.)   0.940588  0.331244 -0.074645            0.664630"
+-matrix  "1HSM-A 1HMA-A  U(2,.)   0.331617 -0.943383 -0.007703           -0.489075"
+-matrix  "1HSM-A 1HMA-A  U(3,.)  -0.072971 -0.017509 -0.997180           -8.765385"
+

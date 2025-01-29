@@ -1,0 +1,32 @@
+# Job: toxin
+# Query: 2CDXA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CVO-A  6.0  2.6   59    62   59   MOLECULE: CARDIOTOXIN V;                                             
+
+# Pairwise alignments
+
+No 1: Query=2CDXA Sbjct=1CVOA Z-score=6.0
+
+DSSP  LLLLLLLL-LLLLLLLLLLLEEEEEELLLL-lLLLLEEEEELLLLLLLLLLEEEEELLLL
+Query LKCNKLIP-IASKTCPAGKNLCYKMFMMSD-lTIPVKRGCIDVCPKNSLLVKYVCCNTDR   58
+ident |||         |||| ||||| |          |||||| | ||||| | ||||| || 
+Sbjct LKCHNTQLpFIYKTCPEGKNLCFKATLKKFplKFPVKRGCADNCPKNSALLKYVCCSTDK   60
+DSSP  LEELLLLLlLLLEELLLLLLEEEEEEELLLllLLLEEEEEELLLLLLLLLEEEEEELLLL
+
+DSSP  LL
+Query CN   60
+ident ||
+Sbjct CN   62
+DSSP  LL
+
+
+# Structural equivalences
+   1: 2CDX-A 1CVO-A     1 -   8 <=>    1 -   8   (LEU    1  - PRO    8  <=> LEU    1  - LEU    8 )                          
+   1: 2CDX-A 1CVO-A     9 -  29 <=>   10 -  30   (ILE    9  - ASP   29  <=> PHE   10  - PHE   30 )                          
+   1: 2CDX-A 1CVO-A    31 -  60 <=>   33 -  62   (THR   31  - ASN   60  <=> LYS   33  - ASN   62 )                          
+
+# Translation-rotation matrices
+-matrix  "2CDX-A 1CVO-A  U(1,.)   0.932982  0.237641  0.270318           -2.969170"
+-matrix  "2CDX-A 1CVO-A  U(2,.)  -0.048261  0.826858 -0.560337           -0.250529"
+-matrix  "2CDX-A 1CVO-A  U(3,.)  -0.356673  0.509738  0.782912           -0.052296"
+

@@ -1,0 +1,39 @@
+# Job: uce
+# Query: 1FXTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1AYZ-C 18.5  1.8  146   153   30   MOLECULE: UBIQUITIN-CONJUGATING ENZYME RAD6;                         
+
+# Pairwise alignments
+
+No 1: Query=1FXTA Sbjct=1AYZC Z-score=18.5
+
+DSSP  --LLHHHHHHHHHHHHHLHHHLLEEEELlLLLLLEEEEEEELLLLLLLLLLEEEEEEELL
+Query --SRAKRIMKEIQAVKDDPAAHITLEFVsESDIHHLKGTFLGPPGTPYEGGKFVVDIEVP   58
+ident       | |      | |                       ||  |||| | |    |  
+Sbjct stPARRRLMRDFKRMKEDAPPGVSASPL-PDNVMVWNAMIIGPADTPYEDGTFRLLLEFD   59
+DSSP  llHHHHHHHHHHHHHHHLLLLLEEEEEE-LLEEEEEEEEEELLLLLLLLLLEEEEEEELL
+
+DSSP  LLLLLLLLEEEELLLLLLLLLLlLLLLLLLHHHHLLLLLLLLHHHHHHHHHHHHHLLLLL
+Query MEYPFKPPKMQFDTKVYHPNISsVTGAICLDILKNAWSPVITLKSALISLQALLQSPEPN  118
+ident  ||| |||   |     |||     | |||||| | | |     | | | | |   | | 
+Sbjct EEYPNKPPHVKFLSEMFHPNVY-ANGEICLDILQNRWTPTYDVASILTSIQSLFNDPNPA  118
+DSSP  LLLLLLLLEEEELLLLLLLLLL-LLLLLLLHHHLLLLLLLLLHHHHHHHHHHHHLLLLLL
+
+DSSP  LLLLHHHHHHHHHLLLHHHHHHHHHHhHHLL-----
+Query DPQDAEVAQHYLRDRESFNKTAALWTrLYAS-----  149
+ident  |   | |           |                
+Sbjct SPANVEAATLFKDHKSQYVKRVKETV-EKSWeddmd  153
+DSSP  LLLLHHHHHHHHHLHHHHHHHHHHHH-HHHHhhhll
+
+
+# Structural equivalences
+   1: 1FXT-A 1AYZ-C     1 -  26 <=>    3 -  28   (SER    2  - VAL   27  <=> PRO    4  - LEU   29 )                          
+   1: 1FXT-A 1AYZ-C    28 -  80 <=>   29 -  81   (GLU   29  - SER   81  <=> PRO   30  - TYR   82 )                          
+   1: 1FXT-A 1AYZ-C    82 - 144 <=>   82 - 144   (VAL   83  - THR  145  <=> ALA   83  - VAL  145 )                          
+   1: 1FXT-A 1AYZ-C   146 - 149 <=>  145 - 148   (LEU  147  - SER  150  <=> GLU  146  - TRP  149 )                          
+
+# Translation-rotation matrices
+-matrix  "1FXT-A 1AYZ-C  U(1,.)  -0.627898 -0.555146 -0.545488          100.565674"
+-matrix  "1FXT-A 1AYZ-C  U(2,.)  -0.532578 -0.204615  0.821275           26.935640"
+-matrix  "1FXT-A 1AYZ-C  U(3,.)  -0.567543  0.806192 -0.167181           43.341251"
+
