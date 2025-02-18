@@ -1,4 +1,4 @@
-#DALIBENCH
+#PSTAR-MSA
 #Author: Marcel Gabor
 #Institute for Mathematics and Computer Science, University of Greifswald
 #11/04/2024
@@ -20,6 +20,7 @@ import shutil
 import json
 #import svg_stack
 from itertools import tee
+#import rsync
 #import lxml
 import traceback
 import contextlib
@@ -1049,6 +1050,11 @@ def DALI_import_PDBs(pl_bin_path, pdb_path, DAT_path, verbosity):
         #close files
         close_file_safely(err_file, err_file_path, "")
         close_file_safely(out_file, out_file_path, "")
+
+        if os.path.exists(os.path.join(SCRIPT_DIR,'dali.lock')):
+            err_msg = "Error while importing pdb file %s with import.pl. Skipping." % pdb_name.upper()
+            errorFct(err_msg)
+            os.remove(os.path.join(SCRIPT_DIR,'dali.lock'))
     
     #rewrite a sufficient check of whether import has been successful
     for file_name in os.listdir(DAT_path):
@@ -2311,7 +2317,11 @@ def get_exact_matches(TSV_file_full_path, aln_entry_list):
         exact_match_dict[str(row.qseqid)].append(row)    
 
     return exact_match_dict
-  
+ 
+def remove_pdb_entry_from_fasta(pdb_id):
+    pass
+
+
 #copies PDB files from local PDB database to <job_dir>/DALI/PDB_lib
 #mainly implemented for consistency, no real advantage
 # void ([str,str,...],str,str)
@@ -2332,7 +2342,7 @@ def cp_PDB_files_to_job_dir(chain_list, pdb_db_path, pdb_out_path):
         except:
             errMsg = "Error while copying file %s to %s." % (src_pdb_full_path, dest_pdb_full_path)
             errorFct(errMsg)
-            raise
+            remove_pdb_entry_from_fasta(pdb_id)
 
 #assigns numbers (temporary ids) to headers and sequences in alignment file, return dict
 #this function is very similar to import_seq_list_from_fasta_aln(), but i dont want to change the latter at the moment
@@ -2498,14 +2508,16 @@ def get_mantissa_and_exponent_from_number(scientific_number):
     try:
         mant = float(match.group(1))
     except:
-        err_msg = "Could not get mantissa from match group 1 %s." % match.group(1)
-        errorFct(err_msg)
+        if match.group(1) is not None:
+            err_msg = "Could not get mantissa from match group 1 %s." % match.group(1)
+            errorFct(err_msg)
         raise
     try:
         exp = int(match.group(4))
     except:
-        err_msg = "Could not get exponent from match group 4 %s." % match.group(4)
-        errorFct(err_msg)
+        if match.group(4) is not None:
+            err_msg = "Could not get exponent from match group 4 %s." % match.group(4)
+            errorFct(err_msg)
         raise
 
     return mant, exp
@@ -2523,12 +2535,20 @@ def resolve_ambivalences(exact_match_dict, aln_file_full_path):
             cur_best_entry = exact_match_dict[qseqid][0]
             for row in exact_match_dict[qseqid][1:]:
                 #try to select entry by evalue
-                mant_best, exp_best = get_mantissa_and_exponent_from_number(cur_best_entry.evalue)
-                mant_row, exp_row = get_mantissa_and_exponent_from_number(row.evalue)
+                try:
+                    mant_best, exp_best = get_mantissa_and_exponent_from_number(cur_best_entry.evalue)
+                except:
+                    mant_best = float('inf')
+                    exp_best = float('inf')
+                try:
+                    mant_row, exp_row = get_mantissa_and_exponent_from_number(row.evalue)
+                except:
+                    mant_row = float('inf')
+                    exp_row =  float('inf')
                 if exp_row < exp_best:
                     cur_best_entry = row
                     continue
-                elif exp_row == exp_best and mant_row > mant_best:
+                elif exp_row == exp_best and mant_row < mant_best:
                     cur_best_entry = row
                     continue
                 #try to select entry by bitscore
@@ -3417,12 +3437,13 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
     #for some weird implementation reasons (probably Fortran though) DALI doesn't generate alignment files for job titles longer than 12 chars
     #and generates only empty alignments for job titles exactly 12 chars long
     #this is a DALI problem and can't be changed at the moment
-    #i could, however probably find a workaround, but this isn't really worth the effort right now
-    #maybe it's also just because job_title needs to be passed with "" around it. (?) test it!
+    #no matter, if the job title is shortened (splicing job_name[0:11]) beforehand and then passed on to DALI, DALI will refuse to generate alignments, if the
+    # the name that was INITIALLY specified at the beginning of the script under --jobname exceeds 11 or 12 characters
+    #thus, to fix this issue it'd be necessary to look at everything that is being done with the job_name in this script to find out exactly why DALI
+    #does not work the expected way with it. The only plausible explanation for this could be that DALI somehow references generated files by looking at the paths
+    # in the background, which DO indeed contain the full job name and thus is unable to find intermediate files, if a directory name contained within this path
+    # exceeds the character limit. This could be tested by executing DALI manually in a directory which name is longer than 12 chars.
     comp_strat_exclude_set = set()
-    if len(job_name) > 11:
-        errMsg = "Job title is longer than 11 characters. Will be cut off in DALI output due to length limitations."
-        job_name = job_name[0:11]
 
     #saving cwd for later file system navigation
     wd = os.getcwd()
@@ -3474,6 +3495,7 @@ def DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_li
 
         err_file_path = os.path.join(sub_job_path, "err_log")
         out_file_path = os.path.join(sub_job_path, "output_log")
+
 
         #/.../<dali_dir>/dali.pl --cd1 <chain_id1> --cd2 <chain_id2> --dat1 <path> --dat2 <path> --title <string> \
         # --outfmt "summary,alignments,equivalences,transrot" --clean 1> <out_log_file> 2> <err_log_file>
@@ -3620,8 +3642,40 @@ def run_job(out_path, job_name, pl_bin_path, pdb_db_path, verbosity, threads, mp
     dali_dat_lib_path = os.path.join(dali_job_dir, "DAT_lib")
     create_dir_safely(dali_dat_lib_path)
 
+    #retrying import might be necessary sometimes, if DALI behaves unexpectedly
+    #for sbatch it is advisable to create a copy of the DALI program for each
+    #sbatch call to prevent them from interfering with each other, if they are doing so at all
+    retry_import_counter = 0
+    small_pdb_lib_list = os.listdir(small_pdb_lib_path)
+    small_pdb_id_set = set()
+    small_pdb_id_set.clear()
+    for file_name in small_pdb_lib_list:
+        small_pdb_id_set.add(file_name[3:7].upper())
+    
+    #remove dali.lock, if it was accidentally written to SCRIPT_DIR
+    if os.path.exists(os.path.join(SCRIPT_DIR,'dali.lock')):
+        os.remove(os.path.join(SCRIPT_DIR,'dali.lock'))
+
     #import data for DALI
     DALI_import_PDBs(pl_bin_path, small_pdb_lib_path, dali_dat_lib_path, verbosity)
+
+    #start of a quite elaborate check, if there is a mismatch between PDB files to do alignments with and
+    # ones that have successfully been imported into DAT format
+    dat_file_set = set()
+    dat_file_set.clear()
+    for file_name in os.listdir(dali_dat_lib_path):
+        if file_name.endswith('.dat'):
+            dat_file_set.add(file_name[0:4].upper())
+    if len(dat_file_set.difference(small_pdb_id_set)) != 0 or len(small_pdb_id_set.difference(dat_file_set)) != 0:
+        if len(dat_file_set.difference(small_pdb_id_set)) != 0:
+            mis_msg_1 = "Too many DAT file(s) present. %s" % str(dat_file_set.difference(small_pdb_id_set))
+            errorFct(mis_msg_1)
+        if len(small_pdb_id_set.difference(dat_file_set)) != 0:
+            mis_msg_2 = "Skipped DAT files for PDB entries %s." % str(small_pdb_id_set.difference(dat_file_set))
+            errorFct(mis_msg_2)
+        err_msg = "Could not import all PDB files into DALI DAT format. [%s/%s] DAT files present." % (len(dat_file_set), len(small_pdb_id_set))
+        errorFct(err_msg)
+    
     #start pairwise structural alignment
     try:
         DALI_comp_strat_query(pl_bin_path, small_pdb_lib_path, out_path, dali_dat_lib_path, job_name, comp_strat, chain_id_dict, verbosity, backup_freq, threads, mpi_path)
@@ -3937,8 +3991,10 @@ def pstar_union(ref_set_dict, comp_strat_MSA_aln_dict):
 def write_scores_to_file(union_test_set_dict, eval_path, union_ref_set, verbosity):
 
     scores_file_full_path = os.path.join(eval_path, 'scores_per_alignment.tsv')
+    jacc_scores_file_full_path = os.path.join(eval_path, 'jacc_scores_per_alignment.tsv')
 
     scores_dict = {}
+    jacc_scores_dict = {}
     for key in union_test_set_dict.keys():
         #set paths and write individual sets to files
         head, file_name = os.path.split(key)
@@ -3946,16 +4002,60 @@ def write_scores_to_file(union_test_set_dict, eval_path, union_ref_set, verbosit
         union_test_set_full_path = os.path.join(eval_path, "union_"+aln_name+"_MSA_set.json")
         write_set_to_file(union_test_set_dict[key], union_test_set_full_path)
         intersect_union = union_test_set_dict[key].intersection(union_ref_set)
+        union_A_C = union_test_set_dict[key].union(union_ref_set)
         if len(union_ref_set) > 0:
             SPS = len(intersect_union)/len(union_ref_set)
         else:
             SPS = 0
+        if len(union_A_C) > 0:
+            jacc_score = len(intersect_union)/len(union_A_C)
+        else:
+            jacc_score = 0
         scores_dict[os.path.split(key)[1]] = SPS
+        jacc_scores_dict[os.path.split(key)[1]] = jacc_score
         if verbosity > 0:
             sps_msg = "Score for alignment file %s: %s" % (key, str(SPS))
+            jacc_msg = "Jaccard index for alignment file %s: %s" % (key, str(jacc_score))
             print(sps_msg)
+            print(jacc_msg)
+    jacc_scores_df = pandas.DataFrame.from_dict(jacc_scores_dict, orient='index', columns=['Jaccard index'])
     scores_df = pandas.DataFrame.from_dict(scores_dict, orient='index', columns=['score'])
     scores_df.to_csv(scores_file_full_path, sep='\t')
+    jacc_scores_df.to_csv(jacc_scores_file_full_path, sep='\t')
+
+def write_PSM_and_jacc_DM_to_file(union_test_set_dict, eval_path, union_ref_set):
+    jacc_dm_file_full_path = os.path.join(eval_path, 'jacc_dm.tsv')
+    PSM_dm_file_full_path = os.path.join(eval_path, 'psm_dm.tsv')
+
+    jacc_dict = {}
+    PSM_dict = {}
+    for key_A in union_test_set_dict.keys():
+        for key_B in union_test_set_dict.keys():
+
+            intersect_A_C = union_test_set_dict[key_A].intersection(union_ref_set)
+            intersect_B_C = union_test_set_dict[key_B].intersection(union_ref_set)
+            intersect_A_B = union_test_set_dict[key_A].intersection(union_test_set_dict[key_B])
+            union_A_C = union_test_set_dict[key_A].union(union_ref_set)
+            union_B_C = union_test_set_dict[key_B].union(union_ref_set)
+            union_A_B = union_test_set_dict[key_A].union(union_test_set_dict[key_B])
+            if len(union_test_set_dict[key_A]) == 0 and len(union_test_set_dict[key_B]) == 0:
+                PSM = float(0)
+                JACC = float(0)
+            elif (len(union_test_set_dict[key_A]) == 0 and len(union_ref_set) == 0) or (len(union_test_set_dict[key_B]) == 0 and len(union_ref_set) == 0):
+                PSM = float(0.5)
+                JACC = 1-(len(intersect_A_B)/len(union_A_B))
+            else:
+                JACC = 1-(len(intersect_A_B)/len(union_A_B))
+                PSM = 0.5*(abs(((len(intersect_A_C))/(len(union_A_C)))-((len(intersect_B_C))/(len(union_B_C))))+1-(len(intersect_A_B)/len(union_A_B)))
+
+            jacc_dict[(os.path.split(key_A)[1],os.path.split(key_B)[1])] = JACC
+            PSM_dict[(os.path.split(key_A)[1],os.path.split(key_B)[1])] = PSM
+
+    jacc_df = pandas.DataFrame.from_dict(jacc_dict, orient='index', columns=['Jaccard-distance'])
+    PSM_df = pandas.DataFrame.from_dict(PSM_dict, orient='index', columns=['PSTAR-distance'])
+    jacc_df.to_csv(jacc_dm_file_full_path, sep='\t')
+    PSM_df.to_csv(PSM_dm_file_full_path, sep='\t')
+
 
 #calculates numbers based off precalculated structural alignments and corresponding comparison strategy
 # void (str, str, int)
@@ -4010,6 +4110,8 @@ def evaluate_job(out_path, job_name, verbosity):
     write_set_to_file(union_ref_set, union_ref_set_full_path)
     #write scores to file
     write_scores_to_file(union_test_set_dict, eval_path, union_ref_set, verbosity)
+    #write PSTAR metric distance matrix to file
+    write_PSM_and_jacc_DM_to_file(union_test_set_dict, eval_path, union_ref_set)
 
 def test_SPS(aln_file_full_path):
 
@@ -4217,11 +4319,16 @@ def main():
                            "If not provided, diamond will try to auto-detect number of available cores and DALI will run on one core only."), required=False)
     argParser.add_argument("-dmp", "--diamondmp", default=0, action="count", help="Provide this flag to use diamond in a multiprocessing cluster environment across multiple nodes.", required=False)
     argParser.add_argument("-mpi", "--mpibin", default = "", help="Provide path to \"openmpi/bin\" path.", required=False)
-    argParser.add_argument("-bl", "--baseline", default=0, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
+    argParser.add_argument("-bl", "--baseline", default=1, action="count", help="Provide this flag to use a random alignment as baseline score.", required=False)
 
     argParser.add_argument("-t", "--test", default=0, action="count", help="Testing ", required=False)
 
     args = argParser.parse_args()
+
+    if args.jobname is not None and len(args.jobname) > 11:
+        errMsg = "Job title must be shorter than 12 characters. Due to DALI longer names are not possible at the moment."
+        errorFct(errMsg)
+        exit(1)
     
     #setting list of valid symbols and constructing regex for sequence cleaning as a global variable
     valid_symbols = sel_alphabet(args.alphabet)
