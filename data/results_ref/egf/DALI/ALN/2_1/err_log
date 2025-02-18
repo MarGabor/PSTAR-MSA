@@ -6,6 +6,6 @@ cat: 'fort.1[0-9][0-9]': No such file or directory
 # cat fort.1[0-9][0-9] > dp_input ; rm fort.* ; /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/serialcompare /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ DP < dp_input > /dev/null
 cat: 'fort.1[0-9][0-9]': No such file or directory
 rm: cannot remove 'fort.*': No such file or directory
-# 1URKA generate_FSSP
-perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/sortdccp.pl < 1URKA.dccp | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fsspfilter.pl 1URKA 2 1 1 | /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fssp 1URKA 1 /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fsspselect.pl input2.list 2 1 | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/htmljs.pl /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ test "egf" "summary,alignments,equivalences,transrot"  > 1URKA.html 2> 1URKA.txt
-sh: 1: cannot open 1URKA.dccp: No such file
+# 1HREA generate_FSSP
+perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/sortdccp.pl < 1HREA.dccp | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fsspfilter.pl 1HREA 2 1 1 | /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fssp 1HREA 1 /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/fsspselect.pl input2.list 2 1 | perl /home/mg164811/Bachelor/Tools/DaliLite.v5/bin/htmljs.pl /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ /home/mg164811/Bachelor/Script/../results_ref/egf/DALI/DAT_lib/ test "egf" "summary,alignments,equivalences,transrot"  > 1HREA.html 2> 1HREA.txt
+sh: 1: cannot open 1HREA.dccp: No such file

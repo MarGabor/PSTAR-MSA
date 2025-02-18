@@ -1,35 +1,31 @@
 # Job: toxin
 # Query: 1NORA
 # No:  Chain   Z    rmsd lali nres  %id PDB  Description
-   1:  1KBS-A  4.5  2.6   54    60   41   MOLECULE: CTX IV;                                                    
+   1:  1NXB-A 10.1  1.6   61    62   70   MOLECULE: NEUROTOXIN B;                                              
 
 # Pairwise alignments
 
-No 1: Query=1NORA Sbjct=1KBSA Z-score=4.5
+No 1: Query=1NORA Sbjct=1NXBA Z-score=10.1
 
-DSSP  LEEELLLlllLLLEEELLL-LLLEEEEEEELllLEEE-EEEEL--LLLLLLLLEEEEELL
-Query LECHNQQssqPPTTKTCSG-ETNCYKKWWSDhrGTII-ERGCG--CPKVKPGVNLNCCRT   56
-ident   |       |   |||      |||        |    |||   |||    |   || |
-Sbjct RKCNKLV---PLFYKTCPAgKNLCYKMFMVS-nLTVPvKRGCIdvCPKNSALVKYVCCNT   56
-DSSP  LLLLLLL---LLLLLLLLLlLLEEEEEEELL-lLLLLlLLEEEllLLLLLLLEEEEEELL
+DSSP  LEEELLLLLLLLLEEELL-LLLLEEEEEEELLLLEEEEEEELLLLLLLLLEEEEELLLLL
+Query LECHNQQSSQPPTTKTCS-GETNCYKKWWSDHRGTIIERGCGCPKVKPGVNLNCCRTDRC   59
+ident   | || |||| |||||| ||  || | ||| |||||||||||| ||||  | ||    |
+Sbjct RICFNQHSSQPQTTKTCSpGESSCYHKQWSDFRGTIIERGCGCPTVKPGIKLSCCESEVC   60
+DSSP  LEEELLLLLLLLLEEELLlLLLLEEEEEEEELLEEEEEEEELLLLLLLLLLEEEELLLLL
 
-DSSP  LLLll
-Query DRCnn   61
-ident |||  
-Sbjct DRC-n   60
-DSSP  LLL-l
+DSSP  LL
+Query NN   61
+ident ||
+Sbjct NN   62
+DSSP  LL
 
 
 # Structural equivalences
-   1: 1NOR-A 1KBS-A     1 -   7 <=>    1 -   7   (LEU    1  - GLN    7  <=> ARG    1  - VAL    7 )                          
-   1: 1NOR-A 1KBS-A    11 -  19 <=>    8 -  16   (PRO   11  - GLY   19  <=> PRO    8  - ALA   16 )                          
-   1: 1NOR-A 1KBS-A    20 -  30 <=>   18 -  28   (GLU   20  - ASP   30  <=> LYS   18  - SER   28 )                          
-   1: 1NOR-A 1KBS-A    33 -  36 <=>   30 -  33   (GLY   33  - ILE   36  <=> LEU   30  - PRO   33 )                          
-   1: 1NOR-A 1KBS-A    37 -  41 <=>   35 -  39   (GLU   37  - GLY   41  <=> LYS   35  - ILE   39 )                          
-   1: 1NOR-A 1KBS-A    42 -  59 <=>   42 -  59   (CYS   42  - CYS   59  <=> CYS   42  - CYS   59 )                          
+   1: 1NOR-A 1NXB-A     1 -  18 <=>    1 -  18   (LEU    1  - SER   18  <=> ARG    1  - SER   18 )                          
+   1: 1NOR-A 1NXB-A    19 -  61 <=>   20 -  62   (GLY   19  - ASN   61  <=> GLY   20  - ASN   62 )                          
 
 # Translation-rotation matrices
--matrix  "1NOR-A 1KBS-A  U(1,.)   0.926419  0.118020 -0.357518            0.200298"
--matrix  "1NOR-A 1KBS-A  U(2,.)   0.340467 -0.667977  0.661732            0.611292"
--matrix  "1NOR-A 1KBS-A  U(3,.)  -0.160716 -0.734764 -0.659009            1.140116"
+-matrix  "1NOR-A 1NXB-A  U(1,.)  -0.196416  0.767794 -0.609847            3.204844"
+-matrix  "1NOR-A 1NXB-A  U(2,.)   0.254418  0.640568  0.724530          -27.009022"
+-matrix  "1NOR-A 1NXB-A  U(3,.)   0.946938 -0.012847 -0.321158          -23.461954"
 
