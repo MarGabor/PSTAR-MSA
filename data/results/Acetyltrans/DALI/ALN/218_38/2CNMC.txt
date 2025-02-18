@@ -1,0 +1,42 @@
+# Job: Acetyltrans
+# Query: 2CNMC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2ATR-A 13.7  2.4  123   132   15   MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            
+
+# Pairwise alignments
+
+No 1: Query=2CNMC Sbjct=2ATRA Z-score=13.7
+
+DSSP  LEEEEELLHHHHHHHHHHHHHHllLLLLhHHHHHLLLLLLLLEEEEELLLEEEEEEEEEE
+Query MNTISILSTTDLPAAWQIEQRAhaFPWSeKTFFGNQGERYLNLKLTADDRMAAFAITQVV   60
+ident   ||       |       |                            |           
+Sbjct XITIKKQEIVKLEDVLHLYQAV--GWTN-EXLEQALSHSLVIYLALDGDAVVGLIRLVGD   57
+DSSP  LEEEEEELLLLHHHHHHHHHLL--LLLL-LHHHHHHLLLLEEEEEEELLEEEEEEEEEEL
+
+DSSP  -LLEEEEEEEEELHHHLLLLHHHHHHHHHHHHHHhlLLLEEEEEEELlLHHHHHHHHHHL
+Query -LDEATLFNIAVDPDFQRRGLGRMLLEHLIDELEtrGVVTLWLEVRAsNAAAIALYESLG  119
+ident            | |  || | |  |                 |            | | |
+Sbjct gFSSVFVQDLIVLPSYQRQGIGSSLXKEALGNFK--EAYQVQLATEE-TEKNVGFYRSXG  114
+DSSP  lLLEEEEEEEEELLLLLLLLHHHHHHHHHHHHHL--LLLEEELLLLL-LHHHHHHHHHLL
+
+DSSP  LEEE-----EEEEEEeelllleeeeeeeeeellllll
+Query FNEA-----TIRRNYyptaqghedaiimalpismklh  151
+ident |        |                           
+Sbjct FEILstydcTGXIWI-------------------nre  132
+DSSP  LLLHhhhllLLLLLL-------------------lll
+
+
+# Structural equivalences
+   1: 2CNM-C 2ATR-A     1 -  22 <=>    1 -  22   (MET    1  - ALA   22  <=> UNK    1  - VAL   22 )                          
+   1: 2CNM-C 2ATR-A    25 -  28 <=>   23 -  26   (PHE   25  - SER   28  <=> GLY   23  - ASN   26 )                          
+   1: 2CNM-C 2ATR-A    30 -  60 <=>   27 -  57   (LYS   30  - VAL   60  <=> GLU   32  - ASP   62 )                          
+   1: 2CNM-C 2ATR-A    61 -  93 <=>   59 -  91   (LEU   61  - GLU   93  <=> PHE   64  - LYS   96 )                          
+   1: 2CNM-C 2ATR-A    96 - 106 <=>   92 - 102   (GLY   96  - ALA  106  <=> GLU   97  - GLU  107 )                          
+   1: 2CNM-C 2ATR-A   108 - 123 <=>  103 - 118   (ASN  108  - ALA  123  <=> THR  108  - LEU  123 )                          
+   1: 2CNM-C 2ATR-A   124 - 129 <=>  124 - 129   (THR  124  - TYR  129  <=> THR  129  - ILE  134 )                          
+
+# Translation-rotation matrices
+-matrix  "2CNM-C 2ATR-A  U(1,.)  -0.401826  0.141789  0.904672           36.439281"
+-matrix  "2CNM-C 2ATR-A  U(2,.)  -0.197211  0.951357 -0.236701          -73.510788"
+-matrix  "2CNM-C 2ATR-A  U(3,.)  -0.894228 -0.273524 -0.354317           77.675713"
+

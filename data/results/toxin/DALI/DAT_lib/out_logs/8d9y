@@ -1,0 +1,1882 @@
+A length: 213
+B length: 219
+C length: 213
+D length: 219
+E length: 213
+F length: 219
+G length: 213
+H length: 219
+I length: 68
+J length: 68
+K length: 68
+L length: 63
+# 12 chains A B C D E F G H I J K L
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1636
+Total number of ignored atom records:        291
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1737
+ selectset done           0
+ eigen done           0
+ tau           1   9.50572491             107
+ #popped           2           1
+ #selectset contacts        1737
+ selectset done           1
+ eigen done           1
+ tau           3  0.536047816              19          74
+ #popped           4           2
+ #selectset contacts        1737
+ selectset done           2
+ eigen done           2
+ tau           5  0.434714198              19
+ #popped           7           2
+ #selectset contacts        1737
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1737
+ selectset done           1
+ eigen done           1
+ tau           7   1.47478259              35          47
+ #popped           8           1
+ #selectset contacts        1737
+ selectset done           1
+ eigen done           1
+ tau           9  0.389186889              35
+ #popped          11           1
+ #selectset contacts        1737
+ selectset done           1
+ eigen done           1
+ tau          11   1.57963872              62
+ #popped           3           0
+ #selectset contacts        1737
+ selectset done           0
+ eigen done           0
+ tau          13  0.925783157             117         133         147         160         177
+ #popped          14           1
+ #selectset contacts        1737
+ selectset done           1
+ eigen done           1
+ tau          15  0.439408123             137
+ #popped          17           1
+ #selectset contacts        1737
+ selectset done           1
+ eigen done           1
+ tau          17  0.886667192             147
+ #popped          15           0
+ #selectset contacts        1737
+ selectset done           0
+ eigen done           0
+ tau          19  0.780112863             188
+ #popped          20           1
+ #selectset contacts        1737
+ selectset done           1
+ eigen done           1
+ tau          21   1.12590170             133         160
+ #popped          22           1
+ #selectset contacts        1737
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        1737
+ selectset done           0
+ eigen done           0
+ tau          23  0.279274195             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+         213
+         213  residues read 8D9Y.dssp                                                   
+  grow short strand           4           7
+  grow short strand          10          13
+  grow short strand          45          49
+  grow short strand          53          54
+  grow short strand          62          66
+  exclude short helix          80          82
+  grow short strand          97          98
+  grow short strand         102         106
+  grow short strand         114         118
+  exclude short helix         122         125
+  grow short strand         153         154
+  grow short strand         159         163
+  exclude short helix         183         188
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  9 10 11  3  4  6  7  8  5 12 13 14 16 17 15 18 19
+   2     1  4  5 11  1  2  9 10 11  3  4  6  7  8  5
+   3     1 14 15  8 12 13 14 16 17 15 18 19
+   4     2  6  7  5  1  2  9 10 11
+   5     2  8  9  6  3  4  6  7  8  5
+   6     4  0  0  2  1  2
+   7     4  0  0  3  9 10 11
+   8     5 10 11  5  3  4  6  7  8
+   9     5  0  0  1  5
+  10     8  0  0  2  3  4
+  11     8 12 13  3  6  7  8
+  12    11  0  0  1  6
+  13    11  0  0  2  7  8
+  14     3 16 17  5 12 13 14 16 17
+  15     3 20 21  3 15 18 19
+  16    14  0  0  2 12 13
+  17    14 18 19  3 14 16 17
+  18    17  0  0  1 14
+  19    17  0  0  2 16 17
+  20    15  0  0  1 15
+  21    15 24 25  2 18 19
+  22     0  0  0  0
+  23     0  0  0  1 15
+  24    21  0  0  1 18
+  25    21  0  0  1 19
+   1 +   0  2  3 19  1  1 19
+   2 *   1  4  5 11  1  1 11
+   3 *   1 14 15  8  1 12 19
+   4 -   2  6  7  5  2  1  2  9 11
+   5 -   2  8  9  6  1  3  8
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  3  1  9 11
+   8 -   5 10 11  5  2  3  4  6  8
+   9 -   5  0  0  1  1  5  5
+  10 -   8  0  0  2  1  3  4
+  11 -   8 12 13  3  1  6  8
+  12 -  11  0  0  1  1  6  6
+  13 -  11  0  0  2  1  7  8
+  14 -   3 16 17  5  2 12 14 16 17
+  15 -   3 20 21  3  2 15 15 18 19
+  16 -  14  0  0  2  1 12 13
+  17 -  14 18 19  3  2 14 14 16 17
+  18 -  17  0  0  1  1 14 14
+  19 -  17  0  0  2  1 16 17
+  20 -  15  0  0  1  1 15 15
+  21 -  15 22 23  2  1 18 19
+  22 -  21  0  0  1  1 18 18
+  23 -  21  0  0  1  1 19 19
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            219
+Total number of atoms read in:              1647
+Total number of ignored atom records:        289
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+         219  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1817
+ selectset done           0
+ eigen done           0
+ tau           1   14.7611036             127
+ #popped           2           1
+ #selectset contacts        1817
+ selectset done           1
+ eigen done           1
+ tau           3   1.49046922              98         112
+ #popped           4           1
+ #selectset contacts        1817
+ selectset done           1
+ eigen done           1
+ tau           5  0.417008221              23          33
+ #popped           6           1
+ #selectset contacts        1817
+ selectset done           1
+ eigen done           1
+ tau           7  0.309997320              48
+ #popped           8           2
+ #selectset contacts        1817
+ selectset done           2
+ eigen done           2
+ tau           9   11.7674828              23
+ #popped          10           2
+ #selectset contacts        1817
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           9           1
+ #selectset contacts        1817
+ selectset done           1
+ eigen done           1
+ tau          11   2.68567562              85
+ #popped          12           2
+ #selectset contacts        1817
+ selectset done           2
+ eigen done           2
+ tau          13  0.871789992              58
+ #popped          15           2
+ #selectset contacts        1817
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          13           1
+ #selectset contacts        1817
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1817
+ selectset done           0
+ eigen done           0
+ tau          15  0.666807353             188
+ #popped          16           1
+ #selectset contacts        1817
+ selectset done           1
+ eigen done           1
+ tau          17  0.475393564             156
+ #popped          18           2
+ #selectset contacts        1817
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        1817
+ selectset done           1
+ eigen done           1
+ tau          19   1.44079113             166
+ #popped          21           1
+ #selectset contacts        1817
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          17           0
+ #selectset contacts        1817
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+         219
+         219  residues read 8D9Y.dssp                                                   
+  grow short strand           3           7
+  grow short strand          10          12
+  exclude short helix          29          31
+  grow short strand          57          59
+  exclude short helix          87          89
+  grow short strand         120         124
+  grow short strand         133         137
+  grow short strand         156         159
+ crowded segment excluded!
+  exclude short helix         160         162
+  grow short strand         168         170
+  grow short strand         174         175
+  exclude short helix         191         193
+  exclude short helix         206         208
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  3  4  5  6  7  8  9 11 10 12 13 14 15 16 17 18
+   2     1  4  5 11  1  2  3  4  5  6  7  8  9 11 10
+   3     1 16 17  7 12 13 14 15 16 17 18
+   4     2  8  9 10  1  2  3  4  5  6  7  8  9 11
+   5     2  0  0  1 10
+   6     0  0  0 10  1  2  3  4  5  6  7  8  9 11
+   7     0  0  0  0
+   8     4 10 11  5  1  2  3  4  5
+   9     4 12 13  5  6  7  8  9 11
+  10     8  0  0  3  1  2  3
+  11     8  0  0  2  4  5
+  12     9 14 15  3  6  7  8
+  13     9  0  0  2  9 11
+  14    12  0  0  1  6
+  15    12  0  0  2  7  8
+  16     3 18 19  5 12 13 14 15 16
+  17     3  0  0  2 17 18
+  18    16  0  0  2 12 13
+  19    16  0  0  3 14 15 16
+  20     0  0  0  0
+  21     0  0  0  3 14 15 16
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5 11  1  1 11
+   3 *   1 14 15  7  1 12 18
+   4 -   2  6  7 10  2  1  9 11 11
+   5 -   2  0  0  1  1 10 10
+   6 -   4  8  9  5  1  1  5
+   7 -   4 10 11  5  2  6  9 11 11
+   8 -   6  0  0  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   7 12 13  3  1  6  8
+  11 -   7  0  0  2  2  9  9 11 11
+  12 -  10  0  0  1  1  6  6
+  13 -  10  0  0  2  1  7  8
+  14 -   3 16 17  5  1 12 16
+  15 -   3  0  0  2  1 17 18
+  16 -  14  0  0  2  1 12 13
+  17 -  14  0  0  3  1 14 16
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1636
+Total number of ignored atom records:        272
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1756
+ selectset done           0
+ eigen done           0
+ tau           1   9.08324814             107
+ #popped           2           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau           3  0.515691578              19          74
+ #popped           4           2
+ #selectset contacts        1756
+ selectset done           2
+ eigen done           2
+ tau           5  0.414588541              19
+ #popped           7           2
+ #selectset contacts        1756
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau           7   1.44363928              35          46
+ #popped           8           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau           9  0.317168891              61
+ #popped          10           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau          11   1.43377578              35
+ #popped           3           0
+ #selectset contacts        1756
+ selectset done           0
+ eigen done           0
+ tau          13  0.917090356             117         133         147         160         177
+ #popped          14           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau          15  0.528485477             147
+ #popped          16           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          15           0
+ #selectset contacts        1756
+ selectset done           0
+ eigen done           0
+ tau          17  0.766986191             187
+ #popped          18           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau          19   1.05614543             133         160
+ #popped          20           1
+ #selectset contacts        1756
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          19           0
+ #selectset contacts        1756
+ selectset done           0
+ eigen done           0
+ tau          21  0.272633642             203
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+         213
+         213  residues read 8D9Y.dssp                                                   
+  grow short strand           4           7
+  grow short strand          10          13
+  grow short strand          45          49
+  grow short strand          53          54
+  exclude short helix          80          82
+  grow short strand          97          98
+  grow short strand         102         106
+  grow short strand         114         118
+  exclude short helix         122         127
+  grow short strand         153         154
+  grow short strand         159         163
+  exclude short helix         183         186
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  9 10 11  3  4  5  6  7  8 12 13 14 16 17 15 18 19
+   2     1  4  5 11  1  2  9 10 11  3  4  5  6  7  8
+   3     1 14 15  8 12 13 14 16 17 15 18 19
+   4     2  6  7  5  1  2  9 10 11
+   5     2 10 11  6  3  4  5  6  7  8
+   6     4  0  0  2  1  2
+   7     4  0  0  3  9 10 11
+   8     0  0  0  6  3  4  5  6  7  8
+   9     0  0  0  0
+  10     5 12 13  4  3  4  5  6
+  11     5  0  0  2  7  8
+  12    10  0  0  2  3  4
+  13    10  0  0  2  5  6
+  14     3 16 17  5 12 13 14 16 17
+  15     3 18 19  3 15 18 19
+  16    14  0  0  3 12 13 14
+  17    14  0  0  2 16 17
+  18    15  0  0  1 15
+  19    15 22 23  2 18 19
+  20     0  0  0  0
+  21     0  0  0  1 15
+  22    19  0  0  1 18
+  23    19  0  0  1 19
+   1 +   0  2  3 19  1  1 19
+   2 *   1  4  5 11  1  1 11
+   3 *   1 12 13  8  1 12 19
+   4 -   2  6  7  5  2  1  2  9 11
+   5 -   2  8  9  6  1  3  8
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  3  1  9 11
+   8 -   5 10 11  4  1  3  6
+   9 -   5  0  0  2  1  7  8
+  10 -   8  0  0  2  1  3  4
+  11 -   8  0  0  2  1  5  6
+  12 -   3 14 15  5  2 12 14 16 17
+  13 -   3 16 17  3  2 15 15 18 19
+  14 -  12  0  0  3  1 12 14
+  15 -  12  0  0  2  1 16 17
+  16 -  13  0  0  1  1 15 15
+  17 -  13 18 19  2  1 18 19
+  18 -  17  0  0  1  1 18 18
+  19 -  17  0  0  1  1 19 19
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            219
+Total number of atoms read in:              1647
+Total number of ignored atom records:        283
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+         219  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau           1   3.80248404              98         112         128
+ #popped           2           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau           3  0.580287755              20          36          48          58          69          79          94         118
+ #popped           4           2
+ #selectset contacts        1820
+ selectset done           2
+ eigen done           2
+ tau           5  0.826303005              20          48          85
+ #popped           6           3
+ #selectset contacts        1820
+ selectset done           3
+ eigen done           3
+ tau           7   2.11151528              10
+ #popped           9           3
+ #selectset contacts        1820
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1820
+ selectset done           2
+ eigen done           2
+ tau           9  0.620127738              48
+ #popped           5           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau          11  0.739837408              58          79
+ #popped          12           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau          13  0.364764273              36
+ #popped          15           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau          15   999.999023              58
+ #popped           3           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau          17   999.999023             112
+ #popped          19           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau          19  0.655088067             188
+ #popped          20           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau          21  0.439708143             156
+ #popped          22           2
+ #selectset contacts        1820
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          23           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau          23   1.53084064             166
+ #popped          25           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          21           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+         219
+         219  residues read 8D9Y.dssp                                                   
+  grow short strand           3           7
+  grow short strand          10          12
+  exclude short helix          29          31
+  grow short strand          57          59
+ crowded segment excluded!
+  exclude short helix          61          63
+  exclude short helix          87          89
+  grow short strand         120         124
+  grow short strand         133         137
+  grow short strand         156         159
+  grow short strand         168         170
+  grow short strand         174         175
+  exclude short helix         191         194
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  6  4  5 10  3  8  7  9 11 12 13 14 15 16 17 18
+   2     1  4  5  9  1  2  6  4  5 10  3  8  7
+   3     1 18 19  9  9 11 12 13 14 15 16 17 18
+   4     2  6  7  6  1  2  6  4  5 10
+   5     2 12 13  3  3  8  7
+   6     4  8  9  3  1  2  6
+   7     4 10 11  3  4  5 10
+   8     6  0  0  1  1
+   9     6  0  0  2  2  6
+  10     7  0  0  2  4  5
+  11     7  0  0  1 10
+  12     5 14 15  2  3  8
+  13     5  0  0  1  7
+  14    12  0  0  1  3
+  15    12  0  0  1  8
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18     3  0  0  1  9
+  19     3 20 21  8 11 12 13 14 15 16 17 18
+  20    19 22 23  6 11 12 13 14 15 16
+  21    19  0  0  2 17 18
+  22    20  0  0  2 11 12
+  23    20 24 25  4 13 14 15 16
+  24    23  0  0  1 13
+  25    23  0  0  3 14 15 16
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5  9  2  1  8 10 10
+   3 +   1 16 17  9  2  9  9 11 18
+   4 -   2  6  7  6  3  1  2  4  6 10 10
+   5 -   2 12 13  3  2  3  3  7  8
+   6 -   4  8  9  3  2  1  2  6  6
+   7 -   4 10 11  3  2  4  5 10 10
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  2  2  2  6  6
+  10 -   7  0  0  2  1  4  5
+  11 -   7  0  0  1  1 10 10
+  12 -   5 14 15  2  2  3  3  8  8
+  13 -   5  0  0  1  1  7  7
+  14 -  12  0  0  1  1  3  3
+  15 -  12  0  0  1  1  8  8
+  16 =   3  0  0  1  1  9  9
+  17 *   3 18 19  8  1 11 18
+  18 -  17 20 21  6  1 11 16
+  19 -  17  0  0  2  1 17 18
+  20 -  18  0  0  2  1 11 12
+  21 -  18 22 23  4  1 13 16
+  22 -  21  0  0  1  1 13 13
+  23 -  21  0  0  3  1 14 16
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1636
+Total number of ignored atom records:        111
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1744
+ selectset done           0
+ eigen done           0
+ tau           1   8.51554585             107
+ #popped           2           1
+ #selectset contacts        1744
+ selectset done           1
+ eigen done           1
+ tau           3  0.537462175              19          74
+ #popped           4           2
+ #selectset contacts        1744
+ selectset done           2
+ eigen done           2
+ tau           5  0.408909231              19
+ #popped           7           2
+ #selectset contacts        1744
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1744
+ selectset done           1
+ eigen done           1
+ tau           7   1.44363928              35          46
+ #popped           8           1
+ #selectset contacts        1744
+ selectset done           1
+ eigen done           1
+ tau           9  0.366839707              59
+ #popped          10           1
+ #selectset contacts        1744
+ selectset done           1
+ eigen done           1
+ tau          11   1.18575764              35
+ #popped           3           0
+ #selectset contacts        1744
+ selectset done           0
+ eigen done           0
+ tau          13  0.971841991             117         133         147         160         177
+ #popped          14           1
+ #selectset contacts        1744
+ selectset done           1
+ eigen done           1
+ tau          15  0.475035787             137
+ #popped          17           1
+ #selectset contacts        1744
+ selectset done           1
+ eigen done           1
+ tau          17  0.747333825             147
+ #popped          15           0
+ #selectset contacts        1744
+ selectset done           0
+ eigen done           0
+ tau          19  0.865526676             188
+ #popped          20           1
+ #selectset contacts        1744
+ selectset done           1
+ eigen done           1
+ tau          21   1.08958220             133         160
+ #popped          22           1
+ #selectset contacts        1744
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        1744
+ selectset done           0
+ eigen done           0
+ tau          23  0.284202546             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+         213
+         213  residues read 8D9Y.dssp                                                   
+  grow short strand           4           7
+  grow short strand          10          13
+  grow short strand          45          49
+  grow short strand          53          54
+  grow short strand          62          66
+  exclude short helix          80          82
+  grow short strand          97          98
+  grow short strand         102         106
+  grow short strand         114         118
+  exclude short helix         122         126
+  grow short strand         159         163
+  exclude short helix         183         188
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  9 10 11  3  4  5  6  7  8 12 13 14 15 16 17 18
+   2     1  4  5 11  1  2  9 10 11  3  4  5  6  7  8
+   3     1 14 15  7 12 13 14 15 16 17 18
+   4     2  6  7  5  1  2  9 10 11
+   5     2 10 11  6  3  4  5  6  7  8
+   6     4  0  0  2  1  2
+   7     4  0  0  3  9 10 11
+   8     0  0  0  6  3  4  5  6  7  8
+   9     0  0  0  0
+  10     5 12 13  4  3  4  5  6
+  11     5  0  0  2  7  8
+  12    10  0  0  2  3  4
+  13    10  0  0  2  5  6
+  14     3 16 17  5 12 13 14 15 16
+  15     3 24 25  2 17 18
+  16    14  0  0  2 12 13
+  17    14 18 19  3 14 15 16
+  18    17  0  0  1 14
+  19    17  0  0  2 15 16
+  20     0  0  0  0
+  21     0  0  0  2 17 18
+  22     0  0  0  0
+  23     0  0  0  0
+  24    15  0  0  1 17
+  25    15  0  0  1 18
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5 11  1  1 11
+   3 *   1 12 13  7  1 12 18
+   4 -   2  6  7  5  2  1  2  9 11
+   5 -   2  8  9  6  1  3  8
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  3  1  9 11
+   8 -   5 10 11  4  1  3  6
+   9 -   5  0  0  2  1  7  8
+  10 -   8  0  0  2  1  3  4
+  11 -   8  0  0  2  1  5  6
+  12 -   3 14 15  5  1 12 16
+  13 -   3 18 19  2  1 17 18
+  14 -  12  0  0  2  1 12 13
+  15 -  12 16 17  3  1 14 16
+  16 -  15  0  0  1  1 14 14
+  17 -  15  0  0  2  1 15 16
+  18 -  13  0  0  1  1 17 17
+  19 -  13  0  0  1  1 18 18
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            219
+Total number of atoms read in:              1647
+Total number of ignored atom records:        161
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+         219  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1800
+ selectset done           0
+ eigen done           0
+ tau           1   16.6425686             126
+ #popped           2           1
+ #selectset contacts        1800
+ selectset done           1
+ eigen done           1
+ tau           3   1.36866379              98         112
+ #popped           4           1
+ #selectset contacts        1800
+ selectset done           1
+ eigen done           1
+ tau           5  0.524497628              19          36          46          80
+ #popped           6           2
+ #selectset contacts        1800
+ selectset done           2
+ eigen done           2
+ tau           7  0.653365433              19          46
+ #popped           8           2
+ #selectset contacts        1800
+ selectset done           2
+ eigen done           2
+ tau           9   1.06093907              12          85
+ #popped          10           2
+ #selectset contacts        1800
+ selectset done           2
+ eigen done           2
+ tau          11  0.229312062             116
+ #popped          12           2
+ #selectset contacts        1800
+ selectset done           2
+ eigen done           2
+ tau          13   2.55175972              12
+ #popped           7           1
+ #selectset contacts        1800
+ selectset done           1
+ eigen done           1
+ tau          15  0.784483910              58          68
+ #popped          16           1
+ #selectset contacts        1800
+ selectset done           1
+ eigen done           1
+ tau          17  0.416834623              58
+ #popped          18           1
+ #selectset contacts        1800
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        1800
+ selectset done           0
+ eigen done           0
+ tau          19  0.712008715             157         170         184
+ #popped          20           1
+ #selectset contacts        1800
+ selectset done           1
+ eigen done           1
+ tau          21  0.518066585             157
+ #popped          22           1
+ #selectset contacts        1800
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        1800
+ selectset done           0
+ eigen done           0
+ tau          23  0.780677140             197
+ #popped          24           1
+ #selectset contacts        1800
+ selectset done           1
+ eigen done           1
+ tau          25   2.79478574             187
+ #popped          25           0
+ #selectset contacts        1800
+ selectset done           0
+ eigen done           0
+ tau          27  0.255419791             209
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+         219
+         219  residues read 8D9Y.dssp                                                   
+  grow short strand           3           7
+  grow short strand          10          12
+  exclude short helix          29          31
+  grow short strand          57          59
+  exclude short helix          73          75
+  exclude short helix          87          89
+  grow short strand         120         124
+  grow short strand         133         136
+  grow short strand         141         142
+  grow short strand         156         159
+  grow short strand         168         170
+  grow short strand         174         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  9 11  4  3  5  6  7  8 10 12 13 14 15 17 16 18 19 20
+   2     1  4  5 11  1  2  9 11  4  3  5  6  7  8 10
+   3     1 20 21  9 12 13 14 15 17 16 18 19 20
+   4     2  6  7 10  1  2  9 11  4  3  5  6  7  8
+   5     2  0  0  1 10
+   6     4  8  9  5  1  2  9 11  4
+   7     4 18 19  5  3  5  6  7  8
+   8     6 12 13  4  1  2  9 11
+   9     6  0  0  1  4
+  10     0  0  0  4  1  2  9 11
+  11     0  0  0  0
+  12     8 14 15  3  1  2  9
+  13     8  0  0  1 11
+  14    12  0  0  2  1  2
+  15    12  0  0  1  9
+  16     0  0  0  5  3  5  6  7  8
+  17     0  0  0  0
+  18     7  0  0  3  3  5  6
+  19     7  0  0  2  7  8
+  20     3 22 23  5 12 13 14 15 17
+  21     3 24 25  4 16 18 19 20
+  22    20  0  0  4 12 13 14 15
+  23    20  0  0  1 17
+  24    21  0  0  2 16 18
+  25    21 28 29  2 19 20
+  26     0  0  0  2 16 18
+  27     0  0  0  0
+  28    25  0  0  1 19
+  29    25  0  0  1 20
+   1 +   0  2  3 20  1  1 20
+   2 +   1  4  5 11  1  1 11
+   3 *   1 16 17  9  1 12 20
+   4 *   2  6  7 10  2  1  9 11 11
+   5 =   2  0  0  1  1 10 10
+   6 -   4  8  9  5  4  1  2  4  4  9  9 11 11
+   7 -   4 14 15  5  2  3  3  5  8
+   8 -   6 10 11  4  3  1  2  9  9 11 11
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  3  2  1  2  9  9
+  11 -   8  0  0  1  1 11 11
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  1  1  9  9
+  14 -   7  0  0  3  2  3  3  5  6
+  15 -   7  0  0  2  1  7  8
+  16 -   3 18 19  5  2 12 15 17 17
+  17 -   3 20 21  4  2 16 16 18 20
+  18 -  16  0  0  4  1 12 15
+  19 -  16  0  0  1  1 17 17
+  20 -  17  0  0  2  2 16 16 18 18
+  21 -  17 22 23  2  1 19 20
+  22 -  21  0  0  1  1 19 19
+  23 -  21  0  0  1  1 20 20
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            213
+Total number of atoms read in:              1636
+Total number of ignored atom records:        113
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+         213  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1715
+ selectset done           0
+ eigen done           0
+ tau           1   7.71219206             107
+ #popped           2           1
+ #selectset contacts        1715
+ selectset done           1
+ eigen done           1
+ tau           3  0.759162426              35          59
+ #popped           4           2
+ #selectset contacts        1715
+ selectset done           2
+ eigen done           2
+ tau           5  0.505093753              10          20          73
+ #popped           6           3
+ #selectset contacts        1715
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1715
+ selectset done           2
+ eigen done           2
+ tau           7  0.625620663              76
+ #popped           9           2
+ #selectset contacts        1715
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1715
+ selectset done           1
+ eigen done           1
+ tau           9   1.85474861              47
+ #popped           3           0
+ #selectset contacts        1715
+ selectset done           0
+ eigen done           0
+ tau          11   1.13033807             117         133         146         160         177
+ #popped          12           1
+ #selectset contacts        1715
+ selectset done           1
+ eigen done           1
+ tau          13  0.462694407             117
+ #popped          15           1
+ #selectset contacts        1715
+ selectset done           1
+ eigen done           1
+ tau          15  0.396508932             146
+ #popped          13           0
+ #selectset contacts        1715
+ selectset done           0
+ eigen done           0
+ tau          17  0.889047980             189
+ #popped          18           1
+ #selectset contacts        1715
+ selectset done           1
+ eigen done           1
+ tau          19  0.572839558             133
+ #popped          21           1
+ #selectset contacts        1715
+ selectset done           1
+ eigen done           1
+ tau          21  0.751114845             160
+ #popped          19           0
+ #selectset contacts        1715
+ selectset done           0
+ eigen done           0
+ tau          23  0.280574828             202
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+         213
+         213  residues read 8D9Y.dssp                                                   
+  grow short strand           4           7
+  grow short strand          10          13
+  grow short strand          45          49
+  grow short strand          53          54
+  grow short strand          62          66
+  exclude short helix          80          82
+  grow short strand          97          98
+  grow short strand         102         106
+  grow short strand         114         118
+  exclude short helix         122         125
+  grow short strand         146         150
+  grow short strand         153         154
+  grow short strand         159         163
+  exclude short helix         183         187
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  3  4  7  8  2  9 10 11  5  6 12 13 16 17 14 15 18 19
+   2     1  4  5 11  1  3  4  7  8  2  9 10 11  5  6
+   3     1 12 13  8 12 13 16 17 14 15 18 19
+   4     2  6  7  9  1  3  4  7  8  2  9 10 11
+   5     2 10 11  2  5  6
+   6     4  0  0  5  1  3  4  7  8
+   7     4  8  9  4  2  9 10 11
+   8     7  0  0  1  2
+   9     7  0  0  3  9 10 11
+  10     5  0  0  1  5
+  11     5  0  0  1  6
+  12     3 14 15  4 12 13 16 17
+  13     3 18 19  4 14 15 18 19
+  14    12  0  0  1 12
+  15    12 16 17  3 13 16 17
+  16    15  0  0  1 13
+  17    15  0  0  2 16 17
+  18    13  0  0  2 14 15
+  19    13 24 25  2 18 19
+  20     0  0  0  0
+  21     0  0  0  2 14 15
+  22     0  0  0  2 14 15
+  23     0  0  0  0
+  24    19  0  0  1 18
+  25    19  0  0  1 19
+   1 +   0  2  3 19  1  1 19
+   2 *   1  4  5 11  1  1 11
+   3 *   1 12 13  8  1 12 19
+   4 -   2  6  7  9  2  1  4  7 11
+   5 -   2 10 11  2  1  5  6
+   6 -   4  0  0  5  3  1  1  3  4  7  8
+   7 -   4  8  9  4  2  2  2  9 11
+   8 -   7  0  0  1  1  2  2
+   9 -   7  0  0  3  1  9 11
+  10 -   5  0  0  1  1  5  5
+  11 -   5  0  0  1  1  6  6
+  12 -   3 14 15  4  2 12 13 16 17
+  13 -   3 18 19  4  2 14 15 18 19
+  14 -  12  0  0  1  1 12 12
+  15 -  12 16 17  3  2 13 13 16 17
+  16 -  15  0  0  1  1 13 13
+  17 -  15  0  0  2  1 16 17
+  18 -  13  0  0  2  1 14 15
+  19 -  13 20 21  2  1 18 19
+  20 -  19  0  0  1  1 18 18
+  21 -  19  0  0  1  1 19 19
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            219
+Total number of atoms read in:              1647
+Total number of ignored atom records:        195
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+         219  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1813
+ selectset done           0
+ eigen done           0
+ tau           1   15.9419918             127
+ #popped           2           1
+ #selectset contacts        1813
+ selectset done           1
+ eigen done           1
+ tau           3   1.31625855              98         112
+ #popped           4           1
+ #selectset contacts        1813
+ selectset done           1
+ eigen done           1
+ tau           5  0.525526941              20          36          46          79
+ #popped           6           2
+ #selectset contacts        1813
+ selectset done           2
+ eigen done           2
+ tau           7  0.665868819              20          46
+ #popped           8           2
+ #selectset contacts        1813
+ selectset done           2
+ eigen done           2
+ tau           9  0.392914802              20
+ #popped          10           3
+ #selectset contacts        1813
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped          11           2
+ #selectset contacts        1813
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        1813
+ selectset done           1
+ eigen done           1
+ tau          11  0.877625346              58          68
+ #popped          12           1
+ #selectset contacts        1813
+ selectset done           1
+ eigen done           1
+ tau          13  0.489449680              58
+ #popped          14           1
+ #selectset contacts        1813
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1813
+ selectset done           0
+ eigen done           0
+ tau          15  0.754615963             188         198
+ #popped          16           0
+ #selectset contacts        1813
+ selectset done           0
+ eigen done           0
+ tau          17  0.464989901             155
+ #popped          18           1
+ #selectset contacts        1813
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1813
+ selectset done           0
+ eigen done           0
+ tau          19   2.96223307             165         188
+ #popped          20           1
+ #selectset contacts        1813
+ selectset done           1
+ eigen done           1
+ tau          21  0.297726154             209
+ #popped          22           1
+ #selectset contacts        1813
+ selectset done           1
+ eigen done           1
+ tau          23  0.340181559             165
+ #popped          21           0
+ #selectset contacts        1813
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+         219
+         219  residues read 8D9Y.dssp                                                   
+  grow short strand           3           7
+  grow short strand          11          12
+  exclude short helix          29          31
+  grow short strand          57          59
+  exclude short helix          73          75
+  exclude short helix          87          89
+  grow short strand         120         124
+  grow short strand         133         137
+  grow short strand         156         159
+  grow short strand         169         170
+  grow short strand         174         175
+  exclude short helix         193         196
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  8  9 11  4  3  5  6  7 10 12 13 14 18 19 15 16 17
+   2     1  4  5 11  1  2  8  9 11  4  3  5  6  7 10
+   3     1 18 19  8 12 13 14 18 19 15 16 17
+   4     2  6  7 10  1  2  8  9 11  4  3  5  6  7
+   5     2  0  0  1 10
+   6     4  8  9  6  1  2  8  9 11  4
+   7     4 14 15  4  3  5  6  7
+   8     6 10 11  5  1  2  8  9 11
+   9     6  0  0  1  4
+  10     8  0  0  2  1  2
+  11     8  0  0  3  8  9 11
+  12     0  0  0  4  3  5  6  7
+  13     0  0  0  0
+  14     7  0  0  3  3  5  6
+  15     7  0  0  1  7
+  16     0  0  0  8 12 13 14 18 19 15 16 17
+  17     0  0  0  0
+  18     3  0  0  2 12 13
+  19     3 20 21  6 14 18 19 15 16 17
+  20    19 22 23  3 14 18 19
+  21    19  0  0  3 15 16 17
+  22    20 24 25  2 14 18
+  23    20  0  0  1 19
+  24    22  0  0  1 14
+  25    22  0  0  1 18
+   1 +   0  2  3 19  1  1 19
+   2 +   1  4  5 11  1  1 11
+   3 *   1 14 15  8  1 12 19
+   4 *   2  6  7 10  2  1  9 11 11
+   5 =   2  0  0  1  1 10 10
+   6 -   4  8  9  6  4  1  2  4  4  8  9 11 11
+   7 -   4 12 13  4  2  3  3  5  7
+   8 -   6 10 11  5  3  1  2  8  9 11 11
+   9 -   6  0  0  1  1  4  4
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  3  2  8  9 11 11
+  12 -   7  0  0  3  2  3  3  5  6
+  13 -   7  0  0  1  1  7  7
+  14 -   3  0  0  2  1 12 13
+  15 -   3 16 17  6  1 14 19
+  16 -  15 18 19  3  2 14 14 18 19
+  17 -  15  0  0  3  1 15 17
+  18 -  16 20 21  2  2 14 14 18 18
+  19 -  16  0  0  1  1 19 19
+  20 -  18  0  0  1  1 14 14
+  21 -  18  0  0  1  1 18 18
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             68
+Total number of atoms read in:               518
+Total number of ignored atom records:         69
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+          68  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         494
+ selectset done           0
+ eigen done           0
+ tau           1   1.64410055              25          37
+ #popped           2           0
+ #selectset contacts         494
+ selectset done           0
+ eigen done           0
+ tau           3  0.768784344              45          56
+ #popped           4           0
+ #selectset contacts         494
+ selectset done           0
+ eigen done           0
+ tau           5  0.455166161              45
+ #popped           6           0
+ #selectset contacts         494
+ selectset done           0
+ eigen done           0
+ tau           7  0.492307693              11
+ #popped           9           0
+ #selectset contacts         494
+ selectset done           0
+ eigen done           0
+ tau           9   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+          68
+          68  residues read 8D9Y.dssp                                                   
+  grow short strand           2           5
+  grow short strand          10          13
+  exclude short helix          31          34
+  grow short strand          55          59
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7  5  1  2  3  4  5
+   2     0  0  0  5  1  2  3  4  5
+   3     0  0  0  0
+   4     0  0  0  5  1  2  3  4  5
+   5     0  0  0  0
+   6     1  8  9  4  1  2  3  4
+   7     1  0  0  1  5
+   8     6  0  0  2  1  2
+   9     6  0  0  2  3  4
+   1 *   0  2  3  5  1  1  5
+   2 -   1  4  5  4  1  1  4
+   3 -   1  0  0  1  1  5  5
+   4 -   2  0  0  2  1  1  2
+   5 -   2  0  0  2  1  3  4
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             68
+Total number of atoms read in:               518
+Total number of ignored atom records:         79
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+          68  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         508
+ selectset done           0
+ eigen done           0
+ tau           1   1.45439661              25          37
+ #popped           2           0
+ #selectset contacts         508
+ selectset done           0
+ eigen done           0
+ tau           3  0.757954001              21          58
+ #popped           4           1
+ #selectset contacts         508
+ selectset done           1
+ eigen done           1
+ tau           5  0.643378437              19
+ #popped           5           0
+ #selectset contacts         508
+ selectset done           0
+ eigen done           0
+ tau           7  0.403176904              43
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+          68
+          68  residues read 8D9Y.dssp                                                   
+  grow short strand           2           5
+  grow short strand          10          13
+  exclude short helix          31          34
+  grow short strand          55          59
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5  5  1  2  3  4  5
+   2     0  0  0  5  1  2  3  4  5
+   3     0  0  0  0
+   4     1  0  0  2  1  2
+   5     1  8  9  3  3  4  5
+   6     0  0  0  2  1  2
+   7     0  0  0  0
+   8     5  0  0  2  3  4
+   9     5  0  0  1  5
+   1 *   0  2  3  5  1  1  5
+   2 -   1  0  0  2  1  1  2
+   3 -   1  4  5  3  1  3  5
+   4 -   3  0  0  2  1  3  4
+   5 -   3  0  0  1  1  5  5
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             68
+Total number of atoms read in:               518
+Total number of ignored atom records:         66
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+          68  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         516
+ selectset done           0
+ eigen done           0
+ tau           1   1.60911965              25          37
+ #popped           2           0
+ #selectset contacts         516
+ selectset done           0
+ eigen done           0
+ tau           3  0.752071619              45          56
+ #popped           4           0
+ #selectset contacts         516
+ selectset done           0
+ eigen done           0
+ tau           5  0.419927478              45
+ #popped           6           0
+ #selectset contacts         516
+ selectset done           0
+ eigen done           0
+ tau           7  0.457142860              11
+ #popped           9           0
+ #selectset contacts         516
+ selectset done           0
+ eigen done           0
+ tau           9   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+          68
+          68  residues read 8D9Y.dssp                                                   
+  grow short strand           2           5
+  grow short strand          10          13
+  exclude short helix          31          34
+  grow short strand          55          59
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7  5  1  2  3  4  5
+   2     0  0  0  5  1  2  3  4  5
+   3     0  0  0  0
+   4     0  0  0  5  1  2  3  4  5
+   5     0  0  0  0
+   6     1  8  9  4  1  2  3  4
+   7     1  0  0  1  5
+   8     6  0  0  2  1  2
+   9     6  0  0  2  3  4
+   1 *   0  2  3  5  1  1  5
+   2 -   1  4  5  4  1  1  4
+   3 -   1  0  0  1  1  5  5
+   4 -   2  0  0  2  1  1  2
+   5 -   2  0  0  2  1  3  4
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             63
+Total number of atoms read in:               471
+Total number of ignored atom records:         25
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  calculate residue outside grid:          14
+  calculate residue outside grid:          15
+  calculate residue outside grid:          16
+  calculate residue outside grid:          17
+  calculate residue outside grid:          18
+  calculate residue outside grid:          19
+  calculate residue outside grid:          20
+  calculate residue outside grid:          21
+  calculate residue outside grid:          38
+  calculate residue outside grid:          39
+  calculate residue outside grid:          40
+  calculate residue outside grid:          41
+  calculate residue outside grid:          42
+  calculate residue outside grid:          43
+  calculate residue outside grid:          44
+  calculate residue outside grid:          55
+  calculate residue outside grid:          56
+  calculate residue outside grid:          57
+  calculate residue outside grid:          58
+  calculate residue outside grid:          59
+  calculate residue outside grid:          60
+  calculate residue outside grid:          61
+  calculate residue outside grid:          62
+  calculate residue outside grid:          63
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+          63  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         848
+ mismatching:           4           3   14.0000000       0.00000000    
+ mismatching:          37          20   4.00000000       0.00000000    
+ mismatching:          45          20   2.00000000       0.00000000    
+ mismatching:          56          45   0.00000000       1.00000000    
+ selectset done           0
+ mismatch           3   364.000000       378.000000    
+ mismatch           4   92.0000000       78.0000000    
+ mismatch          20   281.000000       287.000000    
+ mismatch          37   122.000000       118.000000    
+ mismatch          45   97.0000000       94.0000000    
+ mismatch          56   832.000000       833.000000    
+ eigen done           0
+ tau           1   0.00000000    
+ dostack done
+ mismatching:           4           3   14.0000000       0.00000000    
+ mismatching:          37          20   4.00000000       0.00000000    
+ mismatching:          45          20   2.00000000       0.00000000    
+ mismatching:          56          45   0.00000000       1.00000000    
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM,ANTITOXIN/TOXIN           12-JUN-22   8D9Y              COMPND   2 MOLECULE: CENTI-LNX-D09 FAB LIGHT CHAIN;                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    S.PLETNEV,R.VERARDI,E.S.TULLY,J.GLANVILLE,P.D.KWONG                   
+           0
+          63
+          63  residues read 8D9Y.dssp                                                   
+  grow short strand           2           3
+  grow short strand           8           9
+  exclude short helix          29          32
+  grow short strand          53          57
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  0  0  5  1  2  3  4  5
+   1 *   0  0  0  5  1  1  5
+
+ CHAIN : 8D9YA
+ CHAIN : 8D9YB
+ CHAIN : 8D9YC
+ CHAIN : 8D9YD
+ CHAIN : 8D9YE
+ CHAIN : 8D9YF
+ CHAIN : 8D9YG
+ CHAIN : 8D9YH
+ CHAIN : 8D9YI
+ CHAIN : 8D9YJ
+ CHAIN : 8D9YK
+ CHAIN : 8D9YL
+

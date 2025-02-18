@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 2D2ND
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1LHT-A 14.3  2.3  134   153   13   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=2D2ND Sbjct=1LHTA Z-score=14.3
+
+DSSP  lLLLHHHHHHHHHHHHHHLLllllllLHHHHHHHHHHHHHHHLLLLHHHLHHH-------
+Query eCCSRGDAEVVISEWDQVFNaamagsSESAVGVAIFDAFFASSGVSPSMFPGG-------   53
+ident    |      |   |  |          || |       |         |          
+Sbjct -GLSDDEWNHVLGIWAKVEP------DLSAHGQEVIIRLFQLHPETQERFAKFknlttid   53
+DSSP  -LLLHHHHHHHHHHHHHHHH------HHHHHHHHHHHHHHHHLHHHHHHLHHHlllllhh
+
+DSSP  lLLLLHHHHHHHHHHHHHHHHHHLLLLlhhHHHHHHHHHHHHHHLLLLLLHHHHHHHHHH
+Query gDSNNPEFLAQVSRVVSGADIAINSLTnraTCDSLLSHLNAQHRAISGVTGAAVTHLSQA  113
+ident       |       |                    |  |   |                 
+Sbjct aLKSSEEVKKHGTTVLTALGRILKQKN---NHEQELKPLAESHATKHKIPVKYLEFICEI  110
+DSSP  hHHHLHHHHHHHHHHHHHHHHHHHLLL---LLHHHHHHHHHHHHHLLLLLHHHHHHHHHH
+
+DSSP  HHHHHHHHL-LLLL---HHHHHHHHHHHHHHHHLLL-------
+Query ISSVVAQVL-PSAH---IDAWEYCMAYIAAGIGAGL-------  145
+ident |  | |             |                       
+Sbjct IVKVIAEKHpSDFGadsQAAMKKALELFRNDMASKYkefgfqg  153
+DSSP  HHHHHHHHLlLLLLhhhHHHHHHHHHHHHHHHHHHHhllllll
+
+
+# Structural equivalences
+   1: 2D2N-D 1LHT-A     2 -  20 <=>    1 -  19   (CYS    2  - ASN   20  <=> GLY    1  - PRO   19 )                          
+   1: 2D2N-D 1LHT-A    27 -  53 <=>   20 -  46   (SER   27  - GLY   53  <=> ASP   20  - PHE   46 )                          
+   1: 2D2N-D 1LHT-A    55 -  80 <=>   55 -  80   (ASP   55  - THR   80  <=> LEU   55  - ASN   80 )                          
+   1: 2D2N-D 1LHT-A    84 - 122 <=>   81 - 119   (THR   84  - LEU  122  <=> ASN   81  - HIS  119 )                          
+   1: 2D2N-D 1LHT-A   123 - 126 <=>  121 - 124   (PRO  123  - HIS  126  <=> SER  121  - GLY  124 )                          
+   1: 2D2N-D 1LHT-A   127 - 145 <=>  128 - 146   (ILE  127  - LEU  145  <=> GLN  128  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "2D2N-D 1LHT-A  U(1,.)  -0.079369  0.828542  0.554274          -16.377911"
+-matrix  "2D2N-D 1LHT-A  U(2,.)  -0.234948 -0.555912  0.797347           34.311512"
+-matrix  "2D2N-D 1LHT-A  U(3,.)   0.968762 -0.066941  0.238787          101.992599"
+

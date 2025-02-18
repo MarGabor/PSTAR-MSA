@@ -1,0 +1,33 @@
+# Job: LIM
+# Query: 1IBIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CUP-A  5.0  3.1   54   101   33   MOLECULE: SKELETAL MUSCLE LIM-PROTEIN 1;                             
+
+# Pairwise alignments
+
+No 1: Query=1IBIA Sbjct=2CUPA Z-score=5.0
+
+DSSP  ----LEELLLLLLEEL-lLLLEELllLEELLLLEELLLLLLEELllLLEEELLEEELHHH
+Query ----AEKCSRCGDSVY-aAEKVIGagKPWHKNCFRCAKCGKSLEstTLTEKEGEIYCKGC   55
+ident        |  |          |      ||  |||||||   |   |   |   | |  |
+Sbjct gssgSSGCVECRKPIGadSKEVHYknRFWHDTCFRCAKCLHPLAneTFVAKDNKILCNKC   60
+DSSP  llllLLLLLLLLLLLLllLLEEEEllEEEELLLLLLLLLLLLLLllLLEEELLEEELHHH
+
+DSSP  HHHL-------------------------------------
+Query YAKN-------------------------------------   59
+ident                                          
+Sbjct TTREdspkckgcfkaivagdqnveykgtvwhkdcfsgpssg  101
+DSSP  HLLLllllllllllllllllleeelllleeellllllllll
+
+
+# Structural equivalences
+   1: 1IBI-A 2CUP-A     1 -  12 <=>    5 -  16   (ALA  117  - TYR  128  <=> SER    5  - GLY   16 )                          
+   1: 1IBI-A 2CUP-A    14 -  19 <=>   19 -  24   (ALA  130  - GLY  135  <=> SER   19  - TYR   24 )                          
+   1: 1IBI-A 2CUP-A    22 -  39 <=>   27 -  44   (LYS  138  - GLU  155  <=> ARG   27  - ALA   44 )                          
+   1: 1IBI-A 2CUP-A    42 -  59 <=>   47 -  64   (THR  158  - ASN  175  <=> THR   47  - GLU   64 )                          
+
+# Translation-rotation matrices
+-matrix  "1IBI-A 2CUP-A  U(1,.)  -0.302298 -0.165750  0.938692           11.213589"
+-matrix  "1IBI-A 2CUP-A  U(2,.)   0.158333 -0.979817 -0.122022            2.903998"
+-matrix  "1IBI-A 2CUP-A  U(3,.)   0.939971  0.111739  0.322441            3.687021"
+

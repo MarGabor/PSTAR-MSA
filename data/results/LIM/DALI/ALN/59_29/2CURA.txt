@@ -1,0 +1,33 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X4K-A  7.6  2.4   65    72   38   MOLECULE: SKELETAL MUSCLE LIM-PROTEIN 3;                             
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=1X4KA Z-score=7.6
+
+DSSP  llllLLLLLLLLLLLL-LLLE-EELLEEELLLLLLLLLLLLLLLLLLEEELLLLEEEHHH
+Query gssgSSGCVKCNKAIT-SGGI-TYQDQPWHADCFVCVTCSKKLAGQRFTAVEDQYYCVDC   58
+ident     ||||  | | |        |    ||  || |  |        |     |  || |
+Sbjct gssgSSGCQECKKTIMpGTRKmEYKGSSWHETCFICHRCQQPIGTKSFIPKDNQNFCVPC   60
+DSSP  llllLLLLLLLLLLLLlLLLEeEELLEEEELLLLLLLLLLLLLLLLLEEEELLEEEEHHH
+
+DSSP  HHHHHL-LLLLL
+Query YKNFVS-GPSSG   69
+ident |      |||||
+Sbjct YEKQHAsGPSSG   72
+DSSP  HHHHLLlLLLLL
+
+
+# Structural equivalences
+   1: 2CUR-A 1X4K-A     5 -  16 <=>    5 -  16   (SER    5  - THR   16  <=> SER    5  - MET   16 )                          
+   1: 2CUR-A 1X4K-A    17 -  20 <=>   18 -  21   (SER   17  - ILE   20  <=> GLY   18  - LYS   21 )                          
+   1: 2CUR-A 1X4K-A    21 -  64 <=>   23 -  66   (THR   21  - SER   64  <=> GLU   23  - ALA   66 )                          
+   1: 2CUR-A 1X4K-A    65 -  69 <=>   68 -  72   (GLY   65  - GLY   69  <=> GLY   68  - GLY   72 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 1X4K-A  U(1,.)  -0.650412  0.616939 -0.443115           -4.113264"
+-matrix  "2CUR-A 1X4K-A  U(2,.)   0.745549  0.406896 -0.527818            4.377381"
+-matrix  "2CUR-A 1X4K-A  U(3,.)  -0.145329 -0.673663 -0.724608           -1.601478"
+

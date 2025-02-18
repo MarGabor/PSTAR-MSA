@@ -1,0 +1,723 @@
+A length: 205
+B length: 204
+C length: 205
+D length: 205
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1629
+Total number of ignored atom records:        255
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [MN];                                 SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI K-12;                          AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau           1   1.93472767              85
+ #popped           2           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau           3   1.51594627              41          68
+ #popped           4           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau           5   1.10750699              29
+ #popped           6           3
+ #selectset contacts        1951
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau           7   1.20099163              41
+ #popped           5           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau           9   1.43568921             112         190
+ #popped          10           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          11   1.80646551              95         112
+ #popped          12           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          13  0.549722195              95
+ #popped          11           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau          15   1.56229258             122         169
+ #popped          16           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          17   1.44732690             122
+ #popped          19           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          19  0.772139311             180
+ #popped          17           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau          21  0.259722859             140
+ #popped          23           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau          23   1.67434824             159
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [MN];                                 SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI K-12;                          AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+           0
+         205
+         205  residues read 3K9S.dssp                                                   
+  exclude short helix          53          56
+  exclude short helix          60          62
+  exclude short helix         149         151
+  exclude short helix         153         156
+  exclude short helix         170         172
+  exclude short helix         174         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3 10  4  5  9  6  7  8
+   2     1  6  7  3  1  2  3
+   3     1 10 11  7 10  4  5  9  6  7  8
+   4     0  0  0  3  1  2  3
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  8  9  2  2  3
+   8     7  0  0  1  2
+   9     7  0  0  1  3
+  10     3 12 13  2 10  4
+  11     3 16 17  5  5  9  6  7  8
+  12    10  0  0  1 10
+  13    10  0  0  1  4
+  14     0  0  0  0
+  15     0  0  0  1 10
+  16    11 18 19  2  5  9
+  17    11 22 23  3  6  7  8
+  18    16  0  0  1  5
+  19    16  0  0  1  9
+  20     0  0  0  0
+  21     0  0  0  1  9
+  22    17  0  0  2  6  7
+  23    17  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  1  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  2  3
+   6 -   5  0  0  1  1  2  2
+   7 -   5  0  0  1  1  3  3
+   8 -   3 10 11  2  2  4  4 10 10
+   9 -   3 12 13  5  1  5  9
+  10 -   8  0  0  1  1 10 10
+  11 -   8  0  0  1  1  4  4
+  12 -   9 14 15  2  2  5  5  9  9
+  13 -   9 16 17  3  1  6  8
+  14 -  12  0  0  1  1  5  5
+  15 -  12  0  0  1  1  9  9
+  16 -  13  0  0  2  1  6  7
+  17 -  13  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1672  CA BSER B   6 
+ Alternate location indication is not blank or A, ignore atom: 1676  CB BSER B   6 
+ Alternate location indication is not blank or A, ignore atom: 1678  OG BSER B   6 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1629
+Total number of ignored atom records:        250
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [MN];                                 SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI K-12;                          AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1941
+ selectset done           0
+ eigen done           0
+ tau           1   1.70222819              85
+ #popped           2           1
+ #selectset contacts        1941
+ selectset done           1
+ eigen done           1
+ tau           3   1.57597423              43          68
+ #popped           4           2
+ #selectset contacts        1941
+ selectset done           2
+ eigen done           2
+ tau           5   1.11693001              29
+ #popped           6           3
+ #selectset contacts        1941
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1941
+ selectset done           2
+ eigen done           2
+ tau           7   1.21420407              43
+ #popped           5           1
+ #selectset contacts        1941
+ selectset done           1
+ eigen done           1
+ tau           9   1.10494626              58
+ #popped           3           0
+ #selectset contacts        1941
+ selectset done           0
+ eigen done           0
+ tau          11   1.13579500             146         158
+ #popped          12           0
+ #selectset contacts        1941
+ selectset done           0
+ eigen done           0
+ tau          13   1.56162691             107         190
+ #popped          14           1
+ #selectset contacts        1941
+ selectset done           1
+ eigen done           1
+ tau          15   2.19207478              95         107
+ #popped          16           1
+ #selectset contacts        1941
+ selectset done           1
+ eigen done           1
+ tau          17  0.543177903              95
+ #popped          15           0
+ #selectset contacts        1941
+ selectset done           0
+ eigen done           0
+ tau          19   1.07707810             168
+ #popped          20           1
+ #selectset contacts        1941
+ selectset done           1
+ eigen done           1
+ tau          21   1.39471185             126
+ #popped          23           1
+ #selectset contacts        1941
+ selectset done           1
+ eigen done           1
+ tau          23  0.296899498             146
+ #popped          24           1
+ #selectset contacts        1941
+ selectset done           1
+ eigen done           1
+ tau          25  0.201252788             136
+ #popped          21           0
+ #selectset contacts        1941
+ selectset done           0
+ eigen done           0
+ tau          27  0.760531545             180
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [MN];                                 SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI K-12;                          AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+           0
+         205
+         205  residues read 3K9S.dssp                                                   
+  exclude short helix          46          49
+  exclude short helix          53          56
+  exclude short helix          60          62
+  exclude short helix         149         151
+  exclude short helix         153         156
+  exclude short helix         170         172
+  exclude short helix         174         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  9  4  5  6  7  8
+   2     1  6  7  3  1  2  3
+   3     1 14 15  6  9  4  5  6  7  8
+   4     0  0  0  3  1  2  3
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  8  9  2  2  3
+   8     7  0  0  1  2
+   9     7  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  6  9  4  5  6  7  8
+  13     0  0  0  0
+  14     3  0  0  1  9
+  15     3 20 21  5  4  5  6  7  8
+  16     0  0  0  1  9
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1  9
+  20    15 22 23  4  4  5  6  7
+  21    15  0  0  1  8
+  22    20  0  0  1  4
+  23    20 24 25  3  5  6  7
+  24    23 26 27  2  5  6
+  25    23  0  0  1  7
+  26    24  0  0  1  5
+  27    24  0  0  1  6
+  28     0  0  0  0
+  29     0  0  0  1  8
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  6  1  4  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  2  3
+   6 -   5  0  0  1  1  2  2
+   7 -   5  0  0  1  1  3  3
+   8 -   3  0  0  1  1  9  9
+   9 -   3 10 11  5  1  4  8
+  10 -   9 12 13  4  1  4  7
+  11 -   9  0  0  1  1  8  8
+  12 -  10  0  0  1  1  4  4
+  13 -  10 14 15  3  1  5  7
+  14 -  13 16 17  2  1  5  6
+  15 -  13  0  0  1  1  7  7
+  16 -  14  0  0  1  1  5  5
+  17 -  14  0  0  1  1  6  6
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1629
+Total number of ignored atom records:        250
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [MN];                                 SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI K-12;                          AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau           1   2.02033877              86
+ #popped           2           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau           3   1.53257656              40          73
+ #popped           4           2
+ #selectset contacts        1961
+ selectset done           2
+ eigen done           2
+ tau           5   1.05367959              40
+ #popped           6           2
+ #selectset contacts        1961
+ selectset done           2
+ eigen done           2
+ tau           7  0.919126153              27
+ #popped           8           2
+ #selectset contacts        1961
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau           9   1.27898037              63
+ #popped          10           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          11   1.28618789              51
+ #popped           3           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          13   1.46734679             107         191
+ #popped          14           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          15   1.35580528              96         107
+ #popped          16           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          17  0.723663270              96
+ #popped          15           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          19   1.49963582             121         169
+ #popped          20           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          21   1.60577202             121
+ #popped          23           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          23  0.825396836             180
+ #popped          21           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          25  0.739376783             149         159
+ #popped          26           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          27  0.215609595             139
+ #popped          29           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          29   1.76733780             149
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [MN];                                 SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI K-12;                          AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+           0
+         205
+         205  residues read 3K9S.dssp                                                   
+  exclude short helix          46          49
+  exclude short helix          53          56
+  exclude short helix          60          62
+  exclude short helix         149         151
+  exclude short helix         153         156
+  exclude short helix         170         172
+  exclude short helix         174         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3 10  4  5  9  6  7  8
+   2     1  6  7  3  1  2  3
+   3     1 14 15  7 10  4  5  9  6  7  8
+   4     0  0  0  3  1  2  3
+   5     0  0  0  0
+   6     2  8  9  2  1  2
+   7     2  0  0  1  3
+   8     6  0  0  1  1
+   9     6  0  0  1  2
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+  14     3 16 17  2 10  4
+  15     3 20 21  5  5  9  6  7  8
+  16    14  0  0  1 10
+  17    14  0  0  1  4
+  18     0  0  0  0
+  19     0  0  0  1 10
+  20    15 22 23  2  5  9
+  21    15 28 29  3  6  7  8
+  22    20  0  0  1  5
+  23    20  0  0  1  9
+  24     0  0  0  0
+  25     0  0  0  1  9
+  26     0  0  0  3  6  7  8
+  27     0  0  0  0
+  28    21  0  0  1  6
+  29    21 30 31  2  7  8
+  30    29  0  0  1  7
+  31    29  0  0  1  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  2  1  1  2
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   3 10 11  2  2  4  4 10 10
+   9 -   3 12 13  5  1  5  9
+  10 -   8  0  0  1  1 10 10
+  11 -   8  0  0  1  1  4  4
+  12 -   9 14 15  2  2  5  5  9  9
+  13 -   9 16 17  3  1  6  8
+  14 -  12  0  0  1  1  5  5
+  15 -  12  0  0  1  1  9  9
+  16 -  13  0  0  1  1  6  6
+  17 -  13 18 19  2  1  7  8
+  18 -  17  0  0  1  1  7  7
+  19 -  17  0  0  1  1  8  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1629
+Total number of ignored atom records:        214
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [MN];                                 SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI K-12;                          AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau           1   1.89769936              85
+ #popped           2           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau           3   1.52458370              43          68
+ #popped           4           2
+ #selectset contacts        1961
+ selectset done           2
+ eigen done           2
+ tau           5   1.08701229              29
+ #popped           6           3
+ #selectset contacts        1961
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1961
+ selectset done           2
+ eigen done           2
+ tau           7   1.29170644              43
+ #popped           5           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau           9  0.989847720              58
+ #popped           3           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          11   1.08763146             169         185
+ #popped          12           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          13   1.60972536             117         169
+ #popped          14           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          15   1.15336657             105         117
+ #popped          16           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          17  0.521159887             105         195
+ #popped          18           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          19   6.23604918             105
+ #popped          20           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          21   1.20155871              95
+ #popped          15           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          23  0.579208732             127
+ #popped          25           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          25  0.219359279             138
+ #popped          27           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          16-OCT-09   3K9S              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [MN];                                 SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI K-12;                          AUTHOR    J.C.PORTA,A.VAHEDI-FARIDI,G.E.O.BORGSTAHL                             
+           0
+         205
+         205  residues read 3K9S.dssp                                                   
+  exclude short helix          46          49
+  exclude short helix          53          56
+  exclude short helix          60          62
+  exclude short helix         149         151
+  exclude short helix         153         156
+  exclude short helix         170         172
+  exclude short helix         174         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4 10  5  6  7  8  9
+   2     1  6  7  3  1  2  3
+   3     1 12 13  7  4 10  5  6  7  8  9
+   4     0  0  0  3  1  2  3
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  8  9  2  2  3
+   8     7  0  0  1  2
+   9     7  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  0
+  12     3 14 15  6  4 10  5  6  7  8
+  13     3  0  0  1  9
+  14    12 16 17  3  4 10  5
+  15    12 26 27  3  6  7  8
+  16    14 20 21  2  4 10
+  17    14  0  0  1  5
+  18     0  0  0  2  4 10
+  19     0  0  0  0
+  20    16  0  0  1  4
+  21    16  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  1  4
+  24     0  0  0  0
+  25     0  0  0  3  6  7  8
+  26    15  0  0  1  6
+  27    15  0  0  2  7  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  2  3
+   6 -   5  0  0  1  1  2  2
+   7 -   5  0  0  1  1  3  3
+   8 -   3 10 11  6  2  4  8 10 10
+   9 -   3  0  0  1  1  9  9
+  10 -   8 12 13  3  2  4  5 10 10
+  11 -   8 16 17  3  1  6  8
+  12 -  10 14 15  2  2  4  4 10 10
+  13 -  10  0  0  1  1  5  5
+  14 -  12  0  0  1  1  4  4
+  15 -  12  0  0  1  1 10 10
+  16 -  11  0  0  1  1  6  6
+  17 -  11  0  0  2  1  7  8
+
+ CHAIN : 3K9SA
+ CHAIN : 3K9SB
+ CHAIN : 3K9SC
+ CHAIN : 3K9SD
+

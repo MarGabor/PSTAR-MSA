@@ -1,0 +1,188 @@
+A length: 113
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+B length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+ length: 0
+C length: 0
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            113
+Total number of atoms read in:               929
+Total number of ignored atom records:        132
+ HEADER    TRANSFERASE/DNA                         12-AUG-22   7YSF              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.D.LI,Z.Y.XU                                                         
+  Reading DSSP file
+ HEADER    TRANSFERASE/DNA                         12-AUG-22   7YSF              COMPND   2 MOLECULE: ZINC FINGER PROTEIN 524;                                   SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    F.D.LI,Z.Y.XU                                                         
+         113  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         915
+ selectset done           0
+ eigen done           0
+ tau           1   15.4181032              54
+ #popped           2           1
+ #selectset contacts         915
+ selectset done           1
+ eigen done           1
+ tau           3   3.03938365              26
+ #popped           4           2
+ #selectset contacts         915
+ selectset done           2
+ eigen done           2
+ tau           5  0.887323976              13
+ #popped           5           1
+ #selectset contacts         915
+ selectset done           1
+ eigen done           1
+ tau           7  0.907096803              40
+ #popped           3           0
+ #selectset contacts         915
+ selectset done           0
+ eigen done           0
+ tau           9   3.82786989              83
+ #popped          10           1
+ #selectset contacts         915
+ selectset done           1
+ eigen done           1
+ tau          11  0.800000012              69
+ #popped          11           0
+ #selectset contacts         915
+ selectset done           0
+ eigen done           0
+ tau          13  0.948738694              98
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE/DNA                         12-AUG-22   7YSF              COMPND   2 MOLECULE: ZINC FINGER PROTEIN 524;                                   SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    F.D.LI,Z.Y.XU                                                         
+           0
+         113
+         113  residues read 7YSF.dssp                                                   
+  grow short strand           2           3
+  grow short strand          10          11
+  grow short strand          30          31
+  grow short strand          38          39
+  grow short strand          58          59
+  grow short strand          66          67
+  grow short strand          86          87
+  grow short strand          94          95
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  7  8  9 10 11 12
+   2     1  4  5  6  1  2  3  4  5  6
+   3     1 10 11  6  7  8  9 10 11 12
+   4     2  6  7  3  1  2  3
+   5     2  8  9  3  4  5  6
+   6     4  0  0  2  1  2
+   7     4  0  0  1  3
+   8     5  0  0  2  4  5
+   9     5  0  0  1  6
+  10     3 12 13  3  7  8  9
+  11     3 14 15  3 10 11 12
+  12    10  0  0  2  7  8
+  13    10  0  0  1  9
+  14    11  0  0  2 10 11
+  15    11  0  0  1 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  6  1  7 12
+   4 -   2  6  7  3  1  1  3
+   5 -   2  8  9  3  1  4  6
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  1  1  3  3
+   8 -   5  0  0  2  1  4  5
+   9 -   5  0  0  1  1  6  6
+  10 -   3 12 13  3  1  7  9
+  11 -   3 14 15  3  1 10 12
+  12 -  10  0  0  2  1  7  8
+  13 -  10  0  0  1  1  9  9
+  14 -  11  0  0  2  1 10 11
+  15 -  11  0  0  1  1 12 12
+
+ CHAIN : 7YSFA
+

@@ -1,0 +1,139 @@
+A length: 104
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  377  N  BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  379  CA BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  381  C  BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  383  O  BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  385  CB BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  387  CG BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  389  CD BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  391  CE BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  393  NZ BLYS A  53 
+ Alternate location indication is not blank or A, ignore atom:  542  N  BCYS A  73 
+ Alternate location indication is not blank or A, ignore atom:  544  CA BCYS A  73 
+ Alternate location indication is not blank or A, ignore atom:  546  C  BCYS A  73 
+ Alternate location indication is not blank or A, ignore atom:  548  O  BCYS A  73 
+ Alternate location indication is not blank or A, ignore atom:  550  CB BCYS A  73 
+ Alternate location indication is not blank or A, ignore atom:  552  SG BCYS A  73 
+ Alternate location indication is not blank or A, ignore atom:  776  N  BSER A 103 
+ Alternate location indication is not blank or A, ignore atom:  778  CA BSER A 103 
+ Alternate location indication is not blank or A, ignore atom:  780  C  BSER A 103 
+ Alternate location indication is not blank or A, ignore atom:  782  O  BSER A 103 
+ Alternate location indication is not blank or A, ignore atom:  784  CB BSER A 103 
+ Alternate location indication is not blank or A, ignore atom:  786  OG BSER A 103 
+
+Total number of residues read in:            107
+Total number of atoms read in:               815
+Total number of ignored atom records:        181
+ HEADER    CYTOKINE                                13-SEP-13   4MPL              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.LI,N.W.MORRELL,Z.WEI                                                
+  Reading DSSP file
+ HEADER    CYTOKINE                                13-SEP-13   4MPL              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 2;                           SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.LI,N.W.MORRELL,Z.WEI                                                
+         107  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         832
+ selectset done           0
+ eigen done           0
+ tau           1   2.94904399              46          68
+ #popped           2           1
+ #selectset contacts         832
+ selectset done           1
+ eigen done           1
+ tau           3   1.79209220              12          28          79          95
+ #popped           4           2
+ #selectset contacts         832
+ selectset done           2
+ eigen done           2
+ tau           5   1.12071741              46
+ #popped           6           3
+ #selectset contacts         832
+ selectset done           3
+ eigen done           3
+ tau           7  0.260883123              12
+ #popped           7           2
+ #selectset contacts         832
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts         832
+ selectset done           1
+ eigen done           1
+ tau           9   1.12581062              28
+ #popped           3           0
+ #selectset contacts         832
+ selectset done           0
+ eigen done           0
+ tau          11  0.810881972              57
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    CYTOKINE                                13-SEP-13   4MPL              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 2;                           SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.LI,N.W.MORRELL,Z.WEI                                                
+           0
+         107
+         107  residues read 4MPL.dssp                                                   
+  grow short strand           6           8
+  grow short strand          11          13
+  grow short strand          23          25
+  grow short strand          28          30
+ crowded segment excluded!
+  grow short strand          33          35
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  7  1  4  6  7  2  3  5
+   2     1  4  5  6  1  4  6  7  2  3
+   3     1  0  0  1  5
+   4     2  6  7  4  1  4  6  7
+   5     2  0  0  2  2  3
+   6     4  8  9  2  1  4
+   7     4  0  0  2  6  7
+   8     6  0  0  1  1
+   9     6  0  0  1  4
+  10     0  0  0  2  2  3
+  11     0  0  0  0
+  12     0  0  0  1  5
+  13     0  0  0  0
+   1 +   0  2  3  7  1  1  7
+   2 *   1  4  5  6  2  1  4  6  7
+   3 =   1  0  0  1  1  5  5
+   4 -   2  6  7  4  3  1  1  4  4  6  7
+   5 -   2  0  0  2  1  2  3
+   6 -   4  8  9  2  2  1  1  4  4
+   7 -   4  0  0  2  1  6  7
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  4  4
+
+ CHAIN : 4MPLA
+

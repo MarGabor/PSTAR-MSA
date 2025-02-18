@@ -1,0 +1,33 @@
+# Job: rvp
+# Query: 1IVPB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1FMB-A 15.3  1.6   98   104   36   MOLECULE: EIAV PROTEASE;                                             
+
+# Pairwise alignments
+
+No 1: Query=1IVPB Sbjct=1FMBA Z-score=15.3
+
+DSSP  LLLLLLLLLEEEEEELLEEEEEEELLLLLLLEE-LLLL-----LLLLLEEEEEEELLEEE
+Query PQFSLWKRPVVTAYIEGQPVEVLLDTGADDSIV-AGIE-----LGNNYSPKIVGGIGGFI   54
+ident     | |||     |   |  |||||||| |             |  |     || ||  
+Sbjct VTYNLEKRPTTIVLINDTPLNVLLDTGADTSVLtTAHYnrlkyRGRKYQGTGIGGVGGNV   60
+DSSP  LLLLLLLLLEEEEEELLEEEEEEELLLLLLLEEeHHHHhhlllLLLLEELLLEEELLEEE
+
+DSSP  EEEEEEeEEEEELLEEEEEEEEELLLLLEEELHHHHHHHLLEEELl
+Query NTLEYKnVEIEVLNKKVRATIMTGDTPINIFGRNILTALGMSLNLx  100
+ident  |     | |              | |  | || ||  ||  | | 
+Sbjct ETFSTP-VTIKKKGRHIKTRMLVADIPVTILGRDILQDLGAKLVL-  104
+DSSP  LLEEEE-EEEEELLEEEEEEEEEELLLLLEELHHHHHHLLLLLLL-
+
+
+# Structural equivalences
+   1: 1IVP-B 1FMB-A     1 -  33 <=>    1 -  33   (PRO    1  - VAL   33  <=> VAL    1  - LEU   33 )                          
+   1: 1IVP-B 1FMB-A    34 -  37 <=>   35 -  38   (ALA   34  - GLU   37  <=> THR   35  - TYR   38 )                          
+   1: 1IVP-B 1FMB-A    38 -  60 <=>   44 -  66   (LEU   38  - LYS   60  <=> ARG   44  - PRO   66 )                          
+   1: 1IVP-B 1FMB-A    62 -  99 <=>   67 - 104   (VAL   62  - LEU   99  <=> VAL   67  - LEU  104 )                          
+
+# Translation-rotation matrices
+-matrix  "1IVP-B 1FMB-A  U(1,.)   0.636369 -0.771299 -0.011526           15.848998"
+-matrix  "1IVP-B 1FMB-A  U(2,.)  -0.752435 -0.617375 -0.229543           29.627302"
+-matrix  "1IVP-B 1FMB-A  U(3,.)   0.169930  0.154747 -0.973230           17.723961"
+

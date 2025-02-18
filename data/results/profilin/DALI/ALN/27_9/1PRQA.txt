@@ -1,0 +1,39 @@
+# Job: profilin
+# Query: 1PRQA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6IQJ-B 21.2  1.6  125   131   38   MOLECULE: PROFILIN-2;                                                
+
+# Pairwise alignments
+
+No 1: Query=1PRQA Sbjct=6IQJB Z-score=21.2
+
+DSSP  -LHHHHHHLLLHHHL---LLLEEEEEELLLLEEEELLLL-LLLHHHHHHHHHHLLLLHHH
+Query -SWQTYVDTNLVGTG---AVTQAAILGLDGNTWATSAGF-AVTPAQGQTLASAFNNADPI   55
+ident  ||| |||  |         | ||| | ||  || |  |    ||        |  |   
+Sbjct mSWQSYVDDHLMCEVegnHLTHAAIFGQDGSVWAQSSAFpQLKPAEIAGINKDFEEAGHL   60
+DSSP  lLHHHHHHHHLLLLLlllLLLEEEEEELLLLEEEELLLLlLLLHHHHHHHHHHHHLLLLL
+
+DSSP  HLLLEEELLEEEEEEEE-LLLEEEEEELLEEEEEEELLLEEEEEEELLLLLHHHHHHHHH
+Query RASGFDLAGVHYVTLRA-DDRSIYGKKGSAGVITVKTSKSILVGVYNEKIQPGTAANVVE  114
+ident    |  | |  |          | ||||  ||   ||      | | |    |    |||
+Sbjct APTGLFLGGEKYMVVQGeAGAVIRGKKGPGGVTIKKTTQALVFGIYDEPMTGGQCNLVVE  120
+DSSP  LLLLEEELLEEEEELLLlLLLEEEEEELLEEEEEEELLLEEEEEEELLLLLHHHHHHHHH
+
+DSSP  HHHHHHHHLLL
+Query KLADYLIGQGF  125
+ident  | ||||  | 
+Sbjct RLGDYLIESGL  131
+DSSP  HHHHHHHHLLL
+
+
+# Structural equivalences
+   1: 1PRQ-A 6IQJ-B     1 -  14 <=>    2 -  15   (SER    1  - GLY   14  <=> SER    2  - VAL   15 )                          
+   1: 1PRQ-A 6IQJ-B    15 -  35 <=>   19 -  39   (ALA   15  - PHE   35  <=> HIS   19  - PHE   39 )                          
+   1: 1PRQ-A 6IQJ-B    36 -  72 <=>   41 -  77   (ALA   36  - ALA   72  <=> GLN   41  - GLY   77 )                          
+   1: 1PRQ-A 6IQJ-B    73 - 125 <=>   79 - 131   (ASP   73  - PHE  125  <=> ALA   79  - LEU  131 )                          
+
+# Translation-rotation matrices
+-matrix  "1PRQ-A 6IQJ-B  U(1,.)  -0.907636 -0.378745 -0.180967           71.602310"
+-matrix  "1PRQ-A 6IQJ-B  U(2,.)   0.419661 -0.828055 -0.371764          -71.598152"
+-matrix  "1PRQ-A 6IQJ-B  U(3,.)  -0.009047 -0.413372  0.910517           -8.591738"
+

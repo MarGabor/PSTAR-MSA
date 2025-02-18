@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1LHT-A 17.9  1.8  136   153   20   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1LHTA Z-score=17.9
+
+DSSP  -LLHHHHHHHHHHHHLLLL----LHHHHHHHHHHHLHHHHLLLLLLLL-LLHHHHLLLHH
+Query -LSADQISTVQASFDKVKG----DPVGILYAVFKADPSIMAKFTQFAG-KDLESIKGTAP   54
+ident  || |    |     ||               |   |     |  |         |    
+Sbjct gLSDDEWNHVLGIWAKVEPdlsaHGQEVIIRLFQLHPETQERFAKFKNlTTIDALKSSEE   60
+DSSP  lLLHHHHHHHHHHHHHHHHhhhhHHHHHHHHHHHHLHHHHHHLHHHLLlLLHHHHHHLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHH-HLLLHHHHHHHHHHHHHHHHHHL-
+Query FETHANRIVGFFSKIIGELPNIEADVNTFVASHKP-RGVTHDQLNNFRAGFVSYMKAHT-  112
+ident    |          |     | |        ||          |       |        
+Sbjct VKKHGTTVLTALGRILKQKNNHEQELKPLAESHATkHKIPVKYLEFICEIIVKVIAEKHp  120
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHlLLLLHHHHHHHHHHHHHHHHHHLl
+
+DSSP  -LHHH-HHHHHHHHHHHHHHHHHLLL-------
+Query -DFAG-AEAAWGATLDTFFGMIFSKM-------  136
+ident  ||     ||    |  |     ||        
+Sbjct sDFGAdSQAAMKKALELFRNDMASKYkefgfqg  153
+DSSP  lLLLHhHHHHHHHHHHHHHHHHHHHHhllllll
+
+
+# Structural equivalences
+   1: 1ECN-A 1LHT-A     1 -  18 <=>    2 -  19   (LEU    1  - GLY   18  <=> LEU    2  - PRO   19 )                          
+   1: 1ECN-A 1LHT-A    19 -  43 <=>   24 -  48   (ASP   19  - GLY   43  <=> HIS   24  - ASN   48 )                          
+   1: 1ECN-A 1LHT-A    44 -  89 <=>   50 -  95   (LYS   44  - PRO   89  <=> THR   50  - THR   95 )                          
+   1: 1ECN-A 1LHT-A    90 - 112 <=>   97 - 119   (ARG   90  - THR  112  <=> HIS   97  - HIS  119 )                          
+   1: 1ECN-A 1LHT-A   113 - 116 <=>  122 - 125   (ASP  113  - GLY  116  <=> ASP  122  - ALA  125 )                          
+   1: 1ECN-A 1LHT-A   117 - 136 <=>  127 - 146   (ALA  117  - MET  136  <=> SER  127  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1LHT-A  U(1,.)  -0.414291  0.113319  0.903063           -3.240825"
+-matrix  "1ECN-A 1LHT-A  U(2,.)  -0.630591 -0.751212 -0.195027           27.840446"
+-matrix  "1ECN-A 1LHT-A  U(3,.)   0.656291 -0.650261  0.382678           10.061354"
+

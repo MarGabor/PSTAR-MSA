@@ -1,0 +1,33 @@
+# Job: scorptoxin
+# Query: 1OZZA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1DQ7-B  3.2  2.2   36    64   36   MOLECULE: NEUROTOXIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1OZZA Sbjct=1DQ7B Z-score=3.2
+
+DSSP  --LEEE-------EELLlllllllLLHHHHHHHHLLLEEEEELHH--hLEEEEEL-----
+Query --DKLI-------GSCVwgavnytSNCNAECKRRGYKGGHCGSFA--nVNCWCET-----   44
+ident   |  |         |          | | |       | |       | ||||      
+Sbjct geDGYIadgdnctYICT-----fnNYCHALCTDKKGDSGACDWWVpygVVCWCEDlptpv   55
+DSSP  leEELLlllllllLLLL-----lhHHHHHHHHLLLLLEEEEEEEElleEEEEEEEellll
+
+DSSP  ---------
+Query ---------   44
+ident          
+Sbjct pirgsgkcr   64
+DSSP  lllllllll
+
+
+# Structural equivalences
+   1: 1OZZ-A 1DQ7-B     1 -   4 <=>    3 -   6   (ASP    1  - ILE    4  <=> ASP    3  - ILE    6 )                          
+   1: 1OZZ-A 1DQ7-B     5 -   8 <=>   14 -  17   (GLY    5  - VAL    8  <=> TYR   14  - THR   17 )                          
+   1: 1OZZ-A 1DQ7-B    16 -  36 <=>   20 -  40   (SER   16  - ALA   36  <=> ASN   20  - VAL   40 )                          
+   1: 1OZZ-A 1DQ7-B    38 -  44 <=>   44 -  50   (VAL   38  - THR   44  <=> VAL   44  - ASP   50 )                          
+
+# Translation-rotation matrices
+-matrix  "1OZZ-A 1DQ7-B  U(1,.)   0.237558  0.775492  0.584961          -34.939827"
+-matrix  "1OZZ-A 1DQ7-B  U(2,.)   0.968594 -0.234632 -0.082300           -7.453325"
+-matrix  "1OZZ-A 1DQ7-B  U(3,.)   0.073427  0.586141 -0.806875           20.707226"
+

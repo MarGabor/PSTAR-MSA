@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1OUTB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CG8-B 21.3  1.5  140   141   29   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1OUTB Sbjct=1CG8B Z-score=21.3
+
+DSSP  LLLLHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHLHHHLLLllhhhHHHLHHH
+Query VEWTDAEKSTISAVWGKVNIDEIGPLALARVLIVYPWTQRYFGSFGNVstpaaIMGNPKV   60
+ident |         |  ||  |    |   || ||  ||||| | |                 |
+Sbjct VKLSEDQEHYIKGVWKDVDHKQITAKALERVFVVYPWTTRLFSKLQGL----fSANDIGV   56
+DSSP  LLLLHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLHHHHLLLHHHLLL----lLLLLHHH
+
+DSSP  HHHHHHHHHLHHHHHHLLLLHHHHLHHHHHHHHHlLLLLLHHHHHHHHHHHHHHHHHHHH
+Query AAHGKVVCGALDKAVKNMGNILATYKSLSETHANkLFVDPDNFRVLADVLTIVIAAKFGA  120
+ident   |   |  ||  |             ||  |     ||  ||  |        |     
+Sbjct QQHADKVQRALGEAIDDLKKVEINFQNLSGKHQE-IGVDTQNFKLLGQTFMVELALHYKK  115
+DSSP  HHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHH-HLLLLLHHHHHHHHHHHHHHHHHHH
+
+DSSP  HLLHHHHHHHHHHHHHHHHHHLLLLL
+Query SFTPEIQATWQKFMKVVVAAMGSRYF  146
+ident  | |   |   ||   |  |  | | 
+Sbjct TFRPKEHAAAYKFFRLVAEALSSNYH  141
+DSSP  HLLHHHHHHHHHHHHHHHHHHHHLLL
+
+
+# Structural equivalences
+   1: 1OUT-B 1CG8-B     1 -  48 <=>    1 -  48   (VAL    1  - VAL   48  <=> VAL    1  - LEU   48 )                          
+   1: 1OUT-B 1CG8-B    54 -  94 <=>   50 -  90   (ILE   54  - ASN   94  <=> SER   50  - GLU   90 )                          
+   1: 1OUT-B 1CG8-B    96 - 146 <=>   91 - 141   (LEU   96  - PHE  146  <=> ILE   91  - HIS  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1OUT-B 1CG8-B  U(1,.)  -0.022668  0.563110  0.826071           -3.898515"
+-matrix  "1OUT-B 1CG8-B  U(2,.)  -0.131085 -0.820824  0.555936           58.236115"
+-matrix  "1OUT-B 1CG8-B  U(3,.)   0.991112 -0.095683  0.092422           54.508949"
+

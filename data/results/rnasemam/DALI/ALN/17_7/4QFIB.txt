@@ -1,0 +1,41 @@
+# Job: rnasemam
+# Query: 4QFIB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2RNF-B 17.0  1.5  110   120   45   MOLECULE: RIBONUCLEASE 4;                                            
+
+# Pairwise alignments
+
+No 1: Query=4QFIB Sbjct=2RNFB Z-score=17.0
+
+DSSP  --LHHHHHHHHHHLLLLLLLLLHHHHHHHHHHLLLLL-LLLLEEEEELLLHHHHHHHHLl
+Query --DPRYTKFLTQHYDAKPKGRDARYCESMMRRRGLTS-PCKEVNTFIHGNKGSIKAICGa   57
+ident   |  |  || ||      |   |||  || ||  |   ||  |||||     |  ||  
+Sbjct mqDGMYQRFLRQHVHPEETGGSDRYCNLMMQRRKMTLyHCKRFNTFIHEDIWNIRSICS-   59
+DSSP  lhHHHHHHHHHHHLLLLLLLLLHHHHHHHHHHLLLLLlLLLLEEEEELLLHHHHHHHHH-
+
+DSSP  lEEEEL-----LLEEEEllLEEEEEEEEELLLLLLLLEEEEEEEEELLEEEEEL--LEEE
+Query nGSPYG-----ENLRISqsPFQITTCKHTGGSPRPPCRYRASAGFRHVVIACEN--GLPV  110
+ident             |          | |  || |  | ||||| |  | ||||||     ||
+Sbjct -TTNIQckngkMNCHEG--VVKVTDCRDTGSSRAPNCRYRAIASTRRVVIACEGnpQVPV  116
+DSSP  -LLLLLlllllLLEEEE--EEEEEEEEELLLLLLLLLLEEEEEEEEEEEEEEELllLEEE
+
+DSSP  EELLlll
+Query HFDEsfi  117
+ident |||    
+Sbjct HFDG---  120
+DSSP  EELL---
+
+
+# Structural equivalences
+   1: 4QFI-B 2RNF-B     1 -  35 <=>    3 -  37   (ASP    3  - SER   37  <=> ASP    2  - LEU   36 )                          
+   1: 4QFI-B 2RNF-B    36 -  56 <=>   39 -  59   (PRO   38  - GLY   58  <=> HIS   38  - SER   58 )                          
+   1: 4QFI-B 2RNF-B    59 -  63 <=>   60 -  64   (GLY   61  - GLY   65  <=> THR   59  - GLN   63 )                          
+   1: 4QFI-B 2RNF-B    64 -  69 <=>   70 -  75   (GLU   66  - SER   71  <=> MET   69  - GLY   74 )                          
+   1: 4QFI-B 2RNF-B    72 - 106 <=>   76 - 110   (PRO   74  - ASN  108  <=> VAL   75  - GLY  109 )                          
+   1: 4QFI-B 2RNF-B   107 - 114 <=>  113 - 120   (GLY  109  - GLU  116  <=> GLN  112  - GLY  119 )                          
+
+# Translation-rotation matrices
+-matrix  "4QFI-B 2RNF-B  U(1,.)  -0.235422 -0.607270  0.758814          -12.064221"
+-matrix  "4QFI-B 2RNF-B  U(2,.)   0.207283 -0.794168 -0.571254           31.774332"
+-matrix  "4QFI-B 2RNF-B  U(3,.)   0.949532  0.022804  0.312841           36.573032"
+

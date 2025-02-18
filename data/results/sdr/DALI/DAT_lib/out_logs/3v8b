@@ -1,0 +1,825 @@
+A length: 256
+B length: 256
+C length: 254
+D length: 255
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1909
+Total number of ignored atom records:         21
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              COMPND   2 MOLECULE: PUTATIVE DEHYDROGENASE, POSSIBLY 3-OXOACYL-[ACYL-          SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2357
+ selectset done           0
+ eigen done           0
+ tau           1   2.05962038              87         112         136         163         181         223         246
+ #popped           2           1
+ #selectset contacts        2357
+ selectset done           1
+ eigen done           1
+ tau           3   1.35476136              87
+ #popped           4           2
+ #selectset contacts        2357
+ selectset done           2
+ eigen done           2
+ tau           5   1.62242174              57          77
+ #popped           6           3
+ #selectset contacts        2357
+ selectset done           3
+ eigen done           3
+ tau           7  0.894642889              33          47
+ #popped           8           3
+ #selectset contacts        2357
+ selectset done           3
+ eigen done           3
+ tau           9  0.655343175              11          21
+ #popped          10           3
+ #selectset contacts        2357
+ selectset done           3
+ eigen done           3
+ tau          11  0.451467991              57
+ #popped          12           3
+ #selectset contacts        2357
+ selectset done           3
+ eigen done           3
+ tau          13  0.368811697              11
+ #popped          15           3
+ #selectset contacts        2357
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped           7           2
+ #selectset contacts        2357
+ selectset done           2
+ eigen done           2
+ tau          15  0.773769677              67
+ #popped           5           1
+ #selectset contacts        2357
+ selectset done           1
+ eigen done           1
+ tau          17   1.78333914             181         236
+ #popped          18           1
+ #selectset contacts        2357
+ selectset done           1
+ eigen done           1
+ tau          19   1.54099154             125
+ #popped          21           1
+ #selectset contacts        2357
+ selectset done           1
+ eigen done           1
+ tau          21  0.759594560             181
+ #popped          22           1
+ #selectset contacts        2357
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2357
+ selectset done           0
+ eigen done           0
+ tau          23   2.10903907             112         147         163         193         204
+ #popped          24           1
+ #selectset contacts        2357
+ selectset done           1
+ eigen done           1
+ tau          25   1.05890954              99         163
+ #popped          26           2
+ #selectset contacts        2357
+ selectset done           2
+ eigen done           2
+ tau          27   0.00000000    
+ #popped          27           1
+ #selectset contacts        2357
+ selectset done           1
+ eigen done           1
+ tau          27   2.69907403             112
+ #popped          25           0
+ #selectset contacts        2357
+ selectset done           0
+ eigen done           0
+ tau          29  0.553160906             193
+ #popped          30           1
+ #selectset contacts        2357
+ selectset done           1
+ eigen done           1
+ tau          31  0.896706223             147
+ #popped          31           0
+ #selectset contacts        2357
+ selectset done           0
+ eigen done           0
+ tau          33   1.45197141             223
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              COMPND   2 MOLECULE: PUTATIVE DEHYDROGENASE, POSSIBLY 3-OXOACYL-[ACYL-          SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+           0
+         257
+         257  residues read 3V8B.dssp                                                   
+  grow short strand           4           8
+  grow short strand          53          57
+  grow short strand          82          85
+  exclude short helix         200         203
+  exclude short helix         215         217
+  exclude short helix         237         239
+  grow short strand         246         249
+  exclude short helix         253         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  5  7  2  4  6  9 10 12 13  8 11 14
+   2     1  4  5 11  1  3  5  7  2  4  6  9 10 12 13
+   3     1 24 25  3  8 11 14
+   4     2  6  7  7  1  3  5  7  2  4  6
+   5     2 18 19  4  9 10 12 13
+   6     4  8  9  6  1  3  5  7  2  4
+   7     4  0  0  1  6
+   8     6 10 11  5  1  3  5  7  2
+   9     6  0  0  1  4
+  10     8 12 13  4  1  3  5  7
+  11     8  0  0  1  2
+  12    10 14 15  3  1  3  5
+  13    10  0  0  1  7
+  14    12  0  0  1  1
+  15    12  0  0  2  3  5
+  16     0  0  0  0
+  17     0  0  0  1  6
+  18     5 20 21  3  9 10 12
+  19     5  0  0  1 13
+  20    18  0  0  1  9
+  21    18  0  0  2 10 12
+  22     0  0  0  2 10 12
+  23     0  0  0  0
+  24     3 28 29  2  8 11
+  25     3  0  0  1 14
+  26     0  0  0  0
+  27     0  0  0  2  8 11
+  28    24  0  0  1  8
+  29    24  0  0  1 11
+  30     0  0  0  0
+  31     0  0  0  1 14
+  32     0  0  0  0
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1 14
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 11  3  1  7  9 10 12 13
+   3 -   1 20 21  3  3  8  8 11 11 14 14
+   4 -   2  6  7  7  1  1  7
+   5 -   2 16 17  4  2  9 10 12 13
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  5  3  1  3  5  5  7  7
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  4  4  1  1  3  3  5  5  7  7
+  11 -   8  0  0  1  1  2  2
+  12 -  10 14 15  3  3  1  1  3  3  5  5
+  13 -  10  0  0  1  1  7  7
+  14 -  12  0  0  1  1  1  1
+  15 -  12  0  0  2  2  3  3  5  5
+  16 -   5 18 19  3  2  9 10 12 12
+  17 -   5  0  0  1  1 13 13
+  18 -  16  0  0  1  1  9  9
+  19 -  16  0  0  2  2 10 10 12 12
+  20 -   3 22 23  2  2  8  8 11 11
+  21 -   3  0  0  1  1 14 14
+  22 -  20  0  0  1  1  8  8
+  23 -  20  0  0  1  1 11 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1909
+Total number of ignored atom records:         31
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              COMPND   2 MOLECULE: PUTATIVE DEHYDROGENASE, POSSIBLY 3-OXOACYL-[ACYL-          SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2346
+ selectset done           0
+ eigen done           0
+ tau           1   1.04101014              57          83         111         147         160         186         204         221         243
+ #popped           2           1
+ #selectset contacts        2346
+ selectset done           1
+ eigen done           1
+ tau           3   2.90794277              57
+ #popped           4           2
+ #selectset contacts        2346
+ selectset done           2
+ eigen done           2
+ tau           5  0.874779522              30
+ #popped           6           3
+ #selectset contacts        2346
+ selectset done           3
+ eigen done           3
+ tau           7  0.368716121              19
+ #popped           7           2
+ #selectset contacts        2346
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2346
+ selectset done           1
+ eigen done           1
+ tau           9   2.89330912             204
+ #popped          10           2
+ #selectset contacts        2346
+ selectset done           2
+ eigen done           2
+ tau          11   1.05305815              93         160
+ #popped          12           3
+ #selectset contacts        2346
+ selectset done           3
+ eigen done           3
+ tau          13  0.946296334              93
+ #popped          13           2
+ #selectset contacts        2346
+ selectset done           2
+ eigen done           2
+ tau          15   1.79076469             111
+ #popped          11           1
+ #selectset contacts        2346
+ selectset done           1
+ eigen done           1
+ tau          17  0.888988793             232
+ #popped           3           0
+ #selectset contacts        2346
+ selectset done           0
+ eigen done           0
+ tau          19   2.25494099             132
+ #popped          20           1
+ #selectset contacts        2346
+ selectset done           1
+ eigen done           1
+ tau          21   1.06378376              83         121
+ #popped          22           1
+ #selectset contacts        2346
+ selectset done           1
+ eigen done           1
+ tau          23   1.57500005              73
+ #popped          25           1
+ #selectset contacts        2346
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          21           0
+ #selectset contacts        2346
+ selectset done           0
+ eigen done           0
+ tau          25  0.743080437             186
+ #popped          26           1
+ #selectset contacts        2346
+ selectset done           1
+ eigen done           1
+ tau          27  0.501143456             147
+ #popped          29           1
+ #selectset contacts        2346
+ selectset done           1
+ eigen done           1
+ tau          29   1.07418168             176
+ #popped          27           0
+ #selectset contacts        2346
+ selectset done           0
+ eigen done           0
+ tau          31   1.30335546             221
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              COMPND   2 MOLECULE: PUTATIVE DEHYDROGENASE, POSSIBLY 3-OXOACYL-[ACYL-          SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+           0
+         257
+         257  residues read 3V8B.dssp                                                   
+  grow short strand           4           7
+  grow short strand          53          57
+  grow short strand          82          85
+  exclude short helix         200         203
+  exclude short helix         215         217
+  exclude short helix         237         239
+  grow short strand         246         249
+  exclude short helix         253         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  5 12  6  7  8  9 10 11 13
+   2     1  4  5  6  1  2  3  4  5 12
+   3     1 20 21  7  6  7  8  9 10 11 13
+   4     2  6  7  5  1  2  3  4  5
+   5     2  0  0  1 12
+   6     4  8  9  3  1  2  3
+   7     4  0  0  2  4  5
+   8     6  0  0  2  1  2
+   9     6  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  1 12
+  12     0  0  0  0
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  0
+  18     0  0  0  1 12
+  19     0  0  0  0
+  20     3 22 23  3  6  7  8
+  21     3 26 27  4  9 10 11 13
+  22    20 24 25  2  6  7
+  23    20  0  0  1  8
+  24    22  0  0  1  6
+  25    22  0  0  1  7
+  26    21 28 29  3  9 10 11
+  27    21  0  0  1 13
+  28    26  0  0  1  9
+  29    26 30 31  2 10 11
+  30    29  0  0  1 10
+  31    29  0  0  1 11
+  32     0  0  0  0
+  33     0  0  0  1 13
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  6  2  1  5 12 12
+   3 -   1 10 11  7  2  6 11 13 13
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  1  1  3  3
+  10 -   3 12 13  3  1  6  8
+  11 -   3 16 17  4  2  9 11 13 13
+  12 -  10 14 15  2  1  6  7
+  13 -  10  0  0  1  1  8  8
+  14 -  12  0  0  1  1  6  6
+  15 -  12  0  0  1  1  7  7
+  16 -  11 18 19  3  1  9 11
+  17 -  11  0  0  1  1 13 13
+  18 -  16  0  0  1  1  9  9
+  19 -  16 20 21  2  1 10 11
+  20 -  19  0  0  1  1 10 10
+  21 -  19  0  0  1  1 11 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1896
+Total number of ignored atom records:         17
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              COMPND   2 MOLECULE: PUTATIVE DEHYDROGENASE, POSSIBLY 3-OXOACYL-[ACYL-          SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2351
+ selectset done           0
+ eigen done           0
+ tau           1   2.03007674              85         119         134         168         179         220         244
+ #popped           2           1
+ #selectset contacts        2351
+ selectset done           1
+ eigen done           1
+ tau           3   1.36845708              85
+ #popped           4           2
+ #selectset contacts        2351
+ selectset done           2
+ eigen done           2
+ tau           5   1.80782139              55          75
+ #popped           6           3
+ #selectset contacts        2351
+ selectset done           3
+ eigen done           3
+ tau           7  0.555046022              18          55
+ #popped           8           4
+ #selectset contacts        2351
+ selectset done           4
+ eigen done           4
+ tau           9  0.360200375              18
+ #popped           9           3
+ #selectset contacts        2351
+ selectset done           3
+ eigen done           3
+ tau          11  0.560861945              29
+ #popped          13           3
+ #selectset contacts        2351
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2351
+ selectset done           2
+ eigen done           2
+ tau          13  0.759170234              65
+ #popped           5           1
+ #selectset contacts        2351
+ selectset done           1
+ eigen done           1
+ tau          15   2.00039554             179         233
+ #popped          16           1
+ #selectset contacts        2351
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        2351
+ selectset done           0
+ eigen done           0
+ tau          17   2.23432660             119         145         168         189         204
+ #popped          18           1
+ #selectset contacts        2351
+ selectset done           1
+ eigen done           1
+ tau          19   1.37061167             168
+ #popped          20           1
+ #selectset contacts        2351
+ selectset done           1
+ eigen done           1
+ tau          21   1.06748271             109
+ #popped          22           2
+ #selectset contacts        2351
+ selectset done           2
+ eigen done           2
+ tau          23  0.864159942              97
+ #popped          23           1
+ #selectset contacts        2351
+ selectset done           1
+ eigen done           1
+ tau          25   9.03581238             119
+ #popped          27           1
+ #selectset contacts        2351
+ selectset done           1
+ eigen done           1
+ tau          27  0.833333313             157
+ #popped          19           0
+ #selectset contacts        2351
+ selectset done           0
+ eigen done           0
+ tau          29  0.769662917             145
+ #popped          31           0
+ #selectset contacts        2351
+ selectset done           0
+ eigen done           0
+ tau          31   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              COMPND   2 MOLECULE: PUTATIVE DEHYDROGENASE, POSSIBLY 3-OXOACYL-[ACYL-          SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+           0
+         255
+         255  residues read 3V8B.dssp                                                   
+  grow short strand           2           6
+  grow short strand          51          55
+  grow short strand          80          83
+  exclude short helix         198         201
+  exclude short helix         213         215
+  exclude short helix         235         237
+  grow short strand         244         247
+  exclude short helix         251         254
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  7  3  4  5  6 10 12 13  8  9 11 14
+   2     1  4  5 10  1  2  7  3  4  5  6 10 12 13
+   3     1 18 19  4  8  9 11 14
+   4     2  6  7  7  1  2  7  3  4  5  6
+   5     2 16 17  3 10 12 13
+   6     4  8  9  6  1  2  7  3  4  5
+   7     4  0  0  1  6
+   8     6 10 11  3  1  2  7
+   9     6 12 13  3  3  4  5
+  10     8  0  0  2  1  2
+  11     8  0  0  1  7
+  12     9  0  0  1  3
+  13     9  0  0  2  4  5
+  14     0  0  0  0
+  15     0  0  0  1  6
+  16     5  0  0  2 10 12
+  17     5  0  0  1 13
+  18     3 22 23  3  8  9 11
+  19     3  0  0  1 14
+  20     0  0  0  3  8  9 11
+  21     0  0  0  0
+  22    18  0  0  1  8
+  23    18 26 27  2  9 11
+  24     0  0  0  0
+  25     0  0  0  1  8
+  26    23  0  0  1  9
+  27    23  0  0  1 11
+  28     0  0  0  0
+  29     0  0  0  1 11
+  30     0  0  0  0
+  31     0  0  0  1 14
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 10  3  1  7 10 10 12 13
+   3 -   1 16 17  4  3  8  9 11 11 14 14
+   4 -   2  6  7  7  1  1  7
+   5 -   2 14 15  3  2 10 10 12 13
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  3  2  1  2  7  7
+   9 -   6 12 13  3  1  3  5
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  1  1  7  7
+  12 -   9  0  0  1  1  3  3
+  13 -   9  0  0  2  1  4  5
+  14 -   5  0  0  2  2 10 10 12 12
+  15 -   5  0  0  1  1 13 13
+  16 -   3 18 19  3  2  8  9 11 11
+  17 -   3  0  0  1  1 14 14
+  18 -  16  0  0  1  1  8  8
+  19 -  16 20 21  2  2  9  9 11 11
+  20 -  19  0  0  1  1  9  9
+  21 -  19  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            256
+Total number of atoms read in:              1902
+Total number of ignored atom records:         29
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR,         
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              COMPND   2 MOLECULE: PUTATIVE DEHYDROGENASE, POSSIBLY 3-OXOACYL-[ACYL-          SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+         256  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2325
+ selectset done           0
+ eigen done           0
+ tau           1   2.23369741              86         110         136         158         181         221         246
+ #popped           2           1
+ #selectset contacts        2325
+ selectset done           1
+ eigen done           1
+ tau           3   1.43077242              86
+ #popped           4           2
+ #selectset contacts        2325
+ selectset done           2
+ eigen done           2
+ tau           5   1.75113261              57          76
+ #popped           6           2
+ #selectset contacts        2325
+ selectset done           2
+ eigen done           2
+ tau           7  0.851099849              31          57
+ #popped           8           3
+ #selectset contacts        2325
+ selectset done           3
+ eigen done           3
+ tau           9  0.234938785              20
+ #popped          10           4
+ #selectset contacts        2325
+ selectset done           4
+ eigen done           4
+ tau          11   1.10685480              10
+ #popped          11           3
+ #selectset contacts        2325
+ selectset done           3
+ eigen done           3
+ tau          13   999.999023              31
+ #popped           9           2
+ #selectset contacts        2325
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2325
+ selectset done           1
+ eigen done           1
+ tau          15   1.82559431             181         235
+ #popped          16           1
+ #selectset contacts        2325
+ selectset done           1
+ eigen done           1
+ tau          17   1.53793657             124
+ #popped          19           1
+ #selectset contacts        2325
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2325
+ selectset done           0
+ eigen done           0
+ tau          19   1.75198615             110         192         202
+ #popped          20           1
+ #selectset contacts        2325
+ selectset done           1
+ eigen done           1
+ tau          21   1.19584334              98         110
+ #popped          22           1
+ #selectset contacts        2325
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        2325
+ selectset done           0
+ eigen done           0
+ tau          23   1.44988859             158
+ #popped          24           1
+ #selectset contacts        2325
+ selectset done           1
+ eigen done           1
+ tau          25  0.823842943             148
+ #popped          25           0
+ #selectset contacts        2325
+ selectset done           0
+ eigen done           0
+ tau          27  0.580966413             192
+ #popped          29           0
+ #selectset contacts        2325
+ selectset done           0
+ eigen done           0
+ tau          29   1.04357803             221
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          22-DEC-11   3V8B              COMPND   2 MOLECULE: PUTATIVE DEHYDROGENASE, POSSIBLY 3-OXOACYL-[ACYL-          SOURCE   2 ORGANISM_SCIENTIFIC: SINORHIZOBIUM MELILOTI;                         AUTHOR    D.KUMARAN,S.CHAMALA,B.EVANS,R.FOTI,A.GIZZI,B.HILLERICH,A.KAR          
+           0
+         256
+         256  residues read 3V8B.dssp                                                   
+  grow short strand           3           7
+  grow short strand          52          56
+  grow short strand          81          84
+  exclude short helix         122         127
+  exclude short helix         199         202
+  exclude short helix         214         216
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  7  4  5  6  9 10 11 13 12  8
+   2     1  4  5 12  1  2  3  7  4  5  6  9 10 11 13 12
+   3     1  0  0  1  8
+   4     2  6  7  7  1  2  3  7  4  5  6
+   5     2 16 17  5  9 10 11 13 12
+   6     4  8  9  6  1  2  3  7  4  5
+   7     4  0  0  1  6
+   8     6 10 11  4  1  2  3  7
+   9     6  0  0  2  4  5
+  10     8 12 13  2  1  2
+  11     8 14 15  2  3  7
+  12    10  0  0  1  1
+  13    10  0  0  1  2
+  14    11  0  0  1  3
+  15    11  0  0  1  7
+  16     5  0  0  4  9 10 11 13
+  17     5  0  0  1 12
+  18     0  0  0  0
+  19     0  0  0  4  9 10 11 13
+  20     0  0  0  1  8
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 12  2  1  7  9 13
+   3 -   1  0  0  1  1  8  8
+   4 -   2  6  7  7  1  1  7
+   5 -   2 16 17  5  1  9 13
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  4  2  1  3  7  7
+   9 -   6  0  0  2  1  4  5
+  10 -   8 12 13  2  1  1  2
+  11 -   8 14 15  2  2  3  3  7  7
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  2  2
+  14 -  11  0  0  1  1  3  3
+  15 -  11  0  0  1  1  7  7
+  16 -   5  0  0  4  2  9 11 13 13
+  17 -   5  0  0  1  1 12 12
+
+ CHAIN : 3V8BA
+ CHAIN : 3V8BB
+ CHAIN : 3V8BC
+ CHAIN : 3V8BD
+

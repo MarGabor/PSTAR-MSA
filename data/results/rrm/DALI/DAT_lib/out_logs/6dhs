@@ -1,0 +1,684 @@
+A length: 172
+B length: 174
+C length: 171
+D length: 172
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            174
+Total number of atoms read in:              1060
+Total number of ignored atom records:          0
+ HEADER    SPLICING                                21-MAY-18   6DHS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+  Reading DSSP file
+ HEADER    SPLICING                                21-MAY-18   6DHS              COMPND   2 MOLECULE: HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN H;                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+         174  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1284
+ selectset done           0
+ eigen done           0
+ tau           1   10.5817356              88
+ #popped           2           1
+ #selectset contacts        1284
+ selectset done           1
+ eigen done           1
+ tau           3   1.72463763              77
+ #popped           4           1
+ #selectset contacts        1284
+ selectset done           1
+ eigen done           1
+ tau           5   1.16758239              51          61
+ #popped           6           1
+ #selectset contacts        1284
+ selectset done           1
+ eigen done           1
+ tau           7   1.04514170              13          23
+ #popped           8           1
+ #selectset contacts        1284
+ selectset done           1
+ eigen done           1
+ tau           9  0.563959837              51
+ #popped          10           1
+ #selectset contacts        1284
+ selectset done           1
+ eigen done           1
+ tau          11  0.569712579              13
+ #popped          13           1
+ #selectset contacts        1284
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1284
+ selectset done           0
+ eigen done           0
+ tau          13   1.61156631             121         132
+ #popped          14           0
+ #selectset contacts        1284
+ selectset done           0
+ eigen done           0
+ tau          15  0.843245089             102         152
+ #popped          16           1
+ #selectset contacts        1284
+ selectset done           1
+ eigen done           1
+ tau          17  0.738646328             164
+ #popped          18           1
+ #selectset contacts        1284
+ selectset done           1
+ eigen done           1
+ tau          19  0.537931025             102
+ #popped          17           0
+ #selectset contacts        1284
+ selectset done           0
+ eigen done           0
+ tau          21   1.03263640             142
+ #popped          22           0
+ #selectset contacts        1284
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SPLICING                                21-MAY-18   6DHS              COMPND   2 MOLECULE: HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN H;                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+           0
+         174
+         174  residues read 6DHS.dssp                                                   
+  grow short strand           2           5
+  grow short helix          13          19
+  grow short strand          33          36
+  exclude short helix          55          60
+  grow short strand          64          66
+  exclude short helix          79          83
+  grow short strand          93          96
+  grow short helix         104         110
+  grow short strand         155         156
+  grow short strand         159         160
+ crowded segment excluded!
+  grow short strand         162         165
+  exclude short helix         168         173
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  6  2  7 10 11  8  9
+   2     1  8  9  6  1  3  4  5  6  2
+   3     1 16 17  5  7 10 11  8  9
+   4     0  0  0  6  1  3  4  5  6  2
+   5     0  0  0  0
+   6     0  0  0  6  1  3  4  5  6  2
+   7     0  0  0  0
+   8     2 10 11  5  1  3  4  5  6
+   9     2  0  0  1  2
+  10     8 12 13  3  1  3  4
+  11     8  0  0  2  5  6
+  12    10  0  0  1  1
+  13    10  0  0  2  3  4
+  14     0  0  0  5  7 10 11  8  9
+  15     0  0  0  0
+  16     3 20 21  3  7 10 11
+  17     3 22 23  2  8  9
+  18     0  0  0  3  7 10 11
+  19     0  0  0  0
+  20    16  0  0  1  7
+  21    16  0  0  2 10 11
+  22    17  0  0  1  8
+  23    17  0  0  1  9
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  5  1  7 11
+   4 -   2  6  7  5  2  1  1  3  6
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  3  2  1  1  3  4
+   7 -   4  0  0  2  1  5  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  3  4
+  10 -   3 12 13  3  2  7  7 10 11
+  11 -   3 14 15  2  1  8  9
+  12 -  10  0  0  1  1  7  7
+  13 -  10  0  0  2  1 10 11
+  14 -  11  0  0  1  1  8  8
+  15 -  11  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            176
+Total number of atoms read in:              1121
+Total number of ignored atom records:          0
+ HEADER    SPLICING                                21-MAY-18   6DHS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+  Reading DSSP file
+ HEADER    SPLICING                                21-MAY-18   6DHS              COMPND   2 MOLECULE: HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN H;                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1278
+ selectset done           0
+ eigen done           0
+ tau           1   40.0124893              91
+ #popped           2           1
+ #selectset contacts        1278
+ selectset done           1
+ eigen done           1
+ tau           3   2.31194901              77
+ #popped           4           1
+ #selectset contacts        1278
+ selectset done           1
+ eigen done           1
+ tau           5  0.542043746              23          33          46
+ #popped           6           2
+ #selectset contacts        1278
+ selectset done           2
+ eigen done           2
+ tau           7   2.63826084              11          23
+ #popped           8           2
+ #selectset contacts        1278
+ selectset done           2
+ eigen done           2
+ tau           9  0.541633546              11
+ #popped           7           1
+ #selectset contacts        1278
+ selectset done           1
+ eigen done           1
+ tau          11   2.68330431              61
+ #popped          12           1
+ #selectset contacts        1278
+ selectset done           1
+ eigen done           1
+ tau          13  0.600392401              33
+ #popped           3           0
+ #selectset contacts        1278
+ selectset done           0
+ eigen done           0
+ tau          15   1.19195616             102         114         153         163
+ #popped          16           1
+ #selectset contacts        1278
+ selectset done           1
+ eigen done           1
+ tau          17   1.73298609             142         153
+ #popped          18           1
+ #selectset contacts        1278
+ selectset done           1
+ eigen done           1
+ tau          19  0.418616503             142
+ #popped          20           1
+ #selectset contacts        1278
+ selectset done           1
+ eigen done           1
+ tau          21  0.512109339             102
+ #popped          23           1
+ #selectset contacts        1278
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          17           0
+ #selectset contacts        1278
+ selectset done           0
+ eigen done           0
+ tau          23   4.04049063             114
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SPLICING                                21-MAY-18   6DHS              COMPND   2 MOLECULE: HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN H;                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+           0
+         176
+         176  residues read 6DHS.dssp                                                   
+  grow short strand           2           5
+  grow short helix          13          19
+  exclude short helix          28          31
+  grow short strand          32          36
+  grow short strand          66          67
+  grow short strand          70          71
+ crowded segment excluded!
+  grow short strand          73          76
+  exclude short helix          79          83
+  grow short strand          94          98
+  grow short helix         106         112
+  grow short strand         137         140
+  grow short helix         144         150
+  grow short strand         164         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  2  5  6  7  8 10 12 11  9
+   2     1  6  7  7  1  3  4  2  5  6  7
+   3     1 16 17  5  8 10 12 11  9
+   4     0  0  0  7  1  3  4  2  5  6  7
+   5     0  0  0  0
+   6     2  8  9  4  1  3  4  2
+   7     2 12 13  3  5  6  7
+   8     6 10 11  3  1  3  4
+   9     6  0  0  1  2
+  10     8  0  0  1  1
+  11     8  0  0  2  3  4
+  12     7  0  0  1  5
+  13     7  0  0  2  6  7
+  14     0  0  0  0
+  15     0  0  0  1  5
+  16     3 18 19  4  8 10 12 11
+  17     3  0  0  1  9
+  18    16 20 21  3  8 10 12
+  19    16  0  0  1 11
+  20    18 22 23  2  8 10
+  21    18  0  0  1 12
+  22    20  0  0  1  8
+  23    20  0  0  1 10
+  24     0  0  0  1  9
+  25     0  0  0  0
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  5  1  8 12
+   4 -   2  6  7  4  1  1  4
+   5 -   2 10 11  3  1  5  7
+   6 -   4  8  9  3  2  1  1  3  4
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  3  4
+  10 -   5  0  0  1  1  5  5
+  11 -   5  0  0  2  1  6  7
+  12 -   3 14 15  4  2  8  8 10 12
+  13 -   3  0  0  1  1  9  9
+  14 -  12 16 17  3  3  8  8 10 10 12 12
+  15 -  12  0  0  1  1 11 11
+  16 -  14 18 19  2  2  8  8 10 10
+  17 -  14  0  0  1  1 12 12
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1 10 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            173
+Total number of atoms read in:              1070
+Total number of ignored atom records:          0
+ HEADER    SPLICING                                21-MAY-18   6DHS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+  Reading DSSP file
+ HEADER    SPLICING                                21-MAY-18   6DHS              COMPND   2 MOLECULE: HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN H;                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+         173  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1253
+ selectset done           0
+ eigen done           0
+ tau           1   44.4612160              91
+ #popped           2           1
+ #selectset contacts        1253
+ selectset done           1
+ eigen done           1
+ tau           3   2.50899196              77
+ #popped           4           1
+ #selectset contacts        1253
+ selectset done           1
+ eigen done           1
+ tau           5  0.976559937              34          44
+ #popped           6           1
+ #selectset contacts        1253
+ selectset done           1
+ eigen done           1
+ tau           7  0.586564124              55
+ #popped           8           2
+ #selectset contacts        1253
+ selectset done           2
+ eigen done           2
+ tau           9   1.45017374              11          23
+ #popped          10           2
+ #selectset contacts        1253
+ selectset done           2
+ eigen done           2
+ tau          11  0.515483797              11
+ #popped          13           2
+ #selectset contacts        1253
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           9           1
+ #selectset contacts        1253
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1253
+ selectset done           0
+ eigen done           0
+ tau          13   1.34176707             101         115
+ #popped          14           0
+ #selectset contacts        1253
+ selectset done           0
+ eigen done           0
+ tau          15   1.50094616             153         163
+ #popped          16           0
+ #selectset contacts        1253
+ selectset done           0
+ eigen done           0
+ tau          17   1.34005773             142         153
+ #popped          18           0
+ #selectset contacts        1253
+ selectset done           0
+ eigen done           0
+ tau          19  0.520532072             142
+ #popped          20           0
+ #selectset contacts        1253
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SPLICING                                21-MAY-18   6DHS              COMPND   2 MOLECULE: HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN H;                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+           0
+         173
+         173  residues read 6DHS.dssp                                                   
+  grow short strand           2           5
+  grow short helix          13          19
+  exclude short helix          28          31
+  grow short strand          32          36
+  grow short strand          73          76
+  exclude short helix          79          83
+  grow short strand          96          98
+  grow short helix         106         112
+  grow short strand         123         124
+  grow short strand         136         139
+  grow short strand         164         165
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  2  5  6  7  9 10 12 11  8
+   2     1  8  9  6  1  3  4  2  5  6
+   3     1 14 15  6  7  9 10 12 11  8
+   4     0  0  0  6  1  3  4  2  5  6
+   5     0  0  0  0
+   6     0  0  0  6  1  3  4  2  5  6
+   7     0  0  0  0
+   8     2 10 11  4  1  3  4  2
+   9     2  0  0  2  5  6
+  10     8 12 13  3  1  3  4
+  11     8  0  0  1  2
+  12    10  0  0  1  1
+  13    10  0  0  2  3  4
+  14     3 18 19  5  7  9 10 12 11
+  15     3  0  0  1  8
+  16     0  0  0  5  7  9 10 12 11
+  17     0  0  0  0
+  18    14 20 21  4  7  9 10 12
+  19    14  0  0  1 11
+  20    18  0  0  3  7  9 10
+  21    18  0  0  1 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  6  1  7 12
+   4 -   2  6  7  4  1  1  4
+   5 -   2  0  0  2  1  5  6
+   6 -   4  8  9  3  2  1  1  3  4
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  3  4
+  10 -   3 12 13  5  2  7  7  9 12
+  11 -   3  0  0  1  1  8  8
+  12 -  10 14 15  4  3  7  7  9 10 12 12
+  13 -  10  0  0  1  1 11 11
+  14 -  12  0  0  3  2  7  7  9 10
+  15 -  12  0  0  1  1 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            174
+Total number of atoms read in:              1030
+Total number of ignored atom records:          0
+ HEADER    SPLICING                                21-MAY-18   6DHS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+  Reading DSSP file
+ HEADER    SPLICING                                21-MAY-18   6DHS              COMPND   2 MOLECULE: HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN H;                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+         174  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau           1   1.75730097              98         112
+ #popped           2           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau           3   14.3863878              88
+ #popped           4           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau           5   1.81346154              77
+ #popped           6           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau           7   1.13082039              51          63
+ #popped           8           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau           9  0.908293724              21          51
+ #popped          10           2
+ #selectset contacts        1260
+ selectset done           2
+ eigen done           2
+ tau          11   2.21339512              11          21
+ #popped          12           2
+ #selectset contacts        1260
+ selectset done           2
+ eigen done           2
+ tau          13  0.375332057              11
+ #popped          11           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           5           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau          15   1.46577692             122         134
+ #popped          16           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau          17  0.813422441             164
+ #popped          18           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau          19  0.300797939             122
+ #popped          20           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau          21   999.999023              98
+ #popped          21           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau          23   2.08579874             150
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SPLICING                                21-MAY-18   6DHS              COMPND   2 MOLECULE: HETEROGENEOUS NUCLEAR RIBONUCLEOPROTEIN H;                 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.L.MEAGHER,J.A.STUCKEY                                               
+           0
+         174
+         174  residues read 6DHS.dssp                                                   
+  grow short strand           2           5
+  grow short helix          13          19
+  exclude short helix          28          31
+  grow short strand          32          34
+  grow short strand          46          48
+  grow short strand          73          76
+  exclude short helix          79          83
+  grow short helix         104         110
+  grow short strand         135         139
+  grow short helix         142         148
+  grow short strand         155         156
+  grow short strand         159         160
+ crowded segment excluded!
+  grow short strand         162         165
+  exclude short helix         168         171
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  6  2  3  4  5  7  9 10 11 12  8
+   2     1  4  5 11  1  6  2  3  4  5  7  9 10 11 12
+   3     1  0  0  1  8
+   4     2  8  9  6  1  6  2  3  4  5
+   5     2 20 21  5  7  9 10 11 12
+   6     0  0  0  6  1  6  2  3  4  5
+   7     0  0  0  0
+   8     4 10 11  5  1  6  2  3  4
+   9     4  0  0  1  5
+  10     8 12 13  3  1  6  2
+  11     8  0  0  2  3  4
+  12    10 14 15  2  1  6
+  13    10  0  0  1  2
+  14    12  0  0  1  1
+  15    12  0  0  1  6
+  16     0  0  0  5  7  9 10 11 12
+  17     0  0  0  0
+  18     0  0  0  5  7  9 10 11 12
+  19     0  0  0  0
+  20     5  0  0  1  7
+  21     5 24 25  4  9 10 11 12
+  22     0  0  0  1  7
+  23     0  0  0  0
+  24    21  0  0  2  9 10
+  25    21  0  0  2 11 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 11  2  1  7  9 12
+   3 -   1  0  0  1  1  8  8
+   4 -   2  6  7  6  1  1  6
+   5 -   2 14 15  5  2  7  7  9 12
+   6 -   4  8  9  5  2  1  4  6  6
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  3  2  1  2  6  6
+   9 -   6  0  0  2  1  3  4
+  10 -   8 12 13  2  2  1  1  6  6
+  11 -   8  0  0  1  1  2  2
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  6  6
+  14 -   5  0  0  1  1  7  7
+  15 -   5 16 17  4  1  9 12
+  16 -  15  0  0  2  1  9 10
+  17 -  15  0  0  2  1 11 12
+
+ CHAIN : 6DHSA
+ CHAIN : 6DHSB
+ CHAIN : 6DHSC
+ CHAIN : 6DHSD
+

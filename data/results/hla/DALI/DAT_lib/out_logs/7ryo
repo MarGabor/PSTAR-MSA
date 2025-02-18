@@ -1,0 +1,688 @@
+A length: 277
+B length: 99
+C length: 238
+D length: 192
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            277
+Total number of atoms read in:              2196
+Total number of ignored atom records:         70
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              COMPND   2 MOLECULE: T-CELL SURFACE GLYCOPROTEIN CD1A;                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+         277  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2366
+ selectset done           0
+ eigen done           0
+ tau           1   12.1630535             177
+ #popped           2           1
+ #selectset contacts        2366
+ selectset done           1
+ eigen done           1
+ tau           3   1.39717031              23          63         157
+ #popped           4           2
+ #selectset contacts        2366
+ selectset done           2
+ eigen done           2
+ tau           5   1.06182790              73          87
+ #popped           6           2
+ #selectset contacts        2366
+ selectset done           2
+ eigen done           2
+ tau           7   2.27886200              23          73         143
+ #popped           8           3
+ #selectset contacts        2366
+ selectset done           3
+ eigen done           3
+ tau           9   1.55814159             115
+ #popped          10           4
+ #selectset contacts        2366
+ selectset done           4
+ eigen done           4
+ tau          11  0.364677757             105
+ #popped          12           4
+ #selectset contacts        2366
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          11           3
+ #selectset contacts        2366
+ selectset done           3
+ eigen done           3
+ tau          13  0.499107063             126
+ #popped           9           2
+ #selectset contacts        2366
+ selectset done           2
+ eigen done           2
+ tau          15   3.55102038              73
+ #popped           5           1
+ #selectset contacts        2366
+ selectset done           1
+ eigen done           1
+ tau          17   2.07389092              63
+ #popped          18           2
+ #selectset contacts        2366
+ selectset done           2
+ eigen done           2
+ tau          19   1.28828824              51
+ #popped          20           2
+ #selectset contacts        2366
+ selectset done           2
+ eigen done           2
+ tau          21  0.622299075              41
+ #popped          19           1
+ #selectset contacts        2366
+ selectset done           1
+ eigen done           1
+ tau          23  0.993548393             167
+ #popped           3           0
+ #selectset contacts        2366
+ selectset done           0
+ eigen done           0
+ tau          25  0.653549135             227         238
+ #popped          26           0
+ #selectset contacts        2366
+ selectset done           0
+ eigen done           0
+ tau          27  0.558668971             201         212         256         267
+ #popped          28           1
+ #selectset contacts        2366
+ selectset done           1
+ eigen done           1
+ tau          29  0.733595788             256
+ #popped          30           1
+ #selectset contacts        2366
+ selectset done           1
+ eigen done           1
+ tau          31  0.537495553             201
+ #popped          32           2
+ #selectset contacts        2366
+ selectset done           2
+ eigen done           2
+ tau          33   0.00000000    
+ #popped          33           1
+ #selectset contacts        2366
+ selectset done           1
+ eigen done           1
+ tau          33   0.00000000    
+ #popped          29           0
+ #selectset contacts        2366
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              COMPND   2 MOLECULE: T-CELL SURFACE GLYCOPROTEIN CD1A;                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+           0
+         277
+         277  residues read 7RYO.dssp                                                   
+  grow short strand          40          43
+  exclude short helix          46          49
+  grow short strand         124         127
+  exclude short helix         129         131
+  exclude short helix         172         175
+  grow short strand         219         220
+  grow short strand         225         226
+  grow short strand         230         231
+  exclude short helix         247         249
+  exclude short helix         260         262
+  grow short strand         267         270
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  6  7  8  9 10  5 11  3  4 12 13 14 15 16 17 19 20 21 18
+   2     1  4  5 12  1  2  6  7  8  9 10  5 11  3  4 12
+   3     1 26 27  9 13 14 15 16 17 19 20 21 18
+   4     2  8  9  9  1  2  6  7  8  9 10  5 11
+   5     2 18 19  3  3  4 12
+   6     0  0  0  9  1  2  6  7  8  9 10  5 11
+   7     0  0  0  0
+   8     4 10 11  7  1  2  6  7  8  9 10
+   9     4 16 17  2  5 11
+  10     8 12 13  4  1  2  6  7
+  11     8 14 15  3  8  9 10
+  12    10  0  0  3  1  2  6
+  13    10  0  0  1  7
+  14    11  0  0  2  8  9
+  15    11  0  0  1 10
+  16     9  0  0  1  5
+  17     9  0  0  1 11
+  18     5  0  0  2  3  4
+  19     5  0  0  1 12
+  20     0  0  0  2  3  4
+  21     0  0  0  0
+  22     0  0  0  2  3  4
+  23     0  0  0  0
+  24     0  0  0  1 12
+  25     0  0  0  0
+  26     3 30 31  8 13 14 15 16 17 19 20 21
+  27     3  0  0  1 18
+  28     0  0  0  8 13 14 15 16 17 19 20 21
+  29     0  0  0  0
+  30    26 32 33  7 13 14 15 16 17 19 20
+  31    26  0  0  1 21
+  32    30  0  0  2 13 14
+  33    30  0  0  5 15 16 17 19 20
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 12  1  1 12
+   3 *   1 18 19  9  1 13 21
+   4 -   2  6  7  9  2  1  2  5 11
+   5 -   2 16 17  3  2  3  4 12 12
+   6 -   4  8  9  7  2  1  2  6 10
+   7 -   4 14 15  2  2  5  5 11 11
+   8 -   6 10 11  4  2  1  2  6  7
+   9 -   6 12 13  3  1  8 10
+  10 -   8  0  0  3  2  1  2  6  6
+  11 -   8  0  0  1  1  7  7
+  12 -   9  0  0  2  1  8  9
+  13 -   9  0  0  1  1 10 10
+  14 -   7  0  0  1  1  5  5
+  15 -   7  0  0  1  1 11 11
+  16 -   5  0  0  2  1  3  4
+  17 -   5  0  0  1  1 12 12
+  18 -   3 20 21  8  2 13 17 19 21
+  19 -   3  0  0  1  1 18 18
+  20 -  18 22 23  7  2 13 17 19 20
+  21 -  18  0  0  1  1 21 21
+  22 -  20  0  0  2  1 13 14
+  23 -  20  0  0  5  2 15 17 19 20
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               812
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              COMPND   2 MOLECULE: T-CELL SURFACE GLYCOPROTEIN CD1A;                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         751
+ selectset done           0
+ eigen done           0
+ tau           1   1.22337115              10          25          38          51          67
+ #popped           2           1
+ #selectset contacts         751
+ selectset done           1
+ eigen done           1
+ tau           3  0.423248380              10
+ #popped           5           1
+ #selectset contacts         751
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts         751
+ selectset done           0
+ eigen done           0
+ tau           5  0.639468312              25
+ #popped           7           0
+ #selectset contacts         751
+ selectset done           0
+ eigen done           0
+ tau           7   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              COMPND   2 MOLECULE: T-CELL SURFACE GLYCOPROTEIN CD1A;                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+           0
+          99
+          99  residues read 7RYO.dssp                                                   
+  grow short strand          38          42
+  grow short strand          45          46
+  grow short strand          51          52
+  grow short strand          56          57
+  grow short strand          79          83
+  grow short strand          92          95
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  5  6  7  3  4  8  9
+   2     1  4  5  5  1  2  5  6  7
+   3     1  0  0  4  3  4  8  9
+   4     2  0  0  1  1
+   5     2  0  0  4  2  5  6  7
+   6     0  0  0  0
+   7     0  0  0  4  3  4  8  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  5  2  1  2  5  7
+   3 -   1  0  0  4  2  3  4  8  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  4  2  2  2  5  7
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            238
+Total number of atoms read in:              1817
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              COMPND   2 MOLECULE: T-CELL SURFACE GLYCOPROTEIN CD1A;                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1840
+ selectset done           0
+ eigen done           0
+ tau           1   9.20467663             108
+ #popped           2           1
+ #selectset contacts        1840
+ selectset done           1
+ eigen done           1
+ tau           3   1.06640625              88          98
+ #popped           4           1
+ #selectset contacts        1840
+ selectset done           1
+ eigen done           1
+ tau           5  0.881901562              16          26          40          50
+ #popped           6           2
+ #selectset contacts        1840
+ selectset done           2
+ eigen done           2
+ tau           7  0.836715043              16          57
+ #popped           8           3
+ #selectset contacts        1840
+ selectset done           3
+ eigen done           3
+ tau           9  0.613955379              77
+ #popped          10           4
+ #selectset contacts        1840
+ selectset done           4
+ eigen done           4
+ tau          11  0.194496855              67
+ #popped          12           4
+ #selectset contacts        1840
+ selectset done           4
+ eigen done           4
+ tau          13   9.03578949              16
+ #popped          11           3
+ #selectset contacts        1840
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped           9           2
+ #selectset contacts        1840
+ selectset done           2
+ eigen done           2
+ tau          15  0.523004591              37
+ #popped           7           1
+ #selectset contacts        1840
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1840
+ selectset done           0
+ eigen done           0
+ tau          17   1.73088527             118         140         150         168         184         206         228
+ #popped          18           1
+ #selectset contacts        1840
+ selectset done           1
+ eigen done           1
+ tau          19   1.16611636             184
+ #popped          20           2
+ #selectset contacts        1840
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          21           1
+ #selectset contacts        1840
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          19           0
+ #selectset contacts        1840
+ selectset done           0
+ eigen done           0
+ tau          21  0.543977022             194
+ #popped          22           1
+ #selectset contacts        1840
+ selectset done           1
+ eigen done           1
+ tau          23  0.261452526             168
+ #popped          24           1
+ #selectset contacts        1840
+ selectset done           1
+ eigen done           1
+ tau          25   10.1643362             140
+ #popped          26           1
+ #selectset contacts        1840
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          23           0
+ #selectset contacts        1840
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              COMPND   2 MOLECULE: T-CELL SURFACE GLYCOPROTEIN CD1A;                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+           0
+         238
+         238  residues read 7RYO.dssp                                                   
+  grow short strand           2           6
+  grow short strand          48          51
+  grow short strand          60          63
+  exclude short helix          79          81
+  grow short strand          97          99
+  exclude short helix         111         113
+  grow short strand         118         122
+  exclude short helix         126         129
+  grow short strand         134         136
+ crowded segment excluded!
+  grow short strand         158         160
+  grow short strand         164         166
+  grow short strand         171         172
+  exclude short helix         192         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  6  7  8 10  3  4  5  9 12 16 11 13 14 15 17 18 19
+   2     1  4  5 10  1  2  6  7  8 10  3  4  5  9
+   3     1 18 19  9 12 16 11 13 14 15 17 18 19
+   4     2  6  7  9  1  2  6  7  8 10  3  4  5
+   5     2  0  0  1  9
+   6     4  8  9  8  1  2  6  7  8 10  3  4
+   7     4  0  0  1  5
+   8     6 10 11  6  1  2  6  7  8 10
+   9     6 16 17  2  3  4
+  10     8 12 13  4  1  2  6  7
+  11     8  0  0  2  8 10
+  12    10 14 15  3  1  2  6
+  13    10  0  0  1  7
+  14    12  0  0  2  1  2
+  15    12  0  0  1  6
+  16     9  0  0  1  3
+  17     9  0  0  1  4
+  18     3  0  0  2 12 16
+  19     3 22 23  7 11 13 14 15 17 18 19
+  20     0  0  0  2 12 16
+  21     0  0  0  0
+  22    19 24 25  5 11 13 14 15 17
+  23    19  0  0  2 18 19
+  24    22 26 27  4 11 13 14 15
+  25    22  0  0  1 17
+  26    24  0  0  1 11
+  27    24  0  0  3 13 14 15
+   1 +   0  2  3 19  1  1 19
+   2 +   1  4  5 10  1  1 10
+   3 *   1 18 19  9  1 11 19
+   4 *   2  6  7  9  2  1  8 10 10
+   5 =   2  0  0  1  1  9  9
+   6 -   4  8  9  8  3  1  4  6  8 10 10
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  6  3  1  2  6  8 10 10
+   9 -   6 16 17  2  1  3  4
+  10 -   8 12 13  4  2  1  2  6  7
+  11 -   8  0  0  2  2  8  8 10 10
+  12 -  10 14 15  3  2  1  2  6  6
+  13 -  10  0  0  1  1  7  7
+  14 -  12  0  0  2  1  1  2
+  15 -  12  0  0  1  1  6  6
+  16 -   9  0  0  1  1  3  3
+  17 -   9  0  0  1  1  4  4
+  18 -   3  0  0  2  2 12 12 16 16
+  19 -   3 20 21  7  3 11 11 13 15 17 19
+  20 -  19 22 23  5  3 11 11 13 15 17 17
+  21 -  19  0  0  2  1 18 19
+  22 -  20 24 25  4  2 11 11 13 15
+  23 -  20  0  0  1  1 17 17
+  24 -  22  0  0  1  1 11 11
+  25 -  22  0  0  3  1 13 15
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            192
+Total number of atoms read in:              1392
+Total number of ignored atom records:          5
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              COMPND   2 MOLECULE: T-CELL SURFACE GLYCOPROTEIN CD1A;                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+         192  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau           1   18.8063602             114
+ #popped           2           1
+ #selectset contacts        1340
+ selectset done           1
+ eigen done           1
+ tau           3  0.627497613              24          34          92         103
+ #popped           4           2
+ #selectset contacts        1340
+ selectset done           2
+ eigen done           2
+ tau           5  0.662484884              24          50
+ #popped           6           2
+ #selectset contacts        1340
+ selectset done           2
+ eigen done           2
+ tau           7  0.598232090              79
+ #popped           8           3
+ #selectset contacts        1340
+ selectset done           3
+ eigen done           3
+ tau           9   1.53341103              12
+ #popped          11           3
+ #selectset contacts        1340
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1340
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1340
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau          11   1.56258357             141         155
+ #popped          12           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau          13   1.77526498             179
+ #popped          14           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau          15  0.275012016             169
+ #popped          16           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau          17   999.999023             141
+ #popped          18           0
+ #selectset contacts        1340
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           25-AUG-21   7RYO              COMPND   2 MOLECULE: T-CELL SURFACE GLYCOPROTEIN CD1A;                          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.WEGRECKI,J.LE NOURS,J.ROSSJOHN                                      
+           0
+         192
+         192  residues read 7RYO.dssp                                                   
+  grow short strand           3           5
+  grow short strand          10          14
+  grow short strand          59          60
+  grow short strand         103         104
+  grow short strand         157         158
+  grow short strand         175         179
+  exclude short helix         187         190
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  6  7  8  9 11  4  5 10 12 13 14 15
+   2     1  4  5 11  1  2  3  6  7  8  9 11  4  5 10
+   3     1 16 17  4 12 13 14 15
+   4     2  6  7 10  1  2  3  6  7  8  9 11  4  5
+   5     2  0  0  1 10
+   6     4  8  9  8  1  2  3  6  7  8  9 11
+   7     4  0  0  2  4  5
+   8     6 10 11  6  1  2  3  6  7  8
+   9     6  0  0  2  9 11
+  10     8  0  0  2  1  2
+  11     8  0  0  4  3  6  7  8
+  12     0  0  0  4 12 13 14 15
+  13     0  0  0  0
+  14     0  0  0  4 12 13 14 15
+  15     0  0  0  0
+  16     3 18 19  3 12 13 14
+  17     3  0  0  1 15
+  18    16  0  0  2 12 13
+  19    16  0  0  1 14
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 11  1  1 11
+   3 *   1 12 13  4  1 12 15
+   4 -   2  6  7 10  2  1  9 11 11
+   5 -   2  0  0  1  1 10 10
+   6 -   4  8  9  8  3  1  3  6  9 11 11
+   7 -   4  0  0  2  1  4  5
+   8 -   6 10 11  6  2  1  3  6  8
+   9 -   6  0  0  2  2  9  9 11 11
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  4  2  3  3  6  8
+  12 -   3 14 15  3  1 12 14
+  13 -   3  0  0  1  1 15 15
+  14 -  12  0  0  2  1 12 13
+  15 -  12  0  0  1  1 14 14
+
+ CHAIN : 7RYOA
+ CHAIN : 7RYOB
+ CHAIN : 7RYOC
+ CHAIN : 7RYOD
+

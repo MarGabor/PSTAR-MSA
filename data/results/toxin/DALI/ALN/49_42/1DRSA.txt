@@ -1,0 +1,33 @@
+# Job: toxin
+# Query: 1DRSA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2JQP-A  3.0  3.7   52    65   29   MOLECULE: WEAK TOXIN 1;                                              
+
+# Pairwise alignments
+
+No 1: Query=1DRSA Sbjct=2JQPA Z-score=3.0
+
+DSSP  LEEELLLLLLLLLEEELL--LLLEEELLL---llLLLLLLEELLLLLLLL-lllLEEELL
+Query RICYNHLGTKPPTTETCQ--EDSCYKNIW---tfDNIIRRGCGCFTPRGD-mpgPYCCES   54
+ident   |            ||   |  | |             |||    |         ||  
+Sbjct LTCLICPEKDCQKVHTCRneEKICVKRFYdknqlGWRAQRGCAVSCPKAKpnetVQCCST   60
+DSSP  LEEEELLLLLLLEEEELLllLLEEEEEEEeelllEEEEEEEEELLLLLLLllleEEEELL
+
+DSSP  LLLll
+Query DKCnl   59
+ident |||  
+Sbjct DKCnk   65
+DSSP  LLLll
+
+
+# Structural equivalences
+   1: 1DRS-A 2JQP-A     1 -  18 <=>    1 -  18   (ARG    1  - GLN   18  <=> LEU    1  - ARG   18 )                          
+   1: 1DRS-A 2JQP-A    19 -  27 <=>   21 -  29   (GLU   19  - TRP   27  <=> GLU   21  - TYR   29 )                          
+   1: 1DRS-A 2JQP-A    30 -  45 <=>   35 -  50   (ASP   30  - ASP   45  <=> GLY   35  - LYS   50 )                          
+   1: 1DRS-A 2JQP-A    49 -  57 <=>   55 -  63   (PRO   49  - CYS   57  <=> VAL   55  - CYS   63 )                          
+
+# Translation-rotation matrices
+-matrix  "1DRS-A 2JQP-A  U(1,.)  -0.375055 -0.484136  0.790535           41.789425"
+-matrix  "1DRS-A 2JQP-A  U(2,.)   0.784450 -0.620145 -0.007618           21.697405"
+-matrix  "1DRS-A 2JQP-A  U(3,.)   0.493935  0.617278  0.612369           66.749680"
+

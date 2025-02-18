@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1MBAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HLB-A 15.3  2.5  142   157   17   MOLECULE: HEMOGLOBIN (DEOXY);                                        
+
+# Pairwise alignments
+
+No 1: Query=1MBAA Sbjct=1HLBA Z-score=15.3
+
+DSSP  ----------LLLHHHHHHHHHHHHHHH-HLHHhHHHHHHHHHHHHLHHHHHHLLLLLLL
+Query ----------SLSAAEADLAGKSWAPVF-ANKNaNGLDFLVALFEKFPDSANFFADFKGK   49
+ident            |  |      | |             |     |   |   | |    | 
+Sbjct ggtlaiqaqgDLTLAQKKIVRKTWHQLMrNKTS-FVTDVFIRIFAYDPSAQNKFPQMAGM   59
+DSSP  llllllllllLLLHHHHHHHHHHHHHHHhHLLL-HHHHHHHHHHHHLLHHHHLLHHHLLL
+
+DSSP  LHHHHHLLLLHHHHHHHHHHHHHHHHHHLlLHHHHHHHHHHHHHHHHHLLLLHHHHHHHH
+Query SVADIKASPKLRDVSSRIFTRLNEFVNNAaNAGKMSAMLSQFAKEHVGFGVGSAQFENVR  109
+ident |      |        |      | |            |   |  |    ||        
+Sbjct SASQLRSSRQMQAHAIRVSSIMSEYVEEL-DSDILPELLATLARTHDLNKVGADHYNLFA  118
+DSSP  LHHHHLLLHHHHHHHHHHHHHHHHHHLLL-LLLLHHHHLHHHHHHHHHLLLLHHHHHHHH
+
+DSSP  HHHHHHHHLLLL--LLLLHHHHHHHHHHHHHHHhHHLL-l
+Query SMFPGFVASVAA--PPAGADAAWTKLFGLIIDAlKAAG-a  146
+ident                      || | |             
+Sbjct KVLMEALQAELGsdFNEKTRDAWAKAFSVVQAV-LLVKhg  157
+DSSP  HHHHHHHHHHHLllLLLHHHHHHHHHHHHHHHL-LLLLll
+
+
+# Structural equivalences
+   1: 1MBA-A 1HLB-A     1 -  18 <=>   11 -  28   (SER    1  - PHE   18  <=> ASP   11  - MET   28 )                          
+   1: 1MBA-A 1HLB-A    19 -  22 <=>   30 -  33   (ALA   19  - ASN   22  <=> ASN   30  - SER   33 )                          
+   1: 1MBA-A 1HLB-A    24 -  78 <=>   34 -  88   (ASN   24  - ALA   78  <=> PHE   34  - LEU   88 )                          
+   1: 1MBA-A 1HLB-A    80 - 121 <=>   89 - 130   (ASN   80  - ALA  121  <=> ASP   89  - GLY  130 )                          
+   1: 1MBA-A 1HLB-A   122 - 140 <=>  133 - 151   (PRO  122  - ALA  140  <=> PHE  133  - VAL  151 )                          
+   1: 1MBA-A 1HLB-A   142 - 145 <=>  152 - 155   (LYS  142  - GLY  145  <=> LEU  152  - LYS  155 )                          
+
+# Translation-rotation matrices
+-matrix  "1MBA-A 1HLB-A  U(1,.)   0.619289 -0.537588  0.572259          -61.566441"
+-matrix  "1MBA-A 1HLB-A  U(2,.)   0.726305  0.669101 -0.157433          -65.013237"
+-matrix  "1MBA-A 1HLB-A  U(3,.)  -0.298265  0.513131  0.804820          -45.448341"
+

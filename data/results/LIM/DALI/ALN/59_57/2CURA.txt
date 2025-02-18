@@ -1,0 +1,36 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CU8-A  5.5  3.5   64    76   27   MOLECULE: CYSTEINE-RICH PROTEIN 2;                                   
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=2CU8A Z-score=5.5
+
+DSSP  --LLLLL--lLLLLLLLLLL-LLLEEELLEEELLLLLLLLLLLLLLLllLEEELLlLEEE
+Query --GSSGS--sGCVKCNKAIT-SGGITYQDQPWHADCFVCVTCSKKLAgqRFTAVEdQYYC   55
+ident     |      | || |              ||  |  |  ||| |             |
+Sbjct gsSGSSGmasKCPKCDKTVYfAEKVSSLGKDWHKFCLKCERCSKTLTpgGHAEHDgKPFC   60
+DSSP  llLLLLLlllLLLLLLLLLLlLLEEEELLEEEELLLLLLLLLLLLLLllLLEEELlEEEL
+
+DSSP  HH-HHHHHHlLLLLL--
+Query VD-CYKNFVsGPSSG--   69
+ident    ||     |      
+Sbjct HKpCYATLF-GSGPSsg   76
+DSSP  LLlHHHHHL-LLLLLll
+
+
+# Structural equivalences
+   1: 2CUR-A 2CU8-A     1 -   5 <=>    3 -   7   (GLY    1  - SER    5  <=> SER    3  - GLY    7 )                          
+   1: 2CUR-A 2CU8-A     7 -  16 <=>   11 -  20   (GLY    7  - THR   16  <=> LYS   11  - TYR   20 )                          
+   1: 2CUR-A 2CU8-A    17 -  42 <=>   22 -  47   (SER   17  - ALA   42  <=> ALA   22  - THR   47 )                          
+   1: 2CUR-A 2CU8-A    45 -  50 <=>   50 -  55   (ARG   45  - GLU   50  <=> GLY   50  - ASP   55 )                          
+   1: 2CUR-A 2CU8-A    52 -  57 <=>   57 -  62   (GLN   52  - ASP   57  <=> LYS   57  - LYS   62 )                          
+   1: 2CUR-A 2CU8-A    58 -  63 <=>   64 -  69   (CYS   58  - VAL   63  <=> CYS   64  - PHE   69 )                          
+   1: 2CUR-A 2CU8-A    65 -  69 <=>   70 -  74   (GLY   65  - GLY   69  <=> GLY   70  - SER   74 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 2CU8-A  U(1,.)  -0.415908 -0.566334 -0.711539           -4.187830"
+-matrix  "2CUR-A 2CU8-A  U(2,.)   0.792709 -0.609219  0.021542           -3.876191"
+-matrix  "2CUR-A 2CU8-A  U(3,.)  -0.445683 -0.555084  0.702317           -2.198653"
+

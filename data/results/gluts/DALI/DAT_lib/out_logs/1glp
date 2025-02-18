@@ -1,0 +1,360 @@
+A length: 209
+B length: 209
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            209
+Total number of atoms read in:              1655
+Total number of ignored atom records:        209
+ HEADER    TRANSFERASE(GLUTATHIONE)                07-MAR-94   1GLP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    I.GARCIA-SAEZ,M.COLL                                                  
+  Reading DSSP file
+ HEADER    TRANSFERASE(GLUTATHIONE)                07-MAR-94   1GLP              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE YFYF;                            SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    I.GARCIA-SAEZ,M.COLL                                                  
+         209  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2012
+ selectset done           0
+ eigen done           0
+ tau           1   2.29187083              33          51
+ #popped           2           0
+ #selectset contacts        2012
+ selectset done           0
+ eigen done           0
+ tau           3   1.61081481              78
+ #popped           4           1
+ #selectset contacts        2012
+ selectset done           1
+ eigen done           1
+ tau           5   1.55523515              63
+ #popped           6           1
+ #selectset contacts        2012
+ selectset done           1
+ eigen done           1
+ tau           7  0.579512179              33
+ #popped           8           1
+ #selectset contacts        2012
+ selectset done           1
+ eigen done           1
+ tau           9  0.414375007              14
+ #popped           5           0
+ #selectset contacts        2012
+ selectset done           0
+ eigen done           0
+ tau          11   1.50152338             125
+ #popped          12           1
+ #selectset contacts        2012
+ selectset done           1
+ eigen done           1
+ tau          13   2.17733979              98
+ #popped          14           2
+ #selectset contacts        2012
+ selectset done           2
+ eigen done           2
+ tau          15  0.660039067              88
+ #popped          15           1
+ #selectset contacts        2012
+ selectset done           1
+ eigen done           1
+ tau          17   1.34660637             109
+ #popped          13           0
+ #selectset contacts        2012
+ selectset done           0
+ eigen done           0
+ tau          19   2.57716703             184
+ #popped          20           1
+ #selectset contacts        2012
+ selectset done           1
+ eigen done           1
+ tau          21  0.995215297             135         154
+ #popped          22           1
+ #selectset contacts        2012
+ selectset done           1
+ eigen done           1
+ tau          23   1.67448401             135         167
+ #popped          24           1
+ #selectset contacts        2012
+ selectset done           1
+ eigen done           1
+ tau          25   1.02001941             135
+ #popped          21           0
+ #selectset contacts        2012
+ selectset done           0
+ eigen done           0
+ tau          27   1.17487180             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE(GLUTATHIONE)                07-MAR-94   1GLP              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE YFYF;                            SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    I.GARCIA-SAEZ,M.COLL                                                  
+           0
+         209
+         209  residues read 1GLP.dssp                                                   
+  grow short strand           3           7
+  grow short strand          29          32
+  exclude short helix          35          39
+  exclude short helix          44          46
+  grow short strand          54          57
+  grow short strand          60          63
+  exclude short helix         137         139
+  grow short helix         187         193
+  exclude short helix         196         200
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 11  1  2  3  4  5  6  7  8 10  9 11
+   2     0  0  0 11  1  2  3  4  5  6  7  8 10  9 11
+   3     0  0  0  0
+   4     1  6  7  6  1  2  3  4  5  6
+   5     1 12 13  5  7  8 10  9 11
+   6     4  8  9  5  1  2  3  4  5
+   7     4  0  0  1  6
+   8     6 10 11  3  1  2  3
+   9     6  0  0  2  4  5
+  10     8  0  0  1  1
+  11     8  0  0  2  2  3
+  12     5 14 15  2  7  8
+  13     5 20 21  3 10  9 11
+  14    12  0  0  1  7
+  15    12  0  0  1  8
+  16     0  0  0  0
+  17     0  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20    13 24 25  2 10  9
+  21    13  0  0  1 11
+  22     0  0  0  2 10  9
+  23     0  0  0  0
+  24    20  0  0  1 10
+  25    20  0  0  1  9
+  26     0  0  0  0
+  27     0  0  0  1 10
+  28     0  0  0  1 11
+  29     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  1  1  6
+   3 -   1 10 11  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  2  3
+  10 -   3 12 13  2  1  7  8
+  11 -   3 14 15  3  1  9 11
+  12 -  10  0  0  1  1  7  7
+  13 -  10  0  0  1  1  8  8
+  14 -  11 16 17  2  1  9 10
+  15 -  11  0  0  1  1 11 11
+  16 -  14  0  0  1  1 10 10
+  17 -  14  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            209
+Total number of atoms read in:              1655
+Total number of ignored atom records:        201
+ HEADER    TRANSFERASE(GLUTATHIONE)                07-MAR-94   1GLP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    I.GARCIA-SAEZ,M.COLL                                                  
+  Reading DSSP file
+ HEADER    TRANSFERASE(GLUTATHIONE)                07-MAR-94   1GLP              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE YFYF;                            SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    I.GARCIA-SAEZ,M.COLL                                                  
+         209  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1990
+ selectset done           0
+ eigen done           0
+ tau           1   2.17727733              33          51
+ #popped           2           0
+ #selectset contacts        1990
+ selectset done           0
+ eigen done           0
+ tau           3   1.63485682              78
+ #popped           4           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau           5   1.74186337              63
+ #popped           6           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau           7  0.603658557              33
+ #popped           8           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           5           0
+ #selectset contacts        1990
+ selectset done           0
+ eigen done           0
+ tau           9   1.44776452             121
+ #popped          10           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau          11   1.91264355              98
+ #popped          12           2
+ #selectset contacts        1990
+ selectset done           2
+ eigen done           2
+ tau          13  0.638398468              88
+ #popped          13           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau          15   1.14174104             109
+ #popped          11           0
+ #selectset contacts        1990
+ selectset done           0
+ eigen done           0
+ tau          17   2.68454432             185
+ #popped          18           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau          19   1.24081635             147         171
+ #popped          20           2
+ #selectset contacts        1990
+ selectset done           2
+ eigen done           2
+ tau          21   1.06675100             147
+ #popped          22           2
+ #selectset contacts        1990
+ selectset done           2
+ eigen done           2
+ tau          23   1.38448143             135
+ #popped          21           1
+ #selectset contacts        1990
+ selectset done           1
+ eigen done           1
+ tau          25  0.876757622             160
+ #popped          19           0
+ #selectset contacts        1990
+ selectset done           0
+ eigen done           0
+ tau          27   1.11694479             199
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE(GLUTATHIONE)                07-MAR-94   1GLP              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE YFYF;                            SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    I.GARCIA-SAEZ,M.COLL                                                  
+           0
+         209
+         209  residues read 1GLP.dssp                                                   
+  grow short strand           3           7
+  grow short strand          29          32
+  exclude short helix          35          39
+  exclude short helix          44          46
+  grow short strand          54          57
+  grow short strand          60          63
+  exclude short helix         137         139
+  grow short helix         187         193
+  exclude short helix         196         199
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 11  1  2  3  4  5  6  7  8 10  9 11
+   2     0  0  0 11  1  2  3  4  5  6  7  8 10  9 11
+   3     0  0  0  0
+   4     1  6  7  6  1  2  3  4  5  6
+   5     1 10 11  5  7  8 10  9 11
+   6     4  8  9  5  1  2  3  4  5
+   7     4  0  0  1  6
+   8     6  0  0  3  1  2  3
+   9     6  0  0  2  4  5
+  10     5  0  0  1  7
+  11     5 18 19  4  8 10  9 11
+  12     0  0  0  1  7
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  1  7
+  16     0  0  0  0
+  17     0  0  0  0
+  18    11 20 21  3  8 10  9
+  19    11  0  0  1 11
+  20    18 22 23  2  8 10
+  21    18  0  0  1  9
+  22    20  0  0  1  8
+  23    20  0  0  1 10
+  24     0  0  0  1  8
+  25     0  0  0  0
+  26     0  0  0  1  9
+  27     0  0  0  0
+  28     0  0  0  1 11
+  29     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  1  1  6
+   3 -   1  8  9  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   3  0  0  1  1  7  7
+   9 -   3 10 11  4  1  8 11
+  10 -   9 12 13  3  1  8 10
+  11 -   9  0  0  1  1 11 11
+  12 -  10 14 15  2  2  8  8 10 10
+  13 -  10  0  0  1  1  9  9
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1 10 10
+
+ CHAIN : 1GLPA
+ CHAIN : 1GLPB
+

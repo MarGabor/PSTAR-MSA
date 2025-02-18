@@ -1,0 +1,32 @@
+# Job: hr
+# Query: 8IFOB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HCP-A  8.5  2.8   72    75   65   MOLECULE: HUMAN/CHICKEN ESTROGEN RECEPTOR;                           
+
+# Pairwise alignments
+
+No 1: Query=8IFOB Sbjct=1HCPA Z-score=8.5
+
+DSSP  --LLLLLLLLLLLLLEEELLEEELHHHHHHHHHHHHLLLLLLLLLLLLLLLLlLLHH-HL
+Query --PKRLCLVCGDIASGYHYGVASCEACKAFFKRTIQGNIEYSCPATNECEITkRRRK-SC   57
+ident     | | || | |||||||| ||| ||||||| |||   | ||||| | |    |  ||
+Sbjct mkETRYCAVCNDYASGYHYGVWSCEGCKAFFKRSIQGHNDYMCPATNQCTID-KNRRkSC   59
+DSSP  llLLLLLLLLLLLLLEELLLLEELLHHHHHHHHHLLLLLLLLLLLLLLLLLL-LLLLlLL
+
+DSSP  HHHHHHHHHHHLLLHHhllllll
+Query QACRFMKCLKVGMLKEgvrldrv   80
+ident ||||  ||  ||| |        
+Sbjct QACRLRKCYEVGMMKG-------   75
+DSSP  HHHHHHHHHHHLLLLL-------
+
+
+# Structural equivalences
+   1: 8IFO-B 1HCP-A     1 -  50 <=>    3 -  52   (PRO  124  - THR  173  <=> GLU    3  - ASP   52 )                          
+   1: 8IFO-B 1HCP-A    52 -  55 <=>   53 -  56   (ARG  175  - LYS  178  <=> LYS   53  - ARG   56 )                          
+   1: 8IFO-B 1HCP-A    56 -  73 <=>   58 -  75   (SER  179  - GLU  196  <=> SER   58  - GLY   75 )                          
+
+# Translation-rotation matrices
+-matrix  "8IFO-B 1HCP-A  U(1,.)  -0.259303 -0.851469  0.455809            0.036572"
+-matrix  "8IFO-B 1HCP-A  U(2,.)   0.306625 -0.520114 -0.797159           -7.246850"
+-matrix  "8IFO-B 1HCP-A  U(3,.)   0.915829 -0.066944  0.395949           50.219700"
+

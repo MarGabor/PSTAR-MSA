@@ -1,0 +1,38 @@
+# Job: kringle
+# Query: 7TNGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2PF1-A 12.4  1.9   82   121   37   MOLECULE: PROTHROMBIN FRAGMENT 1;                                    
+
+# Pairwise alignments
+
+No 1: Query=7TNGA Sbjct=2PF1A Z-score=12.4
+
+DSSP  ---------------------------LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+Query ---------------------------GSKCYNSTGVDYRGTVSVTKSGRQCQPWNSQYP   33
+ident                               |    |  ||| |||| ||  || | | ||
+Sbjct satdafwakytacesarnpreklneclEGNCAEGVGMNYRGNVSVTRSGIECQLWRSRYP   60
+DSSP  lllhhhhhhhhhlllllllhhhhhhhhLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+
+DSSP  LLLLLLLLL--LHHHllLLLLLLLHHHLLLLLEEELLLLLLLEEELLLLLLLL-------
+Query HTHTFTALR--FPELngGHSYCRNPGNQKEAPWCFTLDENFKSDLCDIPACDS-------   84
+ident |             |      ||||      ||| |         |  | |         
+Sbjct HKPEINSTThpGADL--RENFCRNPDGSITGPWCYTTSPTLRREECSVPVCGQdrvtvev  118
+DSSP  LLLLLLLLLllLLLL--LLLLLLLLLLLLLLLEEELLLLLLLEEELLLLLLLLlllllll
+
+DSSP  lll
+Query aaa   87
+ident    
+Sbjct ipr  121
+DSSP  lll
+
+
+# Structural equivalences
+   1: 7TNG-A 2PF1-A     1 -  42 <=>   28 -  69   (GLY  310  - ARG  351  <=> GLU   63  - THR  104 )                          
+   1: 7TNG-A 2PF1-A    43 -  46 <=>   72 -  75   (PHE  352  - LEU  355  <=> GLY  107  - LEU  110 )                          
+   1: 7TNG-A 2PF1-A    49 -  84 <=>   76 - 111   (GLY  358  - SER  393  <=> ARG  111  - GLN  146 )                          
+
+# Translation-rotation matrices
+-matrix  "7TNG-A 2PF1-A  U(1,.)   0.805433  0.105728  0.583181          -16.710320"
+-matrix  "7TNG-A 2PF1-A  U(2,.)  -0.532409  0.561408  0.633531          -47.999195"
+-matrix  "7TNG-A 2PF1-A  U(3,.)  -0.260420 -0.820757  0.508467           16.247234"
+

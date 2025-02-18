@@ -1,0 +1,34 @@
+# Job: az
+# Query: 1KDIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2B3I-A 12.5  2.1   93    97   34   MOLECULE: PROTEIN (PLASTOCYANIN);                                    
+
+# Pairwise alignments
+
+No 1: Query=1KDIA Sbjct=2B3IA Z-score=12.5
+
+DSSP  --LEEEELLLLLLLLEELLEEEELLLLLEEEEELLlLLLLLEELLLllllHHHHhhHHHL
+Query --AKVEVGDEVGNFKFYPDSITVSAGEAVEFTLVGeTGHNIVFDIPagapGTVAseLKAA   58
+ident        |         |     |||  |||       ||  ||              | 
+Sbjct asVQIKMGTDKYAPLYEPKALSISAGDTVEFVMNKvGPHNVIFDKV---pAGES--APAL   55
+DSSP  llEEEEELLLLLLLLEELLEEEELLLLEEEEEELLlLLEEEEEEEL---lLLLL--HHHH
+
+DSSP  LLLllLLLLLLLLEEEELLLLLEEEEEELLLLHHHLLEEEEEEL
+Query SMDenDLLSEDEPSFKAKVSTPGTYTFYCTPHKSANMKGTLTVK  102
+ident |     |             ||||| ||||||  | | || || 
+Sbjct SNT--KLAIAPGSFYSVTLGTPGTYSFYCTPHRGAGMVGTITVE   97
+DSSP  LEE--EEELLLLLLEEEELLLLEEEEEELLLLLLLLLEEEEEEL
+
+
+# Structural equivalences
+   1: 1KDI-A 2B3I-A     1 -  33 <=>    3 -  35   (ALA    1  - GLY   33  <=> VAL    3  - LYS   35 )                          
+   1: 1KDI-A 2B3I-A    35 -  44 <=>   37 -  46   (THR   35  - PRO   44  <=> GLY   37  - VAL   46 )                          
+   1: 1KDI-A 2B3I-A    49 -  52 <=>   48 -  51   (GLY   49  - ALA   52  <=> ALA   48  - SER   51 )                          
+   1: 1KDI-A 2B3I-A    55 -  61 <=>   52 -  58   (LEU   55  - ASP   61  <=> ALA   52  - THR   58 )                          
+   1: 1KDI-A 2B3I-A    64 - 102 <=>   59 -  97   (ASP   64  - LYS  102  <=> LYS   59  - GLU   97 )                          
+
+# Translation-rotation matrices
+-matrix  "1KDI-A 2B3I-A  U(1,.)  -0.856038 -0.230730  0.462560           31.582981"
+-matrix  "1KDI-A 2B3I-A  U(2,.)  -0.198706  0.972978  0.117596           38.602295"
+-matrix  "1KDI-A 2B3I-A  U(3,.)  -0.477194  0.008753 -0.878754           -0.117644"
+

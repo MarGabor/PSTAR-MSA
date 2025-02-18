@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1HBRC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2OLP-B 18.1  1.9  135   151   16   MOLECULE: HEMOGLOBIN II;                                             
+
+# Pairwise alignments
+
+No 1: Query=1HBRC Sbjct=2OLPB Z-score=18.1
+
+DSSP  -LLLHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHLLLLL------lLLLLH
+Query -MLTAEDKKLIQQAWEKAASHQEEFGAEALTRMFTTYPQTKTYFPHFD------lSPGSD   53
+ident   ||   |  |   | |        |       |   | | | |                
+Sbjct tTLTNPQKAAIRSSWSKFMDNGVSNGQGFYMDLFKAHPETLTPFKSLFggltlaqLQDNP   60
+DSSP  lLLLHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLHHHHHHHHHHHllllhhhLLLLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLL---LHHHHLHHHHHHHHlLLLLLLHHHHHHHHHHHHHHH
+Query QVRGHGKKVLGALGNAVKNVD---NLSQAMAELSNLHAyNLRVDPVNFKLLSQCIQVVLA  110
+ident                 |   |    |         ||  |                    
+Sbjct KMKAQSLVFCNGMSSFVDHLDdndMLVVLIQKMAKLHN-NRGIRASDLRTAYDILIHYME  119
+DSSP  HHHHHHHHHHHHHHHHHLLLLlhhHHHHHHHHHHHHHH-LLLLLHHHHHHHHHHHHHHHH
+
+DSSP  HHHhhhLLHHHHHHHHHHHHHHHHHHLLLL----
+Query VHMgkdYTPEVHAAFDKFLSAVSAVLAEKY----  140
+ident  |           |   |       |        
+Sbjct DHN--hMVGGAKDAWEVFVGFICKTLGDYMkels  151
+DSSP  HLL--lLLLLHHHHHHHHHHHHHHHHHHHHhhhl
+
+
+# Structural equivalences
+   1: 1HBR-C 2OLP-B     1 -  47 <=>    2 -  48   (MET    1  - ASP   47  <=> THR    2  - PHE   48 )                          
+   1: 1HBR-C 2OLP-B    49 -  74 <=>   56 -  81   (SER   49  - ASP   74  <=> LEU   56  - ASP   81 )                          
+   1: 1HBR-C 2OLP-B    75 -  88 <=>   85 -  98   (ASN   75  - ALA   88  <=> MET   85  - ASN   98 )                          
+   1: 1HBR-C 2OLP-B    90 - 113 <=>   99 - 122   (ASN   90  - MET  113  <=> ASN   99  - ASN  122 )                          
+   1: 1HBR-C 2OLP-B   117 - 140 <=>  124 - 147   (TYR  117  - TYR  140  <=> MET  124  - MET  147 )                          
+
+# Translation-rotation matrices
+-matrix  "1HBR-C 2OLP-B  U(1,.)  -0.081124  0.332938  0.939452          -57.491158"
+-matrix  "1HBR-C 2OLP-B  U(2,.)  -0.958833 -0.283421  0.017646           -8.047205"
+-matrix  "1HBR-C 2OLP-B  U(3,.)   0.272136 -0.899347  0.342225           30.525845"
+

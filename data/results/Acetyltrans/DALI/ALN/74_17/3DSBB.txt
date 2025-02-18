@@ -1,0 +1,40 @@
+# Job: Acetyltrans
+# Query: 3DSBB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6BVC-A 15.0  3.4  149   154   14   MOLECULE: AMINOGLYCOSIDE-(3)-N-ACETYLTRANSFERASE;                    
+
+# Pairwise alignments
+
+No 1: Query=3DSBB Sbjct=6BVCA Z-score=15.0
+
+DSSP  -LLEEEEELLHHHHHHHHHHHHHHHHHHHLLL--LLHHHHHHHHHHHHLLhHHLEEEEEE
+Query -ELIEIREARXDDLDTIAKFNYNLAKETEGKE--LDXDVLTKGVKALLLDeRKGKYHVYT   57
+ident    |       |              |                   ||            
+Sbjct mGIIRTCRLGPDQVKSMRAALDLFGREFGDVAtySQHQPDSDYLGNLLRS-KTFIALAAF   59
+DSSP  lLLEEEEELLHHHHHHHHHHHHHHHHHHLLHHhhHLLLLLHHHHHHHHHL-LLEEEEEEE
+
+DSSP  ELLEEEEEEEEEEEEELLLLEEEEEEEEEEELHHHLLLLHHHHHHHHHHHHHHLLlLEEE
+Query VFDKVVAQIXYTYEWSDWRNGNFLWIQSVYVDKEYRRKGIFNYLFNYIKNICDKDeNIVG  117
+ident     ||                   |    |  | || ||   | |  |           
+Sbjct DQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANAL-GAYV  118
+DSSP  ELLEEEEEEEEEEEELLLLLLEEEEEEEEEELHHHLLLLHHHHHHHHHHHHHHHH-LLLE
+
+DSSP  EEEEEELLLLLHHHHHHHLlEEELLEEEEEELLLL-l
+Query XRLYVEKENINAKATYESLnXYECDYNXYEYEVIH-x  153
+ident            | | |  |                  
+Sbjct IYVQADYGDDPAVALYTKL-GIREEVMHFDIDPSTat  154
+DSSP  EELLLLLLLHHHHHHHHHH-LLLLLLLLLLLLHHHll
+
+
+# Structural equivalences
+   1: 3DSB-B 6BVC-A     1 -  31 <=>    2 -  32   (GLU   15  - GLU   45  <=> GLY   25  - ALA   55 )                          
+   1: 3DSB-B 6BVC-A    32 -  47 <=>   35 -  50   (LEU   46  - ASP   61  <=> SER   58  - SER   73 )                          
+   1: 3DSB-B 6BVC-A    49 - 112 <=>   51 - 114   (ARG   63  - ASP  126  <=> LYS   74  - LEU  137 )                          
+   1: 3DSB-B 6BVC-A   114 - 136 <=>  115 - 137   (ASN  128  - LEU  150  <=> GLY  138  - LEU  160 )                          
+   1: 3DSB-B 6BVC-A   138 - 152 <=>  138 - 152   (UNK  152  - HIS  166  <=> GLY  161  - THR  175 )                          
+
+# Translation-rotation matrices
+-matrix  "3DSB-B 6BVC-A  U(1,.)  -0.105256 -0.124054  0.986677          -36.825680"
+-matrix  "3DSB-B 6BVC-A  U(2,.)   0.992209  0.053399  0.112560           39.282169"
+-matrix  "3DSB-B 6BVC-A  U(3,.)  -0.066651  0.990838  0.117467          -31.775084"
+

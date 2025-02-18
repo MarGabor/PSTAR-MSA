@@ -1,0 +1,42 @@
+# Job: rvp
+# Query: 3D3TA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HVC-A 18.1  0.7   99   203   91   MOLECULE: HIV-1 PROTEASE;                                            
+
+# Pairwise alignments
+
+No 1: Query=3D3TA Sbjct=1HVCA Z-score=18.1
+
+DSSP  ------------------------------------------------------------
+Query ------------------------------------------------------------    0
+ident                                                             
+Sbjct pqitlwqrplvtiriggqlkealldtgaddtvleemnlpgkwkpkmiggiggfikvrqyd   60
+DSSP  leelllllleeeeelllleeeeeelllllleeeellllllleeeeeeeelleeeeeeeee
+
+DSSP  --------------------------------------------LEELLLLLLEEEEEEL
+Query --------------------------------------------PQITLWQRPLVTIKIG   16
+ident                                             ||||||||||||||||
+Sbjct qilieicghkaigtvlvgptpvniigrnlltqigctlnfggssgPQITLWQRPLVTIKIG  120
+DSSP  eeeeeelleeeeeeeeeellllleelhhhhhhhlleeellllllLEELLLLLLEEEEEEL
+
+DSSP  LEEEEEEELLLLLLEEELLLLLLLLLEEEEEEELLEEEEEEEEEEEEEEELLEEEEEEEE
+Query GQLREALLNTGADDTVLEDINLPGKWKPKMIGGIGGFIKVRQYDQILIEICGKKAIGTVL   76
+ident ||| |||| |||||||||   ||| ||||||||||||||||||||||||||| |||||||
+Sbjct GQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGIGGFIKVRQYDQILIEICGHKAIGTVL  180
+DSSP  LEEEEEEELLLLLLLEEELLLLLLLLEEEEEEELLEEEEEEEEEEEEEEELLEEEEEEEE
+
+DSSP  ELLLLLLEELHHHHLLLLLEEEL
+Query VGPTPVNIIGRNMLTQLGCTLNF   99
+ident |||||||||||| ||| ||||||
+Sbjct VGPTPVNIIGRNLLTQIGCTLNF  203
+DSSP  EELLLLLEELHHHHLLLLLEEEL
+
+
+# Structural equivalences
+   1: 3D3T-A 1HVC-A     1 -  99 <=>  105 - 203   (PRO    1  - PHE   99  <=> PRO   1A  - PHE  99A )                          
+
+# Translation-rotation matrices
+-matrix  "3D3T-A 1HVC-A  U(1,.)  -0.585747 -0.218695  0.780431            0.454553"
+-matrix  "3D3T-A 1HVC-A  U(2,.)  -0.329732 -0.815321 -0.475950           -8.765988"
+-matrix  "3D3T-A 1HVC-A  U(3,.)   0.740390 -0.536119  0.405462          -10.443820"
+

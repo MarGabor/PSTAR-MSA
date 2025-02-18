@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 1WIGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X62-A  5.6  3.0   68    79   22   MOLECULE: C-TERMINAL LIM DOMAIN PROTEIN 1;                           
+
+# Pairwise alignments
+
+No 1: Query=1WIGA Sbjct=1X62A Z-score=5.6
+
+DSSP  ---------LLLLLL-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLllLLLEEE
+Query ---------GSSGSS-GCDSCEKYITGRVLEAGEKHYHPSCALCVRCGQMFAegEEMYLQ   50
+ident          |       || |   | |        | || |  |  ||            
+Sbjct gssgssgsiGNAQKLpMCDKCGTGIVGVFVKLRDRHRHPECYVCTDCGTNLK-qKGHFFV   59
+DSSP  lllllllllLLLLLLlLLLLLLLLLLLLLEELLLLEELLLLLLLLLLLLLHH-hHLLEEL
+
+DSSP  LLEEELLLHHHHLLLLLLLLlll
+Query GSSIWHPACRQAARTEDSGPssg   73
+ident    |             |     
+Sbjct EDQIYCEKHARERVSGPSSG---   79
+DSSP  LLLEELHHHHHHHHLLLLLL---
+
+
+# Structural equivalences
+   1: 1WIG-A 1X62-A     1 -   6 <=>   10 -  15   (GLY    1  - SER    6  <=> GLY   10  - LEU   15 )                          
+   1: 1WIG-A 1X62-A     7 -  42 <=>   17 -  52   (GLY    7  - ALA   42  <=> MET   17  - LYS   52 )                          
+   1: 1WIG-A 1X62-A    45 -  70 <=>   54 -  79   (GLU   45  - PRO   70  <=> LYS   54  - GLY   79 )                          
+
+# Translation-rotation matrices
+-matrix  "1WIG-A 1X62-A  U(1,.)  -0.813741  0.509288  0.280094           -0.753753"
+-matrix  "1WIG-A 1X62-A  U(2,.)  -0.506176 -0.384093 -0.772178            0.963589"
+-matrix  "1WIG-A 1X62-A  U(3,.)  -0.285678 -0.770129  0.570341           -5.150422"
+

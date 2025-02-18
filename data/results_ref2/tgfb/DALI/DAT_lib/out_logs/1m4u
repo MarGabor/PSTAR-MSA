@@ -1,0 +1,289 @@
+L length: 112
+A length: 199
+# 2 chains A L
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            199
+Total number of atoms read in:              1596
+Total number of ignored atom records:         47
+ HEADER    HORMONE/GROWTH FACTOR                   03-JUL-02   1M4U              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.GROPPE,J.GREENWALD,E.WIATER,J.RODRIGUEZ-LEON,A.N.ECONOMIDES,        
+  Reading DSSP file
+ HEADER    HORMONE/GROWTH FACTOR                   03-JUL-02   1M4U              COMPND   2 MOLECULE: BONE MORPHOGENETIC PROTEIN-7;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.GROPPE,J.GREENWALD,E.WIATER,J.RODRIGUEZ-LEON,A.N.ECONOMIDE          
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau           1   6.38154936              11
+ #popped           3           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau           3   4.26114893              62         121
+ #popped           4           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau           5   1.42363727             172         182
+ #popped           6           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau           7   1.94132864              21
+ #popped           9           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau           9   1.15242171              48
+ #popped          10           2
+ #selectset contacts        1542
+ selectset done           2
+ eigen done           2
+ tau          11   2.89291096              31
+ #popped          11           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau          13   1.35189080             144
+ #popped          14           2
+ #selectset contacts        1542
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau          15   1.31591678             157
+ #popped          17           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau          17  0.178239137             172
+ #popped           5           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau          19   2.37363982              80
+ #popped          21           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau          21   1.35863101              92         103
+ #popped          22           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HORMONE/GROWTH FACTOR                   03-JUL-02   1M4U              COMPND   2 MOLECULE: BONE MORPHOGENETIC PROTEIN-7;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.GROPPE,J.GREENWALD,E.WIATER,J.RODRIGUEZ-LEON,A.N.ECONOMIDE          
+           0
+         199
+         199  residues read 1M4U.dssp                                                   
+  grow short strand           5           6
+  exclude short helix          32          34
+  grow short strand          53          54
+  exclude short helix          85          88
+  grow short strand         135         136
+  exclude short helix         177         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  6  7  8  9 10  4  5
+   2     1  0  0  1  1
+   3     1  4  5  9  2  3  6  7  8  9 10  4  5
+   4     3 10 11  7  2  3  6  7  8  9 10
+   5     3 20 21  2  4  5
+   6     0  0  0  7  2  3  6  7  8  9 10
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  7  2  3  6  7  8  9 10
+  10     4  0  0  1  2
+  11     4 14 15  6  3  6  7  8  9 10
+  12     0  0  0  0
+  13     0  0  0  1  2
+  14    11  0  0  4  3  6  7  8
+  15    11 18 19  2  9 10
+  16     0  0  0  0
+  17     0  0  0  2  9 10
+  18    15  0  0  1  9
+  19    15  0  0  1 10
+  20     5  0  0  1  4
+  21     5  0  0  1  5
+  22     0  0  0  1  5
+  23     0  0  0  0
+   1 +   0  2  3 10  1  1 10
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5  9  1  2 10
+   4 *   3  6  7  7  2  2  3  6 10
+   5 *   3 12 13  2  1  4  5
+   6 -   4  0  0  1  1  2  2
+   7 -   4  8  9  6  2  3  3  6 10
+   8 -   7  0  0  4  2  3  3  6  8
+   9 -   7 10 11  2  1  9 10
+  10 -   9  0  0  1  1  9  9
+  11 -   9  0  0  1  1 10 10
+  12 -   5  0  0  1  1  4  4
+  13 -   5  0  0  1  1  5  5
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            112
+Total number of atoms read in:               891
+Total number of ignored atom records:         43
+ HEADER    HORMONE/GROWTH FACTOR                   03-JUL-02   1M4U              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.GROPPE,J.GREENWALD,E.WIATER,J.RODRIGUEZ-LEON,A.N.ECONOMIDES,        
+  Reading DSSP file
+ HEADER    HORMONE/GROWTH FACTOR                   03-JUL-02   1M4U              COMPND   2 MOLECULE: BONE MORPHOGENETIC PROTEIN-7;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.GROPPE,J.GREENWALD,E.WIATER,J.RODRIGUEZ-LEON,A.N.ECONOMIDE          
+         112  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         877
+ selectset done           0
+ eigen done           0
+ tau           1   2.64336753              44          75
+ #popped           2           1
+ #selectset contacts         877
+ selectset done           1
+ eigen done           1
+ tau           3   1.61490214              18          34          85         101
+ #popped           4           2
+ #selectset contacts         877
+ selectset done           2
+ eigen done           2
+ tau           5   1.19788921              44
+ #popped           6           3
+ #selectset contacts         877
+ selectset done           3
+ eigen done           3
+ tau           7  0.255202800              18
+ #popped           7           2
+ #selectset contacts         877
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts         877
+ selectset done           1
+ eigen done           1
+ tau           9   1.01134944              34
+ #popped           3           0
+ #selectset contacts         877
+ selectset done           0
+ eigen done           0
+ tau          11   2.65327883              54
+ #popped          13           0
+ #selectset contacts         877
+ selectset done           0
+ eigen done           0
+ tau          13  0.698386729              64
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HORMONE/GROWTH FACTOR                   03-JUL-02   1M4U              COMPND   2 MOLECULE: BONE MORPHOGENETIC PROTEIN-7;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.GROPPE,J.GREENWALD,E.WIATER,J.RODRIGUEZ-LEON,A.N.ECONOMIDE          
+           0
+         112
+         112  residues read 1M4U.dssp                                                   
+  grow short strand          12          14
+  grow short strand          17          19
+ crowded segment excluded!
+  exclude short helix          21          23
+  grow short strand          29          31
+  grow short strand          34          36
+ crowded segment excluded!
+  grow short strand          39          41
+  grow short strand          48          49
+ crowded segment excluded!
+  exclude short helix          50          52
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  3  5  6  2  4
+   2     1  4  5  5  1  3  5  6  2
+   3     1  0  0  1  4
+   4     2  6  7  4  1  3  5  6
+   5     2  0  0  1  2
+   6     4  8  9  2  1  3
+   7     4  0  0  2  5  6
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  4
+  14     0  0  0  1  4
+  15     0  0  0  0
+   1 +   0  2  3  6  1  1  6
+   2 *   1  4  5  5  2  1  3  5  6
+   3 =   1  0  0  1  1  4  4
+   4 -   2  6  7  4  3  1  1  3  3  5  6
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4  0  0  2  1  5  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+
+ CHAIN : 1M4UA
+ CHAIN : 1M4UL
+

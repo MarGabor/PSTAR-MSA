@@ -1,0 +1,608 @@
+A length: 139
+B length: 142
+C length: 138
+D length: 143
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   54  CA BSER A   8 
+ Alternate location indication is not blank or A, ignore atom:   58  CB BSER A   8 
+ Alternate location indication is not blank or A, ignore atom:   60  OG BSER A   8 
+ Alternate location indication is not blank or A, ignore atom:  791  CA BPHE A 105 
+ Alternate location indication is not blank or A, ignore atom:  795  CB BPHE A 105 
+ Alternate location indication is not blank or A, ignore atom:  797  CG BPHE A 105 
+ Alternate location indication is not blank or A, ignore atom:  799  CD1BPHE A 105 
+ Alternate location indication is not blank or A, ignore atom:  801  CD2BPHE A 105 
+ Alternate location indication is not blank or A, ignore atom:  803  CE1BPHE A 105 
+ Alternate location indication is not blank or A, ignore atom:  805  CE2BPHE A 105 
+ Alternate location indication is not blank or A, ignore atom:  807  CZ BPHE A 105 
+ Alternate location indication is not blank or A, ignore atom:  882  CB BSER A 115 
+ Alternate location indication is not blank or A, ignore atom:  884  OG BSER A 115 
+ Alternate location indication is not blank or A, ignore atom: 1001  CG BLEU A 130 
+ Alternate location indication is not blank or A, ignore atom: 1003  CD1BLEU A 130 
+ Alternate location indication is not blank or A, ignore atom: 1005  CD2BLEU A 130 
+
+Total number of residues read in:            141
+Total number of atoms read in:              1073
+Total number of ignored atom records:        284
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.PALANI,    
+  Reading DSSP file
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                SOURCE   2 ORGANISM_SCIENTIFIC: COLUMBA LIVIA;                                  AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.P          
+         141  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1336
+ selectset done           0
+ eigen done           0
+ tau           1   1.42291391              25          59
+ #popped           2           1
+ #selectset contacts        1336
+ selectset done           1
+ eigen done           1
+ tau           3   2.23236370              74
+ #popped           4           2
+ #selectset contacts        1336
+ selectset done           2
+ eigen done           2
+ tau           5   2.33899951              25
+ #popped           6           2
+ #selectset contacts        1336
+ selectset done           2
+ eigen done           2
+ tau           7   1.17424762              15
+ #popped           5           1
+ #selectset contacts        1336
+ selectset done           1
+ eigen done           1
+ tau           9   1.56983185              98         131
+ #popped          10           2
+ #selectset contacts        1336
+ selectset done           2
+ eigen done           2
+ tau          11  0.804259658              98
+ #popped          12           2
+ #selectset contacts        1336
+ selectset done           2
+ eigen done           2
+ tau          13  0.994297922              87
+ #popped          11           1
+ #selectset contacts        1336
+ selectset done           1
+ eigen done           1
+ tau          15   2.38173842             117
+ #popped           3           0
+ #selectset contacts        1336
+ selectset done           0
+ eigen done           0
+ tau          17   1.33606255              41
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                SOURCE   2 ORGANISM_SCIENTIFIC: COLUMBA LIVIA;                                  AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.P          
+           0
+         141
+         141  residues read 2R80.dssp                                                   
+  exclude short helix          37          42
+  exclude short helix          76          79
+  exclude short helix         138         140
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  3  4  5  6  2
+   2     1  4  5  5  1  3  4  5  6
+   3     1  0  0  1  2
+   4     2  6  7  2  1  3
+   5     2 10 11  3  4  5  6
+   6     4  0  0  1  1
+   7     4  0  0  1  3
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     5  0  0  1  4
+  11     5 16 17  2  5  6
+  12     0  0  0  1  4
+  13     0  0  0  0
+  14     0  0  0  1  4
+  15     0  0  0  0
+  16    11  0  0  1  5
+  17    11  0  0  1  6
+  18     0  0  0  1  2
+  19     0  0  0  0
+   1 *   0  2  3  6  1  1  6
+   2 -   1  4  5  5  2  1  1  3  6
+   3 -   1  0  0  1  1  2  2
+   4 -   2  6  7  2  2  1  1  3  3
+   5 -   2  8  9  3  1  4  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  3  3
+   8 -   5  0  0  1  1  4  4
+   9 -   5 10 11  2  1  5  6
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  1  1  6  6
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1284  CA BGLU B  26 
+ Alternate location indication is not blank or A, ignore atom: 1290  CD BGLU B  26 
+ Alternate location indication is not blank or A, ignore atom: 1292  OE1BGLU B  26 
+ Alternate location indication is not blank or A, ignore atom: 1294  OE2BGLU B  26 
+ Alternate location indication is not blank or A, ignore atom: 1406  CA BARG B  40 
+ Alternate location indication is not blank or A, ignore atom: 1410  CB BARG B  40 
+ Alternate location indication is not blank or A, ignore atom: 1412  CG BARG B  40 
+ Alternate location indication is not blank or A, ignore atom: 1414  CD BARG B  40 
+ Alternate location indication is not blank or A, ignore atom: 1416  NE BARG B  40 
+ Alternate location indication is not blank or A, ignore atom: 1418  CZ BARG B  40 
+ Alternate location indication is not blank or A, ignore atom: 1420  NH1BARG B  40 
+ Alternate location indication is not blank or A, ignore atom: 1422  NH2BARG B  40 
+ Alternate location indication is not blank or A, ignore atom: 1453  CA BSER B  44 
+ Alternate location indication is not blank or A, ignore atom: 1457  CB BSER B  44 
+ Alternate location indication is not blank or A, ignore atom: 1459  OG BSER B  44 
+ Alternate location indication is not blank or A, ignore atom: 1944  CA BILE B 109 
+ Alternate location indication is not blank or A, ignore atom: 1948  CB BILE B 109 
+ Alternate location indication is not blank or A, ignore atom: 1950  CG1BILE B 109 
+ Alternate location indication is not blank or A, ignore atom: 1952  CG2BILE B 109 
+ Alternate location indication is not blank or A, ignore atom: 1954  CD1BILE B 109 
+ Alternate location indication is not blank or A, ignore atom: 2085  CB BCYS B 126 
+ Alternate location indication is not blank or A, ignore atom: 2087  SG BCYS B 126 
+
+Total number of residues read in:            146
+Total number of atoms read in:              1144
+Total number of ignored atom records:        376
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.PALANI,    
+  Reading DSSP file
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                SOURCE   2 ORGANISM_SCIENTIFIC: COLUMBA LIVIA;                                  AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.P          
+         146  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau           1   2.23098660              18          69
+ #popped           2           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau           3   1.69519448              79
+ #popped           4           2
+ #selectset contacts        1395
+ selectset done           2
+ eigen done           2
+ tau           5   2.60231304              18
+ #popped           5           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau           7   1.44231915             103         135
+ #popped           8           2
+ #selectset contacts        1395
+ selectset done           2
+ eigen done           2
+ tau           9  0.829433680             103
+ #popped          10           2
+ #selectset contacts        1395
+ selectset done           2
+ eigen done           2
+ tau          11  0.975636661              89
+ #popped           9           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau          13   1.82168400             122
+ #popped           3           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau          15  0.820545197              33          59
+ #popped          16           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau          17   1.62037039              33
+ #popped          17           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau          19   1.62903225              44
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                SOURCE   2 ORGANISM_SCIENTIFIC: COLUMBA LIVIA;                                  AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.P          
+           0
+         146
+         146  residues read 2R80.dssp                                                   
+  exclude short helix          51          56
+  exclude short helix          81          84
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  7  1  5  6  7  2  4  3
+   2     1  4  5  4  1  5  6  7
+   3     1 16 17  3  2  4  3
+   4     2  0  0  1  1
+   5     2  8  9  3  5  6  7
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     5  0  0  1  5
+   9     5 14 15  2  6  7
+  10     0  0  0  1  5
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  5
+  14     9  0  0  1  6
+  15     9  0  0  1  7
+  16     3 18 19  2  2  4
+  17     3  0  0  1  3
+  18    16  0  0  1  2
+  19    16  0  0  1  4
+  20     0  0  0  1  3
+  21     0  0  0  0
+   1 *   0  2  3  7  1  1  7
+   2 -   1  4  5  4  2  1  1  5  7
+   3 -   1 10 11  3  1  2  4
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  3  1  5  7
+   6 -   5  0  0  1  1  5  5
+   7 -   5  8  9  2  1  6  7
+   8 -   7  0  0  1  1  6  6
+   9 -   7  0  0  1  1  7  7
+  10 -   3 12 13  2  2  2  2  4  4
+  11 -   3  0  0  1  1  3  3
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  4  4
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2434  CA BGLU C  27 
+ Alternate location indication is not blank or A, ignore atom: 2438  CB BGLU C  27 
+ Alternate location indication is not blank or A, ignore atom: 2440  CG BGLU C  27 
+ Alternate location indication is not blank or A, ignore atom: 2442  CD BGLU C  27 
+ Alternate location indication is not blank or A, ignore atom: 2444  OE1BGLU C  27 
+ Alternate location indication is not blank or A, ignore atom: 2446  OE2BGLU C  27 
+ Alternate location indication is not blank or A, ignore atom: 2881  CA CSER C  84 
+ Alternate location indication is not blank or A, ignore atom: 2882  CA DSER C  84 
+ Alternate location indication is not blank or A, ignore atom: 2885  CB CSER C  84 
+ Alternate location indication is not blank or A, ignore atom: 2886  CB DSER C  84 
+ Alternate location indication is not blank or A, ignore atom: 2887  OG CSER C  84 
+ Alternate location indication is not blank or A, ignore atom: 2888  OG DSER C  84 
+ Alternate location indication is not blank or A, ignore atom: 3248  CA BLEU C 130 
+ Alternate location indication is not blank or A, ignore atom: 3252  CB BLEU C 130 
+ Alternate location indication is not blank or A, ignore atom: 3254  CG BLEU C 130 
+ Alternate location indication is not blank or A, ignore atom: 3256  CD1BLEU C 130 
+ Alternate location indication is not blank or A, ignore atom: 3258  CD2BLEU C 130 
+
+Total number of residues read in:            140
+Total number of atoms read in:              1068
+Total number of ignored atom records:        295
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.PALANI,    
+  Reading DSSP file
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                SOURCE   2 ORGANISM_SCIENTIFIC: COLUMBA LIVIA;                                  AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.P          
+         140  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1316
+ selectset done           0
+ eigen done           0
+ tau           1   1.67754793              19         111
+ #popped           2           1
+ #selectset contacts        1316
+ selectset done           1
+ eigen done           1
+ tau           3   2.33286905              19
+ #popped           5           1
+ #selectset contacts        1316
+ selectset done           1
+ eigen done           1
+ tau           5   1.17957449             124
+ #popped           3           0
+ #selectset contacts        1316
+ selectset done           0
+ eigen done           0
+ tau           7   1.73630929              60
+ #popped           8           1
+ #selectset contacts        1316
+ selectset done           1
+ eigen done           1
+ tau           9   1.26582336              41
+ #popped          10           1
+ #selectset contacts        1316
+ selectset done           1
+ eigen done           1
+ tau          11  0.844970405              31
+ #popped           9           0
+ #selectset contacts        1316
+ selectset done           0
+ eigen done           0
+ tau          13   1.84505403              97
+ #popped          14           0
+ #selectset contacts        1316
+ selectset done           0
+ eigen done           0
+ tau          15   2.16836405              73
+ #popped          17           0
+ #selectset contacts        1316
+ selectset done           0
+ eigen done           0
+ tau          17   1.14219010              83
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                SOURCE   2 ORGANISM_SCIENTIFIC: COLUMBA LIVIA;                                  AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.P          
+           0
+         140
+         140  residues read 2R80.dssp                                                   
+  exclude short helix          37          42
+  grow short helix          73          79
+  exclude short helix          85          89
+  exclude short helix         137         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  5  2  3  4
+   2     1  4  5  2  1  5
+   3     1 14 15  3  2  3  4
+   4     2  0  0  1  1
+   5     2  0  0  1  5
+   6     0  0  0  0
+   7     0  0  0  1  5
+   8     0  0  0  0
+   9     0  0  0  3  2  3  4
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+  14     3 16 17  2  2  3
+  15     3  0  0  1  4
+  16    14  0  0  1  2
+  17    14  0  0  1  3
+  18     0  0  0  1  3
+  19     0  0  0  0
+   1 *   0  2  3  5  1  1  5
+   2 -   1  4  5  2  2  1  1  5  5
+   3 -   1  6  7  3  1  2  4
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  5  5
+   6 -   3  8  9  2  1  2  3
+   7 -   3  0  0  1  1  4  4
+   8 -   6  0  0  1  1  2  2
+   9 -   6  0  0  1  1  3  3
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3861  CA BLEU D  68 
+ Alternate location indication is not blank or A, ignore atom: 3865  CB BLEU D  68 
+ Alternate location indication is not blank or A, ignore atom: 3867  CG BLEU D  68 
+ Alternate location indication is not blank or A, ignore atom: 3869  CD1BLEU D  68 
+ Alternate location indication is not blank or A, ignore atom: 3871  CD2BLEU D  68 
+ Alternate location indication is not blank or A, ignore atom: 4063  CA BASP D  94 
+ Alternate location indication is not blank or A, ignore atom: 4067  CB BASP D  94 
+ Alternate location indication is not blank or A, ignore atom: 4069  CG BASP D  94 
+ Alternate location indication is not blank or A, ignore atom: 4071  OD1BASP D  94 
+ Alternate location indication is not blank or A, ignore atom: 4073  OD2BASP D  94 
+ Alternate location indication is not blank or A, ignore atom: 4325  CA BCYS D 126 
+ Alternate location indication is not blank or A, ignore atom: 4329  CB BCYS D 126 
+ Alternate location indication is not blank or A, ignore atom: 4331  SG BCYS D 126 
+
+Total number of residues read in:            146
+Total number of atoms read in:              1144
+Total number of ignored atom records:        360
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.PALANI,    
+  Reading DSSP file
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                SOURCE   2 ORGANISM_SCIENTIFIC: COLUMBA LIVIA;                                  AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.P          
+         146  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1411
+ selectset done           0
+ eigen done           0
+ tau           1   2.24971890              18          68
+ #popped           2           1
+ #selectset contacts        1411
+ selectset done           1
+ eigen done           1
+ tau           3   1.76606536              18
+ #popped           5           1
+ #selectset contacts        1411
+ selectset done           1
+ eigen done           1
+ tau           5   1.69219172              85
+ #popped           7           1
+ #selectset contacts        1411
+ selectset done           1
+ eigen done           1
+ tau           7   1.39448166              98         135
+ #popped           8           2
+ #selectset contacts        1411
+ selectset done           2
+ eigen done           2
+ tau           9  0.750485778              98
+ #popped           9           1
+ #selectset contacts        1411
+ selectset done           1
+ eigen done           1
+ tau          11   1.95129442             122
+ #popped          12           1
+ #selectset contacts        1411
+ selectset done           1
+ eigen done           1
+ tau          13  0.978732646             108
+ #popped           3           0
+ #selectset contacts        1411
+ selectset done           0
+ eigen done           0
+ tau          15  0.851975739              31          55
+ #popped          16           1
+ #selectset contacts        1411
+ selectset done           1
+ eigen done           1
+ tau          17   1.27641916              31
+ #popped          17           0
+ #selectset contacts        1411
+ selectset done           0
+ eigen done           0
+ tau          19   1.83564758              45
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXYGEN BINDING                          10-SEP-07   2R80              COMPND   2 MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                SOURCE   2 ORGANISM_SCIENTIFIC: COLUMBA LIVIA;                                  AUTHOR    M.N.PONNUSWAMY,C.PACKIANATHAN,S.SUNDARESAN,K.NEELAGANDAN,K.P          
+           0
+         146
+         146  residues read 2R80.dssp                                                   
+  exclude short helix          51          56
+  grow short helix          78          84
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  5  6  7  8  2  4  3
+   2     1  4  5  5  1  5  6  7  8
+   3     1 16 17  3  2  4  3
+   4     2  0  0  1  1
+   5     2  6  7  4  5  6  7  8
+   6     5  0  0  1  5
+   7     5  8  9  3  6  7  8
+   8     7  0  0  1  6
+   9     7 12 13  2  7  8
+  10     0  0  0  1  6
+  11     0  0  0  0
+  12     9  0  0  1  7
+  13     9  0  0  1  8
+  14     0  0  0  0
+  15     0  0  0  1  7
+  16     3 18 19  2  2  4
+  17     3  0  0  1  3
+  18    16  0  0  1  2
+  19    16  0  0  1  4
+  20     0  0  0  1  3
+  21     0  0  0  0
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  5  2  1  1  5  8
+   3 -   1 12 13  3  1  2  4
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  4  1  5  8
+   6 -   5  0  0  1  1  5  5
+   7 -   5  8  9  3  1  6  8
+   8 -   7  0  0  1  1  6  6
+   9 -   7 10 11  2  1  7  8
+  10 -   9  0  0  1  1  7  7
+  11 -   9  0  0  1  1  8  8
+  12 -   3 14 15  2  2  2  2  4  4
+  13 -   3  0  0  1  1  3  3
+  14 -  12  0  0  1  1  2  2
+  15 -  12  0  0  1  1  4  4
+
+ CHAIN : 2R80A
+ CHAIN : 2R80B
+ CHAIN : 2R80C
+ CHAIN : 2R80D
+

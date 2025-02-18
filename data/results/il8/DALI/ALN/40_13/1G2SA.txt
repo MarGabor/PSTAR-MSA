@@ -1,0 +1,32 @@
+# Job: il8
+# Query: 1G2SA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1DON-B  7.5  3.2   63    76   32   MOLECULE: MCP-1;                                                     
+
+# Pairwise alignments
+
+No 1: Query=1G2SA Sbjct=1DONB Z-score=7.5
+
+DSSP  -llllllllLLLLLLLLLLLLHHHEEEEEELLLL-LLLLLEEEEELLLLEEEELLLLHHH
+Query -trgsdiskTCCFQYSHKPLPWTWVRSYEFTSNS-CSQRAVIFTTKRGKKVCTHPRKKWV   58
+ident          |||              ||     | |   |||| |   |  |  |  |||
+Sbjct qpdainapvTCCYNFTNRKISVQRLASYRRITSSkCPKEAVIFKTIVAKEICADPKQKWV   60
+DSSP  lllllllleEELLLLLLLLLLLLLLLEELLLLLLlLLLLLEEEELLLLLEEEELLLLLLH
+
+DSSP  HHHHHHHLL-LLLL--
+Query QKYISLLKT-PKQL--   71
+ident |     |         
+Sbjct QDSMDHLDKqTQTPkt   76
+DSSP  HHHHHHHHLlLLLLll
+
+
+# Structural equivalences
+   1: 1G2S-A 1DON-B     9 -  33 <=>   10 -  34   (THR    9  - SER   33  <=> THR   10  - SER   34 )                          
+   1: 1G2S-A 1DON-B    34 -  67 <=>   36 -  69   (CYS   34  - THR   67  <=> CYS   36  - LYS   69 )                          
+   1: 1G2S-A 1DON-B    68 -  71 <=>   71 -  74   (PRO   68  - LEU   71  <=> THR   71  - PRO   74 )                          
+
+# Translation-rotation matrices
+-matrix  "1G2S-A 1DON-B  U(1,.)  -0.198952  0.348543  0.915935           24.540001"
+-matrix  "1G2S-A 1DON-B  U(2,.)  -0.379758  0.834176 -0.399919           19.859730"
+-matrix  "1G2S-A 1DON-B  U(3,.)  -0.903439 -0.427398 -0.033599           56.103233"
+

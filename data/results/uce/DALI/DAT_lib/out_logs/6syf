@@ -1,0 +1,637 @@
+A length: 152
+B length: 153
+C length: 154
+D length: 152
+E length: 6
+F length: 4
+G length: 6
+H length: 4
+I length: 6
+J length: 4
+K length: 6
+L length: 4
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  273  N  BMET A  39 
+ Alternate location indication is not blank or A, ignore atom:  275  CA BMET A  39 
+ Alternate location indication is not blank or A, ignore atom:  277  C  BMET A  39 
+ Alternate location indication is not blank or A, ignore atom:  279  O  BMET A  39 
+ Alternate location indication is not blank or A, ignore atom:  281  CB BMET A  39 
+ Alternate location indication is not blank or A, ignore atom:  283  CG BMET A  39 
+ Alternate location indication is not blank or A, ignore atom:  285  SD BMET A  39 
+ Alternate location indication is not blank or A, ignore atom:  287  CE BMET A  39 
+
+Total number of residues read in:            153
+Total number of atoms read in:              1223
+Total number of ignored atom records:        203
+ HEADER    LIGASE                                  27-SEP-19   6SYF              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+  Reading DSSP file
+ HEADER    LIGASE                                  27-SEP-19   6SYF              COMPND   2 MOLECULE: SUMO-CONJUGATING ENZYME UBC9;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+         153  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1393
+ selectset done           0
+ eigen done           0
+ tau           1   1.46192813             126
+ #popped           2           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau           3   1.03970492              60          70          89         103
+ #popped           4           2
+ #selectset contacts        1393
+ selectset done           2
+ eigen done           2
+ tau           5   1.25782228              60
+ #popped           6           3
+ #selectset contacts        1393
+ selectset done           3
+ eigen done           3
+ tau           7  0.714072526              24
+ #popped           8           4
+ #selectset contacts        1393
+ selectset done           4
+ eigen done           4
+ tau           9  0.822335005              10
+ #popped           9           3
+ #selectset contacts        1393
+ selectset done           3
+ eigen done           3
+ tau          11   1.07735288              34
+ #popped          13           3
+ #selectset contacts        1393
+ selectset done           3
+ eigen done           3
+ tau          13  0.221384361              50
+ #popped           7           2
+ #selectset contacts        1393
+ selectset done           2
+ eigen done           2
+ tau          15   1.35371900              89         113
+ #popped          16           2
+ #selectset contacts        1393
+ selectset done           2
+ eigen done           2
+ tau          17  0.936935306              89
+ #popped           5           1
+ #selectset contacts        1393
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        1393
+ selectset done           0
+ eigen done           0
+ tau          19  0.988433480             140
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LIGASE                                  27-SEP-19   6SYF              COMPND   2 MOLECULE: SUMO-CONJUGATING ENZYME UBC9;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+           0
+         153
+         153  residues read 6SYF.dssp                                                   
+  grow short strand          70          73
+  exclude short helix          91          93
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  6  7  8
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1 20 21  2  7  8
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  8  9  4  1  2  3  4
+   7     2 16 17  2  5  6
+   8     6 10 11  2  1  2
+   9     6 14 15  2  3  4
+  10     8  0  0  1  1
+  11     8  0  0  1  2
+  12     0  0  0  0
+  13     0  0  0  2  3  4
+  14     9  0  0  1  3
+  15     9  0  0  1  4
+  16     7  0  0  1  5
+  17     7  0  0  1  6
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20     3  0  0  1  7
+  21     3  0  0  1  8
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  6  1  1  6
+   3 -   1 14 15  2  1  7  8
+   4 -   2  6  7  4  1  1  4
+   5 -   2 12 13  2  1  5  6
+   6 -   4  8  9  2  1  1  2
+   7 -   4 10 11  2  1  3  4
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  2  2
+  10 -   7  0  0  1  1  3  3
+  11 -   7  0  0  1  1  4  4
+  12 -   5  0  0  1  1  5  5
+  13 -   5  0  0  1  1  6  6
+  14 -   3  0  0  1  1  7  7
+  15 -   3  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1264  N  BSER B   7 
+ Alternate location indication is not blank or A, ignore atom: 1266  CA BSER B   7 
+ Alternate location indication is not blank or A, ignore atom: 1268  C  BSER B   7 
+ Alternate location indication is not blank or A, ignore atom: 1270  O  BSER B   7 
+ Alternate location indication is not blank or A, ignore atom: 1272  CB BSER B   7 
+ Alternate location indication is not blank or A, ignore atom: 1274  OG BSER B   7 
+ Alternate location indication is not blank or A, ignore atom: 1528  N  BMET B  39 
+ Alternate location indication is not blank or A, ignore atom: 1530  CA BMET B  39 
+ Alternate location indication is not blank or A, ignore atom: 1532  C  BMET B  39 
+ Alternate location indication is not blank or A, ignore atom: 1534  O  BMET B  39 
+ Alternate location indication is not blank or A, ignore atom: 1536  CB BMET B  39 
+ Alternate location indication is not blank or A, ignore atom: 1538  CG BMET B  39 
+ Alternate location indication is not blank or A, ignore atom: 1540  SD BMET B  39 
+ Alternate location indication is not blank or A, ignore atom: 1542  CE BMET B  39 
+ Alternate location indication is not blank or A, ignore atom: 1696  N  BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1698  CA BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1700  C  BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1702  O  BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1704  CB BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1706  CG BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1708  CD BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1710  NE BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1712  CZ BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1714  NH1BARG B  61 
+ Alternate location indication is not blank or A, ignore atom: 1716  NH2BARG B  61 
+
+Total number of residues read in:            156
+Total number of atoms read in:              1241
+Total number of ignored atom records:        293
+ HEADER    LIGASE                                  27-SEP-19   6SYF              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+  Reading DSSP file
+ HEADER    LIGASE                                  27-SEP-19   6SYF              COMPND   2 MOLECULE: SUMO-CONJUGATING ENZYME UBC9;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+         156  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1429
+ selectset done           0
+ eigen done           0
+ tau           1   1.52370977             128
+ #popped           2           1
+ #selectset contacts        1429
+ selectset done           1
+ eigen done           1
+ tau           3   1.09099162              42          58          74          92         112
+ #popped           4           2
+ #selectset contacts        1429
+ selectset done           2
+ eigen done           2
+ tau           5   1.29338777              74
+ #popped           6           3
+ #selectset contacts        1429
+ selectset done           3
+ eigen done           3
+ tau           7   1.28846538              24
+ #popped           8           4
+ #selectset contacts        1429
+ selectset done           4
+ eigen done           4
+ tau           9   1.02517748              11
+ #popped           9           3
+ #selectset contacts        1429
+ selectset done           3
+ eigen done           3
+ tau          11  0.546377718              42
+ #popped           7           2
+ #selectset contacts        1429
+ selectset done           2
+ eigen done           2
+ tau          13   1.19076133             102
+ #popped           5           1
+ #selectset contacts        1429
+ selectset done           1
+ eigen done           1
+ tau          15   1.62352407              58
+ #popped          17           1
+ #selectset contacts        1429
+ selectset done           1
+ eigen done           1
+ tau          17   1.20225561              92
+ #popped           3           0
+ #selectset contacts        1429
+ selectset done           0
+ eigen done           0
+ tau          19   1.10873699             146
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LIGASE                                  27-SEP-19   6SYF              COMPND   2 MOLECULE: SUMO-CONJUGATING ENZYME UBC9;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+           0
+         156
+         156  residues read 6SYF.dssp                                                   
+  grow short strand          73          76
+  exclude short helix          94          96
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  6  7  8
+   2     1  4  5  6  1  2  3  4  5  6
+   3     1  0  0  2  7  8
+   4     2  8  9  5  1  2  3  4  5
+   5     2  0  0  1  6
+   6     0  0  0  5  1  2  3  4  5
+   7     0  0  0  0
+   8     4  0  0  1  1
+   9     4 12 13  4  2  3  4  5
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     9  0  0  2  2  3
+  13     9  0  0  2  4  5
+  14     0  0  0  0
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  6
+  18     0  0  0  0
+  19     0  0  0  1  6
+  20     0  0  0  2  7  8
+  21     0  0  0  0
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  6  1  1  6
+   3 -   1  0  0  2  1  7  8
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  1  2  5
+   8 -   7  0  0  2  1  2  3
+   9 -   7  0  0  2  1  4  5
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2788  N  BMET C  39 
+ Alternate location indication is not blank or A, ignore atom: 2790  CA BMET C  39 
+ Alternate location indication is not blank or A, ignore atom: 2792  C  BMET C  39 
+ Alternate location indication is not blank or A, ignore atom: 2794  O  BMET C  39 
+ Alternate location indication is not blank or A, ignore atom: 2796  CB BMET C  39 
+ Alternate location indication is not blank or A, ignore atom: 2798  CG BMET C  39 
+ Alternate location indication is not blank or A, ignore atom: 2800  SD BMET C  39 
+ Alternate location indication is not blank or A, ignore atom: 2802  CE BMET C  39 
+ Alternate location indication is not blank or A, ignore atom: 2956  N  BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2958  CA BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2960  C  BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2962  O  BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2964  CB BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2966  CG BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2968  CD BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2970  NE BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2972  CZ BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2974  NH1BARG C  61 
+ Alternate location indication is not blank or A, ignore atom: 2976  NH2BARG C  61 
+
+Total number of residues read in:            156
+Total number of atoms read in:              1241
+Total number of ignored atom records:        225
+ HEADER    LIGASE                                  27-SEP-19   6SYF              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+  Reading DSSP file
+ HEADER    LIGASE                                  27-SEP-19   6SYF              COMPND   2 MOLECULE: SUMO-CONJUGATING ENZYME UBC9;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+         156  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1436
+ selectset done           0
+ eigen done           0
+ tau           1   1.51161683             128
+ #popped           2           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau           3   1.04631031              11          27          39          61          73          92         106
+ #popped           4           2
+ #selectset contacts        1436
+ selectset done           2
+ eigen done           2
+ tau           5   1.49915302              11          39
+ #popped           6           2
+ #selectset contacts        1436
+ selectset done           2
+ eigen done           2
+ tau           7   1.37723970              11
+ #popped           9           2
+ #selectset contacts        1436
+ selectset done           2
+ eigen done           2
+ tau           9  0.939246237              73
+ #popped           5           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau          11   1.03151095              25
+ #popped          13           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau          13  0.852244616              82
+ #popped          14           2
+ #selectset contacts        1436
+ selectset done           2
+ eigen done           2
+ tau          15  0.534197390              57
+ #popped          16           2
+ #selectset contacts        1436
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          15           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau          17   1.47809243              92
+ #popped          19           1
+ #selectset contacts        1436
+ selectset done           1
+ eigen done           1
+ tau          19   1.03970504             116
+ #popped           3           0
+ #selectset contacts        1436
+ selectset done           0
+ eigen done           0
+ tau          21   1.06348240             146
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LIGASE                                  27-SEP-19   6SYF              COMPND   2 MOLECULE: SUMO-CONJUGATING ENZYME UBC9;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+           0
+         156
+         156  residues read 6SYF.dssp                                                   
+  grow short strand          73          76
+  exclude short helix          94          96
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  6  7  8
+   2     1  4  5  6  1  2  3  4  5  6
+   3     1  0  0  2  7  8
+   4     2  0  0  1  1
+   5     2 14 15  5  2  3  4  5  6
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  5  2  3  4  5  6
+  14     5 16 17  4  2  3  4  5
+  15     5  0  0  1  6
+  16    14  0  0  2  2  3
+  17    14  0  0  2  4  5
+  18     0  0  0  0
+  19     0  0  0  1  6
+  20     0  0  0  1  6
+  21     0  0  0  0
+  22     0  0  0  2  7  8
+  23     0  0  0  0
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  6  1  1  6
+   3 -   1  0  0  2  1  7  8
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  5  1  2  6
+   6 -   5  8  9  4  1  2  5
+   7 -   5  0  0  1  1  6  6
+   8 -   6  0  0  2  1  2  3
+   9 -   6  0  0  2  1  4  5
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 4030  N  BMET D  39 
+ Alternate location indication is not blank or A, ignore atom: 4032  CA BMET D  39 
+ Alternate location indication is not blank or A, ignore atom: 4034  C  BMET D  39 
+ Alternate location indication is not blank or A, ignore atom: 4036  O  BMET D  39 
+ Alternate location indication is not blank or A, ignore atom: 4038  CB BMET D  39 
+ Alternate location indication is not blank or A, ignore atom: 4040  CG BMET D  39 
+ Alternate location indication is not blank or A, ignore atom: 4042  SD BMET D  39 
+ Alternate location indication is not blank or A, ignore atom: 4044  CE BMET D  39 
+
+Total number of residues read in:            153
+Total number of atoms read in:              1223
+Total number of ignored atom records:        233
+ HEADER    LIGASE                                  27-SEP-19   6SYF              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+  Reading DSSP file
+ HEADER    LIGASE                                  27-SEP-19   6SYF              COMPND   2 MOLECULE: SUMO-CONJUGATING ENZYME UBC9;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+         153  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1405
+ selectset done           0
+ eigen done           0
+ tau           1   1.40734684              42          52          75          98         113
+ #popped           2           1
+ #selectset contacts        1405
+ selectset done           1
+ eigen done           1
+ tau           3   1.02955639              75
+ #popped           4           1
+ #selectset contacts        1405
+ selectset done           1
+ eigen done           1
+ tau           5  0.758183122              24          34
+ #popped           6           1
+ #selectset contacts        1405
+ selectset done           1
+ eigen done           1
+ tau           7  0.827010751              14
+ #popped           9           1
+ #selectset contacts        1405
+ selectset done           1
+ eigen done           1
+ tau           9  0.587288082              56
+ #popped          10           1
+ #selectset contacts        1405
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1405
+ selectset done           0
+ eigen done           0
+ tau          11   2.34525251              88          98
+ #popped          12           0
+ #selectset contacts        1405
+ selectset done           0
+ eigen done           0
+ tau          13   1.18676913              52         131
+ #popped          14           1
+ #selectset contacts        1405
+ selectset done           1
+ eigen done           1
+ tau          15   1.03410423              52         143
+ #popped          16           1
+ #selectset contacts        1405
+ selectset done           1
+ eigen done           1
+ tau          17   1.01791632              52
+ #popped          15           0
+ #selectset contacts        1405
+ selectset done           0
+ eigen done           0
+ tau          19  0.754450083              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LIGASE                                  27-SEP-19   6SYF              COMPND   2 MOLECULE: SUMO-CONJUGATING ENZYME UBC9;                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.HOFMANN,G.AKIMOTO,T.G.WUCHERPFENNIG,C.ZEYMER,J.W.BODE               
+           0
+         153
+         153  residues read 6SYF.dssp                                                   
+  grow short strand          70          73
+  exclude short helix          91          93
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  6  8  7
+   2     1  4  5  6  1  2  3  4  5  6
+   3     1 14 15  2  8  7
+   4     2  8  9  5  1  2  3  4  5
+   5     2  0  0  1  6
+   6     0  0  0  5  1  2  3  4  5
+   7     0  0  0  0
+   8     4  0  0  1  1
+   9     4 10 11  4  2  3  4  5
+  10     9  0  0  3  2  3  4
+  11     9  0  0  1  5
+  12     0  0  0  2  8  7
+  13     0  0  0  0
+  14     3  0  0  1  8
+  15     3  0  0  1  7
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  7
+   1 *   0  2  3  8  1  1  8
+   2 -   1  4  5  6  1  1  6
+   3 -   1 10 11  2  1  7  8
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  1  2  5
+   8 -   7  0  0  3  1  2  4
+   9 -   7  0  0  1  1  5  5
+  10 -   3  0  0  1  1  8  8
+  11 -   3  0  0  1  1  7  7
+
+ CHAIN : 6SYFA
+ CHAIN : 6SYFB
+ CHAIN : 6SYFC
+ CHAIN : 6SYFD
+

@@ -1,0 +1,496 @@
+1 length: 246
+2 length: 200
+3 length: 226
+4 length: 21
+# 3 chains 1 2 3
+
+ CHAIN 1
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            246
+Total number of atoms read in:              1928
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   04-SEP-09   2WS9              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPELLI,       
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           7
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          12
+  Reading DSSP file
+ HEADER    VIRUS                                   04-SEP-09   2WS9              COMPND   2 MOLECULE: P1;                                                        SOURCE   2 ORGANISM_SCIENTIFIC: EQUINE RHINITIS A VIRUS;                        AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPEL          
+         246  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau           1   8.19751072              18
+ #popped           3           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau           3   3.33264971             170         188
+ #popped           4           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau           5   2.75207424              28
+ #popped           7           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau           7   8.02751923             228
+ #popped           8           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau           9   2.28509021              42          57          87         152         170         207
+ #popped          10           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau          11  0.712732136              42
+ #popped          13           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau          13  0.568432331              81         159
+ #popped          14           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau          15   1.04872549             170         217
+ #popped          16           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          11           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau          17   1.34654617             119         129
+ #popped          18           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau          19  0.578862309              57         103         142
+ #popped          20           1
+ #selectset contacts        1832
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        1832
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   04-SEP-09   2WS9              COMPND   2 MOLECULE: P1;                                                        SOURCE   2 ORGANISM_SCIENTIFIC: EQUINE RHINITIS A VIRUS;                        AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPEL          
+           0
+         246
+         246  residues read 2WS9.dssp                                                   
+  exclude short helix          26          28
+  exclude short helix          30          34
+  grow short strand          38          39
+  grow short strand          55          56
+  exclude short helix          69          72
+  grow short strand          77          79
+  grow short strand          82          86
+  grow short strand          89          90
+  exclude short helix          94          96
+  grow short strand         127         131
+  grow short strand         141         145
+  grow short strand         154         158
+  grow short strand         167         168
+  grow short strand         205         206
+  grow short strand         209         212
+  grow short strand         217         219
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0 10 11 15  1  3 11 15 14  4 10  2  6  7  5  9 12 13  8
+   2     0  0  0  0
+   3     0  0  0 15  1  3 11 15 14  4 10  2  6  7  5  9 12 13  8
+   4     0  0  0 15  1  3 11 15 14  4 10  2  6  7  5  9 12 13  8
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0 15  1  3 11 15 14  4 10  2  6  7  5  9 12 13  8
+   8     0  0  0 15  1  3 11 15 14  4 10  2  6  7  5  9 12 13  8
+   9     0  0  0  0
+  10     1 12 13  7  1  3 11 15 14  4 10
+  11     1 18 19  8  2  6  7  5  9 12 13  8
+  12    10  0  0  1  1
+  13    10 14 15  6  3 11 15 14  4 10
+  14    13 16 17  4  3 11 15 14
+  15    13  0  0  2  4 10
+  16    14  0  0  3  3 11 15
+  17    14  0  0  1 14
+  18    11 20 21  7  2  6  7  5  9 12 13
+  19    11  0  0  1  8
+  20    18  0  0  3  2  6  7
+  21    18  0  0  4  5  9 12 13
+   1 +   0  2  3 15  1  1 15
+   2 -   1  4  5  7  4  1  1  3  4 10 11 14 15
+   3 -   1 10 11  8  3  2  2  5  9 12 13
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  6  3  3  4 10 11 14 15
+   6 -   5  8  9  4  3  3  3 11 11 14 15
+   7 -   5  0  0  2  2  4  4 10 10
+   8 -   6  0  0  3  3  3  3 11 11 15 15
+   9 -   6  0  0  1  1 14 14
+  10 -   3 12 13  7  4  2  2  5  7  9  9 12 13
+  11 -   3  0  0  1  1  8  8
+  12 -  10  0  0  3  2  2  2  6  7
+  13 -  10  0  0  4  3  5  5  9  9 12 13
+
+ CHAIN 2
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            200
+Total number of atoms read in:              1553
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   04-SEP-09   2WS9              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPELLI,       
+  Reading DSSP file
+ HEADER    VIRUS                                   04-SEP-09   2WS9              COMPND   2 MOLECULE: P1;                                                        SOURCE   2 ORGANISM_SCIENTIFIC: EQUINE RHINITIS A VIRUS;                        AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPEL          
+         200  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1656
+ selectset done           0
+ eigen done           0
+ tau           1   1.77843189              33          50          81          97         112         141         164         183
+ #popped           2           1
+ #selectset contacts        1656
+ selectset done           1
+ eigen done           1
+ tau           3  0.995689631              10          20
+ #popped           4           1
+ #selectset contacts        1656
+ selectset done           1
+ eigen done           1
+ tau           5  0.784283340              33          60          81         164
+ #popped           6           2
+ #selectset contacts        1656
+ selectset done           2
+ eigen done           2
+ tau           7   5.00425529              10
+ #popped           9           2
+ #selectset contacts        1656
+ selectset done           2
+ eigen done           2
+ tau           9  0.223382756              81
+ #popped          10           2
+ #selectset contacts        1656
+ selectset done           2
+ eigen done           2
+ tau          11   3.82466435              71
+ #popped          12           2
+ #selectset contacts        1656
+ selectset done           2
+ eigen done           2
+ tau          13   1.47742152              33
+ #popped           7           1
+ #selectset contacts        1656
+ selectset done           1
+ eigen done           1
+ tau          15  0.353400171             151
+ #popped          16           1
+ #selectset contacts        1656
+ selectset done           1
+ eigen done           1
+ tau          17   55.0531921             112
+ #popped          18           1
+ #selectset contacts        1656
+ selectset done           1
+ eigen done           1
+ tau          19  0.929951668              60
+ #popped           3           0
+ #selectset contacts        1656
+ selectset done           0
+ eigen done           0
+ tau          21  0.218964905             124
+ #popped          22           1
+ #selectset contacts        1656
+ selectset done           1
+ eigen done           1
+ tau          23   8.38198376              50          97
+ #popped          24           1
+ #selectset contacts        1656
+ selectset done           1
+ eigen done           1
+ tau          25  0.487989306              50
+ #popped          23           0
+ #selectset contacts        1656
+ selectset done           0
+ eigen done           0
+ tau          27   16.9372692             141
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   04-SEP-09   2WS9              COMPND   2 MOLECULE: P1;                                                        SOURCE   2 ORGANISM_SCIENTIFIC: EQUINE RHINITIS A VIRUS;                        AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPEL          
+           0
+         200
+         200  residues read 2WS9.dssp                                                   
+  grow short strand           2           4
+  grow short strand          21          23
+  exclude short helix          58          60
+  grow short strand         113         116
+  grow short strand         130         134
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  5  6 13 11  3  4  8  9  7 10 12
+   2     1  6  7  6  1  2  5  6 13 11
+   3     1 22 23  7  3  4  8  9  7 10 12
+   4     0  0  0  6  1  2  5  6 13 11
+   5     0  0  0  0
+   6     2  8  9  5  1  2  5  6 13
+   7     2  0  0  1 11
+   8     6  0  0  1  1
+   9     6 10 11  4  2  5  6 13
+  10     9 12 13  3  2  5  6
+  11     9  0  0  1 13
+  12    10 14 15  2  2  5
+  13    10  0  0  1  6
+  14    12  0  0  1  2
+  15    12  0  0  1  5
+  16     0  0  0  1 11
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1 11
+  20     0  0  0  0
+  21     0  0  0  0
+  22     3 24 25  5  3  4  8  9  7
+  23     3 28 29  2 10 12
+  24    22 26 27  4  3  4  8  9
+  25    22  0  0  1  7
+  26    24  0  0  2  3  4
+  27    24  0  0  2  8  9
+  28    23  0  0  1 10
+  29    23  0  0  1 12
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  6  4  1  2  5  6 11 11 13 13
+   3 -   1 14 15  7  3  3  4  7 10 12 12
+   4 -   2  6  7  5  3  1  2  5  6 13 13
+   5 -   2  0  0  1  1 11 11
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  3  2  2  5  6 13 13
+   8 -   7 10 11  3  2  2  2  5  6
+   9 -   7  0  0  1  1 13 13
+  10 -   8 12 13  2  2  2  2  5  5
+  11 -   8  0  0  1  1  6  6
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  5  5
+  14 -   3 16 17  5  2  3  4  7  9
+  15 -   3 20 21  2  2 10 10 12 12
+  16 -  14 18 19  4  2  3  4  8  9
+  17 -  14  0  0  1  1  7  7
+  18 -  16  0  0  2  1  3  4
+  19 -  16  0  0  2  1  8  9
+  20 -  15  0  0  1  1 10 10
+  21 -  15  0  0  1  1 12 12
+
+ CHAIN 3
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            226
+Total number of atoms read in:              1718
+Total number of ignored atom records:          0
+ HEADER    VIRUS                                   04-SEP-09   2WS9              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPELLI,       
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  Reading DSSP file
+ HEADER    VIRUS                                   04-SEP-09   2WS9              COMPND   2 MOLECULE: P1;                                                        SOURCE   2 ORGANISM_SCIENTIFIC: EQUINE RHINITIS A VIRUS;                        AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPEL          
+         226  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1652
+ selectset done           0
+ eigen done           0
+ tau           1   18.0281181              37
+ #popped           2           1
+ #selectset contacts        1652
+ selectset done           1
+ eigen done           1
+ tau           3   4.66642857              19
+ #popped           3           0
+ #selectset contacts        1652
+ selectset done           0
+ eigen done           0
+ tau           5   2.70369720              50
+ #popped           7           0
+ #selectset contacts        1652
+ selectset done           0
+ eigen done           0
+ tau           7   2.06089115              86         103         159         179         210
+ #popped           8           1
+ #selectset contacts        1652
+ selectset done           1
+ eigen done           1
+ tau           9  0.796570718             124         141
+ #popped          10           1
+ #selectset contacts        1652
+ selectset done           1
+ eigen done           1
+ tau          11  0.910558999              76          86
+ #popped          12           1
+ #selectset contacts        1652
+ selectset done           1
+ eigen done           1
+ tau          13  0.659532726             190         200
+ #popped          14           1
+ #selectset contacts        1652
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           9           0
+ #selectset contacts        1652
+ selectset done           0
+ eigen done           0
+ tau          15   1.61822665             169         179
+ #popped          16           0
+ #selectset contacts        1652
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    VIRUS                                   04-SEP-09   2WS9              COMPND   2 MOLECULE: P1;                                                        SOURCE   2 ORGANISM_SCIENTIFIC: EQUINE RHINITIS A VIRUS;                        AUTHOR    E.E.FRY,T.J.TUTHILL,K.HARLOS,T.S.WALTER,N.J.KNOWLES,E.GROPEL          
+           0
+         226
+         226  residues read 2WS9.dssp                                                   
+  grow short strand          30          31
+  grow short strand          39          40
+  exclude short helix          43          48
+  grow short strand          52          53
+  grow short strand          61          65
+  exclude short helix          89          94
+  grow short strand          97         101
+  exclude short helix         135         138
+  grow short strand         167         168
+  grow short strand         215         219
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  5  7  8  9 10 12 13  6 11 14
+   2     1  0  0  1  1
+   3     1  6  7 13  2  3  4  5  7  8  9 10 12 13  6 11 14
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     3  0  0  1  2
+   7     3  8  9 12  3  4  5  7  8  9 10 12 13  6 11 14
+   8     7  0  0  9  3  4  5  7  8  9 10 12 13
+   9     7  0  0  3  6 11 14
+  10     0  0  0  9  3  4  5  7  8  9 10 12 13
+  11     0  0  0  0
+  12     0  0  0  9  3  4  5  7  8  9 10 12 13
+  13     0  0  0  0
+  14     0  0  0  9  3  4  5  7  8  9 10 12 13
+  15     0  0  0  0
+  16     0  0  0  3  6 11 14
+  17     0  0  0  0
+   1 +   0  2  3 14  1  1 14
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5 13  1  2 14
+   4 =   3  0  0  1  1  2  2
+   5 *   3  6  7 12  1  3 14
+   6 -   5  0  0  9  3  3  5  7 10 12 13
+   7 -   5  0  0  3  3  6  6 11 11 14 14
+
+ CHAIN : 2WS91
+ CHAIN : 2WS92
+ CHAIN : 2WS93
+

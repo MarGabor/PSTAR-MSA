@@ -1,0 +1,42 @@
+# Job: glob
+# Query: 2HBGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3LHB-A 15.7  1.9  128   149   20   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=2HBGA Sbjct=3LHBA Z-score=15.7
+
+DSSP  ---------LLLHHHHHHHHHHHHHHHLllLLHHHHHHHHHHHHHHLLLHHHHHLLL---
+Query ---------GLSAAQRQVIAATWKDIAGadNGAGVGKKCLIKFLSAHPQMAAVFGFS---   48
+ident           ||||    |   |            |   | ||    |     |      
+Sbjct pivdtgsvaPLSAAEKTKIRSAWAPVYS--TYETSGVDILVKFFTSTPAAQEFFPKFkgl   58
+DSSP  lllllllllLLLHHHHHHHHHHHHHHHH--LHHHHHHHHHHHHHHHLHHHHHHLHHHlll
+
+DSSP  ----lLLLH-HHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHH-HHHLlllLLLHHH
+Query ----gASDP-GVAALGAKVLAQIGVAVSHLGDEGKMVAQMKAVGVR-HKGYgnkHIKAQY  102
+ident            |             ||    |  ||            |          |
+Sbjct ttadeLKKSaDVRWHAERIINAVDDAVASMDDTEKMSMKLRNLSGKhAKSF---QVDPEY  115
+DSSP  llhhhHHHLhHHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHhHHLL---LLLHHH
+
+DSSP  HHHHHHHHHHHHHhhhhhhllhhhHHHHHHHHHHHHHHHHHHHll
+Query FEPLGASLLSAMEhriggkmnaaaKDAWAAAYADISGALISGLqs  147
+ident |  | |                            |   | |    
+Sbjct FKVLAAVIADTVA---------agDAGFEKLMSMICILLRSAY--  149
+DSSP  HHHHHHHHHHHHH---------llLHHHHHHHHHHHHHHHLLL--
+
+
+# Structural equivalences
+   1: 2HBG-A 3LHB-A     1 -  19 <=>   10 -  28   (GLY    1  - GLY   19  <=> PRO   10  - SER   28 )                          
+   1: 2HBG-A 3LHB-A    22 -  48 <=>   29 -  55   (ASN   22  - SER   48  <=> THR   29  - PHE   55 )                          
+   1: 2HBG-A 3LHB-A    50 -  53 <=>   64 -  67   (ALA   50  - PRO   53  <=> LEU   64  - SER   67 )                          
+   1: 2HBG-A 3LHB-A    54 -  89 <=>   69 - 104   (GLY   54  - ARG   89  <=> ASP   69  - LYS  104 )                          
+   1: 2HBG-A 3LHB-A    90 -  93 <=>  106 - 109   (HIS   90  - TYR   93  <=> ALA  106  - PHE  109 )                          
+   1: 2HBG-A 3LHB-A    97 - 115 <=>  110 - 128   (HIS   97  - GLU  115  <=> GLN  110  - ALA  128 )                          
+   1: 2HBG-A 3LHB-A   127 - 145 <=>  131 - 149   (LYS  127  - LEU  145  <=> ASP  131  - TYR  149 )                          
+
+# Translation-rotation matrices
+-matrix  "2HBG-A 3LHB-A  U(1,.)   0.042991 -0.957276  0.285964          213.132721"
+-matrix  "2HBG-A 3LHB-A  U(2,.)  -0.116289  0.279488  0.953081          -48.843056"
+-matrix  "2HBG-A 3LHB-A  U(3,.)  -0.992285 -0.074229 -0.099305           40.978378"
+

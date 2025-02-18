@@ -1,0 +1,40 @@
+# Job: flav
+# Query: 2MTBA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5LJL-A 16.9  2.5  141   147   21   MOLECULE: FLAVODOXIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=2MTBA Sbjct=5LJLA Z-score=16.9
+
+DSSP  --LLEEEEELLLLLLHHHHHHHHHHHHLL--LLEEEEELLLLLHHHHHLLLEEEEELLLL
+Query --MNMGLFYGSSTCYTEMAAEKIRDIIGP--ELVTLHNLKDDSPKLMEQYDVLILGIPTW   56
+ident           | |  ||  |    |        |                |  |    | 
+Sbjct gmALAKIVFASMTGNTEEIADIVADKLRDlgLDVDVDECTTVDASDFLEADIAIVATYTY   60
+DSSP  llLEEEEEELLLLLHHHHHHHHHHHHHHHllLEEEEEEHHHLLHHHHHHLLEEEEELLLL
+
+DSSP  LLLLLLHHHHHHHHHHLLLLLLLLEEEEEEELLLllLLLLLLHHHHHHHHHHHLLLLEEE
+Query DFGEIQEDWEAVWDQLDDLNLEGKIVALYGLGDQlgYGEWFLDALGMLHDKLSTKGVKFV  116
+ident   ||           | |||| |||    | ||       |  |           |    
+Sbjct GDGELPDEMMDFYEDLADLNLNGKIYGVVGSGDT--FYDEFCKAVDDFDRVFVSTGAEKG  118
+DSSP  LLLLLLHHHHHHHHHHHLLLLLLLEEEEEEEELL--LLLLLLHHHHHHHHHHHHHLLEEL
+
+DSSP  LLeellllllllllleehhhleelLEEELLlllHHHHHHHHHHHHHHHHHHHhhhhl
+Query GYwptegyeftspkpviadgqlfvGLALDEtnqYDLSDERIQSWCEQILNEMaehya  173
+ident                             |         ||     |           
+Sbjct SE----------------------CVKVDL-saEEEDIERLEQFAEELAAKV-----  147
+DSSP  LL----------------------LEEEEL-llLHHHHHHHHHHHHHHHHHL-----
+
+
+# Structural equivalences
+   1: 2MTB-A 5LJL-A     1 -  27 <=>    3 -  29   (MET    1  - PRO   27  <=> ALA    2  - ASP   28 )                          
+   1: 2MTB-A 5LJL-A    28 -  90 <=>   32 -  94   (GLU   28  - GLN   90  <=> LEU   31  - THR   93 )                          
+   1: 2MTB-A 5LJL-A    93 - 118 <=>   95 - 120   (TYR   93  - TYR  118  <=> PHE   94  - GLU  119 )                          
+   1: 2MTB-A 5LJL-A   141 - 146 <=>  121 - 126   (GLY  141  - GLU  146  <=> CYS  120  - LEU  125 )                          
+   1: 2MTB-A 5LJL-A   150 - 168 <=>  129 - 147   (TYR  150  - MET  168  <=> GLU  128  - VAL  146 )                          
+
+# Translation-rotation matrices
+-matrix  "2MTB-A 5LJL-A  U(1,.)  -0.065484 -0.982976  0.171668           -2.772818"
+-matrix  "2MTB-A 5LJL-A  U(2,.)  -0.762217 -0.061756 -0.644369            1.095127"
+-matrix  "2MTB-A 5LJL-A  U(3,.)   0.644001 -0.173044 -0.745197            1.683479"
+

@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 2HBGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBS-A 15.1  2.4  138   153   19   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=2HBGA Sbjct=1MBSA Z-score=15.1
+
+DSSP  lLLHHHHHHHHHHHHHHHLllLLHHHHHHHHHHHHHHLLLHHHHHLLLL-------LLLH
+Query gLSAAQRQVIAATWKDIAGadNGAGVGKKCLIKFLSAHPQMAAVFGFSG-------ASDP   53
+ident  ||          |         || |   ||     ||     |               
+Sbjct gLSDGEWHLVLNVWGKVET--DLAGHGQEVLIRLFKSHPETLEKFDKFKhlkseddMRRS   58
+DSSP  lLHHHHHHHHHHHHHHHHL--LHHHHHHHHHHHHHHHLLHHHHHLLLLLllllhhhHHLL
+
+DSSP  -HHHHHHHHHHHHHHHHHHLLLlhhHHHHHHHHHHHHHHHLLlllLLHHHHHHHHHHHHH
+Query -GVAALGAKVLAQIGVAVSHLGdegKMVAQMKAVGVRHKGYGnkhIKAQYFEPLGASLLS  112
+ident       |  ||   |      |      |  |     |       |   | |        
+Sbjct eDLRKHGNTVLTALGGILKKKG---HHEAELKPLAQSHATKH--kIPIKYLEFISEAIIH  113
+DSSP  hHHHHHHHHHHHHHHHHHHLLL---LLLLLHHHHHHHHHHLL--lLLLLHHHHHHHHHHH
+
+DSSP  HHHHHHHHHLLHHHHHHHHHHHHHHHHHHHHHHLL-----
+Query AMEHRIGGKMNAAAKDAWAAAYADISGALISGLQS-----  147
+ident            | |  |   |                   
+Sbjct VLHSKHPAEFGADAQAAMKKALELFRNDIAAKYKElgfhg  153
+DSSP  HHHHHLLLLLLHHHHHHHHHHHHHHHHHHHHHHHHhllll
+
+
+# Structural equivalences
+   1: 2HBG-A 1MBS-A     2 -  19 <=>    2 -  19   (LEU    2  - GLY   19  <=> LEU    2  - THR   19 )                          
+   1: 2HBG-A 1MBS-A    22 -  49 <=>   20 -  47   (ASN   22  - GLY   49  <=> ASP   20  - LYS   47 )                          
+   1: 2HBG-A 1MBS-A    50 -  53 <=>   55 -  58   (ALA   50  - PRO   53  <=> MET   55  - SER   58 )                          
+   1: 2HBG-A 1MBS-A    54 -  74 <=>   60 -  80   (GLY   54  - GLY   74  <=> ASP   60  - GLY   80 )                          
+   1: 2HBG-A 1MBS-A    78 -  94 <=>   81 -  97   (LYS   78  - GLY   94  <=> HIS   81  - HIS   97 )                          
+   1: 2HBG-A 1MBS-A    98 - 147 <=>   99 - 148   (ILE   98  - SER  147  <=> ILE   99  - GLU  148 )                          
+
+# Translation-rotation matrices
+-matrix  "2HBG-A 1MBS-A  U(1,.)   0.980008  0.179729  0.085335           -5.607103"
+-matrix  "2HBG-A 1MBS-A  U(2,.)   0.092394 -0.031261 -0.995232           18.249172"
+-matrix  "2HBG-A 1MBS-A  U(3,.)  -0.176204  0.983219 -0.047242           14.263702"
+

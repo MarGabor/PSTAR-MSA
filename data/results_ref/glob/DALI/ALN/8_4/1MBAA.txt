@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1MBAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HBI-A 18.0  2.0  138   145   23   MOLECULE: HEMOGLOBIN (OXY);                                          
+
+# Pairwise alignments
+
+No 1: Query=1MBAA Sbjct=1HBIA Z-score=18.0
+
+DSSP  -------LLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLLLLllLLHHH
+Query -------SLSAAEADLAGKSWAPVFANKNANGLDFLVALFEKFPDSANFFADFkgKSVAD   53
+ident         | |        ||      |  ||      ||         |       |  
+Sbjct svydaaaQLTADVKKDLRDSWKVIGSDKKGNGVALMTTLFADNQETIGYFKRL--GNVSQ   58
+DSSP  lhhhhhhLLLHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHHHHH--LLHHH
+
+DSSP  HHLLLLHHHHHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHH
+Query IKASPKLRDVSSRIFTRLNEFVNNAANAGKMSAMLSQFAKEHVGFGVGSAQFENVRSMFP  113
+ident   |  |||  |      |  |     |          ||  |       | |        
+Sbjct GMANDKLRGHSITLMYALQNFIDQLDNPDDLVCVVEKFAVNHITRKISAAEFGKINGPIK  118
+DSSP  HHHLHHHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHH
+
+DSSP  HHHHLlLLLLLLHHHHHHHHHHHHHHHHhhlll
+Query GFVASvAAPPAGADAAWTKLFGLIIDALkaaga  146
+ident    ||          || ||      ||     
+Sbjct KVLAS-KNFGDKYANAWAKLVAVVQAAL-----  145
+DSSP  HHHHH-LLLLHHHHHHHHHHHHHHHHLL-----
+
+
+# Structural equivalences
+   1: 1MBA-A 1HBI-A     1 -  46 <=>    8 -  53   (SER    1  - PHE   46  <=> GLN    9  - LEU   54 )                          
+   1: 1MBA-A 1HBI-A    49 - 118 <=>   54 - 123   (LYS   49  - SER  118  <=> GLY   55  - SER  124 )                          
+   1: 1MBA-A 1HBI-A   120 - 141 <=>  124 - 145   (ALA  120  - LEU  141  <=> LYS  125  - LEU  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1MBA-A 1HBI-A  U(1,.)   0.453851  0.806917  0.378026          -83.266418"
+-matrix  "1MBA-A 1HBI-A  U(2,.)  -0.311966  0.541272 -0.780834           -8.841128"
+-matrix  "1MBA-A 1HBI-A  U(3,.)  -0.834683  0.236452  0.497387           -6.986928"
+

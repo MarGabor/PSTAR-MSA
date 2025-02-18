@@ -1,0 +1,703 @@
+A length: 216
+B length: 216
+C length: 216
+D length: 216
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            216
+Total number of atoms read in:              1647
+Total number of ignored atom records:        195
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+  Reading DSSP file
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              COMPND   2 MOLECULE: PROTEIN (PROTEASE II);                                     SOURCE   2 ORGANISM_SCIENTIFIC: ZINGIBER OFFICINALE;                            AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+         216  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2045
+ selectset done           0
+ eigen done           0
+ tau           1   1.48720801              16         110
+ #popped           2           1
+ #selectset contacts        2045
+ selectset done           1
+ eigen done           1
+ tau           3  0.682294309             132         160
+ #popped           4           2
+ #selectset contacts        2045
+ selectset done           2
+ eigen done           2
+ tau           5   1.27400601              16         120         195
+ #popped           6           3
+ #selectset contacts        2045
+ selectset done           3
+ eigen done           3
+ tau           7  0.652083933              16
+ #popped           9           3
+ #selectset contacts        2045
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2045
+ selectset done           2
+ eigen done           2
+ tau           9  0.481078744             206
+ #popped          10           2
+ #selectset contacts        2045
+ selectset done           2
+ eigen done           2
+ tau          11   1.79545450             120
+ #popped           5           1
+ #selectset contacts        2045
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2045
+ selectset done           0
+ eigen done           0
+ tau          13   1.02970791              35          46
+ #popped          14           0
+ #selectset contacts        2045
+ selectset done           0
+ eigen done           0
+ tau          15  0.999267697              66          81         100
+ #popped          16           1
+ #selectset contacts        2045
+ selectset done           1
+ eigen done           1
+ tau          17  0.503114045              66
+ #popped          18           1
+ #selectset contacts        2045
+ selectset done           1
+ eigen done           1
+ tau          19  0.527391434              56
+ #popped          20           1
+ #selectset contacts        2045
+ selectset done           1
+ eigen done           1
+ tau          21  0.831565022              35
+ #popped          17           0
+ #selectset contacts        2045
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              COMPND   2 MOLECULE: PROTEIN (PROTEASE II);                                     SOURCE   2 ORGANISM_SCIENTIFIC: ZINGIBER OFFICINALE;                            AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+           0
+         216
+         216  residues read 1CQD.dssp                                                   
+  grow short strand           5           6
+  grow short helix          50          56
+  grow short strand         109         112
+  grow short strand         130         134
+  exclude short helix         139         142
+  grow short strand         148         149
+  grow short strand         190         194
+  exclude short helix         203         205
+  grow short strand         211         214
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  6  7  9 10 11 12  8  2  3  4  5
+   2     1  4  5  8  1  6  7  9 10 11 12  8
+   3     1 16 17  4  2  3  4  5
+   4     2  6  7  7  1  6  7  9 10 11 12
+   5     2  0  0  1  8
+   6     4  8  9  6  1  6  7  9 10 11
+   7     4  0  0  1 12
+   8     6  0  0  1  1
+   9     6  0  0  5  6  7  9 10 11
+  10     0  0  0  0
+  11     0  0  0  1 12
+  12     0  0  0  0
+  13     0  0  0  0
+  14     0  0  0  4  2  3  4  5
+  15     0  0  0  0
+  16     3 22 23  2  2  3
+  17     3  0  0  2  4  5
+  18     0  0  0  2  2  3
+  19     0  0  0  0
+  20     0  0  0  2  2  3
+  21     0  0  0  0
+  22    16  0  0  1  2
+  23    16  0  0  1  3
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  2  1  1  6 12
+   3 *   1 10 11  4  1  2  5
+   4 -   2  6  7  7  3  1  1  6  7  9 12
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  6  3  1  1  6  7  9 11
+   7 -   4  0  0  1  1 12 12
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  5  2  6  7  9 11
+  10 -   3 12 13  2  1  2  3
+  11 -   3  0  0  2  1  4  5
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  3  3
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            216
+Total number of atoms read in:              1647
+Total number of ignored atom records:        206
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+  Reading DSSP file
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              COMPND   2 MOLECULE: PROTEIN (PROTEASE II);                                     SOURCE   2 ORGANISM_SCIENTIFIC: ZINGIBER OFFICINALE;                            AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+         216  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2053
+ selectset done           0
+ eigen done           0
+ tau           1   1.47086513              16         110
+ #popped           2           1
+ #selectset contacts        2053
+ selectset done           1
+ eigen done           1
+ tau           3  0.938769579              16         138         151         163         196
+ #popped           4           2
+ #selectset contacts        2053
+ selectset done           2
+ eigen done           2
+ tau           5  0.860474765              16
+ #popped           7           2
+ #selectset contacts        2053
+ selectset done           2
+ eigen done           2
+ tau           7  0.707850695             151
+ #popped           9           2
+ #selectset contacts        2053
+ selectset done           2
+ eigen done           2
+ tau           9  0.359453350             173
+ #popped          11           2
+ #selectset contacts        2053
+ selectset done           2
+ eigen done           2
+ tau          11  0.259055704             184
+ #popped           5           1
+ #selectset contacts        2053
+ selectset done           1
+ eigen done           1
+ tau          13  0.395559311             206
+ #popped          14           1
+ #selectset contacts        2053
+ selectset done           1
+ eigen done           1
+ tau          15   1.93251646             128
+ #popped          17           1
+ #selectset contacts        2053
+ selectset done           1
+ eigen done           1
+ tau          17   1.11585426             163
+ #popped          18           1
+ #selectset contacts        2053
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2053
+ selectset done           0
+ eigen done           0
+ tau          19   1.01478469              35          46
+ #popped          20           0
+ #selectset contacts        2053
+ selectset done           0
+ eigen done           0
+ tau          21   1.00683784              66          81         100
+ #popped          22           1
+ #selectset contacts        2053
+ selectset done           1
+ eigen done           1
+ tau          23  0.511142492              66
+ #popped          24           1
+ #selectset contacts        2053
+ selectset done           1
+ eigen done           1
+ tau          25  0.527391434              56
+ #popped          26           1
+ #selectset contacts        2053
+ selectset done           1
+ eigen done           1
+ tau          27  0.846153855              35
+ #popped          23           0
+ #selectset contacts        2053
+ selectset done           0
+ eigen done           0
+ tau          29   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              COMPND   2 MOLECULE: PROTEIN (PROTEASE II);                                     SOURCE   2 ORGANISM_SCIENTIFIC: ZINGIBER OFFICINALE;                            AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+           0
+         216
+         216  residues read 1CQD.dssp                                                   
+  grow short strand           5           6
+  grow short helix          50          56
+  grow short strand         109         112
+  grow short strand         130         134
+  exclude short helix         139         142
+  grow short strand         148         149
+  grow short strand         190         194
+  exclude short helix         203         205
+  grow short strand         211         214
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  8  9 10 11  6  7 12  2  3  4  5
+   2     1  4  5  8  1  8  9 10 11  6  7 12
+   3     1 22 23  4  2  3  4  5
+   4     2  6  7  5  1  8  9 10 11
+   5     2 14 15  3  6  7 12
+   6     4  0  0  1  1
+   7     4  8  9  4  8  9 10 11
+   8     7  0  0  1  8
+   9     7 10 11  3  9 10 11
+  10     9  0  0  1  9
+  11     9 12 13  2 10 11
+  12    11  0  0  1 10
+  13    11  0  0  1 11
+  14     5 16 17  2  6  7
+  15     5  0  0  1 12
+  16    14  0  0  1  6
+  17    14  0  0  1  7
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20     0  0  0  4  2  3  4  5
+  21     0  0  0  0
+  22     3 28 29  2  2  3
+  23     3  0  0  2  4  5
+  24     0  0  0  2  2  3
+  25     0  0  0  0
+  26     0  0  0  2  2  3
+  27     0  0  0  0
+  28    22  0  0  1  2
+  29    22  0  0  1  3
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  2  1  1  6 12
+   3 *   1 18 19  4  1  2  5
+   4 -   2  6  7  5  2  1  1  8 11
+   5 -   2 14 15  3  2  6  7 12 12
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  1  8 11
+   8 -   7  0  0  1  1  8  8
+   9 -   7 10 11  3  1  9 11
+  10 -   9  0  0  1  1  9  9
+  11 -   9 12 13  2  1 10 11
+  12 -  11  0  0  1  1 10 10
+  13 -  11  0  0  1  1 11 11
+  14 -   5 16 17  2  1  6  7
+  15 -   5  0  0  1  1 12 12
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  1  1  7  7
+  18 -   3 20 21  2  1  2  3
+  19 -   3  0  0  2  1  4  5
+  20 -  18  0  0  1  1  2  2
+  21 -  18  0  0  1  1  3  3
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            216
+Total number of atoms read in:              1647
+Total number of ignored atom records:        195
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+  Reading DSSP file
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              COMPND   2 MOLECULE: PROTEIN (PROTEASE II);                                     SOURCE   2 ORGANISM_SCIENTIFIC: ZINGIBER OFFICINALE;                            AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+         216  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2042
+ selectset done           0
+ eigen done           0
+ tau           1   1.47627270              16         110
+ #popped           2           1
+ #selectset contacts        2042
+ selectset done           1
+ eigen done           1
+ tau           3   1.00672257              16         135         152         163         195
+ #popped           4           2
+ #selectset contacts        2042
+ selectset done           2
+ eigen done           2
+ tau           5  0.581111133             152
+ #popped           6           3
+ #selectset contacts        2042
+ selectset done           3
+ eigen done           3
+ tau           7   999.999023              16
+ #popped           7           2
+ #selectset contacts        2042
+ selectset done           2
+ eigen done           2
+ tau           9  0.364879489             173
+ #popped          11           2
+ #selectset contacts        2042
+ selectset done           2
+ eigen done           2
+ tau          11  0.245965347             184
+ #popped           5           1
+ #selectset contacts        2042
+ selectset done           1
+ eigen done           1
+ tau          13  0.651374221             163         206
+ #popped          14           1
+ #selectset contacts        2042
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        2042
+ selectset done           0
+ eigen done           0
+ tau          15   1.02817357              35          45
+ #popped          16           0
+ #selectset contacts        2042
+ selectset done           0
+ eigen done           0
+ tau          17  0.997655928              66          81         100
+ #popped          18           1
+ #selectset contacts        2042
+ selectset done           1
+ eigen done           1
+ tau          19  0.545283496              66
+ #popped          20           1
+ #selectset contacts        2042
+ selectset done           1
+ eigen done           1
+ tau          21  0.532138884              56
+ #popped          22           1
+ #selectset contacts        2042
+ selectset done           1
+ eigen done           1
+ tau          23  0.841530025              35
+ #popped          19           0
+ #selectset contacts        2042
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              COMPND   2 MOLECULE: PROTEIN (PROTEASE II);                                     SOURCE   2 ORGANISM_SCIENTIFIC: ZINGIBER OFFICINALE;                            AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+           0
+         216
+         216  residues read 1CQD.dssp                                                   
+  grow short strand           5           6
+  grow short helix          50          56
+  grow short strand         109         112
+  grow short strand         130         134
+  exclude short helix         139         142
+  grow short strand         148         149
+  grow short strand         190         194
+  exclude short helix         203         205
+  grow short strand         211         214
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  8  9 10 11  6  7 12  2  3  4  5
+   2     1  4  5  8  1  8  9 10 11  6  7 12
+   3     1 18 19  4  2  3  4  5
+   4     2  6  7  5  1  8  9 10 11
+   5     2  0  0  3  6  7 12
+   6     4  8  9  2  1  8
+   7     4 10 11  3  9 10 11
+   8     6  0  0  1  1
+   9     6  0  0  1  8
+  10     7  0  0  1  9
+  11     7 12 13  2 10 11
+  12    11  0  0  1 10
+  13    11  0  0  1 11
+  14     0  0  0  3  6  7 12
+  15     0  0  0  0
+  16     0  0  0  4  2  3  4  5
+  17     0  0  0  0
+  18     3 24 25  2  2  3
+  19     3  0  0  2  4  5
+  20     0  0  0  2  2  3
+  21     0  0  0  0
+  22     0  0  0  2  2  3
+  23     0  0  0  0
+  24    18  0  0  1  2
+  25    18  0  0  1  3
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  2  1  1  6 12
+   3 *   1 14 15  4  1  2  5
+   4 -   2  6  7  5  2  1  1  8 11
+   5 -   2  0  0  3  2  6  7 12 12
+   6 -   4  8  9  2  2  1  1  8  8
+   7 -   4 10 11  3  1  9 11
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  8  8
+  10 -   7  0  0  1  1  9  9
+  11 -   7 12 13  2  1 10 11
+  12 -  11  0  0  1  1 10 10
+  13 -  11  0  0  1  1 11 11
+  14 -   3 16 17  2  1  2  3
+  15 -   3  0  0  2  1  4  5
+  16 -  14  0  0  1  1  2  2
+  17 -  14  0  0  1  1  3  3
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            216
+Total number of atoms read in:              1647
+Total number of ignored atom records:        185
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+  Reading DSSP file
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              COMPND   2 MOLECULE: PROTEIN (PROTEASE II);                                     SOURCE   2 ORGANISM_SCIENTIFIC: ZINGIBER OFFICINALE;                            AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+         216  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau           1   1.28720999              16         111
+ #popped           2           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau           3  0.683317304             132         160
+ #popped           4           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau           5  0.715438843              16
+ #popped           7           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau           7  0.472906440             176
+ #popped           8           3
+ #selectset contacts        2055
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau           9   1.72274148             206
+ #popped          10           2
+ #selectset contacts        2055
+ selectset done           2
+ eigen done           2
+ tau          11   3.64767933             192
+ #popped           5           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau          13   1.01644838              35          46
+ #popped          14           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau          15   1.03837574              66          81         100
+ #popped          16           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          17  0.497900456              66
+ #popped          18           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          19  0.527391434              56
+ #popped          20           1
+ #selectset contacts        2055
+ selectset done           1
+ eigen done           1
+ tau          21  0.861263752              35
+ #popped          17           0
+ #selectset contacts        2055
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               15-JUN-99   1CQD              COMPND   2 MOLECULE: PROTEIN (PROTEASE II);                                     SOURCE   2 ORGANISM_SCIENTIFIC: ZINGIBER OFFICINALE;                            AUTHOR    K.H.CHOI,R.A.LAURSEN,K.N.ALLEN                                        
+           0
+         216
+         216  residues read 1CQD.dssp                                                   
+  grow short strand           5           6
+  grow short helix          50          56
+  grow short strand         109         112
+  grow short strand         130         134
+  exclude short helix         139         142
+  grow short strand         148         149
+  grow short strand         190         194
+  exclude short helix         203         205
+  grow short strand         211         214
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  6  7  9 10 11 12  8  2  3  4  5
+   2     1  4  5  8  1  6  7  9 10 11 12  8
+   3     1 16 17  4  2  3  4  5
+   4     2  6  7  7  1  6  7  9 10 11 12
+   5     2  0  0  1  8
+   6     4  0  0  1  1
+   7     4  8  9  6  6  7  9 10 11 12
+   8     7  0  0  4  6  7  9 10
+   9     7 10 11  2 11 12
+  10     9  0  0  1 11
+  11     9  0  0  1 12
+  12     0  0  0  1 11
+  13     0  0  0  0
+  14     0  0  0  4  2  3  4  5
+  15     0  0  0  0
+  16     3 22 23  2  2  3
+  17     3  0  0  2  4  5
+  18     0  0  0  2  2  3
+  19     0  0  0  0
+  20     0  0  0  2  2  3
+  21     0  0  0  0
+  22    16  0  0  1  2
+  23    16  0  0  1  3
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  2  1  1  6 12
+   3 *   1 12 13  4  1  2  5
+   4 -   2  6  7  7  3  1  1  6  7  9 12
+   5 -   2  0  0  1  1  8  8
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  6  2  6  7  9 12
+   8 -   7  0  0  4  2  6  7  9 10
+   9 -   7 10 11  2  1 11 12
+  10 -   9  0  0  1  1 11 11
+  11 -   9  0  0  1  1 12 12
+  12 -   3 14 15  2  1  2  3
+  13 -   3  0  0  2  1  4  5
+  14 -  12  0  0  1  1  2  2
+  15 -  12  0  0  1  1  3  3
+
+ CHAIN : 1CQDA
+ CHAIN : 1CQDB
+ CHAIN : 1CQDC
+ CHAIN : 1CQDD
+

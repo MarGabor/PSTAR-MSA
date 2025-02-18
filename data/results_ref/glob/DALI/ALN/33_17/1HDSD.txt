@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1HDSD
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HDS-C 18.8  1.6  137   141   39   MOLECULE: HEMOGLOBIN S (DEOXY) (ALPHA CHAIN);                        
+
+# Pairwise alignments
+
+No 1: Query=1HDSD Sbjct=1HDSC Z-score=18.8
+
+DSSP  LLLLLlLLLL-LLLLLLL--LLLHHHHHHHHHHHHHLLLHHHHLLLLLlllllhhHHHLL
+Query MLTAEeKAAV-TGFWGKV--DVDVVGAQALGRLLVVYPWTQRFFQHFGnlssagaVMNNP   57
+ident  | |          ||||       ||||| |     | |   | ||             
+Sbjct VLSAA-NKSNvKAAWGKVggNAPAYGAQALQRMFLSFPTTKTYFPHFD------lSHGSA   53
+DSSP  LLLLL-HHHHhHHHHHHHllLLHHHHHHHHLHHHHHLHHHHHHLLLLL------lLLLLH
+
+DSSP  HHHHHHHHHHHHHLLLLLLLLLHHHHLLLLLLHHHHLLLLLHHHHHHHHHHHHLLLHHHH
+Query KVKAHGKRVLDAFTQGLKHLDDLKGAFAQLSGLHCNKLHVNPQNFRLLGNVLALVVARNF  117
+ident   ||||  |  | |    || || |    || ||  || ||| || ||   |    |   
+Sbjct QQKAHGQKVANALTKAQGHLNDLPGTLSNLSNLHAHKLRVNPVNFKLLSHSLLVTLASHL  113
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHLLLLLHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+
+DSSP  HHHHLHHHHHHHHLHHHHHHHHLLLLLL
+Query GGQFTPNVQALFQKVVAGVANALAHKYH  145
+ident    ||| | |   |  |     |  || 
+Sbjct PTNFTPAVHANLNKFLANDSTVLTSKYR  141
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHHHHHL
+
+
+# Structural equivalences
+   1: 1HDS-D 1HDS-C     1 -   5 <=>    1 -   5   (MET    1  - GLU    5  <=> VAL    1  - ALA    5 )                          
+   1: 1HDS-D 1HDS-C     7 -  10 <=>    6 -   9   (LYS    7  - VAL   10  <=> ASN    6  - ASN    9 )                          
+   1: 1HDS-D 1HDS-C    11 -  17 <=>   11 -  17   (THR   11  - VAL   17  <=> LYS   11  - VAL   17 )                          
+   1: 1HDS-D 1HDS-C    18 -  45 <=>   20 -  47   (ASP   18  - GLY   45  <=> ASN   20  - ASP   47 )                          
+   1: 1HDS-D 1HDS-C    53 - 145 <=>   49 - 141   (VAL   53  - HIS  145  <=> SER   49  - ARG  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1HDS-D 1HDS-C  U(1,.)  -0.771267  0.281602  0.570831           38.572063"
+-matrix  "1HDS-D 1HDS-C  U(2,.)   0.280188 -0.655048  0.701718          -14.569738"
+-matrix  "1HDS-D 1HDS-C  U(3,.)   0.571526  0.701151  0.426315           -8.335733"
+

@@ -1,0 +1,31 @@
+# Job: hom
+# Query: 1HOMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2ECB-A  7.0  5.0   64    89   22   MOLECULE: ZINC FINGERS AND HOMEOBOXES PROTEIN 1;                     
+
+# Pairwise alignments
+
+No 1: Query=1HOMA Sbjct=2ECBA Z-score=7.0
+
+DSSP  ---------llLLLLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHH
+Query ---------mrKRGRQTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALCLTERQIKIWFQ   51
+ident                   |  |   |   |     ||            || | |  || 
+Sbjct gssgssgpdftPQKFKEKTAEQLRVLQASFLNSSVLTDEELNRLRAQTKLTRREIDAWFT   60
+DSSP  lllllllllllLLLLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHH
+
+DSSP  HHHLLLLlLLLLLLLL-------------l
+Query NRRMKWKkENKTKGEP-------------g   68
+ident             | |               
+Sbjct EKKKSKA-LKEEKMEIdesnagsssgpssg   89
+DSSP  HHHHHHH-LLLLLLLLllllllllllllll
+
+
+# Structural equivalences
+   1: 1HOM-A 2ECB-A     3 -  58 <=>   12 -  67   (LYS    2  - LYS   57  <=> PRO   12  - ALA   67 )                          
+   1: 1HOM-A 2ECB-A    60 -  67 <=>   68 -  75   (GLU   59  - PRO   66  <=> LEU   68  - ILE   75 )                          
+
+# Translation-rotation matrices
+-matrix  "1HOM-A 2ECB-A  U(1,.)   0.186440  0.796888  0.574638            2.391630"
+-matrix  "1HOM-A 2ECB-A  U(2,.)   0.097760 -0.597038  0.796234           -4.779343"
+-matrix  "1HOM-A 2ECB-A  U(3,.)   0.977591 -0.092273 -0.189215           -1.291527"
+

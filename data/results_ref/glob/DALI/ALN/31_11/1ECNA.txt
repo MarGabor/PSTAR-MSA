@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1EMY-A 18.4  1.6  136   153   18   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1EMYA Z-score=18.4
+
+DSSP  -LLHHHHHHHHHHHHLLLL----LHHHHHHHHHHHLHHHHLLLLLLLLLL-HHHHLLLHH
+Query -LSADQISTVQASFDKVKG----DPVGILYAVFKADPSIMAKFTQFAGKD-LESIKGTAP   54
+ident  ||      |     ||               |   |    ||  |         |    
+Sbjct gLSDGEWELVLKTWGKVEAdipgHGETVFVRLFTGHPETLEKFDKFKHLKtEGEMKASED   60
+DSSP  lLLHHHHHHHHHHHHHHHLlhhhHHHHHHHHHHHHLHHHHHHLLLLLLLLlHHHHHLLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHH-HLLLHHHHHHHHHHHHHHHHHHL-
+Query FETHANRIVGFFSKIIGELPNIEADVNTFVASHKP-RGVTHDQLNNFRAGFVSYMKAHT-  112
+ident               |       ||       ||          |                
+Sbjct LKKQGVTVLTALGGILKKKGHHEAEIQPLAQSHATkHKIPIKYLEFISDAIIHVLQSKHp  120
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHlLLLLHHHHHHHHHHHHHHHHHHLl
+
+DSSP  -LHHH-HHHHHHHHHHHHHHHHHLLL-------
+Query -DFAG-AEAAWGATLDTFFGMIFSKM-------  136
+ident   |   |  |    |  |   |  |        
+Sbjct aEFGAdAQGAMKKALELFRNDIAAKYkelgfqg  153
+DSSP  lLLLHhHHHHHHHHHHHHHHHHHHHHhhlllll
+
+
+# Structural equivalences
+   1: 1ECN-A 1EMY-A     1 -  18 <=>    2 -  19   (LEU    1  - GLY   18  <=> LEU    2  - ALA   19 )                          
+   1: 1ECN-A 1EMY-A    19 -  45 <=>   24 -  50   (ASP   19  - ASP   45  <=> HIS   24  - LYS   50 )                          
+   1: 1ECN-A 1EMY-A    46 -  89 <=>   52 -  95   (LEU   46  - PRO   89  <=> GLU   52  - THR   95 )                          
+   1: 1ECN-A 1EMY-A    90 - 112 <=>   97 - 119   (ARG   90  - THR  112  <=> HIS   97  - HIS  119 )                          
+   1: 1ECN-A 1EMY-A   113 - 116 <=>  122 - 125   (ASP  113  - GLY  116  <=> GLU  122  - ALA  125 )                          
+   1: 1ECN-A 1EMY-A   117 - 136 <=>  127 - 146   (ALA  117  - MET  136  <=> ALA  127  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1EMY-A  U(1,.)   0.767219  0.067372 -0.637837            8.549390"
+-matrix  "1ECN-A 1EMY-A  U(2,.)  -0.504969 -0.549697 -0.665462           63.324196"
+-matrix  "1ECN-A 1EMY-A  U(3,.)  -0.395450  0.832643 -0.387717           16.272879"
+

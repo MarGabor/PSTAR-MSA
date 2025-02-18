@@ -1,0 +1,33 @@
+# Job: az
+# Query: 1KDIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1AG6-A 16.6  1.5   95    99   37   MOLECULE: PLASTOCYANIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=1KDIA Sbjct=1AG6A Z-score=16.6
+
+DSSP  LEEEELLLLLLLLEELLEEEELLLLLEEEEELLLLLLLLEELLLllllHHHHhhHHHLLL
+Query AKVEVGDEVGNFKFYPDSITVSAGEAVEFTLVGETGHNIVFDIPagapGTVAseLKAASM   60
+ident   |  |   |   | |    |  ||   |       || |||        |       ||
+Sbjct VEVLLGGDDGSLAFLPGDFSVASGEEIVFKNNAGFPHNVVFDED-eipSGVD--AAKISM   57
+DSSP  LEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLLLLEELHH-hllLLLL--HHHHLL
+
+DSSP  LLLLLLLLlLLEEEELLLLLEEEEEELLLLHHHLLEEEEEEL
+Query DENDLLSEdEPSFKAKVSTPGTYTFYCTPHKSANMKGTLTVK  102
+ident  | |||       |      ||| ||| ||  | | |  || 
+Sbjct SEEDLLNApGETYKVTLTEKGTYKFYCSPHQGAGMVGKVTVN   99
+DSSP  LLLLLLLLlLLEEEEELLLLEEEEEELHHHLLLLLEEEEEEL
+
+
+# Structural equivalences
+   1: 1KDI-A 1AG6-A     1 -  44 <=>    1 -  44   (ALA    1  - PRO   44  <=> VAL    1  - ASP   44 )                          
+   1: 1KDI-A 1AG6-A    49 -  52 <=>   48 -  51   (GLY   49  - ALA   52  <=> SER   48  - ASP   51 )                          
+   1: 1KDI-A 1AG6-A    55 -  68 <=>   52 -  65   (LEU   55  - GLU   68  <=> ALA   52  - ALA   65 )                          
+   1: 1KDI-A 1AG6-A    70 - 102 <=>   67 -  99   (GLU   70  - LYS  102  <=> GLY   67  - ASN   99 )                          
+
+# Translation-rotation matrices
+-matrix  "1KDI-A 1AG6-A  U(1,.)   0.705219 -0.177201 -0.686488           33.268238"
+-matrix  "1KDI-A 1AG6-A  U(2,.)   0.259315 -0.836706  0.482367           72.635925"
+-matrix  "1KDI-A 1AG6-A  U(3,.)  -0.659865 -0.518191 -0.544111           34.897552"
+

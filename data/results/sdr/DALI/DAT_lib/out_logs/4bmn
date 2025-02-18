@@ -1,0 +1,839 @@
+A length: 231
+B length: 230
+C length: 231
+D length: 227
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1353  CA BVAL A 178 
+ Alternate location indication is not blank or A, ignore atom: 1357  CB BVAL A 178 
+ Alternate location indication is not blank or A, ignore atom: 1359  CG1BVAL A 178 
+ Alternate location indication is not blank or A, ignore atom: 1361  CG2BVAL A 178 
+
+Total number of residues read in:            232
+Total number of atoms read in:              1721
+Total number of ignored atom records:        494
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              COMPND   2 MOLECULE: ALCLOHOL DEHYDROGENASE/SHORT-CHAIN DEHYDROGENASE;          SOURCE   2 ORGANISM_SCIENTIFIC: RALSTONIA SP.;                                  AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2108
+ selectset done           0
+ eigen done           0
+ tau           1   1.67605376              91         116         136
+ #popped           2           1
+ #selectset contacts        2108
+ selectset done           1
+ eigen done           1
+ tau           3   1.14693129              62          74          91         126
+ #popped           4           2
+ #selectset contacts        2108
+ selectset done           2
+ eigen done           2
+ tau           5   1.11800861              10          20          34
+ #popped           6           3
+ #selectset contacts        2108
+ selectset done           3
+ eigen done           3
+ tau           7  0.937126458              10
+ #popped           7           2
+ #selectset contacts        2108
+ selectset done           2
+ eigen done           2
+ tau           9  0.823238492              62
+ #popped          10           3
+ #selectset contacts        2108
+ selectset done           3
+ eigen done           3
+ tau          11  0.304965347              47
+ #popped          12           3
+ #selectset contacts        2108
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          11           2
+ #selectset contacts        2108
+ selectset done           2
+ eigen done           2
+ tau          13  0.357773423              91
+ #popped           5           1
+ #selectset contacts        2108
+ selectset done           1
+ eigen done           1
+ tau          15   1.09329605              74
+ #popped           3           0
+ #selectset contacts        2108
+ selectset done           0
+ eigen done           0
+ tau          17   1.79892683             116
+ #popped          18           1
+ #selectset contacts        2108
+ selectset done           1
+ eigen done           1
+ tau          19  0.946153879             102
+ #popped          19           0
+ #selectset contacts        2108
+ selectset done           0
+ eigen done           0
+ tau          21   1.19554722             158         176
+ #popped          22           0
+ #selectset contacts        2108
+ selectset done           0
+ eigen done           0
+ tau          23   1.37117302             158
+ #popped          24           1
+ #selectset contacts        2108
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          25           0
+ #selectset contacts        2108
+ selectset done           0
+ eigen done           0
+ tau          25  0.901318133             202         218
+ #popped          26           0
+ #selectset contacts        2108
+ selectset done           0
+ eigen done           0
+ tau          27  0.467877448             202
+ #popped          28           0
+ #selectset contacts        2108
+ selectset done           0
+ eigen done           0
+ tau          29   1.00794768             190
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              COMPND   2 MOLECULE: ALCLOHOL DEHYDROGENASE/SHORT-CHAIN DEHYDROGENASE;          SOURCE   2 ORGANISM_SCIENTIFIC: RALSTONIA SP.;                                  AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+           0
+         232
+         232  residues read 4BMN.dssp                                                   
+  grow short strand          11          15
+  grow short strand          57          61
+  exclude short helix          99         101
+  exclude short helix         141         144
+  exclude short helix         172         174
+  exclude short helix         213         215
+  grow short strand         222         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  2  1  3  4  5  7 10  6  9  8 12 14 13 11
+   2     1  4  5  9  2  1  3  4  5  7 10  6  9
+   3     1 18 19  5  8 12 14 13 11
+   4     2  6  7  7  2  1  3  4  5  7 10
+   5     2 16 17  2  6  9
+   6     4  0  0  1  2
+   7     4 10 11  6  1  3  4  5  7 10
+   8     0  0  0  0
+   9     0  0  0  1  2
+  10     7 12 13  4  1  3  4  5
+  11     7 14 15  2  7 10
+  12    10  0  0  2  1  3
+  13    10  0  0  2  4  5
+  14    11  0  0  1  7
+  15    11  0  0  1 10
+  16     5  0  0  1  6
+  17     5  0  0  1  9
+  18     3  0  0  1  8
+  19     3 22 23  4 12 14 13 11
+  20     0  0  0  0
+  21     0  0  0  1  8
+  22    19 26 27  3 12 14 13
+  23    19  0  0  1 11
+  24     0  0  0  0
+  25     0  0  0  3 12 14 13
+  26    22 28 29  2 12 14
+  27    22  0  0  1 13
+  28    26  0  0  1 12
+  29    26  0  0  1 14
+  30     0  0  0  1 12
+  31     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  9  2  1  7  9 10
+   3 -   1 16 17  5  2  8  8 11 14
+   4 -   2  6  7  7  3  1  5  7  7 10 10
+   5 -   2 14 15  2  2  6  6  9  9
+   6 -   4  0  0  1  1  2  2
+   7 -   4  8  9  6  4  1  1  3  5  7  7 10 10
+   8 -   7 10 11  4  2  1  1  3  5
+   9 -   7 12 13  2  2  7  7 10 10
+  10 -   8  0  0  2  2  1  1  3  3
+  11 -   8  0  0  2  1  4  5
+  12 -   9  0  0  1  1  7  7
+  13 -   9  0  0  1  1 10 10
+  14 -   5  0  0  1  1  6  6
+  15 -   5  0  0  1  1  9  9
+  16 -   3  0  0  1  1  8  8
+  17 -   3 18 19  4  1 11 14
+  18 -  17 20 21  3  1 12 14
+  19 -  17  0  0  1  1 11 11
+  20 -  18 22 23  2  2 12 12 14 14
+  21 -  18  0  0  1  1 13 13
+  22 -  20  0  0  1  1 12 12
+  23 -  20  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2574  N  BVAL B 110 
+ Alternate location indication is not blank or A, ignore atom: 2576  CA BVAL B 110 
+ Alternate location indication is not blank or A, ignore atom: 2578  C  BVAL B 110 
+ Alternate location indication is not blank or A, ignore atom: 2580  O  BVAL B 110 
+ Alternate location indication is not blank or A, ignore atom: 2582  CB BVAL B 110 
+ Alternate location indication is not blank or A, ignore atom: 2584  CG1BVAL B 110 
+ Alternate location indication is not blank or A, ignore atom: 2586  CG2BVAL B 110 
+
+Total number of residues read in:            231
+Total number of atoms read in:              1703
+Total number of ignored atom records:        469
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              COMPND   2 MOLECULE: ALCLOHOL DEHYDROGENASE/SHORT-CHAIN DEHYDROGENASE;          SOURCE   2 ORGANISM_SCIENTIFIC: RALSTONIA SP.;                                  AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+         231  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2102
+ selectset done           0
+ eigen done           0
+ tau           1   1.31976032              61          81          98         129
+ #popped           2           1
+ #selectset contacts        2102
+ selectset done           1
+ eigen done           1
+ tau           3   1.41903722              98
+ #popped           4           2
+ #selectset contacts        2102
+ selectset done           2
+ eigen done           2
+ tau           5   1.02576160              10
+ #popped           7           2
+ #selectset contacts        2102
+ selectset done           2
+ eigen done           2
+ tau           7  0.283372939              28
+ #popped           9           2
+ #selectset contacts        2102
+ selectset done           2
+ eigen done           2
+ tau           9  0.485458463              40
+ #popped          11           2
+ #selectset contacts        2102
+ selectset done           2
+ eigen done           2
+ tau          11   999.999023              61
+ #popped          12           2
+ #selectset contacts        2102
+ selectset done           2
+ eigen done           2
+ tau          13  0.664609075              50
+ #popped           5           1
+ #selectset contacts        2102
+ selectset done           1
+ eigen done           1
+ tau          15   1.07960582             140         159
+ #popped          16           1
+ #selectset contacts        2102
+ selectset done           1
+ eigen done           1
+ tau          17  0.850411952             177
+ #popped          18           2
+ #selectset contacts        2102
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        2102
+ selectset done           1
+ eigen done           1
+ tau          19  0.756734371             201         220
+ #popped          20           1
+ #selectset contacts        2102
+ selectset done           1
+ eigen done           1
+ tau          21  0.457300276             201
+ #popped          22           1
+ #selectset contacts        2102
+ selectset done           1
+ eigen done           1
+ tau          23   1.10534024             188
+ #popped           3           0
+ #selectset contacts        2102
+ selectset done           0
+ eigen done           0
+ tau          25   2.33716702              81         115
+ #popped          26           0
+ #selectset contacts        2102
+ selectset done           0
+ eigen done           0
+ tau          27   1.24992883              81
+ #popped          28           0
+ #selectset contacts        2102
+ selectset done           0
+ eigen done           0
+ tau          29  0.786749423              71
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              COMPND   2 MOLECULE: ALCLOHOL DEHYDROGENASE/SHORT-CHAIN DEHYDROGENASE;          SOURCE   2 ORGANISM_SCIENTIFIC: RALSTONIA SP.;                                  AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+           0
+         231
+         231  residues read 4BMN.dssp                                                   
+  grow short strand          12          16
+  grow short strand          58          62
+  exclude short helix         100         102
+  exclude short helix         142         145
+  exclude short helix         212         214
+  grow short strand         221         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  5  7 10 11 12 14 13  6  9  8
+   2     1  4  5 11  1  2  3  4  5  7 10 11 12 14 13
+   3     1 26 27  3  6  9  8
+   4     2  8  9  6  1  2  3  4  5  7
+   5     2 18 19  5 10 11 12 14 13
+   6     0  0  0  0
+   7     0  0  0  6  1  2  3  4  5  7
+   8     4  0  0  2  1  2
+   9     4 10 11  4  3  4  5  7
+  10     9  0  0  1  3
+  11     9 12 13  3  4  5  7
+  12    11 14 15  2  4  5
+  13    11  0  0  1  7
+  14    12  0  0  1  4
+  15    12  0  0  1  5
+  16     0  0  0  5 10 11 12 14 13
+  17     0  0  0  0
+  18     5  0  0  2 10 11
+  19     5 20 21  3 12 14 13
+  20    19 22 23  2 12 14
+  21    19  0  0  1 13
+  22    20  0  0  1 12
+  23    20  0  0  1 14
+  24     0  0  0  1 12
+  25     0  0  0  0
+  26     3 28 29  2  6  9
+  27     3  0  0  1  8
+  28    26  0  0  1  6
+  29    26  0  0  1  9
+  30     0  0  0  0
+  31     0  0  0  1  6
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 11  3  1  5  7  7 10 14
+   3 -   1 20 21  3  2  6  6  8  9
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2 14 15  5  1 10 14
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  4  2  3  5  7  7
+   8 -   7  0  0  1  1  3  3
+   9 -   7 10 11  3  2  4  5  7  7
+  10 -   9 12 13  2  1  4  5
+  11 -   9  0  0  1  1  7  7
+  12 -  10  0  0  1  1  4  4
+  13 -  10  0  0  1  1  5  5
+  14 -   5  0  0  2  1 10 11
+  15 -   5 16 17  3  1 12 14
+  16 -  15 18 19  2  2 12 12 14 14
+  17 -  15  0  0  1  1 13 13
+  18 -  16  0  0  1  1 12 12
+  19 -  16  0  0  1  1 14 14
+  20 -   3 22 23  2  2  6  6  9  9
+  21 -   3  0  0  1  1  8  8
+  22 -  20  0  0  1  1  6  6
+  23 -  20  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3578  CA BILE C  18 
+ Alternate location indication is not blank or A, ignore atom: 3582  CB BILE C  18 
+ Alternate location indication is not blank or A, ignore atom: 3584  CG1BILE C  18 
+ Alternate location indication is not blank or A, ignore atom: 3586  CG2BILE C  18 
+ Alternate location indication is not blank or A, ignore atom: 3588  CD1BILE C  18 
+ Alternate location indication is not blank or A, ignore atom: 3844  N  BASN C  53 
+ Alternate location indication is not blank or A, ignore atom: 3846  CA BASN C  53 
+ Alternate location indication is not blank or A, ignore atom: 3848  C  BASN C  53 
+ Alternate location indication is not blank or A, ignore atom: 3850  O  BASN C  53 
+ Alternate location indication is not blank or A, ignore atom: 3852  CB BASN C  53 
+ Alternate location indication is not blank or A, ignore atom: 3854  CG BASN C  53 
+ Alternate location indication is not blank or A, ignore atom: 3856  OD1BASN C  53 
+ Alternate location indication is not blank or A, ignore atom: 3858  ND2BASN C  53 
+ Alternate location indication is not blank or A, ignore atom: 4128  N  BSER C  88 
+ Alternate location indication is not blank or A, ignore atom: 4130  CA BSER C  88 
+ Alternate location indication is not blank or A, ignore atom: 4132  C  BSER C  88 
+ Alternate location indication is not blank or A, ignore atom: 4134  O  BSER C  88 
+ Alternate location indication is not blank or A, ignore atom: 4136  CB BSER C  88 
+ Alternate location indication is not blank or A, ignore atom: 4138  OG BSER C  88 
+ Alternate location indication is not blank or A, ignore atom: 4316  CA BVAL C 110 
+ Alternate location indication is not blank or A, ignore atom: 4320  CB BVAL C 110 
+ Alternate location indication is not blank or A, ignore atom: 4322  CG1BVAL C 110 
+ Alternate location indication is not blank or A, ignore atom: 4324  CG2BVAL C 110 
+ Alternate location indication is not blank or A, ignore atom: 4824  N  BVAL C 178 
+ Alternate location indication is not blank or A, ignore atom: 4826  CA BVAL C 178 
+ Alternate location indication is not blank or A, ignore atom: 4828  C  BVAL C 178 
+ Alternate location indication is not blank or A, ignore atom: 4830  O  BVAL C 178 
+ Alternate location indication is not blank or A, ignore atom: 4832  CB BVAL C 178 
+ Alternate location indication is not blank or A, ignore atom: 4834  CG1BVAL C 178 
+ Alternate location indication is not blank or A, ignore atom: 4836  CG2BVAL C 178 
+ Alternate location indication is not blank or A, ignore atom: 5014  N  BLEU C 220 
+ Alternate location indication is not blank or A, ignore atom: 5016  CA BLEU C 220 
+ Alternate location indication is not blank or A, ignore atom: 5018  C  BLEU C 220 
+ Alternate location indication is not blank or A, ignore atom: 5020  O  BLEU C 220 
+ Alternate location indication is not blank or A, ignore atom: 5022  CB BLEU C 220 
+ Alternate location indication is not blank or A, ignore atom: 5024  CG BLEU C 220 
+ Alternate location indication is not blank or A, ignore atom: 5026  CD1BLEU C 220 
+ Alternate location indication is not blank or A, ignore atom: 5028  CD2BLEU C 220 
+
+Total number of residues read in:            237
+Total number of atoms read in:              1763
+Total number of ignored atom records:        425
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              COMPND   2 MOLECULE: ALCLOHOL DEHYDROGENASE/SHORT-CHAIN DEHYDROGENASE;          SOURCE   2 ORGANISM_SCIENTIFIC: RALSTONIA SP.;                                  AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+         237  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau           1   1.55179751             133
+ #popped           2           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau           3   2.66937065              91         116
+ #popped           4           2
+ #selectset contacts        2167
+ selectset done           2
+ eigen done           2
+ tau           5   1.53560197              62          79          91
+ #popped           6           3
+ #selectset contacts        2167
+ selectset done           3
+ eigen done           3
+ tau           7  0.887847662              40          52
+ #popped           8           3
+ #selectset contacts        2167
+ selectset done           3
+ eigen done           3
+ tau           9  0.939230025              10
+ #popped          11           3
+ #selectset contacts        2167
+ selectset done           3
+ eigen done           3
+ tau          11  0.269031763              28
+ #popped          13           3
+ #selectset contacts        2167
+ selectset done           3
+ eigen done           3
+ tau          13   3.63368058              62
+ #popped          14           3
+ #selectset contacts        2167
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped           7           2
+ #selectset contacts        2167
+ selectset done           2
+ eigen done           2
+ tau          15   1.42513645              79
+ #popped           5           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          17   1.00528848             102
+ #popped           3           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau          19   1.42795706             187         200
+ #popped          20           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau          21   1.11961401             187         225
+ #popped          22           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          23  0.928479254             166         176
+ #popped          24           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          25  0.782801151             145         155
+ #popped          26           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          27  0.503999949             187
+ #popped          28           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          29  0.377325296             166
+ #popped          30           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          31   1.71739125             145
+ #popped          23           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau          33   1.00805855             213
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              COMPND   2 MOLECULE: ALCLOHOL DEHYDROGENASE/SHORT-CHAIN DEHYDROGENASE;          SOURCE   2 ORGANISM_SCIENTIFIC: RALSTONIA SP.;                                  AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+           0
+         237
+         237  residues read 4BMN.dssp                                                   
+  grow short strand          11          15
+  grow short strand          57          61
+  exclude short helix          99         101
+  exclude short helix         141         144
+  exclude short helix         218         220
+  grow short strand         227         230
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  5  7  4  6  9 10  8 11 12 15 14 13
+   2     1  4  5 10  1  2  3  5  7  4  6  9 10  8
+   3     1 20 21  5 11 12 15 14 13
+   4     2  6  7  9  1  2  3  5  7  4  6  9 10
+   5     2  0  0  1  8
+   6     4  8  9  6  1  2  3  5  7  4
+   7     4 16 17  3  6  9 10
+   8     6 12 13  5  1  2  3  5  7
+   9     6  0  0  1  4
+  10     0  0  0  0
+  11     0  0  0  5  1  2  3  5  7
+  12     8  0  0  2  1  2
+  13     8 14 15  3  3  5  7
+  14    13  0  0  2  3  5
+  15    13  0  0  1  7
+  16     7  0  0  1  6
+  17     7  0  0  2  9 10
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     3 22 23  4 11 12 15 14
+  21     3  0  0  1 13
+  22    20 28 29  3 11 12 15
+  23    20  0  0  1 14
+  24     0  0  0  3 11 12 15
+  25     0  0  0  0
+  26     0  0  0  3 11 12 15
+  27     0  0  0  0
+  28    22 30 31  2 11 12
+  29    22  0  0  1 15
+  30    28  0  0  1 11
+  31    28  0  0  1 12
+  32     0  0  0  0
+  33     0  0  0  1 11
+  34     0  0  0  1 14
+  35     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5 10  1  1 10
+   3 *   1 16 17  5  1 11 15
+   4 *   2  6  7  9  2  1  7  9 10
+   5 =   2  0  0  1  1  8  8
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4 14 15  3  2  6  6  9 10
+   8 -   6 10 11  5  3  1  3  5  5  7  7
+   9 -   6  0  0  1  1  4  4
+  10 -   8  0  0  2  1  1  2
+  11 -   8 12 13  3  3  3  3  5  5  7  7
+  12 -  11  0  0  2  2  3  3  5  5
+  13 -  11  0  0  1  1  7  7
+  14 -   7  0  0  1  1  6  6
+  15 -   7  0  0  2  1  9 10
+  16 -   3 18 19  4  2 11 12 14 15
+  17 -   3  0  0  1  1 13 13
+  18 -  16 20 21  3  2 11 12 15 15
+  19 -  16  0  0  1  1 14 14
+  20 -  18 22 23  2  1 11 12
+  21 -  18  0  0  1  1 15 15
+  22 -  20  0  0  1  1 11 11
+  23 -  20  0  0  1  1 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 6068  N  BVAL D 110 
+ Alternate location indication is not blank or A, ignore atom: 6070  CA BVAL D 110 
+ Alternate location indication is not blank or A, ignore atom: 6072  C  BVAL D 110 
+ Alternate location indication is not blank or A, ignore atom: 6074  O  BVAL D 110 
+ Alternate location indication is not blank or A, ignore atom: 6076  CB BVAL D 110 
+ Alternate location indication is not blank or A, ignore atom: 6078  CG1BVAL D 110 
+ Alternate location indication is not blank or A, ignore atom: 6080  CG2BVAL D 110 
+ Alternate location indication is not blank or A, ignore atom: 6511  N  BLYS D 169 
+ Alternate location indication is not blank or A, ignore atom: 6513  CA BLYS D 169 
+ Alternate location indication is not blank or A, ignore atom: 6515  C  BLYS D 169 
+ Alternate location indication is not blank or A, ignore atom: 6517  O  BLYS D 169 
+ Alternate location indication is not blank or A, ignore atom: 6519  CB BLYS D 169 
+ Alternate location indication is not blank or A, ignore atom: 6521  CG BLYS D 169 
+ Alternate location indication is not blank or A, ignore atom: 6523  CD BLYS D 169 
+ Alternate location indication is not blank or A, ignore atom: 6525  CE BLYS D 169 
+ Alternate location indication is not blank or A, ignore atom: 6527  NZ BLYS D 169 
+
+Total number of residues read in:            229
+Total number of atoms read in:              1694
+Total number of ignored atom records:        354
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              COMPND   2 MOLECULE: ALCLOHOL DEHYDROGENASE/SHORT-CHAIN DEHYDROGENASE;          SOURCE   2 ORGANISM_SCIENTIFIC: RALSTONIA SP.;                                  AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+         229  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau           1   1.30269396             173
+ #popped           2           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau           3   1.93629563              88         113         135         162
+ #popped           4           2
+ #selectset contacts        2105
+ selectset done           2
+ eigen done           2
+ tau           5   2.13418150             135
+ #popped           6           2
+ #selectset contacts        2105
+ selectset done           2
+ eigen done           2
+ tau           7   1.28037524              38          51
+ #popped           8           2
+ #selectset contacts        2105
+ selectset done           2
+ eigen done           2
+ tau           9  0.833047688              66
+ #popped          10           3
+ #selectset contacts        2105
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped          11           2
+ #selectset contacts        2105
+ selectset done           2
+ eigen done           2
+ tau          11   1.18268502              78
+ #popped          13           2
+ #selectset contacts        2105
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau          13   1.10491645             113
+ #popped          14           2
+ #selectset contacts        2105
+ selectset done           2
+ eigen done           2
+ tau          15   1.04680848              99
+ #popped          15           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau          17  0.823725998             148
+ #popped           3           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau          19  0.883747518             195         218
+ #popped          20           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau          21  0.758845806             184         195
+ #popped          22           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau          23  0.900103509             205
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMN              COMPND   2 MOLECULE: ALCLOHOL DEHYDROGENASE/SHORT-CHAIN DEHYDROGENASE;          SOURCE   2 ORGANISM_SCIENTIFIC: RALSTONIA SP.;                                  AUTHOR    H.MAN,J.KULIG,D.ROTHER,G.GROGAN                                       
+           0
+         229
+         229  residues read 4BMN.dssp                                                   
+  grow short strand           8          12
+  grow short strand          54          58
+  exclude short helix          96          98
+  exclude short helix         138         141
+  exclude short helix         169         171
+  exclude short helix         186         188
+  exclude short helix         210         212
+  grow short strand         219         222
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  5  6  7  9 10  4  8 11 12 14 13
+   2     1  4  5 11  1  2  3  5  6  7  9 10  4  8 11
+   3     1 20 21  3 12 14 13
+   4     2  8  9  9  1  2  3  5  6  7  9 10  4
+   5     2 14 15  2  8 11
+   6     0  0  0  9  1  2  3  5  6  7  9 10  4
+   7     0  0  0  0
+   8     4 10 11  8  1  2  3  5  6  7  9 10
+   9     4  0  0  1  4
+  10     8  0  0  4  1  2  3  5
+  11     8 12 13  4  6  7  9 10
+  12    11  0  0  1  6
+  13    11  0  0  3  7  9 10
+  14     5  0  0  1  8
+  15     5  0  0  1 11
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  1 11
+  20     3  0  0  2 12 14
+  21     3  0  0  1 13
+  22     0  0  0  2 12 14
+  23     0  0  0  0
+  24     0  0  0  1 13
+  25     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 11  1  1 11
+   3 -   1 14 15  3  1 12 14
+   4 -   2  6  7  9  2  1  7  9 10
+   5 -   2 12 13  2  2  8  8 11 11
+   6 -   4  8  9  8  3  1  3  5  7  9 10
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  4  2  1  3  5  5
+   9 -   6 10 11  4  2  6  7  9 10
+  10 -   9  0  0  1  1  6  6
+  11 -   9  0  0  3  2  7  7  9 10
+  12 -   5  0  0  1  1  8  8
+  13 -   5  0  0  1  1 11 11
+  14 -   3  0  0  2  2 12 12 14 14
+  15 -   3  0  0  1  1 13 13
+
+ CHAIN : 4BMNA
+ CHAIN : 4BMNB
+ CHAIN : 4BMNC
+ CHAIN : 4BMND
+

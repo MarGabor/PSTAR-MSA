@@ -1,0 +1,1313 @@
+A length: 174
+B length: 174
+C length: 174
+D length: 174
+E length: 374
+F length: 367
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            174
+Total number of atoms read in:              1317
+Total number of ignored atom records:         11
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+         174  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1554
+ selectset done           0
+ eigen done           0
+ tau           1   2.50788665              48          92
+ #popped           2           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau           3  0.989500403              19          29
+ #popped           4           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau           5   1.24594760             126         142
+ #popped           6           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau           7  0.533412576             152         164
+ #popped           8           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau           9  0.407996893             103
+ #popped          10           2
+ #selectset contacts        1554
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped          11           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau          11   999.999023             126
+ #popped          12           2
+ #selectset contacts        1554
+ selectset done           2
+ eigen done           2
+ tau          13   1.75796175             113
+ #popped          13           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1554
+ selectset done           0
+ eigen done           0
+ tau          15   1.60298741              69
+ #popped          16           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau          17  0.915331781              58
+ #popped          17           0
+ #selectset contacts        1554
+ selectset done           0
+ eigen done           0
+ tau          19   1.10962212              81
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+           0
+         174
+         174  residues read 6PXI.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          37
+  exclude short helix          88          90
+  grow short strand         103         107
+  grow short strand         112         113
+  grow short strand         120         122
+  grow short strand         167         168
+  grow short strand         171         172
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  5  6  9 10 11 12 14 15 13  3  4  7  8
+   2     1  4  5 13  1  2  5  6  9 10 11 12 14 15 13  3  4
+   3     1 16 17  2  7  8
+   4     2  6  7 11  1  2  5  6  9 10 11 12 14 15 13
+   5     2  0  0  2  3  4
+   6     4 10 11 10  1  2  5  6  9 10 11 12 14 15
+   7     4  0  0  1 13
+   8     0  0  0 10  1  2  5  6  9 10 11 12 14 15
+   9     0  0  0  0
+  10     6  0  0  5  1  2  5  6  9
+  11     6 12 13  5 10 11 12 14 15
+  12    11 14 15  3 10 11 12
+  13    11  0  0  2 14 15
+  14    12  0  0  2 10 11
+  15    12  0  0  1 12
+  16     3  0  0  1  7
+  17     3  0  0  1  8
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20     0  0  0  1  8
+  21     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 13  2  1  6  9 15
+   3 -   1 14 15  2  1  7  8
+   4 -   2  6  7 11  3  1  2  5  6  9 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  8  9 10  4  1  2  5  6  9 12 14 15
+   7 -   4  0  0  1  1 13 13
+   8 -   6  0  0  5  3  1  2  5  6  9  9
+   9 -   6 10 11  5  2 10 12 14 15
+  10 -   9 12 13  3  1 10 12
+  11 -   9  0  0  2  1 14 15
+  12 -  10  0  0  2  1 10 11
+  13 -  10  0  0  1  1 12 12
+  14 -   3  0  0  1  1  7  7
+  15 -   3  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            174
+Total number of atoms read in:              1316
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+         174  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1544
+ selectset done           0
+ eigen done           0
+ tau           1   2.34305787              47          93
+ #popped           2           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau           3  0.987196803              19          30
+ #popped           4           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau           5  0.603536487             129
+ #popped           6           2
+ #selectset contacts        1544
+ selectset done           2
+ eigen done           2
+ tau           7  0.624824882             103
+ #popped           8           3
+ #selectset contacts        1544
+ selectset done           3
+ eigen done           3
+ tau           9  0.618430376              44
+ #popped          10           3
+ #selectset contacts        1544
+ selectset done           3
+ eigen done           3
+ tau          11   1.35954964              19
+ #popped           9           2
+ #selectset contacts        1544
+ selectset done           2
+ eigen done           2
+ tau          13   1.94073331             113
+ #popped           7           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau          15   2.81382442             142
+ #popped          17           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau          17  0.751953125             154
+ #popped          19           1
+ #selectset contacts        1544
+ selectset done           1
+ eigen done           1
+ tau          19   1.57668996             164
+ #popped           3           0
+ #selectset contacts        1544
+ selectset done           0
+ eigen done           0
+ tau          21  0.993922651              80
+ #popped          22           0
+ #selectset contacts        1544
+ selectset done           0
+ eigen done           0
+ tau          23   1.29571986              70
+ #popped          24           0
+ #selectset contacts        1544
+ selectset done           0
+ eigen done           0
+ tau          25   1.07773495              58
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+           0
+         174
+         174  residues read 6PXI.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          37
+  exclude short helix          86          89
+  grow short strand         103         106
+  grow short strand         112         113
+  grow short strand         120         122
+  grow short strand         167         168
+  grow short strand         171         172
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  5  6  9 10 11 12 13 14 15  3  4  7  8
+   2     1  4  5 13  1  2  5  6  9 10 11 12 13 14 15  3  4
+   3     1 24 25  2  7  8
+   4     2  6  7 11  1  2  5  6  9 10 11 12 13 14 15
+   5     2  0  0  2  3  4
+   6     4  8  9  8  1  2  5  6  9 10 11 12
+   7     4 16 17  3 13 14 15
+   8     6 10 11  5  1  2  5  6  9
+   9     6 14 15  3 10 11 12
+  10     8 12 13  3  1  2  5
+  11     8  0  0  2  6  9
+  12    10  0  0  2  1  2
+  13    10  0  0  1  5
+  14     9  0  0  2 10 11
+  15     9  0  0  1 12
+  16     7  0  0  1 13
+  17     7 18 19  2 14 15
+  18    17  0  0  1 14
+  19    17  0  0  1 15
+  20     0  0  0  0
+  21     0  0  0  1 15
+  22     0  0  0  2  7  8
+  23     0  0  0  0
+  24     3  0  0  1  7
+  25     3  0  0  1  8
+  26     0  0  0  1  7
+  27     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 13  2  1  6  9 15
+   3 -   1 20 21  2  1  7  8
+   4 -   2  6  7 11  3  1  2  5  6  9 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  8  9  8  3  1  2  5  6  9 12
+   7 -   4 16 17  3  1 13 15
+   8 -   6 10 11  5  3  1  2  5  6  9  9
+   9 -   6 14 15  3  1 10 12
+  10 -   8 12 13  3  2  1  2  5  5
+  11 -   8  0  0  2  2  6  6  9  9
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  1  1  5  5
+  14 -   9  0  0  2  1 10 11
+  15 -   9  0  0  1  1 12 12
+  16 -   7  0  0  1  1 13 13
+  17 -   7 18 19  2  1 14 15
+  18 -  17  0  0  1  1 14 14
+  19 -  17  0  0  1  1 15 15
+  20 -   3  0  0  1  1  7  7
+  21 -   3  0  0  1  1  8  8
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            174
+Total number of atoms read in:              1323
+Total number of ignored atom records:          5
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+         174  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1571
+ selectset done           0
+ eigen done           0
+ tau           1   2.30185771              33         113
+ #popped           2           1
+ #selectset contacts        1571
+ selectset done           1
+ eigen done           1
+ tau           3  0.886321664              17          33
+ #popped           4           1
+ #selectset contacts        1571
+ selectset done           1
+ eigen done           1
+ tau           5  0.532172143             131
+ #popped           6           2
+ #selectset contacts        1571
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1571
+ selectset done           1
+ eigen done           1
+ tau           7   2.23851657             142
+ #popped           9           1
+ #selectset contacts        1571
+ selectset done           1
+ eigen done           1
+ tau           9  0.718750000             152         164
+ #popped          10           1
+ #selectset contacts        1571
+ selectset done           1
+ eigen done           1
+ tau          11   1.50745249             152
+ #popped           3           0
+ #selectset contacts        1571
+ selectset done           0
+ eigen done           0
+ tau          13  0.918999612              82          92
+ #popped          14           0
+ #selectset contacts        1571
+ selectset done           0
+ eigen done           0
+ tau          15  0.925321281              49          70
+ #popped          16           1
+ #selectset contacts        1571
+ selectset done           1
+ eigen done           1
+ tau          17  0.509976089              82
+ #popped          18           2
+ #selectset contacts        1571
+ selectset done           2
+ eigen done           2
+ tau          19   999.999023              49
+ #popped          19           1
+ #selectset contacts        1571
+ selectset done           1
+ eigen done           1
+ tau          21  0.389800340             103
+ #popped          17           0
+ #selectset contacts        1571
+ selectset done           0
+ eigen done           0
+ tau          23  0.810002089              59
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+           0
+         174
+         174  residues read 6PXI.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          37
+  grow short strand         103         107
+  grow short strand         112         113
+  grow short strand         120         122
+  grow short strand         167         168
+  grow short strand         171         172
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 12 13 14 15  3  4  5  6  8  9 10 11  7
+   2     1  4  5  8  1  2 12 13 14 15  3  4
+   3     1 16 17  7  5  6  8  9 10 11  7
+   4     2  6  7  6  1  2 12 13 14 15
+   5     2  0  0  2  3  4
+   6     4  0  0  3  1  2 12
+   7     4  8  9  3 13 14 15
+   8     7  0  0  1 13
+   9     7 12 13  2 14 15
+  10     0  0  0  2 14 15
+  11     0  0  0  0
+  12     9  0  0  1 14
+  13     9  0  0  1 15
+  14     0  0  0  7  5  6  8  9 10 11  7
+  15     0  0  0  0
+  16     3 18 19  6  5  6  8  9 10 11
+  17     3  0  0  1  7
+  18    16 20 21  3  5  6  8
+  19    16 22 23  3  9 10 11
+  20    18  0  0  2  5  6
+  21    18  0  0  1  8
+  22    19  0  0  1  9
+  23    19  0  0  2 10 11
+  24     0  0  0  1  7
+  25     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  2  1  4 12 15
+   3 -   1 12 13  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  0  0  3  2  1  2 12 12
+   7 -   4  8  9  3  1 13 15
+   8 -   7  0  0  1  1 13 13
+   9 -   7 10 11  2  1 14 15
+  10 -   9  0  0  1  1 14 14
+  11 -   9  0  0  1  1 15 15
+  12 -   3 14 15  6  2  5  6  8 11
+  13 -   3  0  0  1  1  7  7
+  14 -  12 16 17  3  2  5  6  8  8
+  15 -  12 18 19  3  1  9 11
+  16 -  14  0  0  2  1  5  6
+  17 -  14  0  0  1  1  8  8
+  18 -  15  0  0  1  1  9  9
+  19 -  15  0  0  2  1 10 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            174
+Total number of atoms read in:              1316
+Total number of ignored atom records:          0
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+         174  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1554
+ selectset done           0
+ eigen done           0
+ tau           1   2.45513320              33         119
+ #popped           2           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau           3  0.944197297              17          33
+ #popped           4           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau           5  0.458052605             132
+ #popped           6           2
+ #selectset contacts        1554
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau           7   2.41794181             164
+ #popped           8           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau           9   2.04489803             142
+ #popped          11           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau          11  0.898203552             152
+ #popped           3           0
+ #selectset contacts        1554
+ selectset done           0
+ eigen done           0
+ tau          13   1.28632689              45          95
+ #popped          14           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau          15   1.29701495             104
+ #popped          16           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau          17  0.536280990              44
+ #popped          15           0
+ #selectset contacts        1554
+ selectset done           0
+ eigen done           0
+ tau          19   1.05903065              57          81
+ #popped          20           1
+ #selectset contacts        1554
+ selectset done           1
+ eigen done           1
+ tau          21  0.728868246              57
+ #popped          21           0
+ #selectset contacts        1554
+ selectset done           0
+ eigen done           0
+ tau          23   1.00961542              69
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+           0
+         174
+         174  residues read 6PXI.dssp                                                   
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          37
+  exclude short helix          88          90
+  grow short strand         103         106
+  grow short strand         112         113
+  grow short strand         120         123
+  grow short strand         166         168
+  grow short strand         171         172
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 12 13 14 15  3  4  5  6 10 11  9  7  8
+   2     1  4  5  8  1  2 12 13 14 15  3  4
+   3     1 14 15  7  5  6 10 11  9  7  8
+   4     2  6  7  6  1  2 12 13 14 15
+   5     2  0  0  2  3  4
+   6     4  0  0  4  1  2 12 13
+   7     4  8  9  2 14 15
+   8     7  0  0  1 14
+   9     7  0  0  1 15
+  10     0  0  0  0
+  11     0  0  0  1 14
+  12     0  0  0  1 14
+  13     0  0  0  0
+  14     3 16 17  4  5  6 10 11
+  15     3 20 21  3  9  7  8
+  16    14 18 19  3  5  6 10
+  17    14  0  0  1 11
+  18    16  0  0  1  5
+  19    16  0  0  2  6 10
+  20    15  0  0  1  9
+  21    15 24 25  2  7  8
+  22     0  0  0  0
+  23     0  0  0  1  9
+  24    21  0  0  1  7
+  25    21  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  2  1  4 12 15
+   3 -   1 10 11  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  0  0  4  2  1  2 12 13
+   7 -   4  8  9  2  1 14 15
+   8 -   7  0  0  1  1 14 14
+   9 -   7  0  0  1  1 15 15
+  10 -   3 12 13  4  2  5  6 10 11
+  11 -   3 16 17  3  1  7  9
+  12 -  10 14 15  3  2  5  6 10 10
+  13 -  10  0  0  1  1 11 11
+  14 -  12  0  0  1  1  5  5
+  15 -  12  0  0  2  2  6  6 10 10
+  16 -  11  0  0  1  1  9  9
+  17 -  11 18 19  2  1  7  8
+  18 -  17  0  0  1  1  7  7
+  19 -  17  0  0  1  1  8  8
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            374
+Total number of atoms read in:              2935
+Total number of ignored atom records:         29
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+  calculate residue outside grid:         127
+  calculate residue outside grid:         128
+  calculate residue outside grid:         129
+  calculate residue outside grid:         130
+  calculate residue outside grid:         131
+  calculate residue outside grid:         132
+  calculate residue outside grid:         133
+  calculate residue outside grid:         134
+  calculate residue outside grid:         135
+  calculate residue outside grid:         136
+  calculate residue outside grid:         137
+  calculate residue outside grid:         138
+  calculate residue outside grid:         139
+  calculate residue outside grid:         140
+  calculate residue outside grid:         141
+  calculate residue outside grid:         142
+  calculate residue outside grid:         143
+  calculate residue outside grid:         146
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+         374  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3395
+ selectset done           0
+ eigen done           0
+ tau           1   10.0484438             266
+ #popped           2           1
+ #selectset contacts        3395
+ selectset done           1
+ eigen done           1
+ tau           3   6.26686716             115         169
+ #popped           4           2
+ #selectset contacts        3395
+ selectset done           2
+ eigen done           2
+ tau           5   2.30780339              47
+ #popped           6           3
+ #selectset contacts        3395
+ selectset done           3
+ eigen done           3
+ tau           7   1.99660730              35
+ #popped           8           3
+ #selectset contacts        3395
+ selectset done           3
+ eigen done           3
+ tau           9  0.715438426              15          25
+ #popped          10           3
+ #selectset contacts        3395
+ selectset done           3
+ eigen done           3
+ tau          11   2.32380962              15
+ #popped           7           2
+ #selectset contacts        3395
+ selectset done           2
+ eigen done           2
+ tau          13   2.06779432              88         186         219         229
+ #popped          14           3
+ #selectset contacts        3395
+ selectset done           3
+ eigen done           3
+ tau          15   1.47231555              57          76
+ #popped          16           3
+ #selectset contacts        3395
+ selectset done           3
+ eigen done           3
+ tau          17  0.841431916             242         256
+ #popped          18           3
+ #selectset contacts        3395
+ selectset done           3
+ eigen done           3
+ tau          19   2.34020376             198         219
+ #popped          20           4
+ #selectset contacts        3395
+ selectset done           4
+ eigen done           4
+ tau          21  0.297562659              88
+ #popped          22           5
+ #selectset contacts        3395
+ selectset done           5
+ eigen done           5
+ tau          23   0.00000000    
+ #popped          23           4
+ #selectset contacts        3395
+ selectset done           4
+ eigen done           4
+ tau          23   999.999023             242
+ #popped          24           4
+ #selectset contacts        3395
+ selectset done           4
+ eigen done           4
+ tau          25  0.368509233             198
+ #popped          21           3
+ #selectset contacts        3395
+ selectset done           3
+ eigen done           3
+ tau          27  0.675324678             209
+ #popped          15           2
+ #selectset contacts        3395
+ selectset done           2
+ eigen done           2
+ tau          29   2.03309584             186
+ #popped          30           2
+ #selectset contacts        3395
+ selectset done           2
+ eigen done           2
+ tau          31   5.84191036             115
+ #popped          32           2
+ #selectset contacts        3395
+ selectset done           2
+ eigen done           2
+ tau          33   1.30754399             101
+ #popped           5           1
+ #selectset contacts        3395
+ selectset done           1
+ eigen done           1
+ tau          35   6.09192133             151
+ #popped          36           1
+ #selectset contacts        3395
+ selectset done           1
+ eigen done           1
+ tau          37   1.48532295             134
+ #popped           3           0
+ #selectset contacts        3395
+ selectset done           0
+ eigen done           0
+ tau          39   1.25126064             308         328         361
+ #popped          40           1
+ #selectset contacts        3395
+ selectset done           1
+ eigen done           1
+ tau          41   1.53442621             281
+ #popped          43           1
+ #selectset contacts        3395
+ selectset done           1
+ eigen done           1
+ tau          43   1.88512242             297         308         349
+ #popped          44           2
+ #selectset contacts        3395
+ selectset done           2
+ eigen done           2
+ tau          45   1.32175124             297         339
+ #popped          46           2
+ #selectset contacts        3395
+ selectset done           2
+ eigen done           2
+ tau          47  0.599264205             297
+ #popped          45           1
+ #selectset contacts        3395
+ selectset done           1
+ eigen done           1
+ tau          49  0.677054286             308
+ #popped          41           0
+ #selectset contacts        3395
+ selectset done           0
+ eigen done           0
+ tau          51   2.50646400             328
+ #popped          52           0
+ #selectset contacts        3395
+ selectset done           0
+ eigen done           0
+ tau          53  0.588143408             318
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+           0
+         374
+         374  residues read 6PXI.dssp                                                   
+  exclude short helix          41          46
+  grow short strand          52          55
+  grow short strand          77          81
+ crowded segment excluded!
+  exclude short helix          82          86
+  grow short strand         187         191
+  exclude short helix         193         196
+  grow short strand         220         222
+  grow short strand         227         229
+  exclude short helix         246         248
+  exclude short helix         251         254
+  grow short strand         259         262
+  grow short strand         296         299
+  grow short strand         348         351
+  grow short helix         367         373
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 22  1  2  3  9 13 14 10  4  5  8 11 12  6  7 15 16 17 20 19 21 18 22
+   2     1  4  5 14  1  2  3  9 13 14 10  4  5  8 11 12  6  7
+   3     1 40 41  8 15 16 17 20 19 21 18 22
+   4     2  6  7 12  1  2  3  9 13 14 10  4  5  8 11 12
+   5     2 36 37  2  6  7
+   6     4 12 13  2  1  2
+   7     4 14 15 10  3  9 13 14 10  4  5  8 11 12
+   8     0  0  0  2  1  2
+   9     0  0  0  0
+  10     0  0  0  2  1  2
+  11     0  0  0  0
+  12     6  0  0  1  1
+  13     6  0  0  1  2
+  14     7 16 17  6  3  9 13 14 10  4
+  15     7 30 31  4  5  8 11 12
+  16    14 20 21  5  3  9 13 14 10
+  17    14  0  0  1  4
+  18     0  0  0  5  3  9 13 14 10
+  19     0  0  0  0
+  20    16 22 23  4  3  9 13 14
+  21    16  0  0  1 10
+  22    20  0  0  1  3
+  23    20 24 25  3  9 13 14
+  24    23 26 27  2  9 13
+  25    23  0  0  1 14
+  26    24  0  0  1  9
+  27    24  0  0  1 13
+  28     0  0  0  1 10
+  29     0  0  0  0
+  30    15 32 33  2  5  8
+  31    15  0  0  2 11 12
+  32    30  0  0  1  5
+  33    30  0  0  1  8
+  34     0  0  0  0
+  35     0  0  0  1  5
+  36     5  0  0  1  6
+  37     5  0  0  1  7
+  38     0  0  0  0
+  39     0  0  0  1  6
+  40     3 42 43  6 15 16 17 20 19 21
+  41     3 52 53  2 18 22
+  42    40  0  0  1 15
+  43    40 44 45  5 16 17 20 19 21
+  44    43 46 47  4 16 17 20 19
+  45    43  0  0  1 21
+  46    44 48 49  3 16 17 20
+  47    44  0  0  1 19
+  48    46  0  0  2 16 17
+  49    46  0  0  1 20
+  50     0  0  0  0
+  51     0  0  0  1 21
+  52    41  0  0  1 18
+  53    41  0  0  1 22
+  54     0  0  0  1 18
+  55     0  0  0  0
+   1 +   0  2  3 22  1  1 22
+   2 +   1  4  5 14  1  1 14
+   3 *   1 28 29  8  1 15 22
+   4 *   2  6  7 12  2  1  5  8 14
+   5 *   2 26 27  2  1  6  7
+   6 -   4  8  9  2  1  1  2
+   7 -   4 10 11 10  2  3  5  8 14
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  2  2
+  10 -   7 12 13  6  3  3  4  9 10 13 14
+  11 -   7 22 23  4  3  5  5  8  8 11 12
+  12 -  10 14 15  5  3  3  3  9 10 13 14
+  13 -  10  0  0  1  1  4  4
+  14 -  12 16 17  4  3  3  3  9  9 13 14
+  15 -  12  0  0  1  1 10 10
+  16 -  14  0  0  1  1  3  3
+  17 -  14 18 19  3  2  9  9 13 14
+  18 -  17 20 21  2  2  9  9 13 13
+  19 -  17  0  0  1  1 14 14
+  20 -  18  0  0  1  1  9  9
+  21 -  18  0  0  1  1 13 13
+  22 -  11 24 25  2  2  5  5  8  8
+  23 -  11  0  0  2  1 11 12
+  24 -  22  0  0  1  1  5  5
+  25 -  22  0  0  1  1  8  8
+  26 -   5  0  0  1  1  6  6
+  27 -   5  0  0  1  1  7  7
+  28 -   3 30 31  6  2 15 17 19 21
+  29 -   3 38 39  2  2 18 18 22 22
+  30 -  28  0  0  1  1 15 15
+  31 -  28 32 33  5  2 16 17 19 21
+  32 -  31 34 35  4  2 16 17 19 20
+  33 -  31  0  0  1  1 21 21
+  34 -  32 36 37  3  2 16 17 20 20
+  35 -  32  0  0  1  1 19 19
+  36 -  34  0  0  2  1 16 17
+  37 -  34  0  0  1  1 20 20
+  38 -  29  0  0  1  1 18 18
+  39 -  29  0  0  1  1 22 22
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            367
+Total number of atoms read in:              2890
+Total number of ignored atom records:         27
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+  calculate residue outside grid:         118
+  calculate residue outside grid:         119
+  calculate residue outside grid:         120
+  calculate residue outside grid:         121
+  calculate residue outside grid:         122
+  calculate residue outside grid:         123
+  calculate residue outside grid:         124
+  calculate residue outside grid:         125
+  calculate residue outside grid:         128
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+         367  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3275
+ selectset done           0
+ eigen done           0
+ tau           1   999.999023             117         130
+ #popped           2           0
+ #selectset contacts        3275
+ selectset done           0
+ eigen done           0
+ tau           3   19.6219006             117         152
+ #popped           4           1
+ #selectset contacts        3275
+ selectset done           1
+ eigen done           1
+ tau           5   9.31470966             257
+ #popped           6           2
+ #selectset contacts        3275
+ selectset done           2
+ eigen done           2
+ tau           7   2.76887202              87         179         212         222
+ #popped           8           3
+ #selectset contacts        3275
+ selectset done           3
+ eigen done           3
+ tau           9   1.54531479              33
+ #popped          10           4
+ #selectset contacts        3275
+ selectset done           4
+ eigen done           4
+ tau          11  0.537014246              11          23
+ #popped          12           4
+ #selectset contacts        3275
+ selectset done           4
+ eigen done           4
+ tau          13   1.54357958              11
+ #popped          11           3
+ #selectset contacts        3275
+ selectset done           3
+ eigen done           3
+ tau          15   3.08057785              47
+ #popped          17           3
+ #selectset contacts        3275
+ selectset done           3
+ eigen done           3
+ tau          17   1.79653549              62          77
+ #popped          18           3
+ #selectset contacts        3275
+ selectset done           3
+ eigen done           3
+ tau          19  0.375692546             212
+ #popped          20           4
+ #selectset contacts        3275
+ selectset done           4
+ eigen done           4
+ tau          21   20.0422306              62
+ #popped          23           4
+ #selectset contacts        3275
+ selectset done           4
+ eigen done           4
+ tau          23   2.43623114             193
+ #popped          24           4
+ #selectset contacts        3275
+ selectset done           4
+ eigen done           4
+ tau          25  0.557104111              87
+ #popped          21           3
+ #selectset contacts        3275
+ selectset done           3
+ eigen done           3
+ tau          27   2.72354007             232
+ #popped          29           3
+ #selectset contacts        3275
+ selectset done           3
+ eigen done           3
+ tau          29   1.42348099             242
+ #popped           9           2
+ #selectset contacts        3275
+ selectset done           2
+ eigen done           2
+ tau          31   2.23791432             162
+ #popped          32           3
+ #selectset contacts        3275
+ selectset done           3
+ eigen done           3
+ tau          33   3.24843740             117
+ #popped          34           3
+ #selectset contacts        3275
+ selectset done           3
+ eigen done           3
+ tau          35   1.36101758             101
+ #popped          33           2
+ #selectset contacts        3275
+ selectset done           2
+ eigen done           2
+ tau          37   3.16116500             179
+ #popped           7           1
+ #selectset contacts        3275
+ selectset done           1
+ eigen done           1
+ tau          39   1.62782300             272
+ #popped          41           1
+ #selectset contacts        3275
+ selectset done           1
+ eigen done           1
+ tau          41   1.75807250             292         328         344
+ #popped          42           2
+ #selectset contacts        3275
+ selectset done           2
+ eigen done           2
+ tau          43  0.545193672             292
+ #popped          44           2
+ #selectset contacts        3275
+ selectset done           2
+ eigen done           2
+ tau          45  0.690909088             282
+ #popped          43           1
+ #selectset contacts        3275
+ selectset done           1
+ eigen done           1
+ tau          47   1.30162704             303
+ #popped          49           1
+ #selectset contacts        3275
+ selectset done           1
+ eigen done           1
+ tau          49   1.62703454             328         357
+ #popped          50           1
+ #selectset contacts        3275
+ selectset done           1
+ eigen done           1
+ tau          51   2.46510959             328
+ #popped          52           1
+ #selectset contacts        3275
+ selectset done           1
+ eigen done           1
+ tau          53   1.31387329             318
+ #popped           5           0
+ #selectset contacts        3275
+ selectset done           0
+ eigen done           0
+ tau          55  0.739248812             140
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-JUL-19   6PXI              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    V.BAYTSHTOK,R.A.GRANT,R.T.SAUER                                       
+           0
+         367
+         367  residues read 6PXI.dssp                                                   
+  exclude short helix          41          46
+  grow short strand          52          55
+  grow short strand          79          81
+ crowded segment excluded!
+  exclude short helix          82          86
+  grow short strand         180         184
+  exclude short helix         186         189
+  grow short strand         213         216
+  grow short strand         219         222
+  exclude short helix         239         241
+  exclude short helix         244         247
+  grow short strand         252         255
+  grow short strand         289         292
+  exclude short helix         328         333
+  grow short strand         341         344
+  grow short helix         360         366
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 23  1  2  3 10 11 14 15  4  5  8  9 12 13 16 17 18 21 19 20 23 22  7  6
+   2     1  4  5 22  1  2  3 10 11 14 15  4  5  8  9 12 13 16 17 18 21 19 20 23 22  7
+   3     1  0  0  1  6
+   4     2  6  7 21  1  2  3 10 11 14 15  4  5  8  9 12 13 16 17 18 21 19 20 23 22
+   5     2  0  0  1  7
+   6     4  8  9 13  1  2  3 10 11 14 15  4  5  8  9 12 13
+   7     4 40 41  8 16 17 18 21 19 20 23 22
+   8     6 10 11  8  1  2  3 10 11 14 15  4
+   9     6 32 33  5  5  8  9 12 13
+  10     8 14 15  2  1  2
+  11     8 18 19  6  3 10 11 14 15  4
+  12     0  0  0  2  1  2
+  13     0  0  0  0
+  14    10  0  0  1  1
+  15    10  0  0  1  2
+  16     0  0  0  0
+  17     0  0  0  6  3 10 11 14 15  4
+  18    11 20 21  5  3 10 11 14 15
+  19    11  0  0  1  4
+  20    18 22 23  3  3 10 11
+  21    18 28 29  2 14 15
+  22    20  0  0  1  3
+  23    20 24 25  2 10 11
+  24    23  0  0  1 10
+  25    23  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  1 10
+  28    21  0  0  1 14
+  29    21  0  0  1 15
+  30     0  0  0  0
+  31     0  0  0  1 15
+  32     9 34 35  2  5  8
+  33     9 38 39  3  9 12 13
+  34    32  0  0  1  5
+  35    32  0  0  1  8
+  36     0  0  0  0
+  37     0  0  0  1  5
+  38    33  0  0  1  9
+  39    33  0  0  2 12 13
+  40     7  0  0  1 16
+  41     7 42 43  7 17 18 21 19 20 23 22
+  42    41 44 45  3 17 18 21
+  43    41 48 49  4 19 20 23 22
+  44    42 46 47  2 17 18
+  45    42  0  0  1 21
+  46    44  0  0  1 17
+  47    44  0  0  1 18
+  48    43  0  0  1 19
+  49    43 50 51  3 20 23 22
+  50    49 52 53  2 20 23
+  51    49  0  0  1 22
+  52    50  0  0  1 20
+  53    50  0  0  1 23
+  54     0  0  0  0
+  55     0  0  0  1 20
+  56     0  0  0  0
+  57     0  0  0  1  7
+   1 +   0  2  3 23  1  1 23
+   2 +   1  4  5 22  2  1  5  7 23
+   3 =   1  0  0  1  1  6  6
+   4 +   2  6  7 21  2  1  5  8 23
+   5 =   2  0  0  1  1  7  7
+   6 +   4  8  9 13  2  1  5  8 15
+   7 *   4 30 31  8  1 16 23
+   8 *   6 10 11  8  3  1  4 10 11 14 15
+   9 *   6 24 25  5  3  5  5  8  9 12 13
+  10 -   8 12 13  2  1  1  2
+  11 -   8 14 15  6  3  3  4 10 11 14 15
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  2  2
+  14 -  11 16 17  5  3  3  3 10 11 14 15
+  15 -  11  0  0  1  1  4  4
+  16 -  14 18 19  3  2  3  3 10 11
+  17 -  14 22 23  2  1 14 15
+  18 -  16  0  0  1  1  3  3
+  19 -  16 20 21  2  1 10 11
+  20 -  19  0  0  1  1 10 10
+  21 -  19  0  0  1  1 11 11
+  22 -  17  0  0  1  1 14 14
+  23 -  17  0  0  1  1 15 15
+  24 -   9 26 27  2  2  5  5  8  8
+  25 -   9 28 29  3  2  9  9 12 13
+  26 -  24  0  0  1  1  5  5
+  27 -  24  0  0  1  1  8  8
+  28 -  25  0  0  1  1  9  9
+  29 -  25  0  0  2  1 12 13
+  30 -   7  0  0  1  1 16 16
+  31 -   7 32 33  7  1 17 23
+  32 -  31 34 35  3  2 17 18 21 21
+  33 -  31 38 39  4  2 19 20 22 23
+  34 -  32 36 37  2  1 17 18
+  35 -  32  0  0  1  1 21 21
+  36 -  34  0  0  1  1 17 17
+  37 -  34  0  0  1  1 18 18
+  38 -  33  0  0  1  1 19 19
+  39 -  33 40 41  3  2 20 20 22 23
+  40 -  39 42 43  2  2 20 20 23 23
+  41 -  39  0  0  1  1 22 22
+  42 -  40  0  0  1  1 20 20
+  43 -  40  0  0  1  1 23 23
+
+ CHAIN : 6PXIA
+ CHAIN : 6PXIB
+ CHAIN : 6PXIC
+ CHAIN : 6PXID
+ CHAIN : 6PXIE
+ CHAIN : 6PXIF
+

@@ -1,0 +1,33 @@
+# Job: hip
+# Query: 1HPIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1EYT-A 12.1  1.7   69    83   41   MOLECULE: HIGH-POTENTIAL IRON-SULFUR PROTEIN;                        
+
+# Pairwise alignments
+
+No 1: Query=1HPIA Sbjct=1EYTA Z-score=12.1
+
+DSSP  ---LEELLLLLHHHHHLLLLLLHHHLL-LLLL-----LLLLLHHHLLLLLL-llLLLEEE
+Query ---MERLSEDDPAAQALEYRHDASSVQ-HPAY-----EEGQTCLNCLLYTD-asAQDWGP   50
+ident          ||| | || |  ||       |       | | | ||          ||  
+Sbjct aapANAVTADDPTAIALKYNQDATKSErVAAArpglpPEEQHCANCQFMQAnvgEGDWKG   60
+DSSP  lllLLLLLLLLHHHHHLLLLLLHHHLLhHHHLlllllHHHLLHHHLLLEEEeeeELLEEE
+
+DSSP  LLLLLLEEEELLLLLLLLLLL--
+Query CSVFPGKLVSANGWCTAWVAR--   71
+ident |  |||||   ||||  |     
+Sbjct CQLFPGKLINVNGWCASWTLKag   83
+DSSP  ELLLLLLLEELLLLLLLLLLLll
+
+
+# Structural equivalences
+   1: 1HPI-A 1EYT-A     1 -  24 <=>    4 -  27   (MET    1  - GLN   24  <=> ALA    4  - GLU   27 )                          
+   1: 1HPI-A 1EYT-A    25 -  28 <=>   29 -  32   (HIS   25  - TYR   28  <=> VAL   29  - ALA   32 )                          
+   1: 1HPI-A 1EYT-A    29 -  42 <=>   38 -  51   (GLU   29  - ASP   42  <=> PRO   38  - ALA   51 )                          
+   1: 1HPI-A 1EYT-A    45 -  71 <=>   55 -  81   (ALA   45  - ARG   71  <=> GLU   55  - LYS   81 )                          
+
+# Translation-rotation matrices
+-matrix  "1HPI-A 1EYT-A  U(1,.)   0.018922  0.847913 -0.529797           44.970406"
+-matrix  "1HPI-A 1EYT-A  U(2,.)  -0.954141  0.173652  0.243843           75.958565"
+-matrix  "1HPI-A 1EYT-A  U(3,.)   0.298759  0.500887  0.812315           -6.928904"
+

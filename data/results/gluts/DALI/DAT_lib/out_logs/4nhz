@@ -1,0 +1,3341 @@
+A length: 232
+B length: 242
+C length: 232
+D length: 229
+E length: 231
+F length: 229
+G length: 231
+H length: 242
+I length: 230
+J length: 228
+K length: 228
+L length: 233
+M length: 230
+N length: 228
+O length: 230
+P length: 230
+# 16 chains A B C D E F G H I J K L M N O P
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            232
+Total number of atoms read in:              1860
+Total number of ignored atom records:        284
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2205
+ selectset done           0
+ eigen done           0
+ tau           1   3.18167067             102         218
+ #popped           2           1
+ #selectset contacts        2205
+ selectset done           1
+ eigen done           1
+ tau           3   1.33709276              23          38         102
+ #popped           4           2
+ #selectset contacts        2205
+ selectset done           2
+ eigen done           2
+ tau           5   1.97743523              86
+ #popped           6           2
+ #selectset contacts        2205
+ selectset done           2
+ eigen done           2
+ tau           7   1.32890368              48          68
+ #popped           8           3
+ #selectset contacts        2205
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        2205
+ selectset done           2
+ eigen done           2
+ tau           9  0.666249990              58
+ #popped           5           1
+ #selectset contacts        2205
+ selectset done           1
+ eigen done           1
+ tau          11  0.941592932              38
+ #popped           3           0
+ #selectset contacts        2205
+ selectset done           0
+ eigen done           0
+ tau          13   1.48289466             122         161         185         206
+ #popped          14           1
+ #selectset contacts        2205
+ selectset done           1
+ eigen done           1
+ tau          15   2.29653096             122
+ #popped          16           2
+ #selectset contacts        2205
+ selectset done           2
+ eigen done           2
+ tau          17  0.697370887             112
+ #popped          17           1
+ #selectset contacts        2205
+ selectset done           1
+ eigen done           1
+ tau          19  0.722204626             185
+ #popped          20           1
+ #selectset contacts        2205
+ selectset done           1
+ eigen done           1
+ tau          21  0.632812500             174
+ #popped          15           0
+ #selectset contacts        2205
+ selectset done           0
+ eigen done           0
+ tau          23   2.42661929             161
+ #popped          24           1
+ #selectset contacts        2205
+ selectset done           1
+ eigen done           1
+ tau          25  0.788609326             151
+ #popped          26           1
+ #selectset contacts        2205
+ selectset done           1
+ eigen done           1
+ tau          27   1.01382327             140
+ #popped          25           0
+ #selectset contacts        2205
+ selectset done           0
+ eigen done           0
+ tau          29   1.47774661             196
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         232
+         232  residues read 4NHZ.dssp                                                   
+  exclude short helix           7          10
+  grow short strand          19          23
+  grow short strand          43          47
+  exclude short helix          50          52
+  exclude short helix          54          56
+  exclude short helix          58          61
+  grow short strand          71          74
+  grow short strand          83          86
+  exclude short helix         138         141
+  exclude short helix         203         205
+  exclude short helix         220         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  6  2  7 10 11  8  9
+   2     1  4  5  6  1  3  4  5  6  2
+   3     1 14 15  5  7 10 11  8  9
+   4     2  6  7  5  1  3  4  5  6
+   5     2  0  0  1  2
+   6     4  0  0  4  1  3  4  5
+   7     4  0  0  1  6
+   8     0  0  0  4  1  3  4  5
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     3 16 17  3  7 10 11
+  15     3 26 27  2  8  9
+  16    14  0  0  1  7
+  17    14 20 21  2 10 11
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20    17  0  0  1 10
+  21    17  0  0  1 11
+  22     0  0  0  0
+  23     0  0  0  1 10
+  24     0  0  0  2  8  9
+  25     0  0  0  0
+  26    15  0  0  1  8
+  27    15  0  0  1  9
+  28     0  0  0  1  8
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1  8  9  5  1  7 11
+   4 -   2  6  7  5  2  1  1  3  6
+   5 -   2  0  0  1  1  2  2
+   6 -   4  0  0  4  2  1  1  3  5
+   7 -   4  0  0  1  1  6  6
+   8 -   3 10 11  3  2  7  7 10 11
+   9 -   3 14 15  2  1  8  9
+  10 -   8  0  0  1  1  7  7
+  11 -   8 12 13  2  1 10 11
+  12 -  11  0  0  1  1 10 10
+  13 -  11  0  0  1  1 11 11
+  14 -   9  0  0  1  1  8  8
+  15 -   9  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2671  CA BGLN B  95 
+ Alternate location indication is not blank or A, ignore atom: 2675  CB BGLN B  95 
+ Alternate location indication is not blank or A, ignore atom: 2677  CG BGLN B  95 
+ Alternate location indication is not blank or A, ignore atom: 2679  CD BGLN B  95 
+ Alternate location indication is not blank or A, ignore atom: 2681  OE1BGLN B  95 
+ Alternate location indication is not blank or A, ignore atom: 2683  NE2BGLN B  95 
+ Alternate location indication is not blank or A, ignore atom: 3740  CA BGLN B 225 
+ Alternate location indication is not blank or A, ignore atom: 3744  CB BGLN B 225 
+ Alternate location indication is not blank or A, ignore atom: 3746  CG BGLN B 225 
+ Alternate location indication is not blank or A, ignore atom: 3748  CD BGLN B 225 
+ Alternate location indication is not blank or A, ignore atom: 3750  OE1BGLN B 225 
+ Alternate location indication is not blank or A, ignore atom: 3752  NE2BGLN B 225 
+
+Total number of residues read in:            244
+Total number of atoms read in:              1956
+Total number of ignored atom records:        316
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         244  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau           1   3.38096046              12
+ #popped           3           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau           3   2.05025315             134         173         197         218
+ #popped           4           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau           5   2.44347715             114         230
+ #popped           6           2
+ #selectset contacts        2337
+ selectset done           2
+ eigen done           2
+ tau           7   1.63622403              24          59          80
+ #popped           8           3
+ #selectset contacts        2337
+ selectset done           3
+ eigen done           3
+ tau           9   1.76296294              24
+ #popped          11           3
+ #selectset contacts        2337
+ selectset done           3
+ eigen done           3
+ tau          11  0.792340577              69
+ #popped           9           2
+ #selectset contacts        2337
+ selectset done           2
+ eigen done           2
+ tau          13   1.30086076             114
+ #popped          14           2
+ #selectset contacts        2337
+ selectset done           2
+ eigen done           2
+ tau          15   1.17728567              98
+ #popped          16           2
+ #selectset contacts        2337
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           7           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          17   2.29653096             134
+ #popped          18           2
+ #selectset contacts        2337
+ selectset done           2
+ eigen done           2
+ tau          19  0.708803236             124
+ #popped          19           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          21  0.730505824             197
+ #popped          22           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          23  0.632812500             186
+ #popped           5           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau          25   2.14662480             173
+ #popped          26           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          27  0.857861638             157
+ #popped          28           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          29  0.912033916             144
+ #popped          27           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau          31   1.47774661             208
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         244
+         244  residues read 4NHZ.dssp                                                   
+  exclude short helix          19          22
+  grow short strand          31          35
+  grow short strand          55          59
+  exclude short helix          62          64
+  exclude short helix          66          68
+  exclude short helix          70          73
+  exclude short helix          90          92
+  exclude short helix         150         153
+  exclude short helix         215         217
+  exclude short helix         232         237
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  7  8 11 12  9 10
+   2     1  0  0  1  1
+   3     1  4  5 11  2  3  4  5  6  7  8 11 12  9 10
+   4     3  6  7  9  2  3  4  5  6  7  8 11 12
+   5     3 28 29  2  9 10
+   6     4 16 17  6  2  3  4  5  6  7
+   7     4 18 19  3  8 11 12
+   8     0  0  0  0
+   9     0  0  0  6  2  3  4  5  6  7
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+  14     0  0  0  6  2  3  4  5  6  7
+  15     0  0  0  0
+  16     6  0  0  5  2  3  4  5  6
+  17     6  0  0  1  7
+  18     7  0  0  1  8
+  19     7 22 23  2 11 12
+  20     0  0  0  0
+  21     0  0  0  1  8
+  22    19  0  0  1 11
+  23    19  0  0  1 12
+  24     0  0  0  0
+  25     0  0  0  1 11
+  26     0  0  0  2  9 10
+  27     0  0  0  0
+  28     5  0  0  1  9
+  29     5  0  0  1 10
+  30     0  0  0  1  9
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+   1 +   0  2  3 12  1  1 12
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 11  1  2 12
+   4 -   3  6  7  9  2  2  8 11 12
+   5 -   3 14 15  2  1  9 10
+   6 -   4  8  9  6  1  2  7
+   7 -   4 10 11  3  2  8  8 11 12
+   8 -   6  0  0  5  1  2  6
+   9 -   6  0  0  1  1  7  7
+  10 -   7  0  0  1  1  8  8
+  11 -   7 12 13  2  1 11 12
+  12 -  11  0  0  1  1 11 11
+  13 -  11  0  0  1  1 12 12
+  14 -   5  0  0  1  1  9  9
+  15 -   5  0  0  1  1 10 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5612  CA BGLN C 225 
+ Alternate location indication is not blank or A, ignore atom: 5616  CB BGLN C 225 
+ Alternate location indication is not blank or A, ignore atom: 5618  CG BGLN C 225 
+ Alternate location indication is not blank or A, ignore atom: 5620  CD BGLN C 225 
+ Alternate location indication is not blank or A, ignore atom: 5622  OE1BGLN C 225 
+ Alternate location indication is not blank or A, ignore atom: 5624  NE2BGLN C 225 
+
+Total number of residues read in:            233
+Total number of atoms read in:              1866
+Total number of ignored atom records:        298
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         233  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2224
+ selectset done           0
+ eigen done           0
+ tau           1   3.23482275             103         220
+ #popped           2           1
+ #selectset contacts        2224
+ selectset done           1
+ eigen done           1
+ tau           3   1.74582112              13          49          69
+ #popped           4           2
+ #selectset contacts        2224
+ selectset done           2
+ eigen done           2
+ tau           5   1.89640045              13
+ #popped           7           2
+ #selectset contacts        2224
+ selectset done           2
+ eigen done           2
+ tau           7  0.634523809              59
+ #popped           5           1
+ #selectset contacts        2224
+ selectset done           1
+ eigen done           1
+ tau           9  0.991100788              87
+ #popped          10           2
+ #selectset contacts        2224
+ selectset done           2
+ eigen done           2
+ tau          11  0.925640225              26          39
+ #popped          12           2
+ #selectset contacts        2224
+ selectset done           2
+ eigen done           2
+ tau          13  0.789936066              49
+ #popped          14           2
+ #selectset contacts        2224
+ selectset done           2
+ eigen done           2
+ tau          15  0.290760845              26
+ #popped          11           1
+ #selectset contacts        2224
+ selectset done           1
+ eigen done           1
+ tau          17   999.999023             103
+ #popped           3           0
+ #selectset contacts        2224
+ selectset done           0
+ eigen done           0
+ tau          19   1.63053334             123
+ #popped          20           1
+ #selectset contacts        2224
+ selectset done           1
+ eigen done           1
+ tau          21  0.732830465             113
+ #popped          21           0
+ #selectset contacts        2224
+ selectset done           0
+ eigen done           0
+ tau          23   1.99356031             160
+ #popped          24           1
+ #selectset contacts        2224
+ selectset done           1
+ eigen done           1
+ tau          25  0.805598319             146
+ #popped          26           1
+ #selectset contacts        2224
+ selectset done           1
+ eigen done           1
+ tau          27  0.893033206             133
+ #popped          25           0
+ #selectset contacts        2224
+ selectset done           0
+ eigen done           0
+ tau          29   1.63762367             186         206
+ #popped          30           1
+ #selectset contacts        2224
+ selectset done           1
+ eigen done           1
+ tau          31  0.807913899             171         186
+ #popped          32           1
+ #selectset contacts        2224
+ selectset done           1
+ eigen done           1
+ tau          33   0.00000000    
+ #popped          31           0
+ #selectset contacts        2224
+ selectset done           0
+ eigen done           0
+ tau          33   1.16707313             196
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         233
+         233  residues read 4NHZ.dssp                                                   
+  exclude short helix           3           5
+  exclude short helix           7          10
+  grow short strand          20          24
+  grow short strand          44          48
+  exclude short helix          51          53
+  exclude short helix          55          57
+  exclude short helix          59          62
+  exclude short helix          79          81
+  exclude short helix         139         142
+  exclude short helix         204         206
+  exclude short helix         221         226
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  2  6  7  8  9 11 10
+   2     1 10 11  6  1  3  4  5  2  6
+   3     1 20 21  5  7  8  9 11 10
+   4     0  0  0  0
+   5     0  0  0  6  1  3  4  5  2  6
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     2 12 13  5  1  3  4  5  2
+  11     2  0  0  1  6
+  12    10 14 15  4  1  3  4  5
+  13    10  0  0  1  2
+  14    12 16 17  2  1  3
+  15    12  0  0  2  4  5
+  16    14  0  0  1  1
+  17    14  0  0  1  3
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20     3  0  0  1  7
+  21     3 24 25  4  8  9 11 10
+  22     0  0  0  0
+  23     0  0  0  1  7
+  24    21 26 27  2  8  9
+  25    21 32 33  2 11 10
+  26    24  0  0  1  8
+  27    24  0  0  1  9
+  28     0  0  0  1  8
+  29     0  0  0  0
+  30     0  0  0  2 11 10
+  31     0  0  0  0
+  32    25  0  0  1 11
+  33    25  0  0  1 10
+  34     0  0  0  0
+  35     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  2  2  1  1  3  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  3  3
+  12 -   3  0  0  1  1  7  7
+  13 -   3 14 15  4  1  8 11
+  14 -  13 16 17  2  1  8  9
+  15 -  13 18 19  2  1 10 11
+  16 -  14  0  0  1  1  8  8
+  17 -  14  0  0  1  1  9  9
+  18 -  15  0  0  1  1 11 11
+  19 -  15  0  0  1  1 10 10
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 6412  CA BGLN D  96 
+ Alternate location indication is not blank or A, ignore atom: 6416  CB BGLN D  96 
+ Alternate location indication is not blank or A, ignore atom: 6418  CG BGLN D  96 
+ Alternate location indication is not blank or A, ignore atom: 6420  CD BGLN D  96 
+ Alternate location indication is not blank or A, ignore atom: 6422  OE1BGLN D  96 
+ Alternate location indication is not blank or A, ignore atom: 6424  NE2BGLN D  96 
+ Alternate location indication is not blank or A, ignore atom: 6452  CA BGLU D 100 
+ Alternate location indication is not blank or A, ignore atom: 6456  CB BGLU D 100 
+ Alternate location indication is not blank or A, ignore atom: 6458  CG BGLU D 100 
+ Alternate location indication is not blank or A, ignore atom: 6460  CD BGLU D 100 
+ Alternate location indication is not blank or A, ignore atom: 6462  OE1BGLU D 100 
+ Alternate location indication is not blank or A, ignore atom: 6464  OE2BGLU D 100 
+ Alternate location indication is not blank or A, ignore atom: 7487  CA BGLN D 226 
+ Alternate location indication is not blank or A, ignore atom: 7491  CB BGLN D 226 
+ Alternate location indication is not blank or A, ignore atom: 7493  CG BGLN D 226 
+ Alternate location indication is not blank or A, ignore atom: 7495  CD BGLN D 226 
+ Alternate location indication is not blank or A, ignore atom: 7497  OE1BGLN D 226 
+ Alternate location indication is not blank or A, ignore atom: 7499  NE2BGLN D 226 
+
+Total number of residues read in:            232
+Total number of atoms read in:              1857
+Total number of ignored atom records:        292
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau           1   3.07112074             102         218
+ #popped           2           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau           3   1.54713261              23          42          87
+ #popped           4           2
+ #selectset contacts        2233
+ selectset done           2
+ eigen done           2
+ tau           5  0.790640891              56
+ #popped           6           3
+ #selectset contacts        2233
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        2233
+ selectset done           2
+ eigen done           2
+ tau           7   1.43054354              70
+ #popped           5           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau           9   2.18032789              42         102
+ #popped          10           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          11   1.13506496              42
+ #popped           3           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau          13   1.60472977             122         160         185         205
+ #popped          14           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          15   2.07531285             122
+ #popped          16           2
+ #selectset contacts        2233
+ selectset done           2
+ eigen done           2
+ tau          17  0.772089183             112
+ #popped          17           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          19  0.819423497             170         185
+ #popped          20           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          15           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau          21   2.33427906             160
+ #popped          22           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          23  0.752411544             149
+ #popped          24           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          25  0.972662151             132
+ #popped          23           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau          27   1.23780489             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         232
+         232  residues read 4NHZ.dssp                                                   
+  exclude short helix           2           4
+  exclude short helix           6           9
+  grow short strand          19          23
+  grow short strand          43          47
+  exclude short helix          50          52
+  exclude short helix          54          56
+  exclude short helix          58          61
+  grow short strand          71          74
+  exclude short helix          78          80
+  grow short strand          83          86
+  exclude short helix         138         141
+  exclude short helix         203         205
+  exclude short helix         220         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  2  6  7 11 10  8  9
+   2     1  4  5  6  1  3  4  5  2  6
+   3     1 14 15  5  7 11 10  8  9
+   4     2  6  7  4  1  3  4  5
+   5     2 10 11  2  2  6
+   6     4  0  0  2  1  3
+   7     4  0  0  2  4  5
+   8     0  0  0  0
+   9     0  0  0  2  4  5
+  10     5  0  0  1  2
+  11     5  0  0  1  6
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     3 16 17  3  7 11 10
+  15     3 24 25  2  8  9
+  16    14  0  0  1  7
+  17    14 20 21  2 11 10
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20    17  0  0  1 11
+  21    17  0  0  1 10
+  22     0  0  0  2  8  9
+  23     0  0  0  0
+  24    15  0  0  1  8
+  25    15  0  0  1  9
+  26     0  0  0  1  8
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  5  1  7 11
+   4 -   2  6  7  4  2  1  1  3  5
+   5 -   2  8  9  2  2  2  2  6  6
+   6 -   4  0  0  2  2  1  1  3  3
+   7 -   4  0  0  2  1  4  5
+   8 -   5  0  0  1  1  2  2
+   9 -   5  0  0  1  1  6  6
+  10 -   3 12 13  3  2  7  7 10 11
+  11 -   3 16 17  2  1  8  9
+  12 -  10  0  0  1  1  7  7
+  13 -  10 14 15  2  1 10 11
+  14 -  13  0  0  1  1 11 11
+  15 -  13  0  0  1  1 10 10
+  16 -  11  0  0  1  1  8  8
+  17 -  11  0  0  1  1  9  9
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 9350  CA BGLN E 226 
+ Alternate location indication is not blank or A, ignore atom: 9354  CB BGLN E 226 
+ Alternate location indication is not blank or A, ignore atom: 9356  CG BGLN E 226 
+ Alternate location indication is not blank or A, ignore atom: 9358  CD BGLN E 226 
+ Alternate location indication is not blank or A, ignore atom: 9360  OE1BGLN E 226 
+ Alternate location indication is not blank or A, ignore atom: 9362  NE2BGLN E 226 
+
+Total number of residues read in:            232
+Total number of atoms read in:              1857
+Total number of ignored atom records:        312
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2211
+ selectset done           0
+ eigen done           0
+ tau           1   3.19820166             102         218
+ #popped           2           1
+ #selectset contacts        2211
+ selectset done           1
+ eigen done           1
+ tau           3   1.86827445              12          48          68
+ #popped           4           2
+ #selectset contacts        2211
+ selectset done           2
+ eigen done           2
+ tau           5   1.74738002              12
+ #popped           7           2
+ #selectset contacts        2211
+ selectset done           2
+ eigen done           2
+ tau           7  0.677542329              58
+ #popped           5           1
+ #selectset contacts        2211
+ selectset done           1
+ eigen done           1
+ tau           9   1.44482219             102
+ #popped          10           1
+ #selectset contacts        2211
+ selectset done           1
+ eigen done           1
+ tau          11   1.20857167              85
+ #popped          12           1
+ #selectset contacts        2211
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2211
+ selectset done           0
+ eigen done           0
+ tau          13   1.53918910             122         159
+ #popped          14           1
+ #selectset contacts        2211
+ selectset done           1
+ eigen done           1
+ tau          15   2.47949266             122
+ #popped          16           2
+ #selectset contacts        2211
+ selectset done           2
+ eigen done           2
+ tau          17  0.745465457             112
+ #popped          17           1
+ #selectset contacts        2211
+ selectset done           1
+ eigen done           1
+ tau          19   1.69483280             185         205
+ #popped          20           2
+ #selectset contacts        2211
+ selectset done           2
+ eigen done           2
+ tau          21   1.07909453             169         185
+ #popped          22           2
+ #selectset contacts        2211
+ selectset done           2
+ eigen done           2
+ tau          23  0.735574186             169
+ #popped          21           1
+ #selectset contacts        2211
+ selectset done           1
+ eigen done           1
+ tau          25   1.27648628             195
+ #popped          15           0
+ #selectset contacts        2211
+ selectset done           0
+ eigen done           0
+ tau          27   1.16079366             142
+ #popped          28           0
+ #selectset contacts        2211
+ selectset done           0
+ eigen done           0
+ tau          29  0.828590393             132
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         232
+         232  residues read 4NHZ.dssp                                                   
+  exclude short helix           6           9
+  grow short strand          19          23
+  grow short strand          43          47
+  exclude short helix          50          52
+  exclude short helix          54          56
+  exclude short helix          58          61
+  grow short strand          71          74
+  grow short strand          83          86
+  exclude short helix         138         141
+  exclude short helix         203         205
+  exclude short helix         220         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7 11 10  8  9
+   2     1 12 13  6  1  2  3  4  5  6
+   3     1 14 15  5  7 11 10  8  9
+   4     0  0  0  0
+   5     0  0  0  6  1  2  3  4  5  6
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  6  1  2  3  4  5  6
+  11     0  0  0  0
+  12     2  0  0  5  1  2  3  4  5
+  13     2  0  0  1  6
+  14     3 16 17  3  7 11 10
+  15     3 28 29  2  8  9
+  16    14  0  0  1  7
+  17    14 22 23  2 11 10
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  2 11 10
+  21     0  0  0  0
+  22    17  0  0  1 11
+  23    17  0  0  1 10
+  24     0  0  0  0
+  25     0  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  0
+  28    15  0  0  1  8
+  29    15  0  0  1  9
+  30     0  0  0  1  8
+  31     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1  6  7  5  1  7 11
+   4 -   2  0  0  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   3  8  9  3  2  7  7 10 11
+   7 -   3 12 13  2  1  8  9
+   8 -   6  0  0  1  1  7  7
+   9 -   6 10 11  2  1 10 11
+  10 -   9  0  0  1  1 11 11
+  11 -   9  0  0  1  1 10 10
+  12 -   7  0  0  1  1  8  8
+  13 -   7  0  0  1  1  9  9
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 9967  CA BLYS F  70 
+ Alternate location indication is not blank or A, ignore atom: 9971  CB BLYS F  70 
+ Alternate location indication is not blank or A, ignore atom: 9973  CG BLYS F  70 
+ Alternate location indication is not blank or A, ignore atom: 9975  CD BLYS F  70 
+ Alternate location indication is not blank or A, ignore atom: 9977  CE BLYS F  70 
+ Alternate location indication is not blank or A, ignore atom: 9979  NZ BLYS F  70 
+ Alternate location indication is not blank or A, ignore atom:10151  CA BGLN F  95 
+ Alternate location indication is not blank or A, ignore atom:10155  CB BGLN F  95 
+ Alternate location indication is not blank or A, ignore atom:10157  CG BGLN F  95 
+ Alternate location indication is not blank or A, ignore atom:10159  CD BGLN F  95 
+ Alternate location indication is not blank or A, ignore atom:10161  OE1BGLN F  95 
+ Alternate location indication is not blank or A, ignore atom:10163  NE2BGLN F  95 
+
+Total number of residues read in:            231
+Total number of atoms read in:              1852
+Total number of ignored atom records:        268
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         231  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2206
+ selectset done           0
+ eigen done           0
+ tau           1   2.96540332             102         217
+ #popped           2           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau           3   1.68003654              11          46          67
+ #popped           4           2
+ #selectset contacts        2206
+ selectset done           2
+ eigen done           2
+ tau           5   1.82650948              11
+ #popped           7           2
+ #selectset contacts        2206
+ selectset done           2
+ eigen done           2
+ tau           7  0.777667582              56
+ #popped           5           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau           9   1.32272458             102
+ #popped          10           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          11   1.19734311              84
+ #popped          12           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          13  0.296636164              24
+ #popped          15           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          15   11.4953051              46
+ #popped          16           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          17  0.700560868              34
+ #popped           3           0
+ #selectset contacts        2206
+ selectset done           0
+ eigen done           0
+ tau          19   1.53821659             121         159         184         205
+ #popped          20           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          21   2.29752755             121
+ #popped          23           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          23  0.853413701             169         184
+ #popped          24           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          21           0
+ #selectset contacts        2206
+ selectset done           0
+ eigen done           0
+ tau          25   2.17155838             159
+ #popped          26           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          27  0.779938817             148
+ #popped          28           1
+ #selectset contacts        2206
+ selectset done           1
+ eigen done           1
+ tau          29  0.972662151             131
+ #popped          27           0
+ #selectset contacts        2206
+ selectset done           0
+ eigen done           0
+ tau          31   1.38240814             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         231
+         231  residues read 4NHZ.dssp                                                   
+  exclude short helix           6           9
+  grow short strand          18          22
+  grow short strand          42          46
+  exclude short helix          49          51
+  exclude short helix          53          55
+  exclude short helix          57          60
+  grow short strand          70          73
+  exclude short helix          77          79
+  grow short strand          82          85
+  exclude short helix         137         140
+  exclude short helix         202         204
+  exclude short helix         219         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7 11 10  8  9
+   2     1 12 13  6  1  2  3  4  5  6
+   3     1 20 21  5  7 11 10  8  9
+   4     0  0  0  0
+   5     0  0  0  6  1  2  3  4  5  6
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  6  1  2  3  4  5  6
+  11     0  0  0  0
+  12     2 14 15  5  1  2  3  4  5
+  13     2  0  0  1  6
+  14    12  0  0  1  1
+  15    12 16 17  4  2  3  4  5
+  16    15 18 19  2  2  3
+  17    15  0  0  2  4  5
+  18    16  0  0  1  2
+  19    16  0  0  1  3
+  20     3 22 23  3  7 11 10
+  21     3 28 29  2  8  9
+  22    20  0  0  1  7
+  23    20 24 25  2 11 10
+  24    23  0  0  1 11
+  25    23  0  0  1 10
+  26     0  0  0  2  8  9
+  27     0  0  0  0
+  28    21  0  0  1  8
+  29    21  0  0  1  9
+  30     0  0  0  1  8
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  1  2  5
+   8 -   7 10 11  2  1  2  3
+   9 -   7  0  0  2  1  4  5
+  10 -   8  0  0  1  1  2  2
+  11 -   8  0  0  1  1  3  3
+  12 -   3 14 15  3  2  7  7 10 11
+  13 -   3 18 19  2  1  8  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  2  1 10 11
+  16 -  15  0  0  1  1 11 11
+  17 -  15  0  0  1  1 10 10
+  18 -  13  0  0  1  1  8  8
+  19 -  13  0  0  1  1  9  9
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            231
+Total number of atoms read in:              1852
+Total number of ignored atom records:        262
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         231  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2202
+ selectset done           0
+ eigen done           0
+ tau           1   3.14332747             101         218
+ #popped           2           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau           3   1.74407470              11          46          67
+ #popped           4           2
+ #selectset contacts        2202
+ selectset done           2
+ eigen done           2
+ tau           5   1.88358784              11
+ #popped           7           2
+ #selectset contacts        2202
+ selectset done           2
+ eigen done           2
+ tau           7  0.777667582              56
+ #popped           5           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau           9   1.38881755             101
+ #popped          10           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          11   1.22315395              85
+ #popped          12           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          13  0.294082016              24
+ #popped          15           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          15   8.06553650              46
+ #popped          16           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          17  0.725580871              34
+ #popped           3           0
+ #selectset contacts        2202
+ selectset done           0
+ eigen done           0
+ tau          19   1.57021892             121         159         184         205
+ #popped          20           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          21   2.39971805             121
+ #popped          22           2
+ #selectset contacts        2202
+ selectset done           2
+ eigen done           2
+ tau          23  0.720616579             111
+ #popped          23           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          25  0.718519747             169         184
+ #popped          26           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          21           0
+ #selectset contacts        2202
+ selectset done           0
+ eigen done           0
+ tau          27   2.30728078             159
+ #popped          28           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          29  0.754693449             146
+ #popped          30           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          31  0.957342505             131
+ #popped          29           0
+ #selectset contacts        2202
+ selectset done           0
+ eigen done           0
+ tau          33   1.58720934             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         231
+         231  residues read 4NHZ.dssp                                                   
+  exclude short helix           6           9
+  grow short strand          18          22
+  grow short strand          42          46
+  exclude short helix          49          51
+  exclude short helix          53          55
+  exclude short helix          57          60
+  grow short strand          70          73
+  exclude short helix          77          79
+  grow short strand          82          85
+  exclude short helix         137         140
+  exclude short helix         202         204
+  exclude short helix         219         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7 11 10  8  9
+   2     1 12 13  6  1  2  3  4  5  6
+   3     1 20 21  5  7 11 10  8  9
+   4     0  0  0  0
+   5     0  0  0  6  1  2  3  4  5  6
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  6  1  2  3  4  5  6
+  11     0  0  0  0
+  12     2 14 15  5  1  2  3  4  5
+  13     2  0  0  1  6
+  14    12  0  0  1  1
+  15    12 16 17  4  2  3  4  5
+  16    15 18 19  2  2  3
+  17    15  0  0  2  4  5
+  18    16  0  0  1  2
+  19    16  0  0  1  3
+  20     3 22 23  3  7 11 10
+  21     3 30 31  2  8  9
+  22    20  0  0  1  7
+  23    20 26 27  2 11 10
+  24     0  0  0  0
+  25     0  0  0  1  7
+  26    23  0  0  1 11
+  27    23  0  0  1 10
+  28     0  0  0  2  8  9
+  29     0  0  0  0
+  30    21  0  0  1  8
+  31    21  0  0  1  9
+  32     0  0  0  1  8
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  1  2  5
+   8 -   7 10 11  2  1  2  3
+   9 -   7  0  0  2  1  4  5
+  10 -   8  0  0  1  1  2  2
+  11 -   8  0  0  1  1  3  3
+  12 -   3 14 15  3  2  7  7 10 11
+  13 -   3 18 19  2  1  8  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  2  1 10 11
+  16 -  15  0  0  1  1 11 11
+  17 -  15  0  0  1  1 10 10
+  18 -  13  0  0  1  1  8  8
+  19 -  13  0  0  1  1  9  9
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:13980  CA BGLN H  95 
+ Alternate location indication is not blank or A, ignore atom:13984  CB BGLN H  95 
+ Alternate location indication is not blank or A, ignore atom:13986  CG BGLN H  95 
+ Alternate location indication is not blank or A, ignore atom:13988  CD BGLN H  95 
+ Alternate location indication is not blank or A, ignore atom:13990  OE1BGLN H  95 
+ Alternate location indication is not blank or A, ignore atom:13992  NE2BGLN H  95 
+ Alternate location indication is not blank or A, ignore atom:14109  CA BARG H 111 
+ Alternate location indication is not blank or A, ignore atom:14113  CB BARG H 111 
+ Alternate location indication is not blank or A, ignore atom:14115  CG BARG H 111 
+ Alternate location indication is not blank or A, ignore atom:14117  CD BARG H 111 
+ Alternate location indication is not blank or A, ignore atom:14119  NE BARG H 111 
+ Alternate location indication is not blank or A, ignore atom:14121  CZ BARG H 111 
+ Alternate location indication is not blank or A, ignore atom:14123  NH1BARG H 111 
+ Alternate location indication is not blank or A, ignore atom:14125  NH2BARG H 111 
+ Alternate location indication is not blank or A, ignore atom:14671  CA BASP H 176 
+ Alternate location indication is not blank or A, ignore atom:14675  CB BASP H 176 
+ Alternate location indication is not blank or A, ignore atom:14677  CG BASP H 176 
+ Alternate location indication is not blank or A, ignore atom:14679  OD1BASP H 176 
+ Alternate location indication is not blank or A, ignore atom:14681  OD2BASP H 176 
+ Alternate location indication is not blank or A, ignore atom:15062  CA BGLN H 225 
+ Alternate location indication is not blank or A, ignore atom:15066  CB BGLN H 225 
+ Alternate location indication is not blank or A, ignore atom:15068  CG BGLN H 225 
+ Alternate location indication is not blank or A, ignore atom:15070  CD BGLN H 225 
+ Alternate location indication is not blank or A, ignore atom:15072  OE1BGLN H 225 
+ Alternate location indication is not blank or A, ignore atom:15074  NE2BGLN H 225 
+
+Total number of residues read in:            246
+Total number of atoms read in:              1971
+Total number of ignored atom records:        308
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  calculate residue outside grid:           1
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         246  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau           1   3.19401407             116         232
+ #popped           2           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau           3   3.66372538              14
+ #popped           5           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau           5   1.60762119              26          62          82
+ #popped           6           2
+ #selectset contacts        2337
+ selectset done           2
+ eigen done           2
+ tau           7   2.07633591              26
+ #popped           9           2
+ #selectset contacts        2337
+ selectset done           2
+ eigen done           2
+ tau           9  0.655327857              72
+ #popped           7           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          11   1.30435336             116
+ #popped          12           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          13   1.13994443             100
+ #popped          14           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau          15   1.59599996             133
+ #popped          17           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau          17   1.84306920             172
+ #popped          18           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          19  0.708007812             146         162
+ #popped          20           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          21   1.21523809             146
+ #popped          19           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau          23   1.65741873             199         219
+ #popped          24           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          25   1.02461696             183         199
+ #popped          26           1
+ #selectset contacts        2337
+ selectset done           1
+ eigen done           1
+ tau          27  0.806357265             183
+ #popped          25           0
+ #selectset contacts        2337
+ selectset done           0
+ eigen done           0
+ tau          29   1.31766331             209
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         246
+         246  residues read 4NHZ.dssp                                                   
+  exclude short helix          21          24
+  grow short strand          33          37
+  grow short strand          57          61
+  exclude short helix          64          66
+  exclude short helix          68          70
+  exclude short helix          72          75
+  grow short strand          85          88
+  exclude short helix          92          94
+  grow short strand          97         100
+  exclude short helix         152         155
+  exclude short helix         217         219
+  exclude short helix         234         239
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  7  8  9 10 12 11
+   2     1  4  5  7  1  2  3  4  5  6  7
+   3     1 16 17  5  8  9 10 12 11
+   4     2  0  0  1  1
+   5     2 14 15  6  2  3  4  5  6  7
+   6     0  0  0  0
+   7     0  0  0  6  2  3  4  5  6  7
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  6  2  3  4  5  6  7
+  13     0  0  0  0
+  14     5  0  0  5  2  3  4  5  6
+  15     5  0  0  1  7
+  16     3  0  0  1  8
+  17     3 18 19  4  9 10 12 11
+  18    17 22 23  2  9 10
+  19    17 26 27  2 12 11
+  20     0  0  0  2  9 10
+  21     0  0  0  0
+  22    18  0  0  1  9
+  23    18  0  0  1 10
+  24     0  0  0  2 12 11
+  25     0  0  0  0
+  26    19  0  0  1 12
+  27    19  0  0  1 11
+  28     0  0  0  0
+  29     0  0  0  1 12
+  30     0  0  0  0
+  31     0  0  0  0
+   1 +   0  2  3 12  1  1 12
+   2 +   1  4  5  7  1  1  7
+   3 *   1  8  9  5  1  8 12
+   4 =   2  0  0  1  1  1  1
+   5 *   2  6  7  6  1  2  7
+   6 -   5  0  0  5  1  2  6
+   7 -   5  0  0  1  1  7  7
+   8 -   3  0  0  1  1  8  8
+   9 -   3 10 11  4  1  9 12
+  10 -   9 12 13  2  1  9 10
+  11 -   9 14 15  2  1 11 12
+  12 -  10  0  0  1  1  9  9
+  13 -  10  0  0  1  1 10 10
+  14 -  11  0  0  1  1 12 12
+  15 -  11  0  0  1  1 11 11
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:15999  CA BARG I 112 
+ Alternate location indication is not blank or A, ignore atom:16003  CB BARG I 112 
+ Alternate location indication is not blank or A, ignore atom:16005  CG BARG I 112 
+ Alternate location indication is not blank or A, ignore atom:16007  CD BARG I 112 
+ Alternate location indication is not blank or A, ignore atom:16009  NE BARG I 112 
+ Alternate location indication is not blank or A, ignore atom:16011  CZ BARG I 112 
+ Alternate location indication is not blank or A, ignore atom:16013  NH1BARG I 112 
+ Alternate location indication is not blank or A, ignore atom:16015  NH2BARG I 112 
+ Alternate location indication is not blank or A, ignore atom:16268  CA BGLU I 143 
+ Alternate location indication is not blank or A, ignore atom:16272  CB BGLU I 143 
+ Alternate location indication is not blank or A, ignore atom:16274  CG BGLU I 143 
+ Alternate location indication is not blank or A, ignore atom:16276  CD BGLU I 143 
+ Alternate location indication is not blank or A, ignore atom:16278  OE1BGLU I 143 
+ Alternate location indication is not blank or A, ignore atom:16280  OE2BGLU I 143 
+
+Total number of residues read in:            232
+Total number of atoms read in:              1860
+Total number of ignored atom records:        338
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2231
+ selectset done           0
+ eigen done           0
+ tau           1   3.09682608             102         218
+ #popped           2           1
+ #selectset contacts        2231
+ selectset done           1
+ eigen done           1
+ tau           3   1.60760045              23          42          87
+ #popped           4           2
+ #selectset contacts        2231
+ selectset done           2
+ eigen done           2
+ tau           5  0.766348362              56
+ #popped           6           3
+ #selectset contacts        2231
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        2231
+ selectset done           2
+ eigen done           2
+ tau           7   1.63490689              70
+ #popped           5           1
+ #selectset contacts        2231
+ selectset done           1
+ eigen done           1
+ tau           9   2.37853956              42         102
+ #popped          10           1
+ #selectset contacts        2231
+ selectset done           1
+ eigen done           1
+ tau          11   1.20054936              42
+ #popped           3           0
+ #selectset contacts        2231
+ selectset done           0
+ eigen done           0
+ tau          13   1.52905726             122         158
+ #popped          14           1
+ #selectset contacts        2231
+ selectset done           1
+ eigen done           1
+ tau          15   2.70268321             122
+ #popped          16           2
+ #selectset contacts        2231
+ selectset done           2
+ eigen done           2
+ tau          17  0.772089183             112
+ #popped          17           1
+ #selectset contacts        2231
+ selectset done           1
+ eigen done           1
+ tau          19   1.76610196             185         205
+ #popped          20           2
+ #selectset contacts        2231
+ selectset done           2
+ eigen done           2
+ tau          21   1.01095545             169         185
+ #popped          22           2
+ #selectset contacts        2231
+ selectset done           2
+ eigen done           2
+ tau          23  0.792454541             169
+ #popped          21           1
+ #selectset contacts        2231
+ selectset done           1
+ eigen done           1
+ tau          25   1.27648628             195
+ #popped          15           0
+ #selectset contacts        2231
+ selectset done           0
+ eigen done           0
+ tau          27  0.707410634             146
+ #popped          28           0
+ #selectset contacts        2231
+ selectset done           0
+ eigen done           0
+ tau          29  0.940706372             132
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         232
+         232  residues read 4NHZ.dssp                                                   
+  exclude short helix           2           4
+  exclude short helix           6           9
+  grow short strand          19          23
+  grow short strand          43          47
+  exclude short helix          50          52
+  exclude short helix          54          56
+  exclude short helix          58          61
+  grow short strand          71          74
+  exclude short helix          78          80
+  grow short strand          83          86
+  exclude short helix         138         141
+  exclude short helix         203         205
+  exclude short helix         220         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  2  6  7 11 10  8  9
+   2     1  4  5  6  1  3  4  5  2  6
+   3     1 14 15  5  7 11 10  8  9
+   4     2  6  7  4  1  3  4  5
+   5     2 10 11  2  2  6
+   6     4  0  0  2  1  3
+   7     4  0  0  2  4  5
+   8     0  0  0  0
+   9     0  0  0  2  4  5
+  10     5  0  0  1  2
+  11     5  0  0  1  6
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     3 16 17  3  7 11 10
+  15     3 28 29  2  8  9
+  16    14  0  0  1  7
+  17    14 22 23  2 11 10
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  2 11 10
+  21     0  0  0  0
+  22    17  0  0  1 11
+  23    17  0  0  1 10
+  24     0  0  0  0
+  25     0  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  0
+  28    15  0  0  1  8
+  29    15  0  0  1  9
+  30     0  0  0  1  8
+  31     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  5  1  7 11
+   4 -   2  6  7  4  2  1  1  3  5
+   5 -   2  8  9  2  2  2  2  6  6
+   6 -   4  0  0  2  2  1  1  3  3
+   7 -   4  0  0  2  1  4  5
+   8 -   5  0  0  1  1  2  2
+   9 -   5  0  0  1  1  6  6
+  10 -   3 12 13  3  2  7  7 10 11
+  11 -   3 16 17  2  1  8  9
+  12 -  10  0  0  1  1  7  7
+  13 -  10 14 15  2  1 10 11
+  14 -  13  0  0  1  1 11 11
+  15 -  13  0  0  1  1 10 10
+  16 -  11  0  0  1  1  8  8
+  17 -  11  0  0  1  1  9  9
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:17553  CA BLYS J  70 
+ Alternate location indication is not blank or A, ignore atom:17557  CB BLYS J  70 
+ Alternate location indication is not blank or A, ignore atom:17559  CG BLYS J  70 
+ Alternate location indication is not blank or A, ignore atom:17561  CD BLYS J  70 
+ Alternate location indication is not blank or A, ignore atom:17563  CE BLYS J  70 
+ Alternate location indication is not blank or A, ignore atom:17565  NZ BLYS J  70 
+ Alternate location indication is not blank or A, ignore atom:17737  CA BGLN J  95 
+ Alternate location indication is not blank or A, ignore atom:17741  CB BGLN J  95 
+ Alternate location indication is not blank or A, ignore atom:17743  CG BGLN J  95 
+ Alternate location indication is not blank or A, ignore atom:17745  CD BGLN J  95 
+ Alternate location indication is not blank or A, ignore atom:17747  OE1BGLN J  95 
+ Alternate location indication is not blank or A, ignore atom:17749  NE2BGLN J  95 
+ Alternate location indication is not blank or A, ignore atom:18806  CA BGLN J 225 
+ Alternate location indication is not blank or A, ignore atom:18810  CB BGLN J 225 
+ Alternate location indication is not blank or A, ignore atom:18812  CG BGLN J 225 
+ Alternate location indication is not blank or A, ignore atom:18814  CD BGLN J 225 
+ Alternate location indication is not blank or A, ignore atom:18816  OE1BGLN J 225 
+ Alternate location indication is not blank or A, ignore atom:18818  NE2BGLN J 225 
+
+Total number of residues read in:            231
+Total number of atoms read in:              1852
+Total number of ignored atom records:        294
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         231  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2202
+ selectset done           0
+ eigen done           0
+ tau           1   3.14332747             101         218
+ #popped           2           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau           3   1.65064216              11          46          67
+ #popped           4           2
+ #selectset contacts        2202
+ selectset done           2
+ eigen done           2
+ tau           5   1.54550803              11
+ #popped           7           2
+ #selectset contacts        2202
+ selectset done           2
+ eigen done           2
+ tau           7  0.823412716              56
+ #popped           5           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau           9   1.59456837             101
+ #popped          10           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          11   1.14857137              85
+ #popped          12           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2202
+ selectset done           0
+ eigen done           0
+ tau          13   1.69167972             121         159         184         204
+ #popped          14           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          15   2.42212367             121
+ #popped          16           2
+ #selectset contacts        2202
+ selectset done           2
+ eigen done           2
+ tau          17  0.732830465             111
+ #popped          17           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          19  0.566399395             173         184
+ #popped          20           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          21  0.753022850             173
+ #popped          15           0
+ #selectset contacts        2202
+ selectset done           0
+ eigen done           0
+ tau          23   2.14753675             159
+ #popped          24           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          25  0.812596142             144
+ #popped          26           1
+ #selectset contacts        2202
+ selectset done           1
+ eigen done           1
+ tau          27  0.857311845             131
+ #popped          25           0
+ #selectset contacts        2202
+ selectset done           0
+ eigen done           0
+ tau          29   1.20139885             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         231
+         231  residues read 4NHZ.dssp                                                   
+  exclude short helix           5           8
+  grow short strand          18          22
+  grow short strand          42          46
+  exclude short helix          49          51
+  exclude short helix          53          55
+  exclude short helix          57          60
+  grow short strand          70          73
+  exclude short helix          77          79
+  grow short strand          82          85
+  exclude short helix         137         140
+  exclude short helix         202         204
+  exclude short helix         219         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7 11 10  8  9
+   2     1 12 13  6  1  2  3  4  5  6
+   3     1 14 15  5  7 11 10  8  9
+   4     0  0  0  0
+   5     0  0  0  6  1  2  3  4  5  6
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  6  1  2  3  4  5  6
+  11     0  0  0  0
+  12     2  0  0  5  1  2  3  4  5
+  13     2  0  0  1  6
+  14     3 16 17  3  7 11 10
+  15     3 26 27  2  8  9
+  16    14  0  0  1  7
+  17    14 20 21  2 11 10
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20    17  0  0  1 11
+  21    17  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  1 11
+  24     0  0  0  2  8  9
+  25     0  0  0  0
+  26    15  0  0  1  8
+  27    15  0  0  1  9
+  28     0  0  0  1  8
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1  6  7  5  1  7 11
+   4 -   2  0  0  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   3  8  9  3  2  7  7 10 11
+   7 -   3 12 13  2  1  8  9
+   8 -   6  0  0  1  1  7  7
+   9 -   6 10 11  2  1 10 11
+  10 -   9  0  0  1  1 11 11
+  11 -   9  0  0  1  1 10 10
+  12 -   7  0  0  1  1  8  8
+  13 -   7  0  0  1  1  9  9
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:19423  CA BLYS K  70 
+ Alternate location indication is not blank or A, ignore atom:19427  CB BLYS K  70 
+ Alternate location indication is not blank or A, ignore atom:19429  CG BLYS K  70 
+ Alternate location indication is not blank or A, ignore atom:19431  CD BLYS K  70 
+ Alternate location indication is not blank or A, ignore atom:19433  CE BLYS K  70 
+ Alternate location indication is not blank or A, ignore atom:19435  NZ BLYS K  70 
+ Alternate location indication is not blank or A, ignore atom:19607  CA BGLN K  95 
+ Alternate location indication is not blank or A, ignore atom:19611  CB BGLN K  95 
+ Alternate location indication is not blank or A, ignore atom:19613  CG BGLN K  95 
+ Alternate location indication is not blank or A, ignore atom:19615  CD BGLN K  95 
+ Alternate location indication is not blank or A, ignore atom:19617  OE1BGLN K  95 
+ Alternate location indication is not blank or A, ignore atom:19619  NE2BGLN K  95 
+ Alternate location indication is not blank or A, ignore atom:20676  CA BGLN K 225 
+ Alternate location indication is not blank or A, ignore atom:20680  CB BGLN K 225 
+ Alternate location indication is not blank or A, ignore atom:20682  CG BGLN K 225 
+ Alternate location indication is not blank or A, ignore atom:20684  CD BGLN K 225 
+ Alternate location indication is not blank or A, ignore atom:20686  OE1BGLN K 225 
+ Alternate location indication is not blank or A, ignore atom:20688  NE2BGLN K 225 
+
+Total number of residues read in:            231
+Total number of atoms read in:              1852
+Total number of ignored atom records:        236
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         231  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2204
+ selectset done           0
+ eigen done           0
+ tau           1   3.08283806             101         217
+ #popped           2           1
+ #selectset contacts        2204
+ selectset done           1
+ eigen done           1
+ tau           3   1.67334962              11          47          67
+ #popped           4           2
+ #selectset contacts        2204
+ selectset done           2
+ eigen done           2
+ tau           5   1.91008377              11
+ #popped           7           2
+ #selectset contacts        2204
+ selectset done           2
+ eigen done           2
+ tau           7  0.655327857              57
+ #popped           5           1
+ #selectset contacts        2204
+ selectset done           1
+ eigen done           1
+ tau           9   1.24624741              22          37         101
+ #popped          10           2
+ #selectset contacts        2204
+ selectset done           2
+ eigen done           2
+ tau          11   1.61229873              85
+ #popped          12           2
+ #selectset contacts        2204
+ selectset done           2
+ eigen done           2
+ tau          13  0.786642075              47
+ #popped          14           2
+ #selectset contacts        2204
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          11           1
+ #selectset contacts        2204
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        2204
+ selectset done           0
+ eigen done           0
+ tau          15   1.55938482             117
+ #popped          17           0
+ #selectset contacts        2204
+ selectset done           0
+ eigen done           0
+ tau          17   1.82358193             158
+ #popped          18           1
+ #selectset contacts        2204
+ selectset done           1
+ eigen done           1
+ tau          19  0.897445500             130         148
+ #popped          20           1
+ #selectset contacts        2204
+ selectset done           1
+ eigen done           1
+ tau          21   1.36782193             130
+ #popped          19           0
+ #selectset contacts        2204
+ selectset done           0
+ eigen done           0
+ tau          23   1.80973673             184         204
+ #popped          24           1
+ #selectset contacts        2204
+ selectset done           1
+ eigen done           1
+ tau          25   1.00618267             168         184
+ #popped          26           1
+ #selectset contacts        2204
+ selectset done           1
+ eigen done           1
+ tau          27  0.761383772             168
+ #popped          25           0
+ #selectset contacts        2204
+ selectset done           0
+ eigen done           0
+ tau          29   1.07493579             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         231
+         231  residues read 4NHZ.dssp                                                   
+  exclude short helix           6           9
+  grow short strand          18          22
+  grow short strand          42          46
+  exclude short helix          49          51
+  exclude short helix          53          55
+  exclude short helix          57          60
+  grow short strand          70          73
+  exclude short helix          77          79
+  grow short strand          82          85
+  exclude short helix         137         140
+  exclude short helix         202         204
+  exclude short helix         219         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  6  2  7  8  9 11 10
+   2     1 10 11  6  1  3  4  5  6  2
+   3     1 16 17  5  7  8  9 11 10
+   4     0  0  0  0
+   5     0  0  0  6  1  3  4  5  6  2
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     2 12 13  5  1  3  4  5  6
+  11     2  0  0  1  2
+  12    10 14 15  4  1  3  4  5
+  13    10  0  0  1  6
+  14    12  0  0  2  1  3
+  15    12  0  0  2  4  5
+  16     3  0  0  1  7
+  17     3 18 19  4  8  9 11 10
+  18    17 22 23  2  8  9
+  19    17 26 27  2 11 10
+  20     0  0  0  2  8  9
+  21     0  0  0  0
+  22    18  0  0  1  8
+  23    18  0  0  1  9
+  24     0  0  0  2 11 10
+  25     0  0  0  0
+  26    19  0  0  1 11
+  27    19  0  0  1 10
+  28     0  0  0  0
+  29     0  0  0  1 11
+  30     0  0  0  0
+  31     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  5  1  7 11
+   4 -   2  6  7  5  2  1  1  3  6
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6  0  0  2  1  4  5
+  10 -   3  0  0  1  1  7  7
+  11 -   3 12 13  4  1  8 11
+  12 -  11 14 15  2  1  8  9
+  13 -  11 16 17  2  1 10 11
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1  9  9
+  16 -  13  0  0  1  1 11 11
+  17 -  13  0  0  1  1 10 10
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            233
+Total number of atoms read in:              1866
+Total number of ignored atom records:        322
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         233  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2217
+ selectset done           0
+ eigen done           0
+ tau           1   3.19051027             103         220
+ #popped           2           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau           3   1.71407890              13          49          69
+ #popped           4           2
+ #selectset contacts        2217
+ selectset done           2
+ eigen done           2
+ tau           5   1.89640045              13
+ #popped           7           2
+ #selectset contacts        2217
+ selectset done           2
+ eigen done           2
+ tau           7  0.701315761              59
+ #popped           5           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau           9   1.34873724             103
+ #popped          10           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          11   1.19766307              87
+ #popped          12           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          13  0.925640225              26          39
+ #popped          14           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          15  0.806743205              49
+ #popped          16           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          17  0.290760845              26
+ #popped           3           0
+ #selectset contacts        2217
+ selectset done           0
+ eigen done           0
+ tau          19   1.61220479             123         161         186         206
+ #popped          20           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          21   2.59110928             123
+ #popped          22           2
+ #selectset contacts        2217
+ selectset done           2
+ eigen done           2
+ tau          23  0.732830465             113
+ #popped          23           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          25  0.752624333             171         186
+ #popped          26           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          21           0
+ #selectset contacts        2217
+ selectset done           0
+ eigen done           0
+ tau          27   2.10542822             161
+ #popped          28           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          29  0.907900751             145
+ #popped          30           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          31  0.905182958             133
+ #popped          29           0
+ #selectset contacts        2217
+ selectset done           0
+ eigen done           0
+ tau          33   1.27648628             196
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         233
+         233  residues read 4NHZ.dssp                                                   
+  exclude short helix           7          10
+  grow short strand          20          24
+  grow short strand          44          48
+  exclude short helix          51          53
+  exclude short helix          55          57
+  exclude short helix          59          62
+  grow short strand          72          75
+  grow short strand          84          87
+  exclude short helix         139         142
+  exclude short helix         204         206
+  exclude short helix         221         226
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  2  6  7 11 10  8  9
+   2     1 12 13  6  1  3  4  5  2  6
+   3     1 20 21  5  7 11 10  8  9
+   4     0  0  0  0
+   5     0  0  0  6  1  3  4  5  2  6
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  6  1  3  4  5  2  6
+  11     0  0  0  0
+  12     2 14 15  5  1  3  4  5  2
+  13     2  0  0  1  6
+  14    12 16 17  4  1  3  4  5
+  15    12  0  0  1  2
+  16    14 18 19  2  1  3
+  17    14  0  0  2  4  5
+  18    16  0  0  1  1
+  19    16  0  0  1  3
+  20     3 22 23  3  7 11 10
+  21     3 30 31  2  8  9
+  22    20  0  0  1  7
+  23    20 26 27  2 11 10
+  24     0  0  0  0
+  25     0  0  0  1  7
+  26    23  0  0  1 11
+  27    23  0  0  1 10
+  28     0  0  0  2  8  9
+  29     0  0  0  0
+  30    21  0  0  1  8
+  31    21  0  0  1  9
+  32     0  0  0  1  8
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  2  2  1  1  3  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  3  3
+  12 -   3 14 15  3  2  7  7 10 11
+  13 -   3 18 19  2  1  8  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  2  1 10 11
+  16 -  15  0  0  1  1 11 11
+  17 -  15  0  0  1  1 10 10
+  18 -  13  0  0  1  1  8  8
+  19 -  13  0  0  1  1  9  9
+
+ CHAIN M
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:23337  CA BGLN M  95 
+ Alternate location indication is not blank or A, ignore atom:23341  CB BGLN M  95 
+ Alternate location indication is not blank or A, ignore atom:23343  CG BGLN M  95 
+ Alternate location indication is not blank or A, ignore atom:23345  CD BGLN M  95 
+ Alternate location indication is not blank or A, ignore atom:23347  OE1BGLN M  95 
+ Alternate location indication is not blank or A, ignore atom:23349  NE2BGLN M  95 
+ Alternate location indication is not blank or A, ignore atom:32151  O  BHOH M 482 
+
+Total number of residues read in:            231
+Total number of atoms read in:              1852
+Total number of ignored atom records:        284
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         231  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2226
+ selectset done           0
+ eigen done           0
+ tau           1   3.06242204             101         217
+ #popped           2           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau           3   1.64319921              11          47          67
+ #popped           4           2
+ #selectset contacts        2226
+ selectset done           2
+ eigen done           2
+ tau           5   1.79432106              11
+ #popped           7           2
+ #selectset contacts        2226
+ selectset done           2
+ eigen done           2
+ tau           7  0.614999950              57
+ #popped           5           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau           9   1.40169322             101
+ #popped          10           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          11   1.13990283              84
+ #popped          12           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          13  0.853704035              24          37
+ #popped          14           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          15  0.280851215              24
+ #popped          17           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          17   46.5948715              47
+ #popped           3           0
+ #selectset contacts        2226
+ selectset done           0
+ eigen done           0
+ tau          19   1.57284772             121         159         184         204
+ #popped          20           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          21   2.49980855             121
+ #popped          22           2
+ #selectset contacts        2226
+ selectset done           2
+ eigen done           2
+ tau          23  0.697370887             111
+ #popped          23           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          25  0.828842163             169         184
+ #popped          26           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          21           0
+ #selectset contacts        2226
+ selectset done           0
+ eigen done           0
+ tau          27   2.33427906             159
+ #popped          28           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          29  0.830653787             144
+ #popped          30           1
+ #selectset contacts        2226
+ selectset done           1
+ eigen done           1
+ tau          31  0.857311845             131
+ #popped          29           0
+ #selectset contacts        2226
+ selectset done           0
+ eigen done           0
+ tau          33   1.27648628             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         231
+         231  residues read 4NHZ.dssp                                                   
+  exclude short helix           5           8
+  grow short strand          18          22
+  grow short strand          42          46
+  exclude short helix          49          51
+  exclude short helix          53          55
+  exclude short helix          57          60
+  grow short strand          70          73
+  exclude short helix          77          79
+  grow short strand          82          85
+  exclude short helix         137         140
+  exclude short helix         202         204
+  exclude short helix         219         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  2  6  7 11 10  8  9
+   2     1 12 13  6  1  3  4  5  2  6
+   3     1 20 21  5  7 11 10  8  9
+   4     0  0  0  0
+   5     0  0  0  6  1  3  4  5  2  6
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  6  1  3  4  5  2  6
+  11     0  0  0  0
+  12     2 14 15  5  1  3  4  5  2
+  13     2  0  0  1  6
+  14    12 16 17  4  1  3  4  5
+  15    12  0  0  1  2
+  16    14  0  0  1  1
+  17    14 18 19  3  3  4  5
+  18    17  0  0  1  3
+  19    17  0  0  2  4  5
+  20     3 22 23  3  7 11 10
+  21     3 30 31  2  8  9
+  22    20  0  0  1  7
+  23    20 26 27  2 11 10
+  24     0  0  0  0
+  25     0  0  0  1  7
+  26    23  0  0  1 11
+  27    23  0  0  1 10
+  28     0  0  0  2  8  9
+  29     0  0  0  0
+  30    21  0  0  1  8
+  31    21  0  0  1  9
+  32     0  0  0  1  8
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  1  3  5
+  10 -   9  0  0  1  1  3  3
+  11 -   9  0  0  2  1  4  5
+  12 -   3 14 15  3  2  7  7 10 11
+  13 -   3 18 19  2  1  8  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  2  1 10 11
+  16 -  15  0  0  1  1 11 11
+  17 -  15  0  0  1  1 10 10
+  18 -  13  0  0  1  1  8  8
+  19 -  13  0  0  1  1  9  9
+
+ CHAIN N
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:24933  CA BLYS N  58 
+ Alternate location indication is not blank or A, ignore atom:24937  CB BLYS N  58 
+ Alternate location indication is not blank or A, ignore atom:24939  CG BLYS N  58 
+ Alternate location indication is not blank or A, ignore atom:24941  CD BLYS N  58 
+ Alternate location indication is not blank or A, ignore atom:24943  CE BLYS N  58 
+ Alternate location indication is not blank or A, ignore atom:24945  NZ BLYS N  58 
+ Alternate location indication is not blank or A, ignore atom:25031  CA BLYS N  70 
+ Alternate location indication is not blank or A, ignore atom:25035  CB BLYS N  70 
+ Alternate location indication is not blank or A, ignore atom:25037  CG BLYS N  70 
+ Alternate location indication is not blank or A, ignore atom:25039  CD BLYS N  70 
+ Alternate location indication is not blank or A, ignore atom:25041  CE BLYS N  70 
+ Alternate location indication is not blank or A, ignore atom:25043  NZ BLYS N  70 
+ Alternate location indication is not blank or A, ignore atom:25349  CA BARG N 112 
+ Alternate location indication is not blank or A, ignore atom:25353  CB BARG N 112 
+ Alternate location indication is not blank or A, ignore atom:25355  CG BARG N 112 
+ Alternate location indication is not blank or A, ignore atom:25357  CD BARG N 112 
+ Alternate location indication is not blank or A, ignore atom:25359  NE BARG N 112 
+ Alternate location indication is not blank or A, ignore atom:25361  CZ BARG N 112 
+ Alternate location indication is not blank or A, ignore atom:25363  NH1BARG N 112 
+ Alternate location indication is not blank or A, ignore atom:25365  NH2BARG N 112 
+ Alternate location indication is not blank or A, ignore atom:26286  CA BGLN N 225 
+ Alternate location indication is not blank or A, ignore atom:26290  CB BGLN N 225 
+ Alternate location indication is not blank or A, ignore atom:26292  CG BGLN N 225 
+ Alternate location indication is not blank or A, ignore atom:26294  CD BGLN N 225 
+ Alternate location indication is not blank or A, ignore atom:26296  OE1BGLN N 225 
+ Alternate location indication is not blank or A, ignore atom:26298  NE2BGLN N 225 
+
+Total number of residues read in:            232
+Total number of atoms read in:              1860
+Total number of ignored atom records:        342
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2217
+ selectset done           0
+ eigen done           0
+ tau           1   1.97182810             122         161         185         206
+ #popped           2           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau           3   2.67925119             102         218
+ #popped           4           2
+ #selectset contacts        2217
+ selectset done           2
+ eigen done           2
+ tau           5   1.69483459              23          42          87
+ #popped           6           3
+ #selectset contacts        2217
+ selectset done           3
+ eigen done           3
+ tau           7  0.789156318              56
+ #popped           8           4
+ #selectset contacts        2217
+ selectset done           4
+ eigen done           4
+ tau           9   1.80948377              12
+ #popped          11           4
+ #selectset contacts        2217
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped           9           3
+ #selectset contacts        2217
+ selectset done           3
+ eigen done           3
+ tau          11   1.63490689              70
+ #popped           7           2
+ #selectset contacts        2217
+ selectset done           2
+ eigen done           2
+ tau          13   2.06557393              42         102
+ #popped          14           2
+ #selectset contacts        2217
+ selectset done           2
+ eigen done           2
+ tau          15   1.09523809              42
+ #popped           5           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          17   2.24868655             122
+ #popped          18           2
+ #selectset contacts        2217
+ selectset done           2
+ eigen done           2
+ tau          19  0.745465457             112
+ #popped          19           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          21  0.714089990             185
+ #popped          22           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          23  0.608157456             174
+ #popped           3           0
+ #selectset contacts        2217
+ selectset done           0
+ eigen done           0
+ tau          25   2.14662480             161
+ #popped          26           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          27  0.902081966             144
+ #popped          28           1
+ #selectset contacts        2217
+ selectset done           1
+ eigen done           1
+ tau          29  0.849763572             132
+ #popped          27           0
+ #selectset contacts        2217
+ selectset done           0
+ eigen done           0
+ tau          31   1.38240814             196
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         232
+         232  residues read 4NHZ.dssp                                                   
+  exclude short helix           2           4
+  exclude short helix           6           9
+  grow short strand          19          23
+  grow short strand          43          47
+  exclude short helix          50          52
+  exclude short helix          54          56
+  exclude short helix          58          61
+  exclude short helix          78          80
+  exclude short helix         138         141
+  exclude short helix         203         205
+  exclude short helix         220         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  2  6  7 10 11  8  9
+   2     1  4  5  9  1  3  4  5  2  6  7 10 11
+   3     1 28 29  2  8  9
+   4     2  6  7  6  1  3  4  5  2  6
+   5     2 18 19  3  7 10 11
+   6     4  8  9  4  1  3  4  5
+   7     4 14 15  2  2  6
+   8     6  0  0  2  1  3
+   9     6  0  0  2  4  5
+  10     0  0  0  0
+  11     0  0  0  2  1  3
+  12     0  0  0  0
+  13     0  0  0  2  4  5
+  14     7  0  0  1  2
+  15     7  0  0  1  6
+  16     0  0  0  1  2
+  17     0  0  0  0
+  18     5  0  0  1  7
+  19     5 22 23  2 10 11
+  20     0  0  0  0
+  21     0  0  0  1  7
+  22    19  0  0  1 10
+  23    19  0  0  1 11
+  24     0  0  0  0
+  25     0  0  0  1 10
+  26     0  0  0  2  8  9
+  27     0  0  0  0
+  28     3  0  0  1  8
+  29     3  0  0  1  9
+  30     0  0  0  1  8
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  9  2  1  7 10 11
+   3 -   1 16 17  2  1  8  9
+   4 -   2  6  7  6  1  1  6
+   5 -   2 12 13  3  2  7  7 10 11
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4 10 11  2  2  2  2  6  6
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6  0  0  2  1  4  5
+  10 -   7  0  0  1  1  2  2
+  11 -   7  0  0  1  1  6  6
+  12 -   5  0  0  1  1  7  7
+  13 -   5 14 15  2  1 10 11
+  14 -  13  0  0  1  1 10 10
+  15 -  13  0  0  1  1 11 11
+  16 -   3  0  0  1  1  8  8
+  17 -   3  0  0  1  1  9  9
+
+ CHAIN O
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:27081  CA BGLN O  95 
+ Alternate location indication is not blank or A, ignore atom:27085  CB BGLN O  95 
+ Alternate location indication is not blank or A, ignore atom:27087  CG BGLN O  95 
+ Alternate location indication is not blank or A, ignore atom:27089  CD BGLN O  95 
+ Alternate location indication is not blank or A, ignore atom:27091  OE1BGLN O  95 
+ Alternate location indication is not blank or A, ignore atom:27093  NE2BGLN O  95 
+
+Total number of residues read in:            231
+Total number of atoms read in:              1852
+Total number of ignored atom records:        280
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         231  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2212
+ selectset done           0
+ eigen done           0
+ tau           1   3.06242204             101         217
+ #popped           2           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau           3   1.36405516             101
+ #popped           4           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau           5   1.66454887              11          46          67
+ #popped           6           2
+ #selectset contacts        2212
+ selectset done           2
+ eigen done           2
+ tau           7   1.72213745              11
+ #popped           9           2
+ #selectset contacts        2212
+ selectset done           2
+ eigen done           2
+ tau           9  0.874876022              56
+ #popped           7           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau          11   1.17728567              85
+ #popped          12           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2212
+ selectset done           0
+ eigen done           0
+ tau          13   1.64883769             121         159         184         205
+ #popped          14           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau          15   2.36765671             121
+ #popped          16           2
+ #selectset contacts        2212
+ selectset done           2
+ eigen done           2
+ tau          17  0.732830465             111
+ #popped          17           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau          19  0.833333373             169         184
+ #popped          20           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          15           0
+ #selectset contacts        2212
+ selectset done           0
+ eigen done           0
+ tau          21   1.90947378             159
+ #popped          22           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau          23  0.809556723             148
+ #popped          24           1
+ #selectset contacts        2212
+ selectset done           1
+ eigen done           1
+ tau          25  0.952811897             131
+ #popped          23           0
+ #selectset contacts        2212
+ selectset done           0
+ eigen done           0
+ tau          27   1.42848837             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         231
+         231  residues read 4NHZ.dssp                                                   
+  exclude short helix           5           8
+  grow short strand          18          22
+  grow short strand          42          46
+  exclude short helix          49          51
+  exclude short helix          53          55
+  exclude short helix          57          60
+  grow short strand          70          73
+  exclude short helix          77          79
+  grow short strand          82          85
+  exclude short helix         137         140
+  exclude short helix         202         204
+  exclude short helix         219         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7 11 10  8  9
+   2     1 12 13  6  1  2  3  4  5  6
+   3     1 14 15  5  7 11 10  8  9
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  6  1  2  3  4  5  6
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+  12     2  0  0  5  1  2  3  4  5
+  13     2  0  0  1  6
+  14     3 16 17  3  7 11 10
+  15     3 24 25  2  8  9
+  16    14  0  0  1  7
+  17    14 20 21  2 11 10
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20    17  0  0  1 11
+  21    17  0  0  1 10
+  22     0  0  0  2  8  9
+  23     0  0  0  0
+  24    15  0  0  1  8
+  25    15  0  0  1  9
+  26     0  0  0  1  8
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1  6  7  5  1  7 11
+   4 -   2  0  0  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   3  8  9  3  2  7  7 10 11
+   7 -   3 12 13  2  1  8  9
+   8 -   6  0  0  1  1  7  7
+   9 -   6 10 11  2  1 10 11
+  10 -   9  0  0  1  1 11 11
+  11 -   9  0  0  1  1 10 10
+  12 -   7  0  0  1  1  8  8
+  13 -   7  0  0  1  1  9  9
+
+ CHAIN P
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:29081  CA BARG P 112 
+ Alternate location indication is not blank or A, ignore atom:29085  CB BARG P 112 
+ Alternate location indication is not blank or A, ignore atom:29087  CG BARG P 112 
+ Alternate location indication is not blank or A, ignore atom:29089  CD BARG P 112 
+ Alternate location indication is not blank or A, ignore atom:29091  NE BARG P 112 
+ Alternate location indication is not blank or A, ignore atom:29093  CZ BARG P 112 
+ Alternate location indication is not blank or A, ignore atom:29095  NH1BARG P 112 
+ Alternate location indication is not blank or A, ignore atom:29097  NH2BARG P 112 
+ Alternate location indication is not blank or A, ignore atom:30018  CA BGLN P 225 
+ Alternate location indication is not blank or A, ignore atom:30022  CB BGLN P 225 
+ Alternate location indication is not blank or A, ignore atom:30024  CG BGLN P 225 
+ Alternate location indication is not blank or A, ignore atom:30026  CD BGLN P 225 
+ Alternate location indication is not blank or A, ignore atom:30028  OE1BGLN P 225 
+ Alternate location indication is not blank or A, ignore atom:30030  NE2BGLN P 225 
+
+Total number of residues read in:            232
+Total number of atoms read in:              1860
+Total number of ignored atom records:        306
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MORISCO,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau           1   3.15495491             101         219
+ #popped           2           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau           3   1.63372612              12          48          68
+ #popped           4           2
+ #selectset contacts        2223
+ selectset done           2
+ eigen done           2
+ tau           5   2.07633591              12
+ #popped           7           2
+ #selectset contacts        2223
+ selectset done           2
+ eigen done           2
+ tau           7  0.713839233              58
+ #popped           5           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau           9   1.43375993             101
+ #popped          10           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          11  0.975441515              48
+ #popped          12           2
+ #selectset contacts        2223
+ selectset done           2
+ eigen done           2
+ tau          13  0.949404299              24          38
+ #popped          14           2
+ #selectset contacts        2223
+ selectset done           2
+ eigen done           2
+ tau          15  0.284332186              24
+ #popped          13           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          17   1.36250472              86
+ #popped           3           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          19   1.69843018             122         160         185         205
+ #popped          20           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          21   1.75574660             122
+ #popped          22           2
+ #selectset contacts        2223
+ selectset done           2
+ eigen done           2
+ tau          23  0.805491984             112
+ #popped          23           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          25  0.561105967             174         185
+ #popped          26           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          27  0.773103416             174
+ #popped          21           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          29   2.10542822             160
+ #popped          30           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          31  0.779938817             149
+ #popped          32           1
+ #selectset contacts        2223
+ selectset done           1
+ eigen done           1
+ tau          33  0.993357062             132
+ #popped          31           0
+ #selectset contacts        2223
+ selectset done           0
+ eigen done           0
+ tau          35   1.23780489             195
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-NOV-13   4NHZ              COMPND   2 MOLECULE: PUTATIVE GLUTATHIONE S-TRANSFERASE ENZYME WITH TH          SOURCE   2 ORGANISM_SCIENTIFIC: BRADYRHIZOBIUM SP.;                             AUTHOR    Y.PATSKOVSKY,M.W.VETTING,R.TORO,R.BHOSLE,N.AL OBAIDI,L.L.MOR          
+           0
+         232
+         232  residues read 4NHZ.dssp                                                   
+  exclude short helix           2           4
+  exclude short helix           6           9
+  grow short strand          19          23
+  grow short strand          43          47
+  exclude short helix          54          56
+  exclude short helix          58          61
+  grow short strand          71          74
+  exclude short helix          78          80
+  grow short strand          83          86
+  exclude short helix         138         141
+  exclude short helix         203         205
+  exclude short helix         220         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  2  4  5  6  7 11 10  8  9
+   2     1 12 13  6  1  3  2  4  5  6
+   3     1 20 21  5  7 11 10  8  9
+   4     0  0  0  0
+   5     0  0  0  6  1  3  2  4  5  6
+   6     0  0  0  0
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  6  1  3  2  4  5  6
+  11     0  0  0  0
+  12     2 14 15  3  1  3  2
+  13     2 18 19  3  4  5  6
+  14    12 16 17  2  1  3
+  15    12  0  0  1  2
+  16    14  0  0  1  1
+  17    14  0  0  1  3
+  18    13  0  0  2  4  5
+  19    13  0  0  1  6
+  20     3 22 23  3  7 11 10
+  21     3 32 33  2  8  9
+  22    20  0  0  1  7
+  23    20 26 27  2 11 10
+  24     0  0  0  0
+  25     0  0  0  1  7
+  26    23  0  0  1 11
+  27    23  0  0  1 10
+  28     0  0  0  0
+  29     0  0  0  1 11
+  30     0  0  0  2  8  9
+  31     0  0  0  0
+  32    21  0  0  1  8
+  33    21  0  0  1  9
+  34     0  0  0  1  8
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  3  1  1  3
+   5 -   2 10 11  3  1  4  6
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+  10 -   5  0  0  2  1  4  5
+  11 -   5  0  0  1  1  6  6
+  12 -   3 14 15  3  2  7  7 10 11
+  13 -   3 18 19  2  1  8  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  2  1 10 11
+  16 -  15  0  0  1  1 11 11
+  17 -  15  0  0  1  1 10 10
+  18 -  13  0  0  1  1  8  8
+  19 -  13  0  0  1  1  9  9
+
+ CHAIN : 4NHZA
+ CHAIN : 4NHZB
+ CHAIN : 4NHZC
+ CHAIN : 4NHZD
+ CHAIN : 4NHZE
+ CHAIN : 4NHZF
+ CHAIN : 4NHZG
+ CHAIN : 4NHZH
+ CHAIN : 4NHZI
+ CHAIN : 4NHZJ
+ CHAIN : 4NHZK
+ CHAIN : 4NHZL
+ CHAIN : 4NHZM
+ CHAIN : 4NHZN
+ CHAIN : 4NHZO
+ CHAIN : 4NHZP
+

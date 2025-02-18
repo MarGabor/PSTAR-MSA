@@ -1,0 +1,37 @@
+# Job: glob
+# Query: 1SPGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBS-A 17.4  2.0  141   153   25   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1SPGA Sbjct=1MBSA Z-score=17.4
+
+DSSP  LLLHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHHLLLLLL----lLLLLHH
+Query SLSATDKARVKALWDKIEGKSAELGAEALGRMLVSFPQTKIYFSEWGQD----lGPQTPQ   56
+ident  ||      |   | | |   |  | | | |   | | |   |                 
+Sbjct GLSDGEWHLVLNVWGKVETDLAGHGQEVLIRLFKSHPETLEKFDKFKHLkseddMRRSED   60
+DSSP  LLHHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLLHHHHHLLLLLLLllhhhHHLLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHLL
+Query VRNHGAVIMAAVGKAVKSIDNLVGGLSQLSELHAFKLRVDPANFKILAHNIILVISMYFP  116
+ident  | ||     | |   |        |  |   || |              || |     |
+Sbjct LRKHGNTVLTALGGILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSKHP  120
+DSSP  HHHHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHLL
+
+DSSP  LLLLHHHHHHHHHHHHHHHHHHLLLL-------
+Query GDFTPEVHLSVDKFLACLALALSEKY-------  142
+ident   |         | |         ||       
+Sbjct AEFGADAQAAMKKALELFRNDIAAKYkelgfhg  153
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHHHHhhhllll
+
+
+# Structural equivalences
+   1: 1SPG-A 1MBS-A     1 -  49 <=>    1 -  49   (SER    1  - ASP   49  <=> GLY    1  - LEU   49 )                          
+   1: 1SPG-A 1MBS-A    51 - 142 <=>   55 - 146   (GLY   51  - TYR  142  <=> MET   55  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1SPG-A 1MBS-A  U(1,.)   0.899915  0.426276  0.091880           -5.027196"
+-matrix  "1SPG-A 1MBS-A  U(2,.)   0.290847 -0.429761 -0.854818           10.415442"
+-matrix  "1SPG-A 1MBS-A  U(3,.)  -0.324902  0.795986 -0.510730           -3.373408"
+

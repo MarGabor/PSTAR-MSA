@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 2DARA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1IML-A  4.5  3.9   65    76   29   MOLECULE: CYSTEINE RICH INTESTINAL PROTEIN;                          
+
+# Pairwise alignments
+
+No 1: Query=2DARA Sbjct=1IMLA Z-score=4.5
+
+DSSP  lllllllllllllllleeellllllLLLL-LLLLLLLLLEEEELLEEELLLLLLLLLLLL
+Query gssgssgdqdtlvqraehipagkrtPMCA-HCNQVIRGPFLVALGKSWHPEEFNCAHCKN   59
+ident                          | |      |        ||| ||     |  |  
+Sbjct -------------------------PKCPkCDKEVYFAERVTSLGKDWHRPCLKCEKCGK   35
+DSSP  -------------------------LLLLlLLLLLLHHHEEEELLEEEELLLLLLLLLLL
+
+DSSP  LLLLLLLEELLLLEELHH-HHHHHLLLLLLLL---------
+Query TMAYIGFVEEKGALYCEL-CYEKFFASGPSSG---------   90
+ident |    |  |  |  ||   ||   |                
+Sbjct TLTSGGHAEHEGKPYCNHpCYSAMFGPKGFGRggaeshtfk   76
+DSSP  LLLLLLEEEELLEEEELLlHHHHHLLLLLLLLlllllllll
+
+
+# Structural equivalences
+   1: 2DAR-A 1IML-A    26 -  29 <=>    1 -   4   (PRO   26  - ALA   29  <=> PRO    1  - PRO    4 )                          
+   1: 2DAR-A 1IML-A    30 -  77 <=>    6 -  53   (HIS   30  - LEU   77  <=> CYS    6  - HIS   53 )                          
+   1: 2DAR-A 1IML-A    78 -  90 <=>   55 -  67   (CYS   78  - GLY   90  <=> CYS   55  - ARG   67 )                          
+
+# Translation-rotation matrices
+-matrix  "2DAR-A 1IML-A  U(1,.)  -0.881109 -0.420778  0.215856            0.185056"
+-matrix  "2DAR-A 1IML-A  U(2,.)   0.424055 -0.500924  0.754488            3.953156"
+-matrix  "2DAR-A 1IML-A  U(3,.)  -0.209345  0.756321  0.619801           -2.534594"
+

@@ -1,0 +1,40 @@
+# Job: phoslip
+# Query: 1BUNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1G4I-A 18.6  1.8  117   123   45   MOLECULE: PHOSPHOLIPASE A2;                                          
+
+# Pairwise alignments
+
+No 1: Query=1BUNA Sbjct=1G4IA Z-score=18.6
+
+DSSP  LHHHHHHHHHLLLLLlLLLH-HHHLLLLLLLLLLLLLLLLHHHHHHHHHHHHHHHHHLLL
+Query NLINFMEMIRYTIPCeKTWG-EYADYGCYCGAGGSGRPIDALDRCCYVHDNCYGDAEKKH   59
+ident  |  |  ||   ||           |||||| |||| | | |||||  |||||  | |  
+Sbjct ALWQFNGMIKCKIPS-SEPLlDFNNYGCYCGLGGSGTPVDDLDRCCQTHDNCYKQAKKLD   59
+DSSP  LHHHHHHHHHHHLLL-LLHHhHLLLLLLLLLLLLLLLLLLHHHHHHHHHHHHHHHHHHLH
+
+DSSP  L-----LLLLLLLLLEEEELLEEEELLLLLLHHHHHHHHHHHHHHHHHHLLLLHHHLLLL
+Query K-----CNPKTQSYSYKLTKRTIICYGAAGTCARIVCDCDRTAALCFGNSEYIEGHKNID  114
+ident        || |  |||      | |      |    | ||| || ||    |   ||| |
+Sbjct SckvlvDNPYTNNYSYSCSNNEITCSSENNACEAFICNCDRNAAICFSKVPYNKEHKNLD  119
+DSSP  HhhhllLLHHHLLLLEEEELLEEEELLLLLHHHHHHHHHHHHHHHHHHLLLLLHHHLLLL
+
+DSSP  hHHHLl
+Query tARFCq  120
+ident     | 
+Sbjct -KKNC-  123
+DSSP  -HHHL-
+
+
+# Structural equivalences
+   1: 1BUN-A 1G4I-A     1 -  15 <=>    1 -  15   (ASN    1  - CYS   15  <=> ALA    1  - SER   15 )                          
+   1: 1BUN-A 1G4I-A    17 -  20 <=>   16 -  19   (LYS   17  - GLY   20  <=> SER   16  - LEU   19 )                          
+   1: 1BUN-A 1G4I-A    21 -  60 <=>   21 -  60   (GLU   21  - LYS   60  <=> ASP   21  - SER   60 )                          
+   1: 1BUN-A 1G4I-A    61 - 114 <=>   66 - 119   (CYS   61  - ASP  114  <=> ASP   66  - ASP  119 )                          
+   1: 1BUN-A 1G4I-A   116 - 119 <=>  120 - 123   (ALA  116  - CYS  119  <=> LYS  120  - CYS  123 )                          
+
+# Translation-rotation matrices
+-matrix  "1BUN-A 1G4I-A  U(1,.)  -0.023080  0.998126  0.056666           26.597158"
+-matrix  "1BUN-A 1G4I-A  U(2,.)  -0.916397 -0.043779  0.397870           19.969740"
+-matrix  "1BUN-A 1G4I-A  U(3,.)   0.399605 -0.042746  0.915690           16.570335"
+

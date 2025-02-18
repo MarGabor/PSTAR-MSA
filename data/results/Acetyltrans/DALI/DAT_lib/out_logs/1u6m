@@ -1,0 +1,643 @@
+A length: 189
+B length: 189
+C length: 189
+D length: 189
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            188
+Total number of atoms read in:              1471
+Total number of ignored atom records:        374
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CENTER FOR  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              COMPND   2 MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROCOCCUS FAECALIS;                          AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CE          
+         188  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1717
+ selectset done           0
+ eigen done           0
+ tau           1   1.98784065              71          81         102         116         126
+ #popped           2           1
+ #selectset contacts        1717
+ selectset done           1
+ eigen done           1
+ tau           3   1.51949906              71         102
+ #popped           4           2
+ #selectset contacts        1717
+ selectset done           2
+ eigen done           2
+ tau           5   1.91662169              10          53
+ #popped           6           3
+ #selectset contacts        1717
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1717
+ selectset done           2
+ eigen done           2
+ tau           7   1.46017694              33
+ #popped           8           3
+ #selectset contacts        1717
+ selectset done           3
+ eigen done           3
+ tau           9  0.988505721              22
+ #popped           9           2
+ #selectset contacts        1717
+ selectset done           2
+ eigen done           2
+ tau          11  0.894071162              43
+ #popped           5           1
+ #selectset contacts        1717
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1717
+ selectset done           0
+ eigen done           0
+ tau          13   1.92578089             116         144
+ #popped          14           0
+ #selectset contacts        1717
+ selectset done           0
+ eigen done           0
+ tau          15   1.04398036             116
+ #popped          16           1
+ #selectset contacts        1717
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          17           0
+ #selectset contacts        1717
+ selectset done           0
+ eigen done           0
+ tau          17  0.277362853             159
+ #popped          19           0
+ #selectset contacts        1717
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              COMPND   2 MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROCOCCUS FAECALIS;                          AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CE          
+           0
+         188
+         188  residues read 1U6M.dssp                                                   
+  grow short strand           2           5
+  exclude short helix          28          31
+  exclude short helix          55          57
+  exclude short helix          76          78
+  exclude short helix         121         123
+  grow short helix         128         134
+  exclude short helix         136         141
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  2  3  6  7  9 10 11 12  8
+   2     1  4  5  6  1  4  5  2  3  6
+   3     1 14 15  6  7  9 10 11 12  8
+   4     2  6  7  5  1  4  5  2  3
+   5     2  0  0  1  6
+   6     4  0  0  3  1  4  5
+   7     4  8  9  2  2  3
+   8     7  0  0  1  2
+   9     7  0  0  1  3
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     3 16 17  5  7  9 10 11 12
+  15     3  0  0  1  8
+  16    14  0  0  1  7
+  17    14 18 19  4  9 10 11 12
+  18    17  0  0  1  9
+  19    17  0  0  3 10 11 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  6  1  1  6
+   3 -   1 10 11  6  1  7 12
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  3  2  1  1  4  5
+   7 -   4  8  9  2  1  2  3
+   8 -   7  0  0  1  1  2  2
+   9 -   7  0  0  1  1  3  3
+  10 -   3 12 13  5  2  7  7  9 12
+  11 -   3  0  0  1  1  8  8
+  12 -  10  0  0  1  1  7  7
+  13 -  10 14 15  4  1  9 12
+  14 -  13  0  0  1  1  9  9
+  15 -  13  0  0  3  1 10 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            188
+Total number of atoms read in:              1463
+Total number of ignored atom records:        404
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CENTER FOR  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              COMPND   2 MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROCOCCUS FAECALIS;                          AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CE          
+         188  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1699
+ selectset done           0
+ eigen done           0
+ tau           1   1.96948075              10          53          82         102
+ #popped           2           1
+ #selectset contacts        1699
+ selectset done           1
+ eigen done           1
+ tau           3   1.39785242             149
+ #popped           4           2
+ #selectset contacts        1699
+ selectset done           2
+ eigen done           2
+ tau           5   1.94579232              72         115         135
+ #popped           6           3
+ #selectset contacts        1699
+ selectset done           3
+ eigen done           3
+ tau           7   1.11072779             125
+ #popped           8           3
+ #selectset contacts        1699
+ selectset done           3
+ eigen done           3
+ tau           9  0.616583347              72
+ #popped          10           3
+ #selectset contacts        1699
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        1699
+ selectset done           2
+ eigen done           2
+ tau          11  0.590909123             115
+ #popped          12           2
+ #selectset contacts        1699
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        1699
+ selectset done           1
+ eigen done           1
+ tau          13  0.270318538             159
+ #popped          15           1
+ #selectset contacts        1699
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1699
+ selectset done           0
+ eigen done           0
+ tau          15   1.70921910              43
+ #popped          16           1
+ #selectset contacts        1699
+ selectset done           1
+ eigen done           1
+ tau          17   1.24927998              26
+ #popped          17           0
+ #selectset contacts        1699
+ selectset done           0
+ eigen done           0
+ tau          19   1.14867187              53
+ #popped          21           0
+ #selectset contacts        1699
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              COMPND   2 MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROCOCCUS FAECALIS;                          AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CE          
+           0
+         188
+         188  residues read 1U6M.dssp                                                   
+  grow short strand           2           5
+  exclude short helix          28          31
+  exclude short helix          55          57
+  exclude short helix          76          78
+  exclude short helix         121         123
+  grow short helix         128         134
+  grow short helix         136         142
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  4  5  8  7  9 10 11 12 13  2  3  6
+   2     1  4  5 10  1  4  5  8  7  9 10 11 12 13
+   3     1 16 17  3  2  3  6
+   4     2  6  7  6  1  4  5  8  7  9
+   5     2 14 15  4 10 11 12 13
+   6     4  8  9  4  1  4  5  8
+   7     4 12 13  2  7  9
+   8     6  0  0  3  1  4  5
+   9     6  0  0  1  8
+  10     0  0  0  3  1  4  5
+  11     0  0  0  0
+  12     7  0  0  1  7
+  13     7  0  0  1  9
+  14     5  0  0  1 10
+  15     5  0  0  3 11 12 13
+  16     3 18 19  2  2  3
+  17     3  0  0  1  6
+  18    16  0  0  1  2
+  19    16  0  0  1  3
+  20     0  0  0  0
+  21     0  0  0  1  6
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 10  3  1  1  4  5  7 13
+   3 -   1 14 15  3  2  2  3  6  6
+   4 -   2  6  7  6  3  1  1  4  5  7  9
+   5 -   2 12 13  4  1 10 13
+   6 -   4  8  9  4  3  1  1  4  5  8  8
+   7 -   4 10 11  2  2  7  7  9  9
+   8 -   6  0  0  3  2  1  1  4  5
+   9 -   6  0  0  1  1  8  8
+  10 -   7  0  0  1  1  7  7
+  11 -   7  0  0  1  1  9  9
+  12 -   5  0  0  1  1 10 10
+  13 -   5  0  0  3  1 11 13
+  14 -   3 16 17  2  1  2  3
+  15 -   3  0  0  1  1  6  6
+  16 -  14  0  0  1  1  2  2
+  17 -  14  0  0  1  1  3  3
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            188
+Total number of atoms read in:              1444
+Total number of ignored atom records:        256
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CENTER FOR  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              COMPND   2 MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROCOCCUS FAECALIS;                          AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CE          
+         188  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1689
+ selectset done           0
+ eigen done           0
+ tau           1   1.90282202              10          49          83         101
+ #popped           2           1
+ #selectset contacts        1689
+ selectset done           1
+ eigen done           1
+ tau           3   1.76107287              72         114         135
+ #popped           4           2
+ #selectset contacts        1689
+ selectset done           2
+ eigen done           2
+ tau           5   1.17032278             124
+ #popped           6           2
+ #selectset contacts        1689
+ selectset done           2
+ eigen done           2
+ tau           7  0.512918472              10
+ #popped           9           2
+ #selectset contacts        1689
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1689
+ selectset done           1
+ eigen done           1
+ tau           9   1.09263468             149
+ #popped          10           2
+ #selectset contacts        1689
+ selectset done           2
+ eigen done           2
+ tau          11  0.636631906             114
+ #popped          12           2
+ #selectset contacts        1689
+ selectset done           2
+ eigen done           2
+ tau          13  0.519373715              83
+ #popped          11           1
+ #selectset contacts        1689
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1689
+ selectset done           0
+ eigen done           0
+ tau          15   3.70743990              49
+ #popped          16           0
+ #selectset contacts        1689
+ selectset done           0
+ eigen done           0
+ tau          17   1.45585108              33
+ #popped          18           0
+ #selectset contacts        1689
+ selectset done           0
+ eigen done           0
+ tau          19   1.14001775              22
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              COMPND   2 MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROCOCCUS FAECALIS;                          AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CE          
+           0
+         188
+         188  residues read 1U6M.dssp                                                   
+  grow short strand           3           5
+  exclude short helix          28          30
+  exclude short helix          55          57
+  exclude short helix          76          80
+  exclude short helix         121         123
+  grow short helix         128         134
+  grow short helix         136         142
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  4  5  7  8  9 10 11 12 13  2  3  6
+   2     1  4  5 10  1  4  5  7  8  9 10 11 12 13
+   3     1 16 17  3  2  3  6
+   4     2  6  7  5  1  4  5  7  8
+   5     2 10 11  5  9 10 11 12 13
+   6     4  8  9  4  1  4  5  7
+   7     4  0  0  1  8
+   8     6  0  0  1  1
+   9     6  0  0  3  4  5  7
+  10     5  0  0  1  9
+  11     5  0  0  4 10 11 12 13
+  12     0  0  0  0
+  13     0  0  0  1  9
+  14     0  0  0  0
+  15     0  0  0  0
+  16     3 18 19  2  2  3
+  17     3  0  0  1  6
+  18    16  0  0  1  2
+  19    16  0  0  1  3
+  20     0  0  0  1  2
+  21     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 10  3  1  1  4  5  7 13
+   3 -   1 12 13  3  2  2  3  6  6
+   4 -   2  6  7  5  3  1  1  4  5  7  8
+   5 -   2 10 11  5  1  9 13
+   6 -   4  8  9  4  3  1  1  4  5  7  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  3  2  4  5  7  7
+  10 -   5  0  0  1  1  9  9
+  11 -   5  0  0  4  1 10 13
+  12 -   3 14 15  2  1  2  3
+  13 -   3  0  0  1  1  6  6
+  14 -  12  0  0  1  1  2  2
+  15 -  12  0  0  1  1  3  3
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            188
+Total number of atoms read in:              1445
+Total number of ignored atom records:        248
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CENTER FOR  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              COMPND   2 MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROCOCCUS FAECALIS;                          AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CE          
+         188  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1697
+ selectset done           0
+ eigen done           0
+ tau           1   1.88642657              10          53          82          99
+ #popped           2           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau           3   2.19705629              72         115         134
+ #popped           4           2
+ #selectset contacts        1697
+ selectset done           2
+ eigen done           2
+ tau           5  0.717661023              72
+ #popped           6           2
+ #selectset contacts        1697
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau           7   1.57376134             115         144
+ #popped           8           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau           9  0.884953082             115
+ #popped          10           2
+ #selectset contacts        1697
+ selectset done           2
+ eigen done           2
+ tau          11  0.488078654              82
+ #popped          11           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau          13  0.270318031             160
+ #popped          15           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1697
+ selectset done           0
+ eigen done           0
+ tau          15   2.03524232              33
+ #popped          16           1
+ #selectset contacts        1697
+ selectset done           1
+ eigen done           1
+ tau          17   1.50857151              22
+ #popped          17           0
+ #selectset contacts        1697
+ selectset done           0
+ eigen done           0
+ tau          19   1.03234565              43
+ #popped          21           0
+ #selectset contacts        1697
+ selectset done           0
+ eigen done           0
+ tau          21   1.33772123              53
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             30-JUL-04   1U6M              COMPND   2 MOLECULE: ACETYLTRANSFERASE, GNAT FAMILY;                            SOURCE   2 ORGANISM_SCIENTIFIC: ENTEROCOCCUS FAECALIS;                          AUTHOR    T.MIN,J.GORMAN,L.SHAPIRO,S.K.BURLEY,NEW YORK SGX RESEARCH CE          
+           0
+         188
+         188  residues read 1U6M.dssp                                                   
+  grow short strand           3           5
+  exclude short helix          29          32
+  exclude short helix          55          57
+  exclude short helix          76          78
+  exclude short helix         121         123
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  4  5  7  9 10 11 12  8  2  3  6
+   2     1  4  5  9  1  4  5  7  9 10 11 12  8
+   3     1 16 17  3  2  3  6
+   4     2  0  0  3  1  4  5
+   5     2  8  9  6  7  9 10 11 12  8
+   6     0  0  0  3  1  4  5
+   7     0  0  0  0
+   8     5 10 11  5  7  9 10 11 12
+   9     5  0  0  1  8
+  10     8  0  0  1  7
+  11     8 14 15  4  9 10 11 12
+  12     0  0  0  0
+  13     0  0  0  1  7
+  14    11  0  0  2  9 10
+  15    11  0  0  2 11 12
+  16     3  0  0  1  2
+  17     3 20 21  2  3  6
+  18     0  0  0  1  2
+  19     0  0  0  0
+  20    17  0  0  1  3
+  21    17  0  0  1  6
+  22     0  0  0  0
+  23     0  0  0  1  6
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  9  3  1  1  4  5  7 12
+   3 -   1 12 13  3  2  2  3  6  6
+   4 -   2  0  0  3  2  1  1  4  5
+   5 -   2  6  7  6  1  7 12
+   6 -   5  8  9  5  2  7  7  9 12
+   7 -   5  0  0  1  1  8  8
+   8 -   6  0  0  1  1  7  7
+   9 -   6 10 11  4  1  9 12
+  10 -   9  0  0  2  1  9 10
+  11 -   9  0  0  2  1 11 12
+  12 -   3  0  0  1  1  2  2
+  13 -   3 14 15  2  2  3  3  6  6
+  14 -  13  0  0  1  1  3  3
+  15 -  13  0  0  1  1  6  6
+
+ CHAIN : 1U6MA
+ CHAIN : 1U6MB
+ CHAIN : 1U6MC
+ CHAIN : 1U6MD
+

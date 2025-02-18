@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X64-A  6.1  5.3   66    89   33   MOLECULE: ALPHA-ACTININ-2 ASSOCIATED LIM PROTEIN;                    
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=1X64A Z-score=6.1
+
+DSSP  -------------------LLLLL-lLLLLLLLLLLLLLEEELLEEELLLLLLLLLLLLL
+Query -------------------GSSGS-sGCVKCNKAITSGGITYQDQPWHADCFVCVTCSKK   40
+ident                    ||      | ||   |        |   |  ||||  |   
+Sbjct gssgssgvrapvtkvhggaGSAQRmpLCDKCGSGIVGAVVKARDKYRHPECFVCADCNLN   60
+DSSP  lllllllllllllllllllLLLLLllLLLLLLLLLLLLLEELLLLEELLLLLLLLLLLLL
+
+DSSP  LLLLLEEELLLLEEEHHHHHHHHLLLLll
+Query LAGQRFTAVEDQYYCVDCYKNFVSGPSsg   69
+ident |       ||   ||        ||||  
+Sbjct LKQKGYFFVEGELYCETHARARTSGPSsg   89
+DSSP  LLLLLLEEELLEEELHHHHHHHLLLLLll
+
+
+# Structural equivalences
+   1: 2CUR-A 1X64-A     1 -   5 <=>   20 -  24   (GLY    1  - SER    5  <=> GLY   20  - ARG   24 )                          
+   1: 2CUR-A 1X64-A     7 -  67 <=>   27 -  87   (GLY    7  - SER   67  <=> LEU   27  - SER   87 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 1X64-A  U(1,.)  -0.192881 -0.163742  0.967463            1.941790"
+-matrix  "2CUR-A 1X64-A  U(2,.)   0.637404  0.728705  0.250410            2.258749"
+-matrix  "2CUR-A 1X64-A  U(3,.)  -0.745998  0.664964 -0.036184           -5.935626"
+

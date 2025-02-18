@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1HLMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HLB-A 15.3  2.8  153   157   56   MOLECULE: HEMOGLOBIN (DEOXY);                                        
+
+# Pairwise alignments
+
+No 1: Query=1HLMA Sbjct=1HLBA Z-score=15.3
+
+DSSP  LLLLLLLLLLLLLHHHHHHHHHHHHHHLLLlhHHHHHHHHHHLLLLLLLLLLLLLLLLlL
+Query GATQSFQSVGDLTPAEKDLIRSTWDQLMTHrtGFVADVFIRIFHNDPTAQRKFPQMAGlS   60
+ident | |   |  |||| | |   | || |||     || |||||||  || || |||||||  
+Sbjct GGTLAIQAQGDLTLAQKKIVRKTWHQLMRNktSFVTDVFIRIFAYDPSAQNKFPQMAG-M   59
+DSSP  LLLLLLLLLLLLLHHHHHHHHHHHHHHHHHllLHHHHHHHHHHHHLLHHHHLLHHHLL-L
+
+DSSP  LLLLlLLHH-HHHHHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHLLLHHHHHHHHH
+Query PAELrTSRQ-MHAHAIRVSALMTTYIDEMDTEVLPELLATLTRTHDKNHVGKKNYDLFGK  119
+ident  |    |   | |||||||  |  |  | |   |||||||| |||| | ||   | || |
+Sbjct SASQlRSSRqMQAHAIRVSSIMSEYVEELDSDILPELLATLARTHDLNKVGADHYNLFAK  119
+DSSP  LHHHhLLLHhHHHHHHHHHHHHHHHHLLLLLLLHHHHLHHHHHHHHHLLLLHHHHHHHHH
+
+DSSP  HHHHHLLLLLLLLLLLLHHHHHHHHHHHHHhHHLLLLLL
+Query VLMEAIKAELGVGFTKQVHDAWAKTFAIVQgVLITKHAS  158
+ident |||||  ||||  |     ||||| |  ||         
+Sbjct VLMEALQAELGSDFNEKTRDAWAKAFSVVQ-AVLLVKHG  157
+DSSP  HHHHHHHHHHLLLLLLHHHHHHHHHHHHHH-HLLLLLLL
+
+
+# Structural equivalences
+   1: 1HLM-A 1HLB-A     1 -  30 <=>    1 -  30   (GLY    1  - HIS   30  <=> GLY    1  - ASN   30 )                          
+   1: 1HLM-A 1HLB-A    33 -  58 <=>   33 -  58   (GLY   33  - GLY   58  <=> SER   33  - GLY   58 )                          
+   1: 1HLM-A 1HLB-A    60 -  64 <=>   59 -  63   (SER   60  - LEU   64  <=> MET   59  - GLN   63 )                          
+   1: 1HLM-A 1HLB-A    66 -  69 <=>   65 -  68   (THR   66  - GLN   69  <=> ARG   65  - ARG   68 )                          
+   1: 1HLM-A 1HLB-A    70 - 149 <=>   70 - 149   (MET   70  - GLN  149  <=> MET   70  - GLN  149 )                          
+   1: 1HLM-A 1HLB-A   151 - 158 <=>  150 - 157   (VAL  151  - SER  158  <=> ALA  150  - GLY  157 )                          
+
+# Translation-rotation matrices
+-matrix  "1HLM-A 1HLB-A  U(1,.)  -0.083901  0.478745 -0.873936           20.256994"
+-matrix  "1HLM-A 1HLB-A  U(2,.)   0.503719 -0.736346 -0.451731           44.550682"
+-matrix  "1HLM-A 1HLB-A  U(3,.)  -0.859783 -0.478119 -0.179373           33.031544"
+

@@ -1,0 +1,148 @@
+A length: 136
+C length: 13
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   92  CA BCYS A  12 
+ Alternate location indication is not blank or A, ignore atom:   96  CB BCYS A  12 
+ Alternate location indication is not blank or A, ignore atom:   98  SG BCYS A  12 
+ Alternate location indication is not blank or A, ignore atom:  113  CA BCYS A  15 
+ Alternate location indication is not blank or A, ignore atom:  117  CB BCYS A  15 
+ Alternate location indication is not blank or A, ignore atom:  119  SG BCYS A  15 
+ Alternate location indication is not blank or A, ignore atom:  543  CA BILE A  73 
+ Alternate location indication is not blank or A, ignore atom:  547  CB BILE A  73 
+ Alternate location indication is not blank or A, ignore atom:  549  CG1BILE A  73 
+ Alternate location indication is not blank or A, ignore atom:  551  CG2BILE A  73 
+ Alternate location indication is not blank or A, ignore atom:  553  CD1BILE A  73 
+
+Total number of residues read in:            139
+Total number of atoms read in:              1042
+Total number of ignored atom records:        258
+ HEADER    PROTEIN BINDING                         06-AUG-07   2V8C              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.KURSULA,J.DOWNER,W.WITKE,M.WILMANNS                                 
+  Reading DSSP file
+ HEADER    PROTEIN BINDING                         06-AUG-07   2V8C              COMPND   2 MOLECULE: PROFILIN-2;                                                SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    P.KURSULA,J.DOWNER,W.WITKE,M.WILMANNS                                 
+         139  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1267
+ selectset done           0
+ eigen done           0
+ tau           1   1.01516175              35          73          86         100
+ #popped           2           1
+ #selectset contacts        1267
+ selectset done           1
+ eigen done           1
+ tau           3   1.14517868              18         112         126
+ #popped           4           2
+ #selectset contacts        1267
+ selectset done           2
+ eigen done           2
+ tau           5  0.709882498              18
+ #popped           5           1
+ #selectset contacts        1267
+ selectset done           1
+ eigen done           1
+ tau           7  0.870405614              35          86
+ #popped           8           1
+ #selectset contacts        1267
+ selectset done           1
+ eigen done           1
+ tau           9   1.50117457             112
+ #popped          10           1
+ #selectset contacts        1267
+ selectset done           1
+ eigen done           1
+ tau          11  0.334169686              35
+ #popped           3           0
+ #selectset contacts        1267
+ selectset done           0
+ eigen done           0
+ tau          13   1.59045899              62
+ #popped          14           1
+ #selectset contacts        1267
+ selectset done           1
+ eigen done           1
+ tau          15   1.77661061              51
+ #popped          15           0
+ #selectset contacts        1267
+ selectset done           0
+ eigen done           0
+ tau          17  0.548187196              73
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    PROTEIN BINDING                         06-AUG-07   2V8C              COMPND   2 MOLECULE: PROFILIN-2;                                                SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    P.KURSULA,J.DOWNER,W.WITKE,M.WILMANNS                                 
+           0
+         139
+         139  residues read 2V8C.dssp                                                   
+  grow short strand          29          33
+  exclude short helix          39          41
+  exclude short helix          57          61
+  grow short strand          63          65
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  8  9 10  7  4  5  6
+   2     1  4  5  7  1  2  3  8  9 10  7
+   3     1 14 15  3  4  5  6
+   4     2  0  0  1  1
+   5     2  8  9  6  2  3  8  9 10  7
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     5 10 11  5  2  3  8  9 10
+   9     5  0  0  1  7
+  10     8 12 13  4  2  3  8  9
+  11     8  0  0  1 10
+  12    10  0  0  2  2  3
+  13    10  0  0  2  8  9
+  14     3  0  0  1  4
+  15     3  0  0  2  5  6
+  16     0  0  0  1  4
+  17     0  0  0  0
+  18     0  0  0  2  5  6
+  19     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  7  2  1  3  7 10
+   3 -   1 12 13  3  1  4  6
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  6  2  2  3  7 10
+   6 -   5  8  9  5  2  2  3  8 10
+   7 -   5  0  0  1  1  7  7
+   8 -   6 10 11  4  2  2  3  8  9
+   9 -   6  0  0  1  1 10 10
+  10 -   8  0  0  2  1  2  3
+  11 -   8  0  0  2  1  8  9
+  12 -   3  0  0  1  1  4  4
+  13 -   3  0  0  2  1  5  6
+
+ CHAIN : 2V8CA
+

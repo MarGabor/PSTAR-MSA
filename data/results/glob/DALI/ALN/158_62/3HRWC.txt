@@ -1,0 +1,37 @@
+# Job: glob
+# Query: 3HRWC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6BMG-B 19.3  1.6  140   154   27   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=3HRWC Sbjct=6BMGB Z-score=19.3
+
+DSSP  -LLLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHLLLLL------lLLLLH
+Query -VLSGEDKSNIKAAWGKIGGHGAEYGAEALERMFASFPTTKTYFPHFD------vSHGSA   53
+ident  |||          | |     |  |   | | |   | |   |  |           | 
+Sbjct mVLSEGEWQLVLHVWAKVEADIAGHGQDILIRLFKHHPETLEKFDRFKhlkseaeMKASE   60
+DSSP  lLLLHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLHHHHHHLLLLLllllhhhHHHLH
+
+DSSP  HHHHHHHHHHHHHHHHLLLLLLLHHHHHHHHHHLLLLLLLLLHHHHHHHHHHHHHHHHHL
+Query QVKGHGKKVADALASAAGHLDDLPGALSALSDLHAHKLRVDPVNFKLLSHCLLVTLASHH  113
+ident   | ||  |  ||             |  |   || |           |      | | |
+Sbjct DLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRH  120
+DSSP  HHHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHHHHHL
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHHHHLL------
+Query PADFTPAVHASLDKFLASVSTVLTSKYR------  141
+ident ||||         | |         ||       
+Sbjct PADFGADAQGAMSKALELFRKDIAAKYKelgyqg  154
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHHHHHHhhllll
+
+
+# Structural equivalences
+   1: 3HRW-C 6BMG-B     1 -  47 <=>    2 -  48   (VAL    1  - ASP   47  <=> VAL    1  - LYS   47 )                          
+   1: 3HRW-C 6BMG-B    49 - 141 <=>   56 - 148   (SER   49  - ARG  141  <=> MET   55  - LYS  147 )                          
+
+# Translation-rotation matrices
+-matrix  "3HRW-C 6BMG-B  U(1,.)  -0.710571 -0.070109  0.700124           25.510435"
+-matrix  "3HRW-C 6BMG-B  U(2,.)  -0.390908  0.866671 -0.309955          -41.044857"
+-matrix  "3HRW-C 6BMG-B  U(3,.)  -0.585047 -0.493929 -0.643237           35.438328"
+

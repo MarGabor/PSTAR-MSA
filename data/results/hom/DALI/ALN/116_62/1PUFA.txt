@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 1PUFA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HOM-A  8.5  3.0   64    68   67   MOLECULE: ANTENNAPEDIA PROTEIN;                                      
+
+# Pairwise alignments
+
+No 1: Query=1PUFA Sbjct=1HOMA Z-score=8.5
+
+DSSP  llllllllllllLLLL-LLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLHHHHHH
+Query nnpaanwlharsTRKK-RCPYTKHQTLELEKEFLFNMYLTRDRRYEVARLLNLTERQVKI   59
+ident              ||  |  ||  ||||||||| || |||| || | |  | ||||| ||
+Sbjct ------------MRKRgRQTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALCLTERQIKI   48
+DSSP  ------------LLLLlLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHH
+
+DSSP  HHHHHHHHHHHHHhHHLL---
+Query WFQNRRMKMKKINkDRAK---   77
+ident |||||||| || |        
+Sbjct WFQNRRMKWKKEN-KTKGepg   68
+DSSP  HHHHHHLLLLLLL-LLLLlll
+
+
+# Structural equivalences
+   1: 1PUF-A 1HOM-A    13 -  16 <=>    1 -   4   (THR  205  - LYS  208  <=> MET    0  - ARG    3 )                          
+   1: 1PUF-A 1HOM-A    17 -  72 <=>    6 -  61   (ARG  209  - ASN  264  <=> ARG    5  - ASN   60 )                          
+   1: 1PUF-A 1HOM-A    74 -  77 <=>   62 -  65   (ASP  266  - LYS  269  <=> LYS   61  - GLY   64 )                          
+
+# Translation-rotation matrices
+-matrix  "1PUF-A 1HOM-A  U(1,.)   0.528515  0.706561  0.470579           -5.232062"
+-matrix  "1PUF-A 1HOM-A  U(2,.)  -0.159075  0.626932 -0.762661           39.482628"
+-matrix  "1PUF-A 1HOM-A  U(3,.)  -0.833887  0.328220  0.443739           15.462972"
+

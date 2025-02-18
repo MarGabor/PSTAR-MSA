@@ -1,0 +1,42 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1OUT-A 14.7  2.7  132   142   21   MOLECULE: HEMOGLOBIN I;                                              
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1OUTA Z-score=14.7
+
+DSSP  -LLHHHHHHHHHHHHLLLLL----HHHHHHHHHHHLHHHHLLLLLllLLLHhhHLLLHHH
+Query -LSADQISTVQASFDKVKGD----PVGILYAVFKADPSIMAKFTQfaGKDLesIKGTAPF   55
+ident  | |   | | |   |  |         |     | |     |      ||    |  | 
+Sbjct sLTAKDKSVVKAFWGKISGKadvvGAEALGRMLTAYPQTKTYFSH--WADL--SPGSGPV   56
+DSSP  lLLHHHHHHHHHHHHHHHHHhhhhHHHHHHHHHHHLHHHHHHHLL--LLLL--LLLLHHH
+
+DSSP  HHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHH-HHLLLHHHHHHHHHHHHHHHHHHL--
+Query ETHANRIVGFFSKIIGELPNIEADVNTFVASHK-PRGVTHDQLNNFRAGFVSYMKAHT--  112
+ident   |   | |   |  |               |     |                  |   
+Sbjct KKHGGIIMGAIGKAVGLMDDLVGGMSALSDLHAfKLRVDPGNFKILSHNILVTLAIHFps  116
+DSSP  HHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHhLLLLLLHHHHHHHHHHHHHHHHHLll
+
+DSSP  LHHH-HHHHHHHHHHHHHHHHHLLL-
+Query DFAG-AEAAWGATLDTFFGMIFSKM-  136
+ident ||      |    |         |  
+Sbjct DFTPeVHIAVDKFLAAVSAALADKYr  142
+DSSP  LLLHhHHHHHHHHHHHHHHHHHLLLl
+
+
+# Structural equivalences
+   1: 1ECN-A 1OUT-A     1 -  19 <=>    2 -  20   (LEU    1  - ASP   19  <=> LEU    2  - LYS   20 )                          
+   1: 1ECN-A 1OUT-A    20 -  40 <=>   25 -  45   (PRO   20  - GLN   40  <=> GLY   25  - HIS   45 )                          
+   1: 1ECN-A 1OUT-A    43 -  46 <=>   46 -  49   (GLY   43  - LEU   46  <=> TRP   46  - LEU   49 )                          
+   1: 1ECN-A 1OUT-A    49 -  88 <=>   50 -  89   (ILE   49  - LYS   88  <=> SER   50  - ALA   89 )                          
+   1: 1ECN-A 1OUT-A    89 - 112 <=>   91 - 114   (PRO   89  - THR  112  <=> LYS   91  - PHE  114 )                          
+   1: 1ECN-A 1OUT-A   113 - 116 <=>  117 - 120   (ASP  113  - GLY  116  <=> ASP  117  - PRO  120 )                          
+   1: 1ECN-A 1OUT-A   117 - 136 <=>  122 - 141   (ALA  117  - MET  136  <=> VAL  122  - TYR  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1OUT-A  U(1,.)  -0.034524  0.347321 -0.937110           31.089840"
+-matrix  "1ECN-A 1OUT-A  U(2,.)   0.078244  0.935731  0.343927          -30.212103"
+-matrix  "1ECN-A 1OUT-A  U(3,.)   0.996336 -0.061450 -0.059482           -7.683926"
+

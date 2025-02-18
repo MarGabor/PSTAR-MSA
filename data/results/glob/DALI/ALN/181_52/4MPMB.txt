@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 4MPMB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBA-A 15.3  2.5  140   146   21   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=4MPMB Sbjct=1MBAA Z-score=15.3
+
+DSSP  --LLLLHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHHLLlllllLLHH-HHHHL
+Query --ERPEPELIRQSWRAVSRSPLEHGTVLFARLFALEPDLLPLFQYncrqfSSPE-DCLSS   57
+ident      |  |   ||  |       |      ||   ||    |            |   |
+Sbjct slSAAEADLAGKSWAPVFANKNANGLDFLVALFEKFPDSANFFAD---fkGKSVaDIKAS   57
+DSSP  llLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLLL---llLLLHhHHHLL
+
+DSSP  HHHHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHH
+Query PEFLDHIRKVMLVIDAAVTNVEDLSSLEEYLASLGRKHRAVGVKLSSFSTVGESLLYMLE  117
+ident |   |            | |          |      |   ||    |  |         
+Sbjct PKLRDVSSRIFTRLNEFVNNAANAGKMSAMLSQFAKEHVGFGVGSAQFENVRSMFPGFVA  117
+DSSP  LLHHHHHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHHH
+
+DSSP  HHHHhhLLHHHHHHHHHHHHHHHHHHHHHHl
+Query KCLGpaFTPATRAAWSQLYGAVVQAMSRGWd  148
+ident             |||  | |    |      
+Sbjct SVAA--PPAGADAAWTKLFGLIIDALKAAGa  146
+DSSP  LLLL--LLLLHHHHHHHHHHHHHHHHHHLLl
+
+
+# Structural equivalences
+   1: 4MPM-B 1MBA-A     1 -  43 <=>    3 -  45   (GLU    2  - TYR   44  <=> SER    3  - ASP   45 )                          
+   1: 4MPM-B 1MBA-A    49 -  52 <=>   48 -  51   (SER   50  - GLU   53  <=> GLY   48  - VAL   51 )                          
+   1: 4MPM-B 1MBA-A    53 - 121 <=>   53 - 121   (ASP   54  - GLY  122  <=> ASP   53  - ALA  121 )                          
+   1: 4MPM-B 1MBA-A   124 - 147 <=>  122 - 145   (PHE  125  - TRP  148  <=> PRO  122  - GLY  145 )                          
+
+# Translation-rotation matrices
+-matrix  "4MPM-B 1MBA-A  U(1,.)   0.898458 -0.253286 -0.358635           56.686363"
+-matrix  "4MPM-B 1MBA-A  U(2,.)  -0.428452 -0.684246 -0.590116          -58.063683"
+-matrix  "4MPM-B 1MBA-A  U(3,.)  -0.095926  0.683852 -0.723288           -9.629024"
+

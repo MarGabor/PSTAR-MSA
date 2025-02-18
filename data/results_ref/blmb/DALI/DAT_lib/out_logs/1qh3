@@ -1,0 +1,442 @@
+A length: 260
+B length: 260
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            260
+Total number of atoms read in:              2029
+Total number of ignored atom records:        374
+ HEADER    HYDROLASE                               10-MAY-99   1QH3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.D.CAMERON,M.RIDDERSTROM,B.OLIN,B.MANNERVIK                          
+  Reading DSSP file
+ HEADER    HYDROLASE                               10-MAY-99   1QH3              COMPND   2 MOLECULE: PROTEIN (HYDROXYACYLGLUTATHIONE HYDROLASE);                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.D.CAMERON,M.RIDDERSTROM,B.OLIN,B.MANNERVIK                          
+         260  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2490
+ selectset done           0
+ eigen done           0
+ tau           1   1.87023854             135         163         173
+ #popped           2           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau           3  0.991183102              59          71
+ #popped           4           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau           5   1.15352261              31          45
+ #popped           6           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau           7  0.689363956              83
+ #popped           8           2
+ #selectset contacts        2490
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           9           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau           9   1.19844735              93
+ #popped          11           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau          11  0.641046882             103
+ #popped          13           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau          13  0.484624326             114
+ #popped          15           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau          15  0.533616066             125
+ #popped          17           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        2490
+ selectset done           0
+ eigen done           0
+ tau          17   1.86683202             145         163
+ #popped          18           0
+ #selectset contacts        2490
+ selectset done           0
+ eigen done           0
+ tau          19   1.20208120             188         221
+ #popped          20           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau          21  0.685760260             245
+ #popped          22           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau          23  0.864207387             235
+ #popped          24           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau          25   1.03471446             145
+ #popped          27           1
+ #selectset contacts        2490
+ selectset done           1
+ eigen done           1
+ tau          27   2.03110600             188
+ #popped          21           0
+ #selectset contacts        2490
+ selectset done           0
+ eigen done           0
+ tau          29   1.58301163             209
+ #popped          30           0
+ #selectset contacts        2490
+ selectset done           0
+ eigen done           0
+ tau          31  0.762080073             198
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               10-MAY-99   1QH3              COMPND   2 MOLECULE: PROTEIN (HYDROXYACYLGLUTATHIONE HYDROLASE);                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.D.CAMERON,M.RIDDERSTROM,B.OLIN,B.MANNERVIK                          
+           0
+         260
+         260  residues read 1QH3.dssp                                                   
+  grow short strand          24          28
+  exclude short helix          57          60
+  grow short helix          63          69
+  grow short strand          74          77
+  grow short strand          87          88
+  grow short strand          94          97
+  grow short strand         129         133
+  grow short strand         136         137
+ crowded segment excluded!
+  grow short strand         140         141
+  grow short strand         168         171
+  grow short strand         213         214
+ crowded segment excluded!
+  grow short helix         215         221
+  grow short helix         230         236
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  5  7  8  9 10 11 12 15  4  6 13 16 19 20 17 18 14
+   2     1  4  5 13  1  2  3  5  7  8  9 10 11 12 15  4  6
+   3     1 18 19  7 13 16 19 20 17 18 14
+   4     2  6  7 12  1  2  3  5  7  8  9 10 11 12 15  4
+   5     2  0  0  1  6
+   6     4  8  9 11  1  2  3  5  7  8  9 10 11 12 15
+   7     4  0  0  1  4
+   8     6  0  0  5  1  2  3  5  7
+   9     6 10 11  6  8  9 10 11 12 15
+  10     9  0  0  1  8
+  11     9 12 13  5  9 10 11 12 15
+  12    11  0  0  2  9 10
+  13    11 16 17  3 11 12 15
+  14     0  0  0  0
+  15     0  0  0  3 11 12 15
+  16    13  0  0  1 11
+  17    13  0  0  2 12 15
+  18     3 20 21  6 13 16 19 20 17 18
+  19     3  0  0  1 14
+  20    18 22 23  4 13 16 19 20
+  21    18 30 31  2 17 18
+  22    20 26 27  3 13 16 19
+  23    20  0  0  1 20
+  24     0  0  0  3 13 16 19
+  25     0  0  0  0
+  26    22  0  0  1 13
+  27    22 28 29  2 16 19
+  28    27  0  0  1 16
+  29    27  0  0  1 19
+  30    21  0  0  1 17
+  31    21  0  0  1 18
+  32     0  0  0  1 17
+  33     0  0  0  0
+   1 *   0  2  3 20  1  1 20
+   2 -   1  4  5 13  2  1 12 15 15
+   3 -   1 16 17  7  2 13 14 16 20
+   4 -   2  6  7 12  3  1  5  7 12 15 15
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9 11  4  1  3  5  5  7 12 15 15
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  5  3  1  3  5  5  7  7
+   9 -   6 10 11  6  2  8 12 15 15
+  10 -   9  0  0  1  1  8  8
+  11 -   9 12 13  5  2  9 12 15 15
+  12 -  11  0  0  2  1  9 10
+  13 -  11 14 15  3  2 11 12 15 15
+  14 -  13  0  0  1  1 11 11
+  15 -  13  0  0  2  2 12 12 15 15
+  16 -   3 18 19  6  2 13 13 16 20
+  17 -   3  0  0  1  1 14 14
+  18 -  16 20 21  4  3 13 13 16 16 19 20
+  19 -  16 26 27  2  1 17 18
+  20 -  18 22 23  3  3 13 13 16 16 19 19
+  21 -  18  0  0  1  1 20 20
+  22 -  20  0  0  1  1 13 13
+  23 -  20 24 25  2  2 16 16 19 19
+  24 -  23  0  0  1  1 16 16
+  25 -  23  0  0  1  1 19 19
+  26 -  19  0  0  1  1 17 17
+  27 -  19  0  0  1  1 18 18
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            260
+Total number of atoms read in:              2029
+Total number of ignored atom records:        402
+ HEADER    HYDROLASE                               10-MAY-99   1QH3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.D.CAMERON,M.RIDDERSTROM,B.OLIN,B.MANNERVIK                          
+  Reading DSSP file
+ HEADER    HYDROLASE                               10-MAY-99   1QH3              COMPND   2 MOLECULE: PROTEIN (HYDROXYACYLGLUTATHIONE HYDROLASE);                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.D.CAMERON,M.RIDDERSTROM,B.OLIN,B.MANNERVIK                          
+         260  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2492
+ selectset done           0
+ eigen done           0
+ tau           1   1.77629137             175
+ #popped           2           1
+ #selectset contacts        2492
+ selectset done           1
+ eigen done           1
+ tau           3   1.65462720             147         163
+ #popped           4           1
+ #selectset contacts        2492
+ selectset done           1
+ eigen done           1
+ tau           5  0.786111712             135         147
+ #popped           6           1
+ #selectset contacts        2492
+ selectset done           1
+ eigen done           1
+ tau           7  0.988715291              89
+ #popped           8           2
+ #selectset contacts        2492
+ selectset done           2
+ eigen done           2
+ tau           9   1.09762669              49
+ #popped          10           3
+ #selectset contacts        2492
+ selectset done           3
+ eigen done           3
+ tau          11  0.627083778              28
+ #popped          12           4
+ #selectset contacts        2492
+ selectset done           4
+ eigen done           4
+ tau          13  0.462228715              15
+ #popped          13           3
+ #selectset contacts        2492
+ selectset done           3
+ eigen done           3
+ tau          15  0.740277767              38
+ #popped          11           2
+ #selectset contacts        2492
+ selectset done           2
+ eigen done           2
+ tau          17  0.965594888              63          73
+ #popped          18           2
+ #selectset contacts        2492
+ selectset done           2
+ eigen done           2
+ tau          19  0.720903218              63
+ #popped           9           1
+ #selectset contacts        2492
+ selectset done           1
+ eigen done           1
+ tau          21  0.712584555             102
+ #popped          23           1
+ #selectset contacts        2492
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2492
+ selectset done           0
+ eigen done           0
+ tau          23   1.35549605             189         221
+ #popped          24           1
+ #selectset contacts        2492
+ selectset done           1
+ eigen done           1
+ tau          25   1.25613177             189         245
+ #popped          26           2
+ #selectset contacts        2492
+ selectset done           2
+ eigen done           2
+ tau          27  0.887167752             189
+ #popped          27           1
+ #selectset contacts        2492
+ selectset done           1
+ eigen done           1
+ tau          29  0.695576727             232
+ #popped          25           0
+ #selectset contacts        2492
+ selectset done           0
+ eigen done           0
+ tau          31   1.47772753             210
+ #popped          32           0
+ #selectset contacts        2492
+ selectset done           0
+ eigen done           0
+ tau          33  0.683223724             200
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               10-MAY-99   1QH3              COMPND   2 MOLECULE: PROTEIN (HYDROXYACYLGLUTATHIONE HYDROLASE);                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.D.CAMERON,M.RIDDERSTROM,B.OLIN,B.MANNERVIK                          
+           0
+         260
+         260  residues read 1QH3.dssp                                                   
+  grow short strand          24          28
+  exclude short helix          57          60
+  grow short helix          63          69
+  grow short strand          74          77
+  grow short strand          87          88
+  grow short strand          94          97
+  grow short strand         129         133
+  grow short strand         136         137
+ crowded segment excluded!
+  grow short strand         140         141
+  exclude short helix         160         162
+  grow short strand         168         171
+  grow short strand         213         214
+ crowded segment excluded!
+  grow short helix         215         221
+  grow short helix         230         236
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  5  7  8  6  9 10 11 12 15 13 14 16 20 19 17 18
+   2     1  4  5 15  1  2  3  4  5  7  8  6  9 10 11 12 15 13 14
+   3     1 24 25  5 16 20 19 17 18
+   4     2  6  7 14  1  2  3  4  5  7  8  6  9 10 11 12 15 13
+   5     2  0  0  1 14
+   6     4  8  9 13  1  2  3  4  5  7  8  6  9 10 11 12 15
+   7     4  0  0  1 13
+   8     6 10 11  8  1  2  3  4  5  7  8  6
+   9     6 22 23  5  9 10 11 12 15
+  10     8 12 13  5  1  2  3  4  5
+  11     8 18 19  3  7  8  6
+  12    10 14 15  3  1  2  3
+  13    10 16 17  2  4  5
+  14    12  0  0  2  1  2
+  15    12  0  0  1  3
+  16    13  0  0  1  4
+  17    13  0  0  1  5
+  18    11  0  0  2  7  8
+  19    11  0  0  1  6
+  20     0  0  0  0
+  21     0  0  0  2  7  8
+  22     9  0  0  1  9
+  23     9  0  0  4 10 11 12 15
+  24     3 26 27  3 16 20 19
+  25     3 32 33  2 17 18
+  26    24 28 29  2 16 20
+  27    24  0  0  1 19
+  28    26  0  0  1 16
+  29    26  0  0  1 20
+  30     0  0  0  0
+  31     0  0  0  1 19
+  32    25  0  0  1 17
+  33    25  0  0  1 18
+  34     0  0  0  1 17
+  35     0  0  0  0
+   1 *   0  2  3 20  1  1 20
+   2 -   1  4  5 15  1  1 15
+   3 -   1 22 23  5  1 16 20
+   4 -   2  6  7 14  2  1 13 15 15
+   5 -   2  0  0  1  1 14 14
+   6 -   4  8  9 13  2  1 12 15 15
+   7 -   4  0  0  1  1 13 13
+   8 -   6 10 11  8  1  1  8
+   9 -   6 20 21  5  2  9 12 15 15
+  10 -   8 12 13  5  1  1  5
+  11 -   8 18 19  3  1  6  8
+  12 -  10 14 15  3  1  1  3
+  13 -  10 16 17  2  1  4  5
+  14 -  12  0  0  2  1  1  2
+  15 -  12  0  0  1  1  3  3
+  16 -  13  0  0  1  1  4  4
+  17 -  13  0  0  1  1  5  5
+  18 -  11  0  0  2  1  7  8
+  19 -  11  0  0  1  1  6  6
+  20 -   9  0  0  1  1  9  9
+  21 -   9  0  0  4  2 10 12 15 15
+  22 -   3 24 25  3  2 16 16 19 20
+  23 -   3 28 29  2  1 17 18
+  24 -  22 26 27  2  2 16 16 20 20
+  25 -  22  0  0  1  1 19 19
+  26 -  24  0  0  1  1 16 16
+  27 -  24  0  0  1  1 20 20
+  28 -  23  0  0  1  1 17 17
+  29 -  23  0  0  1  1 18 18
+
+ CHAIN : 1QH3A
+ CHAIN : 1QH3B
+

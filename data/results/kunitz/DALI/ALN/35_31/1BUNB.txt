@@ -1,0 +1,38 @@
+# Job: kunitz
+# Query: 1BUNB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1TOC-U  6.6  2.7   56   120   25   MOLECULE: THROMBIN;                                                  
+
+# Pairwise alignments
+
+No 1: Query=1BUNB Sbjct=1TOCU Z-score=6.6
+
+DSSP  -----------------------------------------------------------L
+Query -----------------------------------------------------------R    1
+ident                                                             
+Sbjct slnvlcnnphtadcnndaqvdryfregttclmspactsegyasqhecqqacfvggedhsS   60
+DSSP  leehhhlllllllllllleeeeeeeelleeeeeeeelllllllhhhhhhhlllllllllL
+
+DSSP  LLLLLLLLLLLLLLlLLLEEEEEEEHHHLEEEEEEellLLLLLLLLLLHHHHHHHHLLL-
+Query KRHPDCDKPPDTKIcQTVVRAFYYKPSAKRCVQFRyggCNGNGNHFKSDHLCRCECLEY-   60
+ident   |  |   | |          ||    | |       |    | | |   |   |    
+Sbjct EMHSSCLGDPPTSC-AEGTDITYYDSDSKTCKVLA-asCPSGENTFESEVECQVACGAPi  118
+DSSP  LLLHHHHLLLLEEE-EEEEEEEEEELLLLEEEEEE-eeELLLLLLLLLHHHHHHHLLLLl
+
+DSSP  -l
+Query -r   61
+ident   
+Sbjct eg  120
+DSSP  ll
+
+
+# Structural equivalences
+   1: 1BUN-B 1TOC-U     1 -  15 <=>   60 -  74   (ARG    1  - ILE   15  <=> SER   59  - CYS   73 )                          
+   1: 1BUN-B 1TOC-U    17 -  36 <=>   75 -  94   (GLN   17  - ARG   36  <=> ALA   74  - ALA   93 )                          
+   1: 1BUN-B 1TOC-U    40 -  60 <=>   97 - 117   (CYS   40  - TYR   60  <=> CYS   96  - PRO  116 )                          
+
+# Translation-rotation matrices
+-matrix  "1BUN-B 1TOC-U  U(1,.)   0.048750  0.701113  0.711382           -4.177733"
+-matrix  "1BUN-B 1TOC-U  U(2,.)   0.420844  0.631503 -0.651226           13.026303"
+-matrix  "1BUN-B 1TOC-U  U(3,.)  -0.905822  0.331128 -0.264273          136.822922"
+

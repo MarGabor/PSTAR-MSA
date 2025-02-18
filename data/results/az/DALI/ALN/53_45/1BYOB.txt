@@ -1,0 +1,32 @@
+# Job: az
+# Query: 1BYOB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2B3I-A 15.5  1.4   95    97   45   MOLECULE: PROTEIN (PLASTOCYANIN);                                    
+
+# Pairwise alignments
+
+No 1: Query=1BYOB Sbjct=2B3IA Z-score=15.5
+
+DSSP  --LEEEEEELLLEEEEELLEEEELLLLEEEEEELLLLLLLLEELllLLLLLLLHHHLLLL
+Query --AEVLLGSSDGGLAFVPSDLSIASGEKITFKNNAGFPHNDLFDedEVPAGVDVTKISMP   58
+ident        |         |  |||  |    |  |   |||  ||   ||||      |  
+Sbjct asVQIKMGTDKYAPLYEPKALSISAGDTVEFVMNKVGPHNVIFD--KVPAGESAPALSNT   58
+DSSP  llEEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLEEEEEE--ELLLLLLHHHHLEE
+
+DSSP  llLLLLLLLLEEEEELLLLEEEEEELHHHHHHLLEEEEEEL
+Query eeDLLNAPGEEYSVTLTEKGTYKFYCAPHAGAGMVGKVTVN   99
+ident    |  |||  |||||   ||| ||| || ||||||  || 
+Sbjct --KLAIAPGSFYSVTLGTPGTYSFYCTPHRGAGMVGTITVE   97
+DSSP  --EEELLLLLLEEEELLLLEEEEEELLLLLLLLLEEEEEEL
+
+
+# Structural equivalences
+   1: 1BYO-B 2B3I-A     1 -  42 <=>    3 -  44   (ALA    1  - ASP   42  <=> VAL    3  - ASP   44 )                          
+   1: 1BYO-B 2B3I-A    45 -  58 <=>   45 -  58   (GLU   45  - PRO   58  <=> LYS   45  - THR   58 )                          
+   1: 1BYO-B 2B3I-A    61 -  99 <=>   59 -  97   (ASP   61  - ASN   99  <=> LYS   59  - GLU   97 )                          
+
+# Translation-rotation matrices
+-matrix  "1BYO-B 2B3I-A  U(1,.)  -0.353515 -0.717212  0.600528           31.783781"
+-matrix  "1BYO-B 2B3I-A  U(2,.)   0.808640  0.088417  0.581622           35.549389"
+-matrix  "1BYO-B 2B3I-A  U(3,.)  -0.470243  0.691223  0.548709           20.562792"
+

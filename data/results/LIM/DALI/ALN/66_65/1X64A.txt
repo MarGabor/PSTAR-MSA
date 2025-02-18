@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 1X64A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CUR-A  6.1  5.3   66    69   33   MOLECULE: SKELETAL MUSCLE LIM-PROTEIN 1;                             
+
+# Pairwise alignments
+
+No 1: Query=1X64A Sbjct=2CURA Z-score=6.1
+
+DSSP  lllllllllllllllllllLLLLLllLLLLLLLLLLLLLEELLLLEELLLLLLLLLLLLL
+Query gssgssgvrapvtkvhggaGSAQRmpLCDKCGSGIVGAVVKARDKYRHPECFVCADCNLN   60
+ident                    ||      | ||   |        |   |  ||||  |   
+Sbjct -------------------GSSGS-sGCVKCNKAITSGGITYQDQPWHADCFVCVTCSKK   40
+DSSP  -------------------LLLLL-lLLLLLLLLLLLLLEEELLEEELLLLLLLLLLLLL
+
+DSSP  LLLLLLEEELLEEELHHHHHHHLLLLLll
+Query LKQKGYFFVEGELYCETHARARTSGPSsg   89
+ident |       ||   ||        ||||  
+Sbjct LAGQRFTAVEDQYYCVDCYKNFVSGPSsg   69
+DSSP  LLLLLEEELLLLEEEHHHHHHHHLLLLll
+
+
+# Structural equivalences
+   1: 1X64-A 2CUR-A    20 -  24 <=>    1 -   5   (GLY   20  - ARG   24  <=> GLY    1  - SER    5 )                          
+   1: 1X64-A 2CUR-A    27 -  87 <=>    7 -  67   (LEU   27  - SER   87  <=> GLY    7  - SER   67 )                          
+
+# Translation-rotation matrices
+-matrix  "1X64-A 2CUR-A  U(1,.)  -0.192881  0.637404 -0.745998           -5.493168"
+-matrix  "1X64-A 2CUR-A  U(2,.)  -0.163742  0.728705  0.664964            2.618967"
+-matrix  "1X64-A 2CUR-A  U(3,.)   0.967463  0.250410 -0.036184           -2.658997"
+

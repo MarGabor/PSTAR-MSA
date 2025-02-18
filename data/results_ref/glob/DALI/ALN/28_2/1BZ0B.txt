@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1BZ0B
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBS-A 17.6  2.1  145   153   24   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1BZ0B Sbjct=1MBSA Z-score=17.6
+
+DSSP  lLLLHHHHHHHHHH-HLLL-LHHHHHHHHHHHHHHHLHHHHHHLHHHLLLLLHHHHHHLH
+Query vHLTPEEKSAVTAL-WGKV-NVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNP   58
+ident   |   |   |              | | | ||    | |   |  |  |   |      
+Sbjct -GLSDGEWHLVLNVwGKVEtDLAGHGQEVLIRLFKSHPETLEKFDKFKHLKSEDDMRRSE   59
+DSSP  -LLHHHHHHHHHHHhHHHHlLHHHHHHHHHHHHHHHLLHHHHHLLLLLLLLLHHHHHLLH
+
+DSSP  HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+Query KVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHF  118
+ident     ||  || |    |            |   |  |                 ||    
+Sbjct DLRKHGNTVLTALGGILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSKH  119
+DSSP  HHHHHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHL
+
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHHLLLL------
+Query GKEFTPPVQAAYQKVVAGVANALAHKYH------  146
+ident   ||    |||  |      |  | ||       
+Sbjct PAEFGADAQAAMKKALELFRNDIAAKYKelgfhg  153
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHHHHHHhhllll
+
+
+# Structural equivalences
+   1: 1BZ0-B 1MBS-A     2 -  14 <=>    1 -  13   (HIS    2  - LEU   14  <=> GLY    1  - VAL   13 )                          
+   1: 1BZ0-B 1MBS-A    15 -  18 <=>   15 -  18   (TRP   15  - VAL   18  <=> GLY   15  - GLU   18 )                          
+   1: 1BZ0-B 1MBS-A    19 - 146 <=>   20 - 147   (ASN   19  - HIS  146  <=> ASP   20  - LYS  147 )                          
+
+# Translation-rotation matrices
+-matrix  "1BZ0-B 1MBS-A  U(1,.)   0.934414 -0.030146  0.354911            7.332625"
+-matrix  "1BZ0-B 1MBS-A  U(2,.)  -0.328584  0.311658  0.891573            2.750945"
+-matrix  "1BZ0-B 1MBS-A  U(3,.)  -0.137488 -0.949716  0.281312           47.074482"
+

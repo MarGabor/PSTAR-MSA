@@ -1,0 +1,32 @@
+# Job: toxin
+# Query: 1TFSA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1COE-A  4.5  3.7   55    62   40   MOLECULE: COBROTOXIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1TFSA Sbjct=1COEA Z-score=4.5
+
+DSSP  LEEELLLLLLLLLEEELL--LLEEEEEEELLeeeeeEEEEELLLLLLLLEEEEEEELLLL
+Query RICYSHKASLPRATKTCV--ENTCYKMFIRThreyiSERGCGCPTAMWPYQTECCKGDRC   58
+ident   |     |    |  |   |  |||   |       |||||||         ||  |||
+Sbjct LECHNQQSSQTPTTTGCSggETNCYKKRWRDhrgyrTERGCGCPSVKNGIEINCCTTDRC   60
+DSSP  LLLEELLLLLLLEELLLLllLLLEEEEEELLlllleEELLLLLLLLLLLLEEEEELLLLL
+
+DSSP  LL
+Query NK   60
+ident | 
+Sbjct NN   62
+DSSP  LL
+
+
+# Structural equivalences
+   1: 1TFS-A 1COE-A     1 -  18 <=>    1 -  18   (ARG    1  - VAL   18  <=> LEU    1  - SER   18 )                          
+   1: 1TFS-A 1COE-A    19 -  29 <=>   21 -  31   (GLU   19  - THR   29  <=> GLU   21  - ASP   31 )                          
+   1: 1TFS-A 1COE-A    35 -  60 <=>   37 -  62   (SER   35  - LYS   60  <=> THR   37  - ASN   62 )                          
+
+# Translation-rotation matrices
+-matrix  "1TFS-A 1COE-A  U(1,.)  -0.984674  0.102841 -0.140858           -0.755053"
+-matrix  "1TFS-A 1COE-A  U(2,.)   0.082539  0.986263  0.143081           -0.037725"
+-matrix  "1TFS-A 1COE-A  U(3,.)   0.153638  0.129261 -0.979636           -3.592716"
+

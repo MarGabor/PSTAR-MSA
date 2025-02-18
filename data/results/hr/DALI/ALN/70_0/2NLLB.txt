@@ -1,0 +1,33 @@
+# Job: hr
+# Query: 2NLLB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HCP-A  8.6  2.4   71    75   48   MOLECULE: HUMAN/CHICKEN ESTROGEN RECEPTOR;                           
+
+# Pairwise alignments
+
+No 1: Query=2NLLB Sbjct=1HCPA Z-score=8.6
+
+DSSP  ---LLLLLLLLLLLLLEELLEELLHHHHHHHHHHHhlLLHHHLLLLLLLLLLLLlLLLL-
+Query ---DELCVVCGDKATGYHYRCITCEGCKGFFRRTIqkNLHPSYSCKYEGKCVIDkVTRN-   56
+ident       | || | | ||||    ||||| || | |    |  | |     | ||   |  
+Sbjct mkeTRYCAVCNDYASGYHYGVWSCEGCKAFFKRSI--QGHNDYMCPATNQCTID-KNRRk   57
+DSSP  lllLLLLLLLLLLLLEELLLLEELLHHHHHHHHHL--LLLLLLLLLLLLLLLLL-LLLLl
+
+DSSP  LLHHHHHHHHHHLLLLHHhlllhhhhhhhhhhhhhhllhhhhhhhhl
+Query QCQECRFKKCIYVGMATDlvlddskrlakrklieenrekrrreelek  103
+ident  || ||  ||  |||                                
+Sbjct SCQACRLRKCYEVGMMKG-----------------------------   75
+DSSP  LLHHHHHHHHHHHLLLLL-----------------------------
+
+
+# Structural equivalences
+   1: 2NLL-B 1HCP-A     1 -  32 <=>    4 -  35   (ASP  300  - ILE  331  <=> THR    4  - ILE   35 )                          
+   1: 2NLL-B 1HCP-A    35 -  51 <=>   36 -  52   (ASN  334  - ASP  350  <=> GLN   36  - ASP   52 )                          
+   1: 2NLL-B 1HCP-A    53 -  56 <=>   53 -  56   (VAL  352  - ASN  355  <=> LYS   53  - ARG   56 )                          
+   1: 2NLL-B 1HCP-A    57 -  74 <=>   58 -  75   (GLN  356  - ASP  373  <=> SER   58  - GLY   75 )                          
+
+# Translation-rotation matrices
+-matrix  "2NLL-B 1HCP-A  U(1,.)   0.213458  0.717836 -0.662682           17.493914"
+-matrix  "2NLL-B 1HCP-A  U(2,.)  -0.497242  0.663711  0.558782           -6.947895"
+-matrix  "2NLL-B 1HCP-A  U(3,.)   0.840943  0.210237  0.498613          104.978188"
+

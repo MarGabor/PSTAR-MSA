@@ -1,0 +1,1888 @@
+A length: 176
+B length: 168
+C length: 168
+D length: 177
+E length: 168
+F length: 169
+G length: 176
+H length: 168
+I length: 164
+J length: 176
+K length: 167
+L length: 173
+# 12 chains A B C D E F G H I J K L
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            176
+Total number of atoms read in:              1337
+Total number of ignored atom records:        199
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1647
+ selectset done           0
+ eigen done           0
+ tau           1   2.12086177              38         119
+ #popped           2           1
+ #selectset contacts        1647
+ selectset done           1
+ eigen done           1
+ tau           3  0.728970289              19          38
+ #popped           4           1
+ #selectset contacts        1647
+ selectset done           1
+ eigen done           1
+ tau           5  0.629472315             138
+ #popped           6           2
+ #selectset contacts        1647
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1647
+ selectset done           1
+ eigen done           1
+ tau           7   1.57938969             153
+ #popped           9           1
+ #selectset contacts        1647
+ selectset done           1
+ eigen done           1
+ tau           9  0.949804544             166
+ #popped           3           0
+ #selectset contacts        1647
+ selectset done           0
+ eigen done           0
+ tau          11  0.931431592              87          97
+ #popped          12           0
+ #selectset contacts        1647
+ selectset done           0
+ eigen done           0
+ tau          13  0.995441675              49          63
+ #popped          14           0
+ #selectset contacts        1647
+ selectset done           0
+ eigen done           0
+ tau          15  0.764715135              49          77
+ #popped          16           0
+ #selectset contacts        1647
+ selectset done           0
+ eigen done           0
+ tau          17  0.713593781              87
+ #popped          18           1
+ #selectset contacts        1647
+ selectset done           1
+ eigen done           1
+ tau          19   999.999023              49
+ #popped          19           0
+ #selectset contacts        1647
+ selectset done           0
+ eigen done           0
+ tau          21  0.552655697             108
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         176
+         176  residues read 6KR1.dssp                                                   
+  grow short strand           2           3
+ crowded segment excluded!
+  grow short strand          23          25
+  grow short strand          29          32
+  grow short strand          38          41
+  grow short strand          46          50
+  grow short strand          99         102
+  grow short strand         107         110
+  grow short strand         116         117
+  exclude short helix         120         122
+  grow short strand         123         127
+  grow short strand         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 12 13 14 15  3  4  5  6  8  9 10 11  7
+   2     1  4  5  8  1  2 12 13 14 15  3  4
+   3     1 14 15  7  5  6  8  9 10 11  7
+   4     2  6  7  6  1  2 12 13 14 15
+   5     2  0  0  2  3  4
+   6     4  0  0  4  1  2 12 13
+   7     4 10 11  2 14 15
+   8     0  0  0  0
+   9     0  0  0  2 14 15
+  10     7  0  0  1 14
+  11     7  0  0  1 15
+  12     0  0  0  7  5  6  8  9 10 11  7
+  13     0  0  0  0
+  14     3 18 19  6  5  6  8  9 10 11
+  15     3  0  0  1  7
+  16     0  0  0  6  5  6  8  9 10 11
+  17     0  0  0  0
+  18    14 20 21  3  5  6  8
+  19    14 22 23  3  9 10 11
+  20    18  0  0  2  5  6
+  21    18  0  0  1  8
+  22    19  0  0  2  9 10
+  23    19  0  0  1 11
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  2  1  4 12 15
+   3 -   1 10 11  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  0  0  4  2  1  2 12 13
+   7 -   4  8  9  2  1 14 15
+   8 -   7  0  0  1  1 14 14
+   9 -   7  0  0  1  1 15 15
+  10 -   3 12 13  6  2  5  6  8 11
+  11 -   3  0  0  1  1  7  7
+  12 -  10 14 15  3  2  5  6  8  8
+  13 -  10 16 17  3  1  9 11
+  14 -  12  0  0  2  1  5  6
+  15 -  12  0  0  1  1  8  8
+  16 -  13  0  0  2  1  9 10
+  17 -  13  0  0  1  1 11 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            168
+Total number of atoms read in:              1276
+Total number of ignored atom records:        159
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         168  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau           1   2.29292703              31         112
+ #popped           2           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau           3  0.730824053             126         144
+ #popped           4           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau           5  0.278873026              11
+ #popped           7           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau           7   1.90261281              31         155
+ #popped           8           2
+ #selectset contacts        1553
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           9           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau           9   5.52809000             126
+ #popped           3           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau          11  0.834594667              79          89
+ #popped          12           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau          13  0.910894513              45          66
+ #popped          14           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau          15  0.590135694              79
+ #popped          16           2
+ #selectset contacts        1553
+ selectset done           2
+ eigen done           2
+ tau          17   53.7488365              45
+ #popped          17           1
+ #selectset contacts        1553
+ selectset done           1
+ eigen done           1
+ tau          19  0.559006214             101
+ #popped          15           0
+ #selectset contacts        1553
+ selectset done           0
+ eigen done           0
+ tau          21  0.982248545              56
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         168
+         168  residues read 6KR1.dssp                                                   
+  grow short strand          31          34
+  grow short strand          39          43
+  grow short strand          92          95
+  grow short strand         100         103
+  grow short strand         109         110
+  grow short strand         115         118
+  grow short strand         164         167
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2 13 10 12 11  3  4  6  7  8  9  5
+   2     1  4  5  6  1  2 13 10 12 11
+   3     1 14 15  7  3  4  6  7  8  9  5
+   4     2  6  7  5  1  2 13 10 12
+   5     2  0  0  1 11
+   6     4  0  0  1  1
+   7     4  8  9  4  2 13 10 12
+   8     7  0  0  2  2 13
+   9     7 10 11  2 10 12
+  10     9  0  0  1 10
+  11     9  0  0  1 12
+  12     0  0  0  7  3  4  6  7  8  9  5
+  13     0  0  0  0
+  14     3 16 17  6  3  4  6  7  8  9
+  15     3  0  0  1  5
+  16    14 18 19  3  3  4  6
+  17    14 20 21  3  7  8  9
+  18    16  0  0  2  3  4
+  19    16  0  0  1  6
+  20    17  0  0  2  7  8
+  21    17  0  0  1  9
+  22     0  0  0  1  5
+  23     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  6  2  1  2 10 13
+   3 -   1 12 13  7  1  3  9
+   4 -   2  6  7  5  3  1  2 10 10 12 13
+   5 -   2  0  0  1  1 11 11
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  3  2  2 10 10 12 13
+   8 -   7  0  0  2  2  2  2 13 13
+   9 -   7 10 11  2  2 10 10 12 12
+  10 -   9  0  0  1  1 10 10
+  11 -   9  0  0  1  1 12 12
+  12 -   3 14 15  6  2  3  4  6  9
+  13 -   3  0  0  1  1  5  5
+  14 -  12 16 17  3  2  3  4  6  6
+  15 -  12 18 19  3  1  7  9
+  16 -  14  0  0  2  1  3  4
+  17 -  14  0  0  1  1  6  6
+  18 -  15  0  0  2  1  7  8
+  19 -  15  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            168
+Total number of atoms read in:              1273
+Total number of ignored atom records:        153
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         168  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau           1   2.44685125              18          31
+ #popped           2           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau           3   1.90188313              32         115
+ #popped           4           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau           5  0.750020683             134         144
+ #popped           6           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau           7  0.614416480             134
+ #popped           8           2
+ #selectset contacts        1534
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           9           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           5           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau           9  0.948229313              84          94
+ #popped          10           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau          11  0.845183849              61          84
+ #popped          12           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          13  0.760704935             105
+ #popped          14           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          15   1.02523661              46          61
+ #popped          16           1
+ #selectset contacts        1534
+ selectset done           1
+ eigen done           1
+ tau          17  0.651666641              46
+ #popped          13           0
+ #selectset contacts        1534
+ selectset done           0
+ eigen done           0
+ tau          19  0.771929801              71
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         168
+         168  residues read 6KR1.dssp                                                   
+  grow short strand          28          32
+  grow short strand          35          38
+  grow short strand          43          47
+  grow short strand          96          99
+  grow short strand         104         107
+  grow short strand         113         114
+  grow short strand         120         123
+  grow short strand         163         167
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2 11 12 13 14  4  5  8  9  6 10  7  3
+   2     1  4  5 13  1  2 11 12 13 14  4  5  8  9  6 10  7
+   3     1  0  0  1  3
+   4     2  8  9  6  1  2 11 12 13 14
+   5     2 12 13  7  4  5  8  9  6 10  7
+   6     0  0  0  6  1  2 11 12 13 14
+   7     0  0  0  0
+   8     4  0  0  4  1  2 11 12
+   9     4  0  0  2 13 14
+  10     0  0  0  7  4  5  8  9  6 10  7
+  11     0  0  0  0
+  12     5 14 15  6  4  5  8  9  6 10
+  13     5  0  0  1  7
+  14    12 16 17  5  4  5  8  9  6
+  15    12  0  0  1 10
+  16    14 18 19  4  4  5  8  9
+  17    14  0  0  1  6
+  18    16  0  0  2  4  5
+  19    16  0  0  2  8  9
+  20     0  0  0  0
+  21     0  0  0  1  7
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5 13  2  1  2  4 14
+   3 =   1  0  0  1  1  3  3
+   4 -   2  6  7  6  2  1  2 11 14
+   5 -   2  8  9  7  1  4 10
+   6 -   4  0  0  4  2  1  2 11 12
+   7 -   4  0  0  2  1 13 14
+   8 -   5 10 11  6  2  4  6  8 10
+   9 -   5  0  0  1  1  7  7
+  10 -   8 12 13  5  2  4  6  8  9
+  11 -   8  0  0  1  1 10 10
+  12 -  10 14 15  4  2  4  5  8  9
+  13 -  10  0  0  1  1  6  6
+  14 -  12  0  0  2  1  4  5
+  15 -  12  0  0  2  1  8  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            177
+Total number of atoms read in:              1344
+Total number of ignored atom records:        213
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         177  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau           1   2.30975437              38         120
+ #popped           2           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau           3  0.757345498              21          38
+ #popped           4           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau           5  0.594510436             131
+ #popped           6           2
+ #selectset contacts        1631
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau           7   1.82462800             148
+ #popped           9           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau           9   1.02372718              50         100
+ #popped          10           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau          11   1.30391932             109
+ #popped          12           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau          13  0.547379673              49
+ #popped          11           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau          15  0.999965072              89
+ #popped          16           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau          17   1.25935805              63
+ #popped          19           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau          19  0.845945120              74
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         177
+         177  residues read 6KR1.dssp                                                   
+  grow short strand           2           4
+ crowded segment excluded!
+  grow short strand          24          26
+  grow short strand          30          33
+  grow short strand          39          42
+  grow short strand          47          51
+  grow short strand         100         103
+  grow short strand         108         111
+  grow short strand         117         118
+  exclude short helix         121         123
+  grow short strand         124         128
+  grow short strand         173         176
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 12 13 14 15  3  4  5  6  9 10 11  7  8
+   2     1  4  5  8  1  2 12 13 14 15  3  4
+   3     1 10 11  7  5  6  9 10 11  7  8
+   4     2  6  7  6  1  2 12 13 14 15
+   5     2  0  0  2  3  4
+   6     4  0  0  3  1  2 12
+   7     4  8  9  3 13 14 15
+   8     7  0  0  1 13
+   9     7  0  0  2 14 15
+  10     3 12 13  5  5  6  9 10 11
+  11     3 18 19  2  7  8
+  12    10 14 15  4  5  6  9 10
+  13    10  0  0  1 11
+  14    12  0  0  2  5  6
+  15    12  0  0  2  9 10
+  16     0  0  0  2  7  8
+  17     0  0  0  0
+  18    11  0  0  1  7
+  19    11  0  0  1  8
+  20     0  0  0  0
+  21     0  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  2  1  4 12 15
+   3 -   1 10 11  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  0  0  3  2  1  2 12 12
+   7 -   4  8  9  3  1 13 15
+   8 -   7  0  0  1  1 13 13
+   9 -   7  0  0  2  1 14 15
+  10 -   3 12 13  5  2  5  6  9 11
+  11 -   3 16 17  2  1  7  8
+  12 -  10 14 15  4  2  5  6  9 10
+  13 -  10  0  0  1  1 11 11
+  14 -  12  0  0  2  1  5  6
+  15 -  12  0  0  2  1  9 10
+  16 -  11  0  0  1  1  7  7
+  17 -  11  0  0  1  1  8  8
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            168
+Total number of atoms read in:              1277
+Total number of ignored atom records:        119
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         168  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1566
+ selectset done           0
+ eigen done           0
+ tau           1   2.32818699              32         113
+ #popped           2           1
+ #selectset contacts        1566
+ selectset done           1
+ eigen done           1
+ tau           3  0.723514199             129         144
+ #popped           4           1
+ #selectset contacts        1566
+ selectset done           1
+ eigen done           1
+ tau           5  0.280649543              11
+ #popped           7           1
+ #selectset contacts        1566
+ selectset done           1
+ eigen done           1
+ tau           7   2.15038896              32         156
+ #popped           8           2
+ #selectset contacts        1566
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           9           1
+ #selectset contacts        1566
+ selectset done           1
+ eigen done           1
+ tau           9   2.25978565             129
+ #popped           3           0
+ #selectset contacts        1566
+ selectset done           0
+ eigen done           0
+ tau          11  0.947011232              43          92
+ #popped          12           1
+ #selectset contacts        1566
+ selectset done           1
+ eigen done           1
+ tau          13  0.813767731             102
+ #popped          14           1
+ #selectset contacts        1566
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          13           0
+ #selectset contacts        1566
+ selectset done           0
+ eigen done           0
+ tau          15   1.08956397              56          82
+ #popped          16           1
+ #selectset contacts        1566
+ selectset done           1
+ eigen done           1
+ tau          17   2.64803386              56
+ #popped          17           0
+ #selectset contacts        1566
+ selectset done           0
+ eigen done           0
+ tau          19  0.971270323              67
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         168
+         168  residues read 6KR1.dssp                                                   
+  grow short strand          32          35
+  grow short strand          40          44
+  grow short strand          93          96
+  grow short strand         101         104
+  grow short strand         110         111
+  grow short strand         115         118
+  grow short strand         164         167
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2 13 10 11 12  3  4  7  8  9  5  6
+   2     1  6  7  6  1  2 13 10 11 12
+   3     1 12 13  7  3  4  7  8  9  5  6
+   4     0  0  0  6  1  2 13 10 11 12
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  8  9  5  2 13 10 11 12
+   8     7  0  0  2  2 13
+   9     7 10 11  3 10 11 12
+  10     9  0  0  2 10 11
+  11     9  0  0  1 12
+  12     3 14 15  5  3  4  7  8  9
+  13     3 16 17  2  5  6
+  14    12  0  0  4  3  4  7  8
+  15    12  0  0  1  9
+  16    13  0  0  1  5
+  17    13  0  0  1  6
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  6
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  6  2  1  2 10 13
+   3 -   1 10 11  7  1  3  9
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  5  2  2  2 10 13
+   6 -   5  0  0  2  2  2  2 13 13
+   7 -   5  8  9  3  1 10 12
+   8 -   7  0  0  2  1 10 11
+   9 -   7  0  0  1  1 12 12
+  10 -   3 12 13  5  2  3  4  7  9
+  11 -   3 14 15  2  1  5  6
+  12 -  10  0  0  4  2  3  4  7  8
+  13 -  10  0  0  1  1  9  9
+  14 -  11  0  0  1  1  5  5
+  15 -  11  0  0  1  1  6  6
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            169
+Total number of atoms read in:              1281
+Total number of ignored atom records:        169
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         169  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1536
+ selectset done           0
+ eigen done           0
+ tau           1   2.10501146              33         116
+ #popped           2           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau           3   1.71702564              17          33
+ #popped           4           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau           5  0.666445017             133         149
+ #popped           6           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1536
+ selectset done           0
+ eigen done           0
+ tau           7   1.12171292              58          93
+ #popped           8           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau           9   1.00551665              48          58
+ #popped          10           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau          11  0.747330964             105
+ #popped          12           1
+ #selectset contacts        1536
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           9           0
+ #selectset contacts        1536
+ selectset done           0
+ eigen done           0
+ tau          13   1.26896918              82
+ #popped          14           0
+ #selectset contacts        1536
+ selectset done           0
+ eigen done           0
+ tau          15  0.793729961              70
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         169
+         169  residues read 6KR1.dssp                                                   
+  grow short strand          28          32
+  grow short strand          35          38
+  grow short strand          43          47
+  exclude short helix          89          91
+  grow short strand          96          99
+  grow short strand         104         107
+  grow short strand         113         114
+  grow short strand         120         123
+  grow short strand         164         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2 11 12 13 14  3  4  5  8  9 10  6  7
+   2     1  4  5  7  1  2 11 12 13 14  3
+   3     1  8  9  7  4  5  8  9 10  6  7
+   4     2  0  0  6  1  2 11 12 13 14
+   5     2  0  0  1  3
+   6     0  0  0  6  1  2 11 12 13 14
+   7     0  0  0  0
+   8     3 12 13  5  4  5  8  9 10
+   9     3 16 17  2  6  7
+  10     0  0  0  5  4  5  8  9 10
+  11     0  0  0  0
+  12     8  0  0  4  4  5  8  9
+  13     8  0  0  1 10
+  14     0  0  0  2  6  7
+  15     0  0  0  0
+  16     9  0  0  1  6
+  17     9  0  0  1  7
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  7  2  1  3 11 14
+   3 -   1  6  7  7  1  4 10
+   4 -   2  0  0  6  2  1  2 11 14
+   5 -   2  0  0  1  1  3  3
+   6 -   3  8  9  5  2  4  5  8 10
+   7 -   3 10 11  2  1  6  7
+   8 -   6  0  0  4  2  4  5  8  9
+   9 -   6  0  0  1  1 10 10
+  10 -   7  0  0  1  1  6  6
+  11 -   7  0  0  1  1  7  7
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            176
+Total number of atoms read in:              1337
+Total number of ignored atom records:        217
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau           1   2.29638147              38         119
+ #popped           2           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau           3  0.715386987              19          38
+ #popped           4           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau           5  0.629472315             138
+ #popped           6           2
+ #selectset contacts        1631
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau           7   1.57938969             153
+ #popped           9           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau           9  0.929595947             166
+ #popped           3           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau          11  0.895130932              86          97
+ #popped          12           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau          13  0.946584344              49          63
+ #popped          14           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau          15  0.740174413              73
+ #popped          16           1
+ #selectset contacts        1631
+ selectset done           1
+ eigen done           1
+ tau          17   1.47287762              49
+ #popped          17           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau          19   1.32224333              86
+ #popped          21           0
+ #selectset contacts        1631
+ selectset done           0
+ eigen done           0
+ tau          21  0.552655697             108
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         176
+         176  residues read 6KR1.dssp                                                   
+  grow short strand           2           3
+ crowded segment excluded!
+  grow short strand          23          25
+  grow short strand          29          32
+  grow short strand          38          41
+  grow short strand          46          50
+  exclude short helix          90          93
+  grow short strand          99         102
+  grow short strand         107         110
+  grow short strand         116         117
+  exclude short helix         120         122
+  grow short strand         123         127
+  grow short strand         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 12 13 14 15  3  4  5  6  8  9 10 11  7
+   2     1  4  5  8  1  2 12 13 14 15  3  4
+   3     1 14 15  7  5  6  8  9 10 11  7
+   4     2  6  7  6  1  2 12 13 14 15
+   5     2  0  0  2  3  4
+   6     4  0  0  4  1  2 12 13
+   7     4 10 11  2 14 15
+   8     0  0  0  0
+   9     0  0  0  2 14 15
+  10     7  0  0  1 14
+  11     7  0  0  1 15
+  12     0  0  0  7  5  6  8  9 10 11  7
+  13     0  0  0  0
+  14     3 16 17  6  5  6  8  9 10 11
+  15     3  0  0  1  7
+  16    14  0  0  2  5  6
+  17    14 20 21  4  8  9 10 11
+  18     0  0  0  2  5  6
+  19     0  0  0  0
+  20    17  0  0  1  8
+  21    17 22 23  3  9 10 11
+  22    21  0  0  2  9 10
+  23    21  0  0  1 11
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  2  1  4 12 15
+   3 -   1 10 11  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  0  0  4  2  1  2 12 13
+   7 -   4  8  9  2  1 14 15
+   8 -   7  0  0  1  1 14 14
+   9 -   7  0  0  1  1 15 15
+  10 -   3 12 13  6  2  5  6  8 11
+  11 -   3  0  0  1  1  7  7
+  12 -  10  0  0  2  1  5  6
+  13 -  10 14 15  4  1  8 11
+  14 -  13  0  0  1  1  8  8
+  15 -  13 16 17  3  1  9 11
+  16 -  15  0  0  2  1  9 10
+  17 -  15  0  0  1  1 11 11
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            168
+Total number of atoms read in:              1273
+Total number of ignored atom records:        163
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         168  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau           1   2.21381783              18          31
+ #popped           2           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau           3   1.92724156              32         115
+ #popped           4           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau           5  0.855058551             125         150
+ #popped           6           2
+ #selectset contacts        1531
+ selectset done           2
+ eigen done           2
+ tau           7  0.350442469              32
+ #popped           9           2
+ #selectset contacts        1531
+ selectset done           2
+ eigen done           2
+ tau           9   999.999023             125
+ #popped           7           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau          11   1.87605083             140
+ #popped           5           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau          13  0.881461382              85          95
+ #popped          14           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau          15  0.714873612              72
+ #popped          16           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau          17   1.22786462              46
+ #popped          19           1
+ #selectset contacts        1531
+ selectset done           1
+ eigen done           1
+ tau          19   1.31257033              60
+ #popped          17           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau          21   1.47585654              85
+ #popped          23           0
+ #selectset contacts        1531
+ selectset done           0
+ eigen done           0
+ tau          23  0.521647096             105
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         168
+         168  residues read 6KR1.dssp                                                   
+  grow short strand          28          32
+  grow short strand          35          38
+  grow short strand          43          47
+  grow short strand          96          99
+  grow short strand         104         107
+  grow short strand         113         114
+  grow short strand         120         123
+  grow short strand         163         167
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2 11 13 14 12  4  5  6  7  8  9 10  3
+   2     1  4  5 13  1  2 11 13 14 12  4  5  6  7  8  9 10
+   3     1  0  0  1  3
+   4     2  6  7  6  1  2 11 13 14 12
+   5     2 16 17  7  4  5  6  7  8  9 10
+   6     4  8  9  5  1  2 11 13 14
+   7     4  0  0  1 12
+   8     6  0  0  2  1  2
+   9     6 10 11  3 11 13 14
+  10     9  0  0  1 11
+  11     9  0  0  2 13 14
+  12     0  0  0  1 12
+  13     0  0  0  0
+  14     0  0  0  7  4  5  6  7  8  9 10
+  15     0  0  0  0
+  16     5 18 19  3  4  5  6
+  17     5 22 23  4  7  8  9 10
+  18    16  0  0  2  4  5
+  19    16  0  0  1  6
+  20     0  0  0  1  6
+  21     0  0  0  0
+  22    17  0  0  1  7
+  23    17 24 25  3  8  9 10
+  24    23  0  0  2  8  9
+  25    23  0  0  1 10
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5 13  2  1  2  4 14
+   3 =   1  0  0  1  1  3  3
+   4 -   2  6  7  6  2  1  2 11 14
+   5 -   2 12 13  7  1  4 10
+   6 -   4  8  9  5  3  1  2 11 11 13 14
+   7 -   4  0  0  1  1 12 12
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  3  2 11 11 13 14
+  10 -   9  0  0  1  1 11 11
+  11 -   9  0  0  2  1 13 14
+  12 -   5 14 15  3  1  4  6
+  13 -   5 16 17  4  1  7 10
+  14 -  12  0  0  2  1  4  5
+  15 -  12  0  0  1  1  6  6
+  16 -  13  0  0  1  1  7  7
+  17 -  13 18 19  3  1  8 10
+  18 -  17  0  0  2  1  8  9
+  19 -  17  0  0  1  1 10 10
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            164
+Total number of atoms read in:              1244
+Total number of ignored atom records:        143
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         164  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1517
+ selectset done           0
+ eigen done           0
+ tau           1   2.03614998              32         107
+ #popped           2           1
+ #selectset contacts        1517
+ selectset done           1
+ eigen done           1
+ tau           3  0.672017694             125         135
+ #popped           4           1
+ #selectset contacts        1517
+ selectset done           1
+ eigen done           1
+ tau           5  0.468811840              32
+ #popped           6           2
+ #selectset contacts        1517
+ selectset done           2
+ eigen done           2
+ tau           7  0.424414724              11
+ #popped           9           2
+ #selectset contacts        1517
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1517
+ selectset done           1
+ eigen done           1
+ tau           9   4.29039669             125
+ #popped          11           1
+ #selectset contacts        1517
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1517
+ selectset done           0
+ eigen done           0
+ tau          11  0.764641404              42
+ #popped          13           0
+ #selectset contacts        1517
+ selectset done           0
+ eigen done           0
+ tau          13  0.976882756              67
+ #popped          14           1
+ #selectset contacts        1517
+ selectset done           1
+ eigen done           1
+ tau          15   1.07512951              57
+ #popped          15           0
+ #selectset contacts        1517
+ selectset done           0
+ eigen done           0
+ tau          17  0.513888001              96
+ #popped          18           0
+ #selectset contacts        1517
+ selectset done           0
+ eigen done           0
+ tau          19   2.78551078              81
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         164
+         164  residues read 6KR1.dssp                                                   
+  grow short strand          32          35
+  grow short strand          40          44
+  grow short strand          87          90
+  grow short strand          95          98
+  grow short strand         104         105
+  grow short strand         111         114
+  grow short strand         159         163
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2 10 11 12 13  3  4  5  6  7  8  9
+   2     1  6  7  6  1  2 10 11 12 13
+   3     1 12 13  7  3  4  5  6  7  8  9
+   4     0  0  0  6  1  2 10 11 12 13
+   5     0  0  0  0
+   6     2  8  9  2  1  2
+   7     2 10 11  4 10 11 12 13
+   8     6  0  0  1  1
+   9     6  0  0  1  2
+  10     7  0  0  2 10 11
+  11     7  0  0  2 12 13
+  12     3  0  0  2  3  4
+  13     3 14 15  5  5  6  7  8  9
+  14    13  0  0  1  5
+  15    13 18 19  4  6  7  8  9
+  16     0  0  0  1  5
+  17     0  0  0  0
+  18    15 20 21  3  6  7  8
+  19    15  0  0  1  9
+  20    18  0  0  1  6
+  21    18  0  0  2  7  8
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  6  2  1  2 10 13
+   3 -   1 10 11  7  1  3  9
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  4  1 10 13
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  2  1 10 11
+   9 -   5  0  0  2  1 12 13
+  10 -   3  0  0  2  1  3  4
+  11 -   3 12 13  5  1  5  9
+  12 -  11  0  0  1  1  5  5
+  13 -  11 14 15  4  1  6  9
+  14 -  13 16 17  3  1  6  8
+  15 -  13  0  0  1  1  9  9
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  2  1  7  8
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            176
+Total number of atoms read in:              1337
+Total number of ignored atom records:        183
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau           1   2.50621319              37         119
+ #popped           2           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           3  0.896508157              20          37
+ #popped           4           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           5  0.576298714             129
+ #popped           6           2
+ #selectset contacts        1629
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           7   1.90140843             147
+ #popped           9           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           9   1.06489360             166
+ #popped           3           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          11  0.999552131              87          97
+ #popped          12           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          13  0.943558216              49          63
+ #popped          14           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          15  0.787610650              73
+ #popped          16           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau          17   1.58206260              49
+ #popped          17           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          19   1.29197073              87
+ #popped          21           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          21  0.577401459             108
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         176
+         176  residues read 6KR1.dssp                                                   
+  grow short strand          23          25
+  grow short strand          29          32
+  grow short strand          38          41
+  grow short strand          46          50
+  grow short strand          99         102
+  grow short strand         107         110
+  grow short strand         116         117
+  exclude short helix         120         122
+  grow short strand         123         126
+  grow short strand         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 12 13 14 15  3  4  5  6  8  9 10 11  7
+   2     1  4  5  8  1  2 12 13 14 15  3  4
+   3     1 14 15  7  5  6  8  9 10 11  7
+   4     2  6  7  6  1  2 12 13 14 15
+   5     2  0  0  2  3  4
+   6     4  0  0  3  1  2 12
+   7     4  8  9  3 13 14 15
+   8     7  0  0  1 13
+   9     7 10 11  2 14 15
+  10     9  0  0  1 14
+  11     9  0  0  1 15
+  12     0  0  0  7  5  6  8  9 10 11  7
+  13     0  0  0  0
+  14     3 16 17  6  5  6  8  9 10 11
+  15     3  0  0  1  7
+  16    14  0  0  2  5  6
+  17    14 20 21  4  8  9 10 11
+  18     0  0  0  2  5  6
+  19     0  0  0  0
+  20    17  0  0  1  8
+  21    17 22 23  3  9 10 11
+  22    21  0  0  2  9 10
+  23    21  0  0  1 11
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  2  1  4 12 15
+   3 -   1 12 13  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  0  0  3  2  1  2 12 12
+   7 -   4  8  9  3  1 13 15
+   8 -   7  0  0  1  1 13 13
+   9 -   7 10 11  2  1 14 15
+  10 -   9  0  0  1  1 14 14
+  11 -   9  0  0  1  1 15 15
+  12 -   3 14 15  6  2  5  6  8 11
+  13 -   3  0  0  1  1  7  7
+  14 -  12  0  0  2  1  5  6
+  15 -  12 16 17  4  1  8 11
+  16 -  15  0  0  1  1  8  8
+  17 -  15 18 19  3  1  9 11
+  18 -  17  0  0  2  1  9 10
+  19 -  17  0  0  1  1 11 11
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1267
+Total number of ignored atom records:        177
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1509
+ selectset done           0
+ eigen done           0
+ tau           1   2.06860662              34         115
+ #popped           2           1
+ #selectset contacts        1509
+ selectset done           1
+ eigen done           1
+ tau           3   1.87974226              17          34
+ #popped           4           1
+ #selectset contacts        1509
+ selectset done           1
+ eigen done           1
+ tau           5  0.688416541             132         150
+ #popped           6           1
+ #selectset contacts        1509
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1509
+ selectset done           0
+ eigen done           0
+ tau           7  0.894926786              83          93
+ #popped           8           0
+ #selectset contacts        1509
+ selectset done           0
+ eigen done           0
+ tau           9  0.664960563              45
+ #popped          11           0
+ #selectset contacts        1509
+ selectset done           0
+ eigen done           0
+ tau          11  0.779832184              67
+ #popped          12           1
+ #selectset contacts        1509
+ selectset done           1
+ eigen done           1
+ tau          13  0.779175520              57
+ #popped          13           0
+ #selectset contacts        1509
+ selectset done           0
+ eigen done           0
+ tau          15   1.48724914              83
+ #popped          17           0
+ #selectset contacts        1509
+ selectset done           0
+ eigen done           0
+ tau          17  0.519480467             105
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         167
+         167  residues read 6KR1.dssp                                                   
+  grow short strand          28          32
+  grow short strand          35          38
+  grow short strand          43          47
+  exclude short helix          89          91
+  grow short strand          96          99
+  grow short strand         104         107
+  grow short strand         113         114
+  grow short strand         120         124
+  grow short strand         162         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2 11 13 14 12  3  4  5  6  7  8  9 10
+   2     1  4  5  7  1  2 11 13 14 12  3
+   3     1 10 11  7  4  5  6  7  8  9 10
+   4     2  6  7  6  1  2 11 13 14 12
+   5     2  0  0  1  3
+   6     4  0  0  5  1  2 11 13 14
+   7     4  0  0  1 12
+   8     0  0  0  7  4  5  6  7  8  9 10
+   9     0  0  0  0
+  10     3  0  0  2  4  5
+  11     3 12 13  5  6  7  8  9 10
+  12    11  0  0  1  6
+  13    11 16 17  4  7  8  9 10
+  14     0  0  0  0
+  15     0  0  0  1  6
+  16    13  0  0  1  7
+  17    13 18 19  3  8  9 10
+  18    17  0  0  2  8  9
+  19    17  0  0  1 10
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  7  2  1  3 11 14
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  6  2  1  2 11 14
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  5  3  1  2 11 11 13 14
+   7 -   4  0  0  1  1 12 12
+   8 -   3  0  0  2  1  4  5
+   9 -   3 10 11  5  1  6 10
+  10 -   9  0  0  1  1  6  6
+  11 -   9 12 13  4  1  7 10
+  12 -  11  0  0  1  1  7  7
+  13 -  11 14 15  3  1  8 10
+  14 -  13  0  0  2  1  8  9
+  15 -  13  0  0  1  1 10 10
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            173
+Total number of atoms read in:              1314
+Total number of ignored atom records:        129
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.-C.HA,S.JEONG                                                       
+  Reading DSSP file
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+         173  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1592
+ selectset done           0
+ eigen done           0
+ tau           1   2.42975378              35         117
+ #popped           2           1
+ #selectset contacts        1592
+ selectset done           1
+ eigen done           1
+ tau           3   1.06360412              16          35
+ #popped           4           1
+ #selectset contacts        1592
+ selectset done           1
+ eigen done           1
+ tau           5  0.602859080             135
+ #popped           6           2
+ #selectset contacts        1592
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1592
+ selectset done           1
+ eigen done           1
+ tau           7   1.47857761             150
+ #popped           9           1
+ #selectset contacts        1592
+ selectset done           1
+ eigen done           1
+ tau           9  0.992977500             163
+ #popped           3           0
+ #selectset contacts        1592
+ selectset done           0
+ eigen done           0
+ tau          11   1.08974528              49          93
+ #popped          12           1
+ #selectset contacts        1592
+ selectset done           1
+ eigen done           1
+ tau          13  0.868758678             105
+ #popped          14           1
+ #selectset contacts        1592
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          13           0
+ #selectset contacts        1592
+ selectset done           0
+ eigen done           0
+ tau          15   1.34480917              70
+ #popped          16           1
+ #selectset contacts        1592
+ selectset done           1
+ eigen done           1
+ tau          17  0.898652911              60
+ #popped          17           0
+ #selectset contacts        1592
+ selectset done           0
+ eigen done           0
+ tau          19   1.05423141              81
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               20-AUG-19   6KR1              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: STAPHYLOCOCCUS AUREUS (STRAIN MU50 / A          AUTHOR    N.-C.HA,S.JEONG                                                       
+           0
+         173
+         173  residues read 6KR1.dssp                                                   
+  grow short strand          35          38
+  grow short strand          43          47
+  grow short strand          96          99
+  grow short strand         104         107
+  grow short strand         113         114
+  grow short strand         120         124
+  grow short strand         168         172
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2 10 11 12 13  3  4  7  8  9  5  6
+   2     1  6  7  6  1  2 10 11 12 13
+   3     1 12 13  7  3  4  7  8  9  5  6
+   4     0  0  0  6  1  2 10 11 12 13
+   5     0  0  0  0
+   6     2  0  0  4  1  2 10 11
+   7     2 10 11  2 12 13
+   8     0  0  0  0
+   9     0  0  0  2 12 13
+  10     7  0  0  1 12
+  11     7  0  0  1 13
+  12     3 14 15  5  3  4  7  8  9
+  13     3 16 17  2  5  6
+  14    12  0  0  4  3  4  7  8
+  15    12  0  0  1  9
+  16    13  0  0  1  5
+  17    13  0  0  1  6
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20     0  0  0  1  6
+  21     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  6  2  1  2 10 13
+   3 -   1  8  9  7  1  3  9
+   4 -   2  0  0  4  2  1  2 10 11
+   5 -   2  6  7  2  1 12 13
+   6 -   5  0  0  1  1 12 12
+   7 -   5  0  0  1  1 13 13
+   8 -   3 10 11  5  2  3  4  7  9
+   9 -   3 12 13  2  1  5  6
+  10 -   8  0  0  4  2  3  4  7  8
+  11 -   8  0  0  1  1  9  9
+  12 -   9  0  0  1  1  5  5
+  13 -   9  0  0  1  1  6  6
+
+ CHAIN : 6KR1A
+ CHAIN : 6KR1B
+ CHAIN : 6KR1C
+ CHAIN : 6KR1D
+ CHAIN : 6KR1E
+ CHAIN : 6KR1F
+ CHAIN : 6KR1G
+ CHAIN : 6KR1H
+ CHAIN : 6KR1I
+ CHAIN : 6KR1J
+ CHAIN : 6KR1K
+ CHAIN : 6KR1L
+

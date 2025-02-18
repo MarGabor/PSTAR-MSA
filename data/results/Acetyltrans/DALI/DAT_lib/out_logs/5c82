@@ -1,0 +1,155 @@
+A length: 165
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  191  N  BASP A  33 
+ Alternate location indication is not blank or A, ignore atom:  193  CA BASP A  33 
+ Alternate location indication is not blank or A, ignore atom:  195  C  BASP A  33 
+ Alternate location indication is not blank or A, ignore atom:  197  O  BASP A  33 
+ Alternate location indication is not blank or A, ignore atom:  199  CB BASP A  33 
+ Alternate location indication is not blank or A, ignore atom:  201  CG BASP A  33 
+ Alternate location indication is not blank or A, ignore atom:  203  OD1BASP A  33 
+ Alternate location indication is not blank or A, ignore atom:  205  OD2BASP A  33 
+
+Total number of residues read in:            170
+Total number of atoms read in:              1299
+Total number of ignored atom records:        204
+ HEADER    TRANSFERASE                             25-JUN-15   5C82              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.KUMAR,A.GHOSH,B.TANEJA,K.CHAKRABORTY                                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             25-JUN-15   5C82              COMPND   2 MOLECULE: NOURSEOTHRICIN ACETYLTRANSFERASE;                          SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES NOURSEI;                           AUTHOR    D.KUMAR,A.GHOSH,B.TANEJA,K.CHAKRABORTY                                
+         170  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1445
+ selectset done           0
+ eigen done           0
+ tau           1   2.21628809              22          55
+ #popped           2           1
+ #selectset contacts        1445
+ selectset done           1
+ eigen done           1
+ tau           3   1.63117218              77          88         117
+ #popped           4           2
+ #selectset contacts        1445
+ selectset done           2
+ eigen done           2
+ tau           5   1.77686846             100
+ #popped           6           2
+ #selectset contacts        1445
+ selectset done           2
+ eigen done           2
+ tau           7  0.593721926              77
+ #popped           8           2
+ #selectset contacts        1445
+ selectset done           2
+ eigen done           2
+ tau           9   1.00513530              12          22
+ #popped          10           2
+ #selectset contacts        1445
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1445
+ selectset done           1
+ eigen done           1
+ tau          11  0.879619777             149         160
+ #popped          12           1
+ #selectset contacts        1445
+ selectset done           1
+ eigen done           1
+ tau          13  0.401125342             132
+ #popped          14           2
+ #selectset contacts        1445
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        1445
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1445
+ selectset done           0
+ eigen done           0
+ tau          15  0.552686393              45
+ #popped          16           0
+ #selectset contacts        1445
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             25-JUN-15   5C82              COMPND   2 MOLECULE: NOURSEOTHRICIN ACETYLTRANSFERASE;                          SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES NOURSEI;                           AUTHOR    D.KUMAR,A.GHOSH,B.TANEJA,K.CHAKRABORTY                                
+           0
+         170
+         170  residues read 5C82.dssp                                                   
+  grow short strand           4           7
+  exclude short helix          95          97
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  5  6  2  7  8  9 10 11 12  3  4
+   2     1  4  5 10  1  5  6  2  7  8  9 10 11 12
+   3     1  0  0  2  3  4
+   4     2  6  7  6  1  5  6  2  7  8
+   5     2 14 15  4  9 10 11 12
+   6     4  8  9  5  1  5  6  2  7
+   7     4  0  0  1  8
+   8     6 10 11  4  1  5  6  2
+   9     6  0  0  1  7
+  10     8  0  0  3  1  5  6
+  11     8  0  0  1  2
+  12     0  0  0  4  9 10 11 12
+  13     0  0  0  0
+  14     5  0  0  1  9
+  15     5  0  0  3 10 11 12
+  16     0  0  0  2  3  4
+  17     0  0  0  0
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5 10  2  1  2  5 12
+   3 =   1  0  0  2  1  3  4
+   4 -   2  6  7  6  2  1  2  5  8
+   5 -   2 12 13  4  1  9 12
+   6 -   4  8  9  5  2  1  2  5  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  4  2  1  2  5  6
+   9 -   6  0  0  1  1  7  7
+  10 -   8  0  0  3  2  1  1  5  6
+  11 -   8  0  0  1  1  2  2
+  12 -   5  0  0  1  1  9  9
+  13 -   5  0  0  3  1 10 12
+
+ CHAIN : 5C82A
+

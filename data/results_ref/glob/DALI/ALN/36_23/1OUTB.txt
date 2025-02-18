@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 1OUTB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CG8-A 20.8  1.6  139   141   30   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1OUTB Sbjct=1CG8A Z-score=20.8
+
+DSSP  lLLLHHHHHHHHHHHHLL--LHHHHHHHHHHHHHHHLHHHHHHLHHHLLLllhhhHHHLH
+Query vEWTDAEKSTISAVWGKV--NIDEIGPLALARVLIVYPWTQRYFGSFGNVstpaaIMGNP   58
+ident        |  |         |    |  ||||     | |  ||  |           | 
+Sbjct -VLSSQNKKAIEELGNLIkaNAEAWGADALARLFELHPQTKTYFSKFSGF-----EACNE   54
+DSSP  -LLLHHHHHHHHHHHHHHhhLHHHHHHHHHHHHHHHLHHHHHHLLLLLLL-----LLLLH
+
+DSSP  HHHHHHHHHHHLHHHHHHLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+Query KVAAHGKVVCGALDKAVKNMGNILATYKSLSETHANKLFVDPDNFRVLADVLTIVIAAKF  118
+ident  |  ||| |  ||  |     |       |   |   | ||| ||   ||      |   
+Sbjct QVKKHGKRVMNALADATHHLDNLHLHLEDLARKHGENLLVDPHNFHLFADCIVVTLAVNL  114
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+
+DSSP  HhHLLHHHHHHHHHHHHHHHHHHLLLLL
+Query GaSFTPEIQATWQKFMKVVVAAMGSRYF  146
+ident    |||       ||   |     | | 
+Sbjct Q-AFTPVTHCAVDKFLELVAYELSSCYR  141
+DSSP  L-LLLHHHHHHHHHHHHHHHHHHLHHHL
+
+
+# Structural equivalences
+   1: 1OUT-B 1CG8-A     2 -  18 <=>    1 -  17   (GLU    2  - VAL   18  <=> VAL    1  - ILE   17 )                          
+   1: 1OUT-B 1CG8-A    19 -  48 <=>   20 -  49   (ASN   19  - VAL   48  <=> ASN   20  - PHE   49 )                          
+   1: 1OUT-B 1CG8-A    54 - 119 <=>   50 - 115   (ILE   54  - GLY  119  <=> GLU   50  - GLN  115 )                          
+   1: 1OUT-B 1CG8-A   121 - 146 <=>  116 - 141   (SER  121  - PHE  146  <=> ALA  116  - ARG  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1OUT-B 1CG8-A  U(1,.)   0.324395 -0.566511  0.757518           36.373077"
+-matrix  "1OUT-B 1CG8-A  U(2,.)   0.310467  0.820227  0.480456            3.446497"
+-matrix  "1OUT-B 1CG8-A  U(3,.)  -0.893520  0.079327  0.441961           38.136364"
+

@@ -1,0 +1,944 @@
+A length: 272
+B length: 99
+C length: 276
+D length: 99
+E length: 8
+F length: 8
+G length: 122
+H length: 122
+# 6 chains A B C D G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            272
+Total number of atoms read in:              2130
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+         272  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2362
+ selectset done           0
+ eigen done           0
+ tau           1   12.0937166             180
+ #popped           2           1
+ #selectset contacts        2362
+ selectset done           1
+ eigen done           1
+ tau           3   1.25612128              48          60         166
+ #popped           4           2
+ #selectset contacts        2362
+ selectset done           2
+ eigen done           2
+ tau           5   1.18429327              99         114         124
+ #popped           6           3
+ #selectset contacts        2362
+ selectset done           3
+ eigen done           3
+ tau           7  0.833327830              48
+ #popped           8           4
+ #selectset contacts        2362
+ selectset done           4
+ eigen done           4
+ tau           9  0.951156795              11          21
+ #popped          10           4
+ #selectset contacts        2362
+ selectset done           4
+ eigen done           4
+ tau          11  0.425103217              24
+ #popped          13           4
+ #selectset contacts        2362
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped           9           3
+ #selectset contacts        2362
+ selectset done           3
+ eigen done           3
+ tau          13   1.50091338              71
+ #popped          15           3
+ #selectset contacts        2362
+ selectset done           3
+ eigen done           3
+ tau          15  0.415765882              99
+ #popped          16           3
+ #selectset contacts        2362
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped           7           2
+ #selectset contacts        2362
+ selectset done           2
+ eigen done           2
+ tau          17   2.00642657             134         151
+ #popped          18           2
+ #selectset contacts        2362
+ selectset done           2
+ eigen done           2
+ tau          19   1.36168647             134
+ #popped          20           2
+ #selectset contacts        2362
+ selectset done           2
+ eigen done           2
+ tau          21   4.63246059             114
+ #popped           5           1
+ #selectset contacts        2362
+ selectset done           1
+ eigen done           1
+ tau          23   1.20744133              60
+ #popped           3           0
+ #selectset contacts        2362
+ selectset done           0
+ eigen done           0
+ tau          25  0.646625817             190         200         244
+ #popped          26           1
+ #selectset contacts        2362
+ selectset done           1
+ eigen done           1
+ tau          27  0.478348345             210
+ #popped          28           2
+ #selectset contacts        2362
+ selectset done           2
+ eigen done           2
+ tau          29   0.00000000    
+ #popped          29           1
+ #selectset contacts        2362
+ selectset done           1
+ eigen done           1
+ tau          29   1.64346921             221
+ #popped          31           1
+ #selectset contacts        2362
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          27           0
+ #selectset contacts        2362
+ selectset done           0
+ eigen done           0
+ tau          31   1.75676394             251
+ #popped          33           0
+ #selectset contacts        2362
+ selectset done           0
+ eigen done           0
+ tau          33  0.442944854             262
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+           0
+         272
+         272  residues read 5J6G.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          54
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         226         227
+  grow short strand         231         232
+  grow short strand         267         269
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  5  6  8  7  9 11 10 12 13 14 15 16 17 18 19 20
+   2     1  4  5 12  1  2  3  4  5  6  8  7  9 11 10 12
+   3     1 26 27  8 13 14 15 16 17 18 19 20
+   4     2  6  7 11  1  2  3  4  5  6  8  7  9 11 10
+   5     2  0  0  1 12
+   6     4  8  9  7  1  2  3  4  5  6  8
+   7     4 18 19  4  7  9 11 10
+   8     6 12 13  4  1  2  3  4
+   9     6 14 15  3  5  6  8
+  10     0  0  0  4  1  2  3  4
+  11     0  0  0  0
+  12     8  0  0  2  1  2
+  13     8  0  0  2  3  4
+  14     9  0  0  1  5
+  15     9 16 17  2  6  8
+  16    15  0  0  1  6
+  17    15  0  0  1  8
+  18     7 20 21  3  7  9 11
+  19     7  0  0  1 10
+  20    18 22 23  2  7  9
+  21    18  0  0  1 11
+  22    20  0  0  1  7
+  23    20  0  0  1  9
+  24     0  0  0  0
+  25     0  0  0  1 12
+  26     3 28 29  6 13 14 15 16 17 18
+  27     3 34 35  2 19 20
+  28    26  0  0  2 13 14
+  29    26 30 31  4 15 16 17 18
+  30    29  0  0  1 15
+  31    29  0  0  3 16 17 18
+  32     0  0  0  0
+  33     0  0  0  2 19 20
+  34    27  0  0  1 19
+  35    27  0  0  1 20
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 12  1  1 12
+   3 *   1 22 23  8  1 13 20
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  7  2  1  6  8  8
+   7 -   4 16 17  4  2  7  7  9 11
+   8 -   6 10 11  4  1  1  4
+   9 -   6 12 13  3  2  5  6  8  8
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  2  1  3  4
+  12 -   9  0  0  1  1  5  5
+  13 -   9 14 15  2  2  6  6  8  8
+  14 -  13  0  0  1  1  6  6
+  15 -  13  0  0  1  1  8  8
+  16 -   7 18 19  3  3  7  7  9  9 11 11
+  17 -   7  0  0  1  1 10 10
+  18 -  16 20 21  2  2  7  7  9  9
+  19 -  16  0  0  1  1 11 11
+  20 -  18  0  0  1  1  7  7
+  21 -  18  0  0  1  1  9  9
+  22 -   3 24 25  6  1 13 18
+  23 -   3 28 29  2  1 19 20
+  24 -  22  0  0  2  1 13 14
+  25 -  22 26 27  4  1 15 18
+  26 -  25  0  0  1  1 15 15
+  27 -  25  0  0  3  1 16 18
+  28 -  23  0  0  1  1 19 19
+  29 -  23  0  0  1  1 20 20
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               734
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         771
+ selectset done           0
+ eigen done           0
+ tau           1  0.903269768              11          22          68          78
+ #popped           2           1
+ #selectset contacts         771
+ selectset done           1
+ eigen done           1
+ tau           3  0.716955006              39          49
+ #popped           4           1
+ #selectset contacts         771
+ selectset done           1
+ eigen done           1
+ tau           5  0.591414928              88
+ #popped           6           1
+ #selectset contacts         771
+ selectset done           1
+ eigen done           1
+ tau           7  0.349624068              68
+ #popped           8           1
+ #selectset contacts         771
+ selectset done           1
+ eigen done           1
+ tau           9  0.391372114              24
+ #popped          11           1
+ #selectset contacts         771
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts         771
+ selectset done           0
+ eigen done           0
+ tau          11  0.590520561              22
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+           0
+          99
+          99  residues read 5J6G.dssp                                                   
+  grow short strand          44          45
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5  9  1  2  3  5  6  7  8  9  4
+   2     0  0  0  9  1  2  3  5  6  7  8  9  4
+   3     0  0  0  0
+   4     1  6  7  8  1  2  3  5  6  7  8  9
+   5     1  0  0  1  4
+   6     4  8  9  7  1  2  3  5  6  7  8
+   7     4  0  0  1  9
+   8     6 10 11  6  1  2  3  5  6  7
+   9     6  0  0  1  8
+  10     8  0  0  1  1
+  11     8  0  0  5  2  3  5  6  7
+  12     0  0  0  0
+  13     0  0  0  0
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  3  5  9
+   3 -   1  0  0  1  1  4  4
+   4 -   2  6  7  7  2  1  3  5  8
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  6  2  1  3  5  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  5  2  2  3  5  7
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            276
+Total number of atoms read in:              2154
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+         276  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2394
+ selectset done           0
+ eigen done           0
+ tau           1   12.1286907             179
+ #popped           2           1
+ #selectset contacts        2394
+ selectset done           1
+ eigen done           1
+ tau           3   1.15963411              98         112         152
+ #popped           4           2
+ #selectset contacts        2394
+ selectset done           2
+ eigen done           2
+ tau           5   1.39680457             135
+ #popped           6           2
+ #selectset contacts        2394
+ selectset done           2
+ eigen done           2
+ tau           7   1.69583356             121
+ #popped           8           2
+ #selectset contacts        2394
+ selectset done           2
+ eigen done           2
+ tau           9  0.961795866              77          90
+ #popped          10           2
+ #selectset contacts        2394
+ selectset done           2
+ eigen done           2
+ tau          11  0.748424172              54
+ #popped          12           3
+ #selectset contacts        2394
+ selectset done           3
+ eigen done           3
+ tau          13  0.925925910              11          21
+ #popped          14           3
+ #selectset contacts        2394
+ selectset done           3
+ eigen done           3
+ tau          15  0.419518471              23
+ #popped          17           3
+ #selectset contacts        2394
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          13           2
+ #selectset contacts        2394
+ selectset done           2
+ eigen done           2
+ tau          17   5.18358231              77
+ #popped          18           2
+ #selectset contacts        2394
+ selectset done           2
+ eigen done           2
+ tau          19   1.04499495              67
+ #popped           5           1
+ #selectset contacts        2394
+ selectset done           1
+ eigen done           1
+ tau          21   1.56378341             163
+ #popped          22           1
+ #selectset contacts        2394
+ selectset done           1
+ eigen done           1
+ tau          23   2.46868682             112
+ #popped           3           0
+ #selectset contacts        2394
+ selectset done           0
+ eigen done           0
+ tau          25  0.850553274             189         200         215         226         245
+ #popped          26           1
+ #selectset contacts        2394
+ selectset done           1
+ eigen done           1
+ tau          27  0.403115451             189
+ #popped          29           1
+ #selectset contacts        2394
+ selectset done           1
+ eigen done           1
+ tau          29   0.00000000    
+ #popped          27           0
+ #selectset contacts        2394
+ selectset done           0
+ eigen done           0
+ tau          29  0.631987631             200
+ #popped          31           0
+ #selectset contacts        2394
+ selectset done           0
+ eigen done           0
+ tau          31  0.932343721             256
+ #popped          32           1
+ #selectset contacts        2394
+ selectset done           1
+ eigen done           1
+ tau          33   1.06756759             226
+ #popped          33           0
+ #selectset contacts        2394
+ selectset done           0
+ eigen done           0
+ tau          35  0.435966522             266
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+           0
+         276
+         276  residues read 5J6G.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          53
+  grow short strand         132         134
+  exclude short helix         175         178
+  grow short strand         221         223
+  grow short strand         233         234
+  grow short strand         269         271
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  5  6  8  9 10  7 11 12 13 14 15 17 18 16 19 20
+   2     1  4  5 12  1  2  3  4  5  6  8  9 10  7 11 12
+   3     1 26 27  8 13 14 15 17 18 16 19 20
+   4     2  6  7  9  1  2  3  4  5  6  8  9 10
+   5     2 22 23  3  7 11 12
+   6     4  8  9  8  1  2  3  4  5  6  8  9
+   7     4  0  0  1 10
+   8     6 12 13  6  1  2  3  4  5  6
+   9     6  0  0  2  8  9
+  10     0  0  0  6  1  2  3  4  5  6
+  11     0  0  0  0
+  12     8 16 17  4  1  2  3  4
+  13     8 18 19  2  5  6
+  14     0  0  0  4  1  2  3  4
+  15     0  0  0  0
+  16    12  0  0  1  1
+  17    12  0  0  3  2  3  4
+  18    13  0  0  1  5
+  19    13  0  0  1  6
+  20     0  0  0  0
+  21     0  0  0  1  5
+  22     5 24 25  2  7 11
+  23     5  0  0  1 12
+  24    22  0  0  1  7
+  25    22  0  0  1 11
+  26     3 28 29  5 13 14 15 17 18
+  27     3 32 33  3 16 19 20
+  28    26  0  0  1 13
+  29    26  0  0  4 14 15 17 18
+  30     0  0  0  0
+  31     0  0  0  3 16 19 20
+  32    27  0  0  1 16
+  33    27 36 37  2 19 20
+  34     0  0  0  1 16
+  35     0  0  0  0
+  36    33  0  0  1 19
+  37    33  0  0  1 20
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 12  1  1 12
+   3 *   1 20 21  8  1 13 20
+   4 -   2  6  7  9  2  1  6  8 10
+   5 -   2 16 17  3  2  7  7 11 12
+   6 -   4  8  9  8  2  1  6  8  9
+   7 -   4  0  0  1  1 10 10
+   8 -   6 10 11  6  1  1  6
+   9 -   6  0  0  2  1  8  9
+  10 -   8 12 13  4  1  1  4
+  11 -   8 14 15  2  1  5  6
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  3  1  2  4
+  14 -  11  0  0  1  1  5  5
+  15 -  11  0  0  1  1  6  6
+  16 -   5 18 19  2  2  7  7 11 11
+  17 -   5  0  0  1  1 12 12
+  18 -  16  0  0  1  1  7  7
+  19 -  16  0  0  1  1 11 11
+  20 -   3 22 23  5  2 13 15 17 18
+  21 -   3 24 25  3  2 16 16 19 20
+  22 -  20  0  0  1  1 13 13
+  23 -  20  0  0  4  2 14 15 17 18
+  24 -  21  0  0  1  1 16 16
+  25 -  21 26 27  2  1 19 20
+  26 -  25  0  0  1  1 19 19
+  27 -  25  0  0  1  1 20 20
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               749
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau           1  0.923812389              52          63
+ #popped           2           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau           3  0.570356488              10          22
+ #popped           4           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau           5  0.601949334              34
+ #popped           6           1
+ #selectset contacts         759
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           7           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau           7  0.593315005              79
+ #popped           8           1
+ #selectset contacts         759
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           9           0
+ #selectset contacts         759
+ selectset done           0
+ eigen done           0
+ tau           9  0.427397251              89
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+           0
+          99
+          99  residues read 5J6G.dssp                                                   
+  grow short strand          44          45
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  7  8  9  6
+   2     1  6  7  8  1  2  3  4  5  7  8  9
+   3     1  0  0  1  6
+   4     0  0  0  8  1  2  3  4  5  7  8  9
+   5     0  0  0  0
+   6     2  0  0  2  1  2
+   7     2  8  9  6  3  4  5  7  8  9
+   8     7  0  0  4  3  4  5  7
+   9     7 10 11  2  8  9
+  10     9  0  0  1  8
+  11     9  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  5  7  9
+   3 -   1  0  0  1  1  6  6
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  6  2  3  5  7  9
+   6 -   5  0  0  4  2  3  5  7  7
+   7 -   5  8  9  2  1  8  9
+   8 -   7  0  0  1  1  8  8
+   9 -   7  0  0  1  1  9  9
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            122
+Total number of atoms read in:               963
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+         122  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1032
+ selectset done           0
+ eigen done           0
+ tau           1   1.09839320              75          91
+ #popped           2           0
+ #selectset contacts        1032
+ selectset done           0
+ eigen done           0
+ tau           3  0.525378466              14          32
+ #popped           4           0
+ #selectset contacts        1032
+ selectset done           0
+ eigen done           0
+ tau           5   1.66176903              51         112
+ #popped           6           1
+ #selectset contacts        1032
+ selectset done           1
+ eigen done           1
+ tau           7  0.502311110              14
+ #popped           9           1
+ #selectset contacts        1032
+ selectset done           1
+ eigen done           1
+ tau           9  0.942854345              51
+ #popped           7           0
+ #selectset contacts        1032
+ selectset done           0
+ eigen done           0
+ tau          11   1.07721114              61          75
+ #popped          12           0
+ #selectset contacts        1032
+ selectset done           0
+ eigen done           0
+ tau          13  0.411509514             102
+ #popped          14           0
+ #selectset contacts        1032
+ selectset done           0
+ eigen done           0
+ tau          15  0.471910119              61
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+           0
+         122
+         122  residues read 5J6G.dssp                                                   
+  grow short strand          68          70
+  exclude short helix          80          85
+  grow short strand          93          96
+  grow short strand         103         104
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5  9  1  2  4  9  5  7  8  6  3
+   2     0  0  0  9  1  2  4  9  5  7  8  6  3
+   3     0  0  0  0
+   4     1  6  7  8  1  2  4  9  5  7  8  6
+   5     1  0  0  1  3
+   6     4  8  9  4  1  2  4  9
+   7     4 12 13  4  5  7  8  6
+   8     6  0  0  2  1  2
+   9     6 10 11  2  4  9
+  10     9  0  0  1  4
+  11     9  0  0  1  9
+  12     7 14 15  3  5  7  8
+  13     7  0  0  1  6
+  14    12 16 17  2  5  7
+  15    12  0  0  1  8
+  16    14  0  0  1  5
+  17    14  0  0  1  7
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  2  4  9
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  4  3  1  2  4  4  9  9
+   5 -   2 10 11  4  1  5  8
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  2  2  4  4  9  9
+   8 -   7  0  0  1  1  4  4
+   9 -   7  0  0  1  1  9  9
+  10 -   5 12 13  3  2  5  5  7  8
+  11 -   5  0  0  1  1  6  6
+  12 -  10 14 15  2  2  5  5  7  7
+  13 -  10  0  0  1  1  8  8
+  14 -  12  0  0  1  1  5  5
+  15 -  12  0  0  1  1  7  7
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            122
+Total number of atoms read in:               957
+Total number of ignored atom records:          0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+         122  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1010
+ selectset done           0
+ eigen done           0
+ tau           1   1.35011375              13          26          49         111
+ #popped           2           1
+ #selectset contacts        1010
+ selectset done           1
+ eigen done           1
+ tau           3  0.445270836              36
+ #popped           4           2
+ #selectset contacts        1010
+ selectset done           2
+ eigen done           2
+ tau           5   7.89249992              13
+ #popped           5           1
+ #selectset contacts        1010
+ selectset done           1
+ eigen done           1
+ tau           7   999.999023              49
+ #popped           3           0
+ #selectset contacts        1010
+ selectset done           0
+ eigen done           0
+ tau           9   1.83239925              69          86
+ #popped          10           0
+ #selectset contacts        1010
+ selectset done           0
+ eigen done           0
+ tau          11  0.385933578              69
+ #popped          12           1
+ #selectset contacts        1010
+ selectset done           1
+ eigen done           1
+ tau          13   2.01695943              59
+ #popped          14           1
+ #selectset contacts        1010
+ selectset done           1
+ eigen done           1
+ tau          15   2.12142849              26
+ #popped          13           0
+ #selectset contacts        1010
+ selectset done           0
+ eigen done           0
+ tau          17  0.593621135             101
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           04-APR-16   5J6G              COMPND   2 MOLECULE: H-2 CLASS I HISTOCOMPATIBILITY ANTIGEN, Q10 ALPHA          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    R.BERRY,J.ROSSJOHN                                                    
+           0
+         122
+         122  residues read 5J6G.dssp                                                   
+  grow short strand           2           6
+  grow short strand          68          69
+  exclude short helix          79          82
+  grow short strand          92          95
+  grow short strand         102         103
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  4  9  3  5  6  7  8
+   2     1  4  5  4  1  2  4  9
+   3     1 12 13  5  3  5  6  7  8
+   4     2  0  0  2  1  2
+   5     2  8  9  2  4  9
+   6     0  0  0  2  1  2
+   7     0  0  0  0
+   8     5  0  0  1  4
+   9     5  0  0  1  9
+  10     0  0  0  5  3  5  6  7  8
+  11     0  0  0  0
+  12     3 14 15  3  3  5  6
+  13     3 18 19  2  7  8
+  14    12 16 17  2  3  5
+  15    12  0  0  1  6
+  16    14  0  0  1  3
+  17    14  0  0  1  5
+  18    13  0  0  1  7
+  19    13  0  0  1  8
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  4  3  1  2  4  4  9  9
+   3 -   1  8  9  5  2  3  3  5  8
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  2  2  4  4  9  9
+   6 -   5  0  0  1  1  4  4
+   7 -   5  0  0  1  1  9  9
+   8 -   3 10 11  3  2  3  3  5  6
+   9 -   3 14 15  2  1  7  8
+  10 -   8 12 13  2  2  3  3  5  5
+  11 -   8  0  0  1  1  6  6
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  1  1  5  5
+  14 -   9  0  0  1  1  7  7
+  15 -   9  0  0  1  1  8  8
+
+ CHAIN : 5J6GA
+ CHAIN : 5J6GB
+ CHAIN : 5J6GC
+ CHAIN : 5J6GD
+ CHAIN : 5J6GG
+ CHAIN : 5J6GH
+

@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1OUTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1EMY-A 20.2  1.7  141   153   23   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1OUTA Sbjct=1EMYA Z-score=20.2
+
+DSSP  LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHHL-LLLL----lLLLLHH
+Query SLTAKDKSVVKAFWGKISGKADVVGAEALGRMLTAYPQTKTYFS-HWAD----lSPGSGP   55
+ident  |       |   |||        |     |  |  | |   |              |  
+Sbjct GLSDGEWELVLKTWGKVEADIPGHGETVFVRLFTGHPETLEKFDkFKHLktegeMKASED   60
+DSSP  LLLHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLHHHHHHLLlLLLLllhhhHHLLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHLL
+Query VKKHGGIIMGAIGKAVGLMDDLVGGMSALSDLHAFKLRVDPGNFKILSHNILVTLAIHFP  115
+ident  || |     | |               |   || |           |  |   |    |
+Sbjct LKKQGVTVLTALGGILKKKGHHEAEIQPLAQSHATKHKIPIKYLEFISDAIIHVLQSKHP  120
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHHHHHLL
+
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHLLLL------
+Query SDFTPEVHIAVDKFLAAVSAALADKYR------  142
+ident   |      |  | |       | ||       
+Sbjct AEFGADAQGAMKKALELFRNDIAAKYKelgfqg  153
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHHHHHhlllll
+
+
+# Structural equivalences
+   1: 1OUT-A 1EMY-A     1 -  44 <=>    1 -  44   (SER    1  - SER   44  <=> GLY    1  - ASP   44 )                          
+   1: 1OUT-A 1EMY-A    45 -  48 <=>   46 -  49   (HIS   45  - ASP   48  <=> PHE   46  - LEU   49 )                          
+   1: 1OUT-A 1EMY-A    50 - 142 <=>   55 - 147   (SER   50  - ARG  142  <=> MET   55  - LYS  147 )                          
+
+# Translation-rotation matrices
+-matrix  "1OUT-A 1EMY-A  U(1,.)  -0.464933  0.784457 -0.410444           31.816742"
+-matrix  "1OUT-A 1EMY-A  U(2,.)  -0.185952 -0.539780 -0.821011           78.291214"
+-matrix  "1OUT-A 1EMY-A  U(3,.)  -0.865598 -0.305393  0.396833           51.791862"
+

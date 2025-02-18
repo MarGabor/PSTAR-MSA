@@ -1,0 +1,36 @@
+# Job: toxin
+# Query: 1NORA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CXN-A  6.8  2.2   55    60   35   MOLECULE: CARDIOTOXIN GAMMA;                                         
+
+# Pairwise alignments
+
+No 1: Query=1NORA Sbjct=1CXNA Z-score=6.8
+
+DSSP  LEEELLlllLLLLEEELLL-LLLEEEEEEELllLEEE-EEEEL-LLLLLLL-LEEEEELL
+Query LECHNQqssQPPTTKTCSG-ETNCYKKWWSDhrGTII-ERGCG-CPKVKPG-VNLNCCRT   56
+ident | |       ||  |||      |||             |||              || |
+Sbjct LKCNQL---IPPFWKTCPKgKNLCYKMTMRA-aPMVPvKRGCIdVCPKSSLlIKYMCCNT   56
+DSSP  LEEELL---LLLLEEELLLlLLEEEEEEELL-lLLEEeEEEEElLLLLLLLlEEEEEELL
+
+DSSP  LLLLl
+Query DRCNn   61
+ident | || 
+Sbjct DKCN-   60
+DSSP  LLLL-
+
+
+# Structural equivalences
+   1: 1NOR-A 1CXN-A     1 -   6 <=>    1 -   6   (LEU    1  - GLN    6  <=> LEU    1  - LEU    6 )                          
+   1: 1NOR-A 1CXN-A    10 -  19 <=>    7 -  16   (GLN   10  - GLY   19  <=> ILE    7  - LYS   16 )                          
+   1: 1NOR-A 1CXN-A    20 -  30 <=>   18 -  28   (GLU   20  - ASP   30  <=> LYS   18  - ALA   28 )                          
+   1: 1NOR-A 1CXN-A    33 -  36 <=>   30 -  33   (GLY   33  - ILE   36  <=> PRO   30  - PRO   33 )                          
+   1: 1NOR-A 1CXN-A    37 -  41 <=>   35 -  39   (GLU   37  - GLY   41  <=> LYS   35  - ILE   39 )                          
+   1: 1NOR-A 1CXN-A    42 -  48 <=>   41 -  47   (CYS   42  - GLY   48  <=> VAL   41  - LEU   47 )                          
+   1: 1NOR-A 1CXN-A    49 -  60 <=>   49 -  60   (VAL   49  - ASN   60  <=> ILE   49  - ASN   60 )                          
+
+# Translation-rotation matrices
+-matrix  "1NOR-A 1CXN-A  U(1,.)   0.147565  0.987944  0.046822           -0.071541"
+-matrix  "1NOR-A 1CXN-A  U(2,.)  -0.468122  0.111466 -0.876606            0.680009"
+-matrix  "1NOR-A 1CXN-A  U(3,.)  -0.871256  0.107437  0.478926            0.664910"
+

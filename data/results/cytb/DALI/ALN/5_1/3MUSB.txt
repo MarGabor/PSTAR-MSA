@@ -1,0 +1,31 @@
+# Job: cytb
+# Query: 3MUSB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HKO-A 11.5  2.6   85   104   59   MOLECULE: CYTOCHROME B5;                                             
+
+# Pairwise alignments
+
+No 1: Query=3MUSB Sbjct=1HKOA Z-score=11.5
+
+DSSP  ---LLLL-LEELHHHHHLLEELLEEEEEELLEEEELHHHHHHLLLLLHHHHHLLLLLLHH
+Query ---DPAV-TYYRLEEVAKRNTAEETWMVIHGRVYDITRFLSEHPGGEEVLLEQAGADATE   56
+ident          || |||  | |    ||   |  ||| | || ||||||||| |||| ||||
+Sbjct aeeSSKAvKYYTLEEIQKHNNSKSTWLILHYKVYDLTKFLEEHPGGEEVLREQAGGDATE   60
+DSSP  lllLLLLlEEELHHHHHHLLLLLLLEEEELLEEEEHHHHLLLLLLLLHHHHLLLLEELHH
+
+DSSP  HHHHHLLLHHHHHHHHHHEEEEELHHHLL-------------ll
+Query SFEDVGHSPDAREMLKQYYIGDVHPNDLK-------------pa   87
+ident  ||||||| ||||  |   ||  || |                 
+Sbjct NFEDVGHSTDARELSKTFIIGELHPDDRSkitkpsesiittids  104
+DSSP  HHLLLLLLHHHHHHHLLLEEEEELLLLLLlllllllllllllll
+
+
+# Structural equivalences
+   1: 3MUS-B 1HKO-A     1 -   4 <=>    4 -   7   (ASP    1  - VAL    4  <=> SER    4  - ALA    7 )                          
+   1: 3MUS-B 1HKO-A     5 -  85 <=>    9 -  89   (THR    5  - LYS   85  <=> LYS    9  - SER   89 )                          
+
+# Translation-rotation matrices
+-matrix  "3MUS-B 1HKO-A  U(1,.)  -0.683019 -0.218038  0.697097           37.368168"
+-matrix  "3MUS-B 1HKO-A  U(2,.)   0.226419 -0.970594 -0.081737           27.116739"
+-matrix  "3MUS-B 1HKO-A  U(3,.)   0.694420  0.102008  0.712303           56.242306"
+

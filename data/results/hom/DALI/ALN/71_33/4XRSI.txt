@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 4XRSI
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HOM-A  4.7  2.4   56    68   43   MOLECULE: ANTENNAPEDIA PROTEIN;                                      
+
+# Pairwise alignments
+
+No 1: Query=4XRSI Sbjct=1HOMA Z-score=4.7
+
+DSSP  --LLLL-LLLLLLLHHHHHHHLLLLLLLHHHHHHHLLLLLLLHHHLHHHHHHHHL-LLLL
+Query --KPRT-IYSSYQLAALQRRFQKAQYLALPERAELAAQLGLTQTQVKIWFQNRRS-KFKK   56
+ident   |     |  ||   |   |    ||    | | |  | ||  | ||||||||    | 
+Sbjct mrKRGRqTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALCLTERQIKIWFQNRRMkWKKE   60
+DSSP  llLLLLlLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHHLlLLLL
+
+DSSP  --------
+Query --------   56
+ident         
+Sbjct nktkgepg   68
+DSSP  llllllll
+
+
+# Structural equivalences
+   1: 4XRS-I 1HOM-A     1 -   4 <=>    3 -   6   (LYS  131  - THR  134  <=> LYS    2  - ARG    5 )                          
+   1: 4XRS-I 1HOM-A     5 -  52 <=>    8 -  55   (ILE  135  - SER  182  <=> THR    7  - MET   54 )                          
+   1: 4XRS-I 1HOM-A    53 -  56 <=>   57 -  60   (LYS  183  - LYS  186  <=> TRP   56  - GLU   59 )                          
+
+# Translation-rotation matrices
+-matrix  "4XRS-I 1HOM-A  U(1,.)  -0.934935  0.354536  0.014168            5.848222"
+-matrix  "4XRS-I 1HOM-A  U(2,.)   0.257560  0.650655  0.714361            0.899406"
+-matrix  "4XRS-I 1HOM-A  U(3,.)   0.244048  0.671530 -0.699634          -11.381389"
+

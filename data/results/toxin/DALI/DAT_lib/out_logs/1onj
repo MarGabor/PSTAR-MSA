@@ -1,0 +1,126 @@
+A length: 57
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   67  N  BSER A   9 
+ Alternate location indication is not blank or A, ignore atom:   69  CA BSER A   9 
+ Alternate location indication is not blank or A, ignore atom:   71  C  BSER A   9 
+ Alternate location indication is not blank or A, ignore atom:   73  O  BSER A   9 
+ Alternate location indication is not blank or A, ignore atom:   75  CB BSER A   9 
+ Alternate location indication is not blank or A, ignore atom:   77  OG BSER A   9 
+ Alternate location indication is not blank or A, ignore atom:  190  N  BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  192  CA BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  194  C  BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  196  O  BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  198  CB BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  200  CG BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  202  CD BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  204  CE BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  206  NZ BLYS A  25 
+ Alternate location indication is not blank or A, ignore atom:  307  N  BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  309  CA BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  311  C  BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  313  O  BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  315  CB BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  317  CG BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  319  CD BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  321  OE1BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  323  OE2BGLU A  37 
+ Alternate location indication is not blank or A, ignore atom:  422  N  BASN A  52 
+ Alternate location indication is not blank or A, ignore atom:  424  CA BASN A  52 
+ Alternate location indication is not blank or A, ignore atom:  426  C  BASN A  52 
+ Alternate location indication is not blank or A, ignore atom:  428  O  BASN A  52 
+ Alternate location indication is not blank or A, ignore atom:  430  CB BASN A  52 
+ Alternate location indication is not blank or A, ignore atom:  432  CG BASN A  52 
+ Alternate location indication is not blank or A, ignore atom:  434  OD1BASN A  52 
+ Alternate location indication is not blank or A, ignore atom:  436  ND2BASN A  52 
+
+Total number of residues read in:             61
+Total number of atoms read in:               473
+Total number of ignored atom records:        173
+ HEADER    TOXIN                                   28-FEB-03   1ONJ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.LOU,X.TU,G.PAN,C.XU,R.FAN,W.LU,W.DENG,P.RAO,M.TENG,L.NIU            
+  Reading DSSP file
+ HEADER    TOXIN                                   28-FEB-03   1ONJ              COMPND   2 MOLECULE: COBROTOXIN B;                                              SOURCE   2 ORGANISM_SCIENTIFIC: NAJA ATRA;                                      AUTHOR    X.LOU,X.TU,G.PAN,C.XU,R.FAN,W.LU,W.DENG,P.RAO,M.TENG,L.NIU            
+          61  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         469
+ selectset done           0
+ eigen done           0
+ tau           1  0.528015494              23
+ #popped           2           1
+ #selectset contacts         469
+ selectset done           1
+ eigen done           1
+ tau           3  0.359597534              13
+ #popped           3           0
+ #selectset contacts         469
+ selectset done           0
+ eigen done           0
+ tau           5  0.669107914              51
+ #popped           6           0
+ #selectset contacts         469
+ selectset done           0
+ eigen done           0
+ tau           7  0.407112181              37
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TOXIN                                   28-FEB-03   1ONJ              COMPND   2 MOLECULE: COBROTOXIN B;                                              SOURCE   2 ORGANISM_SCIENTIFIC: NAJA ATRA;                                      AUTHOR    X.LOU,X.TU,G.PAN,C.XU,R.FAN,W.LU,W.DENG,P.RAO,M.TENG,L.NIU            
+           0
+          61
+          61  residues read 1ONJ.dssp                                                   
+  grow short strand           2           4
+  grow short strand          14          16
+  grow short strand          50          54
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  2  3  4  5
+   2     1  4  5  2  1  2
+   3     1  6  7  3  3  4  5
+   4     2  0  0  1  1
+   5     2  0  0  1  2
+   6     3  0  0  2  3  4
+   7     3  0  0  1  5
+   8     0  0  0  2  3  4
+   9     0  0  0  0
+   1 *   0  2  3  5  1  1  5
+   2 -   1  4  5  2  1  1  2
+   3 -   1  6  7  3  1  3  5
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  0  0  2  1  3  4
+   7 -   3  0  0  1  1  5  5
+
+ CHAIN : 1ONJA
+

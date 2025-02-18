@@ -1,0 +1,147 @@
+A length: 150
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  184  CA BHIS A  27 
+ Alternate location indication is not blank or A, ignore atom:  188  CB BHIS A  27 
+ Alternate location indication is not blank or A, ignore atom:  190  CG BHIS A  27 
+ Alternate location indication is not blank or A, ignore atom:  192  ND1BHIS A  27 
+ Alternate location indication is not blank or A, ignore atom:  194  CD2BHIS A  27 
+ Alternate location indication is not blank or A, ignore atom:  196  CE1BHIS A  27 
+ Alternate location indication is not blank or A, ignore atom:  198  NE2BHIS A  27 
+ Alternate location indication is not blank or A, ignore atom:  842  CA BARG A 109 
+ Alternate location indication is not blank or A, ignore atom:  846  CB BARG A 109 
+ Alternate location indication is not blank or A, ignore atom:  848  CG BARG A 109 
+ Alternate location indication is not blank or A, ignore atom:  850  CD BARG A 109 
+ Alternate location indication is not blank or A, ignore atom:  852  NE BARG A 109 
+ Alternate location indication is not blank or A, ignore atom:  854  CZ BARG A 109 
+ Alternate location indication is not blank or A, ignore atom:  856  NH1BARG A 109 
+ Alternate location indication is not blank or A, ignore atom:  858  NH2BARG A 109 
+
+Total number of residues read in:            154
+Total number of atoms read in:              1230
+Total number of ignored atom records:        247
+ HEADER    TRANSFERASE                             16-OCT-08   3EXN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.NOCEK,C.HATZOS,S.CLANCY,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL  
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-OCT-08   3EXN              COMPND   2 MOLECULE: PROBABLE ACETYLTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    B.NOCEK,C.HATZOS,S.CLANCY,A.JOACHIMIAK,MIDWEST CENTER FOR ST          
+         154  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1347
+ selectset done           0
+ eigen done           0
+ tau           1   2.31213617              10          51
+ #popped           2           1
+ #selectset contacts        1347
+ selectset done           1
+ eigen done           1
+ tau           3   1.64414227              73          85         110
+ #popped           4           2
+ #selectset contacts        1347
+ selectset done           2
+ eigen done           2
+ tau           5   1.54834807              97
+ #popped           6           2
+ #selectset contacts        1347
+ selectset done           2
+ eigen done           2
+ tau           7  0.677650809              73
+ #popped           8           2
+ #selectset contacts        1347
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1347
+ selectset done           1
+ eigen done           1
+ tau           9   1.21828914             123         135
+ #popped          10           1
+ #selectset contacts        1347
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1347
+ selectset done           0
+ eigen done           0
+ tau          11   1.79359758              38
+ #popped          12           0
+ #selectset contacts        1347
+ selectset done           0
+ eigen done           0
+ tau          13   1.11941540              25
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-OCT-08   3EXN              COMPND   2 MOLECULE: PROBABLE ACETYLTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: THERMUS THERMOPHILUS;                           AUTHOR    B.NOCEK,C.HATZOS,S.CLANCY,A.JOACHIMIAK,MIDWEST CENTER FOR ST          
+           0
+         154
+         154  residues read 3EXN.dssp                                                   
+  grow short strand           7          10
+  exclude short helix          27          32
+  exclude short helix          92          94
+  grow short strand         138         142
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  7  8 10 11  9  2  3
+   2     1  4  5  9  1  4  5  6  7  8 10 11  9
+   3     1 12 13  2  2  3
+   4     2  6  7  5  1  4  5  6  7
+   5     2 10 11  4  8 10 11  9
+   6     4  8  9  4  1  4  5  6
+   7     4  0  0  1  7
+   8     6  0  0  3  1  4  5
+   9     6  0  0  1  6
+  10     5  0  0  3  8 10 11
+  11     5  0  0  1  9
+  12     3  0  0  1  2
+  13     3  0  0  1  3
+  14     0  0  0  1  2
+  15     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  9  2  1  1  4 11
+   3 -   1 12 13  2  1  2  3
+   4 -   2  6  7  5  2  1  1  4  7
+   5 -   2 10 11  4  1  8 11
+   6 -   4  8  9  4  2  1  1  4  6
+   7 -   4  0  0  1  1  7  7
+   8 -   6  0  0  3  2  1  1  4  5
+   9 -   6  0  0  1  1  6  6
+  10 -   5  0  0  3  2  8  8 10 11
+  11 -   5  0  0  1  1  9  9
+  12 -   3  0  0  1  1  2  2
+  13 -   3  0  0  1  1  3  3
+
+ CHAIN : 3EXNA
+

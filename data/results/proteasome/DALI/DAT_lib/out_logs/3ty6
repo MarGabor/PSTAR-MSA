@@ -1,0 +1,965 @@
+A length: 178
+B length: 178
+C length: 176
+D length: 178
+E length: 178
+F length: 178
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            178
+Total number of atoms read in:              1348
+Total number of ignored atom records:         27
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+  Reading DSSP file
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1635
+ selectset done           0
+ eigen done           0
+ tau           1   1.88719881              53          98
+ #popped           2           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau           3  0.550380290             123
+ #popped           4           2
+ #selectset contacts        1635
+ selectset done           2
+ eigen done           2
+ tau           5  0.782698691              20          36
+ #popped           6           2
+ #selectset contacts        1635
+ selectset done           2
+ eigen done           2
+ tau           7   1.41674292              20
+ #popped           8           3
+ #selectset contacts        1635
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1635
+ selectset done           2
+ eigen done           2
+ tau           9  0.843666852             109
+ #popped          10           2
+ #selectset contacts        1635
+ selectset done           2
+ eigen done           2
+ tau          11  0.548141003              53
+ #popped           5           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau          13   2.13351464             148
+ #popped          14           2
+ #selectset contacts        1635
+ selectset done           2
+ eigen done           2
+ tau          15   1.14568114             136
+ #popped          15           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1635
+ selectset done           0
+ eigen done           0
+ tau          17   1.88904107              74
+ #popped          18           1
+ #selectset contacts        1635
+ selectset done           1
+ eigen done           1
+ tau          19  0.954410195              64
+ #popped          19           0
+ #selectset contacts        1635
+ selectset done           0
+ eigen done           0
+ tau          21   1.14720809              85
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+           0
+         178
+         178  residues read 3TY6.dssp                                                   
+  grow short strand           2           3
+ crowded segment excluded!
+  grow short strand          24          26
+  grow short strand          30          33
+  grow short strand          39          42
+ crowded segment excluded!
+  exclude short helix          43          45
+  grow short strand          47          51
+  grow short strand         100         103
+  grow short strand         108         111
+  grow short strand         117         118
+  grow short strand         124         128
+  exclude short helix         146         148
+  grow short strand         173         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  5  8  9 10  3  4 11 12 13 14  6  7
+   2     1  4  5 12  1  2  5  8  9 10  3  4 11 12 13 14
+   3     1 18 19  2  6  7
+   4     2  6  7  8  1  2  5  8  9 10  3  4
+   5     2 14 15  4 11 12 13 14
+   6     4  8  9  6  1  2  5  8  9 10
+   7     4  0  0  2  3  4
+   8     6  0  0  2  1  2
+   9     6 10 11  4  5  8  9 10
+  10     9 12 13  3  5  8  9
+  11     9  0  0  1 10
+  12    10  0  0  1  5
+  13    10  0  0  2  8  9
+  14     5 16 17  2 11 12
+  15     5  0  0  2 13 14
+  16    14  0  0  1 11
+  17    14  0  0  1 12
+  18     3  0  0  1  6
+  19     3  0  0  1  7
+  20     0  0  0  1  6
+  21     0  0  0  0
+  22     0  0  0  1  7
+  23     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 12  2  1  5  8 14
+   3 -   1 18 19  2  1  6  7
+   4 -   2  6  7  8  2  1  5  8 10
+   5 -   2 14 15  4  1 11 14
+   6 -   4  8  9  6  3  1  2  5  5  8 10
+   7 -   4  0  0  2  1  3  4
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  4  2  5  5  8 10
+  10 -   9 12 13  3  2  5  5  8  9
+  11 -   9  0  0  1  1 10 10
+  12 -  10  0  0  1  1  5  5
+  13 -  10  0  0  2  1  8  9
+  14 -   5 16 17  2  1 11 12
+  15 -   5  0  0  2  1 13 14
+  16 -  14  0  0  1  1 11 11
+  17 -  14  0  0  1  1 12 12
+  18 -   3  0  0  1  1  6  6
+  19 -   3  0  0  1  1  7  7
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            178
+Total number of atoms read in:              1348
+Total number of ignored atom records:         23
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+  Reading DSSP file
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau           1   2.01277566              53          99
+ #popped           2           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           3  0.796408117             138         153
+ #popped           4           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           5  0.721126735             109         121
+ #popped           6           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           7  0.642624199              23          33
+ #popped           8           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau           9  0.311152160              17
+ #popped          11           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau          11  0.686546445             109
+ #popped          12           2
+ #selectset contacts        1629
+ selectset done           2
+ eigen done           2
+ tau          13   1.63530087              37
+ #popped          15           2
+ #selectset contacts        1629
+ selectset done           2
+ eigen done           2
+ tau          15  0.564608753              53
+ #popped          13           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau          17   3.11141729             138
+ #popped          19           1
+ #selectset contacts        1629
+ selectset done           1
+ eigen done           1
+ tau          19  0.832330823             168
+ #popped           3           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          21   1.78113568              86
+ #popped          22           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          23   1.04391396              63
+ #popped          25           0
+ #selectset contacts        1629
+ selectset done           0
+ eigen done           0
+ tau          25  0.628275752              73
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+           0
+         178
+         178  residues read 3TY6.dssp                                                   
+  grow short strand          25          26
+  grow short strand          30          31
+  grow short strand          39          42
+ crowded segment excluded!
+  exclude short helix          43          45
+  grow short strand          47          51
+  exclude short helix          91          94
+  grow short strand         100         103
+  grow short strand         108         111
+  grow short strand         117         118
+  grow short strand         124         128
+  grow short strand         173         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  5  8  9 11 12 13 14  3  4 10  6  7
+   2     1  6  7 12  1  2  5  8  9 11 12 13 14  3  4 10
+   3     1 24 25  2  6  7
+   4     0  0  0 12  1  2  5  8  9 11 12 13 14  3  4 10
+   5     0  0  0  0
+   6     2  8  9 11  1  2  5  8  9 11 12 13 14  3  4
+   7     2  0  0  1 10
+   8     6 10 11  9  1  2  5  8  9 11 12 13 14
+   9     6  0  0  2  3  4
+  10     8  0  0  1  1
+  11     8 12 13  8  2  5  8  9 11 12 13 14
+  12    11 14 15  4  2  5  8  9
+  13    11 18 19  4 11 12 13 14
+  14    12  0  0  1  2
+  15    12 16 17  3  5  8  9
+  16    15  0  0  1  5
+  17    15  0  0  2  8  9
+  18    13  0  0  2 11 12
+  19    13 20 21  2 13 14
+  20    19  0  0  1 13
+  21    19  0  0  1 14
+  22     0  0  0  2  6  7
+  23     0  0  0  0
+  24     3  0  0  1  6
+  25     3  0  0  1  7
+  26     0  0  0  0
+  27     0  0  0  1  7
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 12  2  1  5  8 14
+   3 -   1 20 21  2  1  6  7
+   4 -   2  6  7 11  3  1  5  8  9 11 14
+   5 -   2  0  0  1  1 10 10
+   6 -   4  8  9  9  4  1  2  5  5  8  9 11 14
+   7 -   4  0  0  2  1  3  4
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  8  4  2  2  5  5  8  9 11 14
+  10 -   9 12 13  4  3  2  2  5  5  8  9
+  11 -   9 16 17  4  1 11 14
+  12 -  10  0  0  1  1  2  2
+  13 -  10 14 15  3  2  5  5  8  9
+  14 -  13  0  0  1  1  5  5
+  15 -  13  0  0  2  1  8  9
+  16 -  11  0  0  2  1 11 12
+  17 -  11 18 19  2  1 13 14
+  18 -  17  0  0  1  1 13 13
+  19 -  17  0  0  1  1 14 14
+  20 -   3  0  0  1  1  6  6
+  21 -   3  0  0  1  1  7  7
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            176
+Total number of atoms read in:              1329
+Total number of ignored atom records:         21
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+  Reading DSSP file
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1609
+ selectset done           0
+ eigen done           0
+ tau           1   2.13451576              51          96
+ #popped           2           1
+ #selectset contacts        1609
+ selectset done           1
+ eigen done           1
+ tau           3   1.10060465              19          34
+ #popped           4           1
+ #selectset contacts        1609
+ selectset done           1
+ eigen done           1
+ tau           5  0.935818017              19         125
+ #popped           6           2
+ #selectset contacts        1609
+ selectset done           2
+ eigen done           2
+ tau           7  0.482662976             139         149
+ #popped           8           2
+ #selectset contacts        1609
+ selectset done           2
+ eigen done           2
+ tau           9   1.39959431              19         139
+ #popped          10           2
+ #selectset contacts        1609
+ selectset done           2
+ eigen done           2
+ tau          11  0.509858608              19
+ #popped          13           2
+ #selectset contacts        1609
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           7           1
+ #selectset contacts        1609
+ selectset done           1
+ eigen done           1
+ tau          13  0.742486596             107
+ #popped          14           1
+ #selectset contacts        1609
+ selectset done           1
+ eigen done           1
+ tau          15  0.619921386              51
+ #popped           3           0
+ #selectset contacts        1609
+ selectset done           0
+ eigen done           0
+ tau          17   1.43013704              84
+ #popped          18           0
+ #selectset contacts        1609
+ selectset done           0
+ eigen done           0
+ tau          19  0.988241553              62
+ #popped          21           0
+ #selectset contacts        1609
+ selectset done           0
+ eigen done           0
+ tau          21  0.626542211              72
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+           0
+         176
+         176  residues read 3TY6.dssp                                                   
+  grow short strand          22          24
+  grow short strand          28          31
+  grow short strand          37          40
+  grow short strand          45          49
+  grow short strand          98         101
+  grow short strand         106         109
+  grow short strand         115         116
+  grow short strand         122         125
+  exclude short helix         144         146
+  grow short strand         171         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 14 15 13  5  6  9 10 11 12  3  4  7  8
+   2     1  4  5 13  1  2 14 15 13  5  6  9 10 11 12  3  4
+   3     1 20 21  2  7  8
+   4     2  6  7 11  1  2 14 15 13  5  6  9 10 11 12
+   5     2  0  0  2  3  4
+   6     4 10 11  5  1  2 14 15 13
+   7     4 14 15  6  5  6  9 10 11 12
+   8     0  0  0  5  1  2 14 15 13
+   9     0  0  0  0
+  10     6 12 13  4  1  2 14 15
+  11     6  0  0  1 13
+  12    10  0  0  2  1  2
+  13    10  0  0  2 14 15
+  14     7 16 17  4  5  6  9 10
+  15     7  0  0  2 11 12
+  16    14  0  0  2  5  6
+  17    14  0  0  2  9 10
+  18     0  0  0  2  7  8
+  19     0  0  0  0
+  20     3  0  0  1  7
+  21     3  0  0  1  8
+  22     0  0  0  0
+  23     0  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 13  2  1  6  9 15
+   3 -   1 16 17  2  1  7  8
+   4 -   2  6  7 11  3  1  2  5  6  9 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  8  9  5  2  1  2 13 15
+   7 -   4 12 13  6  2  5  6  9 12
+   8 -   6 10 11  4  2  1  2 14 15
+   9 -   6  0  0  1  1 13 13
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  2  1 14 15
+  12 -   7 14 15  4  2  5  6  9 10
+  13 -   7  0  0  2  1 11 12
+  14 -  12  0  0  2  1  5  6
+  15 -  12  0  0  2  1  9 10
+  16 -   3  0  0  1  1  7  7
+  17 -   3  0  0  1  1  8  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            178
+Total number of atoms read in:              1348
+Total number of ignored atom records:         13
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+  Reading DSSP file
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau           1   2.12027669              39         119
+ #popped           2           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau           3  0.826583266             139         149
+ #popped           4           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau           5  0.604545712              20          39
+ #popped           6           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau           7  0.595101058             129
+ #popped           8           2
+ #selectset contacts        1637
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           9           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau           9   3.66849184             139
+ #popped          11           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau          11   1.17283821             159
+ #popped           3           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          13  0.918000042              87          97
+ #popped          14           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          15  0.810000002              49
+ #popped          17           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          17  0.906318069              87
+ #popped          18           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau          19   1.48628759              63
+ #popped          21           1
+ #selectset contacts        1637
+ selectset done           1
+ eigen done           1
+ tau          21  0.745102584              74
+ #popped          19           0
+ #selectset contacts        1637
+ selectset done           0
+ eigen done           0
+ tau          23  0.387803376             108
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+           0
+         178
+         178  residues read 3TY6.dssp                                                   
+  grow short strand           7          11
+  grow short strand          24          26
+  grow short strand          30          33
+  grow short strand          39          42
+  grow short strand          47          51
+  grow short strand         100         103
+  grow short strand         108         111
+  grow short strand         117         118
+  grow short strand         124         127
+  grow short strand         173         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 12 13 14 15  3  4  5  6  7  8  9 10 11
+   2     1  6  7  8  1  2 12 13 14 15  3  4
+   3     1 16 17  7  5  6  7  8  9 10 11
+   4     0  0  0  8  1  2 12 13 14 15  3  4
+   5     0  0  0  0
+   6     2  8  9  6  1  2 12 13 14 15
+   7     2  0  0  2  3  4
+   8     6  0  0  3  1  2 12
+   9     6 10 11  3 13 14 15
+  10     9  0  0  1 13
+  11     9 12 13  2 14 15
+  12    11  0  0  1 14
+  13    11  0  0  1 15
+  14     0  0  0  7  5  6  7  8  9 10 11
+  15     0  0  0  0
+  16     3  0  0  2  5  6
+  17     3 18 19  5  7  8  9 10 11
+  18    17 20 21  2  7  8
+  19    17 24 25  3  9 10 11
+  20    18  0  0  1  7
+  21    18  0  0  1  8
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24    19  0  0  1  9
+  25    19  0  0  2 10 11
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  2  1  4 12 15
+   3 -   1 12 13  7  1  5 11
+   4 -   2  6  7  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  0  0  3  2  1  2 12 12
+   7 -   4  8  9  3  1 13 15
+   8 -   7  0  0  1  1 13 13
+   9 -   7 10 11  2  1 14 15
+  10 -   9  0  0  1  1 14 14
+  11 -   9  0  0  1  1 15 15
+  12 -   3  0  0  2  1  5  6
+  13 -   3 14 15  5  1  7 11
+  14 -  13 16 17  2  1  7  8
+  15 -  13 18 19  3  1  9 11
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  8  8
+  18 -  15  0  0  1  1  9  9
+  19 -  15  0  0  2  1 10 11
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            178
+Total number of atoms read in:              1348
+Total number of ignored atom records:         41
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+  Reading DSSP file
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1632
+ selectset done           0
+ eigen done           0
+ tau           1   2.09523654              53          98
+ #popped           2           1
+ #selectset contacts        1632
+ selectset done           1
+ eigen done           1
+ tau           3  0.583225369              21          35
+ #popped           4           1
+ #selectset contacts        1632
+ selectset done           1
+ eigen done           1
+ tau           5   1.00330412              21         127
+ #popped           6           2
+ #selectset contacts        1632
+ selectset done           2
+ eigen done           2
+ tau           7  0.517353296             140
+ #popped           8           3
+ #selectset contacts        1632
+ selectset done           3
+ eigen done           3
+ tau           9   1.24995112              21
+ #popped          10           3
+ #selectset contacts        1632
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1632
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        1632
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1632
+ selectset done           0
+ eigen done           0
+ tau          11   1.37716901              86
+ #popped          12           0
+ #selectset contacts        1632
+ selectset done           0
+ eigen done           0
+ tau          13   1.02353585              64
+ #popped          15           0
+ #selectset contacts        1632
+ selectset done           0
+ eigen done           0
+ tau          15  0.895060301              74
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+           0
+         178
+         178  residues read 3TY6.dssp                                                   
+  grow short strand           2           3
+ crowded segment excluded!
+  grow short strand          24          26
+  grow short strand          30          33
+  grow short strand          39          42
+  grow short strand          47          51
+  grow short strand          99         103
+  grow short strand         108         112
+  grow short strand         117         118
+  grow short strand         124         128
+  grow short strand         173         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 13 14 15  5  6  9 10 11 12  3  4  7  8
+   2     1  4  5 13  1  2 13 14 15  5  6  9 10 11 12  3  4
+   3     1 14 15  2  7  8
+   4     2  6  7 11  1  2 13 14 15  5  6  9 10 11 12
+   5     2  0  0  2  3  4
+   6     4  8  9  5  1  2 13 14 15
+   7     4  0  0  6  5  6  9 10 11 12
+   8     6 10 11  3  1  2 13
+   9     6  0  0  2 14 15
+  10     8  0  0  2  1  2
+  11     8  0  0  1 13
+  12     0  0  0  2  7  8
+  13     0  0  0  0
+  14     3  0  0  1  7
+  15     3  0  0  1  8
+  16     0  0  0  0
+  17     0  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 13  2  1  6  9 15
+   3 -   1 12 13  2  1  7  8
+   4 -   2  6  7 11  3  1  2  5  6  9 15
+   5 -   2  0  0  2  1  3  4
+   6 -   4  8  9  5  2  1  2 13 15
+   7 -   4  0  0  6  2  5  6  9 12
+   8 -   6 10 11  3  2  1  2 13 13
+   9 -   6  0  0  2  1 14 15
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  1  1 13 13
+  12 -   3  0  0  1  1  7  7
+  13 -   3  0  0  1  1  8  8
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            178
+Total number of atoms read in:              1348
+Total number of ignored atom records:         27
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+  Reading DSSP file
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+         178  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1630
+ selectset done           0
+ eigen done           0
+ tau           1   1.96413076              38         120
+ #popped           2           1
+ #selectset contacts        1630
+ selectset done           1
+ eigen done           1
+ tau           3  0.944319189              21          38
+ #popped           4           1
+ #selectset contacts        1630
+ selectset done           1
+ eigen done           1
+ tau           5  0.758110225             139         149
+ #popped           6           1
+ #selectset contacts        1630
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1630
+ selectset done           0
+ eigen done           0
+ tau           7  0.929764867              63          95
+ #popped           8           1
+ #selectset contacts        1630
+ selectset done           1
+ eigen done           1
+ tau           9  0.775830030             109
+ #popped          10           1
+ #selectset contacts        1630
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           9           0
+ #selectset contacts        1630
+ selectset done           0
+ eigen done           0
+ tau          11   1.12959278              85
+ #popped          12           0
+ #selectset contacts        1630
+ selectset done           0
+ eigen done           0
+ tau          13  0.794181824              74
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               23-SEP-11   3TY6              COMPND   2 MOLECULE: ATP-DEPENDENT PROTEASE SUBUNIT HSLV;                       SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS ANTHRACIS;                             AUTHOR    Y.KIM,R.MULLIGAN,K.KWON,W.F.ANDERSON,A.JOACHIMIAK,CENTER FOR          
+           0
+         178
+         178  residues read 3TY6.dssp                                                   
+  grow short strand          24          26
+  grow short strand          30          33
+  grow short strand          39          42
+  grow short strand          47          51
+  exclude short helix          93          95
+  grow short strand         100         103
+  grow short strand         108         111
+  grow short strand         117         118
+  grow short strand         124         127
+  grow short strand         173         177
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 12 13 14 15  3  4  5  6  7  9 10 11  8
+   2     1  4  5  8  1  2 12 13 14 15  3  4
+   3     1  8  9  7  5  6  7  9 10 11  8
+   4     2  0  0  6  1  2 12 13 14 15
+   5     2  0  0  2  3  4
+   6     0  0  0  6  1  2 12 13 14 15
+   7     0  0  0  0
+   8     3 10 11  6  5  6  7  9 10 11
+   9     3  0  0  1  8
+  10     8  0  0  5  5  6  7  9 10
+  11     8  0  0  1 11
+  12     0  0  0  1  8
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  2  1  4 12 15
+   3 -   1  6  7  7  1  5 11
+   4 -   2  0  0  6  2  1  2 12 15
+   5 -   2  0  0  2  1  3  4
+   6 -   3  8  9  6  2  5  7  9 11
+   7 -   3  0  0  1  1  8  8
+   8 -   6  0  0  5  2  5  7  9 10
+   9 -   6  0  0  1  1 11 11
+
+ CHAIN : 3TY6A
+ CHAIN : 3TY6B
+ CHAIN : 3TY6C
+ CHAIN : 3TY6D
+ CHAIN : 3TY6E
+ CHAIN : 3TY6F
+

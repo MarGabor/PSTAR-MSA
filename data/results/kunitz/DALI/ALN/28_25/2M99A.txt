@@ -1,0 +1,32 @@
+# Job: kunitz
+# Query: 2M99A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1DEM-A  7.8  1.6   55    60   49   MOLECULE: DENDROTOXIN I;                                             
+
+# Pairwise alignments
+
+No 1: Query=2M99A Sbjct=1DEMA Z-score=7.8
+
+DSSP  --LLHHHHL-lLLHHhLLLLEEEEEEEHHHLEEEEEEELLLLLLLLLLLLHHHHHHHHLL
+Query --RPRFCEL-aPSAGsCFAFVPSYYYNQYSNTCHSFTYSGCGGNANRFRTIDECNRTCVG   57
+ident       | |       |    |  ||||    |  || |||||| ||| || || |||  
+Sbjct qpLRKLCILhrNPGR-CYQKIPAFYYNQKKKQCEGFTWSGCGGNSNRFKTIEECRRTCIR   59
+DSSP  llLLHHHLLllLLLL-LLLLEEEEEEELLLLEEEEEEELLLLLLLLLLLLHHHHHHHHLL
+
+DSSP  -
+Query -   57
+ident  
+Sbjct k   60
+DSSP  l
+
+
+# Structural equivalences
+   1: 2M99-A 1DEM-A     1 -   7 <=>    3 -   9   (ARG    1  - LEU    7  <=> LEU    3  - LEU    9 )                          
+   1: 2M99-A 1DEM-A     9 -  12 <=>   12 -  15   (PRO    9  - GLY   12  <=> ASN   12  - ARG   15 )                          
+   1: 2M99-A 1DEM-A    14 -  57 <=>   16 -  59   (CYS   14  - GLY   57  <=> CYS   16  - ARG   59 )                          
+
+# Translation-rotation matrices
+-matrix  "2M99-A 1DEM-A  U(1,.)  -0.995010  0.039558  0.091596            0.208464"
+-matrix  "2M99-A 1DEM-A  U(2,.)   0.001424  0.923577 -0.383411           -0.248967"
+-matrix  "2M99-A 1DEM-A  U(3,.)  -0.099763 -0.381368 -0.919025            0.414414"
+

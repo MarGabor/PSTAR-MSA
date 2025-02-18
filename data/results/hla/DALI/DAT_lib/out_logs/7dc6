@@ -1,0 +1,647 @@
+A length: 275
+B length: 99
+C length: 275
+D length: 98
+E length: 9
+F length: 9
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            275
+Total number of atoms read in:              2243
+Total number of ignored atom records:         25
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.YUAN,C.XIA                                                          
+  calculate residue outside grid:         196
+  calculate residue outside grid:         197
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: AILUROPODA MELANOLEUCA;                         AUTHOR    H.YUAN,C.XIA                                                          
+         275  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2412
+ selectset done           0
+ eigen done           0
+ tau           1   13.1862526             181
+ #popped           2           1
+ #selectset contacts        2412
+ selectset done           1
+ eigen done           1
+ tau           3   1.22770452             162
+ #popped           4           1
+ #selectset contacts        2412
+ selectset done           1
+ eigen done           1
+ tau           5   1.32082689              75          96         115
+ #popped           6           2
+ #selectset contacts        2412
+ selectset done           2
+ eigen done           2
+ tau           7   1.67742050              55          75
+ #popped           8           3
+ #selectset contacts        2412
+ selectset done           3
+ eigen done           3
+ tau           9   1.03284264              11          21
+ #popped          10           3
+ #selectset contacts        2412
+ selectset done           3
+ eigen done           3
+ tau          11  0.605861783              55
+ #popped          12           3
+ #selectset contacts        2412
+ selectset done           3
+ eigen done           3
+ tau          13  0.666825116              45
+ #popped          14           3
+ #selectset contacts        2412
+ selectset done           3
+ eigen done           3
+ tau          15  0.406185240              24          35
+ #popped          16           3
+ #selectset contacts        2412
+ selectset done           3
+ eigen done           3
+ tau          17  0.830648065              24
+ #popped           9           2
+ #selectset contacts        2412
+ selectset done           2
+ eigen done           2
+ tau          19  0.845764697              65
+ #popped           7           1
+ #selectset contacts        2412
+ selectset done           1
+ eigen done           1
+ tau          21   2.11068845             150
+ #popped          22           1
+ #selectset contacts        2412
+ selectset done           1
+ eigen done           1
+ tau          23  0.988913894             134
+ #popped          24           1
+ #selectset contacts        2412
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped           3           0
+ #selectset contacts        2412
+ selectset done           0
+ eigen done           0
+ tau          25  0.676905751             231         242
+ #popped          26           0
+ #selectset contacts        2412
+ selectset done           0
+ eigen done           0
+ tau          27  0.663213491             258
+ #popped          28           0
+ #selectset contacts        2412
+ selectset done           0
+ eigen done           0
+ tau          29  0.520123839             204         215
+ #popped          30           0
+ #selectset contacts        2412
+ selectset done           0
+ eigen done           0
+ tau          31  0.572071314             204
+ #popped          32           1
+ #selectset contacts        2412
+ selectset done           1
+ eigen done           1
+ tau          33   0.00000000    
+ #popped          33           0
+ #selectset contacts        2412
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: AILUROPODA MELANOLEUCA;                         AUTHOR    H.YUAN,C.XIA                                                          
+           0
+         275
+         275  residues read 7DC6.dssp                                                   
+  grow short strand          46          47
+  grow short strand         133         135
+  grow short strand         222         223
+  grow short strand         229         230
+  grow short strand         234         235
+  exclude short helix         254         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  3  4  6  7  5  8  9 10 11 12 13 14 15 16 17 19 20 21 18
+   2     1  4  5 12  1  2  3  4  6  7  5  8  9 10 11 12
+   3     1 26 27  9 13 14 15 16 17 19 20 21 18
+   4     2  6  7 11  1  2  3  4  6  7  5  8  9 10 11
+   5     2  0  0  1 12
+   6     4  8  9  7  1  2  3  4  6  7  5
+   7     4 22 23  4  8  9 10 11
+   8     6 12 13  6  1  2  3  4  6  7
+   9     6  0  0  1  5
+  10     0  0  0  6  1  2  3  4  6  7
+  11     0  0  0  0
+  12     8 14 15  4  1  2  3  4
+  13     8  0  0  2  6  7
+  14    12 16 17  3  1  2  3
+  15    12  0  0  1  4
+  16    14  0  0  2  1  2
+  17    14  0  0  1  3
+  18     0  0  0  2  1  2
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  5
+  22     7 24 25  3  8  9 10
+  23     7  0  0  1 11
+  24    22  0  0  2  8  9
+  25    22  0  0  1 10
+  26     3 28 29  8 13 14 15 16 17 19 20 21
+  27     3  0  0  1 18
+  28    26 32 33  6 13 14 15 16 17 19
+  29    26  0  0  2 20 21
+  30     0  0  0  6 13 14 15 16 17 19
+  31     0  0  0  0
+  32    28  0  0  2 13 14
+  33    28  0  0  4 15 16 17 19
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 12  1  1 12
+   3 *   1 20 21  9  1 13 21
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  7  1  1  7
+   7 -   4 16 17  4  1  8 11
+   8 -   6 10 11  6  2  1  4  6  7
+   9 -   6  0  0  1  1  5  5
+  10 -   8 12 13  4  1  1  4
+  11 -   8  0  0  2  1  6  7
+  12 -  10 14 15  3  1  1  3
+  13 -  10  0  0  1  1  4  4
+  14 -  12  0  0  2  1  1  2
+  15 -  12  0  0  1  1  3  3
+  16 -   7 18 19  3  1  8 10
+  17 -   7  0  0  1  1 11 11
+  18 -  16  0  0  2  1  8  9
+  19 -  16  0  0  1  1 10 10
+  20 -   3 22 23  8  2 13 17 19 21
+  21 -   3  0  0  1  1 18 18
+  22 -  20 24 25  6  2 13 17 19 19
+  23 -  20  0  0  2  1 20 21
+  24 -  22  0  0  2  1 13 14
+  25 -  22  0  0  4  2 15 17 19 19
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               817
+Total number of ignored atom records:          7
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.YUAN,C.XIA                                                          
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: AILUROPODA MELANOLEUCA;                         AUTHOR    H.YUAN,C.XIA                                                          
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         798
+ selectset done           0
+ eigen done           0
+ tau           1  0.820047617              52          63
+ #popped           2           0
+ #selectset contacts         798
+ selectset done           0
+ eigen done           0
+ tau           3  0.623497188              12          23
+ #popped           4           0
+ #selectset contacts         798
+ selectset done           0
+ eigen done           0
+ tau           5  0.408082664              25
+ #popped           7           0
+ #selectset contacts         798
+ selectset done           0
+ eigen done           0
+ tau           7  0.617729247              36
+ #popped           9           0
+ #selectset contacts         798
+ selectset done           0
+ eigen done           0
+ tau           9   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: AILUROPODA MELANOLEUCA;                         AUTHOR    H.YUAN,C.XIA                                                          
+           0
+          99
+          99  residues read 7DC6.dssp                                                   
+  grow short strand          45          46
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  7  8  9  6
+   2     1  6  7  8  1  2  3  4  5  7  8  9
+   3     1  0  0  1  6
+   4     0  0  0  8  1  2  3  4  5  7  8  9
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  8  9  7  2  3  4  5  7  8  9
+   8     7  0  0  1  2
+   9     7  0  0  6  3  4  5  7  8  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  5  7  9
+   3 -   1  0  0  1  1  6  6
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  7  2  2  5  7  9
+   6 -   5  0  0  1  1  2  2
+   7 -   5  0  0  6  2  3  5  7  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            275
+Total number of atoms read in:              2243
+Total number of ignored atom records:         19
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.YUAN,C.XIA                                                          
+  calculate residue outside grid:         196
+  calculate residue outside grid:         197
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: AILUROPODA MELANOLEUCA;                         AUTHOR    H.YUAN,C.XIA                                                          
+         275  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2426
+ selectset done           0
+ eigen done           0
+ tau           1   11.2134504             180
+ #popped           2           1
+ #selectset contacts        2426
+ selectset done           1
+ eigen done           1
+ tau           3   1.09392285              11          21          71          93
+ #popped           4           2
+ #selectset contacts        2426
+ selectset done           2
+ eigen done           2
+ tau           5   1.28580022             134         150
+ #popped           6           2
+ #selectset contacts        2426
+ selectset done           2
+ eigen done           2
+ tau           7   1.55699849             134
+ #popped           8           3
+ #selectset contacts        2426
+ selectset done           3
+ eigen done           3
+ tau           9   1.68058968              53          71
+ #popped          10           3
+ #selectset contacts        2426
+ selectset done           3
+ eigen done           3
+ tau          11  0.636620045             111
+ #popped          12           4
+ #selectset contacts        2426
+ selectset done           4
+ eigen done           4
+ tau          13  0.219837204              24
+ #popped          15           4
+ #selectset contacts        2426
+ selectset done           4
+ eigen done           4
+ tau          15   999.999023              53
+ #popped          16           4
+ #selectset contacts        2426
+ selectset done           4
+ eigen done           4
+ tau          17   0.00000000    
+ #popped          13           3
+ #selectset contacts        2426
+ selectset done           3
+ eigen done           3
+ tau          17   1.06649899             124
+ #popped           9           2
+ #selectset contacts        2426
+ selectset done           2
+ eigen done           2
+ tau          19   1.59662664             161
+ #popped           5           1
+ #selectset contacts        2426
+ selectset done           1
+ eigen done           1
+ tau          21   1.73967624              21
+ #popped          23           1
+ #selectset contacts        2426
+ selectset done           1
+ eigen done           1
+ tau          23  0.823045254              81
+ #popped           3           0
+ #selectset contacts        2426
+ selectset done           0
+ eigen done           0
+ tau          25   1.10234690             190         201         246         257
+ #popped          26           1
+ #selectset contacts        2426
+ selectset done           1
+ eigen done           1
+ tau          27  0.966356874             217         228
+ #popped          28           1
+ #selectset contacts        2426
+ selectset done           1
+ eigen done           1
+ tau          29  0.361001164             217
+ #popped          30           2
+ #selectset contacts        2426
+ selectset done           2
+ eigen done           2
+ tau          31   0.00000000    
+ #popped          31           1
+ #selectset contacts        2426
+ selectset done           1
+ eigen done           1
+ tau          31   999.999023             246
+ #popped          27           0
+ #selectset contacts        2426
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: AILUROPODA MELANOLEUCA;                         AUTHOR    H.YUAN,C.XIA                                                          
+           0
+         275
+         275  residues read 7DC6.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          52
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+ crowded segment excluded!
+  exclude short helix         225         227
+  grow short strand         229         230
+  grow short strand         234         235
+  exclude short helix         254         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  6  7  8  9  5 11 12 10 13 14 15 16 17 18 19 20
+   2     1  6  7 12  1  2  3  4  6  7  8  9  5 11 12 10
+   3     1 30 31  8 13 14 15 16 17 18 19 20
+   4     0  0  0 12  1  2  3  4  6  7  8  9  5 11 12 10
+   5     0  0  0  0
+   6     2  8  9 11  1  2  3  4  6  7  8  9  5 11 12
+   7     2  0  0  1 10
+   8     6 10 11  9  1  2  3  4  6  7  8  9  5
+   9     6 20 21  2 11 12
+  10     8 12 13  8  1  2  3  4  6  7  8  9
+  11     8  0  0  1  5
+  12    10 14 15  5  1  2  3  4  6
+  13    10 18 19  3  7  8  9
+  14    12  0  0  2  1  2
+  15    12 16 17  3  3  4  6
+  16    15  0  0  2  3  4
+  17    15  0  0  1  6
+  18    13  0  0  2  7  8
+  19    13  0  0  1  9
+  20     9  0  0  1 11
+  21     9  0  0  1 12
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  8 13 14 15 16 17 18 19 20
+  27     0  0  0  0
+  28     0  0  0  8 13 14 15 16 17 18 19 20
+  29     0  0  0  0
+  30     3  0  0  3 13 14 15
+  31     3 32 33  5 16 17 18 19 20
+  32    31  0  0  3 16 17 18
+  33    31  0  0  2 19 20
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 12  1  1 12
+   3 *   1 20 21  8  1 13 20
+   4 -   2  6  7 11  2  1  9 11 12
+   5 -   2  0  0  1  1 10 10
+   6 -   4  8  9  9  1  1  9
+   7 -   4 18 19  2  1 11 12
+   8 -   6 10 11  8  2  1  4  6  9
+   9 -   6  0  0  1  1  5  5
+  10 -   8 12 13  5  2  1  4  6  6
+  11 -   8 16 17  3  1  7  9
+  12 -  10  0  0  2  1  1  2
+  13 -  10 14 15  3  2  3  4  6  6
+  14 -  13  0  0  2  1  3  4
+  15 -  13  0  0  1  1  6  6
+  16 -  11  0  0  2  1  7  8
+  17 -  11  0  0  1  1  9  9
+  18 -   7  0  0  1  1 11 11
+  19 -   7  0  0  1  1 12 12
+  20 -   3  0  0  3  1 13 15
+  21 -   3 22 23  5  1 16 20
+  22 -  21  0  0  3  1 16 18
+  23 -  21  0  0  2  1 19 20
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             98
+Total number of atoms read in:               809
+Total number of ignored atom records:          7
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.YUAN,C.XIA                                                          
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: AILUROPODA MELANOLEUCA;                         AUTHOR    H.YUAN,C.XIA                                                          
+          98  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau           1  0.768629491              51          62
+ #popped           2           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau           3  0.582884312              10          23
+ #popped           4           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau           5  0.736333787              34
+ #popped           6           1
+ #selectset contacts         796
+ selectset done           1
+ eigen done           1
+ tau           7  0.239980057              10
+ #popped           7           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau           9  0.600932658              77
+ #popped          10           1
+ #selectset contacts         796
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped          11           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau          11  0.400834948              87
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           23-OCT-20   7DC6              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN;                                       SOURCE   2 ORGANISM_SCIENTIFIC: AILUROPODA MELANOLEUCA;                         AUTHOR    H.YUAN,C.XIA                                                          
+           0
+          98
+          98  residues read 7DC6.dssp                                                   
+  grow short strand          44          45
+  grow short strand          49          50
+  grow short strand          54          55
+  grow short strand          90          93
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  7  8  9  6
+   2     1  6  7  8  1  2  3  4  5  7  8  9
+   3     1  0  0  1  6
+   4     0  0  0  8  1  2  3  4  5  7  8  9
+   5     0  0  0  0
+   6     2  8  9  2  1  2
+   7     2 10 11  6  3  4  5  7  8  9
+   8     6  0  0  1  1
+   9     6  0  0  1  2
+  10     7  0  0  4  3  4  5  7
+  11     7 12 13  2  8  9
+  12    11  0  0  1  8
+  13    11  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  5  7  9
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  6  2  3  5  7  9
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  4  2  3  5  7  7
+   9 -   5 10 11  2  1  8  9
+  10 -   9  0  0  1  1  8  8
+  11 -   9  0  0  1  1  9  9
+
+ CHAIN : 7DC6A
+ CHAIN : 7DC6B
+ CHAIN : 7DC6C
+ CHAIN : 7DC6D
+

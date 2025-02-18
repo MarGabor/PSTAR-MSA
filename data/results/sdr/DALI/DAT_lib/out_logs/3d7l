@@ -1,0 +1,1503 @@
+A length: 196
+B length: 194
+C length: 194
+D length: 195
+E length: 194
+F length: 193
+G length: 194
+H length: 196
+I length: 194
+# 9 chains A B C D E F G H I
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1493
+Total number of ignored atom records:        291
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1874
+ selectset done           0
+ eigen done           0
+ tau           1   1.76302636             158         178
+ #popped           2           1
+ #selectset contacts        1874
+ selectset done           1
+ eigen done           1
+ tau           3   1.35287762              32          58
+ #popped           4           2
+ #selectset contacts        1874
+ selectset done           2
+ eigen done           2
+ tau           5   1.28435040              68          87         116         130
+ #popped           6           3
+ #selectset contacts        1874
+ selectset done           3
+ eigen done           3
+ tau           7   1.14172590             116         145
+ #popped           8           3
+ #selectset contacts        1874
+ selectset done           3
+ eigen done           3
+ tau           9  0.584302783             158
+ #popped          10           4
+ #selectset contacts        1874
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        1874
+ selectset done           3
+ eigen done           3
+ tau          11   1.75135124             192
+ #popped           7           2
+ #selectset contacts        1874
+ selectset done           2
+ eigen done           2
+ tau          13   1.17278337              87
+ #popped           5           1
+ #selectset contacts        1874
+ selectset done           1
+ eigen done           1
+ tau          15   1.12143826              44
+ #popped           3           0
+ #selectset contacts        1874
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         202
+         202  residues read 3D7L.dssp                                                   
+  grow short strand           5           9
+  grow short strand          39          40
+  exclude short helix          74          76
+  exclude short helix         101         103
+  exclude short helix         116         118
+  grow short strand         198         201
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  6  8  9 11 13 14 10  7  4  5 12
+   2     1  4  5 13  1  2  3  6  8  9 11 13 14 10  7  4  5
+   3     1  0  0  1 12
+   4     2  6  7 11  1  2  3  6  8  9 11 13 14 10  7
+   5     2 16 17  2  4  5
+   6     4  8  9 10  1  2  3  6  8  9 11 13 14 10
+   7     4  0  0  1  7
+   8     6 10 11  9  1  2  3  6  8  9 11 13 14
+   9     6  0  0  1 10
+  10     8  0  0  7  1  2  3  6  8  9 11
+  11     8 12 13  2 13 14
+  12    11  0  0  1 13
+  13    11  0  0  1 14
+  14     0  0  0  1  7
+  15     0  0  0  0
+  16     5  0  0  1  4
+  17     5  0  0  1  5
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1 11 13 14
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7 11  3  1  3  6 11 13 14
+   5 -   2 14 15  2  1  4  5
+   6 -   4  8  9 10  4  1  3  6  6  8 11 13 14
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  9  5  1  3  6  6  8  9 11 11 13 14
+   9 -   6  0  0  1  1 10 10
+  10 -   8  0  0  7  4  1  3  6  6  8  9 11 11
+  11 -   8 12 13  2  1 13 14
+  12 -  11  0  0  1  1 13 13
+  13 -  11  0  0  1  1 14 14
+  14 -   5  0  0  1  1  4  4
+  15 -   5  0  0  1  1  5  5
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            200
+Total number of atoms read in:              1479
+Total number of ignored atom records:        243
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         200  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1835
+ selectset done           0
+ eigen done           0
+ tau           1   1.94753897             155         176
+ #popped           2           1
+ #selectset contacts        1835
+ selectset done           1
+ eigen done           1
+ tau           3   1.31919384              64          88         112         132
+ #popped           4           2
+ #selectset contacts        1835
+ selectset done           2
+ eigen done           2
+ tau           5   1.44012761              38          54
+ #popped           6           2
+ #selectset contacts        1835
+ selectset done           2
+ eigen done           2
+ tau           7   1.46136808             112         143
+ #popped           8           2
+ #selectset contacts        1835
+ selectset done           2
+ eigen done           2
+ tau           9   1.12728906              38
+ #popped          10           3
+ #selectset contacts        1835
+ selectset done           3
+ eigen done           3
+ tau          11   1.03991604              10          25
+ #popped          12           3
+ #selectset contacts        1835
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          11           2
+ #selectset contacts        1835
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        1835
+ selectset done           1
+ eigen done           1
+ tau          13   1.52519238              88
+ #popped          14           2
+ #selectset contacts        1835
+ selectset done           2
+ eigen done           2
+ tau          15  0.729398012              75
+ #popped          15           1
+ #selectset contacts        1835
+ selectset done           1
+ eigen done           1
+ tau          17  0.966921151             122
+ #popped           3           0
+ #selectset contacts        1835
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         200
+         200  residues read 3D7L.dssp                                                   
+  grow short strand           3           7
+  grow short strand          37          38
+  exclude short helix          72          74
+  exclude short helix          99         101
+  exclude short helix         114         116
+  grow short strand         196         199
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  2  6  8  9 11 13 14 10  5  7 12
+   2     1  4  5 13  1  3  4  2  6  8  9 11 13 14 10  5  7
+   3     1  0  0  1 12
+   4     2  6  7 12  1  3  4  2  6  8  9 11 13 14 10  5
+   5     2  0  0  1  7
+   6     4  8  9 11  1  3  4  2  6  8  9 11 13 14 10
+   7     4  0  0  1  5
+   8     6 10 11 10  1  3  4  2  6  8  9 11 13 14
+   9     6  0  0  1 10
+  10     8 12 13  4  1  3  4  2
+  11     8  0  0  6  6  8  9 11 13 14
+  12    10  0  0  3  1  3  4
+  13    10  0  0  1  2
+  14     0  0  0  1  7
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1 11 13 14
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7 12  3  1  6  8 11 13 14
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9 11  4  1  4  6  6  8 11 13 14
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11 10  5  1  4  6  6  8  9 11 11 13 14
+   9 -   6  0  0  1  1 10 10
+  10 -   8 12 13  4  1  1  4
+  11 -   8  0  0  6  4  6  6  8  9 11 11 13 14
+  12 -  10  0  0  3  2  1  1  3  4
+  13 -  10  0  0  1  1  2  2
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            200
+Total number of atoms read in:              1479
+Total number of ignored atom records:        243
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         200  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1877
+ selectset done           0
+ eigen done           0
+ tau           1   1.33658230              63          97         110         143
+ #popped           2           1
+ #selectset contacts        1877
+ selectset done           1
+ eigen done           1
+ tau           3   2.17928171             155         176
+ #popped           4           2
+ #selectset contacts        1877
+ selectset done           2
+ eigen done           2
+ tau           5   1.55240524              38          53
+ #popped           6           2
+ #selectset contacts        1877
+ selectset done           2
+ eigen done           2
+ tau           7   1.10392880              38
+ #popped           8           3
+ #selectset contacts        1877
+ selectset done           3
+ eigen done           3
+ tau           9   1.21323538              10          25
+ #popped          10           3
+ #selectset contacts        1877
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1877
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1877
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1877
+ selectset done           0
+ eigen done           0
+ tau          11   1.11369431             130
+ #popped          12           0
+ #selectset contacts        1877
+ selectset done           0
+ eigen done           0
+ tau          13   1.48227239              97
+ #popped          14           1
+ #selectset contacts        1877
+ selectset done           1
+ eigen done           1
+ tau          15   1.21049559              87
+ #popped          16           1
+ #selectset contacts        1877
+ selectset done           1
+ eigen done           1
+ tau          17  0.745465457              75
+ #popped          15           0
+ #selectset contacts        1877
+ selectset done           0
+ eigen done           0
+ tau          19  0.749673188             120
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         200
+         200  residues read 3D7L.dssp                                                   
+  grow short strand           3           7
+  grow short strand          37          38
+  exclude short helix          72          74
+  exclude short helix         114         116
+  grow short strand         196         199
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  2  6  9 11 13 14  5 12  7  8 10
+   2     1  4  5 11  1  3  4  2  6  9 11 13 14  5 12
+   3     1 12 13  3  7  8 10
+   4     2  6  7 10  1  3  4  2  6  9 11 13 14  5
+   5     2  0  0  1 12
+   6     4  8  9  9  1  3  4  2  6  9 11 13 14
+   7     4  0  0  1  5
+   8     6 10 11  4  1  3  4  2
+   9     6  0  0  5  6  9 11 13 14
+  10     8  0  0  3  1  3  4
+  11     8  0  0  1  2
+  12     3 16 17  2  7  8
+  13     3  0  0  1 10
+  14     0  0  0  2  7  8
+  15     0  0  0  0
+  16    12  0  0  1  7
+  17    12  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 11  3  1  6  9  9 11 14
+   3 -   1 12 13  3  2  7  8 10 10
+   4 -   2  6  7 10  4  1  6  9  9 11 11 13 14
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  9  5  1  4  6  6  9  9 11 11 13 14
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  4  1  1  4
+   9 -   6  0  0  5  4  6  6  9  9 11 11 13 14
+  10 -   8  0  0  3  2  1  1  3  4
+  11 -   8  0  0  1  1  2  2
+  12 -   3 14 15  2  1  7  8
+  13 -   3  0  0  1  1 10 10
+  14 -  12  0  0  1  1  7  7
+  15 -  12  0  0  1  1  8  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            201
+Total number of atoms read in:              1487
+Total number of ignored atom records:        243
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         201  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1887
+ selectset done           0
+ eigen done           0
+ tau           1   1.64593351             157         177
+ #popped           2           1
+ #selectset contacts        1887
+ selectset done           1
+ eigen done           1
+ tau           3   1.27704382              29          56
+ #popped           4           2
+ #selectset contacts        1887
+ selectset done           2
+ eigen done           2
+ tau           5   1.32418406              66          87         120         130
+ #popped           6           3
+ #selectset contacts        1887
+ selectset done           3
+ eigen done           3
+ tau           7  0.971784294             110
+ #popped           8           4
+ #selectset contacts        1887
+ selectset done           4
+ eigen done           4
+ tau           9  0.522101700              93
+ #popped          10           4
+ #selectset contacts        1887
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped           9           3
+ #selectset contacts        1887
+ selectset done           3
+ eigen done           3
+ tau          11   1.25685394             157         190
+ #popped          12           3
+ #selectset contacts        1887
+ selectset done           3
+ eigen done           3
+ tau          13  0.426914245             120
+ #popped          15           3
+ #selectset contacts        1887
+ selectset done           3
+ eigen done           3
+ tau          15   2.01063704             144
+ #popped          17           3
+ #selectset contacts        1887
+ selectset done           3
+ eigen done           3
+ tau          17  0.292649329             157
+ #popped           7           2
+ #selectset contacts        1887
+ selectset done           2
+ eigen done           2
+ tau          19  0.865116298              87
+ #popped          20           2
+ #selectset contacts        1887
+ selectset done           2
+ eigen done           2
+ tau          21  0.796024024              76
+ #popped           5           1
+ #selectset contacts        1887
+ selectset done           1
+ eigen done           1
+ tau          23   1.42693019              39
+ #popped           3           0
+ #selectset contacts        1887
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         201
+         201  residues read 3D7L.dssp                                                   
+  grow short strand           4           8
+  grow short strand          38          39
+  exclude short helix          73          75
+  exclude short helix         115         117
+  grow short strand         197         200
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  6  8  9 10 11 14 13  7  4  5 12
+   2     1  4  5 13  1  2  3  6  8  9 10 11 14 13  7  4  5
+   3     1  0  0  1 12
+   4     2  6  7 11  1  2  3  6  8  9 10 11 14 13  7
+   5     2 24 25  2  4  5
+   6     4  8  9 10  1  2  3  6  8  9 10 11 14 13
+   7     4  0  0  1  7
+   8     6 10 11  6  1  2  3  6  8  9
+   9     6 12 13  4 10 11 14 13
+  10     8  0  0  4  1  2  3  6
+  11     8  0  0  2  8  9
+  12     9 16 17  3 10 11 14
+  13     9  0  0  1 13
+  14     0  0  0  0
+  15     0  0  0  3 10 11 14
+  16    12  0  0  1 10
+  17    12 18 19  2 11 14
+  18    17  0  0  1 11
+  19    17  0  0  1 14
+  20     0  0  0  1  7
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1  7
+  24     5  0  0  1  4
+  25     5  0  0  1  5
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1 11 13 14
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7 11  3  1  3  6 11 13 14
+   5 -   2 18 19  2  1  4  5
+   6 -   4  8  9 10  4  1  3  6  6  8 11 13 14
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  6  3  1  3  6  6  8  9
+   9 -   6 12 13  4  2 10 11 13 14
+  10 -   8  0  0  4  2  1  3  6  6
+  11 -   8  0  0  2  1  8  9
+  12 -   9 14 15  3  2 10 11 14 14
+  13 -   9  0  0  1  1 13 13
+  14 -  12  0  0  1  1 10 10
+  15 -  12 16 17  2  2 11 11 14 14
+  16 -  15  0  0  1  1 11 11
+  17 -  15  0  0  1  1 14 14
+  18 -   5  0  0  1  1  4  4
+  19 -   5  0  0  1  1  5  5
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            200
+Total number of atoms read in:              1479
+Total number of ignored atom records:        233
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         200  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1827
+ selectset done           0
+ eigen done           0
+ tau           1   1.87094903             156         176
+ #popped           2           1
+ #selectset contacts        1827
+ selectset done           1
+ eigen done           1
+ tau           3   1.36752248              66          85
+ #popped           4           1
+ #selectset contacts        1827
+ selectset done           1
+ eigen done           1
+ tau           5   1.21684635             111
+ #popped           6           2
+ #selectset contacts        1827
+ selectset done           2
+ eigen done           2
+ tau           7   1.43622756              38          55
+ #popped           8           2
+ #selectset contacts        1827
+ selectset done           2
+ eigen done           2
+ tau           9   1.33833647              10          24
+ #popped          10           2
+ #selectset contacts        1827
+ selectset done           2
+ eigen done           2
+ tau          11  0.863040507              38
+ #popped          12           3
+ #selectset contacts        1827
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          13           2
+ #selectset contacts        1827
+ selectset done           2
+ eigen done           2
+ tau          13  0.312203199              66
+ #popped          15           2
+ #selectset contacts        1827
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           7           1
+ #selectset contacts        1827
+ selectset done           1
+ eigen done           1
+ tau          15   1.71599996             156         190
+ #popped          16           1
+ #selectset contacts        1827
+ selectset done           1
+ eigen done           1
+ tau          17  0.869772732             130
+ #popped          19           1
+ #selectset contacts        1827
+ selectset done           1
+ eigen done           1
+ tau          19   1.82186329             143
+ #popped          21           1
+ #selectset contacts        1827
+ selectset done           1
+ eigen done           1
+ tau          21  0.296366751             156
+ #popped           3           0
+ #selectset contacts        1827
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         200
+         200  residues read 3D7L.dssp                                                   
+  grow short strand           3           7
+  grow short strand          37          38
+  exclude short helix          72          74
+  exclude short helix          99         101
+  exclude short helix         114         116
+  grow short strand         196         199
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  6  8  9  2  5 10 11 14 13  7 12
+   2     1  4  5 13  1  3  4  6  8  9  2  5 10 11 14 13  7
+   3     1  0  0  1 12
+   4     2  6  7 12  1  3  4  6  8  9  2  5 10 11 14 13
+   5     2  0  0  1  7
+   6     4  8  9  8  1  3  4  6  8  9  2  5
+   7     4 16 17  4 10 11 14 13
+   8     6 10 11  7  1  3  4  6  8  9  2
+   9     6  0  0  1  5
+  10     8 12 13  6  1  3  4  6  8  9
+  11     8  0  0  1  2
+  12    10  0  0  3  1  3  4
+  13    10 14 15  3  6  8  9
+  14    13  0  0  1  6
+  15    13  0  0  2  8  9
+  16     7 20 21  3 10 11 14
+  17     7  0  0  1 13
+  18     0  0  0  0
+  19     0  0  0  3 10 11 14
+  20    16  0  0  1 10
+  21    16 22 23  2 11 14
+  22    21  0  0  1 11
+  23    21  0  0  1 14
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1 11 13 14
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7 12  3  1  6  8 11 13 14
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  8  2  1  6  8  9
+   7 -   4 16 17  4  2 10 11 13 14
+   8 -   6 10 11  7  3  1  4  6  6  8  9
+   9 -   6  0  0  1  1  5  5
+  10 -   8 12 13  6  4  1  1  3  4  6  6  8  9
+  11 -   8  0  0  1  1  2  2
+  12 -  10  0  0  3  2  1  1  3  4
+  13 -  10 14 15  3  2  6  6  8  9
+  14 -  13  0  0  1  1  6  6
+  15 -  13  0  0  2  1  8  9
+  16 -   7 18 19  3  2 10 11 14 14
+  17 -   7  0  0  1  1 13 13
+  18 -  16  0  0  1  1 10 10
+  19 -  16 20 21  2  2 11 11 14 14
+  20 -  19  0  0  1  1 11 11
+  21 -  19  0  0  1  1 14 14
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            199
+Total number of atoms read in:              1474
+Total number of ignored atom records:        181
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1841
+ selectset done           0
+ eigen done           0
+ tau           1   1.35641539              65          84
+ #popped           2           0
+ #selectset contacts        1841
+ selectset done           0
+ eigen done           0
+ tau           3   1.82170129             155         175
+ #popped           4           1
+ #selectset contacts        1841
+ selectset done           1
+ eigen done           1
+ tau           5   1.44416809              29          54
+ #popped           6           2
+ #selectset contacts        1841
+ selectset done           2
+ eigen done           2
+ tau           7   1.13015771             108
+ #popped           8           3
+ #selectset contacts        1841
+ selectset done           3
+ eigen done           3
+ tau           9  0.968286097              29
+ #popped          10           4
+ #selectset contacts        1841
+ selectset done           4
+ eigen done           4
+ tau          11  0.296610177              16
+ #popped          11           3
+ #selectset contacts        1841
+ selectset done           3
+ eigen done           3
+ tau          13  0.367527515              96
+ #popped          14           3
+ #selectset contacts        1841
+ selectset done           3
+ eigen done           3
+ tau          15   1.23113203              65
+ #popped           9           2
+ #selectset contacts        1841
+ selectset done           2
+ eigen done           2
+ tau          17  0.712222695             131
+ #popped          18           3
+ #selectset contacts        1841
+ selectset done           3
+ eigen done           3
+ tau          19  0.782861352             121
+ #popped          19           2
+ #selectset contacts        1841
+ selectset done           2
+ eigen done           2
+ tau          21   1.93929911             145
+ #popped          23           2
+ #selectset contacts        1841
+ selectset done           2
+ eigen done           2
+ tau          23  0.885105908             155         187
+ #popped          24           2
+ #selectset contacts        1841
+ selectset done           2
+ eigen done           2
+ tau          25  0.254806310             155
+ #popped           7           1
+ #selectset contacts        1841
+ selectset done           1
+ eigen done           1
+ tau          27   1.05729163              41
+ #popped           5           0
+ #selectset contacts        1841
+ selectset done           0
+ eigen done           0
+ tau          29   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         199
+         199  residues read 3D7L.dssp                                                   
+  grow short strand           2           6
+  grow short strand          36          37
+  exclude short helix          71          73
+  exclude short helix         113         115
+  grow short strand         195         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  6  8  9 10 11 14 13  4  5 12  7
+   2     1  4  5 13  1  2  3  6  8  9 10 11 14 13  4  5 12
+   3     1  0  0  1  7
+   4     2  6  7 12  1  2  3  6  8  9 10 11 14 13  4  5
+   5     2  0  0  1 12
+   6     4  8  9 10  1  2  3  6  8  9 10 11 14 13
+   7     4 28 29  2  4  5
+   8     6 10 11  6  1  2  3  6  8  9
+   9     6 22 23  4 10 11 14 13
+  10     8 12 13  3  1  2  3
+  11     8 14 15  3  6  8  9
+  12    10  0  0  2  1  2
+  13    10  0  0  1  3
+  14    11 16 17  2  6  8
+  15    11  0  0  1  9
+  16    14  0  0  1  6
+  17    14  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  4 10 11 14 13
+  20     0  0  0  0
+  21     0  0  0  0
+  22     9  0  0  1 10
+  23     9 24 25  3 11 14 13
+  24    23 26 27  2 11 14
+  25    23  0  0  1 13
+  26    24  0  0  1 11
+  27    24  0  0  1 14
+  28     7  0  0  1  4
+  29     7  0  0  1  5
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1  6  8 14
+   3 -   1  0  0  1  1  7  7
+   4 -   2  6  7 12  3  1  6  8 11 13 14
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9 10  4  1  3  6  6  8 11 13 14
+   7 -   4 24 25  2  1  4  5
+   8 -   6 10 11  6  3  1  3  6  6  8  9
+   9 -   6 18 19  4  2 10 11 13 14
+  10 -   8 12 13  3  1  1  3
+  11 -   8 14 15  3  2  6  6  8  9
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  1  1  3  3
+  14 -  11 16 17  2  2  6  6  8  8
+  15 -  11  0  0  1  1  9  9
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  1  1  8  8
+  18 -   9  0  0  1  1 10 10
+  19 -   9 20 21  3  2 11 11 13 14
+  20 -  19 22 23  2  2 11 11 14 14
+  21 -  19  0  0  1  1 13 13
+  22 -  20  0  0  1  1 11 11
+  23 -  20  0  0  1  1 14 14
+  24 -   7  0  0  1  1  4  4
+  25 -   7  0  0  1  1  5  5
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            200
+Total number of atoms read in:              1479
+Total number of ignored atom records:        269
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         200  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1883
+ selectset done           0
+ eigen done           0
+ tau           1   1.80332434             156         176
+ #popped           2           1
+ #selectset contacts        1883
+ selectset done           1
+ eigen done           1
+ tau           3   1.37742615              64          88         112         135
+ #popped           4           2
+ #selectset contacts        1883
+ selectset done           2
+ eigen done           2
+ tau           5   1.32529116             112         145
+ #popped           6           2
+ #selectset contacts        1883
+ selectset done           2
+ eigen done           2
+ tau           7   1.11604536              38          53
+ #popped           8           2
+ #selectset contacts        1883
+ selectset done           2
+ eigen done           2
+ tau           9   1.12728906              38
+ #popped          10           3
+ #selectset contacts        1883
+ selectset done           3
+ eigen done           3
+ tau          11   1.09191179              10          25
+ #popped          12           3
+ #selectset contacts        1883
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          11           2
+ #selectset contacts        1883
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        1883
+ selectset done           1
+ eigen done           1
+ tau          13   1.46464646              88
+ #popped          14           2
+ #selectset contacts        1883
+ selectset done           2
+ eigen done           2
+ tau          15  0.683086991              75
+ #popped          15           1
+ #selectset contacts        1883
+ selectset done           1
+ eigen done           1
+ tau          17   1.04148149             122
+ #popped           3           0
+ #selectset contacts        1883
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         200
+         200  residues read 3D7L.dssp                                                   
+  grow short strand           3           7
+  grow short strand          37          38
+  exclude short helix          72          74
+  exclude short helix          99         101
+  exclude short helix         114         116
+  grow short strand         196         199
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  2  6  8  9 11 13 14  5  7 10 12
+   2     1  4  5 13  1  3  4  2  6  8  9 11 13 14  5  7 10
+   3     1  0  0  1 12
+   4     2  8  9 11  1  3  4  2  6  8  9 11 13 14  5
+   5     2 14 15  2  7 10
+   6     0  0  0 11  1  3  4  2  6  8  9 11 13 14  5
+   7     0  0  0  0
+   8     4 10 11 10  1  3  4  2  6  8  9 11 13 14
+   9     4  0  0  1  5
+  10     8 12 13  4  1  3  4  2
+  11     8  0  0  6  6  8  9 11 13 14
+  12    10  0  0  3  1  3  4
+  13    10  0  0  1  2
+  14     5  0  0  1  7
+  15     5  0  0  1 10
+  16     0  0  0  0
+  17     0  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  1 10
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1 11 13 14
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7 11  4  1  6  8  9 11 11 13 14
+   5 -   2 12 13  2  2  7  7 10 10
+   6 -   4  8  9 10  5  1  4  6  6  8  9 11 11 13 14
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  4  1  1  4
+   9 -   6  0  0  6  4  6  6  8  9 11 11 13 14
+  10 -   8  0  0  3  2  1  1  3  4
+  11 -   8  0  0  1  1  2  2
+  12 -   5  0  0  1  1  7  7
+  13 -   5  0  0  1  1 10 10
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1493
+Total number of ignored atom records:        279
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1880
+ selectset done           0
+ eigen done           0
+ tau           1   1.29538035              67          88
+ #popped           2           1
+ #selectset contacts        1880
+ selectset done           1
+ eigen done           1
+ tau           3   1.76554823             157         178
+ #popped           4           2
+ #selectset contacts        1880
+ selectset done           2
+ eigen done           2
+ tau           5   1.49790084              32          57
+ #popped           6           3
+ #selectset contacts        1880
+ selectset done           3
+ eigen done           3
+ tau           7   1.11521220             111
+ #popped           8           4
+ #selectset contacts        1880
+ selectset done           4
+ eigen done           4
+ tau           9   1.36386478              67          99
+ #popped          10           4
+ #selectset contacts        1880
+ selectset done           4
+ eigen done           4
+ tau          11  0.783930719              32
+ #popped          12           5
+ #selectset contacts        1880
+ selectset done           5
+ eigen done           5
+ tau          13  0.695579350              11          22
+ #popped          14           5
+ #selectset contacts        1880
+ selectset done           5
+ eigen done           5
+ tau          15  0.294218212              11
+ #popped          13           4
+ #selectset contacts        1880
+ selectset done           4
+ eigen done           4
+ tau          17  0.312745094              67
+ #popped           9           3
+ #selectset contacts        1880
+ selectset done           3
+ eigen done           3
+ tau          19   1.65333331             157         192
+ #popped          20           3
+ #selectset contacts        1880
+ selectset done           3
+ eigen done           3
+ tau          21  0.637058794             133
+ #popped          22           4
+ #selectset contacts        1880
+ selectset done           4
+ eigen done           4
+ tau          23   0.00000000    
+ #popped          23           3
+ #selectset contacts        1880
+ selectset done           3
+ eigen done           3
+ tau          23   1.85437918             145
+ #popped          25           3
+ #selectset contacts        1880
+ selectset done           3
+ eigen done           3
+ tau          25   0.00000000    
+ #popped           7           2
+ #selectset contacts        1880
+ selectset done           2
+ eigen done           2
+ tau          25   1.18945312              44
+ #popped           5           1
+ #selectset contacts        1880
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped           3           0
+ #selectset contacts        1880
+ selectset done           0
+ eigen done           0
+ tau          27  0.830633759              77
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         202
+         202  residues read 3D7L.dssp                                                   
+  grow short strand           5           9
+  grow short strand          39          40
+  exclude short helix          74          76
+  exclude short helix         101         103
+  exclude short helix         116         118
+  grow short strand         198         201
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  2  6  9  8 10 11 14 13  4  5 12  7
+   2     1  4  5 13  1  3  2  6  9  8 10 11 14 13  4  5 12
+   3     1  0  0  1  7
+   4     2  6  7 12  1  3  2  6  9  8 10 11 14 13  4  5
+   5     2  0  0  1 12
+   6     4  8  9 10  1  3  2  6  9  8 10 11 14 13
+   7     4 26 27  2  4  5
+   8     6 10 11  6  1  3  2  6  9  8
+   9     6 20 21  4 10 11 14 13
+  10     8 12 13  5  1  3  2  6  9
+  11     8  0  0  1  8
+  12    10 14 15  3  1  3  2
+  13    10 18 19  2  6  9
+  14    12 16 17  2  1  3
+  15    12  0  0  1  2
+  16    14  0  0  1  1
+  17    14  0  0  1  3
+  18    13  0  0  1  6
+  19    13  0  0  1  9
+  20     9 24 25  3 10 11 14
+  21     9  0  0  1 13
+  22     0  0  0  0
+  23     0  0  0  3 10 11 14
+  24    20  0  0  1 10
+  25    20  0  0  2 11 14
+  26     7  0  0  1  4
+  27     7  0  0  1  5
+  28     0  0  0  0
+  29     0  0  0  1  7
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1  6  8 14
+   3 -   1  0  0  1  1  7  7
+   4 -   2  6  7 12  3  1  6  8 11 13 14
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9 10  4  1  3  6  6  8 11 13 14
+   7 -   4 24 25  2  1  4  5
+   8 -   6 10 11  6  3  1  3  6  6  8  9
+   9 -   6 20 21  4  2 10 11 13 14
+  10 -   8 12 13  5  3  1  3  6  6  9  9
+  11 -   8  0  0  1  1  8  8
+  12 -  10 14 15  3  1  1  3
+  13 -  10 18 19  2  2  6  6  9  9
+  14 -  12 16 17  2  2  1  1  3  3
+  15 -  12  0  0  1  1  2  2
+  16 -  14  0  0  1  1  1  1
+  17 -  14  0  0  1  1  3  3
+  18 -  13  0  0  1  1  6  6
+  19 -  13  0  0  1  1  9  9
+  20 -   9 22 23  3  2 10 11 14 14
+  21 -   9  0  0  1  1 13 13
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  2  2 11 11 14 14
+  24 -   7  0  0  1  1  4  4
+  25 -   7  0  0  1  1  5  5
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            200
+Total number of atoms read in:              1479
+Total number of ignored atom records:        257
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL       
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+         200  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1862
+ selectset done           0
+ eigen done           0
+ tau           1   1.72041285             156         176
+ #popped           2           1
+ #selectset contacts        1862
+ selectset done           1
+ eigen done           1
+ tau           3   1.34090757              66          85         117         128
+ #popped           4           2
+ #selectset contacts        1862
+ selectset done           2
+ eigen done           2
+ tau           5   1.49400902              30          55
+ #popped           6           3
+ #selectset contacts        1862
+ selectset done           3
+ eigen done           3
+ tau           7   1.05792701              30         156         189
+ #popped           8           4
+ #selectset contacts        1862
+ selectset done           4
+ eigen done           4
+ tau           9   1.51675487              30
+ #popped          10           4
+ #selectset contacts        1862
+ selectset done           4
+ eigen done           4
+ tau          11  0.597586095              10          20
+ #popped          12           4
+ #selectset contacts        1862
+ selectset done           4
+ eigen done           4
+ tau          13  0.294028580              10
+ #popped           9           3
+ #selectset contacts        1862
+ selectset done           3
+ eigen done           3
+ tau          15  0.588251293             117
+ #popped          16           4
+ #selectset contacts        1862
+ selectset done           4
+ eigen done           4
+ tau          17   0.00000000    
+ #popped          17           3
+ #selectset contacts        1862
+ selectset done           3
+ eigen done           3
+ tau          17   2.08030438             143
+ #popped          19           3
+ #selectset contacts        1862
+ selectset done           3
+ eigen done           3
+ tau          19  0.287162155             156
+ #popped           7           2
+ #selectset contacts        1862
+ selectset done           2
+ eigen done           2
+ tau          21   1.10646808              42
+ #popped           5           1
+ #selectset contacts        1862
+ selectset done           1
+ eigen done           1
+ tau          23  0.953239441              85
+ #popped           3           0
+ #selectset contacts        1862
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, UNKNOWN FUNCTION   21-MAY-08   3D7L              COMPND   2 MOLECULE: LIN1944 PROTEIN;                                           SOURCE   2 ORGANISM_SCIENTIFIC: LISTERIA INNOCUA;                               AUTHOR    K.TAN,L.BIGELOW,M.GU,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTU          
+           0
+         200
+         200  residues read 3D7L.dssp                                                   
+  grow short strand           3           7
+  grow short strand          37          38
+  exclude short helix          72          74
+  exclude short helix          99         101
+  exclude short helix         114         116
+  grow short strand         196         199
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  2 13  6  8  9 10 11 14  4  5  7 12
+   2     1  4  5 13  1  3  2 13  6  8  9 10 11 14  4  5  7
+   3     1  0  0  1 12
+   4     2  6  7 12  1  3  2 13  6  8  9 10 11 14  4  5
+   5     2  0  0  1  7
+   6     4  8  9 10  1  3  2 13  6  8  9 10 11 14
+   7     4 22 23  2  4  5
+   8     6 10 11  4  1  3  2 13
+   9     6 16 17  6  6  8  9 10 11 14
+  10     8 12 13  3  1  3  2
+  11     8  0  0  1 13
+  12    10 14 15  2  1  3
+  13    10  0  0  1  2
+  14    12  0  0  1  1
+  15    12  0  0  1  3
+  16     9  0  0  3  6  8  9
+  17     9 18 19  3 10 11 14
+  18    17  0  0  1 10
+  19    17 20 21  2 11 14
+  20    19  0  0  1 11
+  21    19  0  0  1 14
+  22     7  0  0  1  4
+  23     7  0  0  1  5
+  24     0  0  0  1  7
+  25     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1 11 13 14
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7 12  3  1  6  8 11 13 14
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9 10  4  1  3  6  6  8 11 13 14
+   7 -   4 22 23  2  1  4  5
+   8 -   6 10 11  4  2  1  3 13 13
+   9 -   6 16 17  6  3  6  6  8 11 14 14
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  1  1 13 13
+  12 -  10 14 15  2  2  1  1  3  3
+  13 -  10  0  0  1  1  2  2
+  14 -  12  0  0  1  1  1  1
+  15 -  12  0  0  1  1  3  3
+  16 -   9  0  0  3  2  6  6  8  9
+  17 -   9 18 19  3  2 10 11 14 14
+  18 -  17  0  0  1  1 10 10
+  19 -  17 20 21  2  2 11 11 14 14
+  20 -  19  0  0  1  1 11 11
+  21 -  19  0  0  1  1 14 14
+  22 -   7  0  0  1  1  4  4
+  23 -   7  0  0  1  1  5  5
+
+ CHAIN : 3D7LA
+ CHAIN : 3D7LB
+ CHAIN : 3D7LC
+ CHAIN : 3D7LD
+ CHAIN : 3D7LE
+ CHAIN : 3D7LF
+ CHAIN : 3D7LG
+ CHAIN : 3D7LH
+ CHAIN : 3D7LI
+

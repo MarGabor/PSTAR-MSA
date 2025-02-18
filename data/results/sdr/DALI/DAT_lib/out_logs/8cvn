@@ -1,0 +1,397 @@
+A length: 254
+B length: 254
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            256
+Total number of atoms read in:              1956
+Total number of ignored atom records:         73
+ HEADER    OXIDOREDUCTASE                          18-MAY-22   8CVN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.HUANG,D.J.TAYLOR                                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          18-MAY-22   8CVN              COMPND   2 MOLECULE: 15-HYDROXYPROSTAGLANDIN DEHYDROGENASE [NAD(+)];            SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.HUANG,D.J.TAYLOR                                                    
+         256  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2243
+ selectset done           0
+ eigen done           0
+ tau           1   1.75974071              63          83         107         130
+ #popped           2           1
+ #selectset contacts        2243
+ selectset done           1
+ eigen done           1
+ tau           3   3.47920322             184         220
+ #popped           4           2
+ #selectset contacts        2243
+ selectset done           2
+ eigen done           2
+ tau           5   2.21128201             107
+ #popped           6           3
+ #selectset contacts        2243
+ selectset done           3
+ eigen done           3
+ tau           7   6.59668684              93
+ #popped           8           3
+ #selectset contacts        2243
+ selectset done           3
+ eigen done           3
+ tau           9  0.968882084              35          63
+ #popped          10           4
+ #selectset contacts        2243
+ selectset done           4
+ eigen done           4
+ tau          11  0.281210691              10
+ #popped          13           4
+ #selectset contacts        2243
+ selectset done           4
+ eigen done           4
+ tau          13   2.26264429              35
+ #popped          14           4
+ #selectset contacts        2243
+ selectset done           4
+ eigen done           4
+ tau          15   0.00000000    
+ #popped          11           3
+ #selectset contacts        2243
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped           7           2
+ #selectset contacts        2243
+ selectset done           2
+ eigen done           2
+ tau          15   2.11654377             184         234
+ #popped          16           2
+ #selectset contacts        2243
+ selectset done           2
+ eigen done           2
+ tau          17   1.09819138             140         157
+ #popped          18           2
+ #selectset contacts        2243
+ selectset done           2
+ eigen done           2
+ tau          19  0.633826613             184
+ #popped          20           3
+ #selectset contacts        2243
+ selectset done           3
+ eigen done           3
+ tau          21   2.28460264             140         174
+ #popped          22           3
+ #selectset contacts        2243
+ selectset done           3
+ eigen done           3
+ tau          23  0.239497736             140
+ #popped          21           2
+ #selectset contacts        2243
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped           5           1
+ #selectset contacts        2243
+ selectset done           1
+ eigen done           1
+ tau          25   1.12059712             206
+ #popped          26           1
+ #selectset contacts        2243
+ selectset done           1
+ eigen done           1
+ tau          27   1.69196522             196
+ #popped           3           0
+ #selectset contacts        2243
+ selectset done           0
+ eigen done           0
+ tau          29   4.38153982              83
+ #popped          30           1
+ #selectset contacts        2243
+ selectset done           1
+ eigen done           1
+ tau          31  0.787481606              73
+ #popped          31           0
+ #selectset contacts        2243
+ selectset done           0
+ eigen done           0
+ tau          33  0.973752141             120
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          18-MAY-22   8CVN              COMPND   2 MOLECULE: 15-HYDROXYPROSTAGLANDIN DEHYDROGENASE [NAD(+)];            SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.HUANG,D.J.TAYLOR                                                    
+           0
+         256
+         256  residues read 8CVN.dssp                                                   
+  grow short strand           7          11
+  exclude short helix          55          57
+  grow short strand          58          62
+  grow short strand          87          90
+  exclude short helix         124         126
+  exclude short helix         139         141
+  grow short helix         189         195
+  grow short strand         242         245
+  grow short strand         251         253
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  3  7  4  5  8 10 12 11 16 17 15 13 14  6  9
+   2     1  4  5 15  1  2  3  7  4  5  8 10 12 11 16 17 15 13 14
+   3     1 30 31  2  6  9
+   4     2  6  7 13  1  2  3  7  4  5  8 10 12 11 16 17 15
+   5     2 26 27  2 13 14
+   6     4  8  9  7  1  2  3  7  4  5  8
+   7     4 16 17  6 10 12 11 16 17 15
+   8     6 10 11  6  1  2  3  7  4  5
+   9     6  0  0  1  8
+  10     8 12 13  4  1  2  3  7
+  11     8  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10 14 15  3  2  3  7
+  14    13  0  0  2  2  3
+  15    13  0  0  1  7
+  16     7 20 21  5 10 12 11 16 17
+  17     7  0  0  1 15
+  18     0  0  0  5 10 12 11 16 17
+  19     0  0  0  0
+  20    16 22 23  3 10 12 11
+  21    16  0  0  2 16 17
+  22    20 24 25  2 10 12
+  23    20  0  0  1 11
+  24    22  0  0  1 10
+  25    22  0  0  1 12
+  26     5  0  0  1 13
+  27     5  0  0  1 14
+  28     0  0  0  1 13
+  29     0  0  0  0
+  30     3  0  0  1  6
+  31     3  0  0  1  9
+  32     0  0  0  0
+  33     0  0  0  1  6
+  34     0  0  0  1  9
+  35     0  0  0  0
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5 15  3  1  5  7  8 10 17
+   3 -   1 26 27  2  2  6  6  9  9
+   4 -   2  6  7 13  4  1  5  7  8 10 12 15 17
+   5 -   2 24 25  2  1 13 14
+   6 -   4  8  9  7  2  1  5  7  8
+   7 -   4 16 17  6  2 10 12 15 17
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6  0  0  1  1  8  8
+  10 -   8 12 13  4  2  1  3  7  7
+  11 -   8  0  0  2  1  4  5
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  3  2  2  3  7  7
+  14 -  13  0  0  2  1  2  3
+  15 -  13  0  0  1  1  7  7
+  16 -   7 18 19  5  2 10 12 16 17
+  17 -   7  0  0  1  1 15 15
+  18 -  16 20 21  3  1 10 12
+  19 -  16  0  0  2  1 16 17
+  20 -  18 22 23  2  2 10 10 12 12
+  21 -  18  0  0  1  1 11 11
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  1  1 12 12
+  24 -   5  0  0  1  1 13 13
+  25 -   5  0  0  1  1 14 14
+  26 -   3  0  0  1  1  6  6
+  27 -   3  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            256
+Total number of atoms read in:              1956
+Total number of ignored atom records:         73
+ HEADER    OXIDOREDUCTASE                          18-MAY-22   8CVN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    W.HUANG,D.J.TAYLOR                                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          18-MAY-22   8CVN              COMPND   2 MOLECULE: 15-HYDROXYPROSTAGLANDIN DEHYDROGENASE [NAD(+)];            SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.HUANG,D.J.TAYLOR                                                    
+         256  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2249
+ selectset done           0
+ eigen done           0
+ tau           1   3.50643539             183         220
+ #popped           2           1
+ #selectset contacts        2249
+ selectset done           1
+ eigen done           1
+ tau           3   1.68908942              37          58
+ #popped           4           2
+ #selectset contacts        2249
+ selectset done           2
+ eigen done           2
+ tau           5   2.10015297              89         183         237
+ #popped           6           3
+ #selectset contacts        2249
+ selectset done           3
+ eigen done           3
+ tau           7   5.89832973              89
+ #popped           8           3
+ #selectset contacts        2249
+ selectset done           3
+ eigen done           3
+ tau           9  0.716169298              68
+ #popped          10           4
+ #selectset contacts        2249
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        2249
+ selectset done           3
+ eigen done           3
+ tau          11  0.937500000              78
+ #popped           7           2
+ #selectset contacts        2249
+ selectset done           2
+ eigen done           2
+ tau          13   1.28945410             107         143         154
+ #popped          14           3
+ #selectset contacts        2249
+ selectset done           3
+ eigen done           3
+ tau          15   1.26052237             107
+ #popped          15           2
+ #selectset contacts        2249
+ selectset done           2
+ eigen done           2
+ tau          17   1.95119119             130
+ #popped          18           3
+ #selectset contacts        2249
+ selectset done           3
+ eigen done           3
+ tau          19  0.973752141             120
+ #popped          19           2
+ #selectset contacts        2249
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped           5           1
+ #selectset contacts        2249
+ selectset done           1
+ eigen done           1
+ tau          21  0.646163106              48
+ #popped           3           0
+ #selectset contacts        2249
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          18-MAY-22   8CVN              COMPND   2 MOLECULE: 15-HYDROXYPROSTAGLANDIN DEHYDROGENASE [NAD(+)];            SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    W.HUANG,D.J.TAYLOR                                                    
+           0
+         256
+         256  residues read 8CVN.dssp                                                   
+  grow short strand           7          11
+  exclude short helix          55          57
+  grow short strand          58          62
+  grow short strand          87          90
+  exclude short helix         124         126
+  exclude short helix         139         141
+  grow short helix         189         195
+  grow short strand         242         245
+  grow short strand         251         253
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  3  5  6  7 15  8  9 10 11 12 16 17  4 13 14
+   2     1  4  5 15  1  2  3  5  6  7 15  8  9 10 11 12 16 17  4
+   3     1  0  0  2 13 14
+   4     2  6  7 14  1  2  3  5  6  7 15  8  9 10 11 12 16 17
+   5     2  0  0  1  4
+   6     4  8  9  7  1  2  3  5  6  7 15
+   7     4 14 15  7  8  9 10 11 12 16 17
+   8     6 10 11  6  1  2  3  5  6  7
+   9     6  0  0  1 15
+  10     8  0  0  4  1  2  3  5
+  11     8 12 13  2  6  7
+  12    11  0  0  1  6
+  13    11  0  0  1  7
+  14     7  0  0  1  8
+  15     7 18 19  6  9 10 11 12 16 17
+  16     0  0  0  1  8
+  17     0  0  0  0
+  18    15  0  0  1  9
+  19    15  0  0  5 10 11 12 16 17
+  20     0  0  0  1  9
+  21     0  0  0  0
+  22     0  0  0  1  4
+  23     0  0  0  0
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5 15  2  1 12 15 17
+   3 =   1  0  0  2  1 13 14
+   4 -   2  6  7 14  3  1  3  5 12 15 17
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  7  3  1  3  5  7 15 15
+   7 -   4 14 15  7  2  8 12 16 17
+   8 -   6 10 11  6  2  1  3  5  7
+   9 -   6  0  0  1  1 15 15
+  10 -   8  0  0  4  2  1  3  5  5
+  11 -   8 12 13  2  1  6  7
+  12 -  11  0  0  1  1  6  6
+  13 -  11  0  0  1  1  7  7
+  14 -   7  0  0  1  1  8  8
+  15 -   7 16 17  6  2  9 12 16 17
+  16 -  15  0  0  1  1  9  9
+  17 -  15  0  0  5  2 10 12 16 17
+
+ CHAIN : 8CVNA
+ CHAIN : 8CVNB
+

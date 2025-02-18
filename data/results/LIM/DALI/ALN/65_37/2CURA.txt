@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2EHE-A  7.5  3.4   67    82   28   MOLECULE: FOUR AND A HALF LIM DOMAINS 3;                             
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=2EHEA Z-score=7.5
+
+DSSP  ----------LLLLLLLLLLLLLLLLL--LLEEELLEEELLLLLLLLLLLLLLLLLLEEE
+Query ----------GSSGSSGCVKCNKAITS--GGITYQDQPWHADCFVCVTCSKKLAGQRFTA   48
+ident                  |  |   |        | |   |  || |  |   ||   || 
+Sbjct gssgssgpcyDNTFANTCAECQQLIGHdsRELFYEDRHFHEGCFRCCRCQRSLADEPFTC   60
+DSSP  llllllllllLLLLLLLLLLLLLLLLLllLLLLLLLLLLLLLLLLLLLLLLLLLLLLEEE
+
+DSSP  LLLLEEEHHHHHHhhLLLLLL---
+Query VEDQYYCVDCYKNfvSGPSSG---   69
+ident       | |||       |     
+Sbjct QDSELLCNDCYCS--AFSSGPssg   82
+DSSP  ELLEEEELLLLLL--LHHHLLlll
+
+
+# Structural equivalences
+   1: 2CUR-A 2EHE-A     1 -  17 <=>   11 -  27   (GLY    1  - SER   17  <=> ASP   11  - HIS   27 )                          
+   1: 2CUR-A 2EHE-A    18 -  61 <=>   30 -  73   (GLY   18  - ASN   61  <=> ARG   30  - SER   73 )                          
+   1: 2CUR-A 2EHE-A    64 -  69 <=>   74 -  79   (SER   64  - GLY   69  <=> ALA   74  - PRO   79 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 2EHE-A  U(1,.)   0.269008 -0.874113 -0.404427            1.609565"
+-matrix  "2CUR-A 2EHE-A  U(2,.)  -0.717892  0.097955 -0.689229           -0.615707"
+-matrix  "2CUR-A 2EHE-A  U(3,.)   0.642079  0.475743 -0.601168           -4.160667"
+

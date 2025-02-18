@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1MBAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBS-A 15.2  2.4  142   153   23   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1MBAA Sbjct=1MBSA Z-score=15.2
+
+DSSP  lLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLLLLLLLLHH-HHHLLLL
+Query sLSAAEADLAGKSWAPVFANKNANGLDFLVALFEKFPDSANFFADFKGKSVA-DIKASPK   59
+ident  ||  |  |    |  |       |   |  ||   |     |  ||      |   |  
+Sbjct gLSDGEWHLVLNVWGKVETDLAGHGQEVLIRLFKSHPETLEKFDKFKHLKSEdDMRRSED   60
+DSSP  lLHHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLLHHHHHLLLLLLLLLHhHHHLLHH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHHHHLLLL-HHHHHHHHHHHHHHHHL
+Query LRDVSSRIFTRLNEFVNNAAnagKMSAMLSQFAKEHVGFGVG-SAQFENVRSMFPGFVAS  118
+ident ||       | |              | |   |  |           |           |
+Sbjct LRKHGNTVLTALGGILKKKG---HHEAELKPLAQSHATKHKIpIKYLEFISEAIIHVLHS  117
+DSSP  HHHHHHHHHHHHHHHHHLLL---LLLLLHHHHHHHHHHLLLLlLLHHHHHHHHHHHHHHH
+
+DSSP  LLL--LLLLHHHHHHHHHHHHHHHHHHLLL------
+Query VAA--PPAGADAAWTKLFGLIIDALKAAGA------  146
+ident        | | ||  |   |      |         
+Sbjct KHPaeFGADAQAAMKKALELFRNDIAAKYKelgfhg  153
+DSSP  HLLllLLHHHHHHHHHHHHHHHHHHHHHHHhhllll
+
+
+# Structural equivalences
+   1: 1MBA-A 1MBS-A     2 -  52 <=>    2 -  52   (LEU    2  - ALA   52  <=> LEU    2  - GLU   52 )                          
+   1: 1MBA-A 1MBS-A    53 -  79 <=>   54 -  80   (ASP   53  - ALA   79  <=> ASP   54  - GLY   80 )                          
+   1: 1MBA-A 1MBS-A    83 - 101 <=>   81 -  99   (LYS   83  - GLY  101  <=> HIS   81  - ILE   99 )                          
+   1: 1MBA-A 1MBS-A   102 - 121 <=>  101 - 120   (SER  102  - ALA  121  <=> ILE  101  - PRO  120 )                          
+   1: 1MBA-A 1MBS-A   122 - 146 <=>  123 - 147   (PRO  122  - ALA  146  <=> PHE  123  - LYS  147 )                          
+
+# Translation-rotation matrices
+-matrix  "1MBA-A 1MBS-A  U(1,.)   0.474180  0.259617  0.841280          -68.740288"
+-matrix  "1MBA-A 1MBS-A  U(2,.)   0.043347 -0.961261  0.272211          -49.534401"
+-matrix  "1MBA-A 1MBS-A  U(3,.)   0.879360 -0.092610 -0.467064          -38.158546"
+

@@ -1,0 +1,38 @@
+# Job: uce
+# Query: 2UCZA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3ONG-B 20.7  1.7  151   158   33   MOLECULE: UBIQUITIN-ACTIVATING ENZYME E1-LIKE;                       
+
+# Pairwise alignments
+
+No 1: Query=2UCZA Sbjct=3ONGB Z-score=20.7
+
+DSSP  --LHHHHHHHHHHHHHHHHLLLLLEEEEELL----LLLLLEEEEEEELLLLLLLLLLEEE
+Query --SKTAQKRLLKELQQLIKDSPPGIVAGPKS----ENNIFIWDCLIQGPPDTPYADGVFN   54
+ident   |     ||  |     || | |  | |            |   | |   |  | ||  
+Sbjct smSSLCLQRLQEERKKWRKDHPFGFYAKPVKkadgSMDLQKWEAGIPGKEGTNWAGGVYP   60
+DSSP  llLHHHHHHHHHHHHHHHHLLLLLLEEEEEEllllLEEEEEEEEEEELLLLLLLLLLEEE
+
+DSSP  EEEELLLLLLLLLLEEEELLLLLLLLLLLLLLLLLHHHLLLlllllllllllLLLLLLLL
+Query AKLEFPKDYPLSPPKLTFTPSILHPNIYPNGEVCISILHSPgddpnmyelaeERWSPVQS  114
+ident    | |  ||  |||  |     ||| || |  | |||                | |   
+Sbjct ITVEYPNEYPSKPPKVKFPAGFYHPNVYPSGTICLSILNED-----------QDWRPAIT  109
+DSSP  EEEELLLLLLLLLLEEELLLLLLLLLLLLLLLLLLHHHLLL-----------LLLLLLLL
+
+DSSP  HHHHHHHHHHHHHLLLHHHLLLHHHHHHHHLLHHHHHHHHHHHHHHHLll
+Query VEKILLSVMSMLSEPNIESGANIDACILWRDNRPEFERQVKLSILKSLgf  164
+ident    | | |   |  ||  | |   |      |  |    | |        
+Sbjct LKQIVLGVQDLLDSPNPNSPAQEPAWRSFSRNKAEYDKKVLLQAKQYS-k  158
+DSSP  HHHHHHHHHHHHHLLLLLLLLLHHHHHHHHHLHHHHHHHHHHHHHHLL-l
+
+
+# Structural equivalences
+   1: 2UCZ-A 3ONG-B     1 -  29 <=>    3 -  31   (SER    2  - SER   30  <=> SER    2  - LYS   30 )                          
+   1: 2UCZ-A 3ONG-B    30 -  95 <=>   36 - 101   (GLU   31  - PRO   96  <=> SER   35  - ASP  100 )                          
+   1: 2UCZ-A 3ONG-B   107 - 162 <=>  102 - 157   (GLU  108  - LEU  163  <=> GLN  101  - SER  156 )                          
+
+# Translation-rotation matrices
+-matrix  "2UCZ-A 3ONG-B  U(1,.)   0.428229 -0.217714 -0.877052           19.236212"
+-matrix  "2UCZ-A 3ONG-B  U(2,.)  -0.798524  0.363201 -0.480046           41.717861"
+-matrix  "2UCZ-A 3ONG-B  U(3,.)   0.423059  0.905917 -0.018317          -84.127365"
+

@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 2DMSA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DN0-A  6.6  6.4   63    76   27   MOLECULE: ZINC FINGERS AND HOMEOBOXES PROTEIN 3;                     
+
+# Pairwise alignments
+
+No 1: Query=2DMSA Sbjct=2DN0A Z-score=6.6
+
+DSSP  -lllllllllllLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHH
+Query -gssgssgrrerTTFTRAQLDVLEALFAKTRYPDIFMREEVALKINLPESRVQVWFKNRR   59
+ident                   ||  |   |     |     |       |    |  ||  ||
+Sbjct gssgssgasiykNKKSHEQLSALKGSFCRNQFPGQSEVEHLTKVTGLSTREVRKWFSDRR   60
+DSSP  llllllllllllLLLLHHHHHHHHHHHHHLLLLLLHHHHHHHHHHLLLHHHHHHHHHHHH
+
+DSSP  LHHHhlLLLL-LLLLLLLllll
+Query AKCRqqQQQQ-QNGGQSGpssg   80
+ident   ||         |  ||    
+Sbjct YHCR--NLKGsRSGPSSG----   76
+DSSP  HHLL--LLLLlLLLLLLL----
+
+
+# Structural equivalences
+   1: 2DMS-A 2DN0-A    12 -  63 <=>   13 -  64   (THR   12  - ARG   63  <=> ASN   13  - ARG   64 )                          
+   1: 2DMS-A 2DN0-A    66 -  69 <=>   65 -  68   (GLN   66  - GLN   69  <=> ASN   65  - GLY   68 )                          
+   1: 2DMS-A 2DN0-A    70 -  76 <=>   70 -  76   (GLN   70  - GLY   76  <=> ARG   70  - GLY   76 )                          
+
+# Translation-rotation matrices
+-matrix  "2DMS-A 2DN0-A  U(1,.)  -0.487698 -0.853571 -0.183213           -0.311985"
+-matrix  "2DMS-A 2DN0-A  U(2,.)   0.858881 -0.506726  0.074516            6.368472"
+-matrix  "2DMS-A 2DN0-A  U(3,.)  -0.156443 -0.121017  0.980245           -1.575011"
+

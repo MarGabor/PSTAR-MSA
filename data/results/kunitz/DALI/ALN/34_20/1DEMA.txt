@@ -1,0 +1,30 @@
+# Job: kunitz
+# Query: 1DEMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1IRH-A  8.1  1.6   57    61   37   MOLECULE: TISSUE FACTOR PATHWAY INHIBITOR;                           
+
+# Pairwise alignments
+
+No 1: Query=1DEMA Sbjct=1IRHA Z-score=8.1
+
+DSSP  -lllLHHHLLLLLLLLLLLLEEEEEEELLLLEEEEEEELLLLLLLLLLLLHHHHHHHHLL
+Query -qplRKLCILHRNPGRCYQKIPAFYYNQKKKQCEGFTWSGCGGNSNRFKTIEECRRTCIR   59
+ident        |      | |      ||||     |  |  |||||| | |    || | |  
+Sbjct efhgPSWCLTPADRGLCRANENRFYYNSVIGKCRPFKYSGCGGNENNFTSKQECLRACKK   60
+DSSP  llllLLLLLLLLLLLLLLLLLLEEEELLLLLLEEEELLLLLLLLLLLLLLLHHHHHHHLL
+
+DSSP  L
+Query K   60
+ident  
+Sbjct G   61
+DSSP  L
+
+
+# Structural equivalences
+   1: 1DEM-A 1IRH-A     4 -  60 <=>    5 -  61   (ARG    4  - LYS   60  <=> PRO    5  - GLY   61 )                          
+
+# Translation-rotation matrices
+-matrix  "1DEM-A 1IRH-A  U(1,.)   0.567463 -0.780796  0.261427          -27.167934"
+-matrix  "1DEM-A 1IRH-A  U(2,.)  -0.270428 -0.476613 -0.836486           13.524989"
+-matrix  "1DEM-A 1IRH-A  U(3,.)   0.777724  0.403978 -0.481609          -35.946129"
+

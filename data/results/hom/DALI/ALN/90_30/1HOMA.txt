@@ -1,0 +1,33 @@
+# Job: hom
+# Query: 1HOMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DMS-A  7.6  2.7   64    80   33   MOLECULE: HOMEOBOX PROTEIN OTX2;                                     
+
+# Pairwise alignments
+
+No 1: Query=1HOMA Sbjct=2DMSA Z-score=7.6
+
+DSSP  --------LLLLlllLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHH
+Query --------MRKRgrqTYTRYQTLELEKEFHFNRYLTRRRRIEIAHALCLTERQIKIWFQN   52
+ident                | || |   ||  |   ||     | | |    | |     || |
+Sbjct gssgssgrRERT---TFTRAQLDVLEALFAKTRYPDIFMREEVALKINLPESRVQVWFKN   57
+DSSP  llllllllLLLL---LLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHH
+
+DSSP  HHLLlLLLLL-LLLLLL-------
+Query RRMKwKKENK-TKGEPG-------   68
+ident || |            |       
+Sbjct RRAK-CRQQQqQQQNGGqsgpssg   80
+DSSP  HHLH-HHHLLlLLLLLLlllllll
+
+
+# Structural equivalences
+   1: 1HOM-A 2DMS-A     1 -   4 <=>    9 -  12   (MET    0  - ARG    3  <=> ARG    9  - THR   12 )                          
+   1: 1HOM-A 2DMS-A     8 -  56 <=>   13 -  61   (THR    7  - LYS   55  <=> THR   13  - LYS   61 )                          
+   1: 1HOM-A 2DMS-A    58 -  62 <=>   62 -  66   (LYS   57  - LYS   61  <=> CYS   62  - GLN   66 )                          
+   1: 1HOM-A 2DMS-A    63 -  68 <=>   68 -  73   (THR   62  - GLY   67  <=> GLN   68  - GLY   73 )                          
+
+# Translation-rotation matrices
+-matrix  "1HOM-A 2DMS-A  U(1,.)   0.396051  0.574019 -0.716691            4.205127"
+-matrix  "1HOM-A 2DMS-A  U(2,.)   0.096173 -0.802153 -0.589322           -0.225853"
+-matrix  "1HOM-A 2DMS-A  U(3,.)  -0.913178  0.164476 -0.372899            2.757974"
+

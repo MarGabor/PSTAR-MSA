@@ -1,0 +1,33 @@
+# Job: toxin
+# Query: 2BHIB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1TFS-A  6.5  3.2   54    60   39   MOLECULE: TOXIN FS2;                                                 
+
+# Pairwise alignments
+
+No 1: Query=2BHIB Sbjct=1TFSA Z-score=6.5
+
+DSSP  LEEELL---llLLEEELLllLLEEEEEEELLLLLLLLEEEEEllLLLLLLLEEEEEELLL
+Query LKCNKL---vpLFYKTCPagKNLCYKMFMVATPKVPVKRGCIdvCPKSSLLVKYVCCNTD   57
+ident   |           |||    | |||||          |||   ||         ||  |
+Sbjct RICYSHkaslpRATKTCV--ENTCYKMFIRTHREYISERGCG--CPTAMWPYQTECCKGD   56
+DSSP  LEEELLlllllLLEEELL--LLEEEEEEELLEEEEEEEEEEL--LLLLLLLEEEEEEELL
+
+DSSP  LLL-
+Query RCN-   60
+ident ||| 
+Sbjct RCNk   60
+DSSP  LLLl
+
+
+# Structural equivalences
+   1: 2BHI-B 1TFS-A     1 -   6 <=>    1 -   6   (LEU    1  - LEU    6  <=> ARG    1  - HIS    6 )                          
+   1: 2BHI-B 1TFS-A     9 -  15 <=>   12 -  18   (LEU    9  - PRO   15  <=> ARG   12  - VAL   18 )                          
+   1: 2BHI-B 1TFS-A    18 -  39 <=>   19 -  40   (LYS   18  - ILE   39  <=> GLU   19  - GLY   40 )                          
+   1: 2BHI-B 1TFS-A    42 -  60 <=>   41 -  59   (CYS   42  - ASN   60  <=> CYS   41  - ASN   59 )                          
+
+# Translation-rotation matrices
+-matrix  "2BHI-B 1TFS-A  U(1,.)  -0.716787  0.692199  0.084126           24.904558"
+-matrix  "2BHI-B 1TFS-A  U(2,.)   0.129958  0.014082  0.991419            8.883274"
+-matrix  "2BHI-B 1TFS-A  U(3,.)   0.685075  0.721570 -0.100051           15.619742"
+

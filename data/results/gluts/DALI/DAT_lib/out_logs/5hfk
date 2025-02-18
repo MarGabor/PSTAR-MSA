@@ -1,0 +1,401 @@
+A length: 206
+B length: 204
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   10  N  BILE A   2 
+ Alternate location indication is not blank or A, ignore atom:   12  CA BILE A   2 
+ Alternate location indication is not blank or A, ignore atom:   14  C  BILE A   2 
+ Alternate location indication is not blank or A, ignore atom:   16  O  BILE A   2 
+ Alternate location indication is not blank or A, ignore atom:   18  CB BILE A   2 
+ Alternate location indication is not blank or A, ignore atom:   20  CG1BILE A   2 
+ Alternate location indication is not blank or A, ignore atom:   22  CG2BILE A   2 
+ Alternate location indication is not blank or A, ignore atom:   24  CD1BILE A   2 
+
+Total number of residues read in:            207
+Total number of atoms read in:              1669
+Total number of ignored atom records:        429
+ HEADER    TRANSFERASE                             07-JAN-16   5HFK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.M.HIMMEL,R.TORO,N.F.AL OBAIDI,L.L.MORISCO,S.R.WASSERMAN,M.STEAD,    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             07-JAN-16   5HFK              COMPND   2 MOLECULE: DISULFIDE-BOND OXIDOREDUCTASE YFCG;                        SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI (STRAIN K12);                  AUTHOR    D.M.HIMMEL,R.TORO,N.F.AL OBAIDI,L.L.MORISCO,S.R.WASSERMAN,M.          
+         207  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1985
+ selectset done           0
+ eigen done           0
+ tau           1   2.86242867              89         195
+ #popped           2           1
+ #selectset contacts        1985
+ selectset done           1
+ eigen done           1
+ tau           3   2.36371136              31          51
+ #popped           4           2
+ #selectset contacts        1985
+ selectset done           2
+ eigen done           2
+ tau           5   1.62591171              89
+ #popped           6           2
+ #selectset contacts        1985
+ selectset done           2
+ eigen done           2
+ tau           7   1.08177900              69
+ #popped           8           3
+ #selectset contacts        1985
+ selectset done           3
+ eigen done           3
+ tau           9  0.304650992              21
+ #popped          10           4
+ #selectset contacts        1985
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        1985
+ selectset done           3
+ eigen done           3
+ tau          11   24.3902435              31
+ #popped           9           2
+ #selectset contacts        1985
+ selectset done           2
+ eigen done           2
+ tau          13  0.764580250              79
+ #popped           5           1
+ #selectset contacts        1985
+ selectset done           1
+ eigen done           1
+ tau          15  0.612062097              41
+ #popped           3           0
+ #selectset contacts        1985
+ selectset done           0
+ eigen done           0
+ tau          17   1.14639783             106         143         171         183
+ #popped          18           1
+ #selectset contacts        1985
+ selectset done           1
+ eigen done           1
+ tau          19   2.01090217             106
+ #popped          21           1
+ #selectset contacts        1985
+ selectset done           1
+ eigen done           1
+ tau          21  0.930685163             159
+ #popped          23           1
+ #selectset contacts        1985
+ selectset done           1
+ eigen done           1
+ tau          23   1.11442780             171
+ #popped          19           0
+ #selectset contacts        1985
+ selectset done           0
+ eigen done           0
+ tau          25  0.990576148             133
+ #popped          26           1
+ #selectset contacts        1985
+ selectset done           1
+ eigen done           1
+ tau          27   1.29532707             123
+ #popped          27           0
+ #selectset contacts        1985
+ selectset done           0
+ eigen done           0
+ tau          29   1.09953380             143
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             07-JAN-16   5HFK              COMPND   2 MOLECULE: DISULFIDE-BOND OXIDOREDUCTASE YFCG;                        SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI (STRAIN K12);                  AUTHOR    D.M.HIMMEL,R.TORO,N.F.AL OBAIDI,L.L.MORISCO,S.R.WASSERMAN,M.          
+           0
+         207
+         207  residues read 5HFK.dssp                                                   
+  grow short strand           2           6
+  grow short strand          26          30
+  exclude short helix          33          35
+  exclude short helix          37          39
+  exclude short helix          41          44
+  grow short strand          54          57
+  grow short strand          67          70
+  exclude short helix         173         175
+  exclude short helix         180         182
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6 12  7 10 11  8  9
+   2     1  6  7  7  1  2  3  4  5  6 12
+   3     1 18 19  5  7 10 11  8  9
+   4     0  0  0  7  1  2  3  4  5  6 12
+   5     0  0  0  0
+   6     2  8  9  6  1  2  3  4  5  6
+   7     2  0  0  1 12
+   8     6 10 11  5  1  2  3  4  5
+   9     6  0  0  1  6
+  10     8  0  0  2  1  2
+  11     8 12 13  3  3  4  5
+  12    11  0  0  1  3
+  13    11  0  0  2  4  5
+  14     0  0  0  1  6
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  0
+  18     3 20 21  3  7 10 11
+  19     3 26 27  2  8  9
+  20    18  0  0  1  7
+  21    18 24 25  2 10 11
+  22     0  0  0  0
+  23     0  0  0  2 10 11
+  24    21  0  0  1 10
+  25    21  0  0  1 11
+  26    19  0  0  1  8
+  27    19  0  0  1  9
+  28     0  0  0  1  8
+  29     0  0  0  0
+  30     0  0  0  1  9
+  31     0  0  0  0
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  7  2  1  6 12 12
+   3 *   1 12 13  5  1  7 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  3  1  3  5
+  10 -   9  0  0  1  1  3  3
+  11 -   9  0  0  2  1  4  5
+  12 -   3 14 15  3  2  7  7 10 11
+  13 -   3 18 19  2  1  8  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  2  1 10 11
+  16 -  15  0  0  1  1 10 10
+  17 -  15  0  0  1  1 11 11
+  18 -  13  0  0  1  1  8  8
+  19 -  13  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3244  CA BARG B 194 
+ Alternate location indication is not blank or A, ignore atom: 3248  CB BARG B 194 
+ Alternate location indication is not blank or A, ignore atom: 3250  CG BARG B 194 
+ Alternate location indication is not blank or A, ignore atom: 3252  CD BARG B 194 
+ Alternate location indication is not blank or A, ignore atom: 3254  NE BARG B 194 
+ Alternate location indication is not blank or A, ignore atom: 3256  CZ BARG B 194 
+ Alternate location indication is not blank or A, ignore atom: 3258  NH1BARG B 194 
+ Alternate location indication is not blank or A, ignore atom: 3260  NH2BARG B 194 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1655
+Total number of ignored atom records:        375
+ HEADER    TRANSFERASE                             07-JAN-16   5HFK              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.M.HIMMEL,R.TORO,N.F.AL OBAIDI,L.L.MORISCO,S.R.WASSERMAN,M.STEAD,    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             07-JAN-16   5HFK              COMPND   2 MOLECULE: DISULFIDE-BOND OXIDOREDUCTASE YFCG;                        SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI (STRAIN K12);                  AUTHOR    D.M.HIMMEL,R.TORO,N.F.AL OBAIDI,L.L.MORISCO,S.R.WASSERMAN,M.          
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1957
+ selectset done           0
+ eigen done           0
+ tau           1   3.93889403              86
+ #popped           2           1
+ #selectset contacts        1957
+ selectset done           1
+ eigen done           1
+ tau           3   2.18162704              31          51
+ #popped           4           2
+ #selectset contacts        1957
+ selectset done           2
+ eigen done           2
+ tau           5  0.922664762              68
+ #popped           6           2
+ #selectset contacts        1957
+ selectset done           2
+ eigen done           2
+ tau           7  0.305071622              21
+ #popped           8           3
+ #selectset contacts        1957
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1957
+ selectset done           2
+ eigen done           2
+ tau           9   23.7563457              31
+ #popped           5           1
+ #selectset contacts        1957
+ selectset done           1
+ eigen done           1
+ tau          11  0.612062097              41
+ #popped           3           0
+ #selectset contacts        1957
+ selectset done           0
+ eigen done           0
+ tau          13   1.52749121             106
+ #popped          14           1
+ #selectset contacts        1957
+ selectset done           1
+ eigen done           1
+ tau          15  0.824127913              96
+ #popped          15           0
+ #selectset contacts        1957
+ selectset done           0
+ eigen done           0
+ tau          17   1.46770239             140
+ #popped          18           1
+ #selectset contacts        1957
+ selectset done           1
+ eigen done           1
+ tau          19   1.15353215             123
+ #popped          19           0
+ #selectset contacts        1957
+ selectset done           0
+ eigen done           0
+ tau          21   1.21476722             195
+ #popped          22           0
+ #selectset contacts        1957
+ selectset done           0
+ eigen done           0
+ tau          23  0.951391280             171         182
+ #popped          24           0
+ #selectset contacts        1957
+ selectset done           0
+ eigen done           0
+ tau          25  0.795348883             150
+ #popped          27           0
+ #selectset contacts        1957
+ selectset done           0
+ eigen done           0
+ tau          27  0.726315796             160
+ #popped          29           0
+ #selectset contacts        1957
+ selectset done           0
+ eigen done           0
+ tau          29   1.05978262             171
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             07-JAN-16   5HFK              COMPND   2 MOLECULE: DISULFIDE-BOND OXIDOREDUCTASE YFCG;                        SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI (STRAIN K12);                  AUTHOR    D.M.HIMMEL,R.TORO,N.F.AL OBAIDI,L.L.MORISCO,S.R.WASSERMAN,M.          
+           0
+         205
+         205  residues read 5HFK.dssp                                                   
+  grow short strand           2           6
+  grow short strand          26          30
+  exclude short helix          33          35
+  exclude short helix          37          39
+  exclude short helix          41          44
+  grow short strand          54          57
+  grow short strand          67          70
+  exclude short helix         173         176
+  exclude short helix         180         182
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  7  8  9 10 11 12
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1 14 15  6  7  8  9 10 11 12
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  8  9  5  1  2  3  4  5
+   7     2  0  0  1  6
+   8     6  0  0  2  1  2
+   9     6 10 11  3  3  4  5
+  10     9  0  0  1  3
+  11     9  0  0  2  4  5
+  12     0  0  0  0
+  13     0  0  0  0
+  14     3  0  0  1  7
+  15     3 18 19  5  8  9 10 11 12
+  16     0  0  0  0
+  17     0  0  0  1  7
+  18    15 20 21  2  8  9
+  19    15 22 23  3 10 11 12
+  20    18  0  0  1  8
+  21    18  0  0  1  9
+  22    19 30 31  2 10 11
+  23    19  0  0  1 12
+  24     0  0  0  2 10 11
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  2 10 11
+  28     0  0  0  0
+  29     0  0  0  2 10 11
+  30    22  0  0  1 10
+  31    22  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  6  1  1  6
+   3 *   1 10 11  6  1  7 12
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  3  1  3  5
+   8 -   7  0  0  1  1  3  3
+   9 -   7  0  0  2  1  4  5
+  10 -   3  0  0  1  1  7  7
+  11 -   3 12 13  5  1  8 12
+  12 -  11 14 15  2  1  8  9
+  13 -  11 16 17  3  1 10 12
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1  9  9
+  16 -  13 18 19  2  1 10 11
+  17 -  13  0  0  1  1 12 12
+  18 -  16  0  0  1  1 10 10
+  19 -  16  0  0  1  1 11 11
+
+ CHAIN : 5HFKA
+ CHAIN : 5HFKB
+

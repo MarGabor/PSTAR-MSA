@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1SPGB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBA-A 15.4  2.3  139   146   18   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1SPGB Sbjct=1MBAA Z-score=15.4
+
+DSSP  llLLHHHHHHHHHHHLLL--LHHHHHHHHHHHHHHHLHHHHHHLHHHLLlLLHHHHHHLH
+Query vdWTDAERAAIKALWGKI--DVGEIGPQALSRLLIVYPWTQRHFKGFGNiSTNAAILGNA   58
+ident      ||       |          |   |  |    |     |  |      | |    
+Sbjct -sLSAAEADLAGKSWAPVfaNKNANGLDFLVALFEKFPDSANFFADFKG-KSVADIKASP   58
+DSSP  -lLLHHHHHHHHHHHHHHhhLHHHHHHHHHHHHHHHLHHHHHHLLLLLL-LLHHHHHLLL
+
+DSSP  HHHHHHHHHHHHHHHHHLLLL---LHHHHLHHHHHHHHhLLLLLLHHHHHHHHHHHHHHH
+Query KVAEHGKTVMGGLDRAVQNMD---NIKNVYKQLSIKHSeKIHVDPDNFRLLGEIITMCVG  115
+ident |           |   | |            |    |     |    |          | 
+Sbjct KLRDVSSRIFTRLNEFVNNAAnagKMSAMLSQFAKEHV-GFGVGSAQFENVRSMFPGFVA  117
+DSSP  LHHHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHHH-HLLLLHHHHHHHHHHHHHHHH
+
+DSSP  HHHLlllLLHHHHHHHHHHHHHHHHHHLLLL-
+Query AKFGpsaFTPEIHEAWQKFLAVVVSALGRQY-  146
+ident               || |       ||     
+Sbjct SVAA---PPAGADAAWTKLFGLIIDALKAAGa  146
+DSSP  LLLL---LLLLHHHHHHHHHHHHHHHHHHLLl
+
+
+# Structural equivalences
+   1: 1SPG-B 1MBA-A     3 -  18 <=>    2 -  17   (TRP    3  - ILE   18  <=> LEU    2  - VAL   17 )                          
+   1: 1SPG-B 1MBA-A    19 -  47 <=>   20 -  48   (ASP   19  - ASN   47  <=> ASN   20  - GLY   48 )                          
+   1: 1SPG-B 1MBA-A    49 -  79 <=>   49 -  79   (SER   49  - ASP   79  <=> LYS   49  - ALA   79 )                          
+   1: 1SPG-B 1MBA-A    80 -  93 <=>   83 -  96   (ASN   80  - SER   93  <=> LYS   83  - VAL   96 )                          
+   1: 1SPG-B 1MBA-A    95 - 119 <=>   97 - 121   (LYS   95  - GLY  119  <=> GLY   97  - ALA  121 )                          
+   1: 1SPG-B 1MBA-A   123 - 146 <=>  122 - 145   (PHE  123  - TYR  146  <=> PRO  122  - GLY  145 )                          
+
+# Translation-rotation matrices
+-matrix  "1SPG-B 1MBA-A  U(1,.)   0.627766  0.473436  0.617873           90.310478"
+-matrix  "1SPG-B 1MBA-A  U(2,.)   0.766756 -0.239315 -0.595662            7.472569"
+-matrix  "1SPG-B 1MBA-A  U(3,.)  -0.134141  0.847695 -0.513244           15.391142"
+

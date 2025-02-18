@@ -1,0 +1,33 @@
+# Job: myb_DNA-bin
+# Query: 1MBGA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6J4K-A  5.5  2.3   49    60   16   MOLECULE: PROTEIN PHOSPHATE STARVATION RESPONSE 1;                   
+
+# Pairwise alignments
+
+No 1: Query=1MBGA Sbjct=6J4KA Z-score=5.5
+
+DSSP  -llLLLLLHHHHHHHHHHHHHHLL---LLHHHHHHHLLL--LLHHHHHHHHLLlLLLL--
+Query -liKGPWTKEEDQRVIELVQKYGP---KRWSVIAKHLKG--RIGKQCRERWHNhLNPE--   52
+ident       || |      | |   |           |  |                      
+Sbjct gkaRMRWTPELHEAFVEAVNSLGGserATPKGVLKIMKVegLTIYHVKSHLQK-YRTAry   59
+DSSP  lllLLLLLHHHHHHHHHHHHHLLLlllLLHHHHHHHHLLllLLHHHHHHHHHH-HHHLll
+
+DSSP  -
+Query -   52
+ident  
+Sbjct r   60
+DSSP  l
+
+
+# Structural equivalences
+   1: 1MBG-A 6J4K-A     3 -  23 <=>    4 -  24   (LYS   92  - PRO  112  <=> ARG  227  - GLY  247 )                          
+   1: 1MBG-A 6J4K-A    24 -  35 <=>   28 -  39   (LYS  113  - GLY  124  <=> ALA  251  - VAL  262 )                          
+   1: 1MBG-A 6J4K-A    36 -  47 <=>   42 -  53   (ARG  125  - ASN  136  <=> LEU  265  - LYS  276 )                          
+   1: 1MBG-A 6J4K-A    49 -  52 <=>   54 -  57   (LEU  138  - GLU  141  <=> TYR  277  - ALA  280 )                          
+
+# Translation-rotation matrices
+-matrix  "1MBG-A 6J4K-A  U(1,.)  -0.028771 -0.408079 -0.912493            4.468549"
+-matrix  "1MBG-A 6J4K-A  U(2,.)   0.433481  0.817473 -0.379252           18.493025"
+-matrix  "1MBG-A 6J4K-A  U(3,.)   0.900704 -0.406459  0.153375          -23.033508"
+

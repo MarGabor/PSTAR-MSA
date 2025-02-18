@@ -1,0 +1,33 @@
+# Job: hom
+# Query: 4XRSI
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CUE-A  3.3  2.8   53    80   23   MOLECULE: PAIRED BOX PROTEIN PAX6;                                   
+
+# Pairwise alignments
+
+No 1: Query=4XRSI Sbjct=2CUEA Z-score=3.3
+
+DSSP  ---------lLLLLLllLLLHHH-HHHHLLLLLLLHHHHHHHLLLLLLLHHHLHHHHHHH
+Query ---------kPRTIYssYQLAAL-QRRFQKAQYLALPERAELAAQLGLTQTQVKIWFQNR   50
+ident                            |    |     |  |||   |       || ||
+Sbjct gssgssgqrnRTSFT--QEQIEAlEKEFERTHYPDVFARERLAAKIDLPEARIQVWFSNR   58
+DSSP  llllllllllLLLLL--HHHHHHhHHHHLLLLLLLHHHHHHHHHHLLLLHHHHHHHHHHH
+
+DSSP  HL-LLLL---------------
+Query RS-KFKK---------------   56
+ident |                     
+Sbjct RAkWRREeklrnqrrqsgpssg   80
+DSSP  HHhHHHHhhhhhhhllllllll
+
+
+# Structural equivalences
+   1: 4XRS-I 2CUE-A     2 -   6 <=>   11 -  15   (PRO  132  - TYR  136  <=> ARG   11  - THR   15 )                          
+   1: 4XRS-I 2CUE-A     9 -  14 <=>   16 -  21   (TYR  139  - LEU  144  <=> GLN   16  - ALA   21 )                          
+   1: 4XRS-I 2CUE-A    15 -  52 <=>   23 -  60   (GLN  145  - SER  182  <=> GLU   23  - ALA   60 )                          
+   1: 4XRS-I 2CUE-A    53 -  56 <=>   62 -  65   (LYS  183  - LYS  186  <=> TRP   62  - GLU   65 )                          
+
+# Translation-rotation matrices
+-matrix  "4XRS-I 2CUE-A  U(1,.)   0.405528 -0.467497 -0.785489           -0.102146"
+-matrix  "4XRS-I 2CUE-A  U(2,.)   0.474656 -0.626685  0.618035           -0.611844"
+-matrix  "4XRS-I 2CUE-A  U(3,.)  -0.781184 -0.623467 -0.032238          -13.506936"
+

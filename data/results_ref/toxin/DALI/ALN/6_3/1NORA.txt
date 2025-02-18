@@ -1,0 +1,36 @@
+# Job: toxin
+# Query: 1NORA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1FAS-A  6.6  2.1   55    61   31   MOLECULE: FASCICULIN 1;                                              
+
+# Pairwise alignments
+
+No 1: Query=1NORA Sbjct=1FASA Z-score=6.6
+
+DSSP  LEEELLLlLLLL-LEEELLlLLLEEEEEEelllLEEE-EEEELLLLLLLLLEEEEELL-L
+Query LECHNQQsSQPP-TTKTCSgETNCYKKWWsdhrGTII-ERGCGCPKVKPGVNLNCCRT-D   57
+ident   |              |  |  || |            ||||||         ||   |
+Sbjct TMCYSHT-TTSRaILTNCG-ENSCYRKSR-rhpPKMVlGRGCGCPPGDDYLEVKCCTSpD   57
+DSSP  LEEELLL-LLLLlLEEELL-LLLEEEEEE-lllLLLEeEEEELLLLLLLLEEEEEELLlL
+
+DSSP  LLLL
+Query RCNN   61
+ident  || 
+Sbjct KCNY   61
+DSSP  LLLL
+
+
+# Structural equivalences
+   1: 1NOR-A 1FAS-A     1 -   7 <=>    1 -   7   (LEU    1  - GLN    7  <=> THR    1  - THR    7 )                          
+   1: 1NOR-A 1FAS-A     9 -  12 <=>    8 -  11   (SER    9  - PRO   12  <=> THR    8  - ARG   11 )                          
+   1: 1NOR-A 1FAS-A    13 -  18 <=>   13 -  18   (THR   13  - SER   18  <=> ILE   13  - GLY   18 )                          
+   1: 1NOR-A 1FAS-A    20 -  28 <=>   19 -  27   (GLU   20  - TRP   28  <=> GLU   19  - ARG   27 )                          
+   1: 1NOR-A 1FAS-A    33 -  36 <=>   31 -  34   (GLY   33  - ILE   36  <=> PRO   31  - VAL   34 )                          
+   1: 1NOR-A 1FAS-A    37 -  56 <=>   36 -  55   (GLU   37  - THR   56  <=> GLY   36  - SER   55 )                          
+   1: 1NOR-A 1FAS-A    57 -  61 <=>   57 -  61   (ASP   57  - ASN   61  <=> ASP   57  - TYR   61 )                          
+
+# Translation-rotation matrices
+-matrix  "1NOR-A 1FAS-A  U(1,.)  -0.469619  0.594963  0.652287           -1.206415"
+-matrix  "1NOR-A 1FAS-A  U(2,.)   0.705648 -0.191070  0.682315          -25.846905"
+-matrix  "1NOR-A 1FAS-A  U(3,.)   0.530584  0.780712 -0.330104          -33.276615"
+

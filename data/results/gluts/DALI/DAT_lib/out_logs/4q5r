@@ -1,0 +1,1059 @@
+A length: 202
+C length: 201
+D length: 202
+B length: 202
+F length: 202
+E length: 186
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1609
+Total number of ignored atom records:        211
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+  Reading DSSP file
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1905
+ selectset done           0
+ eigen done           0
+ tau           1   2.36117864              77         186
+ #popped           2           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau           3   1.85227633              33          49
+ #popped           4           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau           5   1.82662368              61          77
+ #popped           6           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau           7   1.34457839              61
+ #popped           8           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau           9  0.536538482              33
+ #popped          10           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau          11  0.393787324              13
+ #popped          13           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau          13  0.914772749              23
+ #popped           3           0
+ #selectset contacts        1905
+ selectset done           0
+ eigen done           0
+ tau          15   1.41769850              89
+ #popped          17           0
+ #selectset contacts        1905
+ selectset done           0
+ eigen done           0
+ tau          17   1.69672918             123
+ #popped          18           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau          19   1.42124546             102
+ #popped          21           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau          21  0.720473170             113
+ #popped          19           0
+ #selectset contacts        1905
+ selectset done           0
+ eigen done           0
+ tau          23   1.30605304             147         172
+ #popped          24           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau          25  0.838378906             134
+ #popped          27           1
+ #selectset contacts        1905
+ selectset done           1
+ eigen done           1
+ tau          27   2.27535152             147
+ #popped          25           0
+ #selectset contacts        1905
+ selectset done           0
+ eigen done           0
+ tau          29   1.59210527             157
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+           0
+         202
+         202  residues read 4Q5R.dssp                                                   
+  grow short strand           3           7
+  grow short strand          29          32
+  grow short strand          52          55
+  grow short strand          58          61
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  5  6 13  7  4  8  9 10 12 11
+   2     1  4  5  8  1  2  3  5  6 13  7  4
+   3     1 18 19  5  8  9 10 12 11
+   4     2  6  7  7  1  2  3  5  6 13  7
+   5     2  0  0  1  4
+   6     4  8  9  6  1  2  3  5  6 13
+   7     4  0  0  1  7
+   8     6 10 11  5  1  2  3  5  6
+   9     6  0  0  1 13
+  10     8 12 13  3  1  2  3
+  11     8  0  0  2  5  6
+  12    10  0  0  1  1
+  13    10 14 15  2  2  3
+  14    13  0  0  1  2
+  15    13  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  5  8  9 10 12 11
+  18     3 20 21  2  8  9
+  19     3 24 25  3 10 12 11
+  20    18  0  0  1  8
+  21    18  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1  9
+  24    19 26 27  2 10 12
+  25    19  0  0  1 11
+  26    24  0  0  1 10
+  27    24  0  0  1 12
+  28     0  0  0  0
+  29     0  0  0  1 12
+  30     0  0  0  0
+  31     0  0  0  1 11
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  8  2  1  7 13 13
+   3 -   1 16 17  5  1  8 12
+   4 -   2  6  7  7  3  1  3  5  7 13 13
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  6  3  1  3  5  6 13 13
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1 13 13
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  5  6
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  2  1  2  3
+  14 -  13  0  0  1  1  2  2
+  15 -  13  0  0  1  1  3  3
+  16 -   3 18 19  2  1  8  9
+  17 -   3 20 21  3  1 10 12
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+  20 -  17 22 23  2  2 10 10 12 12
+  21 -  17  0  0  1  1 11 11
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  1  1 12 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1589
+Total number of ignored atom records:        228
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+  Reading DSSP file
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau           1   2.35048580              77         186
+ #popped           2           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau           3   1.78141987              33          49
+ #popped           4           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau           5   1.45317459              77
+ #popped           6           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau           7   1.59073853              61
+ #popped           8           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau           9  0.548719168              33
+ #popped          10           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          11  0.329355001              10
+ #popped          13           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          13  0.947163939              23
+ #popped           3           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          15   1.34889388              89
+ #popped          17           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          17   1.61000717             122
+ #popped          18           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          19   1.42469990             101
+ #popped          21           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          21  0.458620697             112
+ #popped          19           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          23   1.35222828             157         170
+ #popped          24           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          25   1.39068556             147         157
+ #popped          26           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          27   1.23955250             147
+ #popped          28           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          29  0.992438495             132
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+           0
+         202
+         202  residues read 4Q5R.dssp                                                   
+  grow short strand           3           7
+  grow short strand          28          32
+  grow short strand          52          55
+  grow short strand          58          61
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  5  6  7 13  4  8  9 10 12 11
+   2     1  4  5  8  1  2  3  5  6  7 13  4
+   3     1 18 19  5  8  9 10 12 11
+   4     2  6  7  7  1  2  3  5  6  7 13
+   5     2  0  0  1  4
+   6     4  8  9  6  1  2  3  5  6  7
+   7     4  0  0  1 13
+   8     6 10 11  5  1  2  3  5  6
+   9     6  0  0  1  7
+  10     8 12 13  3  1  2  3
+  11     8  0  0  2  5  6
+  12    10  0  0  1  1
+  13    10 14 15  2  2  3
+  14    13  0  0  1  2
+  15    13  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  5  8  9 10 12 11
+  18     3 20 21  2  8  9
+  19     3 24 25  3 10 12 11
+  20    18  0  0  1  8
+  21    18  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1  9
+  24    19 28 29  2 10 12
+  25    19  0  0  1 11
+  26     0  0  0  2 10 12
+  27     0  0  0  0
+  28    24  0  0  1 10
+  29    24  0  0  1 12
+  30     0  0  0  1 10
+  31     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  8  2  1  7 13 13
+   3 -   1 16 17  5  1  8 12
+   4 -   2  6  7  7  3  1  3  5  7 13 13
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  6  2  1  3  5  7
+   7 -   4  0  0  1  1 13 13
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1  7  7
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  5  6
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  2  1  2  3
+  14 -  13  0  0  1  1  2  2
+  15 -  13  0  0  1  1  3  3
+  16 -   3 18 19  2  1  8  9
+  17 -   3 20 21  3  1 10 12
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+  20 -  17 22 23  2  2 10 10 12 12
+  21 -  17  0  0  1  1 11 11
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  1  1 12 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2964  N  BVAL C 173 
+ Alternate location indication is not blank or A, ignore atom: 2966  CA BVAL C 173 
+ Alternate location indication is not blank or A, ignore atom: 2968  C  BVAL C 173 
+ Alternate location indication is not blank or A, ignore atom: 2970  O  BVAL C 173 
+ Alternate location indication is not blank or A, ignore atom: 2972  CB BVAL C 173 
+ Alternate location indication is not blank or A, ignore atom: 2974  CG1BVAL C 173 
+ Alternate location indication is not blank or A, ignore atom: 2976  CG2BVAL C 173 
+
+Total number of residues read in:            202
+Total number of atoms read in:              1598
+Total number of ignored atom records:        216
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+  Reading DSSP file
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1921
+ selectset done           0
+ eigen done           0
+ tau           1   2.47694898              76         186
+ #popped           2           1
+ #selectset contacts        1921
+ selectset done           1
+ eigen done           1
+ tau           3   1.66002285              33          49
+ #popped           4           1
+ #selectset contacts        1921
+ selectset done           1
+ eigen done           1
+ tau           5   1.33753335              76
+ #popped           6           1
+ #selectset contacts        1921
+ selectset done           1
+ eigen done           1
+ tau           7   1.58939528              61
+ #popped           8           1
+ #selectset contacts        1921
+ selectset done           1
+ eigen done           1
+ tau           9  0.606521726              33
+ #popped          10           1
+ #selectset contacts        1921
+ selectset done           1
+ eigen done           1
+ tau          11  0.353124499              13
+ #popped          13           1
+ #selectset contacts        1921
+ selectset done           1
+ eigen done           1
+ tau          13  0.798347116              23
+ #popped           3           0
+ #selectset contacts        1921
+ selectset done           0
+ eigen done           0
+ tau          15   1.35934341              89
+ #popped          17           0
+ #selectset contacts        1921
+ selectset done           0
+ eigen done           0
+ tau          17   1.63720632             128
+ #popped          18           1
+ #selectset contacts        1921
+ selectset done           1
+ eigen done           1
+ tau          19   1.27981079             102
+ #popped          21           1
+ #selectset contacts        1921
+ selectset done           1
+ eigen done           1
+ tau          21   1.39361966             116
+ #popped          19           0
+ #selectset contacts        1921
+ selectset done           0
+ eigen done           0
+ tau          23   1.33481157             157         173
+ #popped          24           0
+ #selectset contacts        1921
+ selectset done           0
+ eigen done           0
+ tau          25   1.30510831             147         157
+ #popped          26           0
+ #selectset contacts        1921
+ selectset done           0
+ eigen done           0
+ tau          27   1.17425430             147
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+           0
+         202
+         202  residues read 4Q5R.dssp                                                   
+  grow short strand           3           7
+  grow short strand          28          32
+  grow short strand          52          55
+  grow short strand          58          61
+  exclude short helix         110         115
+  exclude short helix         117         122
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  5  6  7 12  4  8  9 11 10
+   2     1  4  5  8  1  2  3  5  6  7 12  4
+   3     1 18 19  4  8  9 11 10
+   4     2  6  7  7  1  2  3  5  6  7 12
+   5     2  0  0  1  4
+   6     4  8  9  6  1  2  3  5  6  7
+   7     4  0  0  1 12
+   8     6 10 11  5  1  2  3  5  6
+   9     6  0  0  1  7
+  10     8 12 13  3  1  2  3
+  11     8  0  0  2  5  6
+  12    10  0  0  1  1
+  13    10 14 15  2  2  3
+  14    13  0  0  1  2
+  15    13  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  4  8  9 11 10
+  18     3  0  0  1  8
+  19     3 24 25  3  9 11 10
+  20     0  0  0  1  8
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  0
+  24    19 28 29  2  9 11
+  25    19  0  0  1 10
+  26     0  0  0  2  9 11
+  27     0  0  0  0
+  28    24  0  0  1  9
+  29    24  0  0  1 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  8  2  1  7 12 12
+   3 -   1 16 17  4  1  8 11
+   4 -   2  6  7  7  3  1  3  5  7 12 12
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  6  2  1  3  5  7
+   7 -   4  0  0  1  1 12 12
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1  7  7
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  5  6
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  2  1  2  3
+  14 -  13  0  0  1  1  2  2
+  15 -  13  0  0  1  1  3  3
+  16 -   3  0  0  1  1  8  8
+  17 -   3 18 19  3  1  9 11
+  18 -  17 20 21  2  2  9  9 11 11
+  19 -  17  0  0  1  1 10 10
+  20 -  18  0  0  1  1  9  9
+  21 -  18  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1595
+Total number of ignored atom records:        271
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+  Reading DSSP file
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1869
+ selectset done           0
+ eigen done           0
+ tau           1   2.18347979              90         187
+ #popped           2           1
+ #selectset contacts        1869
+ selectset done           1
+ eigen done           1
+ tau           3   3.73415995              77          90
+ #popped           4           1
+ #selectset contacts        1869
+ selectset done           1
+ eigen done           1
+ tau           5   1.85097098              34          50
+ #popped           6           1
+ #selectset contacts        1869
+ selectset done           1
+ eigen done           1
+ tau           7   2.69851732              77
+ #popped           8           1
+ #selectset contacts        1869
+ selectset done           1
+ eigen done           1
+ tau           9   1.44901359              62
+ #popped          10           1
+ #selectset contacts        1869
+ selectset done           1
+ eigen done           1
+ tau          11  0.574248850              34
+ #popped          12           1
+ #selectset contacts        1869
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1869
+ selectset done           0
+ eigen done           0
+ tau          13   1.62310791             129
+ #popped          14           1
+ #selectset contacts        1869
+ selectset done           1
+ eigen done           1
+ tau          15   1.26087427             107
+ #popped          17           1
+ #selectset contacts        1869
+ selectset done           1
+ eigen done           1
+ tau          17   1.34794354             117
+ #popped          15           0
+ #selectset contacts        1869
+ selectset done           0
+ eigen done           0
+ tau          19   1.28620815             158         171
+ #popped          20           0
+ #selectset contacts        1869
+ selectset done           0
+ eigen done           0
+ tau          21   1.32172132             142         158
+ #popped          22           0
+ #selectset contacts        1869
+ selectset done           0
+ eigen done           0
+ tau          23  0.959492624             142
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+           0
+         202
+         202  residues read 4Q5R.dssp                                                   
+  grow short strand           4           7
+  grow short strand          29          32
+  grow short strand          53          56
+  grow short strand          59          62
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  5  6  7 13  4  8  9 10 12 11
+   2     1  6  7  8  1  2  3  5  6  7 13  4
+   3     1 14 15  5  8  9 10 12 11
+   4     0  0  0  8  1  2  3  5  6  7 13  4
+   5     0  0  0  0
+   6     2  8  9  7  1  2  3  5  6  7 13
+   7     2  0  0  1  4
+   8     6 10 11  6  1  2  3  5  6  7
+   9     6  0  0  1 13
+  10     8 12 13  5  1  2  3  5  6
+  11     8  0  0  1  7
+  12    10  0  0  3  1  2  3
+  13    10  0  0  2  5  6
+  14     3 16 17  2  8  9
+  15     3 20 21  3 10 12 11
+  16    14  0  0  1  8
+  17    14  0  0  1  9
+  18     0  0  0  1  9
+  19     0  0  0  0
+  20    15 24 25  2 10 12
+  21    15  0  0  1 11
+  22     0  0  0  2 10 12
+  23     0  0  0  0
+  24    20  0  0  1 10
+  25    20  0  0  1 12
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5  8  2  1  7 13 13
+   3 -   1 12 13  5  1  8 12
+   4 -   2  6  7  7  3  1  3  5  7 13 13
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  6  2  1  3  5  7
+   7 -   4  0  0  1  1 13 13
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1  7  7
+  10 -   8  0  0  3  1  1  3
+  11 -   8  0  0  2  1  5  6
+  12 -   3 14 15  2  1  8  9
+  13 -   3 16 17  3  1 10 12
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1  9  9
+  16 -  13 18 19  2  2 10 10 12 12
+  17 -  13  0  0  1  1 11 11
+  18 -  16  0  0  1  1 10 10
+  19 -  16  0  0  1  1 12 12
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            186
+Total number of atoms read in:              1392
+Total number of ignored atom records:         88
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+  Reading DSSP file
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+         186  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau           1   3.41365933              25          37
+ #popped           2           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau           3   2.25228405              49         175
+ #popped           4           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau           5   1.73866534              49
+ #popped           6           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau           7  0.835106969              25
+ #popped           8           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           5           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau           9   1.42717636              77         119
+ #popped          10           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau          11   2.54096150              77
+ #popped          12           2
+ #selectset contacts        1677
+ selectset done           2
+ eigen done           2
+ tau          13   2.22665906              65
+ #popped          13           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau          15   1.35047376             145         160
+ #popped          16           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau          17   1.20242918             135         145
+ #popped          18           1
+ #selectset contacts        1677
+ selectset done           1
+ eigen done           1
+ tau          19   1.03837252             135
+ #popped          11           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau          21   1.46232045              96
+ #popped          23           0
+ #selectset contacts        1677
+ selectset done           0
+ eigen done           0
+ tau          23  0.817810416             109
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+           0
+         186
+         186  residues read 4Q5R.dssp                                                   
+  grow short strand           2           4
+  grow short strand          22          24
+  exclude short helix          30          32
+  grow short strand          40          43
+  grow short strand          46          49
+  exclude short helix          98         102
+  exclude short helix         105         110
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 11  1  2  3  4  5 11  6 10  9  7  8
+   2     0  0  0 11  1  2  3  4  5 11  6 10  9  7  8
+   3     0  0  0  0
+   4     1  6  7  6  1  2  3  4  5 11
+   5     1 10 11  5  6 10  9  7  8
+   6     4  8  9  5  1  2  3  4  5
+   7     4  0  0  1 11
+   8     6  0  0  3  1  2  3
+   9     6  0  0  2  4  5
+  10     5 12 13  3  6 10  9
+  11     5 22 23  2  7  8
+  12    10  0  0  1  6
+  13    10 16 17  2 10  9
+  14     0  0  0  1  6
+  15     0  0  0  0
+  16    13  0  0  1 10
+  17    13  0  0  1  9
+  18     0  0  0  1 10
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1 10
+  22    11  0  0  1  7
+  23    11  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  1  8
+   1 +   0  2  3 11  1  1 11
+   2 -   1  4  5  6  2  1  5 11 11
+   3 -   1  8  9  5  1  6 10
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1 11 11
+   6 -   4  0  0  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   3 10 11  3  2  6  6  9 10
+   9 -   3 14 15  2  1  7  8
+  10 -   8  0  0  1  1  6  6
+  11 -   8 12 13  2  1  9 10
+  12 -  11  0  0  1  1 10 10
+  13 -  11  0  0  1  1  9  9
+  14 -   9  0  0  1  1  7  7
+  15 -   9  0  0  1  1  8  8
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1581
+Total number of ignored atom records:        136
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+  Reading DSSP file
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau           1   2.66537070              75         186
+ #popped           2           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau           3   1.87590790              75
+ #popped           4           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau           5   1.74703586              61
+ #popped           6           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau           7   1.42622960              33          49
+ #popped           8           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau           9  0.567073166              33
+ #popped          10           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau          11   1.33382320              96         138         155
+ #popped          12           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau          13   1.35731494              96
+ #popped          14           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau          15  0.739520967              86
+ #popped          13           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau          17   1.56665826             126         138         170
+ #popped          18           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau          19   1.83271897             126
+ #popped          20           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau          21   1.38878262             116
+ #popped          22           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau          23  0.934479058             106
+ #popped          19           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau          25  0.987184048             138
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             17-APR-14   4Q5R              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BLATTELLA GERMANICA;                            AUTHOR    L.C.PEDERSEN,G.A.MUELLER                                              
+           0
+         202
+         202  residues read 4Q5R.dssp                                                   
+  grow short strand           3           7
+  grow short strand          29          32
+  grow short strand          52          55
+  grow short strand          58          61
+  exclude short helix         110         115
+  exclude short helix         117         122
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  5  6  4  7 12  8 10  9 11
+   2     1  4  5  8  1  2  3  5  6  4  7 12
+   3     1 12 13  4  8 10  9 11
+   4     2  6  7  7  1  2  3  5  6  4  7
+   5     2  0  0  1 12
+   6     4  8  9  6  1  2  3  5  6  4
+   7     4  0  0  1  7
+   8     6 10 11  5  1  2  3  5  6
+   9     6  0  0  1  4
+  10     8  0  0  3  1  2  3
+  11     8  0  0  2  5  6
+  12     3  0  0  1  8
+  13     3 18 19  3 10  9 11
+  14     0  0  0  1  8
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18    13  0  0  1 10
+  19    13 26 27  2  9 11
+  20     0  0  0  0
+  21     0  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26    19  0  0  1  9
+  27    19  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  2  1  7 12 12
+   3 *   1 12 13  4  1  8 11
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  6  1  1  6
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1  4  4
+  10 -   8  0  0  3  1  1  3
+  11 -   8  0  0  2  1  5  6
+  12 -   3  0  0  1  1  8  8
+  13 -   3 14 15  3  1  9 11
+  14 -  13  0  0  1  1 10 10
+  15 -  13 16 17  2  2  9  9 11 11
+  16 -  15  0  0  1  1  9  9
+  17 -  15  0  0  1  1 11 11
+
+ CHAIN : 4Q5RA
+ CHAIN : 4Q5RB
+ CHAIN : 4Q5RC
+ CHAIN : 4Q5RD
+ CHAIN : 4Q5RE
+ CHAIN : 4Q5RF
+

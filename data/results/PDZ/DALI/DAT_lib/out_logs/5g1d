@@ -1,0 +1,325 @@
+A length: 168
+B length: 167
+C length: 8
+D length: 8
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            168
+Total number of atoms read in:              1284
+Total number of ignored atom records:          0
+ HEADER    SIGNALING PROTEIN                       25-MAR-16   5G1D              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    I.LEE,H.KIM,J.H.YUN,W.LEE                                             
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN                       25-MAR-16   5G1D              COMPND   2 MOLECULE: SYNTENIN-1;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    I.LEE,H.KIM,J.H.YUN,W.LEE                                             
+         168  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau           1   5.44062519              83
+ #popped           2           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau           3  0.682666719              19          29          44
+ #popped           4           2
+ #selectset contacts        1376
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau           5  0.500954211              73
+ #popped           6           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau           7   1.52999997              60
+ #popped           8           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau           9  0.868012488             158
+ #popped          10           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau          11   1.49420118              97         126
+ #popped          12           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau          13  0.805679858             136         147
+ #popped          14           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau          15  0.379151642              97
+ #popped          17           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau          17  0.411036044             136
+ #popped          13           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN                       25-MAR-16   5G1D              COMPND   2 MOLECULE: SYNTENIN-1;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    I.LEE,H.KIM,J.H.YUN,W.LEE                                             
+           0
+         168
+         168  residues read 5G1D.dssp                                                   
+  exclude short helix          37          40
+  grow short strand          48          52
+  grow short strand          55          56
+  grow short strand         100         103
+  grow short strand         106         110
+  exclude short helix         115         118
+  grow short strand         133         134
+  grow short helix         161         167
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  5  6  7  8 11 12 14 13  9 10 15
+   2     1  4  5  7  1  2  3  4  5  6  7
+   3     1 10 11  8  8 11 12 14 13  9 10 15
+   4     2  0  0  1  1
+   5     2  6  7  6  2  3  4  5  6  7
+   6     5  8  9  5  2  3  4  5  6
+   7     5  0  0  1  7
+   8     6  0  0  4  2  3  4  5
+   9     6  0  0  1  6
+  10     3 12 13  7  8 11 12 14 13  9 10
+  11     3  0  0  1 15
+  12    10 14 15  5  8 11 12 14 13
+  13    10  0  0  2  9 10
+  14    12 16 17  4  8 11 12 14
+  15    12  0  0  1 13
+  16    14  0  0  1  8
+  17    14 18 19  3 11 12 14
+  18    17  0  0  2 11 12
+  19    17  0  0  1 14
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5  7  1  1  7
+   3 *   1 10 11  8  1  8 15
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  6  1  2  7
+   6 -   5  8  9  5  1  2  6
+   7 -   5  0  0  1  1  7  7
+   8 -   6  0  0  4  1  2  5
+   9 -   6  0  0  1  1  6  6
+  10 -   3 12 13  7  1  8 14
+  11 -   3  0  0  1  1 15 15
+  12 -  10 14 15  5  2  8  8 11 14
+  13 -  10  0  0  2  1  9 10
+  14 -  12 16 17  4  3  8  8 11 12 14 14
+  15 -  12  0  0  1  1 13 13
+  16 -  14  0  0  1  1  8  8
+  17 -  14 18 19  3  2 11 12 14 14
+  18 -  17  0  0  2  1 11 12
+  19 -  17  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1275
+Total number of ignored atom records:          0
+ HEADER    SIGNALING PROTEIN                       25-MAR-16   5G1D              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    I.LEE,H.KIM,J.H.YUN,W.LEE                                             
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN                       25-MAR-16   5G1D              COMPND   2 MOLECULE: SYNTENIN-1;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    I.LEE,H.KIM,J.H.YUN,W.LEE                                             
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau           1   4.82737970              84
+ #popped           2           1
+ #selectset contacts        1373
+ selectset done           1
+ eigen done           1
+ tau           3  0.781514525              17          73
+ #popped           4           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau           5  0.414468318              17
+ #popped           5           1
+ #selectset contacts        1373
+ selectset done           1
+ eigen done           1
+ tau           7   2.01630354              49
+ #popped           8           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau           9  0.372340411              27
+ #popped          11           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau          11  0.451282054              39
+ #popped           9           1
+ #selectset contacts        1373
+ selectset done           1
+ eigen done           1
+ tau          13   1.90675676              60
+ #popped           3           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          15  0.789478183             157
+ #popped          16           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          17  0.623566926              98         109
+ #popped          18           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          19   1.24975419              97         125
+ #popped          20           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          21  0.429087609              97
+ #popped          23           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN                       25-MAR-16   5G1D              COMPND   2 MOLECULE: SYNTENIN-1;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    I.LEE,H.KIM,J.H.YUN,W.LEE                                             
+           0
+         167
+         167  residues read 5G1D.dssp                                                   
+  grow short strand           3           7
+  exclude short helix          37          40
+  grow short strand          48          52
+  grow short strand          55          56
+  grow short strand          75          79
+  grow short strand          99         102
+  grow short strand         105         109
+  exclude short helix         114         118
+  grow short strand         132         133
+  exclude short helix         160         165
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  7  2  3  4  5  6  8 11 12 13 14  9 10
+   2     1  4  5  7  1  7  2  3  4  5  6
+   3     1 18 19  7  8 11 12 13 14  9 10
+   4     2  6  7  2  1  7
+   5     2  8  9  5  2  3  4  5  6
+   6     4  0  0  1  1
+   7     4  0  0  1  7
+   8     5 10 11  2  2  3
+   9     5 14 15  3  4  5  6
+  10     8  0  0  1  2
+  11     8  0  0  1  3
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     9  0  0  2  4  5
+  15     9  0  0  1  6
+  16     0  0  0  7  8 11 12 13 14  9 10
+  17     0  0  0  0
+  18     3 22 23  5  8 11 12 13 14
+  19     3  0  0  2  9 10
+  20     0  0  0  5  8 11 12 13 14
+  21     0  0  0  0
+  22    18  0  0  1  8
+  23    18  0  0  4 11 12 13 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  7  1  1  7
+   3 *   1 14 15  7  1  8 14
+   4 -   2  6  7  2  2  1  1  7  7
+   5 -   2  8  9  5  1  2  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  7  7
+   8 -   5 10 11  2  1  2  3
+   9 -   5 12 13  3  1  4  6
+  10 -   8  0  0  1  1  2  2
+  11 -   8  0  0  1  1  3  3
+  12 -   9  0  0  2  1  4  5
+  13 -   9  0  0  1  1  6  6
+  14 -   3 16 17  5  2  8  8 11 14
+  15 -   3  0  0  2  1  9 10
+  16 -  14  0  0  1  1  8  8
+  17 -  14  0  0  4  1 11 14
+
+ CHAIN : 5G1DA
+ CHAIN : 5G1DB
+

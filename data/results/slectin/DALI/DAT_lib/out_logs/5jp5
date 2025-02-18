@@ -1,0 +1,847 @@
+A length: 127
+B length: 131
+C length: 126
+D length: 139
+E length: 140
+F length: 142
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   67  CA BSER A  20 
+ Alternate location indication is not blank or A, ignore atom:   71  CB BSER A  20 
+ Alternate location indication is not blank or A, ignore atom:   73  OG BSER A  20 
+ Alternate location indication is not blank or A, ignore atom:  166  CA BILE A  33 
+ Alternate location indication is not blank or A, ignore atom:  170  CB BILE A  33 
+ Alternate location indication is not blank or A, ignore atom:  172  CG1BILE A  33 
+ Alternate location indication is not blank or A, ignore atom:  174  CG2BILE A  33 
+ Alternate location indication is not blank or A, ignore atom:  176  CD1BILE A  33 
+ Alternate location indication is not blank or A, ignore atom:  189  CA BVAL A  36 
+ Alternate location indication is not blank or A, ignore atom:  193  CB BVAL A  36 
+ Alternate location indication is not blank or A, ignore atom:  195  CG1BVAL A  36 
+ Alternate location indication is not blank or A, ignore atom:  197  CG2BVAL A  36 
+ Alternate location indication is not blank or A, ignore atom:  215  CA BSER A  39 
+ Alternate location indication is not blank or A, ignore atom:  219  CB BSER A  39 
+ Alternate location indication is not blank or A, ignore atom:  221  OG BSER A  39 
+ Alternate location indication is not blank or A, ignore atom:  312  CA BCYS A  50 
+ Alternate location indication is not blank or A, ignore atom:  316  CB BCYS A  50 
+ Alternate location indication is not blank or A, ignore atom:  318  SG BCYS A  50 
+ Alternate location indication is not blank or A, ignore atom:  519  CA BSER A  76 
+ Alternate location indication is not blank or A, ignore atom:  523  CB BSER A  76 
+ Alternate location indication is not blank or A, ignore atom:  525  OG BSER A  76 
+ Alternate location indication is not blank or A, ignore atom: 1061  CA BGLU A 144 
+ Alternate location indication is not blank or A, ignore atom: 1065  CB BGLU A 144 
+ Alternate location indication is not blank or A, ignore atom: 1067  CG BGLU A 144 
+ Alternate location indication is not blank or A, ignore atom: 1069  CD BGLU A 144 
+ Alternate location indication is not blank or A, ignore atom: 1071  OE1BGLU A 144 
+ Alternate location indication is not blank or A, ignore atom: 1073  OE2BGLU A 144 
+
+Total number of residues read in:            134
+Total number of atoms read in:              1055
+Total number of ignored atom records:        319
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+         134  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1173
+ selectset done           0
+ eigen done           0
+ tau           1  0.636613429              22          33          47          57          72          86
+ #popped           2           1
+ #selectset contacts        1173
+ selectset done           1
+ eigen done           1
+ tau           3  0.602368593              22         122
+ #popped           4           2
+ #selectset contacts        1173
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1173
+ selectset done           1
+ eigen done           1
+ tau           5   1.60413325              72         110
+ #popped           6           2
+ #selectset contacts        1173
+ selectset done           2
+ eigen done           2
+ tau           7  0.584617734              72
+ #popped           8           2
+ #selectset contacts        1173
+ selectset done           2
+ eigen done           2
+ tau           9  0.597318709              47
+ #popped           7           1
+ #selectset contacts        1173
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1173
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+           0
+         134
+         134  residues read 5JP5.dssp                                                   
+  grow short strand           6           9
+  grow short strand          65          66
+  exclude short helix         115         117
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 11  1  2 11  3  4  5  6 10  7  8  9
+   2     0  0  0 11  1  2 11  3  4  5  6 10  7  8  9
+   3     0  0  0  0
+   4     1  0  0  3  1  2 11
+   5     1  6  7  8  3  4  5  6 10  7  8  9
+   6     5  8  9  5  3  4  5  6 10
+   7     5  0  0  3  7  8  9
+   8     6 10 11  4  3  4  5  6
+   9     6  0  0  1 10
+  10     8  0  0  2  3  4
+  11     8  0  0  2  5  6
+   1 *   0  2  3 11  1  1 11
+   2 -   1  0  0  3  2  1  2 11 11
+   3 -   1  4  5  8  1  3 10
+   4 -   3  6  7  5  2  3  6 10 10
+   5 -   3  0  0  3  1  7  9
+   6 -   4  8  9  4  1  3  6
+   7 -   4  0  0  1  1 10 10
+   8 -   6  0  0  2  1  3  4
+   9 -   6  0  0  2  1  5  6
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1379  CA BCYS B  50 
+ Alternate location indication is not blank or A, ignore atom: 1383  CB BCYS B  50 
+ Alternate location indication is not blank or A, ignore atom: 1385  SG BCYS B  50 
+ Alternate location indication is not blank or A, ignore atom: 1586  CA BSER B  76 
+ Alternate location indication is not blank or A, ignore atom: 1590  CB BSER B  76 
+ Alternate location indication is not blank or A, ignore atom: 1592  OG BSER B  76 
+ Alternate location indication is not blank or A, ignore atom: 2128  CA BGLU B 144 
+ Alternate location indication is not blank or A, ignore atom: 2132  CB BGLU B 144 
+ Alternate location indication is not blank or A, ignore atom: 2134  CG BGLU B 144 
+ Alternate location indication is not blank or A, ignore atom: 2136  CD BGLU B 144 
+ Alternate location indication is not blank or A, ignore atom: 2138  OE1BGLU B 144 
+ Alternate location indication is not blank or A, ignore atom: 2140  OE2BGLU B 144 
+
+Total number of residues read in:            134
+Total number of atoms read in:              1055
+Total number of ignored atom records:        291
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+         134  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1173
+ selectset done           0
+ eigen done           0
+ tau           1  0.756304026              23          33          47          57          70          85
+ #popped           2           1
+ #selectset contacts        1173
+ selectset done           1
+ eigen done           1
+ tau           3  0.779768348              23          70
+ #popped           4           2
+ #selectset contacts        1173
+ selectset done           2
+ eigen done           2
+ tau           5  0.886767387              87         113
+ #popped           6           3
+ #selectset contacts        1173
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1173
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1173
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1173
+ selectset done           0
+ eigen done           0
+ tau           7   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+           0
+         134
+         134  residues read 5JP5.dssp                                                   
+  grow short strand           6           9
+  grow short strand          65          66
+  exclude short helix         115         117
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 11  1  2  7 10 11  8  9  3  4  5  6
+   2     0  0  0 11  1  2  7 10 11  8  9  3  4  5  6
+   3     0  0  0  0
+   4     1  6  7  7  1  2  7 10 11  8  9
+   5     1  0  0  4  3  4  5  6
+   6     4  0  0  5  1  2  7 10 11
+   7     4  0  0  2  8  9
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  7  2  1  2  7 11
+   3 -   1  0  0  4  1  3  6
+   4 -   2  0  0  5  3  1  2  7  7 10 11
+   5 -   2  0  0  2  1  8  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2216  CA BSER C  20 
+ Alternate location indication is not blank or A, ignore atom: 2220  CB BSER C  20 
+ Alternate location indication is not blank or A, ignore atom: 2222  OG BSER C  20 
+ Alternate location indication is not blank or A, ignore atom: 2279  CA BSER C  28 
+ Alternate location indication is not blank or A, ignore atom: 2283  CB BSER C  28 
+ Alternate location indication is not blank or A, ignore atom: 2285  OG BSER C  28 
+ Alternate location indication is not blank or A, ignore atom: 2318  CA BILE C  33 
+ Alternate location indication is not blank or A, ignore atom: 2322  CB BILE C  33 
+ Alternate location indication is not blank or A, ignore atom: 2324  CG1BILE C  33 
+ Alternate location indication is not blank or A, ignore atom: 2326  CG2BILE C  33 
+ Alternate location indication is not blank or A, ignore atom: 2328  CD1BILE C  33 
+ Alternate location indication is not blank or A, ignore atom: 2341  CA BVAL C  36 
+ Alternate location indication is not blank or A, ignore atom: 2345  CB BVAL C  36 
+ Alternate location indication is not blank or A, ignore atom: 2347  CG1BVAL C  36 
+ Alternate location indication is not blank or A, ignore atom: 2349  CG2BVAL C  36 
+ Alternate location indication is not blank or A, ignore atom: 2367  CA BSER C  39 
+ Alternate location indication is not blank or A, ignore atom: 2371  CB BSER C  39 
+ Alternate location indication is not blank or A, ignore atom: 2373  OG BSER C  39 
+ Alternate location indication is not blank or A, ignore atom: 2464  CA BCYS C  50 
+ Alternate location indication is not blank or A, ignore atom: 2468  CB BCYS C  50 
+ Alternate location indication is not blank or A, ignore atom: 2470  SG BCYS C  50 
+ Alternate location indication is not blank or A, ignore atom: 2788  CA BSER C  91 
+ Alternate location indication is not blank or A, ignore atom: 2792  CB BSER C  91 
+ Alternate location indication is not blank or A, ignore atom: 2794  OG BSER C  91 
+ Alternate location indication is not blank or A, ignore atom: 2821  CA BARG C  95 
+ Alternate location indication is not blank or A, ignore atom: 2825  CB BARG C  95 
+ Alternate location indication is not blank or A, ignore atom: 2827  CG BARG C  95 
+ Alternate location indication is not blank or A, ignore atom: 2829  CD BARG C  95 
+ Alternate location indication is not blank or A, ignore atom: 2831  NE BARG C  95 
+ Alternate location indication is not blank or A, ignore atom: 2833  CZ BARG C  95 
+ Alternate location indication is not blank or A, ignore atom: 2835  NH1BARG C  95 
+ Alternate location indication is not blank or A, ignore atom: 2837  NH2BARG C  95 
+
+Total number of residues read in:            134
+Total number of atoms read in:              1055
+Total number of ignored atom records:        321
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+         134  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1167
+ selectset done           0
+ eigen done           0
+ tau           1  0.720499158              23          33          47          57          74          85
+ #popped           2           1
+ #selectset contacts        1167
+ selectset done           1
+ eigen done           1
+ tau           3  0.554347992              13
+ #popped           5           1
+ #selectset contacts        1167
+ selectset done           1
+ eigen done           1
+ tau           5  0.523396373              96         107         124
+ #popped           6           2
+ #selectset contacts        1167
+ selectset done           2
+ eigen done           2
+ tau           7   1.04576313              23          74          96
+ #popped           8           3
+ #selectset contacts        1167
+ selectset done           3
+ eigen done           3
+ tau           9  0.321705431              86
+ #popped           9           2
+ #selectset contacts        1167
+ selectset done           2
+ eigen done           2
+ tau          11  0.479260623              74
+ #popped          12           2
+ #selectset contacts        1167
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           7           1
+ #selectset contacts        1167
+ selectset done           1
+ eigen done           1
+ tau          13   999.999023             107
+ #popped           3           0
+ #selectset contacts        1167
+ selectset done           0
+ eigen done           0
+ tau          15  0.499042809              57
+ #popped          16           0
+ #selectset contacts        1167
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+           0
+         134
+         134  residues read 5JP5.dssp                                                   
+  grow short strand           6           9
+  grow short strand          65          66
+  exclude short helix         115         117
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 11  1  2  7  3  4  5  6 10  8  9 11
+   2     0  0  0 11  1  2  7  3  4  5  6 10  8  9 11
+   3     0  0  0  0
+   4     1  0  0  1  1
+   5     1  6  7 10  2  7  3  4  5  6 10  8  9 11
+   6     5  8  9  7  2  7  3  4  5  6 10
+   7     5 14 15  3  8  9 11
+   8     6 10 11  2  2  7
+   9     6 12 13  5  3  4  5  6 10
+  10     8  0  0  1  2
+  11     8  0  0  1  7
+  12     9  0  0  4  3  4  5  6
+  13     9  0  0  1 10
+  14     7  0  0  2  8  9
+  15     7  0  0  1 11
+  16     0  0  0  0
+  17     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5 10  1  2 11
+   4 -   3  6  7  7  2  2  7 10 10
+   5 -   3 12 13  3  2  8  9 11 11
+   6 -   4  8  9  2  2  2  2  7  7
+   7 -   4 10 11  5  2  3  6 10 10
+   8 -   6  0  0  1  1  2  2
+   9 -   6  0  0  1  1  7  7
+  10 -   7  0  0  4  1  3  6
+  11 -   7  0  0  1  1 10 10
+  12 -   5  0  0  2  1  8  9
+  13 -   5  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3381  CA BSER D  20 
+ Alternate location indication is not blank or A, ignore atom: 3385  CB BSER D  20 
+ Alternate location indication is not blank or A, ignore atom: 3387  OG BSER D  20 
+ Alternate location indication is not blank or A, ignore atom: 3459  CA BSER D  30 
+ Alternate location indication is not blank or A, ignore atom: 3463  CB BSER D  30 
+ Alternate location indication is not blank or A, ignore atom: 3465  OG BSER D  30 
+ Alternate location indication is not blank or A, ignore atom: 3523  CA BSER D  39 
+ Alternate location indication is not blank or A, ignore atom: 3527  CB BSER D  39 
+ Alternate location indication is not blank or A, ignore atom: 3529  OG BSER D  39 
+ Alternate location indication is not blank or A, ignore atom: 3824  CA BSER D  76 
+ Alternate location indication is not blank or A, ignore atom: 3828  CB BSER D  76 
+ Alternate location indication is not blank or A, ignore atom: 3830  OG BSER D  76 
+ Alternate location indication is not blank or A, ignore atom: 4158  CA BGLU D 118 
+ Alternate location indication is not blank or A, ignore atom: 4162  CB BGLU D 118 
+ Alternate location indication is not blank or A, ignore atom: 4164  CG BGLU D 118 
+ Alternate location indication is not blank or A, ignore atom: 4166  CD BGLU D 118 
+ Alternate location indication is not blank or A, ignore atom: 4168  OE1BGLU D 118 
+ Alternate location indication is not blank or A, ignore atom: 4170  OE2BGLU D 118 
+
+Total number of residues read in:            144
+Total number of atoms read in:              1133
+Total number of ignored atom records:        287
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+         144  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau           1   1.00748360              16          30          44          57          67          80          97         132
+ #popped           2           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau           3  0.511700809              62          87
+ #popped           4           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau           5  0.203827634              62
+ #popped           6           2
+ #selectset contacts        1260
+ selectset done           2
+ eigen done           2
+ tau           7   999.999023              16
+ #popped           7           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau           9   21.5895958              97
+ #popped           3           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau          11  0.830221117              30          80         120
+ #popped          12           1
+ #selectset contacts        1260
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped          13           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau          13  0.583433986              80
+ #popped          14           0
+ #selectset contacts        1260
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+           0
+         144
+         144  residues read 5JP5.dssp                                                   
+  grow short strand           2           4
+  grow short strand          16          19
+  grow short strand          75          76
+  exclude short helix         125         127
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  8 12  2  9 10  4  5  6  7 11
+   2     1  6  7  4  1  3  8 12
+   3     1 12 13  8  2  9 10  4  5  6  7 11
+   4     0  0  0  4  1  3  8 12
+   5     0  0  0  0
+   6     2  8  9  2  1  3
+   7     2 10 11  2  8 12
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     7  0  0  1  8
+  11     7  0  0  1 12
+  12     3  0  0  3  2  9 10
+  13     3 14 15  5  4  5  6  7 11
+  14    13  0  0  4  4  5  6  7
+  15    13  0  0  1 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  4  4  1  1  3  3  8  8 12 12
+   3 -   1 10 11  8  3  2  2  4  7  9 11
+   4 -   2  6  7  2  2  1  1  3  3
+   5 -   2  8  9  2  2  8  8 12 12
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  3  3
+   8 -   5  0  0  1  1  8  8
+   9 -   5  0  0  1  1 12 12
+  10 -   3  0  0  3  2  2  2  9 10
+  11 -   3 12 13  5  2  4  7 11 11
+  12 -  11  0  0  4  1  4  7
+  13 -  11  0  0  1  1 11 11
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 4532  CA BSER E  20 
+ Alternate location indication is not blank or A, ignore atom: 4536  CB BSER E  20 
+ Alternate location indication is not blank or A, ignore atom: 4538  OG BSER E  20 
+ Alternate location indication is not blank or A, ignore atom: 4969  CA BSER E  76 
+ Alternate location indication is not blank or A, ignore atom: 4973  CB BSER E  76 
+ Alternate location indication is not blank or A, ignore atom: 4975  OG BSER E  76 
+ Alternate location indication is not blank or A, ignore atom: 5359  CA BMET E 124 
+ Alternate location indication is not blank or A, ignore atom: 5363  CB BMET E 124 
+ Alternate location indication is not blank or A, ignore atom: 5365  CG BMET E 124 
+ Alternate location indication is not blank or A, ignore atom: 5367  SD BMET E 124 
+ Alternate location indication is not blank or A, ignore atom: 5369  CE BMET E 124 
+ Alternate location indication is not blank or A, ignore atom: 5484  CA BLEU E 140 
+ Alternate location indication is not blank or A, ignore atom: 5488  CB BLEU E 140 
+ Alternate location indication is not blank or A, ignore atom: 5490  CG BLEU E 140 
+ Alternate location indication is not blank or A, ignore atom: 5492  CD1BLEU E 140 
+ Alternate location indication is not blank or A, ignore atom: 5494  CD2BLEU E 140 
+
+Total number of residues read in:            144
+Total number of atoms read in:              1133
+Total number of ignored atom records:        287
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+         144  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1261
+ selectset done           0
+ eigen done           0
+ tau           1  0.789502621              33          43          57          67          80          95
+ #popped           2           1
+ #selectset contacts        1261
+ selectset done           1
+ eigen done           1
+ tau           3  0.691575348              33         134
+ #popped           4           2
+ #selectset contacts        1261
+ selectset done           2
+ eigen done           2
+ tau           5  0.577657163              16
+ #popped           7           2
+ #selectset contacts        1261
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1261
+ selectset done           1
+ eigen done           1
+ tau           7   1.54461908              80         120
+ #popped           8           2
+ #selectset contacts        1261
+ selectset done           2
+ eigen done           2
+ tau           9  0.220870212              54
+ #popped          11           2
+ #selectset contacts        1261
+ selectset done           2
+ eigen done           2
+ tau          11   3.05060720              80
+ #popped           9           1
+ #selectset contacts        1261
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1261
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+           0
+         144
+         144  residues read 5JP5.dssp                                                   
+  grow short strand           2           4
+  grow short strand          16          19
+  grow short strand          75          76
+  exclude short helix         125         127
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 12  1  2  3 12  4  5  6  7 11  8  9 10
+   2     0  0  0 12  1  2  3 12  4  5  6  7 11  8  9 10
+   3     0  0  0  0
+   4     1  6  7  4  1  2  3 12
+   5     1  8  9  8  4  5  6  7 11  8  9 10
+   6     4  0  0  1  1
+   7     4  0  0  3  2  3 12
+   8     5 10 11  5  4  5  6  7 11
+   9     5  0  0  3  8  9 10
+  10     8  0  0  1  4
+  11     8 12 13  4  5  6  7 11
+  12    11  0  0  3  5  6  7
+  13    11  0  0  1 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  4  2  1  3 12 12
+   3 -   1  6  7  8  1  4 11
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  3  2  2  3 12 12
+   6 -   3  8  9  5  2  4  7 11 11
+   7 -   3  0  0  3  1  8 10
+   8 -   6  0  0  1  1  4  4
+   9 -   6 10 11  4  2  5  7 11 11
+  10 -   9  0  0  3  1  5  7
+  11 -   9  0  0  1  1 11 11
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5762  CA BILE F  31 
+ Alternate location indication is not blank or A, ignore atom: 5766  CB BILE F  31 
+ Alternate location indication is not blank or A, ignore atom: 5768  CG1BILE F  31 
+ Alternate location indication is not blank or A, ignore atom: 5770  CG2BILE F  31 
+ Alternate location indication is not blank or A, ignore atom: 5772  CD1BILE F  31 
+ Alternate location indication is not blank or A, ignore atom: 5822  CA BSER F  39 
+ Alternate location indication is not blank or A, ignore atom: 5826  CB BSER F  39 
+ Alternate location indication is not blank or A, ignore atom: 5828  OG BSER F  39 
+
+Total number of residues read in:            144
+Total number of atoms read in:              1133
+Total number of ignored atom records:        259
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+         144  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1268
+ selectset done           0
+ eigen done           0
+ tau           1  0.750688016              33          45          56          68          78          95
+ #popped           2           1
+ #selectset contacts        1268
+ selectset done           1
+ eigen done           1
+ tau           3  0.783003449              33         130
+ #popped           4           2
+ #selectset contacts        1268
+ selectset done           2
+ eigen done           2
+ tau           5  0.568747401              12
+ #popped           7           2
+ #selectset contacts        1268
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1268
+ selectset done           1
+ eigen done           1
+ tau           7   1.73658693              78         120
+ #popped           8           2
+ #selectset contacts        1268
+ selectset done           2
+ eigen done           2
+ tau           9  0.931034505              78
+ #popped          10           2
+ #selectset contacts        1268
+ selectset done           2
+ eigen done           2
+ tau          11  0.554456294              56
+ #popped           9           1
+ #selectset contacts        1268
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1268
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   03-MAY-16   5JP5              COMPND   2 MOLECULE: GALECTIN-5;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    F.M.RUIZ,A.ROMERO                                                     
+           0
+         144
+         144  residues read 5JP5.dssp                                                   
+  grow short strand           2           4
+  grow short strand          16          19
+  grow short strand          75          76
+  exclude short helix         125         127
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3 11 12  4  5  7  8  9 10  6
+   2     1  4  5 11  1  2  3 11 12  4  5  7  8  9 10
+   3     1  0  0  1  6
+   4     2  6  7  5  1  2  3 11 12
+   5     2  8  9  6  4  5  7  8  9 10
+   6     4  0  0  1  1
+   7     4  0  0  4  2  3 11 12
+   8     5 12 13  3  4  5  7
+   9     5  0  0  3  8  9 10
+  10     0  0  0  3  4  5  7
+  11     0  0  0  0
+  12     8  0  0  2  4  5
+  13     8  0  0  1  7
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 11  2  1  5  7 12
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  5  2  1  3 11 12
+   5 -   2  8  9  6  2  4  5  7 10
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  4  2  2  3 11 12
+   8 -   5 10 11  3  2  4  5  7  7
+   9 -   5  0  0  3  1  8 10
+  10 -   8  0  0  2  1  4  5
+  11 -   8  0  0  1  1  7  7
+
+ CHAIN : 5JP5A
+ CHAIN : 5JP5B
+ CHAIN : 5JP5C
+ CHAIN : 5JP5D
+ CHAIN : 5JP5E
+ CHAIN : 5JP5F
+

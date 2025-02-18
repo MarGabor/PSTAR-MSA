@@ -1,0 +1,562 @@
+A length: 199
+B length: 92
+C length: 199
+D length: 103
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            199
+Total number of atoms read in:              1542
+Total number of ignored atom records:        110
+ HEADER    HORMONE                                 14-JAN-09   3FUB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+  Reading DSSP file
+ HEADER    HORMONE                                 14-JAN-09   3FUB              COMPND   2 MOLECULE: GDNF FAMILY RECEPTOR ALPHA-1;                              SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1791
+ selectset done           0
+ eigen done           0
+ tau           1   1.41169786             118         134         186
+ #popped           2           1
+ #selectset contacts        1791
+ selectset done           1
+ eigen done           1
+ tau           3   2.52325726              87         118         162
+ #popped           4           2
+ #selectset contacts        1791
+ selectset done           2
+ eigen done           2
+ tau           5   1.81175137              87
+ #popped           6           3
+ #selectset contacts        1791
+ selectset done           3
+ eigen done           3
+ tau           7   1.15662372              24
+ #popped           8           4
+ #selectset contacts        1791
+ selectset done           4
+ eigen done           4
+ tau           9  0.941154420              14
+ #popped           9           3
+ #selectset contacts        1791
+ selectset done           3
+ eigen done           3
+ tau          11   1.51371002              37
+ #popped          13           3
+ #selectset contacts        1791
+ selectset done           3
+ eigen done           3
+ tau          13   1.57725847              53
+ #popped          15           3
+ #selectset contacts        1791
+ selectset done           3
+ eigen done           3
+ tau          15   2.43866658              65
+ #popped          17           3
+ #selectset contacts        1791
+ selectset done           3
+ eigen done           3
+ tau          17   1.11864400              77
+ #popped           7           2
+ #selectset contacts        1791
+ selectset done           2
+ eigen done           2
+ tau          19   1.10986757             150
+ #popped           5           1
+ #selectset contacts        1791
+ selectset done           1
+ eigen done           1
+ tau          21   1.20959997             103         118
+ #popped          22           1
+ #selectset contacts        1791
+ selectset done           1
+ eigen done           1
+ tau          23   1.02252126             176
+ #popped          24           1
+ #selectset contacts        1791
+ selectset done           1
+ eigen done           1
+ tau          25  0.626982629             103
+ #popped           3           0
+ #selectset contacts        1791
+ selectset done           0
+ eigen done           0
+ tau          27   1.51352108             134
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HORMONE                                 14-JAN-09   3FUB              COMPND   2 MOLECULE: GDNF FAMILY RECEPTOR ALPHA-1;                              SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+           0
+         199
+         199  residues read 3FUB.dssp                                                   
+  exclude short helix          82          85
+  grow short strand         150         152
+  grow short strand         160         162
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  8  9 10  6 11  7 12
+   2     1  4  5 11  1  2  3  4  5  8  9 10  6 11  7
+   3     1  0  0  1 12
+   4     2  6  7  8  1  2  3  4  5  8  9 10
+   5     2 22 23  3  6 11  7
+   6     4  8  9  5  1  2  3  4  5
+   7     4 20 21  3  8  9 10
+   8     6 10 11  2  1  2
+   9     6 14 15  3  3  4  5
+  10     8  0  0  1  1
+  11     8  0  0  1  2
+  12     0  0  0  0
+  13     0  0  0  3  3  4  5
+  14     9  0  0  1  3
+  15     9 16 17  2  4  5
+  16    15  0  0  1  4
+  17    15  0  0  1  5
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20     7  0  0  1  8
+  21     7  0  0  2  9 10
+  22     5 24 25  2  6 11
+  23     5  0  0  1  7
+  24    22  0  0  1  6
+  25    22  0  0  1 11
+  26     0  0  0  1  6
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 11  1  1 11
+   3 -   1  0  0  1  1 12 12
+   4 -   2  6  7  8  2  1  5  8 10
+   5 -   2 18 19  3  2  6  7 11 11
+   6 -   4  8  9  5  1  1  5
+   7 -   4 16 17  3  1  8 10
+   8 -   6 10 11  2  1  1  2
+   9 -   6 12 13  3  1  3  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  2  2
+  12 -   9  0  0  1  1  3  3
+  13 -   9 14 15  2  1  4  5
+  14 -  13  0  0  1  1  4  4
+  15 -  13  0  0  1  1  5  5
+  16 -   7  0  0  1  1  8  8
+  17 -   7  0  0  2  1  9 10
+  18 -   5 20 21  2  2  6  6 11 11
+  19 -   5  0  0  1  1  7  7
+  20 -  18  0  0  1  1  6  6
+  21 -  18  0  0  1  1 11 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             92
+Total number of atoms read in:               706
+Total number of ignored atom records:         80
+ HEADER    HORMONE                                 14-JAN-09   3FUB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+  Reading DSSP file
+ HEADER    HORMONE                                 14-JAN-09   3FUB              COMPND   2 MOLECULE: GDNF FAMILY RECEPTOR ALPHA-1;                              SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+          92  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         675
+ selectset done           0
+ eigen done           0
+ tau           1   4.57352257              36          53
+ #popped           2           0
+ #selectset contacts         675
+ selectset done           0
+ eigen done           0
+ tau           3   1.30415201              10          22          69          80
+ #popped           4           1
+ #selectset contacts         675
+ selectset done           1
+ eigen done           1
+ tau           5  0.464111865              25
+ #popped           7           1
+ #selectset contacts         675
+ selectset done           1
+ eigen done           1
+ tau           7  0.277247995              69
+ #popped           8           1
+ #selectset contacts         675
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           5           0
+ #selectset contacts         675
+ selectset done           0
+ eigen done           0
+ tau           9  0.830261171              22
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HORMONE                                 14-JAN-09   3FUB              COMPND   2 MOLECULE: GDNF FAMILY RECEPTOR ALPHA-1;                              SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+           0
+          92
+          92  residues read 3FUB.dssp                                                   
+  exclude short helix          11          14
+  grow short strand          69          72
+  grow short strand          78          81
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  7  1  2  4  7  5  6  3
+   2     1  4  5  6  1  2  4  7  5  6
+   3     1  0  0  1  3
+   4     2  6  7  4  1  2  4  7
+   5     2  0  0  2  5  6
+   6     4  0  0  1  1
+   7     4  8  9  3  2  4  7
+   8     7  0  0  2  2  4
+   9     7  0  0  1  7
+  10     0  0  0  0
+  11     0  0  0  2  5  6
+   1 +   0  2  3  7  1  1  7
+   2 *   1  4  5  6  2  1  2  4  7
+   3 =   1  0  0  1  1  3  3
+   4 -   2  6  7  4  3  1  2  4  4  7  7
+   5 -   2  0  0  2  1  5  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  3  3  2  2  4  4  7  7
+   8 -   7  0  0  2  2  2  2  4  4
+   9 -   7  0  0  1  1  7  7
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            199
+Total number of atoms read in:              1525
+Total number of ignored atom records:        135
+ HEADER    HORMONE                                 14-JAN-09   3FUB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+  Reading DSSP file
+ HEADER    HORMONE                                 14-JAN-09   3FUB              COMPND   2 MOLECULE: GDNF FAMILY RECEPTOR ALPHA-1;                              SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1790
+ selectset done           0
+ eigen done           0
+ tau           1   2.52728868              85
+ #popped           2           1
+ #selectset contacts        1790
+ selectset done           1
+ eigen done           1
+ tau           3   1.23132372              24
+ #popped           4           2
+ #selectset contacts        1790
+ selectset done           2
+ eigen done           2
+ tau           5  0.933971941              11
+ #popped           5           1
+ #selectset contacts        1790
+ selectset done           1
+ eigen done           1
+ tau           7   1.77580357              52
+ #popped           8           2
+ #selectset contacts        1790
+ selectset done           2
+ eigen done           2
+ tau           9   1.36456430              38
+ #popped           9           1
+ #selectset contacts        1790
+ selectset done           1
+ eigen done           1
+ tau          11   2.68149638              65
+ #popped          13           1
+ #selectset contacts        1790
+ selectset done           1
+ eigen done           1
+ tau          13  0.928418815              75
+ #popped           3           0
+ #selectset contacts        1790
+ selectset done           0
+ eigen done           0
+ tau          15   1.53448308             116         141         185
+ #popped          16           1
+ #selectset contacts        1790
+ selectset done           1
+ eigen done           1
+ tau          17  0.929007530             168
+ #popped          18           1
+ #selectset contacts        1790
+ selectset done           1
+ eigen done           1
+ tau          19   1.34551799             100         116
+ #popped          20           1
+ #selectset contacts        1790
+ selectset done           1
+ eigen done           1
+ tau          21  0.561749578             100
+ #popped          23           1
+ #selectset contacts        1790
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          17           0
+ #selectset contacts        1790
+ selectset done           0
+ eigen done           0
+ tau          23   1.57372260             141
+ #popped          24           0
+ #selectset contacts        1790
+ selectset done           0
+ eigen done           0
+ tau          25   1.09090912             128
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HORMONE                                 14-JAN-09   3FUB              COMPND   2 MOLECULE: GDNF FAMILY RECEPTOR ALPHA-1;                              SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+           0
+         199
+         199  residues read 3FUB.dssp                                                   
+  exclude short helix          82          85
+  grow short strand         151         152
+  grow short strand         160         161
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  9 10  7 11  8 12
+   2     1  4  5  5  1  2  3  4  5
+   3     1 16 17  7  6  9 10  7 11  8 12
+   4     2  6  7  2  1  2
+   5     2  8  9  3  3  4  5
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     5  0  0  1  3
+   9     5 12 13  2  4  5
+  10     0  0  0  0
+  11     0  0  0  1  3
+  12     9  0  0  1  4
+  13     9  0  0  1  5
+  14     0  0  0  1  5
+  15     0  0  0  0
+  16     3 18 19  5  6  9 10  7 11
+  17     3 24 25  2  8 12
+  18    16 20 21  4  6  9 10  7
+  19    16  0  0  1 11
+  20    18 22 23  3  6  9 10
+  21    18  0  0  1  7
+  22    20  0  0  1  6
+  23    20  0  0  2  9 10
+  24    17  0  0  1  8
+  25    17  0  0  1 12
+  26     0  0  0  0
+  27     0  0  0  1  8
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  5  1  1  5
+   3 -   1 12 13  7  1  6 12
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  3  1  3  5
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  1  1  3  3
+   9 -   5 10 11  2  1  4  5
+  10 -   9  0  0  1  1  4  4
+  11 -   9  0  0  1  1  5  5
+  12 -   3 14 15  5  2  6  7  9 11
+  13 -   3 20 21  2  2  8  8 12 12
+  14 -  12 16 17  4  2  6  7  9 10
+  15 -  12  0  0  1  1 11 11
+  16 -  14 18 19  3  2  6  6  9 10
+  17 -  14  0  0  1  1  7  7
+  18 -  16  0  0  1  1  6  6
+  19 -  16  0  0  2  1  9 10
+  20 -  13  0  0  1  1  8  8
+  21 -  13  0  0  1  1 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            103
+Total number of atoms read in:               792
+Total number of ignored atom records:         41
+ HEADER    HORMONE                                 14-JAN-09   3FUB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+  Reading DSSP file
+ HEADER    HORMONE                                 14-JAN-09   3FUB              COMPND   2 MOLECULE: GDNF FAMILY RECEPTOR ALPHA-1;                              SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+         103  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         757
+ selectset done           0
+ eigen done           0
+ tau           1   4.50896072              41          69
+ #popped           2           1
+ #selectset contacts         757
+ selectset done           1
+ eigen done           1
+ tau           3   1.50358653              17          31          80          91
+ #popped           4           2
+ #selectset contacts         757
+ selectset done           2
+ eigen done           2
+ tau           5   1.21309042              41
+ #popped           6           3
+ #selectset contacts         757
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts         757
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts         757
+ selectset done           1
+ eigen done           1
+ tau           7   1.14711154              31
+ #popped           3           0
+ #selectset contacts         757
+ selectset done           0
+ eigen done           0
+ tau           9   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HORMONE                                 14-JAN-09   3FUB              COMPND   2 MOLECULE: GDNF FAMILY RECEPTOR ALPHA-1;                              SOURCE   2 ORGANISM_SCIENTIFIC: RATTUS NORVEGICUS;                              AUTHOR    V.PARKASH,A.GOLDMAN                                                   
+           0
+         103
+         103  residues read 3FUB.dssp                                                   
+  exclude short helix          20          22
+  grow short strand          80          83
+  grow short strand          89          92
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  7  1  2  4  7  5  6  3
+   2     1  4  5  6  1  2  4  7  5  6
+   3     1  0  0  1  3
+   4     2  6  7  4  1  2  4  7
+   5     2  0  0  2  5  6
+   6     4  0  0  2  1  2
+   7     4  0  0  2  4  7
+   8     0  0  0  0
+   9     0  0  0  2  5  6
+   1 +   0  2  3  7  1  1  7
+   2 *   1  4  5  6  2  1  2  4  7
+   3 =   1  0  0  1  1  3  3
+   4 -   2  6  7  4  3  1  2  4  4  7  7
+   5 -   2  0  0  2  1  5  6
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  2  2  4  4  7  7
+
+ CHAIN : 3FUBA
+ CHAIN : 3FUBB
+ CHAIN : 3FUBC
+ CHAIN : 3FUBD
+

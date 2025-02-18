@@ -1,0 +1,32 @@
+# Job: cyt3
+# Query: 3CYRA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CYM-A 16.5  1.5  106   107   45   MOLECULE: CYTOCHROME C3;                                             
+
+# Pairwise alignments
+
+No 1: Query=3CYRA Sbjct=2CYMA Z-score=16.5
+
+DSSP  LLLLLLLLEEEELLLLEEEELLHHHLLLLHHHHLLLLLLLLLLLLLLLLLLLLLLLL-LL
+Query APAVPNKPVEVKGSQKTVMFPHAPHEKVECVTCHHLVDGKESYAKCGSSGCHDDLTA-KK   59
+ident ||  |            | | |  |  | |  ||| | ||| | |||  ||||      |
+Sbjct APKAPADGLKMEATKQPVVFNHSTHKSVKCGDCHHPVNGKEDYRKCGTAGCHDSMDKkDK   60
+DSSP  LLLLLLLLEEELLLLLLEEELLHHHLLLLHHHLLLEELLEELLLLLLLLLLLLLLLLlLL
+
+DSSP  LLLLHHHHHHLLlLLLLLLHHHHHHHHHHHLHHHHHHHHLLLLLLLLL
+Query GEKSLYYVVHAKgELKHTSCLACHSKVVAEKPELKKDLTGCAKSKCHP  107
+ident   |  | | | |   |  ||  ||  |       ||||||| ||||| 
+Sbjct SAKGYYHVMHDK-NTKFKSCVGCHVEVAGADAAKKKDLTGCKKSKCHE  107
+DSSP  LLLLHHHHHHLL-LLLLLLHHHHHHHHHLLLHHHHHHHHLLLLLLLLL
+
+
+# Structural equivalences
+   1: 3CYR-A 2CYM-A     1 -  57 <=>    1 -  57   (ALA    1  - ALA   57  <=> ALA    1  - LYS   57 )                          
+   1: 3CYR-A 2CYM-A    58 -  71 <=>   59 -  72   (LYS   58  - LYS   71  <=> ASP   59  - LYS   72 )                          
+   1: 3CYR-A 2CYM-A    73 - 107 <=>   73 - 107   (GLU   73  - PRO  107  <=> ASN   73  - GLU  107 )                          
+
+# Translation-rotation matrices
+-matrix  "3CYR-A 2CYM-A  U(1,.)   0.716349 -0.169420 -0.676861            7.028151"
+-matrix  "3CYR-A 2CYM-A  U(2,.)  -0.431333 -0.870036 -0.238725           26.511856"
+-matrix  "3CYR-A 2CYM-A  U(3,.)  -0.548448  0.462963 -0.696326            9.754805"
+

@@ -1,0 +1,32 @@
+# Job: az
+# Query: 1PLAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2W88-C 16.6  1.4   97   106   44   MOLECULE: PLASTOCYANIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=1PLAA Sbjct=2W88C Z-score=16.6
+
+DSSP  ---LEEEELLLLLLLLEELLEEEELLLLLEEEEELLLLLEEEEELLLLLLLLL--LLLLL
+Query ---AEVKLGSDDGGLVFSPSSFTVAAGEKITFKNNAGFPHNIVFDEDEVPAGV--NAEKI   55
+ident      || | | | | | |   ||  |      ||   |||| ||   ||      | | 
+Sbjct metFTVKMGADSGLLQFEPANVTVHPGDTVKWVNNKLPPHNILFDDKQVPGASkeLADKL   60
+DSSP  lleEEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLEEELLLHHHLHHHLhhHHHHH
+
+DSSP  LEEEEELLLLLEEEELL---LLLEEEEEELLLHHHLLLEEEEEEL-
+Query SQPEYLNGAGETYEVTL---TEKGTYKFYCEPHAGAGMKGEVTVN-   97
+ident |        || || |       |||  || || |||| |  ||  
+Sbjct SHSQLMFSPGESYEITFssdFPAGTYTYYCAPHRGAGMVGKITVEg  106
+DSSP  LEEEEELLLLLEEEEELlllLLLEEEEEELLLLHHHLLEEEEEELl
+
+
+# Structural equivalences
+   1: 1PLA-A 2W88-C     1 -  50 <=>    4 -  53   (ALA    1  - VAL   50  <=> PHE    3  - SER   52 )                          
+   1: 1PLA-A 2W88-C    51 -  72 <=>   56 -  77   (ASN   51  - LEU   72  <=> LEU   55  - PHE   76 )                          
+   1: 1PLA-A 2W88-C    73 -  97 <=>   81 - 105   (THR   73  - ASN   97  <=> PHE   80  - GLU  104 )                          
+
+# Translation-rotation matrices
+-matrix  "1PLA-A 2W88-C  U(1,.)  -0.458965  0.832522 -0.310254          -56.406620"
+-matrix  "1PLA-A 2W88-C  U(2,.)   0.045306  0.370684  0.927653          -15.301438"
+-matrix  "1PLA-A 2W88-C  U(3,.)   0.887298  0.411704 -0.207849          -36.125332"
+

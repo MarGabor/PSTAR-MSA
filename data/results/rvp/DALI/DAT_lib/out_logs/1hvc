@@ -1,0 +1,171 @@
+A length: 203
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            203
+Total number of atoms read in:              1816
+Total number of ignored atom records:       1744
+ HEADER    HYDROLASE(ACID PROTEASE)                22-JUN-94   1HVC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.N.BHAT,E.T.BALDWIN,J.W.ERICKSON                                     
+  Reading DSSP file
+ HEADER    HYDROLASE(ACID PROTEASE)                22-JUN-94   1HVC              COMPND   2 MOLECULE: HIV-1 PROTEASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: HUMAN IMMUNODEFICIENCY VIRUS 1;                 AUTHOR    T.N.BHAT,E.T.BALDWIN,J.W.ERICKSON                                     
+         203  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1838
+ selectset done           0
+ eigen done           0
+ tau           1   1.32502568              10          93
+ #popped           2           1
+ #selectset contacts        1838
+ selectset done           1
+ eigen done           1
+ tau           3   1.41279995             148         160
+ #popped           4           1
+ #selectset contacts        1838
+ selectset done           1
+ eigen done           1
+ tau           5  0.784494281             133         188
+ #popped           6           2
+ #selectset contacts        1838
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1838
+ selectset done           1
+ eigen done           1
+ tau           7   1.04970825             164         177
+ #popped           8           1
+ #selectset contacts        1838
+ selectset done           1
+ eigen done           1
+ tau           9  0.246710092             146
+ #popped           3           0
+ #selectset contacts        1838
+ selectset done           0
+ eigen done           0
+ tau          11   1.18789959              44          56
+ #popped          12           0
+ #selectset contacts        1838
+ selectset done           0
+ eigen done           0
+ tau          13  0.702907979              30          60          73          83
+ #popped          14           1
+ #selectset contacts        1838
+ selectset done           1
+ eigen done           1
+ tau          15  0.468156904              30          73
+ #popped          16           1
+ #selectset contacts        1838
+ selectset done           1
+ eigen done           1
+ tau          17  0.751365125              20
+ #popped          19           1
+ #selectset contacts        1838
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          15           0
+ #selectset contacts        1838
+ selectset done           0
+ eigen done           0
+ tau          19  0.280550689              41
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE(ACID PROTEASE)                22-JUN-94   1HVC              COMPND   2 MOLECULE: HIV-1 PROTEASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: HUMAN IMMUNODEFICIENCY VIRUS 1;                 AUTHOR    T.N.BHAT,E.T.BALDWIN,J.W.ERICKSON                                     
+           0
+         203
+         203  residues read 1HVC.dssp                                                   
+  grow short strand           2           3
+  grow short strand          10          14
+  grow short strand          31          34
+  grow short strand          84          85
+ crowded segment excluded!
+  grow short helix          87          93
+  grow short strand          96          98
+  grow short strand         106         107
+  grow short strand         136         138
+  grow short strand         188         189
+ crowded segment excluded!
+  exclude short helix         191         194
+  grow short strand         200         202
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  9 10 11 12 13 15 16 14  2  3  8  7  4  6  5
+   2     1  4  5  9  1  9 10 11 12 13 15 16 14
+   3     1 12 13  7  2  3  8  7  4  6  5
+   4     2  6  7  8  1  9 10 11 12 13 15 16
+   5     2  0  0  1 14
+   6     4  0  0  5  1  9 10 11 12
+   7     4  8  9  3 13 15 16
+   8     7 10 11  2 13 15
+   9     7  0  0  1 16
+  10     8  0  0  1 13
+  11     8  0  0  1 15
+  12     3 14 15  6  2  3  8  7  4  6
+  13     3  0  0  1  5
+  14    12 16 17  4  2  3  8  7
+  15    12 20 21  2  4  6
+  16    14 18 19  3  2  3  8
+  17    14  0  0  1  7
+  18    16  0  0  1  2
+  19    16  0  0  2  3  8
+  20    15  0  0  1  4
+  21    15  0  0  1  6
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5  9  2  1  1  9 16
+   3 +   1 12 13  7  1  2  8
+   4 -   2  6  7  8  3  1  1  9 13 15 16
+   5 -   2  0  0  1  1 14 14
+   6 -   4  0  0  5  2  1  1  9 12
+   7 -   4  8  9  3  2 13 13 15 16
+   8 -   7 10 11  2  2 13 13 15 15
+   9 -   7  0  0  1  1 16 16
+  10 -   8  0  0  1  1 13 13
+  11 -   8  0  0  1  1 15 15
+  12 *   3 14 15  6  2  2  4  6  8
+  13 =   3  0  0  1  1  5  5
+  14 -  12 16 17  4  2  2  3  7  8
+  15 -  12 20 21  2  2  4  4  6  6
+  16 -  14 18 19  3  2  2  3  8  8
+  17 -  14  0  0  1  1  7  7
+  18 -  16  0  0  1  1  2  2
+  19 -  16  0  0  2  2  3  3  8  8
+  20 -  15  0  0  1  1  4  4
+  21 -  15  0  0  1  1  6  6
+
+ CHAIN : 1HVCA
+

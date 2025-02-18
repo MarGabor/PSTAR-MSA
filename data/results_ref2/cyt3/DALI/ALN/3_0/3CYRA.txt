@@ -1,0 +1,32 @@
+# Job: cyt3
+# Query: 3CYRA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CDV-A 16.5  1.5  106   107   42   MOLECULE: CYTOCHROME C3;                                             
+
+# Pairwise alignments
+
+No 1: Query=3CYRA Sbjct=2CDVA Z-score=16.5
+
+DSSP  LLLLLLLLEEEELLLLEEEELLHHHLLLLHHHHLLLLLLLLLLLLLLLLLLLLLLLL-LL
+Query APAVPNKPVEVKGSQKTVMFPHAPHEKVECVTCHHLVDGKESYAKCGSSGCHDDLTA-KK   59
+ident ||  |            | | |  |  | |  ||| | ||| | ||   ||||      |
+Sbjct APKAPADGLKMDKTKQPVVFNHSTHKAVKCGDCHHPVNGKENYQKCATAGCHDNMDKkDK   60
+DSSP  LLLLLLLLEEELLLLLLEEELLHHHLLLLHHHHLLEELLEELLLLLLLLLLLLLLLLlLL
+
+DSSP  LLLLHHHHHHLLLlLLLLLHHHHHHHHHHHLHHHHHHHHLLLLLLLLL
+Query GEKSLYYVVHAKGeLKHTSCLACHSKVVAEKPELKKDLTGCAKSKCHP  107
+ident   |  |   | ||  |  ||  ||          || ||||  |||| 
+Sbjct SAKGYYHAMHDKG-TKFKSCVGCHLETAGADAAKKKELTGCKGSKCHS  107
+DSSP  LLLLHHHHHHLLL-LLLLLHHHHHHHHHLLLHHHHHHHHLLLLLLLLL
+
+
+# Structural equivalences
+   1: 3CYR-A 2CDV-A     1 -  57 <=>    1 -  57   (ALA    1  - ALA   57  <=> ALA    1  - LYS   57 )                          
+   1: 3CYR-A 2CDV-A    58 -  72 <=>   59 -  73   (LYS   58  - GLY   72  <=> ASP   59  - GLY   73 )                          
+   1: 3CYR-A 2CDV-A    74 - 107 <=>   74 - 107   (LEU   74  - PRO  107  <=> THR   74  - SER  107 )                          
+
+# Translation-rotation matrices
+-matrix  "3CYR-A 2CDV-A  U(1,.)  -0.066608 -0.252202  0.965380            1.789674"
+-matrix  "3CYR-A 2CDV-A  U(2,.)   0.898964  0.404635  0.167735           -4.056988"
+-matrix  "3CYR-A 2CDV-A  U(3,.)  -0.432929  0.879014  0.199768            6.410815"
+

@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 2O10A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2D8Z-A  6.5  2.5   59    70   31   MOLECULE: FOUR AND A HALF LIM DOMAINS 2;                             
+
+# Pairwise alignments
+
+No 1: Query=2O10A Sbjct=2D8ZA Z-score=6.5
+
+DSSP  ----LEELLLLLLEELhHHEEEELLEEEELLLLLLLLLLLLLLLLLLEEELLEEELHHHH
+Query ----GAKCGACEKTVYhAEEIQCNGRSFHKTCFHCMACRKALDSTTVAAHESEIYCKVCY   56
+ident        |  | |               || || | |||| |      |     ||  | 
+Sbjct gssgSSGCVQCKKPIT-TGGVTYREQPWHKECFVCTACRKQLSGQRFTARDDFAYCLNCF   59
+DSSP  llllLLLLLLLLLLLL-LLEEELLLLEEELLLLLLLLLLLLLLLLLLEELLLLEELHHHH
+
+DSSP  HHHL-------
+Query GRRY-------   60
+ident    |       
+Sbjct CDLYasgpssg   70
+DSSP  HHHLlllllll
+
+
+# Structural equivalences
+   1: 2O10-A 2D8Z-A     1 -  12 <=>    5 -  16   (GLY    7  - TYR   18  <=> SER    5  - THR   16 )                          
+   1: 2O10-A 2D8Z-A    14 -  60 <=>   17 -  63   (ALA   20  - TYR   66  <=> THR   17  - TYR   63 )                          
+
+# Translation-rotation matrices
+-matrix  "2O10-A 2D8Z-A  U(1,.)   0.967408 -0.149116  0.204663           -1.029022"
+-matrix  "2O10-A 2D8Z-A  U(2,.)  -0.253224 -0.569170  0.782255           -0.981410"
+-matrix  "2O10-A 2D8Z-A  U(3,.)  -0.000159 -0.808585 -0.588379            4.000276"
+

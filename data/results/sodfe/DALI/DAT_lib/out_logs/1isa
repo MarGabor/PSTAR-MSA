@@ -1,0 +1,326 @@
+A length: 192
+B length: 192
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            192
+Total number of atoms read in:              1504
+Total number of ignored atom records:        255
+ HEADER    OXIDOREDUCTASE(SUPEROXIDE ACCEPTOR)     12-JUL-94   1ISA              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.S.LAH,M.DIXON,K.A.PATTRIDGE,W.C.STALLINGS,J.A.FEE,M.L.LUDWIG        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE(SUPEROXIDE ACCEPTOR)     12-JUL-94   1ISA              COMPND   2 MOLECULE: IRON(II) SUPEROXIDE DISMUTASE;                             SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    M.S.LAH,M.DIXON,K.A.PATTRIDGE,W.C.STALLINGS,J.A.FEE,M.L.LUDW          
+         192  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau           1   1.67935097              77
+ #popped           2           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau           3   1.36597300              28
+ #popped           4           2
+ #selectset contacts        1812
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau           5   1.27034521              41          59
+ #popped           6           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau           7   1.14874184              41
+ #popped           3           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau           9   1.52904618             101         180
+ #popped          10           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau          11   2.17087269              88         101
+ #popped          12           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau          13  0.661194324              88
+ #popped          11           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau          15   1.34369659             119
+ #popped          17           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau          17   2.39089751             161
+ #popped          18           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau          19  0.233661041             135
+ #popped          21           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau          21   2.24842525             149
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE(SUPEROXIDE ACCEPTOR)     12-JUL-94   1ISA              COMPND   2 MOLECULE: IRON(II) SUPEROXIDE DISMUTASE;                             SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    M.S.LAH,M.DIXON,K.A.PATTRIDGE,W.C.STALLINGS,J.A.FEE,M.L.LUDW          
+           0
+         192
+         192  residues read 1ISA.dssp                                                   
+  grow short helix          20          26
+  grow short helix          52          58
+  exclude short helix         144         146
+  exclude short helix         159         161
+  exclude short helix         163         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  3 11  5  6  7  8  9 10
+   2     1  4  5  4  1  2  4  3
+   3     1 10 11  7 11  5  6  7  8  9 10
+   4     2  0  0  1  1
+   5     2  6  7  3  2  4  3
+   6     5  8  9  2  2  4
+   7     5  0  0  1  3
+   8     6  0  0  1  2
+   9     6  0  0  1  4
+  10     3 12 13  2 11  5
+  11     3 16 17  5  6  7  8  9 10
+  12    10  0  0  1 11
+  13    10  0  0  1  5
+  14     0  0  0  0
+  15     0  0  0  1 11
+  16    11  0  0  1  6
+  17    11 18 19  4  7  8  9 10
+  18    17 20 21  3  7  8  9
+  19    17  0  0  1 10
+  20    18  0  0  1  7
+  21    18 22 23  2  8  9
+  22    21  0  0  1  8
+  23    21  0  0  1  9
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  4  1  1  4
+   3 -   1 10 11  7  1  5 11
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  3  1  2  4
+   6 -   5  8  9  2  2  2  2  4  4
+   7 -   5  0  0  1  1  3  3
+   8 -   6  0  0  1  1  2  2
+   9 -   6  0  0  1  1  4  4
+  10 -   3 12 13  2  2  5  5 11 11
+  11 -   3 14 15  5  1  6 10
+  12 -  10  0  0  1  1 11 11
+  13 -  10  0  0  1  1  5  5
+  14 -  11  0  0  1  1  6  6
+  15 -  11 16 17  4  1  7 10
+  16 -  15 18 19  3  1  7  9
+  17 -  15  0  0  1  1 10 10
+  18 -  16  0  0  1  1  7  7
+  19 -  16 20 21  2  1  8  9
+  20 -  19  0  0  1  1  8  8
+  21 -  19  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            192
+Total number of atoms read in:              1504
+Total number of ignored atom records:        219
+ HEADER    OXIDOREDUCTASE(SUPEROXIDE ACCEPTOR)     12-JUL-94   1ISA              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.S.LAH,M.DIXON,K.A.PATTRIDGE,W.C.STALLINGS,J.A.FEE,M.L.LUDWIG        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE(SUPEROXIDE ACCEPTOR)     12-JUL-94   1ISA              COMPND   2 MOLECULE: IRON(II) SUPEROXIDE DISMUTASE;                             SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    M.S.LAH,M.DIXON,K.A.PATTRIDGE,W.C.STALLINGS,J.A.FEE,M.L.LUDW          
+         192  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau           1   1.70289326              77
+ #popped           2           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau           3   1.32767463              28
+ #popped           4           2
+ #selectset contacts        1820
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau           5   1.28849304              41          59
+ #popped           6           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau           7   1.07215905              41
+ #popped           3           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau           9   1.73487926             101         180
+ #popped          10           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau          11   2.09046984              88         101
+ #popped          12           1
+ #selectset contacts        1820
+ selectset done           1
+ eigen done           1
+ tau          13  0.630677700              88
+ #popped          11           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau          15   1.57889509             161
+ #popped          16           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau          17   1.76051259             119
+ #popped          19           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau          19  0.235858470             135
+ #popped          21           0
+ #selectset contacts        1820
+ selectset done           0
+ eigen done           0
+ tau          21   1.93959439             151
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE(SUPEROXIDE ACCEPTOR)     12-JUL-94   1ISA              COMPND   2 MOLECULE: IRON(II) SUPEROXIDE DISMUTASE;                             SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    M.S.LAH,M.DIXON,K.A.PATTRIDGE,W.C.STALLINGS,J.A.FEE,M.L.LUDW          
+           0
+         192
+         192  residues read 1ISA.dssp                                                   
+  grow short helix          20          26
+  exclude short helix          46          49
+  grow short helix          52          58
+  exclude short helix         144         146
+  exclude short helix         159         161
+  exclude short helix         163         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  3 11  5  6  7  8  9 10
+   2     1  4  5  4  1  2  4  3
+   3     1 10 11  7 11  5  6  7  8  9 10
+   4     2  0  0  1  1
+   5     2  6  7  3  2  4  3
+   6     5  8  9  2  2  4
+   7     5  0  0  1  3
+   8     6  0  0  1  2
+   9     6  0  0  1  4
+  10     3 12 13  2 11  5
+  11     3 16 17  5  6  7  8  9 10
+  12    10  0  0  1 11
+  13    10  0  0  1  5
+  14     0  0  0  0
+  15     0  0  0  1 11
+  16    11 18 19  4  6  7  8  9
+  17    11  0  0  1 10
+  18    16  0  0  1  6
+  19    16 20 21  3  7  8  9
+  20    19  0  0  1  7
+  21    19 22 23  2  8  9
+  22    21  0  0  1  8
+  23    21  0  0  1  9
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  4  1  1  4
+   3 -   1 10 11  7  1  5 11
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  3  1  2  4
+   6 -   5  8  9  2  2  2  2  4  4
+   7 -   5  0  0  1  1  3  3
+   8 -   6  0  0  1  1  2  2
+   9 -   6  0  0  1  1  4  4
+  10 -   3 12 13  2  2  5  5 11 11
+  11 -   3 14 15  5  1  6 10
+  12 -  10  0  0  1  1 11 11
+  13 -  10  0  0  1  1  5  5
+  14 -  11 16 17  4  1  6  9
+  15 -  11  0  0  1  1 10 10
+  16 -  14  0  0  1  1  6  6
+  17 -  14 18 19  3  1  7  9
+  18 -  17  0  0  1  1  7  7
+  19 -  17 20 21  2  1  8  9
+  20 -  19  0  0  1  1  8  8
+  21 -  19  0  0  1  1  9  9
+
+ CHAIN : 1ISAA
+ CHAIN : 1ISAB
+

@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1G09C
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3EOK-B 22.4  1.2  138   146   39   MOLECULE: HEMOGLOBIN SUBUNIT ALPHA-A;                                
+
+# Pairwise alignments
+
+No 1: Query=1G09C Sbjct=3EOKB Z-score=22.4
+
+DSSP  -LLLHHHHHHHHHHHHHHhhHHHHHHHHHHHHHHHHLHHHHHHLLLLL------lLLLLH
+Query -VLSAADKGNVKAAWGKVggHAAEYGAEALERMFLSFPTTKTYFPHFD------lSHGSA   53
+ident     |  |      ||||    |  ||||| |     | |   |  |          |  
+Sbjct vHWTAEEKQLITGLWGKV--NVADCGAEALARLLIVYPWTQRFFASFGnlssptaILGNP   58
+DSSP  lLLLHHHHHHHHHHHHHL--LHHHHHHHHHHHHHHHLHHHHHHHHHHLllllhhhHHLLH
+
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHLHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHL
+Query QVKGHGAKVAAALTKAVEHLDDLPGALSELSDLHAHKLRVDPVNFKLLSHSLLVTLASHL  113
+ident  |  || ||      ||  ||        || ||  || ||| || ||   |   || | 
+Sbjct MVRAHGKKVLTSFGDAVKNLDNIKNTFAQLSELHCDKLHVDPENFRLLGDILIIVLAAHF  118
+DSSP  HHHHHHHHHHHHHHHHHHLHHHHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHLLLLL
+Query PSDFTPAVHASLDKFLANVSTVLTSKYR  141
+ident   ||||   |   |    |   |  || 
+Sbjct TKDFTPECQAAWQKLVRVVAHALARKYH  146
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHLHHHL
+
+
+# Structural equivalences
+   1: 1G09-C 3EOK-B     1 -  17 <=>    2 -  18   (VAL    1  - VAL   17  <=> HIS    2  - VAL   18 )                          
+   1: 1G09-C 3EOK-B    20 -  47 <=>   19 -  46   (HIS   20  - ASP   47  <=> ASN   19  - GLY   46 )                          
+   1: 1G09-C 3EOK-B    49 - 141 <=>   54 - 146   (SER   49  - ARG  141  <=> ILE   54  - HIS  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1G09-C 3EOK-B  U(1,.)   0.364513 -0.920337  0.141809           -5.975242"
+-matrix  "1G09-C 3EOK-B  U(2,.)   0.930667  0.365199 -0.022104           41.214649"
+-matrix  "1G09-C 3EOK-B  U(3,.)  -0.031446  0.140034  0.989647           15.983104"
+

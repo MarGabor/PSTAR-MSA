@@ -1,0 +1,1626 @@
+A length: 256
+B length: 261
+C length: 256
+D length: 257
+E length: 248
+F length: 257
+G length: 266
+H length: 258
+# 8 chains A B C D E F G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            256
+Total number of atoms read in:              1814
+Total number of ignored atom records:        339
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+         256  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2334
+ selectset done           0
+ eigen done           0
+ tau           1   2.16216207             191         224
+ #popped           2           1
+ #selectset contacts        2334
+ selectset done           1
+ eigen done           1
+ tau           3   1.40454066             120         152         162
+ #popped           4           2
+ #selectset contacts        2334
+ selectset done           2
+ eigen done           2
+ tau           5   11.3971395              94
+ #popped           6           3
+ #selectset contacts        2334
+ selectset done           3
+ eigen done           3
+ tau           7   1.42517459              64          83
+ #popped           8           3
+ #selectset contacts        2334
+ selectset done           3
+ eigen done           3
+ tau           9  0.724371016              34          64
+ #popped          10           4
+ #selectset contacts        2334
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        2334
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        2334
+ selectset done           2
+ eigen done           2
+ tau          11  0.922857165             120
+ #popped          12           2
+ #selectset contacts        2334
+ selectset done           2
+ eigen done           2
+ tau          13   1.07843137             106
+ #popped           5           1
+ #selectset contacts        2334
+ selectset done           1
+ eigen done           1
+ tau          15   3.13978386             137
+ #popped          17           1
+ #selectset contacts        2334
+ selectset done           1
+ eigen done           1
+ tau          17   1.03886104             191         243
+ #popped          18           1
+ #selectset contacts        2334
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2334
+ selectset done           0
+ eigen done           0
+ tau          19  0.874211490             202         213
+ #popped          20           0
+ #selectset contacts        2334
+ selectset done           0
+ eigen done           0
+ tau          21   1.14653111             202
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+           0
+         256
+         256  residues read 7DO5.dssp                                                   
+  grow short strand           7          10
+  grow short strand          89          92
+  exclude short helix         147         149
+  exclude short helix         200         202
+  exclude short helix         235         237
+  grow short strand         244         247
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  7  4  5  6  8  9 10 11 12 15 14 13
+   2     1  4  5 14  1  2  3  7  4  5  6  8  9 10 11 12 15 14
+   3     1  0  0  1 13
+   4     2  6  7  8  1  2  3  7  4  5  6  8
+   5     2 16 17  6  9 10 11 12 15 14
+   6     4  8  9  7  1  2  3  7  4  5  6
+   7     4  0  0  1  8
+   8     6 10 11  6  1  2  3  7  4  5
+   9     6  0  0  1  6
+  10     8  0  0  4  1  2  3  7
+  11     8  0  0  2  4  5
+  12     0  0  0  1  8
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  1  8
+  16     5  0  0  1  9
+  17     5 18 19  5 10 11 12 15 14
+  18    17  0  0  4 10 11 12 15
+  19    17  0  0  1 14
+  20     0  0  0  0
+  21     0  0  0  1 13
+  22     0  0  0  0
+  23     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  8  1  1  8
+   5 -   2 12 13  6  2  9 12 14 15
+   6 -   4  8  9  7  1  1  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  4  2  1  3  7  7
+  11 -   8  0  0  2  1  4  5
+  12 -   5  0  0  1  1  9  9
+  13 -   5 14 15  5  2 10 12 14 15
+  14 -  13  0  0  4  2 10 12 15 15
+  15 -  13  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            261
+Total number of atoms read in:              1839
+Total number of ignored atom records:        405
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+         261  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau           1   2.46859789             194         229         251
+ #popped           2           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau           3   2.10886812              94
+ #popped           4           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau           5   1.08464229              69          84
+ #popped           6           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau           7  0.855101705              11          24          35
+ #popped           8           3
+ #selectset contacts        2382
+ selectset done           3
+ eigen done           3
+ tau           9  0.703548849              11
+ #popped           9           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          11  0.866215408              69
+ #popped          12           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          13  0.358823538              50
+ #popped          14           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          15   1.07105446             122         156         167
+ #popped          16           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          17  0.961748660             122
+ #popped          18           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          17           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          19   3.36410499             143
+ #popped          20           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          21  0.916947305             132
+ #popped          21           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          23   1.15655351             194         241
+ #popped          24           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          25  0.429837823             194
+ #popped          26           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          27  0.331986010             156
+ #popped          29           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          29   1.07954550             181
+ #popped           3           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau          31   1.27109706             229
+ #popped          32           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau          33  0.886878490             207         218
+ #popped          34           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau          35   1.07394183             207
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+           0
+         261
+         261  residues read 7DO5.dssp                                                   
+  grow short strand          12          15
+  grow short strand          94          97
+  exclude short helix         152         154
+  exclude short helix         159         161
+  exclude short helix         203         207
+  exclude short helix         240         242
+  grow short strand         248         252
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  2  1  3  4  5  6  7  8  9 10 11 12 15 14 13
+   2     1  4  5 14  2  1  3  4  5  6  7  8  9 10 11 12 15 14
+   3     1  0  0  1 13
+   4     2  6  7  6  2  1  3  4  5  6
+   5     2 16 17  8  7  8  9 10 11 12 15 14
+   6     4  8  9  5  2  1  3  4  5
+   7     4  0  0  1  6
+   8     6  0  0  1  2
+   9     6 14 15  4  1  3  4  5
+  10     0  0  0  0
+  11     0  0  0  1  2
+  12     0  0  0  4  1  3  4  5
+  13     0  0  0  0
+  14     9  0  0  2  1  3
+  15     9  0  0  2  4  5
+  16     5  0  0  2  7  8
+  17     5 20 21  6  9 10 11 12 15 14
+  18     0  0  0  2  7  8
+  19     0  0  0  0
+  20    17  0  0  1  9
+  21    17 24 25  5 10 11 12 15 14
+  22     0  0  0  1  9
+  23     0  0  0  0
+  24    21 26 27  4 10 11 12 15
+  25    21  0  0  1 14
+  26    24 28 29  3 10 11 12
+  27    24  0  0  1 15
+  28    26  0  0  1 10
+  29    26 30 31  2 11 12
+  30    29  0  0  1 11
+  31    29  0  0  1 12
+  32     0  0  0  1 13
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1 13
+  36     0  0  0  0
+  37     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  6  1  1  6
+   5 -   2 12 13  8  2  7 12 14 15
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  1  1  2  2
+   9 -   6 10 11  4  2  1  1  3  5
+  10 -   9  0  0  2  2  1  1  3  3
+  11 -   9  0  0  2  1  4  5
+  12 -   5  0  0  2  1  7  8
+  13 -   5 14 15  6  2  9 12 14 15
+  14 -  13  0  0  1  1  9  9
+  15 -  13 16 17  5  2 10 12 14 15
+  16 -  15 18 19  4  2 10 12 15 15
+  17 -  15  0  0  1  1 14 14
+  18 -  16 20 21  3  1 10 12
+  19 -  16  0  0  1  1 15 15
+  20 -  18  0  0  1  1 10 10
+  21 -  18 22 23  2  1 11 12
+  22 -  21  0  0  1  1 11 11
+  23 -  21  0  0  1  1 12 12
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            256
+Total number of atoms read in:              1804
+Total number of ignored atom records:        427
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+         256  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2361
+ selectset done           0
+ eigen done           0
+ tau           1   1.84262812              94         119         147         166
+ #popped           2           1
+ #selectset contacts        2361
+ selectset done           1
+ eigen done           1
+ tau           3   2.34610009             189         224         246
+ #popped           4           2
+ #selectset contacts        2361
+ selectset done           2
+ eigen done           2
+ tau           5   1.78941596             137
+ #popped           6           3
+ #selectset contacts        2361
+ selectset done           3
+ eigen done           3
+ tau           7   1.64202344              94
+ #popped           8           3
+ #selectset contacts        2361
+ selectset done           3
+ eigen done           3
+ tau           9   1.38245797              64          83
+ #popped          10           3
+ #selectset contacts        2361
+ selectset done           3
+ eigen done           3
+ tau          11  0.649163067              34          64
+ #popped          12           4
+ #selectset contacts        2361
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          13           3
+ #selectset contacts        2361
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2361
+ selectset done           2
+ eigen done           2
+ tau          13  0.662998915             189
+ #popped          14           3
+ #selectset contacts        2361
+ selectset done           3
+ eigen done           3
+ tau          15  0.272774369             147
+ #popped          17           3
+ #selectset contacts        2361
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        2361
+ selectset done           2
+ eigen done           2
+ tau          17   1.07964134             234
+ #popped           5           1
+ #selectset contacts        2361
+ selectset done           1
+ eigen done           1
+ tau          19   1.33152378             224
+ #popped          20           1
+ #selectset contacts        2361
+ selectset done           1
+ eigen done           1
+ tau          21  0.732633412             203         213
+ #popped          22           1
+ #selectset contacts        2361
+ selectset done           1
+ eigen done           1
+ tau          23   1.07500005             203
+ #popped           3           0
+ #selectset contacts        2361
+ selectset done           0
+ eigen done           0
+ tau          25   1.22335494             119
+ #popped          26           0
+ #selectset contacts        2361
+ selectset done           0
+ eigen done           0
+ tau          27   1.08304346             106
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+           0
+         256
+         256  residues read 7DO5.dssp                                                   
+  grow short strand           7          10
+  grow short strand          89          92
+  exclude short helix         147         149
+  exclude short helix         200         202
+  exclude short helix         235         237
+  grow short strand         244         247
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  7  4  5  6  9 10 11 12 14 15 13  8
+   2     1  4  5 14  1  2  3  7  4  5  6  9 10 11 12 14 15 13
+   3     1  0  0  1  8
+   4     2  6  7 13  1  2  3  7  4  5  6  9 10 11 12 14 15
+   5     2  0  0  1 13
+   6     4  8  9  8  1  2  3  7  4  5  6  9
+   7     4 14 15  5 10 11 12 14 15
+   8     6 10 11  7  1  2  3  7  4  5  6
+   9     6  0  0  1  9
+  10     8 12 13  6  1  2  3  7  4  5
+  11     8  0  0  1  6
+  12    10  0  0  4  1  2  3  7
+  13    10  0  0  2  4  5
+  14     7 16 17  3 10 11 12
+  15     7 18 19  2 14 15
+  16    14  0  0  1 10
+  17    14  0  0  2 11 12
+  18    15  0  0  1 14
+  19    15  0  0  1 15
+  20     0  0  0  1 13
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1 13
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  1  8
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1  7  9 15
+   3 -   1  0  0  1  1  8  8
+   4 -   2  6  7 13  3  1  7  9 12 14 15
+   5 -   2  0  0  1  1 13 13
+   6 -   4  8  9  8  2  1  7  9  9
+   7 -   4 14 15  5  2 10 12 14 15
+   8 -   6 10 11  7  1  1  7
+   9 -   6  0  0  1  1  9  9
+  10 -   8 12 13  6  2  1  5  7  7
+  11 -   8  0  0  1  1  6  6
+  12 -  10  0  0  4  2  1  3  7  7
+  13 -  10  0  0  2  1  4  5
+  14 -   7 16 17  3  1 10 12
+  15 -   7 18 19  2  1 14 15
+  16 -  14  0  0  1  1 10 10
+  17 -  14  0  0  2  1 11 12
+  18 -  15  0  0  1  1 14 14
+  19 -  15  0  0  1  1 15 15
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1800
+Total number of ignored atom records:        343
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau           1   2.10201526             194         213
+ #popped           2           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau           3   2.01681685              90
+ #popped           4           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau           5   1.13529742              65          80
+ #popped           6           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau           7  0.781536937              65
+ #popped           8           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau           9  0.686300695              36
+ #popped          10           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          11  0.388384998              10
+ #popped          13           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          11           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           5           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          13   1.17589021             121         140         171         183
+ #popped          14           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          15   1.41531849             171
+ #popped          16           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          17  0.798637986             121
+ #popped          18           3
+ #selectset contacts        2342
+ selectset done           3
+ eigen done           3
+ tau          19  0.836111128             100         110
+ #popped          20           3
+ #selectset contacts        2342
+ selectset done           3
+ eigen done           3
+ tau          21   2.39610386             100
+ #popped          19           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          17           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          23  0.836706936             225         244
+ #popped          24           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          25  0.445896268             225
+ #popped          26           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          27   1.20570409             194
+ #popped          15           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          29   1.22113431             140
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+           0
+         257
+         257  residues read 7DO5.dssp                                                   
+  grow short strand           8          11
+  grow short strand          90          93
+  exclude short helix         148         150
+  exclude short helix         197         199
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  5  6  7  8 10 11 12 15 14  9 13
+   2     1  4  5 14  1  2  3  4  5  6  7  8 10 11 12 15 14  9
+   3     1  0  0  1 13
+   4     2  6  7  6  1  2  3  4  5  6
+   5     2 14 15  8  7  8 10 11 12 15 14  9
+   6     4 10 11  5  1  2  3  4  5
+   7     4  0  0  1  6
+   8     0  0  0  5  1  2  3  4  5
+   9     0  0  0  0
+  10     6 12 13  3  1  2  3
+  11     6  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10  0  0  2  2  3
+  14     5 16 17  7  7  8 10 11 12 15 14
+  15     5  0  0  1  9
+  16    14 18 19  4  7  8 10 11
+  17    14 24 25  3 12 15 14
+  18    16 22 23  2  7  8
+  19    16  0  0  2 10 11
+  20     0  0  0  2  7  8
+  21     0  0  0  0
+  22    18  0  0  1  7
+  23    18  0  0  1  8
+  24    17 26 27  2 12 15
+  25    17  0  0  1 14
+  26    24  0  0  1 12
+  27    24  0  0  1 15
+  28     0  0  0  1 12
+  29     0  0  0  0
+  30     0  0  0  1  9
+  31     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  6  1  1  6
+   5 -   2 12 13  8  2  7 12 14 15
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  2  3
+  12 -   5 14 15  7  3  7  8 10 12 14 15
+  13 -   5  0  0  1  1  9  9
+  14 -  12 16 17  4  2  7  8 10 11
+  15 -  12 20 21  3  2 12 12 14 15
+  16 -  14 18 19  2  1  7  8
+  17 -  14  0  0  2  1 10 11
+  18 -  16  0  0  1  1  7  7
+  19 -  16  0  0  1  1  8  8
+  20 -  15 22 23  2  2 12 12 15 15
+  21 -  15  0  0  1  1 14 14
+  22 -  20  0  0  1  1 12 12
+  23 -  20  0  0  1  1 15 15
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            248
+Total number of atoms read in:              1737
+Total number of ignored atom records:        367
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+         248  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2280
+ selectset done           0
+ eigen done           0
+ tau           1   1.84985876              95         120         153         163
+ #popped           2           1
+ #selectset contacts        2280
+ selectset done           1
+ eigen done           1
+ tau           3   1.95063674              95
+ #popped           4           2
+ #selectset contacts        2280
+ selectset done           2
+ eigen done           2
+ tau           5   1.57865846              65          84
+ #popped           6           2
+ #selectset contacts        2280
+ selectset done           2
+ eigen done           2
+ tau           7  0.694852114              35          65
+ #popped           8           3
+ #selectset contacts        2280
+ selectset done           3
+ eigen done           3
+ tau           9  0.704819262              13          25
+ #popped          10           3
+ #selectset contacts        2280
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        2280
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2280
+ selectset done           1
+ eigen done           1
+ tau          11   3.66162205             139
+ #popped          13           1
+ #selectset contacts        2280
+ selectset done           1
+ eigen done           1
+ tau          13   1.63355482             194         204
+ #popped          14           1
+ #selectset contacts        2280
+ selectset done           1
+ eigen done           1
+ tau          15  0.787592292             183
+ #popped          16           2
+ #selectset contacts        2280
+ selectset done           2
+ eigen done           2
+ tau          17   1.21272731             153
+ #popped          19           2
+ #selectset contacts        2280
+ selectset done           2
+ eigen done           2
+ tau          19  0.766022563             173
+ #popped          17           1
+ #selectset contacts        2280
+ selectset done           1
+ eigen done           1
+ tau          21  0.744804621             217         235
+ #popped          22           1
+ #selectset contacts        2280
+ selectset done           1
+ eigen done           1
+ tau          23  0.449890643             217
+ #popped          24           1
+ #selectset contacts        2280
+ selectset done           1
+ eigen done           1
+ tau          25   1.10722613             194
+ #popped           3           0
+ #selectset contacts        2280
+ selectset done           0
+ eigen done           0
+ tau          27   1.08050847             107         120
+ #popped          28           0
+ #selectset contacts        2280
+ selectset done           0
+ eigen done           0
+ tau          29  0.913554966             107
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+           0
+         248
+         248  residues read 7DO5.dssp                                                   
+  grow short strand           8          11
+  grow short strand          90          93
+  exclude short helix         148         150
+  exclude short helix         227         229
+  grow short strand         236         239
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  7  2  4  5  6  9 10 11 12 15 14 13  8
+   2     1  4  5 14  1  3  7  2  4  5  6  9 10 11 12 15 14 13
+   3     1  0  0  1  8
+   4     2  6  7  7  1  3  7  2  4  5  6
+   5     2 12 13  7  9 10 11 12 15 14 13
+   6     4  8  9  6  1  3  7  2  4  5
+   7     4  0  0  1  6
+   8     6 10 11  4  1  3  7  2
+   9     6  0  0  2  4  5
+  10     8  0  0  3  1  3  7
+  11     8  0  0  1  2
+  12     5  0  0  1  9
+  13     5 14 15  6 10 11 12 15 14 13
+  14    13 16 17  5 10 11 12 15 14
+  15    13  0  0  1 13
+  16    14 18 19  2 10 11
+  17    14 22 23  3 12 15 14
+  18    16  0  0  1 10
+  19    16  0  0  1 11
+  20     0  0  0  1 11
+  21     0  0  0  0
+  22    17 24 25  2 12 15
+  23    17  0  0  1 14
+  24    22  0  0  1 12
+  25    22  0  0  1 15
+  26     0  0  0  1 12
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1  8
+  30     0  0  0  0
+  31     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1  7  9 15
+   3 -   1  0  0  1  1  8  8
+   4 -   2  6  7  7  1  1  7
+   5 -   2 12 13  7  1  9 15
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  4  2  1  3  7  7
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  3  3  1  1  3  3  7  7
+  11 -   8  0  0  1  1  2  2
+  12 -   5  0  0  1  1  9  9
+  13 -   5 14 15  6  1 10 15
+  14 -  13 16 17  5  2 10 12 14 15
+  15 -  13  0  0  1  1 13 13
+  16 -  14 18 19  2  1 10 11
+  17 -  14 20 21  3  2 12 12 14 15
+  18 -  16  0  0  1  1 10 10
+  19 -  16  0  0  1  1 11 11
+  20 -  17 22 23  2  2 12 12 15 15
+  21 -  17  0  0  1  1 14 14
+  22 -  20  0  0  1  1 12 12
+  23 -  20  0  0  1  1 15 15
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1792
+Total number of ignored atom records:        355
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2358
+ selectset done           0
+ eigen done           0
+ tau           1   2.08767223              90
+ #popped           2           1
+ #selectset contacts        2358
+ selectset done           1
+ eigen done           1
+ tau           3   1.12346756              65          80
+ #popped           4           1
+ #selectset contacts        2358
+ selectset done           1
+ eigen done           1
+ tau           5  0.773013949              65
+ #popped           6           1
+ #selectset contacts        2358
+ selectset done           1
+ eigen done           1
+ tau           7  0.702419996              34
+ #popped           8           2
+ #selectset contacts        2358
+ selectset done           2
+ eigen done           2
+ tau           9  0.815729082              10          24
+ #popped          10           2
+ #selectset contacts        2358
+ selectset done           2
+ eigen done           2
+ tau          11  0.328109801              10
+ #popped           9           1
+ #selectset contacts        2358
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2358
+ selectset done           0
+ eigen done           0
+ tau          13   2.30811262             190         226         247
+ #popped          14           1
+ #selectset contacts        2358
+ selectset done           1
+ eigen done           1
+ tau          15   1.61061478             100         139
+ #popped          16           2
+ #selectset contacts        2358
+ selectset done           2
+ eigen done           2
+ tau          17  0.809266925             190
+ #popped          18           3
+ #selectset contacts        2358
+ selectset done           3
+ eigen done           3
+ tau          19  0.456492186             153
+ #popped          20           4
+ #selectset contacts        2358
+ selectset done           4
+ eigen done           4
+ tau          21  0.588003337             100
+ #popped          21           3
+ #selectset contacts        2358
+ selectset done           3
+ eigen done           3
+ tau          23   1.42925501             167
+ #popped          25           3
+ #selectset contacts        2358
+ selectset done           3
+ eigen done           3
+ tau          25   0.00000000    
+ #popped          19           2
+ #selectset contacts        2358
+ selectset done           2
+ eigen done           2
+ tau          25  0.814637661             237
+ #popped          17           1
+ #selectset contacts        2358
+ selectset done           1
+ eigen done           1
+ tau          27   2.31016040             118
+ #popped          29           1
+ #selectset contacts        2358
+ selectset done           1
+ eigen done           1
+ tau          29  0.896570683             128
+ #popped          15           0
+ #selectset contacts        2358
+ selectset done           0
+ eigen done           0
+ tau          31   1.00448275             226
+ #popped          32           0
+ #selectset contacts        2358
+ selectset done           0
+ eigen done           0
+ tau          33   1.08467174             203         216
+ #popped          34           0
+ #selectset contacts        2358
+ selectset done           0
+ eigen done           0
+ tau          35  0.948544741             203
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+           0
+         257
+         257  residues read 7DO5.dssp                                                   
+  grow short strand           8          11
+  grow short strand          90          93
+  exclude short helix         148         150
+  exclude short helix         199         202
+  exclude short helix         236         238
+  grow short strand         245         248
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  2  4  5  6  7 10 11 12 14 15  8  9 13
+   2     1  4  5  6  1  3  2  4  5  6
+   3     1 14 15  9  7 10 11 12 14 15  8  9 13
+   4     2  8  9  5  1  3  2  4  5
+   5     2  0  0  1  6
+   6     0  0  0  5  1  3  2  4  5
+   7     0  0  0  0
+   8     4 10 11  3  1  3  2
+   9     4  0  0  2  4  5
+  10     8 12 13  2  1  3
+  11     8  0  0  1  2
+  12    10  0  0  1  1
+  13    10  0  0  1  3
+  14     3 16 17  8  7 10 11 12 14 15  8  9
+  15     3  0  0  1 13
+  16    14 18 19  6  7 10 11 12 14 15
+  17    14 28 29  2  8  9
+  18    16 20 21  4  7 10 11 12
+  19    16 26 27  2 14 15
+  20    18 22 23  2  7 10
+  21    18  0  0  2 11 12
+  22    20  0  0  1  7
+  23    20  0  0  1 10
+  24     0  0  0  0
+  25     0  0  0  2 11 12
+  26    19  0  0  1 14
+  27    19  0  0  1 15
+  28    17  0  0  1  8
+  29    17  0  0  1  9
+  30     0  0  0  1  9
+  31     0  0  0  0
+  32     0  0  0  1 13
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1 13
+  36     0  0  0  0
+  37     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5  6  1  1  6
+   3 *   1 12 13  9  1  7 15
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6 10 11  2  2  1  1  3  3
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  3  3
+  12 -   3 14 15  8  2  7 12 14 15
+  13 -   3  0  0  1  1 13 13
+  14 -  12 16 17  6  3  7  7 10 12 14 15
+  15 -  12 24 25  2  1  8  9
+  16 -  14 18 19  4  2  7  7 10 12
+  17 -  14 22 23  2  1 14 15
+  18 -  16 20 21  2  2  7  7 10 10
+  19 -  16  0  0  2  1 11 12
+  20 -  18  0  0  1  1  7  7
+  21 -  18  0  0  1  1 10 10
+  22 -  17  0  0  1  1 14 14
+  23 -  17  0  0  1  1 15 15
+  24 -  15  0  0  1  1  8  8
+  25 -  15  0  0  1  1  9  9
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            266
+Total number of atoms read in:              1875
+Total number of ignored atom records:        399
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+         266  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2419
+ selectset done           0
+ eigen done           0
+ tau           1   2.00075126             104         134         153         185         196         230         254
+ #popped           2           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau           3   1.28127456              74
+ #popped           4           2
+ #selectset contacts        2419
+ selectset done           2
+ eigen done           2
+ tau           5   1.61605263              10
+ #popped           7           2
+ #selectset contacts        2419
+ selectset done           2
+ eigen done           2
+ tau           7  0.695758522              43
+ #popped           8           3
+ #selectset contacts        2419
+ selectset done           3
+ eigen done           3
+ tau           9  0.719530106              20          33
+ #popped          10           3
+ #selectset contacts        2419
+ selectset done           3
+ eigen done           3
+ tau          11  0.301215559              20
+ #popped           9           2
+ #selectset contacts        2419
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau          13   2.33751416              94
+ #popped          14           2
+ #selectset contacts        2419
+ selectset done           2
+ eigen done           2
+ tau          15  0.712591231              84
+ #popped          15           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau          17   1.50925457             196         244
+ #popped          18           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau          19  0.781902611             196
+ #popped          20           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau          21  0.485155910             104
+ #popped          23           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2419
+ selectset done           0
+ eigen done           0
+ tau          23   3.11634135             185
+ #popped          24           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau          25   1.60224271             134
+ #popped          26           2
+ #selectset contacts        2419
+ selectset done           2
+ eigen done           2
+ tau          27   1.29612017             116
+ #popped          27           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau          29   1.13860583             174
+ #popped          30           1
+ #selectset contacts        2419
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          25           0
+ #selectset contacts        2419
+ selectset done           0
+ eigen done           0
+ tau          31  0.610861957             230
+ #popped          32           0
+ #selectset contacts        2419
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+           0
+         266
+         266  residues read 7DO5.dssp                                                   
+  grow short strand          17          20
+  grow short strand          99         102
+  exclude short helix         157         159
+  exclude short helix         208         212
+  exclude short helix         245         247
+  grow short strand         254         257
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  2  4  5  6  7  9 10 12 14  8 11 13 15
+   2     1  4  5 11  1  3  2  4  5  6  7  9 10 12 14
+   3     1 24 25  4  8 11 13 15
+   4     2  8  9  5  1  3  2  4  5
+   5     2 14 15  6  6  7  9 10 12 14
+   6     0  0  0  0
+   7     0  0  0  5  1  3  2  4  5
+   8     4 10 11  3  1  3  2
+   9     4  0  0  2  4  5
+  10     8 12 13  2  1  3
+  11     8  0  0  1  2
+  12    10  0  0  1  1
+  13    10  0  0  1  3
+  14     5  0  0  1  6
+  15     5 18 19  5  7  9 10 12 14
+  16     0  0  0  0
+  17     0  0  0  1  6
+  18    15 22 23  4  7  9 10 12
+  19    15  0  0  1 14
+  20     0  0  0  4  7  9 10 12
+  21     0  0  0  0
+  22    18  0  0  1  7
+  23    18  0  0  3  9 10 12
+  24     3 26 27  2  8 11
+  25     3 32 33  2 13 15
+  26    24  0  0  1  8
+  27    24  0  0  1 11
+  28     0  0  0  0
+  29     0  0  0  1  8
+  30     0  0  0  0
+  31     0  0  0  1 11
+  32    25  0  0  1 13
+  33    25  0  0  1 15
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 11  4  1  7  9 10 12 12 14 14
+   3 -   1 18 19  4  4  8  8 11 11 13 13 15 15
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  6  4  6  7  9 10 12 12 14 14
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6 10 11  2  2  1  1  3  3
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  3  3
+  12 -   5  0  0  1  1  6  6
+  13 -   5 14 15  5  4  7  7  9 10 12 12 14 14
+  14 -  13 16 17  4  3  7  7  9 10 12 12
+  15 -  13  0  0  1  1 14 14
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  3  2  9 10 12 12
+  18 -   3 20 21  2  2  8  8 11 11
+  19 -   3 22 23  2  2 13 13 15 15
+  20 -  18  0  0  1  1  8  8
+  21 -  18  0  0  1  1 11 11
+  22 -  19  0  0  1  1 13 13
+  23 -  19  0  0  1  1 15 15
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1812
+Total number of ignored atom records:        385
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2347
+ selectset done           0
+ eigen done           0
+ tau           1   2.40935040             191         226         248
+ #popped           2           1
+ #selectset contacts        2347
+ selectset done           1
+ eigen done           1
+ tau           3   2.10941863              91
+ #popped           4           2
+ #selectset contacts        2347
+ selectset done           2
+ eigen done           2
+ tau           5   1.16007686              66          81
+ #popped           6           2
+ #selectset contacts        2347
+ selectset done           2
+ eigen done           2
+ tau           7  0.826538026              35          66
+ #popped           8           3
+ #selectset contacts        2347
+ selectset done           3
+ eigen done           3
+ tau           9  0.754806817              35
+ #popped          10           3
+ #selectset contacts        2347
+ selectset done           3
+ eigen done           3
+ tau          11  0.805044174              11          24
+ #popped          12           3
+ #selectset contacts        2347
+ selectset done           3
+ eigen done           3
+ tau          13  0.368368864              11
+ #popped           9           2
+ #selectset contacts        2347
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2347
+ selectset done           1
+ eigen done           1
+ tau          15   1.03522217             119         153         164
+ #popped          16           2
+ #selectset contacts        2347
+ selectset done           2
+ eigen done           2
+ tau          17  0.902564108             119
+ #popped          18           2
+ #selectset contacts        2347
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          17           1
+ #selectset contacts        2347
+ selectset done           1
+ eigen done           1
+ tau          19   2.96452069             140
+ #popped          20           2
+ #selectset contacts        2347
+ selectset done           2
+ eigen done           2
+ tau          21  0.917279959             129
+ #popped          21           1
+ #selectset contacts        2347
+ selectset done           1
+ eigen done           1
+ tau          23   1.36473310             191         238
+ #popped          24           1
+ #selectset contacts        2347
+ selectset done           1
+ eigen done           1
+ tau          25  0.468278587             191
+ #popped          26           1
+ #selectset contacts        2347
+ selectset done           1
+ eigen done           1
+ tau          27  0.333905011             153
+ #popped          29           1
+ #selectset contacts        2347
+ selectset done           1
+ eigen done           1
+ tau          29   0.00000000    
+ #popped           3           0
+ #selectset contacts        2347
+ selectset done           0
+ eigen done           0
+ tau          29   1.46520150             226
+ #popped          30           0
+ #selectset contacts        2347
+ selectset done           0
+ eigen done           0
+ tau          31  0.914930522             204         215
+ #popped          32           0
+ #selectset contacts        2347
+ selectset done           0
+ eigen done           0
+ tau          33   1.01765704             204
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          12-DEC-20   7DO5              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE/REDUCTASE SDR;                   SOURCE   2 ORGANISM_SCIENTIFIC: AZOTOBACTER VINELANDII (STRAIN DJ / AT          AUTHOR    K.YOSHIWARA,Y.WATANABE,S.WATANABE                                     
+           0
+         258
+         258  residues read 7DO5.dssp                                                   
+  grow short strand           9          12
+  grow short strand          91          94
+  exclude short helix         149         151
+  exclude short helix         237         239
+  grow short strand         246         249
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  2  4  5  6  7  8  9 10 11 12 15 14 13
+   2     1  4  5 14  1  3  2  4  5  6  7  8  9 10 11 12 15 14
+   3     1  0  0  1 13
+   4     2  6  7  6  1  3  2  4  5  6
+   5     2 16 17  8  7  8  9 10 11 12 15 14
+   6     4  8  9  5  1  3  2  4  5
+   7     4  0  0  1  6
+   8     6 12 13  3  1  3  2
+   9     6  0  0  2  4  5
+  10     0  0  0  3  1  3  2
+  11     0  0  0  0
+  12     8 14 15  2  1  3
+  13     8  0  0  1  2
+  14    12  0  0  1  1
+  15    12  0  0  1  3
+  16     5  0  0  2  7  8
+  17     5 20 21  6  9 10 11 12 15 14
+  18     0  0  0  2  7  8
+  19     0  0  0  0
+  20    17  0  0  1  9
+  21    17 24 25  5 10 11 12 15 14
+  22     0  0  0  1  9
+  23     0  0  0  0
+  24    21 26 27  4 10 11 12 15
+  25    21  0  0  1 14
+  26    24 28 29  3 10 11 12
+  27    24  0  0  1 15
+  28    26  0  0  1 10
+  29    26  0  0  2 11 12
+  30     0  0  0  1 13
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 13
+  34     0  0  0  0
+  35     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  6  1  1  6
+   5 -   2 14 15  8  2  7 12 14 15
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8 12 13  2  2  1  1  3  3
+  11 -   8  0  0  1  1  2  2
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  3  3
+  14 -   5  0  0  2  1  7  8
+  15 -   5 16 17  6  2  9 12 14 15
+  16 -  15  0  0  1  1  9  9
+  17 -  15 18 19  5  2 10 12 14 15
+  18 -  17 20 21  4  2 10 12 15 15
+  19 -  17  0  0  1  1 14 14
+  20 -  18 22 23  3  1 10 12
+  21 -  18  0  0  1  1 15 15
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  2  1 11 12
+
+ CHAIN : 7DO5A
+ CHAIN : 7DO5B
+ CHAIN : 7DO5C
+ CHAIN : 7DO5D
+ CHAIN : 7DO5E
+ CHAIN : 7DO5F
+ CHAIN : 7DO5G
+ CHAIN : 7DO5H
+

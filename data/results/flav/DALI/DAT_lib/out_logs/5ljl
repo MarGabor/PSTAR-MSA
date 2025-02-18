@@ -1,0 +1,155 @@
+A length: 145
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  310  CA BASP A  42 
+ Alternate location indication is not blank or A, ignore atom:  314  CB BASP A  42 
+ Alternate location indication is not blank or A, ignore atom:  316  CG BASP A  42 
+ Alternate location indication is not blank or A, ignore atom:  318  OD1BASP A  42 
+ Alternate location indication is not blank or A, ignore atom:  320  OD2BASP A  42 
+ Alternate location indication is not blank or A, ignore atom:  916  CA BCYS A 120 
+ Alternate location indication is not blank or A, ignore atom:  920  CB BCYS A 120 
+ Alternate location indication is not blank or A, ignore atom:  922  SG BCYS A 120 
+
+Total number of residues read in:            147
+Total number of atoms read in:              1122
+Total number of ignored atom records:        183
+ HEADER    OXIDOREDUCTASE                          18-JUL-16   5LJL              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.RODRIGUEZ-CARDENAS,A.L.ROJAS,A.VELAZQUEZ-CAMPOY,R.HURTADO-GUERRERO, 
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          18-JUL-16   5LJL              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PNEUMONIAE SEROTYPE 4 (S          AUTHOR    A.RODRIGUEZ-CARDENAS,A.L.ROJAS,A.VELAZQUEZ-CAMPOY,R.HURTADO-          
+         147  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1354
+ selectset done           0
+ eigen done           0
+ tau           1   1.22024298              10          30          89         100         118
+ #popped           2           1
+ #selectset contacts        1354
+ selectset done           1
+ eigen done           1
+ tau           3   1.16615856              56          78
+ #popped           4           2
+ #selectset contacts        1354
+ selectset done           2
+ eigen done           2
+ tau           5  0.931036234              56
+ #popped           6           3
+ #selectset contacts        1354
+ selectset done           3
+ eigen done           3
+ tau           7  0.396296114              41
+ #popped           8           3
+ #selectset contacts        1354
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1354
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1354
+ selectset done           1
+ eigen done           1
+ tau           9   1.35942757              68
+ #popped           3           0
+ #selectset contacts        1354
+ selectset done           0
+ eigen done           0
+ tau          11   2.61450243              30
+ #popped          12           1
+ #selectset contacts        1354
+ selectset done           1
+ eigen done           1
+ tau          13  0.752317905              20
+ #popped          13           0
+ #selectset contacts        1354
+ selectset done           0
+ eigen done           0
+ tau          15   2.01282048             128
+ #popped          16           0
+ #selectset contacts        1354
+ selectset done           0
+ eigen done           0
+ tau          17  0.447031260             100
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          18-JUL-16   5LJL              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOCOCCUS PNEUMONIAE SEROTYPE 4 (S          AUTHOR    A.RODRIGUEZ-CARDENAS,A.L.ROJAS,A.VELAZQUEZ-CAMPOY,R.HURTADO-          
+           0
+         147
+         147  residues read 5LJL.dssp                                                   
+  exclude short helix          39          41
+  exclude short helix          44          49
+  grow short strand          52          56
+  grow short strand         116         117
+  grow short strand         122         125
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  3  4  6  7  8  5  2  9 10
+   2     1  4  5  7  1  3  4  6  7  8  5
+   3     1 12 13  3  2  9 10
+   4     2  6  7  6  1  3  4  6  7  8
+   5     2  0  0  1  5
+   6     4  8  9  3  1  3  4
+   7     4  0  0  3  6  7  8
+   8     6  0  0  2  1  3
+   9     6  0  0  1  4
+  10     0  0  0  0
+  11     0  0  0  1  5
+  12     3  0  0  1  2
+  13     3 16 17  2  9 10
+  14     0  0  0  0
+  15     0  0  0  1  2
+  16    13  0  0  1  9
+  17    13  0  0  1 10
+  18     0  0  0  0
+  19     0  0  0  1  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  7  2  1  1  3  8
+   3 -   1 10 11  3  2  2  2  9 10
+   4 -   2  6  7  6  3  1  1  3  4  6  8
+   5 -   2  0  0  1  1  5  5
+   6 -   4  8  9  3  2  1  1  3  4
+   7 -   4  0  0  3  1  6  8
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6  0  0  1  1  4  4
+  10 -   3  0  0  1  1  2  2
+  11 -   3 12 13  2  1  9 10
+  12 -  11  0  0  1  1  9  9
+  13 -  11  0  0  1  1 10 10
+
+ CHAIN : 5LJLA
+

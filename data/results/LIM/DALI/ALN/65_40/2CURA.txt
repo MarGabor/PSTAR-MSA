@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X62-A  7.0  3.7   69    79   36   MOLECULE: C-TERMINAL LIM DOMAIN PROTEIN 1;                           
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=1X62A Z-score=7.0
+
+DSSP  ---------LLLLLL-LLLLLLLLLLLLLEEELLEEELLLLLLLLLLLLLLLLLLEEELL
+Query ---------GSSGSS-GCVKCNKAITSGGITYQDQPWHADCFVCVTCSKKLAGQRFTAVE   50
+ident          |       | ||   |        |   |  | ||  |   |       ||
+Sbjct gssgssgsiGNAQKLpMCDKCGTGIVGVFVKLRDRHRHPECYVCTDCGTNLKQKGHFFVE   60
+DSSP  lllllllllLLLLLLlLLLLLLLLLLLLLEELLLLEELLLLLLLLLLLLLHHHHLLEELL
+
+DSSP  LLEEEHHHHHHHHLLLLLL
+Query DQYYCVDCYKNFVSGPSSG   69
+ident || ||       |||||||
+Sbjct DQIYCEKHARERVSGPSSG   79
+DSSP  LLEELHHHHHHHHLLLLLL
+
+
+# Structural equivalences
+   1: 2CUR-A 1X62-A     1 -   6 <=>   10 -  15   (GLY    1  - SER    6  <=> GLY   10  - LEU   15 )                          
+   1: 2CUR-A 1X62-A     7 -  69 <=>   17 -  79   (GLY    7  - GLY   69  <=> MET   17  - GLY   79 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 1X62-A  U(1,.)  -0.682345 -0.215936  0.698410           -2.485920"
+-matrix  "2CUR-A 1X62-A  U(2,.)   0.525793  0.518782  0.674097            0.511355"
+-matrix  "2CUR-A 1X62-A  U(3,.)  -0.507884  0.827186 -0.240451           -4.167765"
+

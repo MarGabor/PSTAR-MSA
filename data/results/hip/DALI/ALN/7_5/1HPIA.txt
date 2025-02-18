@@ -1,0 +1,33 @@
+# Job: hip
+# Query: 1HPIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3HIP-C 12.4  1.6   69    82   45   MOLECULE: HIGH-POTENTIAL IRON-SULFUR PROTEIN;                        
+
+# Pairwise alignments
+
+No 1: Query=1HPIA Sbjct=3HIPC Z-score=12.4
+
+DSSP  --LEELLLLLHHHHHLLLLLLHHHLL-LLLL-----LLLLLHHHLLLLLL-llLLLEEEL
+Query --MERLSEDDPAAQALEYRHDASSVQ-HPAY-----EEGQTCLNCLLYTD-asAQDWGPC   51
+ident        | |||| || |  || |     |       | | | ||        | ||  |
+Sbjct vpANAVTESDPAAVALKYHRDAASSErVAAArpglpPEEQHCENCQFMNPdsaAADWKGC   60
+DSSP  llLLLLLLLLHHHHHHLLLLLHHHLLhHHHLlllllHHHLLHHHLLLEEEeeeELLEEEE
+
+DSSP  LLLLLEEEELLLLLLLLLLL--
+Query SVFPGKLVSANGWCTAWVAR--   71
+ident   |||||    |||  |  |  
+Sbjct QLFPGKLINLSGWCASWTLRag   82
+DSSP  LLLLLLEEELLLLLLLLLLLll
+
+
+# Structural equivalences
+   1: 1HPI-A 3HIP-C     1 -  24 <=>    3 -  26   (MET    1  - GLN   24  <=> ALA  104  - GLU  127 )                          
+   1: 1HPI-A 3HIP-C    25 -  28 <=>   28 -  31   (HIS   25  - TYR   28  <=> VAL  129  - ALA  132 )                          
+   1: 1HPI-A 3HIP-C    29 -  42 <=>   37 -  50   (GLU   29  - ASP   42  <=> PRO  138  - PRO  151 )                          
+   1: 1HPI-A 3HIP-C    45 -  71 <=>   54 -  80   (ALA   45  - ARG   71  <=> ALA  155  - ARG  181 )                          
+
+# Translation-rotation matrices
+-matrix  "1HPI-A 3HIP-C  U(1,.)   0.362065 -0.062088 -0.930083           75.553429"
+-matrix  "1HPI-A 3HIP-C  U(2,.)   0.909240 -0.196344  0.367058           51.498375"
+-matrix  "1HPI-A 3HIP-C  U(3,.)  -0.205407 -0.978567 -0.014636           49.332298"
+

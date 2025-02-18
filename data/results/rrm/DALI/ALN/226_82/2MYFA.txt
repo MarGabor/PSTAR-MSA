@@ -1,0 +1,38 @@
+# Job: rrm
+# Query: 2MYFA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6SNJ-A  6.9  3.4   84   131   26   MOLECULE: RNA-BINDING PROTEIN FUS;                                   
+
+# Pairwise alignments
+
+No 1: Query=2MYFA Sbjct=6SNJA Z-score=6.9
+
+DSSP  ---lllLLLL------------llLLLEEEELLLLLLLHHHHHHHHLLLLLEE-------
+Query ---gshMSDN------------naTDILFVGGIDETIDEKSLYDIFSSFGDIR-------   38
+ident                             || |  |     |  | |   | |        
+Sbjct ggfnkfGGPRdqgsrhdseqdnsdNNTIFVQGLGENVTIESVADYFKQIGIIKtnkktgq   60
+DSSP  llllllLHHHlllhhhllllllllLLEEEEELLLLLLLHHHHHHHHLLLLLLLlllllll
+
+DSSP  -EEELLLLLLLLLLLLLLEEEELLHHHHHHHHHHLLLLEELLEELEEELLLL--------
+Query -NIEVPLNMTTKKNRGFAFVEYVEVDDAKHALYNMNNFELNGKRIHVNYSKT--------   89
+ident   |       | |  | | |       || |       |  |  | |             
+Sbjct pMINLYTDRETGKLKGEATVSFDDPPSAKAAIDWFDGKEFSGNPIKVSFATRradfnrgg  120
+DSSP  lLEEEEELLLLLLEEEEEEEELLLHHHHHHHHHHHLLLLLLLLLLEEEELLLhhhhllll
+
+DSSP  -----------
+Query -----------   89
+ident            
+Sbjct gngrggrgrgg  131
+DSSP  lllllllllll
+
+
+# Structural equivalences
+   1: 2MYF-A 6SNJ-A     4 -   7 <=>    7 -  10   (MET    1  - ASN    4  <=> GLY  266  - ARG  269 )                          
+   1: 2MYF-A 6SNJ-A    10 -  38 <=>   25 -  53   (THR    7  - ARG   35  <=> ASN  284  - LYS  312 )                          
+   1: 2MYF-A 6SNJ-A    39 -  89 <=>   62 - 112   (ASN   36  - THR   86  <=> MET  321  - ARG  371 )                          
+
+# Translation-rotation matrices
+-matrix  "2MYF-A 6SNJ-A  U(1,.)  -0.768687  0.214836  0.602466           20.923344"
+-matrix  "2MYF-A 6SNJ-A  U(2,.)   0.419398 -0.541872  0.728340           30.850082"
+-matrix  "2MYF-A 6SNJ-A  U(3,.)   0.482934  0.812539  0.326428           -2.632763"
+

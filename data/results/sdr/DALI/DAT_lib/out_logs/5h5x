@@ -1,0 +1,2357 @@
+A length: 248
+B length: 253
+C length: 257
+D length: 250
+E length: 248
+F length: 253
+G length: 257
+H length: 252
+I length: 242
+J length: 253
+K length: 257
+L length: 246
+# 12 chains A B C D E F G H I J K L
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            248
+Total number of atoms read in:              1759
+Total number of ignored atom records:        240
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         248  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2259
+ selectset done           0
+ eigen done           0
+ tau           1   1.66470957              65          82          95         139
+ #popped           2           1
+ #selectset contacts        2259
+ selectset done           1
+ eigen done           1
+ tau           3   2.13464689              95
+ #popped           4           2
+ #selectset contacts        2259
+ selectset done           2
+ eigen done           2
+ tau           5  0.893708467              39          65
+ #popped           6           3
+ #selectset contacts        2259
+ selectset done           3
+ eigen done           3
+ tau           7  0.711089730              10
+ #popped           9           3
+ #selectset contacts        2259
+ selectset done           3
+ eigen done           3
+ tau           9  0.232871354              29
+ #popped          11           3
+ #selectset contacts        2259
+ selectset done           3
+ eigen done           3
+ tau          11   5.06853247              39
+ #popped           7           2
+ #selectset contacts        2259
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2259
+ selectset done           1
+ eigen done           1
+ tau          13   1.51624751             195         207
+ #popped          14           1
+ #selectset contacts        2259
+ selectset done           1
+ eigen done           1
+ tau          15   1.00041628             171         183
+ #popped          16           1
+ #selectset contacts        2259
+ selectset done           1
+ eigen done           1
+ tau          17  0.622782290             195
+ #popped          18           2
+ #selectset contacts        2259
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        2259
+ selectset done           1
+ eigen done           1
+ tau          19   1.40797365             235
+ #popped          20           1
+ #selectset contacts        2259
+ selectset done           1
+ eigen done           1
+ tau          21   1.29890454             218
+ #popped           3           0
+ #selectset contacts        2259
+ selectset done           0
+ eigen done           0
+ tau          23   1.89648366              82         118
+ #popped          24           1
+ #selectset contacts        2259
+ selectset done           1
+ eigen done           1
+ tau          25   2.24324632              82
+ #popped          27           1
+ #selectset contacts        2259
+ selectset done           1
+ eigen done           1
+ tau          27  0.893023312             129
+ #popped          25           0
+ #selectset contacts        2259
+ selectset done           0
+ eigen done           0
+ tau          29   1.19008410             106
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         248
+         248  residues read 5H5X.dssp                                                   
+  exclude short helix           3           5
+  grow short strand          11          15
+  grow short strand          60          64
+  grow short strand          89          92
+  exclude short helix         103         105
+  grow short strand         141         145
+  exclude short helix         148         150
+  grow short helix         200         206
+  exclude short helix         229         231
+  grow short strand         238         241
+  exclude short helix         245         247
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  7  4  5 10 11 12 14 15 13  6  9  8
+   2     1  4  5 12  1  2  3  7  4  5 10 11 12 14 15 13
+   3     1 24 25  3  6  9  8
+   4     2  6  7  6  1  2  3  7  4  5
+   5     2 14 15  6 10 11 12 14 15 13
+   6     4 10 11  4  1  2  3  7
+   7     4  0  0  2  4  5
+   8     0  0  0  0
+   9     0  0  0  4  1  2  3  7
+  10     6  0  0  2  1  2
+  11     6 12 13  2  3  7
+  12    11  0  0  1  3
+  13    11  0  0  1  7
+  14     5 18 19  5 10 11 12 14 15
+  15     5  0  0  1 13
+  16     0  0  0  5 10 11 12 14 15
+  17     0  0  0  0
+  18    14  0  0  3 10 11 12
+  19    14 20 21  2 14 15
+  20    19  0  0  1 14
+  21    19  0  0  1 15
+  22     0  0  0  0
+  23     0  0  0  1 14
+  24     3 26 27  2  6  9
+  25     3  0  0  1  8
+  26    24  0  0  1  6
+  27    24  0  0  1  9
+  28     0  0  0  1  9
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 12  3  1  5  7  7 10 15
+   3 -   1 18 19  3  2  6  6  8  9
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2 12 13  6  1 10 15
+   6 -   4  8  9  4  2  1  3  7  7
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  2  2  3  3  7  7
+  10 -   9  0  0  1  1  3  3
+  11 -   9  0  0  1  1  7  7
+  12 -   5 14 15  5  2 10 12 14 15
+  13 -   5  0  0  1  1 13 13
+  14 -  12  0  0  3  1 10 12
+  15 -  12 16 17  2  1 14 15
+  16 -  15  0  0  1  1 14 14
+  17 -  15  0  0  1  1 15 15
+  18 -   3 20 21  2  2  6  6  9  9
+  19 -   3  0  0  1  1  8  8
+  20 -  18  0  0  1  1  6  6
+  21 -  18  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1798
+Total number of ignored atom records:        224
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau           1   1.84133887              89
+ #popped           2           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau           3   1.19803596              64
+ #popped           4           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau           5   1.02625537              10
+ #popped           7           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau           7  0.837457180              20          32
+ #popped           8           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau           9   1.06138003              77
+ #popped           3           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          11   2.15987444             191         223
+ #popped          12           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          13   1.30154717             139
+ #popped          14           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          15   1.52958024             118
+ #popped          16           3
+ #selectset contacts        2342
+ selectset done           3
+ eigen done           3
+ tau          17  0.859903395             107
+ #popped          17           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          19  0.853333354             129
+ #popped          15           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          21   1.21743059             191         238
+ #popped          22           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          23  0.758799672             152         163
+ #popped          24           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          13           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          25  0.732708216             201
+ #popped          27           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          27   1.07878697             212
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         253
+         253  residues read 5H5X.dssp                                                   
+  grow short strand          11          15
+  grow short strand          60          64
+  grow short strand          89          92
+  exclude short helix         103         105
+  exclude short helix         148         150
+  exclude short helix         198         200
+  exclude short helix         234         236
+  grow short strand         243         246
+  exclude short helix         250         252
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  2  6  7  8  9 10 11 12 15 14 13
+   2     1  4  5  6  1  3  4  5  2  6
+   3     1 12 13  9  7  8  9 10 11 12 15 14 13
+   4     2  8  9  5  1  3  4  5  2
+   5     2  0  0  1  6
+   6     0  0  0  0
+   7     0  0  0  5  1  3  4  5  2
+   8     4  0  0  4  1  3  4  5
+   9     4  0  0  1  2
+  10     0  0  0  1  6
+  11     0  0  0  0
+  12     3 14 15  8  7  8  9 10 11 12 15 14
+  13     3  0  0  1 13
+  14    12 16 17  3  7  8  9
+  15    12 22 23  5 10 11 12 15 14
+  16    14 18 19  2  7  8
+  17    14  0  0  1  9
+  18    16  0  0  1  7
+  19    16  0  0  1  8
+  20     0  0  0  1  9
+  21     0  0  0  0
+  22    15  0  0  4 10 11 12 15
+  23    15  0  0  1 14
+  24     0  0  0  4 10 11 12 15
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1 13
+  28     0  0  0  1 13
+  29     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5  6  1  1  6
+   3 *   1  8  9  9  1  7 15
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   3 10 11  8  2  7 12 14 15
+   9 -   3  0  0  1  1 13 13
+  10 -   8 12 13  3  1  7  9
+  11 -   8 16 17  5  2 10 12 14 15
+  12 -  10 14 15  2  1  7  8
+  13 -  10  0  0  1  1  9  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12  0  0  1  1  8  8
+  16 -  11  0  0  4  2 10 12 15 15
+  17 -  11  0  0  1  1 14 14
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1824
+Total number of ignored atom records:        250
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2372
+ selectset done           0
+ eigen done           0
+ tau           1   1.71200025              98         123         148         176         190         227         245
+ #popped           2           1
+ #selectset contacts        2372
+ selectset done           1
+ eigen done           1
+ tau           3   1.37321877              98
+ #popped           4           2
+ #selectset contacts        2372
+ selectset done           2
+ eigen done           2
+ tau           5   1.36970150              68          87
+ #popped           6           2
+ #selectset contacts        2372
+ selectset done           2
+ eigen done           2
+ tau           7  0.996293485              12
+ #popped           9           2
+ #selectset contacts        2372
+ selectset done           2
+ eigen done           2
+ tau           9  0.857914507              22          35
+ #popped          10           2
+ #selectset contacts        2372
+ selectset done           2
+ eigen done           2
+ tau          11  0.509944737              68
+ #popped          12           2
+ #selectset contacts        2372
+ selectset done           2
+ eigen done           2
+ tau          13  0.430052727              49
+ #popped          14           2
+ #selectset contacts        2372
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2372
+ selectset done           1
+ eigen done           1
+ tau          15   1.58418691             137
+ #popped          17           1
+ #selectset contacts        2372
+ selectset done           1
+ eigen done           1
+ tau          17  0.463815808             148
+ #popped          19           1
+ #selectset contacts        2372
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2372
+ selectset done           0
+ eigen done           0
+ tau          19   2.53352523             123
+ #popped          20           1
+ #selectset contacts        2372
+ selectset done           1
+ eigen done           1
+ tau          21   1.03309476             110
+ #popped          21           0
+ #selectset contacts        2372
+ selectset done           0
+ eigen done           0
+ tau          23   1.50652921             176
+ #popped          24           1
+ #selectset contacts        2372
+ selectset done           1
+ eigen done           1
+ tau          25  0.579510272             159
+ #popped          25           0
+ #selectset contacts        2372
+ selectset done           0
+ eigen done           0
+ tau          27  0.568159103             227
+ #popped          28           0
+ #selectset contacts        2372
+ selectset done           0
+ eigen done           0
+ tau          29  0.712009788             216
+ #popped          30           0
+ #selectset contacts        2372
+ selectset done           0
+ eigen done           0
+ tau          31   1.30805409             204
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         257
+         257  residues read 5H5X.dssp                                                   
+  exclude short helix           2           5
+  grow short strand          15          19
+  grow short strand          64          68
+  grow short strand          93          96
+  exclude short helix         152         154
+  exclude short helix         200         203
+  exclude short helix         238         240
+  grow short strand         247         250
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  7  2  6  9 10 12 14  8 11 13 15
+   2     1  4  5 11  1  3  4  5  7  2  6  9 10 12 14
+   3     1 20 21  4  8 11 13 15
+   4     2  6  7  7  1  3  4  5  7  2  6
+   5     2 16 17  4  9 10 12 14
+   6     4 10 11  6  1  3  4  5  7  2
+   7     4  0  0  1  6
+   8     0  0  0  0
+   9     0  0  0  6  1  3  4  5  7  2
+  10     6 12 13  5  1  3  4  5  7
+  11     6  0  0  1  2
+  12    10 14 15  4  1  3  4  5
+  13    10  0  0  1  7
+  14    12  0  0  2  1  3
+  15    12  0  0  2  4  5
+  16     5  0  0  1  9
+  17     5 18 19  3 10 12 14
+  18    17  0  0  1 10
+  19    17  0  0  2 12 14
+  20     3  0  0  1  8
+  21     3 24 25  3 11 13 15
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24    21  0  0  1 11
+  25    21 28 29  2 13 15
+  26     0  0  0  0
+  27     0  0  0  1 11
+  28    25  0  0  1 13
+  29    25  0  0  1 15
+  30     0  0  0  1 13
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 13
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 11  4  1  7  9 10 12 12 14 14
+   3 -   1 18 19  4  4  8  8 11 11 13 13 15 15
+   4 -   2  6  7  7  1  1  7
+   5 -   2 14 15  4  3  9 10 12 12 14 14
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  5  3  1  1  3  5  7  7
+   9 -   6  0  0  1  1  2  2
+  10 -   8 12 13  4  2  1  1  3  5
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  2  2  1  1  3  3
+  13 -  10  0  0  2  1  4  5
+  14 -   5  0  0  1  1  9  9
+  15 -   5 16 17  3  3 10 10 12 12 14 14
+  16 -  15  0  0  1  1 10 10
+  17 -  15  0  0  2  2 12 12 14 14
+  18 -   3  0  0  1  1  8  8
+  19 -   3 20 21  3  3 11 11 13 13 15 15
+  20 -  19  0  0  1  1 11 11
+  21 -  19 22 23  2  2 13 13 15 15
+  22 -  21  0  0  1  1 13 13
+  23 -  21  0  0  1  1 15 15
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            250
+Total number of atoms read in:              1775
+Total number of ignored atom records:        203
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         250  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2307
+ selectset done           0
+ eigen done           0
+ tau           1   1.95098233             195         208
+ #popped           2           0
+ #selectset contacts        2307
+ selectset done           0
+ eigen done           0
+ tau           3   1.83829844              91
+ #popped           4           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau           5  0.961884022              10
+ #popped           7           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau           7   1.02666664              65          77
+ #popped           8           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau           9  0.676397502              65
+ #popped          10           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau          11  0.820646644              20          32
+ #popped          12           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau          13  0.386595726              42
+ #popped          14           2
+ #selectset contacts        2307
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           5           0
+ #selectset contacts        2307
+ selectset done           0
+ eigen done           0
+ tau          15   1.35260987             129         148         170
+ #popped          16           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau          17   1.86110616             129
+ #popped          18           2
+ #selectset contacts        2307
+ selectset done           2
+ eigen done           2
+ tau          19   1.18175578             106
+ #popped          21           2
+ #selectset contacts        2307
+ selectset done           2
+ eigen done           2
+ tau          21   1.17679763             118
+ #popped          19           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau          23  0.438143879             158
+ #popped          17           0
+ #selectset contacts        2307
+ selectset done           0
+ eigen done           0
+ tau          25   1.06796122             148         183
+ #popped          26           0
+ #selectset contacts        2307
+ selectset done           0
+ eigen done           0
+ tau          27  0.649368703             224         239
+ #popped          28           0
+ #selectset contacts        2307
+ selectset done           0
+ eigen done           0
+ tau          29  0.672483921             195
+ #popped          30           1
+ #selectset contacts        2307
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          31           0
+ #selectset contacts        2307
+ selectset done           0
+ eigen done           0
+ tau          31   1.78918171             224
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         250
+         250  residues read 5H5X.dssp                                                   
+  grow short strand          11          15
+  grow short strand          60          64
+  grow short strand          89          92
+  exclude short helix         103         105
+  exclude short helix         148         150
+  exclude short helix         231         233
+  grow short strand         240         243
+  exclude short helix         247         249
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  2  7  6  8  9 11 10 12 14 15 13
+   2     1  4  5 14  1  3  4  5  2  7  6  8  9 11 10 12 14 15
+   3     1  0  0  1 13
+   4     2  8  9  7  1  3  4  5  2  7  6
+   5     2 16 17  7  8  9 11 10 12 14 15
+   6     0  0  0  0
+   7     0  0  0  7  1  3  4  5  2  7  6
+   8     4 10 11  6  1  3  4  5  2  7
+   9     4  0  0  1  6
+  10     8 12 13  5  1  3  4  5  2
+  11     8  0  0  1  7
+  12    10 14 15  4  1  3  4  5
+  13    10  0  0  1  2
+  14    12  0  0  2  1  3
+  15    12  0  0  2  4  5
+  16     5 18 19  3  8  9 11
+  17     5 30 31  4 10 12 14 15
+  18    16 22 23  2  8  9
+  19    16  0  0  1 11
+  20     0  0  0  0
+  21     0  0  0  2  8  9
+  22    18  0  0  1  8
+  23    18  0  0  1  9
+  24     0  0  0  0
+  25     0  0  0  1 11
+  26     0  0  0  4 10 12 14 15
+  27     0  0  0  0
+  28     0  0  0  4 10 12 14 15
+  29     0  0  0  0
+  30    17  0  0  2 10 12
+  31    17 32 33  2 14 15
+  32    31  0  0  1 14
+  33    31  0  0  1 15
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  7  1  1  7
+   5 -   2 14 15  7  2  8 12 14 15
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  5  1  1  5
+   9 -   6  0  0  1  1  7  7
+  10 -   8 12 13  4  2  1  1  3  5
+  11 -   8  0  0  1  1  2  2
+  12 -  10  0  0  2  2  1  1  3  3
+  13 -  10  0  0  2  1  4  5
+  14 -   5 16 17  3  2  8  9 11 11
+  15 -   5 20 21  4  3 10 10 12 12 14 15
+  16 -  14 18 19  2  1  8  9
+  17 -  14  0  0  1  1 11 11
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+  20 -  15  0  0  2  2 10 10 12 12
+  21 -  15 22 23  2  1 14 15
+  22 -  21  0  0  1  1 14 14
+  23 -  21  0  0  1  1 15 15
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            248
+Total number of atoms read in:              1758
+Total number of ignored atom records:        206
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         248  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2290
+ selectset done           0
+ eigen done           0
+ tau           1   1.86279535              94
+ #popped           2           1
+ #selectset contacts        2290
+ selectset done           1
+ eigen done           1
+ tau           3   1.40816331              64          83
+ #popped           4           1
+ #selectset contacts        2290
+ selectset done           1
+ eigen done           1
+ tau           5  0.858942688              37          64
+ #popped           6           2
+ #selectset contacts        2290
+ selectset done           2
+ eigen done           2
+ tau           7  0.706269383              10
+ #popped           9           2
+ #selectset contacts        2290
+ selectset done           2
+ eigen done           2
+ tau           9  0.266620100              27
+ #popped          11           2
+ #selectset contacts        2290
+ selectset done           2
+ eigen done           2
+ tau          11   5.95833349              37
+ #popped           7           1
+ #selectset contacts        2290
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2290
+ selectset done           0
+ eigen done           0
+ tau          13   1.43265915             119         140         171         183
+ #popped          14           1
+ #selectset contacts        2290
+ selectset done           1
+ eigen done           1
+ tau          15   3.00209785             119
+ #popped          16           2
+ #selectset contacts        2290
+ selectset done           2
+ eigen done           2
+ tau          17   1.23397434             106
+ #popped          17           1
+ #selectset contacts        2290
+ selectset done           1
+ eigen done           1
+ tau          19   1.33263540             196         206
+ #popped          20           1
+ #selectset contacts        2290
+ selectset done           1
+ eigen done           1
+ tau          21  0.715010583             220         237
+ #popped          22           1
+ #selectset contacts        2290
+ selectset done           1
+ eigen done           1
+ tau          23  0.435195506             220
+ #popped          24           1
+ #selectset contacts        2290
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          15           0
+ #selectset contacts        2290
+ selectset done           0
+ eigen done           0
+ tau          25   1.32135928             140
+ #popped          26           0
+ #selectset contacts        2290
+ selectset done           0
+ eigen done           0
+ tau          27  0.871794879             129
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         248
+         248  residues read 5H5X.dssp                                                   
+  exclude short helix           3           5
+  grow short strand          11          15
+  grow short strand          60          64
+  grow short strand          89          92
+  exclude short helix         103         105
+  exclude short helix         148         150
+  grow short strand         193         194
+  grow short helix         199         205
+  grow short strand         214         215
+ crowded segment excluded!
+  exclude short helix         229         231
+  grow short strand         238         241
+  exclude short helix         245         247
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  7  4  5  6  8 10 11 12 13 16 15 14  9
+   2     1  4  5  7  1  2  3  7  4  5  6
+   3     1 14 15  9  8 10 11 12 13 16 15 14  9
+   4     2  6  7  6  1  2  3  7  4  5
+   5     2  0  0  1  6
+   6     4 10 11  4  1  2  3  7
+   7     4  0  0  2  4  5
+   8     0  0  0  0
+   9     0  0  0  4  1  2  3  7
+  10     6  0  0  2  1  2
+  11     6 12 13  2  3  7
+  12    11  0  0  1  3
+  13    11  0  0  1  7
+  14     3 16 17  8  8 10 11 12 13 16 15 14
+  15     3  0  0  1  9
+  16    14  0  0  1  8
+  17    14 20 21  7 10 11 12 13 16 15 14
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20    17 22 23  6 10 11 12 13 16 15
+  21    17  0  0  1 14
+  22    20 24 25  5 10 11 12 13 16
+  23    20  0  0  1 15
+  24    22  0  0  4 10 11 12 13
+  25    22  0  0  1 16
+  26     0  0  0  1  9
+  27     0  0  0  0
+  28     0  0  0  1  9
+  29     0  0  0  0
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  9  1  8 16
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  4  2  1  3  7  7
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  2  2  3  3  7  7
+  10 -   9  0  0  1  1  3  3
+  11 -   9  0  0  1  1  7  7
+  12 -   3 14 15  8  2  8  8 10 16
+  13 -   3  0  0  1  1  9  9
+  14 -  12  0  0  1  1  8  8
+  15 -  12 16 17  7  1 10 16
+  16 -  15 18 19  6  2 10 13 15 16
+  17 -  15  0  0  1  1 14 14
+  18 -  16 20 21  5  2 10 13 16 16
+  19 -  16  0  0  1  1 15 15
+  20 -  18  0  0  4  1 10 13
+  21 -  18  0  0  1  1 16 16
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1798
+Total number of ignored atom records:        210
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2344
+ selectset done           0
+ eigen done           0
+ tau           1   2.35727620             191         219
+ #popped           2           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau           3   1.31760502              41          58
+ #popped           4           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau           5   1.45800138             139
+ #popped           6           2
+ #selectset contacts        2344
+ selectset done           2
+ eigen done           2
+ tau           7   3.15665317              94
+ #popped           8           3
+ #selectset contacts        2344
+ selectset done           3
+ eigen done           3
+ tau           9  0.874765038              10
+ #popped          11           3
+ #selectset contacts        2344
+ selectset done           3
+ eigen done           3
+ tau          11  0.495406866              74
+ #popped          12           4
+ #selectset contacts        2344
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          13           3
+ #selectset contacts        2344
+ selectset done           3
+ eigen done           3
+ tau          13   1.48841643              84
+ #popped           9           2
+ #selectset contacts        2344
+ selectset done           2
+ eigen done           2
+ tau          15   1.93844867             118
+ #popped          16           3
+ #selectset contacts        2344
+ selectset done           3
+ eigen done           3
+ tau          17   1.12961292             106
+ #popped          17           2
+ #selectset contacts        2344
+ selectset done           2
+ eigen done           2
+ tau          19  0.872727334             129
+ #popped           7           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau          21   1.25422573             191         231
+ #popped          22           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau          23  0.826149046             191         241
+ #popped          24           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau          25  0.728571415             152         162
+ #popped          26           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped           3           0
+ #selectset contacts        2344
+ selectset done           0
+ eigen done           0
+ tau          27  0.744853914             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         253
+         253  residues read 5H5X.dssp                                                   
+  grow short strand          11          15
+  grow short strand          60          64
+  grow short strand          89          92
+  exclude short helix         103         105
+  exclude short helix         148         150
+  exclude short helix         196         198
+  exclude short helix         234         236
+  grow short strand         243         246
+  exclude short helix         250         252
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  5  6  7  8  9 10 11 12 15 14  4 13
+   2     1  4  5 14  1  2  3  5  6  7  8  9 10 11 12 15 14  4
+   3     1  0  0  1 13
+   4     2  6  7 13  1  2  3  5  6  7  8  9 10 11 12 15 14
+   5     2  0  0  1  4
+   6     4  8  9  8  1  2  3  5  6  7  8  9
+   7     4 22 23  5 10 11 12 15 14
+   8     6 12 13  6  1  2  3  5  6  7
+   9     6 16 17  2  8  9
+  10     0  0  0  0
+  11     0  0  0  6  1  2  3  5  6  7
+  12     8  0  0  4  1  2  3  5
+  13     8 14 15  2  6  7
+  14    13  0  0  1  6
+  15    13  0  0  1  7
+  16     9  0  0  1  8
+  17     9  0  0  1  9
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     0  0  0  1  9
+  21     0  0  0  0
+  22     7  0  0  4 10 11 12 15
+  23     7  0  0  1 14
+  24     0  0  0  4 10 11 12 15
+  25     0  0  0  0
+  26     0  0  0  4 10 11 12 15
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1 13
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7 13  3  1  3  5 12 14 15
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  8  2  1  3  5  9
+   7 -   4 16 17  5  2 10 12 14 15
+   8 -   6 10 11  6  2  1  3  5  7
+   9 -   6 14 15  2  1  8  9
+  10 -   8  0  0  4  2  1  3  5  5
+  11 -   8 12 13  2  1  6  7
+  12 -  11  0  0  1  1  6  6
+  13 -  11  0  0  1  1  7  7
+  14 -   9  0  0  1  1  8  8
+  15 -   9  0  0  1  1  9  9
+  16 -   7  0  0  4  2 10 12 15 15
+  17 -   7  0  0  1  1 14 14
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1824
+Total number of ignored atom records:        214
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau           1   1.96690714             197         216
+ #popped           2           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau           3   1.57274318              69          81          93
+ #popped           4           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau           5   1.01639342              12
+ #popped           7           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau           7   1.34408593              22          36
+ #popped           8           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau           9  0.786070585              69
+ #popped          10           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          11  0.426504642              49
+ #popped          12           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          13           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          13  0.606919944              59
+ #popped           5           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau          15   1.24927187             142         152         185
+ #popped          16           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          17   2.36854124             142
+ #popped          18           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          19   2.14634156              81
+ #popped          21           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          21   1.58854783             122
+ #popped          22           3
+ #selectset contacts        2382
+ selectset done           3
+ eigen done           3
+ tau          23   0.00000000    
+ #popped          23           2
+ #selectset contacts        2382
+ selectset done           2
+ eigen done           2
+ tau          23  0.769615412             132
+ #popped          19           1
+ #selectset contacts        2382
+ selectset done           1
+ eigen done           1
+ tau          25   1.35841632             169
+ #popped          17           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau          27  0.635508955             229         246
+ #popped          28           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau          29  0.447322220             229
+ #popped          30           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau          31   1.28577960             197
+ #popped          32           0
+ #selectset contacts        2382
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         257
+         257  residues read 5H5X.dssp                                                   
+  exclude short helix           2           5
+  grow short strand          15          18
+  grow short strand          64          68
+  grow short strand          93          96
+  exclude short helix         107         109
+  exclude short helix         152         154
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  2  6  7  8  9 11 10 12 15 14 13
+   2     1  4  5 14  1  3  4  5  2  6  7  8  9 11 10 12 15 14
+   3     1  0  0  1 13
+   4     2  8  9  5  1  3  4  5  2
+   5     2 16 17  9  6  7  8  9 11 10 12 15 14
+   6     0  0  0  0
+   7     0  0  0  5  1  3  4  5  2
+   8     4 12 13  4  1  3  4  5
+   9     4  0  0  1  2
+  10     0  0  0  4  1  3  4  5
+  11     0  0  0  0
+  12     8  0  0  2  1  3
+  13     8 14 15  2  4  5
+  14    13  0  0  1  4
+  15    13  0  0  1  5
+  16     5 18 19  5  6  7  8  9 11
+  17     5 28 29  4 10 12 15 14
+  18    16 20 21  4  6  7  8  9
+  19    16  0  0  1 11
+  20    18  0  0  1  6
+  21    18 22 23  3  7  8  9
+  22    21  0  0  2  7  8
+  23    21  0  0  1  9
+  24     0  0  0  1  9
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1 11
+  28    17 30 31  3 10 12 15
+  29    17  0  0  1 14
+  30    28  0  0  2 10 12
+  31    28  0  0  1 15
+  32     0  0  0  2 10 12
+  33     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  9  2  6 12 14 15
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6 10 11  2  1  4  5
+  10 -   9  0  0  1  1  4  4
+  11 -   9  0  0  1  1  5  5
+  12 -   5 14 15  5  2  6  9 11 11
+  13 -   5 20 21  4  3 10 10 12 12 14 15
+  14 -  12 16 17  4  1  6  9
+  15 -  12  0  0  1  1 11 11
+  16 -  14  0  0  1  1  6  6
+  17 -  14 18 19  3  1  7  9
+  18 -  17  0  0  2  1  7  8
+  19 -  17  0  0  1  1  9  9
+  20 -  13 22 23  3  3 10 10 12 12 15 15
+  21 -  13  0  0  1  1 14 14
+  22 -  20  0  0  2  2 10 10 12 12
+  23 -  20  0  0  1  1 15 15
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            252
+Total number of atoms read in:              1790
+Total number of ignored atom records:        210
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         252  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2321
+ selectset done           0
+ eigen done           0
+ tau           1   2.22179437             191         218
+ #popped           2           1
+ #selectset contacts        2321
+ selectset done           1
+ eigen done           1
+ tau           3   1.84483683              89         191         234
+ #popped           4           2
+ #selectset contacts        2321
+ selectset done           2
+ eigen done           2
+ tau           5   2.18761206              89
+ #popped           6           2
+ #selectset contacts        2321
+ selectset done           2
+ eigen done           2
+ tau           7   1.17605364              64
+ #popped           8           3
+ #selectset contacts        2321
+ selectset done           3
+ eigen done           3
+ tau           9  0.962793171              11          22          35
+ #popped          10           4
+ #selectset contacts        2321
+ selectset done           4
+ eigen done           4
+ tau          11  0.574037850              11
+ #popped          11           3
+ #selectset contacts        2321
+ selectset done           3
+ eigen done           3
+ tau          13  0.492109448              22
+ #popped          15           3
+ #selectset contacts        2321
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped           9           2
+ #selectset contacts        2321
+ selectset done           2
+ eigen done           2
+ tau          15   1.11315477              77
+ #popped           5           1
+ #selectset contacts        2321
+ selectset done           1
+ eigen done           1
+ tau          17  0.788702190             129         139
+ #popped          18           1
+ #selectset contacts        2321
+ selectset done           1
+ eigen done           1
+ tau          19   1.13475573             129         152         164
+ #popped          20           2
+ #selectset contacts        2321
+ selectset done           2
+ eigen done           2
+ tau          21   1.62281585             129
+ #popped          22           2
+ #selectset contacts        2321
+ selectset done           2
+ eigen done           2
+ tau          23   1.26123381             118
+ #popped          24           2
+ #selectset contacts        2321
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped          21           1
+ #selectset contacts        2321
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped           3           0
+ #selectset contacts        2321
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         252
+         252  residues read 5H5X.dssp                                                   
+  grow short strand          11          15
+  grow short strand          60          64
+  grow short strand          89          92
+  exclude short helix         148         150
+  exclude short helix         233         235
+  grow short strand         242         245
+  exclude short helix         249         251
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  2  1  3  4  5  6 14  7  8  9 10 11 12 15 13
+   2     1  4  5 14  2  1  3  4  5  6 14  7  8  9 10 11 12 15
+   3     1  0  0  1 13
+   4     2  6  7  7  2  1  3  4  5  6 14
+   5     2 20 21  7  7  8  9 10 11 12 15
+   6     4  8  9  6  2  1  3  4  5  6
+   7     4  0  0  1 14
+   8     6 10 11  5  2  1  3  4  5
+   9     6  0  0  1  6
+  10     8  0  0  1  2
+  11     8 14 15  4  1  3  4  5
+  12     0  0  0  0
+  13     0  0  0  1  2
+  14    11  0  0  1  1
+  15    11  0  0  3  3  4  5
+  16     0  0  0  1  6
+  17     0  0  0  0
+  18     0  0  0  7  7  8  9 10 11 12 15
+  19     0  0  0  0
+  20     5 24 25  3  7  8  9
+  21     5  0  0  4 10 11 12 15
+  22     0  0  0  3  7  8  9
+  23     0  0  0  0
+  24    20  0  0  2  7  8
+  25    20  0  0  1  9
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  7  2  1  6 14 14
+   5 -   2 14 15  7  2  7 12 15 15
+   6 -   4  8  9  6  1  1  6
+   7 -   4  0  0  1  1 14 14
+   8 -   6 10 11  5  1  1  5
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  1  1  2  2
+  11 -   8 12 13  4  2  1  1  3  5
+  12 -  11  0  0  1  1  1  1
+  13 -  11  0  0  3  1  3  5
+  14 -   5 16 17  3  1  7  9
+  15 -   5  0  0  4  2 10 12 15 15
+  16 -  14  0  0  2  1  7  8
+  17 -  14  0  0  1  1  9  9
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:15701  CA BLYS I 217 
+ Alternate location indication is not blank or A, ignore atom:15705  CB BLYS I 217 
+ Alternate location indication is not blank or A, ignore atom:15707  CG BLYS I 217 
+ Alternate location indication is not blank or A, ignore atom:15709  CD BLYS I 217 
+ Alternate location indication is not blank or A, ignore atom:15711  CE BLYS I 217 
+ Alternate location indication is not blank or A, ignore atom:15713  NZ BLYS I 217 
+
+Total number of residues read in:            243
+Total number of atoms read in:              1723
+Total number of ignored atom records:        160
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         243  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2238
+ selectset done           0
+ eigen done           0
+ tau           1   1.59601247              95         118
+ #popped           2           1
+ #selectset contacts        2238
+ selectset done           1
+ eigen done           1
+ tau           3   1.95566475              95
+ #popped           4           2
+ #selectset contacts        2238
+ selectset done           2
+ eigen done           2
+ tau           5   1.36238194              41          58
+ #popped           6           2
+ #selectset contacts        2238
+ selectset done           2
+ eigen done           2
+ tau           7  0.493391395              72
+ #popped           8           3
+ #selectset contacts        2238
+ selectset done           3
+ eigen done           3
+ tau           9  0.736741424              10
+ #popped          11           3
+ #selectset contacts        2238
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        2238
+ selectset done           2
+ eigen done           2
+ tau          11   2.25927305              85
+ #popped           5           1
+ #selectset contacts        2238
+ selectset done           1
+ eigen done           1
+ tau          13   2.43546510             138
+ #popped          14           2
+ #selectset contacts        2238
+ selectset done           2
+ eigen done           2
+ tau          15  0.836538494             128
+ #popped          15           1
+ #selectset contacts        2238
+ selectset done           1
+ eigen done           1
+ tau          17  0.917615831             195         206
+ #popped          18           1
+ #selectset contacts        2238
+ selectset done           1
+ eigen done           1
+ tau          19  0.665527821             216         232
+ #popped          20           1
+ #selectset contacts        2238
+ selectset done           1
+ eigen done           1
+ tau          21   1.55670178             195         216
+ #popped          22           1
+ #selectset contacts        2238
+ selectset done           1
+ eigen done           1
+ tau          23  0.683262706             172         184
+ #popped          24           1
+ #selectset contacts        2238
+ selectset done           1
+ eigen done           1
+ tau          25  0.548269570             195
+ #popped          26           1
+ #selectset contacts        2238
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped           3           0
+ #selectset contacts        2238
+ selectset done           0
+ eigen done           0
+ tau          27  0.946657777             106
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         243
+         243  residues read 5H5X.dssp                                                   
+  exclude short helix           3           5
+  grow short strand          11          15
+  grow short strand          60          64
+  grow short strand          89          92
+  exclude short helix         103         105
+  grow short strand         141         145
+  exclude short helix         148         150
+  exclude short helix         197         201
+  exclude short helix         224         226
+  grow short strand         233         236
+  exclude short helix         240         242
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  5  6  7  4  9 10 11 12 14 13  8
+   2     1  4  5 13  1  2  3  5  6  7  4  9 10 11 12 14 13
+   3     1  0  0  1  8
+   4     2  6  7  7  1  2  3  5  6  7  4
+   5     2 14 15  6  9 10 11 12 14 13
+   6     4  8  9  6  1  2  3  5  6  7
+   7     4  0  0  1  4
+   8     6  0  0  4  1  2  3  5
+   9     6 12 13  2  6  7
+  10     0  0  0  0
+  11     0  0  0  4  1  2  3  5
+  12     9  0  0  1  6
+  13     9  0  0  1  7
+  14     5  0  0  1  9
+  15     5 22 23  5 10 11 12 14 13
+  16     0  0  0  1  9
+  17     0  0  0  0
+  18     0  0  0  5 10 11 12 14 13
+  19     0  0  0  0
+  20     0  0  0  5 10 11 12 14 13
+  21     0  0  0  0
+  22    15 26 27  4 10 11 12 14
+  23    15  0  0  1 13
+  24     0  0  0  4 10 11 12 14
+  25     0  0  0  0
+  26    22  0  0  3 10 11 12
+  27    22  0  0  1 14
+  28     0  0  0  0
+  29     0  0  0  1  8
+   1 +   0  2  3 14  1  1 14
+   2 +   1  4  5 13  2  1  7  9 14
+   3 =   1  0  0  1  1  8  8
+   4 *   2  6  7  7  1  1  7
+   5 *   2 12 13  6  1  9 14
+   6 -   4  8  9  6  2  1  3  5  7
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  4  2  1  3  5  5
+   9 -   6 10 11  2  1  6  7
+  10 -   9  0  0  1  1  6  6
+  11 -   9  0  0  1  1  7  7
+  12 -   5  0  0  1  1  9  9
+  13 -   5 14 15  5  1 10 14
+  14 -  13 16 17  4  2 10 12 14 14
+  15 -  13  0  0  1  1 13 13
+  16 -  14  0  0  3  1 10 12
+  17 -  14  0  0  1  1 14 14
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1798
+Total number of ignored atom records:        235
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2350
+ selectset done           0
+ eigen done           0
+ tau           1   2.41850424             191         219
+ #popped           2           1
+ #selectset contacts        2350
+ selectset done           1
+ eigen done           1
+ tau           3   1.49096179             136
+ #popped           4           2
+ #selectset contacts        2350
+ selectset done           2
+ eigen done           2
+ tau           5   2.47014976              94
+ #popped           6           3
+ #selectset contacts        2350
+ selectset done           3
+ eigen done           3
+ tau           7   1.50692630              64          84
+ #popped           8           4
+ #selectset contacts        2350
+ selectset done           4
+ eigen done           4
+ tau           9  0.987846732              10
+ #popped          11           4
+ #selectset contacts        2350
+ selectset done           4
+ eigen done           4
+ tau          11  0.745627224              37          64
+ #popped          12           5
+ #selectset contacts        2350
+ selectset done           5
+ eigen done           5
+ tau          13  0.256467164              27
+ #popped          15           5
+ #selectset contacts        2350
+ selectset done           5
+ eigen done           5
+ tau          15   999.999023              37
+ #popped          13           4
+ #selectset contacts        2350
+ selectset done           4
+ eigen done           4
+ tau          17   0.00000000    
+ #popped           9           3
+ #selectset contacts        2350
+ selectset done           3
+ eigen done           3
+ tau          17  0.789661586              74
+ #popped           7           2
+ #selectset contacts        2350
+ selectset done           2
+ eigen done           2
+ tau          19   2.37854886             118
+ #popped          20           2
+ #selectset contacts        2350
+ selectset done           2
+ eigen done           2
+ tau          21  0.953895330             106
+ #popped           5           1
+ #selectset contacts        2350
+ selectset done           1
+ eigen done           1
+ tau          23   1.74508476             191         235
+ #popped          24           1
+ #selectset contacts        2350
+ selectset done           1
+ eigen done           1
+ tau          25  0.345441699             146
+ #popped          27           1
+ #selectset contacts        2350
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped           3           0
+ #selectset contacts        2350
+ selectset done           0
+ eigen done           0
+ tau          27  0.723263919             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         253
+         253  residues read 5H5X.dssp                                                   
+  grow short strand          11          15
+  grow short strand          60          64
+  grow short strand          89          92
+  exclude short helix         103         105
+  exclude short helix         148         150
+  exclude short helix         198         200
+  exclude short helix         234         236
+  grow short strand         243         246
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  7  4  5  6  8  9 10 11 12 15 14 13
+   2     1  4  5 14  1  2  3  7  4  5  6  8  9 10 11 12 15 14
+   3     1  0  0  1 13
+   4     2  6  7  9  1  2  3  7  4  5  6  8  9
+   5     2 24 25  5 10 11 12 15 14
+   6     4  8  9  7  1  2  3  7  4  5  6
+   7     4 20 21  2  8  9
+   8     6 12 13  6  1  2  3  7  4  5
+   9     6  0  0  1  6
+  10     0  0  0  0
+  11     0  0  0  6  1  2  3  7  4  5
+  12     8 14 15  4  1  2  3  7
+  13     8  0  0  2  4  5
+  14    12  0  0  2  1  2
+  15    12 16 17  2  3  7
+  16    15  0  0  1  3
+  17    15  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  1  6
+  20     7  0  0  1  8
+  21     7  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     5 26 27  4 10 11 12 15
+  25     5  0  0  1 14
+  26    24  0  0  1 10
+  27    24  0  0  3 11 12 15
+  28     0  0  0  0
+  29     0  0  0  1 13
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  9  1  1  9
+   5 -   2 18 19  5  2 10 12 14 15
+   6 -   4  8  9  7  1  1  7
+   7 -   4 16 17  2  1  8  9
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6  0  0  1  1  6  6
+  10 -   8 12 13  4  2  1  3  7  7
+  11 -   8  0  0  2  1  4  5
+  12 -  10  0  0  2  1  1  2
+  13 -  10 14 15  2  2  3  3  7  7
+  14 -  13  0  0  1  1  3  3
+  15 -  13  0  0  1  1  7  7
+  16 -   7  0  0  1  1  8  8
+  17 -   7  0  0  1  1  9  9
+  18 -   5 20 21  4  2 10 12 15 15
+  19 -   5  0  0  1  1 14 14
+  20 -  18  0  0  1  1 10 10
+  21 -  18  0  0  3  2 11 12 15 15
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1824
+Total number of ignored atom records:        250
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2386
+ selectset done           0
+ eigen done           0
+ tau           1   2.19503736             195         223
+ #popped           2           1
+ #selectset contacts        2386
+ selectset done           1
+ eigen done           1
+ tau           3   1.26183581             125         195         239
+ #popped           4           2
+ #selectset contacts        2386
+ selectset done           2
+ eigen done           2
+ tau           5   7.09712839              98         125
+ #popped           6           3
+ #selectset contacts        2386
+ selectset done           3
+ eigen done           3
+ tau           7   2.17750001              98
+ #popped           8           3
+ #selectset contacts        2386
+ selectset done           3
+ eigen done           3
+ tau           9   1.32628000              69          87
+ #popped          10           3
+ #selectset contacts        2386
+ selectset done           3
+ eigen done           3
+ tau          11   1.06880212              14          26          38
+ #popped          12           4
+ #selectset contacts        2386
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          13           3
+ #selectset contacts        2386
+ selectset done           3
+ eigen done           3
+ tau          13  0.457356066              69
+ #popped          14           3
+ #selectset contacts        2386
+ selectset done           3
+ eigen done           3
+ tau          15  0.422937065              26
+ #popped          17           3
+ #selectset contacts        2386
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped           7           2
+ #selectset contacts        2386
+ selectset done           2
+ eigen done           2
+ tau          17   1.07995689             110
+ #popped           5           1
+ #selectset contacts        2386
+ selectset done           1
+ eigen done           1
+ tau          19   2.46101785             143
+ #popped          21           1
+ #selectset contacts        2386
+ selectset done           1
+ eigen done           1
+ tau          21  0.244682714             155
+ #popped          23           1
+ #selectset contacts        2386
+ selectset done           1
+ eigen done           1
+ tau          23   1.92691350             185
+ #popped          24           2
+ #selectset contacts        2386
+ selectset done           2
+ eigen done           2
+ tau          25   1.24640095             169
+ #popped          25           1
+ #selectset contacts        2386
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped           3           0
+ #selectset contacts        2386
+ selectset done           0
+ eigen done           0
+ tau          27  0.670277596             206
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         257
+         257  residues read 5H5X.dssp                                                   
+  exclude short helix           2           5
+  grow short strand          15          19
+  grow short strand          64          68
+  grow short strand          93          96
+  exclude short helix         107         109
+  exclude short helix         152         154
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  2  1  3  4  5  7  6 14  8  9 10 11 12 15 13
+   2     1  4  5 14  2  1  3  4  5  7  6 14  8  9 10 11 12 15
+   3     1  0  0  1 13
+   4     2  6  7  9  2  1  3  4  5  7  6 14  8
+   5     2 20 21  5  9 10 11 12 15
+   6     4  8  9  8  2  1  3  4  5  7  6 14
+   7     4  0  0  1  8
+   8     6 10 11  7  2  1  3  4  5  7  6
+   9     6  0  0  1 14
+  10     8 12 13  6  2  1  3  4  5  7
+  11     8  0  0  1  6
+  12    10  0  0  1  2
+  13    10 14 15  5  1  3  4  5  7
+  14    13 16 17  4  1  3  4  5
+  15    13  0  0  1  7
+  16    14  0  0  1  1
+  17    14  0  0  3  3  4  5
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     5  0  0  1  9
+  21     5 22 23  4 10 11 12 15
+  22    21  0  0  1 10
+  23    21 24 25  3 11 12 15
+  24    23  0  0  1 11
+  25    23  0  0  2 12 15
+  26     0  0  0  0
+  27     0  0  0  1 11
+  28     0  0  0  0
+  29     0  0  0  1 13
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  9  2  1  8 14 14
+   5 -   2 18 19  5  2  9 12 15 15
+   6 -   4  8  9  8  2  1  7 14 14
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  7  1  1  7
+   9 -   6  0  0  1  1 14 14
+  10 -   8 12 13  6  2  1  5  7  7
+  11 -   8  0  0  1  1  6  6
+  12 -  10  0  0  1  1  2  2
+  13 -  10 14 15  5  3  1  1  3  5  7  7
+  14 -  13 16 17  4  2  1  1  3  5
+  15 -  13  0  0  1  1  7  7
+  16 -  14  0  0  1  1  1  1
+  17 -  14  0  0  3  1  3  5
+  18 -   5  0  0  1  1  9  9
+  19 -   5 20 21  4  2 10 12 15 15
+  20 -  19  0  0  1  1 10 10
+  21 -  19 22 23  3  2 11 12 15 15
+  22 -  21  0  0  1  1 11 11
+  23 -  21  0  0  2  2 12 12 15 15
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            246
+Total number of atoms read in:              1744
+Total number of ignored atom records:        190
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+         246  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2281
+ selectset done           0
+ eigen done           0
+ tau           1   1.68623459              63          83          93         137
+ #popped           2           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau           3   2.05202007              93
+ #popped           4           2
+ #selectset contacts        2281
+ selectset done           2
+ eigen done           2
+ tau           5  0.695867479              39          63
+ #popped           6           3
+ #selectset contacts        2281
+ selectset done           3
+ eigen done           3
+ tau           7  0.597470105              15          26
+ #popped           8           3
+ #selectset contacts        2281
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2281
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau           9   1.48051238             194         205
+ #popped          10           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau          11  0.655781746             217         235
+ #popped          12           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau          13  0.627725899             170         184
+ #popped          14           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau          15  0.499440998             217
+ #popped          16           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau          17   2.27807498             194
+ #popped          18           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2281
+ selectset done           0
+ eigen done           0
+ tau          19   2.51802993              83         117
+ #popped          20           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau          21   2.17742395              83
+ #popped          22           2
+ #selectset contacts        2281
+ selectset done           2
+ eigen done           2
+ tau          23  0.905221820              73
+ #popped          23           1
+ #selectset contacts        2281
+ selectset done           1
+ eigen done           1
+ tau          25  0.740014791             127
+ #popped          21           0
+ #selectset contacts        2281
+ selectset done           0
+ eigen done           0
+ tau          27  0.975574732             105
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-NOV-16   5H5X              COMPND   2 MOLECULE: PUTATIVE OXIDOREDUCTASE;                                   SOURCE   2 ORGANISM_SCIENTIFIC: STREPTOMYCES COELICOLOR (STRAIN ATCC B          AUTHOR    X.-D.KONG,J.-H.XU,J.ZHOU                                              
+           0
+         246
+         246  residues read 5H5X.dssp                                                   
+  grow short strand          10          14
+  grow short strand          59          63
+  grow short strand          88          91
+  exclude short helix         102         104
+  exclude short helix         147         149
+  grow short helix         197         203
+  exclude short helix         227         229
+  grow short strand         236         239
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  7  2  4  5 10 11 12 15 14 13  6  9  8
+   2     1  4  5 12  1  3  7  2  4  5 10 11 12 15 14 13
+   3     1 20 21  3  6  9  8
+   4     2  6  7  6  1  3  7  2  4  5
+   5     2 10 11  6 10 11 12 15 14 13
+   6     4  8  9  4  1  3  7  2
+   7     4  0  0  2  4  5
+   8     6  0  0  3  1  3  7
+   9     6  0  0  1  2
+  10     5 12 13  5 10 11 12 15 14
+  11     5  0  0  1 13
+  12    10 16 17  4 10 11 12 15
+  13    10  0  0  1 14
+  14     0  0  0  4 10 11 12 15
+  15     0  0  0  0
+  16    12  0  0  3 10 11 12
+  17    12  0  0  1 15
+  18     0  0  0  3 10 11 12
+  19     0  0  0  0
+  20     3 22 23  2  6  9
+  21     3  0  0  1  8
+  22    20  0  0  1  6
+  23    20  0  0  1  9
+  24     0  0  0  0
+  25     0  0  0  1  6
+  26     0  0  0  1  9
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 12  3  1  5  7  7 10 15
+   3 -   1 16 17  3  2  6  6  8  9
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2 10 11  6  1 10 15
+   6 -   4  8  9  4  2  1  3  7  7
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  3  3  1  1  3  3  7  7
+   9 -   6  0  0  1  1  2  2
+  10 -   5 12 13  5  2 10 12 14 15
+  11 -   5  0  0  1  1 13 13
+  12 -  10 14 15  4  2 10 12 15 15
+  13 -  10  0  0  1  1 14 14
+  14 -  12  0  0  3  1 10 12
+  15 -  12  0  0  1  1 15 15
+  16 -   3 18 19  2  2  6  6  9  9
+  17 -   3  0  0  1  1  8  8
+  18 -  16  0  0  1  1  6  6
+  19 -  16  0  0  1  1  9  9
+
+ CHAIN : 5H5XA
+ CHAIN : 5H5XB
+ CHAIN : 5H5XC
+ CHAIN : 5H5XD
+ CHAIN : 5H5XE
+ CHAIN : 5H5XF
+ CHAIN : 5H5XG
+ CHAIN : 5H5XH
+ CHAIN : 5H5XI
+ CHAIN : 5H5XJ
+ CHAIN : 5H5XK
+ CHAIN : 5H5XL
+

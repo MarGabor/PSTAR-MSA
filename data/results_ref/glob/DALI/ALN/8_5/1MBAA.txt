@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1MBAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1A6K-A 19.0  1.9  142   151   25   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1MBAA Sbjct=1A6KA Z-score=19.0
+
+DSSP  LLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLLLLLLLL-HHHHHLLLL
+Query SLSAAEADLAGKSWAPVFANKNANGLDFLVALFEKFPDSANFFADFKGKS-VADIKASPK   59
+ident  ||  |  |    || | |     | | |  ||   |     |  ||     |  |||  
+Sbjct VLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHLKtEAEMKASED   60
+DSSP  LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHLLLLLLLLLlHHHHHLLHH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHHHH-LLLLHHHHHHHHHHHHHHHHL
+Query LRDVSSRIFTRLNEFVNNAAnagKMSAMLSQFAKEHVG-FGVGSAQFENVRSMFPGFVAS  118
+ident |        | |              | |   |  |           |           |
+Sbjct LKKHGVTVLTALGAILKKKG---HHEAELKPLAQSHATkHKIPIKYLEFISEAIIHVLHS  117
+DSSP  HHHHHHHHHHHHHHHHHLLL---LLHHHHHHHHHHHHHlLLLLHHHHHHHHHHHHHHHHH
+
+DSSP  LLL--LLLLHHHHHHHHHHHHHHHHHHLL----l
+Query VAA--PPAGADAAWTKLFGLIIDALKAAG----a  146
+ident        | |  |  |   |      |       
+Sbjct RHPgdFGADAQGAMNKALELFRKDIAAKYkelgy  151
+DSSP  HLHhhLLHHHHHHHHHHHHHHHHHHHHHHhhhll
+
+
+# Structural equivalences
+   1: 1MBA-A 1A6K-A     1 -  50 <=>    1 -  50   (SER    1  - SER   50  <=> VAL    1  - LYS   50 )                          
+   1: 1MBA-A 1A6K-A    51 -  79 <=>   52 -  80   (VAL   51  - ALA   79  <=> GLU   52  - GLY   80 )                          
+   1: 1MBA-A 1A6K-A    83 -  97 <=>   81 -  95   (LYS   83  - GLY   97  <=> HIS   81  - THR   95 )                          
+   1: 1MBA-A 1A6K-A    98 - 121 <=>   97 - 120   (PHE   98  - ALA  121  <=> HIS   97  - PRO  120 )                          
+   1: 1MBA-A 1A6K-A   122 - 145 <=>  123 - 146   (PRO  122  - GLY  145  <=> PHE  123  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1MBA-A 1A6K-A  U(1,.)   0.870856 -0.477759 -0.115567          -57.609341"
+-matrix  "1MBA-A 1A6K-A  U(2,.)   0.485462  0.872835  0.049861          -69.071861"
+-matrix  "1MBA-A 1A6K-A  U(3,.)   0.077049 -0.099525  0.992047          -36.342869"
+

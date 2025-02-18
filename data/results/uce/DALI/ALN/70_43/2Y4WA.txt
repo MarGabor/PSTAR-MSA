@@ -1,0 +1,39 @@
+# Job: uce
+# Query: 2Y4WA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CYX-C 17.8  2.1  151   169   40   MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 G2;                        
+
+# Pairwise alignments
+
+No 1: Query=2Y4WA Sbjct=2CYXC Z-score=17.8
+
+DSSP  --LLLH--HHHHHHHHHHHHHHLLLLLEEEELLLL-LLLLLEEEEELLLLLLLLLLEEEE
+Query --MSTP--ARRRLMRDFKRLQEDPPVGVSGAPSEN-NIMQWNAVIFGPEGTPFEDGTFKL   55
+ident         |  |||   | |   || |    |    |   | | | ||| | || | |  
+Sbjct gsEFMAgtALKRLMAEYKQLTLNPPEGIVAGPMNEeNFFEWEALIMGPEDTCFEFGVFPA   60
+DSSP  llLHHHhhHHHHHHHHHHHHHHLLLLLEEEEELLLlLLLEEEEEEELLLLLLLLLLEEEE
+
+DSSP  EEELLLLLLLLLLEEEELLLLLLLLLLLLLLLLLHHHLLL-------------LLLLLLL
+Query VIEFSEEYPNKPPTVRFLSKMFHPNVYADGSICLDILQNR-------------WSPTYDV  102
+ident    |   ||  ||  ||   ||||| | ||  |  ||                |||   |
+Sbjct ILSFPLDYPLSPPKMRFTCEMFHPNIYPDGRVCISILHAPgddpmgyessaerWSPVQSV  120
+DSSP  EEELLLLLLLLLLEEEELLLLLLLLLLLLLLLLLHHHLLLllllllllhhhhlLLLLLLH
+
+DSSP  HHHHHHHHHHHHLLLLLLLLLHHHHHHHHHLHHHHHHHHHHHHHHLLLLl
+Query SSILTSIQSLLDEPNPNSPANSQAAQLYQENKREYEKRVSAIVEQSWNDs  152
+ident   || |  | | |||  | ||  |            |    ||  |    
+Sbjct EKILLSVVSMLAEPNDESGANVDASKMWRDDREQFYKIAKQIVQKSLGL-  169
+DSSP  HHHHHHHHHHHHLLLLLLHHHHHHHHHHHLLHHHHHHHHHHHHHHHLLL-
+
+
+# Structural equivalences
+   1: 2Y4W-A 2CYX-C     1 -   4 <=>    3 -   6   (MET    1  - PRO    4  <=> GLU   -2  - ALA    2 )                          
+   1: 2Y4W-A 2CYX-C     5 -  31 <=>    9 -  35   (ALA    5  - ASN   31  <=> ALA    5  - GLU   31 )                          
+   1: 2Y4W-A 2CYX-C    32 -  95 <=>   37 - 100   (ASN   32  - ARG   95  <=> ASN   33  - PRO   96 )                          
+   1: 2Y4W-A 2CYX-C    96 - 151 <=>  114 - 169   (TRP   96  - ASP  151  <=> TRP  110  - LEU  165 )                          
+
+# Translation-rotation matrices
+-matrix  "2Y4W-A 2CYX-C  U(1,.)   0.571965  0.779502 -0.255409          -34.011158"
+-matrix  "2Y4W-A 2CYX-C  U(2,.)  -0.206282 -0.164676 -0.964536           -6.739583"
+-matrix  "2Y4W-A 2CYX-C  U(3,.)  -0.793917  0.604367  0.066608          -43.317707"
+

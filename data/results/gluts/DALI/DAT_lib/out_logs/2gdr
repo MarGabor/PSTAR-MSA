@@ -1,0 +1,1001 @@
+A length: 202
+B length: 201
+C length: 202
+D length: 201
+E length: 202
+F length: 201
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1575
+Total number of ignored atom records:        102
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau           1   2.21448612              70
+ #popped           2           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau           3   1.60560548              29          51
+ #popped           4           2
+ #selectset contacts        1897
+ selectset done           2
+ eigen done           2
+ tau           5  0.845467985              29
+ #popped           6           2
+ #selectset contacts        1897
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau           7  0.673415124              40
+ #popped           3           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau           9   2.57318234             186
+ #popped          10           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau          11   1.86148691              98
+ #popped          12           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau          13   1.50223267              82
+ #popped          13           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau          15   1.69852984             142
+ #popped          16           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau          17   1.26576471             132
+ #popped          18           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          17           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau          19   1.10949612             157
+ #popped          21           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau          21   1.26346433             170
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+           0
+         202
+         202  residues read 2GDR.dssp                                                   
+  grow short strand           2           5
+  grow short strand          25          29
+  exclude short helix          43          45
+  grow short strand          54          56
+  grow short strand          62          64
+ crowded segment excluded!
+  exclude short helix         106         108
+  exclude short helix         110         113
+  exclude short helix         166         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6  7  8  9 10
+   2     1  6  7  5  1  2  3  4  5
+   3     1 10 11  5  6  7  8  9 10
+   4     0  0  0  5  1  2  3  4  5
+   5     0  0  0  0
+   6     2  0  0  3  1  2  3
+   7     2  0  0  2  4  5
+   8     0  0  0  0
+   9     0  0  0  0
+  10     3 12 13  4  6  7  8  9
+  11     3  0  0  1 10
+  12    10  0  0  1  6
+  13    10 16 17  3  7  8  9
+  14     0  0  0  0
+  15     0  0  0  1  6
+  16    13  0  0  1  7
+  17    13 22 23  2  8  9
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  2  8  9
+  22    17  0  0  1  8
+  23    17  0  0  1  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  5  1  1  5
+   3 -   1  6  7  5  1  6 10
+   4 -   2  0  0  3  1  1  3
+   5 -   2  0  0  2  1  4  5
+   6 -   3  8  9  4  1  6  9
+   7 -   3  0  0  1  1 10 10
+   8 -   6  0  0  1  1  6  6
+   9 -   6 10 11  3  1  7  9
+  10 -   9  0  0  1  1  7  7
+  11 -   9 12 13  2  1  8  9
+  12 -  11  0  0  1  1  8  8
+  13 -  11  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            201
+Total number of atoms read in:              1565
+Total number of ignored atom records:         95
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+         201  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau           1   2.75146008              82         188
+ #popped           2           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau           3   1.96463013              29          51
+ #popped           4           2
+ #selectset contacts        1899
+ selectset done           2
+ eigen done           2
+ tau           5   1.66152012              64          82
+ #popped           6           2
+ #selectset contacts        1899
+ selectset done           2
+ eigen done           2
+ tau           7   1.45519221              64
+ #popped           8           2
+ #selectset contacts        1899
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau           9  0.798748910              41
+ #popped           3           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          11   1.75793183              98
+ #popped          13           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          13   1.59868062             132
+ #popped          14           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau          15  0.908385098             108
+ #popped          17           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau          17  0.795755982             118
+ #popped          15           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          19   1.24592721             151
+ #popped          21           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          21  0.784780025             164         178
+ #popped          22           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          23   1.18243241             164
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+           0
+         201
+         201  residues read 2GDR.dssp                                                   
+  grow short strand           2           5
+  grow short strand          36          37
+  exclude short helix          43          46
+  grow short strand          54          56
+  grow short strand          62          64
+ crowded segment excluded!
+  exclude short helix          78          80
+  grow short helix         106         112
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  5 12  6  4  7  8  9 10 11
+   2     1  4  5  7  1  2  3  5 12  6  4
+   3     1 12 13  5  7  8  9 10 11
+   4     2  6  7  6  1  2  3  5 12  6
+   5     2  0  0  1  4
+   6     4  8  9  5  1  2  3  5 12
+   7     4  0  0  1  6
+   8     6  0  0  4  1  2  3  5
+   9     6  0  0  1 12
+  10     0  0  0  1  4
+  11     0  0  0  0
+  12     3  0  0  1  7
+  13     3 14 15  4  8  9 10 11
+  14    13 18 19  2  8  9
+  15    13 24 25  2 10 11
+  16     0  0  0  0
+  17     0  0  0  2  8  9
+  18    14  0  0  1  8
+  19    14  0  0  1  9
+  20     0  0  0  0
+  21     0  0  0  2 10 11
+  22     0  0  0  2 10 11
+  23     0  0  0  0
+  24    15  0  0  1 10
+  25    15  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  7  2  1  6 12 12
+   3 *   1 10 11  5  1  7 11
+   4 -   2  6  7  6  3  1  3  5  6 12 12
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  5  3  1  3  5  5 12 12
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  4  2  1  3  5  5
+   9 -   6  0  0  1  1 12 12
+  10 -   3  0  0  1  1  7  7
+  11 -   3 12 13  4  1  8 11
+  12 -  11 14 15  2  1  8  9
+  13 -  11 16 17  2  1 10 11
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1  9  9
+  16 -  13  0  0  1  1 10 10
+  17 -  13  0  0  1  1 11 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1575
+Total number of ignored atom records:        106
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1916
+ selectset done           0
+ eigen done           0
+ tau           1   2.33290958              29          52
+ #popped           2           1
+ #selectset contacts        1916
+ selectset done           1
+ eigen done           1
+ tau           3   2.68149853              82         188
+ #popped           4           2
+ #selectset contacts        1916
+ selectset done           2
+ eigen done           2
+ tau           5   1.48142505              82
+ #popped           6           2
+ #selectset contacts        1916
+ selectset done           2
+ eigen done           2
+ tau           7   1.62084329              64
+ #popped           8           2
+ #selectset contacts        1916
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1916
+ selectset done           1
+ eigen done           1
+ tau           9   1.46955884              97
+ #popped          11           1
+ #selectset contacts        1916
+ selectset done           1
+ eigen done           1
+ tau          11   1.46137798             132
+ #popped          12           2
+ #selectset contacts        1916
+ selectset done           2
+ eigen done           2
+ tau          13   1.17485917             107
+ #popped          15           2
+ #selectset contacts        1916
+ selectset done           2
+ eigen done           2
+ tau          15  0.959488332             117
+ #popped          13           1
+ #selectset contacts        1916
+ selectset done           1
+ eigen done           1
+ tau          17   1.22396684             143
+ #popped          19           1
+ #selectset contacts        1916
+ selectset done           1
+ eigen done           1
+ tau          19  0.913484395             163         176
+ #popped          20           1
+ #selectset contacts        1916
+ selectset done           1
+ eigen done           1
+ tau          21   1.13073766             163
+ #popped          22           1
+ #selectset contacts        1916
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        1916
+ selectset done           0
+ eigen done           0
+ tau          23  0.758508384              41
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+           0
+         202
+         202  residues read 2GDR.dssp                                                   
+  grow short strand           2           5
+  grow short strand          26          29
+  exclude short helix          43          46
+  grow short strand          54          56
+  grow short strand          62          64
+ crowded segment excluded!
+  exclude short helix          78          80
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 11  1  2  3  4  5 11  6  7  8  9 10
+   2     0  0  0 11  1  2  3  4  5 11  6  7  8  9 10
+   3     0  0  0  0
+   4     1  6  7  6  1  2  3  4  5 11
+   5     1 10 11  5  6  7  8  9 10
+   6     4  8  9  5  1  2  3  4  5
+   7     4  0  0  1 11
+   8     6  0  0  4  1  2  3  4
+   9     6  0  0  1  5
+  10     5  0  0  1  6
+  11     5 12 13  4  7  8  9 10
+  12    11 16 17  2  7  8
+  13    11 22 23  2  9 10
+  14     0  0  0  0
+  15     0  0  0  2  7  8
+  16    12  0  0  1  7
+  17    12  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  2  9 10
+  20     0  0  0  2  9 10
+  21     0  0  0  0
+  22    13  0  0  1  9
+  23    13  0  0  1 10
+  24     0  0  0  0
+  25     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  2  1  5 11 11
+   3 -   1  8  9  5  1  6 10
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1 11 11
+   6 -   4  0  0  4  1  1  4
+   7 -   4  0  0  1  1  5  5
+   8 -   3  0  0  1  1  6  6
+   9 -   3 10 11  4  1  7 10
+  10 -   9 12 13  2  1  7  8
+  11 -   9 14 15  2  1  9 10
+  12 -  10  0  0  1  1  7  7
+  13 -  10  0  0  1  1  8  8
+  14 -  11  0  0  1  1  9  9
+  15 -  11  0  0  1  1 10 10
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            201
+Total number of atoms read in:              1565
+Total number of ignored atom records:         97
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+         201  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau           1   2.34612107              98         187
+ #popped           2           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau           3   2.60211420              82          98
+ #popped           4           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau           5   2.00480127              29          51
+ #popped           6           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau           7   1.35472369              82
+ #popped           8           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau           9   1.57704687              64
+ #popped          10           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau          11  0.668371677              29
+ #popped          12           2
+ #selectset contacts        1903
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           7           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          13  0.740658104              41
+ #popped           3           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          15   1.44651258             132
+ #popped          16           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          17   1.42270529             113
+ #popped          17           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          19  0.930285394             164
+ #popped          20           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          21   1.56580424             142
+ #popped          23           1
+ #selectset contacts        1903
+ selectset done           1
+ eigen done           1
+ tau          23  0.775862038             152
+ #popped          21           0
+ #selectset contacts        1903
+ selectset done           0
+ eigen done           0
+ tau          25  0.805129886             175
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+           0
+         201
+         201  residues read 2GDR.dssp                                                   
+  grow short strand           2           5
+  grow short strand          36          37
+  exclude short helix          43          46
+  grow short strand          54          56
+  grow short strand          62          64
+ crowded segment excluded!
+  exclude short helix          78          80
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  5  6 12  4  7  8  9 10 11
+   2     1  4  5  8  1  2  3  5  6 12  4  7
+   3     1 16 17  4  8  9 10 11
+   4     2  6  7  7  1  2  3  5  6 12  4
+   5     2  0  0  1  7
+   6     4  8  9  6  1  2  3  5  6 12
+   7     4  0  0  1  4
+   8     6 10 11  5  1  2  3  5  6
+   9     6  0  0  1 12
+  10     8 12 13  4  1  2  3  5
+  11     8  0  0  1  6
+  12    10  0  0  3  1  2  3
+  13    10  0  0  1  5
+  14     0  0  0  1  4
+  15     0  0  0  0
+  16     3 18 19  2  8  9
+  17     3 20 21  2 10 11
+  18    16  0  0  1  8
+  19    16  0  0  1  9
+  20    17  0  0  1 10
+  21    17  0  0  1 11
+  22     0  0  0  0
+  23     0  0  0  1 10
+  24     0  0  0  0
+  25     0  0  0  1 10
+  26     0  0  0  0
+  27     0  0  0  1 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  8  2  1  7 12 12
+   3 -   1 14 15  4  1  8 11
+   4 -   2  6  7  7  2  1  6 12 12
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  6  3  1  3  5  6 12 12
+   7 -   4  0  0  1  1  4  4
+   8 -   6 10 11  5  2  1  3  5  6
+   9 -   6  0  0  1  1 12 12
+  10 -   8 12 13  4  2  1  3  5  5
+  11 -   8  0  0  1  1  6  6
+  12 -  10  0  0  3  1  1  3
+  13 -  10  0  0  1  1  5  5
+  14 -   3 16 17  2  1  8  9
+  15 -   3 18 19  2  1 10 11
+  16 -  14  0  0  1  1  8  8
+  17 -  14  0  0  1  1  9  9
+  18 -  15  0  0  1  1 10 10
+  19 -  15  0  0  1  1 11 11
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            202
+Total number of atoms read in:              1575
+Total number of ignored atom records:         94
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+  calculate residue outside grid:          58
+  calculate residue outside grid:          59
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau           1   3.31471157              81         187
+ #popped           2           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau           3   1.94467044              29          51
+ #popped           4           2
+ #selectset contacts        1919
+ selectset done           2
+ eigen done           2
+ tau           5   1.50016010              81
+ #popped           6           2
+ #selectset contacts        1919
+ selectset done           2
+ eigen done           2
+ tau           7   1.50937498              64
+ #popped           8           2
+ #selectset contacts        1919
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau           9  0.754373968              41
+ #popped           3           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau          11   1.40643728              98
+ #popped          13           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau          13   1.64505351             132
+ #popped          14           1
+ #selectset contacts        1919
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          15           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau          15   1.13531923             143
+ #popped          17           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau          17   1.09886813             157
+ #popped          19           0
+ #selectset contacts        1919
+ selectset done           0
+ eigen done           0
+ tau          19   1.22728515             170
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+           0
+         202
+         202  residues read 2GDR.dssp                                                   
+  grow short strand           2           5
+  grow short strand          36          37
+  exclude short helix          43          45
+  grow short strand          54          56
+  grow short strand          62          64
+ crowded segment excluded!
+  exclude short helix          78          80
+  exclude short helix         166         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  5  6 12  4  7  8  9 10 11
+   2     1  4  5  7  1  2  3  5  6 12  4
+   3     1 12 13  5  7  8  9 10 11
+   4     2  6  7  6  1  2  3  5  6 12
+   5     2  0  0  1  4
+   6     4  8  9  5  1  2  3  5  6
+   7     4  0  0  1 12
+   8     6  0  0  4  1  2  3  5
+   9     6  0  0  1  6
+  10     0  0  0  1  4
+  11     0  0  0  0
+  12     3  0  0  1  7
+  13     3 14 15  4  8  9 10 11
+  14    13  0  0  2  8  9
+  15    13 20 21  2 10 11
+  16     0  0  0  0
+  17     0  0  0  2 10 11
+  18     0  0  0  0
+  19     0  0  0  2 10 11
+  20    15  0  0  1 10
+  21    15  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  7  2  1  6 12 12
+   3 *   1 10 11  5  1  7 11
+   4 -   2  6  7  6  3  1  3  5  6 12 12
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  5  2  1  3  5  6
+   7 -   4  0  0  1  1 12 12
+   8 -   6  0  0  4  2  1  3  5  5
+   9 -   6  0  0  1  1  6  6
+  10 -   3  0  0  1  1  7  7
+  11 -   3 12 13  4  1  8 11
+  12 -  11  0  0  2  1  8  9
+  13 -  11 14 15  2  1 10 11
+  14 -  13  0  0  1  1 10 10
+  15 -  13  0  0  1  1 11 11
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            201
+Total number of atoms read in:              1565
+Total number of ignored atom records:        119
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+  Reading DSSP file
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+         201  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau           1   2.71297812              82         188
+ #popped           2           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau           3   1.87666166              29          51
+ #popped           4           2
+ #selectset contacts        1899
+ selectset done           2
+ eigen done           2
+ tau           5   1.71784294              64          82
+ #popped           6           2
+ #selectset contacts        1899
+ selectset done           2
+ eigen done           2
+ tau           7   1.39922333              64
+ #popped           8           2
+ #selectset contacts        1899
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau           9  0.690443993              41
+ #popped           3           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          11   1.63236535              98
+ #popped          13           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          13   1.50207448             142
+ #popped          14           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau          15   1.29213488             132
+ #popped          16           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau          17  0.958333313             109
+ #popped          19           1
+ #selectset contacts        1899
+ selectset done           1
+ eigen done           1
+ tau          19  0.753623188             122
+ #popped          15           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          21   1.00207126             157
+ #popped          23           0
+ #selectset contacts        1899
+ selectset done           0
+ eigen done           0
+ tau          23   1.45891643             170
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             16-MAR-06   2GDR              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: BURKHOLDERIA XENOVORANS;                        AUTHOR    E.I.TOCHEVA,P.D.FORTIN,L.D.ELTIS,M.E.P.MURPHY                         
+           0
+         201
+         201  residues read 2GDR.dssp                                                   
+  grow short strand           2           5
+  grow short strand          36          37
+  exclude short helix          43          45
+  grow short strand          54          56
+  grow short strand          62          64
+ crowded segment excluded!
+  exclude short helix          78          80
+  grow short helix         106         112
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  5 12  6  4  7  8  9 10 11
+   2     1  4  5  7  1  2  3  5 12  6  4
+   3     1 12 13  5  7  8  9 10 11
+   4     2  6  7  6  1  2  3  5 12  6
+   5     2  0  0  1  4
+   6     4  8  9  5  1  2  3  5 12
+   7     4  0  0  1  6
+   8     6  0  0  4  1  2  3  5
+   9     6  0  0  1 12
+  10     0  0  0  1  4
+  11     0  0  0  0
+  12     3  0  0  1  7
+  13     3 14 15  4  8  9 10 11
+  14    13 18 19  2  8  9
+  15    13 22 23  2 10 11
+  16     0  0  0  2  8  9
+  17     0  0  0  0
+  18    14  0  0  1  8
+  19    14  0  0  1  9
+  20     0  0  0  0
+  21     0  0  0  1  9
+  22    15  0  0  1 10
+  23    15  0  0  1 11
+  24     0  0  0  0
+  25     0  0  0  1 11
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  7  2  1  6 12 12
+   3 *   1 10 11  5  1  7 11
+   4 -   2  6  7  6  3  1  3  5  6 12 12
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  5  3  1  3  5  5 12 12
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  4  2  1  3  5  5
+   9 -   6  0  0  1  1 12 12
+  10 -   3  0  0  1  1  7  7
+  11 -   3 12 13  4  1  8 11
+  12 -  11 14 15  2  1  8  9
+  13 -  11 16 17  2  1 10 11
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1  9  9
+  16 -  13  0  0  1  1 10 10
+  17 -  13  0  0  1  1 11 11
+
+ CHAIN : 2GDRA
+ CHAIN : 2GDRB
+ CHAIN : 2GDRC
+ CHAIN : 2GDRD
+ CHAIN : 2GDRE
+ CHAIN : 2GDRF
+

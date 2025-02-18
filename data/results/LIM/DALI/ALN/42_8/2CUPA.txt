@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 2CUPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2EGQ-A  8.3  2.0   64    77   34   MOLECULE: FHL1 PROTEIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=2CUPA Sbjct=2EGQA Z-score=8.3
+
+DSSP  ----------LLLLLLLLLLLLLLLLL---LLLEEEELLEEEELLLLLLLLLLLLLLLLL
+Query ----------GSSGSSGCVECRKPIGA---DSKEVHYKNRFWHDTCFRCAKCLHPLANET   47
+ident                  |  |  ||      |  | |    ||| || | ||   |||  
+Sbjct gssgssgdcyKNFVAKKCAGCKNPITGfgkGSSVVAYEGQSWHDYCFHCKKCSVNLANKR   60
+DSSP  llllllllllLLLLLLLLLLLLLLLLLlllLLLEEEELLEEEELLLLLLLLLLLLLLLLL
+
+DSSP  LEEELLEEELHHHHLLLllllllllllllllllleeelllleeellllllllll
+Query FVAKDNKILCNKCTTREdspkckgcfkaivagdqnveykgtvwhkdcfsgpssg  101
+ident ||       |  |                                         
+Sbjct FVFHQEQVYCPDCAKKL-------------------------------------   77
+DSSP  LLEELLEELLHHHHHHL-------------------------------------
+
+
+# Structural equivalences
+   1: 2CUP-A 2EGQ-A     1 -  17 <=>   11 -  27   (GLY    1  - ALA   17  <=> LYS   11  - GLY   27 )                          
+   1: 2CUP-A 2EGQ-A    18 -  64 <=>   31 -  77   (ASP   18  - GLU   64  <=> GLY   31  - LEU   77 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUP-A 2EGQ-A  U(1,.)   0.465140  0.877901 -0.113732           -0.090523"
+-matrix  "2CUP-A 2EGQ-A  U(2,.)  -0.881136  0.471501  0.035870            9.568065"
+-matrix  "2CUP-A 2EGQ-A  U(3,.)   0.085115  0.083528  0.992864          -11.490386"
+

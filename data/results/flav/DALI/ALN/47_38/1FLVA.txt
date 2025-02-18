@@ -1,0 +1,44 @@
+# Job: flav
+# Query: 1FLVA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2WC1-A 28.0  1.4  168   182   44   MOLECULE: FLAVODOXIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1FLVA Sbjct=2WC1A Z-score=28.0
+
+DSSP  -LLEEEEELLLLLHHHHHHHHHHHHHLLLLEE-EEELLLLLHHHHHHLLEEEEELLEELL
+Query -KKIGLFYGTQTGKTESVAEIIRDEFGNDVVT-LHDVSQAEVTDLNDYQYLIIGCPTWNI   58
+ident   ||||| |  || |   |  | | |   |      |  | | |   |  || | ||   
+Sbjct mAKIGLFFGSDTGTTRKIAKQIKDMFDDEVMAkPLNVNRADVADFMAYDFLILGTPTLGD   60
+DSSP  lLLEEEEELLLLLHHHHHHHHHHLLLLLLLLLlLEEHHHLLHHHHHHLLEEEEEEELLLL
+
+DSSP  LEELH--------HHHHHHLLHHHLLLLLLEEEEEEELLLLLLLLLLLHHHHHHHHHHHH
+Query GELQS--------DWEGLYSELDDVDFNGKLVAYFGTGDQIGYADNFQDAIGILEEKISQ  110
+ident | |           ||       | || ||  | || |||  |   |  |   | |  | 
+Sbjct GQLPGlsanaaseSWEEFLPRIADQDFSGKTIALFGLGDQVTYPLEFVNALFFLHEFFSD  120
+DSSP  LLLLLhhhlllllLHHHHHHHHLLLLLLLLEEEEEEELLLLLLLLLLLLHHHHHHHHHHL
+
+DSSP  LLLEELLLLLLLLLLLLLLLLEELLEELLEEELLLLLHHHHHHHHHHHHHHHHHLLLL--
+Query RGGKTVGYWSTDGYDFNDSKALRNGKFVGLALDEDNQSDLTDDRIKSWVAQLKSEFGL--  168
+ident ||   || |   || | || |   | | ||||| |||  ||  | | |       |||  
+Sbjct RGANVVGRWPAKGYGFEDSLAVVEGEFLGLALDQDNQAALTPERLKGWLSLIAADFGLvl  180
+DSSP  LLLEEELLEELLLLLLLLLLLEELLEELLEEELLLLLHHHHHHHHHHHHHHLHHHHLLll
+
+DSSP  --
+Query --  168
+ident   
+Sbjct pa  182
+DSSP  ll
+
+
+# Structural equivalences
+   1: 1FLV-A 2WC1-A     1 -  31 <=>    2 -  32   (LYS    2  - THR   32  <=> ALA    2  - ALA   32 )                          
+   1: 1FLV-A 2WC1-A    32 -  63 <=>   34 -  65   (LEU   33  - SER   64  <=> PRO   34  - GLY   65 )                          
+   1: 1FLV-A 2WC1-A    64 - 168 <=>   74 - 178   (ASP   65  - LEU  169  <=> SER   74  - LEU  178 )                          
+
+# Translation-rotation matrices
+-matrix  "1FLV-A 2WC1-A  U(1,.)  -0.767624  0.300817 -0.565918           12.927087"
+-matrix  "1FLV-A 2WC1-A  U(2,.)  -0.624576 -0.153093  0.765811           13.384430"
+-matrix  "1FLV-A 2WC1-A  U(3,.)   0.143731  0.941314  0.305401          -26.113199"
+

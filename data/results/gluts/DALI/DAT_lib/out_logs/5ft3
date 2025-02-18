@@ -1,0 +1,402 @@
+A length: 217
+B length: 220
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  865  N  BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  867  CA BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  869  C  BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  871  O  BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  873  CB BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  875  CG BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  877  CD1BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  879  CD2BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  881  CE1BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  883  CE2BPHE A 113 
+ Alternate location indication is not blank or A, ignore atom:  885  CZ BPHE A 113 
+
+Total number of residues read in:            218
+Total number of atoms read in:              1701
+Total number of ignored atom records:        643
+ HEADER    TRANSFERASE                             11-JAN-16   5FT3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.YUNTA                                                               
+  Reading DSSP file
+ HEADER    TRANSFERASE                             11-JAN-16   5FT3              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE EPSILON 2;                       SOURCE   2 ORGANISM_SCIENTIFIC: AEDES AEGYPTI;                                  AUTHOR    C.YUNTA                                                               
+         218  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau           1   1.75287068             113
+ #popped           2           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau           3   4.46464443              78
+ #popped           4           2
+ #selectset contacts        2105
+ selectset done           2
+ eigen done           2
+ tau           5   2.28261399              32          52
+ #popped           6           3
+ #selectset contacts        2105
+ selectset done           3
+ eigen done           3
+ tau           7   1.15869391              64
+ #popped           8           3
+ #selectset contacts        2105
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2105
+ selectset done           2
+ eigen done           2
+ tau           9  0.758410454              42
+ #popped           5           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau          11   1.54211152              98
+ #popped          12           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau          13   2.23002720             123         190
+ #popped          14           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau          15   1.42990077             123         204
+ #popped          16           1
+ #selectset contacts        2105
+ selectset done           1
+ eigen done           1
+ tau          17   1.08255494             123
+ #popped          15           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau          19   1.21729994             135
+ #popped          21           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau          21  0.762388706             145         159
+ #popped          22           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau          23  0.792434931             172
+ #popped          24           0
+ #selectset contacts        2105
+ selectset done           0
+ eigen done           0
+ tau          25   3.03529406             145
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             11-JAN-16   5FT3              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE EPSILON 2;                       SOURCE   2 ORGANISM_SCIENTIFIC: AEDES AEGYPTI;                                  AUTHOR    C.YUNTA                                                               
+           0
+         218
+         218  residues read 5FT3.dssp                                                   
+  grow short strand           2           6
+  grow short strand          28          31
+  exclude short helix          34          36
+  exclude short helix          38          40
+  exclude short helix          42          47
+  grow short strand          55          58
+  grow short strand          61          64
+  exclude short helix         194         197
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  7  8 12  9 10 11
+   2     1  4  5  8  1  2  3  4  5  6  7  8
+   3     1 14 15  4 12  9 10 11
+   4     2  8  9  6  1  2  3  4  5  6
+   5     2 12 13  2  7  8
+   6     0  0  0  6  1  2  3  4  5  6
+   7     0  0  0  0
+   8     4  0  0  5  1  2  3  4  5
+   9     4  0  0  1  6
+  10     0  0  0  0
+  11     0  0  0  0
+  12     5  0  0  1  7
+  13     5  0  0  1  8
+  14     3  0  0  1 12
+  15     3 20 21  3  9 10 11
+  16     0  0  0  1 12
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1 12
+  20    15  0  0  1  9
+  21    15 24 25  2 10 11
+  22     0  0  0  2 10 11
+  23     0  0  0  0
+  24    21  0  0  1 10
+  25    21  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  1 10
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  8  1  1  8
+   3 -   1 10 11  4  1  9 12
+   4 -   2  6  7  6  1  1  6
+   5 -   2  8  9  2  1  7  8
+   6 -   4  0  0  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   5  0  0  1  1  7  7
+   9 -   5  0  0  1  1  8  8
+  10 -   3  0  0  1  1 12 12
+  11 -   3 12 13  3  1  9 11
+  12 -  11  0  0  1  1  9  9
+  13 -  11 14 15  2  1 10 11
+  14 -  13  0  0  1  1 10 10
+  15 -  13  0  0  1  1 11 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2596  N  BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2598  CA BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2600  C  BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2602  O  BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2604  CB BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2606  CG BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2608  CD1BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2610  CD2BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2612  CE1BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2614  CE2BPHE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2616  CZ BPHE B 113 
+
+Total number of residues read in:            221
+Total number of atoms read in:              1729
+Total number of ignored atom records:        580
+ HEADER    TRANSFERASE                             11-JAN-16   5FT3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.YUNTA                                                               
+  Reading DSSP file
+ HEADER    TRANSFERASE                             11-JAN-16   5FT3              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE EPSILON 2;                       SOURCE   2 ORGANISM_SCIENTIFIC: AEDES AEGYPTI;                                  AUTHOR    C.YUNTA                                                               
+         221  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2116
+ selectset done           0
+ eigen done           0
+ tau           1   1.56358361              34         101
+ #popped           2           1
+ #selectset contacts        2116
+ selectset done           1
+ eigen done           1
+ tau           3   1.98191965              34
+ #popped           4           2
+ #selectset contacts        2116
+ selectset done           2
+ eigen done           2
+ tau           5  0.354275495              20
+ #popped           6           2
+ #selectset contacts        2116
+ selectset done           2
+ eigen done           2
+ tau           7  0.872714460              10
+ #popped           5           1
+ #selectset contacts        2116
+ selectset done           1
+ eigen done           1
+ tau           9   1.69048536             133         208
+ #popped          10           2
+ #selectset contacts        2116
+ selectset done           2
+ eigen done           2
+ tau          11   2.04080415             133
+ #popped          12           2
+ #selectset contacts        2116
+ selectset done           2
+ eigen done           2
+ tau          13  0.756972075             111
+ #popped          15           2
+ #selectset contacts        2116
+ selectset done           2
+ eigen done           2
+ tau          15  0.990072131             123
+ #popped          11           1
+ #selectset contacts        2116
+ selectset done           1
+ eigen done           1
+ tau          17   1.53532290             192
+ #popped          18           1
+ #selectset contacts        2116
+ selectset done           1
+ eigen done           1
+ tau          19  0.869677186             146         164
+ #popped          20           1
+ #selectset contacts        2116
+ selectset done           1
+ eigen done           1
+ tau          21   1.21356750             146         174
+ #popped          22           1
+ #selectset contacts        2116
+ selectset done           1
+ eigen done           1
+ tau          23  0.958750963             146
+ #popped           3           0
+ #selectset contacts        2116
+ selectset done           0
+ eigen done           0
+ tau          25   4.23626804              54
+ #popped          26           1
+ #selectset contacts        2116
+ selectset done           1
+ eigen done           1
+ tau          27  0.632008672              44
+ #popped          27           0
+ #selectset contacts        2116
+ selectset done           0
+ eigen done           0
+ tau          29   2.81525493              80
+ #popped          30           1
+ #selectset contacts        2116
+ selectset done           1
+ eigen done           1
+ tau          31   1.05054080              66
+ #popped          31           0
+ #selectset contacts        2116
+ selectset done           0
+ eigen done           0
+ tau          33  0.592857122              90
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             11-JAN-16   5FT3              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE EPSILON 2;                       SOURCE   2 ORGANISM_SCIENTIFIC: AEDES AEGYPTI;                                  AUTHOR    C.YUNTA                                                               
+           0
+         221
+         221  residues read 5FT3.dssp                                                   
+  grow short strand           4           8
+  grow short strand          29          33
+  exclude short helix          40          42
+  exclude short helix          44          49
+  grow short strand          57          60
+  grow short strand          63          66
+  exclude short helix         196         199
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  8 12  9 11 10  4  5  6  7
+   2     1  4  5  8  1  2  3  8 12  9 11 10
+   3     1 30 31  4  4  5  6  7
+   4     2  6  7  3  1  2  3
+   5     2 10 11  5  8 12  9 11 10
+   6     4  8  9  2  1  2
+   7     4  0  0  1  3
+   8     6  0  0  1  1
+   9     6  0  0  1  2
+  10     5 12 13  2  8 12
+  11     5 20 21  3  9 11 10
+  12    10  0  0  1  8
+  13    10  0  0  1 12
+  14     0  0  0  0
+  15     0  0  0  1  8
+  16     0  0  0  1  8
+  17     0  0  0  0
+  18     0  0  0  3  9 11 10
+  19     0  0  0  0
+  20    11 24 25  2  9 11
+  21    11  0  0  1 10
+  22     0  0  0  2  9 11
+  23     0  0  0  0
+  24    20  0  0  1  9
+  25    20  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  4  4  5  6  7
+  28     0  0  0  0
+  29     0  0  0  0
+  30     3 32 33  3  4  5  6
+  31     3  0  0  1  7
+  32    30  0  0  2  4  5
+  33    30  0  0  1  6
+  34     0  0  0  0
+  35     0  0  0  1  7
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  8  2  1  3  8 12
+   3 -   1 18 19  4  1  4  7
+   4 -   2  6  7  3  1  1  3
+   5 -   2 10 11  5  1  8 12
+   6 -   4  8  9  2  1  1  2
+   7 -   4  0  0  1  1  3  3
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  2  2
+  10 -   5 12 13  2  2  8  8 12 12
+  11 -   5 14 15  3  1  9 11
+  12 -  10  0  0  1  1  8  8
+  13 -  10  0  0  1  1 12 12
+  14 -  11 16 17  2  2  9  9 11 11
+  15 -  11  0  0  1  1 10 10
+  16 -  14  0  0  1  1  9  9
+  17 -  14  0  0  1  1 11 11
+  18 -   3 20 21  3  1  4  6
+  19 -   3  0  0  1  1  7  7
+  20 -  18  0  0  2  1  4  5
+  21 -  18  0  0  1  1  6  6
+
+ CHAIN : 5FT3A
+ CHAIN : 5FT3B
+

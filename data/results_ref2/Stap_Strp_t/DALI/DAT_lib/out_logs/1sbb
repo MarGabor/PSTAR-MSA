@@ -1,0 +1,801 @@
+A length: 238
+B length: 239
+C length: 238
+D length: 235
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  823  CB BARG A 113 
+ Alternate location indication is not blank or A, ignore atom:  825  CG BARG A 113 
+ Alternate location indication is not blank or A, ignore atom:  827  CD BARG A 113 
+ Alternate location indication is not blank or A, ignore atom:  829  NE BARG A 113 
+ Alternate location indication is not blank or A, ignore atom:  831  CZ BARG A 113 
+ Alternate location indication is not blank or A, ignore atom:  833  NH1BARG A 113 
+ Alternate location indication is not blank or A, ignore atom:  835  NH2BARG A 113 
+
+Total number of residues read in:            238
+Total number of atoms read in:              1827
+Total number of ignored atom records:        107
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.LI,R.A.MARIUZZA                                                     
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              COMPND   2 MOLECULE: PROTEIN (14.3.D T CELL ANTIGEN RECEPTOR);                  SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    H.LI,R.A.MARIUZZA                                                     
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1987
+ selectset done           0
+ eigen done           0
+ tau           1   6.69619370             113
+ #popped           2           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau           3  0.603674531              90         102
+ #popped           4           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau           5  0.599457026              18          32          42          74
+ #popped           6           2
+ #selectset contacts        1987
+ selectset done           2
+ eigen done           2
+ tau           7  0.735785961              18          42
+ #popped           8           2
+ #selectset contacts        1987
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau           9  0.465662062              53          63
+ #popped          10           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1987
+ selectset done           0
+ eigen done           0
+ tau          11   2.17282271             126         139         209         226
+ #popped          12           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          13  0.731360614             152         173         183
+ #popped          14           2
+ #selectset contacts        1987
+ selectset done           2
+ eigen done           2
+ tau          15  0.581669211             152
+ #popped          16           2
+ #selectset contacts        1987
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          15           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          17  0.369069964             173
+ #popped          18           2
+ #selectset contacts        1987
+ selectset done           2
+ eigen done           2
+ tau          19  0.813933015             163
+ #popped          19           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          21  0.989651442             193
+ #popped          23           1
+ #selectset contacts        1987
+ selectset done           1
+ eigen done           1
+ tau          23  0.221338153             209
+ #popped          13           0
+ #selectset contacts        1987
+ selectset done           0
+ eigen done           0
+ tau          25   999.999023             139
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              COMPND   2 MOLECULE: PROTEIN (14.3.D T CELL ANTIGEN RECEPTOR);                  SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    H.LI,R.A.MARIUZZA                                                     
+           0
+         238
+         238  residues read 1SBB.dssp                                                   
+  grow short strand           2           5
+  grow short strand           8          12
+  grow short strand          54          55
+  grow short strand          63          65
+  grow short strand          73          76
+  exclude short helix          81          83
+  grow short strand         101         103
+  exclude short helix         115         117
+  grow short strand         122         126
+  exclude short helix         130         132
+  grow short strand         162         164
+  grow short strand         168         170
+  grow short strand         175         178
+  exclude short helix         192         195
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  9 11  3  4  5  7  8  6 10 12 13 17 14 15 16 18 19 20
+   2     1  4  5 11  1  2  9 11  3  4  5  7  8  6 10
+   3     1 14 15  9 12 13 17 14 15 16 18 19 20
+   4     2  6  7 10  1  2  9 11  3  4  5  7  8  6
+   5     2  0  0  1 10
+   6     4  0  0  4  1  2  9 11
+   7     4 10 11  6  3  4  5  7  8  6
+   8     0  0  0  4  1  2  9 11
+   9     0  0  0  0
+  10     7  0  0  5  3  4  5  7  8
+  11     7  0  0  1  6
+  12     0  0  0  9 12 13 17 14 15 16 18 19 20
+  13     0  0  0  0
+  14     3 16 17  3 12 13 17
+  15     3 18 19  6 14 15 16 18 19 20
+  16    14  0  0  2 12 13
+  17    14  0  0  1 17
+  18    15 20 21  3 14 15 16
+  19    15 22 23  3 18 19 20
+  20    18  0  0  2 14 15
+  21    18  0  0  1 16
+  22    19  0  0  1 18
+  23    19 24 25  2 19 20
+  24    23  0  0  1 19
+  25    23  0  0  1 20
+  26     0  0  0  0
+  27     0  0  0  0
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 11  1  1 11
+   3 *   1 10 11  9  1 12 20
+   4 -   2  6  7 10  2  1  9 11 11
+   5 -   2  0  0  1  1 10 10
+   6 -   4  0  0  4  3  1  2  9  9 11 11
+   7 -   4  8  9  6  1  3  8
+   8 -   7  0  0  5  2  3  5  7  8
+   9 -   7  0  0  1  1  6  6
+  10 -   3 12 13  3  2 12 13 17 17
+  11 -   3 14 15  6  2 14 16 18 20
+  12 -  10  0  0  2  1 12 13
+  13 -  10  0  0  1  1 17 17
+  14 -  11 16 17  3  1 14 16
+  15 -  11 18 19  3  1 18 20
+  16 -  14  0  0  2  1 14 15
+  17 -  14  0  0  1  1 16 16
+  18 -  15  0  0  1  1 18 18
+  19 -  15 20 21  2  1 19 20
+  20 -  19  0  0  1  1 19 19
+  21 -  19  0  0  1  1 20 20
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            239
+Total number of atoms read in:              1976
+Total number of ignored atom records:         65
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.LI,R.A.MARIUZZA                                                     
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              COMPND   2 MOLECULE: PROTEIN (14.3.D T CELL ANTIGEN RECEPTOR);                  SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    H.LI,R.A.MARIUZZA                                                     
+         239  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2113
+ selectset done           0
+ eigen done           0
+ tau           1   2.40613389              31         122
+ #popped           2           1
+ #selectset contacts        2113
+ selectset done           1
+ eigen done           1
+ tau           3   1.14420378              31         133         146         159         218         228
+ #popped           4           2
+ #selectset contacts        2113
+ selectset done           2
+ eigen done           2
+ tau           5  0.924224973              10         187         197
+ #popped           6           3
+ #selectset contacts        2113
+ selectset done           3
+ eigen done           3
+ tau           7  0.540697634              10
+ #popped           7           2
+ #selectset contacts        2113
+ selectset done           2
+ eigen done           2
+ tau           9  0.578742146              31         146
+ #popped          10           2
+ #selectset contacts        2113
+ selectset done           2
+ eigen done           2
+ tau          11   1.21077669             207         218
+ #popped          12           2
+ #selectset contacts        2113
+ selectset done           2
+ eigen done           2
+ tau          13   1.24251390              21         175
+ #popped          14           3
+ #selectset contacts        2113
+ selectset done           3
+ eigen done           3
+ tau          15  0.478017151             207
+ #popped          16           3
+ #selectset contacts        2113
+ selectset done           3
+ eigen done           3
+ tau          17  0.406300902             187
+ #popped          18           3
+ #selectset contacts        2113
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          15           2
+ #selectset contacts        2113
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           5           1
+ #selectset contacts        2113
+ selectset done           1
+ eigen done           1
+ tau          19  0.500335455             149
+ #popped          21           1
+ #selectset contacts        2113
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           3           0
+ #selectset contacts        2113
+ selectset done           0
+ eigen done           0
+ tau          21   1.09791505              52          63          89         111
+ #popped          22           1
+ #selectset contacts        2113
+ selectset done           1
+ eigen done           1
+ tau          23  0.365013272              79
+ #popped          24           2
+ #selectset contacts        2113
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped          25           1
+ #selectset contacts        2113
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          23           0
+ #selectset contacts        2113
+ selectset done           0
+ eigen done           0
+ tau          25  0.879301667              63         101
+ #popped          26           0
+ #selectset contacts        2113
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              COMPND   2 MOLECULE: PROTEIN (14.3.D T CELL ANTIGEN RECEPTOR);                  SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    H.LI,R.A.MARIUZZA                                                     
+           0
+         239
+         239  residues read 1SBB.dssp                                                   
+  exclude short helix           8          10
+  exclude short helix          14          16
+  grow short helix          22          28
+  grow short strand          40          42
+  grow short strand          48          51
+  grow short strand          63          67
+  grow short helix          71          77
+  grow short strand          82          86
+  grow short strand         111         115
+  grow short strand         118         120
+  grow short strand         154         156
+ crowded segment excluded!
+  grow short strand         195         199
+  grow short strand         222         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17 14 13 17  1 12 15 11 10 16  2  3  4  5  6  7  8  9
+   2     1  4  5  9 14 13 17  1 12 15 11 10 16
+   3     1 24 25  8  2  3  4  5  6  7  8  9
+   4     2  6  7  7 14 13 17  1 12 15 11
+   5     2 20 21  2 10 16
+   6     4  0  0  1 14
+   7     4 10 11  6 13 17  1 12 15 11
+   8     0  0  0  0
+   9     0  0  0  1 14
+  10     7 12 13  5 13 17  1 12 15
+  11     7  0  0  1 11
+  12    10 14 15  4 13 17  1 12
+  13    10  0  0  1 15
+  14    12 16 17  2 13 17
+  15    12  0  0  2  1 12
+  16    14  0  0  1 13
+  17    14  0  0  1 17
+  18     0  0  0  1 13
+  19     0  0  0  0
+  20     5  0  0  1 10
+  21     5  0  0  1 16
+  22     0  0  0  8  2  3  4  5  6  7  8  9
+  23     0  0  0  0
+  24     3  0  0  5  2  3  4  5  6
+  25     3  0  0  3  7  8  9
+  26     0  0  0  0
+  27     0  0  0  0
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5  9  2  1  1 10 17
+   3 *   1 18 19  8  1  2  9
+   4 -   2  6  7  7  3  1  1 11 15 17 17
+   5 -   2 16 17  2  2 10 10 16 16
+   6 -   4  0  0  1  1 14 14
+   7 -   4  8  9  6  4  1  1 11 13 15 15 17 17
+   8 -   7 10 11  5  4  1  1 12 13 15 15 17 17
+   9 -   7  0  0  1  1 11 11
+  10 -   8 12 13  4  3  1  1 12 13 17 17
+  11 -   8  0  0  1  1 15 15
+  12 -  10 14 15  2  2 13 13 17 17
+  13 -  10  0  0  2  2  1  1 12 12
+  14 -  12  0  0  1  1 13 13
+  15 -  12  0  0  1  1 17 17
+  16 -   5  0  0  1  1 10 10
+  17 -   5  0  0  1  1 16 16
+  18 -   3  0  0  5  1  2  6
+  19 -   3  0  0  3  1  7  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            238
+Total number of atoms read in:              1827
+Total number of ignored atom records:         71
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.LI,R.A.MARIUZZA                                                     
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              COMPND   2 MOLECULE: PROTEIN (14.3.D T CELL ANTIGEN RECEPTOR);                  SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    H.LI,R.A.MARIUZZA                                                     
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau           1   6.23755074             113
+ #popped           2           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           3  0.606786668              20          31          44          73          88         103
+ #popped           4           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau           5  0.324935108              20
+ #popped           6           3
+ #selectset contacts        1999
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau           7  0.691747546              44
+ #popped           9           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           9  0.649868369              73
+ #popped          10           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau          11   2.13451505             128         138
+ #popped          12           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau          13   2.20809507             210         225
+ #popped          14           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau          15  0.789057374             190
+ #popped          16           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          17   1.17076027             156         166
+ #popped          18           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          19  0.456151247             156
+ #popped          20           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          21           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          17           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau          21  0.226774320             210
+ #popped          22           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau          23   1.90211189             200
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              COMPND   2 MOLECULE: PROTEIN (14.3.D T CELL ANTIGEN RECEPTOR);                  SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    H.LI,R.A.MARIUZZA                                                     
+           0
+         238
+         238  residues read 1SBB.dssp                                                   
+  grow short strand           2           5
+  grow short strand           8          12
+  grow short strand          54          55
+  grow short strand          63          65
+  grow short strand          73          76
+  exclude short helix          81          83
+  grow short strand         102         103
+  exclude short helix         115         117
+  grow short strand         122         126
+  exclude short helix         130         132
+  grow short strand         162         164
+  grow short strand         168         170
+  grow short strand         175         178
+  exclude short helix         192         196
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  5  8  9 11  6  7 10 12 13 14 16 17 18 15 19 20
+   2     1  4  5 11  1  2  3  4  5  8  9 11  6  7 10
+   3     1 16 17  9 12 13 14 16 17 18 15 19 20
+   4     2  6  7  8  1  2  3  4  5  8  9 11
+   5     2 10 11  3  6  7 10
+   6     4  0  0  3  1  2  3
+   7     4  8  9  5  4  5  8  9 11
+   8     7  0  0  2  4  5
+   9     7  0  0  3  8  9 11
+  10     5  0  0  2  6  7
+  11     5  0  0  1 10
+  12     0  0  0  9 12 13 14 16 17 18 15 19 20
+  13     0  0  0  0
+  14     0  0  0  9 12 13 14 16 17 18 15 19 20
+  15     0  0  0  0
+  16     3 18 19  7 12 13 14 16 17 18 15
+  17     3 22 23  2 19 20
+  18    16 20 21  6 12 13 14 16 17 18
+  19    16  0  0  1 15
+  20    18  0  0  3 12 13 14
+  21    18  0  0  3 16 17 18
+  22    17  0  0  1 19
+  23    17  0  0  1 20
+  24     0  0  0  0
+  25     0  0  0  1 19
+   1 +   0  2  3 20  1  1 20
+   2 *   1  4  5 11  1  1 11
+   3 *   1 12 13  9  1 12 20
+   4 -   2  6  7  8  3  1  5  8  9 11 11
+   5 -   2 10 11  3  2  6  7 10 10
+   6 -   4  0  0  3  1  1  3
+   7 -   4  8  9  5  3  4  5  8  9 11 11
+   8 -   7  0  0  2  1  4  5
+   9 -   7  0  0  3  2  8  9 11 11
+  10 -   5  0  0  2  1  6  7
+  11 -   5  0  0  1  1 10 10
+  12 -   3 14 15  7  1 12 18
+  13 -   3 18 19  2  1 19 20
+  14 -  12 16 17  6  2 12 14 16 18
+  15 -  12  0  0  1  1 15 15
+  16 -  14  0  0  3  1 12 14
+  17 -  14  0  0  3  1 16 18
+  18 -  13  0  0  1  1 19 19
+  19 -  13  0  0  1  1 20 20
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            235
+Total number of atoms read in:              1956
+Total number of ignored atom records:         71
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.LI,R.A.MARIUZZA                                                     
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              COMPND   2 MOLECULE: PROTEIN (14.3.D T CELL ANTIGEN RECEPTOR);                  SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    H.LI,R.A.MARIUZZA                                                     
+         235  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2112
+ selectset done           0
+ eigen done           0
+ tau           1   2.40232205              31         118
+ #popped           2           1
+ #selectset contacts        2112
+ selectset done           1
+ eigen done           1
+ tau           3  0.978060305              31         129         142         155         215         225
+ #popped           4           2
+ #selectset contacts        2112
+ selectset done           2
+ eigen done           2
+ tau           5   1.15880930              10         183         193
+ #popped           6           3
+ #selectset contacts        2112
+ selectset done           3
+ eigen done           3
+ tau           7  0.490978330              10
+ #popped           7           2
+ #selectset contacts        2112
+ selectset done           2
+ eigen done           2
+ tau           9  0.478486627              20
+ #popped          11           2
+ #selectset contacts        2112
+ selectset done           2
+ eigen done           2
+ tau          11  0.878802776              31         183         215
+ #popped          12           3
+ #selectset contacts        2112
+ selectset done           3
+ eigen done           3
+ tau          13   2.20225167              31
+ #popped          15           3
+ #selectset contacts        2112
+ selectset done           3
+ eigen done           3
+ tau          15   1.85154819             203
+ #popped          13           2
+ #selectset contacts        2112
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           5           1
+ #selectset contacts        2112
+ selectset done           1
+ eigen done           1
+ tau          17  0.521421969             145
+ #popped          19           1
+ #selectset contacts        2112
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2112
+ selectset done           0
+ eigen done           0
+ tau          19  0.588186979              50          64
+ #popped          20           0
+ #selectset contacts        2112
+ selectset done           0
+ eigen done           0
+ tau          21  0.461198270              41          67
+ #popped          22           0
+ #selectset contacts        2112
+ selectset done           0
+ eigen done           0
+ tau          23   2.17748475              41          80
+ #popped          24           0
+ #selectset contacts        2112
+ selectset done           0
+ eigen done           0
+ tau          25  0.415143758              99
+ #popped          26           0
+ #selectset contacts        2112
+ selectset done           0
+ eigen done           0
+ tau          27  0.349640489              41
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-FEB-99   1SBB              COMPND   2 MOLECULE: PROTEIN (14.3.D T CELL ANTIGEN RECEPTOR);                  SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    H.LI,R.A.MARIUZZA                                                     
+           0
+         235
+         235  residues read 1SBB.dssp                                                   
+  exclude short helix           8          10
+  exclude short helix          14          16
+  grow short helix          22          28
+  grow short strand          48          52
+  grow short strand          63          67
+  grow short helix          71          77
+  grow short strand          82          86
+  grow short strand         107         111
+  grow short strand         114         116
+  grow short strand         150         152
+ crowded segment excluded!
+  grow short strand         191         195
+  grow short strand         218         220
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16 13  1 14 10 11 12 16  9 15  2  6  7  8  5  3  4
+   2     1  4  5  9 13  1 14 10 11 12 16  9 15
+   3     1 22 23  7  2  6  7  8  5  3  4
+   4     2  6  7  7 13  1 14 10 11 12 16
+   5     2 18 19  2  9 15
+   6     4  0  0  1 13
+   7     4 12 13  6  1 14 10 11 12 16
+   8     0  0  0  0
+   9     0  0  0  1 13
+  10     0  0  0  0
+  11     0  0  0  6  1 14 10 11 12 16
+  12     7 14 15  2  1 14
+  13     7  0  0  4 10 11 12 16
+  14    12  0  0  1  1
+  15    12  0  0  1 14
+  16     0  0  0  0
+  17     0  0  0  1 14
+  18     5  0  0  1  9
+  19     5  0  0  1 15
+  20     0  0  0  7  2  6  7  8  5  3  4
+  21     0  0  0  0
+  22     3 24 25  5  2  6  7  8  5
+  23     3  0  0  2  3  4
+  24    22 26 27  4  2  6  7  8
+  25    22  0  0  1  5
+  26    24 28 29  2  2  6
+  27    24  0  0  2  7  8
+  28    26  0  0  1  2
+  29    26  0  0  1  6
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5  9  2  1  1  9 16
+   3 *   1 14 15  7  1  2  8
+   4 -   2  6  7  7  3  1  1 10 14 16 16
+   5 -   2 12 13  2  2  9  9 15 15
+   6 -   4  0  0  1  1 13 13
+   7 -   4  8  9  6  4  1  1 10 12 14 14 16 16
+   8 -   7 10 11  2  2  1  1 14 14
+   9 -   7  0  0  4  2 10 12 16 16
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1 14 14
+  12 -   5  0  0  1  1  9  9
+  13 -   5  0  0  1  1 15 15
+  14 -   3 16 17  5  2  2  2  5  8
+  15 -   3  0  0  2  1  3  4
+  16 -  14 18 19  4  2  2  2  6  8
+  17 -  14  0  0  1  1  5  5
+  18 -  16 20 21  2  2  2  2  6  6
+  19 -  16  0  0  2  1  7  8
+  20 -  18  0  0  1  1  2  2
+  21 -  18  0  0  1  1  6  6
+
+ CHAIN : 1SBBA
+ CHAIN : 1SBBB
+ CHAIN : 1SBBC
+ CHAIN : 1SBBD
+

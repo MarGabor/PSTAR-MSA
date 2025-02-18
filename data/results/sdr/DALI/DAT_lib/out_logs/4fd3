@@ -1,0 +1,1253 @@
+A length: 254
+B length: 253
+C length: 250
+D length: 268
+E length: 250
+F length: 246
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            254
+Total number of atoms read in:              1866
+Total number of ignored atom records:         11
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+         254  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2258
+ selectset done           0
+ eigen done           0
+ tau           1   1.50660026             120         146         179
+ #popped           2           1
+ #selectset contacts        2258
+ selectset done           1
+ eigen done           1
+ tau           3   1.43145108              65          77
+ #popped           4           1
+ #selectset contacts        2258
+ selectset done           1
+ eigen done           1
+ tau           5   1.19169235             120
+ #popped           6           2
+ #selectset contacts        2258
+ selectset done           2
+ eigen done           2
+ tau           7   1.11792004              12          29
+ #popped           8           2
+ #selectset contacts        2258
+ selectset done           2
+ eigen done           2
+ tau           9  0.436820269              65
+ #popped          10           3
+ #selectset contacts        2258
+ selectset done           3
+ eigen done           3
+ tau          11  0.454297602              42
+ #popped          12           4
+ #selectset contacts        2258
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          13           3
+ #selectset contacts        2258
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          11           2
+ #selectset contacts        2258
+ selectset done           2
+ eigen done           2
+ tau          13   2.51246262              95
+ #popped          15           2
+ #selectset contacts        2258
+ selectset done           2
+ eigen done           2
+ tau          15   1.08774066             110
+ #popped           7           1
+ #selectset contacts        2258
+ selectset done           1
+ eigen done           1
+ tau          17   1.23193550             161
+ #popped           3           0
+ #selectset contacts        2258
+ selectset done           0
+ eigen done           0
+ tau          19   1.93905616             146
+ #popped          20           1
+ #selectset contacts        2258
+ selectset done           1
+ eigen done           1
+ tau          21  0.946113944             132
+ #popped          21           0
+ #selectset contacts        2258
+ selectset done           0
+ eigen done           0
+ tau          23   1.37550735             235
+ #popped          24           0
+ #selectset contacts        2258
+ selectset done           0
+ eigen done           0
+ tau          25  0.828090966             206
+ #popped          26           1
+ #selectset contacts        2258
+ selectset done           1
+ eigen done           1
+ tau          27  0.831024885             191
+ #popped          27           0
+ #selectset contacts        2258
+ selectset done           0
+ eigen done           0
+ tau          29   3.55297518             224
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+           0
+         254
+         254  residues read 4FD3.dssp                                                   
+  grow short helix          38          44
+  exclude short helix          48          52
+  grow short strand          60          64
+  exclude short helix          67          69
+  exclude short helix          72          75
+  grow short strand          91          95
+  exclude short helix         100         105
+  exclude short helix         129         131
+  exclude short helix         167         169
+  grow short strand         177         181
+  exclude short helix         184         186
+  grow short strand         222         226
+  grow short strand         230         231
+  grow short strand         238         239
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  6  7  8  2 10 11  9 12 13 14 15
+   2     1  6  7 10  1  3  4  5  6  7  8  2 10 11
+   3     1 20 21  5  9 12 13 14 15
+   4     0  0  0 10  1  3  4  5  6  7  8  2 10 11
+   5     0  0  0  0
+   6     2  8  9  8  1  3  4  5  6  7  8  2
+   7     2 18 19  2 10 11
+   8     6 10 11  7  1  3  4  5  6  7  8
+   9     6  0  0  1  2
+  10     8 12 13  4  1  3  4  5
+  11     8 14 15  3  6  7  8
+  12    10  0  0  3  1  3  4
+  13    10  0  0  1  5
+  14    11  0  0  2  6  7
+  15    11  0  0  1  8
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18     7  0  0  1 10
+  19     7  0  0  1 11
+  20     3  0  0  1  9
+  21     3 24 25  4 12 13 14 15
+  22     0  0  0  0
+  23     0  0  0  1  9
+  24    21 26 27  3 12 13 14
+  25    21  0  0  1 15
+  26    24  0  0  1 12
+  27    24 30 31  2 13 14
+  28     0  0  0  0
+  29     0  0  0  1 12
+  30    27  0  0  1 13
+  31    27  0  0  1 14
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 10  2  1  8 10 11
+   3 -   1 16 17  5  2  9  9 12 15
+   4 -   2  6  7  8  1  1  8
+   5 -   2 14 15  2  1 10 11
+   6 -   4  8  9  7  2  1  1  3  8
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6 12 13  3  1  6  8
+  10 -   8  0  0  3  2  1  1  3  4
+  11 -   8  0  0  1  1  5  5
+  12 -   9  0  0  2  1  6  7
+  13 -   9  0  0  1  1  8  8
+  14 -   5  0  0  1  1 10 10
+  15 -   5  0  0  1  1 11 11
+  16 -   3  0  0  1  1  9  9
+  17 -   3 18 19  4  1 12 15
+  18 -  17 20 21  3  1 12 14
+  19 -  17  0  0  1  1 15 15
+  20 -  18  0  0  1  1 12 12
+  21 -  18 22 23  2  1 13 14
+  22 -  21  0  0  1  1 13 13
+  23 -  21  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1904
+Total number of ignored atom records:         29
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2276
+ selectset done           0
+ eigen done           0
+ tau           1   1.48701036              65          76         118         153         178
+ #popped           2           1
+ #selectset contacts        2276
+ selectset done           1
+ eigen done           1
+ tau           3   1.30976820             118
+ #popped           4           2
+ #selectset contacts        2276
+ selectset done           2
+ eigen done           2
+ tau           5  0.992908955              10          26          36          53
+ #popped           6           3
+ #selectset contacts        2276
+ selectset done           3
+ eigen done           3
+ tau           7  0.466712564              95
+ #popped           8           4
+ #selectset contacts        2276
+ selectset done           4
+ eigen done           4
+ tau           9   0.00000000    
+ #popped           9           3
+ #selectset contacts        2276
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2276
+ selectset done           2
+ eigen done           2
+ tau           9   1.46543777              26
+ #popped           5           1
+ #selectset contacts        2276
+ selectset done           1
+ eigen done           1
+ tau          11   1.24668968             167
+ #popped           3           0
+ #selectset contacts        2276
+ selectset done           0
+ eigen done           0
+ tau          13   2.01245880             153
+ #popped          14           1
+ #selectset contacts        2276
+ selectset done           1
+ eigen done           1
+ tau          15   1.17787802              76
+ #popped          17           1
+ #selectset contacts        2276
+ selectset done           1
+ eigen done           1
+ tau          17   1.10563767             132
+ #popped          19           1
+ #selectset contacts        2276
+ selectset done           1
+ eigen done           1
+ tau          19  0.798000038             142
+ #popped          15           0
+ #selectset contacts        2276
+ selectset done           0
+ eigen done           0
+ tau          21  0.968767285             243
+ #popped          22           0
+ #selectset contacts        2276
+ selectset done           0
+ eigen done           0
+ tau          23   1.40609455             206         223
+ #popped          24           0
+ #selectset contacts        2276
+ selectset done           0
+ eigen done           0
+ tau          25  0.798761606             206
+ #popped          26           1
+ #selectset contacts        2276
+ selectset done           1
+ eigen done           1
+ tau          27  0.811462522             193
+ #popped          27           0
+ #selectset contacts        2276
+ selectset done           0
+ eigen done           0
+ tau          29   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+           0
+         253
+         253  residues read 4FD3.dssp                                                   
+  exclude short helix          40          44
+  exclude short helix          48          52
+  grow short strand          60          64
+  exclude short helix          67          69
+  exclude short helix          72          74
+  grow short strand          79          83
+  grow short strand          91          95
+  exclude short helix         100         105
+  exclude short helix         129         131
+  exclude short helix         167         170
+  grow short strand         177         181
+  exclude short helix         184         186
+  grow short strand         222         226
+  grow short strand         230         231
+  grow short strand         236         237
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  6  7  2  9  8 10 12 13 11 14
+   2     1  4  5  8  1  3  4  5  6  7  2  9
+   3     1 14 15  6  8 10 12 13 11 14
+   4     2  6  7  7  1  3  4  5  6  7  2
+   5     2  0  0  1  9
+   6     4  8  9  6  1  3  4  5  6  7
+   7     4  0  0  1  2
+   8     6  0  0  5  1  3  4  5  6
+   9     6  0  0  1  7
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  1  9
+  13     0  0  0  0
+  14     3  0  0  1  8
+  15     3 22 23  5 10 12 13 11 14
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     0  0  0  1  8
+  21     0  0  0  0
+  22    15 24 25  4 10 12 13 11
+  23    15  0  0  1 14
+  24    22 26 27  3 10 12 13
+  25    22  0  0  1 11
+  26    24  0  0  1 10
+  27    24  0  0  2 12 13
+  28     0  0  0  1 10
+  29     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  8  2  1  7  9  9
+   3 -   1 10 11  6  2  8  8 10 14
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  6  2  1  1  3  7
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  5  2  1  1  3  6
+   9 -   6  0  0  1  1  7  7
+  10 -   3  0  0  1  1  8  8
+  11 -   3 12 13  5  1 10 14
+  12 -  11 14 15  4  1 10 13
+  13 -  11  0  0  1  1 14 14
+  14 -  12 16 17  3  2 10 10 12 13
+  15 -  12  0  0  1  1 11 11
+  16 -  14  0  0  1  1 10 10
+  17 -  14  0  0  2  1 12 13
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            250
+Total number of atoms read in:              1879
+Total number of ignored atom records:         31
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+         250  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2250
+ selectset done           0
+ eigen done           0
+ tau           1   1.51973903             172
+ #popped           2           1
+ #selectset contacts        2250
+ selectset done           1
+ eigen done           1
+ tau           3   1.82215691              65          76         120         153
+ #popped           4           2
+ #selectset contacts        2250
+ selectset done           2
+ eigen done           2
+ tau           5   2.25263882             120
+ #popped           6           2
+ #selectset contacts        2250
+ selectset done           2
+ eigen done           2
+ tau           7  0.787182570              33          95
+ #popped           8           3
+ #selectset contacts        2250
+ selectset done           3
+ eigen done           3
+ tau           9  0.665184796              13          23
+ #popped          10           3
+ #selectset contacts        2250
+ selectset done           3
+ eigen done           3
+ tau          11  0.258318722             110
+ #popped          12           3
+ #selectset contacts        2250
+ selectset done           3
+ eigen done           3
+ tau          13   1.81812072              33
+ #popped          14           3
+ #selectset contacts        2250
+ selectset done           3
+ eigen done           3
+ tau          15  0.462272465              13
+ #popped           9           2
+ #selectset contacts        2250
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           5           1
+ #selectset contacts        2250
+ selectset done           1
+ eigen done           1
+ tau          17   1.07229066              76
+ #popped          19           1
+ #selectset contacts        2250
+ selectset done           1
+ eigen done           1
+ tau          19   1.13854599             132
+ #popped          21           1
+ #selectset contacts        2250
+ selectset done           1
+ eigen done           1
+ tau          21  0.752830207             142
+ #popped           3           0
+ #selectset contacts        2250
+ selectset done           0
+ eigen done           0
+ tau          23   1.96461415             230
+ #popped          24           1
+ #selectset contacts        2250
+ selectset done           1
+ eigen done           1
+ tau          25  0.326511472             185
+ #popped          27           1
+ #selectset contacts        2250
+ selectset done           1
+ eigen done           1
+ tau          27  0.938183963             209         220
+ #popped          28           1
+ #selectset contacts        2250
+ selectset done           1
+ eigen done           1
+ tau          29   12.8893442             209
+ #popped          30           1
+ #selectset contacts        2250
+ selectset done           1
+ eigen done           1
+ tau          31   1.10147059             195
+ #popped          25           0
+ #selectset contacts        2250
+ selectset done           0
+ eigen done           0
+ tau          33  0.715527594             240
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+           0
+         250
+         250  residues read 4FD3.dssp                                                   
+  grow short helix          38          44
+  exclude short helix          48          52
+  grow short strand          60          64
+  exclude short helix          67          69
+  exclude short helix          72          75
+  grow short strand          79          83
+  grow short strand          91          95
+  exclude short helix         100         105
+  exclude short helix         129         131
+  exclude short helix         167         170
+  grow short strand         176         180
+  exclude short helix         183         185
+  exclude short helix         216         218
+  grow short strand         221         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  8  2  4  5  6  7 10  9 11 12 13 14
+   2     1  4  5 10  1  3  8  2  4  5  6  7 10  9
+   3     1 24 25  4 11 12 13 14
+   4     2  6  7  9  1  3  8  2  4  5  6  7 10
+   5     2  0  0  1  9
+   6     4  8  9  8  1  3  8  2  4  5  6  7
+   7     4  0  0  1 10
+   8     6 10 11  4  1  3  8  2
+   9     6  0  0  4  4  5  6  7
+  10     8 12 13  3  1  3  8
+  11     8  0  0  1  2
+  12    10 16 17  2  1  3
+  13    10  0  0  1  8
+  14     0  0  0  2  1  3
+  15     0  0  0  0
+  16    12  0  0  1  1
+  17    12  0  0  1  3
+  18     0  0  0  0
+  19     0  0  0  1  9
+  20     0  0  0  0
+  21     0  0  0  1  9
+  22     0  0  0  1  9
+  23     0  0  0  0
+  24     3 26 27  3 11 12 13
+  25     3  0  0  1 14
+  26    24  0  0  1 11
+  27    24 30 31  2 12 13
+  28     0  0  0  2 12 13
+  29     0  0  0  0
+  30    27  0  0  1 12
+  31    27  0  0  1 13
+  32     0  0  0  0
+  33     0  0  0  1 12
+  34     0  0  0  0
+  35     0  0  0  1 14
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 10  1  1 10
+   3 -   1 16 17  4  1 11 14
+   4 -   2  6  7  9  2  1  8 10 10
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  8  1  1  8
+   7 -   4  0  0  1  1 10 10
+   8 -   6 10 11  4  2  1  3  8  8
+   9 -   6  0  0  4  1  4  7
+  10 -   8 12 13  3  3  1  1  3  3  8  8
+  11 -   8  0  0  1  1  2  2
+  12 -  10 14 15  2  2  1  1  3  3
+  13 -  10  0  0  1  1  8  8
+  14 -  12  0  0  1  1  1  1
+  15 -  12  0  0  1  1  3  3
+  16 -   3 18 19  3  1 11 13
+  17 -   3  0  0  1  1 14 14
+  18 -  16  0  0  1  1 11 11
+  19 -  16 20 21  2  1 12 13
+  20 -  19  0  0  1  1 12 12
+  21 -  19  0  0  1  1 13 13
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            268
+Total number of atoms read in:              1962
+Total number of ignored atom records:         17
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+         268  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau           1   1.54036283              65          76         118
+ #popped           2           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau           3  0.598958075              65
+ #popped           4           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau           5  0.641708791              34
+ #popped           6           3
+ #selectset contacts        2342
+ selectset done           3
+ eigen done           3
+ tau           7  0.738373101              12          23
+ #popped           8           3
+ #selectset contacts        2342
+ selectset done           3
+ eigen done           3
+ tau           9  0.376584947              12
+ #popped           7           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          11   2.31376195              95
+ #popped          13           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          13   1.14285719             105
+ #popped           3           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          15   2.70472121             234         247
+ #popped          16           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          17   2.18730688              76         132         172
+ #popped          18           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          19   1.98997545             154
+ #popped          20           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          21   1.04826939              76
+ #popped          23           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          23  0.969961226             144
+ #popped          19           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          25   1.23343921             132         186         200
+ #popped          26           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          27           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          27   1.54189670             186         220
+ #popped          28           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          29  0.988905311             234
+ #popped          30           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          31   0.00000000    
+ #popped          31           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          31  0.773773372             258
+ #popped          29           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          33  0.904135287             210
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+           0
+         268
+         268  residues read 4FD3.dssp                                                   
+  grow short helix          38          44
+  exclude short helix          48          52
+  grow short strand          60          64
+  exclude short helix          67          69
+  exclude short helix          72          75
+  grow short strand          79          83
+  grow short strand          91          95
+  exclude short helix         100         105
+  exclude short helix         129         131
+  exclude short helix         167         170
+  grow short strand         176         180
+  exclude short helix         183         185
+  grow short strand         221         225
+  grow short strand         229         230
+  grow short helix         237         243
+  grow short strand         251         252
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  2  4  5  6  7  8  9 10 11 13 14 16 12 15
+   2     1  4  5  8  1  3  2  4  5  6  7  8
+   3     1 16 17  8  9 10 11 13 14 16 12 15
+   4     2  6  7  5  1  3  2  4  5
+   5     2 12 13  3  6  7  8
+   6     4  8  9  3  1  3  2
+   7     4  0  0  2  4  5
+   8     6 10 11  2  1  3
+   9     6  0  0  1  2
+  10     8  0  0  1  1
+  11     8  0  0  1  3
+  12     5  0  0  2  6  7
+  13     5  0  0  1  8
+  14     0  0  0  0
+  15     0  0  0  1  8
+  16     3 18 19  7  9 10 11 13 14 16 12
+  17     3  0  0  1 15
+  18    16 20 21  2  9 10
+  19    16 28 29  5 11 13 14 16 12
+  20    18  0  0  1  9
+  21    18  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  1  9
+  24     0  0  0  1  9
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  5 11 13 14 16 12
+  28    19 30 31  4 11 13 14 16
+  29    19  0  0  1 12
+  30    28  0  0  3 11 13 14
+  31    28  0  0  1 16
+  32     0  0  0  0
+  33     0  0  0  1 16
+  34     0  0  0  1 12
+  35     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  8  1  1  8
+   3 -   1 14 15  8  1  9 16
+   4 -   2  6  7  5  1  1  5
+   5 -   2 12 13  3  1  6  8
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6 10 11  2  2  1  1  3  3
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  3  3
+  12 -   5  0  0  2  1  6  7
+  13 -   5  0  0  1  1  8  8
+  14 -   3 16 17  7  2  9 14 16 16
+  15 -   3  0  0  1  1 15 15
+  16 -  14 18 19  2  1  9 10
+  17 -  14 20 21  5  2 11 14 16 16
+  18 -  16  0  0  1  1  9  9
+  19 -  16  0  0  1  1 10 10
+  20 -  17 22 23  4  3 11 11 13 14 16 16
+  21 -  17  0  0  1  1 12 12
+  22 -  20  0  0  3  2 11 11 13 14
+  23 -  20  0  0  1  1 16 16
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            250
+Total number of atoms read in:              1838
+Total number of ignored atom records:         17
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+         250  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2203
+ selectset done           0
+ eigen done           0
+ tau           1   1.34098601             230
+ #popped           2           1
+ #selectset contacts        2203
+ selectset done           1
+ eigen done           1
+ tau           3   1.61885262              65          76         118
+ #popped           4           2
+ #selectset contacts        2203
+ selectset done           2
+ eigen done           2
+ tau           5   1.03338134              10          27
+ #popped           6           2
+ #selectset contacts        2203
+ selectset done           2
+ eigen done           2
+ tau           7  0.474946290              95
+ #popped           8           3
+ #selectset contacts        2203
+ selectset done           3
+ eigen done           3
+ tau           9  0.625861883              43
+ #popped          10           4
+ #selectset contacts        2203
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        2203
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        2203
+ selectset done           2
+ eigen done           2
+ tau          11   1.05423141             105
+ #popped           5           1
+ #selectset contacts        2203
+ selectset done           1
+ eigen done           1
+ tau          13   1.59161484              76
+ #popped          15           1
+ #selectset contacts        2203
+ selectset done           1
+ eigen done           1
+ tau          15   1.71273792             170
+ #popped          16           2
+ #selectset contacts        2203
+ selectset done           2
+ eigen done           2
+ tau          17   2.02440763             144
+ #popped          18           3
+ #selectset contacts        2203
+ selectset done           3
+ eigen done           3
+ tau          19  0.958206713             132
+ #popped          19           2
+ #selectset contacts        2203
+ selectset done           2
+ eigen done           2
+ tau          21   1.21904767             160
+ #popped          17           1
+ #selectset contacts        2203
+ selectset done           1
+ eigen done           1
+ tau          23  0.377439469             184
+ #popped          25           1
+ #selectset contacts        2203
+ selectset done           1
+ eigen done           1
+ tau          25   2.86890078             219
+ #popped          26           1
+ #selectset contacts        2203
+ selectset done           1
+ eigen done           1
+ tau          27   1.73536301             202
+ #popped           3           0
+ #selectset contacts        2203
+ selectset done           0
+ eigen done           0
+ tau          29  0.797726035             240
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+           0
+         250
+         250  residues read 4FD3.dssp                                                   
+  grow short helix          38          44
+  exclude short helix          48          52
+  grow short strand          60          64
+  exclude short helix          67          69
+  exclude short helix          72          74
+  grow short strand          79          83
+  grow short strand          91          95
+  exclude short helix         100         105
+  exclude short helix         129         131
+  exclude short helix         167         169
+  grow short strand         175         179
+  exclude short helix         182         184
+  grow short strand         220         224
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  6  7  8  2  9 10 11 12 13 14
+   2     1  4  5 13  1  3  4  5  6  7  8  2  9 10 11 12 13
+   3     1  0  0  1 14
+   4     2  6  7  8  1  3  4  5  6  7  8  2
+   5     2 16 17  5  9 10 11 12 13
+   6     4  8  9  7  1  3  4  5  6  7  8
+   7     4  0  0  1  2
+   8     6 10 11  6  1  3  4  5  6  7
+   9     6  0  0  1  8
+  10     8  0  0  3  1  3  4
+  11     8  0  0  3  5  6  7
+  12     0  0  0  0
+  13     0  0  0  1  8
+  14     0  0  0  0
+  15     0  0  0  5  9 10 11 12 13
+  16     5 18 19  2  9 10
+  17     5 24 25  3 11 12 13
+  18    16  0  0  1  9
+  19    16  0  0  1 10
+  20     0  0  0  0
+  21     0  0  0  1  9
+  22     0  0  0  1 10
+  23     0  0  0  0
+  24    17  0  0  1 11
+  25    17 26 27  2 12 13
+  26    25  0  0  1 12
+  27    25  0  0  1 13
+  28     0  0  0  0
+  29     0  0  0  1 12
+  30     0  0  0  0
+  31     0  0  0  1 14
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  1  1 13
+   3 -   1  0  0  1  1 14 14
+   4 -   2  6  7  8  1  1  8
+   5 -   2 12 13  5  1  9 13
+   6 -   4  8  9  7  2  1  1  3  8
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  6  2  1  1  3  7
+   9 -   6  0  0  1  1  8  8
+  10 -   8  0  0  3  2  1  1  3  4
+  11 -   8  0  0  3  1  5  7
+  12 -   5 14 15  2  1  9 10
+  13 -   5 16 17  3  1 11 13
+  14 -  12  0  0  1  1  9  9
+  15 -  12  0  0  1  1 10 10
+  16 -  13  0  0  1  1 11 11
+  17 -  13 18 19  2  1 12 13
+  18 -  17  0  0  1  1 12 12
+  19 -  17  0  0  1  1 13 13
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            246
+Total number of atoms read in:              1821
+Total number of ignored atom records:         17
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+         246  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau           1   1.76927221              65          76         118
+ #popped           2           1
+ #selectset contacts        2163
+ selectset done           1
+ eigen done           1
+ tau           3  0.844595194              11          26
+ #popped           4           1
+ #selectset contacts        2163
+ selectset done           1
+ eigen done           1
+ tau           5  0.442453712              92
+ #popped           6           2
+ #selectset contacts        2163
+ selectset done           2
+ eigen done           2
+ tau           7   1.06553912              65
+ #popped           8           2
+ #selectset contacts        2163
+ selectset done           2
+ eigen done           2
+ tau           9  0.498965621              45
+ #popped          10           3
+ #selectset contacts        2163
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped          11           2
+ #selectset contacts        2163
+ selectset done           2
+ eigen done           2
+ tau          11   1.05265415              55
+ #popped           7           1
+ #selectset contacts        2163
+ selectset done           1
+ eigen done           1
+ tau          13   1.28399038             105
+ #popped           3           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau          15   3.73566628             228
+ #popped          16           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau          17   1.79370248             171
+ #popped          18           1
+ #selectset contacts        2163
+ selectset done           1
+ eigen done           1
+ tau          19   2.06804347             151
+ #popped          20           2
+ #selectset contacts        2163
+ selectset done           2
+ eigen done           2
+ tau          21   1.20840406              76
+ #popped          23           2
+ #selectset contacts        2163
+ selectset done           2
+ eigen done           2
+ tau          23   1.18611908             132
+ #popped          21           1
+ #selectset contacts        2163
+ selectset done           1
+ eigen done           1
+ tau          25  0.907812476             161
+ #popped          19           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau          27  0.951573908             181         200
+ #popped          28           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau          29  0.366734028             214
+ #popped          30           0
+ #selectset contacts        2163
+ selectset done           0
+ eigen done           0
+ tau          31   1.79424155             181
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          26-MAY-12   4FD3              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE;                SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE;                       AUTHOR    Y.ZHANG,Y.GAO,F.NING,L.NIU,M.TENG                                     
+           0
+         246
+         246  residues read 4FD3.dssp                                                   
+  grow short helix          38          44
+  exclude short helix          48          53
+  grow short strand          60          64
+  exclude short helix          67          69
+  exclude short helix          72          74
+  grow short strand          79          83
+  grow short strand          91          95
+  exclude short helix         100         105
+  exclude short helix         129         131
+  exclude short helix         167         170
+  grow short strand         176         180
+  exclude short helix         183         185
+  grow short strand         221         225
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  4  5  6  7  8  2  9 10 11 12 13 14
+   2     1  4  5  8  1  3  4  5  6  7  8  2
+   3     1 16 17  6  9 10 11 12 13 14
+   4     2  6  7  7  1  3  4  5  6  7  8
+   5     2  0  0  1  2
+   6     4  8  9  5  1  3  4  5  6
+   7     4 14 15  2  7  8
+   8     6 10 11  4  1  3  4  5
+   9     6  0  0  1  6
+  10     8  0  0  3  1  3  4
+  11     8  0  0  1  5
+  12     0  0  0  0
+  13     0  0  0  1  5
+  14     7  0  0  1  7
+  15     7  0  0  1  8
+  16     3 18 19  5  9 10 11 12 13
+  17     3  0  0  1 14
+  18    16 20 21  2  9 10
+  19    16 30 31  3 11 12 13
+  20    18  0  0  1  9
+  21    18  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  1  9
+  24     0  0  0  0
+  25     0  0  0  1  9
+  26     0  0  0  1 10
+  27     0  0  0  0
+  28     0  0  0  3 11 12 13
+  29     0  0  0  0
+  30    19 32 33  2 11 12
+  31    19  0  0  1 13
+  32    30  0  0  1 11
+  33    30  0  0  1 12
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  8  1  1  8
+   3 -   1 14 15  6  1  9 14
+   4 -   2  6  7  7  2  1  1  3  8
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  5  2  1  1  3  6
+   7 -   4 12 13  2  1  7  8
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  3  2  1  1  3  4
+  11 -   8  0  0  1  1  5  5
+  12 -   7  0  0  1  1  7  7
+  13 -   7  0  0  1  1  8  8
+  14 -   3 16 17  5  1  9 13
+  15 -   3  0  0  1  1 14 14
+  16 -  14 18 19  2  1  9 10
+  17 -  14 20 21  3  1 11 13
+  18 -  16  0  0  1  1  9  9
+  19 -  16  0  0  1  1 10 10
+  20 -  17 22 23  2  1 11 12
+  21 -  17  0  0  1  1 13 13
+  22 -  20  0  0  1  1 11 11
+  23 -  20  0  0  1  1 12 12
+
+ CHAIN : 4FD3A
+ CHAIN : 4FD3B
+ CHAIN : 4FD3C
+ CHAIN : 4FD3D
+ CHAIN : 4FD3E
+ CHAIN : 4FD3F
+

@@ -1,0 +1,32 @@
+# Job: hr
+# Query: 1HCPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2HAN-A  8.4  2.7   71    78   48   MOLECULE: 5'-D(*CP*AP*AP*GP*GP*GP*TP*TP*CP*AP*AP*TP*GP*CP*A          
+
+# Pairwise alignments
+
+No 1: Query=1HCPA Sbjct=2HANA Z-score=8.4
+
+DSSP  lllLLLLLLLLLLLLEELLLLEELLHHHHHHHHHLLLLLLLLLLLLLLLLLL-LLLLlLL
+Query mkeTRYCAVCNDYASGYHYGVWSCEGCKAFFKRSIQGHNDYMCPATNQCTID-KNRRkSC   59
+ident       |  | | ||| |||| |||||| ||||       | |     | ||   |   |
+Sbjct ---KHLCSICGDRASGKHYGVYSCEGCKGFFKRTVRKDLTYACRENRNCIIDkRQRN-RC   56
+DSSP  ---LLLLLLLLLLLLEEELLEEELHHHHHHHHHHHHHLLLLLLLLLLLLLLLlLLHH-HL
+
+DSSP  HHHHHHHHHHHLLLLL------
+Query QACRLRKCYEVGMMKG------   75
+ident | ||  ||   ||         
+Sbjct QYCRYQKCLTCGMKREavqeer   78
+DSSP  HHHHHHHHHHHLLLHHhlllll
+
+
+# Structural equivalences
+   1: 1HCP-A 2HAN-A     4 -  52 <=>    1 -  49   (THR    4  - ASP   52  <=> LYS    4  - ASP   52 )                          
+   1: 1HCP-A 2HAN-A    53 -  56 <=>   51 -  54   (LYS   53  - ARG   56  <=> ARG   54  - ASN   57 )                          
+   1: 1HCP-A 2HAN-A    58 -  75 <=>   55 -  72   (SER   58  - GLY   75  <=> ARG   58  - GLU   75 )                          
+
+# Translation-rotation matrices
+-matrix  "1HCP-A 2HAN-A  U(1,.)  -0.009930  0.407200  0.913285          -29.888206"
+-matrix  "1HCP-A 2HAN-A  U(2,.)  -0.981842  0.169058 -0.086052           -1.358367"
+-matrix  "1HCP-A 2HAN-A  U(3,.)  -0.189438 -0.897557  0.398127           21.875069"
+

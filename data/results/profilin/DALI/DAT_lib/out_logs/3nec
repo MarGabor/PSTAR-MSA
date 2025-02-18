@@ -1,0 +1,672 @@
+A length: 158
+B length: 160
+C length: 162
+D length: 160
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  516  CA BSER A  71 
+ Alternate location indication is not blank or A, ignore atom:  520  CB BSER A  71 
+ Alternate location indication is not blank or A, ignore atom:  522  OG BSER A  71 
+ Alternate location indication is not blank or A, ignore atom:  826  CA BILE A 111 
+ Alternate location indication is not blank or A, ignore atom:  830  CB BILE A 111 
+ Alternate location indication is not blank or A, ignore atom:  832  CG1BILE A 111 
+ Alternate location indication is not blank or A, ignore atom:  834  CG2BILE A 111 
+ Alternate location indication is not blank or A, ignore atom:  836  CD1BILE A 111 
+ Alternate location indication is not blank or A, ignore atom:  846  CA BMSE A 113 
+ Alternate location indication is not blank or A, ignore atom:  850  CB BMSE A 113 
+ Alternate location indication is not blank or A, ignore atom:  852  CG BMSE A 113 
+ Alternate location indication is not blank or A, ignore atom:  854 SE  BMSE A 113 
+ Alternate location indication is not blank or A, ignore atom:  856  CE BMSE A 113 
+ Alternate location indication is not blank or A, ignore atom: 1130  CA BSER A 150 
+ Alternate location indication is not blank or A, ignore atom: 1134  CB BSER A 150 
+ Alternate location indication is not blank or A, ignore atom: 1136  OG BSER A 150 
+
+Total number of residues read in:            162
+Total number of atoms read in:              1226
+Total number of ignored atom records:        434
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.KUCERA,Y.MODIS                                                      
+  Reading DSSP file
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              COMPND   2 MOLECULE: INFLAMMATORY PROFILIN;                                     SOURCE   2 ORGANISM_SCIENTIFIC: TOXOPLASMA GONDII;                              AUTHOR    K.KUCERA,Y.MODIS                                                      
+         162  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1478
+ selectset done           0
+ eigen done           0
+ tau           1   2.36654615              44          92
+ #popped           2           1
+ #selectset contacts        1478
+ selectset done           1
+ eigen done           1
+ tau           3  0.883156598              44
+ #popped           4           2
+ #selectset contacts        1478
+ selectset done           2
+ eigen done           2
+ tau           5   1.24730766              17
+ #popped           7           2
+ #selectset contacts        1478
+ selectset done           2
+ eigen done           2
+ tau           7  0.479576677              33
+ #popped           5           1
+ #selectset contacts        1478
+ selectset done           1
+ eigen done           1
+ tau           9  0.673428655             111         121         132         146
+ #popped          10           2
+ #selectset contacts        1478
+ selectset done           2
+ eigen done           2
+ tau          11  0.995912850             132
+ #popped          12           2
+ #selectset contacts        1478
+ selectset done           2
+ eigen done           2
+ tau          13  0.748017550             111
+ #popped          11           1
+ #selectset contacts        1478
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1478
+ selectset done           0
+ eigen done           0
+ tau          15   1.23543537              66
+ #popped          16           1
+ #selectset contacts        1478
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          17           0
+ #selectset contacts        1478
+ selectset done           0
+ eigen done           0
+ tau          17  0.929569840              80
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              COMPND   2 MOLECULE: INFLAMMATORY PROFILIN;                                     SOURCE   2 ORGANISM_SCIENTIFIC: TOXOPLASMA GONDII;                              AUTHOR    K.KUCERA,Y.MODIS                                                      
+           0
+         162
+         162  residues read 3NEC.dssp                                                   
+  exclude short helix          40          44
+  grow short strand          85          87
+  exclude short helix         137         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  8  9 11 12 10  4  5  6  7
+   2     1  4  5  8  1  2  3  8  9 11 12 10
+   3     1 16 17  4  4  5  6  7
+   4     2  6  7  3  1  2  3
+   5     2 10 11  5  8  9 11 12 10
+   6     4  0  0  1  1
+   7     4  0  0  2  2  3
+   8     0  0  0  2  2  3
+   9     0  0  0  0
+  10     5 12 13  4  8  9 11 12
+  11     5  0  0  1 10
+  12    10 14 15  3  8  9 11
+  13    10  0  0  1 12
+  14    12  0  0  2  8  9
+  15    12  0  0  1 11
+  16     3  0  0  2  4  5
+  17     3 18 19  2  6  7
+  18    17  0  0  1  6
+  19    17  0  0  1  7
+   1 +   0  2  3 12  1  1 12
+   2 +   1  4  5  8  2  1  3  8 12
+   3 *   1 14 15  4  1  4  7
+   4 *   2  6  7  3  1  1  3
+   5 *   2  8  9  5  1  8 12
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  2  1  2  3
+   8 -   5 10 11  4  2  8  9 11 12
+   9 -   5  0  0  1  1 10 10
+  10 -   8 12 13  3  2  8  9 11 11
+  11 -   8  0  0  1  1 12 12
+  12 -  10  0  0  2  1  8  9
+  13 -  10  0  0  1  1 11 11
+  14 -   3  0  0  2  1  4  5
+  15 -   3 16 17  2  1  6  7
+  16 -  15  0  0  1  1  6  6
+  17 -  15  0  0  1  1  7  7
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2083  CA BILE B 111 
+ Alternate location indication is not blank or A, ignore atom: 2087  CB BILE B 111 
+ Alternate location indication is not blank or A, ignore atom: 2089  CG1BILE B 111 
+ Alternate location indication is not blank or A, ignore atom: 2091  CG2BILE B 111 
+ Alternate location indication is not blank or A, ignore atom: 2093  CD1BILE B 111 
+ Alternate location indication is not blank or A, ignore atom: 2103  CA BMSE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2107  CB BMSE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2109  CG BMSE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2111 SE  BMSE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2113  CE BMSE B 113 
+ Alternate location indication is not blank or A, ignore atom: 2387  CA BSER B 150 
+ Alternate location indication is not blank or A, ignore atom: 2391  CB BSER B 150 
+ Alternate location indication is not blank or A, ignore atom: 2393  OG BSER B 150 
+
+Total number of residues read in:            164
+Total number of atoms read in:              1244
+Total number of ignored atom records:        356
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.KUCERA,Y.MODIS                                                      
+  Reading DSSP file
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              COMPND   2 MOLECULE: INFLAMMATORY PROFILIN;                                     SOURCE   2 ORGANISM_SCIENTIFIC: TOXOPLASMA GONDII;                              AUTHOR    K.KUCERA,Y.MODIS                                                      
+         164  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1482
+ selectset done           0
+ eigen done           0
+ tau           1   2.12032437              46          94
+ #popped           2           1
+ #selectset contacts        1482
+ selectset done           1
+ eigen done           1
+ tau           3  0.550500751             113         123         134         148
+ #popped           4           2
+ #selectset contacts        1482
+ selectset done           2
+ eigen done           2
+ tau           5  0.887075424             134
+ #popped           6           2
+ #selectset contacts        1482
+ selectset done           2
+ eigen done           2
+ tau           7   1.58079088              22          34          46
+ #popped           8           3
+ #selectset contacts        1482
+ selectset done           3
+ eigen done           3
+ tau           9  0.891570747              12
+ #popped          11           3
+ #selectset contacts        1482
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1482
+ selectset done           2
+ eigen done           2
+ tau          11  0.616659224              34
+ #popped          13           2
+ #selectset contacts        1482
+ selectset done           2
+ eigen done           2
+ tau          13  0.689730465             113
+ #popped           5           1
+ #selectset contacts        1482
+ selectset done           1
+ eigen done           1
+ tau          15  0.321613908             123
+ #popped           3           0
+ #selectset contacts        1482
+ selectset done           0
+ eigen done           0
+ tau          17   1.39231610              68
+ #popped          18           1
+ #selectset contacts        1482
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1482
+ selectset done           0
+ eigen done           0
+ tau          19  0.911342978              82
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              COMPND   2 MOLECULE: INFLAMMATORY PROFILIN;                                     SOURCE   2 ORGANISM_SCIENTIFIC: TOXOPLASMA GONDII;                              AUTHOR    K.KUCERA,Y.MODIS                                                      
+           0
+         164
+         164  residues read 3NEC.dssp                                                   
+  exclude short helix          42          46
+  grow short strand          87          89
+  exclude short helix         139         141
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  8  9 11 12 10  4  5  6  7
+   2     1  4  5  8  1  2  3  8  9 11 12 10
+   3     1 18 19  4  4  5  6  7
+   4     2  6  7  7  1  2  3  8  9 11 12
+   5     2  0  0  1 10
+   6     4  8  9  6  1  2  3  8  9 11
+   7     4  0  0  1 12
+   8     6  0  0  1  1
+   9     6 12 13  5  2  3  8  9 11
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     9  0  0  2  2  3
+  13     9 14 15  3  8  9 11
+  14    13  0  0  2  8  9
+  15    13  0  0  1 11
+  16     0  0  0  1 10
+  17     0  0  0  0
+  18     3  0  0  2  4  5
+  19     3 20 21  2  6  7
+  20    19  0  0  1  6
+  21    19  0  0  1  7
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  8  2  1  3  8 12
+   3 *   1 14 15  4  1  4  7
+   4 -   2  6  7  7  3  1  3  8  9 11 12
+   5 -   2  0  0  1  1 10 10
+   6 -   4  8  9  6  3  1  3  8  9 11 11
+   7 -   4  0  0  1  1 12 12
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  5  3  2  3  8  9 11 11
+  10 -   9  0  0  2  1  2  3
+  11 -   9 12 13  3  2  8  9 11 11
+  12 -  11  0  0  2  1  8  9
+  13 -  11  0  0  1  1 11 11
+  14 -   3  0  0  2  1  4  5
+  15 -   3 16 17  2  1  6  7
+  16 -  15  0  0  1  1  6  6
+  17 -  15  0  0  1  1  7  7
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3043  CA BSER C  71 
+ Alternate location indication is not blank or A, ignore atom: 3047  CB BSER C  71 
+ Alternate location indication is not blank or A, ignore atom: 3049  OG BSER C  71 
+ Alternate location indication is not blank or A, ignore atom: 3367  CA BMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3368  CA CMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3371  CB BMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3372  CB CMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3373  CG BMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3374  CG CMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3375 SE  BMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3376 SE  CMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3377  CE BMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3378  CE CMSE C 113 
+ Alternate location indication is not blank or A, ignore atom: 3652  CA BSER C 150 
+ Alternate location indication is not blank or A, ignore atom: 3656  CB BSER C 150 
+ Alternate location indication is not blank or A, ignore atom: 3658  OG BSER C 150 
+
+Total number of residues read in:            165
+Total number of atoms read in:              1247
+Total number of ignored atom records:        428
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.KUCERA,Y.MODIS                                                      
+  Reading DSSP file
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              COMPND   2 MOLECULE: INFLAMMATORY PROFILIN;                                     SOURCE   2 ORGANISM_SCIENTIFIC: TOXOPLASMA GONDII;                              AUTHOR    K.KUCERA,Y.MODIS                                                      
+         165  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1474
+ selectset done           0
+ eigen done           0
+ tau           1   2.19616175              48          96
+ #popped           2           1
+ #selectset contacts        1474
+ selectset done           1
+ eigen done           1
+ tau           3  0.530385196              25         155
+ #popped           4           2
+ #selectset contacts        1474
+ selectset done           2
+ eigen done           2
+ tau           5   1.69932473              25
+ #popped           6           2
+ #selectset contacts        1474
+ selectset done           2
+ eigen done           2
+ tau           7  0.901758552              14
+ #popped           5           1
+ #selectset contacts        1474
+ selectset done           1
+ eigen done           1
+ tau           9   2.43514514              36          48
+ #popped          10           1
+ #selectset contacts        1474
+ selectset done           1
+ eigen done           1
+ tau          11  0.889652371              36
+ #popped          13           1
+ #selectset contacts        1474
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1474
+ selectset done           0
+ eigen done           0
+ tau          13   1.18535018              70
+ #popped          14           1
+ #selectset contacts        1474
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          15           0
+ #selectset contacts        1474
+ selectset done           0
+ eigen done           0
+ tau          15  0.948540688              84
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              COMPND   2 MOLECULE: INFLAMMATORY PROFILIN;                                     SOURCE   2 ORGANISM_SCIENTIFIC: TOXOPLASMA GONDII;                              AUTHOR    K.KUCERA,Y.MODIS                                                      
+           0
+         165
+         165  residues read 3NEC.dssp                                                   
+  exclude short helix          44          48
+  grow short strand          89          91
+  grow short strand          94          96
+  grow short strand         110         114
+  grow short strand         117         118
+ crowded segment excluded!
+  exclude short helix         140         142
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  9 10 11 12 13  4  5  6  7  8
+   2     1  4  5  8  1  2  3  9 10 11 12 13
+   3     1 14 15  5  4  5  6  7  8
+   4     2  8  9  2  1  2
+   5     2 12 13  6  3  9 10 11 12 13
+   6     0  0  0  2  1  2
+   7     0  0  0  0
+   8     4  0  0  1  1
+   9     4  0  0  1  2
+  10     0  0  0  6  3  9 10 11 12 13
+  11     0  0  0  0
+  12     5  0  0  1  3
+  13     5  0  0  5  9 10 11 12 13
+  14     3  0  0  2  4  5
+  15     3 16 17  3  6  7  8
+  16    15  0  0  1  6
+  17    15  0  0  2  7  8
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  8  2  1  3  9 13
+   3 *   1 10 11  5  1  4  8
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  6  2  3  3  9 13
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  1  1  3  3
+   9 -   5  0  0  5  1  9 13
+  10 -   3  0  0  2  1  4  5
+  11 -   3 12 13  3  1  6  8
+  12 -  11  0  0  1  1  6  6
+  13 -  11  0  0  2  1  7  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 4308  CA BSER D  71 
+ Alternate location indication is not blank or A, ignore atom: 4312  CB BSER D  71 
+ Alternate location indication is not blank or A, ignore atom: 4314  OG BSER D  71 
+ Alternate location indication is not blank or A, ignore atom: 4378  CA BSER D  81 
+ Alternate location indication is not blank or A, ignore atom: 4382  CB BSER D  81 
+ Alternate location indication is not blank or A, ignore atom: 4384  OG BSER D  81 
+ Alternate location indication is not blank or A, ignore atom: 4528  CA BLYS D 100 
+ Alternate location indication is not blank or A, ignore atom: 4532  CB BLYS D 100 
+ Alternate location indication is not blank or A, ignore atom: 4534  CG BLYS D 100 
+ Alternate location indication is not blank or A, ignore atom: 4536  CD BLYS D 100 
+ Alternate location indication is not blank or A, ignore atom: 4538  CE BLYS D 100 
+ Alternate location indication is not blank or A, ignore atom: 4540  NZ BLYS D 100 
+ Alternate location indication is not blank or A, ignore atom: 4627  CA BILE D 111 
+ Alternate location indication is not blank or A, ignore atom: 4631  CB BILE D 111 
+ Alternate location indication is not blank or A, ignore atom: 4633  CG1BILE D 111 
+ Alternate location indication is not blank or A, ignore atom: 4635  CG2BILE D 111 
+ Alternate location indication is not blank or A, ignore atom: 4637  CD1BILE D 111 
+ Alternate location indication is not blank or A, ignore atom: 4646  CA BMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4647  CA CMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4650  CB BMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4651  CB CMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4652  CG BMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4653  CG CMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4654 SE  BMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4655 SE  CMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4656  CE BMSE D 113 
+ Alternate location indication is not blank or A, ignore atom: 4657  CE CMSE D 113 
+
+Total number of residues read in:            165
+Total number of atoms read in:              1247
+Total number of ignored atom records:        350
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.KUCERA,Y.MODIS                                                      
+  Reading DSSP file
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              COMPND   2 MOLECULE: INFLAMMATORY PROFILIN;                                     SOURCE   2 ORGANISM_SCIENTIFIC: TOXOPLASMA GONDII;                              AUTHOR    K.KUCERA,Y.MODIS                                                      
+         165  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1491
+ selectset done           0
+ eigen done           0
+ tau           1   2.15862036              48          96
+ #popped           2           1
+ #selectset contacts        1491
+ selectset done           1
+ eigen done           1
+ tau           3  0.682086289             154
+ #popped           4           1
+ #selectset contacts        1491
+ selectset done           1
+ eigen done           1
+ tau           5   1.01869678              48
+ #popped           6           2
+ #selectset contacts        1491
+ selectset done           2
+ eigen done           2
+ tau           7  0.848223984              23
+ #popped           8           3
+ #selectset contacts        1491
+ selectset done           3
+ eigen done           3
+ tau           9  0.818518519              10
+ #popped           9           2
+ #selectset contacts        1491
+ selectset done           2
+ eigen done           2
+ tau          11  0.685383976              37
+ #popped           7           1
+ #selectset contacts        1491
+ selectset done           1
+ eigen done           1
+ tau          13  0.452564865             125
+ #popped          14           2
+ #selectset contacts        1491
+ selectset done           2
+ eigen done           2
+ tau          15   1.00055063             115
+ #popped          15           1
+ #selectset contacts        1491
+ selectset done           1
+ eigen done           1
+ tau          17   2.31660223             135
+ #popped           3           0
+ #selectset contacts        1491
+ selectset done           0
+ eigen done           0
+ tau          19   1.16954553              70
+ #popped          20           1
+ #selectset contacts        1491
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        1491
+ selectset done           0
+ eigen done           0
+ tau          21  0.988904119              84
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ACTIN-BINDING PROTEIN                   08-JUN-10   3NEC              COMPND   2 MOLECULE: INFLAMMATORY PROFILIN;                                     SOURCE   2 ORGANISM_SCIENTIFIC: TOXOPLASMA GONDII;                              AUTHOR    K.KUCERA,Y.MODIS                                                      
+           0
+         165
+         165  residues read 3NEC.dssp                                                   
+  exclude short helix          44          48
+  grow short strand          89          91
+  grow short strand          94          96
+  grow short strand         110         114
+  grow short strand         117         118
+ crowded segment excluded!
+  exclude short helix         140         142
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  9 10 11 12 13  4  5  6  7  8
+   2     1  6  7  8  1  2  3  9 10 11 12 13
+   3     1 20 21  5  4  5  6  7  8
+   4     0  0  0  8  1  2  3  9 10 11 12 13
+   5     0  0  0  0
+   6     2  8  9  3  1  2  3
+   7     2 14 15  5  9 10 11 12 13
+   8     6  0  0  1  1
+   9     6  0  0  2  2  3
+  10     0  0  0  0
+  11     0  0  0  1  1
+  12     0  0  0  2  2  3
+  13     0  0  0  0
+  14     7 16 17  3  9 10 11
+  15     7 18 19  2 12 13
+  16    14  0  0  2  9 10
+  17    14  0  0  1 11
+  18    15  0  0  1 12
+  19    15  0  0  1 13
+  20     3  0  0  2  4  5
+  21     3 22 23  3  6  7  8
+  22    21  0  0  1  6
+  23    21  0  0  2  7  8
+   1 +   0  2  3 13  1  1 13
+   2 +   1  4  5  8  2  1  3  9 13
+   3 *   1 14 15  5  1  4  8
+   4 *   2  6  7  3  1  1  3
+   5 *   2  8  9  5  1  9 13
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  2  1  2  3
+   8 -   5 10 11  3  1  9 11
+   9 -   5 12 13  2  1 12 13
+  10 -   8  0  0  2  1  9 10
+  11 -   8  0  0  1  1 11 11
+  12 -   9  0  0  1  1 12 12
+  13 -   9  0  0  1  1 13 13
+  14 -   3  0  0  2  1  4  5
+  15 -   3 16 17  3  1  6  8
+  16 -  15  0  0  1  1  6  6
+  17 -  15  0  0  2  1  7  8
+
+ CHAIN : 3NECA
+ CHAIN : 3NECB
+ CHAIN : 3NECC
+ CHAIN : 3NECD
+

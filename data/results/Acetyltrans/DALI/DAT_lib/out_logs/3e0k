@@ -1,0 +1,159 @@
+A length: 143
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   44  CA BGLN A 303 
+ Alternate location indication is not blank or A, ignore atom:   48  CB BGLN A 303 
+ Alternate location indication is not blank or A, ignore atom:   50  CG BGLN A 303 
+ Alternate location indication is not blank or A, ignore atom:   52  CD BGLN A 303 
+ Alternate location indication is not blank or A, ignore atom:   54  OE1BGLN A 303 
+ Alternate location indication is not blank or A, ignore atom:   56  NE2BGLN A 303 
+ Alternate location indication is not blank or A, ignore atom:  539  CA BMSE A 366 
+ Alternate location indication is not blank or A, ignore atom:  543  CB BMSE A 366 
+ Alternate location indication is not blank or A, ignore atom:  545  CG BMSE A 366 
+ Alternate location indication is not blank or A, ignore atom:  547 SE  BMSE A 366 
+ Alternate location indication is not blank or A, ignore atom:  549  CE BMSE A 366 
+
+Total number of residues read in:            146
+Total number of atoms read in:              1165
+Total number of ignored atom records:        117
+ HEADER    TRANSFERASE                             31-JUL-08   3E0K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.CHANG,G.SHACKELFORD,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCTURAL      
+  Reading DSSP file
+ HEADER    TRANSFERASE                             31-JUL-08   3E0K              COMPND   2 MOLECULE: AMINO-ACID ACETYLTRANSFERASE;                              SOURCE   2 ORGANISM_SCIENTIFIC: VIBRIO PARAHAEMOLYTICUS;                        AUTHOR    C.CHANG,G.SHACKELFORD,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCT          
+         146  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1195
+ selectset done           0
+ eigen done           0
+ tau           1   5.99219656             136
+ #popped           2           0
+ #selectset contacts        1195
+ selectset done           0
+ eigen done           0
+ tau           3   2.74754262             105         118
+ #popped           4           0
+ #selectset contacts        1195
+ selectset done           0
+ eigen done           0
+ tau           5   3.06238508             105
+ #popped           6           0
+ #selectset contacts        1195
+ selectset done           0
+ eigen done           0
+ tau           7   1.42005467              56          68          93
+ #popped           8           1
+ #selectset contacts        1195
+ selectset done           1
+ eigen done           1
+ tau           9   1.64904165              11          41
+ #popped          10           2
+ #selectset contacts        1195
+ selectset done           2
+ eigen done           2
+ tau          11   1.04233301              79
+ #popped          12           2
+ #selectset contacts        1195
+ selectset done           2
+ eigen done           2
+ tau          13  0.711587846              56
+ #popped          14           2
+ #selectset contacts        1195
+ selectset done           2
+ eigen done           2
+ tau          15  0.358259082              11
+ #popped          11           1
+ #selectset contacts        1195
+ selectset done           1
+ eigen done           1
+ tau          17   1.94308186              28
+ #popped           9           0
+ #selectset contacts        1195
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             31-JUL-08   3E0K              COMPND   2 MOLECULE: AMINO-ACID ACETYLTRANSFERASE;                              SOURCE   2 ORGANISM_SCIENTIFIC: VIBRIO PARAHAEMOLYTICUS;                        AUTHOR    C.CHANG,G.SHACKELFORD,A.JOACHIMIAK,MIDWEST CENTER FOR STRUCT          
+           0
+         146
+         146  residues read 3E0K.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          61          63
+  exclude short helix          75          77
+  grow short strand         101         103
+  grow short helix         110         116
+  exclude short helix         123         125
+  grow short helix         128         134
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 10  1  4  5  6  7  2  3  8 10  9
+   2     0  0  0 10  1  4  5  6  7  2  3  8 10  9
+   3     0  0  0  0
+   4     1  6  7  9  1  4  5  6  7  2  3  8 10
+   5     1  0  0  1  9
+   6     4  8  9  8  1  4  5  6  7  2  3  8
+   7     4  0  0  1 10
+   8     6 10 11  7  1  4  5  6  7  2  3
+   9     6  0  0  1  8
+  10     8 12 13  5  1  4  5  6  7
+  11     8 18 19  2  2  3
+  12    10 14 15  4  1  4  5  6
+  13    10  0  0  1  7
+  14    12 16 17  3  1  4  5
+  15    12  0  0  1  6
+  16    14  0  0  1  1
+  17    14  0  0  2  4  5
+  18    11  0  0  1  2
+  19    11  0  0  1  3
+   1 +   0  2  3 10  1  1 10
+   2 +   1  4  5  9  2  1  8 10 10
+   3 =   1  0  0  1  1  9  9
+   4 *   2  6  7  8  1  1  8
+   5 =   2  0  0  1  1 10 10
+   6 -   4  8  9  7  1  1  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  5  2  1  1  4  7
+   9 -   6 16 17  2  1  2  3
+  10 -   8 12 13  4  2  1  1  4  6
+  11 -   8  0  0  1  1  7  7
+  12 -  10 14 15  3  2  1  1  4  5
+  13 -  10  0  0  1  1  6  6
+  14 -  12  0  0  1  1  1  1
+  15 -  12  0  0  2  1  4  5
+  16 -   9  0  0  1  1  2  2
+  17 -   9  0  0  1  1  3  3
+
+ CHAIN : 3E0KA
+

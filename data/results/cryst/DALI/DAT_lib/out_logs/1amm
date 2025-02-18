@@ -1,0 +1,163 @@
+A length: 174
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:   77  NE BARG A   9 
+ Alternate location indication is not blank or A, ignore atom:   79  CZ BARG A   9 
+ Alternate location indication is not blank or A, ignore atom:   81  NH1BARG A   9 
+ Alternate location indication is not blank or A, ignore atom:   83  NH2BARG A   9 
+ Alternate location indication is not blank or A, ignore atom:  161  OG BSER A  19 
+ Alternate location indication is not blank or A, ignore atom:  211  CG BGLN A  26 
+ Alternate location indication is not blank or A, ignore atom:  213  CD BGLN A  26 
+ Alternate location indication is not blank or A, ignore atom:  215  OE1BGLN A  26 
+ Alternate location indication is not blank or A, ignore atom:  217  NE2BGLN A  26 
+ Alternate location indication is not blank or A, ignore atom:  546  CG BASP A  64 
+ Alternate location indication is not blank or A, ignore atom:  548  OD1BASP A  64 
+ Alternate location indication is not blank or A, ignore atom:  550  OD2BASP A  64 
+
+Total number of residues read in:            174
+Total number of atoms read in:              1475
+Total number of ignored atom records:        783
+ HEADER    CRYSTALLIN                              20-MAR-96   1AMM              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    V.S.KUMARASWAMY,P.F.LINDLEY,C.SLINGSBY,I.D.GLOVER                     
+  Reading DSSP file
+ HEADER    CRYSTALLIN                              20-MAR-96   1AMM              COMPND   2 MOLECULE: GAMMA B-CRYSTALLIN;                                        SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    V.S.KUMARASWAMY,P.F.LINDLEY,C.SLINGSBY,I.D.GLOVER                     
+         174  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1615
+ selectset done           0
+ eigen done           0
+ tau           1   2.94096613              83
+ #popped           2           1
+ #selectset contacts        1615
+ selectset done           1
+ eigen done           1
+ tau           3  0.877952099              18          28          39          57          73
+ #popped           4           2
+ #selectset contacts        1615
+ selectset done           2
+ eigen done           2
+ tau           5  0.560732961              39
+ #popped           6           2
+ #selectset contacts        1615
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1615
+ selectset done           1
+ eigen done           1
+ tau           7  0.634932518              28
+ #popped           9           1
+ #selectset contacts        1615
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1615
+ selectset done           0
+ eigen done           0
+ tau           9  0.821364701             110         120
+ #popped          10           0
+ #selectset contacts        1615
+ selectset done           0
+ eigen done           0
+ tau          11  0.633746326             151         162
+ #popped          12           0
+ #selectset contacts        1615
+ selectset done           0
+ eigen done           0
+ tau          13  0.471238256             110
+ #popped          14           1
+ #selectset contacts        1615
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          15           0
+ #selectset contacts        1615
+ selectset done           0
+ eigen done           0
+ tau          15  0.429850280             151
+ #popped          16           0
+ #selectset contacts        1615
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    CRYSTALLIN                              20-MAR-96   1AMM              COMPND   2 MOLECULE: GAMMA B-CRYSTALLIN;                                        SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    V.S.KUMARASWAMY,P.F.LINDLEY,C.SLINGSBY,I.D.GLOVER                     
+           0
+         174
+         174  residues read 1AMM.dssp                                                   
+  exclude short helix           9          11
+  grow short strand          60          62
+  exclude short helix          65          68
+  grow short strand          77          80
+  exclude short helix         112         116
+  grow short strand         149         151
+  exclude short helix         154         157
+  grow short strand         166         169
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  6  4  5  7  8  9 10 11 12 13 14
+   2     1  4  5  7  1  2  3  6  4  5  7
+   3     1 14 15  7  8  9 10 11 12 13 14
+   4     2  6  7  4  1  2  3  6
+   5     2  0  0  3  4  5  7
+   6     4  0  0  3  1  2  3
+   7     4  0  0  1  6
+   8     0  0  0  0
+   9     0  0  0  3  4  5  7
+  10     0  0  0  7  8  9 10 11 12 13 14
+  11     0  0  0  0
+  12     0  0  0  7  8  9 10 11 12 13 14
+  13     0  0  0  0
+  14     3  0  0  2  8  9
+  15     3 16 17  5 10 11 12 13 14
+  16    15  0  0  4 10 11 12 13
+  17    15  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  7  1  1  7
+   3 *   1  8  9  7  1  8 14
+   4 -   2  6  7  4  2  1  3  6  6
+   5 -   2  0  0  3  2  4  5  7  7
+   6 -   4  0  0  3  1  1  3
+   7 -   4  0  0  1  1  6  6
+   8 -   3  0  0  2  1  8  9
+   9 -   3 10 11  5  1 10 14
+  10 -   9  0  0  4  1 10 13
+  11 -   9  0  0  1  1 14 14
+
+ CHAIN : 1AMMA
+

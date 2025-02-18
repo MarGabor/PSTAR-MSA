@@ -1,0 +1,31 @@
+# Job: LIM
+# Query: 2CURA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2EGQ-A  6.2  3.8   62    77   37   MOLECULE: FHL1 PROTEIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=2CURA Sbjct=2EGQA Z-score=6.2
+
+DSSP  ----------LLLLLLLLLLLLLLLLL-----LLEEELLEEELLLLLLLLLLLLLLLLLL
+Query ----------GSSGSSGCVKCNKAITS-----GGITYQDQPWHADCFVCVTCSKKLAGQR   45
+ident                  |  |   ||          |  | ||  || |  ||  ||  |
+Sbjct gssgssgdcyKNFVAKKCAGCKNPITGfgkgsSVVAYEGQSWHDYCFHCKKCSVNLANKR   60
+DSSP  llllllllllLLLLLLLLLLLLLLLLLlllllLEEEELLEEEELLLLLLLLLLLLLLLLL
+
+DSSP  EEELLLLEEEHHHHHHHhllllll
+Query FTAVEDQYYCVDCYKNFvsgpssg   69
+ident |     | || || |         
+Sbjct FVFHQEQVYCPDCAKKL-------   77
+DSSP  LLEELLEELLHHHHHHL-------
+
+
+# Structural equivalences
+   1: 2CUR-A 2EGQ-A     1 -  17 <=>   11 -  27   (GLY    1  - SER   17  <=> LYS   11  - GLY   27 )                          
+   1: 2CUR-A 2EGQ-A    18 -  62 <=>   33 -  77   (GLY   18  - PHE   62  <=> SER   33  - LEU   77 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUR-A 2EGQ-A  U(1,.)  -0.648168 -0.640927  0.411207            2.464551"
+-matrix  "2CUR-A 2EGQ-A  U(2,.)   0.709023 -0.310964  0.632920           -5.754603"
+-matrix  "2CUR-A 2EGQ-A  U(3,.)  -0.277785  0.701794  0.655989           -2.055347"
+

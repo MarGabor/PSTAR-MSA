@@ -1,0 +1,311 @@
+A length: 165
+B length: 164
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            165
+Total number of atoms read in:              1299
+Total number of ignored atom records:        450
+ HEADER    TRANSFERASE                             24-JAN-12   4AG7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.C.DORFMUELLER,W.FANG,F.V.RAO,D.E.BLAIR,H.ATTRILL,S.M.SHEPHERD,      
+  Reading DSSP file
+ HEADER    TRANSFERASE                             24-JAN-12   4AG7              COMPND   2 MOLECULE: GLUCOSAMINE-6-PHOSPHATE N-ACETYLTRANSFERASE;               SOURCE   2 ORGANISM_SCIENTIFIC: CAENORHABDITIS ELEGANS;                         AUTHOR    H.C.DORFMUELLER,W.FANG,F.V.RAO,D.E.BLAIR,H.ATTRILL,S.M.SHEPH          
+         165  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1408
+ selectset done           0
+ eigen done           0
+ tau           1   4.00066996             139
+ #popped           2           1
+ #selectset contacts        1408
+ selectset done           1
+ eigen done           1
+ tau           3   1.26130509              86         103         128
+ #popped           4           2
+ #selectset contacts        1408
+ selectset done           2
+ eigen done           2
+ tau           5   1.30938327              47          68
+ #popped           6           3
+ #selectset contacts        1408
+ selectset done           3
+ eigen done           3
+ tau           7   1.17618799              34          47
+ #popped           8           3
+ #selectset contacts        1408
+ selectset done           3
+ eigen done           3
+ tau           9  0.940012395             113
+ #popped          10           3
+ #selectset contacts        1408
+ selectset done           3
+ eigen done           3
+ tau          11   1.10431373              17
+ #popped          13           3
+ #selectset contacts        1408
+ selectset done           3
+ eigen done           3
+ tau          13  0.799497366              86
+ #popped          14           3
+ #selectset contacts        1408
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped           7           2
+ #selectset contacts        1408
+ selectset done           2
+ eigen done           2
+ tau          15  0.872108400              57
+ #popped           5           1
+ #selectset contacts        1408
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1408
+ selectset done           0
+ eigen done           0
+ tau          17   1.89704001             155
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             24-JAN-12   4AG7              COMPND   2 MOLECULE: GLUCOSAMINE-6-PHOSPHATE N-ACETYLTRANSFERASE;               SOURCE   2 ORGANISM_SCIENTIFIC: CAENORHABDITIS ELEGANS;                         AUTHOR    H.C.DORFMUELLER,W.FANG,F.V.RAO,D.E.BLAIR,H.ATTRILL,S.M.SHEPH          
+           0
+         165
+         165  residues read 4AG7.dssp                                                   
+  grow short helix           7          13
+  grow short strand          22          26
+  exclude short helix          29          32
+  exclude short helix          94          97
+  exclude short helix         110         112
+  grow short strand         136         139
+  grow short strand         155         156
+  grow short strand         161         163
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  5  6  8  3  4  7  9 10 11 12
+   2     1  4  5  9  1  2  5  6  8  3  4  7  9
+   3     1 18 19  3 10 11 12
+   4     2  6  7  7  1  2  5  6  8  3  4
+   5     2  0  0  2  7  9
+   6     4  8  9  6  1  2  5  6  8  3
+   7     4  0  0  1  4
+   8     6 10 11  5  1  2  5  6  8
+   9     6  0  0  1  3
+  10     8 12 13  4  1  2  5  6
+  11     8  0  0  1  8
+  12    10  0  0  1  1
+  13    10  0  0  3  2  5  6
+  14     0  0  0  3  2  5  6
+  15     0  0  0  0
+  16     0  0  0  1  4
+  17     0  0  0  0
+  18     3  0  0  2 10 11
+  19     3  0  0  1 12
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  9  1  1  9
+   3 =   1 14 15  3  1 10 12
+   4 -   2  6  7  7  2  1  6  8  8
+   5 -   2  0  0  2  2  7  7  9  9
+   6 -   4  8  9  6  3  1  3  5  6  8  8
+   7 -   4  0  0  1  1  4  4
+   8 -   6 10 11  5  3  1  2  5  6  8  8
+   9 -   6  0  0  1  1  3  3
+  10 -   8 12 13  4  2  1  2  5  6
+  11 -   8  0  0  1  1  8  8
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  3  2  2  2  5  6
+  14 -   3  0  0  2  1 10 11
+  15 -   3  0  0  1  1 12 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            164
+Total number of atoms read in:              1291
+Total number of ignored atom records:        348
+ HEADER    TRANSFERASE                             24-JAN-12   4AG7              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.C.DORFMUELLER,W.FANG,F.V.RAO,D.E.BLAIR,H.ATTRILL,S.M.SHEPHERD,      
+  Reading DSSP file
+ HEADER    TRANSFERASE                             24-JAN-12   4AG7              COMPND   2 MOLECULE: GLUCOSAMINE-6-PHOSPHATE N-ACETYLTRANSFERASE;               SOURCE   2 ORGANISM_SCIENTIFIC: CAENORHABDITIS ELEGANS;                         AUTHOR    H.C.DORFMUELLER,W.FANG,F.V.RAO,D.E.BLAIR,H.ATTRILL,S.M.SHEPH          
+         164  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1404
+ selectset done           0
+ eigen done           0
+ tau           1   4.27172375             153
+ #popped           2           0
+ #selectset contacts        1404
+ selectset done           0
+ eigen done           0
+ tau           3   2.68515062             139
+ #popped           4           0
+ #selectset contacts        1404
+ selectset done           0
+ eigen done           0
+ tau           5   1.31349707              25          67
+ #popped           6           1
+ #selectset contacts        1404
+ selectset done           1
+ eigen done           1
+ tau           7   1.11620724              84         104         127
+ #popped           8           2
+ #selectset contacts        1404
+ selectset done           2
+ eigen done           2
+ tau           9   1.02805603              11
+ #popped          11           2
+ #selectset contacts        1404
+ selectset done           2
+ eigen done           2
+ tau          11  0.877846301             114
+ #popped          12           2
+ #selectset contacts        1404
+ selectset done           2
+ eigen done           2
+ tau          13   1.19658113              84
+ #popped          14           2
+ #selectset contacts        1404
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           9           1
+ #selectset contacts        1404
+ selectset done           1
+ eigen done           1
+ tau          15  0.448642284             104
+ #popped          16           1
+ #selectset contacts        1404
+ selectset done           1
+ eigen done           1
+ tau          17  0.200412929              94
+ #popped           7           0
+ #selectset contacts        1404
+ selectset done           0
+ eigen done           0
+ tau          19   1.52532470              48
+ #popped          20           0
+ #selectset contacts        1404
+ selectset done           0
+ eigen done           0
+ tau          21   1.02900934              35
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             24-JAN-12   4AG7              COMPND   2 MOLECULE: GLUCOSAMINE-6-PHOSPHATE N-ACETYLTRANSFERASE;               SOURCE   2 ORGANISM_SCIENTIFIC: CAENORHABDITIS ELEGANS;                         AUTHOR    H.C.DORFMUELLER,W.FANG,F.V.RAO,D.E.BLAIR,H.ATTRILL,S.M.SHEPH          
+           0
+         164
+         164  residues read 4AG7.dssp                                                   
+  grow short helix           6          12
+  grow short strand          21          25
+  exclude short helix          28          33
+  exclude short helix          35          39
+  exclude short helix          93          96
+  exclude short helix         109         111
+  grow short strand         135         138
+  grow short strand         153         155
+  grow short strand         160         163
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  5  7  6  8  3  9 10 11
+   2     1  4  5  9  1  2  4  5  7  6  8  3  9
+   3     1  0  0  2 10 11
+   4     2  6  7  8  1  2  4  5  7  6  8  3
+   5     2  0  0  1  9
+   6     4  8  9  7  1  2  4  5  7  6  8
+   7     4  0  0  1  3
+   8     6 10 11  5  1  2  4  5  7
+   9     6 16 17  2  6  8
+  10     8  0  0  1  1
+  11     8 12 13  4  2  4  5  7
+  12    11  0  0  3  2  4  5
+  13    11  0  0  1  7
+  14     0  0  0  3  2  4  5
+  15     0  0  0  0
+  16     9  0  0  1  6
+  17     9  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  1  6
+  20     0  0  0  0
+  21     0  0  0  1  3
+  22     0  0  0  0
+  23     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 +   1  4  5  9  1  1  9
+   3 =   1  0  0  2  1 10 11
+   4 *   2  6  7  8  1  1  8
+   5 =   2  0  0  1  1  9  9
+   6 -   4  8  9  7  2  1  2  4  8
+   7 -   4  0  0  1  1  3  3
+   8 -   6 10 11  5  3  1  2  4  5  7  7
+   9 -   6 14 15  2  2  6  6  8  8
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  4  3  2  2  4  5  7  7
+  12 -  11  0  0  3  2  2  2  4  5
+  13 -  11  0  0  1  1  7  7
+  14 -   9  0  0  1  1  6  6
+  15 -   9  0  0  1  1  8  8
+
+ CHAIN : 4AG7A
+ CHAIN : 4AG7B
+

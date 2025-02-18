@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1HBIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3LHB-A 16.0  2.3  137   149   15   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1HBIA Sbjct=3LHBA Z-score=16.0
+
+DSSP  ---lHHHHhHLLLHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHHHHHLLHH
+Query ---sVYDAaAQLTADVKKDLRDSWKVIGSDKKGNGVALMTTLFADNQETIGYFKRLGNVS   57
+ident          | | |  |   |  |    |     ||      |         |       
+Sbjct pivdTGSV-APLSAAEKTKIRSAWAPVYSTYETSGVDILVKFFTSTPAAQEFFPKFKGLT   59
+DSSP  llllLLLL-LLLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLHHHLLLL
+
+DSSP  ---HHHHLHHHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHHH-LLLLLHHHHHHH
+Query ---QGMANDKLRGHSITLMYALQNFIDQLDNPDDLVCVVEKFAVNHI-TRKISAAEFGKI  113
+ident            | |      |        |               |          |   
+Sbjct tadELKKSADVRWHAERIINAVDDAVASMDDTEKMSMKLRNLSGKHAkSFQVDPEYFKVL  119
+DSSP  lhhHHHHLHHHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHHHhLLLLLHHHHHHH
+
+DSSP  HHHHHHHHhhllLLHHhhHHHHHHHHHHHHLL----
+Query NGPIKKVLasknFGDKyaNAWAKLVAVVQAAL----  145
+ident    |                  ||       |    
+Sbjct AAVIADTV----AAGD--AGFEKLMSMICILLrsay  149
+DSSP  HHHHHHHH----HLLL--HHHHHHHHHHHHHHhlll
+
+
+# Structural equivalences
+   1: 1HBI-A 3LHB-A     2 -   5 <=>    5 -   8   (VAL    3  - ALA    6  <=> THR    5  - VAL    8 )                          
+   1: 1HBI-A 3LHB-A     7 -  57 <=>    9 -  59   (ALA    8  - SER   58  <=> ALA    9  - THR   59 )                          
+   1: 1HBI-A 3LHB-A    58 - 101 <=>   63 - 106   (GLN   59  - ILE  102  <=> GLU   63  - ALA  106 )                          
+   1: 1HBI-A 3LHB-A   102 - 121 <=>  108 - 127   (THR  103  - LEU  122  <=> SER  108  - VAL  127 )                          
+   1: 1HBI-A 3LHB-A   126 - 129 <=>  128 - 131   (PHE  127  - LYS  130  <=> ALA  128  - ASP  131 )                          
+   1: 1HBI-A 3LHB-A   132 - 145 <=>  132 - 145   (ASN  133  - LEU  146  <=> ALA  132  - LEU  145 )                          
+
+# Translation-rotation matrices
+-matrix  "1HBI-A 3LHB-A  U(1,.)  -0.438554  0.084875 -0.894688           32.394348"
+-matrix  "1HBI-A 3LHB-A  U(2,.)   0.620770 -0.691263 -0.369864          137.444611"
+-matrix  "1HBI-A 3LHB-A  U(3,.)  -0.649857 -0.717601  0.250468          191.330124"
+

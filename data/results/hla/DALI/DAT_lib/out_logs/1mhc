@@ -1,0 +1,642 @@
+A length: 276
+B length: 99
+C length: 8
+D length: 276
+E length: 99
+F length: 8
+# 4 chains A B D E
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            276
+Total number of atoms read in:              2240
+Total number of ignored atom records:        253
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+  calculate residue outside grid:         256
+  Reading DSSP file
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN H2-M3;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+         276  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2349
+ selectset done           0
+ eigen done           0
+ tau           1   13.6874571             180
+ #popped           2           1
+ #selectset contacts        2349
+ selectset done           1
+ eigen done           1
+ tau           3   1.50201416              72          96         115         152
+ #popped           4           2
+ #selectset contacts        2349
+ selectset done           2
+ eigen done           2
+ tau           5   2.52050471             115
+ #popped           6           3
+ #selectset contacts        2349
+ selectset done           3
+ eigen done           3
+ tau           7   2.77077413              48          72
+ #popped           8           4
+ #selectset contacts        2349
+ selectset done           4
+ eigen done           4
+ tau           9   1.26709354              11          21
+ #popped          10           4
+ #selectset contacts        2349
+ selectset done           4
+ eigen done           4
+ tau          11  0.238866568              24
+ #popped          13           4
+ #selectset contacts        2349
+ selectset done           4
+ eigen done           4
+ tau          13   999.999023              48
+ #popped          14           4
+ #selectset contacts        2349
+ selectset done           4
+ eigen done           4
+ tau          15   0.00000000    
+ #popped           9           3
+ #selectset contacts        2349
+ selectset done           3
+ eigen done           3
+ tau          15   1.51872921              61
+ #popped           7           2
+ #selectset contacts        2349
+ selectset done           2
+ eigen done           2
+ tau          17   1.56485355             162
+ #popped           5           1
+ #selectset contacts        2349
+ selectset done           1
+ eigen done           1
+ tau          19   1.13487852             134
+ #popped          20           1
+ #selectset contacts        2349
+ selectset done           1
+ eigen done           1
+ tau          21   1.55789471              86
+ #popped          23           1
+ #selectset contacts        2349
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2349
+ selectset done           0
+ eigen done           0
+ tau          23  0.883750975             190         201         216         228         246
+ #popped          24           1
+ #selectset contacts        2349
+ selectset done           1
+ eigen done           1
+ tau          25  0.347311646             190
+ #popped          27           1
+ #selectset contacts        2349
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          25           0
+ #selectset contacts        2349
+ selectset done           0
+ eigen done           0
+ tau          27  0.788288891             201         228
+ #popped          28           0
+ #selectset contacts        2349
+ selectset done           0
+ eigen done           0
+ tau          29   1.60060060             256
+ #popped          30           1
+ #selectset contacts        2349
+ selectset done           1
+ eigen done           1
+ tau          31  0.516208708             201
+ #popped          31           0
+ #selectset contacts        2349
+ selectset done           0
+ eigen done           0
+ tau          33  0.402366847             266
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN H2-M3;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+           0
+         276
+         276  residues read 1MHC.dssp                                                   
+  exclude short helix          50          52
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+  grow short strand         229         230
+  grow short strand         234         235
+  exclude short helix         254         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  3  4  6  7  5 11 12  8  9 10 13 14 15 17 18 19 20 21 16
+   2     1  4  5 12  1  2  3  4  6  7  5 11 12  8  9 10
+   3     1 24 25  9 13 14 15 17 18 19 20 21 16
+   4     2  6  7  9  1  2  3  4  6  7  5 11 12
+   5     2 20 21  3  8  9 10
+   6     4  8  9  7  1  2  3  4  6  7  5
+   7     4 18 19  2 11 12
+   8     6 12 13  6  1  2  3  4  6  7
+   9     6  0  0  1  5
+  10     0  0  0  6  1  2  3  4  6  7
+  11     0  0  0  0
+  12     8  0  0  1  1
+  13     8 14 15  5  2  3  4  6  7
+  14    13  0  0  3  2  3  4
+  15    13  0  0  2  6  7
+  16     0  0  0  0
+  17     0  0  0  1  5
+  18     7  0  0  1 11
+  19     7  0  0  1 12
+  20     5  0  0  2  8  9
+  21     5  0  0  1 10
+  22     0  0  0  0
+  23     0  0  0  2  8  9
+  24     3 26 27  6 13 14 15 17 18 19
+  25     3 28 29  3 20 21 16
+  26    24  0  0  1 13
+  27    24  0  0  5 14 15 17 18 19
+  28    25 34 35  2 20 21
+  29    25  0  0  1 16
+  30     0  0  0  0
+  31     0  0  0  2 20 21
+  32     0  0  0  0
+  33     0  0  0  0
+  34    28  0  0  1 20
+  35    28  0  0  1 21
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 12  1  1 12
+   3 *   1 18 19  9  1 13 21
+   4 -   2  6  7  9  2  1  7 11 12
+   5 -   2 16 17  3  1  8 10
+   6 -   4  8  9  7  1  1  7
+   7 -   4 14 15  2  1 11 12
+   8 -   6 10 11  6  2  1  4  6  7
+   9 -   6  0  0  1  1  5  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  5  2  2  4  6  7
+  12 -  11  0  0  3  1  2  4
+  13 -  11  0  0  2  1  6  7
+  14 -   7  0  0  1  1 11 11
+  15 -   7  0  0  1  1 12 12
+  16 -   5  0  0  2  1  8  9
+  17 -   5  0  0  1  1 10 10
+  18 -   3 20 21  6  2 13 15 17 19
+  19 -   3 22 23  3  2 16 16 20 21
+  20 -  18  0  0  1  1 13 13
+  21 -  18  0  0  5  2 14 15 17 19
+  22 -  19 24 25  2  1 20 21
+  23 -  19  0  0  1  1 16 16
+  24 -  22  0  0  1  1 20 20
+  25 -  22  0  0  1  1 21 21
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               822
+Total number of ignored atom records:        117
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+  Reading DSSP file
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN H2-M3;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         755
+ selectset done           0
+ eigen done           0
+ tau           1  0.901502192              10          23          38          49          67
+ #popped           2           1
+ #selectset contacts         755
+ selectset done           1
+ eigen done           1
+ tau           3  0.530005872              38
+ #popped           4           1
+ #selectset contacts         755
+ selectset done           1
+ eigen done           1
+ tau           5  0.323289931              10
+ #popped           3           0
+ #selectset contacts         755
+ selectset done           0
+ eigen done           0
+ tau           7  0.820530057              23          49
+ #popped           8           0
+ #selectset contacts         755
+ selectset done           0
+ eigen done           0
+ tau           9   2.04926229              77
+ #popped          10           1
+ #selectset contacts         755
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped          11           0
+ #selectset contacts         755
+ selectset done           0
+ eigen done           0
+ tau          11  0.412803948              87
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN H2-M3;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+           0
+          99
+          99  residues read 1MHC.dssp                                                   
+  grow short strand          44          45
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  5  6  7  8  9  4
+   2     1  4  5  6  1  2  3  5  6  7
+   3     1  8  9  3  8  9  4
+   4     2  6  7  3  1  2  3
+   5     2  0  0  3  5  6  7
+   6     4  0  0  1  1
+   7     4  0  0  2  2  3
+   8     3 12 13  2  8  9
+   9     3  0  0  1  4
+  10     0  0  0  0
+  11     0  0  0  2  8  9
+  12     8  0  0  1  8
+  13     8  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  6  2  1  3  5  7
+   3 -   1  8  9  3  2  4  4  8  9
+   4 -   2  6  7  3  1  1  3
+   5 -   2  0  0  3  1  5  7
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  2  1  2  3
+   8 -   3 10 11  2  1  8  9
+   9 -   3  0  0  1  1  4  4
+  10 -   8  0  0  1  1  8  8
+  11 -   8  0  0  1  1  9  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            276
+Total number of atoms read in:              2240
+Total number of ignored atom records:        276
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+  Reading DSSP file
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN H2-M3;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+         276  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2385
+ selectset done           0
+ eigen done           0
+ tau           1   13.6874571             180
+ #popped           2           1
+ #selectset contacts        2385
+ selectset done           1
+ eigen done           1
+ tau           3   1.48531377             122         152
+ #popped           4           2
+ #selectset contacts        2385
+ selectset done           2
+ eigen done           2
+ tau           5   1.98670816             122
+ #popped           6           3
+ #selectset contacts        2385
+ selectset done           3
+ eigen done           3
+ tau           7   1.34465659              74          91
+ #popped           8           3
+ #selectset contacts        2385
+ selectset done           3
+ eigen done           3
+ tau           9   2.42307830              48          74
+ #popped          10           4
+ #selectset contacts        2385
+ selectset done           4
+ eigen done           4
+ tau          11  0.848333895             101         111
+ #popped          12           4
+ #selectset contacts        2385
+ selectset done           4
+ eigen done           4
+ tau          13  0.772634029              11          21
+ #popped          14           4
+ #selectset contacts        2385
+ selectset done           4
+ eigen done           4
+ tau          15  0.396348536             101
+ #popped          16           4
+ #selectset contacts        2385
+ selectset done           4
+ eigen done           4
+ tau          17  0.222137719              24
+ #popped          19           4
+ #selectset contacts        2385
+ selectset done           4
+ eigen done           4
+ tau          19   999.999023              48
+ #popped          20           4
+ #selectset contacts        2385
+ selectset done           4
+ eigen done           4
+ tau          21  0.848771930              34
+ #popped          11           3
+ #selectset contacts        2385
+ selectset done           3
+ eigen done           3
+ tau          23   1.54783261              60
+ #popped           7           2
+ #selectset contacts        2385
+ selectset done           2
+ eigen done           2
+ tau          25   1.56485355             162
+ #popped           5           1
+ #selectset contacts        2385
+ selectset done           1
+ eigen done           1
+ tau          27   1.17059803             135
+ #popped           3           0
+ #selectset contacts        2385
+ selectset done           0
+ eigen done           0
+ tau          29  0.751317203             190         201         217         227         246
+ #popped          30           1
+ #selectset contacts        2385
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          31           0
+ #selectset contacts        2385
+ selectset done           0
+ eigen done           0
+ tau          31   1.09965801             201         227
+ #popped          32           0
+ #selectset contacts        2385
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN H2-M3;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+           0
+         276
+         276  residues read 1MHC.dssp                                                   
+  exclude short helix          50          54
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+  grow short strand         229         230
+  grow short strand         234         235
+  exclude short helix         253         256
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  3  4  6  7  5 11 12  8  9 10 13 14 15 17 18 19 20 21 16
+   2     1  4  5 12  1  2  3  4  6  7  5 11 12  8  9 10
+   3     1 30 31  9 13 14 15 17 18 19 20 21 16
+   4     2  6  7  9  1  2  3  4  6  7  5 11 12
+   5     2 28 29  3  8  9 10
+   6     4 10 11  7  1  2  3  4  6  7  5
+   7     4 26 27  2 11 12
+   8     0  0  0  7  1  2  3  4  6  7  5
+   9     0  0  0  0
+  10     6 16 17  6  1  2  3  4  6  7
+  11     6  0  0  1  5
+  12     0  0  0  6  1  2  3  4  6  7
+  13     0  0  0  0
+  14     0  0  0  6  1  2  3  4  6  7
+  15     0  0  0  0
+  16    10 18 19  5  1  2  3  4  6
+  17    10  0  0  1  7
+  18    16  0  0  1  1
+  19    16 20 21  4  2  3  4  6
+  20    19 22 23  3  2  3  4
+  21    19  0  0  1  6
+  22    20  0  0  1  2
+  23    20  0  0  2  3  4
+  24     0  0  0  0
+  25     0  0  0  1  5
+  26     7  0  0  1 11
+  27     7  0  0  1 12
+  28     5  0  0  2  8  9
+  29     5  0  0  1 10
+  30     3  0  0  6 13 14 15 17 18 19
+  31     3 32 33  3 20 21 16
+  32    31  0  0  2 20 21
+  33    31  0  0  1 16
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 12  1  1 12
+   3 *   1 22 23  9  1 13 21
+   4 -   2  6  7  9  2  1  7 11 12
+   5 -   2 20 21  3  1  8 10
+   6 -   4  8  9  7  1  1  7
+   7 -   4 18 19  2  1 11 12
+   8 -   6 10 11  6  2  1  4  6  7
+   9 -   6  0  0  1  1  5  5
+  10 -   8 12 13  5  2  1  4  6  6
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  4  2  2  4  6  6
+  14 -  13 16 17  3  1  2  4
+  15 -  13  0  0  1  1  6  6
+  16 -  14  0  0  1  1  2  2
+  17 -  14  0  0  2  1  3  4
+  18 -   7  0  0  1  1 11 11
+  19 -   7  0  0  1  1 12 12
+  20 -   5  0  0  2  1  8  9
+  21 -   5  0  0  1  1 10 10
+  22 -   3  0  0  6  2 13 15 17 19
+  23 -   3 24 25  3  2 16 16 20 21
+  24 -  23  0  0  2  1 20 21
+  25 -  23  0  0  1  1 16 16
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               822
+Total number of ignored atom records:        109
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+  Reading DSSP file
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN H2-M3;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         751
+ selectset done           0
+ eigen done           0
+ tau           1  0.848071456              10          23          38          48          67
+ #popped           2           1
+ #selectset contacts         751
+ selectset done           1
+ eigen done           1
+ tau           3   0.00000000    
+ #popped           3           0
+ #selectset contacts         751
+ selectset done           0
+ eigen done           0
+ tau           3  0.667599916              23
+ #popped           5           0
+ #selectset contacts         751
+ selectset done           0
+ eigen done           0
+ tau           5  0.669916809              48
+ #popped           7           0
+ #selectset contacts         751
+ selectset done           0
+ eigen done           0
+ tau           7   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HISTOCOMPATIBILITY ANTIGEN/PEPTIDE      23-AUG-95   1MHC              COMPND   2 MOLECULE: MHC CLASS I ANTIGEN H2-M3;                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    C.-R.WANG,K.FISCHER LINDAHL,J.DEISENHOFER                             
+           0
+          99
+          99  residues read 1MHC.dssp                                                   
+  grow short strand          44          45
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  5  6  7  4  8  9
+   2     1  0  0  6  1  2  3  5  6  7
+   3     1  6  7  3  4  8  9
+   4     0  0  0  0
+   5     0  0  0  3  4  8  9
+   6     3  0  0  1  4
+   7     3  0  0  2  8  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  0  0  6  2  1  3  5  7
+   3 -   1  4  5  3  2  4  4  8  9
+   4 -   3  0  0  1  1  4  4
+   5 -   3  0  0  2  1  8  9
+
+ CHAIN : 1MHCA
+ CHAIN : 1MHCB
+ CHAIN : 1MHCD
+ CHAIN : 1MHCE
+

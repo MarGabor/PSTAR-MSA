@@ -1,0 +1,40 @@
+# Job: az
+# Query: 4DP4X
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5B1J-C 11.3  2.0   88   124   27   MOLECULE: COPPER-CONTAINING NITRITE REDUCTASE;                       
+
+# Pairwise alignments
+
+No 1: Query=4DP4X Sbjct=5B1JC Z-score=11.3
+
+DSSP  --LEEEELLLL---LLLLEELLEEEELLLLEEEEEELLlLLLLLEELLLLLLLLLLHhhL
+Query --VDVLLGADD---GSLAFVPSEFSVPAGEKIVFKNNAgFPHNVLFDEDAVPSGVDVskI   55
+ident     |     |       | |    | ||    |       ||        | ||     
+Sbjct aeHIVEMRNKDdagNTMVFQPGFVKVEAGDTVKFVPTD-KSHNAESVREVWPEGVAP--V   57
+DSSP  leEEEEEEEELlllLEEEEELLEEEELLLLEEEEELLL-LLLEEEELLLLLLLLLLL--L
+
+DSSP  LLLLllllllllLEEEEELLLLEEEEEELLLLHHHLLEEEEEEL----------------
+Query SMSEedllnakgETFEVALSDKGEYTFYCSPHQGAGMVGKVIVN----------------   99
+ident                       | |   | || | |||  | |                 
+Sbjct KGGF-------sKEVVFNAEKEGLYVLKCAPHYGMGMVVLVQVGkpvnldqikeykatgl  110
+DSSP  EEEE-------lLLEEEELLLLLEEEEELHHHHHHLLEEEEEELllllhhhhhhlllllh
+
+DSSP  --------------
+Query --------------   99
+ident               
+Sbjct akkrldgeiakvvq  124
+DSSP  hhhhhhhhhhllll
+
+
+# Structural equivalences
+   1: 4DP4-X 5B1J-C     1 -   9 <=>    3 -  11   (VAL    1  - ASP    9  <=> HIS    3  - ASP   11 )                          
+   1: 4DP4-X 5B1J-C    10 -  33 <=>   15 -  38   (GLY   10  - ALA   33  <=> ASN   15  - ASP   38 )                          
+   1: 4DP4-X 5B1J-C    35 -  52 <=>   39 -  56   (PHE   35  - VAL   52  <=> LYS   39  - PRO   56 )                          
+   1: 4DP4-X 5B1J-C    55 -  59 <=>   57 -  61   (ILE   55  - GLU   59  <=> VAL   57  - PHE   61 )                          
+   1: 4DP4-X 5B1J-C    68 -  99 <=>   63 -  94   (GLU   68  - ASN   99  <=> LYS   63  - GLY   94 )                          
+
+# Translation-rotation matrices
+-matrix  "4DP4-X 5B1J-C  U(1,.)   0.931518 -0.362253  0.032374           19.585276"
+-matrix  "4DP4-X 5B1J-C  U(2,.)   0.363681  0.926961 -0.092085            6.055780"
+-matrix  "4DP4-X 5B1J-C  U(3,.)   0.003348  0.097553  0.995225           19.467413"
+

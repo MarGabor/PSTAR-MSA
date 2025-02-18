@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 1IMLA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CU8-A  7.8  1.9   67    76   66   MOLECULE: CYSTEINE-RICH PROTEIN 2;                                   
+
+# Pairwise alignments
+
+No 1: Query=1IMLA Sbjct=2CU8A Z-score=7.8
+
+DSSP  ---------LLLLLLLLLLLHHHEEEELLEEEELLLLLLLLLLLLLLLLLEEEELLEEEE
+Query ---------PKCPKCDKEVYFAERVTSLGKDWHRPCLKCEKCGKTLTSGGHAEHEGKPYC   51
+ident           ||||||| ||||| | |||||||  ||||| | |||| |||||| ||| |
+Sbjct gssgssgmaSKCPKCDKTVYFAEKVSSLGKDWHKFCLKCERCSKTLTPGGHAEHDGKPFC   60
+DSSP  lllllllllLLLLLLLLLLLLLLEEEELLEEEELLLLLLLLLLLLLLLLLLEEELLEEEL
+
+DSSP  LLLHHHHHlLLLLllLLLLllllll
+Query NHPCYSAMfGPKGfgRGGAeshtfk   76
+ident   |||       |            
+Sbjct HKPCYATL-FGSG--PSSG------   76
+DSSP  LLLHHHHH-LLLL--LLLL------
+
+
+# Structural equivalences
+   1: 1IML-A 2CU8-A     1 -  59 <=>   10 -  68   (PRO    1  - MET   59  <=> SER   10  - LEU   68 )                          
+   1: 1IML-A 2CU8-A    61 -  64 <=>   69 -  72   (GLY   61  - GLY   64  <=> PHE   69  - GLY   72 )                          
+   1: 1IML-A 2CU8-A    67 -  70 <=>   73 -  76   (ARG   67  - ALA   70  <=> PRO   73  - GLY   76 )                          
+
+# Translation-rotation matrices
+-matrix  "1IML-A 2CU8-A  U(1,.)  -0.993487 -0.068915 -0.090744            2.696776"
+-matrix  "1IML-A 2CU8-A  U(2,.)  -0.107512  0.303106  0.946873            7.758421"
+-matrix  "1IML-A 2CU8-A  U(3,.)  -0.037749  0.950462 -0.308541           -1.007288"
+

@@ -1,0 +1,33 @@
+# Job: scorptoxin
+# Query: 1I2UA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2KBJ-A  2.4  2.8   35    66   34   MOLECULE: TOXIN BMKA2;                                               
+
+# Pairwise alignments
+
+No 1: Query=1I2UA Sbjct=2KBJA Z-score=2.4
+
+DSSP  --LEEE-eelllllllLLLL-HHHHHHHLLLLLEEELLLL--LLEEEELL----------
+Query --DKLI-gscvwgavnYTSD-CNGECKRRGYKGGHCGSFA--NVNCWCET----------   44
+ident   |  |               | ||||      | |         |||            
+Sbjct vkDGYIaddrncpyfcGRNAyCDGECKKNRAESGYCQWASkyGNACWCYKlpddarimkp   60
+DSSP  leEEELllllllllllLLHHhHHHHHHHLLLLEEEEEEELllEEEEEEEEelllllllll
+
+DSSP  ------
+Query ------   44
+ident       
+Sbjct grcngg   66
+DSSP  llllll
+
+
+# Structural equivalences
+   1: 1I2U-A 2KBJ-A     1 -   4 <=>    3 -   6   (ASP    1  - ILE    4  <=> ASP    3  - ILE    6 )                          
+   1: 1I2U-A 2KBJ-A    14 -  17 <=>   17 -  20   (TYR   14  - ASP   17  <=> GLY   17  - ALA   20 )                          
+   1: 1I2U-A 2KBJ-A    18 -  36 <=>   22 -  40   (CYS   18  - ALA   36  <=> CYS   22  - SER   40 )                          
+   1: 1I2U-A 2KBJ-A    37 -  44 <=>   43 -  50   (ASN   37  - THR   44  <=> GLY   43  - LYS   50 )                          
+
+# Translation-rotation matrices
+-matrix  "1I2U-A 2KBJ-A  U(1,.)   0.715630 -0.027182 -0.697951           -7.839398"
+-matrix  "1I2U-A 2KBJ-A  U(2,.)   0.017182  0.999625 -0.021314           -1.764767"
+-matrix  "1I2U-A 2KBJ-A  U(3,.)   0.698268  0.003260  0.715829           -4.301899"
+

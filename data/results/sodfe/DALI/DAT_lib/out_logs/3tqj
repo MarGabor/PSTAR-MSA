@@ -1,0 +1,327 @@
+A length: 192
+B length: 192
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            192
+Total number of atoms read in:              1568
+Total number of ignored atom records:        401
+ HEADER    OXIDOREDUCTASE                          09-SEP-11   3TQJ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.C.FRANKLIN,J.CHEUNG,M.CASSIDY,J.LOVE                                
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          09-SEP-11   3TQJ              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [FE];                                 SOURCE   2 ORGANISM_SCIENTIFIC: COXIELLA BURNETII;                              AUTHOR    M.C.FRANKLIN,J.CHEUNG,M.CASSIDY,J.LOVE                                
+         192  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1848
+ selectset done           0
+ eigen done           0
+ tau           1   1.43021369              36          67
+ #popped           2           1
+ #selectset contacts        1848
+ selectset done           1
+ eigen done           1
+ tau           3   1.59931767              36
+ #popped           4           2
+ #selectset contacts        1848
+ selectset done           2
+ eigen done           2
+ tau           5   1.28276551              18
+ #popped           5           1
+ #selectset contacts        1848
+ selectset done           1
+ eigen done           1
+ tau           7   1.16020226              85         106         181
+ #popped           8           2
+ #selectset contacts        1848
+ selectset done           2
+ eigen done           2
+ tau           9   1.07960427              85         158
+ #popped          10           3
+ #selectset contacts        1848
+ selectset done           3
+ eigen done           3
+ tau          11   1.29927552              85         168
+ #popped          12           3
+ #selectset contacts        1848
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          11           2
+ #selectset contacts        1848
+ selectset done           2
+ eigen done           2
+ tau          13  0.703482866             121
+ #popped          15           2
+ #selectset contacts        1848
+ selectset done           2
+ eigen done           2
+ tau          15  0.268785834             135
+ #popped          17           2
+ #selectset contacts        1848
+ selectset done           2
+ eigen done           2
+ tau          17   1.38430476             148
+ #popped           9           1
+ #selectset contacts        1848
+ selectset done           1
+ eigen done           1
+ tau          19   1.42743313             106
+ #popped          20           1
+ #selectset contacts        1848
+ selectset done           1
+ eigen done           1
+ tau          21  0.662511528              96
+ #popped           3           0
+ #selectset contacts        1848
+ selectset done           0
+ eigen done           0
+ tau          23   1.20650411              49
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          09-SEP-11   3TQJ              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [FE];                                 SOURCE   2 ORGANISM_SCIENTIFIC: COXIELLA BURNETII;                              AUTHOR    M.C.FRANKLIN,J.CHEUNG,M.CASSIDY,J.LOVE                                
+           0
+         192
+         192  residues read 3TQJ.dssp                                                   
+  grow short helix          52          58
+  exclude short helix         144         147
+  exclude short helix         159         161
+  exclude short helix         163         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4 10  6  7  8  9  5 11  3
+   2     1  4  5 10  1  2  4 10  6  7  8  9  5 11
+   3     1  0  0  1  3
+   4     2  0  0  2  1  2
+   5     2  8  9  8  4 10  6  7  8  9  5 11
+   6     0  0  0  0
+   7     0  0  0  2  1  2
+   8     5 10 11  6  4 10  6  7  8  9
+   9     5 20 21  2  5 11
+  10     8  0  0  2  4 10
+  11     8 14 15  4  6  7  8  9
+  12     0  0  0  2  4 10
+  13     0  0  0  0
+  14    11  0  0  1  6
+  15    11 16 17  3  7  8  9
+  16    15  0  0  1  7
+  17    15 18 19  2  8  9
+  18    17  0  0  1  8
+  19    17  0  0  1  9
+  20     9  0  0  1  5
+  21     9  0  0  1 11
+  22     0  0  0  1  5
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  1  3
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5 10  2  1  2  4 11
+   3 -   1  0  0  1  1  3  3
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  8  1  4 11
+   6 -   5  8  9  6  2  4  4  6 10
+   7 -   5 16 17  2  2  5  5 11 11
+   8 -   6  0  0  2  2  4  4 10 10
+   9 -   6 10 11  4  1  6  9
+  10 -   9  0  0  1  1  6  6
+  11 -   9 12 13  3  1  7  9
+  12 -  11  0  0  1  1  7  7
+  13 -  11 14 15  2  1  8  9
+  14 -  13  0  0  1  1  8  8
+  15 -  13  0  0  1  1  9  9
+  16 -   7  0  0  1  1  5  5
+  17 -   7  0  0  1  1 11 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            192
+Total number of atoms read in:              1568
+Total number of ignored atom records:        365
+ HEADER    OXIDOREDUCTASE                          09-SEP-11   3TQJ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.C.FRANKLIN,J.CHEUNG,M.CASSIDY,J.LOVE                                
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          09-SEP-11   3TQJ              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [FE];                                 SOURCE   2 ORGANISM_SCIENTIFIC: COXIELLA BURNETII;                              AUTHOR    M.C.FRANKLIN,J.CHEUNG,M.CASSIDY,J.LOVE                                
+         192  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau           1   1.57524860              85
+ #popped           2           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau           3   1.34250259              41          59
+ #popped           4           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau           5  0.919341922              27          75
+ #popped           6           2
+ #selectset contacts        1858
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau           7   1.21283996              41
+ #popped           3           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau           9   1.64566469             101         181
+ #popped          10           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau          11   1.20650709             101
+ #popped          11           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau          13   1.67234313             158
+ #popped          14           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau          15   1.40304613             116
+ #popped          17           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau          17  0.222954124             134
+ #popped          19           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau          19   1.47619879             148
+ #popped          15           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau          21  0.963352680             168
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          09-SEP-11   3TQJ              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE [FE];                                 SOURCE   2 ORGANISM_SCIENTIFIC: COXIELLA BURNETII;                              AUTHOR    M.C.FRANKLIN,J.CHEUNG,M.CASSIDY,J.LOVE                                
+           0
+         192
+         192  residues read 3TQJ.dssp                                                   
+  grow short helix          20          26
+  grow short helix          52          58
+  exclude short helix         144         147
+  exclude short helix         159         161
+  exclude short helix         163         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  3  5 11  6  7  8  9 10
+   2     1  4  5  4  1  2  4  3
+   3     1 10 11  7  5 11  6  7  8  9 10
+   4     2  6  7  3  1  2  4
+   5     2  0  0  1  3
+   6     4  0  0  1  1
+   7     4  8  9  2  2  4
+   8     7  0  0  1  2
+   9     7  0  0  1  4
+  10     3 12 13  2  5 11
+  11     3 14 15  5  6  7  8  9 10
+  12    10  0  0  1  5
+  13    10  0  0  1 11
+  14    11 16 17  4  6  7  8  9
+  15    11  0  0  1 10
+  16    14  0  0  1  6
+  17    14 18 19  3  7  8  9
+  18    17  0  0  1  7
+  19    17 20 21  2  8  9
+  20    19  0  0  1  8
+  21    19  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1 10
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  4  1  1  4
+   3 -   1 10 11  7  1  5 11
+   4 -   2  6  7  3  2  1  2  4  4
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  2  2  2  2  4  4
+   8 -   7  0  0  1  1  2  2
+   9 -   7  0  0  1  1  4  4
+  10 -   3 12 13  2  2  5  5 11 11
+  11 -   3 14 15  5  1  6 10
+  12 -  10  0  0  1  1  5  5
+  13 -  10  0  0  1  1 11 11
+  14 -  11 16 17  4  1  6  9
+  15 -  11  0  0  1  1 10 10
+  16 -  14  0  0  1  1  6  6
+  17 -  14 18 19  3  1  7  9
+  18 -  17  0  0  1  1  7  7
+  19 -  17 20 21  2  1  8  9
+  20 -  19  0  0  1  1  8  8
+  21 -  19  0  0  1  1  9  9
+
+ CHAIN : 3TQJA
+ CHAIN : 3TQJB
+

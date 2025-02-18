@@ -1,0 +1,31 @@
+# Job: il8
+# Query: 1G2SA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HUN-B  8.0  2.4   61    69   44   MOLECULE: HUMAN MACROPHAGE INFLAMMATORY PROTEIN 1 BETA;              
+
+# Pairwise alignments
+
+No 1: Query=1G2SA Sbjct=1HUNB Z-score=8.0
+
+DSSP  -lllllllLLLLLLLLLLLLLHHHEEEEEELLLLLLLLLEEEEELLLLEEEELLLLHHHH
+Query -trgsdisKTCCFQYSHKPLPWTWVRSYEFTSNSCSQRAVIFTTKRGKKVCTHPRKKWVQ   59
+ident           ||| |    ||   |  |  ||  ||| || | ||| | ||  |   |||
+Sbjct apmgsdppTACCFSYTARKLPRNFVVDYYETSSLCSQPAVVFQTKRSKQVCADPSESWVQ   60
+DSSP  llllllllLLLLLLLLLLLLLHHHLLEEEELLLLLLLLLEEEELLLLLEEEELLLLHHHH
+
+DSSP  HHHHHhLLLLll
+Query KYISLlKTPKql   71
+ident  |          
+Sbjct EYVYD-LELN--   69
+DSSP  HHHHH-HHLL--
+
+
+# Structural equivalences
+   1: 1G2S-A 1HUN-B     8 -  64 <=>    9 -  65   (LYS    8  - LEU   64  <=> THR    9  - ASP   65 )                          
+   1: 1G2S-A 1HUN-B    66 -  69 <=>   66 -  69   (LYS   66  - LYS   69  <=> LEU   66  - ASN   69 )                          
+
+# Translation-rotation matrices
+-matrix  "1G2S-A 1HUN-B  U(1,.)   0.946495 -0.124891 -0.297574           13.220685"
+-matrix  "1G2S-A 1HUN-B  U(2,.)  -0.231460 -0.905260 -0.356272           -5.154788"
+-matrix  "1G2S-A 1HUN-B  U(3,.)  -0.224887  0.406086 -0.885731           -3.116085"
+

@@ -1,0 +1,41 @@
+# Job: az
+# Query: 3PCYA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5B1J-C 11.1  2.0   88   124   25   MOLECULE: COPPER-CONTAINING NITRITE REDUCTASE;                       
+
+# Pairwise alignments
+
+No 1: Query=3PCYA Sbjct=5B1JC Z-score=11.1
+
+DSSP  --LEEEELLLL---lLLLEELLEEEELLLLEEEEEELLlLLLLLEELHHHLLLLLlhhHH
+Query --IDVLLGADD---gSLAFVPSEFSISPGEKIVFKNNAgFPHNIVFDEDSIPSGVdasKI   55
+ident     |     |       | |       |    |       ||        | ||     
+Sbjct aeHIVEMRNKDdagnTMVFQPGFVKVEAGDTVKFVPTD-KSHNAESVREVWPEGV---AP   56
+DSSP  leEEEEEEEELllllEEEEELLEEEELLLLEEEEELLL-LLLEEEELLLLLLLLL---LL
+
+DSSP  LLllLLLLllllLEEEEELLLLEEEEEELHHHLLLLLEEEEEEL----------------
+Query SMseEDLLnakgETFEVALSNKGEYSFYCSPHQGAGMVGKVTVN----------------   99
+ident                       | |   | || | |||  | |                 
+Sbjct VK--GGFS----KEVVFNAEKEGLYVLKCAPHYGMGMVVLVQVGkpvnldqikeykatgl  110
+DSSP  LE--EEEL----LLEEEELLLLLEEEEELHHHHHHLLEEEEEELllllhhhhhhlllllh
+
+DSSP  --------------
+Query --------------   99
+ident               
+Sbjct akkrldgeiakvvq  124
+DSSP  hhhhhhhhhhllll
+
+
+# Structural equivalences
+   1: 3PCY-A 5B1J-C     1 -   9 <=>    3 -  11   (ILE    1  - ASP    9  <=> HIS    3  - ASP   11 )                          
+   1: 3PCY-A 5B1J-C    11 -  33 <=>   16 -  38   (SER   11  - ALA   33  <=> THR   16  - ASP   38 )                          
+   1: 3PCY-A 5B1J-C    35 -  50 <=>   39 -  54   (PHE   35  - VAL   50  <=> LYS   39  - VAL   54 )                          
+   1: 3PCY-A 5B1J-C    54 -  57 <=>   55 -  58   (LYS   54  - MET   57  <=> ALA   55  - LYS   58 )                          
+   1: 3PCY-A 5B1J-C    60 -  63 <=>   59 -  62   (GLU   60  - LEU   63  <=> GLY   59  - SER   62 )                          
+   1: 3PCY-A 5B1J-C    68 -  99 <=>   63 -  94   (GLU   68  - ASN   99  <=> LYS   63  - GLY   94 )                          
+
+# Translation-rotation matrices
+-matrix  "3PCY-A 5B1J-C  U(1,.)  -0.776437 -0.411319 -0.477454            1.426917"
+-matrix  "3PCY-A 5B1J-C  U(2,.)   0.149536 -0.856240  0.494461           17.833546"
+-matrix  "3PCY-A 5B1J-C  U(3,.)  -0.612196  0.312521  0.726324          -12.520538"
+

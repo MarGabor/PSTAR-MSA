@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 4IROD
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HDS-C 19.9  1.7  138   141   30   MOLECULE: HEMOGLOBIN S (DEOXY) (ALPHA CHAIN);                        
+
+# Pairwise alignments
+
+No 1: Query=4IROD Sbjct=1HDSC Z-score=19.9
+
+DSSP  lLLLHHHHHHHHHHHHHL--LLLLHHHHHHHHHHHHLHHHHHHLLLLLllllhhhHHLLH
+Query vEWTDKERSIISDIFSHM--DYDDIGPKALSRCLIVYPWTQRHFSGFGnlynaeaIIGNA   58
+ident         |                |  || |     | |   |  |          | |
+Sbjct -VLSAANKSNVKAAWGKVggNAPAYGAQALQRMFLSFPTTKTYFPHFD------lSHGSA   53
+DSSP  -LLLLLHHHHHHHHHHHHllLLHHHHHHHHLHHHHHLHHHHHHLLLLL------lLLLLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHH
+Query NVAAHGIKVLHGLDRGVKNMDNIAATYADLSTLHSEKLHVDPDNFKLLSDCITIVLAAKM  118
+ident    ||| ||   |            |   || ||  || | | ||||||      ||   
+Sbjct QQKAHGQKVANALTKAQGHLNDLPGTLSNLSNLHAHKLRVNPVNFKLLSHSLLVTLASHL  113
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHLLLLLHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHHLLLL
+Query GHAFTAETQGAFQKFLAVVVSALGKQYH  146
+ident    ||        ||||     |   | 
+Sbjct PTNFTPAVHANLNKFLANDSTVLTSKYR  141
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHHHHHL
+
+
+# Structural equivalences
+   1: 4IRO-D 1HDS-C     2 -  18 <=>    1 -  17   (GLU    2  - MET   18  <=> VAL    1  - VAL   17 )                          
+   1: 4IRO-D 1HDS-C    19 -  46 <=>   20 -  47   (ASP   19  - GLY   46  <=> ASN   20  - ASP   47 )                          
+   1: 4IRO-D 1HDS-C    54 - 146 <=>   49 - 141   (ILE   54  - HIS  146  <=> SER   49  - ARG  141 )                          
+
+# Translation-rotation matrices
+-matrix  "4IRO-D 1HDS-C  U(1,.)  -0.358195  0.042387  0.932684           -8.141013"
+-matrix  "4IRO-D 1HDS-C  U(2,.)   0.447601 -0.868889  0.211387          -16.605864"
+-matrix  "4IRO-D 1HDS-C  U(3,.)   0.819359  0.493188  0.292260            4.165032"
+

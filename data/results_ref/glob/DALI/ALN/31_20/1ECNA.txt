@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1SPG-B 15.6  2.2  136   146   15   MOLECULE: HEMOGLOBIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1SPGB Z-score=15.6
+
+DSSP  --LLHHHHHHHHHHHHLLLL--LHHHHHHHHHHHLHHHHLLLLLLLL-LLHHHHLLLHHH
+Query --LSADQISTVQASFDKVKG--DPVGILYAVFKADPSIMAKFTQFAG-KDLESIKGTAPF   55
+ident             |   |          |       |     |  |        | | |  
+Sbjct vdWTDAERAAIKALWGKIDVgeIGPQALSRLLIVYPWTQRHFKGFGNiSTNAAILGNAKV   60
+DSSP  llLLHHHHHHHHHHHLLLLHhhHHHHHHHHHHHHLHHHHHHLHHHLLlLLHHHHHHLHHH
+
+DSSP  HHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHH-HHLLLHHHHHHHHHHHHHHHHHHL--
+Query ETHANRIVGFFSKIIGELPNIEADVNTFVASHK-PRGVTHDQLNNFRAGFVSYMKAHT--  112
+ident   |     |          ||          |     |  |              |    
+Sbjct AEHGKTVMGGLDRAVQNMDNIKNVYKQLSIKHSeKIHVDPDNFRLLGEIITMCVGAKFgp  120
+DSSP  HHHHHHHHHHHHHHHLLLLLHHHHLHHHHHHHHhLLLLLLHHHHHHHHHHHHHHHHHHll
+
+DSSP  -LHHH-HHHHHHHHHHHHHHHHHLLL
+Query -DFAG-AEAAWGATLDTFFGMIFSKM  136
+ident   |      ||   |           
+Sbjct sAFTPeIHEAWQKFLAVVVSALGRQY  146
+DSSP  lLLLHhHHHHHHHHHHHHHHHHLLLL
+
+
+# Structural equivalences
+   1: 1ECN-A 1SPG-B     1 -  18 <=>    3 -  20   (LEU    1  - GLY   18  <=> TRP    3  - VAL   20 )                          
+   1: 1ECN-A 1SPG-B    19 -  43 <=>   23 -  47   (ASP   19  - GLY   43  <=> ILE   23  - ASN   47 )                          
+   1: 1ECN-A 1SPG-B    44 -  88 <=>   49 -  93   (LYS   44  - LYS   88  <=> SER   49  - SER   93 )                          
+   1: 1ECN-A 1SPG-B    89 - 112 <=>   95 - 118   (PRO   89  - THR  112  <=> LYS   95  - PHE  118 )                          
+   1: 1ECN-A 1SPG-B   113 - 116 <=>  122 - 125   (ASP  113  - GLY  116  <=> ALA  122  - PRO  125 )                          
+   1: 1ECN-A 1SPG-B   117 - 136 <=>  127 - 146   (ALA  117  - MET  136  <=> ILE  127  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1SPG-B  U(1,.)   0.419715  0.232750  0.877306           -2.818048"
+-matrix  "1ECN-A 1SPG-B  U(2,.)  -0.646748  0.754853  0.109151           32.175823"
+-matrix  "1ECN-A 1SPG-B  U(3,.)  -0.636832 -0.613209  0.467354           26.018417"
+

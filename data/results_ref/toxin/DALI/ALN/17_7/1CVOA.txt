@@ -1,0 +1,34 @@
+# Job: toxin
+# Query: 1CVOA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1TFS-A  5.5  3.0   53    60   34   MOLECULE: TOXIN FS2;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1CVOA Sbjct=1TFSA Z-score=5.5
+
+DSSP  LEELLL--llLLLLEELLllLLEEEEEEELLlllLLLEEEEEEllLLLLLLLEEEEEELL
+Query LKCHNT--qlPFIYKTCPegKNLCFKATLKKfplKFPVKRGCAdnCPKNSALLKYVCCST   58
+ident   |       |   |||    | | |             |||   ||         ||  
+Sbjct RICYSHkaslPRATKTCV--ENTCYKMFIRT-hrEYISERGCG--CPTAMWPYQTECCKG   55
+DSSP  LEEELLllllLLLEEELL--LLEEEEEEELL-eeEEEEEEEEL--LLLLLLLEEEEEEEL
+
+DSSP  LLLL-
+Query DKCN-   62
+ident | || 
+Sbjct DRCNk   60
+DSSP  LLLLl
+
+
+# Structural equivalences
+   1: 1CVO-A 1TFS-A     1 -   6 <=>    1 -   6   (LEU    1  - THR    6  <=> ARG    1  - HIS    6 )                          
+   1: 1CVO-A 1TFS-A     9 -  16 <=>   11 -  18   (PRO    9  - PRO   16  <=> PRO   11  - VAL   18 )                          
+   1: 1CVO-A 1TFS-A    19 -  29 <=>   19 -  29   (LYS   19  - LYS   29  <=> GLU   19  - THR   29 )                          
+   1: 1CVO-A 1TFS-A    33 -  41 <=>   32 -  40   (LYS   33  - ALA   41  <=> GLU   32  - GLY   40 )                          
+   1: 1CVO-A 1TFS-A    44 -  62 <=>   41 -  59   (CYS   44  - ASN   62  <=> CYS   41  - ASN   59 )                          
+
+# Translation-rotation matrices
+-matrix  "1CVO-A 1TFS-A  U(1,.)  -0.081678  0.930271  0.357664            0.310925"
+-matrix  "1CVO-A 1TFS-A  U(2,.)   0.686711  0.312614 -0.656278            0.173142"
+-matrix  "1CVO-A 1TFS-A  U(3,.)  -0.722327  0.192009 -0.664361           -0.141945"
+

@@ -1,0 +1,346 @@
+1 length: 189
+2 length: 189
+# 2 chains 1 2
+
+ CHAIN 1
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            189
+Total number of atoms read in:              1529
+Total number of ignored atom records:        184
+ HEADER    CELL ADHESION                           10-JUN-98   1BHO              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.T.BALDWIN                                                           
+  Reading DSSP file
+ HEADER    CELL ADHESION                           10-JUN-98   1BHO              COMPND   2 MOLECULE: CD11B;                                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    E.T.BALDWIN                                                           
+         189  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1718
+ selectset done           0
+ eigen done           0
+ tau           1   1.16086328              10          33          59          72
+ #popped           2           1
+ #selectset contacts        1718
+ selectset done           1
+ eigen done           1
+ tau           3  0.916637838              59          88         106         174
+ #popped           4           2
+ #selectset contacts        1718
+ selectset done           2
+ eigen done           2
+ tau           5   6.03441858             106
+ #popped           6           2
+ #selectset contacts        1718
+ selectset done           2
+ eigen done           2
+ tau           7  0.466258377              49
+ #popped           8           3
+ #selectset contacts        1718
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1718
+ selectset done           2
+ eigen done           2
+ tau           9   4.03616619              59
+ #popped           5           1
+ #selectset contacts        1718
+ selectset done           1
+ eigen done           1
+ tau          11   1.40011740              88
+ #popped          13           1
+ #selectset contacts        1718
+ selectset done           1
+ eigen done           1
+ tau          13   1.51681352             118         134
+ #popped          14           1
+ #selectset contacts        1718
+ selectset done           1
+ eigen done           1
+ tau          15  0.725152612             118
+ #popped          17           1
+ #selectset contacts        1718
+ selectset done           1
+ eigen done           1
+ tau          17  0.696368873             150         164
+ #popped          18           1
+ #selectset contacts        1718
+ selectset done           1
+ eigen done           1
+ tau          19  0.585285187             150
+ #popped           3           0
+ #selectset contacts        1718
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    CELL ADHESION                           10-JUN-98   1BHO              COMPND   2 MOLECULE: CD11B;                                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    E.T.BALDWIN                                                           
+           0
+         189
+         189  residues read 1BHO.dssp                                                   
+  grow short strand          48          52
+  exclude short helix          54          57
+  exclude short helix          63          67
+  exclude short helix          93          95
+  exclude short helix         120         122
+  exclude short helix         124         129
+  grow short helix         149         155
+  exclude short helix         160         163
+  grow short strand         164         167
+  exclude short helix         173         175
+  grow short helix         177         183
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  3  4  6 10  5  7  9  8  2
+   2     1  4  5  9  1  3  4  6 10  5  7  9  8
+   3     1  0  0  1  2
+   4     2  6  7  5  1  3  4  6 10
+   5     2 12 13  4  5  7  9  8
+   6     4  8  9  4  1  3  4  6
+   7     4  0  0  1 10
+   8     6  0  0  2  1  3
+   9     6 10 11  2  4  6
+  10     9  0  0  1  4
+  11     9  0  0  1  6
+  12     5  0  0  1  5
+  13     5 18 19  3  7  9  8
+  14     0  0  0  3  7  9  8
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  3  7  9  8
+  18    13 20 21  2  7  9
+  19    13  0  0  1  8
+  20    18  0  0  1  7
+  21    18  0  0  1  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  9  2  1  1  3 10
+   3 -   1  0  0  1  1  2  2
+   4 -   2  6  7  5  4  1  1  3  4  6  6 10 10
+   5 -   2 12 13  4  2  5  5  7  9
+   6 -   4  8  9  4  3  1  1  3  4  6  6
+   7 -   4  0  0  1  1 10 10
+   8 -   6  0  0  2  2  1  1  3  3
+   9 -   6 10 11  2  2  4  4  6  6
+  10 -   9  0  0  1  1  4  4
+  11 -   9  0  0  1  1  6  6
+  12 -   5  0  0  1  1  5  5
+  13 -   5 14 15  3  1  7  9
+  14 -  13 16 17  2  2  7  7  9  9
+  15 -  13  0  0  1  1  8  8
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  9  9
+
+ CHAIN 2
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            189
+Total number of atoms read in:              1529
+Total number of ignored atom records:         74
+ HEADER    CELL ADHESION                           10-JUN-98   1BHO              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    E.T.BALDWIN                                                           
+  Reading DSSP file
+ HEADER    CELL ADHESION                           10-JUN-98   1BHO              COMPND   2 MOLECULE: CD11B;                                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    E.T.BALDWIN                                                           
+         189  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1733
+ selectset done           0
+ eigen done           0
+ tau           1   1.51570678              13          34         166
+ #popped           2           1
+ #selectset contacts        1733
+ selectset done           1
+ eigen done           1
+ tau           3   1.18595278             138         154
+ #popped           4           1
+ #selectset contacts        1733
+ selectset done           1
+ eigen done           1
+ tau           5   1.24169111              56          71
+ #popped           6           1
+ #selectset contacts        1733
+ selectset done           1
+ eigen done           1
+ tau           7  0.888296187             104
+ #popped           8           2
+ #selectset contacts        1733
+ selectset done           2
+ eigen done           2
+ tau           9  0.710618138              56          91
+ #popped          10           3
+ #selectset contacts        1733
+ selectset done           3
+ eigen done           3
+ tau          11  0.649050653              56
+ #popped          12           3
+ #selectset contacts        1733
+ selectset done           3
+ eigen done           3
+ tau          13  0.326555043              13
+ #popped          15           3
+ #selectset contacts        1733
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          11           2
+ #selectset contacts        1733
+ selectset done           2
+ eigen done           2
+ tau          15  0.911914110              81
+ #popped           9           1
+ #selectset contacts        1733
+ selectset done           1
+ eigen done           1
+ tau          17  0.679963052             138
+ #popped          18           1
+ #selectset contacts        1733
+ selectset done           1
+ eigen done           1
+ tau          19  0.672601223             116         127
+ #popped          20           1
+ #selectset contacts        1733
+ selectset done           1
+ eigen done           1
+ tau          21  0.422156632             116
+ #popped           3           0
+ #selectset contacts        1733
+ selectset done           0
+ eigen done           0
+ tau          23   1.06345105              23
+ #popped          25           0
+ #selectset contacts        1733
+ selectset done           0
+ eigen done           0
+ tau          25   1.42446041              34         176
+ #popped          26           0
+ #selectset contacts        1733
+ selectset done           0
+ eigen done           0
+ tau          27   1.53409088              34
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    CELL ADHESION                           10-JUN-98   1BHO              COMPND   2 MOLECULE: CD11B;                                                     SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    E.T.BALDWIN                                                           
+           0
+         189
+         189  residues read 1BHO.dssp                                                   
+  grow short strand          48          52
+  exclude short helix          54          57
+  exclude short helix          63          67
+  exclude short helix          93          95
+  exclude short helix         141         143
+  exclude short helix         160         162
+  grow short strand         164         167
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  4  5  6  8  7 10  9  2 11
+   2     1  4  5  9  1  3  4  5  6  8  7 10  9
+   3     1 28 29  2  2 11
+   4     2  8  9  8  1  3  4  5  6  8  7 10
+   5     2  0  0  1  9
+   6     0  0  0  8  1  3  4  5  6  8  7 10
+   7     0  0  0  0
+   8     4 10 11  4  1  3  4  5
+   9     4 18 19  4  6  8  7 10
+  10     8 14 15  3  1  3  4
+  11     8  0  0  1  5
+  12     0  0  0  3  1  3  4
+  13     0  0  0  0
+  14    10  0  0  1  1
+  15    10  0  0  2  3  4
+  16     0  0  0  0
+  17     0  0  0  1  5
+  18     9 20 21  3  6  8  7
+  19     9  0  0  1 10
+  20    18 22 23  2  6  8
+  21    18  0  0  1  7
+  22    20  0  0  1  6
+  23    20  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  2  2 11
+  26     0  0  0  2  2 11
+  27     0  0  0  0
+  28     3  0  0  1  2
+  29     3  0  0  1 11
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  9  2  1  1  3 10
+   3 -   1 18 19  2  2  2  2 11 11
+   4 -   2  6  7  8  3  1  1  3  8 10 10
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  4  2  1  1  3  5
+   7 -   4 12 13  4  2  6  8 10 10
+   8 -   6 10 11  3  2  1  1  3  4
+   9 -   6  0  0  1  1  5  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  2  1  3  4
+  12 -   7 14 15  3  1  6  8
+  13 -   7  0  0  1  1 10 10
+  14 -  12 16 17  2  2  6  6  8  8
+  15 -  12  0  0  1  1  7  7
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  1  1  8  8
+  18 -   3  0  0  1  1  2  2
+  19 -   3  0  0  1  1 11 11
+
+ CHAIN : 1BHO1
+ CHAIN : 1BHO2
+

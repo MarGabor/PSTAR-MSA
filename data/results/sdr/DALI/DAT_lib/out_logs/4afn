@@ -1,0 +1,837 @@
+A length: 253
+B length: 243
+C length: 250
+D length: 240
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            253
+Total number of atoms read in:              1799
+Total number of ignored atom records:        218
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE FABG;           SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2332
+ selectset done           0
+ eigen done           0
+ tau           1   1.71521318              66         192         238
+ #popped           2           1
+ #selectset contacts        2332
+ selectset done           1
+ eigen done           1
+ tau           3   1.40129197             219
+ #popped           4           1
+ #selectset contacts        2332
+ selectset done           1
+ eigen done           1
+ tau           5   45.8918495              66
+ #popped           6           2
+ #selectset contacts        2332
+ selectset done           2
+ eigen done           2
+ tau           7   1.22013724              12
+ #popped           9           2
+ #selectset contacts        2332
+ selectset done           2
+ eigen done           2
+ tau           9  0.771003604              40
+ #popped          10           3
+ #selectset contacts        2332
+ selectset done           3
+ eigen done           3
+ tau          11  0.332703203              27
+ #popped          11           2
+ #selectset contacts        2332
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           7           1
+ #selectset contacts        2332
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2332
+ selectset done           0
+ eigen done           0
+ tau          13   1.99686396              89
+ #popped          14           1
+ #selectset contacts        2332
+ selectset done           1
+ eigen done           1
+ tau          15  0.983447313              78
+ #popped          15           0
+ #selectset contacts        2332
+ selectset done           0
+ eigen done           0
+ tau          17  0.943677306             125         153         164
+ #popped          18           1
+ #selectset contacts        2332
+ selectset done           1
+ eigen done           1
+ tau          19  0.992519677              99         115         125
+ #popped          20           2
+ #selectset contacts        2332
+ selectset done           2
+ eigen done           2
+ tau          21   1.80827892              99
+ #popped          21           1
+ #selectset contacts        2332
+ selectset done           1
+ eigen done           1
+ tau          23  0.935222685             115
+ #popped          19           0
+ #selectset contacts        2332
+ selectset done           0
+ eigen done           0
+ tau          25   2.00455952             138
+ #popped          27           0
+ #selectset contacts        2332
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE FABG;           SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+           0
+         253
+         253  residues read 4AFN.dssp                                                   
+  grow short strand          13          16
+  grow short strand          62          66
+  grow short strand          91          94
+  exclude short helix         104         106
+  exclude short helix         149         152
+  grow short strand         193         194
+ crowded segment excluded!
+  exclude short helix         196         199
+  grow short strand         219         220
+ crowded segment excluded!
+  exclude short helix         234         236
+  grow short strand         243         246
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  5 13 14  6  7  8  9 10 11 12 15
+   2     1  4  5  7  1  2  3  4  5 13 14
+   3     1 14 15  8  6  7  8  9 10 11 12 15
+   4     2  6  7  6  1  2  3  4  5 13
+   5     2  0  0  1 14
+   6     4 10 11  5  1  2  3  4  5
+   7     4  0  0  1 13
+   8     0  0  0  0
+   9     0  0  0  5  1  2  3  4  5
+  10     6 12 13  3  1  2  3
+  11     6  0  0  2  4  5
+  12    10  0  0  2  1  2
+  13    10  0  0  1  3
+  14     3  0  0  1  6
+  15     3 18 19  7  7  8  9 10 11 12 15
+  16     0  0  0  1  6
+  17     0  0  0  0
+  18    15 20 21  2  7  8
+  19    15 26 27  5  9 10 11 12 15
+  20    18  0  0  1  7
+  21    18  0  0  1  8
+  22     0  0  0  1  7
+  23     0  0  0  0
+  24     0  0  0  1  8
+  25     0  0  0  0
+  26    19  0  0  1  9
+  27    19  0  0  4 10 11 12 15
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  7  2  1  5 13 14
+   3 -   1 12 13  8  2  6 12 15 15
+   4 -   2  6  7  6  2  1  5 13 13
+   5 -   2  0  0  1  1 14 14
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1 13 13
+   8 -   6 10 11  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  1  1  3  3
+  12 -   3  0  0  1  1  6  6
+  13 -   3 14 15  7  2  7 12 15 15
+  14 -  13 16 17  2  1  7  8
+  15 -  13 18 19  5  2  9 12 15 15
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  8  8
+  18 -  15  0  0  1  1  9  9
+  19 -  15  0  0  4  2 10 12 15 15
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2530  CA BASP B 108 
+ Alternate location indication is not blank or A, ignore atom: 2534  CB BASP B 108 
+ Alternate location indication is not blank or A, ignore atom: 2536  CG BASP B 108 
+ Alternate location indication is not blank or A, ignore atom: 2538  OD1BASP B 108 
+ Alternate location indication is not blank or A, ignore atom: 2540  OD2BASP B 108 
+ Alternate location indication is not blank or A, ignore atom: 3467  CA BTYR B 245 
+ Alternate location indication is not blank or A, ignore atom: 3471  CB BTYR B 245 
+ Alternate location indication is not blank or A, ignore atom: 3473  CG BTYR B 245 
+ Alternate location indication is not blank or A, ignore atom: 3475  CD1BTYR B 245 
+ Alternate location indication is not blank or A, ignore atom: 3477  CD2BTYR B 245 
+ Alternate location indication is not blank or A, ignore atom: 3479  CE1BTYR B 245 
+ Alternate location indication is not blank or A, ignore atom: 3481  CE2BTYR B 245 
+ Alternate location indication is not blank or A, ignore atom: 3483  CZ BTYR B 245 
+ Alternate location indication is not blank or A, ignore atom: 3485  OH BTYR B 245 
+
+Total number of residues read in:            244
+Total number of atoms read in:              1685
+Total number of ignored atom records:        138
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE FABG;           SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+         244  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2213
+ selectset done           0
+ eigen done           0
+ tau           1   1.84560573              61          81
+ #popped           2           1
+ #selectset contacts        2213
+ selectset done           1
+ eigen done           1
+ tau           3   1.77471995             180
+ #popped           4           2
+ #selectset contacts        2213
+ selectset done           2
+ eigen done           2
+ tau           5   1.73369110              91         113         140         157
+ #popped           6           3
+ #selectset contacts        2213
+ selectset done           3
+ eigen done           3
+ tau           7   1.89821041              61
+ #popped           8           4
+ #selectset contacts        2213
+ selectset done           4
+ eigen done           4
+ tau           9  0.812121511              34
+ #popped          10           5
+ #selectset contacts        2213
+ selectset done           5
+ eigen done           5
+ tau          11  0.576194465              13          23
+ #popped          12           5
+ #selectset contacts        2213
+ selectset done           5
+ eigen done           5
+ tau          13  0.309065938              13
+ #popped          11           4
+ #selectset contacts        2213
+ selectset done           4
+ eigen done           4
+ tau          15   0.00000000    
+ #popped           9           3
+ #selectset contacts        2213
+ selectset done           3
+ eigen done           3
+ tau          15  0.457371593             167
+ #popped          16           3
+ #selectset contacts        2213
+ selectset done           3
+ eigen done           3
+ tau          17   1.92725551             140
+ #popped          18           3
+ #selectset contacts        2213
+ selectset done           3
+ eigen done           3
+ tau          19  0.444259703              91
+ #popped          21           3
+ #selectset contacts        2213
+ selectset done           3
+ eigen done           3
+ tau          21   1.68631232             124
+ #popped           7           2
+ #selectset contacts        2213
+ selectset done           2
+ eigen done           2
+ tau          23   1.13385057             113
+ #popped          24           2
+ #selectset contacts        2213
+ selectset done           2
+ eigen done           2
+ tau          25  0.771575511             101
+ #popped           5           1
+ #selectset contacts        2213
+ selectset done           1
+ eigen done           1
+ tau          27   1.49033666             192         203
+ #popped          28           1
+ #selectset contacts        2213
+ selectset done           1
+ eigen done           1
+ tau          29   1.02051210             219         233
+ #popped          30           1
+ #selectset contacts        2213
+ selectset done           1
+ eigen done           1
+ tau          31  0.473528504             219
+ #popped          32           1
+ #selectset contacts        2213
+ selectset done           1
+ eigen done           1
+ tau          33  0.815858603             192
+ #popped           3           0
+ #selectset contacts        2213
+ selectset done           0
+ eigen done           0
+ tau          35  0.633484185              71
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE FABG;           SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+           0
+         244
+         244  residues read 4AFN.dssp                                                   
+  grow short strand           7          10
+  grow short strand          56          60
+  grow short strand          85          88
+  exclude short helix          98         100
+  exclude short helix         142         146
+  grow short strand         187         188
+  grow short strand         210         211
+ crowded segment excluded!
+  exclude short helix         225         227
+  grow short strand         234         237
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  2  4  5  7  9 10 11 12  8 13 15 16 14  6
+   2     1  4  5 15  1  3  2  4  5  7  9 10 11 12  8 13 15 16 14
+   3     1  0  0  1  6
+   4     2  6  7 11  1  3  2  4  5  7  9 10 11 12  8
+   5     2 28 29  4 13 15 16 14
+   6     4  8  9 10  1  3  2  4  5  7  9 10 11 12
+   7     4  0  0  1  8
+   8     6 10 11  5  1  3  2  4  5
+   9     6 16 17  5  7  9 10 11 12
+  10     8 12 13  3  1  3  2
+  11     8  0  0  2  4  5
+  12    10 14 15  2  1  3
+  13    10  0  0  1  2
+  14    12  0  0  1  1
+  15    12  0  0  1  3
+  16     9 18 19  4  7  9 10 11
+  17     9  0  0  1 12
+  18    16 20 21  3  7  9 10
+  19    16  0  0  1 11
+  20    18  0  0  1  7
+  21    18 22 23  2  9 10
+  22    21  0  0  1  9
+  23    21  0  0  1 10
+  24     0  0  0  1  8
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1  8
+  28     5 32 33  3 13 15 16
+  29     5  0  0  1 14
+  30     0  0  0  3 13 15 16
+  31     0  0  0  0
+  32    28 34 35  2 13 15
+  33    28  0  0  1 16
+  34    32  0  0  1 13
+  35    32  0  0  1 15
+  36     0  0  0  0
+  37     0  0  0  1  6
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 15  2  1  5  7 16
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7 11  2  1  5  7 12
+   5 -   2 24 25  4  1 13 16
+   6 -   4  8  9 10  3  1  5  7  7  9 12
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  5  1  1  5
+   9 -   6 16 17  5  2  7  7  9 12
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  4  5
+  12 -  10 14 15  2  2  1  1  3  3
+  13 -  10  0  0  1  1  2  2
+  14 -  12  0  0  1  1  1  1
+  15 -  12  0  0  1  1  3  3
+  16 -   9 18 19  4  2  7  7  9 11
+  17 -   9  0  0  1  1 12 12
+  18 -  16 20 21  3  2  7  7  9 10
+  19 -  16  0  0  1  1 11 11
+  20 -  18  0  0  1  1  7  7
+  21 -  18 22 23  2  1  9 10
+  22 -  21  0  0  1  1  9  9
+  23 -  21  0  0  1  1 10 10
+  24 -   5 26 27  3  2 13 13 15 16
+  25 -   5  0  0  1  1 14 14
+  26 -  24 28 29  2  2 13 13 15 15
+  27 -  24  0  0  1  1 16 16
+  28 -  26  0  0  1  1 13 13
+  29 -  26  0  0  1  1 15 15
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 4252  CA BASP C 104 
+ Alternate location indication is not blank or A, ignore atom: 4256  CB BASP C 104 
+ Alternate location indication is not blank or A, ignore atom: 4258  CG BASP C 104 
+ Alternate location indication is not blank or A, ignore atom: 4260  OD1BASP C 104 
+ Alternate location indication is not blank or A, ignore atom: 4262  OD2BASP C 104 
+ Alternate location indication is not blank or A, ignore atom: 4299  CA BASP C 108 
+ Alternate location indication is not blank or A, ignore atom: 4303  CB BASP C 108 
+ Alternate location indication is not blank or A, ignore atom: 4305  CG BASP C 108 
+ Alternate location indication is not blank or A, ignore atom: 4307  OD1BASP C 108 
+ Alternate location indication is not blank or A, ignore atom: 4309  OD2BASP C 108 
+ Alternate location indication is not blank or A, ignore atom: 5075  CA BGLU C 216 
+ Alternate location indication is not blank or A, ignore atom: 5079  CB BGLU C 216 
+ Alternate location indication is not blank or A, ignore atom: 5081  CG BGLU C 216 
+ Alternate location indication is not blank or A, ignore atom: 5083  CD BGLU C 216 
+ Alternate location indication is not blank or A, ignore atom: 5085  OE1BGLU C 216 
+ Alternate location indication is not blank or A, ignore atom: 5087  OE2BGLU C 216 
+
+Total number of residues read in:            253
+Total number of atoms read in:              1786
+Total number of ignored atom records:        155
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE FABG;           SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+         253  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2295
+ selectset done           0
+ eigen done           0
+ tau           1   2.23815894             191         219
+ #popped           2           1
+ #selectset contacts        2295
+ selectset done           1
+ eigen done           1
+ tau           3   2.01357865              91         191         237
+ #popped           4           2
+ #selectset contacts        2295
+ selectset done           2
+ eigen done           2
+ tau           5   2.94838595              91
+ #popped           6           2
+ #selectset contacts        2295
+ selectset done           2
+ eigen done           2
+ tau           7   1.35055315              12
+ #popped           9           2
+ #selectset contacts        2295
+ selectset done           2
+ eigen done           2
+ tau           9   1.43108976              67
+ #popped          10           3
+ #selectset contacts        2295
+ selectset done           3
+ eigen done           3
+ tau          11  0.772718132              40
+ #popped          12           4
+ #selectset contacts        2295
+ selectset done           4
+ eigen done           4
+ tau          13  0.335904837              27
+ #popped          13           3
+ #selectset contacts        2295
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          11           2
+ #selectset contacts        2295
+ selectset done           2
+ eigen done           2
+ tau          15  0.934131742              77
+ #popped           5           1
+ #selectset contacts        2295
+ selectset done           1
+ eigen done           1
+ tau          17   1.15578544             130         153         163
+ #popped          18           2
+ #selectset contacts        2295
+ selectset done           2
+ eigen done           2
+ tau          19   1.29728627             119         130
+ #popped          20           2
+ #selectset contacts        2295
+ selectset done           2
+ eigen done           2
+ tau          21  0.838709652             119
+ #popped          22           2
+ #selectset contacts        2295
+ selectset done           2
+ eigen done           2
+ tau          23  0.652565002             108
+ #popped          19           1
+ #selectset contacts        2295
+ selectset done           1
+ eigen done           1
+ tau          25  0.875443220             140
+ #popped          27           1
+ #selectset contacts        2295
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped           3           0
+ #selectset contacts        2295
+ selectset done           0
+ eigen done           0
+ tau          27  0.752811670             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE FABG;           SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+           0
+         253
+         253  residues read 4AFN.dssp                                                   
+  grow short strand          13          16
+  grow short strand          62          66
+  grow short strand          91          94
+  exclude short helix         148         152
+  exclude short helix         196         199
+  exclude short helix         234         236
+  grow short strand         243         246
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  5  6 14  7  8  9 10 11 12 15 13
+   2     1  4  5 14  1  2  3  4  5  6 14  7  8  9 10 11 12 15
+   3     1  0  0  1 13
+   4     2  6  7  7  1  2  3  4  5  6 14
+   5     2 18 19  7  7  8  9 10 11 12 15
+   6     4 10 11  6  1  2  3  4  5  6
+   7     4  0  0  1 14
+   8     0  0  0  0
+   9     0  0  0  6  1  2  3  4  5  6
+  10     6 12 13  5  1  2  3  4  5
+  11     6  0  0  1  6
+  12    10 14 15  3  1  2  3
+  13    10  0  0  2  4  5
+  14    12  0  0  2  1  2
+  15    12  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  1  6
+  18     5 20 21  3  7  8  9
+  19     5  0  0  4 10 11 12 15
+  20    18 24 25  2  7  8
+  21    18  0  0  1  9
+  22     0  0  0  2  7  8
+  23     0  0  0  0
+  24    20  0  0  1  7
+  25    20  0  0  1  8
+  26     0  0  0  0
+  27     0  0  0  4 10 11 12 15
+  28     0  0  0  0
+  29     0  0  0  1 13
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5 14  2  1 12 14 15
+   3 =   1  0  0  1  1 13 13
+   4 +   2  6  7  7  2  1  6 14 14
+   5 *   2 14 15  7  2  7 12 15 15
+   6 *   4  8  9  6  1  1  6
+   7 =   4  0  0  1  1 14 14
+   8 -   6 10 11  5  1  1  5
+   9 -   6  0  0  1  1  6  6
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  4  5
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  1  1  3  3
+  14 -   5 16 17  3  1  7  9
+  15 -   5  0  0  4  2 10 12 15 15
+  16 -  14 18 19  2  1  7  8
+  17 -  14  0  0  1  1  9  9
+  18 -  16  0  0  1  1  7  7
+  19 -  16  0  0  1  1  8  8
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5471  CA BARG D  27 
+ Alternate location indication is not blank or A, ignore atom: 5475  CB BARG D  27 
+ Alternate location indication is not blank or A, ignore atom: 5477  CG BARG D  27 
+ Alternate location indication is not blank or A, ignore atom: 5479  CD BARG D  27 
+ Alternate location indication is not blank or A, ignore atom: 5481  NE BARG D  27 
+ Alternate location indication is not blank or A, ignore atom: 5483  CZ BARG D  27 
+ Alternate location indication is not blank or A, ignore atom: 5485  NH1BARG D  27 
+ Alternate location indication is not blank or A, ignore atom: 5487  NH2BARG D  27 
+ Alternate location indication is not blank or A, ignore atom: 6526  CA BARG D 175 
+ Alternate location indication is not blank or A, ignore atom: 6530  CB BARG D 175 
+ Alternate location indication is not blank or A, ignore atom: 6532  CG BARG D 175 
+ Alternate location indication is not blank or A, ignore atom: 6534  CD BARG D 175 
+ Alternate location indication is not blank or A, ignore atom: 6536  NE BARG D 175 
+ Alternate location indication is not blank or A, ignore atom: 6538  CZ BARG D 175 
+ Alternate location indication is not blank or A, ignore atom: 6540  NH1BARG D 175 
+ Alternate location indication is not blank or A, ignore atom: 6542  NH2BARG D 175 
+
+Total number of residues read in:            241
+Total number of atoms read in:              1679
+Total number of ignored atom records:        159
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE FABG;           SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+         241  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2216
+ selectset done           0
+ eigen done           0
+ tau           1   1.95998847             191         205
+ #popped           2           0
+ #selectset contacts        2216
+ selectset done           0
+ eigen done           0
+ tau           3   1.69064820              90         123         139         171
+ #popped           4           1
+ #selectset contacts        2216
+ selectset done           1
+ eigen done           1
+ tau           5   2.26300502              60          80
+ #popped           6           2
+ #selectset contacts        2216
+ selectset done           2
+ eigen done           2
+ tau           7   1.52007389              90
+ #popped           8           3
+ #selectset contacts        2216
+ selectset done           3
+ eigen done           3
+ tau           9  0.845619261              34          60
+ #popped          10           4
+ #selectset contacts        2216
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        2216
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        2216
+ selectset done           2
+ eigen done           2
+ tau          11   1.06342244             181
+ #popped          12           3
+ #selectset contacts        2216
+ selectset done           3
+ eigen done           3
+ tau          13  0.350034326             139
+ #popped          13           2
+ #selectset contacts        2216
+ selectset done           2
+ eigen done           2
+ tau          15  0.699813068             224
+ #popped          16           2
+ #selectset contacts        2216
+ selectset done           2
+ eigen done           2
+ tau          17   1.23064268             191
+ #popped           7           1
+ #selectset contacts        2216
+ selectset done           1
+ eigen done           1
+ tau          19  0.761228502              70
+ #popped           5           0
+ #selectset contacts        2216
+ selectset done           0
+ eigen done           0
+ tau          21   1.27988136             156
+ #popped          22           0
+ #selectset contacts        2216
+ selectset done           0
+ eigen done           0
+ tau          23   1.41326261             113         123
+ #popped          24           0
+ #selectset contacts        2216
+ selectset done           0
+ eigen done           0
+ tau          25   1.24717450             113
+ #popped          26           0
+ #selectset contacts        2216
+ selectset done           0
+ eigen done           0
+ tau          27  0.860520124             101
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          20-JAN-12   4AFN              COMPND   2 MOLECULE: 3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE FABG;           SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    C.D.CUKIER,R.SCHNELL,G.SCHNEIDER,Y.LINDQVIST                          
+           0
+         241
+         241  residues read 4AFN.dssp                                                   
+  grow short strand           7          10
+  grow short strand          56          60
+  exclude short helix         142         146
+  grow short helix         193         199
+  exclude short helix         223         225
+  grow short strand         232         235
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  7  4  5 10 12 14 15  6  8  9 11 13
+   2     1  4  5 14  1  2  3  7  4  5 10 12 14 15  6  8  9 11
+   3     1  0  0  1 13
+   4     2  6  7 11  1  2  3  7  4  5 10 12 14 15  6
+   5     2 22 23  3  8  9 11
+   6     4  8  9 10  1  2  3  7  4  5 10 12 14 15
+   7     4  0  0  1  6
+   8     6 10 11  6  1  2  3  7  4  5
+   9     6 12 13  4 10 12 14 15
+  10     8  0  0  4  1  2  3  7
+  11     8  0  0  2  4  5
+  12     9 14 15  2 10 12
+  13     9 16 17  2 14 15
+  14    12  0  0  1 10
+  15    12  0  0  1 12
+  16    13  0  0  1 14
+  17    13  0  0  1 15
+  18     0  0  0  0
+  19     0  0  0  1 14
+  20     0  0  0  0
+  21     0  0  0  1  6
+  22     5 24 25  2  8  9
+  23     5  0  0  1 11
+  24    22  0  0  1  8
+  25    22  0  0  1  9
+  26     0  0  0  1  8
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7 11  4  1  7 10 10 12 12 14 15
+   5 -   2 18 19  3  2  8  9 11 11
+   6 -   4  8  9 10  5  1  5  7  7 10 10 12 12 14 15
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6 12 13  4  3 10 10 12 12 14 15
+  10 -   8  0  0  4  2  1  3  7  7
+  11 -   8  0  0  2  1  4  5
+  12 -   9 14 15  2  2 10 10 12 12
+  13 -   9 16 17  2  1 14 15
+  14 -  12  0  0  1  1 10 10
+  15 -  12  0  0  1  1 12 12
+  16 -  13  0  0  1  1 14 14
+  17 -  13  0  0  1  1 15 15
+  18 -   5 20 21  2  1  8  9
+  19 -   5  0  0  1  1 11 11
+  20 -  18  0  0  1  1  8  8
+  21 -  18  0  0  1  1  9  9
+
+ CHAIN : 4AFNA
+ CHAIN : 4AFNB
+ CHAIN : 4AFNC
+ CHAIN : 4AFND
+

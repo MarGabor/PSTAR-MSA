@@ -1,0 +1,42 @@
+# Job: glob
+# Query: 1ITHB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1OUT-B 15.4  2.2  137   146   26   MOLECULE: HEMOGLOBIN I;                                              
+
+# Pairwise alignments
+
+No 1: Query=1ITHB Sbjct=1OUTB Z-score=15.4
+
+DSSP  -LLLHHHHHHHHHHHhHHLHhhHHHHHHHHHHHHHHHLHHHHHHLLLLLL-LLHHHHHHL
+Query -GLTAAQIKAIQDHWfLNIKgcLQAAADSIFFKYLTAYPGDLAFFHKFSS-VPLYGLRSN   58
+ident    | |    |   |                   |  ||     |  |           |
+Sbjct vEWTDAEKSTISAVW-GKVN--IDEIGPLALARVLIVYPWTQRYFGSFGNvSTPAAIMGN   57
+DSSP  lLLLHHHHHHHHHHH-HLLL--HHHHHHHHHHHHHHHLHHHHHHLHHHLLlLLHHHHHHL
+
+DSSP  HHHHHHHHHHHHHHHHHHHLLlLLHHHHHHLLHHHHH-HHLLLHHHHHHHHLLHHHHHHH
+Query PAYKAQTLTVINYLDKVVDALgGNAGALMKAKVPSHD-AMGITPKHFGQLLKLVGGVFQE  117
+ident |   |    |   ||| |    ||  |  |     |       |  |  |      |   
+Sbjct PKVAAHGKVVCGALDKAVKNM-GNILATYKSLSETHAnKLFVDPDNFRVLADVLTIVIAA  116
+DSSP  HHHHHHHHHHHHLHHHHHHLL-LLHHHHLHHHHHHHHhLLLLLLHHHHHHHHHHHHHHHH
+
+DSSP  HHL--LLHHHHHHHHHHHHHHHHLLL----
+Query EFS--ADPTTVAAWGDAAGVLVAAMK----  141
+ident  |     |   | |     | ||||     
+Sbjct KFGasFTPEIQATWQKFMKVVVAAMGsryf  146
+DSSP  HHHhhLLHHHHHHHHHHHHHHHHHHLllll
+
+
+# Structural equivalences
+   1: 1ITH-B 1OUT-B     1 -  14 <=>    2 -  15   (GLY    1  - TRP   14  <=> GLU    2  - TRP   15 )                          
+   1: 1ITH-B 1OUT-B    16 -  19 <=>   16 -  19   (LEU   16  - LYS   19  <=> GLY   16  - ASN   19 )                          
+   1: 1ITH-B 1OUT-B    22 -  49 <=>   20 -  47   (LEU   22  - SER   49  <=> ILE   20  - ASN   47 )                          
+   1: 1ITH-B 1OUT-B    50 -  79 <=>   49 -  78   (VAL   50  - LEU   79  <=> SER   49  - MET   78 )                          
+   1: 1ITH-B 1OUT-B    81 -  95 <=>   79 -  93   (GLY   81  - ASP   95  <=> GLY   79  - ALA   93 )                          
+   1: 1ITH-B 1OUT-B    96 - 120 <=>   95 - 119   (ALA   96  - SER  120  <=> LYS   95  - GLY  119 )                          
+   1: 1ITH-B 1OUT-B   121 - 141 <=>  122 - 142   (ALA  121  - LYS  141  <=> PHE  122  - GLY  142 )                          
+
+# Translation-rotation matrices
+-matrix  "1ITH-B 1OUT-B  U(1,.)   0.913574 -0.023824 -0.405974           45.340752"
+-matrix  "1ITH-B 1OUT-B  U(2,.)  -0.269636  0.711821 -0.648542           45.431984"
+-matrix  "1ITH-B 1OUT-B  U(3,.)   0.304432  0.701957  0.643877          -59.815601"
+

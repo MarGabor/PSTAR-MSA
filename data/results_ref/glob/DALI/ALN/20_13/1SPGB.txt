@@ -1,0 +1,39 @@
+# Job: glob
+# Query: 1SPGB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MWC-A 20.6  1.8  144   153   21   MOLECULE: PROTEIN (MYOGLOBIN);                                       
+
+# Pairwise alignments
+
+No 1: Query=1SPGB Sbjct=1MWCA Z-score=20.6
+
+DSSP  lLLLHHHHHHHHHHHLLL--LHHHHHHHHHHHHHHHLHHHHHHLHHHLLLLLHHHHHHLH
+Query vDWTDAERAAIKALWGKI--DVGEIGPQALSRLLIVYPWTQRHFKGFGNISTNAAILGNA   58
+ident     | |       |||   ||   |   | ||    | |   |  |             
+Sbjct -GLSDGEWQLVLNVWGKVeaDVAGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKASE   59
+DSSP  -LLLHHHHHHHHHHHHHHhlLHHHHHHHHHHHHHHHLHHHHLLLHHHLLLLLHHHHHHLH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+Query KVAEHGKTVMGGLDRAVQNMDNIKNVYKQLSIKHSEKIHVDPDNFRLLGEIITMCVGAKF  118
+ident     || ||   |                |   |  |            | |      | 
+Sbjct DLKKHGNTVLTALGGILKKKGHHEAELTPLAQSHATKHKIPVKYLEFISEAIIQVLQSKH  119
+DSSP  HHHHHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHHL
+
+DSSP  LLlLLLHHHHHHHHHHHHHHHHHH--LLLL-----
+Query GPsAFTPEIHEAWQKFLAVVVSAL--GRQY-----  146
+ident     |      |  | |                  
+Sbjct PG-DFGADAQGAMSKALELFRNDMaaKYKElgfqg  153
+DSSP  LL-LLLHHHHHHHHHHHHHHHHHHhhHHHHlllll
+
+
+# Structural equivalences
+   1: 1SPG-B 1MWC-A     2 -  18 <=>    1 -  17   (ASP    2  - ILE   18  <=> GLY    1  - VAL   17 )                          
+   1: 1SPG-B 1MWC-A    19 - 120 <=>   20 - 121   (ASP   19  - PRO  120  <=> ASP   20  - GLY  121 )                          
+   1: 1SPG-B 1MWC-A   122 - 142 <=>  122 - 142   (ALA  122  - LEU  142  <=> ASP  122  - MET  142 )                          
+   1: 1SPG-B 1MWC-A   143 - 146 <=>  145 - 148   (GLY  143  - TYR  146  <=> LYS  145  - GLU  148 )                          
+
+# Translation-rotation matrices
+-matrix  "1SPG-B 1MWC-A  U(1,.)   0.637163 -0.609136  0.472204          -19.364212"
+-matrix  "1SPG-B 1MWC-A  U(2,.)   0.206000  0.724977  0.657246          -68.955429"
+-matrix  "1SPG-B 1MWC-A  U(3,.)  -0.742689 -0.321499  0.587411           18.956018"
+

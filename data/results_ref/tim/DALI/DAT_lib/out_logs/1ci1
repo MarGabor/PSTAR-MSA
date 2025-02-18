@@ -1,0 +1,386 @@
+A length: 248
+B length: 249
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            248
+Total number of atoms read in:              1907
+Total number of ignored atom records:        209
+ HEADER    TRIOSEPHOSPHATE ISOMERASE               06-APR-99   1CI1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-G.GAO,E.MALDONDO,R.PEREZ-MONTFORT,M.T.DE GOMEZ-PUYOU,A.GOMEZ-      
+  Reading DSSP file
+ HEADER    TRIOSEPHOSPHATE ISOMERASE               06-APR-99   1CI1              COMPND   2 MOLECULE: PROTEIN (TRIOSEPHOSPHATE ISOMERASE);                       SOURCE   2 ORGANISM_SCIENTIFIC: TRYPANOSOMA CRUZI;                              AUTHOR    X.-G.GAO,E.MALDONDO,R.PEREZ-MONTFORT,M.T.DE GOMEZ-PUYOU,A.GO          
+         248  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2273
+ selectset done           0
+ eigen done           0
+ tau           1   1.94108248             125         152
+ #popped           2           1
+ #selectset contacts        2273
+ selectset done           1
+ eigen done           1
+ tau           3   1.46807921              13          30
+ #popped           4           1
+ #selectset contacts        2273
+ selectset done           1
+ eigen done           1
+ tau           5   1.84428668              41          53          64          86
+ #popped           6           2
+ #selectset contacts        2273
+ selectset done           2
+ eigen done           2
+ tau           7   1.37807584             176         204
+ #popped           8           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau           9  0.947232962             102         113
+ #popped          10           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau          11  0.746761858             102
+ #popped          12           4
+ #selectset contacts        2273
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          13           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau          13   1.81458139             231
+ #popped          14           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau          15   1.03999996             163
+ #popped          16           4
+ #selectset contacts        2273
+ selectset done           4
+ eigen done           4
+ tau          17  0.399489820             125
+ #popped          17           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau          19  0.988499224             176
+ #popped          21           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau          21  0.519859791             216
+ #popped           9           2
+ #selectset contacts        2273
+ selectset done           2
+ eigen done           2
+ tau          23   1.13739705             188
+ #popped           7           1
+ #selectset contacts        2273
+ selectset done           1
+ eigen done           1
+ tau          25   4.11558962              53
+ #popped          27           1
+ #selectset contacts        2273
+ selectset done           1
+ eigen done           1
+ tau          27  0.682926834              76
+ #popped           3           0
+ #selectset contacts        2273
+ selectset done           0
+ eigen done           0
+ tau          29  0.962675452             137
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRIOSEPHOSPHATE ISOMERASE               06-APR-99   1CI1              COMPND   2 MOLECULE: PROTEIN (TRIOSEPHOSPHATE ISOMERASE);                       SOURCE   2 ORGANISM_SCIENTIFIC: TRYPANOSOMA CRUZI;                              AUTHOR    X.-G.GAO,E.MALDONDO,R.PEREZ-MONTFORT,M.T.DE GOMEZ-PUYOU,A.GO          
+           0
+         248
+         248  residues read 1CI1.dssp                                                   
+  grow short strand           5           9
+  grow short strand          36          40
+  grow short strand          58          62
+  exclude short helix          78          83
+  grow short strand          88          91
+  exclude short helix          94          99
+  exclude short helix         129         133
+  exclude short helix         154         159
+  grow short strand         160         164
+  exclude short helix         167         169
+  exclude short helix         198         203
+  grow short strand         205         209
+  exclude short helix         217         221
+  grow short strand         228         231
+  exclude short helix         233         236
+  grow short helix         239         245
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  3  5  6  8 10 12 13 14  7 11  4  2  9
+   2     1  4  5 13  1  3  5  6  8 10 12 13 14  7 11  4  2
+   3     1  0  0  1  9
+   4     2  6  7 12  1  3  5  6  8 10 12 13 14  7 11  4
+   5     2  0  0  1  2
+   6     4  8  9 11  1  3  5  6  8 10 12 13 14  7 11
+   7     4  0  0  1  4
+   8     6 10 11 10  1  3  5  6  8 10 12 13 14  7
+   9     6  0  0  1 11
+  10     8 12 13  9  1  3  5  6  8 10 12 13 14
+  11     8  0  0  1  7
+  12    10  0  0  4  1  3  5  6
+  13    10 14 15  5  8 10 12 13 14
+  14    13 16 17  4  8 10 12 13
+  15    13  0  0  1 14
+  16    14 18 19  2  8 10
+  17    14 22 23  2 12 13
+  18    16  0  0  1  8
+  19    16  0  0  1 10
+  20     0  0  0  0
+  21     0  0  0  2 12 13
+  22    17  0  0  1 12
+  23    17  0  0  1 13
+  24     0  0  0  1 11
+  25     0  0  0  0
+  26     0  0  0  1  4
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1  9
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1  8 10 14
+   3 -   1  0  0  1  1  9  9
+   4 -   2  6  7 12  3  1  1  3  8 10 14
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9 11  4  1  1  3  3  5  8 10 14
+   7 -   4  0  0  1  1  4  4
+   8 -   6 10 11 10  5  1  1  3  3  5  8 10 10 12 14
+   9 -   6  0  0  1  1 11 11
+  10 -   8 12 13  9  6  1  1  3  3  5  6  8  8 10 10 12 14
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  4  3  1  1  3  3  5  6
+  13 -  10 14 15  5  3  8  8 10 10 12 14
+  14 -  13 16 17  4  3  8  8 10 10 12 13
+  15 -  13  0  0  1  1 14 14
+  16 -  14 18 19  2  2  8  8 10 10
+  17 -  14 20 21  2  1 12 13
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1 10 10
+  20 -  17  0  0  1  1 12 12
+  21 -  17  0  0  1  1 13 13
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            249
+Total number of atoms read in:              1913
+Total number of ignored atom records:        282
+ HEADER    TRIOSEPHOSPHATE ISOMERASE               06-APR-99   1CI1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    X.-G.GAO,E.MALDONDO,R.PEREZ-MONTFORT,M.T.DE GOMEZ-PUYOU,A.GOMEZ-      
+  Reading DSSP file
+ HEADER    TRIOSEPHOSPHATE ISOMERASE               06-APR-99   1CI1              COMPND   2 MOLECULE: PROTEIN (TRIOSEPHOSPHATE ISOMERASE);                       SOURCE   2 ORGANISM_SCIENTIFIC: TRYPANOSOMA CRUZI;                              AUTHOR    X.-G.GAO,E.MALDONDO,R.PEREZ-MONTFORT,M.T.DE GOMEZ-PUYOU,A.GO          
+         249  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2234
+ selectset done           0
+ eigen done           0
+ tau           1   2.11173320              65          87
+ #popped           2           1
+ #selectset contacts        2234
+ selectset done           1
+ eigen done           1
+ tau           3   1.25025725             211         225         237
+ #popped           4           2
+ #selectset contacts        2234
+ selectset done           2
+ eigen done           2
+ tau           5   1.35550642             126         145         166         177
+ #popped           6           3
+ #selectset contacts        2234
+ selectset done           3
+ eigen done           3
+ tau           7   2.08052611              14          31          42          55
+ #popped           8           4
+ #selectset contacts        2234
+ selectset done           4
+ eigen done           4
+ tau           9  0.793945014             155
+ #popped          10           5
+ #selectset contacts        2234
+ selectset done           5
+ eigen done           5
+ tau          11   3.71530509             126
+ #popped          12           5
+ #selectset contacts        2234
+ selectset done           5
+ eigen done           5
+ tau          13  0.854895055             103         114
+ #popped          14           5
+ #selectset contacts        2234
+ selectset done           5
+ eigen done           5
+ tau          15  0.567922890             103
+ #popped          16           5
+ #selectset contacts        2234
+ selectset done           5
+ eigen done           5
+ tau          17   0.00000000    
+ #popped          11           4
+ #selectset contacts        2234
+ selectset done           4
+ eigen done           4
+ tau          17  0.710398793             190         200
+ #popped          18           4
+ #selectset contacts        2234
+ selectset done           4
+ eigen done           4
+ tau          19   0.00000000    
+ #popped           9           3
+ #selectset contacts        2234
+ selectset done           3
+ eigen done           3
+ tau          19   1.81558657              31
+ #popped           7           2
+ #selectset contacts        2234
+ selectset done           2
+ eigen done           2
+ tau          21   1.10672784             145
+ #popped           5           1
+ #selectset contacts        2234
+ selectset done           1
+ eigen done           1
+ tau          23   1.88460243             225
+ #popped           3           0
+ #selectset contacts        2234
+ selectset done           0
+ eigen done           0
+ tau          25  0.853658497              77
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRIOSEPHOSPHATE ISOMERASE               06-APR-99   1CI1              COMPND   2 MOLECULE: PROTEIN (TRIOSEPHOSPHATE ISOMERASE);                       SOURCE   2 ORGANISM_SCIENTIFIC: TRYPANOSOMA CRUZI;                              AUTHOR    X.-G.GAO,E.MALDONDO,R.PEREZ-MONTFORT,M.T.DE GOMEZ-PUYOU,A.GO          
+           0
+         249
+         249  residues read 1CI1.dssp                                                   
+  grow short strand           6          10
+  grow short strand          37          41
+  grow short strand          59          63
+  exclude short helix          79          84
+  grow short strand          89          92
+  exclude short helix          95         100
+  exclude short helix         130         134
+  exclude short helix         155         160
+  grow short strand         161         165
+  exclude short helix         168         171
+  exclude short helix         199         204
+  grow short strand         206         209
+  exclude short helix         218         222
+  grow short strand         229         232
+  exclude short helix         234         237
+  exclude short helix         241         246
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 13  1  3  5  6  8  7 10 11 12 13  2  4  9
+   2     0  0  0 13  1  3  5  6  8  7 10 11 12 13  2  4  9
+   3     0  0  0  0
+   4     0  0  0 13  1  3  5  6  8  7 10 11 12 13  2  4  9
+   5     0  0  0  0
+   6     1  8  9 12  1  3  5  6  8  7 10 11 12 13  2  4
+   7     1  0  0  1  9
+   8     6 10 11 10  1  3  5  6  8  7 10 11 12 13
+   9     6 20 21  2  2  4
+  10     8 14 15  6  1  3  5  6  8  7
+  11     8  0  0  4 10 11 12 13
+  12     0  0  0  6  1  3  5  6  8  7
+  13     0  0  0  0
+  14    10 16 17  5  1  3  5  6  8
+  15    10  0  0  1  7
+  16    14  0  0  4  1  3  5  6
+  17    14  0  0  1  8
+  18     0  0  0  4 10 11 12 13
+  19     0  0  0  0
+  20     9  0  0  1  2
+  21     9  0  0  1  4
+  22     0  0  0  1  9
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 12  2  1  8 10 13
+   3 -   1  0  0  1  1  9  9
+   4 -   2  6  7 10  4  1  1  3  3  5  8 10 13
+   5 -   2 12 13  2  2  2  2  4  4
+   6 -   4  8  9  6  3  1  1  3  3  5  8
+   7 -   4  0  0  4  1 10 13
+   8 -   6 10 11  5  4  1  1  3  3  5  6  8  8
+   9 -   6  0  0  1  1  7  7
+  10 -   8  0  0  4  3  1  1  3  3  5  6
+  11 -   8  0  0  1  1  8  8
+  12 -   5  0  0  1  1  2  2
+  13 -   5  0  0  1  1  4  4
+
+ CHAIN : 1CI1A
+ CHAIN : 1CI1B
+

@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 2O10A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DLO-A  6.1  2.5   59    81   25   MOLECULE: THYROID RECEPTOR-INTERACTING PROTEIN 6;                    
+
+# Pairwise alignments
+
+No 1: Query=2O10A Sbjct=2DLOA Z-score=6.1
+
+DSSP  --------------LEELLLLLLEELhHHEEEELLEEEELLLLLLLLLLLLLLLLLLEEE
+Query --------------GAKCGACEKTVYhAEEIQCNGRSFHKTCFHCMACRKALDSTTVAAH   46
+ident                 ||  |             |   |  || |  |   ||       
+Sbjct gssgssgegcyvatLEKCATCSQPIL-DRILRAMGKAYHPGCFTCVVCHRGLDGIPFTVD   59
+DSSP  llllllllllllllLLLLLLLLLLLL-LLLEEELLEEELLLLLLLLLLLLLLLLLLEELL
+
+DSSP  -LLEEELHHHHHHHL-------
+Query -ESEIYCKVCYGRRY-------   60
+ident   | | |     |         
+Sbjct aTSQIHCIEDFHRKFasgpssg   81
+DSSP  lLLLLEEHHHHHHHLlllllll
+
+
+# Structural equivalences
+   1: 2O10-A 2DLO-A     1 -  12 <=>   15 -  26   (GLY    7  - TYR   18  <=> LEU   15  - LEU   26 )                          
+   1: 2O10-A 2DLO-A    14 -  46 <=>   27 -  59   (ALA   20  - HIS   52  <=> ASP   27  - ASP   59 )                          
+   1: 2O10-A 2DLO-A    47 -  60 <=>   61 -  74   (GLU   53  - TYR   66  <=> THR   61  - PHE   74 )                          
+
+# Translation-rotation matrices
+-matrix  "2O10-A 2DLO-A  U(1,.)   0.592753  0.530210  0.606235           -1.586040"
+-matrix  "2O10-A 2DLO-A  U(2,.)  -0.382944 -0.476649  0.791303            0.733875"
+-matrix  "2O10-A 2DLO-A  U(3,.)   0.708518 -0.701201 -0.079494            3.300450"
+

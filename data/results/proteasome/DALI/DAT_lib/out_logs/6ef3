@@ -1,0 +1,4968 @@
+1 length: 196
+2 length: 224
+3 length: 204
+4 length: 195
+5 length: 212
+6 length: 220
+7 length: 208
+A length: 247
+B length: 250
+C length: 242
+D length: 241
+E length: 249
+F length: 234
+G length: 246
+H length: 380
+I length: 384
+J length: 383
+K length: 370
+L length: 360
+M length: 371
+n length: 15
+r length: 280
+s length: 38
+u length: 75
+# 23 chains 1 2 3 4 5 6 7 A B C D E F G H I J K L M r s u
+
+ CHAIN 1
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            196
+Total number of atoms read in:              1496
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         196  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1494
+ selectset done           0
+ eigen done           0
+ tau           1   3.23328876              17         122
+ #popped           2           1
+ #selectset contacts        1494
+ selectset done           1
+ eigen done           1
+ tau           3   1.39601517             132         154
+ #popped           4           2
+ #selectset contacts        1494
+ selectset done           2
+ eigen done           2
+ tau           5  0.769853294             132
+ #popped           6           3
+ #selectset contacts        1494
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1494
+ selectset done           2
+ eigen done           2
+ tau           7   2.24235892             170
+ #popped           9           2
+ #selectset contacts        1494
+ selectset done           2
+ eigen done           2
+ tau           9  0.895238101             186
+ #popped           5           1
+ #selectset contacts        1494
+ selectset done           1
+ eigen done           1
+ tau          11   1.48887432             143
+ #popped           3           0
+ #selectset contacts        1494
+ selectset done           0
+ eigen done           0
+ tau          13   6.03759813              31
+ #popped          15           0
+ #selectset contacts        1494
+ selectset done           0
+ eigen done           0
+ tau          15   2.01924825              48          74
+ #popped          16           1
+ #selectset contacts        1494
+ selectset done           1
+ eigen done           1
+ tau          17  0.920685709              99         109
+ #popped          18           1
+ #selectset contacts        1494
+ selectset done           1
+ eigen done           1
+ tau          19   1.01093185              99
+ #popped          20           1
+ #selectset contacts        1494
+ selectset done           1
+ eigen done           1
+ tau          21   2.43286967              48          89
+ #popped          22           1
+ #selectset contacts        1494
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          17           0
+ #selectset contacts        1494
+ selectset done           0
+ eigen done           0
+ tau          23   1.33360231              63
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         196
+         196  residues read 6EF3.dssp                                                   
+  grow short strand         111         113
+  grow short strand         120         121
+  grow short strand         124         127
+  exclude short helix         135         139
+  grow short strand         186         188
+ crowded segment excluded!
+  exclude short helix         190         194
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  9 10 11  3  6  5  7  8  4
+   2     1  6  7  5  1  2  9 10 11
+   3     1 16 17  6  3  6  5  7  8  4
+   4     0  0  0  5  1  2  9 10 11
+   5     0  0  0  0
+   6     2  0  0  3  1  2  9
+   7     2  8  9  2 10 11
+   8     7  0  0  1 10
+   9     7  0  0  1 11
+  10     0  0  0  1 11
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  6  3  6  5  7  8  4
+  16     3 20 21  5  3  6  5  7  8
+  17     3  0  0  1  4
+  18     0  0  0  5  3  6  5  7  8
+  19     0  0  0  0
+  20    16 22 23  3  3  6  5
+  21    16  0  0  2  7  8
+  22    20  0  0  2  3  6
+  23    20  0  0  1  5
+  24     0  0  0  1  4
+  25     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  5  2  1  2  9 11
+   3 +   1  8  9  6  1  3  8
+   4 -   2  0  0  3  2  1  2  9  9
+   5 -   2  6  7  2  1 10 11
+   6 -   5  0  0  1  1 10 10
+   7 -   5  0  0  1  1 11 11
+   8 -   3 10 11  5  2  3  3  5  8
+   9 -   3  0  0  1  1  4  4
+  10 -   8 12 13  3  2  3  3  5  6
+  11 -   8  0  0  2  1  7  8
+  12 -  10  0  0  2  2  3  3  6  6
+  13 -  10  0  0  1  1  5  5
+
+ CHAIN 2
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            224
+Total number of atoms read in:              1685
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:         206
+  calculate residue outside grid:         207
+  calculate residue outside grid:         208
+  calculate residue outside grid:         209
+  calculate residue outside grid:         210
+  calculate residue outside grid:         211
+  calculate residue outside grid:         212
+  calculate residue outside grid:         213
+  calculate residue outside grid:         214
+  calculate residue outside grid:         215
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         224  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1632
+ selectset done           0
+ eigen done           0
+ tau           1   14.1860962             195
+ #popped           2           1
+ #selectset contacts        1632
+ selectset done           1
+ eigen done           1
+ tau           3   4.47943640              30         122
+ #popped           4           2
+ #selectset contacts        1632
+ selectset done           2
+ eigen done           2
+ tau           5   2.91819382              19          30
+ #popped           6           2
+ #selectset contacts        1632
+ selectset done           2
+ eigen done           2
+ tau           7   1.46523106             132         160
+ #popped           8           3
+ #selectset contacts        1632
+ selectset done           3
+ eigen done           3
+ tau           9   1.13211942             132         170
+ #popped          10           3
+ #selectset contacts        1632
+ selectset done           3
+ eigen done           3
+ tau          11  0.624438882             185
+ #popped          12           3
+ #selectset contacts        1632
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           9           2
+ #selectset contacts        1632
+ selectset done           2
+ eigen done           2
+ tau          13   2.07037044             143
+ #popped           5           1
+ #selectset contacts        1632
+ selectset done           1
+ eigen done           1
+ tau          15   2.55554366              46          95
+ #popped          16           2
+ #selectset contacts        1632
+ selectset done           2
+ eigen done           2
+ tau          17  0.770658851             111
+ #popped          18           2
+ #selectset contacts        1632
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          17           1
+ #selectset contacts        1632
+ selectset done           1
+ eigen done           1
+ tau          19   2.23179650              74
+ #popped          20           2
+ #selectset contacts        1632
+ selectset done           2
+ eigen done           2
+ tau          21   1.77519250              62
+ #popped          21           1
+ #selectset contacts        1632
+ selectset done           1
+ eigen done           1
+ tau          23   1.10241508              85
+ #popped           3           0
+ #selectset contacts        1632
+ selectset done           0
+ eigen done           0
+ tau          25   4.26847839             214
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         224
+         224  residues read 6EF3.dssp                                                   
+  grow short strand          34          35
+  grow short strand          42          45
+  grow short helix          64          70
+  exclude short helix          78          81
+  grow short strand         124         127
+  grow short strand         173         177
+  grow short strand         215         218
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2 10 13 14 11 12  3  4  8  9  5  6  7 15
+   2     1  4  5 14  1  2 10 13 14 11 12  3  4  8  9  5  6  7
+   3     1  0  0  1 15
+   4     2  8  9  7  1  2 10 13 14 11 12
+   5     2 16 17  7  3  4  8  9  5  6  7
+   6     0  0  0  7  1  2 10 13 14 11 12
+   7     0  0  0  0
+   8     4 12 13  5  1  2 10 13 14
+   9     4 14 15  2 11 12
+  10     0  0  0  5  1  2 10 13 14
+  11     0  0  0  0
+  12     8  0  0  4  1  2 10 13
+  13     8  0  0  1 14
+  14     9  0  0  1 11
+  15     9  0  0  1 12
+  16     5  0  0  4  3  4  8  9
+  17     5 20 21  3  5  6  7
+  18     0  0  0  4  3  4  8  9
+  19     0  0  0  0
+  20    17 22 23  2  5  6
+  21    17  0  0  1  7
+  22    20  0  0  1  5
+  23    20  0  0  1  6
+  24     0  0  0  0
+  25     0  0  0  1  7
+  26     0  0  0  0
+  27     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 +   2  6  7  7  2  1  2 10 14
+   5 *   2 12 13  7  1  3  9
+   6 -   4  8  9  5  3  1  2 10 10 13 14
+   7 -   4 10 11  2  1 11 12
+   8 -   6  0  0  4  3  1  2 10 10 13 13
+   9 -   6  0  0  1  1 14 14
+  10 -   7  0  0  1  1 11 11
+  11 -   7  0  0  1  1 12 12
+  12 -   5  0  0  4  2  3  4  8  9
+  13 -   5 14 15  3  1  5  7
+  14 -  13 16 17  2  1  5  6
+  15 -  13  0  0  1  1  7  7
+  16 -  14  0  0  1  1  5  5
+  17 -  14  0  0  1  1  6  6
+
+ CHAIN 3
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            204
+Total number of atoms read in:              1575
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         204  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1598
+ selectset done           0
+ eigen done           0
+ tau           1   4.15429926              41         131
+ #popped           2           1
+ #selectset contacts        1598
+ selectset done           1
+ eigen done           1
+ tau           3   1.35955429              26          41
+ #popped           4           1
+ #selectset contacts        1598
+ selectset done           1
+ eigen done           1
+ tau           5   1.21156454              10
+ #popped           7           1
+ #selectset contacts        1598
+ selectset done           1
+ eigen done           1
+ tau           7   1.02964830              26         180
+ #popped           8           2
+ #selectset contacts        1598
+ selectset done           2
+ eigen done           2
+ tau           9  0.498311818             194
+ #popped          10           2
+ #selectset contacts        1598
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           9           1
+ #selectset contacts        1598
+ selectset done           1
+ eigen done           1
+ tau          11   2.58206725             157
+ #popped          12           2
+ #selectset contacts        1598
+ selectset done           2
+ eigen done           2
+ tau          13   1.42131984             146
+ #popped          13           1
+ #selectset contacts        1598
+ selectset done           1
+ eigen done           1
+ tau          15   1.06363642             170
+ #popped           3           0
+ #selectset contacts        1598
+ selectset done           0
+ eigen done           0
+ tau          17   1.29519546             109         119
+ #popped          18           0
+ #selectset contacts        1598
+ selectset done           0
+ eigen done           0
+ tau          19   1.76008379              53         103
+ #popped          20           1
+ #selectset contacts        1598
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        1598
+ selectset done           0
+ eigen done           0
+ tau          21   1.71428573              68
+ #popped          23           0
+ #selectset contacts        1598
+ selectset done           0
+ eigen done           0
+ tau          23   3.39733315              80
+ #popped          25           0
+ #selectset contacts        1598
+ selectset done           0
+ eigen done           0
+ tau          25   1.28893661              93
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         204
+         204  residues read 6EF3.dssp                                                   
+  exclude short helix           3           5
+  grow short strand          42          45
+  grow short strand          48          51
+  grow short strand         135         139
+  exclude short helix         147         150
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2 11 12  9 10  3  4  7  5  6  8
+   2     1  8  9  6  1  2 11 12  9 10
+   3     1 18 19  6  3  4  7  5  6  8
+   4     0  0  0  6  1  2 11 12  9 10
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  6  1  2 11 12  9 10
+   8     2 10 11  4  1  2 11 12
+   9     2 12 13  2  9 10
+  10     8  0  0  3  1  2 11
+  11     8  0  0  1 12
+  12     9  0  0  1  9
+  13     9  0  0  1 10
+  14     0  0  0  1  9
+  15     0  0  0  0
+  16     0  0  0  1 10
+  17     0  0  0  0
+  18     3 20 21  5  3  4  7  5  6
+  19     3  0  0  1  8
+  20    18  0  0  3  3  4  7
+  21    18 22 23  2  5  6
+  22    21  0  0  1  5
+  23    21  0  0  1  6
+  24     0  0  0  0
+  25     0  0  0  1  6
+  26     0  0  0  1  6
+  27     0  0  0  0
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  6  2  1  2  9 12
+   3 *   1 10 11  6  1  3  8
+   4 -   2  6  7  4  2  1  2 11 12
+   5 -   2  8  9  2  1  9 10
+   6 -   4  0  0  3  2  1  2 11 11
+   7 -   4  0  0  1  1 12 12
+   8 -   5  0  0  1  1  9  9
+   9 -   5  0  0  1  1 10 10
+  10 -   3 12 13  5  1  3  7
+  11 -   3  0  0  1  1  8  8
+  12 -  10  0  0  3  2  3  4  7  7
+  13 -  10 14 15  2  1  5  6
+  14 -  13  0  0  1  1  5  5
+  15 -  13  0  0  1  1  6  6
+
+ CHAIN 4
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            195
+Total number of atoms read in:              1560
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         195  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1477
+ selectset done           0
+ eigen done           0
+ tau           1   3.97893763              33         128
+ #popped           2           1
+ #selectset contacts        1477
+ selectset done           1
+ eigen done           1
+ tau           3   3.27268744              20          33
+ #popped           4           1
+ #selectset contacts        1477
+ selectset done           1
+ eigen done           1
+ tau           5   1.58194685             156         178
+ #popped           6           2
+ #selectset contacts        1477
+ selectset done           2
+ eigen done           2
+ tau           7   1.62088978             145         156
+ #popped           8           2
+ #selectset contacts        1477
+ selectset done           2
+ eigen done           2
+ tau           9   1.28878284              20         145
+ #popped          10           2
+ #selectset contacts        1477
+ selectset done           2
+ eigen done           2
+ tau          11  0.770782292              20
+ #popped          12           2
+ #selectset contacts        1477
+ selectset done           2
+ eigen done           2
+ tau          13  0.354798228              10
+ #popped           7           1
+ #selectset contacts        1477
+ selectset done           1
+ eigen done           1
+ tau          15  0.934235990             167
+ #popped           3           0
+ #selectset contacts        1477
+ selectset done           0
+ eigen done           0
+ tau          17   1.52727270             105         115
+ #popped          18           0
+ #selectset contacts        1477
+ selectset done           0
+ eigen done           0
+ tau          19   1.61869180              81          98
+ #popped          20           0
+ #selectset contacts        1477
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         195
+         195  residues read 6EF3.dssp                                                   
+  grow short strand           5           8
+  grow short strand          13          15
+  grow short strand          22          23
+  grow short strand          26          27
+  grow short strand          35          39
+  grow short strand         130         132
+  exclude short helix         137         139
+  exclude short helix         164         169
+  grow short strand         182         184
+  grow short strand         190         191
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2 13 14 11 12  3  4  5  6  7  9 10  8
+   2     1  4  5  8  1  2 13 14 11 12  3  4
+   3     1 20 21  6  5  6  7  9 10  8
+   4     2  6  7  6  1  2 13 14 11 12
+   5     2  0  0  2  3  4
+   6     4 10 11  5  1  2 13 14 11
+   7     4  0  0  1 12
+   8     0  0  0  5  1  2 13 14 11
+   9     0  0  0  0
+  10     6 12 13  4  1  2 13 14
+  11     6  0  0  1 11
+  12    10 14 15  2  1  2
+  13    10  0  0  2 13 14
+  14    12  0  0  1  1
+  15    12  0  0  1  2
+  16     0  0  0  1 12
+  17     0  0  0  0
+  18     0  0  0  6  5  6  7  9 10  8
+  19     0  0  0  0
+  20     3  0  0  5  5  6  7  9 10
+  21     3  0  0  1  8
+   1 +   0  2  3 14  1  1 14
+   2 +   1  4  5  8  2  1  4 11 14
+   3 *   1 14 15  6  1  5 10
+   4 *   2  6  7  6  2  1  2 11 14
+   5 =   2  0  0  2  1  3  4
+   6 -   4  8  9  5  3  1  2 11 11 13 14
+   7 -   4  0  0  1  1 12 12
+   8 -   6 10 11  4  2  1  2 13 14
+   9 -   6  0  0  1  1 11 11
+  10 -   8 12 13  2  1  1  2
+  11 -   8  0  0  2  1 13 14
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  2  2
+  14 -   3  0  0  5  2  5  7  9 10
+  15 -   3  0  0  1  1  8  8
+
+ CHAIN 5
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            212
+Total number of atoms read in:              1644
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         212  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1680
+ selectset done           0
+ eigen done           0
+ tau           1   3.94693232             192
+ #popped           2           1
+ #selectset contacts        1680
+ selectset done           1
+ eigen done           1
+ tau           3   1.83635700              56          75
+ #popped           4           1
+ #selectset contacts        1680
+ selectset done           1
+ eigen done           1
+ tau           5   2.99439716              56          94
+ #popped           6           1
+ #selectset contacts        1680
+ selectset done           1
+ eigen done           1
+ tau           7   1.53157282              19          30
+ #popped           8           1
+ #selectset contacts        1680
+ selectset done           1
+ eigen done           1
+ tau           9   1.85742843              19         127
+ #popped          10           2
+ #selectset contacts        1680
+ selectset done           2
+ eigen done           2
+ tau          11  0.972874522              19         171
+ #popped          12           3
+ #selectset contacts        1680
+ selectset done           3
+ eigen done           3
+ tau          13  0.534748018              19
+ #popped          15           3
+ #selectset contacts        1680
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          13           2
+ #selectset contacts        1680
+ selectset done           2
+ eigen done           2
+ tau          15   2.31303144             144
+ #popped          17           2
+ #selectset contacts        1680
+ selectset done           2
+ eigen done           2
+ tau          17   1.69860470             160
+ #popped          11           1
+ #selectset contacts        1680
+ selectset done           1
+ eigen done           1
+ tau          19   1.28330541              56
+ #popped          20           2
+ #selectset contacts        1680
+ selectset done           2
+ eigen done           2
+ tau          21   1.79195797              46
+ #popped          21           1
+ #selectset contacts        1680
+ selectset done           1
+ eigen done           1
+ tau          23  0.466440469             112
+ #popped           3           0
+ #selectset contacts        1680
+ selectset done           0
+ eigen done           0
+ tau          25  0.639329791             202
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         212
+         212  residues read 6EF3.dssp                                                   
+  grow short strand          12          16
+  grow short strand          20          22
+  grow short strand          25          28
+  grow short strand          34          38
+  grow short strand          41          44
+  exclude short helix          67          70
+  grow short strand         126         130
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2 14 15 11 12 13  5  6  7  9 10  3  4  8 16
+   2     1  6  7 15  1  2 14 15 11 12 13  5  6  7  9 10  3  4  8
+   3     1  0  0  1 16
+   4     0  0  0 15  1  2 14 15 11 12 13  5  6  7  9 10  3  4  8
+   5     0  0  0  0
+   6     2  8  9 14  1  2 14 15 11 12 13  5  6  7  9 10  3  4
+   7     2  0  0  1  8
+   8     6 10 11 12  1  2 14 15 11 12 13  5  6  7  9 10
+   9     6  0  0  2  3  4
+  10     8 12 13  7  1  2 14 15 11 12 13
+  11     8 20 21  5  5  6  7  9 10
+  12    10 14 15  4  1  2 14 15
+  13    10 16 17  3 11 12 13
+  14    12  0  0  2  1  2
+  15    12  0  0  2 14 15
+  16    13  0  0  2 11 12
+  17    13  0  0  1 13
+  18     0  0  0  1 13
+  19     0  0  0  0
+  20    11 22 23  3  5  6  7
+  21    11 24 25  2  9 10
+  22    20  0  0  2  5  6
+  23    20  0  0  1  7
+  24    21  0  0  1  9
+  25    21  0  0  1 10
+  26     0  0  0  1 16
+  27     0  0  0  0
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5 15  1  1 15
+   3 =   1  0  0  1  1 16 16
+   4 -   2  6  7 14  2  1  7  9 15
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9 12  3  1  2  5  7  9 15
+   7 -   4  0  0  2  1  3  4
+   8 -   6 10 11  7  2  1  2 11 15
+   9 -   6 16 17  5  2  5  7  9 10
+  10 -   8 12 13  4  2  1  2 14 15
+  11 -   8 14 15  3  1 11 13
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  2  1 14 15
+  14 -  11  0  0  2  1 11 12
+  15 -  11  0  0  1  1 13 13
+  16 -   9 18 19  3  1  5  7
+  17 -   9 20 21  2  1  9 10
+  18 -  16  0  0  2  1  5  6
+  19 -  16  0  0  1  1  7  7
+  20 -  17  0  0  1  1  9  9
+  21 -  17  0  0  1  1 10 10
+
+ CHAIN 6
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            220
+Total number of atoms read in:              1727
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         220  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1648
+ selectset done           0
+ eigen done           0
+ tau           1   1.91198611             158         168
+ #popped           2           0
+ #selectset contacts        1648
+ selectset done           0
+ eigen done           0
+ tau           3   4.06816149              37         133
+ #popped           4           1
+ #selectset contacts        1648
+ selectset done           1
+ eigen done           1
+ tau           5   1.97502840             144         185
+ #popped           6           2
+ #selectset contacts        1648
+ selectset done           2
+ eigen done           2
+ tau           7   1.39519286              27          37
+ #popped           8           2
+ #selectset contacts        1648
+ selectset done           2
+ eigen done           2
+ tau           9   1.20843351              10
+ #popped          11           2
+ #selectset contacts        1648
+ selectset done           2
+ eigen done           2
+ tau          11  0.959973633             144
+ #popped          12           3
+ #selectset contacts        1648
+ selectset done           3
+ eigen done           3
+ tau          13  0.487688243              27
+ #popped          13           2
+ #selectset contacts        1648
+ selectset done           2
+ eigen done           2
+ tau          15   3.93548393             197
+ #popped          17           2
+ #selectset contacts        1648
+ selectset done           2
+ eigen done           2
+ tau          17  0.348391920             210
+ #popped           7           1
+ #selectset contacts        1648
+ selectset done           1
+ eigen done           1
+ tau          19   3.23716474             158
+ #popped           5           0
+ #selectset contacts        1648
+ selectset done           0
+ eigen done           0
+ tau          21   2.30426717              55          82
+ #popped          22           1
+ #selectset contacts        1648
+ selectset done           1
+ eigen done           1
+ tau          23   1.33101857              93         105
+ #popped          24           1
+ #selectset contacts        1648
+ selectset done           1
+ eigen done           1
+ tau          25  0.694409847              93
+ #popped          26           2
+ #selectset contacts        1648
+ selectset done           2
+ eigen done           2
+ tau          27   5.05794430              55
+ #popped          27           1
+ #selectset contacts        1648
+ selectset done           1
+ eigen done           1
+ tau          29  0.560552597             120
+ #popped          23           0
+ #selectset contacts        1648
+ selectset done           0
+ eigen done           0
+ tau          31   1.53102231              68
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         220
+         220  residues read 6EF3.dssp                                                   
+  grow short strand          10          14
+  grow short strand          23          24
+  grow short strand          28          29
+  grow short strand          34          36
+  grow short strand          42          44
+  grow short strand         119         123
+  grow short strand         131         133
+ crowded segment excluded!
+  grow short strand         135         139
+  exclude short helix         146         149
+  grow short strand         201         203
+  grow short strand         206         207
+ crowded segment excluded!
+  grow short strand         210         211
+ crowded segment excluded!
+  grow short strand         214         216
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 14  1  2 11 13 14  3  4 12  5  6  8  9 10  7
+   2     0  0  0 14  1  2 11 13 14  3  4 12  5  6  8  9 10  7
+   3     0  0  0  0
+   4     1  6  7  8  1  2 11 13 14  3  4 12
+   5     1 22 23  6  5  6  8  9 10  7
+   6     4  8  9  7  1  2 11 13 14  3  4
+   7     4  0  0  1 12
+   8     6 12 13  5  1  2 11 13 14
+   9     6  0  0  2  3  4
+  10     0  0  0  0
+  11     0  0  0  5  1  2 11 13 14
+  12     8 14 15  3  1  2 11
+  13     8 18 19  2 13 14
+  14    12  0  0  2  1  2
+  15    12  0  0  1 11
+  16     0  0  0  0
+  17     0  0  0  2 13 14
+  18    13  0  0  1 13
+  19    13  0  0  1 14
+  20     0  0  0  0
+  21     0  0  0  1 12
+  22     5 26 27  5  5  6  8  9 10
+  23     5  0  0  1  7
+  24     0  0  0  5  5  6  8  9 10
+  25     0  0  0  0
+  26    22 28 29  3  5  6  8
+  27    22 30 31  2  9 10
+  28    26  0  0  2  5  6
+  29    26  0  0  1  8
+  30    27  0  0  1  9
+  31    27  0  0  1 10
+  32     0  0  0  1  7
+  33     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  8  2  1  4 11 14
+   3 -   1 14 15  6  1  5 10
+   4 -   2  6  7  7  3  1  4 11 11 13 14
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  5  3  1  2 11 11 13 14
+   7 -   4  0  0  2  1  3  4
+   8 -   6 10 11  3  2  1  2 11 11
+   9 -   6 12 13  2  1 13 14
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  1  1 11 11
+  12 -   9  0  0  1  1 13 13
+  13 -   9  0  0  1  1 14 14
+  14 -   3 16 17  5  2  5  6  8 10
+  15 -   3  0  0  1  1  7  7
+  16 -  14 18 19  3  2  5  6  8  8
+  17 -  14 20 21  2  1  9 10
+  18 -  16  0  0  2  1  5  6
+  19 -  16  0  0  1  1  8  8
+  20 -  17  0  0  1  1  9  9
+  21 -  17  0  0  1  1 10 10
+
+ CHAIN 7
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            208
+Total number of atoms read in:              1598
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         208  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1624
+ selectset done           0
+ eigen done           0
+ tau           1   3.53307009             149         194
+ #popped           2           1
+ #selectset contacts        1624
+ selectset done           1
+ eigen done           1
+ tau           3   2.30119038              58         107
+ #popped           4           2
+ #selectset contacts        1624
+ selectset done           2
+ eigen done           2
+ tau           5   2.05152345              24          39
+ #popped           6           2
+ #selectset contacts        1624
+ selectset done           2
+ eigen done           2
+ tau           7  0.620446324             126         137
+ #popped           8           2
+ #selectset contacts        1624
+ selectset done           2
+ eigen done           2
+ tau           9  0.612844467             149
+ #popped          10           2
+ #selectset contacts        1624
+ selectset done           2
+ eigen done           2
+ tau          11   1.04910588             126
+ #popped          12           2
+ #selectset contacts        1624
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        1624
+ selectset done           1
+ eigen done           1
+ tau          13   3.90814590              84
+ #popped          14           2
+ #selectset contacts        1624
+ selectset done           2
+ eigen done           2
+ tau          15   1.15302789              72
+ #popped          15           1
+ #selectset contacts        1624
+ selectset done           1
+ eigen done           1
+ tau          17   1.48423004              96
+ #popped           3           0
+ #selectset contacts        1624
+ selectset done           0
+ eigen done           0
+ tau          19   4.69005013             167
+ #popped          21           0
+ #selectset contacts        1624
+ selectset done           0
+ eigen done           0
+ tau          21   1.22093022             181
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         208
+         208  residues read 6EF3.dssp                                                   
+  grow short strand          10          14
+  grow short strand          27          28
+  grow short strand          33          35
+  grow short strand          48          51
+  exclude short helix          89          92
+  grow short strand         135         136
+  exclude short helix         145         149
+  grow short helix         151         157
+  grow short strand         204         207
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  5  8  9 13 14 10  3  4  6  7 11 12
+   2     1  4  5 12  1  2  5  8  9 13 14 10  3  4  6  7
+   3     1 20 21  2 11 12
+   4     2  6  7 10  1  2  5  8  9 13 14 10  3  4
+   5     2 14 15  2  6  7
+   6     4  8  9  8  1  2  5  8  9 13 14 10
+   7     4  0  0  2  3  4
+   8     6 10 11  7  1  2  5  8  9 13 14
+   9     6  0  0  1 10
+  10     8  0  0  5  1  2  5  8  9
+  11     8  0  0  2 13 14
+  12     0  0  0  5  1  2  5  8  9
+  13     0  0  0  0
+  14     5  0  0  1  6
+  15     5  0  0  1  7
+  16     0  0  0  1  6
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     3  0  0  1 11
+  21     3  0  0  1 12
+  22     0  0  0  1 12
+  23     0  0  0  0
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5 12  2  1 10 13 14
+   3 *   1 14 15  2  1 11 12
+   4 -   2  6  7 10  3  1  5  8 10 13 14
+   5 -   2 12 13  2  1  6  7
+   6 -   4  8  9  8  4  1  2  5  5  8 10 13 14
+   7 -   4  0  0  2  1  3  4
+   8 -   6 10 11  7  4  1  2  5  5  8  9 13 14
+   9 -   6  0  0  1  1 10 10
+  10 -   8  0  0  5  3  1  2  5  5  8  9
+  11 -   8  0  0  2  1 13 14
+  12 -   5  0  0  1  1  6  6
+  13 -   5  0  0  1  1  7  7
+  14 -   3  0  0  1  1 11 11
+  15 -   3  0  0  1  1 12 12
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            247
+Total number of atoms read in:              1922
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         247  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1887
+ selectset done           0
+ eigen done           0
+ tau           1   6.90263081              29
+ #popped           2           1
+ #selectset contacts        1887
+ selectset done           1
+ eigen done           1
+ tau           3   1.17901373              12
+ #popped           3           0
+ #selectset contacts        1887
+ selectset done           0
+ eigen done           0
+ tau           5   2.91630292              84         136         237
+ #popped           6           1
+ #selectset contacts        1887
+ selectset done           1
+ eigen done           1
+ tau           7   2.66127682             172         214
+ #popped           8           2
+ #selectset contacts        1887
+ selectset done           2
+ eigen done           2
+ tau           9   1.71340096              55          68
+ #popped          10           2
+ #selectset contacts        1887
+ selectset done           2
+ eigen done           2
+ tau          11   1.42005801              55         172
+ #popped          12           3
+ #selectset contacts        1887
+ selectset done           3
+ eigen done           3
+ tau          13   3.44229531              39
+ #popped          15           3
+ #selectset contacts        1887
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          13           2
+ #selectset contacts        1887
+ selectset done           2
+ eigen done           2
+ tau          15  0.809074879             152
+ #popped          16           3
+ #selectset contacts        1887
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          17           2
+ #selectset contacts        1887
+ selectset done           2
+ eigen done           2
+ tau          17   1.00733840             162
+ #popped           9           1
+ #selectset contacts        1887
+ selectset done           1
+ eigen done           1
+ tau          19   1.21427941             189         203
+ #popped          20           1
+ #selectset contacts        1887
+ selectset done           1
+ eigen done           1
+ tau          21   1.74596179             189
+ #popped           7           0
+ #selectset contacts        1887
+ selectset done           0
+ eigen done           0
+ tau          23   999.999023             136
+ #popped          24           0
+ #selectset contacts        1887
+ selectset done           0
+ eigen done           0
+ tau          25   1.90865970             122
+ #popped          26           0
+ #selectset contacts        1887
+ selectset done           0
+ eigen done           0
+ tau          27   1.80679321              98
+ #popped          29           0
+ #selectset contacts        1887
+ selectset done           0
+ eigen done           0
+ tau          29   1.61708391             112
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         247
+         247  residues read 6EF3.dssp                                                   
+  exclude short helix           4           8
+  exclude short helix          27          29
+  exclude short helix          31          33
+  grow short strand          42          44
+  grow short strand          71          72
+  grow short strand          78          81
+  grow short helix         100         106
+  grow short helix         113         119
+  exclude short helix         121         124
+  exclude short helix         126         128
+  grow short strand         167         169
+  grow short strand         231         234
+  exclude short helix         241         244
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 14  1  2 13 14  3  4  8  9 10 11 12  5  6  7
+   2     0  0  0  0
+   3     0  0  0 14  1  2 13 14  3  4  8  9 10 11 12  5  6  7
+   4     0  0  0  0
+   5     0  0  0  0
+   6     1  8  9 11  1  2 13 14  3  4  8  9 10 11 12
+   7     1 28 29  3  5  6  7
+   8     6 12 13  9  1  2 13 14  3  4  8  9 10
+   9     6 22 23  2 11 12
+  10     0  0  0  9  1  2 13 14  3  4  8  9 10
+  11     0  0  0  0
+  12     8  0  0  4  1  2 13 14
+  13     8 16 17  5  3  4  8  9 10
+  14     0  0  0  0
+  15     0  0  0  4  1  2 13 14
+  16    13  0  0  3  3  4  8
+  17    13 18 19  2  9 10
+  18    17  0  0  1  9
+  19    17  0  0  1 10
+  20     0  0  0  2 11 12
+  21     0  0  0  0
+  22     9  0  0  1 11
+  23     9  0  0  1 12
+  24     0  0  0  3  5  6  7
+  25     0  0  0  0
+  26     0  0  0  3  5  6  7
+  27     0  0  0  0
+  28     7  0  0  1  5
+  29     7 30 31  2  6  7
+  30    29  0  0  1  6
+  31    29  0  0  1  7
+   1 +   0  2  3 14  1  1 14
+   2 +   1  4  5 11  2  1  4  8 14
+   3 *   1 14 15  3  1  5  7
+   4 *   2  6  7  9  3  1  4  8 10 13 14
+   5 *   2 12 13  2  1 11 12
+   6 -   4  0  0  4  2  1  2 13 14
+   7 -   4  8  9  5  2  3  4  8 10
+   8 -   7  0  0  3  2  3  4  8  8
+   9 -   7 10 11  2  1  9 10
+  10 -   9  0  0  1  1  9  9
+  11 -   9  0  0  1  1 10 10
+  12 -   5  0  0  1  1 11 11
+  13 -   5  0  0  1  1 12 12
+  14 -   3  0  0  1  1  5  5
+  15 -   3 16 17  2  1  6  7
+  16 -  15  0  0  1  1  6  6
+  17 -  15  0  0  1  1  7  7
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            250
+Total number of atoms read in:              1901
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         250  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1906
+ selectset done           0
+ eigen done           0
+ tau           1   4.57233047              27
+ #popped           2           1
+ #selectset contacts        1906
+ selectset done           1
+ eigen done           1
+ tau           3   1.24441588              17
+ #popped           3           0
+ #selectset contacts        1906
+ selectset done           0
+ eigen done           0
+ tau           5   2.95381284             236
+ #popped           6           0
+ #selectset contacts        1906
+ selectset done           0
+ eigen done           0
+ tau           7   3.05281782             212
+ #popped           8           1
+ #selectset contacts        1906
+ selectset done           1
+ eigen done           1
+ tau           9   3.11950564              48          61
+ #popped          10           1
+ #selectset contacts        1906
+ selectset done           1
+ eigen done           1
+ tau          11   3.90162182              48         159
+ #popped          12           2
+ #selectset contacts        1906
+ selectset done           2
+ eigen done           2
+ tau          13   1.06921482             169         194
+ #popped          14           3
+ #selectset contacts        1906
+ selectset done           3
+ eigen done           3
+ tau          15  0.946993172             169
+ #popped          16           3
+ #selectset contacts        1906
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        1906
+ selectset done           2
+ eigen done           2
+ tau          17   2.44352436             182
+ #popped          13           1
+ #selectset contacts        1906
+ selectset done           1
+ eigen done           1
+ tau          19   2.08987427              82         106
+ #popped          20           2
+ #selectset contacts        1906
+ selectset done           2
+ eigen done           2
+ tau          21   1.26634490             118         129
+ #popped          22           2
+ #selectset contacts        1906
+ selectset done           2
+ eigen done           2
+ tau          23   1.13842499              82
+ #popped          24           3
+ #selectset contacts        1906
+ selectset done           3
+ eigen done           3
+ tau          25  0.785596073              72
+ #popped          25           2
+ #selectset contacts        1906
+ selectset done           2
+ eigen done           2
+ tau          27   2.19686866             118
+ #popped          29           2
+ #selectset contacts        1906
+ selectset done           2
+ eigen done           2
+ tau          29  0.751352847             148
+ #popped          21           1
+ #selectset contacts        1906
+ selectset done           1
+ eigen done           1
+ tau          31   1.35148513              96
+ #popped           9           0
+ #selectset contacts        1906
+ selectset done           0
+ eigen done           0
+ tau          33   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         250
+         250  residues read 6EF3.dssp                                                   
+  grow short strand          34          37
+  grow short strand          45          48
+  grow short strand          65          68
+  grow short strand          71          73
+  grow short helix          80          86
+  grow short helix          90          96
+  exclude short helix          98         100
+  exclude short helix         120         122
+  grow short strand         144         145
+  grow short strand         148         150
+  grow short strand         161         164
+  exclude short helix         191         194
+  exclude short helix         206         208
+  grow short strand         209         212
+  exclude short helix         219         221
+  exclude short helix         240         244
+  exclude short helix         247         249
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3 12 14 13  4  5  8  9 10 11  6  7
+   2     1  0  0  1  1
+   3     1 12 13 13  2  3 12 14 13  4  5  8  9 10 11  6  7
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     0  0  0 13  2  3 12 14 13  4  5  8  9 10 11  6  7
+   7     0  0  0  0
+   8     0  0  0 13  2  3 12 14 13  4  5  8  9 10 11  6  7
+   9     0  0  0  0
+  10     0  0  0 13  2  3 12 14 13  4  5  8  9 10 11  6  7
+  11     0  0  0  0
+  12     3 14 15  5  2  3 12 14 13
+  13     3 20 21  8  4  5  8  9 10 11  6  7
+  14    12 16 17  4  2  3 12 14
+  15    12  0  0  1 13
+  16    14  0  0  3  2  3 12
+  17    14  0  0  1 14
+  18     0  0  0  1 13
+  19     0  0  0  0
+  20    13 24 25  6  4  5  8  9 10 11
+  21    13  0  0  2  6  7
+  22     0  0  0  6  4  5  8  9 10 11
+  23     0  0  0  0
+  24    20  0  0  2  4  5
+  25    20 28 29  4  8  9 10 11
+  26     0  0  0  2  4  5
+  27     0  0  0  0
+  28    25  0  0  1  8
+  29    25 30 31  3  9 10 11
+  30    29  0  0  2  9 10
+  31    29  0  0  1 11
+  32     0  0  0  2  6  7
+  33     0  0  0  0
+   1 +   0  2  3 14  1  1 14
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5 13  1  2 14
+   4 *   3  6  7  5  2  2  3 12 14
+   5 *   3 10 11  8  1  4 11
+   6 -   4  8  9  4  3  2  3 12 12 14 14
+   7 -   4  0  0  1  1 13 13
+   8 -   6  0  0  3  2  2  3 12 12
+   9 -   6  0  0  1  1 14 14
+  10 -   5 12 13  6  2  4  5  8 11
+  11 -   5  0  0  2  1  6  7
+  12 -  10  0  0  2  1  4  5
+  13 -  10 14 15  4  1  8 11
+  14 -  13  0  0  1  1  8  8
+  15 -  13 16 17  3  1  9 11
+  16 -  15  0  0  2  1  9 10
+  17 -  15  0  0  1  1 11 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            242
+Total number of atoms read in:              1864
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         242  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1902
+ selectset done           0
+ eigen done           0
+ tau           1   5.89563751              26
+ #popped           2           1
+ #selectset contacts        1902
+ selectset done           1
+ eigen done           1
+ tau           3   1.21836710              10
+ #popped           3           0
+ #selectset contacts        1902
+ selectset done           0
+ eigen done           0
+ tau           5   2.43244171              78         116
+ #popped           6           1
+ #selectset contacts        1902
+ selectset done           1
+ eigen done           1
+ tau           7   3.02471137              78         129
+ #popped           8           1
+ #selectset contacts        1902
+ selectset done           1
+ eigen done           1
+ tau           9   1.99791276              45          62         198         211         227
+ #popped          10           2
+ #selectset contacts        1902
+ selectset done           2
+ eigen done           2
+ tau          11   2.94236898             163         198
+ #popped          12           3
+ #selectset contacts        1902
+ selectset done           3
+ eigen done           3
+ tau          13   1.49463224             163
+ #popped          14           3
+ #selectset contacts        1902
+ selectset done           3
+ eigen done           3
+ tau          15  0.725401819              78
+ #popped          16           4
+ #selectset contacts        1902
+ selectset done           4
+ eigen done           4
+ tau          17   5.08196735              45
+ #popped          17           3
+ #selectset contacts        1902
+ selectset done           3
+ eigen done           3
+ tau          19  0.686803341             147
+ #popped          13           2
+ #selectset contacts        1902
+ selectset done           2
+ eigen done           2
+ tau          21   1.53060842             177
+ #popped          23           2
+ #selectset contacts        1902
+ selectset done           2
+ eigen done           2
+ tau          23   1.06394815             187
+ #popped          11           1
+ #selectset contacts        1902
+ selectset done           1
+ eigen done           1
+ tau          25   3.58213258             211
+ #popped          26           1
+ #selectset contacts        1902
+ selectset done           1
+ eigen done           1
+ tau          27   1.43737233              62
+ #popped           7           0
+ #selectset contacts        1902
+ selectset done           0
+ eigen done           0
+ tau          29   2.67140174             105
+ #popped          30           0
+ #selectset contacts        1902
+ selectset done           0
+ eigen done           0
+ tau          31   1.44974470              91
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         242
+         242  residues read 6EF3.dssp                                                   
+  exclude short helix          18          21
+  exclude short helix          23          25
+  grow short strand          33          36
+  grow short strand          43          44
+  grow short strand          64          68
+  grow short strand          71          74
+  exclude short helix          83          85
+  grow short strand         133         137
+  grow short strand         145         149
+  grow short strand         155         157
+  grow short strand         160         163
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 13  1  2  3  4  7  8  9 10 11 12 13  5  6
+   2     0  0  0  0
+   3     0  0  0 13  1  2  3  4  7  8  9 10 11 12 13  5  6
+   4     0  0  0  0
+   5     0  0  0  0
+   6     1 10 11 11  1  2  3  4  7  8  9 10 11 12 13
+   7     1 30 31  2  5  6
+   8     0  0  0 11  1  2  3  4  7  8  9 10 11 12 13
+   9     0  0  0  0
+  10     6 12 13 10  1  2  3  4  7  8  9 10 11 12
+  11     6  0  0  1 13
+  12    10 16 17  8  1  2  3  4  7  8  9 10
+  13    10 22 23  2 11 12
+  14     0  0  0  8  1  2  3  4  7  8  9 10
+  15     0  0  0  0
+  16    12 18 19  4  1  2  3  4
+  17    12 20 21  4  7  8  9 10
+  18    16  0  0  2  1  2
+  19    16  0  0  2  3  4
+  20    17  0  0  2  7  8
+  21    17  0  0  2  9 10
+  22    13  0  0  1 11
+  23    13  0  0  1 12
+  24     0  0  0  0
+  25     0  0  0  1 12
+  26     0  0  0  0
+  27     0  0  0  1 13
+  28     0  0  0  0
+  29     0  0  0  0
+  30     7  0  0  1  5
+  31     7  0  0  1  6
+  32     0  0  0  0
+  33     0  0  0  1  5
+   1 +   0  2  3 13  1  1 13
+   2 -   1  4  5 11  2  1  4  7 13
+   3 -   1 16 17  2  1  5  6
+   4 -   2  6  7 10  2  1  4  7 12
+   5 -   2  0  0  1  1 13 13
+   6 -   4  8  9  8  2  1  4  7 10
+   7 -   4 14 15  2  1 11 12
+   8 -   6 10 11  4  1  1  4
+   9 -   6 12 13  4  1  7 10
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  2  1  3  4
+  12 -   9  0  0  2  1  7  8
+  13 -   9  0  0  2  1  9 10
+  14 -   7  0  0  1  1 11 11
+  15 -   7  0  0  1  1 12 12
+  16 -   3  0  0  1  1  5  5
+  17 -   3  0  0  1  1  6  6
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            241
+Total number of atoms read in:              1878
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         241  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1849
+ selectset done           0
+ eigen done           0
+ tau           1   6.47426367              28
+ #popped           2           1
+ #selectset contacts        1849
+ selectset done           1
+ eigen done           1
+ tau           3   1.33037698              13
+ #popped           3           0
+ #selectset contacts        1849
+ selectset done           0
+ eigen done           0
+ tau           5   4.82520390              63         158
+ #popped           6           1
+ #selectset contacts        1849
+ selectset done           1
+ eigen done           1
+ tau           7   2.34200859              47          63
+ #popped           8           1
+ #selectset contacts        1849
+ selectset done           1
+ eigen done           1
+ tau           9   4.71560001             223
+ #popped          10           1
+ #selectset contacts        1849
+ selectset done           1
+ eigen done           1
+ tau          11   1.44349074             211
+ #popped          12           1
+ #selectset contacts        1849
+ selectset done           1
+ eigen done           1
+ tau          13   1.20223320             172         200
+ #popped          14           2
+ #selectset contacts        1849
+ selectset done           2
+ eigen done           2
+ tau          15   1.07566679             172
+ #popped          16           2
+ #selectset contacts        1849
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          15           1
+ #selectset contacts        1849
+ selectset done           1
+ eigen done           1
+ tau          17   1.25484657             185
+ #popped           7           0
+ #selectset contacts        1849
+ selectset done           0
+ eigen done           0
+ tau          19   2.02673244             135         145
+ #popped          20           0
+ #selectset contacts        1849
+ selectset done           0
+ eigen done           0
+ tau          21   2.10347438             135
+ #popped          22           0
+ #selectset contacts        1849
+ selectset done           0
+ eigen done           0
+ tau          23   1.07937932              73          88
+ #popped          24           0
+ #selectset contacts        1849
+ selectset done           0
+ eigen done           0
+ tau          25   1.52416897              73         103
+ #popped          26           0
+ #selectset contacts        1849
+ selectset done           0
+ eigen done           0
+ tau          27   2.49493766              73         125
+ #popped          28           1
+ #selectset contacts        1849
+ selectset done           1
+ eigen done           1
+ tau          29   0.00000000    
+ #popped          29           0
+ #selectset contacts        1849
+ selectset done           0
+ eigen done           0
+ tau          29   1.21794021             115
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         241
+         241  residues read 6EF3.dssp                                                   
+  grow short strand          33          36
+  grow short strand          41          45
+  grow short strand          64          67
+  grow short strand          70          73
+  grow short strand         133         135
+  grow short strand         147         150
+  grow short strand         154         157
+  grow short strand         160         162
+  grow short strand         219         222
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3 11 12 13 14 15 16  4  5  8  7  6  9 10
+   2     1  0  0  1  1
+   3     1  6  7 15  2  3 11 12 13 14 15 16  4  5  8  7  6  9 10
+   4     0  0  0  0
+   5     0  0  0  1  1
+   6     3 10 11  8  2  3 11 12 13 14 15 16
+   7     3 22 23  7  4  5  8  7  6  9 10
+   8     0  0  0  8  2  3 11 12 13 14 15 16
+   9     0  0  0  0
+  10     6 12 13  7  2  3 11 12 13 14 15
+  11     6  0  0  1 16
+  12    10 14 15  5  2  3 11 12 13
+  13    10  0  0  2 14 15
+  14    12  0  0  4  2  3 11 12
+  15    12  0  0  1 13
+  16     0  0  0  4  2  3 11 12
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1 13
+  20     0  0  0  7  4  5  8  7  6  9 10
+  21     0  0  0  0
+  22     7 24 25  5  4  5  8  7  6
+  23     7  0  0  2  9 10
+  24    22 28 29  4  4  5  8  7
+  25    22  0  0  1  6
+  26     0  0  0  4  4  5  8  7
+  27     0  0  0  0
+  28    24  0  0  3  4  5  8
+  29    24  0  0  1  7
+  30     0  0  0  1  7
+  31     0  0  0  0
+   1 +   0  2  3 16  1  1 16
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5 15  1  2 16
+   4 *   3  6  7  8  2  2  3 11 16
+   5 *   3 12 13  7  1  4 10
+   6 -   4  8  9  7  2  2  3 11 15
+   7 -   4  0  0  1  1 16 16
+   8 -   6 10 11  5  2  2  3 11 13
+   9 -   6  0  0  2  1 14 15
+  10 -   8  0  0  4  2  2  3 11 12
+  11 -   8  0  0  1  1 13 13
+  12 -   5 14 15  5  1  4  8
+  13 -   5  0  0  2  1  9 10
+  14 -  12 16 17  4  2  4  5  7  8
+  15 -  12  0  0  1  1  6  6
+  16 -  14  0  0  3  2  4  5  8  8
+  17 -  14  0  0  1  1  7  7
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            249
+Total number of atoms read in:              1918
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         249  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau           1   3.89230537             231
+ #popped           2           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau           3   5.30774975              33
+ #popped           4           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau           5   1.11780536              20
+ #popped           6           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau           7   1.79999995              10
+ #popped           5           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau           9   3.46028090              79         140
+ #popped          10           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          11   2.23235703              51          65
+ #popped          12           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          13   2.04936028              51         168         219
+ #popped          14           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          15   1.11235070             201
+ #popped          16           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          17   2.52406502             186
+ #popped          18           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          15           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          19   1.46989954             168
+ #popped          20           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          21   1.29886997             154
+ #popped          22           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          23  0.715343773              79
+ #popped          11           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau          25   1.84917235              90         120
+ #popped          26           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          27   1.53232753              90
+ #popped          29           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          29   1.26840961             130
+ #popped          27           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau          31   1.87562633             108
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         249
+         249  residues read 6EF3.dssp                                                   
+  grow short strand          37          40
+  grow short strand          47          51
+  grow short strand          67          71
+  grow short strand          74          77
+  grow short helix         110         116
+  grow short strand         142         143
+ crowded segment excluded!
+  grow short strand         145         148
+  grow short strand         152         154
+  grow short strand         157         158
+  grow short strand         164         165
+  grow short strand         169         172
+  exclude short helix         176         179
+  exclude short helix         194         197
+  exclude short helix         199         201
+  exclude short helix         203         207
+  grow short strand         217         218
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3 12 13  4  5  8  9 10 11  6  7 14
+   2     1  4  5 13  1  2  3 12 13  4  5  8  9 10 11  6  7
+   3     1  0  0  1 14
+   4     2  0  0  1  1
+   5     2 10 11 12  2  3 12 13  4  5  8  9 10 11  6  7
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     0  0  0  0
+   9     0  0  0  0
+  10     5 14 15 10  2  3 12 13  4  5  8  9 10 11
+  11     5 32 33  2  6  7
+  12     0  0  0 10  2  3 12 13  4  5  8  9 10 11
+  13     0  0  0  0
+  14    10 16 17  4  2  3 12 13
+  15    10 22 23  6  4  5  8  9 10 11
+  16    14  0  0  3  2  3 12
+  17    14  0  0  1 13
+  18     0  0  0  3  2  3 12
+  19     0  0  0  0
+  20     0  0  0  6  4  5  8  9 10 11
+  21     0  0  0  0
+  22    15 24 25  4  4  5  8  9
+  23    15  0  0  2 10 11
+  24    22  0  0  2  4  5
+  25    22  0  0  2  8  9
+  26     0  0  0  0
+  27     0  0  0  2  6  7
+  28     0  0  0  0
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+  32    11  0  0  1  6
+  33    11  0  0  1  7
+   1 +   0  2  3 14  1  1 14
+   2 +   1  4  5 13  1  1 13
+   3 =   1  0  0  1  1 14 14
+   4 =   2  0  0  1  1  1  1
+   5 +   2  6  7 12  1  2 13
+   6 *   5  8  9 10  2  2  5  8 13
+   7 *   5 16 17  2  1  6  7
+   8 -   6 10 11  4  2  2  3 12 13
+   9 -   6 12 13  6  2  4  5  8 11
+  10 -   8  0  0  3  2  2  3 12 12
+  11 -   8  0  0  1  1 13 13
+  12 -   9 14 15  4  2  4  5  8  9
+  13 -   9  0  0  2  1 10 11
+  14 -  12  0  0  2  1  4  5
+  15 -  12  0  0  2  1  8  9
+  16 -   7  0  0  1  1  6  6
+  17 -   7  0  0  1  1  7  7
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            234
+Total number of atoms read in:              1796
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         234  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1788
+ selectset done           0
+ eigen done           0
+ tau           1   5.55490828              32
+ #popped           2           1
+ #selectset contacts        1788
+ selectset done           1
+ eigen done           1
+ tau           3   2.09566331              12
+ #popped           5           1
+ #selectset contacts        1788
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        1788
+ selectset done           0
+ eigen done           0
+ tau           5   2.37438178              80         101
+ #popped           6           1
+ #selectset contacts        1788
+ selectset done           1
+ eigen done           1
+ tau           7   3.26219893              61         156
+ #popped           8           2
+ #selectset contacts        1788
+ selectset done           2
+ eigen done           2
+ tau           9   2.10623431              50          61
+ #popped          10           2
+ #selectset contacts        1788
+ selectset done           2
+ eigen done           2
+ tau          11   1.30635238              50         206
+ #popped          12           3
+ #selectset contacts        1788
+ selectset done           3
+ eigen done           3
+ tau          13   1.36313570             224
+ #popped          14           3
+ #selectset contacts        1788
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          13           2
+ #selectset contacts        1788
+ selectset done           2
+ eigen done           2
+ tau          15   1.73976600             183
+ #popped          16           3
+ #selectset contacts        1788
+ selectset done           3
+ eigen done           3
+ tau          17   1.40542328             173
+ #popped          17           2
+ #selectset contacts        1788
+ selectset done           2
+ eigen done           2
+ tau          19  0.961096227             196
+ #popped           9           1
+ #selectset contacts        1788
+ selectset done           1
+ eigen done           1
+ tau          21   2.35464001              80         124
+ #popped          22           2
+ #selectset contacts        1788
+ selectset done           2
+ eigen done           2
+ tau          23  0.932195723             134
+ #popped          24           3
+ #selectset contacts        1788
+ selectset done           3
+ eigen done           3
+ tau          25   0.00000000    
+ #popped          25           2
+ #selectset contacts        1788
+ selectset done           2
+ eigen done           2
+ tau          25   1.66946101             145
+ #popped          23           1
+ #selectset contacts        1788
+ selectset done           1
+ eigen done           1
+ tau          27   1.83238637             113
+ #popped           7           0
+ #selectset contacts        1788
+ selectset done           0
+ eigen done           0
+ tau          29   1.10451972              90
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         234
+         234  residues read 6EF3.dssp                                                   
+  exclude short helix          20          25
+  exclude short helix          28          31
+  grow short strand          35          38
+  grow short strand          45          48
+  grow short strand          63          67
+  grow short strand          70          74
+  exclude short helix         105         107
+  grow short strand         160         161
+  grow short helix         166         172
+  exclude short helix         175         177
+  grow short strand         213         215
+  grow short strand         223         225
+  exclude short helix         231         233
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 13  1  2 12 13  9 10 11  3  4  7  8  6  5
+   2     0  0  0  0
+   3     0  0  0 13  1  2 12 13  9 10 11  3  4  7  8  6  5
+   4     0  0  0  0
+   5     0  0  0  0
+   6     1  8  9 12  1  2 12 13  9 10 11  3  4  7  8  6
+   7     1  0  0  1  5
+   8     6 12 13  7  1  2 12 13  9 10 11
+   9     6 22 23  5  3  4  7  8  6
+  10     0  0  0  7  1  2 12 13  9 10 11
+  11     0  0  0  0
+  12     8  0  0  4  1  2 12 13
+  13     8 16 17  3  9 10 11
+  14     0  0  0  4  1  2 12 13
+  15     0  0  0  0
+  16    13  0  0  2  9 10
+  17    13  0  0  1 11
+  18     0  0  0  2  9 10
+  19     0  0  0  0
+  20     0  0  0  1 11
+  21     0  0  0  0
+  22     9 24 25  4  3  4  7  8
+  23     9  0  0  1  6
+  24    22  0  0  2  3  4
+  25    22  0  0  2  7  8
+  26     0  0  0  2  7  8
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1  6
+  30     0  0  0  1  5
+  31     0  0  0  0
+   1 +   0  2  3 13  1  1 13
+   2 -   1  4  5 12  2  1  4  6 13
+   3 -   1  0  0  1  1  5  5
+   4 -   2  6  7  7  2  1  2  9 13
+   5 -   2 10 11  5  2  3  4  6  8
+   6 -   4  0  0  4  2  1  2 12 13
+   7 -   4  8  9  3  1  9 11
+   8 -   7  0  0  2  1  9 10
+   9 -   7  0  0  1  1 11 11
+  10 -   5 12 13  4  2  3  4  7  8
+  11 -   5  0  0  1  1  6  6
+  12 -  10  0  0  2  1  3  4
+  13 -  10  0  0  2  1  7  8
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            246
+Total number of atoms read in:              1903
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         246  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1940
+ selectset done           0
+ eigen done           0
+ tau           1   4.40192842              31          64         158
+ #popped           2           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau           3   6.88433933              31
+ #popped           4           2
+ #selectset contacts        1940
+ selectset done           2
+ eigen done           2
+ tau           5   1.37972617              12
+ #popped           5           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau           7   1.60695004              86         124
+ #popped           8           2
+ #selectset contacts        1940
+ selectset done           2
+ eigen done           2
+ tau           9   1.35418844              74         135
+ #popped          10           3
+ #selectset contacts        1940
+ selectset done           3
+ eigen done           3
+ tau          11   1.46511626             147
+ #popped          12           3
+ #selectset contacts        1940
+ selectset done           3
+ eigen done           3
+ tau          13  0.663265288              74
+ #popped          11           2
+ #selectset contacts        1940
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           9           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau          15   1.50572956             106
+ #popped          16           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau          17  0.936692536              96
+ #popped           3           0
+ #selectset contacts        1940
+ selectset done           0
+ eigen done           0
+ tau          19   2.81521916              53          64
+ #popped          20           0
+ #selectset contacts        1940
+ selectset done           0
+ eigen done           0
+ tau          21   1.22988677             214
+ #popped          22           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau          23   1.34201181             174         184
+ #popped          24           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau          25   1.27400470             174         197
+ #popped          26           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau          27  0.974652529              53         174
+ #popped          28           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau          29  0.483782679              43
+ #popped          31           1
+ #selectset contacts        1940
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          23           0
+ #selectset contacts        1940
+ selectset done           0
+ eigen done           0
+ tau          31   3.95300198             229
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         246
+         246  residues read 6EF3.dssp                                                   
+  grow short strand          35          39
+  grow short strand          66          67
+  grow short strand          72          75
+  exclude short helix         108         111
+  exclude short helix         118         121
+  grow short strand         155         157
+  grow short strand         160         162
+  exclude short helix         219         222
+  grow short strand         226         228
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  4  5  7  8  9  6  2  3 13 10 11 12 14 15
+   2     1  4  5  7  1  4  5  7  8  9  6
+   3     1 22 23  8  2  3 13 10 11 12 14 15
+   4     2  0  0  1  1
+   5     2  8  9  6  4  5  7  8  9  6
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     5 12 13  5  4  5  7  8  9
+   9     5  0  0  1  6
+  10     0  0  0  5  4  5  7  8  9
+  11     0  0  0  0
+  12     8 14 15  4  4  5  7  8
+  13     8  0  0  1  9
+  14    12  0  0  2  4  5
+  15    12  0  0  2  7  8
+  16     0  0  0  1  6
+  17     0  0  0  0
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20     0  0  0  8  2  3 13 10 11 12 14 15
+  21     0  0  0  0
+  22     3 26 27  6  2  3 13 10 11 12
+  23     3 32 33  2 14 15
+  24     0  0  0  6  2  3 13 10 11 12
+  25     0  0  0  0
+  26    22 28 29  5  2  3 13 10 11
+  27    22  0  0  1 12
+  28    26 30 31  3  2  3 13
+  29    26  0  0  2 10 11
+  30    28  0  0  1  2
+  31    28  0  0  2  3 13
+  32    23  0  0  1 14
+  33    23  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5  7  2  1  1  4  9
+   3 +   1 12 13  8  2  2  3 10 15
+   4 =   2  0  0  1  1  1  1
+   5 *   2  6  7  6  1  4  9
+   6 -   5  8  9  5  2  4  5  7  9
+   7 -   5  0  0  1  1  6  6
+   8 -   6 10 11  4  2  4  5  7  8
+   9 -   6  0  0  1  1  9  9
+  10 -   8  0  0  2  1  4  5
+  11 -   8  0  0  2  1  7  8
+  12 -   3 14 15  6  2  2  3 10 13
+  13 -   3 20 21  2  1 14 15
+  14 -  12 16 17  5  3  2  3 10 11 13 13
+  15 -  12  0  0  1  1 12 12
+  16 -  14 18 19  3  2  2  3 13 13
+  17 -  14  0  0  2  1 10 11
+  18 -  16  0  0  1  1  2  2
+  19 -  16  0  0  2  2  3  3 13 13
+  20 -  13  0  0  1  1 14 14
+  21 -  13  0  0  1  1 15 15
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            380
+Total number of atoms read in:              2890
+Total number of ignored atom records:         31
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  calculate residue outside grid:          14
+  calculate residue outside grid:          41
+  calculate residue outside grid:          42
+  calculate residue outside grid:          45
+  calculate residue outside grid:          46
+  calculate residue outside grid:          49
+  calculate residue outside grid:          50
+  calculate residue outside grid:          53
+  calculate residue outside grid:         102
+  calculate residue outside grid:         380
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         380  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2858
+ selectset done           0
+ eigen done           0
+ tau           1   15.2561283              53
+ #popped           2           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau           3   8.61089897              33
+ #popped           4           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau           5   1.97255147              12
+ #popped           7           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau           7   1.44629157              23
+ #popped           5           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau           9   1.56291163              43
+ #popped           3           0
+ #selectset contacts        2858
+ selectset done           0
+ eigen done           0
+ tau          11   15.3238993             111
+ #popped          12           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          13   1.04849946              79
+ #popped          14           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau          15  0.563890219              65
+ #popped          15           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          17   1.03664970              90
+ #popped          19           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          13           0
+ #selectset contacts        2858
+ selectset done           0
+ eigen done           0
+ tau          19   4.10565090             124         190         293
+ #popped          20           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          21   3.00688243             223
+ #popped          22           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau          23   1.94628537             201
+ #popped          24           3
+ #selectset contacts        2858
+ selectset done           3
+ eigen done           3
+ tau          25   1.43951619             124
+ #popped          25           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau          27   1.01957071             212
+ #popped          23           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          29  0.961299777             254
+ #popped          30           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau          31   4.36326647             238
+ #popped          31           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          33   2.21277428             272
+ #popped          35           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          35   2.04237795             283
+ #popped          21           0
+ #selectset contacts        2858
+ selectset done           0
+ eigen done           0
+ tau          37   3.94460130             316
+ #popped          38           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          39   2.45835376             143         166
+ #popped          40           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau          41   2.11445785             303
+ #popped          42           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau          43   1.18792546             178         190
+ #popped          44           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau          45   5.46533251             143
+ #popped          47           2
+ #selectset contacts        2858
+ selectset done           2
+ eigen done           2
+ tau          47   0.00000000    
+ #popped          41           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          47   1.18232048             156
+ #popped          39           0
+ #selectset contacts        2858
+ selectset done           0
+ eigen done           0
+ tau          49   2.74230766             336
+ #popped          50           1
+ #selectset contacts        2858
+ selectset done           1
+ eigen done           1
+ tau          51   1.10709679             326
+ #popped          51           0
+ #selectset contacts        2858
+ selectset done           0
+ eigen done           0
+ tau          53   1.40099955             354
+ #popped          55           0
+ #selectset contacts        2858
+ selectset done           0
+ eigen done           0
+ tau          55   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         380
+         380  residues read 6EF3.dssp                                                   
+  exclude short helix          43          48
+  grow short strand          58          62
+  grow short strand          68          71
+  grow short strand          77          78
+  grow short strand          95          98
+  grow short strand         105         109
+  exclude short helix         115         118
+  exclude short helix         149         152
+  grow short helix         154         160
+  grow short strand         170         171
+  exclude short helix         198         200
+  grow short strand         226         227
+  grow short strand         271         272
+  exclude short helix         285         288
+  grow short strand         297         298
+  grow short helix         326         332
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  3  4  5  6 11 12 13 14  7  9 15 10 16  8 17 18 19
+   2     1  0  0  1  1
+   3     1 12 13 18  2  3  4  5  6 11 12 13 14  7  9 15 10 16  8 17 18 19
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+  12     3 14 15  5  2  3  4  5  6
+  13     3 20 21 13 11 12 13 14  7  9 15 10 16  8 17 18 19
+  14    12 16 17  3  2  3  4
+  15    12  0  0  2  5  6
+  16    14  0  0  1  2
+  17    14  0  0  2  3  4
+  18     0  0  0  0
+  19     0  0  0  2  5  6
+  20    13 22 23  4 11 12 13 14
+  21    13 38 39  9  7  9 15 10 16  8 17 18 19
+  22    20  0  0  1 11
+  23    20 30 31  3 12 13 14
+  24     0  0  0  0
+  25     0  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1 11
+  30    23  0  0  1 12
+  31    23  0  0  2 13 14
+  32     0  0  0  1 12
+  33     0  0  0  0
+  34     0  0  0  2 13 14
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  0
+  38    21 40 41  6  7  9 15 10 16  8
+  39    21 50 51  3 17 18 19
+  40    38 42 43  5  7  9 15 10 16
+  41    38  0  0  1  8
+  42    40 44 45  4  7  9 15 10
+  43    40  0  0  1 16
+  44    42 46 47  3  7  9 15
+  45    42  0  0  1 10
+  46    44  0  0  1  7
+  47    44  0  0  2  9 15
+  48     0  0  0  0
+  49     0  0  0  1  8
+  50    39  0  0  1 17
+  51    39 54 55  2 18 19
+  52     0  0  0  0
+  53     0  0  0  1 17
+  54    51  0  0  1 18
+  55    51  0  0  1 19
+   1 +   0  2  3 19  1  1 19
+   2 *   1  0  0  1  1  1  1
+   3 +   1  4  5 18  1  2 19
+   4 *   3  6  7  5  1  2  6
+   5 +   3 10 11 13  1  7 19
+   6 -   4  8  9  3  1  2  4
+   7 -   4  0  0  2  1  5  6
+   8 -   6  0  0  1  1  2  2
+   9 -   6  0  0  2  1  3  4
+  10 +   5 12 13  4  1 11 14
+  11 +   5 16 17  9  2  7 10 15 19
+  12 *  10  0  0  1  1 11 11
+  13 *  10 14 15  3  1 12 14
+  14 -  13  0  0  1  1 12 12
+  15 -  13  0  0  2  1 13 14
+  16 *  11 18 19  6  2  7 10 15 16
+  17 *  11 26 27  3  1 17 19
+  18 -  16 20 21  5  3  7  7  9 10 15 16
+  19 -  16  0  0  1  1  8  8
+  20 -  18 22 23  4  3  7  7  9 10 15 15
+  21 -  18  0  0  1  1 16 16
+  22 -  20 24 25  3  3  7  7  9  9 15 15
+  23 -  20  0  0  1  1 10 10
+  24 -  22  0  0  1  1  7  7
+  25 -  22  0  0  2  2  9  9 15 15
+  26 -  17  0  0  1  1 17 17
+  27 -  17 28 29  2  1 18 19
+  28 -  27  0  0  1  1 18 18
+  29 -  27  0  0  1  1 19 19
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            384
+Total number of atoms read in:              2872
+Total number of ignored atom records:         31
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:          27
+  calculate residue outside grid:          60
+  calculate residue outside grid:          62
+  calculate residue outside grid:          64
+  calculate residue outside grid:          76
+  calculate residue outside grid:         320
+  calculate residue outside grid:         321
+  calculate residue outside grid:         353
+  calculate residue outside grid:         354
+  calculate residue outside grid:         355
+  calculate residue outside grid:         357
+  calculate residue outside grid:         359
+  calculate residue outside grid:         361
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         384  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2881
+ selectset done           0
+ eigen done           0
+ tau           1   16.7725029              32
+ #popped           2           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau           3   1.16875374              19
+ #popped           3           0
+ #selectset contacts        2881
+ selectset done           0
+ eigen done           0
+ tau           5   3.61653280             374
+ #popped           6           0
+ #selectset contacts        2881
+ selectset done           0
+ eigen done           0
+ tau           7   30.5266399             111
+ #popped           8           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau           9   3.02998161              47
+ #popped          11           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau          11   1.62981188              79          90
+ #popped          12           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau          13  0.766755998              79
+ #popped          14           2
+ #selectset contacts        2881
+ selectset done           2
+ eigen done           2
+ tau          15   1.41304350              57
+ #popped          17           2
+ #selectset contacts        2881
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          15           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau          17  0.470610499             101
+ #popped           9           0
+ #selectset contacts        2881
+ selectset done           0
+ eigen done           0
+ tau          19   10.1999340             297
+ #popped          20           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau          21   2.15290856             199         221         236         264
+ #popped          22           2
+ #selectset contacts        2881
+ selectset done           2
+ eigen done           2
+ tau          23   2.74003530             131         164
+ #popped          24           3
+ #selectset contacts        2881
+ selectset done           3
+ eigen done           3
+ tau          25   1.75188100             131
+ #popped          26           4
+ #selectset contacts        2881
+ selectset done           4
+ eigen done           4
+ tau          27   1.50834441             121
+ #popped          27           3
+ #selectset contacts        2881
+ selectset done           3
+ eigen done           3
+ tau          29   1.20176756             177         189
+ #popped          30           3
+ #selectset contacts        2881
+ selectset done           3
+ eigen done           3
+ tau          31   1.27182615             177         274
+ #popped          32           4
+ #selectset contacts        2881
+ selectset done           4
+ eigen done           4
+ tau          33  0.519484997             177
+ #popped          35           4
+ #selectset contacts        2881
+ selectset done           4
+ eigen done           4
+ tau          35   2.06367350             286
+ #popped          33           3
+ #selectset contacts        2881
+ selectset done           3
+ eigen done           3
+ tau          37  0.924347699             236
+ #popped          38           3
+ #selectset contacts        2881
+ selectset done           3
+ eigen done           3
+ tau          39   0.00000000    
+ #popped          25           2
+ #selectset contacts        2881
+ selectset done           2
+ eigen done           2
+ tau          39   1.89177489             146
+ #popped          23           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau          41   5.51086330             221
+ #popped          42           2
+ #selectset contacts        2881
+ selectset done           2
+ eigen done           2
+ tau          43   1.06118464             211
+ #popped          43           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau          45   1.27681327             254
+ #popped          21           0
+ #selectset contacts        2881
+ selectset done           0
+ eigen done           0
+ tau          47   2.31818175             335
+ #popped          48           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau          49   1.30751264             307         325
+ #popped          50           1
+ #selectset contacts        2881
+ selectset done           1
+ eigen done           1
+ tau          51   2.65484190             307
+ #popped          49           0
+ #selectset contacts        2881
+ selectset done           0
+ eigen done           0
+ tau          53   2.14836597             358
+ #popped          54           0
+ #selectset contacts        2881
+ selectset done           0
+ eigen done           0
+ tau          55   1.64739883             347
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         384
+         384  residues read 6EF3.dssp                                                   
+  exclude short helix           3           6
+  exclude short helix          34          37
+  grow short strand          52          54
+  grow short strand          59          60
+  grow short strand          64          67
+  grow short strand          75          77
+  grow short strand          94          96
+  grow short strand         103         105
+  exclude short helix         113         118
+  grow short helix         139         145
+  exclude short helix         153         156
+  grow short strand         166         170
+  exclude short helix         196         199
+  exclude short helix         231         233
+  grow short strand         272         274
+  grow short strand         295         297
+  exclude short helix         324         326
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  3  4  5  6  7  8 10 15 14 11  9 12 13 16 17 18
+   2     1  0  0  1  1
+   3     1  8  9 17  2  3  4  5  6  7  8 10 15 14 11  9 12 13 16 17 18
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0 17  2  3  4  5  6  7  8 10 15 14 11  9 12 13 16 17 18
+   7     0  0  0  0
+   8     3 10 11  7  2  3  4  5  6  7  8
+   9     3 20 21 10 10 15 14 11  9 12 13 16 17 18
+  10     8  0  0  1  2
+  11     8 14 15  6  3  4  5  6  7  8
+  12     0  0  0  6  3  4  5  6  7  8
+  13     0  0  0  0
+  14    11 16 17  4  3  4  5  6
+  15    11 18 19  2  7  8
+  16    14  0  0  1  3
+  17    14  0  0  3  4  5  6
+  18    15  0  0  1  7
+  19    15  0  0  1  8
+  20     9 22 23  7 10 15 14 11  9 12 13
+  21     9 48 49  3 16 17 18
+  22    20 24 25  5 10 15 14 11  9
+  23    20 42 43  2 12 13
+  24    22 30 31  4 10 15 14 11
+  25    22  0  0  1  9
+  26     0  0  0  0
+  27     0  0  0  4 10 15 14 11
+  28     0  0  0  0
+  29     0  0  0  0
+  30    24 32 33  3 10 15 14
+  31    24  0  0  1 11
+  32    30 34 35  2 10 15
+  33    30  0  0  1 14
+  34    32  0  0  1 10
+  35    32  0  0  1 15
+  36     0  0  0  0
+  37     0  0  0  1 15
+  38     0  0  0  0
+  39     0  0  0  1 14
+  40     0  0  0  1  9
+  41     0  0  0  0
+  42    23  0  0  1 12
+  43    23  0  0  1 13
+  44     0  0  0  0
+  45     0  0  0  1 12
+  46     0  0  0  1 13
+  47     0  0  0  0
+  48    21  0  0  1 16
+  49    21 54 55  2 17 18
+  50     0  0  0  1 16
+  51     0  0  0  0
+  52     0  0  0  1 16
+  53     0  0  0  0
+  54    49  0  0  1 17
+  55    49  0  0  1 18
+  56     0  0  0  1 17
+  57     0  0  0  0
+   1 +   0  2  3 18  1  1 18
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5 17  1  2 18
+   4 *   3  6  7  7  1  2  8
+   5 +   3 14 15 10  1  9 18
+   6 -   4  0  0  1  1  2  2
+   7 -   4  8  9  6  1  3  8
+   8 -   7 10 11  4  1  3  6
+   9 -   7 12 13  2  1  7  8
+  10 -   8  0  0  1  1  3  3
+  11 -   8  0  0  3  1  4  6
+  12 -   9  0  0  1  1  7  7
+  13 -   9  0  0  1  1  8  8
+  14 *   5 16 17  7  1  9 15
+  15 *   5 28 29  3  1 16 18
+  16 -  14 18 19  5  2  9 11 14 15
+  17 -  14 26 27  2  1 12 13
+  18 -  16 20 21  4  2 10 11 14 15
+  19 -  16  0  0  1  1  9  9
+  20 -  18 22 23  3  2 10 10 14 15
+  21 -  18  0  0  1  1 11 11
+  22 -  20 24 25  2  2 10 10 15 15
+  23 -  20  0  0  1  1 14 14
+  24 -  22  0  0  1  1 10 10
+  25 -  22  0  0  1  1 15 15
+  26 -  17  0  0  1  1 12 12
+  27 -  17  0  0  1  1 13 13
+  28 -  15  0  0  1  1 16 16
+  29 -  15 30 31  2  1 17 18
+  30 -  29  0  0  1  1 17 17
+  31 -  29  0  0  1  1 18 18
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            383
+Total number of atoms read in:              2919
+Total number of ignored atom records:         31
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  calculate residue outside grid:          14
+  calculate residue outside grid:          15
+  calculate residue outside grid:          16
+  calculate residue outside grid:          17
+  calculate residue outside grid:          18
+  calculate residue outside grid:          19
+  calculate residue outside grid:          20
+  calculate residue outside grid:          21
+  calculate residue outside grid:          22
+  calculate residue outside grid:          23
+  calculate residue outside grid:          24
+  calculate residue outside grid:          25
+  calculate residue outside grid:          26
+  calculate residue outside grid:          27
+  calculate residue outside grid:          28
+  calculate residue outside grid:          29
+  calculate residue outside grid:          30
+  calculate residue outside grid:          31
+  calculate residue outside grid:          33
+  calculate residue outside grid:          34
+  calculate residue outside grid:          37
+  calculate residue outside grid:         350
+  calculate residue outside grid:         379
+  calculate residue outside grid:         380
+  calculate residue outside grid:         381
+  calculate residue outside grid:         382
+  calculate residue outside grid:         383
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         383  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2873
+ selectset done           0
+ eigen done           0
+ tau           1   7.11421347              17          46         295
+ #popped           2           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau           3   999.999023              17
+ #popped           5           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau           5   19.1025715             105
+ #popped           6           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau           7   1.88828993              75          89
+ #popped           8           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau           9  0.645533144              75
+ #popped          10           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau          11   2.08915901             118         140         160         193         220
+ #popped          12           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau          13   5.63966703             118
+ #popped          15           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau          15   999.999023             160
+ #popped          16           3
+ #selectset contacts        2873
+ selectset done           3
+ eigen done           3
+ tau          17   1.18236017             150
+ #popped          17           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau          19   1.61212122             203
+ #popped          13           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau          21   4.56858969             140
+ #popped          22           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau          23   3.30366731             129
+ #popped          23           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau          25   2.01150966             232         263
+ #popped          26           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau          27  0.490364730             232
+ #popped          28           3
+ #selectset contacts        2873
+ selectset done           3
+ eigen done           3
+ tau          29   2.47706413             183
+ #popped          30           4
+ #selectset contacts        2873
+ selectset done           4
+ eigen done           4
+ tau          31   1.60419750             171
+ #popped          31           3
+ #selectset contacts        2873
+ selectset done           3
+ eigen done           3
+ tau          33   0.00000000    
+ #popped          29           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau          33   4.18938160             274
+ #popped          35           2
+ #selectset contacts        2873
+ selectset done           2
+ eigen done           2
+ tau          35  0.970798075             284
+ #popped          27           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau          37   1.72444975             248
+ #popped           3           0
+ #selectset contacts        2873
+ selectset done           0
+ eigen done           0
+ tau          39   999.999023              46
+ #popped          40           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau          41   1.73577619              29
+ #popped          41           0
+ #selectset contacts        2873
+ selectset done           0
+ eigen done           0
+ tau          43   2.79266953             365
+ #popped          44           0
+ #selectset contacts        2873
+ selectset done           0
+ eigen done           0
+ tau          45   2.26369166             332
+ #popped          46           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau          47   1.31928313             317
+ #popped          48           1
+ #selectset contacts        2873
+ selectset done           1
+ eigen done           1
+ tau          49  0.902426660             305
+ #popped          47           0
+ #selectset contacts        2873
+ selectset done           0
+ eigen done           0
+ tau          51   1.63377607             354
+ #popped          52           0
+ #selectset contacts        2873
+ selectset done           0
+ eigen done           0
+ tau          53   1.04284334             343
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         383
+         383  residues read 6EF3.dssp                                                   
+  grow short strand          62          65
+  grow short strand          71          74
+  grow short strand          90          94
+  exclude short helix         144         147
+  exclude short helix         150         155
+  grow short strand         163         166
+  grow short strand         187         191
+  exclude short helix         257         262
+  grow short strand         269         271
+  grow short strand         290         293
+  grow short helix         321         327
+  exclude short helix         358         361
+  exclude short helix         364         367
+  grow short helix         369         375
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  2  3  4  5 10  6  7  8  9 11 13 14 12  1 15 16 17 18
+   2     1  6  7 13  2  3  4  5 10  6  7  8  9 11 13 14 12
+   3     1 40 41  5  1 15 16 17 18
+   4     0  0  0  0
+   5     0  0  0 13  2  3  4  5 10  6  7  8  9 11 13 14 12
+   6     2 10 11  4  2  3  4  5
+   7     2 12 13  9 10  6  7  8  9 11 13 14 12
+   8     0  0  0  4  2  3  4  5
+   9     0  0  0  0
+  10     6  0  0  3  2  3  4
+  11     6  0  0  1  5
+  12     7  0  0  1 10
+  13     7 22 23  8  6  7  8  9 11 13 14 12
+  14     0  0  0  0
+  15     0  0  0  1 10
+  16     0  0  0  0
+  17     0  0  0  1 10
+  18     0  0  0  0
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1 10
+  22    13  0  0  1  6
+  23    13 26 27  7  7  8  9 11 13 14 12
+  24     0  0  0  0
+  25     0  0  0  1  6
+  26    23 28 29  6  7  8  9 11 13 14
+  27    23  0  0  1 12
+  28    26 30 31  4  7  8  9 11
+  29    26 34 35  2 13 14
+  30    28 32 33  2  7  8
+  31    28  0  0  2  9 11
+  32    30  0  0  1  7
+  33    30  0  0  1  8
+  34    29  0  0  1 13
+  35    29  0  0  1 14
+  36     0  0  0  0
+  37     0  0  0  1 14
+  38     0  0  0  0
+  39     0  0  0  1 12
+  40     3  0  0  1  1
+  41     3 44 45  4 15 16 17 18
+  42     0  0  0  1  1
+  43     0  0  0  0
+  44    41 46 47  3 15 16 17
+  45    41  0  0  1 18
+  46    44 48 49  2 15 16
+  47    44  0  0  1 17
+  48    46  0  0  1 15
+  49    46  0  0  1 16
+  50     0  0  0  1 15
+  51     0  0  0  0
+  52     0  0  0  1 17
+  53     0  0  0  0
+  54     0  0  0  1 17
+  55     0  0  0  0
+   1 +   0  2  3 18  1  1 18
+   2 +   1  4  5 13  1  2 14
+   3 +   1 22 23  5  2  1  1 15 18
+   4 *   2  6  7  4  1  2  5
+   5 *   2  8  9  9  1  6 14
+   6 -   4  0  0  3  1  2  4
+   7 -   4  0  0  1  1  5  5
+   8 -   5  0  0  1  1 10 10
+   9 -   5 10 11  8  2  6  9 11 14
+  10 -   9  0  0  1  1  6  6
+  11 -   9 12 13  7  2  7  9 11 14
+  12 -  11 14 15  6  3  7  9 11 11 13 14
+  13 -  11  0  0  1  1 12 12
+  14 -  12 16 17  4  2  7  9 11 11
+  15 -  12 20 21  2  1 13 14
+  16 -  14 18 19  2  1  7  8
+  17 -  14  0  0  2  2  9  9 11 11
+  18 -  16  0  0  1  1  7  7
+  19 -  16  0  0  1  1  8  8
+  20 -  15  0  0  1  1 13 13
+  21 -  15  0  0  1  1 14 14
+  22 =   3  0  0  1  1  1  1
+  23 +   3 24 25  4  1 15 18
+  24 *  23 26 27  3  1 15 17
+  25 =  23  0  0  1  1 18 18
+  26 -  24 28 29  2  1 15 16
+  27 -  24  0  0  1  1 17 17
+  28 -  26  0  0  1  1 15 15
+  29 -  26  0  0  1  1 16 16
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            370
+Total number of atoms read in:              2762
+Total number of ignored atom records:         27
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  calculate residue outside grid:          14
+  calculate residue outside grid:          15
+  calculate residue outside grid:          16
+  calculate residue outside grid:          17
+  calculate residue outside grid:          18
+  calculate residue outside grid:          19
+  calculate residue outside grid:          20
+  calculate residue outside grid:          21
+  calculate residue outside grid:          22
+  calculate residue outside grid:          23
+  calculate residue outside grid:          24
+  calculate residue outside grid:          25
+  calculate residue outside grid:          26
+  calculate residue outside grid:          27
+  calculate residue outside grid:          28
+  calculate residue outside grid:          29
+  calculate residue outside grid:          30
+  calculate residue outside grid:          31
+  calculate residue outside grid:          32
+  calculate residue outside grid:          33
+  calculate residue outside grid:          34
+  calculate residue outside grid:          35
+  calculate residue outside grid:         305
+  calculate residue outside grid:         306
+  calculate residue outside grid:         307
+  calculate residue outside grid:         364
+  calculate residue outside grid:         365
+  calculate residue outside grid:         366
+  calculate residue outside grid:         367
+  calculate residue outside grid:         368
+  calculate residue outside grid:         369
+  calculate residue outside grid:         370
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         370  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2736
+ selectset done           0
+ eigen done           0
+ tau           1   17.0287113              47         106
+ #popped           2           1
+ #selectset contacts        2736
+ selectset done           1
+ eigen done           1
+ tau           3   18.8314800             284
+ #popped           4           2
+ #selectset contacts        2736
+ selectset done           2
+ eigen done           2
+ tau           5   6.27357197             147
+ #popped           6           3
+ #selectset contacts        2736
+ selectset done           3
+ eigen done           3
+ tau           7   999.999023              47
+ #popped           8           4
+ #selectset contacts        2736
+ selectset done           4
+ eigen done           4
+ tau           9   2.81492186              17
+ #popped          11           4
+ #selectset contacts        2736
+ selectset done           4
+ eigen done           4
+ tau          11   1.88111532              37
+ #popped          12           4
+ #selectset contacts        2736
+ selectset done           4
+ eigen done           4
+ tau          13  0.904751360              27
+ #popped           9           3
+ #selectset contacts        2736
+ selectset done           3
+ eigen done           3
+ tau          15   2.37619805             117
+ #popped          17           3
+ #selectset contacts        2736
+ selectset done           3
+ eigen done           3
+ tau          17   2.03423595             136
+ #popped           7           2
+ #selectset contacts        2736
+ selectset done           2
+ eigen done           2
+ tau          19   2.34776473             179         208         220         250
+ #popped          20           3
+ #selectset contacts        2736
+ selectset done           3
+ eigen done           3
+ tau          21  0.578944981             220
+ #popped          22           4
+ #selectset contacts        2736
+ selectset done           4
+ eigen done           4
+ tau          23   2.87149262             159
+ #popped          25           4
+ #selectset contacts        2736
+ selectset done           4
+ eigen done           4
+ tau          25   0.00000000    
+ #popped          23           3
+ #selectset contacts        2736
+ selectset done           3
+ eigen done           3
+ tau          25   3.48788929             266
+ #popped          21           2
+ #selectset contacts        2736
+ selectset done           2
+ eigen done           2
+ tau          27   5.77500010             208
+ #popped          28           3
+ #selectset contacts        2736
+ selectset done           3
+ eigen done           3
+ tau          29   2.52538371             191
+ #popped          29           2
+ #selectset contacts        2736
+ selectset done           2
+ eigen done           2
+ tau          31   1.41060615             237
+ #popped           5           1
+ #selectset contacts        2736
+ selectset done           1
+ eigen done           1
+ tau          33   5.13264894             357
+ #popped          34           1
+ #selectset contacts        2736
+ selectset done           1
+ eigen done           1
+ tau          35   2.23702455             302
+ #popped          37           1
+ #selectset contacts        2736
+ selectset done           1
+ eigen done           1
+ tau          37   2.05460596             319         343
+ #popped          38           2
+ #selectset contacts        2736
+ selectset done           2
+ eigen done           2
+ tau          39   1.44368899             319
+ #popped          39           1
+ #selectset contacts        2736
+ selectset done           1
+ eigen done           1
+ tau          41   2.04520202             333
+ #popped           3           0
+ #selectset contacts        2736
+ selectset done           0
+ eigen done           0
+ tau          43  0.798015773              89
+ #popped          44           0
+ #selectset contacts        2736
+ selectset done           0
+ eigen done           0
+ tau          45   1.40026104              74
+ #popped          46           0
+ #selectset contacts        2736
+ selectset done           0
+ eigen done           0
+ tau          47  0.617437482              61
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         370
+         370  residues read 6EF3.dssp                                                   
+  exclude short helix          39          43
+  grow short strand          49          51
+ crowded segment excluded!
+  grow short strand          61          65
+  grow short strand          71          74
+  grow short strand          91          93
+  grow short strand         102         103
+  exclude short helix         132         135
+  exclude short helix         138         143
+  grow short strand         151         153
+  grow short strand         175         179
+  exclude short helix         181         184
+  grow short strand         209         213
+  grow short strand         257         259
+  exclude short helix         335         338
+  grow short helix         347         353
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  7  8  9 10 12 14 11 13 15 17 16  2  3  4  5  6
+   2     1  4  5 12  1  7  8  9 10 12 14 11 13 15 17 16
+   3     1 44 45  5  2  3  4  5  6
+   4     2  6  7  9  1  7  8  9 10 12 14 11 13
+   5     2 36 37  3 15 17 16
+   6     4  8  9  2  1  7
+   7     4 20 21  7  8  9 10 12 14 11 13
+   8     6  0  0  1  1
+   9     6  0  0  1  7
+  10     0  0  0  0
+  11     0  0  0  1  1
+  12     0  0  0  1  1
+  13     0  0  0  0
+  14     0  0  0  1  1
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  7
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20     7 22 23  5  8  9 10 12 14
+  21     7 28 29  2 11 13
+  22    20 24 25  4  8  9 10 12
+  23    20  0  0  1 14
+  24    22  0  0  1  8
+  25    22  0  0  3  9 10 12
+  26     0  0  0  1 14
+  27     0  0  0  0
+  28    21  0  0  1 11
+  29    21  0  0  1 13
+  30     0  0  0  0
+  31     0  0  0  1 11
+  32     0  0  0  0
+  33     0  0  0  1 13
+  34     0  0  0  3 15 17 16
+  35     0  0  0  0
+  36     5  0  0  1 15
+  37     5 38 39  2 17 16
+  38    37  0  0  1 17
+  39    37  0  0  1 16
+  40     0  0  0  0
+  41     0  0  0  1 17
+  42     0  0  0  1 16
+  43     0  0  0  0
+  44     3 48 49  3  2  3  4
+  45     3  0  0  2  5  6
+  46     0  0  0  3  2  3  4
+  47     0  0  0  0
+  48    44  0  0  1  2
+  49    44  0  0  2  3  4
+   1 +   0  2  3 17  1  1 17
+   2 +   1  4  5 12  2  1  1  7 17
+   3 *   1 22 23  5  1  2  6
+   4 +   2  6  7  9  2  1  1  7 14
+   5 +   2 18 19  3  1 15 17
+   6 +   4  8  9  2  2  1  1  7  7
+   7 *   4 10 11  7  1  8 14
+   8 *   6  0  0  1  1  1  1
+   9 *   6  0  0  1  1  7  7
+  10 -   7 12 13  5  3  8 10 12 12 14 14
+  11 -   7 16 17  2  2 11 11 13 13
+  12 -  10 14 15  4  2  8 10 12 12
+  13 -  10  0  0  1  1 14 14
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  3  2  9 10 12 12
+  16 -  11  0  0  1  1 11 11
+  17 -  11  0  0  1  1 13 13
+  18 -   5  0  0  1  1 15 15
+  19 -   5 20 21  2  1 16 17
+  20 -  19  0  0  1  1 17 17
+  21 -  19  0  0  1  1 16 16
+  22 -   3 24 25  3  1  2  4
+  23 -   3  0  0  2  1  5  6
+  24 -  22  0  0  1  1  2  2
+  25 -  22  0  0  2  1  3  4
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            360
+Total number of atoms read in:              2526
+Total number of ignored atom records:         27
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:         313
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         360  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2696
+ selectset done           0
+ eigen done           0
+ tau           1   13.9723339             282
+ #popped           2           1
+ #selectset contacts        2696
+ selectset done           1
+ eigen done           1
+ tau           3   3.89480352             116         144
+ #popped           4           2
+ #selectset contacts        2696
+ selectset done           2
+ eigen done           2
+ tau           5   3.05158854              15
+ #popped           7           2
+ #selectset contacts        2696
+ selectset done           2
+ eigen done           2
+ tau           7   12.9565163              93
+ #popped           8           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau           9   7.80473804              34
+ #popped          11           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau          11  0.844528556              61
+ #popped          12           4
+ #selectset contacts        2696
+ selectset done           4
+ eigen done           4
+ tau          13  0.473641217              49
+ #popped          13           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau          15  0.944378734              76
+ #popped           9           2
+ #selectset contacts        2696
+ selectset done           2
+ eigen done           2
+ tau          17   2.19525790             180         205         217         247
+ #popped          18           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau          19   1.20624995             116
+ #popped          20           4
+ #selectset contacts        2696
+ selectset done           4
+ eigen done           4
+ tau          21   1.45212758             103
+ #popped          21           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau          23   1.76310790             156         257
+ #popped          24           4
+ #selectset contacts        2696
+ selectset done           4
+ eigen done           4
+ tau          25  0.483821601             269
+ #popped          26           4
+ #selectset contacts        2696
+ selectset done           4
+ eigen done           4
+ tau          27   0.00000000    
+ #popped          25           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau          27   1.36381304             217
+ #popped          28           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau          29   0.00000000    
+ #popped          19           2
+ #selectset contacts        2696
+ selectset done           2
+ eigen done           2
+ tau          29   2.01942182             227
+ #popped          30           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau          31   999.999023             205
+ #popped          32           3
+ #selectset contacts        2696
+ selectset done           3
+ eigen done           3
+ tau          33   1.59239972             190
+ #popped          31           2
+ #selectset contacts        2696
+ selectset done           2
+ eigen done           2
+ tau          35  0.982456088             237
+ #popped           5           1
+ #selectset contacts        2696
+ selectset done           1
+ eigen done           1
+ tau          37   1.85650229             129
+ #popped           3           0
+ #selectset contacts        2696
+ selectset done           0
+ eigen done           0
+ tau          39   3.55259228             342
+ #popped          40           0
+ #selectset contacts        2696
+ selectset done           0
+ eigen done           0
+ tau          41   1.18354201             323
+ #popped          42           0
+ #selectset contacts        2696
+ selectset done           0
+ eigen done           0
+ tau          43  0.873503029             301         313
+ #popped          44           0
+ #selectset contacts        2696
+ selectset done           0
+ eigen done           0
+ tau          45   2.16881299             301
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         360
+         360  residues read 6EF3.dssp                                                   
+  grow short strand          36          39
+  grow short strand          43          45
+  grow short strand          48          50
+ crowded segment excluded!
+  grow short strand          52          53
+  grow short strand          60          63
+  grow short strand          77          80
+  grow short strand          86          89
+  grow short strand         102         103
+ crowded segment excluded!
+  exclude short helix         105         107
+  exclude short helix         131         134
+  exclude short helix         139         142
+  grow short strand         150         153
+  grow short strand         175         177
+  exclude short helix         182         185
+  grow short strand         209         211
+  exclude short helix         215         217
+  grow short strand         258         259
+  exclude short helix         262         264
+  grow short strand         277         279
+  exclude short helix         307         312
+  exclude short helix         344         348
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 19  1  2  3  4  5  6  7  9 15 16 10 11 13 12 14  8 17 18 19
+   2     1  4  5 16  1  2  3  4  5  6  7  9 15 16 10 11 13 12 14  8
+   3     1 40 41  3 17 18 19
+   4     2  8  9 15  1  2  3  4  5  6  7  9 15 16 10 11 13 12 14
+   5     2  0  0  1  8
+   6     0  0  0  0
+   7     0  0  0 15  1  2  3  4  5  6  7  9 15 16 10 11 13 12 14
+   8     4 10 11  7  1  2  3  4  5  6  7
+   9     4 18 19  8  9 15 16 10 11 13 12 14
+  10     8  0  0  1  1
+  11     8 12 13  6  2  3  4  5  6  7
+  12    11 14 15  4  2  3  4  5
+  13    11  0  0  2  6  7
+  14    12  0  0  2  2  3
+  15    12  0  0  2  4  5
+  16     0  0  0  0
+  17     0  0  0  2  6  7
+  18     9 24 25  6  9 15 16 10 11 13
+  19     9 30 31  2 12 14
+  20     0  0  0  0
+  21     0  0  0  6  9 15 16 10 11 13
+  22     0  0  0  0
+  23     0  0  0  0
+  24    18 26 27  3  9 15 16
+  25    18  0  0  3 10 11 13
+  26    24  0  0  2  9 15
+  27    24  0  0  1 16
+  28     0  0  0  3 10 11 13
+  29     0  0  0  0
+  30    19  0  0  1 12
+  31    19  0  0  1 14
+  32     0  0  0  1 12
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1 12
+  36     0  0  0  0
+  37     0  0  0  1 14
+  38     0  0  0  1  8
+  39     0  0  0  0
+  40     3 42 43  2 17 18
+  41     3  0  0  1 19
+  42    40  0  0  1 17
+  43    40  0  0  1 18
+  44     0  0  0  1 17
+  45     0  0  0  0
+  46     0  0  0  1 17
+  47     0  0  0  0
+   1 +   0  2  3 19  1  1 19
+   2 +   1  4  5 16  1  1 16
+   3 *   1 22 23  3  1 17 19
+   4 +   2  6  7 15  2  1  7  9 16
+   5 =   2  0  0  1  1  8  8
+   6 *   4  8  9  7  1  1  7
+   7 *   4 14 15  8  1  9 16
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  6  1  2  7
+  10 -   9 12 13  4  1  2  5
+  11 -   9  0  0  2  1  6  7
+  12 -  10  0  0  2  1  2  3
+  13 -  10  0  0  2  1  4  5
+  14 -   7 16 17  6  3  9 11 13 13 15 16
+  15 -   7 20 21  2  2 12 12 14 14
+  16 -  14 18 19  3  2  9  9 15 16
+  17 -  14  0  0  3  2 10 11 13 13
+  18 -  16  0  0  2  2  9  9 15 15
+  19 -  16  0  0  1  1 16 16
+  20 -  15  0  0  1  1 12 12
+  21 -  15  0  0  1  1 14 14
+  22 -   3 24 25  2  1 17 18
+  23 -   3  0  0  1  1 19 19
+  24 -  22  0  0  1  1 17 17
+  25 -  22  0  0  1  1 18 18
+
+ CHAIN M
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            371
+Total number of atoms read in:              2718
+Total number of ignored atom records:         31
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  calculate residue outside grid:          14
+  calculate residue outside grid:          15
+  calculate residue outside grid:          16
+  calculate residue outside grid:          17
+  calculate residue outside grid:          18
+  calculate residue outside grid:          19
+  calculate residue outside grid:          20
+  calculate residue outside grid:          21
+  calculate residue outside grid:          22
+  calculate residue outside grid:          23
+  calculate residue outside grid:          24
+  calculate residue outside grid:          25
+  calculate residue outside grid:          26
+  calculate residue outside grid:          27
+  calculate residue outside grid:          28
+  calculate residue outside grid:          29
+  calculate residue outside grid:          30
+  calculate residue outside grid:          31
+  calculate residue outside grid:          32
+  calculate residue outside grid:          33
+  calculate residue outside grid:          34
+  calculate residue outside grid:          35
+  calculate residue outside grid:          36
+  calculate residue outside grid:         308
+  calculate residue outside grid:         309
+  calculate residue outside grid:         310
+  calculate residue outside grid:         311
+  calculate residue outside grid:         312
+  calculate residue outside grid:         314
+  calculate residue outside grid:         315
+  calculate residue outside grid:         318
+  calculate residue outside grid:         348
+  calculate residue outside grid:         349
+  calculate residue outside grid:         350
+  calculate residue outside grid:         365
+  calculate residue outside grid:         366
+  calculate residue outside grid:         367
+  calculate residue outside grid:         368
+  calculate residue outside grid:         369
+  calculate residue outside grid:         370
+  calculate residue outside grid:         371
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         371  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2803
+ selectset done           0
+ eigen done           0
+ tau           1   6.68374062              66          81          97
+ #popped           2           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau           3   7.10181856              38
+ #popped           4           2
+ #selectset contacts        2803
+ selectset done           2
+ eigen done           2
+ tau           5   2.18630385              23
+ #popped           6           2
+ #selectset contacts        2803
+ selectset done           2
+ eigen done           2
+ tau           7   1.38059950              13
+ #popped           5           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau           9  0.843145192              66
+ #popped          10           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau          11   1.61091650              51
+ #popped           3           0
+ #selectset contacts        2803
+ selectset done           0
+ eigen done           0
+ tau          13   6.04573631              81         361
+ #popped          14           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau          15   999.999023              81
+ #popped          15           0
+ #selectset contacts        2803
+ selectset done           0
+ eigen done           0
+ tau          17   10.7276974             287
+ #popped          18           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau          19   3.11845231             115         150
+ #popped          20           2
+ #selectset contacts        2803
+ selectset done           2
+ eigen done           2
+ tau          21   2.08763361             189         209         226         251
+ #popped          22           3
+ #selectset contacts        2803
+ selectset done           3
+ eigen done           3
+ tau          23   2.41999197             115
+ #popped          25           3
+ #selectset contacts        2803
+ selectset done           3
+ eigen done           3
+ tau          25   1.28816879             165         264
+ #popped          26           4
+ #selectset contacts        2803
+ selectset done           4
+ eigen done           4
+ tau          27  0.482239813             274
+ #popped          28           4
+ #selectset contacts        2803
+ selectset done           4
+ eigen done           4
+ tau          29   4.72541523             165
+ #popped          27           3
+ #selectset contacts        2803
+ selectset done           3
+ eigen done           3
+ tau          31   2.53823352             178
+ #popped          33           3
+ #selectset contacts        2803
+ selectset done           3
+ eigen done           3
+ tau          33  0.954052687             226
+ #popped          34           3
+ #selectset contacts        2803
+ selectset done           3
+ eigen done           3
+ tau          35   0.00000000    
+ #popped          23           2
+ #selectset contacts        2803
+ selectset done           2
+ eigen done           2
+ tau          35   3.42857146             209
+ #popped          36           3
+ #selectset contacts        2803
+ selectset done           3
+ eigen done           3
+ tau          37  0.779999971             199
+ #popped          37           2
+ #selectset contacts        2803
+ selectset done           2
+ eigen done           2
+ tau          39   1.08624995             236
+ #popped          21           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau          41   2.14428782             140
+ #popped          42           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau          43   1.12193584             129
+ #popped          19           0
+ #selectset contacts        2803
+ selectset done           0
+ eigen done           0
+ tau          45   1.99565566             323
+ #popped          46           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau          47   1.04067576             300         310
+ #popped          48           1
+ #selectset contacts        2803
+ selectset done           1
+ eigen done           1
+ tau          49   1.33284020             300
+ #popped          47           0
+ #selectset contacts        2803
+ selectset done           0
+ eigen done           0
+ tau          51   1.14352584             351
+ #popped          52           0
+ #selectset contacts        2803
+ selectset done           0
+ eigen done           0
+ tau          53   1.21914864             341
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         371
+         371  residues read 6EF3.dssp                                                   
+  grow short helix           2           8
+  grow short strand          41          44
+  grow short strand          54          57
+  grow short strand          63          66
+  exclude short helix          74          76
+  grow short strand          83          85
+  grow short strand          92          95
+  exclude short helix         102         105
+  exclude short helix         135         139
+  exclude short helix         142         145
+  grow short strand         157         158
+  exclude short helix         272         275
+  grow short strand         284         285
+  exclude short helix         313         318
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  4  5  6  7  9 13 10 11 12  8 14 15 16
+   2     1  4  5  7  1  2  3  4  5  6  7
+   3     1 18 19  9  9 13 10 11 12  8 14 15 16
+   4     2  8  9  2  1  2
+   5     2 10 11  5  3  4  5  6  7
+   6     0  0  0  2  1  2
+   7     0  0  0  0
+   8     4  0  0  1  1
+   9     4  0  0  1  2
+  10     5 12 13  3  3  4  5
+  11     5  0  0  2  6  7
+  12    10  0  0  1  3
+  13    10  0  0  2  4  5
+  14     0  0  0  0
+  15     0  0  0  9  9 13 10 11 12  8 14 15 16
+  16     0  0  0  0
+  17     0  0  0  0
+  18     3 20 21  6  9 13 10 11 12  8
+  19     3 46 47  3 14 15 16
+  20    18 22 23  5  9 13 10 11 12
+  21    18  0  0  1  8
+  22    20 26 27  3  9 13 10
+  23    20 36 37  2 11 12
+  24     0  0  0  0
+  25     0  0  0  3  9 13 10
+  26    22 28 29  2  9 13
+  27    22  0  0  1 10
+  28    26  0  0  1  9
+  29    26  0  0  1 13
+  30     0  0  0  1  9
+  31     0  0  0  0
+  32     0  0  0  1 10
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  0
+  36    23  0  0  1 11
+  37    23  0  0  1 12
+  38     0  0  0  0
+  39     0  0  0  1 11
+  40     0  0  0  0
+  41     0  0  0  1 12
+  42     0  0  0  1  8
+  43     0  0  0  0
+  44     0  0  0  1  8
+  45     0  0  0  0
+  46    19  0  0  1 14
+  47    19 52 53  2 15 16
+  48     0  0  0  1 14
+  49     0  0  0  0
+  50     0  0  0  1 14
+  51     0  0  0  0
+  52    47  0  0  1 15
+  53    47  0  0  1 16
+  54     0  0  0  1 15
+  55     0  0  0  0
+   1 +   0  2  3 16  1  1 16
+   2 +   1  4  5  7  1  1  7
+   3 +   1 12 13  9  1  8 16
+   4 =   2  6  7  2  1  1  2
+   5 *   2  8  9  5  1  3  7
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  3  1  3  5
+   9 -   5  0  0  2  1  6  7
+  10 -   8  0  0  1  1  3  3
+  11 -   8  0  0  2  1  4  5
+  12 +   3 14 15  6  1  8 13
+  13 *   3 24 25  3  1 14 16
+  14 *  12 16 17  5  1  9 13
+  15 =  12  0  0  1  1  8  8
+  16 -  14 18 19  3  2  9 10 13 13
+  17 -  14 22 23  2  1 11 12
+  18 -  16 20 21  2  2  9  9 13 13
+  19 -  16  0  0  1  1 10 10
+  20 -  18  0  0  1  1  9  9
+  21 -  18  0  0  1  1 13 13
+  22 -  17  0  0  1  1 11 11
+  23 -  17  0  0  1  1 12 12
+  24 -  13  0  0  1  1 14 14
+  25 -  13 26 27  2  1 15 16
+  26 -  25  0  0  1  1 15 15
+  27 -  25  0  0  1  1 16 16
+
+ CHAIN r
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            280
+Total number of atoms read in:              2088
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:         227
+  calculate residue outside grid:         228
+  calculate residue outside grid:         229
+  calculate residue outside grid:         230
+  calculate residue outside grid:         231
+  calculate residue outside grid:         232
+  calculate residue outside grid:         233
+  calculate residue outside grid:         234
+  calculate residue outside grid:         235
+  calculate residue outside grid:         236
+  calculate residue outside grid:         237
+  calculate residue outside grid:         238
+  calculate residue outside grid:         239
+  calculate residue outside grid:         240
+  calculate residue outside grid:         241
+  calculate residue outside grid:         277
+  calculate residue outside grid:         280
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+         280  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2126
+ selectset done           0
+ eigen done           0
+ tau           1   28.2541962             178
+ #popped           2           1
+ #selectset contacts        2126
+ selectset done           1
+ eigen done           1
+ tau           3   2.05525279             135
+ #popped           4           2
+ #selectset contacts        2126
+ selectset done           2
+ eigen done           2
+ tau           5   1.72779942              85
+ #popped           6           3
+ #selectset contacts        2126
+ selectset done           3
+ eigen done           3
+ tau           7   1.91291738              22          33          45
+ #popped           8           4
+ #selectset contacts        2126
+ selectset done           4
+ eigen done           4
+ tau           9   1.91949642              12          22
+ #popped          10           4
+ #selectset contacts        2126
+ selectset done           4
+ eigen done           4
+ tau          11   1.14207649              12
+ #popped           9           3
+ #selectset contacts        2126
+ selectset done           3
+ eigen done           3
+ tau          13  0.914890766              61
+ #popped          14           4
+ #selectset contacts        2126
+ selectset done           4
+ eigen done           4
+ tau          15  0.324557662              33
+ #popped          15           3
+ #selectset contacts        2126
+ selectset done           3
+ eigen done           3
+ tau          17   1.25230205              73
+ #popped           7           2
+ #selectset contacts        2126
+ selectset done           2
+ eigen done           2
+ tau          19   1.48732066              97         116
+ #popped          20           2
+ #selectset contacts        2126
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped           5           1
+ #selectset contacts        2126
+ selectset done           1
+ eigen done           1
+ tau          21   1.86993861             146         156
+ #popped          22           1
+ #selectset contacts        2126
+ selectset done           1
+ eigen done           1
+ tau          23   1.29948723             146         168
+ #popped          24           1
+ #selectset contacts        2126
+ selectset done           1
+ eigen done           1
+ tau          25   2.24807644             146
+ #popped           3           0
+ #selectset contacts        2126
+ selectset done           0
+ eigen done           0
+ tau          27   7.82793713             198
+ #popped          28           1
+ #selectset contacts        2126
+ selectset done           1
+ eigen done           1
+ tau          29   1.41913736             188
+ #popped          29           0
+ #selectset contacts        2126
+ selectset done           0
+ eigen done           0
+ tau          31   3.88046384             236
+ #popped          32           1
+ #selectset contacts        2126
+ selectset done           1
+ eigen done           1
+ tau          33   2.18192267             219
+ #popped          34           1
+ #selectset contacts        2126
+ selectset done           1
+ eigen done           1
+ tau          35  0.665011346             208
+ #popped          33           0
+ #selectset contacts        2126
+ selectset done           0
+ eigen done           0
+ tau          37   3.16285706             246
+ #popped          39           0
+ #selectset contacts        2126
+ selectset done           0
+ eigen done           0
+ tau          39   1.52214384             266
+ #popped          40           0
+ #selectset contacts        2126
+ selectset done           0
+ eigen done           0
+ tau          41  0.721420646             256
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+         280
+         280  residues read 6EF3.dssp                                                   
+  grow short strand          52          54
+  grow short strand          59          61
+  grow short helix          68          74
+  grow short strand         116         120
+  grow short strand         133         135
+  exclude short helix         140         145
+  exclude short helix         160         162
+  exclude short helix         166         170
+  exclude short helix         228         230
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  5  6  7  9 10  8 11 12 13
+   2     1  6  7 10  1  2  3  4  5  6  7  9 10  8
+   3     1 28 29  3 11 12 13
+   4     0  0  0 10  1  2  3  4  5  6  7  9 10  8
+   5     0  0  0  0
+   6     2  8  9  6  1  2  3  4  5  6
+   7     2 20 21  4  7  9 10  8
+   8     6  0  0  1  1
+   9     6 14 15  5  2  3  4  5  6
+  10     0  0  0  0
+  11     0  0  0  1  1
+  12     0  0  0  0
+  13     0  0  0  0
+  14     9 16 17  4  2  3  4  5
+  15     9  0  0  1  6
+  16    14  0  0  1  2
+  17    14  0  0  3  3  4  5
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20     7  0  0  3  7  9 10
+  21     7  0  0  1  8
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28     3  0  0  1 11
+  29     3 32 33  2 12 13
+  30     0  0  0  1 11
+  31     0  0  0  0
+  32    29  0  0  1 12
+  33    29  0  0  1 13
+  34     0  0  0  1 12
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  1 12
+  38     0  0  0  0
+  39     0  0  0  1 13
+  40     0  0  0  1 13
+  41     0  0  0  0
+  42     0  0  0  0
+  43     0  0  0  1 13
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5 10  1  1 10
+   3 +   1 14 15  3  1 11 13
+   4 -   2  6  7  6  1  1  6
+   5 -   2 12 13  4  1  7 10
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  5  1  2  6
+   8 -   7 10 11  4  1  2  5
+   9 -   7  0  0  1  1  6  6
+  10 -   8  0  0  1  1  2  2
+  11 -   8  0  0  3  1  3  5
+  12 -   5  0  0  3  2  7  7  9 10
+  13 -   5  0  0  1  1  8  8
+  14 =   3  0  0  1  1 11 11
+  15 +   3 16 17  2  1 12 13
+  16 =  15  0  0  1  1 12 12
+  17 *  15  0  0  1  1 13 13
+
+ CHAIN s
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             38
+Total number of atoms read in:               253
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+          38  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         174
+ selectset done           0
+ eigen done           0
+ tau           1   2.24442697              28
+ #popped           2           0
+ #selectset contacts         174
+ selectset done           0
+ eigen done           0
+ tau           3   2.96196127              13
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+          38
+          38  residues read 6EF3.dssp                                                   
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  0  0  0
+   2     0  0  0  0
+   3     0  0  0  0
+   4     0  0  0  0
+   5     0  0  0  0
+   1 =   0  0  0  0  0
+
+ CHAIN u
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             75
+Total number of atoms read in:               481
+Total number of ignored atom records:          0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+  Reading DSSP file
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+          75  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         497
+ selectset done           0
+ eigen done           0
+ tau           1   1.25194907              37
+ #popped           2           1
+ #selectset contacts         497
+ selectset done           1
+ eigen done           1
+ tau           3   3.05853653              16
+ #popped           5           1
+ #selectset contacts         497
+ selectset done           1
+ eigen done           1
+ tau           5  0.654761851              26
+ #popped           3           0
+ #selectset contacts         497
+ selectset done           0
+ eigen done           0
+ tau           7   1.74946809              48          64
+ #popped           8           0
+ #selectset contacts         497
+ selectset done           0
+ eigen done           0
+ tau           9  0.380300552              48
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MOTOR PROTEIN                           15-AUG-18   6EF3              COMPND   2 MOLECULE: PROTEASOME SUBUNIT BETA TYPE-1;                            SOURCE   2 ORGANISM_SCIENTIFIC: SACCHAROMYCES CEREVISIAE S288C;                 AUTHOR    A.H.DE LA PENA,E.A.GOODALL,S.N.GATES,G.C.LANDER,A.MARTIN              
+           0
+          75
+          75  residues read 6EF3.dssp                                                   
+  grow short strand           2           4
+  grow short strand          12          14
+  exclude short helix          37          39
+  grow short strand          40          44
+  grow short strand          47          48
+  exclude short helix          55          57
+  grow short strand          67          70
+  grow short strand          73          74
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  2  3  4  5  6
+   2     1  4  5  3  1  2  3
+   3     1 10 11  3  4  5  6
+   4     2  0  0  2  1  2
+   5     2  0  0  1  3
+   6     0  0  0  0
+   7     0  0  0  1  3
+   8     0  0  0  3  4  5  6
+   9     0  0  0  0
+  10     3  0  0  2  4  5
+  11     3  0  0  1  6
+   1 *   0  2  3  6  1  1  6
+   2 -   1  4  5  3  1  1  3
+   3 -   1  6  7  3  1  4  6
+   4 -   2  0  0  2  1  1  2
+   5 -   2  0  0  1  1  3  3
+   6 -   3  0  0  2  1  4  5
+   7 -   3  0  0  1  1  6  6
+
+ CHAIN : 6EF31
+ CHAIN : 6EF32
+ CHAIN : 6EF33
+ CHAIN : 6EF34
+ CHAIN : 6EF35
+ CHAIN : 6EF36
+ CHAIN : 6EF37
+ CHAIN : 6EF3A
+ CHAIN : 6EF3B
+ CHAIN : 6EF3C
+ CHAIN : 6EF3D
+ CHAIN : 6EF3E
+ CHAIN : 6EF3F
+ CHAIN : 6EF3G
+ CHAIN : 6EF3H
+ CHAIN : 6EF3I
+ CHAIN : 6EF3J
+ CHAIN : 6EF3K
+ CHAIN : 6EF3L
+ CHAIN : 6EF3M
+ CHAIN : 6EF3r
+ CHAIN : 6EF3s
+ CHAIN : 6EF3u
+

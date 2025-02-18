@@ -1,0 +1,2066 @@
+A length: 256
+B length: 257
+C length: 258
+D length: 257
+E length: 257
+F length: 256
+G length: 256
+H length: 256
+I length: 254
+J length: 255
+# 10 chains A B C D E F G H I J
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            256
+Total number of atoms read in:              1905
+Total number of ignored atom records:        164
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         256  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2330
+ selectset done           0
+ eigen done           0
+ tau           1   5.86303520             228
+ #popped           2           1
+ #selectset contacts        2330
+ selectset done           1
+ eigen done           1
+ tau           3   1.48448360              60          76          88         129         139         173
+ #popped           4           2
+ #selectset contacts        2330
+ selectset done           2
+ eigen done           2
+ tau           5   1.71058762              88
+ #popped           6           3
+ #selectset contacts        2330
+ selectset done           3
+ eigen done           3
+ tau           7  0.802483857              32          60
+ #popped           8           4
+ #selectset contacts        2330
+ selectset done           4
+ eigen done           4
+ tau           9  0.503725946              10          20
+ #popped          10           4
+ #selectset contacts        2330
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped           9           3
+ #selectset contacts        2330
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        2330
+ selectset done           2
+ eigen done           2
+ tau          11   2.31710792             185         201
+ #popped          12           2
+ #selectset contacts        2330
+ selectset done           2
+ eigen done           2
+ tau          13  0.630540729             185
+ #popped          14           3
+ #selectset contacts        2330
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          15           2
+ #selectset contacts        2330
+ selectset done           2
+ eigen done           2
+ tau          15   1.28930819             218
+ #popped           5           1
+ #selectset contacts        2330
+ selectset done           1
+ eigen done           1
+ tau          17   2.80346513             129
+ #popped          18           2
+ #selectset contacts        2330
+ selectset done           2
+ eigen done           2
+ tau          19   2.54708958              76         110
+ #popped          20           3
+ #selectset contacts        2330
+ selectset done           3
+ eigen done           3
+ tau          21   1.52183568              76
+ #popped          21           2
+ #selectset contacts        2330
+ selectset done           2
+ eigen done           2
+ tau          23   1.36551714              98
+ #popped          19           1
+ #selectset contacts        2330
+ selectset done           1
+ eigen done           1
+ tau          25   1.46468568             149
+ #popped          27           1
+ #selectset contacts        2330
+ selectset done           1
+ eigen done           1
+ tau          27  0.977266788             163
+ #popped           3           0
+ #selectset contacts        2330
+ selectset done           0
+ eigen done           0
+ tau          29   2.22274876             246
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         256
+         256  residues read 4BMV.dssp                                                   
+  grow short strand           4           8
+  grow short strand          29          33
+  grow short strand          54          58
+  exclude short helix          95          97
+  grow short strand         132         136
+  exclude short helix         139         142
+  exclude short helix         144         146
+  grow short strand         175         179
+  exclude short helix         188         192
+  exclude short helix         196         198
+  grow short strand         222         223
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  7  2  4  5 10 12 13 14  6  9  8 11 15
+   2     1  4  5 14  1  3  7  2  4  5 10 12 13 14  6  9  8 11
+   3     1  0  0  1 15
+   4     2  6  7 10  1  3  7  2  4  5 10 12 13 14
+   5     2 18 19  4  6  9  8 11
+   6     4  8  9  6  1  3  7  2  4  5
+   7     4 14 15  4 10 12 13 14
+   8     6 10 11  4  1  3  7  2
+   9     6  0  0  2  4  5
+  10     8  0  0  3  1  3  7
+  11     8  0  0  1  2
+  12     0  0  0  4 10 12 13 14
+  13     0  0  0  0
+  14     7  0  0  2 10 12
+  15     7 16 17  2 13 14
+  16    15  0  0  1 13
+  17    15  0  0  1 14
+  18     5 20 21  3  6  9  8
+  19     5  0  0  1 11
+  20    18 22 23  2  6  9
+  21    18  0  0  1  8
+  22    20  0  0  1  6
+  23    20  0  0  1  9
+  24     0  0  0  0
+  25     0  0  0  1  8
+  26     0  0  0  0
+  27     0  0  0  1 11
+  28     0  0  0  1 11
+  29     0  0  0  0
+  30     0  0  0  1 15
+  31     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 10  4  1  5  7  7 10 10 12 14
+   5 -   2 16 17  4  3  6  6  8  9 11 11
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4 12 13  4  2 10 10 12 14
+   8 -   6 10 11  4  2  1  3  7  7
+   9 -   6  0  0  2  1  4  5
+  10 -   8  0  0  3  3  1  1  3  3  7  7
+  11 -   8  0  0  1  1  2  2
+  12 -   7  0  0  2  2 10 10 12 12
+  13 -   7 14 15  2  1 13 14
+  14 -  13  0  0  1  1 13 13
+  15 -  13  0  0  1  1 14 14
+  16 -   5 18 19  3  2  6  6  8  9
+  17 -   5  0  0  1  1 11 11
+  18 -  16 20 21  2  2  6  6  9  9
+  19 -  16  0  0  1  1  8  8
+  20 -  18  0  0  1  1  6  6
+  21 -  18  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1923
+Total number of ignored atom records:        144
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  calculate residue outside grid:         257
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2344
+ selectset done           0
+ eigen done           0
+ tau           1   5.68451977             229
+ #popped           2           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau           3   1.85817075              87         112         137         163
+ #popped           4           2
+ #selectset contacts        2344
+ selectset done           2
+ eigen done           2
+ tau           5   2.58740878             181         204
+ #popped           6           3
+ #selectset contacts        2344
+ selectset done           3
+ eigen done           3
+ tau           7   1.21122742              62
+ #popped           8           4
+ #selectset contacts        2344
+ selectset done           4
+ eigen done           4
+ tau           9  0.947125554              11          26
+ #popped          10           4
+ #selectset contacts        2344
+ selectset done           4
+ eigen done           4
+ tau          11  0.684929669              42          52
+ #popped          12           4
+ #selectset contacts        2344
+ selectset done           4
+ eigen done           4
+ tau          13  0.377948195              42
+ #popped          14           4
+ #selectset contacts        2344
+ selectset done           4
+ eigen done           4
+ tau          15   0.00000000    
+ #popped           9           3
+ #selectset contacts        2344
+ selectset done           3
+ eigen done           3
+ tau          15   1.38585198             181
+ #popped          16           4
+ #selectset contacts        2344
+ selectset done           4
+ eigen done           4
+ tau          17   1.27514231              76
+ #popped          19           4
+ #selectset contacts        2344
+ selectset done           4
+ eigen done           4
+ tau          19   0.00000000    
+ #popped          17           3
+ #selectset contacts        2344
+ selectset done           3
+ eigen done           3
+ tau          19   1.94999993             219
+ #popped           7           2
+ #selectset contacts        2344
+ selectset done           2
+ eigen done           2
+ tau          21  0.629446685             194
+ #popped           5           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau          23   2.21648645             112         147
+ #popped          24           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau          25   1.60329640             112
+ #popped          26           1
+ #selectset contacts        2344
+ selectset done           1
+ eigen done           1
+ tau          27   1.30187464              98
+ #popped           3           0
+ #selectset contacts        2344
+ selectset done           0
+ eigen done           0
+ tau          29   1.90366971             247
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         257
+         257  residues read 4BMV.dssp                                                   
+  grow short strand           4           8
+  grow short strand          29          33
+  grow short strand          54          58
+  exclude short helix          95          97
+  grow short strand         132         136
+  exclude short helix         139         142
+  exclude short helix         144         146
+  grow short strand         175         179
+  exclude short helix         188         191
+  exclude short helix         196         198
+  grow short strand         222         223
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  5  4  2  6  7  9 10 12 13 14  8 11 15
+   2     1  4  5 14  1  3  5  4  2  6  7  9 10 12 13 14  8 11
+   3     1  0  0  1 15
+   4     2  8  9 12  1  3  5  4  2  6  7  9 10 12 13 14
+   5     2 26 27  2  8 11
+   6     0  0  0 12  1  3  5  4  2  6  7  9 10 12 13 14
+   7     0  0  0  0
+   8     4 10 11  5  1  3  5  4  2
+   9     4 16 17  7  6  7  9 10 12 13 14
+  10     8 12 13  4  1  3  5  4
+  11     8  0  0  1  2
+  12    10 14 15  3  1  3  5
+  13    10  0  0  1  4
+  14    12  0  0  2  1  3
+  15    12  0  0  1  5
+  16     9 18 19  5  6  7  9 10 12
+  17     9 20 21  2 13 14
+  18    16  0  0  1  6
+  19    16  0  0  4  7  9 10 12
+  20    17  0  0  1 13
+  21    17  0  0  1 14
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  2  8 11
+  25     0  0  0  0
+  26     5  0  0  1  8
+  27     5  0  0  1 11
+  28     0  0  0  0
+  29     0  0  0  1  8
+  30     0  0  0  1 15
+  31     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 12  3  1  7  9 10 12 14
+   5 -   2 20 21  2  2  8  8 11 11
+   6 -   4  8  9  5  1  1  5
+   7 -   4 14 15  7  3  6  7  9 10 12 14
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   8 12 13  3  3  1  1  3  3  5  5
+  11 -   8  0  0  1  1  4  4
+  12 -  10  0  0  2  2  1  1  3  3
+  13 -  10  0  0  1  1  5  5
+  14 -   7 16 17  5  3  6  7  9 10 12 12
+  15 -   7 18 19  2  1 13 14
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  4  3  7  7  9 10 12 12
+  18 -  15  0  0  1  1 13 13
+  19 -  15  0  0  1  1 14 14
+  20 -   5  0  0  1  1  8  8
+  21 -   5  0  0  1  1 11 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1920
+Total number of ignored atom records:        146
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2333
+ selectset done           0
+ eigen done           0
+ tau           1   5.68338299             229
+ #popped           2           1
+ #selectset contacts        2333
+ selectset done           1
+ eigen done           1
+ tau           3   1.71310997              83
+ #popped           4           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau           5   1.12644899              58
+ #popped           6           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau           7  0.884536207              12          28
+ #popped           8           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau           9  0.485592097              41
+ #popped          10           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          11  0.993307412              70
+ #popped           5           1
+ #selectset contacts        2333
+ selectset done           1
+ eigen done           1
+ tau          13   2.39916730             183         205
+ #popped          14           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          15   1.16908669             121         132
+ #popped          16           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          17   1.50345802             121
+ #popped          18           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          19   1.27359819              99
+ #popped          21           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          21   1.02894735             111
+ #popped          19           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          23   1.59605992             146         173
+ #popped          24           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          25   1.28341722             183         219
+ #popped          26           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          27  0.680296302             183
+ #popped          28           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          29  0.331797242             146
+ #popped          25           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          31   1.12556100             159
+ #popped          15           1
+ #selectset contacts        2333
+ selectset done           1
+ eigen done           1
+ tau          33  0.614797831             195
+ #popped           3           0
+ #selectset contacts        2333
+ selectset done           0
+ eigen done           0
+ tau          35   2.47522926             248
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         258
+         258  residues read 4BMV.dssp                                                   
+  grow short strand           5           9
+  grow short strand          30          34
+  grow short strand          55          59
+  exclude short helix          96          98
+  grow short strand         133         137
+  exclude short helix         140         143
+  exclude short helix         145         147
+  grow short strand         176         180
+  exclude short helix         189         192
+  exclude short helix         197         199
+  grow short strand         223         224
+  exclude short helix         255         257
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  4  5  2  6  7  8  9 10 12 14 13 11 15
+   2     1  4  5 14  1  3  4  5  2  6  7  8  9 10 12 14 13 11
+   3     1  0  0  1 15
+   4     2  6  7  7  1  3  4  5  2  6  7
+   5     2 18 19  7  8  9 10 12 14 13 11
+   6     4  8  9  5  1  3  4  5  2
+   7     4  0  0  2  6  7
+   8     6 10 11  4  1  3  4  5
+   9     6  0  0  1  2
+  10     8  0  0  2  1  3
+  11     8  0  0  2  4  5
+  12     0  0  0  0
+  13     0  0  0  2  6  7
+  14     0  0  0  7  8  9 10 12 14 13 11
+  15     0  0  0  0
+  16     0  0  0  7  8  9 10 12 14 13 11
+  17     0  0  0  0
+  18     5 22 23  2  8  9
+  19     5 24 25  5 10 12 14 13 11
+  20     0  0  0  0
+  21     0  0  0  2  8  9
+  22    18  0  0  1  8
+  23    18  0  0  1  9
+  24    19 26 27  4 10 12 14 13
+  25    19  0  0  1 11
+  26    24 28 29  3 10 12 14
+  27    24  0  0  1 13
+  28    26 30 31  2 10 12
+  29    26  0  0  1 14
+  30    28  0  0  1 10
+  31    28  0  0  1 12
+  32     0  0  0  0
+  33     0  0  0  1 11
+  34     0  0  0  0
+  35     0  0  0  0
+  36     0  0  0  1 15
+  37     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7  7  1  1  7
+   5 -   2 12 13  7  1  8 14
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  2  1  6  7
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  2  2  1  1  3  3
+  11 -   8  0  0  2  1  4  5
+  12 -   5 14 15  2  1  8  9
+  13 -   5 16 17  5  1 10 14
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1  9  9
+  16 -  13 18 19  4  2 10 10 12 14
+  17 -  13  0  0  1  1 11 11
+  18 -  16 20 21  3  3 10 10 12 12 14 14
+  19 -  16  0  0  1  1 13 13
+  20 -  18 22 23  2  2 10 10 12 12
+  21 -  18  0  0  1  1 14 14
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  1  1 12 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1919
+Total number of ignored atom records:         88
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  calculate residue outside grid:         257
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2338
+ selectset done           0
+ eigen done           0
+ tau           1   6.27802420             228
+ #popped           2           1
+ #selectset contacts        2338
+ selectset done           1
+ eigen done           1
+ tau           3   1.63918996              88         110         137         156         180         205
+ #popped           4           2
+ #selectset contacts        2338
+ selectset done           2
+ eigen done           2
+ tau           5   1.50763547             120
+ #popped           6           3
+ #selectset contacts        2338
+ selectset done           3
+ eigen done           3
+ tau           7   1.89511466              59          76          88
+ #popped           8           4
+ #selectset contacts        2338
+ selectset done           4
+ eigen done           4
+ tau           9  0.785857201              32          59
+ #popped          10           5
+ #selectset contacts        2338
+ selectset done           5
+ eigen done           5
+ tau          11  0.201823413              11
+ #popped          13           5
+ #selectset contacts        2338
+ selectset done           5
+ eigen done           5
+ tau          13   6.95376015              32
+ #popped          14           5
+ #selectset contacts        2338
+ selectset done           5
+ eigen done           5
+ tau          15  0.661490679              21
+ #popped          11           4
+ #selectset contacts        2338
+ selectset done           4
+ eigen done           4
+ tau          17   0.00000000    
+ #popped           9           3
+ #selectset contacts        2338
+ selectset done           3
+ eigen done           3
+ tau          17   1.55936813              76
+ #popped           7           2
+ #selectset contacts        2338
+ selectset done           2
+ eigen done           2
+ tau          19   1.45441890             180         218
+ #popped          20           2
+ #selectset contacts        2338
+ selectset done           2
+ eigen done           2
+ tau          21  0.574100733             137
+ #popped          23           2
+ #selectset contacts        2338
+ selectset done           2
+ eigen done           2
+ tau          23   1.31123018             168
+ #popped          25           2
+ #selectset contacts        2338
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped           5           1
+ #selectset contacts        2338
+ selectset done           1
+ eigen done           1
+ tau          25   5.80879354             156
+ #popped          26           2
+ #selectset contacts        2338
+ selectset done           2
+ eigen done           2
+ tau          27   2.00126553             110
+ #popped          28           2
+ #selectset contacts        2338
+ selectset done           2
+ eigen done           2
+ tau          29   1.39276707              98
+ #popped          27           1
+ #selectset contacts        2338
+ selectset done           1
+ eigen done           1
+ tau          31  0.652412236             194
+ #popped           3           0
+ #selectset contacts        2338
+ selectset done           0
+ eigen done           0
+ tau          33   2.55054307             247
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         257
+         257  residues read 4BMV.dssp                                                   
+  grow short strand           4           8
+  grow short strand          29          33
+  grow short strand          54          58
+  exclude short helix          95          97
+  grow short strand         132         136
+  exclude short helix         139         142
+  exclude short helix         144         146
+  grow short strand         175         179
+  exclude short helix         188         191
+  exclude short helix         196         198
+  grow short strand         222         223
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  7  4  5  6  9 10 11 12 14 13  8 15
+   2     1  4  5 14  1  2  3  7  4  5  6  9 10 11 12 14 13  8
+   3     1  0  0  1 15
+   4     2  6  7 13  1  2  3  7  4  5  6  9 10 11 12 14 13
+   5     2  0  0  1  8
+   6     4  8  9  8  1  2  3  7  4  5  6  9
+   7     4 20 21  5 10 11 12 14 13
+   8     6 10 11  6  1  2  3  7  4  5
+   9     6 18 19  2  6  9
+  10     8 12 13  4  1  2  3  7
+  11     8  0  0  2  4  5
+  12    10  0  0  1  1
+  13    10 14 15  3  2  3  7
+  14    13 16 17  2  2  3
+  15    13  0  0  1  7
+  16    14  0  0  1  2
+  17    14  0  0  1  3
+  18     9  0  0  1  6
+  19     9  0  0  1  9
+  20     7 22 23  4 10 11 12 14
+  21     7  0  0  1 13
+  22    20  0  0  1 10
+  23    20 24 25  3 11 12 14
+  24    23  0  0  1 11
+  25    23  0  0  2 12 14
+  26     0  0  0  1  8
+  27     0  0  0  0
+  28     0  0  0  1  8
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1  8
+  32     0  0  0  0
+  33     0  0  0  0
+  34     0  0  0  1 15
+  35     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 13  2  1  7  9 14
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  8  2  1  7  9  9
+   7 -   4 20 21  5  1 10 14
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6 18 19  2  2  6  6  9  9
+  10 -   8 12 13  4  2  1  3  7  7
+  11 -   8  0  0  2  1  4  5
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  3  2  2  3  7  7
+  14 -  13 16 17  2  1  2  3
+  15 -  13  0  0  1  1  7  7
+  16 -  14  0  0  1  1  2  2
+  17 -  14  0  0  1  1  3  3
+  18 -   9  0  0  1  1  6  6
+  19 -   9  0  0  1  1  9  9
+  20 -   7 22 23  4  2 10 12 14 14
+  21 -   7  0  0  1  1 13 13
+  22 -  20  0  0  1  1 10 10
+  23 -  20 24 25  3  2 11 12 14 14
+  24 -  23  0  0  1  1 11 11
+  25 -  23  0  0  2  2 12 12 14 14
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1923
+Total number of ignored atom records:        178
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  calculate residue outside grid:         257
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau           1   4.41198397             247
+ #popped           2           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau           3   3.99970818             223
+ #popped           4           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau           5   2.31332302             181         204
+ #popped           6           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau           7   1.89329982              87         120         137         171
+ #popped           8           3
+ #selectset contacts        2342
+ selectset done           3
+ eigen done           3
+ tau           9   1.71511793              59          76
+ #popped          10           3
+ #selectset contacts        2342
+ selectset done           3
+ eigen done           3
+ tau          11   1.32195580              87
+ #popped          12           4
+ #selectset contacts        2342
+ selectset done           4
+ eigen done           4
+ tau          13   1.01405096              33          49
+ #popped          14           4
+ #selectset contacts        2342
+ selectset done           4
+ eigen done           4
+ tau          15  0.591228724              11          21
+ #popped          16           4
+ #selectset contacts        2342
+ selectset done           4
+ eigen done           4
+ tau          17  0.466445178              59
+ #popped          18           4
+ #selectset contacts        2342
+ selectset done           4
+ eigen done           4
+ tau          19   0.00000000    
+ #popped          13           3
+ #selectset contacts        2342
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped           9           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          19   1.64395261             155
+ #popped          20           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          21   1.94942176             120
+ #popped          22           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          23   1.51545370              98
+ #popped          25           2
+ #selectset contacts        2342
+ selectset done           2
+ eigen done           2
+ tau          25   1.02894735             110
+ #popped           7           1
+ #selectset contacts        2342
+ selectset done           1
+ eigen done           1
+ tau          27  0.638703227             194
+ #popped           5           0
+ #selectset contacts        2342
+ selectset done           0
+ eigen done           0
+ tau          29   1.03209293             235
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         257
+         257  residues read 4BMV.dssp                                                   
+  grow short strand           4           8
+  grow short strand          29          33
+  grow short strand          54          58
+  exclude short helix          95          97
+  grow short strand         132         136
+  exclude short helix         139         142
+  exclude short helix         144         146
+  grow short strand         175         179
+  exclude short helix         188         192
+  exclude short helix         196         198
+  grow short strand         222         223
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 15  1  3  5  7  2  4 10 12 13 14  6  8  9 11 15
+   2     0  0  0 15  1  3  5  7  2  4 10 12 13 14  6  8  9 11 15
+   3     0  0  0  0
+   4     1  8  9 14  1  3  5  7  2  4 10 12 13 14  6  8  9 11
+   5     1  0  0  1 15
+   6     0  0  0 14  1  3  5  7  2  4 10 12 13 14  6  8  9 11
+   7     0  0  0  0
+   8     4 10 11 11  1  3  5  7  2  4 10 12 13 14  6
+   9     4 20 21  3  8  9 11
+  10     8 12 13 10  1  3  5  7  2  4 10 12 13 14
+  11     8  0  0  1  6
+  12    10 14 15  6  1  3  5  7  2  4
+  13    10  0  0  4 10 12 13 14
+  14    12 16 17  5  1  3  5  7  2
+  15    12  0  0  1  4
+  16    14 18 19  4  1  3  5  7
+  17    14  0  0  1  2
+  18    16  0  0  3  1  3  5
+  19    16  0  0  1  7
+  20     9 26 27  2  8  9
+  21     9  0  0  1 11
+  22     0  0  0  2  8  9
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  2  8  9
+  26    20  0  0  1  8
+  27    20  0  0  1  9
+  28     0  0  0  0
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 11  3  1  7 10 10 12 14
+   5 -   2 16 17  3  2  8  9 11 11
+   6 -   4  8  9 10  4  1  5  7  7 10 10 12 14
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6  0  0  4  2 10 10 12 14
+  10 -   8 12 13  5  3  1  3  5  5  7  7
+  11 -   8  0  0  1  1  4  4
+  12 -  10 14 15  4  4  1  1  3  3  5  5  7  7
+  13 -  10  0  0  1  1  2  2
+  14 -  12  0  0  3  3  1  1  3  3  5  5
+  15 -  12  0  0  1  1  7  7
+  16 -   5 18 19  2  1  8  9
+  17 -   5  0  0  1  1 11 11
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            256
+Total number of atoms read in:              1915
+Total number of ignored atom records:        104
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  calculate residue outside grid:         256
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         256  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2333
+ selectset done           0
+ eigen done           0
+ tau           1   6.08606434             227
+ #popped           2           1
+ #selectset contacts        2333
+ selectset done           1
+ eigen done           1
+ tau           3   1.65361106              86         109         131
+ #popped           4           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau           5   1.17402267              86
+ #popped           6           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau           7   1.84117115              58          75
+ #popped           8           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau           9  0.979021549              32          48
+ #popped          10           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          11  0.601033390              10          20
+ #popped          12           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          13  0.470063388              58
+ #popped          14           3
+ #selectset contacts        2333
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped           7           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          15   1.35348952             119
+ #popped           5           1
+ #selectset contacts        2333
+ selectset done           1
+ eigen done           1
+ tau          17   2.45649481             109         184         200
+ #popped          18           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          19   6.48567915             109
+ #popped          20           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          21   1.30059528              97
+ #popped          19           1
+ #selectset contacts        2333
+ selectset done           1
+ eigen done           1
+ tau          23   1.86660326             147         173
+ #popped          24           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          25  0.754357219             147
+ #popped          27           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          27  0.516504407             211
+ #popped          28           2
+ #selectset contacts        2333
+ selectset done           2
+ eigen done           2
+ tau          29   0.00000000    
+ #popped          25           1
+ #selectset contacts        2333
+ selectset done           1
+ eigen done           1
+ tau          29   1.06782949             162
+ #popped           3           0
+ #selectset contacts        2333
+ selectset done           0
+ eigen done           0
+ tau          31   2.67807031             246
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         256
+         256  residues read 4BMV.dssp                                                   
+  grow short strand           3           7
+  grow short strand          28          32
+  grow short strand          53          57
+  exclude short helix          94          96
+  exclude short helix         138         141
+  exclude short helix         143         145
+  exclude short helix         187         190
+  exclude short helix         195         197
+  grow short strand         221         222
+  exclude short helix         253         255
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  3  5  7  2  4  6  9  8 10 12 13 14 11 15
+   2     1  4  5 14  1  3  5  7  2  4  6  9  8 10 12 13 14 11
+   3     1  0  0  1 15
+   4     2  6  7  8  1  3  5  7  2  4  6  9
+   5     2 18 19  6  8 10 12 13 14 11
+   6     4  8  9  7  1  3  5  7  2  4  6
+   7     4  0  0  1  9
+   8     6 10 11  6  1  3  5  7  2  4
+   9     6  0  0  1  6
+  10     8 12 13  5  1  3  5  7  2
+  11     8  0  0  1  4
+  12    10 14 15  4  1  3  5  7
+  13    10  0  0  1  2
+  14    12  0  0  3  1  3  5
+  15    12  0  0  1  7
+  16     0  0  0  1  9
+  17     0  0  0  0
+  18     5  0  0  1  8
+  19     5 24 25  5 10 12 13 14 11
+  20     0  0  0  1  8
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24    19 26 27  4 10 12 13 14
+  25    19  0  0  1 11
+  26    24  0  0  1 10
+  27    24 28 29  3 12 13 14
+  28    27  0  0  2 12 13
+  29    27  0  0  1 14
+  30     0  0  0  1 11
+  31     0  0  0  0
+  32     0  0  0  1 15
+  33     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7  8  2  1  7  9  9
+   5 -   2 16 17  6  2  8  8 10 14
+   6 -   4  8  9  7  1  1  7
+   7 -   4  0  0  1  1  9  9
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6  0  0  1  1  6  6
+  10 -   8 12 13  5  3  1  3  5  5  7  7
+  11 -   8  0  0  1  1  4  4
+  12 -  10 14 15  4  4  1  1  3  3  5  5  7  7
+  13 -  10  0  0  1  1  2  2
+  14 -  12  0  0  3  3  1  1  3  3  5  5
+  15 -  12  0  0  1  1  7  7
+  16 -   5  0  0  1  1  8  8
+  17 -   5 18 19  5  1 10 14
+  18 -  17 20 21  4  2 10 10 12 14
+  19 -  17  0  0  1  1 11 11
+  20 -  18  0  0  1  1 10 10
+  21 -  18 22 23  3  1 12 14
+  22 -  21  0  0  2  1 12 13
+  23 -  21  0  0  1  1 14 14
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1885
+Total number of ignored atom records:         83
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2323
+ selectset done           0
+ eigen done           0
+ tau           1   3.09129500             245
+ #popped           2           0
+ #selectset contacts        2323
+ selectset done           0
+ eigen done           0
+ tau           3   3.76163840             227
+ #popped           4           0
+ #selectset contacts        2323
+ selectset done           0
+ eigen done           0
+ tau           5   1.58278799              58          75          86         122         136         167
+ #popped           6           1
+ #selectset contacts        2323
+ selectset done           1
+ eigen done           1
+ tau           7   2.44399142             180         203
+ #popped           8           2
+ #selectset contacts        2323
+ selectset done           2
+ eigen done           2
+ tau           9   1.39912474              86
+ #popped          10           3
+ #selectset contacts        2323
+ selectset done           3
+ eigen done           3
+ tau          11  0.622100770              10          58
+ #popped          12           4
+ #selectset contacts        2323
+ selectset done           4
+ eigen done           4
+ tau          13  0.288731635              10
+ #popped          13           3
+ #selectset contacts        2323
+ selectset done           3
+ eigen done           3
+ tau          15   1.47858751              26
+ #popped          17           3
+ #selectset contacts        2323
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          11           2
+ #selectset contacts        2323
+ selectset done           2
+ eigen done           2
+ tau          17  0.981789649             180
+ #popped          18           3
+ #selectset contacts        2323
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          19           2
+ #selectset contacts        2323
+ selectset done           2
+ eigen done           2
+ tau          19   1.18548834             217
+ #popped           9           1
+ #selectset contacts        2323
+ selectset done           1
+ eigen done           1
+ tau          21  0.611054957             193
+ #popped           7           0
+ #selectset contacts        2323
+ selectset done           0
+ eigen done           0
+ tau          23   3.01998162              75
+ #popped          25           0
+ #selectset contacts        2323
+ selectset done           0
+ eigen done           0
+ tau          25   2.42956877             122
+ #popped          26           1
+ #selectset contacts        2323
+ selectset done           1
+ eigen done           1
+ tau          27   1.56908882              97
+ #popped          29           1
+ #selectset contacts        2323
+ selectset done           1
+ eigen done           1
+ tau          29   1.17671275             109
+ #popped          27           0
+ #selectset contacts        2323
+ selectset done           0
+ eigen done           0
+ tau          31   1.89505970             146
+ #popped          33           0
+ #selectset contacts        2323
+ selectset done           0
+ eigen done           0
+ tau          33  0.856085598             157
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         255
+         255  residues read 4BMV.dssp                                                   
+  grow short strand           3           7
+  grow short strand          28          32
+  grow short strand          53          57
+  exclude short helix          94          96
+  grow short strand         131         135
+  exclude short helix         138         141
+  exclude short helix         143         145
+  grow short strand         174         178
+  exclude short helix         187         190
+  exclude short helix         195         197
+  grow short strand         221         222
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 15  1  7  2  3  4  5 10 12 13 14  6  8  9 11 15
+   2     0  0  0 15  1  7  2  3  4  5 10 12 13 14  6  8  9 11 15
+   3     0  0  0  0
+   4     1  6  7 14  1  7  2  3  4  5 10 12 13 14  6  8  9 11
+   5     1  0  0  1 15
+   6     4 10 11 10  1  7  2  3  4  5 10 12 13 14
+   7     4 24 25  4  6  8  9 11
+   8     0  0  0 10  1  7  2  3  4  5 10 12 13 14
+   9     0  0  0  0
+  10     6 12 13  6  1  7  2  3  4  5
+  11     6 18 19  4 10 12 13 14
+  12    10 14 15  2  1  7
+  13    10 16 17  4  2  3  4  5
+  14    12  0  0  1  1
+  15    12  0  0  1  7
+  16    13  0  0  1  2
+  17    13  0  0  3  3  4  5
+  18    11  0  0  2 10 12
+  19    11 20 21  2 13 14
+  20    19  0  0  1 13
+  21    19  0  0  1 14
+  22     0  0  0  0
+  23     0  0  0  0
+  24     7  0  0  1  6
+  25     7 26 27  3  8  9 11
+  26    25 30 31  2  8  9
+  27    25  0  0  1 11
+  28     0  0  0  0
+  29     0  0  0  2  8  9
+  30    26  0  0  1  8
+  31    26  0  0  1  9
+  32     0  0  0  0
+  33     0  0  0  1 11
+  34     0  0  0  0
+  35     0  0  0  1 11
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 10  4  1  5  7  7 10 10 12 14
+   5 -   2 18 19  4  3  6  6  8  9 11 11
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4 14 15  4  2 10 10 12 14
+   8 -   6 10 11  2  2  1  1  7  7
+   9 -   6 12 13  4  1  2  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  7  7
+  12 -   9  0  0  1  1  2  2
+  13 -   9  0  0  3  1  3  5
+  14 -   7  0  0  2  2 10 10 12 12
+  15 -   7 16 17  2  1 13 14
+  16 -  15  0  0  1  1 13 13
+  17 -  15  0  0  1  1 14 14
+  18 -   5  0  0  1  1  6  6
+  19 -   5 20 21  3  2  8  9 11 11
+  20 -  19 22 23  2  1  8  9
+  21 -  19  0  0  1  1 11 11
+  22 -  20  0  0  1  1  8  8
+  23 -  20  0  0  1  1  9  9
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1871
+Total number of ignored atom records:         73
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2319
+ selectset done           0
+ eigen done           0
+ tau           1   2.85692525             245
+ #popped           2           0
+ #selectset contacts        2319
+ selectset done           0
+ eigen done           0
+ tau           3   3.87765741             227
+ #popped           4           0
+ #selectset contacts        2319
+ selectset done           0
+ eigen done           0
+ tau           5   1.64306188              58          75          86         120         136         162
+ #popped           6           1
+ #selectset contacts        2319
+ selectset done           1
+ eigen done           1
+ tau           7   2.40350318             181         203
+ #popped           8           2
+ #selectset contacts        2319
+ selectset done           2
+ eigen done           2
+ tau           9   1.50459158              86
+ #popped          10           3
+ #selectset contacts        2319
+ selectset done           3
+ eigen done           3
+ tau          11  0.614824772              10          58
+ #popped          12           4
+ #selectset contacts        2319
+ selectset done           4
+ eigen done           4
+ tau          13  0.291023165              10
+ #popped          13           3
+ #selectset contacts        2319
+ selectset done           3
+ eigen done           3
+ tau          15   1.50596869              26
+ #popped          17           3
+ #selectset contacts        2319
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          11           2
+ #selectset contacts        2319
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           9           1
+ #selectset contacts        2319
+ selectset done           1
+ eigen done           1
+ tau          17  0.588708282             193
+ #popped           7           0
+ #selectset contacts        2319
+ selectset done           0
+ eigen done           0
+ tau          19   2.89804506              75
+ #popped          21           0
+ #selectset contacts        2319
+ selectset done           0
+ eigen done           0
+ tau          21   2.47878623             120         146
+ #popped          22           0
+ #selectset contacts        2319
+ selectset done           0
+ eigen done           0
+ tau          23   1.60987329             120
+ #popped          24           0
+ #selectset contacts        2319
+ selectset done           0
+ eigen done           0
+ tau          25   1.53618979              97
+ #popped          27           0
+ #selectset contacts        2319
+ selectset done           0
+ eigen done           0
+ tau          27   1.08729899             109
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         255
+         255  residues read 4BMV.dssp                                                   
+  grow short strand           3           7
+  grow short strand          28          32
+  grow short strand          53          57
+  exclude short helix          94          96
+  grow short strand         131         135
+  exclude short helix         138         141
+  exclude short helix         143         145
+  grow short strand         174         178
+  exclude short helix         187         190
+  exclude short helix         195         197
+  grow short strand         221         222
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 15  1  7  2  3  4  5 10 12 13 14  6  8  9 11 15
+   2     0  0  0 15  1  7  2  3  4  5 10 12 13 14  6  8  9 11 15
+   3     0  0  0  0
+   4     1  6  7 14  1  7  2  3  4  5 10 12 13 14  6  8  9 11
+   5     1  0  0  1 15
+   6     4 10 11 10  1  7  2  3  4  5 10 12 13 14
+   7     4 20 21  4  6  8  9 11
+   8     0  0  0 10  1  7  2  3  4  5 10 12 13 14
+   9     0  0  0  0
+  10     6 12 13  6  1  7  2  3  4  5
+  11     6  0  0  4 10 12 13 14
+  12    10 14 15  2  1  7
+  13    10 16 17  4  2  3  4  5
+  14    12  0  0  1  1
+  15    12  0  0  1  7
+  16    13  0  0  1  2
+  17    13  0  0  3  3  4  5
+  18     0  0  0  0
+  19     0  0  0  0
+  20     7  0  0  1  6
+  21     7 24 25  3  8  9 11
+  22     0  0  0  3  8  9 11
+  23     0  0  0  0
+  24    21 28 29  2  8  9
+  25    21  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  2  8  9
+  28    24  0  0  1  8
+  29    24  0  0  1  9
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 10  4  1  5  7  7 10 10 12 14
+   5 -   2 14 15  4  3  6  6  8  9 11 11
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  4  2 10 10 12 14
+   8 -   6 10 11  2  2  1  1  7  7
+   9 -   6 12 13  4  1  2  5
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  7  7
+  12 -   9  0  0  1  1  2  2
+  13 -   9  0  0  3  1  3  5
+  14 -   5  0  0  1  1  6  6
+  15 -   5 16 17  3  2  8  9 11 11
+  16 -  15 18 19  2  1  8  9
+  17 -  15  0  0  1  1 11 11
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            254
+Total number of atoms read in:              1804
+Total number of ignored atom records:         50
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         254  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2273
+ selectset done           0
+ eigen done           0
+ tau           1   5.58470631             227
+ #popped           2           1
+ #selectset contacts        2273
+ selectset done           1
+ eigen done           1
+ tau           3   1.88200092              86         114         135         170
+ #popped           4           2
+ #selectset contacts        2273
+ selectset done           2
+ eigen done           2
+ tau           5   1.06055546              31          75
+ #popped           6           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau           7  0.961266756             195
+ #popped           8           4
+ #selectset contacts        2273
+ selectset done           4
+ eigen done           4
+ tau           9   3.65853667             180
+ #popped          10           4
+ #selectset contacts        2273
+ selectset done           4
+ eigen done           4
+ tau          11   1.06833136              86
+ #popped          12           5
+ #selectset contacts        2273
+ selectset done           5
+ eigen done           5
+ tau          13   0.00000000    
+ #popped          13           4
+ #selectset contacts        2273
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped           9           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau          13   1.89673340             217
+ #popped          14           3
+ #selectset contacts        2273
+ selectset done           3
+ eigen done           3
+ tau          15  0.798611104             206
+ #popped           7           2
+ #selectset contacts        2273
+ selectset done           2
+ eigen done           2
+ tau          17   2.70203090              58
+ #popped          18           2
+ #selectset contacts        2273
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           5           1
+ #selectset contacts        2273
+ selectset done           1
+ eigen done           1
+ tau          19   2.21371937             114
+ #popped          20           2
+ #selectset contacts        2273
+ selectset done           2
+ eigen done           2
+ tau          21   1.51058972              97
+ #popped          21           1
+ #selectset contacts        2273
+ selectset done           1
+ eigen done           1
+ tau          23   1.72523701             146
+ #popped          25           1
+ #selectset contacts        2273
+ selectset done           1
+ eigen done           1
+ tau          25  0.938644707             157
+ #popped           3           0
+ #selectset contacts        2273
+ selectset done           0
+ eigen done           0
+ tau          27   1.93298972             244
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         254
+         254  residues read 4BMV.dssp                                                   
+  grow short strand           3           7
+  grow short strand          28          32
+  grow short strand          53          57
+  exclude short helix          94          96
+  grow short strand         131         135
+  exclude short helix         138         141
+  exclude short helix         143         145
+  grow short strand         174         178
+  exclude short helix         187         190
+  grow short strand         220         221
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  7  9 10 12 13 14  4  5  6  8 11 15
+   2     1  4  5 14  1  2  3  7  9 10 12 13 14  4  5  6  8 11
+   3     1  0  0  1 15
+   4     2  6  7 12  1  2  3  7  9 10 12 13 14  4  5  6
+   5     2 20 21  2  8 11
+   6     4  8  9  9  1  2  3  7  9 10 12 13 14
+   7     4 18 19  3  4  5  6
+   8     6 12 13  7  1  2  3  7  9 10 12
+   9     6 14 15  2 13 14
+  10     0  0  0  7  1  2  3  7  9 10 12
+  11     0  0  0  0
+  12     8  0  0  4  1  2  3  7
+  13     8  0  0  3  9 10 12
+  14     9  0  0  1 13
+  15     9  0  0  1 14
+  16     0  0  0  0
+  17     0  0  0  1 13
+  18     7  0  0  2  4  5
+  19     7  0  0  1  6
+  20     5  0  0  1  8
+  21     5  0  0  1 11
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  1 11
+  26     0  0  0  0
+  27     0  0  0  1 11
+  28     0  0  0  1 15
+  29     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 12  3  1  7  9 10 12 14
+   5 -   2 16 17  2  2  8  8 11 11
+   6 -   4  8  9  9  4  1  3  7  7  9 10 12 14
+   7 -   4 14 15  3  1  4  6
+   8 -   6 10 11  7  4  1  3  7  7  9 10 12 12
+   9 -   6 12 13  2  1 13 14
+  10 -   8  0  0  4  2  1  3  7  7
+  11 -   8  0  0  3  2  9 10 12 12
+  12 -   9  0  0  1  1 13 13
+  13 -   9  0  0  1  1 14 14
+  14 -   7  0  0  2  1  4  5
+  15 -   7  0  0  1  1  6  6
+  16 -   5  0  0  1  1  8  8
+  17 -   5  0  0  1  1 11 11
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            255
+Total number of atoms read in:              1847
+Total number of ignored atom records:         52
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROGAN        
+  calculate residue outside grid:         255
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+         255  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2302
+ selectset done           0
+ eigen done           0
+ tau           1   3.96150661             245
+ #popped           2           0
+ #selectset contacts        2302
+ selectset done           0
+ eigen done           0
+ tau           3   3.88682437             221
+ #popped           4           1
+ #selectset contacts        2302
+ selectset done           1
+ eigen done           1
+ tau           5   1.71583259              86         110         136         156
+ #popped           6           2
+ #selectset contacts        2302
+ selectset done           2
+ eigen done           2
+ tau           7   2.30344462             136         173
+ #popped           8           2
+ #selectset contacts        2302
+ selectset done           2
+ eigen done           2
+ tau           9   1.20937431              57
+ #popped          10           3
+ #selectset contacts        2302
+ selectset done           3
+ eigen done           3
+ tau          11  0.668890536              31
+ #popped          12           4
+ #selectset contacts        2302
+ selectset done           4
+ eigen done           4
+ tau          13  0.319671661              10
+ #popped          15           4
+ #selectset contacts        2302
+ selectset done           4
+ eigen done           4
+ tau          15  0.672702372              20
+ #popped          13           3
+ #selectset contacts        2302
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          11           2
+ #selectset contacts        2302
+ selectset done           2
+ eigen done           2
+ tau          17   1.62059617              75
+ #popped          19           2
+ #selectset contacts        2302
+ selectset done           2
+ eigen done           2
+ tau          19  0.925443947             195
+ #popped          20           3
+ #selectset contacts        2302
+ selectset done           3
+ eigen done           3
+ tau          21   3.17957425             183
+ #popped          22           3
+ #selectset contacts        2302
+ selectset done           3
+ eigen done           3
+ tau          23   0.00000000    
+ #popped          21           2
+ #selectset contacts        2302
+ selectset done           2
+ eigen done           2
+ tau          23   1.07851851             210
+ #popped           7           1
+ #selectset contacts        2302
+ selectset done           1
+ eigen done           1
+ tau          25   2.57073951             110         146
+ #popped          26           1
+ #selectset contacts        2302
+ selectset done           1
+ eigen done           1
+ tau          27   1.21485436              97         110
+ #popped          28           1
+ #selectset contacts        2302
+ selectset done           1
+ eigen done           1
+ tau          29   1.34815514              97
+ #popped           5           0
+ #selectset contacts        2302
+ selectset done           0
+ eigen done           0
+ tau          31   1.00539291             233
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          10-MAY-13   4BMV              COMPND   2 MOLECULE: SHORT-CHAIN DEHYDROGENASE;                                 SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM YANOIKUYAE;                         AUTHOR    H.MAN,K.KEDZIORA,I.LAVANDERA-GARCIA,V.GOTOR-FERNANDEZ,G.GROG          
+           0
+         255
+         255  residues read 4BMV.dssp                                                   
+  grow short strand           3           7
+  grow short strand          28          32
+  grow short strand          53          57
+  exclude short helix          94          96
+  grow short strand         131         135
+  exclude short helix         138         141
+  exclude short helix         143         145
+  grow short strand         174         178
+  exclude short helix         187         190
+  grow short strand         220         221
+  exclude short helix         252         254
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 15  1  2  3  4  5  6  7  9 10 12 13 14 11  8 15
+   2     0  0  0 15  1  2  3  4  5  6  7  9 10 12 13 14 11  8 15
+   3     0  0  0  0
+   4     1  6  7 14  1  2  3  4  5  6  7  9 10 12 13 14 11  8
+   5     1  0  0  1 15
+   6     4  8  9 13  1  2  3  4  5  6  7  9 10 12 13 14 11
+   7     4  0  0  1  8
+   8     6 10 11 12  1  2  3  4  5  6  7  9 10 12 13 14
+   9     6  0  0  1 11
+  10     8 12 13  5  1  2  3  4  5
+  11     8 18 19  7  6  7  9 10 12 13 14
+  12    10 14 15  3  1  2  3
+  13    10  0  0  2  4  5
+  14    12  0  0  1  1
+  15    12 16 17  2  2  3
+  16    15  0  0  1  2
+  17    15  0  0  1  3
+  18    11  0  0  1  6
+  19    11 20 21  6  7  9 10 12 13 14
+  20    19  0  0  4  7  9 10 12
+  21    19 24 25  2 13 14
+  22     0  0  0  4  7  9 10 12
+  23     0  0  0  0
+  24    21  0  0  1 13
+  25    21  0  0  1 14
+  26     0  0  0  1  8
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1  8
+  30     0  0  0  0
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 13  2  1  7  9 14
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9 12  3  1  7  9 10 12 14
+   7 -   4  0  0  1  1 11 11
+   8 -   6 10 11  5  1  1  5
+   9 -   6 16 17  7  3  6  7  9 10 12 14
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  4  5
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  2  1  2  3
+  14 -  13  0  0  1  1  2  2
+  15 -  13  0  0  1  1  3  3
+  16 -   9  0  0  1  1  6  6
+  17 -   9 18 19  6  3  7  7  9 10 12 14
+  18 -  17  0  0  4  3  7  7  9 10 12 12
+  19 -  17 20 21  2  1 13 14
+  20 -  19  0  0  1  1 13 13
+  21 -  19  0  0  1  1 14 14
+
+ CHAIN : 4BMVA
+ CHAIN : 4BMVB
+ CHAIN : 4BMVC
+ CHAIN : 4BMVD
+ CHAIN : 4BMVE
+ CHAIN : 4BMVF
+ CHAIN : 4BMVG
+ CHAIN : 4BMVH
+ CHAIN : 4BMVI
+ CHAIN : 4BMVJ
+

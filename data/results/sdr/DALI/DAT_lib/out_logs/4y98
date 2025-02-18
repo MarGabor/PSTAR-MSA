@@ -1,0 +1,164 @@
+A length: 235
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            235
+Total number of atoms read in:              1988
+Total number of ignored atom records:       1435
+ HEADER    OXIDOREDUCTASE                          17-FEB-15   4Y98              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.H.PEREIRA,R.P.MCANDREW,R.A.HEINS,K.L.SALE,B.A.SIMMONS,P.D.ADAMS     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          17-FEB-15   4Y98              COMPND   2 MOLECULE: C ALPHA-DEHYDROGENASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM SP. SYK-6;                          AUTHOR    J.H.PEREIRA,R.P.MCANDREW,R.A.HEINS,K.L.SALE,B.A.SIMMONS,P.D.          
+         235  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2275
+ selectset done           0
+ eigen done           0
+ tau           1   3.50630593             217
+ #popped           2           0
+ #selectset contacts        2275
+ selectset done           0
+ eigen done           0
+ tau           3   1.47347343              90         113         143         160
+ #popped           4           1
+ #selectset contacts        2275
+ selectset done           1
+ eigen done           1
+ tau           5   1.26389539             132
+ #popped           6           2
+ #selectset contacts        2275
+ selectset done           2
+ eigen done           2
+ tau           7   1.57072270              90
+ #popped           8           2
+ #selectset contacts        2275
+ selectset done           2
+ eigen done           2
+ tau           9  0.790507376              60          73
+ #popped          10           2
+ #selectset contacts        2275
+ selectset done           2
+ eigen done           2
+ tau          11  0.633830667              34          60
+ #popped          12           3
+ #selectset contacts        2275
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          13           2
+ #selectset contacts        2275
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           7           1
+ #selectset contacts        2275
+ selectset done           1
+ eigen done           1
+ tau          13  0.830838919             188
+ #popped          14           2
+ #selectset contacts        2275
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped          15           1
+ #selectset contacts        2275
+ selectset done           1
+ eigen done           1
+ tau          15   1.35542166             207
+ #popped           5           0
+ #selectset contacts        2275
+ selectset done           0
+ eigen done           0
+ tau          17  0.438184649             100
+ #popped          19           0
+ #selectset contacts        2275
+ selectset done           0
+ eigen done           0
+ tau          19   1.65000010             113
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          17-FEB-15   4Y98              COMPND   2 MOLECULE: C ALPHA-DEHYDROGENASE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: SPHINGOBIUM SP. SYK-6;                          AUTHOR    J.H.PEREIRA,R.P.MCANDREW,R.A.HEINS,K.L.SALE,B.A.SIMMONS,P.D.          
+           0
+         235
+         235  residues read 4Y98.dssp                                                   
+  grow short strand           6          10
+  grow short strand          55          59
+  grow short strand          85          88
+  exclude short helix          98         100
+  exclude short helix         143         146
+  grow short strand         210         211
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  7  4  5  6  9 10 11 12 13 14  8 15
+   2     1  4  5 14  1  2  3  7  4  5  6  9 10 11 12 13 14  8
+   3     1  0  0  1 15
+   4     2  6  7 13  1  2  3  7  4  5  6  9 10 11 12 13 14
+   5     2  0  0  1  8
+   6     4  8  9  8  1  2  3  7  4  5  6  9
+   7     4 14 15  5 10 11 12 13 14
+   8     6 10 11  7  1  2  3  7  4  5  6
+   9     6  0  0  1  9
+  10     8 12 13  6  1  2  3  7  4  5
+  11     8  0  0  1  6
+  12    10  0  0  4  1  2  3  7
+  13    10  0  0  2  4  5
+  14     7  0  0  3 10 11 12
+  15     7 16 17  2 13 14
+  16    15  0  0  1 13
+  17    15  0  0  1 14
+  18     0  0  0  0
+  19     0  0  0  1  8
+  20     0  0  0  1  8
+  21     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5 14  1  1 14
+   3 =   1  0  0  1  1 15 15
+   4 -   2  6  7 13  2  1  7  9 14
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  8  2  1  7  9  9
+   7 -   4 14 15  5  1 10 14
+   8 -   6 10 11  7  1  1  7
+   9 -   6  0  0  1  1  9  9
+  10 -   8 12 13  6  2  1  5  7  7
+  11 -   8  0  0  1  1  6  6
+  12 -  10  0  0  4  2  1  3  7  7
+  13 -  10  0  0  2  1  4  5
+  14 -   7  0  0  3  1 10 12
+  15 -   7 16 17  2  1 13 14
+  16 -  15  0  0  1  1 13 13
+  17 -  15  0  0  1  1 14 14
+
+ CHAIN : 4Y98A
+

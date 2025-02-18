@@ -1,0 +1,42 @@
+# Job: glob
+# Query: 1OUTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3LHB-A 16.2  2.0  132   149   24   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1OUTA Sbjct=3LHBA Z-score=16.2
+
+DSSP  ---------LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHHLLL-LLLL
+Query ---------SLTAKDKSVVKAFWGKISGKADVVGAEALGRMLTAYPQTKTYFSHW-ADLS   50
+ident           | |  |      |          |   |    |  |     |        
+Sbjct pivdtgsvaPLSAAEKTKIRSAWAPVYSTYETSGVDILVKFFTSTPAAQEFFPKFkGLTT   60
+DSSP  lllllllllLLLHHHHHHHHHHHHHHHHLHHHHHHHHHHHHHHHLHHHHHHLHHHlLLLL
+
+DSSP  ---LLLH-HHHHHHHHHHHHHHHHHHLLL---LHHHHLHHHHHHHHHLLLLLLHHHHHHH
+Query ---PGSG-PVKKHGGIIMGAIGKAVGLMD---DLVGGMSALSDLHAFKLRVDPGNFKILS  103
+ident          |  |   |  |   ||  ||           ||  ||    |||  || | 
+Sbjct adeLKKSaDVRWHAERIINAVDDAVASMDdteKMSMKLRNLSGKHAKSFQVDPEYFKVLA  120
+DSSP  hhhHHHLhHHHHHHHHHHHHHHHHHHLLLlhhHHHHHHHHHHHHHHHLLLLLHHHHHHHH
+
+DSSP  HHHHHHHhhhllllLLHHhhHHHHHHHHHHHHHHHLLLl
+Query HNILVTLaihfpsdFTPEvhIAVDKFLAAVSAALADKYr  142
+ident   |  |                  |        |   | 
+Sbjct AVIADTV-------AAGD--AGFEKLMSMICILLRSAY-  149
+DSSP  HHHHHHH-------HLLL--HHHHHHHHHHHHHHHLLL-
+
+
+# Structural equivalences
+   1: 1OUT-A 3LHB-A     1 -  46 <=>   10 -  55   (SER    1  - TRP   46  <=> PRO   10  - PHE   55 )                          
+   1: 1OUT-A 3LHB-A    47 -  50 <=>   57 -  60   (ALA   47  - SER   50  <=> GLY   57  - THR   60 )                          
+   1: 1OUT-A 3LHB-A    51 -  54 <=>   64 -  67   (PRO   51  - GLY   54  <=> LEU   64  - SER   67 )                          
+   1: 1OUT-A 3LHB-A    55 -  75 <=>   69 -  89   (PRO   55  - ASP   75  <=> ASP   69  - ASP   89 )                          
+   1: 1OUT-A 3LHB-A    76 - 110 <=>   93 - 127   (ASP   76  - LEU  110  <=> LYS   93  - VAL  127 )                          
+   1: 1OUT-A 3LHB-A   118 - 121 <=>  128 - 131   (PHE  118  - GLU  121  <=> ALA  128  - ASP  131 )                          
+   1: 1OUT-A 3LHB-A   124 - 141 <=>  132 - 149   (ILE  124  - TYR  141  <=> ALA  132  - TYR  149 )                          
+
+# Translation-rotation matrices
+-matrix  "1OUT-A 3LHB-A  U(1,.)   0.110461  0.950516  0.290374         -174.338821"
+-matrix  "1OUT-A 3LHB-A  U(2,.)  -0.253133  0.309433 -0.916611          -28.825125"
+-matrix  "1OUT-A 3LHB-A  U(3,.)  -0.961105  0.027747  0.274787           49.713188"
+

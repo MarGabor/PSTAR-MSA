@@ -1,0 +1,33 @@
+# Job: rrm
+# Query: 5DETB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6C8U-1  6.5  3.0   77   115   18   MOLECULE: RNA-BINDING PROTEIN MUSASHI HOMOLOG 2;                     
+
+# Pairwise alignments
+
+No 1: Query=5DETB Sbjct=6C8U1 Z-score=6.5
+
+DSSP  ------------------lLLLLLLEEEEELLLLLLLHHHHHHHHLLLLLEEEEEEEL--
+Query ------------------nLEEEVRTLFVSGLPLDIKPRELYLLFRPFKGYEGSLIKL--   40
+ident                            |  ||     |  |   |  |            
+Sbjct mhhhhhhstsvdlgtenlyFQSNAGKMFIGGLSWQTSPDSLRDYFSKFGEIRECMVMRdp   60
+DSSP  lllllllllllllllllllLLLLLLEEEEELLLLLLLHHHHHHHHLLLLLEEEEEEEEll
+
+DSSP  --lLLLLEEEEEELLHHHHHHHHHHhLLLLLLLlllLLLEEEELL---llllllhhhll
+Query --tSKQPVGFVSFDSRSEAEAAKNAlNGIRFDPeipQTLRLEFAK---antkmaknklv   94
+ident         ||| |                  |     |     |               
+Sbjct ttkRSRGFGFVTFADPASVDKVLGQ-PHHELDS---KTIDPKVAFprraqpkmvtrtkk  115
+DSSP  lllLEEEEEEEEELLHHHHHHHHHL-LLLEELL---EELEEEELLllllllllllllll
+
+
+# Structural equivalences
+   1: 5DET-B 6C8U-1     2 -  40 <=>   20 -  58   (LEU   18  - LEU   57  <=> PHE   16  - ARG   54 )                          
+   1: 5DET-B 6C8U-1    42 -  63 <=>   64 -  85   (SER   59  - ALA   80  <=> ARG   60  - GLN   81 )                          
+   1: 5DET-B 6C8U-1    65 -  71 <=>   86 -  92   (ASN   82  - PRO   88  <=> PRO   82  - SER   88 )                          
+   1: 5DET-B 6C8U-1    75 -  83 <=>   93 - 101   (GLN   92  - LYS  100  <=> LYS   89  - PHE   97 )                          
+
+# Translation-rotation matrices
+-matrix  "5DET-B 6C8U-1  U(1,.)   0.936393 -0.350899  0.006208          -45.348701"
+-matrix  "5DET-B 6C8U-1  U(2,.)  -0.313569 -0.844458 -0.434240           -5.639270"
+-matrix  "5DET-B 6C8U-1  U(3,.)   0.157617  0.404673 -0.900776           65.267624"
+

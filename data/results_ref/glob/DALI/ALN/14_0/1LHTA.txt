@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1LHTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1BIN-B 14.7  2.7  137   143   10   MOLECULE: LEGHEMOGLOBIN A;                                           
+
+# Pairwise alignments
+
+No 1: Query=1LHTA Sbjct=1BINB Z-score=14.7
+
+DSSP  -LLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHLHHHLLLllhhhhHHLH
+Query -GLSDDEWNHVLGIWAKVEPDLSAHGQEVIIRLFQLHPETQERFAKFKNLttidalKSSE   59
+ident           |                          |     |    |           
+Sbjct vAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLANG----vdPTNP   56
+DSSP  lLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHLLHHHLLL----llLLLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLL---LLLHhHHHHHHHHHHhLLLLLHHHHHHHHHHHHHHHH
+Query EVKKHGTTVLTALGRILKQK---NNHEqELKPLAESHAtKHKIPVKYLEFICEIIVKVIA  116
+ident     |             |             |   ||              |   | | 
+Sbjct KLTGHAEKLFALVRDSAGQLkasGTVV-ADAALGSVHA-QKAVTDPQFVVVKEALLKTIK  114
+DSSP  HHHHHHHHHHHHHHHHHHHHhhhLLLL-LLHHHHHHHH-LLLLLHHHHHHHHHHHHHHHH
+
+DSSP  HHLLLLLLHHHHHHHHHHHHHHHHHHHHHhhllllll
+Query EKHPSDFGADSQAAMKKALELFRNDMASKykefgfqg  153
+ident              |   |                   
+Sbjct AAVGDKWSDELSRAWEVAYDELAAAIKKA--------  143
+DSSP  HHHHHHLLHHHHHHHHHHHHHHHHHHHLL--------
+
+
+# Structural equivalences
+   1: 1LHT-A 1BIN-B     1 -  49 <=>    2 -  50   (GLY    1  - LEU   49  <=> ALA    2  - GLY   50 )                          
+   1: 1LHT-A 1BIN-B    56 -  79 <=>   53 -  76   (LYS   56  - LYS   79  <=> PRO   53  - LEU   76 )                          
+   1: 1LHT-A 1BIN-B    80 -  83 <=>   80 -  83   (ASN   80  - GLU   83  <=> GLY   80  - VAL   83 )                          
+   1: 1LHT-A 1BIN-B    85 -  94 <=>   84 -  93   (GLU   85  - ALA   94  <=> ALA   84  - ALA   93 )                          
+   1: 1LHT-A 1BIN-B    96 - 145 <=>   94 - 143   (LYS   96  - LYS  145  <=> GLN   94  - ALA  143 )                          
+
+# Translation-rotation matrices
+-matrix  "1LHT-A 1BIN-B  U(1,.)   0.920849  0.385502  0.058520          -23.166693"
+-matrix  "1LHT-A 1BIN-B  U(2,.)  -0.387547  0.921410  0.028481          -25.945257"
+-matrix  "1LHT-A 1BIN-B  U(3,.)  -0.042942 -0.048906  0.997880          -12.506730"
+

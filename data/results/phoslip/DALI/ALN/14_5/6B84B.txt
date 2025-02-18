@@ -1,0 +1,38 @@
+# Job: phoslip
+# Query: 6B84B
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6AL3-D 21.9  0.9  121   122   78   MOLECULE: BASIC PHOSPHOLIPASE A2 BP-II;                              
+
+# Pairwise alignments
+
+No 1: Query=6B84B Sbjct=6AL3D Z-score=21.9
+
+DSSP  LHHHHHHHHHHHHLLLHHHHHLLLLLLLLLLLLLLLLLHHHHHHHHHHHHHHHLLLLLLL
+Query SLFELGKMILQETGKNPAKSYGVYGCNCGVGGRGKPKDATDRCCYVHKCCYKKLTGCDPK   60
+ident ||  | ||| |||||  || || |||||||| ||||||||| ||||||||||| ||| ||
+Sbjct SLVQLWKMIFQETGKEAAKNYGLYGCNCGVGRRGKPKDATDSCCYVHKCCYKKVTGCNPK   60
+DSSP  LHHHHHHHHHHHHLLLHHHHHLLLLLLLLLLLLLLLLLHHHHHHHHHHHHHLLLLLLLLL
+
+DSSP  LLLLLEEEELLEEEEL-LLLHHHHHHHHHHHHHHHHHHHLLLLLLHHHLLLlLHHHLLLL
+Query KDRYSYSWKDKTIVCG-ENNSCLKELCECDKAVAICLRENLDTYNKKYRYNyLKPFCKKA  119
+ident  | |||||| | ||||  |  |||  ||||||||||||||| ||||||     |||||||
+Sbjct MDSYSYSWKNKAIVCGeKNPPCLKQVCECDKAVAICLRENLGTYNKKYTIY-PKPFCKKA  119
+DSSP  LLLLLLEELLLLEELLlLLLHHHHHHHHHHHHHHHHHHHLHHHLLLLLLLL-LHHHLLLL
+
+DSSP  LLL
+Query DPC  122
+ident | |
+Sbjct DTC  122
+DSSP  LLL
+
+
+# Structural equivalences
+   1: 6B84-B 6AL3-D     1 -  76 <=>    1 -  76   (SER    1  - GLY   76  <=> SER    1  - GLY   76 )                          
+   1: 6B84-B 6AL3-D    77 - 110 <=>   78 - 111   (GLU   77  - ASN  110  <=> LYS   78  - TYR  111 )                          
+   1: 6B84-B 6AL3-D   112 - 122 <=>  112 - 122   (LEU  112  - CYS  122  <=> PRO  112  - CYS  122 )                          
+
+# Translation-rotation matrices
+-matrix  "6B84-B 6AL3-D  U(1,.)   0.136647 -0.979279 -0.149466            5.445494"
+-matrix  "6B84-B 6AL3-D  U(2,.)   0.633569 -0.029593  0.773120          -10.403115"
+-matrix  "6B84-B 6AL3-D  U(3,.)  -0.761523 -0.200341  0.616397          -19.746769"
+

@@ -1,0 +1,455 @@
+A length: 299
+B length: 299
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            299
+Total number of atoms read in:              2308
+Total number of ignored atom records:         25
+ HEADER    HYDROLASE                               05-OCT-16   5M0K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.GABDULKHAKOV,S.TISHCHENKO                                           
+  Reading DSSP file
+ HEADER    HYDROLASE                               05-OCT-16   5M0K              COMPND   2 MOLECULE: BETA-XYLANASE;                                             SOURCE   2 ORGANISM_SCIENTIFIC: CELLULOMONAS FLAVIGENA;                         AUTHOR    A.GABDULKHAKOV,S.TISHCHENKO                                           
+         299  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2950
+ selectset done           0
+ eigen done           0
+ tau           1   1.65298831              41          73          85         117
+ #popped           2           1
+ #selectset contacts        2950
+ selectset done           1
+ eigen done           1
+ tau           3   1.19419420             127         161         183         195
+ #popped           4           2
+ #selectset contacts        2950
+ selectset done           2
+ eigen done           2
+ tau           5  0.907193661              19          30         264         288
+ #popped           6           3
+ #selectset contacts        2950
+ selectset done           3
+ eigen done           3
+ tau           7   1.33216310             264
+ #popped           8           3
+ #selectset contacts        2950
+ selectset done           3
+ eigen done           3
+ tau           9  0.929067612             233         249
+ #popped          10           3
+ #selectset contacts        2950
+ selectset done           3
+ eigen done           3
+ tau          11  0.446087301             211
+ #popped          12           4
+ #selectset contacts        2950
+ selectset done           4
+ eigen done           4
+ tau          13  0.759530127             171
+ #popped          14           5
+ #selectset contacts        2950
+ selectset done           5
+ eigen done           5
+ tau          15   0.00000000    
+ #popped          15           4
+ #selectset contacts        2950
+ selectset done           4
+ eigen done           4
+ tau          15   3.73405480             183
+ #popped          13           3
+ #selectset contacts        2950
+ selectset done           3
+ eigen done           3
+ tau          17   1.38524222             223
+ #popped          19           3
+ #selectset contacts        2950
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped           7           2
+ #selectset contacts        2950
+ selectset done           2
+ eigen done           2
+ tau          19   1.77998030              30
+ #popped          21           2
+ #selectset contacts        2950
+ selectset done           2
+ eigen done           2
+ tau          21  0.715936542             278
+ #popped           5           1
+ #selectset contacts        2950
+ selectset done           1
+ eigen done           1
+ tau          23   2.24337721             146
+ #popped          25           1
+ #selectset contacts        2950
+ selectset done           1
+ eigen done           1
+ tau          25   1.70756698             161
+ #popped           3           0
+ #selectset contacts        2950
+ selectset done           0
+ eigen done           0
+ tau          27   1.28574014              56          73         107
+ #popped          28           1
+ #selectset contacts        2950
+ selectset done           1
+ eigen done           1
+ tau          29   0.00000000    
+ #popped          29           0
+ #selectset contacts        2950
+ selectset done           0
+ eigen done           0
+ tau          29   1.01916277              73
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               05-OCT-16   5M0K              COMPND   2 MOLECULE: BETA-XYLANASE;                                             SOURCE   2 ORGANISM_SCIENTIFIC: CELLULOMONAS FLAVIGENA;                         AUTHOR    A.GABDULKHAKOV,S.TISHCHENKO                                           
+           0
+         299
+         299  residues read 5M0K.dssp                                                   
+  exclude short helix           3           8
+  exclude short helix          20          24
+  grow short strand          38          41
+  exclude short helix          47          50
+  exclude short helix          89          92
+  exclude short helix         142         144
+  grow short strand         198         201
+  grow short strand         204         205
+  exclude short helix         267         269
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  3  5  7  9 11 12 13 14 16 15 17  2  8 10  6  4
+   2     1  4  5 15  1  3  5  7  9 11 12 13 14 16 15 17  2  8 10
+   3     1 28 29  2  6  4
+   4     2  6  7 13  1  3  5  7  9 11 12 13 14 16 15 17  2
+   5     2 26 27  2  8 10
+   6     4  8  9 12  1  3  5  7  9 11 12 13 14 16 15 17
+   7     4  0  0  1  2
+   8     6 10 11 11  1  3  5  7  9 11 12 13 14 16 15
+   9     6  0  0  1 17
+  10     8 12 13 10  1  3  5  7  9 11 12 13 14 16
+  11     8  0  0  1 15
+  12    10 14 15  7  1  3  5  7  9 11 12
+  13    10 18 19  3 13 14 16
+  14    12  0  0  5  1  3  5  7  9
+  15    12  0  0  2 11 12
+  16     0  0  0  0
+  17     0  0  0  2 11 12
+  18    13  0  0  1 13
+  19    13  0  0  2 14 16
+  20     0  0  0  1  2
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  2  8 10
+  26     5  0  0  1  8
+  27     5  0  0  1 10
+  28     3  0  0  1  6
+  29     3  0  0  1  4
+  30     0  0  0  1  4
+  31     0  0  0  0
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5 15  3  1  3  5  5  7 17
+   3 -   1 20 21  2  2  4  4  6  6
+   4 -   2  6  7 13  5  1  3  5  5  7  7  9  9 11 17
+   5 -   2 18 19  2  2  8  8 10 10
+   6 -   4  8  9 12  6  1  1  3  3  5  5  7  7  9  9 11 17
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11 11  6  1  1  3  3  5  5  7  7  9  9 11 16
+   9 -   6  0  0  1  1 17 17
+  10 -   8 12 13 10  7  1  1  3  3  5  5  7  7  9  9 11 14 16 16
+  11 -   8  0  0  1  1 15 15
+  12 -  10 14 15  7  6  1  1  3  3  5  5  7  7  9  9 11 12
+  13 -  10 16 17  3  2 13 14 16 16
+  14 -  12  0  0  5  5  1  1  3  3  5  5  7  7  9  9
+  15 -  12  0  0  2  1 11 12
+  16 -  13  0  0  1  1 13 13
+  17 -  13  0  0  2  2 14 14 16 16
+  18 -   5  0  0  1  1  8  8
+  19 -   5  0  0  1  1 10 10
+  20 -   3  0  0  1  1  6  6
+  21 -   3  0  0  1  1  4  4
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            299
+Total number of atoms read in:              2308
+Total number of ignored atom records:         35
+ HEADER    HYDROLASE                               05-OCT-16   5M0K              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.GABDULKHAKOV,S.TISHCHENKO                                           
+  Reading DSSP file
+ HEADER    HYDROLASE                               05-OCT-16   5M0K              COMPND   2 MOLECULE: BETA-XYLANASE;                                             SOURCE   2 ORGANISM_SCIENTIFIC: CELLULOMONAS FLAVIGENA;                         AUTHOR    A.GABDULKHAKOV,S.TISHCHENKO                                           
+         299  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2923
+ selectset done           0
+ eigen done           0
+ tau           1   1.23350668              16          75          85         117
+ #popped           2           1
+ #selectset contacts        2923
+ selectset done           1
+ eigen done           1
+ tau           3   1.51331413              16         198
+ #popped           4           2
+ #selectset contacts        2923
+ selectset done           2
+ eigen done           2
+ tau           5   1.30204153             263
+ #popped           6           3
+ #selectset contacts        2923
+ selectset done           3
+ eigen done           3
+ tau           7  0.454262555             217         227
+ #popped           8           3
+ #selectset contacts        2923
+ selectset done           3
+ eigen done           3
+ tau           9  0.415276229             237
+ #popped          10           4
+ #selectset contacts        2923
+ selectset done           4
+ eigen done           4
+ tau          11   15.5789471              16
+ #popped          13           4
+ #selectset contacts        2923
+ selectset done           4
+ eigen done           4
+ tau          13  0.312192559             217
+ #popped          11           3
+ #selectset contacts        2923
+ selectset done           3
+ eigen done           3
+ tau          15   1.37951624             253
+ #popped           7           2
+ #selectset contacts        2923
+ selectset done           2
+ eigen done           2
+ tau          17   1.88434350             287
+ #popped          18           2
+ #selectset contacts        2923
+ selectset done           2
+ eigen done           2
+ tau          19  0.531245887             277
+ #popped           5           1
+ #selectset contacts        2923
+ selectset done           1
+ eigen done           1
+ tau          21  0.773130000             153         163         178
+ #popped          22           2
+ #selectset contacts        2923
+ selectset done           2
+ eigen done           2
+ tau          23  0.517988324             127
+ #popped          24           3
+ #selectset contacts        2923
+ selectset done           3
+ eigen done           3
+ tau          25  0.244002789              85
+ #popped          25           2
+ #selectset contacts        2923
+ selectset done           2
+ eigen done           2
+ tau          27   1.68209314             153
+ #popped          28           2
+ #selectset contacts        2923
+ selectset done           2
+ eigen done           2
+ tau          29   1.06511295             137
+ #popped          23           1
+ #selectset contacts        2923
+ selectset done           1
+ eigen done           1
+ tau          31   2.74634004             163
+ #popped          33           1
+ #selectset contacts        2923
+ selectset done           1
+ eigen done           1
+ tau          33  0.592207789             188
+ #popped           3           0
+ #selectset contacts        2923
+ selectset done           0
+ eigen done           0
+ tau          35   1.92192435              44          63          75
+ #popped          36           1
+ #selectset contacts        2923
+ selectset done           1
+ eigen done           1
+ tau          37  0.942456663              44
+ #popped          38           1
+ #selectset contacts        2923
+ selectset done           1
+ eigen done           1
+ tau          39   0.00000000    
+ #popped          37           0
+ #selectset contacts        2923
+ selectset done           0
+ eigen done           0
+ tau          39  0.964469969              95
+ #popped          40           1
+ #selectset contacts        2923
+ selectset done           1
+ eigen done           1
+ tau          41  0.847416401              63
+ #popped          41           0
+ #selectset contacts        2923
+ selectset done           0
+ eigen done           0
+ tau          43   1.01475084             107
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               05-OCT-16   5M0K              COMPND   2 MOLECULE: BETA-XYLANASE;                                             SOURCE   2 ORGANISM_SCIENTIFIC: CELLULOMONAS FLAVIGENA;                         AUTHOR    A.GABDULKHAKOV,S.TISHCHENKO                                           
+           0
+         299
+         299  residues read 5M0K.dssp                                                   
+  exclude short helix           3           8
+  exclude short helix          20          22
+  grow short strand          38          41
+  exclude short helix          47          50
+  grow short strand          75          79
+  exclude short helix          89          92
+  exclude short helix         142         144
+  grow short strand         198         201
+  grow short strand         204         205
+  exclude short helix         267         269
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1 11 12 13 14 15 16 17  5  7  8  9 10  2  3  4  6
+   2     1  4  5 13  1 11 12 13 14 15 16 17  5  7  8  9 10
+   3     1 36 37  4  2  3  4  6
+   4     2  6  7  8  1 11 12 13 14 15 16 17
+   5     2 22 23  5  5  7  8  9 10
+   6     4 10 11  7  1 11 12 13 14 15 16
+   7     4  0  0  1 17
+   8     0  0  0  7  1 11 12 13 14 15 16
+   9     0  0  0  0
+  10     6 12 13  5  1 11 12 13 14
+  11     6 16 17  2 15 16
+  12    10  0  0  1  1
+  13    10 14 15  4 11 12 13 14
+  14    13  0  0  3 11 12 13
+  15    13  0  0  1 14
+  16    11  0  0  1 15
+  17    11  0  0  1 16
+  18     0  0  0  0
+  19     0  0  0  1 17
+  20     0  0  0  0
+  21     0  0  0  0
+  22     5 24 25  4  5  7  8  9
+  23     5  0  0  1 10
+  24    22 26 27  2  5  7
+  25    22 28 29  2  8  9
+  26    24  0  0  1  5
+  27    24  0  0  1  7
+  28    25  0  0  1  8
+  29    25  0  0  1  9
+  30     0  0  0  0
+  31     0  0  0  1  8
+  32     0  0  0  0
+  33     0  0  0  1 10
+  34     0  0  0  1 10
+  35     0  0  0  0
+  36     3 38 39  3  2  3  4
+  37     3  0  0  1  6
+  38    36  0  0  2  2  3
+  39    36  0  0  1  4
+  40     0  0  0  0
+  41     0  0  0  1  6
+  42     0  0  0  0
+  43     0  0  0  0
+  44     0  0  0  1  6
+  45     0  0  0  0
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5 13  3  1  1  5  5  7 17
+   3 -   1 24 25  4  2  2  4  6  6
+   4 -   2  6  7  8  2  1  1 11 17
+   5 -   2 16 17  5  2  5  5  7 10
+   6 -   4  8  9  7  2  1  1 11 16
+   7 -   4  0  0  1  1 17 17
+   8 -   6 10 11  5  2  1  1 11 14
+   9 -   6 14 15  2  1 15 16
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  4  1 11 14
+  12 -  11  0  0  3  1 11 13
+  13 -  11  0  0  1  1 14 14
+  14 -   9  0  0  1  1 15 15
+  15 -   9  0  0  1  1 16 16
+  16 -   5 18 19  4  2  5  5  7  9
+  17 -   5  0  0  1  1 10 10
+  18 -  16 20 21  2  2  5  5  7  7
+  19 -  16 22 23  2  1  8  9
+  20 -  18  0  0  1  1  5  5
+  21 -  18  0  0  1  1  7  7
+  22 -  19  0  0  1  1  8  8
+  23 -  19  0  0  1  1  9  9
+  24 -   3 26 27  3  1  2  4
+  25 -   3  0  0  1  1  6  6
+  26 -  24  0  0  2  1  2  3
+  27 -  24  0  0  1  1  4  4
+
+ CHAIN : 5M0KA
+ CHAIN : 5M0KB
+

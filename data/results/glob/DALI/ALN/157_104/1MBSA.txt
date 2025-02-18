@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1MBSA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1SHR-D 17.4  2.1  144   146   24   MOLECULE: HEMOGLOBIN ALPHA CHAIN;                                    
+
+# Pairwise alignments
+
+No 1: Query=1MBSA Sbjct=1SHRD Z-score=17.4
+
+DSSP  -LLHHHHHHHHHHHhHHHHlLHHHHHHHHHHHHHHHLLHHHHHLLLLLLLLLHHHHHLLH
+Query -GLSDGEWHLVLNVwGKVEtDLAGHGQEVLIRLFKSHPETLEKFDKFKHLKSEDDMRRSE   59
+ident   |   |   |              | | | ||    | |   |  |  | | |      
+Sbjct vHLTPEEKTAVNAL-WGKV-NVDAVGGEALGRLLVVYPWTQRFFESFGDLSSPDAVMGNP   58
+DSSP  lLLLHHHHHHHHHH-HLLL-LHHHHHHHHHHHHHHHLHHHHHHHHHHLLLLLHHHHHHLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHH-HLLLlLLLHHHHHHHHHHHHHHHH
+Query DLRKHGNTVLTALGGILKKKGHHEAELKPLAQSHA-TKHKiPIKYLEFISEAIIHVLHSK  118
+ident     ||  || |    |            |   |    |                ||   
+Sbjct KVKAHGKKVLGAFSDGLAHLDNLKGTFSQLSELHCdKLHV-DPENFRLLGNVLVCVLARN  117
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHhLLLL-LLHHHHHHHHHHHHHHHHH
+
+DSSP  LLLLLLHHHHHHHHHHHHHHHHHHHhHHHHhllll
+Query HPAEFGADAQAAMKKALELFRNDIAaKYKElgfhg  153
+ident    ||    |||  |      |  |          
+Sbjct FGKEFTPQMQAAYQKVVAGVANALA-HKYH-----  146
+DSSP  HHHHLLHHHHHHHHHHHHHHHHHHH-LLLL-----
+
+
+# Structural equivalences
+   1: 1MBS-A 1SHR-D     1 -  13 <=>    2 -  14   (GLY    1  - VAL   13  <=> HIS    2  - LEU   14 )                          
+   1: 1MBS-A 1SHR-D    15 -  18 <=>   15 -  18   (GLY   15  - GLU   18  <=> TRP   15  - VAL   18 )                          
+   1: 1MBS-A 1SHR-D    20 -  94 <=>   19 -  93   (ASP   20  - ALA   94  <=> ASN   19  - CYS   93 )                          
+   1: 1MBS-A 1SHR-D    95 -  98 <=>   95 -  98   (THR   95  - LYS   98  <=> LYS   95  - VAL   98 )                          
+   1: 1MBS-A 1SHR-D   100 - 143 <=>   99 - 142   (PRO  100  - ALA  143  <=> ASP   99  - ALA  142 )                          
+   1: 1MBS-A 1SHR-D   145 - 148 <=>  143 - 146   (LYS  145  - GLU  148  <=> HIS  143  - HIS  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1MBS-A 1SHR-D  U(1,.)  -0.441563  0.390661  0.807717           -7.525796"
+-matrix  "1MBS-A 1SHR-D  U(2,.)   0.120624  0.917908 -0.378013           11.899519"
+-matrix  "1MBS-A 1SHR-D  U(3,.)  -0.889085 -0.069487 -0.452437           29.530115"
+

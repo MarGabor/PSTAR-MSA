@@ -1,0 +1,33 @@
+# Job: az
+# Query: 1KDIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  7ZQE-M 15.0  1.7   94    98   35   MOLECULE: PLASTOCYANIN, CHLOROPLASTIC;                               
+
+# Pairwise alignments
+
+No 1: Query=1KDIA Sbjct=7ZQEM Z-score=15.0
+
+DSSP  -LEEEELLLLLLLLEELLEEEELLLLLEEEEELLLLLLLLEELLLllllhHHHHhHHHLL
+Query -AKVEVGDEVGNFKFYPDSITVSAGEAVEFTLVGETGHNIVFDIPagapgTVASeLKAAS   59
+ident  | |  |   |   | |   |   || | |       ||||||              | |
+Sbjct dATVKLGADSGALEFVPKTLTIKSGETVNFVNNAGFPHNIVFDED--aipSGVN-ADAIS   57
+DSSP  lEEEEELLLLLLLLEELLEEEELLLLEEEEEELLLLLLLLEELLL--lllLLLL-LLLLL
+
+DSSP  LLllLLLLLLLLEEEELLLLLEEEEEELLLLHHHLLEEEEEEL
+Query MDenDLLSEDEPSFKAKVSTPGTYTFYCTPHKSANMKGTLTVK  102
+ident  |  | |         |    | |  || ||  | | |   | 
+Sbjct RD--DYLNAPGETYSVKLTAAGEYGYYCEPHQGAGMVGKIIVQ   98
+DSSP  LL--LLLLLLLLEEEEELLLLEEEEEELHHHHHHLLEEEEEEL
+
+
+# Structural equivalences
+   1: 1KDI-A 7ZQE-M     1 -  44 <=>    2 -  45   (ALA    1  - PRO   44  <=> ALA    2  - ASP   45 )                          
+   1: 1KDI-A 7ZQE-M    50 -  53 <=>   49 -  52   (THR   50  - SER   53  <=> SER   49  - ASN   52 )                          
+   1: 1KDI-A 7ZQE-M    55 -  61 <=>   53 -  59   (LEU   55  - ASP   61  <=> ALA   53  - ASP   59 )                          
+   1: 1KDI-A 7ZQE-M    64 - 102 <=>   60 -  98   (ASP   64  - LYS  102  <=> ASP   60  - GLN   98 )                          
+
+# Translation-rotation matrices
+-matrix  "1KDI-A 7ZQE-M  U(1,.)  -0.784523  0.134799  0.605271           71.893906"
+-matrix  "1KDI-A 7ZQE-M  U(2,.)  -0.620078 -0.162313 -0.767566          564.816711"
+-matrix  "1KDI-A 7ZQE-M  U(3,.)  -0.005224 -0.977489  0.210924          196.071182"
+

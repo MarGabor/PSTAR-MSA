@@ -1,0 +1,335 @@
+A length: 173
+B length: 173
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            173
+Total number of atoms read in:              1465
+Total number of ignored atom records:        243
+ HEADER    EYE LENS PROTEIN                        20-DEC-95   1ELP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    YU.N.CHIRGADZE,H.P.C.DRIESSEN,G.WRIGHT,C.SLINGSBY,R.E.HAY,P.F.LINDLEY 
+  Reading DSSP file
+ HEADER    EYE LENS PROTEIN                        20-DEC-95   1ELP              COMPND   2 MOLECULE: GAMMA-D CRYSTALLIN;                                        SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    YU.N.CHIRGADZE,H.P.C.DRIESSEN,G.WRIGHT,C.SLINGSBY,R.E.HAY,P.          
+         173  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1558
+ selectset done           0
+ eigen done           0
+ tau           1   3.51408148              85
+ #popped           2           1
+ #selectset contacts        1558
+ selectset done           1
+ eigen done           1
+ tau           3  0.687686324              37          59          74
+ #popped           4           2
+ #selectset contacts        1558
+ selectset done           2
+ eigen done           2
+ tau           5  0.702325284              37
+ #popped           6           2
+ #selectset contacts        1558
+ selectset done           2
+ eigen done           2
+ tau           7  0.441374362              16          26
+ #popped           8           2
+ #selectset contacts        1558
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        1558
+ selectset done           1
+ eigen done           1
+ tau           9  0.195351169              49
+ #popped          11           1
+ #selectset contacts        1558
+ selectset done           1
+ eigen done           1
+ tau          11   2.59621143              59
+ #popped           3           0
+ #selectset contacts        1558
+ selectset done           0
+ eigen done           0
+ tau          13  0.683349371             126         145         163
+ #popped          14           1
+ #selectset contacts        1558
+ selectset done           1
+ eigen done           1
+ tau          15   1.30728853             104         116
+ #popped          16           1
+ #selectset contacts        1558
+ selectset done           1
+ eigen done           1
+ tau          17  0.541586697             126
+ #popped          18           1
+ #selectset contacts        1558
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          15           0
+ #selectset contacts        1558
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    EYE LENS PROTEIN                        20-DEC-95   1ELP              COMPND   2 MOLECULE: GAMMA-D CRYSTALLIN;                                        SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    YU.N.CHIRGADZE,H.P.C.DRIESSEN,G.WRIGHT,C.SLINGSBY,R.E.HAY,P.          
+           0
+         173
+         173  residues read 1ELP.dssp                                                   
+  exclude short helix           9          11
+  grow short strand          42          45
+  grow short strand          54          57
+  grow short strand          60          62
+  exclude short helix          65          68
+  grow short strand          77          80
+  exclude short helix         111         114
+  grow short strand         148         150
+  exclude short helix         153         156
+  grow short strand         165         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  6  4  5  7  8  9 10 13 11 12 14
+   2     1  4  5  7  1  2  3  6  4  5  7
+   3     1 14 15  7  8  9 10 13 11 12 14
+   4     2  6  7  4  1  2  3  6
+   5     2 10 11  3  4  5  7
+   6     4  0  0  3  1  2  3
+   7     4  0  0  1  6
+   8     0  0  0  3  1  2  3
+   9     0  0  0  0
+  10     5  0  0  1  4
+  11     5 12 13  2  5  7
+  12    11  0  0  1  5
+  13    11  0  0  1  7
+  14     3 18 19  4  8  9 10 13
+  15     3  0  0  3 11 12 14
+  16     0  0  0  4  8  9 10 13
+  17     0  0  0  0
+  18    14  0  0  3  8  9 10
+  19    14  0  0  1 13
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  7  1  8 14
+   4 -   2  6  7  4  2  1  3  6  6
+   5 -   2  8  9  3  2  4  5  7  7
+   6 -   4  0  0  3  1  1  3
+   7 -   4  0  0  1  1  6  6
+   8 -   5  0  0  1  1  4  4
+   9 -   5 10 11  2  2  5  5  7  7
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  1  1  7  7
+  12 -   3 14 15  4  2  8 10 13 13
+  13 -   3  0  0  3  2 11 12 14 14
+  14 -  12  0  0  3  1  8 10
+  15 -  12  0  0  1  1 13 13
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            173
+Total number of atoms read in:              1465
+Total number of ignored atom records:        191
+ HEADER    EYE LENS PROTEIN                        20-DEC-95   1ELP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    YU.N.CHIRGADZE,H.P.C.DRIESSEN,G.WRIGHT,C.SLINGSBY,R.E.HAY,P.F.LINDLEY 
+  Reading DSSP file
+ HEADER    EYE LENS PROTEIN                        20-DEC-95   1ELP              COMPND   2 MOLECULE: GAMMA-D CRYSTALLIN;                                        SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    YU.N.CHIRGADZE,H.P.C.DRIESSEN,G.WRIGHT,C.SLINGSBY,R.E.HAY,P.          
+         173  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1577
+ selectset done           0
+ eigen done           0
+ tau           1   3.26161194              84
+ #popped           2           1
+ #selectset contacts        1577
+ selectset done           1
+ eigen done           1
+ tau           3  0.662829220              36          60          73
+ #popped           4           2
+ #selectset contacts        1577
+ selectset done           2
+ eigen done           2
+ tau           5   1.03221118              63
+ #popped           6           2
+ #selectset contacts        1577
+ selectset done           2
+ eigen done           2
+ tau           7  0.626883984              17          27
+ #popped           8           2
+ #selectset contacts        1577
+ selectset done           2
+ eigen done           2
+ tau           9  0.311663330              17
+ #popped           5           1
+ #selectset contacts        1577
+ selectset done           1
+ eigen done           1
+ tau          11  0.165224910              48
+ #popped          13           1
+ #selectset contacts        1577
+ selectset done           1
+ eigen done           1
+ tau          13   2.14897680              60
+ #popped           3           0
+ #selectset contacts        1577
+ selectset done           0
+ eigen done           0
+ tau          15  0.692428887             125         147         163
+ #popped          16           1
+ #selectset contacts        1577
+ selectset done           1
+ eigen done           1
+ tau          17   1.29302859             104         116
+ #popped          18           1
+ #selectset contacts        1577
+ selectset done           1
+ eigen done           1
+ tau          19  0.812960267             150
+ #popped          20           1
+ #selectset contacts        1577
+ selectset done           1
+ eigen done           1
+ tau          21  0.494326472             104
+ #popped          22           1
+ #selectset contacts        1577
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          17           0
+ #selectset contacts        1577
+ selectset done           0
+ eigen done           0
+ tau          23  0.197218880             137
+ #popped          25           0
+ #selectset contacts        1577
+ selectset done           0
+ eigen done           0
+ tau          25   3.15254235             147
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    EYE LENS PROTEIN                        20-DEC-95   1ELP              COMPND   2 MOLECULE: GAMMA-D CRYSTALLIN;                                        SOURCE   2 ORGANISM_SCIENTIFIC: BOS TAURUS;                                     AUTHOR    YU.N.CHIRGADZE,H.P.C.DRIESSEN,G.WRIGHT,C.SLINGSBY,R.E.HAY,P.          
+           0
+         173
+         173  residues read 1ELP.dssp                                                   
+  exclude short helix           9          11
+  grow short strand          60          62
+  exclude short helix          65          68
+  grow short strand          77          81
+  exclude short helix         111         115
+  grow short strand         148         150
+  exclude short helix         153         156
+  grow short strand         165         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  6  4  5  7  8  9 10 13 11 12 14
+   2     1  4  5  7  1  2  3  6  4  5  7
+   3     1 16 17  7  8  9 10 13 11 12 14
+   4     2 10 11  4  1  2  3  6
+   5     2 12 13  3  4  5  7
+   6     0  0  0  4  1  2  3  6
+   7     0  0  0  0
+   8     0  0  0  4  1  2  3  6
+   9     0  0  0  0
+  10     4  0  0  2  1  2
+  11     4  0  0  2  3  6
+  12     5  0  0  1  4
+  13     5 14 15  2  5  7
+  14    13  0  0  1  5
+  15    13  0  0  1  7
+  16     3 22 23  4  8  9 10 13
+  17     3 24 25  3 11 12 14
+  18     0  0  0  4  8  9 10 13
+  19     0  0  0  0
+  20     0  0  0  4  8  9 10 13
+  21     0  0  0  0
+  22    16  0  0  2  8  9
+  23    16  0  0  2 10 13
+  24    17  0  0  1 11
+  25    17 26 27  2 12 14
+  26    25  0  0  1 12
+  27    25  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  7  1  8 14
+   4 -   2  6  7  4  2  1  3  6  6
+   5 -   2  8  9  3  2  4  5  7  7
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  2  2  3  3  6  6
+   8 -   5  0  0  1  1  4  4
+   9 -   5 10 11  2  2  5  5  7  7
+  10 -   9  0  0  1  1  5  5
+  11 -   9  0  0  1  1  7  7
+  12 -   3 14 15  4  2  8 10 13 13
+  13 -   3 16 17  3  2 11 12 14 14
+  14 -  12  0  0  2  1  8  9
+  15 -  12  0  0  2  2 10 10 13 13
+  16 -  13  0  0  1  1 11 11
+  17 -  13 18 19  2  2 12 12 14 14
+  18 -  17  0  0  1  1 12 12
+  19 -  17  0  0  1  1 14 14
+
+ CHAIN : 1ELPA
+ CHAIN : 1ELPB
+

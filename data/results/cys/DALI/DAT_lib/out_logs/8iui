@@ -1,0 +1,359 @@
+A length: 218
+B length: 218
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            218
+Total number of atoms read in:              1879
+Total number of ignored atom records:       1572
+ HEADER    HYDROLASE                               24-MAR-23   8IUI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.C.GUO,Z.WANG,P.ZHAO                                                 
+  Reading DSSP file
+ HEADER    HYDROLASE                               24-MAR-23   8IUI              COMPND   2 MOLECULE: FIBROINASE;                                                SOURCE   2 ORGANISM_SCIENTIFIC: BOMBYX MORI;                                    AUTHOR    P.C.GUO,Z.WANG,P.ZHAO                                                 
+         218  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2169
+ selectset done           0
+ eigen done           0
+ tau           1   1.54106474              18          31          45         110
+ #popped           2           1
+ #selectset contacts        2169
+ selectset done           1
+ eigen done           1
+ tau           3  0.667378783              18         135         208
+ #popped           4           2
+ #selectset contacts        2169
+ selectset done           2
+ eigen done           2
+ tau           5  0.630550385              18         184         195
+ #popped           6           3
+ #selectset contacts        2169
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        2169
+ selectset done           2
+ eigen done           2
+ tau           7  0.496832222             167
+ #popped           8           3
+ #selectset contacts        2169
+ selectset done           3
+ eigen done           3
+ tau           9  0.618499577             145         155
+ #popped          10           3
+ #selectset contacts        2169
+ selectset done           3
+ eigen done           3
+ tau          11  0.398963481             145
+ #popped           9           2
+ #selectset contacts        2169
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2169
+ selectset done           1
+ eigen done           1
+ tau          13   1.10346150              45
+ #popped          15           1
+ #selectset contacts        2169
+ selectset done           1
+ eigen done           1
+ tau          15  0.345002323             125
+ #popped          17           1
+ #selectset contacts        2169
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        2169
+ selectset done           0
+ eigen done           0
+ tau          17  0.533773422              56          69
+ #popped          18           0
+ #selectset contacts        2169
+ selectset done           0
+ eigen done           0
+ tau          19  0.879131019              56          84          99
+ #popped          20           1
+ #selectset contacts        2169
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        2169
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               24-MAR-23   8IUI              COMPND   2 MOLECULE: FIBROINASE;                                                SOURCE   2 ORGANISM_SCIENTIFIC: BOMBYX MORI;                                    AUTHOR    P.C.GUO,Z.WANG,P.ZHAO                                                 
+           0
+         218
+         218  residues read 8IUI.dssp                                                   
+  grow short strand           5           6
+ crowded segment excluded!
+  exclude short helix           7          10
+  grow short helix          50          56
+  exclude short helix          58          60
+  grow short strand          83          84
+ crowded segment excluded!
+  exclude short helix          86          88
+  exclude short helix         102         104
+  grow short strand         105         107
+  grow short strand         111         114
+  grow short strand         133         137
+  exclude short helix         142         145
+  grow short strand         151         152
+  grow short strand         196         200
+  exclude short helix         206         208
+  grow short strand         214         217
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  8  9 10 11  1  5  6  7 12  2  3  4
+   2     1  4  5  9  8  9 10 11  1  5  6  7 12
+   3     1 20 21  3  2  3  4
+   4     2  8  9  4  8  9 10 11
+   5     2 14 15  5  1  5  6  7 12
+   6     0  0  0  0
+   7     0  0  0  4  8  9 10 11
+   8     4  0  0  1  8
+   9     4  0  0  3  9 10 11
+  10     0  0  0  0
+  11     0  0  0  1  8
+  12     0  0  0  0
+  13     0  0  0  0
+  14     5  0  0  1  1
+  15     5 16 17  4  5  6  7 12
+  16    15  0  0  2  5  6
+  17    15  0  0  2  7 12
+  18     0  0  0  3  2  3  4
+  19     0  0  0  0
+  20     3  0  0  1  2
+  21     3  0  0  2  3  4
+   1 +   0  2  3 12  1  1 12
+   2 *   1  4  5  9  2  1  1  5 12
+   3 *   1 12 13  3  1  2  4
+   4 -   2  6  7  4  1  8 11
+   5 -   2  8  9  5  3  1  1  5  7 12 12
+   6 -   4  0  0  1  1  8  8
+   7 -   4  0  0  3  1  9 11
+   8 -   5  0  0  1  1  1  1
+   9 -   5 10 11  4  2  5  7 12 12
+  10 -   9  0  0  2  1  5  6
+  11 -   9  0  0  2  2  7  7 12 12
+  12 -   3  0  0  1  1  2  2
+  13 -   3  0  0  2  1  3  4
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            218
+Total number of atoms read in:              1871
+Total number of ignored atom records:       1574
+ HEADER    HYDROLASE                               24-MAR-23   8IUI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.C.GUO,Z.WANG,P.ZHAO                                                 
+  Reading DSSP file
+ HEADER    HYDROLASE                               24-MAR-23   8IUI              COMPND   2 MOLECULE: FIBROINASE;                                                SOURCE   2 ORGANISM_SCIENTIFIC: BOMBYX MORI;                                    AUTHOR    P.C.GUO,Z.WANG,P.ZHAO                                                 
+         218  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2177
+ selectset done           0
+ eigen done           0
+ tau           1   1.13477921              18         114
+ #popped           2           1
+ #selectset contacts        2177
+ selectset done           1
+ eigen done           1
+ tau           3  0.566735923              18         135         208
+ #popped           4           2
+ #selectset contacts        2177
+ selectset done           2
+ eigen done           2
+ tau           5  0.604811728              18         166
+ #popped           6           3
+ #selectset contacts        2177
+ selectset done           3
+ eigen done           3
+ tau           7  0.652738214              18         183         196
+ #popped           8           4
+ #selectset contacts        2177
+ selectset done           4
+ eigen done           4
+ tau           9   0.00000000    
+ #popped           9           3
+ #selectset contacts        2177
+ selectset done           3
+ eigen done           3
+ tau           9  0.333936632             183
+ #popped           7           2
+ #selectset contacts        2177
+ selectset done           2
+ eigen done           2
+ tau          11  0.468402773             152
+ #popped           5           1
+ #selectset contacts        2177
+ selectset done           1
+ eigen done           1
+ tau          13  0.565476179             125
+ #popped          15           1
+ #selectset contacts        2177
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        2177
+ selectset done           0
+ eigen done           0
+ tau          15   1.01666963              35          45
+ #popped          16           0
+ #selectset contacts        2177
+ selectset done           0
+ eigen done           0
+ tau          17  0.619675636              55          83         104
+ #popped          18           1
+ #selectset contacts        2177
+ selectset done           1
+ eigen done           1
+ tau          19  0.542266011              94
+ #popped          20           1
+ #selectset contacts        2177
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          19           0
+ #selectset contacts        2177
+ selectset done           0
+ eigen done           0
+ tau          21   1.28314078              67
+ #popped          23           0
+ #selectset contacts        2177
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               24-MAR-23   8IUI              COMPND   2 MOLECULE: FIBROINASE;                                                SOURCE   2 ORGANISM_SCIENTIFIC: BOMBYX MORI;                                    AUTHOR    P.C.GUO,Z.WANG,P.ZHAO                                                 
+           0
+         218
+         218  residues read 8IUI.dssp                                                   
+  grow short strand           5           6
+  grow short helix          50          56
+  exclude short helix          58          60
+  grow short strand          83          84
+  exclude short helix         102         104
+  grow short strand         105         107
+  grow short strand         111         114
+  grow short strand         133         137
+  exclude short helix         142         145
+  grow short strand         151         152
+  grow short strand         196         200
+  exclude short helix         206         208
+  grow short strand         214         217
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1 11 12 13 10  8  9 14  2  3  4  5  6  7
+   2     1  4  5  8  1 11 12 13 10  8  9 14
+   3     1 18 19  6  2  3  4  5  6  7
+   4     2  6  7  5  1 11 12 13 10
+   5     2 14 15  3  8  9 14
+   6     4  8  9  4  1 11 12 13
+   7     4  0  0  1 10
+   8     6  0  0  1  1
+   9     6 10 11  3 11 12 13
+  10     9  0  0  2 11 12
+  11     9  0  0  1 13
+  12     0  0  0  1 10
+  13     0  0  0  0
+  14     5  0  0  1  8
+  15     5  0  0  2  9 14
+  16     0  0  0  6  2  3  4  5  6  7
+  17     0  0  0  0
+  18     3  0  0  2  2  3
+  19     3  0  0  4  4  5  6  7
+  20     0  0  0  2  2  3
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  4  4  5  6  7
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5  8  2  1  1  8 14
+   3 *   1 14 15  6  1  2  7
+   4 -   2  6  7  5  2  1  1 10 13
+   5 -   2 12 13  3  2  8  9 14 14
+   6 -   4  8  9  4  2  1  1 11 13
+   7 -   4  0  0  1  1 10 10
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  1 11 13
+  10 -   9  0  0  2  1 11 12
+  11 -   9  0  0  1  1 13 13
+  12 -   5  0  0  1  1  8  8
+  13 -   5  0  0  2  2  9  9 14 14
+  14 -   3  0  0  2  1  2  3
+  15 -   3  0  0  4  1  4  7
+
+ CHAIN : 8IUIA
+ CHAIN : 8IUIB
+

@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 6HITG
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2AA1-D 21.6  1.5  140   146   39   MOLECULE: HEMOGLOBIN ALPHA-1 CHAIN;                                  
+
+# Pairwise alignments
+
+No 1: Query=6HITG Sbjct=2AA1D Z-score=21.6
+
+DSSP  -LLLHHHHHHHHHHHHHHhlLHHHHHHHHHHHHHHHLHHHHHHHLLLLLL-----LLLLH
+Query -SLSSKQKATVKDFFSKMstRSDDIGAEALSRLVAVYPQTKSYFSHWKDA-----SPGSA   54
+ident         || || |||     |  |   | |   ||| |  ||               |
+Sbjct vEWTDFERATIKDIFSKL--EYDVVGPATLARCLVVYPWTQRYFGKFGNLynaaaIAQNA   58
+DSSP  lLLLHHHHHHHHHHHHHL--LHHHHHHHHHHHHHHHLHHHHHHLLLLLLLllhhhHHHLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLLLHHHHLHHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHLL
+Query PVRKHGITIMGGVYDAVGKIDDLKGGLLSLSELHAFMLRVDPVNFKLLAHCMLVCMSMIF  114
+ident  | ||| ||  |   ||   ||       || ||   | ||| |||||| |        |
+Sbjct MVSKHGTTILNGLDRAVKNMDDITNTYAELSVLHSEKLHVDPDNFKLLADCLTIVVAARF  118
+DSSP  HHHHHHHHHHHLLHHHHHLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHHHHLL
+Query PEEFTPQVHVAVDKFLAQLALALAEKYR  142
+ident    ||  |  |  || |     |   ||
+Sbjct GSAFTGEVQAAFQKFMAVVVSSLGKQYR  146
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHHLLLL
+
+
+# Structural equivalences
+   1: 6HIT-G 2AA1-D     1 -  17 <=>    2 -  18   (SER    2  - MET   18  <=> GLU    2  - LEU   18 )                          
+   1: 6HIT-G 2AA1-D    20 -  49 <=>   19 -  48   (ARG   21  - ALA   50  <=> GLU   19  - LEU   48 )                          
+   1: 6HIT-G 2AA1-D    50 - 142 <=>   54 - 146   (SER   51  - ARG  143  <=> ILE   54  - ARG  146 )                          
+
+# Translation-rotation matrices
+-matrix  "6HIT-G 2AA1-D  U(1,.)  -0.494144  0.568892 -0.657407           31.116806"
+-matrix  "6HIT-G 2AA1-D  U(2,.)   0.809629  0.025632 -0.586382          -31.026312"
+-matrix  "6HIT-G 2AA1-D  U(3,.)  -0.316737 -0.822013 -0.473258          251.268005"
+

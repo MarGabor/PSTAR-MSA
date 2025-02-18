@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 3HYUA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1OUT-B 20.2  1.9  138   146   35   MOLECULE: HEMOGLOBIN I;                                              
+
+# Pairwise alignments
+
+No 1: Query=3HYUA Sbjct=1OUTB Z-score=20.2
+
+DSSP  -LLLHHHHHHHHHHHHHHhhHHHHHHHHHHHHHHHHLHHHHHHHLLLL------lLLLLH
+Query -VLSAADKNNVKTTWDKIggHAAEYVAEGLTRMFTSFPTTKTYFHHID------vSPGSG   53
+ident      | |      | |      |     | |     | |  ||             |  
+Sbjct vEWTDAEKSTISAVWGKV--NIDEIGPLALARVLIVYPWTQRYFGSFGnvstpaaIMGNP   58
+DSSP  lLLLHHHHHHHHHHHHLL--LHHHHHHHHHHHHHHHLHHHHHHLHHHLllllhhhHHHLH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHLHHHHHHHLLLLLLLHHHHHHHHHHHHHHHHHHH
+Query DIKAHGKKVADALTTAVGHLDDLPTALSTLSDVHAHKLRVDPVNFKFLNHCLLVTLAAHL  113
+ident    |||| |  ||  ||            ||  || || ||| ||  |   |    ||  
+Sbjct KVAAHGKVVCGALDKAVKNMGNILATYKSLSETHANKLFVDPDNFRVLADVLTIVIAAKF  118
+DSSP  HHHHHHHHHHHLHHHHHHLLLLHHHHLHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHHHH
+
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHLLLLL
+Query GADFTPSIHASLDKFFASVSTVLTSKYR  141
+ident || ||| | |   ||   |     | | 
+Sbjct GASFTPEIQATWQKFMKVVVAAMGSRYF  146
+DSSP  HHHLLHHHHHHHHHHHHHHHHHHLLLLL
+
+
+# Structural equivalences
+   1: 3HYU-A 1OUT-B     1 -  17 <=>    2 -  18   (VAL    1  - ILE   17  <=> GLU    2  - VAL   18 )                          
+   1: 3HYU-A 1OUT-B    20 -  47 <=>   19 -  46   (HIS   20  - ASP   47  <=> ASN   19  - GLY   46 )                          
+   1: 3HYU-A 1OUT-B    49 - 141 <=>   54 - 146   (SER   49  - ARG  141  <=> ILE   54  - PHE  146 )                          
+
+# Translation-rotation matrices
+-matrix  "3HYU-A 1OUT-B  U(1,.)   0.738887  0.651077 -0.173622          -48.249985"
+-matrix  "3HYU-A 1OUT-B  U(2,.)   0.650076 -0.756581 -0.070610          -14.518760"
+-matrix  "3HYU-A 1OUT-B  U(3,.)  -0.177332 -0.060695 -0.982278           39.750027"
+

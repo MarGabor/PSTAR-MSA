@@ -1,0 +1,41 @@
+# Job: msb
+# Query: 5MGSH
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2AFP-A  9.7  3.4  116   128   22   MOLECULE: PROTEIN (SEA RAVEN TYPE II ANTIFREEZE PROTEIN);            
+
+# Pairwise alignments
+
+No 1: Query=5MGSH Sbjct=2AFPA Z-score=9.7
+
+DSSP  --LLLLLLLLLEEELLEEEEELLLLLLHHHHHHHHHHLLLEELLLLLHHHHHHHHLLLll
+Query --GLLNCPIYWQQLREKCLLFSHTVNPWNNSLADCSTKESSLLLIRDKDELIHTQNLIrd   58
+ident      |||  || |   |     |   |      |      |  |    |    | |   
+Sbjct qrAGPNCPAGWQPLGDRCIYYETTAMTWALAETNCMKLGGHLASIHSQEEHSFIQTLN--   58
+DSSP  llLLLLLLLLLLLLLLLEELLLLLLLLHHHHHHHHHHHLLEELLLLLLHHHHHHHHHL--
+
+DSSP  llLLEEEEEEEELLLLEEEELLLLLlLLLL--lllLLLLLL-LEEEEELLL---LEEEEE
+Query kaILFWIGLNFSLSEKNWKWINGSFlNSND--leiRGDAKE-NSCISISQT---SVYSEY  112
+ident      |||    |    | |  |              |      |               
+Sbjct -aGVVWIGGSACLQAGAWTWSDGTP-MNFRswcstKPDDVLaACCMQMTAAadqCWDDLP  116
+DSSP  -lLLLLLLLLLLLLLLLLLLLLLLL-LLLLlllllLLLLLLlLLLLLLLLLlllLLLLLL
+
+DSSP  LLLLLEEEEEEElllll
+Query CSTEIRWICQKEltpvr  129
+ident |       |        
+Sbjct CPASHKSVCAMT-----  128
+DSSP  LLLLLLLLEEEL-----
+
+
+# Structural equivalences
+   1: 5MGS-H 2AFP-A     1 -  56 <=>    3 -  58   (GLY   90  - ILE  145  <=> ALA    3  - ASN   58 )                          
+   1: 5MGS-H 2AFP-A    61 -  83 <=>   60 -  82   (ILE  150  - PHE  172  <=> GLY   60  - PRO   82 )                          
+   1: 5MGS-H 2AFP-A    85 -  88 <=>   83 -  86   (ASN  174  - ASP  177  <=> MET   83  - ARG   86 )                          
+   1: 5MGS-H 2AFP-A    92 -  97 <=>   92 -  97   (ARG  181  - GLU  186  <=> LYS   92  - LEU   97 )                          
+   1: 5MGS-H 2AFP-A    98 - 106 <=>   99 - 107   (ASN  187  - THR  195  <=> ALA   99  - ALA  107 )                          
+   1: 5MGS-H 2AFP-A   107 - 124 <=>  111 - 128   (SER  196  - GLU  213  <=> CYS  111  - THR  128 )                          
+
+# Translation-rotation matrices
+-matrix  "5MGS-H 2AFP-A  U(1,.)   0.396669  0.717508 -0.572569           20.250044"
+-matrix  "5MGS-H 2AFP-A  U(2,.)  -0.188572  0.674129  0.714136          -27.089716"
+-matrix  "5MGS-H 2AFP-A  U(3,.)   0.898384 -0.175305  0.402708           99.858246"
+

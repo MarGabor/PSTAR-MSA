@@ -1,0 +1,364 @@
+L length: 30
+H length: 251
+P length: 79
+# 3 chains H L P
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            252
+Total number of atoms read in:              2053
+Total number of ignored atom records:        157
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+  Reading DSSP file
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              COMPND   2 MOLECULE: ALPHA-THROMBIN LIGHT CHAIN;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+         252  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2240
+ selectset done           0
+ eigen done           0
+ tau           1  0.867727399              14         105         129         204         214
+ #popped           2           1
+ #selectset contacts        2240
+ selectset done           1
+ eigen done           1
+ tau           3   4.99738932             118
+ #popped           4           2
+ #selectset contacts        2240
+ selectset done           2
+ eigen done           2
+ tau           5   2.00920129              14
+ #popped           5           1
+ #selectset contacts        2240
+ selectset done           1
+ eigen done           1
+ tau           7   1.08045983             129
+ #popped           3           0
+ #selectset contacts        2240
+ selectset done           0
+ eigen done           0
+ tau           9   1.01269615              39          54         160
+ #popped          10           1
+ #selectset contacts        2240
+ selectset done           1
+ eigen done           1
+ tau          11   1.19598782              79         105
+ #popped          12           2
+ #selectset contacts        2240
+ selectset done           2
+ eigen done           2
+ tau          13   1.86999238              79
+ #popped          14           3
+ #selectset contacts        2240
+ selectset done           3
+ eigen done           3
+ tau          15   1.14234734              29          39
+ #popped          16           3
+ #selectset contacts        2240
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        2240
+ selectset done           2
+ eigen done           2
+ tau          17  0.316323429             148
+ #popped          13           1
+ #selectset contacts        2240
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          11           0
+ #selectset contacts        2240
+ selectset done           0
+ eigen done           0
+ tau          19   2.69990611              54
+ #popped          21           0
+ #selectset contacts        2240
+ selectset done           0
+ eigen done           0
+ tau          21   1.10722589             182         193
+ #popped          22           0
+ #selectset contacts        2240
+ selectset done           0
+ eigen done           0
+ tau          23  0.855244577             170
+ #popped          25           0
+ #selectset contacts        2240
+ selectset done           0
+ eigen done           0
+ tau          25  0.483734101             217
+ #popped          26           1
+ #selectset contacts        2240
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          27           0
+ #selectset contacts        2240
+ selectset done           0
+ eigen done           0
+ tau          27  0.433862448             231
+ #popped          29           0
+ #selectset contacts        2240
+ selectset done           0
+ eigen done           0
+ tau          29   1.29455912             241
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              COMPND   2 MOLECULE: ALPHA-THROMBIN LIGHT CHAIN;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+           0
+         252
+         252  residues read 2HPP.dssp                                                   
+  grow short strand           5           6
+  grow short strand          37          40
+  exclude short helix          42          44
+  grow short strand          46          47
+ crowded segment excluded!
+  exclude short helix          48          50
+  grow short strand          52          53
+  grow short strand          59          63
+  grow short strand          77          79
+ crowded segment excluded!
+  grow short strand         101         105
+  grow short helix         123         129
+  grow short helix         164         170
+  grow short strand         179         182
+  exclude short helix         186         188
+  grow short strand         202         206
+  grow short strand         232         236
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  9  2  3  6  4 10 11  7  8  5 12 13 14 15 16 17
+   2     1  4  5  2  1  9
+   3     1 10 11 15  2  3  6  4 10 11  7  8  5 12 13 14 15 16 17
+   4     2  0  0  1  1
+   5     2  0  0  1  9
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     0  0  0  1  9
+   9     0  0  0  0
+  10     3 12 13  8  2  3  6  4 10 11  7  8
+  11     3 20 21  7  5 12 13 14 15 16 17
+  12    10 14 15  6  2  3  6  4 10 11
+  13    10  0  0  2  7  8
+  14    12 16 17  4  2  3  6  4
+  15    12 18 19  2 10 11
+  16    14  0  0  3  2  3  6
+  17    14  0  0  1  4
+  18    15  0  0  1 10
+  19    15  0  0  1 11
+  20    11  0  0  1  5
+  21    11 24 25  6 12 13 14 15 16 17
+  22     0  0  0  6 12 13 14 15 16 17
+  23     0  0  0  0
+  24    21  0  0  1 12
+  25    21 26 27  5 13 14 15 16 17
+  26    25  0  0  3 13 14 15
+  27    25 30 31  2 16 17
+  28     0  0  0  0
+  29     0  0  0  2 16 17
+  30    27  0  0  1 16
+  31    27  0  0  1 17
+   1 *   0  2  3 17  1  1 17
+   2 -   1  4  5  2  2  1  1  9  9
+   3 -   1  6  7 15  2  2  8 10 17
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  9  9
+   6 -   3  8  9  8  3  2  4  6  8 10 11
+   7 -   3 16 17  7  2  5  5 12 17
+   8 -   6 10 11  6  3  2  4  6  6 10 11
+   9 -   6  0  0  2  1  7  8
+  10 -   8 12 13  4  2  2  4  6  6
+  11 -   8 14 15  2  1 10 11
+  12 -  10  0  0  3  2  2  3  6  6
+  13 -  10  0  0  1  1  4  4
+  14 -  11  0  0  1  1 10 10
+  15 -  11  0  0  1  1 11 11
+  16 -   7  0  0  1  1  5  5
+  17 -   7 18 19  6  1 12 17
+  18 -  17  0  0  1  1 12 12
+  19 -  17 20 21  5  1 13 17
+  20 -  19  0  0  3  1 13 15
+  21 -  19 22 23  2  1 16 17
+  22 -  21  0  0  1  1 16 16
+  23 -  21  0  0  1  1 17 17
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             30
+Total number of atoms read in:               244
+Total number of ignored atom records:         27
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+  Reading DSSP file
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              COMPND   2 MOLECULE: ALPHA-THROMBIN LIGHT CHAIN;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+          30  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         214
+ selectset done           0
+ eigen done           0
+ tau           1   1.89840531              16
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              COMPND   2 MOLECULE: ALPHA-THROMBIN LIGHT CHAIN;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+           0
+          30
+          30  residues read 2HPP.dssp                                                   
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  0  0  1  1
+   2     0  0  0  0
+   3     0  0  0  1  1
+   1 =   0  0  0  1  1  1  1
+
+ CHAIN P
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             79
+Total number of atoms read in:               618
+Total number of ignored atom records:         51
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+  Reading DSSP file
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              COMPND   2 MOLECULE: ALPHA-THROMBIN LIGHT CHAIN;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+          79  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         634
+ selectset done           0
+ eigen done           0
+ tau           1   1.06066227              25          39
+ #popped           2           0
+ #selectset contacts         634
+ selectset done           0
+ eigen done           0
+ tau           3  0.549090683              13
+ #popped           5           0
+ #selectset contacts         634
+ selectset done           0
+ eigen done           0
+ tau           5  0.663431048              49
+ #popped           6           1
+ #selectset contacts         634
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           7           0
+ #selectset contacts         634
+ selectset done           0
+ eigen done           0
+ tau           7   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE/HYDROLASE INHIBITOR           28-APR-93   2HPP              COMPND   2 MOLECULE: ALPHA-THROMBIN LIGHT CHAIN;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    A.TULINSKY,K.PADMANABHAN                                              
+           0
+          79
+          79  residues read 2HPP.dssp                                                   
+  grow short strand          61          63
+  grow short strand          71          73
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  0  0  2  1  2
+   2     0  0  0  2  1  2
+   3     0  0  0  0
+   4     0  0  0  0
+   5     0  0  0  2  1  2
+   6     0  0  0  0
+   7     0  0  0  2  1  2
+   1 *   0  0  0  2  1  1  2
+
+ CHAIN : 2HPPH
+ CHAIN : 2HPPL
+ CHAIN : 2HPPP
+

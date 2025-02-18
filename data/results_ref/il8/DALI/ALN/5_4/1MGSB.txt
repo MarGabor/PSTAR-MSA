@@ -1,0 +1,33 @@
+# Job: il8
+# Query: 1MGSB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HUN-B  7.1  2.6   65    69   14   MOLECULE: HUMAN MACROPHAGE INFLAMMATORY PROTEIN 1 BETA;              
+
+# Pairwise alignments
+
+No 1: Query=1MGSB Sbjct=1HUNB Z-score=7.1
+
+DSSP  --LLLLlLLLLLLLLLL-lLLLLLLEEEEEEELLLllLLLLEEEEEELLLLEEEELLLLH
+Query --ASVAtELRCQCLQTL-qGIHPKNIQSVNVKSPGphCAQTEVIATLKNGRKACLNPASP   57
+ident             |                   |    | |  |    |     |  |   
+Sbjct apMGSD-PPTACCFSYTarKLPRNFVVDYYETSSL--CSQPAVVFQTKRSKQVCADPSES   57
+DSSP  llLLLL-LLLLLLLLLLllLLLHHHLLEEEELLLL--LLLLLEEEELLLLLEEEELLLLH
+
+DSSP  HHHHHHHHHHHHllll
+Query IVKKIIEKMLNSdksn   73
+ident  |              
+Sbjct WVQEYVYDLELN----   69
+DSSP  HHHHHHHHHHLL----
+
+
+# Structural equivalences
+   1: 1MGS-B 1HUN-B     1 -   4 <=>    3 -   6   (ALA    1  - ALA    4  <=> MET    3  - ASP    6 )                          
+   1: 1MGS-B 1HUN-B     6 -  15 <=>    7 -  16   (GLU    6  - LEU   15  <=> PRO    7  - THR   16 )                          
+   1: 1MGS-B 1HUN-B    17 -  32 <=>   19 -  34   (GLY   17  - GLY   32  <=> LYS   19  - LEU   34 )                          
+   1: 1MGS-B 1HUN-B    35 -  69 <=>   35 -  69   (CYS   35  - SER   69  <=> CYS   35  - ASN   69 )                          
+
+# Translation-rotation matrices
+-matrix  "1MGS-B 1HUN-B  U(1,.)   0.253871  0.373403  0.892255            8.689040"
+-matrix  "1MGS-B 1HUN-B  U(2,.)  -0.483514  0.847940 -0.217284           -1.546867"
+-matrix  "1MGS-B 1HUN-B  U(3,.)  -0.837713 -0.376256  0.395813          -18.098503"
+

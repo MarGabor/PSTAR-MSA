@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 4UUTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DMS-A  7.8  3.3   61    80   33   MOLECULE: HOMEOBOX PROTEIN OTX2;                                     
+
+# Pairwise alignments
+
+No 1: Query=4UUTA Sbjct=2DMSA Z-score=7.8
+
+DSSP  ------------LLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHLLLHHHHHHHHHHHHH
+Query ------------TYTRYQTLELEKEFHTNHYLTRRRRIEMAHALCLTERQIKIWFQNRRM   48
+ident             | || |   ||  |    |     | | |    | |     || ||| 
+Sbjct gssgssgrrertTFTRAQLDVLEALFAKTRYPDIFMREEVALKINLPESRVQVWFKNRRA   60
+DSSP  llllllllllllLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLLLLHHHHHHHHHHHHL
+
+DSSP  HhHHHHHHHHhhHHHH----lll
+Query KlKKEIQAIKelNEQE----kqa   67
+ident |     |                
+Sbjct K-CRQQQQQQ--QNGGqsgpssg   80
+DSSP  H-HHHLLLLL--LLLLlllllll
+
+
+# Structural equivalences
+   1: 4UUT-A 2DMS-A     1 -  49 <=>   13 -  61   (THR    7  - LYS   55  <=> THR   13  - LYS   61 )                          
+   1: 4UUT-A 2DMS-A    51 -  58 <=>   62 -  69   (LYS   57  - LYS   64  <=> CYS   62  - GLN   69 )                          
+   1: 4UUT-A 2DMS-A    61 -  64 <=>   70 -  73   (ASN   67  - GLU   70  <=> GLN   70  - GLY   73 )                          
+
+# Translation-rotation matrices
+-matrix  "4UUT-A 2DMS-A  U(1,.)  -0.078888 -0.990960  0.108509          -10.435284"
+-matrix  "4UUT-A 2DMS-A  U(2,.)   0.972518 -0.100421 -0.210056           12.437940"
+-matrix  "4UUT-A 2DMS-A  U(3,.)   0.219054  0.088956  0.971649           -6.144780"
+

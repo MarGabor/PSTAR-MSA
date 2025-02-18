@@ -1,0 +1,39 @@
+# Job: uce
+# Query: 1FXTA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2UCZ-A 16.6  2.0  145   164   30   MOLECULE: UBIQUITIN CONJUGATING ENZYME;                              
+
+# Pairwise alignments
+
+No 1: Query=1FXTA Sbjct=2UCZA Z-score=16.6
+
+DSSP  --LLHHHHHHHHHHHHHLHHHLLEEEELLLLLLLEEEEEEELLLLLLLLLLEEEEEEELL
+Query --SRAKRIMKEIQAVKDDPAAHITLEFVSESDIHHLKGTFLGPPGTPYEGGKFVVDIEVP   58
+ident      ||  || |    |    |     ||  |        ||| |||  | |    | |
+Sbjct skTAQKRLLKELQQLIKDSPPGIVAGPKSENNIFIWDCLIQGPPDTPYADGVFNAKLEFP   60
+DSSP  lhHHHHHHHHHHHHHHHLLLLLEEEEELLLLLLLEEEEEEELLLLLLLLLLEEEEEEELL
+
+DSSP  LLLLLLLLEEEELLLLLLLLLLlLLLLLLLHhHHLL--------------LLLLLLHHHH
+Query MEYPFKPPKMQFDTKVYHPNISsVTGAICLDiLKNA--------------WSPVITLKSA  104
+ident   ||  |||  |     ||||    |  |                     ||||      
+Sbjct KDYPLSPPKLTFTPSILHPNIY-PNGEVCIS-ILHSpgddpnmyelaeerWSPVQSVEKI  118
+DSSP  LLLLLLLLEEEELLLLLLLLLL-LLLLLLLH-HHLLllllllllllllllLLLLLLHHHH
+
+DSSP  HHHHHHHHHLLLLLLLLLHHHHHHHHHLLLHHHHHHHHHHHHH-ll
+Query LISLQALLQSPEPNDPQDAEVAQHYLRDRESFNKTAALWTRLY-as  149
+ident | |    |  |                 |  |     |        
+Sbjct LLSVMSMLSEPNIESGANIDACILWRDNRPEFERQVKLSILKSlgf  164
+DSSP  HHHHHHHHHLLLHHHLLLHHHHHHHHLLHHHHHHHHHHHHHHHlll
+
+
+# Structural equivalences
+   1: 1FXT-A 2UCZ-A     1 -  80 <=>    3 -  82   (SER    2  - SER   81  <=> THR    4  - TYR   83 )                          
+   1: 1FXT-A 2UCZ-A    82 -  89 <=>   83 -  90   (VAL   83  - ASP   90  <=> PRO   84  - SER   91 )                          
+   1: 1FXT-A 2UCZ-A    91 -  94 <=>   91 -  94   (LEU   92  - ALA   95  <=> ILE   92  - SER   95 )                          
+   1: 1FXT-A 2UCZ-A    95 - 147 <=>  109 - 161   (TRP   96  - TYR  148  <=> TRP  110  - SER  162 )                          
+
+# Translation-rotation matrices
+-matrix  "1FXT-A 2UCZ-A  U(1,.)   0.465547  0.415036 -0.781672           -8.916723"
+-matrix  "1FXT-A 2UCZ-A  U(2,.)  -0.758675 -0.267636 -0.593955            3.149975"
+-matrix  "1FXT-A 2UCZ-A  U(3,.)  -0.455717  0.869549  0.190280          -44.492954"
+

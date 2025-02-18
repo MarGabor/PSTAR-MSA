@@ -1,0 +1,1847 @@
+A length: 238
+B length: 237
+C length: 239
+D length: 237
+E length: 238
+F length: 238
+G length: 238
+H length: 239
+# 8 chains A B C D E F G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            238
+Total number of atoms read in:              2020
+Total number of ignored atom records:       1752
+ HEADER    LYASE                                   08-JAN-15   4XIX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSINGER,     
+  Reading DSSP file
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau           1   3.28157520              15
+ #popped           3           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau           3   1.25719321              55          65         125         155         199         221
+ #popped           4           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau           5  0.803636968              43          89         125         172
+ #popped           6           2
+ #selectset contacts        2167
+ selectset done           2
+ eigen done           2
+ tau           7  0.755741417              30          43
+ #popped           8           2
+ #selectset contacts        2167
+ selectset done           2
+ eigen done           2
+ tau           9  0.442188889             199
+ #popped          10           2
+ #selectset contacts        2167
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          11  0.820246339              89
+ #popped          12           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           5           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau          13   1.60189891              65         137         155
+ #popped          14           1
+ #selectset contacts        2167
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          15           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau          15  0.896997631             209
+ #popped          16           0
+ #selectset contacts        2167
+ selectset done           0
+ eigen done           0
+ tau          17  0.445593625             137
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+           0
+         238
+         238  residues read 4XIX.dssp                                                   
+  exclude short helix          11          13
+  exclude short helix          17          20
+  grow short strand          28          29
+  grow short strand          38          39
+  grow short strand          46          48
+  grow short strand          56          59
+  grow short strand          65          68
+  grow short strand          74          77
+  grow short strand          96          97
+  grow short strand         150         152
+  exclude short helix         159         162
+  grow short strand         199         200
+  grow short strand         235         237
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 16  1  8  9 10 13 14 15  2  3  5  6  7  4 11 12 16
+   2     0  0  0  0
+   3     0  0  0 16  1  8  9 10 13 14 15  2  3  5  6  7  4 11 12 16
+   4     1  6  7 12  1  8  9 10 13 14 15  2  3  5  6  7
+   5     1 14 15  4  4 11 12 16
+   6     4  8  9  8  1  8  9 10 13 14 15  2
+   7     4  0  0  4  3  5  6  7
+   8     6  0  0  7  1  8  9 10 13 14 15
+   9     6  0  0  1  2
+  10     0  0  0  7  1  8  9 10 13 14 15
+  11     0  0  0  0
+  12     0  0  0  4  3  5  6  7
+  13     0  0  0  0
+  14     5  0  0  3  4 11 12
+  15     5  0  0  1 16
+  16     0  0  0  1 16
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 -   1  4  5 12  3  1  3  5 10 13 15
+   3 -   1  8  9  4  3  4  4 11 12 16 16
+   4 -   2  6  7  8  3  1  2  8 10 13 15
+   5 -   2  0  0  4  2  3  3  5  7
+   6 -   4  0  0  7  3  1  1  8 10 13 15
+   7 -   4  0  0  1  1  2  2
+   8 -   3  0  0  3  2  4  4 11 12
+   9 -   3  0  0  1  1 16 16
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            237
+Total number of atoms read in:              2015
+Total number of ignored atom records:       1717
+ HEADER    LYASE                                   08-JAN-15   4XIX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSINGER,     
+  Reading DSSP file
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+         237  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2139
+ selectset done           0
+ eigen done           0
+ tau           1   2.84325957              14
+ #popped           3           0
+ #selectset contacts        2139
+ selectset done           0
+ eigen done           0
+ tau           3   1.21523011              49          68         124         160         198         220
+ #popped           4           1
+ #selectset contacts        2139
+ selectset done           1
+ eigen done           1
+ tau           5  0.646938026              28          38
+ #popped           6           1
+ #selectset contacts        2139
+ selectset done           1
+ eigen done           1
+ tau           7  0.566144228              28          88
+ #popped           8           2
+ #selectset contacts        2139
+ selectset done           2
+ eigen done           2
+ tau           9  0.349337459             124
+ #popped          10           3
+ #selectset contacts        2139
+ selectset done           3
+ eigen done           3
+ tau          11   1.25518656             101
+ #popped          12           4
+ #selectset contacts        2139
+ selectset done           4
+ eigen done           4
+ tau          13  0.792720914              28
+ #popped          13           3
+ #selectset contacts        2139
+ selectset done           3
+ eigen done           3
+ tau          15  0.181019038             114
+ #popped          11           2
+ #selectset contacts        2139
+ selectset done           2
+ eigen done           2
+ tau          17  0.891858399             198
+ #popped          18           2
+ #selectset contacts        2139
+ selectset done           2
+ eigen done           2
+ tau          19  0.876135290             178         188
+ #popped          20           2
+ #selectset contacts        2139
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped           9           1
+ #selectset contacts        2139
+ selectset done           1
+ eigen done           1
+ tau          21  0.454872638              78
+ #popped          22           1
+ #selectset contacts        2139
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           5           0
+ #selectset contacts        2139
+ selectset done           0
+ eigen done           0
+ tau          23   1.84215438              68         136         160
+ #popped          24           1
+ #selectset contacts        2139
+ selectset done           1
+ eigen done           1
+ tau          25  0.482033432             150
+ #popped          26           1
+ #selectset contacts        2139
+ selectset done           1
+ eigen done           1
+ tau          27  0.578145325              68
+ #popped          25           0
+ #selectset contacts        2139
+ selectset done           0
+ eigen done           0
+ tau          29  0.896997631             208
+ #popped          30           0
+ #selectset contacts        2139
+ selectset done           0
+ eigen done           0
+ tau          31  0.459096462             136
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+           0
+         237
+         237  residues read 4XIX.dssp                                                   
+  exclude short helix          10          12
+  exclude short helix          16          19
+  grow short strand          27          28
+  grow short strand          45          47
+  grow short strand          55          58
+  grow short strand          64          67
+  grow short strand          73          76
+  grow short strand          95          96
+  grow short strand         149         151
+  exclude short helix         158         161
+  grow short strand         198         199
+  grow short strand         234         236
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 15  1  7  8  9 12 13 14  2  5  6  3  4 10 11 15
+   2     0  0  0  0
+   3     0  0  0 15  1  7  8  9 12 13 14  2  5  6  3  4 10 11 15
+   4     1  8  9 10  1  7  8  9 12 13 14  2  5  6
+   5     1 24 25  5  3  4 10 11 15
+   6     0  0  0 10  1  7  8  9 12 13 14  2  5  6
+   7     0  0  0  0
+   8     4 10 11  7  1  7  8  9 12 13 14
+   9     4 22 23  3  2  5  6
+  10     8 12 13  4  1  7  8  9
+  11     8  0  0  3 12 13 14
+  12    10 14 15  2  1  7
+  13    10 16 17  2  8  9
+  14    12  0  0  1  1
+  15    12  0  0  1  7
+  16    13  0  0  1  8
+  17    13  0  0  1  9
+  18     0  0  0  3 12 13 14
+  19     0  0  0  0
+  20     0  0  0  3 12 13 14
+  21     0  0  0  0
+  22     9  0  0  2  2  5
+  23     9  0  0  1  6
+  24     5 28 29  4  3  4 10 11
+  25     5  0  0  1 15
+  26     0  0  0  4  3  4 10 11
+  27     0  0  0  0
+  28    24  0  0  2  3  4
+  29    24  0  0  2 10 11
+  30     0  0  0  1 15
+  31     0  0  0  0
+  32     0  0  0  0
+  33     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 -   1  4  5 10  3  1  2  5  9 12 14
+   3 -   1 16 17  5  3  3  4 10 11 15 15
+   4 -   2  6  7  7  3  1  1  7  9 12 14
+   5 -   2 14 15  3  2  2  2  5  6
+   6 -   4  8  9  4  2  1  1  7  9
+   7 -   4  0  0  3  1 12 14
+   8 -   6 10 11  2  2  1  1  7  7
+   9 -   6 12 13  2  1  8  9
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  1  1  7  7
+  12 -   9  0  0  1  1  8  8
+  13 -   9  0  0  1  1  9  9
+  14 -   5  0  0  2  2  2  2  5  5
+  15 -   5  0  0  1  1  6  6
+  16 -   3 18 19  4  2  3  4 10 11
+  17 -   3  0  0  1  1 15 15
+  18 -  16  0  0  2  1  3  4
+  19 -  16  0  0  2  1 10 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            239
+Total number of atoms read in:              2028
+Total number of ignored atom records:       1741
+ HEADER    LYASE                                   08-JAN-15   4XIX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSINGER,     
+  Reading DSSP file
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+         239  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau           1   3.38220501              16
+ #popped           3           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau           3   1.25646043             126         138         200         222
+ #popped           4           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau           5   1.32836235              50          72         126         162
+ #popped           6           2
+ #selectset contacts        2148
+ selectset done           2
+ eigen done           2
+ tau           7  0.486175418              82         172
+ #popped           8           3
+ #selectset contacts        2148
+ selectset done           3
+ eigen done           3
+ tau           9  0.383255810             200
+ #popped          10           3
+ #selectset contacts        2148
+ selectset done           3
+ eigen done           3
+ tau          11   2.60641360              32          82
+ #popped          12           4
+ #selectset contacts        2148
+ selectset done           4
+ eigen done           4
+ tau          13  0.339350283             189
+ #popped          14           4
+ #selectset contacts        2148
+ selectset done           4
+ eigen done           4
+ tau          15   0.00000000    
+ #popped          13           3
+ #selectset contacts        2148
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped           9           2
+ #selectset contacts        2148
+ selectset done           2
+ eigen done           2
+ tau          15   2.97085214             126
+ #popped          16           2
+ #selectset contacts        2148
+ selectset done           2
+ eigen done           2
+ tau          17  0.749042392              92         104
+ #popped          18           2
+ #selectset contacts        2148
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           7           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau          19  0.569892943             152
+ #popped          20           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau          21  0.699705899              72
+ #popped          22           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           5           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau          23  0.973883152             210
+ #popped          24           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau          25  0.437024534             138
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+           0
+         239
+         239  residues read 4XIX.dssp                                                   
+  exclude short helix          12          14
+  exclude short helix          18          21
+  grow short strand          29          30
+  grow short strand          39          40
+  grow short strand          47          50
+  grow short strand          57          60
+  grow short strand          66          69
+  grow short strand          74          78
+  grow short strand          97          98
+  grow short strand         101         102
+ crowded segment excluded!
+  grow short strand         151         153
+  exclude short helix         160         163
+  grow short strand         200         201
+  grow short strand         236         238
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 16  1 13 14 15  2  3  6  7  9 10  8  4  5 11 12 16
+   2     0  0  0  0
+   3     0  0  0 16  1 13 14 15  2  3  6  7  9 10  8  4  5 11 12 16
+   4     1  6  7 15  1 13 14 15  2  3  6  7  9 10  8  4  5 11 12
+   5     1  0  0  1 16
+   6     4  8  9 11  1 13 14 15  2  3  6  7  9 10  8
+   7     4 22 23  4  4  5 11 12
+   8     6 12 13  7  1 13 14 15  2  3  6
+   9     6 18 19  4  7  9 10  8
+  10     0  0  0  7  1 13 14 15  2  3  6
+  11     0  0  0  0
+  12     8 14 15  4  1 13 14 15
+  13     8  0  0  3  2  3  6
+  14    12  0  0  2  1 13
+  15    12  0  0  2 14 15
+  16     0  0  0  4  7  9 10  8
+  17     0  0  0  0
+  18     9  0  0  3  7  9 10
+  19     9  0  0  1  8
+  20     0  0  0  4  4  5 11 12
+  21     0  0  0  0
+  22     7  0  0  2  4  5
+  23     7  0  0  2 11 12
+  24     0  0  0  1 16
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 -   1  4  5 15  1  1 15
+   3 -   1  0  0  1  1 16 16
+   4 -   2  6  7 11  3  1  3  6 10 13 15
+   5 -   2 14 15  4  2  4  5 11 12
+   6 -   4  8  9  7  3  1  3  6  6 13 15
+   7 -   4 12 13  4  1  7 10
+   8 -   6 10 11  4  2  1  1 13 15
+   9 -   6  0  0  3  2  2  3  6  6
+  10 -   8  0  0  2  2  1  1 13 13
+  11 -   8  0  0  2  1 14 15
+  12 -   7  0  0  3  2  7  7  9 10
+  13 -   7  0  0  1  1  8  8
+  14 -   5  0  0  2  1  4  5
+  15 -   5  0  0  2  1 11 12
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            237
+Total number of atoms read in:              2015
+Total number of ignored atom records:       1675
+ HEADER    LYASE                                   08-JAN-15   4XIX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSINGER,     
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  calculate residue outside grid:          14
+  calculate residue outside grid:          15
+  calculate residue outside grid:          16
+  calculate residue outside grid:          17
+  calculate residue outside grid:          18
+  calculate residue outside grid:          19
+  calculate residue outside grid:          20
+  calculate residue outside grid:          21
+  calculate residue outside grid:          22
+  calculate residue outside grid:          23
+  calculate residue outside grid:         113
+  calculate residue outside grid:         114
+  calculate residue outside grid:         115
+  calculate residue outside grid:         116
+  calculate residue outside grid:         177
+  calculate residue outside grid:         178
+  calculate residue outside grid:         179
+  calculate residue outside grid:         183
+  calculate residue outside grid:         184
+  calculate residue outside grid:         185
+  calculate residue outside grid:         186
+  calculate residue outside grid:         187
+  calculate residue outside grid:         188
+  calculate residue outside grid:         189
+  calculate residue outside grid:         223
+  calculate residue outside grid:         226
+  calculate residue outside grid:         227
+  calculate residue outside grid:         228
+  calculate residue outside grid:         229
+  calculate residue outside grid:         230
+  calculate residue outside grid:         231
+  calculate residue outside grid:         232
+  Reading DSSP file
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+         237  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2671
+ mismatching:          13           9   0.00000000       2.00000000    
+ mismatching:          24          23   11.0000000       0.00000000    
+ mismatching:          26          23   4.00000000       0.00000000    
+ mismatching:         116         110   0.00000000       2.00000000    
+ mismatching:         116         111   0.00000000       3.00000000    
+ mismatching:         117         116   9.00000000       0.00000000    
+ mismatching:         118         116   1.00000000       0.00000000    
+ mismatching:         181          13   2.00000000       0.00000000    
+ mismatching:         189         117   0.00000000       8.00000000    
+ mismatching:         189         118   0.00000000       3.00000000    
+ mismatching:         189         119   0.00000000       15.0000000    
+ mismatching:         189         180   0.00000000       7.00000000    
+ mismatching:         190         189   19.0000000       0.00000000    
+ mismatching:         191         189   14.0000000       0.00000000    
+ mismatching:         228          26   0.00000000       2.00000000    
+ mismatching:         232         175   0.00000000       1.00000000    
+ mismatching:         232         176   0.00000000       1.00000000    
+ mismatching:         233         228   3.00000000       0.00000000    
+ mismatching:         233         232   12.0000000       0.00000000    
+ mismatching:         234         232   2.00000000       0.00000000    
+ selectset done           0
+ mismatch           9   52.0000000       50.0000000    
+ mismatch          13   1405.00000       1409.00000    
+ mismatch          23   1750.00000       1765.00000    
+ mismatch          24   93.0000000       82.0000000    
+ mismatch          26   241.000000       235.000000    
+ mismatch         110   127.000000       125.000000    
+ mismatch         111   111.000000       108.000000    
+ mismatch         116   1168.00000       1183.00000    
+ mismatch         117   106.000000       89.0000000    
+ mismatch         118   112.000000       108.000000    
+ mismatch         119   294.000000       279.000000    
+ mismatch         175   168.000000       167.000000    
+ mismatch         176   200.000000       199.000000    
+ mismatch         180   89.0000000       82.0000000    
+ mismatch         181   160.000000       158.000000    
+ mismatch         189   510.000000       576.000000    
+ mismatch         190   132.000000       113.000000    
+ mismatch         191   267.000000       253.000000    
+ mismatch         228   792.000000       797.000000    
+ mismatch         232   1168.00000       1184.00000    
+ mismatch         233   226.000000       211.000000    
+ mismatch         234   147.000000       145.000000    
+ eigen done           0
+ tau           1  0.777209699              54          64         126         155
+ #popped           2           1
+ #selectset contacts        2671
+ mismatching:          13           9   0.00000000       2.00000000    
+ mismatching:          24          23   11.0000000       0.00000000    
+ mismatching:          26          23   4.00000000       0.00000000    
+ mismatching:         106         100   0.00000000       2.00000000    
+ mismatching:         106         101   0.00000000       3.00000000    
+ mismatching:         107         106   9.00000000       0.00000000    
+ mismatching:         108         106   1.00000000       0.00000000    
+ mismatching:         142          13   2.00000000       0.00000000    
+ mismatching:         150         107   0.00000000       8.00000000    
+ mismatching:         150         108   0.00000000       3.00000000    
+ mismatching:         150         109   0.00000000       15.0000000    
+ mismatching:         150         141   0.00000000       7.00000000    
+ mismatching:         151         150   19.0000000       0.00000000    
+ mismatching:         152         150   14.0000000       0.00000000    
+ mismatching:         189          26   0.00000000       2.00000000    
+ mismatching:         193         136   0.00000000       1.00000000    
+ mismatching:         193         137   0.00000000       1.00000000    
+ mismatching:         194         189   3.00000000       0.00000000    
+ mismatching:         194         193   12.0000000       0.00000000    
+ mismatching:         195         193   2.00000000       0.00000000    
+ selectset done           1
+ mismatch           9   52.0000000       50.0000000    
+ mismatch          13   1405.00000       1409.00000    
+ mismatch          23   1750.00000       1765.00000    
+ mismatch          24   93.0000000       82.0000000    
+ mismatch          26   241.000000       235.000000    
+ mismatch         100   127.000000       125.000000    
+ mismatch         101   111.000000       108.000000    
+ mismatch         106   1168.00000       1183.00000    
+ mismatch         107   106.000000       89.0000000    
+ mismatch         108   112.000000       108.000000    
+ mismatch         109   294.000000       279.000000    
+ mismatch         136   168.000000       167.000000    
+ mismatch         137   200.000000       199.000000    
+ mismatch         141   89.0000000       82.0000000    
+ mismatch         142   160.000000       158.000000    
+ mismatch         150   510.000000       576.000000    
+ mismatch         151   132.000000       113.000000    
+ mismatch         152   267.000000       253.000000    
+ mismatch         189   792.000000       797.000000    
+ mismatch         193   1168.00000       1184.00000    
+ mismatch         194   226.000000       211.000000    
+ mismatch         195   147.000000       145.000000    
+ eigen done           1
+ tau           3  0.601072013              42          80
+ #popped           4           2
+ #selectset contacts        2671
+ mismatching:          13           9   0.00000000       2.00000000    
+ mismatching:          24          23   11.0000000       0.00000000    
+ mismatching:          26          23   4.00000000       0.00000000    
+ mismatching:          78          72   0.00000000       2.00000000    
+ mismatching:          78          73   0.00000000       3.00000000    
+ mismatching:          79          78   9.00000000       0.00000000    
+ mismatching:          80          78   1.00000000       0.00000000    
+ mismatching:         114          13   2.00000000       0.00000000    
+ mismatching:         122          79   0.00000000       8.00000000    
+ mismatching:         122          80   0.00000000       3.00000000    
+ mismatching:         122          81   0.00000000       15.0000000    
+ mismatching:         122         113   0.00000000       7.00000000    
+ mismatching:         123         122   19.0000000       0.00000000    
+ mismatching:         124         122   14.0000000       0.00000000    
+ mismatching:         161          26   0.00000000       2.00000000    
+ mismatching:         165         108   0.00000000       1.00000000    
+ mismatching:         165         109   0.00000000       1.00000000    
+ mismatching:         166         161   3.00000000       0.00000000    
+ mismatching:         166         165   12.0000000       0.00000000    
+ mismatching:         167         165   2.00000000       0.00000000    
+ selectset done           2
+ mismatch           9   52.0000000       50.0000000    
+ mismatch          13   1405.00000       1409.00000    
+ mismatch          23   1750.00000       1765.00000    
+ mismatch          24   93.0000000       82.0000000    
+ mismatch          26   241.000000       235.000000    
+ mismatch          72   126.000000       124.000000    
+ mismatch          73   106.000000       103.000000    
+ mismatch          78   1168.00000       1183.00000    
+ mismatch          79   106.000000       89.0000000    
+ mismatch          80   112.000000       108.000000    
+ mismatch          81   294.000000       279.000000    
+ mismatch         108   168.000000       167.000000    
+ mismatch         109   200.000000       199.000000    
+ mismatch         113   89.0000000       82.0000000    
+ mismatch         114   160.000000       158.000000    
+ mismatch         122   510.000000       576.000000    
+ mismatch         123   132.000000       113.000000    
+ mismatch         124   267.000000       253.000000    
+ mismatch         161   792.000000       797.000000    
+ mismatch         165   1168.00000       1184.00000    
+ mismatch         166   226.000000       211.000000    
+ mismatch         167   147.000000       145.000000    
+ eigen done           2
+ tau           5   2.70852186E-02          42
+ #popped           6           3
+ #selectset contacts        2671
+ mismatching:          13           9   0.00000000       2.00000000    
+ mismatching:          24          23   11.0000000       0.00000000    
+ mismatching:          26          23   4.00000000       0.00000000    
+ selectset done           3
+ mismatch           9   52.0000000       50.0000000    
+ mismatch          13   726.000000       728.000000    
+ mismatch          23   877.000000       892.000000    
+ mismatch          24   64.0000000       53.0000000    
+ mismatch          26   202.000000       198.000000    
+ eigen done           3
+ tau           7   5.72337198              23
+ #popped           8           3
+ #selectset contacts        2671
+ mismatching:          13           9   0.00000000       2.00000000    
+ selectset done           3
+ mismatch           9   52.0000000       50.0000000    
+ mismatch          13   726.000000       728.000000    
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2671
+ mismatching:          36          30   0.00000000       2.00000000    
+ mismatching:          36          31   0.00000000       3.00000000    
+ mismatching:          37          36   9.00000000       0.00000000    
+ mismatching:          38          36   1.00000000       0.00000000    
+ mismatching:          80          37   0.00000000       8.00000000    
+ mismatching:          80          38   0.00000000       3.00000000    
+ mismatching:          80          39   0.00000000       15.0000000    
+ mismatching:          80          71   0.00000000       7.00000000    
+ mismatching:          81          80   19.0000000       0.00000000    
+ mismatching:          82          80   14.0000000       0.00000000    
+ mismatching:         123          66   0.00000000       1.00000000    
+ mismatching:         123          67   0.00000000       1.00000000    
+ mismatching:         124         119   3.00000000       0.00000000    
+ mismatching:         124         123   12.0000000       0.00000000    
+ mismatching:         125         123   2.00000000       0.00000000    
+ selectset done           2
+ mismatch          30   126.000000       124.000000    
+ mismatch          31   106.000000       103.000000    
+ mismatch          36   586.000000       601.000000    
+ mismatch          37   106.000000       89.0000000    
+ mismatch          38   112.000000       108.000000    
+ mismatch          39   294.000000       279.000000    
+ mismatch          66   165.000000       164.000000    
+ mismatch          67   172.000000       171.000000    
+ mismatch          71   89.0000000       82.0000000    
+ mismatch          80   316.000000       382.000000    
+ mismatch          81   132.000000       113.000000    
+ mismatch          82   263.000000       249.000000    
+ mismatch         119   404.000000       407.000000    
+ mismatch         123   586.000000       602.000000    
+ mismatch         124   216.000000       201.000000    
+ mismatch         125   121.000000       119.000000    
+ eigen done           2
+ tau           9  0.256384701              91
+ #popped          11           2
+ #selectset contacts        2671
+ mismatching:          25          19   0.00000000       2.00000000    
+ mismatching:          25          20   0.00000000       3.00000000    
+ mismatching:          26          25   9.00000000       0.00000000    
+ mismatching:          27          25   1.00000000       0.00000000    
+ mismatching:          69          26   0.00000000       8.00000000    
+ mismatching:          69          27   0.00000000       3.00000000    
+ mismatching:          69          28   0.00000000       15.0000000    
+ mismatching:          69          60   0.00000000       7.00000000    
+ mismatching:          70          69   19.0000000       0.00000000    
+ mismatching:          71          69   14.0000000       0.00000000    
+ mismatching:         112          55   0.00000000       1.00000000    
+ mismatching:         112          56   0.00000000       1.00000000    
+ mismatching:         113         108   3.00000000       0.00000000    
+ mismatching:         113         112   12.0000000       0.00000000    
+ mismatching:         114         112   2.00000000       0.00000000    
+ selectset done           2
+ mismatch          19   98.0000000       96.0000000    
+ mismatch          20   88.0000000       85.0000000    
+ mismatch          25   586.000000       601.000000    
+ mismatch          26   105.000000       88.0000000    
+ mismatch          27   110.000000       106.000000    
+ mismatch          28   294.000000       279.000000    
+ mismatch          55   165.000000       164.000000    
+ mismatch          56   172.000000       171.000000    
+ mismatch          60   89.0000000       82.0000000    
+ mismatch          69   316.000000       382.000000    
+ mismatch          70   132.000000       113.000000    
+ mismatch          71   263.000000       249.000000    
+ mismatch         108   404.000000       407.000000    
+ mismatch         112   586.000000       602.000000    
+ mismatch         113   216.000000       201.000000    
+ mismatch         114   121.000000       119.000000    
+ eigen done           2
+ tau          11  0.105821200             126
+ #popped          12           3
+ #selectset contacts        2671
+ mismatching:          25          19   0.00000000       2.00000000    
+ mismatching:          25          20   0.00000000       3.00000000    
+ mismatching:          26          25   9.00000000       0.00000000    
+ mismatching:          27          25   1.00000000       0.00000000    
+ selectset done           3
+ mismatch          19   98.0000000       96.0000000    
+ mismatch          20   88.0000000       85.0000000    
+ mismatch          25   124.000000       139.000000    
+ mismatch          26   95.0000000       86.0000000    
+ mismatch          27   89.0000000       88.0000000    
+ eigen done           3
+ tau          13  0.240498483             116
+ #popped          14           3
+ #selectset contacts        2671
+ mismatching:          25          19   0.00000000       2.00000000    
+ mismatching:          25          20   0.00000000       3.00000000    
+ selectset done           3
+ mismatch          19   83.0000000       81.0000000    
+ mismatch          20   88.0000000       85.0000000    
+ mismatch          25   124.000000       129.000000    
+ eigen done           3
+ tau          15   1.26371360             102
+ #popped          13           2
+ #selectset contacts        2671
+ mismatching:          34          25   0.00000000       7.00000000    
+ mismatching:          35          34   19.0000000       0.00000000    
+ mismatching:          36          34   14.0000000       0.00000000    
+ mismatching:          77          20   0.00000000       1.00000000    
+ mismatching:          77          21   0.00000000       1.00000000    
+ mismatching:          78          73   3.00000000       0.00000000    
+ mismatching:          78          77   12.0000000       0.00000000    
+ mismatching:          79          77   2.00000000       0.00000000    
+ selectset done           2
+ mismatch          20   165.000000       164.000000    
+ mismatch          21   166.000000       165.000000    
+ mismatch          25   88.0000000       81.0000000    
+ mismatch          34   276.000000       316.000000    
+ mismatch          35   109.000000       90.0000000    
+ mismatch          36   219.000000       205.000000    
+ mismatch          73   324.000000       327.000000    
+ mismatch          77   466.000000       482.000000    
+ mismatch          78   216.000000       201.000000    
+ mismatch          79   121.000000       119.000000    
+ eigen done           2
+ tau          17  0.109308146             200
+ #popped          18           3
+ #selectset contacts        2671
+ mismatching:          34          25   0.00000000       7.00000000    
+ mismatching:          35          34   19.0000000       0.00000000    
+ mismatching:          36          34   14.0000000       0.00000000    
+ selectset done           3
+ mismatch          25   87.0000000       80.0000000    
+ mismatch          34   190.000000       230.000000    
+ mismatch          35   109.000000       90.0000000    
+ mismatch          36   219.000000       205.000000    
+ eigen done           3
+ tau          19  0.327469885             188
+ #popped          20           3
+ #selectset contacts        2671
+ selectset done           3
+ eigen done           3
+ tau          21   1.88189340             165
+ #popped          23           3
+ #selectset contacts        2671
+ selectset done           3
+ eigen done           3
+ tau          23   0.00000000    
+ #popped          19           2
+ #selectset contacts        2671
+ mismatching:          33          28   3.00000000       0.00000000    
+ mismatching:          33          32   12.0000000       0.00000000    
+ mismatching:          34          32   2.00000000       0.00000000    
+ selectset done           2
+ mismatch          28   188.000000       191.000000    
+ mismatch          32   262.000000       276.000000    
+ mismatch          33   195.000000       180.000000    
+ mismatch          34   90.0000000       88.0000000    
+ eigen done           2
+ tau          23  0.958940029             216
+ #popped          25           2
+ #selectset contacts        2671
+ mismatching:          17          12   3.00000000       0.00000000    
+ mismatching:          17          16   12.0000000       0.00000000    
+ mismatching:          18          16   2.00000000       0.00000000    
+ selectset done           2
+ mismatch          12   188.000000       191.000000    
+ mismatch          16   262.000000       276.000000    
+ mismatch          17   195.000000       180.000000    
+ mismatch          18   90.0000000       88.0000000    
+ eigen done           2
+ tau          25   0.00000000    
+ #popped           5           1
+ #selectset contacts        2671
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped           3           0
+ #selectset contacts        2671
+ selectset done           0
+ eigen done           0
+ tau          25   1.03779769              64         136
+ #popped          26           0
+ #selectset contacts        2671
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ mismatching:          13           9   0.00000000       2.00000000    
+ mismatching:          24          23   11.0000000       0.00000000    
+ mismatching:          26          23   4.00000000       0.00000000    
+ mismatching:         116         110   0.00000000       2.00000000    
+ mismatching:         116         111   0.00000000       3.00000000    
+ mismatching:         117         116   9.00000000       0.00000000    
+ mismatching:         118         116   1.00000000       0.00000000    
+ mismatching:         181          13   2.00000000       0.00000000    
+ mismatching:         189         117   0.00000000       8.00000000    
+ mismatching:         189         118   0.00000000       3.00000000    
+ mismatching:         189         119   0.00000000       15.0000000    
+ mismatching:         189         180   0.00000000       7.00000000    
+ mismatching:         190         189   19.0000000       0.00000000    
+ mismatching:         191         189   14.0000000       0.00000000    
+ mismatching:         228          26   0.00000000       2.00000000    
+ mismatching:         232         175   0.00000000       1.00000000    
+ mismatching:         232         176   0.00000000       1.00000000    
+ mismatching:         233         228   3.00000000       0.00000000    
+ mismatching:         233         232   12.0000000       0.00000000    
+ mismatching:         234         232   2.00000000       0.00000000    
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+           0
+         237
+         237  residues read 4XIX.dssp                                                   
+  exclude short helix          10          12
+  exclude short helix          16          19
+  grow short strand          27          28
+  grow short strand          37          38
+  grow short strand          45          47
+  grow short strand          55          58
+  grow short strand          64          67
+  grow short strand          73          76
+  grow short strand          95          96
+  grow short strand         149         151
+  exclude short helix         158         161
+  grow short strand         198         199
+  grow short strand         234         236
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  7  8  9 10 13 14 15 16  3  5  6  4 11 12
+   2     1  4  5 13  1  2  7  8  9 10 13 14 15 16  3  5  6
+   3     1  0  0  3  4 11 12
+   4     2  6  7 10  1  2  7  8  9 10 13 14 15 16
+   5     2  0  0  3  3  5  6
+   6     4  0  0  2  1  2
+   7     4 10 11  8  7  8  9 10 13 14 15 16
+   8     0  0  0  0
+   9     0  0  0  2  1  2
+  10     7  0  0  1  7
+  11     7 12 13  7  8  9 10 13 14 15 16
+  12    11 14 15  3  8  9 10
+  13    11 18 19  4 13 14 15 16
+  14    12 16 17  2  8  9
+  15    12  0  0  1 10
+  16    14  0  0  1  8
+  17    14  0  0  1  9
+  18    13 20 21  3 13 14 15
+  19    13  0  0  1 16
+  20    18  0  0  1 13
+  21    18  0  0  2 14 15
+  22     0  0  0  0
+  23     0  0  0  1 13
+  24     0  0  0  1 16
+  25     0  0  0  0
+  26     0  0  0  3  4 11 12
+  27     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 13  3  1  3  5 10 13 16
+   3 -   1  0  0  3  2  4  4 11 12
+   4 -   2  6  7 10  3  1  2  7 10 13 16
+   5 -   2  0  0  3  2  3  3  5  6
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  8  2  7 10 13 16
+   8 -   7  0  0  1  1  7  7
+   9 -   7 10 11  7  2  8 10 13 16
+  10 -   9 12 13  3  1  8 10
+  11 -   9 16 17  4  1 13 16
+  12 -  10 14 15  2  1  8  9
+  13 -  10  0  0  1  1 10 10
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  1  1  9  9
+  16 -  11 18 19  3  1 13 15
+  17 -  11  0  0  1  1 16 16
+  18 -  16  0  0  1  1 13 13
+  19 -  16  0  0  2  1 14 15
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            238
+Total number of atoms read in:              2020
+Total number of ignored atom records:       1696
+ HEADER    LYASE                                   08-JAN-15   4XIX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSINGER,     
+  Reading DSSP file
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2157
+ selectset done           0
+ eigen done           0
+ tau           1   2.74736524              15
+ #popped           3           0
+ #selectset contacts        2157
+ selectset done           0
+ eigen done           0
+ tau           3   1.34994197              51          70         125         161         199         221
+ #popped           4           1
+ #selectset contacts        2157
+ selectset done           1
+ eigen done           1
+ tau           5  0.596069992              39          87
+ #popped           6           2
+ #selectset contacts        2157
+ selectset done           2
+ eigen done           2
+ tau           7   1.25961232             125         173
+ #popped           8           2
+ #selectset contacts        2157
+ selectset done           2
+ eigen done           2
+ tau           9  0.696282268              29          39
+ #popped          10           2
+ #selectset contacts        2157
+ selectset done           2
+ eigen done           2
+ tau          11  0.471058726             199
+ #popped          12           2
+ #selectset contacts        2157
+ selectset done           2
+ eigen done           2
+ tau          13  0.202765003             188
+ #popped          14           2
+ #selectset contacts        2157
+ selectset done           2
+ eigen done           2
+ tau          15   1.44083631              29         125
+ #popped          16           3
+ #selectset contacts        2157
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          17           2
+ #selectset contacts        2157
+ selectset done           2
+ eigen done           2
+ tau          17  0.549005389             103
+ #popped          19           2
+ #selectset contacts        2157
+ selectset done           2
+ eigen done           2
+ tau          19  0.176099688             115
+ #popped           7           1
+ #selectset contacts        2157
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           5           0
+ #selectset contacts        2157
+ selectset done           0
+ eigen done           0
+ tau          21   1.76418984              70         137         161
+ #popped          22           1
+ #selectset contacts        2157
+ selectset done           1
+ eigen done           1
+ tau          23  0.535113215             151
+ #popped          24           1
+ #selectset contacts        2157
+ selectset done           1
+ eigen done           1
+ tau          25  0.621337116              70
+ #popped          23           0
+ #selectset contacts        2157
+ selectset done           0
+ eigen done           0
+ tau          27  0.862934470             209
+ #popped          28           0
+ #selectset contacts        2157
+ selectset done           0
+ eigen done           0
+ tau          29  0.424771488             137
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+           0
+         238
+         238  residues read 4XIX.dssp                                                   
+  exclude short helix          11          13
+  exclude short helix          17          20
+  grow short strand          28          29
+  grow short strand          38          39
+  grow short strand          46          49
+  grow short strand          56          59
+  grow short strand          65          68
+  grow short strand          73          77
+  grow short strand          96          97
+  grow short strand         150         152
+  exclude short helix         159         162
+  grow short strand         199         200
+  grow short strand         235         237
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 16  1 13  8  9 10 14 15  2  3  6  7  4  5 11 12 16
+   2     0  0  0  0
+   3     0  0  0 16  1 13  8  9 10 14 15  2  3  6  7  4  5 11 12 16
+   4     1  6  7 11  1 13  8  9 10 14 15  2  3  6  7
+   5     1 22 23  5  4  5 11 12 16
+   6     4 10 11  8  1 13  8  9 10 14 15  2
+   7     4  0  0  3  3  6  7
+   8     0  0  0  8  1 13  8  9 10 14 15  2
+   9     0  0  0  0
+  10     6 14 15  7  1 13  8  9 10 14 15
+  11     6  0  0  1  2
+  12     0  0  0  7  1 13  8  9 10 14 15
+  13     0  0  0  0
+  14    10 16 17  5  1 13  8  9 10
+  15    10  0  0  2 14 15
+  16    14  0  0  2  1 13
+  17    14 18 19  3  8  9 10
+  18    17  0  0  1  8
+  19    17 20 21  2  9 10
+  20    19  0  0  1  9
+  21    19  0  0  1 10
+  22     5 26 27  4  4  5 11 12
+  23     5  0  0  1 16
+  24     0  0  0  4  4  5 11 12
+  25     0  0  0  0
+  26    22  0  0  2  4  5
+  27    22  0  0  2 11 12
+  28     0  0  0  1 16
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 -   1  4  5 11  3  1  3  6 10 13 15
+   3 -   1 16 17  5  3  4  5 11 12 16 16
+   4 -   2  6  7  8  3  1  2  8 10 13 15
+   5 -   2  0  0  3  2  3  3  6  7
+   6 -   4  8  9  7  3  1  1  8 10 13 15
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  5  3  1  1  8 10 13 13
+   9 -   6  0  0  2  1 14 15
+  10 -   8  0  0  2  2  1  1 13 13
+  11 -   8 12 13  3  1  8 10
+  12 -  11  0  0  1  1  8  8
+  13 -  11 14 15  2  1  9 10
+  14 -  13  0  0  1  1  9  9
+  15 -  13  0  0  1  1 10 10
+  16 -   3 18 19  4  2  4  5 11 12
+  17 -   3  0  0  1  1 16 16
+  18 -  16  0  0  2  1  4  5
+  19 -  16  0  0  2  1 11 12
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            238
+Total number of atoms read in:              2020
+Total number of ignored atom records:       1678
+ HEADER    LYASE                                   08-JAN-15   4XIX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSINGER,     
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:          15
+  Reading DSSP file
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2154
+ selectset done           0
+ eigen done           0
+ tau           1   3.19288397              15
+ #popped           3           0
+ #selectset contacts        2154
+ selectset done           0
+ eigen done           0
+ tau           3   1.30641842              54          65         125         157         199         222
+ #popped           4           1
+ #selectset contacts        2154
+ selectset done           1
+ eigen done           1
+ tau           5  0.711966872              41          80         125         173
+ #popped           6           2
+ #selectset contacts        2154
+ selectset done           2
+ eigen done           2
+ tau           7  0.809232831              30          41
+ #popped           8           2
+ #selectset contacts        2154
+ selectset done           2
+ eigen done           2
+ tau           9  0.476829648             199
+ #popped          10           2
+ #selectset contacts        2154
+ selectset done           2
+ eigen done           2
+ tau          11  0.210270569             188
+ #popped          12           2
+ #selectset contacts        2154
+ selectset done           2
+ eigen done           2
+ tau          13   1.96982634              30          92         102         125
+ #popped          14           3
+ #selectset contacts        2154
+ selectset done           3
+ eigen done           3
+ tau          15  0.315296680              30
+ #popped          17           3
+ #selectset contacts        2154
+ selectset done           3
+ eigen done           3
+ tau          17   3.36000013             102
+ #popped          15           2
+ #selectset contacts        2154
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           7           1
+ #selectset contacts        2154
+ selectset done           1
+ eigen done           1
+ tau          19   2.17828941              80
+ #popped          20           1
+ #selectset contacts        2154
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           5           0
+ #selectset contacts        2154
+ selectset done           0
+ eigen done           0
+ tau          21  0.753770590             210
+ #popped          22           0
+ #selectset contacts        2154
+ selectset done           0
+ eigen done           0
+ tau          23   1.48391497              65         137         157
+ #popped          24           1
+ #selectset contacts        2154
+ selectset done           1
+ eigen done           1
+ tau          25  0.297067910             147
+ #popped          26           1
+ #selectset contacts        2154
+ selectset done           1
+ eigen done           1
+ tau          27  0.754088700              65
+ #popped          25           0
+ #selectset contacts        2154
+ selectset done           0
+ eigen done           0
+ tau          29  0.393684208             137
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+           0
+         238
+         238  residues read 4XIX.dssp                                                   
+  exclude short helix          11          13
+  exclude short helix          17          20
+  grow short strand          28          29
+  grow short strand          38          39
+  grow short strand          46          48
+  grow short strand          56          59
+  grow short strand          65          68
+  grow short strand          74          77
+  grow short strand          96          97
+  grow short strand         149         152
+  exclude short helix         159         162
+  grow short strand         199         201
+ crowded segment excluded!
+  grow short strand         235         237
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 15  1  8 13  7  9 10 14  2  3  5  6  4 11 12 15
+   2     0  0  0  0
+   3     0  0  0 15  1  8 13  7  9 10 14  2  3  5  6  4 11 12 15
+   4     1  6  7 11  1  8 13  7  9 10 14  2  3  5  6
+   5     1 24 25  4  4 11 12 15
+   6     4  8  9  8  1  8 13  7  9 10 14  2
+   7     4  0  0  3  3  5  6
+   8     6 12 13  7  1  8 13  7  9 10 14
+   9     6  0  0  1  2
+  10     0  0  0  7  1  8 13  7  9 10 14
+  11     0  0  0  0
+  12     8 14 15  6  1  8 13  7  9 10
+  13     8  0  0  1 14
+  14    12 16 17  3  1  8 13
+  15    12  0  0  3  7  9 10
+  16    14  0  0  1  1
+  17    14 18 19  2  8 13
+  18    17  0  0  1  8
+  19    17  0  0  1 13
+  20     0  0  0  3  3  5  6
+  21     0  0  0  0
+  22     0  0  0  4  4 11 12 15
+  23     0  0  0  0
+  24     5 26 27  3  4 11 12
+  25     5  0  0  1 15
+  26    24 28 29  2  4 11
+  27    24  0  0  1 12
+  28    26  0  0  1  4
+  29    26  0  0  1 11
+  30     0  0  0  0
+  31     0  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 -   1  4  5 11  3  1  3  5 10 13 14
+   3 -   1 16 17  4  3  4  4 11 12 15 15
+   4 -   2  6  7  8  3  1  2  7 10 13 14
+   5 -   2  0  0  3  2  3  3  5  6
+   6 -   4  8  9  7  3  1  1  7 10 13 14
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  6  3  1  1  7 10 13 13
+   9 -   6  0  0  1  1 14 14
+  10 -   8 12 13  3  3  1  1  8  8 13 13
+  11 -   8  0  0  3  2  7  7  9 10
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  2  2  8  8 13 13
+  14 -  13  0  0  1  1  8  8
+  15 -  13  0  0  1  1 13 13
+  16 -   3 18 19  3  2  4  4 11 12
+  17 -   3  0  0  1  1 15 15
+  18 -  16 20 21  2  2  4  4 11 11
+  19 -  16  0  0  1  1 12 12
+  20 -  18  0  0  1  1  4  4
+  21 -  18  0  0  1  1 11 11
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            238
+Total number of atoms read in:              2020
+Total number of ignored atom records:       1688
+ HEADER    LYASE                                   08-JAN-15   4XIX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSINGER,     
+  Reading DSSP file
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+         238  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2175
+ selectset done           0
+ eigen done           0
+ tau           1   1.29082286              52          68         125         157         199         222
+ #popped           2           1
+ #selectset contacts        2175
+ selectset done           1
+ eigen done           1
+ tau           3   2.87009859              15
+ #popped           5           1
+ #selectset contacts        2175
+ selectset done           1
+ eigen done           1
+ tau           5  0.927872717              42          83         125         172
+ #popped           6           2
+ #selectset contacts        2175
+ selectset done           2
+ eigen done           2
+ tau           7  0.865087509              30          42
+ #popped           8           2
+ #selectset contacts        2175
+ selectset done           2
+ eigen done           2
+ tau           9  0.419682115             199
+ #popped          10           2
+ #selectset contacts        2175
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        2175
+ selectset done           1
+ eigen done           1
+ tau          11   1.68071997              83
+ #popped          12           1
+ #selectset contacts        2175
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        2175
+ selectset done           0
+ eigen done           0
+ tau          13   1.50246263              68         137         157
+ #popped          14           1
+ #selectset contacts        2175
+ selectset done           1
+ eigen done           1
+ tau          15  0.313483894             147
+ #popped          16           1
+ #selectset contacts        2175
+ selectset done           1
+ eigen done           1
+ tau          17   1.02170932              68
+ #popped          15           0
+ #selectset contacts        2175
+ selectset done           0
+ eigen done           0
+ tau          19  0.924901187             209
+ #popped          20           0
+ #selectset contacts        2175
+ selectset done           0
+ eigen done           0
+ tau          21  0.381937385             137
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+           0
+         238
+         238  residues read 4XIX.dssp                                                   
+  exclude short helix          11          13
+  exclude short helix          17          20
+  grow short strand          28          29
+  grow short strand          38          39
+  grow short strand          46          48
+  grow short strand          56          59
+  grow short strand          65          68
+  grow short strand          74          77
+  grow short strand          96          97
+  grow short strand         150         152
+  exclude short helix         159         162
+  grow short strand         199         201
+ crowded segment excluded!
+  grow short strand         235         237
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  7  8  9 10 13 14  2  3  6  4  5 11 12 15
+   2     1  6  7 10  1  7  8  9 10 13 14  2  3  6
+   3     1 14 15  5  4  5 11 12 15
+   4     0  0  0  0
+   5     0  0  0 10  1  7  8  9 10 13 14  2  3  6
+   6     2  8  9  8  1  7  8  9 10 13 14  2
+   7     2  0  0  2  3  6
+   8     6  0  0  7  1  7  8  9 10 13 14
+   9     6  0  0  1  2
+  10     0  0  0  7  1  7  8  9 10 13 14
+  11     0  0  0  0
+  12     0  0  0  2  3  6
+  13     0  0  0  0
+  14     3 16 17  4  4  5 11 12
+  15     3  0  0  1 15
+  16    14 18 19  3  4  5 11
+  17    14  0  0  1 12
+  18    16  0  0  2  4  5
+  19    16  0  0  1 11
+  20     0  0  0  1 15
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1 15
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 10  3  1  3  6 10 13 14
+   3 -   1  8  9  5  3  4  5 11 12 15 15
+   4 -   2  6  7  8  3  1  2  7 10 13 14
+   5 -   2  0  0  2  2  3  3  6  6
+   6 -   4  0  0  7  3  1  1  7 10 13 14
+   7 -   4  0  0  1  1  2  2
+   8 -   3 10 11  4  2  4  5 11 12
+   9 -   3  0  0  1  1 15 15
+  10 -   8 12 13  3  2  4  5 11 11
+  11 -   8  0  0  1  1 12 12
+  12 -  10  0  0  2  1  4  5
+  13 -  10  0  0  1  1 11 11
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            239
+Total number of atoms read in:              2028
+Total number of ignored atom records:       1725
+ HEADER    LYASE                                   08-JAN-15   4XIX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSINGER,     
+  Reading DSSP file
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+         239  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau           1   3.20875859              16
+ #popped           3           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau           3   1.23457766              49          74         126         163         200         223
+ #popped           4           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau           5  0.702609003              30          84
+ #popped           6           2
+ #selectset contacts        2148
+ selectset done           2
+ eigen done           2
+ tau           7  0.410588443             126
+ #popped           8           3
+ #selectset contacts        2148
+ selectset done           3
+ eigen done           3
+ tau           9   1.26225710              30
+ #popped          11           3
+ #selectset contacts        2148
+ selectset done           3
+ eigen done           3
+ tau          11  0.392718136             104
+ #popped          12           4
+ #selectset contacts        2148
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          13           3
+ #selectset contacts        2148
+ selectset done           3
+ eigen done           3
+ tau          13  0.177486300             116
+ #popped           9           2
+ #selectset contacts        2148
+ selectset done           2
+ eigen done           2
+ tau          15  0.979519784             180         190
+ #popped          16           2
+ #selectset contacts        2148
+ selectset done           2
+ eigen done           2
+ tau          17  0.705323935             200
+ #popped          18           2
+ #selectset contacts        2148
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           7           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau          19   2.82158136              42
+ #popped           5           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau          21   1.77156019              74         138         163
+ #popped          22           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau          23  0.535160482             153
+ #popped          24           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau          25  0.901707292              74
+ #popped          26           1
+ #selectset contacts        2148
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          23           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau          27  0.868504763             210
+ #popped          28           0
+ #selectset contacts        2148
+ selectset done           0
+ eigen done           0
+ tau          29  0.398689032             138
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LYASE                                   08-JAN-15   4XIX              COMPND   2 MOLECULE: CARBONIC ANHYDRASE, ALPHA TYPE;                            SOURCE   2 ORGANISM_SCIENTIFIC: CHLAMYDOMONAS REINHARDTII;                      AUTHOR    T.HAINZL,C.GRUNDSTROM,R.BENLLOCH,D.SHEVELA,T.SHUTOVA,J.MESSI          
+           0
+         239
+         239  residues read 4XIX.dssp                                                   
+  exclude short helix          12          14
+  exclude short helix          18          21
+  grow short strand          29          30
+  grow short strand          47          50
+  grow short strand          57          60
+  grow short strand          66          69
+  grow short strand          74          78
+  grow short strand          97          98
+  exclude short helix         160         163
+  grow short strand         200         201
+  grow short strand         236         238
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 14  1  6  7  8  9 11 12 13  2  5  3  4 10 14
+   2     0  0  0  0
+   3     0  0  0 14  1  6  7  8  9 11 12 13  2  5  3  4 10 14
+   4     1  6  7 10  1  6  7  8  9 11 12 13  2  5
+   5     1 22 23  4  3  4 10 14
+   6     4  8  9  8  1  6  7  8  9 11 12 13
+   7     4  0  0  2  2  5
+   8     6 10 11  5  1  6  7  8  9
+   9     6  0  0  3 11 12 13
+  10     8  0  0  1  1
+  11     8 12 13  4  6  7  8  9
+  12    11  0  0  2  6  7
+  13    11 14 15  2  8  9
+  14    13  0  0  1  8
+  15    13  0  0  1  9
+  16     0  0  0  3 11 12 13
+  17     0  0  0  0
+  18     0  0  0  3 11 12 13
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  2  2  5
+  22     5 26 27  3  3  4 10
+  23     5  0  0  1 14
+  24     0  0  0  3  3  4 10
+  25     0  0  0  0
+  26    22  0  0  2  3  4
+  27    22  0  0  1 10
+  28     0  0  0  1 14
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1 14
+   1 +   0  2  3 14  1  1 14
+   2 -   1  4  5 10  3  1  2  5  9 11 13
+   3 -   1 14 15  4  3  3  4 10 10 14 14
+   4 -   2  6  7  8  3  1  1  6  9 11 13
+   5 -   2  0  0  2  2  2  2  5  5
+   6 -   4  8  9  5  2  1  1  6  9
+   7 -   4  0  0  3  1 11 13
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  4  1  6  9
+  10 -   9  0  0  2  1  6  7
+  11 -   9 12 13  2  1  8  9
+  12 -  11  0  0  1  1  8  8
+  13 -  11  0  0  1  1  9  9
+  14 -   3 16 17  3  2  3  4 10 10
+  15 -   3  0  0  1  1 14 14
+  16 -  14  0  0  2  1  3  4
+  17 -  14  0  0  1  1 10 10
+
+ CHAIN : 4XIXA
+ CHAIN : 4XIXB
+ CHAIN : 4XIXC
+ CHAIN : 4XIXD
+ CHAIN : 4XIXE
+ CHAIN : 4XIXF
+ CHAIN : 4XIXG
+ CHAIN : 4XIXH
+

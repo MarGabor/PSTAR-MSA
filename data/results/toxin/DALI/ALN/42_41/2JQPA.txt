@@ -1,0 +1,33 @@
+# Job: toxin
+# Query: 2JQPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  7ULS-A  7.7  3.1   64    67   36   MOLECULE: MUSCARINIC TOXIN ALPHA;                                    
+
+# Pairwise alignments
+
+No 1: Query=2JQPA Sbjct=7ULSA Z-score=7.7
+
+DSSP  -LEEEELLLLLLLEEEELLLLLLEEEEEEEEELlLEEE-EEEEEELLLLLLLLL-LEEEE
+Query -LTCLICPEKDCQKVHTCRNEEKICVKRFYDKNqLGWR-AQRGCAVSCPKAKPN-ETVQC   57
+ident  |||             |      | |  |  |         |||  |||     ||  |
+Sbjct mLTCVTSKSIFGITTENCPDGQNLCFKKWYYLN-HRYSdITWGCAATCPKPTNVrETIHC   59
+DSSP  lLEEEEEEELLEEEEEELLLLLLEEEEEEEEEL-LEELlLEEEEELLLLLLLLLlEEEEE
+
+DSSP  ELLLLLLL
+Query CSTDKCNK   65
+ident | ||||| 
+Sbjct CETDKCNE   67
+DSSP  ELLLLLLL
+
+
+# Structural equivalences
+   1: 2JQP-A 7ULS-A     1 -  32 <=>    2 -  33   (LEU    1  - ASN   32  <=> LEU    2  - ASN   33 )                          
+   1: 2JQP-A 7ULS-A    34 -  37 <=>   34 -  37   (LEU   34  - ARG   37  <=> HIS   34  - SER   37 )                          
+   1: 2JQP-A 7ULS-A    38 -  52 <=>   39 -  53   (ALA   38  - ASN   52  <=> ILE   39  - VAL   53 )                          
+   1: 2JQP-A 7ULS-A    53 -  65 <=>   55 -  67   (GLU   53  - LYS   65  <=> GLU   55  - GLU   67 )                          
+
+# Translation-rotation matrices
+-matrix  "2JQP-A 7ULS-A  U(1,.)  -0.712888  0.031096 -0.700588           22.227262"
+-matrix  "2JQP-A 7ULS-A  U(2,.)   0.662909 -0.296035 -0.687688           -8.735763"
+-matrix  "2JQP-A 7ULS-A  U(3,.)  -0.228782 -0.954671  0.190426           12.070893"
+

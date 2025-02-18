@@ -1,0 +1,30 @@
+# Job: kunitz
+# Query: 1DEMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1ZR0-D  8.5  1.8   59    63   32   MOLECULE: CATIONIC TRYPSIN;                                          
+
+# Pairwise alignments
+
+No 1: Query=1DEMA Sbjct=1ZR0D Z-score=8.5
+
+DSSP  --LLLLHHHLLLLLLLLLLLLEEEEEEELLLLEEEEEEELLLLLLLLLLLLHHHHHHHHL
+Query --QPLRKLCILHRNPGRCYQKIPAFYYNQKKKQCEGFTWSGCGGNSNRFKTIEECRRTCI   58
+ident         | |    | |       ||      |  |   || || | | | | |   | 
+Sbjct ptGNNAEICLLPLDYGPCRALLLRYYYDRYTQSCRQFLYGGCEGNANNFYTWEACDDACW   60
+DSSP  llLLLHHHHLLLLLLLLLLLLEEEEEEELLLLEEEEEEELLLLLLLLLLLLHHHHHHHLL
+
+DSSP  L-l
+Query R-k   60
+ident |  
+Sbjct Rie   63
+DSSP  Lll
+
+
+# Structural equivalences
+   1: 1DEM-A 1ZR0-D     1 -  59 <=>    3 -  61   (GLN    1  - ARG   59  <=> GLY   1C  - ARG   57 )                          
+
+# Translation-rotation matrices
+-matrix  "1DEM-A 1ZR0-D  U(1,.)  -0.825395 -0.251808  0.505288           76.707916"
+-matrix  "1DEM-A 1ZR0-D  U(2,.)   0.333486  0.504712  0.796274          -82.305458"
+-matrix  "1DEM-A 1ZR0-D  U(3,.)  -0.455533  0.825747 -0.332613          -11.436776"
+

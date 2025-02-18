@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 2CUPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1X63-A  8.2  5.6   70    82   29   MOLECULE: SKELETAL MUSCLE LIM-PROTEIN 1;                             
+
+# Pairwise alignments
+
+No 1: Query=2CUPA Sbjct=1X63A Z-score=8.2
+
+DSSP  ---------LLLL-LLLLLLLLLLLLLLLLEEEELLEEEELLLLLLLLLLLLLLLLLLEE
+Query ---------GSSG-SSGCVECRKPIGADSKEVHYKNRFWHDTCFRCAKCLHPLANETFVA   50
+ident               |  |  | | | |    | ||   ||  || |  |        |  
+Sbjct gssgssgkcTTREdSPKCKGCFKAIVAGDQNVEYKGTVWHKDCFTCSNCKQVIGTGSFFP   60
+DSSP  lllllllllLLLLlLLLLLLLLLLLLLLLLEEELLLLEEELLLLLLLLLLLLLLLLLEEE
+
+DSSP  ELLEEELHHHH--LLLLLLLLLllllllllllleeelllleeellllllllll
+Query KDNKILCNKCT--TREDSPKCKgcfkaivagdqnveykgtvwhkdcfsgpssg  101
+ident |     |  |        |                                  
+Sbjct KGEDFYCVTCHetKFASGPSSG-------------------------------   82
+DSSP  ELLEEEEHHHHhhHLLLLLLLL-------------------------------
+
+
+# Structural equivalences
+   1: 2CUP-A 1X63-A     1 -   4 <=>   10 -  13   (GLY    1  - GLY    4  <=> THR   10  - GLU   13 )                          
+   1: 2CUP-A 1X63-A     5 -  61 <=>   15 -  71   (SER    5  - THR   61  <=> SER   15  - HIS   71 )                          
+   1: 2CUP-A 1X63-A    62 -  70 <=>   74 -  82   (THR   62  - LYS   70  <=> LYS   74  - GLY   82 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUP-A 1X63-A  U(1,.)   0.163320  0.899898 -0.404363            1.882473"
+-matrix  "2CUP-A 1X63-A  U(2,.)  -0.983692  0.117238 -0.136400            5.924249"
+-matrix  "2CUP-A 1X63-A  U(3,.)  -0.075339  0.420045  0.904370           -9.602852"
+

@@ -1,0 +1,612 @@
+A length: 159
+B length: 165
+C length: 163
+D length: 160
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  877  CA BGLN A 259 
+ Alternate location indication is not blank or A, ignore atom:  881  CB BGLN A 259 
+ Alternate location indication is not blank or A, ignore atom:  883  CG BGLN A 259 
+ Alternate location indication is not blank or A, ignore atom:  885  CD BGLN A 259 
+ Alternate location indication is not blank or A, ignore atom:  887  OE1BGLN A 259 
+ Alternate location indication is not blank or A, ignore atom:  889  NE2BGLN A 259 
+
+Total number of residues read in:            160
+Total number of atoms read in:              1268
+Total number of ignored atom records:        119
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              COMPND   2 MOLECULE: TUMOR NECROSIS FACTOR LIGAND SUPERFAMILY MEMBER 9          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1348
+ selectset done           0
+ eigen done           0
+ tau           1  0.759300649              64         102         128         139
+ #popped           2           1
+ #selectset contacts        1348
+ selectset done           1
+ eigen done           1
+ tau           3  0.550066829              33
+ #popped           4           2
+ #selectset contacts        1348
+ selectset done           2
+ eigen done           2
+ tau           5   1.50035727              10          20
+ #popped           6           2
+ #selectset contacts        1348
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1348
+ selectset done           1
+ eigen done           1
+ tau           7  0.875460744              49
+ #popped           9           1
+ #selectset contacts        1348
+ selectset done           1
+ eigen done           1
+ tau           9   2.01422215             116         128
+ #popped          10           1
+ #selectset contacts        1348
+ selectset done           1
+ eigen done           1
+ tau          11  0.526565254             116         149
+ #popped          12           1
+ #selectset contacts        1348
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1348
+ selectset done           0
+ eigen done           0
+ tau          13   1.86907840              82          92
+ #popped          14           0
+ #selectset contacts        1348
+ selectset done           0
+ eigen done           0
+ tau          15  0.277815312              82
+ #popped          17           0
+ #selectset contacts        1348
+ selectset done           0
+ eigen done           0
+ tau          17   41.6190491             102
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              COMPND   2 MOLECULE: TUMOR NECROSIS FACTOR LIGAND SUPERFAMILY MEMBER 9          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+           0
+         160
+         160  residues read 6MKB.dssp                                                   
+  grow short strand          18          19
+  grow short strand          22          23
+  grow short strand          37          40
+  grow short strand          45          48
+  exclude short helix         136         139
+  grow short strand         140         141
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  2  4  5  6  9 12 11 10  7  8
+   2     1  4  5 10  1  3  2  4  5  6  9 12 11 10
+   3     1 16 17  2  7  8
+   4     2  6  7  3  1  3  2
+   5     2  8  9  7  4  5  6  9 12 11 10
+   6     4  0  0  2  1  3
+   7     4  0  0  1  2
+   8     5  0  0  2  4  5
+   9     5 10 11  5  6  9 12 11 10
+  10     9 12 13  4  6  9 12 11
+  11     9  0  0  1 10
+  12    10  0  0  3  6  9 12
+  13    10  0  0  1 11
+  14     0  0  0  2  7  8
+  15     0  0  0  0
+  16     3  0  0  1  7
+  17     3  0  0  1  8
+  18     0  0  0  1  8
+  19     0  0  0  0
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 10  2  1  6  9 12
+   3 -   1 14 15  2  1  7  8
+   4 -   2  6  7  3  1  1  3
+   5 -   2  8  9  7  2  4  6  9 12
+   6 -   4  0  0  2  2  1  1  3  3
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  2  1  4  5
+   9 -   5 10 11  5  2  6  6  9 12
+  10 -   9 12 13  4  3  6  6  9  9 11 12
+  11 -   9  0  0  1  1 10 10
+  12 -  10  0  0  3  3  6  6  9  9 12 12
+  13 -  10  0  0  1  1 11 11
+  14 -   3  0  0  1  1  7  7
+  15 -   3  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            165
+Total number of atoms read in:              1314
+Total number of ignored atom records:        203
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              COMPND   2 MOLECULE: TUMOR NECROSIS FACTOR LIGAND SUPERFAMILY MEMBER 9          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+         165  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1391
+ selectset done           0
+ eigen done           0
+ tau           1   1.82689595              61          77          96         109         130         144
+ #popped           2           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau           3  0.569010317              32
+ #popped           4           2
+ #selectset contacts        1391
+ selectset done           2
+ eigen done           2
+ tau           5   1.39748955              10          20
+ #popped           6           2
+ #selectset contacts        1391
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau           7  0.590330780             155
+ #popped           8           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau           9  0.871734560              49
+ #popped          11           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau          11  0.209569916              61
+ #popped          13           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau          13   5.51515150             130
+ #popped          14           1
+ #selectset contacts        1391
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1391
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              COMPND   2 MOLECULE: TUMOR NECROSIS FACTOR LIGAND SUPERFAMILY MEMBER 9          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+           0
+         165
+         165  residues read 6MKB.dssp                                                   
+  grow short strand          18          19
+  grow short strand          22          23
+  grow short strand          37          40
+  grow short strand          45          48
+  exclude short helix         139         142
+  grow short strand         143         144
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 12  1  3  2  4  5  6  7  8  9 10 11 12
+   2     0  0  0 12  1  3  2  4  5  6  7  8  9 10 11 12
+   3     0  0  0  0
+   4     1  6  7  3  1  3  2
+   5     1  8  9  9  4  5  6  7  8  9 10 11 12
+   6     4  0  0  2  1  3
+   7     4  0  0  1  2
+   8     5 10 11  8  4  5  6  7  8  9 10 11
+   9     5  0  0  1 12
+  10     8  0  0  2  4  5
+  11     8 12 13  6  6  7  8  9 10 11
+  12    11  0  0  1  6
+  13    11 14 15  5  7  8  9 10 11
+  14    13  0  0  4  7  8  9 10
+  15    13  0  0  1 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  3  1  1  3
+   3 -   1  6  7  9  1  4 12
+   4 -   2  0  0  2  2  1  1  3  3
+   5 -   2  0  0  1  1  2  2
+   6 -   3  8  9  8  1  4 11
+   7 -   3  0  0  1  1 12 12
+   8 -   6  0  0  2  1  4  5
+   9 -   6 10 11  6  1  6 11
+  10 -   9  0  0  1  1  6  6
+  11 -   9 12 13  5  1  7 11
+  12 -  11  0  0  4  1  7 10
+  13 -  11  0  0  1  1 11 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2812  CA BSER C 175 
+ Alternate location indication is not blank or A, ignore atom: 2816  CB BSER C 175 
+ Alternate location indication is not blank or A, ignore atom: 2818  OG BSER C 175 
+ Alternate location indication is not blank or A, ignore atom: 3454  CA BARG C 255 
+ Alternate location indication is not blank or A, ignore atom: 3458  CB BARG C 255 
+ Alternate location indication is not blank or A, ignore atom: 3460  CG BARG C 255 
+ Alternate location indication is not blank or A, ignore atom: 3462  CD BARG C 255 
+ Alternate location indication is not blank or A, ignore atom: 3464  NE BARG C 255 
+ Alternate location indication is not blank or A, ignore atom: 3466  CZ BARG C 255 
+ Alternate location indication is not blank or A, ignore atom: 3468  NH1BARG C 255 
+ Alternate location indication is not blank or A, ignore atom: 3470  NH2BARG C 255 
+
+Total number of residues read in:            165
+Total number of atoms read in:              1314
+Total number of ignored atom records:        176
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              COMPND   2 MOLECULE: TUMOR NECROSIS FACTOR LIGAND SUPERFAMILY MEMBER 9          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+         165  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1385
+ selectset done           0
+ eigen done           0
+ tau           1   1.77614880              61          77          96         109         130         144
+ #popped           2           1
+ #selectset contacts        1385
+ selectset done           1
+ eigen done           1
+ tau           3  0.519318998             155
+ #popped           4           1
+ #selectset contacts        1385
+ selectset done           1
+ eigen done           1
+ tau           5  0.497763366              31
+ #popped           6           2
+ #selectset contacts        1385
+ selectset done           2
+ eigen done           2
+ tau           7   1.36563873              10          20
+ #popped           8           2
+ #selectset contacts        1385
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1385
+ selectset done           1
+ eigen done           1
+ tau           9  0.988849223              51
+ #popped          10           2
+ #selectset contacts        1385
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped          11           1
+ #selectset contacts        1385
+ selectset done           1
+ eigen done           1
+ tau          11   1.88236058              61          96         119         130
+ #popped          12           2
+ #selectset contacts        1385
+ selectset done           2
+ eigen done           2
+ tau          13  0.476060182             119
+ #popped          14           2
+ #selectset contacts        1385
+ selectset done           2
+ eigen done           2
+ tau          15  0.178255126              61
+ #popped          13           1
+ #selectset contacts        1385
+ selectset done           1
+ eigen done           1
+ tau          17  0.273529679              96
+ #popped           3           0
+ #selectset contacts        1385
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              COMPND   2 MOLECULE: TUMOR NECROSIS FACTOR LIGAND SUPERFAMILY MEMBER 9          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+           0
+         165
+         165  residues read 6MKB.dssp                                                   
+  grow short strand          18          19
+  grow short strand          22          23
+  grow short strand          32          33
+  grow short strand          37          40
+  grow short strand          45          48
+  exclude short helix         139         142
+  grow short strand         143         144
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 13  1  3  2  4  5  6  7 10 12  8  9 11 13
+   2     0  0  0 13  1  3  2  4  5  6  7 10 12  8  9 11 13
+   3     0  0  0  0
+   4     1  6  7 12  1  3  2  4  5  6  7 10 12  8  9 11
+   5     1  0  0  1 13
+   6     4  8  9  3  1  3  2
+   7     4 10 11  9  4  5  6  7 10 12  8  9 11
+   8     6  0  0  2  1  3
+   9     6  0  0  1  2
+  10     7  0  0  3  4  5  6
+  11     7 12 13  6  7 10 12  8  9 11
+  12    11 14 15  3  7 10 12
+  13    11 18 19  3  8  9 11
+  14    12 16 17  2  7 10
+  15    12  0  0  1 12
+  16    14  0  0  1  7
+  17    14  0  0  1 10
+  18    13  0  0  2  8  9
+  19    13  0  0  1 11
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 12  1  1 12
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  3  1  1  3
+   5 -   2  8  9  9  1  4 12
+   6 -   4  0  0  2  2  1  1  3  3
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  3  1  4  6
+   9 -   5 10 11  6  1  7 12
+  10 -   9 12 13  3  3  7  7 10 10 12 12
+  11 -   9 16 17  3  2  8  9 11 11
+  12 -  10 14 15  2  2  7  7 10 10
+  13 -  10  0  0  1  1 12 12
+  14 -  12  0  0  1  1  7  7
+  15 -  12  0  0  1  1 10 10
+  16 -  11  0  0  2  1  8  9
+  17 -  11  0  0  1  1 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1266
+Total number of ignored atom records:        129
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              COMPND   2 MOLECULE: TUMOR NECROSIS FACTOR LIGAND SUPERFAMILY MEMBER 9          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1349
+ selectset done           0
+ eigen done           0
+ tau           1  0.676135242              64         102         129         139
+ #popped           2           1
+ #selectset contacts        1349
+ selectset done           1
+ eigen done           1
+ tau           3  0.399539948              24
+ #popped           4           2
+ #selectset contacts        1349
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1349
+ selectset done           1
+ eigen done           1
+ tau           5   2.74455452              35
+ #popped           7           1
+ #selectset contacts        1349
+ selectset done           1
+ eigen done           1
+ tau           7  0.387124658             129
+ #popped           8           2
+ #selectset contacts        1349
+ selectset done           2
+ eigen done           2
+ tau           9  0.799406588              51
+ #popped          11           2
+ #selectset contacts        1349
+ selectset done           2
+ eigen done           2
+ tau          11   2.66996002             116
+ #popped          12           2
+ #selectset contacts        1349
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           9           1
+ #selectset contacts        1349
+ selectset done           1
+ eigen done           1
+ tau          13   3.86627889             150
+ #popped           3           0
+ #selectset contacts        1349
+ selectset done           0
+ eigen done           0
+ tau          15  0.351884246              88
+ #popped          16           1
+ #selectset contacts        1349
+ selectset done           1
+ eigen done           1
+ tau          17   4.56256676              74
+ #popped          17           0
+ #selectset contacts        1349
+ selectset done           0
+ eigen done           0
+ tau          19   45.5913963             102
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN                       25-SEP-18   6MKB              COMPND   2 MOLECULE: TUMOR NECROSIS FACTOR LIGAND SUPERFAMILY MEMBER 9          SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.BITRA,D.M.ZAJONC,T.DOUKOV                                           
+           0
+         160
+         160  residues read 6MKB.dssp                                                   
+  grow short strand          18          19
+  grow short strand          22          23
+  grow short strand          37          40
+  grow short strand          45          48
+  exclude short helix         136         139
+  grow short strand         140         141
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  3  4  5  6  9 10 11 12  7  8
+   2     1  4  5 10  1  2  3  4  5  6  9 10 11 12
+   3     1 16 17  2  7  8
+   4     2  0  0  3  1  2  3
+   5     2  8  9  7  4  5  6  9 10 11 12
+   6     0  0  0  0
+   7     0  0  0  7  4  5  6  9 10 11 12
+   8     5 10 11  5  4  5  6  9 10
+   9     5 14 15  2 11 12
+  10     8  0  0  2  4  5
+  11     8 12 13  3  6  9 10
+  12    11  0  0  2  6  9
+  13    11  0  0  1 10
+  14     9  0  0  1 11
+  15     9  0  0  1 12
+  16     3  0  0  1  7
+  17     3  0  0  1  8
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  1  8
+  21     0  0  0  0
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 10  2  1  6  9 12
+   3 -   1 14 15  2  1  7  8
+   4 -   2  0  0  3  1  1  3
+   5 -   2  6  7  7  2  4  6  9 12
+   6 -   5  8  9  5  2  4  6  9 10
+   7 -   5 12 13  2  1 11 12
+   8 -   6  0  0  2  1  4  5
+   9 -   6 10 11  3  2  6  6  9 10
+  10 -   9  0  0  2  2  6  6  9  9
+  11 -   9  0  0  1  1 10 10
+  12 -   7  0  0  1  1 11 11
+  13 -   7  0  0  1  1 12 12
+  14 -   3  0  0  1  1  7  7
+  15 -   3  0  0  1  1  8  8
+
+ CHAIN : 6MKBA
+ CHAIN : 6MKBB
+ CHAIN : 6MKBC
+ CHAIN : 6MKBD
+

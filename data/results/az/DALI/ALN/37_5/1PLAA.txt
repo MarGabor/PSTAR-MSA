@@ -1,0 +1,33 @@
+# Job: az
+# Query: 1PLAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1M9W-A 15.1  1.5   94    98   48   MOLECULE: PLASTOCYANIN;                                              
+
+# Pairwise alignments
+
+No 1: Query=1PLAA Sbjct=1M9WA Z-score=15.1
+
+DSSP  --LEEEELLLLLLLLEELLEEEELLLLLEEEEELLLLLEEEEELllLLLLlLLLLLLLEE
+Query --AEVKLGSDDGGLVFSPSSFTVAAGEKITFKNNAGFPHNIVFDedEVPAgVNAEKISQP   58
+ident   | || ||| | ||| ||  |  |||     ||   ||||||                 
+Sbjct anATVKMGSDSGALVFEPSTVTIKAGEEVKWVNNKLSPHNIVFA--ADGV-DADTAAKLS   57
+DSSP  llLLLEELLLLLLLLEELLEEEELLLLEELLEELLLLLLLLEEL--LLLL-LLHHHLLLL
+
+DSSP  --EEELLLLLEEEELLLLLEEEEEELLLHHHLLLEEEEEEL
+Query --EYLNGAGETYEVTLTEKGTYKFYCEPHAGAGMKGEVTVN   97
+ident        |||    | || |||  ||||| |||| | | | 
+Sbjct hkGLAFAAGESFTSTFTEPGTYTYYCEPHRGAGMVGKVVVE   98
+DSSP  llLLLLLLLLLLLEELLLLLEEEEELHHHHHHLLEEEEEEL
+
+
+# Structural equivalences
+   1: 1PLA-A 1M9W-A     1 -  42 <=>    3 -  44   (ALA    1  - ASP   42  <=> ALA    3  - ALA   44 )                          
+   1: 1PLA-A 1M9W-A    45 -  48 <=>   45 -  48   (GLU   45  - ALA   48  <=> ALA   45  - VAL   48 )                          
+   1: 1PLA-A 1M9W-A    50 -  58 <=>   49 -  57   (VAL   50  - PRO   58  <=> ASP   49  - SER   57 )                          
+   1: 1PLA-A 1M9W-A    59 -  97 <=>   60 -  98   (GLU   59  - ASN   97  <=> GLY   60  - GLU   98 )                          
+
+# Translation-rotation matrices
+-matrix  "1PLA-A 1M9W-A  U(1,.)   0.374381 -0.044852 -0.926190          -14.060182"
+-matrix  "1PLA-A 1M9W-A  U(2,.)   0.074817  0.997034 -0.018041            9.623742"
+-matrix  "1PLA-A 1M9W-A  U(3,.)   0.924252 -0.062541  0.376626          -32.458519"
+

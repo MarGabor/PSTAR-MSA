@@ -1,0 +1,166 @@
+A length: 182
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            182
+Total number of atoms read in:              1403
+Total number of ignored atom records:        179
+ HEADER    ELECTRON TRANSPORT                      06-MAR-09   2WC1              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    I.PEREZ-DORADO,C.BITTEL,J.A.HERMOSO,N.CORTEZ,N.CARRILLO               
+  Reading DSSP file
+ HEADER    ELECTRON TRANSPORT                      06-MAR-09   2WC1              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RHODOBACTER CAPSULATUS;                         AUTHOR    I.PEREZ-DORADO,C.BITTEL,J.A.HERMOSO,N.CORTEZ,N.CARRILLO               
+         182  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1672
+ selectset done           0
+ eigen done           0
+ tau           1   1.46487975              95         113         126         171
+ #popped           2           1
+ #selectset contacts        1672
+ selectset done           1
+ eigen done           1
+ tau           3   1.42779636              56          84
+ #popped           4           2
+ #selectset contacts        1672
+ selectset done           2
+ eigen done           2
+ tau           5  0.776671410              95         126
+ #popped           6           2
+ #selectset contacts        1672
+ selectset done           2
+ eigen done           2
+ tau           7   1.11249042              10          31          95
+ #popped           8           3
+ #selectset contacts        1672
+ selectset done           3
+ eigen done           3
+ tau           9  0.401531845              56
+ #popped          10           3
+ #selectset contacts        1672
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1672
+ selectset done           2
+ eigen done           2
+ tau          11   3.51999998              31
+ #popped          12           2
+ #selectset contacts        1672
+ selectset done           2
+ eigen done           2
+ tau          13  0.857142866              21
+ #popped           5           1
+ #selectset contacts        1672
+ selectset done           1
+ eigen done           1
+ tau          15  0.892054021              72
+ #popped           3           0
+ #selectset contacts        1672
+ selectset done           0
+ eigen done           0
+ tau          17   1.04301381             156
+ #popped          18           0
+ #selectset contacts        1672
+ selectset done           0
+ eigen done           0
+ tau          19  0.594336569             113
+ #popped          21           0
+ #selectset contacts        1672
+ selectset done           0
+ eigen done           0
+ tau          21  0.517665505             140
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ELECTRON TRANSPORT                      06-MAR-09   2WC1              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: RHODOBACTER CAPSULATUS;                         AUTHOR    I.PEREZ-DORADO,C.BITTEL,J.A.HERMOSO,N.CORTEZ,N.CARRILLO               
+           0
+         182
+         182  residues read 2WC1.dssp                                                   
+  grow short strand           4           8
+  grow short strand          35          36
+ crowded segment excluded!
+  exclude short helix          37          39
+  exclude short helix          42          47
+  exclude short helix          66          68
+  grow short strand         124         126
+  grow short strand         129         130
+  grow short strand         142         143
+  grow short strand         146         147
+ crowded segment excluded!
+  grow short strand         150         152
+  exclude short helix         173         176
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  3  5  2  6  7  4  8  9 10 11
+   2     1  4  5  7  1  3  5  2  6  7  4
+   3     1 18 19  4  8  9 10 11
+   4     2  6  7  6  1  3  5  2  6  7
+   5     2  0  0  1  4
+   6     4  8  9  4  1  3  5  2
+   7     4  0  0  2  6  7
+   8     6 10 11  3  1  3  5
+   9     6  0  0  1  2
+  10     8  0  0  2  1  3
+  11     8  0  0  1  5
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  4
+  18     3 22 23  3  8  9 10
+  19     3  0  0  1 11
+  20     0  0  0  0
+  21     0  0  0  3  8  9 10
+  22    18  0  0  1  8
+  23    18  0  0  2  9 10
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  7  1  1  7
+   3 -   1 12 13  4  1  8 11
+   4 -   2  6  7  6  2  1  3  5  7
+   5 -   2  0  0  1  1  4  4
+   6 -   4  8  9  4  2  1  3  5  5
+   7 -   4  0  0  2  1  6  7
+   8 -   6 10 11  3  3  1  1  3  3  5  5
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  2  2  1  1  3  3
+  11 -   8  0  0  1  1  5  5
+  12 -   3 14 15  3  1  8 10
+  13 -   3  0  0  1  1 11 11
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  2  1  9 10
+
+ CHAIN : 2WC1A
+

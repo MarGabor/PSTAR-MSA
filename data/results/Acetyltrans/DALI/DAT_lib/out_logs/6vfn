@@ -1,0 +1,1766 @@
+A length: 167
+B length: 167
+C length: 167
+D length: 167
+E length: 167
+F length: 167
+G length: 167
+H length: 167
+I length: 167
+J length: 167
+K length: 167
+L length: 167
+# 12 chains A B C D E F G H I J K L
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1404
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau           1   1.97552311              69          80         102
+ #popped           2           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           3   1.19530642              30          52
+ #popped           4           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           5   1.25249338              11          30
+ #popped           6           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           7  0.540709436              64
+ #popped           8           3
+ #selectset contacts        1548
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           9           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           9   1.08862877              91
+ #popped           5           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          11  0.954764426              41
+ #popped           3           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          13   1.52733433             116         157
+ #popped          14           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          15  0.503973663              80
+ #popped          17           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          15           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          17  0.650406480             126         136
+ #popped          18           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  7  2  3  8 10 11  9
+   2     1  4  5  7  1  4  5  6  7  2  3
+   3     1 18 19  4  8 10 11  9
+   4     2  6  7  6  1  4  5  6  7  2
+   5     2  0  0  1  3
+   6     4  8  9  5  1  4  5  6  7
+   7     4  0  0  1  2
+   8     6  0  0  2  1  4
+   9     6 10 11  3  5  6  7
+  10     9  0  0  2  5  6
+  11     9  0  0  1  7
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  4  8 10 11  9
+  16     0  0  0  0
+  17     0  0  0  0
+  18     3  0  0  3  8 10 11
+  19     3  0  0  1  9
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  7  1  1  7
+   3 -   1 12 13  4  1  8 11
+   4 -   2  6  7  6  2  1  2  4  7
+   5 -   2  0  0  1  1  3  3
+   6 -   4  8  9  5  2  1  1  4  7
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  2  2  1  1  4  4
+   9 -   6 10 11  3  1  5  7
+  10 -   9  0  0  2  1  5  6
+  11 -   9  0  0  1  1  7  7
+  12 -   3  0  0  3  2  8  8 10 11
+  13 -   3  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1404
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1546
+ selectset done           0
+ eigen done           0
+ tau           1   1.89524376              68          81          94
+ #popped           2           1
+ #selectset contacts        1546
+ selectset done           1
+ eigen done           1
+ tau           3  0.945508480              40          53
+ #popped           4           1
+ #selectset contacts        1546
+ selectset done           1
+ eigen done           1
+ tau           5   1.32074702              11          40
+ #popped           6           2
+ #selectset contacts        1546
+ selectset done           2
+ eigen done           2
+ tau           7  0.695255637              68
+ #popped           8           2
+ #selectset contacts        1546
+ selectset done           2
+ eigen done           2
+ tau           9  0.381042570              11
+ #popped           7           1
+ #selectset contacts        1546
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1546
+ selectset done           0
+ eigen done           0
+ tau          11   1.53045571             116         157
+ #popped          12           1
+ #selectset contacts        1546
+ selectset done           1
+ eigen done           1
+ tau          13  0.848652661              81         110
+ #popped          14           1
+ #selectset contacts        1546
+ selectset done           1
+ eigen done           1
+ tau          15  0.521929860              81
+ #popped          13           0
+ #selectset contacts        1546
+ selectset done           0
+ eigen done           0
+ tau          17  0.636713743             126         136
+ #popped          18           0
+ #selectset contacts        1546
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  2  3  6  7  8 10 11  9
+   2     1  6  7  5  1  4  5  2  3
+   3     1 12 13  6  6  7  8 10 11  9
+   4     0  0  0  5  1  4  5  2  3
+   5     0  0  0  0
+   6     2 10 11  3  1  4  5
+   7     2  0  0  2  2  3
+   8     0  0  0  3  1  4  5
+   9     0  0  0  0
+  10     6  0  0  1  1
+  11     6  0  0  2  4  5
+  12     3 14 15  2  6  7
+  13     3 18 19  4  8 10 11  9
+  14    12  0  0  1  6
+  15    12  0  0  1  7
+  16     0  0  0  1  6
+  17     0  0  0  0
+  18    13  0  0  3  8 10 11
+  19    13  0  0  1  9
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  5  1  1  5
+   3 -   1  8  9  6  1  6 11
+   4 -   2  6  7  3  2  1  1  4  5
+   5 -   2  0  0  2  1  2  3
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  2  1  4  5
+   8 -   3 10 11  2  1  6  7
+   9 -   3 12 13  4  1  8 11
+  10 -   8  0  0  1  1  6  6
+  11 -   8  0  0  1  1  7  7
+  12 -   9  0  0  3  2  8  8 10 11
+  13 -   9  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1412
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau           1   1.81117535             116         157
+ #popped           2           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           3   1.56717777              69          80         101
+ #popped           4           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           5   1.22260082              11          48
+ #popped           6           3
+ #selectset contacts        1548
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           7   1.40499783              33
+ #popped           8           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           9  0.734194756              21
+ #popped           5           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          11  0.581633449              80
+ #popped          13           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          13  0.555467606             111
+ #popped           3           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          15  0.630081296             126         136
+ #popped          16           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          17  0.488958418             126
+ #popped          19           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  7  2  3  8 10 11  9
+   2     1  6  7  7  1  4  5  6  7  2  3
+   3     1 16 17  4  8 10 11  9
+   4     0  0  0  7  1  4  5  6  7  2  3
+   5     0  0  0  0
+   6     2  0  0  5  1  4  5  6  7
+   7     2  8  9  2  2  3
+   8     7  0  0  1  2
+   9     7  0  0  1  3
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  0
+  16     3 18 19  3  8 10 11
+  17     3  0  0  1  9
+  18    16  0  0  1  8
+  19    16  0  0  2 10 11
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  7  1  1  7
+   3 *   1  8  9  4  1  8 11
+   4 -   2  0  0  5  2  1  1  4  7
+   5 -   2  6  7  2  1  2  3
+   6 -   5  0  0  1  1  2  2
+   7 -   5  0  0  1  1  3  3
+   8 -   3 10 11  3  2  8  8 10 11
+   9 -   3  0  0  1  1  9  9
+  10 -   8  0  0  1  1  8  8
+  11 -   8  0  0  2  1 10 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1392
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau           1   1.94618356              69          80         102
+ #popped           2           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           3   1.43636608              85
+ #popped           4           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           5   1.02183962              11          39
+ #popped           6           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           7   1.23986554              11          52
+ #popped           8           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           9  0.414067686              64
+ #popped          10           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          11   1.44628453             141         153
+ #popped          12           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          13  0.691590011              80
+ #popped          15           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          15  0.408962280             118
+ #popped          17           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          17  0.341269433             141
+ #popped          18           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  3  2  7  8  9 10 11
+   2     1  4  5  7  1  4  5  6  3  2  7
+   3     1 16 17  4  8  9 10 11
+   4     2  6  7  6  1  4  5  6  3  2
+   5     2  0  0  1  7
+   6     4  8  9  5  1  4  5  6  3
+   7     4  0  0  1  2
+   8     6 10 11  4  1  4  5  6
+   9     6  0  0  1  3
+  10     8  0  0  2  1  4
+  11     8  0  0  2  5  6
+  12     0  0  0  4  8  9 10 11
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  4  8  9 10 11
+  16     3  0  0  1  8
+  17     3 18 19  3  9 10 11
+  18    17  0  0  2  9 10
+  19    17  0  0  1 11
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  4  1  8 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  5  2  1  1  3  6
+   7 -   4  0  0  1  1  2  2
+   8 -   6 10 11  4  2  1  1  4  6
+   9 -   6  0  0  1  1  3  3
+  10 -   8  0  0  2  2  1  1  4  4
+  11 -   8  0  0  2  1  5  6
+  12 -   3  0  0  1  1  8  8
+  13 -   3 14 15  3  1  9 11
+  14 -  13  0  0  2  1  9 10
+  15 -  13  0  0  1  1 11 11
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1412
+Total number of ignored atom records:         29
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1550
+ selectset done           0
+ eigen done           0
+ tau           1   1.67835581             116         157
+ #popped           2           1
+ #selectset contacts        1550
+ selectset done           1
+ eigen done           1
+ tau           3   1.62749827              69          80          90
+ #popped           4           2
+ #selectset contacts        1550
+ selectset done           2
+ eigen done           2
+ tau           5   1.12207806              32          52
+ #popped           6           3
+ #selectset contacts        1550
+ selectset done           3
+ eigen done           3
+ tau           7   1.26481664              11          32
+ #popped           8           4
+ #selectset contacts        1550
+ selectset done           4
+ eigen done           4
+ tau           9   0.00000000    
+ #popped           9           3
+ #selectset contacts        1550
+ selectset done           3
+ eigen done           3
+ tau           9  0.767027020              21
+ #popped           7           2
+ #selectset contacts        1550
+ selectset done           2
+ eigen done           2
+ tau          11  0.754088700              42
+ #popped           5           1
+ #selectset contacts        1550
+ selectset done           1
+ eigen done           1
+ tau          13   1.45920002              80         103
+ #popped          14           1
+ #selectset contacts        1550
+ selectset done           1
+ eigen done           1
+ tau          15  0.588642657              80
+ #popped          17           1
+ #selectset contacts        1550
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1550
+ selectset done           0
+ eigen done           0
+ tau          17  0.605364978             135
+ #popped          19           0
+ #selectset contacts        1550
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  2  3  7  8  9 10 11
+   2     1  4  5  7  1  4  5  6  2  3  7
+   3     1 18 19  4  8  9 10 11
+   4     2  6  7  6  1  4  5  6  2  3
+   5     2  0  0  1  7
+   6     4  8  9  5  1  4  5  6  2
+   7     4  0  0  1  3
+   8     6  0  0  4  1  4  5  6
+   9     6  0  0  1  2
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     0  0  0  0
+  15     0  0  0  1  7
+  16     0  0  0  0
+  17     0  0  0  0
+  18     3  0  0  2  8  9
+  19     3  0  0  2 10 11
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  7  1  1  7
+   3 *   1 10 11  4  1  8 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  5  2  1  2  4  6
+   7 -   4  0  0  1  1  3  3
+   8 -   6  0  0  4  2  1  1  4  6
+   9 -   6  0  0  1  1  2  2
+  10 -   3  0  0  2  1  8  9
+  11 -   3  0  0  2  1 10 11
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1393
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau           1   1.81597161              68          81         101
+ #popped           2           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           3   1.14130425              14          51
+ #popped           4           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           5  0.818575382              68
+ #popped           6           3
+ #selectset contacts        1548
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1548
+ selectset done           2
+ eigen done           2
+ tau           7   1.05246711              91
+ #popped           5           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau           9   1.91749001              33
+ #popped           3           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          11   1.50436342             116         157
+ #popped          12           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          13  0.625790000              81
+ #popped          15           1
+ #selectset contacts        1548
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          13           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          15  0.587395608             135
+ #popped          17           0
+ #selectset contacts        1548
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  5  7  3  6  8  9 10 11
+   2     1  4  5  6  1  2  4  5  7  3
+   3     1 12 13  5  6  8  9 10 11
+   4     2  6  7  5  1  2  4  5  7
+   5     2  0  0  1  3
+   6     4  0  0  4  1  2  4  5
+   7     4  0  0  1  7
+   8     0  0  0  0
+   9     0  0  0  1  7
+  10     0  0  0  0
+  11     0  0  0  1  3
+  12     3  0  0  1  6
+  13     3 16 17  4  8  9 10 11
+  14     0  0  0  1  6
+  15     0  0  0  0
+  16    13  0  0  2  8  9
+  17    13  0  0  2 10 11
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  2  1  5  7  7
+   3 -   1  8  9  5  2  6  6  8 11
+   4 -   2  6  7  5  3  1  2  4  5  7  7
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  4  2  1  2  4  5
+   7 -   4  0  0  1  1  7  7
+   8 -   3  0  0  1  1  6  6
+   9 -   3 10 11  4  1  8 11
+  10 -   9  0  0  2  1  8  9
+  11 -   9  0  0  2  1 10 11
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1382
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau           1   1.98751330              69          80         102
+ #popped           2           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau           3   1.29772806              85
+ #popped           4           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau           5   1.05180871              11          50
+ #popped           6           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau           7  0.399524361              64
+ #popped           8           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau           9   1.58047915              33
+ #popped          10           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau          11  0.760655165              21
+ #popped           3           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          13   1.57474422             141         153
+ #popped          14           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          15  0.656056762              80
+ #popped          17           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          17  0.444019139             117
+ #popped          19           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          19  0.314635307             141
+ #popped          20           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  2  3  7  8  9 10 11
+   2     1  4  5  7  1  4  5  6  2  3  7
+   3     1 18 19  4  8  9 10 11
+   4     2  6  7  6  1  4  5  6  2  3
+   5     2  0  0  1  7
+   6     4  8  9  4  1  4  5  6
+   7     4 10 11  2  2  3
+   8     6  0  0  2  1  4
+   9     6  0  0  2  5  6
+  10     7  0  0  1  2
+  11     7  0  0  1  3
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     0  0  0  4  8  9 10 11
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  4  8  9 10 11
+  18     3  0  0  1  8
+  19     3 20 21  3  9 10 11
+  20    19  0  0  2  9 10
+  21    19  0  0  1 11
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  7  1  1  7
+   3 -   1 12 13  4  1  8 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  4  2  1  1  4  6
+   7 -   4 10 11  2  1  2  3
+   8 -   6  0  0  2  2  1  1  4  4
+   9 -   6  0  0  2  1  5  6
+  10 -   7  0  0  1  1  2  2
+  11 -   7  0  0  1  1  3  3
+  12 -   3  0  0  1  1  8  8
+  13 -   3 14 15  3  1  9 11
+  14 -  13  0  0  2  1  9 10
+  15 -  13  0  0  1  1 11 11
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1404
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau           1   2.04298353              69          80         102
+ #popped           2           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau           3   1.22700775              85
+ #popped           4           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau           5  0.908014178              14          50
+ #popped           6           2
+ #selectset contacts        1542
+ selectset done           2
+ eigen done           2
+ tau           7  0.407892555              64
+ #popped           8           2
+ #selectset contacts        1542
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau           9   2.02313352              33
+ #popped           3           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau          11   1.59365809             116         157
+ #popped          12           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau          13  0.554588974              80
+ #popped          15           1
+ #selectset contacts        1542
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          13           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau          15  0.600880742             135
+ #popped          17           0
+ #selectset contacts        1542
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  5  6  3  7  8  9 10 11
+   2     1  4  5  7  1  2  4  5  6  3  7
+   3     1 16 17  4  8  9 10 11
+   4     2  6  7  6  1  2  4  5  6  3
+   5     2  0  0  1  7
+   6     4  8  9  5  1  2  4  5  6
+   7     4  0  0  1  3
+   8     6  0  0  3  1  2  4
+   9     6  0  0  2  5  6
+  10     0  0  0  0
+  11     0  0  0  1  3
+  12     0  0  0  0
+  13     0  0  0  4  8  9 10 11
+  14     0  0  0  0
+  15     0  0  0  0
+  16     3  0  0  2  8  9
+  17     3  0  0  2 10 11
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  7  1  1  7
+   3 *   1 10 11  4  1  8 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  5  2  1  2  4  6
+   7 -   4  0  0  1  1  3  3
+   8 -   6  0  0  3  2  1  2  4  4
+   9 -   6  0  0  2  1  5  6
+  10 -   3  0  0  2  1  8  9
+  11 -   3  0  0  2  1 10 11
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1399
+Total number of ignored atom records:          0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau           1   1.71593368              68          81         102
+ #popped           2           1
+ #selectset contacts        1539
+ selectset done           1
+ eigen done           1
+ tau           3   1.11784565              29          51
+ #popped           4           2
+ #selectset contacts        1539
+ selectset done           2
+ eigen done           2
+ tau           5   1.27264512              11          29
+ #popped           6           2
+ #selectset contacts        1539
+ selectset done           2
+ eigen done           2
+ tau           7  0.860087037              91
+ #popped           8           2
+ #selectset contacts        1539
+ selectset done           2
+ eigen done           2
+ tau           9  0.618951917              68
+ #popped          10           2
+ #selectset contacts        1539
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1539
+ selectset done           1
+ eigen done           1
+ tau          11  0.912605703              41
+ #popped           3           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau          13   1.45811701             141         153
+ #popped          14           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau          15  0.666424692              81
+ #popped          17           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau          17  0.430976421             117
+ #popped          19           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau          19  0.336257309             141
+ #popped          20           0
+ #selectset contacts        1539
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  7  2  3  6  8  9 10 11
+   2     1  4  5  6  1  4  5  7  2  3
+   3     1 16 17  5  6  8  9 10 11
+   4     2  6  7  5  1  4  5  7  2
+   5     2  0  0  1  3
+   6     4  8  9  4  1  4  5  7
+   7     4  0  0  1  2
+   8     6  0  0  3  1  4  5
+   9     6  0  0  1  7
+  10     0  0  0  3  1  4  5
+  11     0  0  0  0
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     0  0  0  5  6  8  9 10 11
+  15     0  0  0  0
+  16     3  0  0  1  6
+  17     3 18 19  4  8  9 10 11
+  18    17  0  0  1  8
+  19    17 20 21  3  9 10 11
+  20    19  0  0  2  9 10
+  21    19  0  0  1 11
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  6  2  1  5  7  7
+   3 -   1 10 11  5  2  6  6  8 11
+   4 -   2  6  7  5  3  1  2  4  5  7  7
+   5 -   2  0  0  1  1  3  3
+   6 -   4  8  9  4  3  1  1  4  5  7  7
+   7 -   4  0  0  1  1  2  2
+   8 -   6  0  0  3  2  1  1  4  5
+   9 -   6  0  0  1  1  7  7
+  10 -   3  0  0  1  1  6  6
+  11 -   3 12 13  4  1  8 11
+  12 -  11  0  0  1  1  8  8
+  13 -  11 14 15  3  1  9 11
+  14 -  13  0  0  2  1  9 10
+  15 -  13  0  0  1  1 11 11
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1400
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1538
+ selectset done           0
+ eigen done           0
+ tau           1   1.93780875              69          80         102
+ #popped           2           1
+ #selectset contacts        1538
+ selectset done           1
+ eigen done           1
+ tau           3   1.29956937              85
+ #popped           4           1
+ #selectset contacts        1538
+ selectset done           1
+ eigen done           1
+ tau           5   1.01972878              30          51
+ #popped           6           2
+ #selectset contacts        1538
+ selectset done           2
+ eigen done           2
+ tau           7  0.574610233              30
+ #popped           8           3
+ #selectset contacts        1538
+ selectset done           3
+ eigen done           3
+ tau           9   2.03114128              20
+ #popped          10           3
+ #selectset contacts        1538
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1538
+ selectset done           2
+ eigen done           2
+ tau          11  0.325119913              64
+ #popped           7           1
+ #selectset contacts        1538
+ selectset done           1
+ eigen done           1
+ tau          13  0.909011006              41
+ #popped           3           0
+ #selectset contacts        1538
+ selectset done           0
+ eigen done           0
+ tau          15   1.55728209             116         157
+ #popped          16           1
+ #selectset contacts        1538
+ selectset done           1
+ eigen done           1
+ tau          17  0.558119595              80
+ #popped          19           1
+ #selectset contacts        1538
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          17           0
+ #selectset contacts        1538
+ selectset done           0
+ eigen done           0
+ tau          19  0.643487275             126         136
+ #popped          20           0
+ #selectset contacts        1538
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  5  6  3  7  8 10 11  9
+   2     1  4  5  7  1  2  4  5  6  3  7
+   3     1 20 21  4  8 10 11  9
+   4     2  6  7  6  1  2  4  5  6  3
+   5     2  0  0  1  7
+   6     4  8  9  5  1  2  4  5  6
+   7     4  0  0  1  3
+   8     6  0  0  2  1  2
+   9     6 12 13  3  4  5  6
+  10     0  0  0  2  1  2
+  11     0  0  0  0
+  12     9  0  0  1  4
+  13     9  0  0  2  5  6
+  14     0  0  0  1  3
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  4  8 10 11  9
+  18     0  0  0  0
+  19     0  0  0  0
+  20     3  0  0  3  8 10 11
+  21     3  0  0  1  9
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  4  1  8 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  5  2  1  2  4  6
+   7 -   4  0  0  1  1  3  3
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  3  1  4  6
+  10 -   9  0  0  1  1  4  4
+  11 -   9  0  0  2  1  5  6
+  12 -   3  0  0  3  2  8  8 10 11
+  13 -   3  0  0  1  1  9  9
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1380
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau           1   1.80435634             116         157
+ #popped           2           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau           3   1.59983790              69          80         101
+ #popped           4           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau           5   1.28668761              85
+ #popped           6           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau           7   1.11029434              11          51
+ #popped           8           3
+ #selectset contacts        1526
+ selectset done           3
+ eigen done           3
+ tau           9  0.415667474              64
+ #popped          10           3
+ #selectset contacts        1526
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau          11   1.73177838              33
+ #popped          12           2
+ #selectset contacts        1526
+ selectset done           2
+ eigen done           2
+ tau          13  0.763492048              21
+ #popped           5           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau          15  0.528418303              80
+ #popped          17           1
+ #selectset contacts        1526
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          17  0.613698006             135
+ #popped          19           0
+ #selectset contacts        1526
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  2  3  7  8  9 10 11
+   2     1  6  7  7  1  4  5  6  2  3  7
+   3     1 18 19  4  8  9 10 11
+   4     0  0  0  7  1  4  5  6  2  3  7
+   5     0  0  0  0
+   6     2  8  9  6  1  4  5  6  2  3
+   7     2  0  0  1  7
+   8     6 10 11  4  1  4  5  6
+   9     6 12 13  2  2  3
+  10     8  0  0  2  1  4
+  11     8  0  0  2  5  6
+  12     9  0  0  1  2
+  13     9  0  0  1  3
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  0
+  18     3  0  0  2  8  9
+  19     3  0  0  2 10 11
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  7  1  1  7
+   3 *   1 12 13  4  1  8 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  4  2  1  1  4  6
+   7 -   4 10 11  2  1  2  3
+   8 -   6  0  0  2  2  1  1  4  4
+   9 -   6  0  0  2  1  5  6
+  10 -   7  0  0  1  1  2  2
+  11 -   7  0  0  1  1  3  3
+  12 -   3  0  0  2  1  8  9
+  13 -   3  0  0  2  1 10 11
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            167
+Total number of atoms read in:              1396
+Total number of ignored atom records:         14
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+  Reading DSSP file
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+         167  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1530
+ selectset done           0
+ eigen done           0
+ tau           1   1.83123255             116         157
+ #popped           2           1
+ #selectset contacts        1530
+ selectset done           1
+ eigen done           1
+ tau           3   1.65944326              69          80         102
+ #popped           4           2
+ #selectset contacts        1530
+ selectset done           2
+ eigen done           2
+ tau           5   1.34770155              85
+ #popped           6           2
+ #selectset contacts        1530
+ selectset done           2
+ eigen done           2
+ tau           7   1.02530193              33          52
+ #popped           8           2
+ #selectset contacts        1530
+ selectset done           2
+ eigen done           2
+ tau           9   1.21849370              12          33
+ #popped          10           3
+ #selectset contacts        1530
+ selectset done           3
+ eigen done           3
+ tau          11  0.499646634              12
+ #popped          13           3
+ #selectset contacts        1530
+ selectset done           3
+ eigen done           3
+ tau          13  0.320251167              64
+ #popped          11           2
+ #selectset contacts        1530
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        1530
+ selectset done           1
+ eigen done           1
+ tau          15  0.516194344              80
+ #popped          17           1
+ #selectset contacts        1530
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1530
+ selectset done           0
+ eigen done           0
+ tau          17  0.657476127             126         136
+ #popped          18           0
+ #selectset contacts        1530
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             05-JAN-20   6VFN              COMPND   2 MOLECULE: SPERMIDINE N1-ACETYLTRANSFERASE;                           SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS THURINGIENSIS;                         AUTHOR    S.TSIMBALYUK,A.SHORNIKOV,V.T.B.LE,M.L.KUHN,J.K.FORWOOD                
+           0
+         167
+         167  residues read 6VFN.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          24          27
+  exclude short helix          87          89
+  exclude short helix         161         166
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  4  5  6  2  3  7  8 10 11  9
+   2     1  6  7  7  1  4  5  6  2  3  7
+   3     1 18 19  4  8 10 11  9
+   4     0  0  0  7  1  4  5  6  2  3  7
+   5     0  0  0  0
+   6     2  8  9  6  1  4  5  6  2  3
+   7     2  0  0  1  7
+   8     6 10 11  5  1  4  5  6  2
+   9     6  0  0  1  3
+  10     8 12 13  4  1  4  5  6
+  11     8  0  0  1  2
+  12    10  0  0  1  1
+  13    10 14 15  3  4  5  6
+  14    13  0  0  1  4
+  15    13  0  0  2  5  6
+  16     0  0  0  0
+  17     0  0  0  0
+  18     3  0  0  3  8 10 11
+  19     3  0  0  1  9
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  7  1  1  7
+   3 *   1 14 15  4  1  8 11
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  1  1  7  7
+   6 -   4  8  9  5  2  1  2  4  6
+   7 -   4  0  0  1  1  3  3
+   8 -   6 10 11  4  2  1  1  4  6
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  3  1  4  6
+  12 -  11  0  0  1  1  4  4
+  13 -  11  0  0  2  1  5  6
+  14 -   3  0  0  3  2  8  8 10 11
+  15 -   3  0  0  1  1  9  9
+
+ CHAIN : 6VFNA
+ CHAIN : 6VFNB
+ CHAIN : 6VFNC
+ CHAIN : 6VFND
+ CHAIN : 6VFNE
+ CHAIN : 6VFNF
+ CHAIN : 6VFNG
+ CHAIN : 6VFNH
+ CHAIN : 6VFNI
+ CHAIN : 6VFNJ
+ CHAIN : 6VFNK
+ CHAIN : 6VFNL
+

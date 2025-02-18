@@ -1,0 +1,32 @@
+# Job: PDZ
+# Query: 6X1PA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6NID-B 12.6  1.7   82    87   20   MOLECULE: PERIPHERAL PLASMA MEMBRANE PROTEIN CASK;                   
+
+# Pairwise alignments
+
+No 1: Query=6X1PA Sbjct=6NIDB Z-score=12.6
+
+DSSP  -LEEEEEELLLLlLLLLEEEEEllllllllLLLLEEEEEELLLLHHHHHLLLLLLLEEEE
+Query -GPETISLHRQHgRGLGFTIAGgqgsphiaGDDGIFISKIIPDSAAKEDGRLAVGDRVLS   59
+ident                 | |                    |         | | |||    
+Sbjct gRVRLVQFQKNTdEPMGITLKM-------nELNHCIVARIMHGGMIHRQGTLHVGDEIRE   53
+DSSP  lLLEEEEEEELLlLLLLEEEEE-------lLLLLEEEEEELLLLHHHHHLLLLLLLEEEE
+
+DSSP  ELLEELLLLLHHHHHHHHLLLLLLEEEEEELL--
+Query VQGESCEKITHERAVEMLRNPASPIVLVVEHN--   91
+ident   | |    | |    |||     |         
+Sbjct INGISVANQTVEQLQKMLREMRGSITFKIVPSyr   87
+DSSP  ELLEELLLLLHHHHHHHHHHLLEEEEEEEELLll
+
+
+# Structural equivalences
+   1: 6X1P-A 6NID-B     1 -  11 <=>    2 -  12   (GLY   91  - HIS  101  <=> ARG  487  - THR  497 )                          
+   1: 6X1P-A 6NID-B    13 -  21 <=>   14 -  22   (ARG  103  - GLY  111  <=> GLU  499  - MET  507 )                          
+   1: 6X1P-A 6NID-B    30 -  91 <=>   24 -  85   (GLY  120  - ASN  181  <=> GLU  509  - SER  570 )                          
+
+# Translation-rotation matrices
+-matrix  "6X1P-A 6NID-B  U(1,.)   0.441922  0.419450  0.792948          -13.249706"
+-matrix  "6X1P-A 6NID-B  U(2,.)   0.111833  0.851290 -0.512638           29.320765"
+-matrix  "6X1P-A 6NID-B  U(3,.)  -0.890055  0.315224  0.329295          -14.587530"
+

@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1GJN-A 18.3  1.6  136   153   21   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1GJNA Z-score=18.3
+
+DSSP  -LLHHHHHHHHHHHHLLLL----LHHHHHHHHHHHLHHHHLLLLLLLL-LLHHHHLLLHH
+Query -LSADQISTVQASFDKVKG----DPVGILYAVFKADPSIMAKFTQFAG-KDLESIKGTAP   54
+ident  ||      |     ||           |   |   |    ||  |   |     |    
+Sbjct gLSDGEWQQVLNVWGKVEAdiagHGQEVLIRLFTGHPETLEKFDKFKHlKTEAEMKASED   60
+DSSP  lLLHHHHHHHHHHHHHHHLlhhhHHHHHHHHHHHHLHHHHLLLLLLLLlLLHHHHHHLHH
+
+DSSP  HHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHH-HLLLHHHHHHHHHHHHHHHHHHL-
+Query FETHANRIVGFFSKIIGELPNIEADVNTFVASHKP-RGVTHDQLNNFRAGFVSYMKAHT-  112
+ident    |          |       ||       ||          |                
+Sbjct LKKHGTVVLTALGGILKKKGHHEAELKPLAQSHATkHKIPIKYLEFISDAIIHVLHSKHp  120
+DSSP  HHHHHHHHHHHHHHHHLLLLLLHHHHHHHHHHHHHlLLLLHHHHHHHHHHHHHHHHHHLl
+
+DSSP  -LHHH-HHHHHHHHHHHHHHHHHLLL-------
+Query -DFAG-AEAAWGATLDTFFGMIFSKM-------  136
+ident  ||   |  |    |  |   |  |        
+Sbjct gDFGAdAQGAMTKALELFRNDIAAKYkelgfqg  153
+DSSP  lLLLHhHHHHHHHHHHHHHHHHHHHHhhhllll
+
+
+# Structural equivalences
+   1: 1ECN-A 1GJN-A     1 -  18 <=>    2 -  19   (LEU    1  - GLY   18  <=> LEU    2  - ALA   19 )                          
+   1: 1ECN-A 1GJN-A    19 -  43 <=>   24 -  48   (ASP   19  - GLY   43  <=> HIS   24  - HIS   48 )                          
+   1: 1ECN-A 1GJN-A    44 -  89 <=>   50 -  95   (LYS   44  - PRO   89  <=> LYS   50  - THR   95 )                          
+   1: 1ECN-A 1GJN-A    90 - 112 <=>   97 - 119   (ARG   90  - THR  112  <=> HIS   97  - HIS  119 )                          
+   1: 1ECN-A 1GJN-A   113 - 116 <=>  122 - 125   (ASP  113  - GLY  116  <=> ASP  122  - ALA  125 )                          
+   1: 1ECN-A 1GJN-A   117 - 136 <=>  127 - 146   (ALA  117  - MET  136  <=> ALA  127  - TYR  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1GJN-A  U(1,.)  -0.383067 -0.669984 -0.635910           -7.371870"
+-matrix  "1ECN-A 1GJN-A  U(2,.)   0.604761  0.338467 -0.720906           14.480096"
+-matrix  "1ECN-A 1GJN-A  U(3,.)   0.698230 -0.660728  0.275525           -5.340559"
+

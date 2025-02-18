@@ -1,0 +1,798 @@
+A length: 105
+B length: 105
+C length: 278
+D length: 275
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  240  CA BASP A  30 
+ Alternate location indication is not blank or A, ignore atom:  244  CB BASP A  30 
+ Alternate location indication is not blank or A, ignore atom:  246  CG BASP A  30 
+ Alternate location indication is not blank or A, ignore atom:  248  OD1BASP A  30 
+ Alternate location indication is not blank or A, ignore atom:  250  OD2BASP A  30 
+ Alternate location indication is not blank or A, ignore atom:  267  CA BILE A  32 
+ Alternate location indication is not blank or A, ignore atom:  271  CB BILE A  32 
+ Alternate location indication is not blank or A, ignore atom:  273  CG1BILE A  32 
+ Alternate location indication is not blank or A, ignore atom:  275  CG2BILE A  32 
+ Alternate location indication is not blank or A, ignore atom:  277  CD1BILE A  32 
+ Alternate location indication is not blank or A, ignore atom:  309  CA BARG A  37 
+ Alternate location indication is not blank or A, ignore atom:  313  CB BARG A  37 
+ Alternate location indication is not blank or A, ignore atom:  315  CG BARG A  37 
+ Alternate location indication is not blank or A, ignore atom:  317  CD BARG A  37 
+ Alternate location indication is not blank or A, ignore atom:  319  NE BARG A  37 
+ Alternate location indication is not blank or A, ignore atom:  321  CZ BARG A  37 
+ Alternate location indication is not blank or A, ignore atom:  323  NH1BARG A  37 
+ Alternate location indication is not blank or A, ignore atom:  325  NH2BARG A  37 
+ Alternate location indication is not blank or A, ignore atom:  831  CA BVAL A 103 
+ Alternate location indication is not blank or A, ignore atom:  835  CB BVAL A 103 
+ Alternate location indication is not blank or A, ignore atom:  837  CG1BVAL A 103 
+ Alternate location indication is not blank or A, ignore atom:  839  CG2BVAL A 103 
+
+Total number of residues read in:            109
+Total number of atoms read in:               859
+Total number of ignored atom records:        125
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 8;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+         109  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         841
+ selectset done           0
+ eigen done           0
+ tau           1   2.48800111              47          72
+ #popped           2           1
+ #selectset contacts         841
+ selectset done           1
+ eigen done           1
+ tau           3   1.89778173              22          37          82          97
+ #popped           4           2
+ #selectset contacts         841
+ selectset done           2
+ eigen done           2
+ tau           5   1.00005233              47
+ #popped           6           3
+ #selectset contacts         841
+ selectset done           3
+ eigen done           3
+ tau           7  0.292682379              22
+ #popped           8           3
+ #selectset contacts         841
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts         841
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts         841
+ selectset done           1
+ eigen done           1
+ tau           9  0.911631942              37
+ #popped           3           0
+ #selectset contacts         841
+ selectset done           0
+ eigen done           0
+ tau          11   1.02538073              58
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 8;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+           0
+         109
+         109  residues read 3HH2.dssp                                                   
+  grow short strand          16          18
+  grow short strand          21          23
+ crowded segment excluded!
+  exclude short helix          24          27
+  grow short strand          32          34
+  grow short strand          37          39
+ crowded segment excluded!
+  grow short strand          42          44
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  3  5  6  2  4
+   2     1  4  5  5  1  3  5  6  2
+   3     1  0  0  1  4
+   4     2  6  7  4  1  3  5  6
+   5     2  0  0  1  2
+   6     4  8  9  2  1  3
+   7     4  0  0  2  5  6
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  4
+   1 *   0  2  3  6  1  1  6
+   2 -   1  4  5  5  2  1  3  5  6
+   3 -   1  0  0  1  1  4  4
+   4 -   2  6  7  4  3  1  1  3  3  5  6
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4  0  0  2  1  5  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1117  CA BASP B  30 
+ Alternate location indication is not blank or A, ignore atom: 1121  CB BASP B  30 
+ Alternate location indication is not blank or A, ignore atom: 1123  CG BASP B  30 
+ Alternate location indication is not blank or A, ignore atom: 1125  OD1BASP B  30 
+ Alternate location indication is not blank or A, ignore atom: 1127  OD2BASP B  30 
+ Alternate location indication is not blank or A, ignore atom: 1144  CA BILE B  32 
+ Alternate location indication is not blank or A, ignore atom: 1148  CB BILE B  32 
+ Alternate location indication is not blank or A, ignore atom: 1150  CG1BILE B  32 
+ Alternate location indication is not blank or A, ignore atom: 1152  CG2BILE B  32 
+ Alternate location indication is not blank or A, ignore atom: 1154  CD1BILE B  32 
+ Alternate location indication is not blank or A, ignore atom: 1186  CA BARG B  37 
+ Alternate location indication is not blank or A, ignore atom: 1190  CB BARG B  37 
+ Alternate location indication is not blank or A, ignore atom: 1192  CG BARG B  37 
+ Alternate location indication is not blank or A, ignore atom: 1194  CD BARG B  37 
+ Alternate location indication is not blank or A, ignore atom: 1196  NE BARG B  37 
+ Alternate location indication is not blank or A, ignore atom: 1198  CZ BARG B  37 
+ Alternate location indication is not blank or A, ignore atom: 1200  NH1BARG B  37 
+ Alternate location indication is not blank or A, ignore atom: 1202  NH2BARG B  37 
+ Alternate location indication is not blank or A, ignore atom: 1712  CA BVAL B 103 
+ Alternate location indication is not blank or A, ignore atom: 1716  CB BVAL B 103 
+ Alternate location indication is not blank or A, ignore atom: 1718  CG1BVAL B 103 
+ Alternate location indication is not blank or A, ignore atom: 1720  CG2BVAL B 103 
+
+Total number of residues read in:            109
+Total number of atoms read in:               859
+Total number of ignored atom records:        103
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 8;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+         109  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         842
+ selectset done           0
+ eigen done           0
+ tau           1   2.64282942              53          70
+ #popped           2           0
+ #selectset contacts         842
+ selectset done           0
+ eigen done           0
+ tau           3   2.11968684              22          37          81          99
+ #popped           4           1
+ #selectset contacts         842
+ selectset done           1
+ eigen done           1
+ tau           5  0.764498532              53
+ #popped           6           2
+ #selectset contacts         842
+ selectset done           2
+ eigen done           2
+ tau           7  0.415714383              22
+ #popped           8           2
+ #selectset contacts         842
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts         842
+ selectset done           1
+ eigen done           1
+ tau           9  0.191549286              81
+ #popped           5           0
+ #selectset contacts         842
+ selectset done           0
+ eigen done           0
+ tau          11  0.959232628              37
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 8;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+           0
+         109
+         109  residues read 3HH2.dssp                                                   
+  grow short strand          16          18
+  grow short strand          21          23
+ crowded segment excluded!
+  exclude short helix          24          27
+  grow short strand          32          34
+  grow short strand          37          39
+ crowded segment excluded!
+  grow short strand          42          44
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  3  5  6  2  4
+   2     1  4  5  5  1  3  5  6  2
+   3     1  0  0  1  4
+   4     2  6  7  4  1  3  5  6
+   5     2  0  0  1  2
+   6     4  8  9  2  1  3
+   7     4 10 11  2  5  6
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     7  0  0  1  5
+  11     7  0  0  1  6
+  12     0  0  0  1  2
+  13     0  0  0  0
+   1 +   0  2  3  6  1  1  6
+   2 *   1  4  5  5  2  1  3  5  6
+   3 =   1  0  0  1  1  4  4
+   4 -   2  6  7  4  3  1  1  3  3  5  6
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4 10 11  2  1  5  6
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+  10 -   7  0  0  1  1  5  5
+  11 -   7  0  0  1  1  6  6
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            278
+Total number of atoms read in:              2073
+Total number of ignored atom records:        273
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+  calculate residue outside grid:          38
+  calculate residue outside grid:          39
+  calculate residue outside grid:          40
+  calculate residue outside grid:          41
+  calculate residue outside grid:          42
+  calculate residue outside grid:          48
+  calculate residue outside grid:          49
+  calculate residue outside grid:          58
+  calculate residue outside grid:         207
+  calculate residue outside grid:         209
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 8;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+         278  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2252
+ selectset done           0
+ eigen done           0
+ tau           1   12.9485397             136
+ #popped           2           1
+ #selectset contacts        2252
+ selectset done           1
+ eigen done           1
+ tau           3   8.04584503              91
+ #popped           4           2
+ #selectset contacts        2252
+ selectset done           2
+ eigen done           2
+ tau           5   3.00067449              62
+ #popped           6           3
+ #selectset contacts        2252
+ selectset done           3
+ eigen done           3
+ tau           7   1.11804855              41          52
+ #popped           8           3
+ #selectset contacts        2252
+ selectset done           3
+ eigen done           3
+ tau           9  0.404072195              18          41
+ #popped          10           4
+ #selectset contacts        2252
+ selectset done           4
+ eigen done           4
+ tau          11  0.712735057              18
+ #popped          11           3
+ #selectset contacts        2252
+ selectset done           3
+ eigen done           3
+ tau          13  0.903256714              29
+ #popped           7           2
+ #selectset contacts        2252
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2252
+ selectset done           1
+ eigen done           1
+ tau          15   1.03634930             101
+ #popped          17           1
+ #selectset contacts        2252
+ selectset done           1
+ eigen done           1
+ tau          17  0.864536941             111         126
+ #popped          18           1
+ #selectset contacts        2252
+ selectset done           1
+ eigen done           1
+ tau          19  0.309302330             111
+ #popped           3           0
+ #selectset contacts        2252
+ selectset done           0
+ eigen done           0
+ tau          21   2.88715458             241
+ #popped          22           1
+ #selectset contacts        2252
+ selectset done           1
+ eigen done           1
+ tau          23   4.73615837             169
+ #popped          24           2
+ #selectset contacts        2252
+ selectset done           2
+ eigen done           2
+ tau          25  0.540189087             149         159
+ #popped          26           2
+ #selectset contacts        2252
+ selectset done           2
+ eigen done           2
+ tau          27   0.00000000    
+ #popped          25           1
+ #selectset contacts        2252
+ selectset done           1
+ eigen done           1
+ tau          27   2.50214982             206
+ #popped          28           2
+ #selectset contacts        2252
+ selectset done           2
+ eigen done           2
+ tau          29   1.26614261             181         196
+ #popped          30           2
+ #selectset contacts        2252
+ selectset done           2
+ eigen done           2
+ tau          31  0.302284300             181
+ #popped          29           1
+ #selectset contacts        2252
+ selectset done           1
+ eigen done           1
+ tau          33   0.00000000    
+ #popped          23           0
+ #selectset contacts        2252
+ selectset done           0
+ eigen done           0
+ tau          33   1.00556040             253         268
+ #popped          34           0
+ #selectset contacts        2252
+ selectset done           0
+ eigen done           0
+ tau          35  0.332814842             253
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 8;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+           0
+         278
+         278  residues read 3HH2.dssp                                                   
+  exclude short helix          23          26
+  grow short strand          35          37
+  grow short strand          60          61
+  grow short strand          75          79
+  grow short strand          85          89
+  grow short strand         102         104
+  grow short strand         109         110
+  grow short strand         129         132
+  grow short strand         149         152
+  grow short strand         158         161
+  grow short strand         172         174
+  grow short strand         179         180
+  grow short strand         199         202
+  exclude short helix         211         213
+  grow short strand         221         225
+  grow short strand         230         234
+  grow short strand         244         246
+  grow short strand         251         252
+  grow short strand         271         274
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 23  1  2  5  3  4  6  7  8  9 11 10 12 13 14 15 17 16 18 19 20 21 23 22
+   2     1  4  5 11  1  2  5  3  4  6  7  8  9 11 10
+   3     1 22 23 12 12 13 14 15 17 16 18 19 20 21 23 22
+   4     2  6  7  7  1  2  5  3  4  6  7
+   5     2 18 19  4  8  9 11 10
+   6     4  8  9  5  1  2  5  3  4
+   7     4  0  0  2  6  7
+   8     6 10 11  4  1  2  5  3
+   9     6  0  0  1  4
+  10     8 12 13  3  1  2  5
+  11     8  0  0  1  3
+  12    10  0  0  2  1  2
+  13    10  0  0  1  5
+  14     0  0  0  0
+  15     0  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  4  8  9 11 10
+  18     5 20 21  3  8  9 11
+  19     5  0  0  1 10
+  20    18  0  0  2  8  9
+  21    18  0  0  1 11
+  22     3 24 25  8 12 13 14 15 17 16 18 19
+  23     3 34 35  4 20 21 23 22
+  24    22  0  0  2 12 13
+  25    22 28 29  6 14 15 17 16 18 19
+  26     0  0  0  0
+  27     0  0  0  2 12 13
+  28    25 30 31  4 14 15 17 16
+  29    25  0  0  2 18 19
+  30    28 32 33  3 14 15 17
+  31    28  0  0  1 16
+  32    30  0  0  2 14 15
+  33    30  0  0  1 17
+  34    23 36 37  3 20 21 23
+  35    23  0  0  1 22
+  36    34  0  0  2 20 21
+  37    34  0  0  1 23
+   1 +   0  2  3 23  1  1 23
+   2 +   1  4  5 11  1  1 11
+   3 +   1 18 19 12  1 12 23
+   4 +   2  6  7  7  1  1  7
+   5 *   2 14 15  4  1  8 11
+   6 *   4  8  9  5  1  1  5
+   7 =   4  0  0  2  1  6  7
+   8 -   6 10 11  4  2  1  3  5  5
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  3  2  1  2  5  5
+  11 -   8  0  0  1  1  3  3
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  1  1  5  5
+  14 -   5 16 17  3  2  8  9 11 11
+  15 -   5  0  0  1  1 10 10
+  16 -  14  0  0  2  1  8  9
+  17 -  14  0  0  1  1 11 11
+  18 +   3 20 21  8  1 12 19
+  19 =   3 28 29  4  1 20 23
+  20 =  18  0  0  2  1 12 13
+  21 *  18 22 23  6  1 14 19
+  22 -  21 24 25  4  1 14 17
+  23 -  21  0  0  2  1 18 19
+  24 -  22 26 27  3  2 14 15 17 17
+  25 -  22  0  0  1  1 16 16
+  26 -  24  0  0  2  1 14 15
+  27 -  24  0  0  1  1 17 17
+  28 -  19 30 31  3  2 20 21 23 23
+  29 -  19  0  0  1  1 22 22
+  30 -  28  0  0  2  1 20 21
+  31 -  28  0  0  1  1 23 23
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            275
+Total number of atoms read in:              2031
+Total number of ignored atom records:        239
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+  calculate residue outside grid:          24
+  calculate residue outside grid:          36
+  calculate residue outside grid:          38
+  calculate residue outside grid:          39
+  calculate residue outside grid:          40
+  calculate residue outside grid:          41
+  calculate residue outside grid:          42
+  calculate residue outside grid:          45
+  calculate residue outside grid:          48
+  calculate residue outside grid:          49
+  calculate residue outside grid:          58
+  calculate residue outside grid:          60
+  Reading DSSP file
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 8;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+         275  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau           1   13.7158833             133
+ #popped           2           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau           3   4.89174175              92
+ #popped           4           2
+ #selectset contacts        2233
+ selectset done           2
+ eigen done           2
+ tau           5   2.74969530              62
+ #popped           6           3
+ #selectset contacts        2233
+ selectset done           3
+ eigen done           3
+ tau           7   1.08741713              41          52
+ #popped           8           3
+ #selectset contacts        2233
+ selectset done           3
+ eigen done           3
+ tau           9  0.412818342              18          41
+ #popped          10           4
+ #selectset contacts        2233
+ selectset done           4
+ eigen done           4
+ tau          11  0.701421857              18
+ #popped          11           3
+ #selectset contacts        2233
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2233
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          13  0.664060175             113         123
+ #popped          14           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          15  0.324272782             113
+ #popped          16           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          17  0.446751267             102
+ #popped           3           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau          19   5.19964600             166
+ #popped          20           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          21  0.509576440             146         156
+ #popped          22           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau          23   3.14271855             204
+ #popped          24           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          25   1.11273694             179         194
+ #popped          26           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          27  0.288816214             179
+ #popped          25           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau          29   1.74205947             239
+ #popped          30           1
+ #selectset contacts        2233
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          31           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau          31  0.738373101             253         265
+ #popped          32           0
+ #selectset contacts        2233
+ selectset done           0
+ eigen done           0
+ tau          33  0.337133795             253
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SIGNALING PROTEIN/CYTOKINE              14-MAY-09   3HH2              COMPND   2 MOLECULE: GROWTH/DIFFERENTIATION FACTOR 8;                           SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    J.N.CASH,T.B.THOMPSON                                                 
+           0
+         275
+         275  residues read 3HH2.dssp                                                   
+  exclude short helix          23          26
+  grow short strand          35          37
+  grow short strand          60          61
+  grow short strand          75          79
+  grow short strand          82          86
+  grow short strand          99         101
+  grow short strand         106         107
+  grow short strand         126         129
+  grow short strand         146         149
+  grow short strand         155         158
+  grow short strand         170         172
+  grow short strand         177         178
+  grow short strand         197         200
+  exclude short helix         209         211
+  grow short strand         219         223
+  grow short strand         228         232
+  grow short strand         242         244
+  grow short strand         249         250
+  grow short strand         269         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 23  1  2  5  3  4  6  7  8  9 11 10 12 13 14 15 17 16 18 19 20 21 23 22
+   2     1  4  5 11  1  2  5  3  4  6  7  8  9 11 10
+   3     1 20 21 12 12 13 14 15 17 16 18 19 20 21 23 22
+   4     2  6  7  7  1  2  5  3  4  6  7
+   5     2 14 15  4  8  9 11 10
+   6     4  8  9  5  1  2  5  3  4
+   7     4  0  0  2  6  7
+   8     6 10 11  4  1  2  5  3
+   9     6  0  0  1  4
+  10     8 12 13  3  1  2  5
+  11     8  0  0  1  3
+  12    10  0  0  2  1  2
+  13    10  0  0  1  5
+  14     5 16 17  3  8  9 11
+  15     5  0  0  1 10
+  16    14 18 19  2  8  9
+  17    14  0  0  1 11
+  18    16  0  0  1  8
+  19    16  0  0  1  9
+  20     3  0  0  2 12 13
+  21     3 24 25 10 14 15 17 16 18 19 20 21 23 22
+  22     0  0  0  0
+  23     0  0  0  2 12 13
+  24    21 26 27  4 14 15 17 16
+  25    21 30 31  6 18 19 20 21 23 22
+  26    24 28 29  3 14 15 17
+  27    24  0  0  1 16
+  28    26  0  0  2 14 15
+  29    26  0  0  1 17
+  30    25  0  0  2 18 19
+  31    25 32 33  4 20 21 23 22
+  32    31 34 35  3 20 21 23
+  33    31  0  0  1 22
+  34    32  0  0  2 20 21
+  35    32  0  0  1 23
+   1 +   0  2  3 23  1  1 23
+   2 +   1  4  5 11  1  1 11
+   3 +   1 20 21 12  1 12 23
+   4 +   2  6  7  7  1  1  7
+   5 *   2 14 15  4  1  8 11
+   6 *   4  8  9  5  1  1  5
+   7 =   4  0  0  2  1  6  7
+   8 -   6 10 11  4  2  1  3  5  5
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  3  2  1  2  5  5
+  11 -   8  0  0  1  1  3  3
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  1  1  5  5
+  14 -   5 16 17  3  2  8  9 11 11
+  15 -   5  0  0  1  1 10 10
+  16 -  14 18 19  2  1  8  9
+  17 -  14  0  0  1  1 11 11
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+  20 =   3  0  0  2  1 12 13
+  21 +   3 22 23 10  1 14 23
+  22 =  21 24 25  4  1 14 17
+  23 *  21 28 29  6  1 18 23
+  24 -  22 26 27  3  2 14 15 17 17
+  25 -  22  0  0  1  1 16 16
+  26 -  24  0  0  2  1 14 15
+  27 -  24  0  0  1  1 17 17
+  28 -  23  0  0  2  1 18 19
+  29 -  23 30 31  4  1 20 23
+  30 -  29 32 33  3  2 20 21 23 23
+  31 -  29  0  0  1  1 22 22
+  32 -  30  0  0  2  1 20 21
+  33 -  30  0  0  1  1 23 23
+
+ CHAIN : 3HH2A
+ CHAIN : 3HH2B
+ CHAIN : 3HH2C
+ CHAIN : 3HH2D
+

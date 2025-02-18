@@ -1,0 +1,161 @@
+A length: 219
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            219
+Total number of atoms read in:              1719
+Total number of ignored atom records:        347
+ HEADER    HYDROLASE                               14-SEP-05   2C1F              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.W.MURRAY,R.J.LEWIS,H.J.GILBERT                                      
+  Reading DSSP file
+ HEADER    HYDROLASE                               14-SEP-05   2C1F              COMPND   2 MOLECULE: BIFUNCTIONAL ENDO-1,4-BETA-XYLANASE A;                     SOURCE   2 ORGANISM_SCIENTIFIC: NEOCALLIMASTIX PATRICIARUM;                     AUTHOR    J.W.MURRAY,R.J.LEWIS,H.J.GILBERT                                      
+         219  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1931
+ selectset done           0
+ eigen done           0
+ tau           1   1.39150667              61          73          98         114         142         161         179         195
+ #popped           2           1
+ #selectset contacts        1931
+ selectset done           1
+ eigen done           1
+ tau           3  0.372762561              93         209
+ #popped           4           2
+ #selectset contacts        1931
+ selectset done           2
+ eigen done           2
+ tau           5   2.45208621              83          93
+ #popped           6           2
+ #selectset contacts        1931
+ selectset done           2
+ eigen done           2
+ tau           7   2.04900765              61
+ #popped           8           3
+ #selectset contacts        1931
+ selectset done           3
+ eigen done           3
+ tau           9  0.408372134              12          22          33
+ #popped          10           4
+ #selectset contacts        1931
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        1931
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1931
+ selectset done           2
+ eigen done           2
+ tau          11  0.205096155              83
+ #popped           5           1
+ #selectset contacts        1931
+ selectset done           1
+ eigen done           1
+ tau          13  0.898918271             125         179
+ #popped          14           2
+ #selectset contacts        1931
+ selectset done           2
+ eigen done           2
+ tau          15  0.489746511             125
+ #popped          15           1
+ #selectset contacts        1931
+ selectset done           1
+ eigen done           1
+ tau          17  0.439789355             142
+ #popped           3           0
+ #selectset contacts        1931
+ selectset done           0
+ eigen done           0
+ tau          19  0.866275251              73
+ #popped          21           0
+ #selectset contacts        1931
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               14-SEP-05   2C1F              COMPND   2 MOLECULE: BIFUNCTIONAL ENDO-1,4-BETA-XYLANASE A;                     SOURCE   2 ORGANISM_SCIENTIFIC: NEOCALLIMASTIX PATRICIARUM;                     AUTHOR    J.W.MURRAY,R.J.LEWIS,H.J.GILBERT                                      
+           0
+         219
+         219  residues read 2C1F.dssp                                                   
+  grow short strand           2           5
+  exclude short helix          69          71
+  grow short strand         130         134
+  grow short strand         171         175
+ crowded segment excluded!
+  grow short strand         192         193
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  4  2  3  5  6  7  8 13  9 10 11 12
+   2     1  4  5 10  1  4  2  3  5  6  7  8 13  9
+   3     1  0  0  3 10 11 12
+   4     2  6  7  7  1  4  2  3  5  6  7
+   5     2 14 15  3  8 13  9
+   6     4 10 11  6  1  4  2  3  5  6
+   7     4  0  0  1  7
+   8     0  0  0  6  1  4  2  3  5  6
+   9     0  0  0  0
+  10     6  0  0  2  1  4
+  11     6  0  0  4  2  3  5  6
+  12     0  0  0  0
+  13     0  0  0  0
+  14     5 16 17  2  8 13
+  15     5  0  0  1  9
+  16    14  0  0  1  8
+  17    14  0  0  1 13
+  18     0  0  0  1  9
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  3 10 11 12
+   1 *   0  2  3 13  1  1 13
+   2 -   1  4  5 10  2  1  9 13 13
+   3 -   1  0  0  3  1 10 12
+   4 -   2  6  7  7  1  1  7
+   5 -   2 10 11  3  2  8  9 13 13
+   6 -   4  8  9  6  1  1  6
+   7 -   4  0  0  1  1  7  7
+   8 -   6  0  0  2  2  1  1  4  4
+   9 -   6  0  0  4  2  2  3  5  6
+  10 -   5 12 13  2  2  8  8 13 13
+  11 -   5  0  0  1  1  9  9
+  12 -  10  0  0  1  1  8  8
+  13 -  10  0  0  1  1 13 13
+
+ CHAIN : 2C1FA
+

@@ -1,0 +1,314 @@
+A length: 166
+B length: 161
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            173
+Total number of atoms read in:              1415
+Total number of ignored atom records:        423
+ HEADER    STRUCTURAL GENOMICS, TRANSCRIPTION      02-JUN-04   1TIQ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.FOROUHAR,I.LEE,J.SHEN,S.M.VOROBIEV,R.XIAO,T.B.ACTON,G.T.MONTELIONE, 
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, TRANSCRIPTION      02-JUN-04   1TIQ              COMPND   2 MOLECULE: PROTEASE SYNTHASE AND SPORULATION NEGATIVE REGULA          SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS SUBTILIS;                              AUTHOR    F.FOROUHAR,I.LEE,J.SHEN,S.M.VOROBIEV,R.XIAO,T.B.ACTON,G.T.MO          
+         173  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1552
+ selectset done           0
+ eigen done           0
+ tau           1   1.95305371              75          91         112
+ #popped           2           1
+ #selectset contacts        1552
+ selectset done           1
+ eigen done           1
+ tau           3   1.69895899              11          57
+ #popped           4           2
+ #selectset contacts        1552
+ selectset done           2
+ eigen done           2
+ tau           5  0.603597701              68
+ #popped           6           3
+ #selectset contacts        1552
+ selectset done           3
+ eigen done           3
+ tau           7  0.318426967              11
+ #popped           7           2
+ #selectset contacts        1552
+ selectset done           2
+ eigen done           2
+ tau           9   1.05676854              97
+ #popped           5           1
+ #selectset contacts        1552
+ selectset done           1
+ eigen done           1
+ tau          11   1.53382313              44
+ #popped          12           1
+ #selectset contacts        1552
+ selectset done           1
+ eigen done           1
+ tau          13   1.04253256              22
+ #popped          15           1
+ #selectset contacts        1552
+ selectset done           1
+ eigen done           1
+ tau          15  0.747290134              32
+ #popped           3           0
+ #selectset contacts        1552
+ selectset done           0
+ eigen done           0
+ tau          17   1.74025977              91         122
+ #popped          18           0
+ #selectset contacts        1552
+ selectset done           0
+ eigen done           0
+ tau          19   1.03157914             152         162
+ #popped          20           0
+ #selectset contacts        1552
+ selectset done           0
+ eigen done           0
+ tau          21  0.477806509             138
+ #popped          22           1
+ #selectset contacts        1552
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          23           0
+ #selectset contacts        1552
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, TRANSCRIPTION      02-JUN-04   1TIQ              COMPND   2 MOLECULE: PROTEASE SYNTHASE AND SPORULATION NEGATIVE REGULA          SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS SUBTILIS;                              AUTHOR    F.FOROUHAR,I.LEE,J.SHEN,S.M.VOROBIEV,R.XIAO,T.B.ACTON,G.T.MO          
+           0
+         173
+         173  residues read 1TIQ.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          78          80
+  exclude short helix          99         101
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  5  6  7  2  3  4  9 10 11 12  8
+   2     1  4  5  7  1  5  6  7  2  3  4
+   3     1 18 19  5  9 10 11 12  8
+   4     2  6  7  4  1  5  6  7
+   5     2 12 13  3  2  3  4
+   6     4  8  9  2  1  5
+   7     4  0  0  2  6  7
+   8     6  0  0  1  1
+   9     6  0  0  1  5
+  10     0  0  0  2  6  7
+  11     0  0  0  0
+  12     5 14 15  2  2  3
+  13     5  0  0  1  4
+  14    12  0  0  1  2
+  15    12  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  1  3
+  18     3 22 23  4  9 10 11 12
+  19     3  0  0  1  8
+  20     0  0  0  4  9 10 11 12
+  21     0  0  0  0
+  22    18  0  0  1  9
+  23    18  0  0  3 10 11 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  7  1  1  7
+   3 -   1 14 15  5  1  8 12
+   4 -   2  6  7  4  2  1  1  5  7
+   5 -   2 10 11  3  1  2  4
+   6 -   4  8  9  2  2  1  1  5  5
+   7 -   4  0  0  2  1  6  7
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  5  5
+  10 -   5 12 13  2  1  2  3
+  11 -   5  0  0  1  1  4  4
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  3  3
+  14 -   3 16 17  4  1  9 12
+  15 -   3  0  0  1  1  8  8
+  16 -  14  0  0  1  1  9  9
+  17 -  14  0  0  3  1 10 12
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            168
+Total number of atoms read in:              1379
+Total number of ignored atom records:        264
+ HEADER    STRUCTURAL GENOMICS, TRANSCRIPTION      02-JUN-04   1TIQ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    F.FOROUHAR,I.LEE,J.SHEN,S.M.VOROBIEV,R.XIAO,T.B.ACTON,G.T.MONTELIONE, 
+  Reading DSSP file
+ HEADER    STRUCTURAL GENOMICS, TRANSCRIPTION      02-JUN-04   1TIQ              COMPND   2 MOLECULE: PROTEASE SYNTHASE AND SPORULATION NEGATIVE REGULA          SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS SUBTILIS;                              AUTHOR    F.FOROUHAR,I.LEE,J.SHEN,S.M.VOROBIEV,R.XIAO,T.B.ACTON,G.T.MO          
+         168  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1467
+ selectset done           0
+ eigen done           0
+ tau           1   1.84101081              25          35         120         157
+ #popped           2           1
+ #selectset contacts        1467
+ selectset done           1
+ eigen done           1
+ tau           3   1.54243743              67          83         106
+ #popped           4           2
+ #selectset contacts        1467
+ selectset done           2
+ eigen done           2
+ tau           5   1.35351598              88
+ #popped           6           2
+ #selectset contacts        1467
+ selectset done           2
+ eigen done           2
+ tau           7   1.03174078              25          49
+ #popped           8           2
+ #selectset contacts        1467
+ selectset done           2
+ eigen done           2
+ tau           9  0.555676639              25
+ #popped          10           3
+ #selectset contacts        1467
+ selectset done           3
+ eigen done           3
+ tau          11   1.55788183              11
+ #popped          11           2
+ #selectset contacts        1467
+ selectset done           2
+ eigen done           2
+ tau          13  0.386594474              62
+ #popped           5           1
+ #selectset contacts        1467
+ selectset done           1
+ eigen done           1
+ tau          15  0.646432817             120
+ #popped          16           1
+ #selectset contacts        1467
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1467
+ selectset done           0
+ eigen done           0
+ tau          17   5.68085623              35
+ #popped          19           0
+ #selectset contacts        1467
+ selectset done           0
+ eigen done           0
+ tau          19  0.638881743             138
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL GENOMICS, TRANSCRIPTION      02-JUN-04   1TIQ              COMPND   2 MOLECULE: PROTEASE SYNTHASE AND SPORULATION NEGATIVE REGULA          SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS SUBTILIS;                              AUTHOR    F.FOROUHAR,I.LEE,J.SHEN,S.M.VOROBIEV,R.XIAO,T.B.ACTON,G.T.MO          
+           0
+         168
+         168  residues read 1TIQ.dssp                                                   
+  grow short strand           2           6
+  grow short helix          27          33
+  exclude short helix          70          72
+  exclude short helix          91          93
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  2  5  6  7  4  8  9  3 10 11 12
+   2     1  4  5  8  1  2  5  6  7  4  8  9
+   3     1 18 19  4  3 10 11 12
+   4     2  6  7  7  1  2  5  6  7  4  8
+   5     2  0  0  1  9
+   6     4  8  9  6  1  2  5  6  7  4
+   7     4  0  0  1  8
+   8     6 10 11  5  1  2  5  6  7
+   9     6  0  0  1  4
+  10     8 12 13  2  1  2
+  11     8 14 15  3  5  6  7
+  12    10  0  0  1  1
+  13    10  0  0  1  2
+  14    11  0  0  1  5
+  15    11  0  0  2  6  7
+  16     0  0  0  1  9
+  17     0  0  0  0
+  18     3  0  0  1  3
+  19     3 20 21  3 10 11 12
+  20    19  0  0  1 10
+  21    19  0  0  2 11 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  8  2  1  2  4  9
+   3 -   1 16 17  4  2  3  3 10 12
+   4 -   2  6  7  7  2  1  2  4  8
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  6  2  1  2  4  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  5  2  1  2  5  7
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  2  1  1  2
+  11 -   8 14 15  3  1  5  7
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  2  2
+  14 -  11  0  0  1  1  5  5
+  15 -  11  0  0  2  1  6  7
+  16 -   3  0  0  1  1  3  3
+  17 -   3 18 19  3  1 10 12
+  18 -  17  0  0  1  1 10 10
+  19 -  17  0  0  2  1 11 12
+
+ CHAIN : 1TIQA
+ CHAIN : 1TIQB
+

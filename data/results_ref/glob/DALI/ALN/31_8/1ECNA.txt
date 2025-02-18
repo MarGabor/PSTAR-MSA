@@ -1,0 +1,40 @@
+# Job: glob
+# Query: 1ECNA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBA-A 15.8  1.9  133   146   23   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1ECNA Sbjct=1MBAA Z-score=15.8
+
+DSSP  -LLHHHHHHHHHHHHLLLL----LHHHHHHHHHHHLHHHHLLLLLLLLLLHHHHLLLHHH
+Query -LSADQISTVQASFDKVKG----DPVGILYAVFKADPSIMAKFTQFAGKDLESIKGTAPF   55
+ident  |||        |   |           | | |   |     |  | ||    ||     
+Sbjct sLSAAEADLAGKSWAPVFAnknaNGLDFLVALFEKFPDSANFFADFKGKSVADIKASPKL   60
+DSSP  lLLHHHHHHHHHHHHHHHHlhhhHHHHHHHHHHHHLHHHHHHLLLLLLLLHHHHHLLLLH
+
+DSSP  HHHHHHHHHHHHHHHHLLLL---LHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHHHL
+Query ETHANRIVGFFSKIIGELPN---IEADVNTFVASHKPRGVTHDQLNNFRAGFVSYMKAHT  112
+ident      ||            |     |    |   |   ||   |  | |  |        
+Sbjct RDVSSRIFTRLNEFVNNAANagkMSAMLSQFAKEHVGFGVGSAQFENVRSMFPGFVASVA  120
+DSSP  HHHHHHHHHHHHHHHHHLLLhhhHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHHHLLL
+
+DSSP  LHhhHHHHHHhHHHHHHHHHHLLL-----
+Query DFagAEAAWGaTLDTFFGMIFSKM-----  136
+ident        |        || |         
+Sbjct AP--PAGADA-AWTKLFGLIIDALkaaga  146
+DSSP  LL--LLLHHH-HHHHHHHHHHHHHhhlll
+
+
+# Structural equivalences
+   1: 1ECN-A 1MBA-A     1 -  18 <=>    2 -  19   (LEU    1  - GLY   18  <=> LEU    2  - ALA   19 )                          
+   1: 1ECN-A 1MBA-A    19 -  75 <=>   24 -  80   (ASP   19  - ASN   75  <=> ASN   24  - ASN   80 )                          
+   1: 1ECN-A 1MBA-A    76 - 114 <=>   84 - 122   (ILE   76  - PHE  114  <=> MET   84  - PRO  122 )                          
+   1: 1ECN-A 1MBA-A   117 - 122 <=>  123 - 128   (ALA  117  - GLY  122  <=> PRO  123  - ALA  128 )                          
+   1: 1ECN-A 1MBA-A   124 - 136 <=>  129 - 141   (THR  124  - MET  136  <=> ALA  129  - LEU  141 )                          
+
+# Translation-rotation matrices
+-matrix  "1ECN-A 1MBA-A  U(1,.)   0.269380  0.895390 -0.354558           47.462322"
+-matrix  "1ECN-A 1MBA-A  U(2,.)   0.161004 -0.404859 -0.900093          -18.842293"
+-matrix  "1ECN-A 1MBA-A  U(3,.)  -0.949480  0.185382 -0.253222          -31.176441"
+

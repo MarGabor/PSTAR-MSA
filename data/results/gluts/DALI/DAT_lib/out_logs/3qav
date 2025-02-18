@@ -1,0 +1,172 @@
+A length: 219
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            219
+Total number of atoms read in:              1785
+Total number of ignored atom records:        217
+ HEADER    TRANSFERASE                             12-JAN-11   3QAV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.K.PARK,J.H.MOON,Y.M.CHI                                             
+  Reading DSSP file
+ HEADER    TRANSFERASE                             12-JAN-11   3QAV              COMPND   2 MOLECULE: RHO-CLASS GLUTATHIONE S-TRANSFERASE;                       SOURCE   2 ORGANISM_SCIENTIFIC: LATERNULA ELLIPTICA;                            AUTHOR    A.K.PARK,J.H.MOON,Y.M.CHI                                             
+         219  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2051
+ selectset done           0
+ eigen done           0
+ tau           1   3.11090302              82
+ #popped           2           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau           3   1.66137934              32          53
+ #popped           4           2
+ #selectset contacts        2051
+ selectset done           2
+ eigen done           2
+ tau           5   1.11476243              65
+ #popped           6           2
+ #selectset contacts        2051
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau           7  0.981345236              42
+ #popped           3           0
+ #selectset contacts        2051
+ selectset done           0
+ eigen done           0
+ tau           9   1.30921876             109         131
+ #popped          10           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          11   1.50053012             163
+ #popped          12           2
+ #selectset contacts        2051
+ selectset done           2
+ eigen done           2
+ tau          13   1.22710609              99         149
+ #popped          14           3
+ #selectset contacts        2051
+ selectset done           3
+ eigen done           3
+ tau          15   1.68174088              99
+ #popped          15           2
+ #selectset contacts        2051
+ selectset done           2
+ eigen done           2
+ tau          17   1.12621748             109
+ #popped          13           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          19   1.37866795             176         204
+ #popped          20           2
+ #selectset contacts        2051
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          21           1
+ #selectset contacts        2051
+ selectset done           1
+ eigen done           1
+ tau          21   1.58243454             194
+ #popped          11           0
+ #selectset contacts        2051
+ selectset done           0
+ eigen done           0
+ tau          23   1.22807026             121
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             12-JAN-11   3QAV              COMPND   2 MOLECULE: RHO-CLASS GLUTATHIONE S-TRANSFERASE;                       SOURCE   2 ORGANISM_SCIENTIFIC: LATERNULA ELLIPTICA;                            AUTHOR    A.K.PARK,J.H.MOON,Y.M.CHI                                             
+           0
+         219
+         219  residues read 3QAV.dssp                                                   
+  grow short strand           4           7
+  grow short strand          29          32
+  exclude short helix          39          41
+  exclude short helix          43          48
+  grow short strand          56          59
+  grow short strand          62          64
+  exclude short helix         102         107
+  exclude short helix         196         200
+  exclude short helix         204         206
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7  9 10 11  8
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1 10 11  5  7  9 10 11  8
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  0  0  5  1  2  3  4  5
+   7     2  0  0  1  6
+   8     0  0  0  0
+   9     0  0  0  0
+  10     3 12 13  4  7  9 10 11
+  11     3  0  0  1  8
+  12    10 14 15  2  7  9
+  13    10 20 21  2 10 11
+  14    12  0  0  1  7
+  15    12  0  0  1  9
+  16     0  0  0  1  7
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1  9
+  20    13  0  0  1 10
+  21    13  0  0  1 11
+  22     0  0  0  1 11
+  23     0  0  0  0
+  24     0  0  0  1  8
+  25     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  6  1  1  6
+   3 *   1  6  7  5  1  7 11
+   4 -   2  0  0  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   3  8  9  4  2  7  7  9 11
+   7 -   3  0  0  1  1  8  8
+   8 -   6 10 11  2  2  7  7  9  9
+   9 -   6 12 13  2  1 10 11
+  10 -   8  0  0  1  1  7  7
+  11 -   8  0  0  1  1  9  9
+  12 -   9  0  0  1  1 10 10
+  13 -   9  0  0  1  1 11 11
+
+ CHAIN : 3QAVA
+

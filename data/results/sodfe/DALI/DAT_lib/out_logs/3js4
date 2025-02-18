@@ -1,0 +1,728 @@
+A length: 207
+B length: 206
+C length: 206
+D length: 203
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            207
+Total number of atoms read in:              1637
+Total number of ignored atom records:        347
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (SSGCID)    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ANAPLASMA PHAGOCYTOPHILUM;                      AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (S          
+         207  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1965
+ selectset done           0
+ eigen done           0
+ tau           1   1.45913041              93         123
+ #popped           2           1
+ #selectset contacts        1965
+ selectset done           1
+ eigen done           1
+ tau           3   1.43607712              34          75
+ #popped           4           2
+ #selectset contacts        1965
+ selectset done           2
+ eigen done           2
+ tau           5   1.33901000              34
+ #popped           6           3
+ #selectset contacts        1965
+ selectset done           3
+ eigen done           3
+ tau           7   1.13442111              17
+ #popped           7           2
+ #selectset contacts        1965
+ selectset done           2
+ eigen done           2
+ tau           9   1.12265599             193
+ #popped          10           2
+ #selectset contacts        1965
+ selectset done           2
+ eigen done           2
+ tau          11   1.26744914              93         171
+ #popped          12           3
+ #selectset contacts        1965
+ selectset done           3
+ eigen done           3
+ tau          13   1.13893688              93         182
+ #popped          14           3
+ #selectset contacts        1965
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          13           2
+ #selectset contacts        1965
+ selectset done           2
+ eigen done           2
+ tau          15  0.547522664             133         143
+ #popped          16           2
+ #selectset contacts        1965
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           5           1
+ #selectset contacts        1965
+ selectset done           1
+ eigen done           1
+ tau          17   2.06160569              49
+ #popped          19           1
+ #selectset contacts        1965
+ selectset done           1
+ eigen done           1
+ tau          19   1.04984307              64
+ #popped           3           0
+ #selectset contacts        1965
+ selectset done           0
+ eigen done           0
+ tau          21   1.95862961             109
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ANAPLASMA PHAGOCYTOPHILUM;                      AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (S          
+           0
+         207
+         207  residues read 3JS4.dssp                                                   
+  exclude short helix         153         155
+  exclude short helix         169         171
+  exclude short helix         173         176
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2 10  7  8  9 11  3  4  5  6
+   2     1  4  5  9  1  2 10  7  8  9 11  3  4
+   3     1 22 23  2  5  6
+   4     2  6  7  7  1  2 10  7  8  9 11
+   5     2 20 21  2  3  4
+   6     4  0  0  2  1  2
+   7     4 10 11  5 10  7  8  9 11
+   8     0  0  0  0
+   9     0  0  0  2  1  2
+  10     7 12 13  4 10  7  8  9
+  11     7  0  0  1 11
+  12    10  0  0  1 10
+  13    10  0  0  3  7  8  9
+  14     0  0  0  1 10
+  15     0  0  0  0
+  16     0  0  0  3  7  8  9
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  2  3  4
+  20     5  0  0  1  3
+  21     5  0  0  1  4
+  22     3  0  0  1  5
+  23     3  0  0  1  6
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  9  2  1  4  7 11
+   3 -   1 14 15  2  1  5  6
+   4 -   2  6  7  7  2  1  2  7 11
+   5 -   2 12 13  2  1  3  4
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  5  1  7 11
+   8 -   7 10 11  4  1  7 10
+   9 -   7  0  0  1  1 11 11
+  10 -   8  0  0  1  1 10 10
+  11 -   8  0  0  3  1  7  9
+  12 -   5  0  0  1  1  3  3
+  13 -   5  0  0  1  1  4  4
+  14 -   3  0  0  1  1  5  5
+  15 -   3  0  0  1  1  6  6
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2079  CA BASP B  55 
+ Alternate location indication is not blank or A, ignore atom: 2083  CB BASP B  55 
+ Alternate location indication is not blank or A, ignore atom: 2085  CG BASP B  55 
+ Alternate location indication is not blank or A, ignore atom: 2087  OD1BASP B  55 
+ Alternate location indication is not blank or A, ignore atom: 2089  OD2BASP B  55 
+
+Total number of residues read in:            207
+Total number of atoms read in:              1635
+Total number of ignored atom records:        333
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (SSGCID)    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ANAPLASMA PHAGOCYTOPHILUM;                      AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (S          
+         207  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1967
+ selectset done           0
+ eigen done           0
+ tau           1   1.25122678              97
+ #popped           2           1
+ #selectset contacts        1967
+ selectset done           1
+ eigen done           1
+ tau           3   1.44525683              49          73
+ #popped           4           2
+ #selectset contacts        1967
+ selectset done           2
+ eigen done           2
+ tau           5   1.47938073              49
+ #popped           6           3
+ #selectset contacts        1967
+ selectset done           3
+ eigen done           3
+ tau           7   1.11685193              39
+ #popped           8           3
+ #selectset contacts        1967
+ selectset done           3
+ eigen done           3
+ tau           9  0.931561947              27
+ #popped          10           3
+ #selectset contacts        1967
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        1967
+ selectset done           2
+ eigen done           2
+ tau          11   1.40096951              87
+ #popped           5           1
+ #selectset contacts        1967
+ selectset done           1
+ eigen done           1
+ tau          13  0.864660680              63
+ #popped           3           0
+ #selectset contacts        1967
+ selectset done           0
+ eigen done           0
+ tau          15   1.70835841             192
+ #popped          16           0
+ #selectset contacts        1967
+ selectset done           0
+ eigen done           0
+ tau          17   1.48606086             124         171
+ #popped          18           1
+ #selectset contacts        1967
+ selectset done           1
+ eigen done           1
+ tau          19   4.93594933             124
+ #popped          20           2
+ #selectset contacts        1967
+ selectset done           2
+ eigen done           2
+ tau          21   1.92881751             109
+ #popped          21           1
+ #selectset contacts        1967
+ selectset done           1
+ eigen done           1
+ tau          23  0.769759476             181
+ #popped          19           0
+ #selectset contacts        1967
+ selectset done           0
+ eigen done           0
+ tau          25  0.246061146             144
+ #popped          26           1
+ #selectset contacts        1967
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          27           0
+ #selectset contacts        1967
+ selectset done           0
+ eigen done           0
+ tau          27   1.63881063             161
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ANAPLASMA PHAGOCYTOPHILUM;                      AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (S          
+           0
+         207
+         207  residues read 3JS4.dssp                                                   
+  exclude short helix         153         155
+  exclude short helix         169         171
+  exclude short helix         173         176
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  3  5  6 10  7  8  9 11
+   2     1  4  5  4  1  2  4  3
+   3     1 16 17  7  5  6 10  7  8  9 11
+   4     2  6  7  3  1  2  4
+   5     2  0  0  1  3
+   6     4 10 11  2  1  2
+   7     4  0  0  1  4
+   8     0  0  0  2  1  2
+   9     0  0  0  0
+  10     6  0  0  1  1
+  11     6  0  0  1  2
+  12     0  0  0  1  4
+  13     0  0  0  0
+  14     0  0  0  1  3
+  15     0  0  0  0
+  16     3 18 19  6  5  6 10  7  8  9
+  17     3  0  0  1 11
+  18    16 20 21  3  5  6 10
+  19    16 26 27  3  7  8  9
+  20    18 22 23  2  5  6
+  21    18  0  0  1 10
+  22    20  0  0  1  5
+  23    20  0  0  1  6
+  24     0  0  0  0
+  25     0  0  0  1 10
+  26    19  0  0  2  7  8
+  27    19  0  0  1  9
+  28     0  0  0  0
+  29     0  0  0  1  9
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  4  1  1  4
+   3 -   1 10 11  7  1  5 11
+   4 -   2  6  7  3  2  1  2  4  4
+   5 -   2  0  0  1  1  3  3
+   6 -   4  8  9  2  1  1  2
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  2  2
+  10 -   3 12 13  6  1  5 10
+  11 -   3  0  0  1  1 11 11
+  12 -  10 14 15  3  2  5  6 10 10
+  13 -  10 18 19  3  1  7  9
+  14 -  12 16 17  2  1  5  6
+  15 -  12  0  0  1  1 10 10
+  16 -  14  0  0  1  1  5  5
+  17 -  14  0  0  1  1  6  6
+  18 -  13  0  0  2  1  7  8
+  19 -  13  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            206
+Total number of atoms read in:              1627
+Total number of ignored atom records:        351
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (SSGCID)    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ANAPLASMA PHAGOCYTOPHILUM;                      AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (S          
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1994
+ selectset done           0
+ eigen done           0
+ tau           1   1.67701709              84
+ #popped           2           1
+ #selectset contacts        1994
+ selectset done           1
+ eigen done           1
+ tau           3   1.21572280              39          63
+ #popped           4           2
+ #selectset contacts        1994
+ selectset done           2
+ eigen done           2
+ tau           5   1.17816353              26
+ #popped           6           3
+ #selectset contacts        1994
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1994
+ selectset done           2
+ eigen done           2
+ tau           7  0.916370153              39          74
+ #popped           8           2
+ #selectset contacts        1994
+ selectset done           2
+ eigen done           2
+ tau           9   1.38979268              39
+ #popped           5           1
+ #selectset contacts        1994
+ selectset done           1
+ eigen done           1
+ tau          11   1.57715058              49
+ #popped           3           0
+ #selectset contacts        1994
+ selectset done           0
+ eigen done           0
+ tau          13   1.05327988             167         178
+ #popped          14           0
+ #selectset contacts        1994
+ selectset done           0
+ eigen done           0
+ tau          15   1.45332468             105         188
+ #popped          16           1
+ #selectset contacts        1994
+ selectset done           1
+ eigen done           1
+ tau          17   1.64501548              95         105
+ #popped          18           1
+ #selectset contacts        1994
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          17           0
+ #selectset contacts        1994
+ selectset done           0
+ eigen done           0
+ tau          19   1.36888885             167
+ #popped          20           0
+ #selectset contacts        1994
+ selectset done           0
+ eigen done           0
+ tau          21   1.40979016             123
+ #popped          23           0
+ #selectset contacts        1994
+ selectset done           0
+ eigen done           0
+ tau          23  0.222096235             143
+ #popped          24           1
+ #selectset contacts        1994
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          25           0
+ #selectset contacts        1994
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ANAPLASMA PHAGOCYTOPHILUM;                      AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (S          
+           0
+         206
+         206  residues read 3JS4.dssp                                                   
+  exclude short helix         152         154
+  exclude short helix         168         170
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  3 11  5  6  7  8  9 10
+   2     1  4  5  4  1  2  4  3
+   3     1 16 17  7 11  5  6  7  8  9 10
+   4     2  6  7  3  1  2  4
+   5     2  0  0  1  3
+   6     4  0  0  1  1
+   7     4  8  9  2  2  4
+   8     7  0  0  1  2
+   9     7  0  0  1  4
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  3
+  14     0  0  0  7 11  5  6  7  8  9 10
+  15     0  0  0  0
+  16     3 18 19  2 11  5
+  17     3 20 21  5  6  7  8  9 10
+  18    16  0  0  1 11
+  19    16  0  0  1  5
+  20    17 22 23  4  6  7  8  9
+  21    17  0  0  1 10
+  22    20  0  0  1  6
+  23    20 24 25  3  7  8  9
+  24    23  0  0  2  7  8
+  25    23  0  0  1  9
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5  4  1  1  4
+   3 -   1 10 11  7  1  5 11
+   4 -   2  6  7  3  2  1  2  4  4
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  2  2  2  2  4  4
+   8 -   7  0  0  1  1  2  2
+   9 -   7  0  0  1  1  4  4
+  10 -   3 12 13  2  2  5  5 11 11
+  11 -   3 14 15  5  1  6 10
+  12 -  10  0  0  1  1 11 11
+  13 -  10  0  0  1  1  5  5
+  14 -  11 16 17  4  1  6  9
+  15 -  11  0  0  1  1 10 10
+  16 -  14  0  0  1  1  6  6
+  17 -  14 18 19  3  1  7  9
+  18 -  17  0  0  2  1  7  8
+  19 -  17  0  0  1  1  9  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5005  CA BGLU D  13 
+ Alternate location indication is not blank or A, ignore atom: 5009  CB BGLU D  13 
+ Alternate location indication is not blank or A, ignore atom: 5011  CG BGLU D  13 
+ Alternate location indication is not blank or A, ignore atom: 5013  CD BGLU D  13 
+ Alternate location indication is not blank or A, ignore atom: 5015  OE1BGLU D  13 
+ Alternate location indication is not blank or A, ignore atom: 5017  OE2BGLU D  13 
+ Alternate location indication is not blank or A, ignore atom: 5039  CA BILE D  16 
+ Alternate location indication is not blank or A, ignore atom: 5043  CB BILE D  16 
+ Alternate location indication is not blank or A, ignore atom: 5045  CG1BILE D  16 
+ Alternate location indication is not blank or A, ignore atom: 5047  CG2BILE D  16 
+ Alternate location indication is not blank or A, ignore atom: 5049  CD1BILE D  16 
+ Alternate location indication is not blank or A, ignore atom: 5798  N  BASN D 114 
+ Alternate location indication is not blank or A, ignore atom: 5800  CA BASN D 114 
+ Alternate location indication is not blank or A, ignore atom: 5802  C  BASN D 114 
+ Alternate location indication is not blank or A, ignore atom: 5804  O  BASN D 114 
+ Alternate location indication is not blank or A, ignore atom: 5806  CB BASN D 114 
+ Alternate location indication is not blank or A, ignore atom: 5808  CG BASN D 114 
+ Alternate location indication is not blank or A, ignore atom: 5810  OD1BASN D 114 
+ Alternate location indication is not blank or A, ignore atom: 5812  ND2BASN D 114 
+
+Total number of residues read in:            206
+Total number of atoms read in:              1614
+Total number of ignored atom records:        267
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (SSGCID)    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ANAPLASMA PHAGOCYTOPHILUM;                      AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (S          
+         206  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1968
+ selectset done           0
+ eigen done           0
+ tau           1   1.52882826              38          72
+ #popped           2           1
+ #selectset contacts        1968
+ selectset done           1
+ eigen done           1
+ tau           3   1.38689208              38         167         179
+ #popped           4           2
+ #selectset contacts        1968
+ selectset done           2
+ eigen done           2
+ tau           5   1.79158688              38
+ #popped           6           2
+ #selectset contacts        1968
+ selectset done           2
+ eigen done           2
+ tau           7   1.02483547              16
+ #popped           9           2
+ #selectset contacts        1968
+ selectset done           2
+ eigen done           2
+ tau           9   1.12942564              26
+ #popped           5           1
+ #selectset contacts        1968
+ selectset done           1
+ eigen done           1
+ tau          11   1.34643483              82         123         167
+ #popped          12           2
+ #selectset contacts        1968
+ selectset done           2
+ eigen done           2
+ tau          13  0.253685772             143
+ #popped          14           3
+ #selectset contacts        1968
+ selectset done           3
+ eigen done           3
+ tau          15   2.41581678              82
+ #popped          17           3
+ #selectset contacts        1968
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        1968
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          13           1
+ #selectset contacts        1968
+ selectset done           1
+ eigen done           1
+ tau          17   1.61461389             108         123
+ #popped          18           1
+ #selectset contacts        1968
+ selectset done           1
+ eigen done           1
+ tau          19   1.55694079              93         108         192
+ #popped          20           2
+ #selectset contacts        1968
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          21           1
+ #selectset contacts        1968
+ selectset done           1
+ eigen done           1
+ tau          21   2.42347431             108
+ #popped           3           0
+ #selectset contacts        1968
+ selectset done           0
+ eigen done           0
+ tau          23   2.23760962              48
+ #popped          25           0
+ #selectset contacts        1968
+ selectset done           0
+ eigen done           0
+ tau          25  0.864660680              62
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          09-SEP-09   3JS4              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: ANAPLASMA PHAGOCYTOPHILUM;                      AUTHOR    SEATTLE STRUCTURAL GENOMICS CENTER FOR INFECTIOUS DISEASE (S          
+           0
+         206
+         206  residues read 3JS4.dssp                                                   
+  exclude short helix         152         154
+  exclude short helix         168         170
+  exclude short helix         172         175
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  4  7  8  9 10  5 11  6  3
+   2     1  4  5 10  1  2  4  7  8  9 10  5 11  6
+   3     1  0  0  1  3
+   4     2 10 11  2  1  2
+   5     2 12 13  8  4  7  8  9 10  5 11  6
+   6     0  0  0  2  1  2
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  2  1  2
+  10     4  0  0  1  1
+  11     4  0  0  1  2
+  12     5 14 15  4  4  7  8  9
+  13     5 18 19  4 10  5 11  6
+  14    12 16 17  3  4  7  8
+  15    12  0  0  1  9
+  16    14  0  0  1  4
+  17    14  0  0  2  7  8
+  18    13 20 21  3 10  5 11
+  19    13  0  0  1  6
+  20    18  0  0  1 10
+  21    18 22 23  2  5 11
+  22    21  0  0  1  5
+  23    21  0  0  1 11
+  24     0  0  0  0
+  25     0  0  0  1  3
+  26     0  0  0  1  3
+  27     0  0  0  0
+   1 *   0  2  3 11  1  1 11
+   2 -   1  4  5 10  2  1  2  4 11
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  8  1  4 11
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  4  2  4  4  7  9
+   9 -   5 14 15  4  2  5  6 10 11
+  10 -   8 12 13  3  2  4  4  7  8
+  11 -   8  0  0  1  1  9  9
+  12 -  10  0  0  1  1  4  4
+  13 -  10  0  0  2  1  7  8
+  14 -   9 16 17  3  2  5  5 10 11
+  15 -   9  0  0  1  1  6  6
+  16 -  14  0  0  1  1 10 10
+  17 -  14 18 19  2  2  5  5 11 11
+  18 -  17  0  0  1  1  5  5
+  19 -  17  0  0  1  1 11 11
+
+ CHAIN : 3JS4A
+ CHAIN : 3JS4B
+ CHAIN : 3JS4C
+ CHAIN : 3JS4D
+

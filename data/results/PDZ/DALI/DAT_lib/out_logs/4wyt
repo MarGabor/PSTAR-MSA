@@ -1,0 +1,170 @@
+A length: 201
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            201
+Total number of atoms read in:              1461
+Total number of ignored atom records:        129
+ HEADER    STRUCTURAL PROTEIN                      18-NOV-14   4WYT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    J.Q.REN,W.FENG                                                        
+  Reading DSSP file
+ HEADER    STRUCTURAL PROTEIN                      18-NOV-14   4WYT              COMPND   2 MOLECULE: PROTEIN SCRIBBLE HOMOLOG;                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.Q.REN,W.FENG                                                        
+         201  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1668
+ selectset done           0
+ eigen done           0
+ tau           1   7.29834223             101
+ #popped           2           1
+ #selectset contacts        1668
+ selectset done           1
+ eigen done           1
+ tau           3  0.837302804              14          25          47          58
+ #popped           4           2
+ #selectset contacts        1668
+ selectset done           2
+ eigen done           2
+ tau           5   1.35767436              77          91
+ #popped           6           2
+ #selectset contacts        1668
+ selectset done           2
+ eigen done           2
+ tau           7  0.425429970              36
+ #popped           8           3
+ #selectset contacts        1668
+ selectset done           3
+ eigen done           3
+ tau           9   999.999023              14
+ #popped           9           2
+ #selectset contacts        1668
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1668
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1668
+ selectset done           0
+ eigen done           0
+ tau          11   1.30299366             176         188
+ #popped          12           0
+ #selectset contacts        1668
+ selectset done           0
+ eigen done           0
+ tau          13   1.03538573             119         150
+ #popped          14           1
+ #selectset contacts        1668
+ selectset done           1
+ eigen done           1
+ tau          15   1.13845694             112         157
+ #popped          16           1
+ #selectset contacts        1668
+ selectset done           1
+ eigen done           1
+ tau          17  0.346027762             112
+ #popped          19           1
+ #selectset contacts        1668
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          15           0
+ #selectset contacts        1668
+ selectset done           0
+ eigen done           0
+ tau          19  0.347619057             140
+ #popped          20           0
+ #selectset contacts        1668
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    STRUCTURAL PROTEIN                      18-NOV-14   4WYT              COMPND   2 MOLECULE: PROTEIN SCRIBBLE HOMOLOG;                                  SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    J.Q.REN,W.FENG                                                        
+           0
+         201
+         201  residues read 4WYT.dssp                                                   
+  grow short strand          24          28
+  exclude short helix          54          58
+  grow short strand          65          69
+  grow short strand          72          73
+  grow short strand         121         124
+  exclude short helix         152         156
+  grow short strand         164         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 13  1  2  3  4  5  7  6  8 11 13  9 10 12
+   2     1  6  7  7  1  2  3  4  5  7  6
+   3     1 12 13  6  8 11 13  9 10 12
+   4     0  0  0  7  1  2  3  4  5  7  6
+   5     0  0  0  0
+   6     2  8  9  6  1  2  3  4  5  7
+   7     2  0  0  1  6
+   8     6 10 11  2  1  2
+   9     6  0  0  4  3  4  5  7
+  10     8  0  0  1  1
+  11     8  0  0  1  2
+  12     3 14 15  5  8 11 13  9 10
+  13     3  0  0  1 12
+  14    12 18 19  3  8 11 13
+  15    12 20 21  2  9 10
+  16     0  0  0  3  8 11 13
+  17     0  0  0  0
+  18    14  0  0  1  8
+  19    14  0  0  2 11 13
+  20    15  0  0  1  9
+  21    15  0  0  1 10
+   1 +   0  2  3 13  1  1 13
+   2 *   1  4  5  7  1  1  7
+   3 *   1 10 11  6  1  8 13
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  2  1  1  2
+   7 -   4  0  0  4  2  3  5  7  7
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  2  2
+  10 -   3 12 13  5  2  8 11 13 13
+  11 -   3  0  0  1  1 12 12
+  12 -  10 14 15  3  3  8  8 11 11 13 13
+  13 -  10 16 17  2  1  9 10
+  14 -  12  0  0  1  1  8  8
+  15 -  12  0  0  2  2 11 11 13 13
+  16 -  13  0  0  1  1  9  9
+  17 -  13  0  0  1  1 10 10
+
+ CHAIN : 4WYTA
+

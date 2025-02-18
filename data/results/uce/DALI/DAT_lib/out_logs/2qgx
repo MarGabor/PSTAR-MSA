@@ -1,0 +1,624 @@
+A length: 155
+B length: 161
+C length: 160
+D length: 160
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  136  N  BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  138  CA BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  140  C  BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  142  O  BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  144  CB BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  146  CG BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  148  CD BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  150  NE BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  152  CZ BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  154  NH1BARG A  18 
+ Alternate location indication is not blank or A, ignore atom:  156  NH2BARG A  18 
+
+Total number of residues read in:            156
+Total number of atoms read in:              1228
+Total number of ignored atom records:         39
+ HEADER    LIGASE                                  29-JUN-07   2QGX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGELT,       
+  Reading DSSP file
+ HEADER    LIGASE                                  29-JUN-07   2QGX              COMPND   2 MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 Q1;                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGE          
+         156  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau           1   1.60292947              45          62
+ #popped           2           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau           3   1.35246754             143
+ #popped           4           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau           5   1.49980438              86         101         124
+ #popped           6           1
+ #selectset contacts        1373
+ selectset done           1
+ eigen done           1
+ tau           7   1.50581515              86
+ #popped           8           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau           9   1.71767592              23
+ #popped          10           3
+ #selectset contacts        1373
+ selectset done           3
+ eigen done           3
+ tau          11  0.857511997              11
+ #popped          11           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau          13  0.555959284              45
+ #popped          14           3
+ #selectset contacts        1373
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          15           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           9           1
+ #selectset contacts        1373
+ selectset done           1
+ eigen done           1
+ tau          15   1.68269229             114
+ #popped           7           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LIGASE                                  29-JUN-07   2QGX              COMPND   2 MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 Q1;                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGE          
+           0
+         156
+         156  residues read 2QGX.dssp                                                   
+  exclude short helix          19          22
+  grow short strand          26          30
+ crowded segment excluded!
+  exclude short helix          31          33
+  grow short strand          89          90
+  grow short strand         133         134
+  exclude short helix         140         142
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  4  5  7  6  8  9  3
+   2     1  4  5  8  1  2  4  5  7  6  8  9
+   3     1  0  0  1  3
+   4     2  6  7  7  1  2  4  5  7  6  8
+   5     2  0  0  1  9
+   6     4  8  9  5  1  2  4  5  7
+   7     4  0  0  2  6  8
+   8     6 10 11  4  1  2  4  5
+   9     6  0  0  1  7
+  10     8  0  0  1  1
+  11     8 14 15  3  2  4  5
+  12     0  0  0  1  1
+  13     0  0  0  0
+  14    11  0  0  1  2
+  15    11  0  0  2  4  5
+  16     0  0  0  0
+  17     0  0  0  1  7
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  2  4  9
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  7  2  1  2  4  8
+   5 -   2  0  0  1  1  9  9
+   6 -   4  8  9  5  3  1  2  4  5  7  7
+   7 -   4  0  0  2  2  6  6  8  8
+   8 -   6 10 11  4  2  1  2  4  5
+   9 -   6  0  0  1  1  7  7
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  3  2  2  2  4  5
+  12 -  11  0  0  1  1  2  2
+  13 -  11  0  0  2  1  4  5
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1266
+Total number of ignored atom records:         39
+ HEADER    LIGASE                                  29-JUN-07   2QGX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGELT,       
+  Reading DSSP file
+ HEADER    LIGASE                                  29-JUN-07   2QGX              COMPND   2 MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 Q1;                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGE          
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1432
+ selectset done           0
+ eigen done           0
+ tau           1   1.68842041              46          66
+ #popped           2           1
+ #selectset contacts        1432
+ selectset done           1
+ eigen done           1
+ tau           3   1.45381021              89         104         127
+ #popped           4           2
+ #selectset contacts        1432
+ selectset done           2
+ eigen done           2
+ tau           5   1.10121953              89         117
+ #popped           6           2
+ #selectset contacts        1432
+ selectset done           2
+ eigen done           2
+ tau           7   1.61656260              89
+ #popped           8           2
+ #selectset contacts        1432
+ selectset done           2
+ eigen done           2
+ tau           9   1.40457666              25
+ #popped          10           3
+ #selectset contacts        1432
+ selectset done           3
+ eigen done           3
+ tau          11  0.940527678              10
+ #popped          11           2
+ #selectset contacts        1432
+ selectset done           2
+ eigen done           2
+ tau          13  0.509512007              46
+ #popped          14           3
+ #selectset contacts        1432
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          15           2
+ #selectset contacts        1432
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        1432
+ selectset done           1
+ eigen done           1
+ tau          15   3.99442911             146
+ #popped          16           1
+ #selectset contacts        1432
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1432
+ selectset done           0
+ eigen done           0
+ tau          17  0.735849082              56
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LIGASE                                  29-JUN-07   2QGX              COMPND   2 MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 Q1;                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGE          
+           0
+         161
+         161  residues read 2QGX.dssp                                                   
+  exclude short helix          20          24
+  grow short strand          27          31
+ crowded segment excluded!
+  exclude short helix          32          34
+  grow short strand          92          93
+  exclude short helix         106         108
+  grow short strand         136         137
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  4  5  7  6  8  9  3
+   2     1  4  5  8  1  2  4  5  7  6  8  9
+   3     1  0  0  1  3
+   4     2  8  9  5  1  2  4  5  7
+   5     2 16 17  3  6  8  9
+   6     0  0  0  5  1  2  4  5  7
+   7     0  0  0  0
+   8     4 10 11  4  1  2  4  5
+   9     4  0  0  1  7
+  10     8  0  0  1  1
+  11     8 14 15  3  2  4  5
+  12     0  0  0  1  1
+  13     0  0  0  0
+  14    11  0  0  1  2
+  15    11  0  0  2  4  5
+  16     5  0  0  2  6  8
+  17     5  0  0  1  9
+  18     0  0  0  0
+  19     0  0  0  1  3
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  2  4  9
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7  5  3  1  2  4  5  7  7
+   5 -   2 12 13  3  2  6  6  8  9
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  1  1  7  7
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  3  2  2  2  4  5
+  10 -   9  0  0  1  1  2  2
+  11 -   9  0  0  2  1  4  5
+  12 -   5  0  0  2  2  6  6  8  8
+  13 -   5  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2641  N  BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2643  CA BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2645  C  BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2647  O  BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2649  CB BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2651  CG BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2653  CD BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2655  NE BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2657  CZ BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2659  NH1BARG C  18 
+ Alternate location indication is not blank or A, ignore atom: 2661  NH2BARG C  18 
+
+Total number of residues read in:            161
+Total number of atoms read in:              1272
+Total number of ignored atom records:         25
+ HEADER    LIGASE                                  29-JUN-07   2QGX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGELT,       
+  Reading DSSP file
+ HEADER    LIGASE                                  29-JUN-07   2QGX              COMPND   2 MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 Q1;                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGE          
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1414
+ selectset done           0
+ eigen done           0
+ tau           1   1.71066093              45          65
+ #popped           2           1
+ #selectset contacts        1414
+ selectset done           1
+ eigen done           1
+ tau           3   1.67684388              23
+ #popped           4           2
+ #selectset contacts        1414
+ selectset done           2
+ eigen done           2
+ tau           5  0.889870942              11
+ #popped           5           1
+ #selectset contacts        1414
+ selectset done           1
+ eigen done           1
+ tau           7   1.54906905             150
+ #popped           8           1
+ #selectset contacts        1414
+ selectset done           1
+ eigen done           1
+ tau           9   1.02031052              84         102         131
+ #popped          10           2
+ #selectset contacts        1414
+ selectset done           2
+ eigen done           2
+ tau          11   2.36981344              84
+ #popped          12           3
+ #selectset contacts        1414
+ selectset done           3
+ eigen done           3
+ tau          13  0.506393909              45
+ #popped          14           3
+ #selectset contacts        1414
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          13           2
+ #selectset contacts        1414
+ selectset done           2
+ eigen done           2
+ tau          15   1.91379309             116
+ #popped          11           1
+ #selectset contacts        1414
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1414
+ selectset done           0
+ eigen done           0
+ tau          17  0.847826064              55
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LIGASE                                  29-JUN-07   2QGX              COMPND   2 MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 Q1;                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGE          
+           0
+         161
+         161  residues read 2QGX.dssp                                                   
+  exclude short helix          19          22
+  grow short strand          26          30
+ crowded segment excluded!
+  exclude short helix          31          33
+  grow short helix          50          56
+  grow short strand          91          92
+  exclude short helix          98         100
+  exclude short helix         105         107
+  grow short strand         135         136
+  exclude short helix         142         144
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  4  7  5  6  8  9  3
+   2     1  4  5  8  1  2  4  7  5  6  8  9
+   3     1  0  0  1  3
+   4     2  0  0  1  1
+   5     2  8  9  7  2  4  7  5  6  8  9
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     5 10 11  6  2  4  7  5  6  8
+   9     5  0  0  1  9
+  10     8 12 13  3  2  4  7
+  11     8  0  0  3  5  6  8
+  12    10 14 15  2  2  4
+  13    10  0  0  1  7
+  14    12  0  0  1  2
+  15    12  0  0  1  4
+  16     0  0  0  0
+  17     0  0  0  1  7
+  18     0  0  0  1  3
+  19     0  0  0  0
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  2  4  9
+   3 -   1  0  0  1  1  3  3
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  7  2  2  2  4  9
+   6 -   5  8  9  6  2  2  2  4  8
+   7 -   5  0  0  1  1  9  9
+   8 -   6 10 11  3  3  2  2  4  4  7  7
+   9 -   6  0  0  3  2  5  6  8  8
+  10 -   8 12 13  2  2  2  2  4  4
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  1  1  4  4
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            160
+Total number of atoms read in:              1258
+Total number of ignored atom records:         73
+ HEADER    LIGASE                                  29-JUN-07   2QGX              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGELT,       
+  Reading DSSP file
+ HEADER    LIGASE                                  29-JUN-07   2QGX              COMPND   2 MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 Q1;                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGE          
+         160  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1424
+ selectset done           0
+ eigen done           0
+ tau           1   1.74530709              24
+ #popped           2           1
+ #selectset contacts        1424
+ selectset done           1
+ eigen done           1
+ tau           3  0.947341859              12
+ #popped           3           0
+ #selectset contacts        1424
+ selectset done           0
+ eigen done           0
+ tau           5   1.91674507              45          66
+ #popped           6           1
+ #selectset contacts        1424
+ selectset done           1
+ eigen done           1
+ tau           7  0.906500936             104
+ #popped           8           2
+ #selectset contacts        1424
+ selectset done           2
+ eigen done           2
+ tau           9   1.53591883              90
+ #popped          10           2
+ #selectset contacts        1424
+ selectset done           2
+ eigen done           2
+ tau          11  0.566070259              45
+ #popped          12           3
+ #selectset contacts        1424
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          13           2
+ #selectset contacts        1424
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           9           1
+ #selectset contacts        1424
+ selectset done           1
+ eigen done           1
+ tau          13   3.62334085             135
+ #popped          14           2
+ #selectset contacts        1424
+ selectset done           2
+ eigen done           2
+ tau          15   2.75641036             117
+ #popped          15           1
+ #selectset contacts        1424
+ selectset done           1
+ eigen done           1
+ tau          17   2.95334697             146
+ #popped           7           0
+ #selectset contacts        1424
+ selectset done           0
+ eigen done           0
+ tau          19  0.738650322              55
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    LIGASE                                  29-JUN-07   2QGX              COMPND   2 MOLECULE: UBIQUITIN-CONJUGATING ENZYME E2 Q1;                        SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    D.NECULAI,G.V.AVVAKUMOV,S.XUE,J.R.WALKER,F.MACKENZIE,J.WEIGE          
+           0
+         160
+         160  residues read 2QGX.dssp                                                   
+  exclude short helix          20          24
+  grow short strand          27          31
+ crowded segment excluded!
+  exclude short helix          32          34
+  grow short strand          92          93
+  exclude short helix         106         108
+  grow short strand         136         137
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  4  5  6  7  8  9  3
+   2     1  0  0  1  1
+   3     1  6  7  8  2  4  5  6  7  8  9  3
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  7  2  4  5  6  7  8  9
+   7     3  0  0  1  3
+   8     6 10 11  4  2  4  5  6
+   9     6 14 15  3  7  8  9
+  10     8 12 13  3  2  4  5
+  11     8  0  0  1  6
+  12    10  0  0  1  2
+  13    10  0  0  2  4  5
+  14     9  0  0  1  7
+  15     9 18 19  2  8  9
+  16     0  0  0  0
+  17     0  0  0  1  7
+  18    15  0  0  1  8
+  19    15  0  0  1  9
+  20     0  0  0  0
+  21     0  0  0  1  3
+   1 *   0  2  3  9  1  1  9
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  8  1  2  9
+   4 -   3  6  7  7  2  2  2  4  9
+   5 -   3  0  0  1  1  3  3
+   6 -   4  8  9  4  2  2  2  4  6
+   7 -   4 12 13  3  1  7  9
+   8 -   6 10 11  3  2  2  2  4  5
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  1  1  2  2
+  11 -   8  0  0  2  1  4  5
+  12 -   7  0  0  1  1  7  7
+  13 -   7 14 15  2  1  8  9
+  14 -  13  0  0  1  1  8  8
+  15 -  13  0  0  1  1  9  9
+
+ CHAIN : 2QGXA
+ CHAIN : 2QGXB
+ CHAIN : 2QGXC
+ CHAIN : 2QGXD
+

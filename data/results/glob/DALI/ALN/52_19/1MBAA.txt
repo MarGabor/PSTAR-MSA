@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1MBAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2AA1-D 15.3  2.3  137   146   15   MOLECULE: HEMOGLOBIN ALPHA-1 CHAIN;                                  
+
+# Pairwise alignments
+
+No 1: Query=1MBAA Sbjct=2AA1D Z-score=15.3
+
+DSSP  -lLLHHHHHHHHHHHHHHhhLHHHHHHHHHHHHHHHLHHHHHHLLLL-llLLHHHHHLLL
+Query -sLSAAEADLAGKSWAPVfaNKNANGLDFLVALFEKFPDSANFFADF-kgKSVADIKASP   58
+ident       |                  |   |       |     |  |      | |    
+Sbjct veWTDFERATIKDIFSKL--EYDVVGPATLARCLVVYPWTQRYFGKFgnlYNAAAIAQNA   58
+DSSP  llLLHHHHHHHHHHHHHL--LHHHHHHHHHHHHHHHLHHHHHHLLLLlllLLHHHHHHLH
+
+DSSP  LHHHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHHH-HLLLLHHHHHHHHHHHHHHHH
+Query KLRDVSSRIFTRLNEFVNNAAnagKMSAMLSQFAKEHV-GFGVGSAQFENVRSMFPGFVA  117
+ident         |   |   | |                 |     |    |          ||
+Sbjct MVSKHGTTILNGLDRAVKNMD---DITNTYAELSVLHSeKLHVDPDNFKLLADCLTIVVA  115
+DSSP  HHHHHHHHHHHLLHHHHHLLL---LHHHHLHHHHHHHHhLLLLLLHHHHHHHHHHHHHHH
+
+DSSP  LLLL--LLLLHHHHHHHHHHHHHHHHHHLLl
+Query SVAA--PPAGADAAWTKLFGLIIDALKAAGa  146
+ident             ||  |        |     
+Sbjct ARFGsaFTGEVQAAFQKFMAVVVSSLGKQYr  146
+DSSP  HHHHhhLLHHHHHHHHHHHHHHHHHHHLLLl
+
+
+# Structural equivalences
+   1: 1MBA-A 2AA1-D     2 -  17 <=>    3 -  18   (LEU    2  - VAL   17  <=> TRP    3  - LEU   18 )                          
+   1: 1MBA-A 2AA1-D    20 -  46 <=>   19 -  45   (ASN   20  - PHE   46  <=> GLU   19  - PHE   45 )                          
+   1: 1MBA-A 2AA1-D    49 -  79 <=>   49 -  79   (LYS   49  - ALA   79  <=> TYR   49  - ASP   79 )                          
+   1: 1MBA-A 2AA1-D    83 -  96 <=>   80 -  93   (LYS   83  - VAL   96  <=> ASP   80  - SER   93 )                          
+   1: 1MBA-A 2AA1-D    97 - 121 <=>   95 - 119   (GLY   97  - ALA  121  <=> LYS   95  - GLY  119 )                          
+   1: 1MBA-A 2AA1-D   122 - 145 <=>  122 - 145   (PRO  122  - GLY  145  <=> PHE  122  - TYR  145 )                          
+
+# Translation-rotation matrices
+-matrix  "1MBA-A 2AA1-D  U(1,.)  -0.200682 -0.005229 -0.979643          -46.706425"
+-matrix  "1MBA-A 2AA1-D  U(2,.)   0.930390  0.312108 -0.192258          -59.964718"
+-matrix  "1MBA-A 2AA1-D  U(3,.)   0.306760 -0.950032 -0.057769          -46.501583"
+

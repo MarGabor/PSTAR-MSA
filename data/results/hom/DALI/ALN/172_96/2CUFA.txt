@@ -1,0 +1,32 @@
+# Job: hom
+# Query: 2CUFA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DMS-A  7.0  4.6   67    80   31   MOLECULE: HOMEOBOX PROTEIN OTX2;                                     
+
+# Pairwise alignments
+
+No 1: Query=2CUFA Sbjct=2DMSA Z-score=7.0
+
+DSSP  lllllllllLLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHhhhllllllllllll
+Query gssgssgrgSRFTWRKECLAVMESYFNENQYPDEAKREEIANACNaviqkpgkklsdler   60
+ident           | |     | | |  |    |||   ||| |   |               
+Sbjct gssgssgrrERTTFTRAQLDVLEALFAKTRYPDIFMREEVALKIN---------------   45
+DSSP  lllllllllLLLLLLHHHHHHHHHHHHHLLLLLHHHHHHHHHHLL---------------
+
+DSSP  LLHHHHHHHHHHHHHHhHHHHHLLLLLLLLLL-lll
+Query VTSLKVYNWFANRRKEiKRRANIAAILESSGP-ssg   95
+ident      |  || |||    |                 
+Sbjct LPESRVQVWFKNRRAK-CRQQQQQQQNGGQSGpssg   80
+DSSP  LLHHHHHHHHHHHHLH-HHHLLLLLLLLLLLLllll
+
+
+# Structural equivalences
+   1: 2CUF-A 2DMS-A    10 -  45 <=>   10 -  45   (SER   10  - ASN   45  <=> GLU   10  - ASN   45 )                          
+   1: 2CUF-A 2DMS-A    61 -  76 <=>   46 -  61   (VAL   61  - GLU   76  <=> LEU   46  - LYS   61 )                          
+   1: 2CUF-A 2DMS-A    78 -  92 <=>   62 -  76   (LYS   78  - PRO   92  <=> CYS   62  - GLY   76 )                          
+
+# Translation-rotation matrices
+-matrix  "2CUF-A 2DMS-A  U(1,.)  -0.964100  0.024605 -0.264396            2.657349"
+-matrix  "2CUF-A 2DMS-A  U(2,.)   0.118638  0.930706 -0.345993          -10.019782"
+-matrix  "2CUF-A 2DMS-A  U(3,.)   0.237562 -0.364940 -0.900213            0.784029"
+

@@ -1,0 +1,854 @@
+A length: 128
+B length: 128
+C length: 130
+D length: 128
+E length: 132
+F length: 129
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  169  CA BASN A 272 
+ Alternate location indication is not blank or A, ignore atom:  173  CB BASN A 272 
+ Alternate location indication is not blank or A, ignore atom:  175  CG BASN A 272 
+ Alternate location indication is not blank or A, ignore atom:  177  OD1BASN A 272 
+ Alternate location indication is not blank or A, ignore atom:  179  ND2BASN A 272 
+ Alternate location indication is not blank or A, ignore atom:  314  CA BGLN A 290 
+ Alternate location indication is not blank or A, ignore atom:  318  CB BGLN A 290 
+ Alternate location indication is not blank or A, ignore atom:  320  CG BGLN A 290 
+ Alternate location indication is not blank or A, ignore atom:  322  CD BGLN A 290 
+ Alternate location indication is not blank or A, ignore atom:  324  OE1BGLN A 290 
+ Alternate location indication is not blank or A, ignore atom:  326  NE2BGLN A 290 
+ Alternate location indication is not blank or A, ignore atom:  379  CA BGLU A 298 
+ Alternate location indication is not blank or A, ignore atom:  383  CB BGLU A 298 
+ Alternate location indication is not blank or A, ignore atom:  385  CG BGLU A 298 
+ Alternate location indication is not blank or A, ignore atom:  387  CD BGLU A 298 
+ Alternate location indication is not blank or A, ignore atom:  389  OE1BGLU A 298 
+ Alternate location indication is not blank or A, ignore atom:  391  OE2BGLU A 298 
+ Alternate location indication is not blank or A, ignore atom:  587  CA BASN A 322 
+ Alternate location indication is not blank or A, ignore atom:  591  CB BASN A 322 
+ Alternate location indication is not blank or A, ignore atom:  593  CG BASN A 322 
+ Alternate location indication is not blank or A, ignore atom:  595  OD1BASN A 322 
+ Alternate location indication is not blank or A, ignore atom:  597  ND2BASN A 322 
+ Alternate location indication is not blank or A, ignore atom: 6961  O  BHOH A1156 
+ Alternate location indication is not blank or A, ignore atom: 6978  O  BHOH A1172 
+
+Total number of residues read in:            132
+Total number of atoms read in:              1071
+Total number of ignored atom records:        254
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+         132  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau           1  0.977145314              65         119
+ #popped           2           1
+ #selectset contacts        1229
+ selectset done           1
+ eigen done           1
+ tau           3  0.681618392              16
+ #popped           5           1
+ #selectset contacts        1229
+ selectset done           1
+ eigen done           1
+ tau           5  0.473406821              34
+ #popped           7           1
+ #selectset contacts        1229
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau           7  0.932941377              90
+ #popped           8           1
+ #selectset contacts        1229
+ selectset done           1
+ eigen done           1
+ tau           9  0.812430382              80
+ #popped           9           0
+ #selectset contacts        1229
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+           0
+         132
+         132  residues read 6GHV.dssp                                                   
+  grow short strand           9          11
+  grow short strand          14          18
+  grow short strand          38          39
+  grow short strand          76          77
+  exclude short helix          85          90
+  grow short strand         104         108
+  grow short strand         111         115
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6 10  7  8  9
+   2     1  4  5  7  1  2  3  4  5  6 10
+   3     1  8  9  3  7  8  9
+   4     2  0  0  2  1  2
+   5     2  6  7  5  3  4  5  6 10
+   6     5  0  0  1  3
+   7     5  0  0  4  4  5  6 10
+   8     3  0  0  1  7
+   9     3  0  0  2  8  9
+  10     0  0  0  1  7
+  11     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  7  2  1  6 10 10
+   3 -   1  8  9  3  1  7  9
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  5  2  3  6 10 10
+   6 -   5  0  0  1  1  3  3
+   7 -   5  0  0  4  2  4  6 10 10
+   8 -   3  0  0  1  1  7  7
+   9 -   3  0  0  2  1  8  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1262  CA BASN B 272 
+ Alternate location indication is not blank or A, ignore atom: 1266  CB BASN B 272 
+ Alternate location indication is not blank or A, ignore atom: 1268  CG BASN B 272 
+ Alternate location indication is not blank or A, ignore atom: 1270  OD1BASN B 272 
+ Alternate location indication is not blank or A, ignore atom: 1272  ND2BASN B 272 
+ Alternate location indication is not blank or A, ignore atom: 1407  CA BGLN B 290 
+ Alternate location indication is not blank or A, ignore atom: 1411  CB BGLN B 290 
+ Alternate location indication is not blank or A, ignore atom: 1413  CG BGLN B 290 
+ Alternate location indication is not blank or A, ignore atom: 1415  CD BGLN B 290 
+ Alternate location indication is not blank or A, ignore atom: 1417  OE1BGLN B 290 
+ Alternate location indication is not blank or A, ignore atom: 1419  NE2BGLN B 290 
+ Alternate location indication is not blank or A, ignore atom: 1472  CA BGLU B 298 
+ Alternate location indication is not blank or A, ignore atom: 1476  CB BGLU B 298 
+ Alternate location indication is not blank or A, ignore atom: 1478  CG BGLU B 298 
+ Alternate location indication is not blank or A, ignore atom: 1480  CD BGLU B 298 
+ Alternate location indication is not blank or A, ignore atom: 1482  OE1BGLU B 298 
+ Alternate location indication is not blank or A, ignore atom: 1484  OE2BGLU B 298 
+ Alternate location indication is not blank or A, ignore atom: 1680  CA BASN B 322 
+ Alternate location indication is not blank or A, ignore atom: 1684  CB BASN B 322 
+ Alternate location indication is not blank or A, ignore atom: 1686  CG BASN B 322 
+ Alternate location indication is not blank or A, ignore atom: 1688  OD1BASN B 322 
+ Alternate location indication is not blank or A, ignore atom: 1690  ND2BASN B 322 
+ Alternate location indication is not blank or A, ignore atom: 7092  O  BHOH B1190 
+ Alternate location indication is not blank or A, ignore atom: 7109  O  BHOH B1206 
+
+Total number of residues read in:            132
+Total number of atoms read in:              1071
+Total number of ignored atom records:        312
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+         132  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1219
+ selectset done           0
+ eigen done           0
+ tau           1  0.966166198              65         119
+ #popped           2           1
+ #selectset contacts        1219
+ selectset done           1
+ eigen done           1
+ tau           3  0.673254967              16
+ #popped           5           1
+ #selectset contacts        1219
+ selectset done           1
+ eigen done           1
+ tau           5  0.531400979              37
+ #popped           6           2
+ #selectset contacts        1219
+ selectset done           2
+ eigen done           2
+ tau           7  0.694736838              27
+ #popped           7           1
+ #selectset contacts        1219
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1219
+ selectset done           0
+ eigen done           0
+ tau           9   1.07336199              82
+ #popped          11           0
+ #selectset contacts        1219
+ selectset done           0
+ eigen done           0
+ tau          11  0.709466636              93
+ #popped          13           0
+ #selectset contacts        1219
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+           0
+         132
+         132  residues read 6GHV.dssp                                                   
+  grow short strand           9          11
+  grow short strand          14          18
+  grow short strand          38          39
+  grow short strand          76          77
+  exclude short helix          85          90
+  grow short strand         104         108
+  grow short strand         111         115
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6 10  7  8  9
+   2     1  4  5  7  1  2  3  4  5  6 10
+   3     1 10 11  3  7  8  9
+   4     2  0  0  2  1  2
+   5     2  6  7  5  3  4  5  6 10
+   6     5  0  0  1  3
+   7     5  0  0  4  4  5  6 10
+   8     0  0  0  0
+   9     0  0  0  1  3
+  10     3  0  0  1  7
+  11     3  0  0  2  8  9
+  12     0  0  0  0
+  13     0  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  7  2  1  6 10 10
+   3 -   1  8  9  3  1  7  9
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  5  2  3  6 10 10
+   6 -   5  0  0  1  1  3  3
+   7 -   5  0  0  4  2  4  6 10 10
+   8 -   3  0  0  1  1  7  7
+   9 -   3  0  0  2  1  8  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2363  CA BASN C 272 
+ Alternate location indication is not blank or A, ignore atom: 2367  CB BASN C 272 
+ Alternate location indication is not blank or A, ignore atom: 2369  CG BASN C 272 
+ Alternate location indication is not blank or A, ignore atom: 2371  OD1BASN C 272 
+ Alternate location indication is not blank or A, ignore atom: 2373  ND2BASN C 272 
+ Alternate location indication is not blank or A, ignore atom: 2567  CA BGLU C 298 
+ Alternate location indication is not blank or A, ignore atom: 2571  CB BGLU C 298 
+ Alternate location indication is not blank or A, ignore atom: 2573  CG BGLU C 298 
+ Alternate location indication is not blank or A, ignore atom: 2575  CD BGLU C 298 
+ Alternate location indication is not blank or A, ignore atom: 2577  OE1BGLU C 298 
+ Alternate location indication is not blank or A, ignore atom: 2579  OE2BGLU C 298 
+ Alternate location indication is not blank or A, ignore atom: 2775  CA BASN C 322 
+ Alternate location indication is not blank or A, ignore atom: 2779  CB BASN C 322 
+ Alternate location indication is not blank or A, ignore atom: 2781  CG BASN C 322 
+ Alternate location indication is not blank or A, ignore atom: 2783  OD1BASN C 322 
+ Alternate location indication is not blank or A, ignore atom: 2785  ND2BASN C 322 
+ Alternate location indication is not blank or A, ignore atom: 7190  O  BHOH C1161 
+ Alternate location indication is not blank or A, ignore atom: 7229  O  BHOH C1199 
+
+Total number of residues read in:            133
+Total number of atoms read in:              1079
+Total number of ignored atom records:        332
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+         133  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1227
+ selectset done           0
+ eigen done           0
+ tau           1  0.993382156              66         120
+ #popped           2           1
+ #selectset contacts        1227
+ selectset done           1
+ eigen done           1
+ tau           3  0.694099367              17
+ #popped           5           1
+ #selectset contacts        1227
+ selectset done           1
+ eigen done           1
+ tau           5  0.523809552              38
+ #popped           6           2
+ #selectset contacts        1227
+ selectset done           2
+ eigen done           2
+ tau           7  0.694736838              28
+ #popped           7           1
+ #selectset contacts        1227
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1227
+ selectset done           0
+ eigen done           0
+ tau           9   1.00411284              83
+ #popped          11           0
+ #selectset contacts        1227
+ selectset done           0
+ eigen done           0
+ tau          11  0.646986187              95
+ #popped          13           0
+ #selectset contacts        1227
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+           0
+         133
+         133  residues read 6GHV.dssp                                                   
+  grow short strand          10          12
+  grow short strand          15          19
+  grow short strand          39          40
+  grow short strand          75          78
+  exclude short helix          86          91
+  grow short strand         105         109
+  grow short strand         112         116
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5 10  6  7  8  9
+   2     1  4  5  6  1  2  3  4  5 10
+   3     1 10 11  4  6  7  8  9
+   4     2  0  0  2  1  2
+   5     2  6  7  4  3  4  5 10
+   6     5  0  0  1  3
+   7     5  0  0  3  4  5 10
+   8     0  0  0  0
+   9     0  0  0  1  3
+  10     3  0  0  2  6  7
+  11     3  0  0  2  8  9
+  12     0  0  0  0
+  13     0  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1  8  9  4  1  6  9
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  4  2  3  5 10 10
+   6 -   5  0  0  1  1  3  3
+   7 -   5  0  0  3  2  4  5 10 10
+   8 -   3  0  0  2  1  6  7
+   9 -   3  0  0  2  1  8  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3458  CA BASN D 272 
+ Alternate location indication is not blank or A, ignore atom: 3462  CB BASN D 272 
+ Alternate location indication is not blank or A, ignore atom: 3464  CG BASN D 272 
+ Alternate location indication is not blank or A, ignore atom: 3466  OD1BASN D 272 
+ Alternate location indication is not blank or A, ignore atom: 3468  ND2BASN D 272 
+ Alternate location indication is not blank or A, ignore atom: 3662  CA BGLU D 298 
+ Alternate location indication is not blank or A, ignore atom: 3666  CB BGLU D 298 
+ Alternate location indication is not blank or A, ignore atom: 3668  CG BGLU D 298 
+ Alternate location indication is not blank or A, ignore atom: 3670  CD BGLU D 298 
+ Alternate location indication is not blank or A, ignore atom: 3672  OE1BGLU D 298 
+ Alternate location indication is not blank or A, ignore atom: 3674  OE2BGLU D 298 
+ Alternate location indication is not blank or A, ignore atom: 3695  CA BASN D 301 
+ Alternate location indication is not blank or A, ignore atom: 3699  CB BASN D 301 
+ Alternate location indication is not blank or A, ignore atom: 3701  CG BASN D 301 
+ Alternate location indication is not blank or A, ignore atom: 3703  OD1BASN D 301 
+ Alternate location indication is not blank or A, ignore atom: 3705  ND2BASN D 301 
+ Alternate location indication is not blank or A, ignore atom: 3782  CA BASN D 311 
+ Alternate location indication is not blank or A, ignore atom: 3786  CB BASN D 311 
+ Alternate location indication is not blank or A, ignore atom: 3788  CG BASN D 311 
+ Alternate location indication is not blank or A, ignore atom: 3790  OD1BASN D 311 
+ Alternate location indication is not blank or A, ignore atom: 3792  ND2BASN D 311 
+ Alternate location indication is not blank or A, ignore atom: 3880  CA BASN D 322 
+ Alternate location indication is not blank or A, ignore atom: 3884  CB BASN D 322 
+ Alternate location indication is not blank or A, ignore atom: 3886  CG BASN D 322 
+ Alternate location indication is not blank or A, ignore atom: 3888  OD1BASN D 322 
+ Alternate location indication is not blank or A, ignore atom: 3890  ND2BASN D 322 
+ Alternate location indication is not blank or A, ignore atom: 7285  O  BHOH D 619 
+ Alternate location indication is not blank or A, ignore atom: 7349  O  BHOH D 682 
+
+Total number of residues read in:            133
+Total number of atoms read in:              1079
+Total number of ignored atom records:        260
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+         133  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1201
+ selectset done           0
+ eigen done           0
+ tau           1  0.996879160              52         123
+ #popped           2           1
+ #selectset contacts        1201
+ selectset done           1
+ eigen done           1
+ tau           3  0.923855245              20          35
+ #popped           4           1
+ #selectset contacts        1201
+ selectset done           1
+ eigen done           1
+ tau           5  0.259715289              52
+ #popped           6           1
+ #selectset contacts        1201
+ selectset done           1
+ eigen done           1
+ tau           7   2.64568591              20
+ #popped           8           1
+ #selectset contacts        1201
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1201
+ selectset done           0
+ eigen done           0
+ tau           9   1.02082157              62
+ #popped          11           0
+ #selectset contacts        1201
+ selectset done           0
+ eigen done           0
+ tau          11  0.766565025              79          91
+ #popped          12           0
+ #selectset contacts        1201
+ selectset done           0
+ eigen done           0
+ tau          13  0.485546380              79
+ #popped          15           0
+ #selectset contacts        1201
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+           0
+         133
+         133  residues read 6GHV.dssp                                                   
+  grow short strand          10          12
+  grow short strand          15          19
+  grow short strand          39          40
+  grow short strand          77          78
+  exclude short helix          86          91
+  grow short strand         105         109
+  grow short strand         112         116
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  4  5 10  3  6  7  8  9
+   2     1  4  5  6  1  2  4  5 10  3
+   3     1 14 15  4  6  7  8  9
+   4     2  6  7  5  1  2  4  5 10
+   5     2  0  0  1  3
+   6     4  8  9  4  1  2  4  5
+   7     4  0  0  1 10
+   8     6  0  0  2  1  2
+   9     6  0  0  2  4  5
+  10     0  0  0  0
+  11     0  0  0  4  6  7  8  9
+  12     0  0  0  4  6  7  8  9
+  13     0  0  0  0
+  14     3  0  0  2  6  7
+  15     3  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1 10 11  4  1  6  9
+   4 -   2  6  7  5  3  1  2  4  5 10 10
+   5 -   2  0  0  1  1  3  3
+   6 -   4  8  9  4  2  1  2  4  5
+   7 -   4  0  0  1  1 10 10
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  2  1  4  5
+  10 -   3  0  0  2  1  6  7
+  11 -   3  0  0  2  1  8  9
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 4762  CA BGLU E 298 
+ Alternate location indication is not blank or A, ignore atom: 4766  CB BGLU E 298 
+ Alternate location indication is not blank or A, ignore atom: 4768  CG BGLU E 298 
+ Alternate location indication is not blank or A, ignore atom: 4770  CD BGLU E 298 
+ Alternate location indication is not blank or A, ignore atom: 4772  OE1BGLU E 298 
+ Alternate location indication is not blank or A, ignore atom: 4774  OE2BGLU E 298 
+ Alternate location indication is not blank or A, ignore atom: 7419  O  BHOH E 652 
+ Alternate location indication is not blank or A, ignore atom: 7435  O  BHOH E 667 
+
+Total number of residues read in:            133
+Total number of atoms read in:              1079
+Total number of ignored atom records:        288
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+         133  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1215
+ selectset done           0
+ eigen done           0
+ tau           1  0.808410645              67         104
+ #popped           2           1
+ #selectset contacts        1215
+ selectset done           1
+ eigen done           1
+ tau           3  0.855520129              20         123
+ #popped           4           2
+ #selectset contacts        1215
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1215
+ selectset done           1
+ eigen done           1
+ tau           5  0.863341510              38
+ #popped           7           1
+ #selectset contacts        1215
+ selectset done           1
+ eigen done           1
+ tau           7   1.05157483              52
+ #popped           9           1
+ #selectset contacts        1215
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1215
+ selectset done           0
+ eigen done           0
+ tau           9   1.21484041              83
+ #popped          11           0
+ #selectset contacts        1215
+ selectset done           0
+ eigen done           0
+ tau          11   1.12587416              93
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+           0
+         133
+         133  residues read 6GHV.dssp                                                   
+  grow short strand          10          12
+  grow short strand          15          19
+  grow short strand          39          40
+  grow short strand          75          78
+  exclude short helix          86          91
+  grow short strand         105         109
+  grow short strand         112         116
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2 10  3  4  5  6  8  9  7
+   2     1  4  5  9  1  2 10  3  4  5  6  8  9
+   3     1  0  0  1  7
+   4     2  0  0  3  1  2 10
+   5     2  6  7  6  3  4  5  6  8  9
+   6     5  0  0  1  3
+   7     5  8  9  5  4  5  6  8  9
+   8     7  0  0  2  4  5
+   9     7  0  0  3  6  8  9
+  10     0  0  0  1  7
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  9  2  1  6  8 10
+   3 -   1  0  0  1  1  7  7
+   4 -   2  0  0  3  2  1  2 10 10
+   5 -   2  6  7  6  2  3  6  8  9
+   6 -   5  0  0  1  1  3  3
+   7 -   5  8  9  5  2  4  6  8  9
+   8 -   7  0  0  2  1  4  5
+   9 -   7  0  0  3  2  6  6  8  9
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5640  CA BASN F 272 
+ Alternate location indication is not blank or A, ignore atom: 5644  CB BASN F 272 
+ Alternate location indication is not blank or A, ignore atom: 5646  CG BASN F 272 
+ Alternate location indication is not blank or A, ignore atom: 5648  OD1BASN F 272 
+ Alternate location indication is not blank or A, ignore atom: 5650  ND2BASN F 272 
+ Alternate location indication is not blank or A, ignore atom: 5701  CA BHIS F 278 
+ Alternate location indication is not blank or A, ignore atom: 5705  CB BHIS F 278 
+ Alternate location indication is not blank or A, ignore atom: 5707  CG BHIS F 278 
+ Alternate location indication is not blank or A, ignore atom: 5709  ND1BHIS F 278 
+ Alternate location indication is not blank or A, ignore atom: 5711  CD2BHIS F 278 
+ Alternate location indication is not blank or A, ignore atom: 5713  CE1BHIS F 278 
+ Alternate location indication is not blank or A, ignore atom: 5715  NE2BHIS F 278 
+ Alternate location indication is not blank or A, ignore atom: 5851  CA BGLU F 298 
+ Alternate location indication is not blank or A, ignore atom: 5855  CB BGLU F 298 
+ Alternate location indication is not blank or A, ignore atom: 5857  CG BGLU F 298 
+ Alternate location indication is not blank or A, ignore atom: 5859  CD BGLU F 298 
+ Alternate location indication is not blank or A, ignore atom: 5861  OE1BGLU F 298 
+ Alternate location indication is not blank or A, ignore atom: 5863  OE2BGLU F 298 
+ Alternate location indication is not blank or A, ignore atom: 7508  O  BHOH F 627 
+
+Total number of residues read in:            132
+Total number of atoms read in:              1071
+Total number of ignored atom records:        250
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+         132  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1216
+ selectset done           0
+ eigen done           0
+ tau           1  0.955351233              60         122
+ #popped           2           1
+ #selectset contacts        1216
+ selectset done           1
+ eigen done           1
+ tau           3   1.98384857              41          60
+ #popped           4           1
+ #selectset contacts        1216
+ selectset done           1
+ eigen done           1
+ tau           5  0.741853893              19          31
+ #popped           6           1
+ #selectset contacts        1216
+ selectset done           1
+ eigen done           1
+ tau           7  0.471923769              19
+ #popped           9           1
+ #selectset contacts        1216
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1216
+ selectset done           0
+ eigen done           0
+ tau           9  0.802683890              78          90
+ #popped          10           0
+ #selectset contacts        1216
+ selectset done           0
+ eigen done           0
+ tau          11  0.455522269              78
+ #popped          13           0
+ #selectset contacts        1216
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   09-MAY-18   6GHV              COMPND   2 MOLECULE: CD209 ANTIGEN;                                             SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    M.THEPAUT,S.ACHILLI,L.MEDVE,A.BERNARDI,F.FIESCHI                      
+           0
+         132
+         132  residues read 6GHV.dssp                                                   
+  grow short strand           9          11
+  grow short strand          14          18
+  grow short strand          38          39
+  grow short strand          76          77
+  exclude short helix          85          90
+  grow short strand         104         108
+  grow short strand         111         115
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  4 10  3  5  6  7  8  9
+   2     1  4  5  6  1  2  4 10  3  5
+   3     1 12 13  4  6  7  8  9
+   4     2  6  7  5  1  2  4 10  3
+   5     2  0  0  1  5
+   6     4  8  9  4  1  2  4 10
+   7     4  0  0  1  3
+   8     6  0  0  2  1  2
+   9     6  0  0  2  4 10
+  10     0  0  0  4  6  7  8  9
+  11     0  0  0  0
+  12     3  0  0  2  6  7
+  13     3  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1 10 11  4  1  6  9
+   4 -   2  6  7  5  2  1  4 10 10
+   5 -   2  0  0  1  1  5  5
+   6 -   4  8  9  4  3  1  2  4  4 10 10
+   7 -   4  0  0  1  1  3  3
+   8 -   6  0  0  2  1  1  2
+   9 -   6  0  0  2  2  4  4 10 10
+  10 -   3  0  0  2  1  6  7
+  11 -   3  0  0  2  1  8  9
+
+ CHAIN : 6GHVA
+ CHAIN : 6GHVB
+ CHAIN : 6GHVC
+ CHAIN : 6GHVD
+ CHAIN : 6GHVE
+ CHAIN : 6GHVF
+

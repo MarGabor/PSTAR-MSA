@@ -1,0 +1,38 @@
+# Job: uce
+# Query: 2YBFA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2UCZ-A 21.4  1.5  148   164   39   MOLECULE: UBIQUITIN CONJUGATING ENZYME;                              
+
+# Pairwise alignments
+
+No 1: Query=2YBFA Sbjct=2UCZA Z-score=21.4
+
+DSSP  -LHHHHHHHHHHHHHHHLLLLLEEEEEELL-EEEEEEEEEELLLLLLLLLLEEEEEEELL
+Query -TPARRRLMRDFKRLQEDPPVGVSGAPSEN-NIMQWNAVIFGPEGTPFEDGTFKLVIEFS   58
+ident    |  ||      |  | | |    |    ||  |   | ||  ||  || |    || 
+Sbjct sKTAQKRLLKELQQLIKDSPPGIVAGPKSEnNIFIWDCLIQGPPDTPYADGVFNAKLEFP   60
+DSSP  lHHHHHHHHHHHHHHHHLLLLLEEEEELLLlLLLEEEEEEELLLLLLLLLLEEEEEEELL
+
+DSSP  LLLLLLLLEEEELLLLLLLLLLLLLLLLLHHHLL-------------LLLLLLLHHHHHH
+Query EEYPNKPPTVRFLSKMFHPNVYADGSICLDILQN-------------RWSPTYDVSSILT  105
+ident   ||  ||   |     ||| |  |  |  ||               ||||   |  || 
+Sbjct KDYPLSPPKLTFTPSILHPNIYPNGEVCISILHSpgddpnmyelaeeRWSPVQSVEKILL  120
+DSSP  LLLLLLLLEEEELLLLLLLLLLLLLLLLLHHHLLlllllllllllllLLLLLLLHHHHHH
+
+DSSP  HHHHHHHLLLLLLLLLHHHHHHHHLLHHHHHHHHHHHHHHLLLll
+Query SIQSLLDEPNPNSPANSQAAQLYQENKREYEKRVSAIVEQSWNds  150
+ident |  | | |||  | ||  |  |   |  | |  |      |    
+Sbjct SVMSMLSEPNIESGANIDACILWRDNRPEFERQVKLSILKSLG-f  164
+DSSP  HHHHHHHLLLHHHLLLHHHHHHHHLLHHHHHHHHHHHHHHHLL-l
+
+
+# Structural equivalences
+   1: 2YBF-A 2UCZ-A     1 -  29 <=>    2 -  30   (THR    3  - ASN   31  <=> LYS    3  - GLU   31 )                          
+   1: 2YBF-A 2UCZ-A    30 -  92 <=>   32 -  94   (ASN   32  - ASN   94  <=> ASN   33  - SER   95 )                          
+   1: 2YBF-A 2UCZ-A    93 - 148 <=>  108 - 163   (ARG   95  - ASN  150  <=> ARG  109  - GLY  164 )                          
+
+# Translation-rotation matrices
+-matrix  "2YBF-A 2UCZ-A  U(1,.)  -0.394702 -0.703667 -0.590815           55.665333"
+-matrix  "2YBF-A 2UCZ-A  U(2,.)  -0.310476 -0.503055  0.806561           53.759731"
+-matrix  "2YBF-A 2UCZ-A  U(3,.)  -0.864763  0.501785 -0.019915          -36.510098"
+

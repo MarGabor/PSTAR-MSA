@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1C40B
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HLB-A 15.8  2.5  142   157   19   MOLECULE: HEMOGLOBIN (DEOXY);                                        
+
+# Pairwise alignments
+
+No 1: Query=1C40B Sbjct=1HLBA Z-score=15.8
+
+DSSP  ---------LLLLHHHHHHHHHHHLLLL--HHHHHHHHHHHHHHHLHHHHHHHHHHLLLL
+Query ---------VHWSAEEKQLITGLWGKVN--VADCGAEALARLLIVYPWTQRFFSSFGNLS   49
+ident                 |      |                |     |  |  |      |
+Sbjct ggtlaiqaqGDLTLAQKKIVRKTWHQLMrnKTSFVTDVFIRIFAYDPSAQNKFPQMAGMS   60
+DSSP  lllllllllLLLLHHHHHHHHHHHHHHHhhLLLHHHHHHHHHHHHLLHHHHLLHHHLLLL
+
+DSSP  lHHHHHHLHHHHHHHHHHHHHHHHHHHLLL--LHHHHHHHHHHHHHhLLLLLLHHHHHHH
+Query sPTAILGNPMVRAHGKKVLTSFGDAVKNLD--NIKNTFAQLSELHCdKLHVDPENFRLLG  107
+ident             ||   |       |  ||        | |   |     |      |  
+Sbjct -ASQLRSSRQMQAHAIRVSSIMSEYVEELDsdILPELLATLARTHD-LNKVGADHYNLFA  118
+DSSP  -HHHHLLLHHHHHHHHHHHHHHHHHHLLLLllLHHHHLHHHHHHHH-HLLLLHHHHHHHH
+
+DSSP  HHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHHHhLLLL-l
+Query DILIIVLAAHFAKEFTPDCQAAWQKLVRVVAHAlARKY-h  146
+ident   |   | |     |      || |   ||          
+Sbjct KVLMEALQAELGSDFNEKTRDAWAKAFSVVQAV-LLVKhg  157
+DSSP  HHHHHHHHHHHLLLLLLHHHHHHHHHHHHHHHL-LLLLll
+
+
+# Structural equivalences
+   1: 1C40-B 1HLB-A     1 -  19 <=>   10 -  28   (VAL    1  - ASN   19  <=> GLY   10  - MET   28 )                          
+   1: 1C40-B 1HLB-A    20 -  49 <=>   31 -  60   (VAL   20  - SER   49  <=> LYS   31  - SER   60 )                          
+   1: 1C40-B 1HLB-A    51 -  79 <=>   61 -  89   (PRO   51  - ASP   79  <=> ALA   61  - ASP   89 )                          
+   1: 1C40-B 1HLB-A    80 -  93 <=>   92 - 105   (ASN   80  - CYS   93  <=> ILE   92  - ASP  105 )                          
+   1: 1C40-B 1HLB-A    95 - 140 <=>  106 - 151   (LYS   95  - ALA  140  <=> LEU  106  - VAL  151 )                          
+   1: 1C40-B 1HLB-A   142 - 145 <=>  152 - 155   (ALA  142  - TYR  145  <=> LEU  152  - LYS  155 )                          
+
+# Translation-rotation matrices
+-matrix  "1C40-B 1HLB-A  U(1,.)   0.517832  0.264655 -0.813516           -5.224516"
+-matrix  "1C40-B 1HLB-A  U(2,.)  -0.691611 -0.430185 -0.580184           50.072392"
+-matrix  "1C40-B 1HLB-A  U(3,.)  -0.503512  0.863075 -0.039725           20.620777"
+

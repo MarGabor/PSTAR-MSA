@@ -1,0 +1,40 @@
+# Job: ghf22
+# Query: 1ALCA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HHL-A 20.1  1.4  121   129   34   MOLECULE: GUINEA FOWL LYSOZYME;                                      
+
+# Pairwise alignments
+
+No 1: Query=1ALCA Sbjct=1HHLA Z-score=20.1
+
+DSSP  LLLLHHHHHHHLH--HHLLHHHLLHHHHHHHHHHHHLLLLLLEEELL-LLEEELLLLEEL
+Query KQFTKCELSQNLY--DIDGYGRIALPELICTMFHTSGYDTQAIVEND-ESTEYGLFQISN   57
+ident | |  |||         | |    |    |     |    ||   |   || ||  ||  
+Sbjct KVFGRCELAAAMKrhGLDNYRGYSLGNWVCAAKFESNFNSQATNRNTdGSTDYGVLQINS   60
+DSSP  LLLLHHHHHHHHHhlLLLLLLLLLHHHHHHHHHHHHLLLLLLEEELLlLLEEELLLLEEL
+
+DSSP  LLLLLLLLLLLLLLLLLLLHHHHHLLLLHHHHHHHHHHHHHL-LHHHLHHHHHHLL-LLL
+Query ALWCKSSQSPQSRNICDITCDKFLDDDITDDIMCAKKILDIK-GIDYWIAHKALCT-EKL  115
+ident   ||     | ||| | | |      |||    |||||     |   | |    |     
+Sbjct RWWCNDGRTPGSRNLCNIPCSALQSSDITATANCAKKIVSDGdGMNAWVAWRKHCKgTDV  120
+DSSP  LLLLLLLLLLLLLLLLLLLHHHHHLLLLHHHHHHHHHHHHHLlHHHHLHHHHHHLLlLLL
+
+DSSP  HHHLLL--l
+Query EQWLCE--k  122
+ident   |      
+Sbjct RVWIKGcrl  129
+DSSP  HHHHLLlll
+
+
+# Structural equivalences
+   1: 1ALC-A 1HHL-A     1 -  13 <=>    1 -  13   (LYS    1  - TYR   13  <=> LYS    1  - LYS   13 )                          
+   1: 1ALC-A 1HHL-A    14 -  45 <=>   16 -  47   (ASP   14  - ASP   45  <=> GLY   16  - THR   47 )                          
+   1: 1ALC-A 1HHL-A    46 -  99 <=>   49 - 102   (GLU   46  - LYS   99  <=> GLY   49  - GLY  102 )                          
+   1: 1ALC-A 1HHL-A   100 - 112 <=>  104 - 116   (GLY  100  - THR  112  <=> GLY  104  - LYS  116 )                          
+   1: 1ALC-A 1HHL-A   113 - 121 <=>  118 - 126   (GLU  113  - GLU  121  <=> THR  118  - GLY  126 )                          
+
+# Translation-rotation matrices
+-matrix  "1ALC-A 1HHL-A  U(1,.)   0.810751  0.226870  0.539641          -51.109615"
+-matrix  "1ALC-A 1HHL-A  U(2,.)   0.460902 -0.815725 -0.349516            1.473374"
+-matrix  "1ALC-A 1HHL-A  U(3,.)   0.360904  0.532092 -0.765916          -20.716463"
+

@@ -1,0 +1,32 @@
+# Job: cytb
+# Query: 3X34A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3LF5-B 11.9  1.9   78    87   31   MOLECULE: CYTOCHROME B5 REDUCTASE 4;                                 
+
+# Pairwise alignments
+
+No 1: Query=3X34A Sbjct=3LF5B Z-score=11.9
+
+DSSP  --lLLEELHHHHLLLEELLEEEEEELLEEEELLLHHHLLLLLLHHHHLLLLLLLHHHHHH
+Query --aVKYYTLEEIQKHNNSKSTWLILHHKVYDLTKFLEEHPGGEEVLREQAGGDATENFED   58
+ident        | ||  |||     |      ||      | |||||  |   || | || |  
+Sbjct kgrLIEVTEEELKKHNKKDDCWICIRGFVYNVSPYMEYHPGGEDELMRAAGSDGTELFDQ   60
+DSSP  lllLEEELHHHHHHLEELLEEEEEELLEEEELHHHLLLLLLLHHHHHLLLLEELHHHHHH
+
+DSSP  -HLLLhHHHHHHHLLEEEEELHHhllllll
+Query -VGHStDARELSKTFIIGELHPDdrskiak   87
+ident             |    |            
+Sbjct vHRWV-NYESMLKECLVGRMAIK--pavlk   87
+DSSP  hHLLL-LHHHHLHHHEEEEELLL--hhhhl
+
+
+# Structural equivalences
+   1: 3X34-A 3LF5-B     2 -  58 <=>    4 -  60   (VAL    9  - ASP   65  <=> LEU   54  - GLN  110 )                          
+   1: 3X34-A 3LF5-B    59 -  62 <=>   62 -  65   (VAL   66  - SER   69  <=> HIS  112  - VAL  115 )                          
+   1: 3X34-A 3LF5-B    64 -  80 <=>   66 -  82   (ASP   71  - ASP   87  <=> ASN  116  - LYS  132 )                          
+
+# Translation-rotation matrices
+-matrix  "3X34-A 3LF5-B  U(1,.)   0.337558 -0.739522  0.582376           23.534506"
+-matrix  "3X34-A 3LF5-B  U(2,.)   0.149782 -0.568609 -0.808857           18.065025"
+-matrix  "3X34-A 3LF5-B  U(3,.)   0.929312  0.360265 -0.081171          -20.301998"
+

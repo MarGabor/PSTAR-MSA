@@ -1,0 +1,32 @@
+# Job: cytb
+# Query: 1X3XB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3MUS-B 13.2  1.2   76    87   41   MOLECULE: CYTOCHROME B5 TYPE B;                                      
+
+# Pairwise alignments
+
+No 1: Query=1X3XB Sbjct=3MUSB Z-score=13.2
+
+DSSP  -llLEEELHHHHHLLEELLEEEEEELLEEEELLLLLLLLLLLHH-HHHHLLLLLHHHHHH
+Query -cgDKKYTKEEVAKHNTQNDLWIIYDGEVHDMTSFYKEHPGGKV-ILNKAGQDATSVLKT   58
+ident       |  ||||| ||    |    | | | | |  |||||    |  || |||     
+Sbjct dpaVTYYRLEEVAKRNTAEETWMVIHGRVYDITRFLSEHPGGEEvLLEQAGADATESFED   60
+DSSP  lllLLEELHHHHHLLEELLEEEEEELLEEEELHHHHHHLLLLLHhHHHLLLLLLHHHHHH
+
+DSSP  LHhhhlLHHHHHHHHHLLEEEEEL-------
+Query LAphvkAADVVMKKLKQTCIGKVK-------   82
+ident               |||  || |        
+Sbjct VG----HSPDAREMLKQYYIGDVHpndlkpa   87
+DSSP  HL----LLHHHHHHHHHHEEEEELhhhllll
+
+
+# Structural equivalences
+   1: 1X3X-B 3MUS-B     3 -  43 <=>    4 -  44   (ASP    3  - VAL   43  <=> VAL    4  - GLU   44 )                          
+   1: 1X3X-B 3MUS-B    44 -  60 <=>   46 -  62   (ILE   44  - ALA   60  <=> LEU   46  - GLY   62 )                          
+   1: 1X3X-B 3MUS-B    65 -  82 <=>   63 -  80   (ALA   65  - LYS   82  <=> HIS   63  - HIS   80 )                          
+
+# Translation-rotation matrices
+-matrix  "1X3X-B 3MUS-B  U(1,.)   0.029606 -0.448628  0.893228          -23.559916"
+-matrix  "1X3X-B 3MUS-B  U(2,.)  -0.703405 -0.644253 -0.300265           42.639389"
+-matrix  "1X3X-B 3MUS-B  U(3,.)   0.710173 -0.619411 -0.334641           44.861732"
+

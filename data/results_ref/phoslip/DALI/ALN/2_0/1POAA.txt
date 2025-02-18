@@ -1,0 +1,39 @@
+# Job: phoslip
+# Query: 1POAA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1G4I-A 20.7  1.2  117   123   57   MOLECULE: PHOSPHOLIPASE A2;                                          
+
+# Pairwise alignments
+
+No 1: Query=1POAA Sbjct=1G4IA Z-score=20.7
+
+DSSP  LHHHHHHHHHHHLLLLLHH-HHLLLLLLLLLLLLLLLLLHHHHHHHHHHHHHHHHLLLL-
+Query NLYQFKNMIQCTVPSRSWW-DFADYGCYCGRGGSGTPVDDLDRCCQVHDNCYNEAEKIS-   58
+ident  | ||  || |  ||     ||  |||||| ||||||||||||||| |||||  | |   
+Sbjct ALWQFNGMIKCKIPSSEPLlDFNNYGCYCGLGGSGTPVDDLDRCCQTHDNCYKQAKKLDs   60
+DSSP  LHHHHHHHHHHHLLLLLHHhHLLLLLLLLLLLLLLLLLLHHHHHHHHHHHHHHHHHHLHh
+
+DSSP  ----LLLLLLLLLLEEEELLEEEELLLLLHHHHHHHHHHHHHHHHHLLLLLLHHHLLLLh
+Query ----GCWPYFKTYSYECSQGTLTCKGGNNACAAAVCDCDRLAAICFAGAPYNDNDYNINl  114
+ident        ||   ||| ||    ||   |||| |  | ||| |||||   |||    |   
+Sbjct ckvlVDNPYTNNYSYSCSNNEITCSSENNACEAFICNCDRNAAICFSKVPYNKEHKNLD-  119
+DSSP  hhhlLLLHHHLLLLEEEELLEEEELLLLLHHHHHHHHHHHHHHHHHHLLLLLHHHLLLL-
+
+DSSP  HHHL
+Query KARC  118
+ident |  |
+Sbjct KKNC  123
+DSSP  HHHL
+
+
+# Structural equivalences
+   1: 1POA-A 1G4I-A     1 -  19 <=>    1 -  19   (ASN    1  - TRP   19  <=> ALA    1  - LEU   19 )                          
+   1: 1POA-A 1G4I-A    20 -  58 <=>   21 -  59   (ASP   20  - SER   58  <=> ASP   21  - ASP   59 )                          
+   1: 1POA-A 1G4I-A    59 - 113 <=>   65 - 119   (GLY   59  - ASN  113  <=> VAL   65  - ASP  119 )                          
+   1: 1POA-A 1G4I-A   115 - 118 <=>  120 - 123   (LYS  115  - CYS  118  <=> LYS  120  - CYS  123 )                          
+
+# Translation-rotation matrices
+-matrix  "1POA-A 1G4I-A  U(1,.)  -0.860076 -0.067095 -0.505735           49.444286"
+-matrix  "1POA-A 1G4I-A  U(2,.)   0.099178 -0.994391 -0.036742          104.684044"
+-matrix  "1POA-A 1G4I-A  U(3,.)  -0.500433 -0.081759  0.861906          -11.269603"
+

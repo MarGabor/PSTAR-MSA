@@ -1,0 +1,904 @@
+A length: 282
+B length: 282
+C length: 282
+D length: 282
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            282
+Total number of atoms read in:              2301
+Total number of ignored atom records:        365
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              COMPND   2 MOLECULE: BILE SALT SULFOTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+         282  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2674
+ selectset done           0
+ eigen done           0
+ tau           1   2.21047401             118         154         231
+ #popped           2           1
+ #selectset contacts        2674
+ selectset done           1
+ eigen done           1
+ tau           3   2.82706761              43          71         201
+ #popped           4           2
+ #selectset contacts        2674
+ selectset done           2
+ eigen done           2
+ tau           5   1.16173863             177
+ #popped           6           3
+ #selectset contacts        2674
+ selectset done           3
+ eigen done           3
+ tau           7   1.22555757              15
+ #popped           9           3
+ #selectset contacts        2674
+ selectset done           3
+ eigen done           3
+ tau           9  0.942893624             118
+ #popped          10           4
+ #selectset contacts        2674
+ selectset done           4
+ eigen done           4
+ tau          11  0.929511309              26
+ #popped          13           4
+ #selectset contacts        2674
+ selectset done           4
+ eigen done           4
+ tau          13  0.538645685              81          91
+ #popped          14           4
+ #selectset contacts        2674
+ selectset done           4
+ eigen done           4
+ tau          15   0.00000000    
+ #popped          11           3
+ #selectset contacts        2674
+ selectset done           3
+ eigen done           3
+ tau          15   1.50000000             166
+ #popped           7           2
+ #selectset contacts        2674
+ selectset done           2
+ eigen done           2
+ tau          17  0.905263186             187
+ #popped           5           1
+ #selectset contacts        2674
+ selectset done           1
+ eigen done           1
+ tau          19   1.25769687              59          71         215
+ #popped          20           2
+ #selectset contacts        2674
+ selectset done           2
+ eigen done           2
+ tau          21   1.42434776              59
+ #popped          21           1
+ #selectset contacts        2674
+ selectset done           1
+ eigen done           1
+ tau          23   1.25308418              71
+ #popped           3           0
+ #selectset contacts        2674
+ selectset done           0
+ eigen done           0
+ tau          25   1.97013271             255
+ #popped          26           1
+ #selectset contacts        2674
+ selectset done           1
+ eigen done           1
+ tau          27   1.50120151             138         154
+ #popped          28           1
+ #selectset contacts        2674
+ selectset done           1
+ eigen done           1
+ tau          29   1.24651814             128         243
+ #popped          30           2
+ #selectset contacts        2674
+ selectset done           2
+ eigen done           2
+ tau          31   1.04788506             128
+ #popped          31           1
+ #selectset contacts        2674
+ selectset done           1
+ eigen done           1
+ tau          33  0.736885250             138
+ #popped          27           0
+ #selectset contacts        2674
+ selectset done           0
+ eigen done           0
+ tau          35   1.82095850             272
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              COMPND   2 MOLECULE: BILE SALT SULFOTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+           0
+         282
+         282  residues read 3F3Y.dssp                                                   
+  grow short strand           3           5
+  grow short strand           8          10
+  grow short strand          34          38
+  exclude short helix          68          71
+  grow short strand          92          95
+  exclude short helix          99         101
+  exclude short helix         104         106
+  grow short strand         176         180
+ crowded segment excluded!
+  exclude short helix         181         186
+  exclude short helix         217         222
+  exclude short helix         250         253
+  exclude short helix         276         278
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  6  7  8 11 12  5 13  9 10 14
+   2     1  4  5 11  1  2  3  4  6  7  8 11 12  5 13
+   3     1 26 27  3  9 10 14
+   4     2  6  7  9  1  2  3  4  6  7  8 11 12
+   5     2 22 23  2  5 13
+   6     4  8  9  8  1  2  3  4  6  7  8 11
+   7     4  0  0  1 12
+   8     6  0  0  2  1  2
+   9     6 10 11  6  3  4  6  7  8 11
+  10     9 12 13  5  3  4  6  7  8
+  11     9  0  0  1 11
+  12    10  0  0  1  3
+  13    10  0  0  4  4  6  7  8
+  14     0  0  0  4  4  6  7  8
+  15     0  0  0  0
+  16     0  0  0  1 11
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  1 12
+  20     0  0  0  2  5 13
+  21     0  0  0  0
+  22     5  0  0  1  5
+  23     5  0  0  1 13
+  24     0  0  0  0
+  25     0  0  0  0
+  26     3 28 29  2  9 10
+  27     3  0  0  1 14
+  28    26  0  0  1  9
+  29    26  0  0  1 10
+  30     0  0  0  1  9
+  31     0  0  0  0
+  32     0  0  0  1  9
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  0
+  36     0  0  0  1 14
+  37     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 11  2  1  8 11 13
+   3 -   1 16 17  3  2  9 10 14 14
+   4 -   2  6  7  9  3  1  4  6  8 11 12
+   5 -   2 14 15  2  2  5  5 13 13
+   6 -   4  8  9  8  3  1  4  6  8 11 11
+   7 -   4  0  0  1  1 12 12
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  6  3  3  4  6  8 11 11
+  10 -   9 12 13  5  2  3  4  6  8
+  11 -   9  0  0  1  1 11 11
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  4  2  4  4  6  8
+  14 -   5  0  0  1  1  5  5
+  15 -   5  0  0  1  1 13 13
+  16 -   3 18 19  2  1  9 10
+  17 -   3  0  0  1  1 14 14
+  18 -  16  0  0  1  1  9  9
+  19 -  16  0  0  1  1 10 10
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            282
+Total number of atoms read in:              2298
+Total number of ignored atom records:        305
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              COMPND   2 MOLECULE: BILE SALT SULFOTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+         282  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2663
+ selectset done           0
+ eigen done           0
+ tau           1   1.82841730             118         155         248
+ #popped           2           1
+ #selectset contacts        2663
+ selectset done           1
+ eigen done           1
+ tau           3   2.82758856              44          71         201
+ #popped           4           2
+ #selectset contacts        2663
+ selectset done           2
+ eigen done           2
+ tau           5   1.56502032             179
+ #popped           6           3
+ #selectset contacts        2663
+ selectset done           3
+ eigen done           3
+ tau           7   1.20346284              15
+ #popped           9           3
+ #selectset contacts        2663
+ selectset done           3
+ eigen done           3
+ tau           9   1.11688137              26
+ #popped          11           3
+ #selectset contacts        2663
+ selectset done           3
+ eigen done           3
+ tau          11  0.730823934              44          93
+ #popped          12           4
+ #selectset contacts        2663
+ selectset done           4
+ eigen done           4
+ tau          13  0.514155507             165
+ #popped          14           4
+ #selectset contacts        2663
+ selectset done           4
+ eigen done           4
+ tau          15   1.22192550             118
+ #popped          16           4
+ #selectset contacts        2663
+ selectset done           4
+ eigen done           4
+ tau          17   0.00000000    
+ #popped          13           3
+ #selectset contacts        2663
+ selectset done           3
+ eigen done           3
+ tau          17  0.799896717              82
+ #popped           7           2
+ #selectset contacts        2663
+ selectset done           2
+ eigen done           2
+ tau          19  0.773091137             191
+ #popped           5           1
+ #selectset contacts        2663
+ selectset done           1
+ eigen done           1
+ tau          21   1.70309830             228
+ #popped          22           2
+ #selectset contacts        2663
+ selectset done           2
+ eigen done           2
+ tau          23   1.32270312              71         215
+ #popped          24           2
+ #selectset contacts        2663
+ selectset done           2
+ eigen done           2
+ tau          25   1.20548069              71
+ #popped          26           2
+ #selectset contacts        2663
+ selectset done           2
+ eigen done           2
+ tau          27   1.22479808              59
+ #popped          23           1
+ #selectset contacts        2663
+ selectset done           1
+ eigen done           1
+ tau          29   1.72413802             238
+ #popped           3           0
+ #selectset contacts        2663
+ selectset done           0
+ eigen done           0
+ tau          31   1.60670245             264
+ #popped          32           0
+ #selectset contacts        2663
+ selectset done           0
+ eigen done           0
+ tau          33   1.26012754             155
+ #popped          34           0
+ #selectset contacts        2663
+ selectset done           0
+ eigen done           0
+ tau          35   1.40506995             138
+ #popped          36           0
+ #selectset contacts        2663
+ selectset done           0
+ eigen done           0
+ tau          37  0.815789461             128
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              COMPND   2 MOLECULE: BILE SALT SULFOTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+           0
+         282
+         282  residues read 3F3Y.dssp                                                   
+  grow short strand           3           5
+  grow short strand           8          10
+  grow short strand          34          38
+  exclude short helix          68          71
+  grow short strand          92          95
+  exclude short helix          99         101
+  exclude short helix         104         108
+  grow short strand         176         180
+ crowded segment excluded!
+  exclude short helix         181         186
+  exclude short helix         217         222
+  exclude short helix         250         253
+  exclude short helix         276         278
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  8 11  6  7 12  5 13  9 10 14
+   2     1  4  5 11  1  2  3  4  8 11  6  7 12  5 13
+   3     1 34 35  3  9 10 14
+   4     2  6  7  9  1  2  3  4  8 11  6  7 12
+   5     2 24 25  2  5 13
+   6     4  8  9  8  1  2  3  4  8 11  6  7
+   7     4  0  0  1 12
+   8     6  0  0  2  1  2
+   9     6 10 11  6  3  4  8 11  6  7
+  10     9  0  0  1  3
+  11     9 12 13  5  4  8 11  6  7
+  12    11 14 15  3  4  8 11
+  13    11 18 19  2  6  7
+  14    12  0  0  2  4  8
+  15    12  0  0  1 11
+  16     0  0  0  2  4  8
+  17     0  0  0  0
+  18    13  0  0  1  6
+  19    13  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  1 12
+  22     0  0  0  2  5 13
+  23     0  0  0  0
+  24     5  0  0  1  5
+  25     5  0  0  1 13
+  26     0  0  0  1  5
+  27     0  0  0  0
+  28     0  0  0  1  5
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  0
+  32     0  0  0  3  9 10 14
+  33     0  0  0  0
+  34     3 36 37  2  9 10
+  35     3  0  0  1 14
+  36    34  0  0  1  9
+  37    34  0  0  1 10
+  38     0  0  0  1  9
+  39     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 11  2  1  8 11 13
+   3 -   1 20 21  3  2  9 10 14 14
+   4 -   2  6  7  9  3  1  4  6  8 11 12
+   5 -   2 18 19  2  2  5  5 13 13
+   6 -   4  8  9  8  3  1  4  6  8 11 11
+   7 -   4  0  0  1  1 12 12
+   8 -   6  0  0  2  1  1  2
+   9 -   6 10 11  6  3  3  4  6  8 11 11
+  10 -   9  0  0  1  1  3  3
+  11 -   9 12 13  5  3  4  4  6  8 11 11
+  12 -  11 14 15  3  3  4  4  8  8 11 11
+  13 -  11 16 17  2  1  6  7
+  14 -  12  0  0  2  2  4  4  8  8
+  15 -  12  0  0  1  1 11 11
+  16 -  13  0  0  1  1  6  6
+  17 -  13  0  0  1  1  7  7
+  18 -   5  0  0  1  1  5  5
+  19 -   5  0  0  1  1 13 13
+  20 -   3 22 23  2  1  9 10
+  21 -   3  0  0  1  1 14 14
+  22 -  20  0  0  1  1  9  9
+  23 -  20  0  0  1  1 10 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            282
+Total number of atoms read in:              2292
+Total number of ignored atom records:        297
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              COMPND   2 MOLECULE: BILE SALT SULFOTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+         282  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2687
+ selectset done           0
+ eigen done           0
+ tau           1   1.55803919             255
+ #popped           2           1
+ #selectset contacts        2687
+ selectset done           1
+ eigen done           1
+ tau           3   1.99139237              40          72         115         152         178
+ #popped           4           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau           5   1.53191411              13
+ #popped           7           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau           7  0.885881364             115         165
+ #popped           8           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau           9  0.977893412              30          40          91
+ #popped          10           3
+ #selectset contacts        2687
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped          11           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau          11  0.288304985              40
+ #popped          13           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau          13   1.18835521             101
+ #popped          15           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2687
+ selectset done           1
+ eigen done           1
+ tau          15   1.60456228             134         152
+ #popped          16           1
+ #selectset contacts        2687
+ selectset done           1
+ eigen done           1
+ tau          17   1.15018678             134         222
+ #popped          18           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau          19   2.10964918              72         134         232
+ #popped          20           3
+ #selectset contacts        2687
+ selectset done           3
+ eigen done           3
+ tau          21   1.29939461              59
+ #popped          23           3
+ #selectset contacts        2687
+ selectset done           3
+ eigen done           3
+ tau          23  0.919995666              72
+ #popped          21           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau          25   1.15616918             242
+ #popped          26           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau          27   1.13330936             134
+ #popped          19           1
+ #selectset contacts        2687
+ selectset done           1
+ eigen done           1
+ tau          29   3.17441869             201
+ #popped          30           2
+ #selectset contacts        2687
+ selectset done           2
+ eigen done           2
+ tau          31  0.808967769             188
+ #popped          31           1
+ #selectset contacts        2687
+ selectset done           1
+ eigen done           1
+ tau          33  0.899999976             212
+ #popped           3           0
+ #selectset contacts        2687
+ selectset done           0
+ eigen done           0
+ tau          35   1.43922794             271
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              COMPND   2 MOLECULE: BILE SALT SULFOTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+           0
+         282
+         282  residues read 3F3Y.dssp                                                   
+  grow short strand           3           5
+  grow short strand           8          10
+  grow short strand          34          38
+  exclude short helix          68          71
+  grow short strand          92          95
+  exclude short helix          99         101
+  exclude short helix         104         106
+  grow short strand         176         180
+ crowded segment excluded!
+  exclude short helix         181         186
+  exclude short helix         217         222
+  exclude short helix         250         253
+  exclude short helix         276         278
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  6  4  7  8 11  5  9 12 13 10 14
+   2     1  4  5 13  1  2  3  6  4  7  8 11  5  9 12 13 10
+   3     1  0  0  1 14
+   4     2  6  7  8  1  2  3  6  4  7  8 11
+   5     2 16 17  5  5  9 12 13 10
+   6     4  0  0  2  1  2
+   7     4 10 11  6  3  6  4  7  8 11
+   8     0  0  0  6  3  6  4  7  8 11
+   9     0  0  0  0
+  10     7  0  0  2  3  6
+  11     7 12 13  4  4  7  8 11
+  12    11  0  0  1  4
+  13    11 14 15  3  7  8 11
+  14    13  0  0  1  7
+  15    13  0  0  2  8 11
+  16     5 18 19  4  5  9 12 13
+  17     5  0  0  1 10
+  18    16 20 21  2  5  9
+  19    16 30 31  2 12 13
+  20    18  0  0  1  5
+  21    18  0  0  1  9
+  22     0  0  0  1  5
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  1  9
+  27     0  0  0  0
+  28     0  0  0  1  9
+  29     0  0  0  0
+  30    19  0  0  1 12
+  31    19  0  0  1 13
+  32     0  0  0  0
+  33     0  0  0  1 12
+  34     0  0  0  1 13
+  35     0  0  0  0
+  36     0  0  0  1 14
+  37     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 13  1  1 13
+   3 -   1  0  0  1  1 14 14
+   4 -   2  6  7  8  3  1  4  6  8 11 11
+   5 -   2 14 15  5  3  5  5  9 10 12 13
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  6  3  3  4  6  8 11 11
+   8 -   7  0  0  2  2  3  3  6  6
+   9 -   7 10 11  4  3  4  4  7  8 11 11
+  10 -   9  0  0  1  1  4  4
+  11 -   9 12 13  3  2  7  8 11 11
+  12 -  11  0  0  1  1  7  7
+  13 -  11  0  0  2  2  8  8 11 11
+  14 -   5 16 17  4  3  5  5  9  9 12 13
+  15 -   5  0  0  1  1 10 10
+  16 -  14 18 19  2  2  5  5  9  9
+  17 -  14 20 21  2  1 12 13
+  18 -  16  0  0  1  1  5  5
+  19 -  16  0  0  1  1  9  9
+  20 -  17  0  0  1  1 12 12
+  21 -  17  0  0  1  1 13 13
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            282
+Total number of atoms read in:              2286
+Total number of ignored atom records:        329
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+  Reading DSSP file
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              COMPND   2 MOLECULE: BILE SALT SULFOTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+         282  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2657
+ selectset done           0
+ eigen done           0
+ tau           1   1.65739131             116         165         231
+ #popped           2           1
+ #selectset contacts        2657
+ selectset done           1
+ eigen done           1
+ tau           3   2.94410014              42          71         179
+ #popped           4           2
+ #selectset contacts        2657
+ selectset done           2
+ eigen done           2
+ tau           5   2.05479264              15
+ #popped           7           2
+ #selectset contacts        2657
+ selectset done           2
+ eigen done           2
+ tau           7  0.459655166              92
+ #popped           8           3
+ #selectset contacts        2657
+ selectset done           3
+ eigen done           3
+ tau           9   1.76975513              29
+ #popped          11           3
+ #selectset contacts        2657
+ selectset done           3
+ eigen done           3
+ tau          11   1.10635126              42
+ #popped          13           3
+ #selectset contacts        2657
+ selectset done           3
+ eigen done           3
+ tau          13  0.910976410              82
+ #popped           9           2
+ #selectset contacts        2657
+ selectset done           2
+ eigen done           2
+ tau          15  0.499332935             116
+ #popped          16           2
+ #selectset contacts        2657
+ selectset done           2
+ eigen done           2
+ tau          17   1.51666665             103
+ #popped           5           1
+ #selectset contacts        2657
+ selectset done           1
+ eigen done           1
+ tau          19   3.17729402              71         203
+ #popped          20           2
+ #selectset contacts        2657
+ selectset done           2
+ eigen done           2
+ tau          21   1.16030765              71         214
+ #popped          22           2
+ #selectset contacts        2657
+ selectset done           2
+ eigen done           2
+ tau          23   1.29500401              71
+ #popped          24           2
+ #selectset contacts        2657
+ selectset done           2
+ eigen done           2
+ tau          25   1.28113484              58
+ #popped          21           1
+ #selectset contacts        2657
+ selectset done           1
+ eigen done           1
+ tau          27  0.884208381             193
+ #popped           3           0
+ #selectset contacts        2657
+ selectset done           0
+ eigen done           0
+ tau          29   1.65822327             152         165         254
+ #popped          30           1
+ #selectset contacts        2657
+ selectset done           1
+ eigen done           1
+ tau          31   1.36509573             126         241
+ #popped          32           2
+ #selectset contacts        2657
+ selectset done           2
+ eigen done           2
+ tau          33   1.23219991             126
+ #popped          33           1
+ #selectset contacts        2657
+ selectset done           1
+ eigen done           1
+ tau          35   1.79215276             137         152
+ #popped          36           1
+ #selectset contacts        2657
+ selectset done           1
+ eigen done           1
+ tau          37   0.00000000    
+ #popped          31           0
+ #selectset contacts        2657
+ selectset done           0
+ eigen done           0
+ tau          37   1.61842108             272
+ #popped          38           0
+ #selectset contacts        2657
+ selectset done           0
+ eigen done           0
+ tau          39   2.42813015             165
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             31-OCT-08   3F3Y              COMPND   2 MOLECULE: BILE SALT SULFOTRANSFERASE;                                SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    P.W.PAN,A.DONG,M.AMAYA,A.M.EDWARDS                                    
+           0
+         282
+         282  residues read 3F3Y.dssp                                                   
+  grow short strand           3           5
+  grow short strand           8          10
+  grow short strand          34          38
+  exclude short helix          68          71
+  grow short strand          92          95
+  exclude short helix          99         101
+  exclude short helix         104         108
+  grow short strand         176         180
+ crowded segment excluded!
+  exclude short helix         181         186
+  exclude short helix         217         222
+  exclude short helix         250         253
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  3  4  6  7  8 11  5 13 12  9 10 14
+   2     1  4  5 11  1  2  3  4  6  7  8 11  5 13 12
+   3     1 30 31  3  9 10 14
+   4     2  6  7  8  1  2  3  4  6  7  8 11
+   5     2 20 21  3  5 13 12
+   6     4  0  0  2  1  2
+   7     4  8  9  6  3  4  6  7  8 11
+   8     7 10 11  3  3  4  6
+   9     7 16 17  3  7  8 11
+  10     8  0  0  1  3
+  11     8 12 13  2  4  6
+  12    11  0  0  1  4
+  13    11  0  0  1  6
+  14     0  0  0  1  6
+  15     0  0  0  0
+  16     9 18 19  2  7  8
+  17     9  0  0  1 11
+  18    16  0  0  1  7
+  19    16  0  0  1  8
+  20     5 22 23  2  5 13
+  21     5  0  0  1 12
+  22    20  0  0  1  5
+  23    20  0  0  1 13
+  24     0  0  0  1  5
+  25     0  0  0  0
+  26     0  0  0  1  5
+  27     0  0  0  0
+  28     0  0  0  1 12
+  29     0  0  0  0
+  30     3 32 33  2  9 10
+  31     3  0  0  1 14
+  32    30  0  0  1  9
+  33    30  0  0  1 10
+  34     0  0  0  1  9
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  1 10
+  38     0  0  0  1 14
+  39     0  0  0  0
+  40     0  0  0  0
+  41     0  0  0  1 14
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5 11  2  1  8 11 13
+   3 -   1 22 23  3  2  9 10 14 14
+   4 -   2  6  7  8  3  1  4  6  8 11 11
+   5 -   2 18 19  3  2  5  5 12 13
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  6  3  3  4  6  8 11 11
+   8 -   7 10 11  3  2  3  4  6  6
+   9 -   7 14 15  3  2  7  8 11 11
+  10 -   8  0  0  1  1  3  3
+  11 -   8 12 13  2  2  4  4  6  6
+  12 -  11  0  0  1  1  4  4
+  13 -  11  0  0  1  1  6  6
+  14 -   9 16 17  2  1  7  8
+  15 -   9  0  0  1  1 11 11
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  8  8
+  18 -   5 20 21  2  2  5  5 13 13
+  19 -   5  0  0  1  1 12 12
+  20 -  18  0  0  1  1  5  5
+  21 -  18  0  0  1  1 13 13
+  22 -   3 24 25  2  1  9 10
+  23 -   3  0  0  1  1 14 14
+  24 -  22  0  0  1  1  9  9
+  25 -  22  0  0  1  1 10 10
+
+ CHAIN : 3F3YA
+ CHAIN : 3F3YB
+ CHAIN : 3F3YC
+ CHAIN : 3F3YD
+

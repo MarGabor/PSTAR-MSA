@@ -1,0 +1,1579 @@
+C length: 257
+D length: 257
+A length: 257
+B length: 257
+E length: 257
+F length: 257
+G length: 257
+H length: 257
+# 8 chains A B C D E F G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1902
+Total number of ignored atom records:        423
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2450
+ selectset done           0
+ eigen done           0
+ tau           1   2.30637217             187         216
+ #popped           2           1
+ #selectset contacts        2450
+ selectset done           1
+ eigen done           1
+ tau           3   1.57226539              90         107
+ #popped           4           1
+ #selectset contacts        2450
+ selectset done           1
+ eigen done           1
+ tau           5   1.72555637             133
+ #popped           6           2
+ #selectset contacts        2450
+ selectset done           2
+ eigen done           2
+ tau           7   1.13560236              58
+ #popped           8           3
+ #selectset contacts        2450
+ selectset done           3
+ eigen done           3
+ tau           9  0.497410327              30
+ #popped          10           4
+ #selectset contacts        2450
+ selectset done           4
+ eigen done           4
+ tau          11  0.318681329              18
+ #popped          11           3
+ #selectset contacts        2450
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           9           2
+ #selectset contacts        2450
+ selectset done           2
+ eigen done           2
+ tau          13   1.19213128              90
+ #popped          14           3
+ #selectset contacts        2450
+ selectset done           3
+ eigen done           3
+ tau          15   2.65778160              80
+ #popped          16           3
+ #selectset contacts        2450
+ selectset done           3
+ eigen done           3
+ tau          17  0.849056602              70
+ #popped          15           2
+ #selectset contacts        2450
+ selectset done           2
+ eigen done           2
+ tau          19   1.05603445             119
+ #popped           7           1
+ #selectset contacts        2450
+ selectset done           1
+ eigen done           1
+ tau          21  0.864682794             144         160
+ #popped          22           1
+ #selectset contacts        2450
+ selectset done           1
+ eigen done           1
+ tau          23  0.644169390             177
+ #popped          24           2
+ #selectset contacts        2450
+ selectset done           2
+ eigen done           2
+ tau          25   1.36607945             144
+ #popped          25           1
+ #selectset contacts        2450
+ selectset done           1
+ eigen done           1
+ tau          27  0.734869123             233         246
+ #popped          28           1
+ #selectset contacts        2450
+ selectset done           1
+ eigen done           1
+ tau          29  0.443399251             233
+ #popped          30           1
+ #selectset contacts        2450
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped           3           0
+ #selectset contacts        2450
+ selectset done           0
+ eigen done           0
+ tau          31  0.662586689             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         257
+         257  residues read 3A28.dssp                                                   
+  exclude short helix          34          36
+  grow short strand          54          58
+  grow short strand          83          86
+  exclude short helix          96          98
+  grow short strand         134         138
+  exclude short helix         141         143
+  grow short helix         208         214
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  4  5  6  7  9 10 11 12 15 16  8 13 14
+   2     1  4  5 14  1  2  3  4  5  6  7  9 10 11 12 15 16  8
+   3     1 32 33  2 13 14
+   4     2  6  7 13  1  2  3  4  5  6  7  9 10 11 12 15 16
+   5     2  0  0  1  8
+   6     4  8  9  8  1  2  3  4  5  6  7  9
+   7     4 24 25  5 10 11 12 15 16
+   8     6 10 11  5  1  2  3  4  5
+   9     6 14 15  3  6  7  9
+  10     8 12 13  3  1  2  3
+  11     8  0  0  2  4  5
+  12    10  0  0  2  1  2
+  13    10  0  0  1  3
+  14     9 16 17  2  6  7
+  15     9  0  0  1  9
+  16    14  0  0  1  6
+  17    14  0  0  1  7
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  9
+  22     0  0  0  5 10 11 12 15 16
+  23     0  0  0  0
+  24     7 26 27  2 10 11
+  25     7 30 31  3 12 15 16
+  26    24  0  0  1 10
+  27    24  0  0  1 11
+  28     0  0  0  3 12 15 16
+  29     0  0  0  0
+  30    25  0  0  2 12 15
+  31    25  0  0  1 16
+  32     3  0  0  1 13
+  33     3  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1 24 25  2  1 13 14
+   4 -   2  6  7 13  3  1  7  9 12 15 16
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  8  2  1  7  9  9
+   7 -   4 18 19  5  2 10 12 15 16
+   8 -   6 10 11  5  1  1  5
+   9 -   6 14 15  3  2  6  7  9  9
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  2  1  4  5
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  1  1  3  3
+  14 -   9 16 17  2  1  6  7
+  15 -   9  0  0  1  1  9  9
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  1  1  7  7
+  18 -   7 20 21  2  1 10 11
+  19 -   7 22 23  3  2 12 12 15 16
+  20 -  18  0  0  1  1 10 10
+  21 -  18  0  0  1  1 11 11
+  22 -  19  0  0  2  2 12 12 15 15
+  23 -  19  0  0  1  1 16 16
+  24 -   3  0  0  1  1 13 13
+  25 -   3  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1902
+Total number of ignored atom records:        581
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2466
+ selectset done           0
+ eigen done           0
+ tau           1   1.95360339              83
+ #popped           2           1
+ #selectset contacts        2466
+ selectset done           1
+ eigen done           1
+ tau           3   1.16239190              58
+ #popped           4           2
+ #selectset contacts        2466
+ selectset done           2
+ eigen done           2
+ tau           5  0.514669478              31          41
+ #popped           6           2
+ #selectset contacts        2466
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        2466
+ selectset done           1
+ eigen done           1
+ tau           7  0.906200349              70
+ #popped           3           0
+ #selectset contacts        2466
+ selectset done           0
+ eigen done           0
+ tau           9   1.33270085              93         105
+ #popped          10           0
+ #selectset contacts        2466
+ selectset done           0
+ eigen done           0
+ tau          11   1.63790560             181
+ #popped          12           1
+ #selectset contacts        2466
+ selectset done           1
+ eigen done           1
+ tau          13   1.22527301             139         161
+ #popped          14           2
+ #selectset contacts        2466
+ selectset done           2
+ eigen done           2
+ tau          15  0.766777694             118
+ #popped          16           3
+ #selectset contacts        2466
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          17           2
+ #selectset contacts        2466
+ selectset done           2
+ eigen done           2
+ tau          17   1.04180598             129
+ #popped          19           2
+ #selectset contacts        2466
+ selectset done           2
+ eigen done           2
+ tau          19  0.316832006             139
+ #popped          21           2
+ #selectset contacts        2466
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          15           1
+ #selectset contacts        2466
+ selectset done           1
+ eigen done           1
+ tau          21  0.478787899             150
+ #popped          13           0
+ #selectset contacts        2466
+ selectset done           0
+ eigen done           0
+ tau          23   1.32823110             232         247
+ #popped          24           0
+ #selectset contacts        2466
+ selectset done           0
+ eigen done           0
+ tau          25  0.926255822             215
+ #popped          26           1
+ #selectset contacts        2466
+ selectset done           1
+ eigen done           1
+ tau          27  0.657682478             192
+ #popped          29           1
+ #selectset contacts        2466
+ selectset done           1
+ eigen done           1
+ tau          29  0.666334987             205
+ #popped          27           0
+ #selectset contacts        2466
+ selectset done           0
+ eigen done           0
+ tau          31   1.53575134             232
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         257
+         257  residues read 3A28.dssp                                                   
+  grow short strand           3           7
+  grow short strand          54          58
+  grow short strand          83          86
+  exclude short helix          96          98
+  grow short strand         134         138
+  exclude short helix         141         143
+  grow short helix         208         214
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  5  4  6  7  8  9 10 11 12 13 14 15 16
+   2     1  4  5  6  1  2  3  5  4  6
+   3     1 12 13 10  7  8  9 10 11 12 13 14 15 16
+   4     2  6  7  5  1  2  3  5  4
+   5     2  0  0  1  6
+   6     4  0  0  4  1  2  3  5
+   7     4  0  0  1  4
+   8     0  0  0  0
+   9     0  0  0  1  6
+  10     0  0  0 10  7  8  9 10 11 12 13 14 15 16
+  11     0  0  0  0
+  12     3 16 17  6  7  8  9 10 11 12
+  13     3 26 27  4 13 14 15 16
+  14     0  0  0  6  7  8  9 10 11 12
+  15     0  0  0  0
+  16    12  0  0  2  7  8
+  17    12 18 19  4  9 10 11 12
+  18    17  0  0  1  9
+  19    17 20 21  3 10 11 12
+  20    19  0  0  1 10
+  21    19  0  0  2 11 12
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  4 13 14 15 16
+  25     0  0  0  0
+  26    13 30 31  2 13 14
+  27    13 32 33  2 15 16
+  28     0  0  0  0
+  29     0  0  0  2 13 14
+  30    26  0  0  1 13
+  31    26  0  0  1 14
+  32    27  0  0  1 15
+  33    27  0  0  1 16
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5  6  1  1  6
+   3 *   1  8  9 10  1  7 16
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  4  2  1  3  5  5
+   7 -   4  0  0  1  1  4  4
+   8 -   3 10 11  6  1  7 12
+   9 -   3 16 17  4  1 13 16
+  10 -   8  0  0  2  1  7  8
+  11 -   8 12 13  4  1  9 12
+  12 -  11  0  0  1  1  9  9
+  13 -  11 14 15  3  1 10 12
+  14 -  13  0  0  1  1 10 10
+  15 -  13  0  0  2  1 11 12
+  16 -   9 18 19  2  1 13 14
+  17 -   9 20 21  2  1 15 16
+  18 -  16  0  0  1  1 13 13
+  19 -  16  0  0  1  1 14 14
+  20 -  17  0  0  1  1 15 15
+  21 -  17  0  0  1  1 16 16
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1902
+Total number of ignored atom records:        481
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau           1   2.02295256              90         107         186         216
+ #popped           2           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau           3   1.50309801              58
+ #popped           4           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau           5  0.504689515              30
+ #popped           6           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau           7  0.316943944              17
+ #popped           7           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau           9   1.68379378              80
+ #popped          10           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau          11  0.797073543              70
+ #popped          11           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          13   1.34478307              90         133
+ #popped          14           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau          15  0.794489980             144         155
+ #popped          16           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau          17  0.696494460             231         246
+ #popped          18           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          15           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          19  0.992176235             120
+ #popped           3           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau          21   5.74236631             107
+ #popped          23           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau          23  0.699747682             203
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         257
+         257  residues read 3A28.dssp                                                   
+  grow short strand           3           7
+  grow short strand          54          58
+  grow short strand          83          86
+  exclude short helix          96          98
+  grow short strand         134         138
+  exclude short helix         141         143
+  grow short helix         208         214
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  4  5  6  7 10 11 12 15 16  9  8 13 14
+   2     1  4  5 13  1  2  3  4  5  6  7 10 11 12 15 16  9
+   3     1 22 23  3  8 13 14
+   4     2  6  7  5  1  2  3  4  5
+   5     2 10 11  8  6  7 10 11 12 15 16  9
+   6     4  8  9  3  1  2  3
+   7     4  0  0  2  4  5
+   8     6  0  0  1  1
+   9     6  0  0  2  2  3
+  10     5  0  0  1  6
+  11     5 14 15  7  7 10 11 12 15 16  9
+  12     0  0  0  0
+  13     0  0  0  1  6
+  14    11  0  0  6  7 10 11 12 15 16
+  15    11  0  0  1  9
+  16     0  0  0  6  7 10 11 12 15 16
+  17     0  0  0  0
+  18     0  0  0  6  7 10 11 12 15 16
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  9
+  22     3  0  0  1  8
+  23     3 24 25  2 13 14
+  24    23  0  0  1 13
+  25    23  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 13  3  1  7  9 12 15 16
+   3 -   1 14 15  3  2  8  8 13 14
+   4 -   2  6  7  5  1  1  5
+   5 -   2 10 11  8  3  6  7  9 12 15 16
+   6 -   4  8  9  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  2  1  2  3
+  10 -   5  0  0  1  1  6  6
+  11 -   5 12 13  7  3  7  7  9 12 15 16
+  12 -  11  0  0  6  3  7  7 10 12 15 16
+  13 -  11  0  0  1  1  9  9
+  14 -   3  0  0  1  1  8  8
+  15 -   3 16 17  2  1 13 14
+  16 -  15  0  0  1  1 13 13
+  17 -  15  0  0  1  1 14 14
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1902
+Total number of ignored atom records:        421
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau           1   2.47721457             187         216
+ #popped           2           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau           3   1.84872293              83
+ #popped           4           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau           5   1.02671123              57
+ #popped           6           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau           7  0.613213360              31          41
+ #popped           8           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau           9  0.526967704              10          20
+ #popped          10           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau          11  0.300734937              10
+ #popped          13           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau          13   1.00529099              70
+ #popped           5           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          15   1.25433421              93         105
+ #popped          16           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          17   1.11164558             177
+ #popped          18           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau          19   1.20833325             137         165
+ #popped          20           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau          21   1.20058215             137
+ #popped          22           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau          23  0.628192723             115
+ #popped          24           4
+ #selectset contacts        2456
+ selectset done           4
+ eigen done           4
+ tau          25   2.34685421              93
+ #popped          25           3
+ #selectset contacts        2456
+ selectset done           3
+ eigen done           3
+ tau          27  0.619059622             125
+ #popped          21           2
+ #selectset contacts        2456
+ selectset done           2
+ eigen done           2
+ tau          29  0.574486196             150
+ #popped          19           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          31  0.739060700             232         246
+ #popped          32           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          33  0.456494898             232
+ #popped          34           1
+ #selectset contacts        2456
+ selectset done           1
+ eigen done           1
+ tau          35   0.00000000    
+ #popped           3           0
+ #selectset contacts        2456
+ selectset done           0
+ eigen done           0
+ tau          35  0.684156418             204
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         257
+         257  residues read 3A28.dssp                                                   
+  grow short strand          54          58
+  grow short strand          83          86
+  exclude short helix          96          98
+  grow short strand         134         138
+  exclude short helix         141         143
+  grow short helix         208         214
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  5  2  4  6  7  8  9 10 11 12 15 16 13 14
+   2     1  4  5 14  1  3  5  2  4  6  7  8  9 10 11 12 15 16
+   3     1 36 37  2 13 14
+   4     2  6  7  6  1  3  5  2  4  6
+   5     2 18 19  8  7  8  9 10 11 12 15 16
+   6     4  8  9  5  1  3  5  2  4
+   7     4  0  0  1  6
+   8     6 10 11  4  1  3  5  2
+   9     6  0  0  1  4
+  10     8 12 13  3  1  3  5
+  11     8  0  0  1  2
+  12    10  0  0  1  1
+  13    10  0  0  2  3  5
+  14     0  0  0  0
+  15     0  0  0  1  6
+  16     0  0  0  8  7  8  9 10 11 12 15 16
+  17     0  0  0  0
+  18     5 20 21  5  7  8  9 10 11
+  19     5 34 35  3 12 15 16
+  20    18 24 25  4  7  8  9 10
+  21    18  0  0  1 11
+  22     0  0  0  4  7  8  9 10
+  23     0  0  0  0
+  24    20 26 27  2  7  8
+  25    20 28 29  2  9 10
+  26    24  0  0  1  7
+  27    24  0  0  1  8
+  28    25  0  0  1  9
+  29    25  0  0  1 10
+  30     0  0  0  0
+  31     0  0  0  1 11
+  32     0  0  0  3 12 15 16
+  33     0  0  0  0
+  34    19  0  0  2 12 15
+  35    19  0  0  1 16
+  36     3  0  0  1 13
+  37     3  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1 26 27  2  1 13 14
+   4 -   2  6  7  6  1  1  6
+   5 -   2 14 15  8  2  7 12 15 16
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  4  2  1  3  5  5
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  3  3  1  1  3  3  5  5
+  11 -   8  0  0  1  1  2  2
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  2  2  3  3  5  5
+  14 -   5 16 17  5  1  7 11
+  15 -   5 24 25  3  2 12 12 15 16
+  16 -  14 18 19  4  1  7 10
+  17 -  14  0  0  1  1 11 11
+  18 -  16 20 21  2  1  7  8
+  19 -  16 22 23  2  1  9 10
+  20 -  18  0  0  1  1  7  7
+  21 -  18  0  0  1  1  8  8
+  22 -  19  0  0  1  1  9  9
+  23 -  19  0  0  1  1 10 10
+  24 -  15  0  0  2  2 12 12 15 15
+  25 -  15  0  0  1  1 16 16
+  26 -   3  0  0  1  1 13 13
+  27 -   3  0  0  1  1 14 14
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1902
+Total number of ignored atom records:        329
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2443
+ selectset done           0
+ eigen done           0
+ tau           1   2.68721032             184         223
+ #popped           2           1
+ #selectset contacts        2443
+ selectset done           1
+ eigen done           1
+ tau           3   1.76246393              82
+ #popped           4           2
+ #selectset contacts        2443
+ selectset done           2
+ eigen done           2
+ tau           5   1.04843700              58          72
+ #popped           6           2
+ #selectset contacts        2443
+ selectset done           2
+ eigen done           2
+ tau           7   1.39393938              58
+ #popped           8           2
+ #selectset contacts        2443
+ selectset done           2
+ eigen done           2
+ tau           9  0.421868265              11          28
+ #popped          10           2
+ #selectset contacts        2443
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2443
+ selectset done           1
+ eigen done           1
+ tau          11  0.912142098              92         103
+ #popped          12           1
+ #selectset contacts        2443
+ selectset done           1
+ eigen done           1
+ tau          13   1.37201309              92         132
+ #popped          14           2
+ #selectset contacts        2443
+ selectset done           2
+ eigen done           2
+ tau          15  0.633775353              92
+ #popped          17           2
+ #selectset contacts        2443
+ selectset done           2
+ eigen done           2
+ tau          17  0.623493731             247
+ #popped          18           2
+ #selectset contacts        2443
+ selectset done           2
+ eigen done           2
+ tau          19   1.15446854             184
+ #popped          20           3
+ #selectset contacts        2443
+ selectset done           3
+ eigen done           3
+ tau          21  0.650820851             144         155
+ #popped          22           3
+ #selectset contacts        2443
+ selectset done           3
+ eigen done           3
+ tau          23   0.00000000    
+ #popped          21           2
+ #selectset contacts        2443
+ selectset done           2
+ eigen done           2
+ tau          23  0.979999959             237
+ #popped          15           1
+ #selectset contacts        2443
+ selectset done           1
+ eigen done           1
+ tau          25   1.11347640             120
+ #popped           3           0
+ #selectset contacts        2443
+ selectset done           0
+ eigen done           0
+ tau          27  0.762271464             213
+ #popped          28           0
+ #selectset contacts        2443
+ selectset done           0
+ eigen done           0
+ tau          29  0.695031285             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         257
+         257  residues read 3A28.dssp                                                   
+  grow short strand           3           7
+  grow short strand          54          58
+  grow short strand          83          86
+  exclude short helix          96          98
+  grow short strand         134         138
+  exclude short helix         141         143
+  grow short helix         208         214
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  2  6  7 10 11 12 15 16  8  9 13 14
+   2     1  4  5 14  1  3  4  5  2  6  7 10 11 12 15 16  8  9
+   3     1  0  0  2 13 14
+   4     2  6  7  6  1  3  4  5  2  6
+   5     2 14 15  8  7 10 11 12 15 16  8  9
+   6     4 10 11  5  1  3  4  5  2
+   7     4  0  0  1  6
+   8     0  0  0  5  1  3  4  5  2
+   9     0  0  0  0
+  10     6  0  0  4  1  3  4  5
+  11     6  0  0  1  2
+  12     0  0  0  8  7 10 11 12 15 16  8  9
+  13     0  0  0  0
+  14     5 16 17  6  7 10 11 12 15 16
+  15     5  0  0  2  8  9
+  16    14  0  0  1  7
+  17    14 18 19  5 10 11 12 15 16
+  18    17 20 21  4 10 11 12 15
+  19    17  0  0  1 16
+  20    18  0  0  3 10 11 12
+  21    18  0  0  1 15
+  22     0  0  0  3 10 11 12
+  23     0  0  0  0
+  24     0  0  0  1 15
+  25     0  0  0  0
+  26     0  0  0  2  8  9
+  27     0  0  0  0
+  28     0  0  0  2 13 14
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  2 13 14
+   1 +   0  2  3 16  1  1 16
+   2 *   1  4  5 14  2  1 12 15 16
+   3 =   1  0  0  2  1 13 14
+   4 -   2  6  7  6  1  1  6
+   5 -   2 10 11  8  2  7 12 15 16
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   5 12 13  6  3  7  7 10 12 15 16
+  11 -   5  0  0  2  1  8  9
+  12 -  10  0  0  1  1  7  7
+  13 -  10 14 15  5  2 10 12 15 16
+  14 -  13 16 17  4  2 10 12 15 15
+  15 -  13  0  0  1  1 16 16
+  16 -  14  0  0  3  1 10 12
+  17 -  14  0  0  1  1 15 15
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1902
+Total number of ignored atom records:        541
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2444
+ selectset done           0
+ eigen done           0
+ tau           1   1.94964051              90         106         186         216
+ #popped           2           1
+ #selectset contacts        2444
+ selectset done           1
+ eigen done           1
+ tau           3   1.74298823             133
+ #popped           4           2
+ #selectset contacts        2444
+ selectset done           2
+ eigen done           2
+ tau           5   1.82885885              90
+ #popped           6           3
+ #selectset contacts        2444
+ selectset done           3
+ eigen done           3
+ tau           7   1.31544197              59          80
+ #popped           8           4
+ #selectset contacts        2444
+ selectset done           4
+ eigen done           4
+ tau           9  0.591383219              32          45
+ #popped          10           4
+ #selectset contacts        2444
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped           9           3
+ #selectset contacts        2444
+ selectset done           3
+ eigen done           3
+ tau          11  0.764697969              70
+ #popped           7           2
+ #selectset contacts        2444
+ selectset done           2
+ eigen done           2
+ tau          13  0.995260656             119
+ #popped           5           1
+ #selectset contacts        2444
+ selectset done           1
+ eigen done           1
+ tau          15  0.964725614             165         176
+ #popped          16           1
+ #selectset contacts        2444
+ selectset done           1
+ eigen done           1
+ tau          17  0.918704152             228         243
+ #popped          18           1
+ #selectset contacts        2444
+ selectset done           1
+ eigen done           1
+ tau          19  0.482904643             228
+ #popped          20           1
+ #selectset contacts        2444
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           3           0
+ #selectset contacts        2444
+ selectset done           0
+ eigen done           0
+ tau          21   5.18144035             106
+ #popped          23           0
+ #selectset contacts        2444
+ selectset done           0
+ eigen done           0
+ tau          23  0.701239228             204
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         257
+         257  residues read 3A28.dssp                                                   
+  grow short strand          54          58
+  grow short strand          83          86
+  exclude short helix          96          98
+  grow short strand         134         138
+  exclude short helix         141         143
+  grow short helix         208         214
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  5  7  4  6  9 10 11 12 16 15  8 13 14
+   2     1  4  5 13  1  2  3  5  7  4  6  9 10 11 12 16 15
+   3     1 22 23  3  8 13 14
+   4     2  6  7  8  1  2  3  5  7  4  6  9
+   5     2 18 19  5 10 11 12 16 15
+   6     4  8  9  7  1  2  3  5  7  4  6
+   7     4  0  0  1  9
+   8     6 10 11  6  1  2  3  5  7  4
+   9     6  0  0  1  6
+  10     8  0  0  5  1  2  3  5  7
+  11     8  0  0  1  4
+  12     0  0  0  0
+  13     0  0  0  1  6
+  14     0  0  0  0
+  15     0  0  0  1  9
+  16     0  0  0  5 10 11 12 16 15
+  17     0  0  0  0
+  18     5 20 21  4 10 11 12 16
+  19     5  0  0  1 15
+  20    18  0  0  3 10 11 12
+  21    18  0  0  1 16
+  22     3  0  0  1  8
+  23     3 24 25  2 13 14
+  24    23  0  0  1 13
+  25    23  0  0  1 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 13  3  1  7  9 12 15 16
+   3 -   1 16 17  3  2  8  8 13 14
+   4 -   2  6  7  8  2  1  7  9  9
+   5 -   2 12 13  5  2 10 12 15 16
+   6 -   4  8  9  7  1  1  7
+   7 -   4  0  0  1  1  9  9
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  5  3  1  3  5  5  7  7
+  11 -   8  0  0  1  1  4  4
+  12 -   5 14 15  4  2 10 12 16 16
+  13 -   5  0  0  1  1 15 15
+  14 -  12  0  0  3  1 10 12
+  15 -  12  0  0  1  1 16 16
+  16 -   3  0  0  1  1  8  8
+  17 -   3 18 19  2  1 13 14
+  18 -  17  0  0  1  1 13 13
+  19 -  17  0  0  1  1 14 14
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1902
+Total number of ignored atom records:        435
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2464
+ selectset done           0
+ eigen done           0
+ tau           1   2.44700480             187         216
+ #popped           2           1
+ #selectset contacts        2464
+ selectset done           1
+ eigen done           1
+ tau           3   1.89413881              88
+ #popped           4           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau           5   1.36786234              58          77
+ #popped           6           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau           7  0.656749904              32          45
+ #popped           8           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau           9  0.224880517              15
+ #popped          11           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau          11   5.19025326              58
+ #popped          12           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau          13  0.343981087              32
+ #popped           5           1
+ #selectset contacts        2464
+ selectset done           1
+ eigen done           1
+ tau          15   1.66002393             124
+ #popped          16           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau          17   1.44342363             111
+ #popped          18           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau          19  0.819180846              99
+ #popped          17           1
+ #selectset contacts        2464
+ selectset done           1
+ eigen done           1
+ tau          21   1.38270044             139         163
+ #popped          22           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau          23  0.761216164             177
+ #popped          24           3
+ #selectset contacts        2464
+ selectset done           3
+ eigen done           3
+ tau          25  0.973143756             139
+ #popped          25           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau          27  0.673630059             233         246
+ #popped          28           2
+ #selectset contacts        2464
+ selectset done           2
+ eigen done           2
+ tau          29   0.00000000    
+ #popped          23           1
+ #selectset contacts        2464
+ selectset done           1
+ eigen done           1
+ tau          29  0.568053424             150
+ #popped           3           0
+ #selectset contacts        2464
+ selectset done           0
+ eigen done           0
+ tau          31  0.684156418             204
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         257
+         257  residues read 3A28.dssp                                                   
+  grow short strand           3           7
+  grow short strand          54          58
+  grow short strand          83          86
+  exclude short helix          96          98
+  grow short strand         134         138
+  exclude short helix         141         144
+  exclude short helix         208         213
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  5  7  4  6  8  9 10 12 14 15 11 13
+   2     1  4  5 14  1  2  3  5  7  4  6  8  9 10 12 14 15 11
+   3     1  0  0  1 13
+   4     2  6  7  7  1  2  3  5  7  4  6
+   5     2 16 17  7  8  9 10 12 14 15 11
+   6     4  8  9  6  1  2  3  5  7  4
+   7     4  0  0  1  6
+   8     6 10 11  5  1  2  3  5  7
+   9     6  0  0  1  4
+  10     8  0  0  1  1
+  11     8 12 13  4  2  3  5  7
+  12    11 14 15  3  2  3  5
+  13    11  0  0  1  7
+  14    12  0  0  2  2  3
+  15    12  0  0  1  5
+  16     5 18 19  2  8  9
+  17     5 22 23  5 10 12 14 15 11
+  18    16  0  0  1  8
+  19    16  0  0  1  9
+  20     0  0  0  0
+  21     0  0  0  1  8
+  22    17 24 25  4 10 12 14 15
+  23    17  0  0  1 11
+  24    22  0  0  1 10
+  25    22  0  0  3 12 14 15
+  26     0  0  0  1 10
+  27     0  0  0  0
+  28     0  0  0  3 12 14 15
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  1 11
+  32     0  0  0  1 13
+  33     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 14  2  1 12 14 15
+   3 -   1  0  0  1  1 13 13
+   4 -   2  6  7  7  1  1  7
+   5 -   2 16 17  7  2  8 12 14 15
+   6 -   4  8  9  6  2  1  5  7  7
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  5  3  1  3  5  5  7  7
+   9 -   6  0  0  1  1  4  4
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  4  3  2  3  5  5  7  7
+  12 -  11 14 15  3  2  2  3  5  5
+  13 -  11  0  0  1  1  7  7
+  14 -  12  0  0  2  1  2  3
+  15 -  12  0  0  1  1  5  5
+  16 -   5 18 19  2  1  8  9
+  17 -   5 20 21  5  2 10 12 14 15
+  18 -  16  0  0  1  1  8  8
+  19 -  16  0  0  1  1  9  9
+  20 -  17 22 23  4  3 10 10 12 12 14 15
+  21 -  17  0  0  1  1 11 11
+  22 -  20  0  0  1  1 10 10
+  23 -  20  0  0  3  2 12 12 14 15
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            257
+Total number of atoms read in:              1902
+Total number of ignored atom records:        297
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+         257  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2460
+ selectset done           0
+ eigen done           0
+ tau           1   2.47436213             184         223
+ #popped           2           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau           3   1.58175695              90         106
+ #popped           4           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau           5   1.51978600              58
+ #popped           6           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau           7  0.398390591              15          28
+ #popped           8           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau           9  0.549040258              15
+ #popped          11           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           7           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau          11   1.66907299              80
+ #popped          12           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau          13  0.867924511              70
+ #popped          13           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau          15   2.06238461             184         243
+ #popped          16           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau          17  0.937001169             136
+ #popped          18           3
+ #selectset contacts        2460
+ selectset done           3
+ eigen done           3
+ tau          19  0.506603181             119
+ #popped          20           3
+ #selectset contacts        2460
+ selectset done           3
+ eigen done           3
+ tau          21   2.56339860              90
+ #popped          19           2
+ #selectset contacts        2460
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          17           1
+ #selectset contacts        2460
+ selectset done           1
+ eigen done           1
+ tau          23  0.735135138             233
+ #popped           3           0
+ #selectset contacts        2460
+ selectset done           0
+ eigen done           0
+ tau          25  0.773648679             213
+ #popped          26           0
+ #selectset contacts        2460
+ selectset done           0
+ eigen done           0
+ tau          27  0.676741004             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          02-MAY-09   3A28              COMPND   2 MOLECULE: L-2.3-BUTANEDIOL DEHYDROGENASE;                            SOURCE   2 ORGANISM_SCIENTIFIC: BREVIBACTERIUM SACCHAROLYTICUM;                 AUTHOR    M.OTAGIRI,G.KURISU,S.UI,M.KUSUNOKI                                    
+           0
+         257
+         257  residues read 3A28.dssp                                                   
+  grow short strand           3           7
+  exclude short helix          34          36
+  grow short strand          54          58
+  grow short strand          83          86
+  exclude short helix          96          98
+  grow short strand         134         138
+  exclude short helix         141         143
+  grow short helix         208         214
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  2  6  7  9 10 11 12 16 15  8 13 14
+   2     1  4  5 14  1  3  4  5  2  6  7  9 10 11 12 16 15  8
+   3     1  0  0  2 13 14
+   4     2  6  7 13  1  3  4  5  2  6  7  9 10 11 12 16 15
+   5     2  0  0  1  8
+   6     4  8  9  5  1  3  4  5  2
+   7     4 12 13  8  6  7  9 10 11 12 16 15
+   8     6 10 11  4  1  3  4  5
+   9     6  0  0  1  2
+  10     8  0  0  1  1
+  11     8  0  0  3  3  4  5
+  12     7  0  0  1  6
+  13     7 16 17  7  7  9 10 11 12 16 15
+  14     0  0  0  0
+  15     0  0  0  1  6
+  16    13 18 19  6  7  9 10 11 12 16
+  17    13  0  0  1 15
+  18    16 20 21  3  7  9 10
+  19    16  0  0  3 11 12 16
+  20    18  0  0  1  7
+  21    18  0  0  2  9 10
+  22     0  0  0  1  7
+  23     0  0  0  0
+  24     0  0  0  1 15
+  25     0  0  0  0
+  26     0  0  0  2 13 14
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  2 13 14
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1 12 15 16
+   3 -   1  0  0  2  1 13 14
+   4 -   2  6  7 13  3  1  7  9 12 15 16
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  5  1  1  5
+   7 -   4 12 13  8  3  6  7  9 12 15 16
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  3  1  3  5
+  12 -   7  0  0  1  1  6  6
+  13 -   7 14 15  7  3  7  7  9 12 15 16
+  14 -  13 16 17  6  3  7  7  9 12 16 16
+  15 -  13  0  0  1  1 15 15
+  16 -  14 18 19  3  2  7  7  9 10
+  17 -  14  0  0  3  2 11 12 16 16
+  18 -  16  0  0  1  1  7  7
+  19 -  16  0  0  2  1  9 10
+
+ CHAIN : 3A28A
+ CHAIN : 3A28B
+ CHAIN : 3A28C
+ CHAIN : 3A28D
+ CHAIN : 3A28E
+ CHAIN : 3A28F
+ CHAIN : 3A28G
+ CHAIN : 3A28H
+

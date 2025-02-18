@@ -1,0 +1,417 @@
+A length: 274
+B length: 274
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            275
+Total number of atoms read in:              1964
+Total number of ignored atom records:        437
+ HEADER    HYDROLASE                               03-OCT-12   3VYV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.USHIJIMA,N.FUCHITA,T.KAJIWARA,H.MOTOSHIMA,G.UENO,K.WATANABE         
+  Reading DSSP file
+ HEADER    HYDROLASE                               03-OCT-12   3VYV              COMPND   2 MOLECULE: SUBTILISIN NAT;                                            SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS SUBTILIS SUBSP. NATTO;                 AUTHOR    H.USHIJIMA,N.FUCHITA,T.KAJIWARA,H.MOTOSHIMA,G.UENO,K.WATANAB          
+         275  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2703
+ selectset done           0
+ eigen done           0
+ tau           1   1.21457684              25          65          88         150         165         175
+ #popped           2           1
+ #selectset contacts        2703
+ selectset done           1
+ eigen done           1
+ tau           3   1.49849629              88         202         218
+ #popped           4           2
+ #selectset contacts        2703
+ selectset done           2
+ eigen done           2
+ tau           5   1.28378379              88
+ #popped           6           2
+ #selectset contacts        2703
+ selectset done           2
+ eigen done           2
+ tau           7  0.801218092              25
+ #popped           8           3
+ #selectset contacts        2703
+ selectset done           3
+ eigen done           3
+ tau           9   1.56029725              12
+ #popped           9           2
+ #selectset contacts        2703
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2703
+ selectset done           1
+ eigen done           1
+ tau          11   1.22713339             228
+ #popped          12           2
+ #selectset contacts        2703
+ selectset done           2
+ eigen done           2
+ tau          13  0.742528737             202
+ #popped          14           2
+ #selectset contacts        2703
+ selectset done           2
+ eigen done           2
+ tau          15  0.503182173             165
+ #popped          17           2
+ #selectset contacts        2703
+ selectset done           2
+ eigen done           2
+ tau          17  0.321403831             188
+ #popped          13           1
+ #selectset contacts        2703
+ selectset done           1
+ eigen done           1
+ tau          19   1.49635506             241
+ #popped          21           1
+ #selectset contacts        2703
+ selectset done           1
+ eigen done           1
+ tau          21   1.20579851             255         265
+ #popped          22           1
+ #selectset contacts        2703
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        2703
+ selectset done           0
+ eigen done           0
+ tau          23   1.26393938             101
+ #popped          24           1
+ #selectset contacts        2703
+ selectset done           1
+ eigen done           1
+ tau          25  0.834925652              35          45
+ #popped          26           1
+ #selectset contacts        2703
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          25           0
+ #selectset contacts        2703
+ selectset done           0
+ eigen done           0
+ tau          27   1.79376125             119
+ #popped          29           0
+ #selectset contacts        2703
+ selectset done           0
+ eigen done           0
+ tau          29  0.544885814             150
+ #popped          30           0
+ #selectset contacts        2703
+ selectset done           0
+ eigen done           0
+ tau          31   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               03-OCT-12   3VYV              COMPND   2 MOLECULE: SUBTILISIN NAT;                                            SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS SUBTILIS SUBSP. NATTO;                 AUTHOR    H.USHIJIMA,N.FUCHITA,T.KAJIWARA,H.MOTOSHIMA,G.UENO,K.WATANAB          
+           0
+         275
+         275  residues read 3VYV.dssp                                                   
+  exclude short helix           6          10
+  grow short helix          13          19
+  grow short strand         121         124
+  grow short strand         148         152
+  grow short strand         198         201
+  grow short strand         205         209
+  grow short strand         213         217
+  exclude short helix         260         263
+  exclude short helix         270         273
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  4 12 13 10 11 14 15  2  3  5  6  7  8  9
+   2     1  4  5  8  1  4 12 13 10 11 14 15
+   3     1 24 25  7  2  3  5  6  7  8  9
+   4     2  6  7  4  1  4 12 13
+   5     2 12 13  4 10 11 14 15
+   6     4  8  9  2  1  4
+   7     4  0  0  2 12 13
+   8     6  0  0  1  1
+   9     6  0  0  1  4
+  10     0  0  0  0
+  11     0  0  0  1  1
+  12     5 14 15  3 10 11 14
+  13     5  0  0  1 15
+  14    12 18 19  2 10 11
+  15    12  0  0  1 14
+  16     0  0  0  0
+  17     0  0  0  2 10 11
+  18    14  0  0  1 10
+  19    14  0  0  1 11
+  20     0  0  0  0
+  21     0  0  0  1 15
+  22     0  0  0  1 15
+  23     0  0  0  0
+  24     3  0  0  3  2  3  5
+  25     3 28 29  4  6  7  8  9
+  26     0  0  0  3  2  3  5
+  27     0  0  0  0
+  28    25  0  0  1  6
+  29    25  0  0  3  7  8  9
+  30     0  0  0  3  7  8  9
+  31     0  0  0  0
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  3  1  1  4  4 10 15
+   3 -   1 16 17  7  2  2  3  5  9
+   4 -   2  6  7  4  3  1  1  4  4 12 13
+   5 -   2 10 11  4  2 10 11 14 15
+   6 -   4  8  9  2  2  1  1  4  4
+   7 -   4  0  0  2  1 12 13
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  4  4
+  10 -   5 12 13  3  2 10 11 14 14
+  11 -   5  0  0  1  1 15 15
+  12 -  10 14 15  2  1 10 11
+  13 -  10  0  0  1  1 14 14
+  14 -  12  0  0  1  1 10 10
+  15 -  12  0  0  1  1 11 11
+  16 -   3  0  0  3  2  2  3  5  5
+  17 -   3 18 19  4  1  6  9
+  18 -  17  0  0  1  1  6  6
+  19 -  17  0  0  3  1  7  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            275
+Total number of atoms read in:              1964
+Total number of ignored atom records:        399
+ HEADER    HYDROLASE                               03-OCT-12   3VYV              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.USHIJIMA,N.FUCHITA,T.KAJIWARA,H.MOTOSHIMA,G.UENO,K.WATANABE         
+  Reading DSSP file
+ HEADER    HYDROLASE                               03-OCT-12   3VYV              COMPND   2 MOLECULE: SUBTILISIN NAT;                                            SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS SUBTILIS SUBSP. NATTO;                 AUTHOR    H.USHIJIMA,N.FUCHITA,T.KAJIWARA,H.MOTOSHIMA,G.UENO,K.WATANAB          
+         275  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2709
+ selectset done           0
+ eigen done           0
+ tau           1   1.12664187              22          65          87         150
+ #popped           2           1
+ #selectset contacts        2709
+ selectset done           1
+ eigen done           1
+ tau           3   1.59251189              87         202         218
+ #popped           4           2
+ #selectset contacts        2709
+ selectset done           2
+ eigen done           2
+ tau           5   1.22250938              87
+ #popped           6           2
+ #selectset contacts        2709
+ selectset done           2
+ eigen done           2
+ tau           7   1.04287922              10          22
+ #popped           8           2
+ #selectset contacts        2709
+ selectset done           2
+ eigen done           2
+ tau           9  0.794137657              10
+ #popped          11           2
+ #selectset contacts        2709
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2709
+ selectset done           1
+ eigen done           1
+ tau          11   1.19393229             228
+ #popped          12           2
+ #selectset contacts        2709
+ selectset done           2
+ eigen done           2
+ tau          13  0.789992571             202
+ #popped          14           2
+ #selectset contacts        2709
+ selectset done           2
+ eigen done           2
+ tau          15  0.857306600             165         175
+ #popped          16           2
+ #selectset contacts        2709
+ selectset done           2
+ eigen done           2
+ tau          17  0.486818522             165
+ #popped          19           2
+ #selectset contacts        2709
+ selectset done           2
+ eigen done           2
+ tau          19  0.323683292             188
+ #popped          13           1
+ #selectset contacts        2709
+ selectset done           1
+ eigen done           1
+ tau          21   1.67449260             241
+ #popped          23           1
+ #selectset contacts        2709
+ selectset done           1
+ eigen done           1
+ tau          23   1.20579851             255         265
+ #popped          24           1
+ #selectset contacts        2709
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped           3           0
+ #selectset contacts        2709
+ selectset done           0
+ eigen done           0
+ tau          25   1.18663812             101
+ #popped          26           1
+ #selectset contacts        2709
+ selectset done           1
+ eigen done           1
+ tau          27  0.652950704              35          46
+ #popped          28           1
+ #selectset contacts        2709
+ selectset done           1
+ eigen done           1
+ tau          29   0.00000000    
+ #popped          27           0
+ #selectset contacts        2709
+ selectset done           0
+ eigen done           0
+ tau          29   1.17251253             118
+ #popped          31           0
+ #selectset contacts        2709
+ selectset done           0
+ eigen done           0
+ tau          31   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               03-OCT-12   3VYV              COMPND   2 MOLECULE: SUBTILISIN NAT;                                            SOURCE   2 ORGANISM_SCIENTIFIC: BACILLUS SUBTILIS SUBSP. NATTO;                 AUTHOR    H.USHIJIMA,N.FUCHITA,T.KAJIWARA,H.MOTOSHIMA,G.UENO,K.WATANAB          
+           0
+         275
+         275  residues read 3VYV.dssp                                                   
+  exclude short helix           6          10
+  grow short helix          13          19
+  grow short strand         121         124
+  grow short strand         148         152
+  grow short strand         198         201
+  grow short strand         205         209
+  grow short strand         213         217
+  exclude short helix         260         263
+  exclude short helix         270         273
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  4  1 12 13 10 11 14 15  2  5  3  6  7  8  9
+   2     1  4  5  8  4  1 12 13 10 11 14 15
+   3     1 26 27  7  2  5  3  6  7  8  9
+   4     2  6  7  4  4  1 12 13
+   5     2 12 13  4 10 11 14 15
+   6     4  8  9  2  4  1
+   7     4  0  0  2 12 13
+   8     6  0  0  1  4
+   9     6  0  0  1  1
+  10     0  0  0  0
+  11     0  0  0  1  4
+  12     5 14 15  3 10 11 14
+  13     5  0  0  1 15
+  14    12 20 21  2 10 11
+  15    12  0  0  1 14
+  16     0  0  0  2 10 11
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  2 10 11
+  20    14  0  0  1 10
+  21    14  0  0  1 11
+  22     0  0  0  0
+  23     0  0  0  1 15
+  24     0  0  0  1 15
+  25     0  0  0  0
+  26     3 28 29  3  2  5  3
+  27     3 30 31  4  6  7  8  9
+  28    26  0  0  2  2  5
+  29    26  0  0  1  3
+  30    27  0  0  1  6
+  31    27  0  0  3  7  8  9
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  8  3  1  1  4  4 10 15
+   3 -   1 16 17  7  2  2  3  5  9
+   4 -   2  6  7  4  3  1  1  4  4 12 13
+   5 -   2 10 11  4  2 10 11 14 15
+   6 -   4  8  9  2  2  1  1  4  4
+   7 -   4  0  0  2  1 12 13
+   8 -   6  0  0  1  1  4  4
+   9 -   6  0  0  1  1  1  1
+  10 -   5 12 13  3  2 10 11 14 14
+  11 -   5  0  0  1  1 15 15
+  12 -  10 14 15  2  1 10 11
+  13 -  10  0  0  1  1 14 14
+  14 -  12  0  0  1  1 10 10
+  15 -  12  0  0  1  1 11 11
+  16 -   3 18 19  3  2  2  3  5  5
+  17 -   3 20 21  4  1  6  9
+  18 -  16  0  0  2  2  2  2  5  5
+  19 -  16  0  0  1  1  3  3
+  20 -  17  0  0  1  1  6  6
+  21 -  17  0  0  3  1  7  9
+
+ CHAIN : 3VYVA
+ CHAIN : 3VYVB
+

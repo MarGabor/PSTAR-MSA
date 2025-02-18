@@ -1,0 +1,1645 @@
+A length: 258
+B length: 258
+C length: 258
+D length: 258
+E length: 258
+F length: 258
+G length: 258
+H length: 258
+# 8 chains A B C D E F G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1905
+Total number of ignored atom records:        295
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau           1   1.86346030              91         115         141         161         183         232         247
+ #popped           2           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau           3   1.47702825              81
+ #popped           4           2
+ #selectset contacts        2425
+ selectset done           2
+ eigen done           2
+ tau           5   1.35332024              60
+ #popped           6           3
+ #selectset contacts        2425
+ selectset done           3
+ eigen done           3
+ tau           7  0.431746006              18          30
+ #popped           8           3
+ #selectset contacts        2425
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2425
+ selectset done           2
+ eigen done           2
+ tau           9  0.682177067              71
+ #popped           5           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          11   1.07515323              91         125
+ #popped          12           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          13   1.07026315             141         173
+ #popped          14           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          15  0.790240347             141
+ #popped          16           2
+ #selectset contacts        2425
+ selectset done           2
+ eigen done           2
+ tau          17  0.372226208              91
+ #popped          17           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          19  0.753804564             183
+ #popped           3           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          21   1.34366906             115
+ #popped          22           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          23  0.875311434             102
+ #popped          23           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          25   3.44875288             161
+ #popped          26           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          27           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          27  0.764317155             194         207
+ #popped          28           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          29  0.700288177             218         232
+ #popped          30           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          31   2.42834139             194         218
+ #popped          32           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          33  0.599605501             194
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+           0
+         258
+         258  residues read 1IY8.dssp                                                   
+  grow short strand           6          10
+  grow short strand          57          61
+  grow short strand          86          89
+  exclude short helix         100         102
+  grow short strand         137         141
+  exclude short helix         144         146
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  2  6  7 10 12 11  9  8 16 14 15 13
+   2     1  4  5 11  1  3  4  5  2  6  7 10 12 11  9
+   3     1 22 23  5  8 16 14 15 13
+   4     2  6  7  6  1  3  4  5  2  6
+   5     2 12 13  5  7 10 12 11  9
+   6     4  8  9  5  1  3  4  5  2
+   7     4  0  0  1  6
+   8     6  0  0  4  1  3  4  5
+   9     6  0  0  1  2
+  10     0  0  0  0
+  11     0  0  0  1  6
+  12     5 14 15  4  7 10 12 11
+  13     5  0  0  1  9
+  14    12 16 17  3  7 10 12
+  15    12  0  0  1 11
+  16    14 18 19  2  7 10
+  17    14  0  0  1 12
+  18    16  0  0  1  7
+  19    16  0  0  1 10
+  20     0  0  0  1 12
+  21     0  0  0  0
+  22     3  0  0  1  8
+  23     3 28 29  4 16 14 15 13
+  24     0  0  0  0
+  25     0  0  0  1  8
+  26     0  0  0  0
+  27     0  0  0  4 16 14 15 13
+  28    23 30 31  3 16 14 15
+  29    23  0  0  1 13
+  30    28 32 33  2 16 14
+  31    28  0  0  1 15
+  32    30  0  0  1 16
+  33    30  0  0  1 14
+  34     0  0  0  0
+  35     0  0  0  1 16
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 11  2  1  7  9 12
+   3 -   1 18 19  5  2  8  8 13 16
+   4 -   2  6  7  6  1  1  6
+   5 -   2 10 11  5  2  7  7  9 12
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   5 12 13  4  2  7  7 10 12
+  11 -   5  0  0  1  1  9  9
+  12 -  10 14 15  3  3  7  7 10 10 12 12
+  13 -  10  0  0  1  1 11 11
+  14 -  12 16 17  2  2  7  7 10 10
+  15 -  12  0  0  1  1 12 12
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1 10 10
+  18 -   3  0  0  1  1  8  8
+  19 -   3 20 21  4  1 13 16
+  20 -  19 22 23  3  1 14 16
+  21 -  19  0  0  1  1 13 13
+  22 -  20 24 25  2  2 14 14 16 16
+  23 -  20  0  0  1  1 15 15
+  24 -  22  0  0  1  1 16 16
+  25 -  22  0  0  1  1 14 14
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1905
+Total number of ignored atom records:        281
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau           1   1.88646591              91         115         141         161         183         232         247
+ #popped           2           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau           3   1.41089261              81
+ #popped           4           2
+ #selectset contacts        2425
+ selectset done           2
+ eigen done           2
+ tau           5   1.40223551              60
+ #popped           6           3
+ #selectset contacts        2425
+ selectset done           3
+ eigen done           3
+ tau           7  0.722692788              34          50
+ #popped           8           3
+ #selectset contacts        2425
+ selectset done           3
+ eigen done           3
+ tau           9  0.563983262              34
+ #popped          10           3
+ #selectset contacts        2425
+ selectset done           3
+ eigen done           3
+ tau          11  0.305439323              12
+ #popped          13           3
+ #selectset contacts        2425
+ selectset done           3
+ eigen done           3
+ tau          13  0.670069814              22
+ #popped           7           2
+ #selectset contacts        2425
+ selectset done           2
+ eigen done           2
+ tau          15  0.684300721              70
+ #popped           5           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          17   1.09249449              91         125
+ #popped          18           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          19   1.16096342             141         173
+ #popped          20           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          21  0.783918381             141
+ #popped          22           2
+ #selectset contacts        2425
+ selectset done           2
+ eigen done           2
+ tau          23  0.375180393              91
+ #popped          23           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped           3           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          25   1.31807542             115
+ #popped          26           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          27  0.826683044             102
+ #popped          27           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          29   3.13522983             161
+ #popped          30           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          31   0.00000000    
+ #popped          31           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          31  0.781786442             213
+ #popped          32           1
+ #selectset contacts        2425
+ selectset done           1
+ eigen done           1
+ tau          33   1.50347149             201
+ #popped          33           0
+ #selectset contacts        2425
+ selectset done           0
+ eigen done           0
+ tau          35   1.45957565             232
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+           0
+         258
+         258  residues read 1IY8.dssp                                                   
+  grow short strand           6          10
+  grow short strand          57          61
+  grow short strand          86          89
+  exclude short helix         100         102
+  grow short strand         137         141
+  exclude short helix         144         146
+  exclude short helix         238         240
+  grow short strand         247         250
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  5  4  6  7 10 12 11  9  8 13 14 15 16
+   2     1  4  5 11  1  2  3  5  4  6  7 10 12 11  9
+   3     1 26 27  5  8 13 14 15 16
+   4     2  6  7  6  1  2  3  5  4  6
+   5     2 18 19  5  7 10 12 11  9
+   6     4  8  9  5  1  2  3  5  4
+   7     4  0  0  1  6
+   8     6 10 11  4  1  2  3  5
+   9     6  0  0  1  4
+  10     8 12 13  3  1  2  3
+  11     8  0  0  1  5
+  12    10  0  0  1  1
+  13    10 14 15  2  2  3
+  14    13  0  0  1  2
+  15    13  0  0  1  3
+  16     0  0  0  0
+  17     0  0  0  1  6
+  18     5 20 21  4  7 10 12 11
+  19     5  0  0  1  9
+  20    18 22 23  3  7 10 12
+  21    18  0  0  1 11
+  22    20 24 25  2  7 10
+  23    20  0  0  1 12
+  24    22  0  0  1  7
+  25    22  0  0  1 10
+  26     3  0  0  1  8
+  27     3 32 33  4 13 14 15 16
+  28     0  0  0  0
+  29     0  0  0  1  8
+  30     0  0  0  0
+  31     0  0  0  4 13 14 15 16
+  32    27 34 35  2 13 14
+  33    27 36 37  2 15 16
+  34    32  0  0  1 13
+  35    32  0  0  1 14
+  36    33  0  0  1 15
+  37    33  0  0  1 16
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 11  2  1  7  9 12
+   3 -   1 24 25  5  2  8  8 13 16
+   4 -   2  6  7  6  1  1  6
+   5 -   2 16 17  5  2  7  7  9 12
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  4  2  1  3  5  5
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  3  1  1  3
+  11 -   8  0  0  1  1  5  5
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  2  1  2  3
+  14 -  13  0  0  1  1  2  2
+  15 -  13  0  0  1  1  3  3
+  16 -   5 18 19  4  2  7  7 10 12
+  17 -   5  0  0  1  1  9  9
+  18 -  16 20 21  3  3  7  7 10 10 12 12
+  19 -  16  0  0  1  1 11 11
+  20 -  18 22 23  2  2  7  7 10 10
+  21 -  18  0  0  1  1 12 12
+  22 -  20  0  0  1  1  7  7
+  23 -  20  0  0  1  1 10 10
+  24 -   3  0  0  1  1  8  8
+  25 -   3 26 27  4  1 13 16
+  26 -  25 28 29  2  1 13 14
+  27 -  25 30 31  2  1 15 16
+  28 -  26  0  0  1  1 13 13
+  29 -  26  0  0  1  1 14 14
+  30 -  27  0  0  1  1 15 15
+  31 -  27  0  0  1  1 16 16
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1905
+Total number of ignored atom records:        303
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2415
+ selectset done           0
+ eigen done           0
+ tau           1   1.54286826             201         222
+ #popped           2           1
+ #selectset contacts        2415
+ selectset done           1
+ eigen done           1
+ tau           3   2.00269914              86
+ #popped           4           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau           5   1.01695955              62          76
+ #popped           6           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau           7  0.992647052              62
+ #popped           8           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau           9  0.492140085              13          31
+ #popped          10           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2415
+ selectset done           1
+ eigen done           1
+ tau          11   1.27939367             184         237         248
+ #popped          12           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          13   1.00176597             115         142         161
+ #popped          14           3
+ #selectset contacts        2415
+ selectset done           3
+ eigen done           3
+ tau          15   1.24027824             115
+ #popped          16           3
+ #selectset contacts        2415
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          17   1.39092255             125
+ #popped          19           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          19  0.650654197             184
+ #popped          20           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          13           1
+ #selectset contacts        2415
+ selectset done           1
+ eigen done           1
+ tau          21   1.10906458             237
+ #popped          22           1
+ #selectset contacts        2415
+ selectset done           1
+ eigen done           1
+ tau          23   1.69351172             201
+ #popped           3           0
+ #selectset contacts        2415
+ selectset done           0
+ eigen done           0
+ tau          25  0.911428630             212
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+           0
+         258
+         258  residues read 1IY8.dssp                                                   
+  grow short strand           6          10
+  grow short strand          57          61
+  grow short strand          86          89
+  exclude short helix         100         102
+  grow short strand         137         141
+  exclude short helix         144         146
+  exclude short helix         238         240
+  grow short strand         247         250
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  2  6  7  8  9 10 11 12 16 13 15 14
+   2     1  4  5 15  1  3  4  5  2  6  7  8  9 10 11 12 16 13 15
+   3     1  0  0  1 14
+   4     2  6  7  6  1  3  4  5  2  6
+   5     2 12 13  9  7  8  9 10 11 12 16 13 15
+   6     4 10 11  5  1  3  4  5  2
+   7     4  0  0  1  6
+   8     0  0  0  5  1  3  4  5  2
+   9     0  0  0  0
+  10     6  0  0  4  1  3  4  5
+  11     6  0  0  1  2
+  12     5 14 15  7  7  8  9 10 11 12 16
+  13     5 24 25  2 13 15
+  14    12  0  0  2  7  8
+  15    12 18 19  5  9 10 11 12 16
+  16     0  0  0  2  7  8
+  17     0  0  0  0
+  18    15  0  0  1  9
+  19    15 20 21  4 10 11 12 16
+  20    19  0  0  3 10 11 12
+  21    19  0  0  1 16
+  22     0  0  0  2 13 15
+  23     0  0  0  0
+  24    13  0  0  1 13
+  25    13  0  0  1 15
+  26     0  0  0  1 14
+  27     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 15  2  1 13 15 16
+   3 -   1  0  0  1  1 14 14
+   4 -   2  6  7  6  1  1  6
+   5 -   2 10 11  9  2  7 13 15 16
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   5 12 13  7  2  7 12 16 16
+  11 -   5 18 19  2  2 13 13 15 15
+  12 -  10  0  0  2  1  7  8
+  13 -  10 14 15  5  2  9 12 16 16
+  14 -  13  0  0  1  1  9  9
+  15 -  13 16 17  4  2 10 12 16 16
+  16 -  15  0  0  3  1 10 12
+  17 -  15  0  0  1  1 16 16
+  18 -  11  0  0  1  1 13 13
+  19 -  11  0  0  1  1 15 15
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1905
+Total number of ignored atom records:        287
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2415
+ selectset done           0
+ eigen done           0
+ tau           1   1.70876813             201         222
+ #popped           2           1
+ #selectset contacts        2415
+ selectset done           1
+ eigen done           1
+ tau           3   1.88825917              86
+ #popped           4           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau           5   1.05416536              62          76
+ #popped           6           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau           7  0.992647052              62
+ #popped           8           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau           9  0.437236130              14          31
+ #popped          10           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        2415
+ selectset done           1
+ eigen done           1
+ tau          11   1.29380059             184         235         248
+ #popped          12           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          13   1.00477004             115         142         161
+ #popped          14           3
+ #selectset contacts        2415
+ selectset done           3
+ eigen done           3
+ tau          15   1.27903688             115
+ #popped          16           3
+ #selectset contacts        2415
+ selectset done           3
+ eigen done           3
+ tau          17   0.00000000    
+ #popped          15           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          17   1.39952219             125
+ #popped          19           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          19  0.549946666             142
+ #popped          21           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          21   1.13564122             174
+ #popped          23           2
+ #selectset contacts        2415
+ selectset done           2
+ eigen done           2
+ tau          23   0.00000000    
+ #popped          13           1
+ #selectset contacts        2415
+ selectset done           1
+ eigen done           1
+ tau          23   1.04937506             235
+ #popped          24           1
+ #selectset contacts        2415
+ selectset done           1
+ eigen done           1
+ tau          25   1.51467705             201
+ #popped           3           0
+ #selectset contacts        2415
+ selectset done           0
+ eigen done           0
+ tau          27  0.951055944             212
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+           0
+         258
+         258  residues read 1IY8.dssp                                                   
+  grow short strand           6          10
+  grow short strand          57          61
+  grow short strand          86          89
+  exclude short helix         100         102
+  grow short strand         137         141
+  exclude short helix         144         146
+  exclude short helix         238         240
+  grow short strand         247         250
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  2  6  7  8  9 10 11 12 16 13 15 14
+   2     1  4  5 15  1  3  4  5  2  6  7  8  9 10 11 12 16 13 15
+   3     1  0  0  1 14
+   4     2  6  7  6  1  3  4  5  2  6
+   5     2 12 13  9  7  8  9 10 11 12 16 13 15
+   6     4 10 11  5  1  3  4  5  2
+   7     4  0  0  1  6
+   8     0  0  0  5  1  3  4  5  2
+   9     0  0  0  0
+  10     6  0  0  4  1  3  4  5
+  11     6  0  0  1  2
+  12     5 14 15  7  7  8  9 10 11 12 16
+  13     5 26 27  2 13 15
+  14    12  0  0  2  7  8
+  15    12 18 19  5  9 10 11 12 16
+  16     0  0  0  2  7  8
+  17     0  0  0  0
+  18    15  0  0  1  9
+  19    15 20 21  4 10 11 12 16
+  20    19  0  0  1 10
+  21    19 22 23  3 11 12 16
+  22    21  0  0  1 11
+  23    21  0  0  2 12 16
+  24     0  0  0  2 13 15
+  25     0  0  0  0
+  26    13  0  0  1 13
+  27    13  0  0  1 15
+  28     0  0  0  1 14
+  29     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 15  2  1 13 15 16
+   3 -   1  0  0  1  1 14 14
+   4 -   2  6  7  6  1  1  6
+   5 -   2 10 11  9  2  7 13 15 16
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   5 12 13  7  2  7 12 16 16
+  11 -   5 20 21  2  2 13 13 15 15
+  12 -  10  0  0  2  1  7  8
+  13 -  10 14 15  5  2  9 12 16 16
+  14 -  13  0  0  1  1  9  9
+  15 -  13 16 17  4  2 10 12 16 16
+  16 -  15  0  0  1  1 10 10
+  17 -  15 18 19  3  2 11 12 16 16
+  18 -  17  0  0  1  1 11 11
+  19 -  17  0  0  2  2 12 12 16 16
+  20 -  11  0  0  1  1 13 13
+  21 -  11  0  0  1  1 15 15
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1905
+Total number of ignored atom records:        313
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2417
+ selectset done           0
+ eigen done           0
+ tau           1   1.85546219             184         231         248
+ #popped           2           1
+ #selectset contacts        2417
+ selectset done           1
+ eigen done           1
+ tau           3   2.01990485              92         115         142         161
+ #popped           4           2
+ #selectset contacts        2417
+ selectset done           2
+ eigen done           2
+ tau           5   1.45183325              92
+ #popped           6           3
+ #selectset contacts        2417
+ selectset done           3
+ eigen done           3
+ tau           7   1.28915930              61          80
+ #popped           8           3
+ #selectset contacts        2417
+ selectset done           3
+ eigen done           3
+ tau           9  0.579550624              10          61
+ #popped          10           4
+ #selectset contacts        2417
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        2417
+ selectset done           3
+ eigen done           3
+ tau          11   1.12727892              29
+ #popped          13           3
+ #selectset contacts        2417
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped           7           2
+ #selectset contacts        2417
+ selectset done           2
+ eigen done           2
+ tau          13   1.38734257             125
+ #popped          15           2
+ #selectset contacts        2417
+ selectset done           2
+ eigen done           2
+ tau          15  0.572393417             142
+ #popped          17           2
+ #selectset contacts        2417
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped           5           1
+ #selectset contacts        2417
+ selectset done           1
+ eigen done           1
+ tau          17   1.18440711             115
+ #popped          18           1
+ #selectset contacts        2417
+ selectset done           1
+ eigen done           1
+ tau          19  0.885045588             102
+ #popped           3           0
+ #selectset contacts        2417
+ selectset done           0
+ eigen done           0
+ tau          21  0.849481523             215
+ #popped          22           1
+ #selectset contacts        2417
+ selectset done           1
+ eigen done           1
+ tau          23   1.59997845             201
+ #popped          23           0
+ #selectset contacts        2417
+ selectset done           0
+ eigen done           0
+ tau          25   1.24787235             231
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+           0
+         258
+         258  residues read 1IY8.dssp                                                   
+  grow short strand           6          10
+  grow short strand          57          61
+  grow short strand          86          89
+  exclude short helix         100         102
+  grow short strand         137         141
+  exclude short helix         144         146
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  7  2  3  4  5  6  9 10 11 12 16  8 13 14 15
+   2     1  4  5 13  1  7  2  3  4  5  6  9 10 11 12 16  8
+   3     1 22 23  3 13 14 15
+   4     2  6  7 12  1  7  2  3  4  5  6  9 10 11 12 16
+   5     2  0  0  1  8
+   6     4  8  9  7  1  7  2  3  4  5  6
+   7     4 14 15  5  9 10 11 12 16
+   8     6 10 11  6  1  7  2  3  4  5
+   9     6  0  0  1  6
+  10     8  0  0  2  1  7
+  11     8 12 13  4  2  3  4  5
+  12    11  0  0  1  2
+  13    11  0  0  3  3  4  5
+  14     7  0  0  1  9
+  15     7 16 17  4 10 11 12 16
+  16    15  0  0  1 10
+  17    15  0  0  3 11 12 16
+  18     0  0  0  1  8
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  1  8
+  22     3 24 25  2 13 14
+  23     3  0  0  1 15
+  24    22  0  0  1 13
+  25    22  0  0  1 14
+  26     0  0  0  1 15
+  27     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 13  2  1 12 16 16
+   3 -   1 18 19  3  1 13 15
+   4 -   2  6  7 12  3  1  7  9 12 16 16
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  7  1  1  7
+   7 -   4 14 15  5  2  9 12 16 16
+   8 -   6 10 11  6  2  1  5  7  7
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  2  2  1  1  7  7
+  11 -   8 12 13  4  1  2  5
+  12 -  11  0  0  1  1  2  2
+  13 -  11  0  0  3  1  3  5
+  14 -   7  0  0  1  1  9  9
+  15 -   7 16 17  4  2 10 12 16 16
+  16 -  15  0  0  1  1 10 10
+  17 -  15  0  0  3  2 11 12 16 16
+  18 -   3 20 21  2  1 13 14
+  19 -   3  0  0  1  1 15 15
+  20 -  18  0  0  1  1 13 13
+  21 -  18  0  0  1  1 14 14
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1905
+Total number of ignored atom records:        287
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2393
+ selectset done           0
+ eigen done           0
+ tau           1   1.60520637             201         222
+ #popped           2           1
+ #selectset contacts        2393
+ selectset done           1
+ eigen done           1
+ tau           3   2.01286507              86
+ #popped           4           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau           5   1.00513446              62          76
+ #popped           6           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau           7  0.978260875              62
+ #popped           8           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau           9  0.424514860              19          30
+ #popped          10           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau          11  0.640836477              19
+ #popped          13           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           5           1
+ #selectset contacts        2393
+ selectset done           1
+ eigen done           1
+ tau          13   1.27811420              97         135
+ #popped          14           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau          15  0.761247754             232         243
+ #popped          16           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau          17   1.48416746              97         187         232
+ #popped          18           3
+ #selectset contacts        2393
+ selectset done           3
+ eigen done           3
+ tau          19   1.45771360             201
+ #popped          20           3
+ #selectset contacts        2393
+ selectset done           3
+ eigen done           3
+ tau          21   1.22085428              97
+ #popped          19           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau          23  0.283697158             147
+ #popped          25           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau          25   1.69442523             161
+ #popped          27           2
+ #selectset contacts        2393
+ selectset done           2
+ eigen done           2
+ tau          27   0.00000000    
+ #popped          15           1
+ #selectset contacts        2393
+ selectset done           1
+ eigen done           1
+ tau          27   2.23218679             115
+ #popped          29           1
+ #selectset contacts        2393
+ selectset done           1
+ eigen done           1
+ tau          29   1.27419353             125
+ #popped           3           0
+ #selectset contacts        2393
+ selectset done           0
+ eigen done           0
+ tau          31  0.919878423             211
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+           0
+         258
+         258  residues read 1IY8.dssp                                                   
+  grow short strand           6          10
+  grow short strand          57          61
+  grow short strand          86          89
+  exclude short helix         100         102
+  grow short strand         137         141
+  exclude short helix         144         146
+  exclude short helix         238         240
+  grow short strand         247         250
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  2  6  7 13 15 10 11 12 16  8  9 14
+   2     1  4  5 15  1  3  4  5  2  6  7 13 15 10 11 12 16  8  9
+   3     1  0  0  1 14
+   4     2  6  7  6  1  3  4  5  2  6
+   5     2 14 15  9  7 13 15 10 11 12 16  8  9
+   6     4 10 11  5  1  3  4  5  2
+   7     4  0  0  1  6
+   8     0  0  0  5  1  3  4  5  2
+   9     0  0  0  0
+  10     6 12 13  4  1  3  4  5
+  11     6  0  0  1  2
+  12    10  0  0  1  1
+  13    10  0  0  3  3  4  5
+  14     5 18 19  7  7 13 15 10 11 12 16
+  15     5 28 29  2  8  9
+  16     0  0  0  7  7 13 15 10 11 12 16
+  17     0  0  0  0
+  18    14 20 21  3  7 13 15
+  19    14 24 25  4 10 11 12 16
+  20    18 22 23  2  7 13
+  21    18  0  0  1 15
+  22    20  0  0  1  7
+  23    20  0  0  1 13
+  24    19  0  0  1 10
+  25    19  0  0  3 11 12 16
+  26     0  0  0  0
+  27     0  0  0  3 11 12 16
+  28    15  0  0  1  8
+  29    15  0  0  1  9
+  30     0  0  0  1  9
+  31     0  0  0  0
+  32     0  0  0  1 14
+  33     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 15  2  1 13 15 16
+   3 -   1  0  0  1  1 14 14
+   4 -   2  6  7  6  1  1  6
+   5 -   2 12 13  9  2  7 13 15 16
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  3  1  3  5
+  12 -   5 14 15  7  3  7  7 10 13 15 16
+  13 -   5 22 23  2  1  8  9
+  14 -  12 16 17  3  3  7  7 13 13 15 15
+  15 -  12 20 21  4  2 10 12 16 16
+  16 -  14 18 19  2  2  7  7 13 13
+  17 -  14  0  0  1  1 15 15
+  18 -  16  0  0  1  1  7  7
+  19 -  16  0  0  1  1 13 13
+  20 -  15  0  0  1  1 10 10
+  21 -  15  0  0  3  2 11 12 16 16
+  22 -  13  0  0  1  1  8  8
+  23 -  13  0  0  1  1  9  9
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1905
+Total number of ignored atom records:        307
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2405
+ selectset done           0
+ eigen done           0
+ tau           1   1.76848674             184         232         248
+ #popped           2           1
+ #selectset contacts        2405
+ selectset done           1
+ eigen done           1
+ tau           3   2.08693647              92         115         142         161
+ #popped           4           2
+ #selectset contacts        2405
+ selectset done           2
+ eigen done           2
+ tau           5   1.30278087              62
+ #popped           6           3
+ #selectset contacts        2405
+ selectset done           3
+ eigen done           3
+ tau           7  0.658941150              33
+ #popped           8           4
+ #selectset contacts        2405
+ selectset done           4
+ eigen done           4
+ tau           9   0.00000000    
+ #popped           9           3
+ #selectset contacts        2405
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        2405
+ selectset done           2
+ eigen done           2
+ tau           9   3.02001381              82
+ #popped          10           3
+ #selectset contacts        2405
+ selectset done           3
+ eigen done           3
+ tau          11  0.693998814              72
+ #popped          11           2
+ #selectset contacts        2405
+ selectset done           2
+ eigen done           2
+ tau          13   1.08138371              92         125
+ #popped          14           2
+ #selectset contacts        2405
+ selectset done           2
+ eigen done           2
+ tau          15  0.529912055              92
+ #popped          17           2
+ #selectset contacts        2405
+ selectset done           2
+ eigen done           2
+ tau          17  0.547062337             142
+ #popped          19           2
+ #selectset contacts        2405
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           5           1
+ #selectset contacts        2405
+ selectset done           1
+ eigen done           1
+ tau          19   1.13057041             115
+ #popped          20           1
+ #selectset contacts        2405
+ selectset done           1
+ eigen done           1
+ tau          21  0.867344677             102
+ #popped           3           0
+ #selectset contacts        2405
+ selectset done           0
+ eigen done           0
+ tau          23  0.874053955             215
+ #popped          24           1
+ #selectset contacts        2405
+ selectset done           1
+ eigen done           1
+ tau          25   1.51997948             201
+ #popped          25           0
+ #selectset contacts        2405
+ selectset done           0
+ eigen done           0
+ tau          27   1.43821335             232
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+           0
+         258
+         258  residues read 1IY8.dssp                                                   
+  grow short strand           6          10
+  grow short strand          57          61
+  grow short strand          86          89
+  exclude short helix         100         102
+  grow short strand         137         141
+  exclude short helix         144         146
+  exclude short helix         238         240
+  grow short strand         247         250
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  3  4  5  6  7 10 11 12 16  9  8 13 14 15
+   2     1  4  5 13  1  2  3  4  5  6  7 10 11 12 16  9  8
+   3     1 24 25  3 13 14 15
+   4     2  6  7 12  1  2  3  4  5  6  7 10 11 12 16  9
+   5     2  0  0  1  8
+   6     4  8  9  5  1  2  3  4  5
+   7     4 10 11  7  6  7 10 11 12 16  9
+   8     6  0  0  3  1  2  3
+   9     6  0  0  2  4  5
+  10     7  0  0  1  6
+  11     7 14 15  6  7 10 11 12 16  9
+  12     0  0  0  0
+  13     0  0  0  1  6
+  14    11 16 17  5  7 10 11 12 16
+  15    11  0  0  1  9
+  16    14  0  0  1  7
+  17    14 18 19  4 10 11 12 16
+  18    17  0  0  1 10
+  19    17  0  0  3 11 12 16
+  20     0  0  0  1  8
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     3 26 27  2 13 14
+  25     3  0  0  1 15
+  26    24  0  0  1 13
+  27    24  0  0  1 14
+  28     0  0  0  1 15
+  29     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 13  2  1 12 16 16
+   3 -   1 18 19  3  1 13 15
+   4 -   2  6  7 12  3  1  7  9 12 16 16
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  5  1  1  5
+   7 -   4 10 11  7  3  6  7  9 12 16 16
+   8 -   6  0  0  3  1  1  3
+   9 -   6  0  0  2  1  4  5
+  10 -   7  0  0  1  1  6  6
+  11 -   7 12 13  6  3  7  7  9 12 16 16
+  12 -  11 14 15  5  3  7  7 10 12 16 16
+  13 -  11  0  0  1  1  9  9
+  14 -  12  0  0  1  1  7  7
+  15 -  12 16 17  4  2 10 12 16 16
+  16 -  15  0  0  1  1 10 10
+  17 -  15  0  0  3  2 11 12 16 16
+  18 -   3 20 21  2  1 13 14
+  19 -   3  0  0  1  1 15 15
+  20 -  18  0  0  1  1 13 13
+  21 -  18  0  0  1  1 14 14
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            258
+Total number of atoms read in:              1905
+Total number of ignored atom records:        259
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+         258  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2421
+ selectset done           0
+ eigen done           0
+ tau           1   1.85975409              91         115         141         161         183         233         247
+ #popped           2           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau           3   1.46255672              81
+ #popped           4           2
+ #selectset contacts        2421
+ selectset done           2
+ eigen done           2
+ tau           5   1.33776486              60
+ #popped           6           3
+ #selectset contacts        2421
+ selectset done           3
+ eigen done           3
+ tau           7  0.397465438              19          30
+ #popped           8           3
+ #selectset contacts        2421
+ selectset done           3
+ eigen done           3
+ tau           9  0.622529626              19
+ #popped          11           3
+ #selectset contacts        2421
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        2421
+ selectset done           2
+ eigen done           2
+ tau          11  0.693938732              71
+ #popped           5           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau          13   1.10872221              91         125
+ #popped          14           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau          15  0.861558139             141
+ #popped          16           2
+ #selectset contacts        2421
+ selectset done           2
+ eigen done           2
+ tau          17  0.387481391              91
+ #popped          17           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau          19  0.874205112             183
+ #popped          20           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau          21  0.677251399             171
+ #popped           3           0
+ #selectset contacts        2421
+ selectset done           0
+ eigen done           0
+ tau          23   2.74709296             161
+ #popped          24           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau          25   1.16661859             115
+ #popped          26           2
+ #selectset contacts        2421
+ selectset done           2
+ eigen done           2
+ tau          27  0.842280865             102
+ #popped          27           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau          29   0.00000000    
+ #popped          25           0
+ #selectset contacts        2421
+ selectset done           0
+ eigen done           0
+ tau          29  0.757298470             223
+ #popped          30           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau          31  0.873417675             197         213
+ #popped          32           1
+ #selectset contacts        2421
+ selectset done           1
+ eigen done           1
+ tau          33   1.22547007             197
+ #popped          31           0
+ #selectset contacts        2421
+ selectset done           0
+ eigen done           0
+ tau          35   5.93473196             233
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          25-JUL-02   1IY8              COMPND   2 MOLECULE: LEVODIONE REDUCTASE;                                       SOURCE   2 ORGANISM_SCIENTIFIC: LEIFSONIA AQUATICA;                             AUTHOR    S.SOGABE,T.FUKAMI,Y.SHIRATORI,A.YOSHIZUMI,M.WADA                      
+           0
+         258
+         258  residues read 1IY8.dssp                                                   
+  grow short strand           6          10
+  grow short strand          57          61
+  grow short strand          86          89
+  exclude short helix         100         102
+  grow short strand         137         141
+  exclude short helix         144         146
+  exclude short helix         238         240
+  grow short strand         247         250
+  exclude short helix         254         256
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  3  4  5  2  6  7 10 11 12  9  8 13 14 15 16
+   2     1  4  5 11  1  3  4  5  2  6  7 10 11 12  9
+   3     1 24 25  5  8 13 14 15 16
+   4     2  6  7  6  1  3  4  5  2  6
+   5     2 14 15  5  7 10 11 12  9
+   6     4  8  9  5  1  3  4  5  2
+   7     4  0  0  1  6
+   8     6 10 11  4  1  3  4  5
+   9     6  0  0  1  2
+  10     8  0  0  1  1
+  11     8  0  0  3  3  4  5
+  12     0  0  0  0
+  13     0  0  0  1  6
+  14     5 16 17  4  7 10 11 12
+  15     5  0  0  1  9
+  16    14 18 19  2  7 10
+  17    14 22 23  2 11 12
+  18    16  0  0  1  7
+  19    16  0  0  1 10
+  20     0  0  0  2 11 12
+  21     0  0  0  0
+  22    17  0  0  1 11
+  23    17  0  0  1 12
+  24     3  0  0  1  8
+  25     3 30 31  4 13 14 15 16
+  26     0  0  0  1  8
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  1  8
+  30    25 32 33  2 13 14
+  31    25 36 37  2 15 16
+  32    30  0  0  1 13
+  33    30  0  0  1 14
+  34     0  0  0  1 13
+  35     0  0  0  0
+  36    31  0  0  1 15
+  37    31  0  0  1 16
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 11  2  1  7  9 12
+   3 -   1 20 21  5  2  8  8 13 16
+   4 -   2  6  7  6  1  1  6
+   5 -   2 12 13  5  2  7  7  9 12
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  4  2  1  1  3  5
+   9 -   6  0  0  1  1  2  2
+  10 -   8  0  0  1  1  1  1
+  11 -   8  0  0  3  1  3  5
+  12 -   5 14 15  4  2  7  7 10 12
+  13 -   5  0  0  1  1  9  9
+  14 -  12 16 17  2  2  7  7 10 10
+  15 -  12 18 19  2  1 11 12
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1 10 10
+  18 -  15  0  0  1  1 11 11
+  19 -  15  0  0  1  1 12 12
+  20 -   3  0  0  1  1  8  8
+  21 -   3 22 23  4  1 13 16
+  22 -  21 24 25  2  1 13 14
+  23 -  21 26 27  2  1 15 16
+  24 -  22  0  0  1  1 13 13
+  25 -  22  0  0  1  1 14 14
+  26 -  23  0  0  1  1 15 15
+  27 -  23  0  0  1  1 16 16
+
+ CHAIN : 1IY8A
+ CHAIN : 1IY8B
+ CHAIN : 1IY8C
+ CHAIN : 1IY8D
+ CHAIN : 1IY8E
+ CHAIN : 1IY8F
+ CHAIN : 1IY8G
+ CHAIN : 1IY8H
+

@@ -1,0 +1,39 @@
+# Job: profilin
+# Query: 1PRQA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  5EM1-A 21.0  1.5  125   135   36   MOLECULE: PROFILIN;                                                  
+
+# Pairwise alignments
+
+No 1: Query=1PRQA Sbjct=5EM1A Z-score=21.0
+
+DSSP  ---LHHHHHHLLLHHHL-----LLLEEEEEELLLLEEEELLLLL-LLHHHHHHHHHHLLL
+Query ---SWQTYVDTNLVGTG-----AVTQAAILGLDGNTWATSAGFA-VTPAQGQTLASAFNN   51
+ident    |||||||  |             ||| | ||| || |  |    |         |  
+Sbjct gsgSWQTYVDEHLMXDIegtgqHLASAAIFGTDGNVWAXSSSFPeFXPDEINAIIKEFSE   60
+DSSP  lllLLHHHHHLLLLLLLlllllLLLEEEEEELLLLEEEELLLLLlLLHHHHHHHHHHHHL
+
+DSSP  LHHHHLLLEEELLEEEEEEEE-LLLEEEEEELLEEEEEEELLLEEEEEEELLLLLHHHHH
+Query ADPIRASGFDLAGVHYVTLRA-DDRSIYGKKGSAGVITVKTSKSILVGVYNEKIQPGTAA  110
+ident        |  |||  |          | |  |  |     |      | | |   ||   
+Sbjct PGALAPTGLFLAGAXYMVIQGePGAVIRGXXGAGGICIXXTGQAMVFGIYEEPVNPGQCN  120
+DSSP  LLLLLLLLEEELLEEEEEEEEeLLLEEEEEELLEEEEEEELLLEEEEEEEELLLLHHHHH
+
+DSSP  HHHHHHHHHHHHLLL
+Query NVVEKLADYLIGQGF  125
+ident  ||| | |||  || 
+Sbjct MVVERLGDYLVDQGM  135
+DSSP  HHHHHHHHHHHHLLL
+
+
+# Structural equivalences
+   1: 1PRQ-A 5EM1-A     1 -  14 <=>    4 -  17   (SER    1  - GLY   14  <=> SER    2  - ILE   15 )                          
+   1: 1PRQ-A 5EM1-A    15 -  36 <=>   23 -  44   (ALA   15  - ALA   36  <=> HIS   21  - PRO   42 )                          
+   1: 1PRQ-A 5EM1-A    37 -  72 <=>   46 -  81   (VAL   37  - ALA   72  <=> PHE   44  - GLY   79 )                          
+   1: 1PRQ-A 5EM1-A    73 - 125 <=>   83 - 135   (ASP   73  - PHE  125  <=> PRO   81  - MET  133 )                          
+
+# Translation-rotation matrices
+-matrix  "1PRQ-A 5EM1-A  U(1,.)   0.325301 -0.859268  0.394764           13.262143"
+-matrix  "1PRQ-A 5EM1-A  U(2,.)   0.808476  0.036203 -0.587414           -9.309417"
+-matrix  "1PRQ-A 5EM1-A  U(3,.)   0.490455  0.510243  0.706474            5.542136"
+

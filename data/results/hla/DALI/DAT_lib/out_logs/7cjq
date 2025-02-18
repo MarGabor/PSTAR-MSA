@@ -1,0 +1,676 @@
+A length: 275
+B length: 99
+C length: 9
+D length: 275
+E length: 99
+F length: 9
+# 4 chains A B D E
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            275
+Total number of atoms read in:              2233
+Total number of ignored atom records:         81
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              COMPND   2 MOLECULE: MHC CLASS I DLA-88;                                        SOURCE   2 ORGANISM_SCIENTIFIC: CANIS LUPUS FAMILIARIS;                         AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+         275  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2389
+ selectset done           0
+ eigen done           0
+ tau           1   11.9938555             180
+ #popped           2           1
+ #selectset contacts        2389
+ selectset done           1
+ eigen done           1
+ tau           3   1.09569991              99         113         123         170
+ #popped           4           2
+ #selectset contacts        2389
+ selectset done           2
+ eigen done           2
+ tau           5   1.70754015             123
+ #popped           6           2
+ #selectset contacts        2389
+ selectset done           2
+ eigen done           2
+ tau           7  0.900028050              10          21          71
+ #popped           8           3
+ #selectset contacts        2389
+ selectset done           3
+ eigen done           3
+ tau           9   1.37154305              54
+ #popped          10           3
+ #selectset contacts        2389
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        2389
+ selectset done           2
+ eigen done           2
+ tau          11  0.739835560              21
+ #popped          13           2
+ #selectset contacts        2389
+ selectset done           2
+ eigen done           2
+ tau          13  0.914152205              91
+ #popped          14           2
+ #selectset contacts        2389
+ selectset done           2
+ eigen done           2
+ tau          15  0.714070797              81
+ #popped           5           1
+ #selectset contacts        2389
+ selectset done           1
+ eigen done           1
+ tau          17   1.85618556             113         158
+ #popped          18           2
+ #selectset contacts        2389
+ selectset done           2
+ eigen done           2
+ tau          19   2.07519221             113
+ #popped          19           1
+ #selectset contacts        2389
+ selectset done           1
+ eigen done           1
+ tau          21   1.00051570             135
+ #popped          23           1
+ #selectset contacts        2389
+ selectset done           1
+ eigen done           1
+ tau          23  0.900000036             148
+ #popped           3           0
+ #selectset contacts        2389
+ selectset done           0
+ eigen done           0
+ tau          25   1.07249963             190         201         246         257
+ #popped          26           1
+ #selectset contacts        2389
+ selectset done           1
+ eigen done           1
+ tau          27   1.03495586             217         228
+ #popped          28           1
+ #selectset contacts        2389
+ selectset done           1
+ eigen done           1
+ tau          29  0.380947351             190
+ #popped          31           1
+ #selectset contacts        2389
+ selectset done           1
+ eigen done           1
+ tau          31  0.290170550             217
+ #popped          33           1
+ #selectset contacts        2389
+ selectset done           1
+ eigen done           1
+ tau          33   999.999023             246
+ #popped          27           0
+ #selectset contacts        2389
+ selectset done           0
+ eigen done           0
+ tau          35  0.526322722             201
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              COMPND   2 MOLECULE: MHC CLASS I DLA-88;                                        SOURCE   2 ORGANISM_SCIENTIFIC: CANIS LUPUS FAMILIARIS;                         AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+           0
+         275
+         275  residues read 7CJQ.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          52
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         229         230
+  grow short strand         234         235
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 20  1  2  3  4  5  6  8  7 12  9 10 11 14 15 16 17 18 19 20 13
+   2     1  4  5 12  1  2  3  4  5  6  8  7 12  9 10 11
+   3     1 26 27  8 14 15 16 17 18 19 20 13
+   4     2  8  9  7  1  2  3  4  5  6  8
+   5     2 18 19  5  7 12  9 10 11
+   6     0  0  0  7  1  2  3  4  5  6  8
+   7     0  0  0  0
+   8     4 10 11  5  1  2  3  4  5
+   9     4  0  0  2  6  8
+  10     8  0  0  4  1  2  3  4
+  11     8  0  0  1  5
+  12     0  0  0  0
+  13     0  0  0  2  6  8
+  14     0  0  0  0
+  15     0  0  0  2  6  8
+  16     0  0  0  0
+  17     0  0  0  0
+  18     5 20 21  2  7 12
+  19     5 22 23  3  9 10 11
+  20    18  0  0  1  7
+  21    18  0  0  1 12
+  22    19  0  0  1  9
+  23    19 24 25  2 10 11
+  24    23  0  0  1 10
+  25    23  0  0  1 11
+  26     3 32 33  7 14 15 16 17 18 19 20
+  27     3  0  0  1 13
+  28     0  0  0  7 14 15 16 17 18 19 20
+  29     0  0  0  0
+  30     0  0  0  0
+  31     0  0  0  7 14 15 16 17 18 19 20
+  32    26  0  0  2 14 15
+  33    26 34 35  5 16 17 18 19 20
+  34    33  0  0  3 16 17 18
+  35    33  0  0  2 19 20
+  36     0  0  0  1 13
+  37     0  0  0  0
+   1 +   0  2  3 20  1  1 20
+   2 +   1  4  5 12  1  1 12
+   3 *   1 18 19  8  1 13 20
+   4 *   2  6  7  7  2  1  6  8  8
+   5 *   2 10 11  5  2  7  7  9 12
+   6 -   4  8  9  5  1  1  5
+   7 -   4  0  0  2  2  6  6  8  8
+   8 -   6  0  0  4  1  1  4
+   9 -   6  0  0  1  1  5  5
+  10 -   5 12 13  2  2  7  7 12 12
+  11 -   5 14 15  3  1  9 11
+  12 -  10  0  0  1  1  7  7
+  13 -  10  0  0  1  1 12 12
+  14 -  11  0  0  1  1  9  9
+  15 -  11 16 17  2  1 10 11
+  16 -  15  0  0  1  1 10 10
+  17 -  15  0  0  1  1 11 11
+  18 -   3 20 21  7  1 14 20
+  19 -   3  0  0  1  1 13 13
+  20 -  18  0  0  2  1 14 15
+  21 -  18 22 23  5  1 16 20
+  22 -  21  0  0  3  1 16 18
+  23 -  21  0  0  2  1 19 20
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               822
+Total number of ignored atom records:         41
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              COMPND   2 MOLECULE: MHC CLASS I DLA-88;                                        SOURCE   2 ORGANISM_SCIENTIFIC: CANIS LUPUS FAMILIARIS;                         AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         780
+ selectset done           0
+ eigen done           0
+ tau           1  0.890739739              10          25          39          50          66
+ #popped           2           1
+ #selectset contacts         780
+ selectset done           1
+ eigen done           1
+ tau           3  0.528132141              39
+ #popped           4           1
+ #selectset contacts         780
+ selectset done           1
+ eigen done           1
+ tau           5  0.810434163              29
+ #popped           3           0
+ #selectset contacts         780
+ selectset done           0
+ eigen done           0
+ tau           7  0.590136826              25
+ #popped           9           0
+ #selectset contacts         780
+ selectset done           0
+ eigen done           0
+ tau           9   1.32355273              78
+ #popped          10           1
+ #selectset contacts         780
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped          11           0
+ #selectset contacts         780
+ selectset done           0
+ eigen done           0
+ tau          11  0.435555547              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              COMPND   2 MOLECULE: MHC CLASS I DLA-88;                                        SOURCE   2 ORGANISM_SCIENTIFIC: CANIS LUPUS FAMILIARIS;                         AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+           0
+          99
+          99  residues read 7CJQ.dssp                                                   
+  grow short strand          45          46
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  5  6  7  4  8  9
+   2     1  4  5  6  1  2  3  5  6  7
+   3     1 10 11  3  4  8  9
+   4     2  6  7  3  1  2  3
+   5     2  0  0  3  5  6  7
+   6     4  0  0  2  1  2
+   7     4  0  0  1  3
+   8     0  0  0  0
+   9     0  0  0  3  4  8  9
+  10     3  0  0  1  4
+  11     3 12 13  2  8  9
+  12    11  0  0  1  8
+  13    11  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  6  2  1  3  5  7
+   3 -   1  8  9  3  2  4  4  8  9
+   4 -   2  6  7  3  1  1  3
+   5 -   2  0  0  3  1  5  7
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  1  1  3  3
+   8 -   3  0  0  1  1  4  4
+   9 -   3 10 11  2  1  8  9
+  10 -   9  0  0  1  1  8  8
+  11 -   9  0  0  1  1  9  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            275
+Total number of atoms read in:              2233
+Total number of ignored atom records:         71
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+  calculate residue outside grid:         197
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              COMPND   2 MOLECULE: MHC CLASS I DLA-88;                                        SOURCE   2 ORGANISM_SCIENTIFIC: CANIS LUPUS FAMILIARIS;                         AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+         275  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2408
+ selectset done           0
+ eigen done           0
+ tau           1   13.1646748             181
+ #popped           2           1
+ #selectset contacts        2408
+ selectset done           1
+ eigen done           1
+ tau           3   1.18375361              48          59         166
+ #popped           4           2
+ #selectset contacts        2408
+ selectset done           2
+ eigen done           2
+ tau           5  0.997518301              48          98         114         152
+ #popped           6           3
+ #selectset contacts        2408
+ selectset done           3
+ eigen done           3
+ tau           7   3.36397314             114
+ #popped           8           3
+ #selectset contacts        2408
+ selectset done           3
+ eigen done           3
+ tau           9  0.976834178              11          21
+ #popped          10           3
+ #selectset contacts        2408
+ selectset done           3
+ eigen done           3
+ tau          11  0.572909355              48
+ #popped          12           3
+ #selectset contacts        2408
+ selectset done           3
+ eigen done           3
+ tau          13  0.414376318              23
+ #popped          15           3
+ #selectset contacts        2408
+ selectset done           3
+ eigen done           3
+ tau          15  0.587045789              34
+ #popped           7           2
+ #selectset contacts        2408
+ selectset done           2
+ eigen done           2
+ tau          17   2.03093719              73
+ #popped          19           2
+ #selectset contacts        2408
+ selectset done           2
+ eigen done           2
+ tau          19   1.35941041             124
+ #popped          20           3
+ #selectset contacts        2408
+ selectset done           3
+ eigen done           3
+ tau          21  0.423543125              98
+ #popped          22           3
+ #selectset contacts        2408
+ selectset done           3
+ eigen done           3
+ tau          23   0.00000000    
+ #popped          21           2
+ #selectset contacts        2408
+ selectset done           2
+ eigen done           2
+ tau          23   1.78044915             134
+ #popped           5           1
+ #selectset contacts        2408
+ selectset done           1
+ eigen done           1
+ tau          25   1.58273292              59
+ #popped           3           0
+ #selectset contacts        2408
+ selectset done           0
+ eigen done           0
+ tau          27  0.680003822             232         242
+ #popped          28           0
+ #selectset contacts        2408
+ selectset done           0
+ eigen done           0
+ tau          29  0.537180126             257
+ #popped          30           0
+ #selectset contacts        2408
+ selectset done           0
+ eigen done           0
+ tau          31  0.524344563             204         215
+ #popped          32           0
+ #selectset contacts        2408
+ selectset done           0
+ eigen done           0
+ tau          33  0.576093554             204
+ #popped          34           1
+ #selectset contacts        2408
+ selectset done           1
+ eigen done           1
+ tau          35   0.00000000    
+ #popped          35           0
+ #selectset contacts        2408
+ selectset done           0
+ eigen done           0
+ tau          35  0.525147796             232
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              COMPND   2 MOLECULE: MHC CLASS I DLA-88;                                        SOURCE   2 ORGANISM_SCIENTIFIC: CANIS LUPUS FAMILIARIS;                         AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+           0
+         275
+         275  residues read 7CJQ.dssp                                                   
+  grow short strand          46          47
+  exclude short helix          50          52
+  grow short strand         133         135
+  exclude short helix         176         179
+  grow short strand         222         223
+  grow short strand         229         230
+  grow short strand         234         235
+  grow short strand         270         272
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 21  1  2  3  4  7 11  5  6  8  9 10 12 13 14 15 16 17 19 20 21 18
+   2     1  4  5 12  1  2  3  4  7 11  5  6  8  9 10 12
+   3     1 28 29  9 13 14 15 16 17 19 20 21 18
+   4     2  6  7 11  1  2  3  4  7 11  5  6  8  9 10
+   5     2  0  0  1 12
+   6     4  8  9  6  1  2  3  4  7 11
+   7     4 18 19  5  5  6  8  9 10
+   8     6 12 13  5  1  2  3  4  7
+   9     6  0  0  1 11
+  10     0  0  0  5  1  2  3  4  7
+  11     0  0  0  0
+  12     8 14 15  4  1  2  3  4
+  13     8  0  0  1  7
+  14    12  0  0  1  1
+  15    12 16 17  3  2  3  4
+  16    15  0  0  2  2  3
+  17    15  0  0  1  4
+  18     7  0  0  1  5
+  19     7 20 21  4  6  8  9 10
+  20    19 22 23  2  6  8
+  21    19 24 25  2  9 10
+  22    20  0  0  1  6
+  23    20  0  0  1  8
+  24    21  0  0  1  9
+  25    21  0  0  1 10
+  26     0  0  0  0
+  27     0  0  0  1 12
+  28     3 30 31  8 13 14 15 16 17 19 20 21
+  29     3  0  0  1 18
+  30    28 34 35  6 13 14 15 16 17 19
+  31    28  0  0  2 20 21
+  32     0  0  0  6 13 14 15 16 17 19
+  33     0  0  0  0
+  34    30  0  0  2 13 14
+  35    30 36 37  4 15 16 17 19
+  36    35  0  0  3 15 16 17
+  37    35  0  0  1 19
+   1 +   0  2  3 21  1  1 21
+   2 *   1  4  5 12  1  1 12
+   3 *   1 24 25  9  1 13 21
+   4 -   2  6  7 11  1  1 11
+   5 -   2  0  0  1  1 12 12
+   6 -   4  8  9  6  3  1  4  7  7 11 11
+   7 -   4 16 17  5  2  5  6  8 10
+   8 -   6 10 11  5  2  1  4  7  7
+   9 -   6  0  0  1  1 11 11
+  10 -   8 12 13  4  1  1  4
+  11 -   8  0  0  1  1  7  7
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  3  1  2  4
+  14 -  13  0  0  2  1  2  3
+  15 -  13  0  0  1  1  4  4
+  16 -   7  0  0  1  1  5  5
+  17 -   7 18 19  4  2  6  6  8 10
+  18 -  17 20 21  2  2  6  6  8  8
+  19 -  17 22 23  2  1  9 10
+  20 -  18  0  0  1  1  6  6
+  21 -  18  0  0  1  1  8  8
+  22 -  19  0  0  1  1  9  9
+  23 -  19  0  0  1  1 10 10
+  24 -   3 26 27  8  2 13 17 19 21
+  25 -   3  0  0  1  1 18 18
+  26 -  24 28 29  6  2 13 17 19 19
+  27 -  24  0  0  2  1 20 21
+  28 -  26  0  0  2  1 13 14
+  29 -  26 30 31  4  2 15 17 19 19
+  30 -  29  0  0  3  1 15 17
+  31 -  29  0  0  1  1 19 19
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             99
+Total number of atoms read in:               822
+Total number of ignored atom records:         31
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              COMPND   2 MOLECULE: MHC CLASS I DLA-88;                                        SOURCE   2 ORGANISM_SCIENTIFIC: CANIS LUPUS FAMILIARIS;                         AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+          99  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau           1  0.852618754              52          63
+ #popped           2           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau           3  0.476713300              10          25
+ #popped           4           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau           5  0.547554314              76
+ #popped           6           1
+ #selectset contacts         796
+ selectset done           1
+ eigen done           1
+ tau           7   1.09077525              37
+ #popped           8           2
+ #selectset contacts         796
+ selectset done           2
+ eigen done           2
+ tau           9  0.427716821              27
+ #popped           9           1
+ #selectset contacts         796
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           7           0
+ #selectset contacts         796
+ selectset done           0
+ eigen done           0
+ tau          11  0.420247585              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           12-JUL-20   7CJQ              COMPND   2 MOLECULE: MHC CLASS I DLA-88;                                        SOURCE   2 ORGANISM_SCIENTIFIC: CANIS LUPUS FAMILIARIS;                         AUTHOR    Y.J.SUN,L.Z.MA,S.LI                                                   
+           0
+          99
+          99  residues read 7CJQ.dssp                                                   
+  grow short strand          45          46
+  grow short strand          50          51
+  grow short strand          55          56
+  grow short strand          91          94
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  9  1  2  3  4  5  7  8  9  6
+   2     1  6  7  8  1  2  3  4  5  7  8  9
+   3     1  0  0  1  6
+   4     0  0  0  8  1  2  3  4  5  7  8  9
+   5     0  0  0  0
+   6     2  8  9  6  1  2  3  4  5  7
+   7     2 12 13  2  8  9
+   8     6  0  0  2  1  2
+   9     6  0  0  4  3  4  5  7
+  10     0  0  0  2  1  2
+  11     0  0  0  0
+  12     7  0  0  1  8
+  13     7  0  0  1  9
+   1 *   0  2  3  9  1  1  9
+   2 -   1  4  5  8  2  1  5  7  9
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  6  2  1  5  7  7
+   5 -   2  8  9  2  1  8  9
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  4  2  3  5  7  7
+   8 -   5  0  0  1  1  8  8
+   9 -   5  0  0  1  1  9  9
+
+ CHAIN : 7CJQA
+ CHAIN : 7CJQB
+ CHAIN : 7CJQD
+ CHAIN : 7CJQE
+

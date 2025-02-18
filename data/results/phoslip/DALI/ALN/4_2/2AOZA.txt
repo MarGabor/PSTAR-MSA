@@ -1,0 +1,38 @@
+# Job: phoslip
+# Query: 2AOZA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1VAP-B 21.1  1.2  121   123   57   MOLECULE: PHOSPHOLIPASE A2;                                          
+
+# Pairwise alignments
+
+No 1: Query=2AOZA Sbjct=1VAPB Z-score=21.1
+
+DSSP  LHHHHHHHHHHHHLLLHHHHHLLLLLLLLLLLLLLLLLHHHHHHHHHHHHHHHLLLLLLL
+Query NLYQLWKMILQETGKNAAPSYGFYGCNCGVGSRGKPKDATDRCCFVHKCCYKALTDCSPK   60
+ident || |  | |   |||     |  ||| || |  | |||||||||||| |||   | | ||
+Sbjct NLFQFEKLIKKMTGKSGMLWYSAYGCYCGWGGQGRPKDATDRCCFVHDCCYGKVTGCNPK   60
+DSSP  LHHHHHHHHHHHHLLLHHHHLLEELLLEELLLLLLLLLHHHHHHHHHHHHHHLLLLLLLL
+
+DSSP  LLLLLEEELLLLEEELLLLHHHHHHHHHHHHHHHHHHHLLLLLLL-LLLLLLHHHLLL-L
+Query TDSYSYSWKDKTIVCGKNNPCLKQECECDKAVAICLRDNLDTYNK-NYKIYPKPLCKK-A  118
+ident  | | ||     ||||  ||| || |||| | ||| |||| ||    |  |||  ||   
+Sbjct MDIYTYSVDNGNIVCGGTNPCKKQICECDRAAAICFRDNLKTYDSkTYWKYPKKNCKEeS  120
+DSSP  LLLLLEEEELLEEEELLLLHHHHHHHHHHHHHHHHHHHLHHHLLHhHHLLLLHHHHLLlL
+
+DSSP  LLL
+Query DDC  121
+ident   |
+Sbjct EPC  123
+DSSP  LLL
+
+
+# Structural equivalences
+   1: 2AOZ-A 1VAP-B     1 - 105 <=>    1 - 105   (ASN    1  - LYS  105  <=> ASN    1  - SER  105 )                          
+   1: 2AOZ-A 1VAP-B   106 - 117 <=>  107 - 118   (ASN  106  - LYS  117  <=> THR  107  - GLU  118 )                          
+   1: 2AOZ-A 1VAP-B   118 - 121 <=>  120 - 123   (ALA  118  - CYS  121  <=> SER  120  - CYS  123 )                          
+
+# Translation-rotation matrices
+-matrix  "2AOZ-A 1VAP-B  U(1,.)  -0.900814  0.415289  0.126767           11.859413"
+-matrix  "2AOZ-A 1VAP-B  U(2,.)  -0.103348  0.078493 -0.991543           84.152588"
+-matrix  "2AOZ-A 1VAP-B  U(3,.)  -0.421727 -0.906297 -0.027788           51.560894"
+

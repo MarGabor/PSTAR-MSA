@@ -1,0 +1,42 @@
+# Job: glob
+# Query: 2D2NB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1OUT-B 15.5  2.2  131   146   16   MOLECULE: HEMOGLOBIN I;                                              
+
+# Pairwise alignments
+
+No 1: Query=2D2NB Sbjct=1OUTB Z-score=15.5
+
+DSSP  -lLLHHHHHHHHHHHHHHLllllhHHHHHHHHHHHHHHHLHHHHHHHLLLL-----lLLL
+Query -dCTSLNRLLVKRQWAEAYgegtnRELLGNRIWEDLFANMPDARGLFSRVN-----gNDI   54
+ident    |          |             |           |     |             
+Sbjct veWTDAEKSTISAVWGKVN-----IDEIGPLALARVLIVYPWTQRYFGSFGnvstpaAIM   55
+DSSP  llLLHHHHHHHHHHHHLLL-----HHHHHHHHHHHHHHHLHHHHHHLHHHLllllhhHHH
+
+DSSP  LLHHHHHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHHL-LLLLLHHHHHHHHHHHHH
+Query DSSEFQAHSLRVLGGLDMCVASLDdvpVLNALLARLNSQHD-SRGIPAAGYPAFVASAIS  113
+ident       ||   | | ||  |          |    |   |                    
+Sbjct GNPKVAAHGKVVCGALDKAVKNMG---NILATYKSLSETHAnKLFVDPDNFRVLADVLTI  112
+DSSP  HLHHHHHHHHHHHHLHHHHHHLLL---LHHHHLHHHHHHHHhLLLLLLHHHHHHHHHHHH
+
+DSSP  HHHHHhLLLLL---LHHHHHHHHHHHHHHHLL---
+Query AVRATvGARSF---DNDAWNSCMNQIVSGISG---  142
+ident    |     ||       |   |   |        
+Sbjct VIAAK-FGASFtpeIQATWQKFMKVVVAAMGSryf  146
+DSSP  HHHHH-HHHHLlhhHHHHHHHHHHHHHHHHLLlll
+
+
+# Structural equivalences
+   1: 2D2N-B 1OUT-B     2 -  18 <=>    3 -  19   (CYS    2  - TYR   18  <=> TRP    3  - ASN   19 )                          
+   1: 2D2N-B 1OUT-B    24 -  50 <=>   20 -  46   (ARG   24  - ASN   50  <=> ILE   20  - GLY   46 )                          
+   1: 2D2N-B 1OUT-B    52 -  78 <=>   53 -  79   (ASN   52  - ASP   78  <=> ALA   53  - GLY   79 )                          
+   1: 2D2N-B 1OUT-B    82 -  95 <=>   80 -  93   (VAL   82  - ASP   95  <=> ASN   80  - ALA   93 )                          
+   1: 2D2N-B 1OUT-B    96 - 118 <=>   95 - 117   (SER   96  - THR  118  <=> LYS   95  - LYS  117 )                          
+   1: 2D2N-B 1OUT-B   120 - 124 <=>  118 - 122   (GLY  120  - PHE  124  <=> PHE  118  - PHE  122 )                          
+   1: 2D2N-B 1OUT-B   125 - 142 <=>  126 - 143   (ASP  125  - GLY  142  <=> ILE  126  - SER  143 )                          
+
+# Translation-rotation matrices
+-matrix  "2D2N-B 1OUT-B  U(1,.)  -0.199354  0.262331  0.944161          -51.253952"
+-matrix  "2D2N-B 1OUT-B  U(2,.)  -0.060310  0.958390 -0.279018           -7.925727"
+-matrix  "2D2N-B 1OUT-B  U(3,.)  -0.978070 -0.112566 -0.175238          131.840714"
+

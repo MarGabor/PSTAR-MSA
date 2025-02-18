@@ -1,0 +1,42 @@
+# Job: flav
+# Query: 2FOXA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4HEQ-B 19.9  1.9  135   145   31   MOLECULE: FLAVODOXIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=2FOXA Sbjct=4HEQB Z-score=19.9
+
+DSSP  --LEEEEELLLLHHHHHHHHHHHHHHHLLLLLEEEEHHHLLHHHH-LLLLEEEEEELLLL
+Query --MKIVYWSGTGNTEKMAELIAKGIIESGKDVNTINVSDVNIDEL-LNEDILILGCSAMG   57
+ident     ||| | |||||  || |||     |      || ||    |    |   ||||  |
+Sbjct pkALIVYGSTTGNTEGVAEAIAKTLNSEGMETTVVNVADVTAPGLaEGYDVVLLGCSTWG   60
+DSSP  leEEEEEELLLLHHHHHHHHHHHHHHHLLLEEEEEEHHHLLLLLLlLLLLEEEEEELEEL
+
+DSSP  --LLLLLLlLHHHHHHHHLL-LLLLLEEEEEEEELL---LLLHHHHHHHHHHHHLLLEEL
+Query --DEVLEEsEFEPFIEEIST-KISGKKVALFGSYGW---GDGKWMRDFEERMNGYGCVVV  111
+ident      | |  | |  |         |||  ||                |      |   |
+Sbjct ddEIELQE-DFVPLYEDLDRaGLKDKKVGVFGCGDSsytYFCGAVDVIEKKAEELGATLV  119
+DSSP  llLLEELH-HHHHHHHLHHHlLLLLLEEEEEEEELLlllLLLHHHHHHHHHHHHLLLEEL
+
+DSSP  LLLEEEELLLllLHHHHHHHHHHHLLL-
+Query ETPLIVQNEPdeAEQDCIEFGKKIANI-  138
+ident    |    ||                  
+Sbjct ASSLKIDGEP--DSAEVLDWAREVLARv  145
+DSSP  LLLEEEELLL--LHHHHHHHHHHHHHHl
+
+
+# Structural equivalences
+   1: 2FOX-A 4HEQ-B     1 -  43 <=>    3 -  45   (MET    1  - LEU   43  <=> ALA    4  - LEU   46 )                          
+   1: 2FOX-A 4HEQ-B    44 -  57 <=>   47 -  60   (LEU   44  - GLY   57  <=> GLU   48  - GLY   61 )                          
+   1: 2FOX-A 4HEQ-B    58 -  63 <=>   63 -  68   (ASP   58  - GLU   63  <=> GLU   64  - GLU   69 )                          
+   1: 2FOX-A 4HEQ-B    65 -  75 <=>   69 -  79   (GLU   65  - THR   75  <=> ASP   70  - ARG   80 )                          
+   1: 2FOX-A 4HEQ-B    76 -  90 <=>   81 -  95   (LYS   76  - TRP   90  <=> GLY   82  - SER   96 )                          
+   1: 2FOX-A 4HEQ-B    91 - 121 <=>   99 - 129   (GLY   91  - PRO  121  <=> TYR  100  - PRO  130 )                          
+   1: 2FOX-A 4HEQ-B   124 - 138 <=>  130 - 144   (ALA  124  - ILE  138  <=> ASP  131  - ARG  145 )                          
+
+# Translation-rotation matrices
+-matrix  "2FOX-A 4HEQ-B  U(1,.)   0.659783  0.750477 -0.038339           19.281267"
+-matrix  "2FOX-A 4HEQ-B  U(2,.)  -0.746265  0.660358  0.083759           55.847321"
+-matrix  "2FOX-A 4HEQ-B  U(3,.)   0.088177 -0.026652  0.995748            4.984944"
+

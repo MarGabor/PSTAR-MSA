@@ -1,0 +1,923 @@
+A length: 156
+B length: 330
+C length: 748
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  701  CA BGLU A  97 
+ Alternate location indication is not blank or A, ignore atom:  705  CB BGLU A  97 
+ Alternate location indication is not blank or A, ignore atom:  707  CG BGLU A  97 
+ Alternate location indication is not blank or A, ignore atom:  709  CD BGLU A  97 
+ Alternate location indication is not blank or A, ignore atom:  711  OE1BGLU A  97 
+ Alternate location indication is not blank or A, ignore atom:  713  OE2BGLU A  97 
+
+Total number of residues read in:            157
+Total number of atoms read in:              1165
+Total number of ignored atom records:        127
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              COMPND   2 MOLECULE: ALDEHYDE OXIDASE SMALL SUBUNIT;                            SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS SP. KY4400;                     AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+         157  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau           1   2.77102780              78
+ #popped           2           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau           3  0.945364535              22
+ #popped           4           2
+ #selectset contacts        1395
+ selectset done           2
+ eigen done           2
+ tau           5  0.260938525              12
+ #popped           5           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau           7  0.853643656              48
+ #popped           8           2
+ #selectset contacts        1395
+ selectset done           2
+ eigen done           2
+ tau           9   1.28266788              38
+ #popped           9           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau          11  0.534119129              59
+ #popped           3           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau          13   1.37600195              99
+ #popped          14           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau          15  0.734368086              88
+ #popped          15           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau          17   1.35563517             119
+ #popped          18           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau          19  0.771223009             109
+ #popped          19           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau          21   2.02797198             134
+ #popped          23           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau          23  0.922352910             147
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              COMPND   2 MOLECULE: ALDEHYDE OXIDASE SMALL SUBUNIT;                            SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS SP. KY4400;                     AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+           0
+         157
+         157  residues read 5Y6Q.dssp                                                   
+  grow short helix          24          30
+  grow short strand          50          53
+  grow short strand          56          59
+ crowded segment excluded!
+  exclude short helix          60          62
+  exclude short helix          65          68
+  grow short strand          72          74
+ crowded segment excluded!
+  exclude short helix          76          78
+  grow short helix         124         130
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  6  7  8
+   2     1  4  5  4  1  2  3  4
+   3     1 14 15  4  5  6  7  8
+   4     2  6  7  2  1  2
+   5     2  8  9  2  3  4
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     5  0  0  1  3
+   9     5  0  0  1  4
+  10     0  0  0  1  3
+  11     0  0  0  0
+  12     0  0  0  1  4
+  13     0  0  0  0
+  14     3  0  0  1  5
+  15     3 18 19  3  6  7  8
+  16     0  0  0  0
+  17     0  0  0  1  5
+  18    15  0  0  1  6
+  19    15 22 23  2  7  8
+  20     0  0  0  0
+  21     0  0  0  1  6
+  22    19  0  0  1  7
+  23    19  0  0  1  8
+  24     0  0  0  0
+  25     0  0  0  1  8
+   1 +   0  2  3  8  1  1  8
+   2 *   1  4  5  4  1  1  4
+   3 *   1 10 11  4  1  5  8
+   4 -   2  6  7  2  1  1  2
+   5 -   2  8  9  2  1  3  4
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5  0  0  1  1  3  3
+   9 -   5  0  0  1  1  4  4
+  10 -   3  0  0  1  1  5  5
+  11 -   3 12 13  3  1  6  8
+  12 -  11  0  0  1  1  6  6
+  13 -  11 14 15  2  1  7  8
+  14 -  13  0  0  1  1  7  7
+  15 -  13  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            330
+Total number of atoms read in:              2501
+Total number of ignored atom records:        316
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              COMPND   2 MOLECULE: ALDEHYDE OXIDASE SMALL SUBUNIT;                            SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS SP. KY4400;                     AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+         330  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3077
+ selectset done           0
+ eigen done           0
+ tau           1   2.60548925              55
+ #popped           2           1
+ #selectset contacts        3077
+ selectset done           1
+ eigen done           1
+ tau           3  0.965346515              29          43
+ #popped           4           1
+ #selectset contacts        3077
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        3077
+ selectset done           0
+ eigen done           0
+ tau           5   1.61527753             117         144
+ #popped           6           1
+ #selectset contacts        3077
+ selectset done           1
+ eigen done           1
+ tau           7   1.76965535             117         161         225
+ #popped           8           2
+ #selectset contacts        3077
+ selectset done           2
+ eigen done           2
+ tau           9   1.35925531             176         215
+ #popped          10           3
+ #selectset contacts        3077
+ selectset done           3
+ eigen done           3
+ tau          11   1.44886851              72         106
+ #popped          12           4
+ #selectset contacts        3077
+ selectset done           4
+ eigen done           4
+ tau          13  0.649194241             117
+ #popped          14           5
+ #selectset contacts        3077
+ selectset done           5
+ eigen done           5
+ tau          15   1.92523682              72
+ #popped          15           4
+ #selectset contacts        3077
+ selectset done           4
+ eigen done           4
+ tau          17  0.927821219             176
+ #popped          13           3
+ #selectset contacts        3077
+ selectset done           3
+ eigen done           3
+ tau          19  0.897612751              96
+ #popped          20           3
+ #selectset contacts        3077
+ selectset done           3
+ eigen done           3
+ tau          21  0.950797856              86
+ #popped          11           2
+ #selectset contacts        3077
+ selectset done           2
+ eigen done           2
+ tau          23   1.11113811             195         205
+ #popped          24           2
+ #selectset contacts        3077
+ selectset done           2
+ eigen done           2
+ tau          25  0.329043001             186
+ #popped           9           1
+ #selectset contacts        3077
+ selectset done           1
+ eigen done           1
+ tau          27   1.24209559             249         260         274         302
+ #popped          28           2
+ #selectset contacts        3077
+ selectset done           2
+ eigen done           2
+ tau          29   1.31729198             161         274         313
+ #popped          30           3
+ #selectset contacts        3077
+ selectset done           3
+ eigen done           3
+ tau          31  0.793765187             161
+ #popped          31           2
+ #selectset contacts        3077
+ selectset done           2
+ eigen done           2
+ tau          33   1.79524529             274
+ #popped          34           2
+ #selectset contacts        3077
+ selectset done           2
+ eigen done           2
+ tau          35  0.560533166             249
+ #popped          36           2
+ #selectset contacts        3077
+ selectset done           2
+ eigen done           2
+ tau          37  0.233592883             239
+ #popped          29           1
+ #selectset contacts        3077
+ selectset done           1
+ eigen done           1
+ tau          39   2.29257441             286
+ #popped          40           1
+ #selectset contacts        3077
+ selectset done           1
+ eigen done           1
+ tau          41   0.00000000    
+ #popped           7           0
+ #selectset contacts        3077
+ selectset done           0
+ eigen done           0
+ tau          41  0.987012982             127
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              COMPND   2 MOLECULE: ALDEHYDE OXIDASE SMALL SUBUNIT;                            SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS SP. KY4400;                     AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+           0
+         330
+         330  residues read 5Y6Q.dssp                                                   
+  grow short strand           5           8
+  grow short strand          25          27
+  grow short helix          33          39
+  grow short strand          46          49
+  exclude short helix          54          57
+  grow short strand          59          60
+  grow short strand          65          69
+  exclude short helix          74          79
+  exclude short helix          83          86
+  exclude short helix         100         105
+  exclude short helix         108         112
+  grow short helix         166         172
+  grow short strand         176         180
+  grow short strand         186         190
+ crowded segment excluded!
+  exclude short helix         191         194
+  exclude short helix         223         226
+  grow short strand         272         273
+ crowded segment excluded!
+  grow short helix         275         281
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  3  5  4  6  7  9 11  8 10 12 13 14 17 15 16
+   2     1  4  5  5  1  2  3  5  4
+   3     1  8  9 12  6  7  9 11  8 10 12 13 14 17 15 16
+   4     2  0  0  4  1  2  3  5
+   5     2  0  0  1  4
+   6     0  0  0 12  6  7  9 11  8 10 12 13 14 17 15 16
+   7     0  0  0  0
+   8     3 10 11  6  6  7  9 11  8 10
+   9     3 28 29  6 12 13 14 17 15 16
+  10     8 12 13  5  6  7  9 11  8
+  11     8  0  0  1 10
+  12    10 14 15  4  6  7  9 11
+  13    10  0  0  1  8
+  14    12  0  0  2  6  7
+  15    12 18 19  2  9 11
+  16     0  0  0  2  6  7
+  17     0  0  0  0
+  18    15  0  0  1  9
+  19    15  0  0  1 11
+  20     0  0  0  1  8
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1  8
+  24     0  0  0  1 10
+  25     0  0  0  0
+  26     0  0  0  1 10
+  27     0  0  0  0
+  28     9 34 35  4 12 13 14 17
+  29     9 40 41  2 15 16
+  30     0  0  0  0
+  31     0  0  0  4 12 13 14 17
+  32     0  0  0  0
+  33     0  0  0  0
+  34    28 36 37  3 12 13 14
+  35    28  0  0  1 17
+  36    34 38 39  2 12 13
+  37    34  0  0  1 14
+  38    36  0  0  1 12
+  39    36  0  0  1 13
+  40    29  0  0  1 15
+  41    29  0  0  1 16
+  42     0  0  0  0
+  43     0  0  0  0
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5  5  1  1  5
+   3 *   1  6  7 12  1  6 17
+   4 -   2  0  0  4  2  1  3  5  5
+   5 -   2  0  0  1  1  4  4
+   6 -   3  8  9  6  1  6 11
+   7 -   3 16 17  6  1 12 17
+   8 -   6 10 11  5  2  6  9 11 11
+   9 -   6  0  0  1  1 10 10
+  10 -   8 12 13  4  3  6  7  9  9 11 11
+  11 -   8  0  0  1  1  8  8
+  12 -  10  0  0  2  1  6  7
+  13 -  10 14 15  2  2  9  9 11 11
+  14 -  13  0  0  1  1  9  9
+  15 -  13  0  0  1  1 11 11
+  16 -   7 18 19  4  2 12 14 17 17
+  17 -   7 24 25  2  1 15 16
+  18 -  16 20 21  3  1 12 14
+  19 -  16  0  0  1  1 17 17
+  20 -  18 22 23  2  1 12 13
+  21 -  18  0  0  1  1 14 14
+  22 -  20  0  0  1  1 12 12
+  23 -  20  0  0  1  1 13 13
+  24 -  17  0  0  1  1 15 15
+  25 -  17  0  0  1  1 16 16
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            748
+Total number of atoms read in:              5647
+Total number of ignored atom records:        815
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+  calculate residue outside grid:          60
+  calculate residue outside grid:         524
+  calculate residue outside grid:         525
+  calculate residue outside grid:         526
+  calculate residue outside grid:         527
+  calculate residue outside grid:         528
+  calculate residue outside grid:         529
+  calculate residue outside grid:         530
+  calculate residue outside grid:         531
+  calculate residue outside grid:         532
+  calculate residue outside grid:         533
+  calculate residue outside grid:         534
+  calculate residue outside grid:         535
+  calculate residue outside grid:         536
+  calculate residue outside grid:         537
+  calculate residue outside grid:         538
+  calculate residue outside grid:         539
+  calculate residue outside grid:         540
+  calculate residue outside grid:         541
+  calculate residue outside grid:         542
+  calculate residue outside grid:         543
+  calculate residue outside grid:         544
+  calculate residue outside grid:         550
+  calculate residue outside grid:         551
+  calculate residue outside grid:         552
+  calculate residue outside grid:         553
+  calculate residue outside grid:         554
+  calculate residue outside grid:         555
+  calculate residue outside grid:         556
+  calculate residue outside grid:         557
+  calculate residue outside grid:         558
+  calculate residue outside grid:         559
+  calculate residue outside grid:         562
+  calculate residue outside grid:         566
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              COMPND   2 MOLECULE: ALDEHYDE OXIDASE SMALL SUBUNIT;                            SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS SP. KY4400;                     AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+         748  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        7107
+ selectset done           0
+ eigen done           0
+ tau           1   1.48907566             521         572
+ #popped           2           1
+ #selectset contacts        7107
+ selectset done           1
+ eigen done           1
+ tau           3  0.731424868              52          65         111         127
+ #popped           4           2
+ #selectset contacts        7107
+ selectset done           2
+ eigen done           2
+ tau           5   1.10028839              23         434         602         636         647         698         710
+ #popped           6           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau           7   2.18087196              12          23
+ #popped           8           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau           9   1.92028987              12         459         484         602
+ #popped          10           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          11   1.92880034             484
+ #popped          12           5
+ #selectset contacts        7107
+ selectset done           5
+ eigen done           5
+ tau          13  0.960244000              12         469
+ #popped          14           5
+ #selectset contacts        7107
+ selectset done           5
+ eigen done           5
+ tau          15  0.645251393              12
+ #popped          13           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          17  0.876483142             647
+ #popped          11           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          19  0.707439423             588
+ #popped          20           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          21  0.652112901             496
+ #popped          22           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          23   0.00000000    
+ #popped          23           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          23   2.28023505             521
+ #popped          24           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          25   1.01176476             510
+ #popped           7           2
+ #selectset contacts        7107
+ selectset done           2
+ eigen done           2
+ tau          27   1.68190646             152         174         279         298         311         329         343         664         682
+ #popped          28           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          29   1.52120245              38         186         232         244         262
+ #popped          30           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          31  0.851358056             208         222
+ #popped          32           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          33  0.425546795             232
+ #popped          34           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          35   1.89856458              38
+ #popped          37           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          37  0.489722073             198
+ #popped          39           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          39  0.638667047             208
+ #popped          31           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          41   1.11268032             152
+ #popped          42           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          43   2.81929135             141
+ #popped          44           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          45   1.86367428              76          91
+ #popped          46           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          47  0.591786981             111
+ #popped          48           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          49   0.00000000    
+ #popped          43           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          49   2.26012802             343
+ #popped          50           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          51  0.749496460             244
+ #popped          52           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          53   0.00000000    
+ #popped          53           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          53   0.00000000    
+ #popped          29           2
+ #selectset contacts        7107
+ selectset done           2
+ eigen done           2
+ tau          53   1.44605982             388
+ #popped          54           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          55   1.45851827             377
+ #popped          56           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          57   1.10252810             358
+ #popped          58           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          59   1.02089226             329
+ #popped          60           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          61  0.414194494             298
+ #popped          62           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          63  0.368701905             174
+ #popped          64           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          65   1.24155927             164
+ #popped          55           2
+ #selectset contacts        7107
+ selectset done           2
+ eigen done           2
+ tau          67   1.19400501             410         424         616         626
+ #popped          68           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          69   1.31205964             736
+ #popped          70           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          71  0.992304564             720
+ #popped          72           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          73  0.832495570             636
+ #popped          74           4
+ #selectset contacts        7107
+ selectset done           4
+ eigen done           4
+ tau          75   0.00000000    
+ #popped          75           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          75   2.11120725             664         698
+ #popped          76           3
+ #selectset contacts        7107
+ selectset done           3
+ eigen done           3
+ tau          77   1.58813262             664
+ #popped          69           2
+ #selectset contacts        7107
+ selectset done           2
+ eigen done           2
+ tau          79   0.00000000    
+ #popped           5           1
+ #selectset contacts        7107
+ selectset done           1
+ eigen done           1
+ tau          79  0.603261173              65
+ #popped           3           0
+ #selectset contacts        7107
+ selectset done           0
+ eigen done           0
+ tau          81  0.909269631             560
+ #popped          82           0
+ #selectset contacts        7107
+ selectset done           0
+ eigen done           0
+ tau          83   1.29153204             537
+ #popped          85           0
+ #selectset contacts        7107
+ selectset done           0
+ eigen done           0
+ tau          85  0.343168020             547
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          13-AUG-17   5Y6Q              COMPND   2 MOLECULE: ALDEHYDE OXIDASE SMALL SUBUNIT;                            SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS SP. KY4400;                     AUTHOR    B.MIKAMI,H.UCHIDA                                                     
+           0
+         748
+         748  residues read 5Y6Q.dssp                                                   
+  exclude short helix          16          20
+  exclude short helix          27          29
+  exclude short helix          56          59
+  grow short strand          64          68
+  exclude short helix          82          84
+  grow short strand          99         100
+  exclude short helix         158         163
+  grow short strand         196         200
+  exclude short helix         221         223
+  grow short strand         224         227
+  grow short strand         259         262
+  exclude short helix         266         269
+  grow short helix         370         376
+  exclude short helix         407         409
+  grow short strand         418         419
+  grow short strand         452         455
+  exclude short helix         481         483
+  grow short strand         485         487
+  exclude short helix         540         542
+  grow short strand         543         546
+  grow short strand         549         552
+  grow short strand         557         559
+ crowded segment excluded!
+  grow short helix         560         566
+  exclude short helix         569         572
+  grow short strand         573         577
+  exclude short helix         687         689
+  grow short strand         693         697
+  exclude short helix         716         718
+  exclude short helix         744         746
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 38 26 24 25 27 28 32 33 10 11 13 14 15 12  1  2  3  4  5  7  8 18  9 16 17 19 20 21 23 34 35 36 37 38 22  6 29 30 31
+   2     1  4  5 35 26 24 25 27 28 32 33 10 11 13 14 15 12  1  2  3  4  5  7  8 18  9 16 17 19 20 21 23 34 35 36 37 38 22  6
+   3     1 82 83  3 29 30 31
+   4     2  6  7 34 26 24 25 27 28 32 33 10 11 13 14 15 12  1  2  3  4  5  7  8 18  9 16 17 19 20 21 23 34 35 36 37 38 22
+   5     2  0  0  1  6
+   6     4 10 11  7 26 24 25 27 28 32 33
+   7     4 28 29 27 10 11 13 14 15 12  1  2  3  4  5  7  8 18  9 16 17 19 20 21 23 34 35 36 37 38 22
+   8     0  0  0  7 26 24 25 27 28 32 33
+   9     0  0  0  0
+  10     6  0  0  1 26
+  11     6 22 23  6 24 25 27 28 32 33
+  12     0  0  0  1 26
+  13     0  0  0  0
+  14     0  0  0  1 26
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1 26
+  18     0  0  0  0
+  19     0  0  0  0
+  20     0  0  0  6 24 25 27 28 32 33
+  21     0  0  0  0
+  22    11  0  0  3 24 25 27
+  23    11 24 25  3 28 32 33
+  24    23  0  0  1 28
+  25    23  0  0  2 32 33
+  26     0  0  0  0
+  27     0  0  0  1 28
+  28     7 30 31 14 10 11 13 14 15 12  1  2  3  4  5  7  8 18
+  29     7 54 55 13  9 16 17 19 20 21 23 34 35 36 37 38 22
+  30    28 32 33  6 10 11 13 14 15 12
+  31    28 42 43  8  1  2  3  4  5  7  8 18
+  32    30 34 35  5 10 11 13 14 15
+  33    30  0  0  1 12
+  34    32 38 39  3 10 11 13
+  35    32  0  0  2 14 15
+  36     0  0  0  0
+  37     0  0  0  3 10 11 13
+  38    34  0  0  2 10 11
+  39    34  0  0  1 13
+  40     0  0  0  0
+  41     0  0  0  1 13
+  42    31 44 45  7  1  2  3  4  5  7  8
+  43    31  0  0  1 18
+  44    42 48 49  6  1  2  3  4  5  7
+  45    42  0  0  1  8
+  46     0  0  0  6  1  2  3  4  5  7
+  47     0  0  0  0
+  48    44  0  0  5  1  2  3  4  5
+  49    44  0  0  1  7
+  50     0  0  0  1 18
+  51     0  0  0  0
+  52     0  0  0  0
+  53     0  0  0  1 18
+  54    29 58 59  5  9 16 17 19 20
+  55    29 68 69  8 21 23 34 35 36 37 38 22
+  56     0  0  0  5  9 16 17 19 20
+  57     0  0  0  0
+  58    54 60 61  4  9 16 17 19
+  59    54  0  0  1 20
+  60    58 64 65  3  9 16 17
+  61    58  0  0  1 19
+  62     0  0  0  3  9 16 17
+  63     0  0  0  0
+  64    60  0  0  1  9
+  65    60  0  0  2 16 17
+  66     0  0  0  0
+  67     0  0  0  1  9
+  68    55 72 73  7 21 23 34 35 36 37 38
+  69    55  0  0  1 22
+  70     0  0  0  7 21 23 34 35 36 37 38
+  71     0  0  0  0
+  72    68 74 75  6 21 23 34 35 36 37
+  73    68  0  0  1 38
+  74    72  0  0  4 21 23 34 35
+  75    72 76 77  2 36 37
+  76    75  0  0  1 36
+  77    75  0  0  1 37
+  78     0  0  0  1 36
+  79     0  0  0  0
+  80     0  0  0  0
+  81     0  0  0  1  6
+  82     3 86 87  2 29 30
+  83     3  0  0  1 31
+  84     0  0  0  0
+  85     0  0  0  2 29 30
+  86    82  0  0  1 29
+  87    82  0  0  1 30
+   1 +   0  2  3 38  1  1 38
+   2 +   1  4  5 35  2  1 28 32 38
+   3 *   1 46 47  3  1 29 31
+   4 +   2  6  7 34  3  1  5  7 28 32 38
+   5 =   2  0  0  1  1  6  6
+   6 +   4  8  9  7  2 24 28 32 33
+   7 +   4 14 15 27  3  1  5  7 23 34 38
+   8 *   6  0  0  1  1 26 26
+   9 *   6 10 11  6  3 24 25 27 28 32 33
+  10 -   9  0  0  3  2 24 25 27 27
+  11 -   9 12 13  3  2 28 28 32 33
+  12 -  11  0  0  1  1 28 28
+  13 -  11  0  0  2  1 32 33
+  14 +   7 16 17 14  4  1  5  7  8 10 15 18 18
+  15 +   7 30 31 13  4  9  9 16 17 19 23 34 38
+  16 *  14 18 19  6  1 10 15
+  17 +  14 24 25  8  3  1  5  7  8 18 18
+  18 -  16 20 21  5  2 10 11 13 15
+  19 -  16  0  0  1  1 12 12
+  20 -  18 22 23  3  2 10 11 13 13
+  21 -  18  0  0  2  1 14 15
+  22 -  20  0  0  2  1 10 11
+  23 -  20  0  0  1  1 13 13
+  24 +  17 26 27  7  2  1  5  7  8
+  25 +  17  0  0  1  1 18 18
+  26 *  24 28 29  6  2  1  5  7  7
+  27 =  24  0  0  1  1  8  8
+  28 -  26  0  0  5  1  1  5
+  29 -  26  0  0  1  1  7  7
+  30 +  15 32 33  5  3  9  9 16 17 19 20
+  31 +  15 38 39  8  2 21 23 34 38
+  32 *  30 34 35  4  3  9  9 16 17 19 19
+  33 =  30  0  0  1  1 20 20
+  34 -  32 36 37  3  2  9  9 16 17
+  35 -  32  0  0  1  1 19 19
+  36 -  34  0  0  1  1  9  9
+  37 -  34  0  0  2  1 16 17
+  38 +  31 40 41  7  3 21 21 23 23 34 38
+  39 =  31  0  0  1  1 22 22
+  40 +  38 42 43  6  3 21 21 23 23 34 37
+  41 =  38  0  0  1  1 38 38
+  42 *  40  0  0  4  3 21 21 23 23 34 35
+  43 *  40 44 45  2  1 36 37
+  44 -  43  0  0  1  1 36 36
+  45 -  43  0  0  1  1 37 37
+  46 -   3 48 49  2  1 29 30
+  47 -   3  0  0  1  1 31 31
+  48 -  46  0  0  1  1 29 29
+  49 -  46  0  0  1  1 30 30
+
+ CHAIN : 5Y6QA
+ CHAIN : 5Y6QB
+ CHAIN : 5Y6QC
+

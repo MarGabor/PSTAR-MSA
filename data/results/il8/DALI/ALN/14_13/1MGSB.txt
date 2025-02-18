@@ -1,0 +1,32 @@
+# Job: il8
+# Query: 1MGSB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1DON-B  8.6  3.3   72    76   13   MOLECULE: MCP-1;                                                     
+
+# Pairwise alignments
+
+No 1: Query=1MGSB Sbjct=1DONB Z-score=8.6
+
+DSSP  -LLLLLLLLLLLLLLLL-LLLLLLEEEEEEELLLlLLLLLEEEEEELLLLEEEELLLLHH
+Query -ASVATELRCQCLQTLQ-GIHPKNIQSVNVKSPGpHCAQTEVIATLKNGRKACLNPASPI   58
+ident            |       |      |         |    ||         |  |    
+Sbjct qPDAINAPVTCCYNFTNrKISVQRLASYRRITSS-KCPKEAVIFKTIVAKEICADPKQKW   59
+DSSP  lLLLLLLLEEELLLLLLlLLLLLLLLEELLLLLL-LLLLLLEEEELLLLLEEEELLLLLL
+
+DSSP  HHHHHHHHHHHLLLL--
+Query VKKIIEKMLNSDKSN--   73
+ident |                
+Sbjct VQDSMDHLDKQTQTPkt   76
+DSSP  HHHHHHHHHLLLLLLll
+
+
+# Structural equivalences
+   1: 1MGS-B 1DON-B     1 -  16 <=>    2 -  17   (ALA    1  - GLN   16  <=> PRO    2  - ASN   17 )                          
+   1: 1MGS-B 1DON-B    17 -  32 <=>   19 -  34   (GLY   17  - GLY   32  <=> LYS   19  - SER   34 )                          
+   1: 1MGS-B 1DON-B    34 -  73 <=>   35 -  74   (HIS   34  - ASN   73  <=> LYS   35  - PRO   74 )                          
+
+# Translation-rotation matrices
+-matrix  "1MGS-B 1DON-B  U(1,.)   0.871643 -0.440352  0.215239          -49.625019"
+-matrix  "1MGS-B 1DON-B  U(2,.)  -0.381939 -0.885444 -0.264787           24.340246"
+-matrix  "1MGS-B 1DON-B  U(3,.)   0.307182  0.148592 -0.939979          -36.427727"
+

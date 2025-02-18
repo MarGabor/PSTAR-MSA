@@ -1,0 +1,892 @@
+A length: 162
+B length: 164
+C length: 162
+D length: 162
+E length: 165
+F length: 162
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            162
+Total number of atoms read in:              1325
+Total number of ignored atom records:        862
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RIO,        
+  Reading DSSP file
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+         162  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau           1   4.23727322              11
+ #popped           3           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau           3   1.98363698             101
+ #popped           4           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau           5   1.21065593              61
+ #popped           6           2
+ #selectset contacts        1376
+ selectset done           2
+ eigen done           2
+ tau           7  0.356769234              37
+ #popped           8           3
+ #selectset contacts        1376
+ selectset done           3
+ eigen done           3
+ tau           9   1.59398699              21
+ #popped           9           2
+ #selectset contacts        1376
+ selectset done           2
+ eigen done           2
+ tau          11   3.23024058              49
+ #popped           7           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau          13  0.418547660              72
+ #popped          15           1
+ #selectset contacts        1376
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           5           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau          15   1.58249724             148
+ #popped          16           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau          17  0.783173323             111
+ #popped          19           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau          19  0.924657583             128
+ #popped          21           0
+ #selectset contacts        1376
+ selectset done           0
+ eigen done           0
+ tau          21  0.764482439             138
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+           0
+         162
+         162  residues read 1HV5.dssp                                                   
+  grow short strand           2           5
+  grow short strand           8          11
+  grow short strand          48          51
+  grow short strand          82          85
+  grow short strand         103         104
+  grow short strand         111         112
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5  6  7  8  9 10 11
+   2     1  0  0  2  1  2
+   3     1  4  5  9  3  4  5  6  7  8  9 10 11
+   4     3  6  7  6  3  4  5  6  7  8
+   5     3 16 17  3  9 10 11
+   6     4  8  9  4  3  4  5  6
+   7     4  0  0  2  7  8
+   8     6 10 11  2  3  4
+   9     6 12 13  2  5  6
+  10     8  0  0  1  3
+  11     8  0  0  1  4
+  12     9  0  0  1  5
+  13     9  0  0  1  6
+  14     0  0  0  0
+  15     0  0  0  2  7  8
+  16     5 18 19  2  9 10
+  17     5  0  0  1 11
+  18    16  0  0  1  9
+  19    16  0  0  1 10
+  20     0  0  0  1 10
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  2  1  1  2
+   3 *   1  4  5  9  1  3 11
+   4 -   3  6  7  6  1  3  8
+   5 -   3 14 15  3  1  9 11
+   6 -   4  8  9  4  1  3  6
+   7 -   4  0  0  2  1  7  8
+   8 -   6 10 11  2  1  3  4
+   9 -   6 12 13  2  1  5  6
+  10 -   8  0  0  1  1  3  3
+  11 -   8  0  0  1  1  4  4
+  12 -   9  0  0  1  1  5  5
+  13 -   9  0  0  1  1  6  6
+  14 -   5 16 17  2  1  9 10
+  15 -   5  0  0  1  1 11 11
+  16 -  14  0  0  1  1  9  9
+  17 -  14  0  0  1  1 10 10
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            164
+Total number of atoms read in:              1343
+Total number of ignored atom records:        746
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RIO,        
+  Reading DSSP file
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+         164  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1412
+ selectset done           0
+ eigen done           0
+ tau           1   2.82764530              11
+ #popped           3           0
+ #selectset contacts        1412
+ selectset done           0
+ eigen done           0
+ tau           3   1.49458158             148
+ #popped           4           0
+ #selectset contacts        1412
+ selectset done           0
+ eigen done           0
+ tau           5   1.71512270             101
+ #popped           6           1
+ #selectset contacts        1412
+ selectset done           1
+ eigen done           1
+ tau           7   1.21065593              61
+ #popped           8           2
+ #selectset contacts        1412
+ selectset done           2
+ eigen done           2
+ tau           9   1.38353860              25          47
+ #popped          10           3
+ #selectset contacts        1412
+ selectset done           3
+ eigen done           3
+ tau          11  0.241734698              25
+ #popped          11           2
+ #selectset contacts        1412
+ selectset done           2
+ eigen done           2
+ tau          13   1.10561800              37
+ #popped           9           1
+ #selectset contacts        1412
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           7           0
+ #selectset contacts        1412
+ selectset done           0
+ eigen done           0
+ tau          15  0.819293439             119         137
+ #popped          16           0
+ #selectset contacts        1412
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+           0
+         164
+         164  residues read 1HV5.dssp                                                   
+  grow short strand           2           5
+  grow short strand           8          11
+  grow short strand          48          51
+  grow short strand          82          85
+  grow short strand         103         104
+  grow short strand         111         112
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  5  6  4  7  8  9 10 11
+   2     1  0  0  2  1  2
+   3     1  4  5  9  3  5  6  4  7  8  9 10 11
+   4     3  6  7  8  3  5  6  4  7  8  9 10
+   5     3  0  0  1 11
+   6     4  8  9  6  3  5  6  4  7  8
+   7     4  0  0  2  9 10
+   8     6 10 11  4  3  5  6  4
+   9     6  0  0  2  7  8
+  10     8 12 13  3  3  5  6
+  11     8  0  0  1  4
+  12    10  0  0  1  3
+  13    10  0  0  2  5  6
+  14     0  0  0  1  4
+  15     0  0  0  0
+  16     0  0  0  2  9 10
+  17     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  2  1  1  2
+   3 *   1  4  5  9  1  3 11
+   4 -   3  6  7  8  1  3 10
+   5 -   3  0  0  1  1 11 11
+   6 -   4  8  9  6  1  3  8
+   7 -   4  0  0  2  1  9 10
+   8 -   6 10 11  4  1  3  6
+   9 -   6  0  0  2  1  7  8
+  10 -   8 12 13  3  2  3  3  5  6
+  11 -   8  0  0  1  1  4  4
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  2  1  5  6
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            162
+Total number of atoms read in:              1325
+Total number of ignored atom records:        844
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RIO,        
+  Reading DSSP file
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+         162  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1387
+ selectset done           0
+ eigen done           0
+ tau           1   3.53106117              11
+ #popped           3           0
+ #selectset contacts        1387
+ selectset done           0
+ eigen done           0
+ tau           3   2.01845527             103
+ #popped           4           1
+ #selectset contacts        1387
+ selectset done           1
+ eigen done           1
+ tau           5   1.29452276              61
+ #popped           6           2
+ #selectset contacts        1387
+ selectset done           2
+ eigen done           2
+ tau           7  0.901858687              21          36
+ #popped           8           2
+ #selectset contacts        1387
+ selectset done           2
+ eigen done           2
+ tau           9   2.10000014              21          47
+ #popped          10           2
+ #selectset contacts        1387
+ selectset done           2
+ eigen done           2
+ tau          11  0.210953355              21
+ #popped           7           1
+ #selectset contacts        1387
+ selectset done           1
+ eigen done           1
+ tau          13  0.416579723              72
+ #popped          15           1
+ #selectset contacts        1387
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           5           0
+ #selectset contacts        1387
+ selectset done           0
+ eigen done           0
+ tau          15   1.36204946             148
+ #popped          16           0
+ #selectset contacts        1387
+ selectset done           0
+ eigen done           0
+ tau          17  0.781097472             121         137
+ #popped          18           0
+ #selectset contacts        1387
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+           0
+         162
+         162  residues read 1HV5.dssp                                                   
+  grow short strand           3           5
+  grow short strand           8          10
+ crowded segment excluded!
+  grow short strand          48          51
+  grow short strand          82          85
+  grow short strand         103         104
+  grow short strand         111         112
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  4  5  3  6  7  8  9 10
+   2     1  0  0  1  1
+   3     1  4  5  9  2  4  5  3  6  7  8  9 10
+   4     3  6  7  7  2  4  5  3  6  7  8
+   5     3 16 17  2  9 10
+   6     4  8  9  4  2  4  5  3
+   7     4  0  0  3  6  7  8
+   8     6 12 13  3  2  4  5
+   9     6  0  0  1  3
+  10     0  0  0  3  2  4  5
+  11     0  0  0  0
+  12     8  0  0  1  2
+  13     8  0  0  2  4  5
+  14     0  0  0  0
+  15     0  0  0  3  6  7  8
+  16     5  0  0  1  9
+  17     5  0  0  1 10
+  18     0  0  0  1  9
+  19     0  0  0  0
+   1 +   0  2  3 10  1  1 10
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5  9  1  2 10
+   4 -   3  6  7  7  1  2  8
+   5 -   3 12 13  2  1  9 10
+   6 -   4  8  9  4  1  2  5
+   7 -   4  0  0  3  1  6  8
+   8 -   6 10 11  3  2  2  2  4  5
+   9 -   6  0  0  1  1  3  3
+  10 -   8  0  0  1  1  2  2
+  11 -   8  0  0  2  1  4  5
+  12 -   5  0  0  1  1  9  9
+  13 -   5  0  0  1  1 10 10
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            162
+Total number of atoms read in:              1325
+Total number of ignored atom records:        792
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RIO,        
+  Reading DSSP file
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+         162  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1390
+ selectset done           0
+ eigen done           0
+ tau           1   2.21332264              12
+ #popped           3           0
+ #selectset contacts        1390
+ selectset done           0
+ eigen done           0
+ tau           3   1.72242486             127
+ #popped           4           1
+ #selectset contacts        1390
+ selectset done           1
+ eigen done           1
+ tau           5  0.870777488              64          80
+ #popped           6           1
+ #selectset contacts        1390
+ selectset done           1
+ eigen done           1
+ tau           7  0.822207332              97         113
+ #popped           8           1
+ #selectset contacts        1390
+ selectset done           1
+ eigen done           1
+ tau           9   1.12718260              31          49          97
+ #popped          10           2
+ #selectset contacts        1390
+ selectset done           2
+ eigen done           2
+ tau          11  0.663489282              64
+ #popped          12           2
+ #selectset contacts        1390
+ selectset done           2
+ eigen done           2
+ tau          13  0.322554588              31
+ #popped          11           1
+ #selectset contacts        1390
+ selectset done           1
+ eigen done           1
+ tau          15   1.67678809              49
+ #popped           5           0
+ #selectset contacts        1390
+ selectset done           0
+ eigen done           0
+ tau          17   1.31082428             147
+ #popped          18           0
+ #selectset contacts        1390
+ selectset done           0
+ eigen done           0
+ tau          19  0.884848475             137
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+           0
+         162
+         162  residues read 1HV5.dssp                                                   
+  grow short strand           2           5
+  grow short strand           8          11
+  grow short strand          48          51
+  grow short strand          82          85
+  grow short strand         103         104
+  grow short strand         111         112
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  6  7  8  4  5 10  9 11
+   2     1  0  0  2  1  2
+   3     1  4  5  9  3  6  7  8  4  5 10  9 11
+   4     3  8  9  8  3  6  7  8  4  5 10  9
+   5     3  0  0  1 11
+   6     0  0  0  8  3  6  7  8  4  5 10  9
+   7     0  0  0  0
+   8     4 10 11  7  3  6  7  8  4  5 10
+   9     4  0  0  1  9
+  10     8 12 13  4  3  6  7  8
+  11     8 16 17  3  4  5 10
+  12    10 14 15  2  3  6
+  13    10  0  0  2  7  8
+  14    12  0  0  1  3
+  15    12  0  0  1  6
+  16    11  0  0  2  4  5
+  17    11  0  0  1 10
+  18     0  0  0  0
+  19     0  0  0  1 11
+  20     0  0  0  0
+  21     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  2  1  1  2
+   3 *   1  4  5  9  1  3 11
+   4 -   3  6  7  8  1  3 10
+   5 -   3  0  0  1  1 11 11
+   6 -   4  8  9  7  2  3  8 10 10
+   7 -   4  0  0  1  1  9  9
+   8 -   6 10 11  4  2  3  3  6  8
+   9 -   6 14 15  3  2  4  5 10 10
+  10 -   8 12 13  2  2  3  3  6  6
+  11 -   8  0  0  2  1  7  8
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  1  1  6  6
+  14 -   9  0  0  2  1  4  5
+  15 -   9  0  0  1  1 10 10
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            165
+Total number of atoms read in:              1353
+Total number of ignored atom records:        816
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RIO,        
+  Reading DSSP file
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+         165  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1421
+ selectset done           0
+ eigen done           0
+ tau           1   2.29391885              11
+ #popped           3           0
+ #selectset contacts        1421
+ selectset done           0
+ eigen done           0
+ tau           3   1.26063693             149
+ #popped           4           0
+ #selectset contacts        1421
+ selectset done           0
+ eigen done           0
+ tau           5   1.86981678             101
+ #popped           6           1
+ #selectset contacts        1421
+ selectset done           1
+ eigen done           1
+ tau           7   1.81730378              22          47
+ #popped           8           2
+ #selectset contacts        1421
+ selectset done           2
+ eigen done           2
+ tau           9  0.857350886              62
+ #popped          10           3
+ #selectset contacts        1421
+ selectset done           3
+ eigen done           3
+ tau          11  0.213221163              22
+ #popped          11           2
+ #selectset contacts        1421
+ selectset done           2
+ eigen done           2
+ tau          13  0.467438281              72
+ #popped          15           2
+ #selectset contacts        1421
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           9           1
+ #selectset contacts        1421
+ selectset done           1
+ eigen done           1
+ tau          15   1.18637502              37
+ #popped           7           0
+ #selectset contacts        1421
+ selectset done           0
+ eigen done           0
+ tau          17   1.02007830             116         139
+ #popped          18           1
+ #selectset contacts        1421
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1421
+ selectset done           0
+ eigen done           0
+ tau          19  0.922155678             128
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+           0
+         165
+         165  residues read 1HV5.dssp                                                   
+  grow short strand           2           5
+  grow short strand           8          11
+  grow short strand          48          51
+  grow short strand          82          85
+  grow short strand         103         104
+  grow short strand         111         112
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  5  6  7  8  4  9 10 11
+   2     1  0  0  2  1  2
+   3     1  4  5  9  3  5  6  7  8  4  9 10 11
+   4     3  6  7  8  3  5  6  7  8  4  9 10
+   5     3  0  0  1 11
+   6     4  8  9  6  3  5  6  7  8  4
+   7     4 18 19  2  9 10
+   8     6 10 11  5  3  5  6  7  8
+   9     6  0  0  1  4
+  10     8 12 13  3  3  5  6
+  11     8  0  0  2  7  8
+  12    10  0  0  1  3
+  13    10  0  0  2  5  6
+  14     0  0  0  0
+  15     0  0  0  2  7  8
+  16     0  0  0  1  4
+  17     0  0  0  0
+  18     7  0  0  1  9
+  19     7  0  0  1 10
+  20     0  0  0  1 10
+  21     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  2  1  1  2
+   3 *   1  4  5  9  1  3 11
+   4 -   3  6  7  8  1  3 10
+   5 -   3  0  0  1  1 11 11
+   6 -   4  8  9  6  1  3  8
+   7 -   4 14 15  2  1  9 10
+   8 -   6 10 11  5  2  3  3  5  8
+   9 -   6  0  0  1  1  4  4
+  10 -   8 12 13  3  2  3  3  5  6
+  11 -   8  0  0  2  1  7  8
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  2  1  5  6
+  14 -   7  0  0  1  1  9  9
+  15 -   7  0  0  1  1 10 10
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            162
+Total number of atoms read in:              1325
+Total number of ignored atom records:        888
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RIO,        
+  Reading DSSP file
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+         162  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1369
+ selectset done           0
+ eigen done           0
+ tau           1   2.11037731              12
+ #popped           3           0
+ #selectset contacts        1369
+ selectset done           0
+ eigen done           0
+ tau           3   1.95803571              22          47         101
+ #popped           4           1
+ #selectset contacts        1369
+ selectset done           1
+ eigen done           1
+ tau           5  0.961632311              61
+ #popped           6           2
+ #selectset contacts        1369
+ selectset done           2
+ eigen done           2
+ tau           7  0.221175760              22
+ #popped           7           1
+ #selectset contacts        1369
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           5           0
+ #selectset contacts        1369
+ selectset done           0
+ eigen done           0
+ tau           9   1.37723112             147
+ #popped          10           0
+ #selectset contacts        1369
+ selectset done           0
+ eigen done           0
+ tau          11   1.36329651             114
+ #popped          12           1
+ #selectset contacts        1369
+ selectset done           1
+ eigen done           1
+ tau          13   2.04962254              47
+ #popped          14           1
+ #selectset contacts        1369
+ selectset done           1
+ eigen done           1
+ tau          15   1.10728335              37
+ #popped          13           0
+ #selectset contacts        1369
+ selectset done           0
+ eigen done           0
+ tau          17   1.16878712             128
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               08-JAN-01   1HV5              COMPND   2 MOLECULE: STROMELYSIN 3;                                             SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    A.L.GALL,M.RUFF,R.KANNAN,P.CUNIASSE,A.YIOTAKIS,V.DIVE,M.C.RI          
+           0
+         162
+         162  residues read 1HV5.dssp                                                   
+  grow short strand           3           5
+  grow short strand           8          10
+ crowded segment excluded!
+  grow short strand          48          51
+  grow short strand          82          85
+  grow short strand         103         104
+  grow short strand         111         112
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  4  5  6  7  3  8  9 10
+   2     1  0  0  1  1
+   3     1  4  5  9  2  4  5  6  7  3  8  9 10
+   4     3  6  7  5  2  4  5  6  7
+   5     3 10 11  4  3  8  9 10
+   6     4  8  9  3  2  4  5
+   7     4  0  0  2  6  7
+   8     6  0  0  1  2
+   9     6  0  0  2  4  5
+  10     5 12 13  3  3  8  9
+  11     5  0  0  1 10
+  12    10 14 15  2  3  8
+  13    10  0  0  1  9
+  14    12  0  0  1  3
+  15    12  0  0  1  8
+  16     0  0  0  1  3
+  17     0  0  0  0
+  18     0  0  0  1  9
+  19     0  0  0  0
+   1 +   0  2  3 10  1  1 10
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5  9  1  2 10
+   4 -   3  6  7  5  2  2  2  4  7
+   5 -   3 10 11  4  2  3  3  8 10
+   6 -   4  8  9  3  2  2  2  4  5
+   7 -   4  0  0  2  1  6  7
+   8 -   6  0  0  1  1  2  2
+   9 -   6  0  0  2  1  4  5
+  10 -   5 12 13  3  2  3  3  8  9
+  11 -   5  0  0  1  1 10 10
+  12 -  10 14 15  2  2  3  3  8  8
+  13 -  10  0  0  1  1  9  9
+  14 -  12  0  0  1  1  3  3
+  15 -  12  0  0  1  1  8  8
+
+ CHAIN : 1HV5A
+ CHAIN : 1HV5B
+ CHAIN : 1HV5C
+ CHAIN : 1HV5D
+ CHAIN : 1HV5E
+ CHAIN : 1HV5F
+

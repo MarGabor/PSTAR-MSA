@@ -1,0 +1,729 @@
+A length: 217
+B length: 217
+C length: 217
+D length: 217
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            217
+Total number of atoms read in:              1696
+Total number of ignored atom records:        143
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+  Reading DSSP file
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              COMPND   2 MOLECULE: BETA-LACTAMASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+         217  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau           1   1.69699311             130
+ #popped           2           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau           3   2.03480339              94
+ #popped           4           2
+ #selectset contacts        1976
+ selectset done           2
+ eigen done           2
+ tau           5   1.08187211              19          30
+ #popped           6           2
+ #selectset contacts        1976
+ selectset done           2
+ eigen done           2
+ tau           7  0.958115995              45          56          70
+ #popped           8           3
+ #selectset contacts        1976
+ selectset done           3
+ eigen done           3
+ tau           9  0.671523631              45
+ #popped          10           3
+ #selectset contacts        1976
+ selectset done           3
+ eigen done           3
+ tau          11  0.401816905              19
+ #popped           9           2
+ #selectset contacts        1976
+ selectset done           2
+ eigen done           2
+ tau          13  0.898443758              82
+ #popped          14           2
+ #selectset contacts        1976
+ selectset done           2
+ eigen done           2
+ tau          15  0.767518818              56
+ #popped           5           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          17   1.99959159             117
+ #popped          18           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau          19   1.17131913             143         155         183         200
+ #popped          20           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          21   1.45580137             183
+ #popped          22           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          23   1.02468431             143         169
+ #popped          24           1
+ #selectset contacts        1976
+ selectset done           1
+ eigen done           1
+ tau          25  0.969047606             143
+ #popped          21           0
+ #selectset contacts        1976
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              COMPND   2 MOLECULE: BETA-LACTAMASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+           0
+         217
+         217  residues read 7WZU.dssp                                                   
+  grow short strand          41          45
+  exclude short helix          78          81
+  exclude short helix          84          89
+  grow short strand          94          97
+ crowded segment excluded!
+  grow short strand         114         116
+  grow short strand         120         124
+  grow short strand         128         131
+  grow short strand         143         146
+  grow short strand         151         155
+  grow short strand         190         193
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  6  5  7  8  9 10 13 15 11 12 14
+   2     1  4  5 10  1  2  3  4  6  5  7  8  9 10
+   3     1 20 21  5 13 15 11 12 14
+   4     2  8  9  6  1  2  3  4  6  5
+   5     2 18 19  4  7  8  9 10
+   6     0  0  0  6  1  2  3  4  6  5
+   7     0  0  0  0
+   8     4 10 11  5  1  2  3  4  6
+   9     4  0  0  1  5
+  10     8 12 13  4  1  2  3  4
+  11     8  0  0  1  6
+  12    10  0  0  2  1  2
+  13    10  0  0  2  3  4
+  14     0  0  0  1  5
+  15     0  0  0  0
+  16     0  0  0  1  5
+  17     0  0  0  0
+  18     5  0  0  2  7  8
+  19     5  0  0  2  9 10
+  20     3 22 23  2 13 15
+  21     3  0  0  3 11 12 14
+  22    20  0  0  1 13
+  23    20  0  0  1 15
+  24     0  0  0  1 13
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1 13
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5 10  1  1 10
+   3 *   1 14 15  5  1 11 15
+   4 +   2  6  7  6  1  1  6
+   5 =   2 12 13  4  1  7 10
+   6 -   4  8  9  5  2  1  4  6  6
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  4  1  1  4
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  2  1  3  4
+  12 -   5  0  0  2  1  7  8
+  13 -   5  0  0  2  1  9 10
+  14 -   3 16 17  2  2 13 13 15 15
+  15 -   3  0  0  3  2 11 12 14 14
+  16 -  14  0  0  1  1 13 13
+  17 -  14  0  0  1  1 15 15
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            217
+Total number of atoms read in:              1696
+Total number of ignored atom records:        135
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+  Reading DSSP file
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              COMPND   2 MOLECULE: BETA-LACTAMASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+         217  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau           1   2.61219144             117
+ #popped           2           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           3   1.70340049              82
+ #popped           4           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau           5   1.06058300              19          30
+ #popped           6           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau           7  0.889244199              45          56          72
+ #popped           8           3
+ #selectset contacts        1986
+ selectset done           3
+ eigen done           3
+ tau           9  0.503274322              19
+ #popped          11           3
+ #selectset contacts        1986
+ selectset done           3
+ eigen done           3
+ tau          11  0.438918799              45
+ #popped           9           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau          13  0.799751580              56
+ #popped           5           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          15   1.62408757              93
+ #popped          17           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          17   1.14691544             131         141         154         183         199
+ #popped          18           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          19  0.751696765             131
+ #popped          21           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          19           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          21   1.56302214             183
+ #popped          22           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          23   1.00579572             141         169
+ #popped          24           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          25  0.837735891             141
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              COMPND   2 MOLECULE: BETA-LACTAMASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+           0
+         217
+         217  residues read 7WZU.dssp                                                   
+  grow short strand          41          45
+  exclude short helix          78          81
+  exclude short helix          84          89
+  grow short strand          94          97
+ crowded segment excluded!
+  grow short strand         114         116
+  grow short strand         120         124
+  grow short strand         128         131
+  grow short strand         143         146
+  grow short strand         151         155
+  grow short strand         190         193
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  5  6  7  8  9 10 11 12 14 13 15
+   2     1  4  5  8  1  2  3  4  5  6  7  8
+   3     1 18 19  7  9 10 11 12 14 13 15
+   4     2 10 11  6  1  2  3  4  5  6
+   5     2  0  0  2  7  8
+   6     0  0  0  6  1  2  3  4  5  6
+   7     0  0  0  0
+   8     0  0  0  6  1  2  3  4  5  6
+   9     0  0  0  0
+  10     4  0  0  2  1  2
+  11     4 12 13  4  3  4  5  6
+  12    11  0  0  2  3  4
+  13    11  0  0  2  5  6
+  14     0  0  0  0
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  2  7  8
+  18     3 20 21  5  9 10 11 12 14
+  19     3 22 23  2 13 15
+  20    18  0  0  2  9 10
+  21    18  0  0  3 11 12 14
+  22    19  0  0  1 13
+  23    19  0  0  1 15
+  24     0  0  0  1 13
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1 13
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5  8  1  1  8
+   3 *   1 10 11  7  1  9 15
+   4 +   2  6  7  6  1  1  6
+   5 =   2  0  0  2  1  7  8
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  4  1  3  6
+   8 -   7  0  0  2  1  3  4
+   9 -   7  0  0  2  1  5  6
+  10 -   3 12 13  5  2  9 12 14 14
+  11 -   3 14 15  2  2 13 13 15 15
+  12 -  10  0  0  2  1  9 10
+  13 -  10  0  0  3  2 11 12 14 14
+  14 -  11  0  0  1  1 13 13
+  15 -  11  0  0  1  1 15 15
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            217
+Total number of atoms read in:              1696
+Total number of ignored atom records:        147
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+  Reading DSSP file
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              COMPND   2 MOLECULE: BETA-LACTAMASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+         217  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1988
+ selectset done           0
+ eigen done           0
+ tau           1   1.55996966             156         183         199
+ #popped           2           1
+ #selectset contacts        1988
+ selectset done           1
+ eigen done           1
+ tau           3   1.83980393             116
+ #popped           4           2
+ #selectset contacts        1988
+ selectset done           2
+ eigen done           2
+ tau           5   1.58713353              94
+ #popped           6           3
+ #selectset contacts        1988
+ selectset done           3
+ eigen done           3
+ tau           7   1.11323071              19          30
+ #popped           8           3
+ #selectset contacts        1988
+ selectset done           3
+ eigen done           3
+ tau           9   1.00202274              45          56          72
+ #popped          10           4
+ #selectset contacts        1988
+ selectset done           4
+ eigen done           4
+ tau          11  0.517176926              19
+ #popped          13           4
+ #selectset contacts        1988
+ selectset done           4
+ eigen done           4
+ tau          13  0.426810682              45
+ #popped          11           3
+ #selectset contacts        1988
+ selectset done           3
+ eigen done           3
+ tau          15   1.18132293              83
+ #popped          16           3
+ #selectset contacts        1988
+ selectset done           3
+ eigen done           3
+ tau          17  0.632727265              56
+ #popped           7           2
+ #selectset contacts        1988
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped           5           1
+ #selectset contacts        1988
+ selectset done           1
+ eigen done           1
+ tau          19   1.11899233             131         142
+ #popped          20           1
+ #selectset contacts        1988
+ selectset done           1
+ eigen done           1
+ tau          21  0.826471984             131
+ #popped          23           1
+ #selectset contacts        1988
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped           3           0
+ #selectset contacts        1988
+ selectset done           0
+ eigen done           0
+ tau          23   1.38492417             183
+ #popped          24           0
+ #selectset contacts        1988
+ selectset done           0
+ eigen done           0
+ tau          25   1.31995535             169
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              COMPND   2 MOLECULE: BETA-LACTAMASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+           0
+         217
+         217  residues read 7WZU.dssp                                                   
+  grow short strand          41          45
+  exclude short helix          78          81
+  exclude short helix          84          89
+  grow short strand          94          95
+  grow short strand         120         124
+  grow short strand         128         131
+  grow short strand         143         146
+  grow short strand         151         155
+  grow short strand         190         193
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  6  5  7  8  9 10 11 12 14 13 15
+   2     1  4  5 13  1  2  3  4  6  5  7  8  9 10 11 12 14
+   3     1 24 25  2 13 15
+   4     2  6  7  8  1  2  3  4  6  5  7  8
+   5     2 22 23  5  9 10 11 12 14
+   6     4 10 11  7  1  2  3  4  6  5  7
+   7     4  0  0  1  8
+   8     0  0  0  7  1  2  3  4  6  5  7
+   9     0  0  0  0
+  10     6 12 13  5  1  2  3  4  6
+  11     6 16 17  2  5  7
+  12    10  0  0  2  1  2
+  13    10 14 15  3  3  4  6
+  14    13  0  0  2  3  4
+  15    13  0  0  1  6
+  16    11  0  0  1  5
+  17    11  0  0  1  7
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20     0  0  0  5  9 10 11 12 14
+  21     0  0  0  0
+  22     5  0  0  2  9 10
+  23     5  0  0  3 11 12 14
+  24     3  0  0  1 13
+  25     3  0  0  1 15
+  26     0  0  0  0
+  27     0  0  0  1 13
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5 13  2  1 12 14 14
+   3 -   1 18 19  2  2 13 13 15 15
+   4 -   2  6  7  8  1  1  8
+   5 -   2 16 17  5  2  9 12 14 14
+   6 -   4  8  9  7  1  1  7
+   7 -   4  0  0  1  1  8  8
+   8 -   6 10 11  5  2  1  4  6  6
+   9 -   6 14 15  2  2  5  5  7  7
+  10 -   8  0  0  2  1  1  2
+  11 -   8 12 13  3  2  3  4  6  6
+  12 -  11  0  0  2  1  3  4
+  13 -  11  0  0  1  1  6  6
+  14 -   9  0  0  1  1  5  5
+  15 -   9  0  0  1  1  7  7
+  16 -   5  0  0  2  1  9 10
+  17 -   5  0  0  3  2 11 12 14 14
+  18 -   3  0  0  1  1 13 13
+  19 -   3  0  0  1  1 15 15
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            217
+Total number of atoms read in:              1696
+Total number of ignored atom records:        163
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+  Reading DSSP file
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              COMPND   2 MOLECULE: BETA-LACTAMASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+         217  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau           1   1.63272405              18          32         117
+ #popped           2           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau           3   1.60900247              95
+ #popped           4           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau           5  0.952832520              70
+ #popped           6           3
+ #selectset contacts        1986
+ selectset done           3
+ eigen done           3
+ tau           7   1.04238629              46          59
+ #popped           8           3
+ #selectset contacts        1986
+ selectset done           3
+ eigen done           3
+ tau           9  0.675411284              46
+ #popped          10           3
+ #selectset contacts        1986
+ selectset done           3
+ eigen done           3
+ tau          11  0.494976193              18
+ #popped           7           2
+ #selectset contacts        1986
+ selectset done           2
+ eigen done           2
+ tau          13  0.646530628              82
+ #popped           5           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          15   3.91367960              32
+ #popped          17           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          17   1.22556329             131         142         155         183         201
+ #popped          18           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          19  0.834409952             131
+ #popped          21           1
+ #selectset contacts        1986
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          19           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          21   1.48657155             183
+ #popped          22           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          23   1.05733716             142         169
+ #popped          24           0
+ #selectset contacts        1986
+ selectset done           0
+ eigen done           0
+ tau          25  0.996343076             142
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               19-FEB-22   7WZU              COMPND   2 MOLECULE: BETA-LACTAMASE;                                            SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               AUTHOR    Y.YAMAGUCHI,H.KUROSAKI                                                
+           0
+         217
+         217  residues read 7WZU.dssp                                                   
+  grow short strand          41          45
+  exclude short helix          78          81
+  exclude short helix          84          89
+  grow short strand          94          95
+  grow short strand         120         124
+  grow short strand         128         131
+  grow short strand         143         146
+  grow short strand         151         155
+  grow short strand         190         193
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  6  5  7  8  9 10 11 12 14 13 15
+   2     1  4  5  8  1  2  3  4  6  5  7  8
+   3     1 18 19  7  9 10 11 12 14 13 15
+   4     2  6  7  7  1  2  3  4  6  5  7
+   5     2  0  0  1  8
+   6     4  8  9  6  1  2  3  4  6  5
+   7     4  0  0  1  7
+   8     6 10 11  5  1  2  3  4  6
+   9     6  0  0  1  5
+  10     8 12 13  4  1  2  3  4
+  11     8  0  0  1  6
+  12    10  0  0  2  1  2
+  13    10  0  0  2  3  4
+  14     0  0  0  0
+  15     0  0  0  1  7
+  16     0  0  0  0
+  17     0  0  0  7  9 10 11 12 14 13 15
+  18     3 20 21  5  9 10 11 12 14
+  19     3 22 23  2 13 15
+  20    18  0  0  2  9 10
+  21    18  0  0  3 11 12 14
+  22    19  0  0  1 13
+  23    19  0  0  1 15
+  24     0  0  0  1 13
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  1 13
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5  8  1  1  8
+   3 +   1 14 15  7  1  9 15
+   4 -   2  6  7  7  1  1  7
+   5 -   2  0  0  1  1  8  8
+   6 -   4  8  9  6  1  1  6
+   7 -   4  0  0  1  1  7  7
+   8 -   6 10 11  5  2  1  4  6  6
+   9 -   6  0  0  1  1  5  5
+  10 -   8 12 13  4  1  1  4
+  11 -   8  0  0  1  1  6  6
+  12 -  10  0  0  2  1  1  2
+  13 -  10  0  0  2  1  3  4
+  14 -   3 16 17  5  2  9 12 14 14
+  15 -   3 18 19  2  2 13 13 15 15
+  16 -  14  0  0  2  1  9 10
+  17 -  14  0  0  3  2 11 12 14 14
+  18 -  15  0  0  1  1 13 13
+  19 -  15  0  0  1  1 15 15
+
+ CHAIN : 7WZUA
+ CHAIN : 7WZUB
+ CHAIN : 7WZUC
+ CHAIN : 7WZUD
+

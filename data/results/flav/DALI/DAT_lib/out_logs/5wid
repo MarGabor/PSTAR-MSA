@@ -1,0 +1,412 @@
+A length: 142
+B length: 143
+C length: 143
+# 3 chains A B C
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  592  CA BASN A  78 
+ Alternate location indication is not blank or A, ignore atom:  596  CB BASN A  78 
+ Alternate location indication is not blank or A, ignore atom:  598  CG BASN A  78 
+ Alternate location indication is not blank or A, ignore atom:  600  OD1BASN A  78 
+ Alternate location indication is not blank or A, ignore atom:  602  ND2BASN A  78 
+ Alternate location indication is not blank or A, ignore atom:  978  CA BGLN A 128 
+ Alternate location indication is not blank or A, ignore atom:  982  CB BGLN A 128 
+ Alternate location indication is not blank or A, ignore atom:  984  CG BGLN A 128 
+ Alternate location indication is not blank or A, ignore atom:  986  CD BGLN A 128 
+ Alternate location indication is not blank or A, ignore atom:  988  OE1BGLN A 128 
+ Alternate location indication is not blank or A, ignore atom:  990  NE2BGLN A 128 
+
+Total number of residues read in:            144
+Total number of atoms read in:              1109
+Total number of ignored atom records:        403
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+  Reading DSSP file
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: METHANOSARCINA ACETIVORANS C2A;                 AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+         144  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1403
+ selectset done           0
+ eigen done           0
+ tau           1   1.45016718              19          30         122
+ #popped           2           1
+ #selectset contacts        1403
+ selectset done           1
+ eigen done           1
+ tau           3  0.848784626              51
+ #popped           4           2
+ #selectset contacts        1403
+ selectset done           2
+ eigen done           2
+ tau           5  0.693614721              40
+ #popped           6           2
+ #selectset contacts        1403
+ selectset done           2
+ eigen done           2
+ tau           7  0.306674868              19
+ #popped           5           1
+ #selectset contacts        1403
+ selectset done           1
+ eigen done           1
+ tau           9   1.04778945              62          84         102         112
+ #popped          10           2
+ #selectset contacts        1403
+ selectset done           2
+ eigen done           2
+ tau          11  0.510495901              62
+ #popped          13           2
+ #selectset contacts        1403
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          11           1
+ #selectset contacts        1403
+ selectset done           1
+ eigen done           1
+ tau          13   1.08666968              73
+ #popped          15           1
+ #selectset contacts        1403
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1403
+ selectset done           0
+ eigen done           0
+ tau          15  0.762041092              30         133
+ #popped          16           0
+ #selectset contacts        1403
+ selectset done           0
+ eigen done           0
+ tau          17   1.18663764              30
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: METHANOSARCINA ACETIVORANS C2A;                 AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+           0
+         144
+         144  residues read 5WID.dssp                                                   
+  exclude short helix          42          47
+  grow short strand          57          58
+ crowded segment excluded!
+  grow short strand          61          62
+ crowded segment excluded!
+  exclude short helix          73          76
+  grow short strand         110         111
+  grow short strand         116         119
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  3  4  6  7  9  5  8  2 10
+   2     1  4  5  8  1  3  4  6  7  9  5  8
+   3     1 16 17  2  2 10
+   4     2  8  9  2  1  3
+   5     2 10 11  6  4  6  7  9  5  8
+   6     0  0  0  2  1  3
+   7     0  0  0  0
+   8     4  0  0  1  1
+   9     4  0  0  1  3
+  10     5 12 13  4  4  6  7  9
+  11     5 14 15  2  5  8
+  12    10  0  0  1  4
+  13    10  0  0  3  6  7  9
+  14    11  0  0  1  5
+  15    11  0  0  1  8
+  16     3  0  0  1  2
+  17     3  0  0  1 10
+  18     0  0  0  1  2
+  19     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  8  2  1  1  3  9
+   3 -   1 14 15  2  2  2  2 10 10
+   4 -   2  6  7  2  2  1  1  3  3
+   5 -   2  8  9  6  1  4  9
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  3  3
+   8 -   5 10 11  4  3  4  4  6  7  9  9
+   9 -   5 12 13  2  2  5  5  8  8
+  10 -   8  0  0  1  1  4  4
+  11 -   8  0  0  3  2  6  7  9  9
+  12 -   9  0  0  1  1  5  5
+  13 -   9  0  0  1  1  8  8
+  14 -   3  0  0  1  1  2  2
+  15 -   3  0  0  1  1 10 10
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            143
+Total number of atoms read in:              1100
+Total number of ignored atom records:        318
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+  Reading DSSP file
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: METHANOSARCINA ACETIVORANS C2A;                 AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+         143  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1380
+ selectset done           0
+ eigen done           0
+ tau           1   1.42153907              19          30         120
+ #popped           2           1
+ #selectset contacts        1380
+ selectset done           1
+ eigen done           1
+ tau           3  0.887564182              50
+ #popped           4           2
+ #selectset contacts        1380
+ selectset done           2
+ eigen done           2
+ tau           5  0.954043746              40
+ #popped           6           2
+ #selectset contacts        1380
+ selectset done           2
+ eigen done           2
+ tau           7  0.340974033              19
+ #popped           5           1
+ #selectset contacts        1380
+ selectset done           1
+ eigen done           1
+ tau           9  0.765154660              67          83
+ #popped          10           1
+ #selectset contacts        1380
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1380
+ selectset done           0
+ eigen done           0
+ tau          11   1.13222301              30         130
+ #popped          12           0
+ #selectset contacts        1380
+ selectset done           0
+ eigen done           0
+ tau          13   1.13047171              30
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: METHANOSARCINA ACETIVORANS C2A;                 AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+           0
+         143
+         143  residues read 5WID.dssp                                                   
+  exclude short helix          37          39
+  exclude short helix          42          45
+  grow short strand          57          58
+ crowded segment excluded!
+  grow short strand          61          62
+ crowded segment excluded!
+  grow short strand         110         111
+  grow short strand         116         119
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  3  4  6  7  8  9  5  2 10
+   2     1  4  5  8  1  3  4  6  7  8  9  5
+   3     1 14 15  2  2 10
+   4     2  8  9  2  1  3
+   5     2 10 11  6  4  6  7  8  9  5
+   6     0  0  0  2  1  3
+   7     0  0  0  0
+   8     4  0  0  1  1
+   9     4  0  0  1  3
+  10     5  0  0  5  4  6  7  8  9
+  11     5  0  0  1  5
+  12     0  0  0  2  2 10
+  13     0  0  0  0
+  14     3  0  0  1  2
+  15     3  0  0  1 10
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  8  2  1  1  3  9
+   3 -   1 10 11  2  2  2  2 10 10
+   4 -   2  6  7  2  2  1  1  3  3
+   5 -   2  8  9  6  1  4  9
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  3  3
+   8 -   5  0  0  5  2  4  4  6  9
+   9 -   5  0  0  1  1  5  5
+  10 -   3  0  0  1  1  2  2
+  11 -   3  0  0  1  1 10 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2378  CA BASN C  23 
+ Alternate location indication is not blank or A, ignore atom: 2382  CB BASN C  23 
+ Alternate location indication is not blank or A, ignore atom: 2384  CG BASN C  23 
+ Alternate location indication is not blank or A, ignore atom: 2386  OD1BASN C  23 
+ Alternate location indication is not blank or A, ignore atom: 2388  ND2BASN C  23 
+
+Total number of residues read in:            144
+Total number of atoms read in:              1109
+Total number of ignored atom records:        339
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+  Reading DSSP file
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: METHANOSARCINA ACETIVORANS C2A;                 AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+         144  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau           1  0.583847165              39          51          72          84         134
+ #popped           2           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau           3   1.29661012              62          72
+ #popped           4           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau           5   1.25792921             120
+ #popped           6           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau           7   1.19414675              39
+ #popped           8           2
+ #selectset contacts        1395
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           9           1
+ #selectset contacts        1395
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau           9   3.72919893              84
+ #popped          10           0
+ #selectset contacts        1395
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    FLAVOPROTEIN                            19-JUL-17   5WID              COMPND   2 MOLECULE: FLAVODOXIN;                                                SOURCE   2 ORGANISM_SCIENTIFIC: METHANOSARCINA ACETIVORANS C2A;                 AUTHOR    K.S.MURAKAMI,J.G.FERRY                                                
+           0
+         144
+         144  residues read 5WID.dssp                                                   
+  exclude short helix          42          47
+  grow short strand          57          58
+ crowded segment excluded!
+  grow short strand          61          62
+ crowded segment excluded!
+  exclude short helix          73          76
+  grow short strand         110         111
+  grow short strand         116         119
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 10  1  2  3  4  6  7  8  9 10  5
+   2     0  0  0 10  1  2  3  4  6  7  8  9 10  5
+   3     0  0  0  0
+   4     1  6  7  9  1  2  3  4  6  7  8  9 10
+   5     1  0  0  1  5
+   6     4  8  9  8  1  2  3  4  6  7  8  9
+   7     4  0  0  1 10
+   8     6  0  0  3  1  2  3
+   9     6  0  0  5  4  6  7  8  9
+  10     0  0  0  0
+  11     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  9  2  1  4  6 10
+   3 -   1  0  0  1  1  5  5
+   4 -   2  6  7  8  2  1  4  6  9
+   5 -   2  0  0  1  1 10 10
+   6 -   4  0  0  3  1  1  3
+   7 -   4  0  0  5  2  4  4  6  9
+
+ CHAIN : 5WIDA
+ CHAIN : 5WIDB
+ CHAIN : 5WIDC
+

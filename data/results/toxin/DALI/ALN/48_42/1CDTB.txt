@@ -1,0 +1,33 @@
+# Job: toxin
+# Query: 1CDTB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2JQP-A  6.5  2.8   57    65   33   MOLECULE: WEAK TOXIN 1;                                              
+
+# Pairwise alignments
+
+No 1: Query=1CDTB Sbjct=2JQPA Z-score=6.5
+
+DSSP  LEEELL---llLLEEELLLLLLEEEEEEELLL--LLEEeEEEEELLLLLLLLLEEEEEEL
+Query LKCNKL---ipIAYKTCPEGKNLCYKMMLASK--KMVPvKRGCINVCPKNSALVKYVCCS   55
+ident | |            ||      | |              |||   |||        |||
+Sbjct LTCLICpekdcQKVHTCRNEEKICVKRFYDKNqlGWRA-QRGCAVSCPKAKPNETVQCCS   59
+DSSP  LEEEELlllllLEEEELLLLLLEEEEEEEEELllEEEE-EEEEELLLLLLLLLLEEEEEL
+
+DSSP  LLLLL-
+Query TDRCN-   60
+ident || || 
+Sbjct TDKCNk   65
+DSSP  LLLLLl
+
+
+# Structural equivalences
+   1: 1CDT-B 2JQP-A     1 -   6 <=>    1 -   6   (LEU    1  - LEU    6  <=> LEU    1  - CYS    6 )                          
+   1: 1CDT-B 2JQP-A     9 -  29 <=>   12 -  32   (ILE    9  - LYS   29  <=> GLN   12  - ASN   32 )                          
+   1: 1CDT-B 2JQP-A    30 -  33 <=>   35 -  38   (LYS   30  - PRO   33  <=> GLY   35  - ALA   38 )                          
+   1: 1CDT-B 2JQP-A    35 -  60 <=>   39 -  64   (LYS   35  - ASN   60  <=> GLN   39  - ASN   64 )                          
+
+# Translation-rotation matrices
+-matrix  "1CDT-B 2JQP-A  U(1,.)  -0.000965 -0.894692 -0.446682            8.608297"
+-matrix  "1CDT-B 2JQP-A  U(2,.)   0.110047  0.443874 -0.889306           19.772652"
+-matrix  "1CDT-B 2JQP-A  U(3,.)   0.993926 -0.050014  0.098029          -23.487654"
+

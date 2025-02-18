@@ -1,0 +1,33 @@
+# Job: kunitz
+# Query: 1DTKA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2KCR-A  6.5  2.2   54    61   39   MOLECULE: ANNTOXIN;                                                  
+
+# Pairwise alignments
+
+No 1: Query=1DTKA Sbjct=2KCRA Z-score=6.5
+
+DSSP  --lLHHHHLLLL-LLLLlLLEEEEEEELLLLEEEEEEELLLLLLlLLLLLHHHHHHHHLL
+Query --aAKYCKLPLR-IGPCkRKIPSFYYKWKAKQCLPFDYSGCGGNaNRFKTIEECRRTCVG   57
+ident       | |               ||      |  | | | ||| ||||| | |  ||| 
+Sbjct paqDYRCQLSRNyGKGS-GSFTNYYYDKATSSCKTFRYRGSGGNgNRFKTLEDCEATCVT   59
+DSSP  lllLHHHLLLLLlLLLL-LLLLEEEEELLLLEEEEELLLLLLLLlLLLLLHHHHHHHHHH
+
+DSSP  --
+Query --   57
+ident   
+Sbjct ae   61
+DSSP  hl
+
+
+# Structural equivalences
+   1: 1DTK-A 2KCR-A     2 -  10 <=>    4 -  12   (ALA    2  - ARG   10  <=> ASP    4  - ASN   12 )                          
+   1: 1DTK-A 2KCR-A    11 -  14 <=>   14 -  17   (ILE   11  - CYS   14  <=> GLY   14  - SER   17 )                          
+   1: 1DTK-A 2KCR-A    16 -  41 <=>   18 -  43   (ARG   16  - ASN   41  <=> GLY   18  - ASN   43 )                          
+   1: 1DTK-A 2KCR-A    43 -  57 <=>   45 -  59   (ASN   43  - GLY   57  <=> ASN   45  - THR   59 )                          
+
+# Translation-rotation matrices
+-matrix  "1DTK-A 2KCR-A  U(1,.)   0.555537 -0.698889 -0.450481            1.117300"
+-matrix  "1DTK-A 2KCR-A  U(2,.)  -0.288112  0.346416 -0.892741           -0.510804"
+-matrix  "1DTK-A 2KCR-A  U(3,.)   0.779981  0.625740 -0.008912            1.179030"
+

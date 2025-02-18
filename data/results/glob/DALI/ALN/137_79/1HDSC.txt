@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1HDSC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3GYS-H 20.0  1.6  138   145   38   MOLECULE: HEMOGLOBIN SUBUNIT ALPHA;                                  
+
+# Pairwise alignments
+
+No 1: Query=1HDSC Sbjct=3GYSH Z-score=20.0
+
+DSSP  LLLLLHHHHHHHHHHHHllLLHHHHHHHHLHHHHHLHHHHHHLLLLL------lLLLLHH
+Query VLSAANKSNVKAAWGKVggNAPAYGAQALQRMFLSFPTTKTYFPHFD------lSHGSAQ   54
+ident  | |  |  |   ||||  |    |  || |     | |   |  |            | 
+Sbjct FLTAEEKGLVNGLWGKV--NVDEVGGEALGRLLVVYPWTQRFFESFGdlssadaIMSNAK   58
+DSSP  LLLHHHHHHHHHHHHLL--LHHHHHHHHHHHHHHHLHHHHHHHHHHLllllhhhHHHLHH
+
+DSSP  HHHHHHHHHHHHHHHLLLLLLHHHHLLLLLHHHHLLLLLLHHHHHHHHHHHHHHHHHHLL
+Query QKAHGQKVANALTKAQGHLNDLPGTLSNLSNLHAHKLRVNPVNFKLLSHSLLVTLASHLP  114
+ident  |||| || |          || |    || ||  || | | || ||   |   || |  
+Sbjct VKAHGKKVLNSFSDGLKNIDDLKGAFAKLSELHCDKLHVDPENFRLLGNVLVCVLAHHFG  118
+DSSP  HHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHHHHHHHHHH
+
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHHHHL
+Query TNFTPAVHANLNKFLANDSTVLTSKYR  141
+ident   | | | |   |  |     |  || 
+Sbjct HDFNPQVQAAFQKVVAGVANALAHKYH  145
+DSSP  HHLLHHHHHHHHHHHHHHHHHHLLLLL
+
+
+# Structural equivalences
+   1: 1HDS-C 3GYS-H     1 -  17 <=>    1 -  17   (VAL    1  - VAL   17  <=> PHE    2  - VAL   18 )                          
+   1: 1HDS-C 3GYS-H    20 -  47 <=>   18 -  45   (ASN   20  - ASP   47  <=> ASN   19  - GLY   46 )                          
+   1: 1HDS-C 3GYS-H    49 - 141 <=>   53 - 145   (SER   49  - ARG  141  <=> ILE   54  - HIS  146 )                          
+
+# Translation-rotation matrices
+-matrix  "1HDS-C 3GYS-H  U(1,.)  -0.733170  0.070628  0.676368          -38.802376"
+-matrix  "1HDS-C 3GYS-H  U(2,.)  -0.382855 -0.864867 -0.324695          -17.902212"
+-matrix  "1HDS-C 3GYS-H  U(3,.)   0.562036 -0.497007  0.661135          -11.257450"
+

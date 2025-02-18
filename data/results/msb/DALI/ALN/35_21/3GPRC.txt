@@ -1,0 +1,41 @@
+# Job: msb
+# Query: 3GPRC
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  6GHV-E 11.5  2.4  101   133   25   MOLECULE: CD209 ANTIGEN;                                             
+
+# Pairwise alignments
+
+No 1: Query=3GPRC Sbjct=6GHVE Z-score=11.5
+
+DSSP  --LLLLLLLEELLLLEEEELLLLLLLHHHHHHHLLLllLLEELLLLLHHHHHHHHHHhhh
+Query --FNCLPGWSAYDQHCYQAFNEPKTWDEAERFCTEQakRGHLVSIGSDGEADFVAQLvtn   58
+ident     |   |      ||   |    |      | |      || | |  |  |       
+Sbjct lcHPCPWEWTFFQGNCYFMSNSQRNWHDSITACKEV--GAQLVVIKSAEEQNFLQLQ---   55
+DSSP  llLLLLLLLEEELLEEEEELLLLLLHHHHHHHHHLL--LLEELLLLLHHHHHHHHHH---
+
+DSSP  hhlLLLLLLLLLLLLLllllLLLL----------eelllllllllllllleELLEELLLL
+Query nikRPELYVWIGLRDRrkeqQCSS----------ewsmsasiiyvnwntgeSQMCQGLAR  108
+ident    |     | || |                                       |     
+Sbjct -ssRSNRFTWMGLSDL----NQEGtwqwvdgspllpsfkqywnrgepnnvgEEDCAEFSG  110
+DSSP  -hhHHLLLEEEEEEEE----EELLeeeelllllllhhhhhhllllllllllLLLEEEEEL
+
+DSSP  llllLLLLEELLLLLLLLEEEELLLL-
+Query wtgfRKWDYSDCQAKNPFVCKFSSEC-  134
+ident       |    |       || |    
+Sbjct ----NGWNDDKCNLAKFWICKKSAASc  133
+DSSP  ----LEEEEELLLLLLEEEEEEELLLl
+
+
+# Structural equivalences
+   1: 3GPR-C 6GHV-E     1 -  34 <=>    3 -  36   (PHE 3002  - GLN 3035  <=> HIS  254  - VAL  287 )                          
+   1: 3GPR-C 6GHV-E    37 -  55 <=>   37 -  55   (ARG 3038  - LEU 3056  <=> GLY  288  - GLN  306 )                          
+   1: 3GPR-C 6GHV-E    62 -  74 <=>   58 -  70   (ARG 3063  - ARG 3075  <=> ARG  309  - LEU  321 )                          
+   1: 3GPR-C 6GHV-E    79 -  82 <=>   71 -  74   (GLN 3080  - SER 3083  <=> ASN  322  - GLY  325 )                          
+   1: 3GPR-C 6GHV-E   100 - 108 <=>  102 - 110   (SER 3101  - ARG 3109  <=> GLU  353  - GLY  361 )                          
+   1: 3GPR-C 6GHV-E   113 - 134 <=>  111 - 132   (ARG 3114  - CYS 3135  <=> ASN  362  - SER  383 )                          
+
+# Translation-rotation matrices
+-matrix  "3GPR-C 6GHV-E  U(1,.)   0.996109 -0.002352 -0.088094           27.181389"
+-matrix  "3GPR-C 6GHV-E  U(2,.)  -0.071429  0.563919 -0.822735           91.695457"
+-matrix  "3GPR-C 6GHV-E  U(3,.)   0.051613  0.825827  0.561557          -45.712273"
+

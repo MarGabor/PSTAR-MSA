@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 5M3LL
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  7K4M-D 13.4  2.3  132   147   21   MOLECULE: HEMOGLOBIN SUBUNIT ALPHA;                                  
+
+# Pairwise alignments
+
+No 1: Query=5M3LL Sbjct=7K4MD Z-score=13.4
+
+DSSP  --LLLHHHHHHHHHHHHHHHlllhhHHHHHHHHHHHHHHHLHHHHLHHHHLLLL-----L
+Query --ECLVTESLKVKLQWASAFghaheRVAFGLELWRDIIDDHPEIKAPFSRVRGD-----N   53
+ident        |   |   |             | |         |     |            
+Sbjct mvHLTPVEKSAVTALWGKVN-----VDEVGGEALGRLLVVYPWTQRFFESFGDLstpdaV   55
+DSSP  llLLLHHHHHHHHHHHLLLL-----LLLLHHHHHHHHHHHLHHHHHHHHHHLLLllhhhH
+
+DSSP  LLLLLHHHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHH-HLLLLLHHHHHHHHHHHH
+Query IYSPEFGAHSQRVLSGLDITISMLDtpdMLAAQLAHLKVQH-VERNLKPEFFDIFLKHLL  112
+ident    |   ||   ||         ||    |    | |   |       || |      | 
+Sbjct MGNPKVKAHGKKVLGAFSDGLAHLD---NLKGTFATLSELHcDKLHVDPENFRLLGNVLV  112
+DSSP  HHLHHHHHHHHHHHHHHHHHHHLLL---LHHHHLHHHHHHHhLLLLLLLHHHHHHHHHHH
+
+DSSP  HHHHHHHLLLL---LHHHHHHHHHHHHHHHL----
+Query HVLGDRLGTHF---DFGAWHDCVDQIIDGIK----  140
+ident  ||    |  |      |    |            
+Sbjct CVLAHHFGKEFtppVQAAYQKVVAGVANALAhkyh  147
+DSSP  HHHHHHHHHHLlhhHHHHHHHHHHHHHHHHLhhhl
+
+
+# Structural equivalences
+   1: 5M3L-L 7K4M-D     1 -  18 <=>    3 -  20   (GLU    8  - PHE   25  <=> HIS    2  - ASN   19 )                          
+   1: 5M3L-L 7K4M-D    24 -  52 <=>   21 -  49   (ARG   31  - ASP   59  <=> VAL   20  - LEU   48 )                          
+   1: 5M3L-L 7K4M-D    53 -  78 <=>   55 -  80   (ASN   60  - ASP   85  <=> VAL   54  - ASP   79 )                          
+   1: 5M3L-L 7K4M-D    82 -  94 <=>   81 -  93   (MET   89  - HIS  101  <=> ASN   80  - HIS   92 )                          
+   1: 5M3L-L 7K4M-D    95 - 123 <=>   95 - 123   (VAL  102  - PHE  130  <=> ASP   94  - PHE  122 )                          
+   1: 5M3L-L 7K4M-D   124 - 140 <=>  127 - 143   (ASP  131  - LYS  147  <=> VAL  126  - ALA  142 )                          
+
+# Translation-rotation matrices
+-matrix  "5M3L-L 7K4M-D  U(1,.)  -0.600382 -0.292496  0.744304           23.088692"
+-matrix  "5M3L-L 7K4M-D  U(2,.)   0.626109 -0.750942  0.209937          168.161194"
+-matrix  "5M3L-L 7K4M-D  U(3,.)   0.497523  0.592058  0.633986          123.377205"
+

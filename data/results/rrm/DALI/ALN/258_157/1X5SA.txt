@@ -1,0 +1,45 @@
+# Job: rrm
+# Query: 1X5SA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4BS2-A  9.7  3.9   84   174   26   MOLECULE: TAR DNA-BINDING PROTEIN 43;                                
+
+# Pairwise alignments
+
+No 1: Query=1X5SA Sbjct=4BS2A Z-score=9.7
+
+DSSP  --LLLL------------------------------------------------------
+Query --GSSG------------------------------------------------------    4
+ident                                                             
+Sbjct gsHMASktsdlivlglpwktteqdlkeyfstfgevlmvqvkkdlktghskgfgfvrftey   60
+DSSP  llLLLLlllleeeellllllllhhhhhhhllllllleeeeelllllllllleeeeellll
+
+DSSP  ---------------------------llLLLLLLLEEEEELLLLLLLHHHHHHHHHHHL
+Query ---------------------------ssGMASDEGKLFVGGLSFDTNEQSLEQVFSKYG   37
+ident                                     | |||    |  |  |   || ||
+Sbjct etqvkvmsqrhmidgrwcdcklpnskqsqDEPLRSRKVFVGRCTEDMTEDELREFFSQYG  120
+DSSP  hhhllhhhlleeelleeeeeellllllllLLLLLLLEEEEELLLLLLLHHHHHHHHLLLL
+
+DSSP  LLLEEEELLLlllllLLLEEEEELLLHHHHHHHHhhhLLLLLLLLLLEEEEEELLLLlll
+Query QISEVVVVKDretqrSRGFGFVTFENIDDAKDAMmamNGKSVDGRQIRVDQAGKSSDnrs   97
+ident     |   |       | | ||||     |             |       |        
+Sbjct DVMDVFIPKP-----FRAFAFVTFADDQIAQSLC--gEDLIIKGISVHISNAEPKHN---  170
+DSSP  LEEEEELLLL-----LLLEEEEEELLLLHHHLLL--lLLEEELLEEEEEELLLLLLL---
+
+DSSP  lllll
+Query gpssg  102
+ident      
+Sbjct -snrq  174
+DSSP  -llll
+
+
+# Structural equivalences
+   1: 1X5S-A 4BS2-A     1 -   4 <=>    3 -   6   (GLY    1  - GLY    4  <=> HIS   98  - SER  101 )                          
+   1: 1X5S-A 4BS2-A     7 -  47 <=>   90 - 130   (GLY    7  - ASP   47  <=> ASP  185  - PRO  225 )                          
+   1: 1X5S-A 4BS2-A    53 -  71 <=>  131 - 149   (SER   53  - MET   71  <=> PHE  226  - CYS  244 )                          
+   1: 1X5S-A 4BS2-A    75 -  94 <=>  151 - 170   (ASN   75  - ASP   94  <=> GLU  246  - ASN  265 )                          
+
+# Translation-rotation matrices
+-matrix  "1X5S-A 4BS2-A  U(1,.)   0.230102  0.962530 -0.143490          -34.173790"
+-matrix  "1X5S-A 4BS2-A  U(2,.)  -0.827701  0.271116  0.491332           17.805470"
+-matrix  "1X5S-A 4BS2-A  U(3,.)   0.511824  0.005710  0.859071           11.579383"
+

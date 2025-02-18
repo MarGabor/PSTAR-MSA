@@ -1,0 +1,32 @@
+# Job: az
+# Query: 1KDIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1BYO-B 16.4  1.6   96    99   34   MOLECULE: PROTEIN (PLASTOCYANIN);                                    
+
+# Pairwise alignments
+
+No 1: Query=1KDIA Sbjct=1BYOB Z-score=16.4
+
+DSSP  LEEEELLLLLLLLEELLEEEELLLLLEEEEELLLLLLLLEELLLllllHHHHhhHHHLLL
+Query AKVEVGDEVGNFKFYPDSITVSAGEAVEFTLVGETGHNIVFDIPagapGTVAseLKAASM   60
+ident | |  |   |   | |       ||   |       ||  ||        |       ||
+Sbjct AEVLLGSSDGGLAFVPSDLSIASGEKITFKNNAGFPHNDLFDED-evpAGVD--VTKISM   57
+DSSP  LEEEEEELLLEEEEELLEEEELLLLEEEEEELLLLLLLLEELLL-lllLLLL--HHHLLL
+
+DSSP  LLLLLLLLLLLEEEELLLLLEEEEEELLLLHHHLLEEEEEEL
+Query DENDLLSEDEPSFKAKVSTPGTYTFYCTPHKSANMKGTLTVK  102
+ident  | |||              ||| ||| ||  | | |  || 
+Sbjct PEEDLLNAPGEEYSVTLTEKGTYKFYCAPHAGAGMVGKVTVN   99
+DSSP  LLLLLLLLLLLEEEEELLLLEEEEEELHHHHHHLLEEEEEEL
+
+
+# Structural equivalences
+   1: 1KDI-A 1BYO-B     1 -  44 <=>    1 -  44   (ALA    1  - PRO   44  <=> ALA    1  - ASP   44 )                          
+   1: 1KDI-A 1BYO-B    49 -  52 <=>   48 -  51   (GLY   49  - ALA   52  <=> ALA   48  - ASP   51 )                          
+   1: 1KDI-A 1BYO-B    55 - 102 <=>   52 -  99   (LEU   55  - LYS  102  <=> VAL   52  - ASN   99 )                          
+
+# Translation-rotation matrices
+-matrix  "1KDI-A 1BYO-B  U(1,.)   0.753577 -0.437640  0.490503           13.197259"
+-matrix  "1KDI-A 1BYO-B  U(2,.)  -0.549443 -0.009697  0.835475           39.241772"
+-matrix  "1KDI-A 1BYO-B  U(3,.)  -0.360880 -0.899098 -0.247765           48.501411"
+

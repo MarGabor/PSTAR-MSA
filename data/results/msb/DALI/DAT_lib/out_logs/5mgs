@@ -1,0 +1,1035 @@
+A length: 121
+B length: 127
+C length: 126
+D length: 124
+E length: 125
+F length: 122
+G length: 121
+H length: 126
+# 8 chains A B C D E F G H
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  168  CA BHIS A 110 
+ Alternate location indication is not blank or A, ignore atom:  172  CB BHIS A 110 
+ Alternate location indication is not blank or A, ignore atom:  174  CG BHIS A 110 
+ Alternate location indication is not blank or A, ignore atom:  176  ND1BHIS A 110 
+ Alternate location indication is not blank or A, ignore atom:  178  CD2BHIS A 110 
+ Alternate location indication is not blank or A, ignore atom:  180  CE1BHIS A 110 
+ Alternate location indication is not blank or A, ignore atom:  182  NE2BHIS A 110 
+ Alternate location indication is not blank or A, ignore atom:  185  CA BTHR A 111 
+ Alternate location indication is not blank or A, ignore atom:  189  CB BTHR A 111 
+ Alternate location indication is not blank or A, ignore atom:  191  OG1BTHR A 111 
+ Alternate location indication is not blank or A, ignore atom:  193  CG2BTHR A 111 
+ Alternate location indication is not blank or A, ignore atom:  384  CA BASP A 136 
+ Alternate location indication is not blank or A, ignore atom:  388  CB BASP A 136 
+ Alternate location indication is not blank or A, ignore atom:  390  CG BASP A 136 
+ Alternate location indication is not blank or A, ignore atom:  392  OD1BASP A 136 
+ Alternate location indication is not blank or A, ignore atom:  394  OD2BASP A 136 
+
+Total number of residues read in:            124
+Total number of atoms read in:              1022
+Total number of ignored atom records:        229
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HARLOS,      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+         124  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1091
+ selectset done           0
+ eigen done           0
+ tau           1   1.25050938              41         112
+ #popped           2           1
+ #selectset contacts        1091
+ selectset done           1
+ eigen done           1
+ tau           3  0.444737852              18          30
+ #popped           4           1
+ #selectset contacts        1091
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts        1091
+ selectset done           0
+ eigen done           0
+ tau           5   1.73267460              60
+ #popped           7           0
+ #selectset contacts        1091
+ selectset done           0
+ eigen done           0
+ tau           7  0.627603292              83
+ #popped           8           1
+ #selectset contacts        1091
+ selectset done           1
+ eigen done           1
+ tau           9  0.372180462              73
+ #popped           9           0
+ #selectset contacts        1091
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+           0
+         124
+         124  residues read 5MGS.dssp                                                   
+  grow short strand           9          11
+  grow short strand          14          18
+  grow short strand          38          39
+  grow short strand          74          77
+  grow short strand          98         102
+  grow short strand         107         111
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  4 10  3  5  6  7  8  9
+   2     1  4  5  5  1  2  4 10  3
+   3     1  6  7  5  5  6  7  8  9
+   4     2  0  0  4  1  2  4 10
+   5     2  0  0  1  3
+   6     3  0  0  1  5
+   7     3  8  9  4  6  7  8  9
+   8     7 10 11  2  6  7
+   9     7  0  0  2  8  9
+  10     8  0  0  1  6
+  11     8  0  0  1  7
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  5  2  1  4 10 10
+   3 -   1  6  7  5  1  5  9
+   4 -   2  0  0  4  3  1  2  4  4 10 10
+   5 -   2  0  0  1  1  3  3
+   6 -   3  0  0  1  1  5  5
+   7 -   3  8  9  4  1  6  9
+   8 -   7 10 11  2  1  6  7
+   9 -   7  0  0  2  1  8  9
+  10 -   8  0  0  1  1  6  6
+  11 -   8  0  0  1  1  7  7
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1210  CA BHIS B 110 
+ Alternate location indication is not blank or A, ignore atom: 1214  CB BHIS B 110 
+ Alternate location indication is not blank or A, ignore atom: 1216  CG BHIS B 110 
+ Alternate location indication is not blank or A, ignore atom: 1218  ND1BHIS B 110 
+ Alternate location indication is not blank or A, ignore atom: 1220  CD2BHIS B 110 
+ Alternate location indication is not blank or A, ignore atom: 1222  CE1BHIS B 110 
+ Alternate location indication is not blank or A, ignore atom: 1224  NE2BHIS B 110 
+
+Total number of residues read in:            128
+Total number of atoms read in:              1047
+Total number of ignored atom records:        213
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HARLOS,      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+         128  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1110
+ selectset done           0
+ eigen done           0
+ tau           1   1.25426793              65         115
+ #popped           2           1
+ #selectset contacts        1110
+ selectset done           1
+ eigen done           1
+ tau           3  0.929393709              44          55
+ #popped           4           1
+ #selectset contacts        1110
+ selectset done           1
+ eigen done           1
+ tau           5  0.747763872              18
+ #popped           7           1
+ #selectset contacts        1110
+ selectset done           1
+ eigen done           1
+ tau           7  0.407913834              31
+ #popped           9           1
+ #selectset contacts        1110
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1110
+ selectset done           0
+ eigen done           0
+ tau           9   1.05552745              84
+ #popped          11           0
+ #selectset contacts        1110
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+           0
+         128
+         128  residues read 5MGS.dssp                                                   
+  grow short strand          10          12
+  grow short strand          15          19
+  grow short strand          39          40
+  grow short strand          75          78
+  grow short strand          99         103
+  grow short strand         108         112
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4 10  5  6  7  8  9
+   2     1  4  5  6  1  2  3  4 10  5
+   3     1 10 11  4  6  7  8  9
+   4     2  6  7  5  1  2  3  4 10
+   5     2  0  0  1  5
+   6     4  0  0  2  1  2
+   7     4  8  9  3  3  4 10
+   8     7  0  0  1  3
+   9     7  0  0  2  4 10
+  10     3  0  0  2  6  7
+  11     3  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1 10 11  4  1  6  9
+   4 -   2  6  7  5  2  1  4 10 10
+   5 -   2  0  0  1  1  5  5
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  3  2  3  4 10 10
+   8 -   7  0  0  1  1  3  3
+   9 -   7  0  0  2  2  4  4 10 10
+  10 -   3  0  0  2  1  6  7
+  11 -   3  0  0  2  1  8  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            126
+Total number of atoms read in:              1036
+Total number of ignored atom records:        222
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HARLOS,      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+         126  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1112
+ selectset done           0
+ eigen done           0
+ tau           1   1.29233444              64         114
+ #popped           2           1
+ #selectset contacts        1112
+ selectset done           1
+ eigen done           1
+ tau           3   1.02403080              42          53
+ #popped           4           1
+ #selectset contacts        1112
+ selectset done           1
+ eigen done           1
+ tau           5  0.748465478              16
+ #popped           7           1
+ #selectset contacts        1112
+ selectset done           1
+ eigen done           1
+ tau           7  0.382608682              29
+ #popped           9           1
+ #selectset contacts        1112
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1112
+ selectset done           0
+ eigen done           0
+ tau           9   1.05552745              83
+ #popped          11           0
+ #selectset contacts        1112
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+           0
+         126
+         126  residues read 5MGS.dssp                                                   
+  grow short strand           9          11
+  grow short strand          14          18
+  grow short strand          38          39
+  exclude short helix          70          72
+  grow short strand          74          77
+  grow short strand          98         102
+  grow short strand         107         111
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4 10  5  6  7  8  9
+   2     1  4  5  6  1  2  3  4 10  5
+   3     1 10 11  4  6  7  8  9
+   4     2  6  7  5  1  2  3  4 10
+   5     2  0  0  1  5
+   6     4  0  0  2  1  2
+   7     4  8  9  3  3  4 10
+   8     7  0  0  1  3
+   9     7  0  0  2  4 10
+  10     3  0  0  2  6  7
+  11     3  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1 10 11  4  1  6  9
+   4 -   2  6  7  5  2  1  4 10 10
+   5 -   2  0  0  1  1  5  5
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  3  2  3  4 10 10
+   8 -   7  0  0  1  1  3  3
+   9 -   7  0  0  2  2  4  4 10 10
+  10 -   3  0  0  2  1  6  7
+  11 -   3  0  0  2  1  8  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3353  CA BASN D 116 
+ Alternate location indication is not blank or A, ignore atom: 3357  CB BASN D 116 
+ Alternate location indication is not blank or A, ignore atom: 3359  CG BASN D 116 
+ Alternate location indication is not blank or A, ignore atom: 3361  OD1BASN D 116 
+ Alternate location indication is not blank or A, ignore atom: 3363  ND2BASN D 116 
+
+Total number of residues read in:            125
+Total number of atoms read in:              1026
+Total number of ignored atom records:        158
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HARLOS,      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+         125  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1078
+ selectset done           0
+ eigen done           0
+ tau           1   1.36393535              65         115
+ #popped           2           1
+ #selectset contacts        1078
+ selectset done           1
+ eigen done           1
+ tau           3   1.28792751              42          55
+ #popped           4           1
+ #selectset contacts        1078
+ selectset done           1
+ eigen done           1
+ tau           5  0.402678967              18          31
+ #popped           6           1
+ #selectset contacts        1078
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1078
+ selectset done           0
+ eigen done           0
+ tau           7   1.01061130              84
+ #popped           9           0
+ #selectset contacts        1078
+ selectset done           0
+ eigen done           0
+ tau           9   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+           0
+         125
+         125  residues read 5MGS.dssp                                                   
+  grow short strand          10          12
+  grow short strand          15          19
+  grow short strand          39          40
+  grow short strand          75          78
+  grow short strand          99         103
+  grow short strand         108         112
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  4 10  3  5  6  7  8  9
+   2     1  4  5  6  1  2  4 10  3  5
+   3     1  8  9  4  6  7  8  9
+   4     2  6  7  5  1  2  4 10  3
+   5     2  0  0  1  5
+   6     4  0  0  4  1  2  4 10
+   7     4  0  0  1  3
+   8     3  0  0  2  6  7
+   9     3  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1  8  9  4  1  6  9
+   4 -   2  6  7  5  2  1  4 10 10
+   5 -   2  0  0  1  1  5  5
+   6 -   4  0  0  4  3  1  2  4  4 10 10
+   7 -   4  0  0  1  1  3  3
+   8 -   3  0  0  2  1  6  7
+   9 -   3  0  0  2  1  8  9
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            125
+Total number of atoms read in:              1026
+Total number of ignored atom records:        185
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HARLOS,      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+         125  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1089
+ selectset done           0
+ eigen done           0
+ tau           1   1.30025709              66         115
+ #popped           2           1
+ #selectset contacts        1089
+ selectset done           1
+ eigen done           1
+ tau           3  0.679755032              18
+ #popped           5           1
+ #selectset contacts        1089
+ selectset done           1
+ eigen done           1
+ tau           5   1.74362779              43          56
+ #popped           6           1
+ #selectset contacts        1089
+ selectset done           1
+ eigen done           1
+ tau           7  0.388541609              30
+ #popped           9           1
+ #selectset contacts        1089
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1089
+ selectset done           0
+ eigen done           0
+ tau           9   1.20314670              85
+ #popped          11           0
+ #selectset contacts        1089
+ selectset done           0
+ eigen done           0
+ tau          11   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+           0
+         125
+         125  residues read 5MGS.dssp                                                   
+  grow short strand          10          12
+  grow short strand          15          19
+  grow short strand          39          40
+  grow short strand          75          78
+  grow short strand          99         103
+  grow short strand         108         112
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  6 10  5  7  8  9
+   2     1  4  5  7  1  2  3  4  6 10  5
+   3     1 10 11  3  7  8  9
+   4     2  0  0  2  1  2
+   5     2  6  7  5  3  4  6 10  5
+   6     5  8  9  4  3  4  6 10
+   7     5  0  0  1  5
+   8     6  0  0  1  3
+   9     6  0  0  3  4  6 10
+  10     3  0  0  1  7
+  11     3  0  0  2  8  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  7  2  1  6 10 10
+   3 -   1 10 11  3  1  7  9
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  5  2  3  6 10 10
+   6 -   5  8  9  4  3  3  4  6  6 10 10
+   7 -   5  0  0  1  1  5  5
+   8 -   6  0  0  1  1  3  3
+   9 -   6  0  0  3  3  4  4  6  6 10 10
+  10 -   3  0  0  1  1  7  7
+  11 -   3  0  0  2  1  8  9
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5406  CA BASN F 116 
+ Alternate location indication is not blank or A, ignore atom: 5410  CB BASN F 116 
+ Alternate location indication is not blank or A, ignore atom: 5412  CG BASN F 116 
+ Alternate location indication is not blank or A, ignore atom: 5414  OD1BASN F 116 
+ Alternate location indication is not blank or A, ignore atom: 5416  ND2BASN F 116 
+ Alternate location indication is not blank or A, ignore atom: 5500  CB BSER F 128 
+ Alternate location indication is not blank or A, ignore atom: 5502  OG BSER F 128 
+ Alternate location indication is not blank or A, ignore atom: 5529  CA BILE F 132 
+ Alternate location indication is not blank or A, ignore atom: 5533  CB BILE F 132 
+ Alternate location indication is not blank or A, ignore atom: 5535  CG1BILE F 132 
+ Alternate location indication is not blank or A, ignore atom: 5537  CG2BILE F 132 
+ Alternate location indication is not blank or A, ignore atom: 5539  CD1BILE F 132 
+ Alternate location indication is not blank or A, ignore atom: 5632  CB BASN F 143 
+ Alternate location indication is not blank or A, ignore atom: 5634  CG BASN F 143 
+ Alternate location indication is not blank or A, ignore atom: 5636  OD1BASN F 143 
+ Alternate location indication is not blank or A, ignore atom: 5638  ND2BASN F 143 
+
+Total number of residues read in:            124
+Total number of atoms read in:              1022
+Total number of ignored atom records:        201
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HARLOS,      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+         124  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1091
+ selectset done           0
+ eigen done           0
+ tau           1   1.26137567              64         114
+ #popped           2           1
+ #selectset contacts        1091
+ selectset done           1
+ eigen done           1
+ tau           3   1.08927488              42          54
+ #popped           4           1
+ #selectset contacts        1091
+ selectset done           1
+ eigen done           1
+ tau           5  0.680247068              17
+ #popped           7           1
+ #selectset contacts        1091
+ selectset done           1
+ eigen done           1
+ tau           7  0.400000006              30
+ #popped           9           1
+ #selectset contacts        1091
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1091
+ selectset done           0
+ eigen done           0
+ tau           9   1.10798776              84
+ #popped          10           1
+ #selectset contacts        1091
+ selectset done           1
+ eigen done           1
+ tau          11  0.321682215              74
+ #popped          11           0
+ #selectset contacts        1091
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+           0
+         124
+         124  residues read 5MGS.dssp                                                   
+  grow short strand           9          11
+  grow short strand          14          18
+  grow short strand          38          39
+  grow short strand          74          77
+  grow short strand          98         102
+  grow short strand         107         111
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4 10  5  6  7  8  9
+   2     1  4  5  6  1  2  3  4 10  5
+   3     1 10 11  4  6  7  8  9
+   4     2  6  7  5  1  2  3  4 10
+   5     2  0  0  1  5
+   6     4  0  0  2  1  2
+   7     4  8  9  3  3  4 10
+   8     7  0  0  1  3
+   9     7  0  0  2  4 10
+  10     3 12 13  2  6  7
+  11     3  0  0  2  8  9
+  12    10  0  0  1  6
+  13    10  0  0  1  7
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1 10 11  4  1  6  9
+   4 -   2  6  7  5  2  1  4 10 10
+   5 -   2  0  0  1  1  5  5
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  3  2  3  4 10 10
+   8 -   7  0  0  1  1  3  3
+   9 -   7  0  0  2  2  4  4 10 10
+  10 -   3 12 13  2  1  6  7
+  11 -   3  0  0  2  1  8  9
+  12 -  10  0  0  1  1  6  6
+  13 -  10  0  0  1  1  7  7
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 6391  CA BHIS G 110 
+ Alternate location indication is not blank or A, ignore atom: 6395  CB BHIS G 110 
+ Alternate location indication is not blank or A, ignore atom: 6397  CG BHIS G 110 
+ Alternate location indication is not blank or A, ignore atom: 6399  ND1BHIS G 110 
+ Alternate location indication is not blank or A, ignore atom: 6401  CD2BHIS G 110 
+ Alternate location indication is not blank or A, ignore atom: 6403  CE1BHIS G 110 
+ Alternate location indication is not blank or A, ignore atom: 6405  NE2BHIS G 110 
+ Alternate location indication is not blank or A, ignore atom: 6451  CA BASN G 116 
+ Alternate location indication is not blank or A, ignore atom: 6455  CB BASN G 116 
+ Alternate location indication is not blank or A, ignore atom: 6457  CG BASN G 116 
+ Alternate location indication is not blank or A, ignore atom: 6459  OD1BASN G 116 
+ Alternate location indication is not blank or A, ignore atom: 6461  ND2BASN G 116 
+ Alternate location indication is not blank or A, ignore atom: 7033  CA BASN G 187 
+ Alternate location indication is not blank or A, ignore atom: 7037  CB BASN G 187 
+ Alternate location indication is not blank or A, ignore atom: 7039  CG BASN G 187 
+ Alternate location indication is not blank or A, ignore atom: 7041  OD1BASN G 187 
+ Alternate location indication is not blank or A, ignore atom: 7043  ND2BASN G 187 
+
+Total number of residues read in:            124
+Total number of atoms read in:              1022
+Total number of ignored atom records:        189
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HARLOS,      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+         124  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1093
+ selectset done           0
+ eigen done           0
+ tau           1   1.30910337              64         114
+ #popped           2           1
+ #selectset contacts        1093
+ selectset done           1
+ eigen done           1
+ tau           3   1.07565904              42          54
+ #popped           4           1
+ #selectset contacts        1093
+ selectset done           1
+ eigen done           1
+ tau           5  0.675914288              17
+ #popped           7           1
+ #selectset contacts        1093
+ selectset done           1
+ eigen done           1
+ tau           7  0.412499279              42
+ #popped           8           2
+ #selectset contacts        1093
+ selectset done           2
+ eigen done           2
+ tau           9  0.987166047              28
+ #popped           9           1
+ #selectset contacts        1093
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1093
+ selectset done           0
+ eigen done           0
+ tau          11   1.04777110              84
+ #popped          12           1
+ #selectset contacts        1093
+ selectset done           1
+ eigen done           1
+ tau          13  0.384231538              74
+ #popped          13           0
+ #selectset contacts        1093
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+           0
+         124
+         124  residues read 5MGS.dssp                                                   
+  grow short strand           9          11
+  grow short strand          14          18
+  grow short strand          38          39
+  grow short strand          74          77
+  grow short strand          98         102
+  grow short strand         107         111
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4 10  5  6  7  8  9
+   2     1  4  5  6  1  2  3  4 10  5
+   3     1 12 13  4  6  7  8  9
+   4     2  6  7  5  1  2  3  4 10
+   5     2  0  0  1  5
+   6     4  0  0  2  1  2
+   7     4  8  9  3  3  4 10
+   8     7  0  0  2  3  4
+   9     7  0  0  1 10
+  10     0  0  0  0
+  11     0  0  0  2  3  4
+  12     3 14 15  2  6  7
+  13     3  0  0  2  8  9
+  14    12  0  0  1  6
+  15    12  0  0  1  7
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1 10 11  4  1  6  9
+   4 -   2  6  7  5  2  1  4 10 10
+   5 -   2  0  0  1  1  5  5
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  3  2  3  4 10 10
+   8 -   7  0  0  2  1  3  4
+   9 -   7  0  0  1  1 10 10
+  10 -   3 12 13  2  1  6  7
+  11 -   3  0  0  2  1  8  9
+  12 -  10  0  0  1  1  6  6
+  13 -  10  0  0  1  1  7  7
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7366  CA BARG H 102 
+ Alternate location indication is not blank or A, ignore atom: 7370  CB BARG H 102 
+ Alternate location indication is not blank or A, ignore atom: 7372  CG BARG H 102 
+ Alternate location indication is not blank or A, ignore atom: 7374  CD BARG H 102 
+ Alternate location indication is not blank or A, ignore atom: 7376  NE BARG H 102 
+ Alternate location indication is not blank or A, ignore atom: 7378  CZ BARG H 102 
+ Alternate location indication is not blank or A, ignore atom: 7380  NH1BARG H 102 
+ Alternate location indication is not blank or A, ignore atom: 7382  NH2BARG H 102 
+ Alternate location indication is not blank or A, ignore atom: 7495  CA BASN H 116 
+ Alternate location indication is not blank or A, ignore atom: 7499  CB BASN H 116 
+ Alternate location indication is not blank or A, ignore atom: 7501  CG BASN H 116 
+ Alternate location indication is not blank or A, ignore atom: 7503  OD1BASN H 116 
+ Alternate location indication is not blank or A, ignore atom: 7505  ND2BASN H 116 
+ Alternate location indication is not blank or A, ignore atom: 7886  CA BASN H 164 
+ Alternate location indication is not blank or A, ignore atom: 7890  CB BASN H 164 
+ Alternate location indication is not blank or A, ignore atom: 7892  CG BASN H 164 
+ Alternate location indication is not blank or A, ignore atom: 7894  OD1BASN H 164 
+ Alternate location indication is not blank or A, ignore atom: 7896  ND2BASN H 164 
+
+Total number of residues read in:            129
+Total number of atoms read in:              1058
+Total number of ignored atom records:        199
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HARLOS,      
+  Reading DSSP file
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+         129  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1105
+ selectset done           0
+ eigen done           0
+ tau           1   1.29522955              65         115
+ #popped           2           1
+ #selectset contacts        1105
+ selectset done           1
+ eigen done           1
+ tau           3  0.799125791              17
+ #popped           5           1
+ #selectset contacts        1105
+ selectset done           1
+ eigen done           1
+ tau           5  0.473012060              40
+ #popped           6           2
+ #selectset contacts        1105
+ selectset done           2
+ eigen done           2
+ tau           7  0.932345212              29
+ #popped           7           1
+ #selectset contacts        1105
+ selectset done           1
+ eigen done           1
+ tau           9   1.65753686              55
+ #popped          11           1
+ #selectset contacts        1105
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1105
+ selectset done           0
+ eigen done           0
+ tau          11   1.17554796              85
+ #popped          12           1
+ #selectset contacts        1105
+ selectset done           1
+ eigen done           1
+ tau          13  0.342950463              75
+ #popped          13           0
+ #selectset contacts        1105
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    IMMUNE SYSTEM                           22-NOV-16   5MGS              COMPND   2 MOLECULE: KILLER CELL LECTIN-LIKE RECEPTOR SUBFAMILY B MEMB          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    T.SKALOVA,J.BLAHA,J.STRANSKY,T.KOVAL,J.HASEK,Z.YUGUANG,K.HAR          
+           0
+         129
+         129  residues read 5MGS.dssp                                                   
+  grow short strand          10          12
+  grow short strand          15          19
+  grow short strand          39          40
+  grow short strand          75          78
+  grow short strand          99         103
+  grow short strand         108         112
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5 10  6  7  8  9
+   2     1  4  5  6  1  2  3  4  5 10
+   3     1 12 13  4  6  7  8  9
+   4     2  0  0  2  1  2
+   5     2  6  7  4  3  4  5 10
+   6     5  0  0  2  3  4
+   7     5 10 11  2  5 10
+   8     0  0  0  0
+   9     0  0  0  2  3  4
+  10     7  0  0  1  5
+  11     7  0  0  1 10
+  12     3 14 15  2  6  7
+  13     3  0  0  2  8  9
+  14    12  0  0  1  6
+  15    12  0  0  1  7
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  2  1  5 10 10
+   3 -   1 10 11  4  1  6  9
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  4  2  3  5 10 10
+   6 -   5  0  0  2  1  3  4
+   7 -   5  8  9  2  2  5  5 10 10
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  1  1 10 10
+  10 -   3 12 13  2  1  6  7
+  11 -   3  0  0  2  1  8  9
+  12 -  10  0  0  1  1  6  6
+  13 -  10  0  0  1  1  7  7
+
+ CHAIN : 5MGSA
+ CHAIN : 5MGSB
+ CHAIN : 5MGSC
+ CHAIN : 5MGSD
+ CHAIN : 5MGSE
+ CHAIN : 5MGSF
+ CHAIN : 5MGSG
+ CHAIN : 5MGSH
+

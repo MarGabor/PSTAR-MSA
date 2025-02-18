@@ -1,0 +1,148 @@
+A length: 182
+# 1 chains A
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  983  CD BARG A 149 
+ Alternate location indication is not blank or A, ignore atom:  985  NE BARG A 149 
+ Alternate location indication is not blank or A, ignore atom:  987  CZ BARG A 149 
+ Alternate location indication is not blank or A, ignore atom:  989  NH1BARG A 149 
+ Alternate location indication is not blank or A, ignore atom:  991  NH2BARG A 149 
+ Alternate location indication is not blank or A, ignore atom: 1106  CD BARG A 164 
+ Alternate location indication is not blank or A, ignore atom: 1108  NE BARG A 164 
+ Alternate location indication is not blank or A, ignore atom: 1110  CZ BARG A 164 
+ Alternate location indication is not blank or A, ignore atom: 1112  NH1BARG A 164 
+ Alternate location indication is not blank or A, ignore atom: 1114  NH2BARG A 164 
+
+Total number of residues read in:            182
+Total number of atoms read in:              1403
+Total number of ignored atom records:        410
+ HEADER    ISOMERASE                               26-JUN-02   1H0P              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    N.C.PICKEN,S.ESCHENLAUER,P.TAYLOR,A.P.PAGE,M.D.WALKINSHAW             
+  Reading DSSP file
+ HEADER    ISOMERASE                               26-JUN-02   1H0P              COMPND   2 MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE 5;                     SOURCE   2 ORGANISM_SCIENTIFIC: CAENORHABDITIS ELEGANS;                         AUTHOR    N.C.PICKEN,S.ESCHENLAUER,P.TAYLOR,A.P.PAGE,M.D.WALKINSHAW             
+         182  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1671
+ selectset done           0
+ eigen done           0
+ tau           1  0.819713652              10          23          40          55          68          79         155         165
+ #popped           2           1
+ #selectset contacts        1671
+ selectset done           1
+ eigen done           1
+ tau           3   1.78777373             137         155
+ #popped           4           1
+ #selectset contacts        1671
+ selectset done           1
+ eigen done           1
+ tau           5  0.999862254              29          40          68          92         103         114
+ #popped           6           2
+ #selectset contacts        1671
+ selectset done           2
+ eigen done           2
+ tau           7  0.712843657              29          68
+ #popped           8           2
+ #selectset contacts        1671
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           7           1
+ #selectset contacts        1671
+ selectset done           1
+ eigen done           1
+ tau           9  0.661004424              92
+ #popped          10           1
+ #selectset contacts        1671
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1671
+ selectset done           0
+ eigen done           0
+ tau          11   5.14265919              55          79
+ #popped          12           0
+ #selectset contacts        1671
+ selectset done           0
+ eigen done           0
+ tau          13  0.475886524              23
+ #popped          15           0
+ #selectset contacts        1671
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ISOMERASE                               26-JUN-02   1H0P              COMPND   2 MOLECULE: PEPTIDYL-PROLYL CIS-TRANS ISOMERASE 5;                     SOURCE   2 ORGANISM_SCIENTIFIC: CAENORHABDITIS ELEGANS;                         AUTHOR    N.C.PICKEN,S.ESCHENLAUER,P.TAYLOR,A.P.PAGE,M.D.WALKINSHAW             
+           0
+         182
+         182  residues read 1H0P.dssp                                                   
+  grow short strand          58          60
+  grow short strand          64          67
+  grow short strand         100         103
+  grow short strand         115         118
+  exclude short helix         123         125
+  grow short strand         150         151
+  grow short strand         155         156
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  6  7  8 12  4  5  3  9 10  2 11
+   2     1  4  5 10  1  6  7  8 12  4  5  3  9 10
+   3     1 14 15  2  2 11
+   4     2  6  7  8  1  6  7  8 12  4  5  3
+   5     2  0  0  2  9 10
+   6     4  8  9  7  1  6  7  8 12  4  5
+   7     4  0  0  1  3
+   8     6  0  0  5  1  6  7  8 12
+   9     6  0  0  2  4  5
+  10     0  0  0  1  3
+  11     0  0  0  0
+  12     0  0  0  2  2 11
+  13     0  0  0  0
+  14     3  0  0  1  2
+  15     3  0  0  1 11
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5 10  3  1  1  3 10 12 12
+   3 -   1 10 11  2  2  2  2 11 11
+   4 -   2  6  7  8  3  1  1  3  8 12 12
+   5 -   2  0  0  2  1  9 10
+   6 -   4  8  9  7  3  1  1  4  8 12 12
+   7 -   4  0  0  1  1  3  3
+   8 -   6  0  0  5  3  1  1  6  8 12 12
+   9 -   6  0  0  2  1  4  5
+  10 -   3  0  0  1  1  2  2
+  11 -   3  0  0  1  1 11 11
+
+ CHAIN : 1H0PA
+

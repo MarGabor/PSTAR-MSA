@@ -1,0 +1,5211 @@
+A length: 161
+B length: 79
+C length: 112
+D length: 89
+E length: 232
+G length: 110
+H length: 487
+X length: 603
+J length: 177
+K length: 170
+L length: 373
+M length: 301
+N length: 176
+a length: 161
+b length: 79
+c length: 112
+d length: 89
+e length: 232
+g length: 110
+h length: 487
+x length: 603
+j length: 177
+k length: 170
+l length: 373
+m length: 301
+n length: 176
+# 26 chains A B C D E G H J K L M N X a b c d e g h j k l m n x
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1300
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1301
+ selectset done           0
+ eigen done           0
+ tau           1   10.1664562              52
+ #popped           2           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau           3   1.19932365              41
+ #popped           4           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau           5   2.28549862              20
+ #popped           6           2
+ #selectset contacts        1301
+ selectset done           2
+ eigen done           2
+ tau           7  0.872438848              10
+ #popped           7           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau           9  0.849092245              30
+ #popped           3           0
+ #selectset contacts        1301
+ selectset done           0
+ eigen done           0
+ tau          11   2.05844712              93         133
+ #popped          12           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau          13   2.06733084              73         139
+ #popped          14           2
+ #selectset contacts        1301
+ selectset done           2
+ eigen done           2
+ tau          15   2.34018040              73         150
+ #popped          16           2
+ #selectset contacts        1301
+ selectset done           2
+ eigen done           2
+ tau          17   1.07908416              73
+ #popped          18           2
+ #selectset contacts        1301
+ selectset done           2
+ eigen done           2
+ tau          19   1.04973543              63
+ #popped          15           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau          21   2.15483999              83
+ #popped          13           0
+ #selectset contacts        1301
+ selectset done           0
+ eigen done           0
+ tau          23  0.782222211             103         121
+ #popped          24           0
+ #selectset contacts        1301
+ selectset done           0
+ eigen done           0
+ tau          25  0.496342748             103
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         161
+         161  residues read 6U8Y.dssp                                                   
+  grow short strand          96          98
+  grow short strand         121         122
+  grow short strand         129         133
+  exclude short helix         154         157
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  8  6  7
+   2     1  6  7  2  1  2
+   3     1 12 13  6  3  4  5  8  6  7
+   4     0  0  0  2  1  2
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  0  0  1  2
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  1  2
+  12     3 20 21  2  3  4
+  13     3 24 25  4  5  8  6  7
+  14     0  0  0  2  3  4
+  15     0  0  0  0
+  16     0  0  0  2  3  4
+  17     0  0  0  0
+  18     0  0  0  2  3  4
+  19     0  0  0  0
+  20    12  0  0  1  3
+  21    12  0  0  1  4
+  22     0  0  0  0
+  23     0  0  0  0
+  24    13 26 27  2  5  8
+  25    13  0  0  2  6  7
+  26    24  0  0  1  5
+  27    24  0  0  1  8
+   1 +   0  2  3  8  1  1  8
+   2 *   1  4  5  2  1  1  2
+   3 *   1  6  7  6  1  3  8
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  8  9  2  1  3  4
+   7 -   3 10 11  4  1  5  8
+   8 -   6  0  0  1  1  3  3
+   9 -   6  0  0  1  1  4  4
+  10 -   7 12 13  2  2  5  5  8  8
+  11 -   7  0  0  2  1  6  7
+  12 -  10  0  0  1  1  5  5
+  13 -  10  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             79
+Total number of atoms read in:               624
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+          79  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         673
+ selectset done           0
+ eigen done           0
+ tau           1   2.83158517              21
+ #popped           2           1
+ #selectset contacts         673
+ selectset done           1
+ eigen done           1
+ tau           3  0.933645070              11
+ #popped           3           0
+ #selectset contacts         673
+ selectset done           0
+ eigen done           0
+ tau           5   1.65693843              66
+ #popped           6           0
+ #selectset contacts         673
+ selectset done           0
+ eigen done           0
+ tau           7   1.76690698              35
+ #popped           9           0
+ #selectset contacts         673
+ selectset done           0
+ eigen done           0
+ tau           9   1.39718187              52
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+          79
+          79  residues read 6U8Y.dssp                                                   
+  exclude short helix          17          20
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  3  1  2  3
+   2     1  0  0  1  1
+   3     1 10 11  2  2  3
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0  2  2  3
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  2  2  3
+  10     3  0  0  1  2
+  11     3  0  0  1  3
+   1 *   0  2  3  3  1  1  3
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  2  1  2  3
+   4 -   3  0  0  1  1  2  2
+   5 -   3  0  0  1  1  3  3
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            112
+Total number of atoms read in:               858
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         112  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         976
+ selectset done           0
+ eigen done           0
+ tau           1   3.40872931              99
+ #popped           2           0
+ #selectset contacts         976
+ selectset done           0
+ eigen done           0
+ tau           3   2.09037375              23          37          77
+ #popped           4           1
+ #selectset contacts         976
+ selectset done           1
+ eigen done           1
+ tau           5   1.92353678              58
+ #popped           6           1
+ #selectset contacts         976
+ selectset done           1
+ eigen done           1
+ tau           7   1.11821079              23
+ #popped           8           2
+ #selectset contacts         976
+ selectset done           2
+ eigen done           2
+ tau           9   1.02666664              10
+ #popped           9           1
+ #selectset contacts         976
+ selectset done           1
+ eigen done           1
+ tau          11  0.760869622              47
+ #popped           5           0
+ #selectset contacts         976
+ selectset done           0
+ eigen done           0
+ tau          13   1.22362745              37          89
+ #popped          14           0
+ #selectset contacts         976
+ selectset done           0
+ eigen done           0
+ tau          15   2.27922082              37
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         112
+         112  residues read 6U8Y.dssp                                                   
+  grow short helix         103         109
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  3  4  2  5
+   2     1  4  5  4  1  3  4  2
+   3     1  0  0  1  5
+   4     2  6  7  3  1  3  4
+   5     2  0  0  1  2
+   6     4  8  9  2  1  3
+   7     4  0  0  1  4
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  1  1
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     0  0  0  1  2
+  17     0  0  0  0
+   1 +   0  2  3  5  1  1  5
+   2 *   1  4  5  4  1  1  4
+   3 =   1  0  0  1  1  5  5
+   4 -   2  6  7  3  2  1  1  3  4
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             89
+Total number of atoms read in:               685
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+          89  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         721
+ selectset done           0
+ eigen done           0
+ tau           1   3.27119112              61
+ #popped           2           1
+ #selectset contacts         721
+ selectset done           1
+ eigen done           1
+ tau           3   2.49934626              24
+ #popped           4           2
+ #selectset contacts         721
+ selectset done           2
+ eigen done           2
+ tau           5   1.04497349              10
+ #popped           5           1
+ #selectset contacts         721
+ selectset done           1
+ eigen done           1
+ tau           7   1.14306080              36
+ #popped           9           1
+ #selectset contacts         721
+ selectset done           1
+ eigen done           1
+ tau           9  0.953378379              48
+ #popped           3           0
+ #selectset contacts         721
+ selectset done           0
+ eigen done           0
+ tau          11   1.58226037              72
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+          89
+          89  residues read 6U8Y.dssp                                                   
+  exclude short helix          69          72
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5  3  1  2  3
+   2     0  0  0  3  1  2  3
+   3     0  0  0  0
+   4     1  0  0  1  1
+   5     1  8  9  2  2  3
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     5  0  0  1  2
+   9     5  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  1  3
+  12     0  0  0  0
+  13     0  0  0  0
+   1 +   0  2  3  3  1  1  3
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  2  1  2  3
+   4 -   3  0  0  1  1  2  2
+   5 -   3  0  0  1  1  3  3
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            232
+Total number of atoms read in:              1792
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           9
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1948
+ selectset done           0
+ eigen done           0
+ tau           1   14.6126366              28
+ #popped           2           1
+ #selectset contacts        1948
+ selectset done           1
+ eigen done           1
+ tau           3   1.22685182              14
+ #popped           3           0
+ #selectset contacts        1948
+ selectset done           0
+ eigen done           0
+ tau           5   2.76764154              60         176         204
+ #popped           6           1
+ #selectset contacts        1948
+ selectset done           1
+ eigen done           1
+ tau           7   5.09872437              60
+ #popped           8           2
+ #selectset contacts        1948
+ selectset done           2
+ eigen done           2
+ tau           9   1.74483967              44
+ #popped           9           1
+ #selectset contacts        1948
+ selectset done           1
+ eigen done           1
+ tau          11   2.31831217             191
+ #popped           7           0
+ #selectset contacts        1948
+ selectset done           0
+ eigen done           0
+ tau          13   1.46732378              81         112         132         156         220
+ #popped          14           1
+ #selectset contacts        1948
+ selectset done           1
+ eigen done           1
+ tau          15   2.89847660              81         132
+ #popped          16           2
+ #selectset contacts        1948
+ selectset done           2
+ eigen done           2
+ tau          17   2.43114924              81
+ #popped          18           3
+ #selectset contacts        1948
+ selectset done           3
+ eigen done           3
+ tau          19  0.772575200              71
+ #popped          19           2
+ #selectset contacts        1948
+ selectset done           2
+ eigen done           2
+ tau          21   2.03544068             176
+ #popped          22           2
+ #selectset contacts        1948
+ selectset done           2
+ eigen done           2
+ tau          23  0.807948172             166
+ #popped          17           1
+ #selectset contacts        1948
+ selectset done           1
+ eigen done           1
+ tau          25  0.955201745             122
+ #popped          15           0
+ #selectset contacts        1948
+ selectset done           0
+ eigen done           0
+ tau          27   2.59771466              93         112
+ #popped          28           0
+ #selectset contacts        1948
+ selectset done           0
+ eigen done           0
+ tau          29   1.13725924              93         146
+ #popped          30           0
+ #selectset contacts        1948
+ selectset done           0
+ eigen done           0
+ tau          31   3.36817646              93         156
+ #popped          32           0
+ #selectset contacts        1948
+ selectset done           0
+ eigen done           0
+ tau          33  0.776250005              93
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         232
+         232  residues read 6U8Y.dssp                                                   
+  exclude short helix          35          40
+  exclude short helix          52          57
+  exclude short helix         174         176
+  exclude short helix         200         202
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  2  5  6  4  3
+   2     1  0  0  1  1
+   3     1 14 15  5  2  5  6  4  3
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  5  2  5  6  4  3
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+  14     3 18 19  3  2  5  6
+  15     3 28 29  2  4  3
+  16     0  0  0  3  2  5  6
+  17     0  0  0  0
+  18    14  0  0  1  2
+  19    14 22 23  2  5  6
+  20     0  0  0  0
+  21     0  0  0  1  2
+  22    19  0  0  1  5
+  23    19  0  0  1  6
+  24     0  0  0  1  5
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28    15  0  0  1  4
+  29    15  0  0  1  3
+  30     0  0  0  0
+  31     0  0  0  1  4
+  32     0  0  0  0
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  0
+   1 +   0  2  3  6  1  1  6
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5  5  1  2  6
+   4 -   3  6  7  3  2  2  2  5  6
+   5 -   3 10 11  2  1  3  4
+   6 -   4  0  0  1  1  2  2
+   7 -   4  8  9  2  1  5  6
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  1  1  6  6
+  10 -   5  0  0  1  1  4  4
+  11 -   5  0  0  1  1  3  3
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            110
+Total number of atoms read in:               816
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         110  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         908
+ selectset done           0
+ eigen done           0
+ tau           1   2.80042005              76
+ #popped           2           1
+ #selectset contacts         908
+ selectset done           1
+ eigen done           1
+ tau           3   5.66129017              46
+ #popped           4           2
+ #selectset contacts         908
+ selectset done           2
+ eigen done           2
+ tau           5  0.923616767              13          36
+ #popped           6           3
+ #selectset contacts         908
+ selectset done           3
+ eigen done           3
+ tau           7   1.56321847              13
+ #popped           7           2
+ #selectset contacts         908
+ selectset done           2
+ eigen done           2
+ tau           9   1.14481127              23
+ #popped           5           1
+ #selectset contacts         908
+ selectset done           1
+ eigen done           1
+ tau          11   1.35845411              66
+ #popped          12           1
+ #selectset contacts         908
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts         908
+ selectset done           0
+ eigen done           0
+ tau          13   2.01065898             100
+ #popped          14           0
+ #selectset contacts         908
+ selectset done           0
+ eigen done           0
+ tau          15   1.13774443              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         110
+         110  residues read 6U8Y.dssp                                                   
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  4  1  2  3  4
+   2     1  4  5  3  1  2  3
+   3     1  0  0  1  4
+   4     2  6  7  2  1  2
+   5     2  0  0  1  3
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  1  2
+  12     0  0  0  0
+  13     0  0  0  1  3
+  14     0  0  0  1  4
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  4
+   1 +   0  2  3  4  1  1  4
+   2 *   1  4  5  3  1  1  3
+   3 =   1  0  0  1  1  4  4
+   4 -   2  6  7  2  1  1  2
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            487
+Total number of atoms read in:              3696
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         487  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau           1   4.04663134             268
+ #popped           2           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau           3   2.21440673             191
+ #popped           4           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau           5   1.73796809              54          75         124         134         168
+ #popped           6           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau           7   3.97252154              99
+ #popped           8           4
+ #selectset contacts        4679
+ selectset done           4
+ eigen done           4
+ tau           9   3.05076241              25
+ #popped          10           5
+ #selectset contacts        4679
+ selectset done           5
+ eigen done           5
+ tau          11   1.00760865              15
+ #popped          11           4
+ #selectset contacts        4679
+ selectset done           4
+ eigen done           4
+ tau          13   1.89732873              54
+ #popped          14           5
+ #selectset contacts        4679
+ selectset done           5
+ eigen done           5
+ tau          15   1.27897000              44
+ #popped          15           4
+ #selectset contacts        4679
+ selectset done           4
+ eigen done           4
+ tau          17  0.995159328              86
+ #popped           9           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          19   1.70098579             124
+ #popped          20           4
+ #selectset contacts        4679
+ selectset done           4
+ eigen done           4
+ tau          21   1.38259602             109
+ #popped          21           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          23   1.09003985             147
+ #popped          25           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          25   1.08496237             158
+ #popped           7           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          27   2.19810033              75
+ #popped          28           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          29  0.364642411              65
+ #popped          29           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          31  0.777230084             179
+ #popped          32           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          33   2.13888884             134
+ #popped           5           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          35   1.98435271             215         252
+ #popped          36           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          37   1.45543885             203
+ #popped          39           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          39   2.79254198             215
+ #popped          37           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          41   1.75700772             231
+ #popped          43           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          43  0.654535890             242
+ #popped           3           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          45   3.71685719             477
+ #popped          46           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          47   2.02437782             460
+ #popped          48           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          49   1.95330811             335         379         421
+ #popped          50           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          51   1.70916665             285
+ #popped          53           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          53   1.70312142             316         407
+ #popped          54           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          55   1.88465178             316
+ #popped          56           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          57   1.22666669             302
+ #popped          55           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          59   1.26184940             394
+ #popped          60           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          61   1.92909873             335
+ #popped          51           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          63   1.96623635             441
+ #popped          64           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          65   1.86868680             352
+ #popped          67           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          67   1.45945954             379         431
+ #popped          68           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          69   1.92707539             367         379
+ #popped          70           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          71   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         487
+         487  residues read 6U8Y.dssp                                                   
+  exclude short helix           2           4
+  grow short strand          58          61
+  grow short strand          72          75
+  exclude short helix         189         193
+  exclude short helix         228         231
+  exclude short helix         356         358
+  exclude short helix         420         423
+  exclude short helix         427         430
+  exclude short helix         447         452
+  exclude short helix         480         484
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  5  6  7  3  4  8  9 11 10 12 13 17 16 14 15 18
+   2     1  4  5 11  1  2  5  6  7  3  4  8  9 11 10
+   3     1 48 49  7 12 13 17 16 14 15 18
+   4     2  6  7  8  1  2  5  6  7  3  4  8
+   5     2 36 37  3  9 11 10
+   6     4  8  9  5  1  2  5  6  7
+   7     4 28 29  3  3  4  8
+   8     6 10 11  3  1  2  5
+   9     6 20 21  2  6  7
+  10     8  0  0  1  1
+  11     8 14 15  2  2  5
+  12     0  0  0  1  1
+  13     0  0  0  0
+  14    11  0  0  1  2
+  15    11  0  0  1  5
+  16     0  0  0  1  2
+  17     0  0  0  0
+  18     0  0  0  1  5
+  19     0  0  0  0
+  20     9  0  0  1  6
+  21     9  0  0  1  7
+  22     0  0  0  0
+  23     0  0  0  1  6
+  24     0  0  0  1  7
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28     7 30 31  2  3  4
+  29     7  0  0  1  8
+  30    28  0  0  1  3
+  31    28  0  0  1  4
+  32     0  0  0  1  8
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  1  8
+  36     5 40 41  2  9 11
+  37     5  0  0  1 10
+  38     0  0  0  0
+  39     0  0  0  2  9 11
+  40    36  0  0  1  9
+  41    36  0  0  1 11
+  42     0  0  0  0
+  43     0  0  0  1 10
+  44     0  0  0  1 10
+  45     0  0  0  0
+  46     0  0  0  7 12 13 17 16 14 15 18
+  47     0  0  0  0
+  48     3 50 51  6 12 13 17 16 14 15
+  49     3  0  0  1 18
+  50    48 52 53  4 12 13 17 16
+  51    48 66 67  2 14 15
+  52    50  0  0  1 12
+  53    50 54 55  3 13 17 16
+  54    53 56 57  2 13 17
+  55    53  0  0  1 16
+  56    54  0  0  1 13
+  57    54  0  0  1 17
+  58     0  0  0  0
+  59     0  0  0  1 13
+  60     0  0  0  1 16
+  61     0  0  0  0
+  62     0  0  0  0
+  63     0  0  0  1 16
+  64     0  0  0  2 14 15
+  65     0  0  0  0
+  66    51  0  0  1 14
+  67    51  0  0  1 15
+  68     0  0  0  1 15
+  69     0  0  0  0
+  70     0  0  0  0
+  71     0  0  0  1 15
+   1 +   0  2  3 18  1  1 18
+   2 *   1  4  5 11  1  1 11
+   3 +   1 24 25  7  1 12 18
+   4 -   2  6  7  8  1  1  8
+   5 -   2 20 21  3  1  9 11
+   6 -   4  8  9  5  2  1  2  5  7
+   7 -   4 16 17  3  2  3  4  8  8
+   8 -   6 10 11  3  2  1  2  5  5
+   9 -   6 14 15  2  1  6  7
+  10 -   8  0  0  1  1  1  1
+  11 -   8 12 13  2  2  2  2  5  5
+  12 -  11  0  0  1  1  2  2
+  13 -  11  0  0  1  1  5  5
+  14 -   9  0  0  1  1  6  6
+  15 -   9  0  0  1  1  7  7
+  16 -   7 18 19  2  1  3  4
+  17 -   7  0  0  1  1  8  8
+  18 -  16  0  0  1  1  3  3
+  19 -  16  0  0  1  1  4  4
+  20 -   5 22 23  2  2  9  9 11 11
+  21 -   5  0  0  1  1 10 10
+  22 -  20  0  0  1  1  9  9
+  23 -  20  0  0  1  1 11 11
+  24 -   3 26 27  6  1 12 17
+  25 -   3  0  0  1  1 18 18
+  26 -  24 28 29  4  2 12 13 16 17
+  27 -  24 34 35  2  1 14 15
+  28 -  26  0  0  1  1 12 12
+  29 -  26 30 31  3  2 13 13 16 17
+  30 -  29 32 33  2  2 13 13 17 17
+  31 -  29  0  0  1  1 16 16
+  32 -  30  0  0  1  1 13 13
+  33 -  30  0  0  1  1 17 17
+  34 -  27  0  0  1  1 14 14
+  35 -  27  0  0  1  1 15 15
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            177
+Total number of atoms read in:              1462
+Total number of ignored atom records:          8
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         177  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1488
+ selectset done           0
+ eigen done           0
+ tau           1   2.85847640             148
+ #popped           2           1
+ #selectset contacts        1488
+ selectset done           1
+ eigen done           1
+ tau           3   2.66469955              11
+ #popped           5           1
+ #selectset contacts        1488
+ selectset done           1
+ eigen done           1
+ tau           5   2.15580559              23          42
+ #popped           6           1
+ #selectset contacts        1488
+ selectset done           1
+ eigen done           1
+ tau           7   1.87207234              85         107
+ #popped           8           2
+ #selectset contacts        1488
+ selectset done           2
+ eigen done           2
+ tau           9   1.24954617             127
+ #popped          10           3
+ #selectset contacts        1488
+ selectset done           3
+ eigen done           3
+ tau          11   1.69891119             117
+ #popped          12           3
+ #selectset contacts        1488
+ selectset done           3
+ eigen done           3
+ tau          13   1.02323031              52
+ #popped          14           4
+ #selectset contacts        1488
+ selectset done           4
+ eigen done           4
+ tau          15  0.982248545              23
+ #popped          15           3
+ #selectset contacts        1488
+ selectset done           3
+ eigen done           3
+ tau          17  0.788925588              74
+ #popped          18           4
+ #selectset contacts        1488
+ selectset done           4
+ eigen done           4
+ tau          19   1.06895661              62
+ #popped          19           3
+ #selectset contacts        1488
+ selectset done           3
+ eigen done           3
+ tau          21   0.00000000    
+ #popped          11           2
+ #selectset contacts        1488
+ selectset done           2
+ eigen done           2
+ tau          21   1.30865824             138
+ #popped           9           1
+ #selectset contacts        1488
+ selectset done           1
+ eigen done           1
+ tau          23   1.43258417              96
+ #popped           3           0
+ #selectset contacts        1488
+ selectset done           0
+ eigen done           0
+ tau          25   1.99595964             165
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         177
+         177  residues read 6U8Y.dssp                                                   
+  grow short helix           3           9
+  grow short strand          15          16
+  exclude short helix          29          31
+  exclude short helix          38          40
+  grow short strand          53          56
+  grow short strand          81          83
+  exclude short helix          94          96
+  exclude short helix         104         106
+  grow short strand         110         114
+  exclude short helix         145         148
+  exclude short helix         165         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  6  7  8
+   2     1  4  5  7  1  2  3  4  5  6  7
+   3     1  0  0  1  8
+   4     2  0  0  1  1
+   5     2 10 11  6  2  3  4  5  6  7
+   6     0  0  0  6  2  3  4  5  6  7
+   7     0  0  0  0
+   8     0  0  0  6  2  3  4  5  6  7
+   9     0  0  0  0
+  10     5 14 15  5  2  3  4  5  6
+  11     5  0  0  1  7
+  12     0  0  0  5  2  3  4  5  6
+  13     0  0  0  0
+  14    10  0  0  1  2
+  15    10 18 19  4  3  4  5  6
+  16     0  0  0  1  2
+  17     0  0  0  0
+  18    15 20 21  2  3  4
+  19    15  0  0  2  5  6
+  20    18  0  0  1  3
+  21    18  0  0  1  4
+  22     0  0  0  1  7
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  1  8
+  27     0  0  0  0
+   1 +   0  2  3  8  1  1  8
+   2 +   1  4  5  7  1  1  7
+   3 =   1  0  0  1  1  8  8
+   4 =   2  0  0  1  1  1  1
+   5 *   2  6  7  6  1  2  7
+   6 -   5  8  9  5  1  2  6
+   7 -   5  0  0  1  1  7  7
+   8 -   6  0  0  1  1  2  2
+   9 -   6 10 11  4  1  3  6
+  10 -   9 12 13  2  1  3  4
+  11 -   9  0  0  2  1  5  6
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  1  1  4  4
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            170
+Total number of atoms read in:              1437
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:         163
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         170  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           1   5.47300339             159
+ #popped           2           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           3   2.79210901             145
+ #popped           4           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           5   2.42162418              29
+ #popped           6           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau           7   2.05284548              18
+ #popped           7           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           9   2.10362029              87
+ #popped          10           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau          11   1.39946020              49
+ #popped          12           2
+ #selectset contacts        1384
+ selectset done           2
+ eigen done           2
+ tau          13   1.11842108              39
+ #popped          13           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau          15  0.422774136              63
+ #popped          17           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau          17  0.260932356              76
+ #popped          11           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau          19   1.25119865             126
+ #popped          20           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau          21   1.11524439              97         115
+ #popped          22           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         170
+         170  residues read 6U8Y.dssp                                                   
+  grow short strand          19          22
+  grow short strand          26          29
+  exclude short helix          33          35
+  grow short helix          40          46
+  grow short strand          81          83
+  grow short strand          86          87
+  grow short strand          94          95
+  exclude short helix         104         106
+  grow short strand         119         120
+  exclude short helix         152         155
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 11  1  2  3  4  5  6  7  8  9 11 10
+   2     0  0  0 11  1  2  3  4  5  6  7  8  9 11 10
+   3     0  0  0  0
+   4     0  0  0 11  1  2  3  4  5  6  7  8  9 11 10
+   5     0  0  0  0
+   6     1  8  9  3  1  2  3
+   7     1 10 11  8  4  5  6  7  8  9 11 10
+   8     6  0  0  1  1
+   9     6  0  0  2  2  3
+  10     7 12 13  4  4  5  6  7
+  11     7 22 23  4  8  9 11 10
+  12    10  0  0  1  4
+  13    10 16 17  3  5  6  7
+  14     0  0  0  0
+  15     0  0  0  1  4
+  16    13  0  0  1  5
+  17    13 18 19  2  6  7
+  18    17  0  0  1  6
+  19    17  0  0  1  7
+  20     0  0  0  4  8  9 11 10
+  21     0  0  0  0
+  22    11  0  0  3  8  9 11
+  23    11  0  0  1 10
+   1 +   0  2  3 11  1  1 11
+   2 -   1  4  5  3  1  1  3
+   3 -   1  6  7  8  1  4 11
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  2  1  2  3
+   6 -   3  8  9  4  1  4  7
+   7 -   3 14 15  4  1  8 11
+   8 -   6  0  0  1  1  4  4
+   9 -   6 10 11  3  1  5  7
+  10 -   9  0  0  1  1  5  5
+  11 -   9 12 13  2  1  6  7
+  12 -  11  0  0  1  1  6  6
+  13 -  11  0  0  1  1  7  7
+  14 -   7  0  0  3  2  8  9 11 11
+  15 -   7  0  0  1  1 10 10
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            373
+Total number of atoms read in:              3010
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           5
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         373  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau           1   2.82329655              42
+ #popped           2           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau           3   1.12104785              10
+ #popped           5           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau           5  0.794288278              21
+ #popped           7           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau           7  0.258129090              32
+ #popped           3           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau           9   1.95539188              66         186         228         246         262         293
+ #popped          10           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          11   1.29898667             206         228
+ #popped          12           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          13   1.80048668              66         303
+ #popped          14           3
+ #selectset contacts        3417
+ selectset done           3
+ eigen done           3
+ tau          15   2.09644985             342         363
+ #popped          16           4
+ #selectset contacts        3417
+ selectset done           4
+ eigen done           4
+ tau          17  0.603252888             320         330
+ #popped          18           4
+ #selectset contacts        3417
+ selectset done           4
+ eigen done           4
+ tau          19   2.40861964              66
+ #popped          20           5
+ #selectset contacts        3417
+ selectset done           5
+ eigen done           5
+ tau          21   0.00000000    
+ #popped          21           4
+ #selectset contacts        3417
+ selectset done           4
+ eigen done           4
+ tau          21   0.00000000    
+ #popped          17           3
+ #selectset contacts        3417
+ selectset done           3
+ eigen done           3
+ tau          21   2.30648184             352
+ #popped          15           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          23   999.999023             262
+ #popped          24           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          25   1.04455507             196
+ #popped          27           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          27   0.00000000    
+ #popped          13           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          27   1.41042888             217
+ #popped          11           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          29   2.25238109             282
+ #popped          30           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          31   1.98317838             110         186
+ #popped          32           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          33   1.44874346              81
+ #popped          35           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          35   2.88943172              91
+ #popped          37           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          37   1.19249010             246
+ #popped          38           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          39   1.98075712             110
+ #popped          39           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          41  0.832900465             272
+ #popped          33           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          43   2.05248952             131
+ #popped          44           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          45  0.835879266             121
+ #popped          45           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          47   1.96125281             164
+ #popped          48           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          49   1.49226224             151
+ #popped          50           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          51  0.880264282             141
+ #popped          49           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          53   1.04717624             174
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         373
+         373  residues read 6U8Y.dssp                                                   
+  grow short strand          11          12
+  exclude short helix          64          66
+  exclude short helix         187         190
+  exclude short helix         196         199
+  exclude short helix         230         233
+  exclude short helix         290         292
+  exclude short helix         354         356
+  exclude short helix         358         363
+  exclude short helix         368         370
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  9 10 11  4  5  8  6  7
+   2     1  6  7  3  1  2  3
+   3     1 10 11  8  9 10 11  4  5  8  6  7
+   4     0  0  0  0
+   5     0  0  0  3  1  2  3
+   6     2  0  0  1  1
+   7     2  8  9  2  2  3
+   8     7  0  0  1  2
+   9     7  0  0  1  3
+  10     3 18 19  3  9 10 11
+  11     3 32 33  5  4  5  8  6  7
+  12     0  0  0  3  9 10 11
+  13     0  0  0  0
+  14     0  0  0  3  9 10 11
+  15     0  0  0  0
+  16     0  0  0  3  9 10 11
+  17     0  0  0  0
+  18    10  0  0  2  9 10
+  19    10  0  0  1 11
+  20     0  0  0  0
+  21     0  0  0  2  9 10
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  0
+  30     0  0  0  5  4  5  8  6  7
+  31     0  0  0  0
+  32    11 34 35  3  4  5  8
+  33    11 48 49  2  6  7
+  34    32  0  0  1  4
+  35    32 38 39  2  5  8
+  36     0  0  0  0
+  37     0  0  0  2  5  8
+  38    35  0  0  1  5
+  39    35  0  0  1  8
+  40     0  0  0  1  5
+  41     0  0  0  0
+  42     0  0  0  1  8
+  43     0  0  0  0
+  44     0  0  0  0
+  45     0  0  0  2  6  7
+  46     0  0  0  0
+  47     0  0  0  0
+  48    33  0  0  1  6
+  49    33  0  0  1  7
+  50     0  0  0  1  6
+  51     0  0  0  0
+  52     0  0  0  1  6
+  53     0  0  0  0
+  54     0  0  0  0
+  55     0  0  0  1  7
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  3  1  1  3
+   3 *   1  8  9  8  1  4 11
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  2  3
+   6 -   5  0  0  1  1  2  2
+   7 -   5  0  0  1  1  3  3
+   8 -   3 10 11  3  1  9 11
+   9 -   3 12 13  5  1  4  8
+  10 -   8  0  0  2  1  9 10
+  11 -   8  0  0  1  1 11 11
+  12 -   9 14 15  3  2  4  5  8  8
+  13 -   9 18 19  2  1  6  7
+  14 -  12  0  0  1  1  4  4
+  15 -  12 16 17  2  2  5  5  8  8
+  16 -  15  0  0  1  1  5  5
+  17 -  15  0  0  1  1  8  8
+  18 -  13  0  0  1  1  6  6
+  19 -  13  0  0  1  1  7  7
+
+ CHAIN M
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            301
+Total number of atoms read in:              2319
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         301  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2807
+ selectset done           0
+ eigen done           0
+ tau           1   1.87621319             150
+ #popped           2           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau           3   2.90980482              16          53         136
+ #popped           4           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau           5   8.21858025              16
+ #popped           7           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau           7   2.50281358             116
+ #popped           8           3
+ #selectset contacts        2807
+ selectset done           3
+ eigen done           3
+ tau           9   1.89004874              80          92
+ #popped          10           3
+ #selectset contacts        2807
+ selectset done           3
+ eigen done           3
+ tau          11   1.58254027              80         102
+ #popped          12           3
+ #selectset contacts        2807
+ selectset done           3
+ eigen done           3
+ tau          13   1.74870145              80
+ #popped          14           3
+ #selectset contacts        2807
+ selectset done           3
+ eigen done           3
+ tau          15   2.06266665              64
+ #popped           9           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          17  0.807692289             126
+ #popped           5           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          19   999.999023              53
+ #popped          20           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          21   1.87031245              37
+ #popped          22           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          23  0.834766686              26
+ #popped           3           0
+ #selectset contacts        2807
+ selectset done           0
+ eigen done           0
+ tau          25   2.92044282             275
+ #popped          26           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          27   2.54001498             165
+ #popped          29           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          29   1.55221176             189         210         263
+ #popped          30           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          31   1.83593237             189         226
+ #popped          32           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          33   1.23126340             176
+ #popped          35           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          35   2.02399993             189
+ #popped          37           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          37   1.04492748             243         253
+ #popped          38           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          39  0.999190986             243
+ #popped          31           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          41   1.14004409             200         210
+ #popped          42           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          43   1.07647789             200
+ #popped          27           0
+ #selectset contacts        2807
+ selectset done           0
+ eigen done           0
+ tau          45   1.60694778             286
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         301
+         301  residues read 6U8Y.dssp                                                   
+  grow short helix         105         111
+  exclude short helix         192         197
+  exclude short helix         206         208
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  5  4  6  2  7  8  9 11 10 12
+   2     1  4  5  7  1  3  5  4  6  2  7
+   3     1 26 27  5  8  9 11 10 12
+   4     2  6  7  5  1  3  5  4  6
+   5     2 20 21  2  2  7
+   6     4  0  0  1  1
+   7     4  8  9  4  3  5  4  6
+   8     7 12 13  3  3  5  4
+   9     7  0  0  1  6
+  10     0  0  0  3  3  5  4
+  11     0  0  0  0
+  12     8 14 15  2  3  5
+  13     8  0  0  1  4
+  14    12  0  0  1  3
+  15    12  0  0  1  5
+  16     0  0  0  0
+  17     0  0  0  1  3
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20     5  0  0  1  2
+  21     5  0  0  1  7
+  22     0  0  0  0
+  23     0  0  0  1  2
+  24     0  0  0  0
+  25     0  0  0  0
+  26     3 28 29  4  8  9 11 10
+  27     3  0  0  1 12
+  28    26  0  0  1  8
+  29    26 32 33  3  9 11 10
+  30     0  0  0  3  9 11 10
+  31     0  0  0  0
+  32    29 36 37  2  9 11
+  33    29  0  0  1 10
+  34     0  0  0  0
+  35     0  0  0  2  9 11
+  36    32  0  0  1  9
+  37    32  0  0  1 11
+  38     0  0  0  1 11
+  39     0  0  0  0
+  40     0  0  0  0
+  41     0  0  0  1 11
+  42     0  0  0  0
+  43     0  0  0  0
+  44     0  0  0  0
+  45     0  0  0  0
+  46     0  0  0  0
+  47     0  0  0  1 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  7  1  1  7
+   3 -   1 16 17  5  1  8 12
+   4 -   2  6  7  5  2  1  1  3  6
+   5 -   2 14 15  2  2  2  2  7  7
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  1  3  6
+   8 -   7 10 11  3  1  3  5
+   9 -   7  0  0  1  1  6  6
+  10 -   8 12 13  2  2  3  3  5  5
+  11 -   8  0  0  1  1  4  4
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  1  1  5  5
+  14 -   5  0  0  1  1  2  2
+  15 -   5  0  0  1  1  7  7
+  16 -   3 18 19  4  1  8 11
+  17 -   3  0  0  1  1 12 12
+  18 -  16  0  0  1  1  8  8
+  19 -  16 20 21  3  1  9 11
+  20 -  19 22 23  2  2  9  9 11 11
+  21 -  19  0  0  1  1 10 10
+  22 -  20  0  0  1  1  9  9
+  23 -  20  0  0  1  1 11 11
+
+ CHAIN N
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            176
+Total number of atoms read in:              1484
+Total number of ignored atom records:         17
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau           1   6.28870058              11
+ #popped           3           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau           3   12.6152153              37
+ #popped           4           1
+ #selectset contacts        1274
+ selectset done           1
+ eigen done           1
+ tau           5   3.63657808              26
+ #popped           5           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau           7   1.69687927             104
+ #popped           8           1
+ #selectset contacts        1274
+ selectset done           1
+ eigen done           1
+ tau           9   1.92886293              47
+ #popped          11           1
+ #selectset contacts        1274
+ selectset done           1
+ eigen done           1
+ tau          11  0.531519830              76
+ #popped          12           2
+ #selectset contacts        1274
+ selectset done           2
+ eigen done           2
+ tau          13   3.27934813              58
+ #popped          13           1
+ #selectset contacts        1274
+ selectset done           1
+ eigen done           1
+ tau          15   2.66207576              86
+ #popped           9           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau          17   1.54843807             126         139
+ #popped          18           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau          19  0.783040881             116
+ #popped          21           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau          21  0.653562665             166
+ #popped          22           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         176
+         176  residues read 6U8Y.dssp                                                   
+  exclude short helix          17          21
+  exclude short helix          23          25
+  grow short strand          48          51
+  exclude short helix          62          64
+  grow short strand         101         104
+  grow short strand         110         112
+  exclude short helix         115         117
+  exclude short helix         119         121
+  exclude short helix         128         133
+  grow short strand         156         158
+  grow short strand         168         170
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  8  9  5  1  2  3  4  5
+   2     0  0  0  0
+   3     0  0  0  5  1  2  3  4  5
+   4     0  0  0  0
+   5     0  0  0  5  1  2  3  4  5
+   6     0  0  0  0
+   7     0  0  0  0
+   8     1 12 13  2  1  2
+   9     1 20 21  3  3  4  5
+  10     0  0  0  0
+  11     0  0  0  2  1  2
+  12     8  0  0  1  1
+  13     8  0  0  1  2
+  14     0  0  0  1  1
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  2
+  18     0  0  0  3  3  4  5
+  19     0  0  0  0
+  20     9  0  0  1  3
+  21     9 22 23  2  4  5
+  22    21  0  0  1  4
+  23    21  0  0  1  5
+   1 +   0  2  3  5  1  1  5
+   2 -   1  4  5  2  1  1  2
+   3 -   1  6  7  3  1  3  5
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  0  0  1  1  3  3
+   7 -   3  8  9  2  1  4  5
+   8 -   7  0  0  1  1  4  4
+   9 -   7  0  0  1  1  5  5
+
+ CHAIN X
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            603
+Total number of atoms read in:              4677
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:         508
+  calculate residue outside grid:         511
+  calculate residue outside grid:         512
+  calculate residue outside grid:         513
+  calculate residue outside grid:         514
+  calculate residue outside grid:         515
+  calculate residue outside grid:         530
+  calculate residue outside grid:         534
+  calculate residue outside grid:         535
+  calculate residue outside grid:         579
+  calculate residue outside grid:         580
+  calculate residue outside grid:         581
+  calculate residue outside grid:         582
+  calculate residue outside grid:         583
+  calculate residue outside grid:         584
+  calculate residue outside grid:         585
+  calculate residue outside grid:         586
+  calculate residue outside grid:         587
+  calculate residue outside grid:         588
+  calculate residue outside grid:         589
+  calculate residue outside grid:         590
+  calculate residue outside grid:         591
+  calculate residue outside grid:         592
+  calculate residue outside grid:         593
+  calculate residue outside grid:         594
+  calculate residue outside grid:         595
+  calculate residue outside grid:         596
+  calculate residue outside grid:         597
+  calculate residue outside grid:         598
+  calculate residue outside grid:         599
+  calculate residue outside grid:         600
+  calculate residue outside grid:         601
+  calculate residue outside grid:         602
+  calculate residue outside grid:         603
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         603  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        5641
+ selectset done           0
+ eigen done           0
+ tau           1   1.98152053             509         535
+ #popped           2           1
+ #selectset contacts        5641
+ selectset done           1
+ eigen done           1
+ tau           3   3.58459663             509
+ #popped           4           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau           5   2.11767936             457
+ #popped           6           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau           7   3.46001339             187
+ #popped           8           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau           9   3.29547763             117
+ #popped          10           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          11   1.83897281              50
+ #popped          12           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          13   2.38676691              35
+ #popped          14           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          15   2.41910815              22
+ #popped          16           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          17  0.948557436              11
+ #popped          13           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          19   1.79435480              68
+ #popped          21           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          21   1.13320518              86         105
+ #popped          22           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          23   2.24004340              86
+ #popped          11           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          25   2.80373001             173
+ #popped          26           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          27   1.22086978             163
+ #popped          28           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          29  0.994570613             128         152
+ #popped          30           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          31   1.05321515             128
+ #popped          31           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          33   0.00000000    
+ #popped           9           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau          33   2.03286314             328         380         412
+ #popped          34           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          35   1.64596117             202         234         278         300
+ #popped          36           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          37   2.27572489             202
+ #popped          39           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          39   2.04068494             328
+ #popped          40           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          41   1.35353529             268
+ #popped          42           7
+ #selectset contacts        5641
+ selectset done           7
+ eigen done           7
+ tau          43   3.87774348             248
+ #popped          45           7
+ #selectset contacts        5641
+ selectset done           7
+ eigen done           7
+ tau          45   1.10907674             258
+ #popped          43           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          47   2.08761191             278
+ #popped          49           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          49  0.696200550             318
+ #popped          41           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          51   1.89499259             397
+ #popped          37           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          53   1.97518253             234
+ #popped          54           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          55   1.38211381             212
+ #popped          57           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          57   0.00000000    
+ #popped          55           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          57   0.00000000    
+ #popped          35           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau          57   2.26248360             346         359         380         434
+ #popped          58           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          59   1.57263565             380
+ #popped          60           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          61   2.48288608             346
+ #popped          63           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          63  0.770104051             369
+ #popped          61           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          65  0.925264895             446
+ #popped          59           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau          67   1.41327369             359         422
+ #popped          68           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau          69   0.00000000    
+ #popped           7           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau          69   2.62586808             493
+ #popped          70           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau          71   1.85513508             476
+ #popped           5           1
+ #selectset contacts        5641
+ selectset done           1
+ eigen done           1
+ tau          73   8.53333378             557
+ #popped          74           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau          75   1.08794987             545
+ #popped          75           1
+ #selectset contacts        5641
+ selectset done           1
+ eigen done           1
+ tau          77   3.24964094             582
+ #popped          78           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau          79   1.20485818             571
+ #popped          79           1
+ #selectset contacts        5641
+ selectset done           1
+ eigen done           1
+ tau          81  0.908835351             593
+ #popped           3           0
+ #selectset contacts        5641
+ selectset done           0
+ eigen done           0
+ tau          83   3.29392457             520
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         603
+         603  residues read 6U8Y.dssp                                                   
+  exclude short helix          28          31
+  exclude short helix          46          48
+  grow short strand          53          55
+  grow short strand          66          68
+  exclude short helix         100         103
+  grow short helix         178         184
+  exclude short helix         214         217
+  exclude short helix         251         254
+  grow short helix         292         298
+  grow short helix         302         308
+  grow short helix         462         468
+  exclude short helix         545         550
+  exclude short helix         554         556
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 24  1  2  3  4  5  6  8  7  9 10 12 13 15 18 19 11 14 16 17 20 21 22 23 24
+   2     0  0  0 24  1  2  3  4  5  6  8  7  9 10 12 13 15 18 19 11 14 16 17 20 21 22 23 24
+   3     0  0  0  0
+   4     1  6  7 22  1  2  3  4  5  6  8  7  9 10 12 13 15 18 19 11 14 16 17 20 21 22
+   5     1 78 79  2 23 24
+   6     4  8  9 20  1  2  3  4  5  6  8  7  9 10 12 13 15 18 19 11 14 16 17 20
+   7     4 70 71  2 21 22
+   8     6 10 11  9  1  2  3  4  5  6  8  7  9
+   9     6 34 35 11 10 12 13 15 18 19 11 14 16 17 20
+  10     8 12 13  6  1  2  3  4  5  6
+  11     8 26 27  3  8  7  9
+  12    10 14 15  2  1  2
+  13    10 20 21  4  3  4  5  6
+  14    12  0  0  1  1
+  15    12  0  0  1  2
+  16     0  0  0  1  1
+  17     0  0  0  0
+  18     0  0  0  1  1
+  19     0  0  0  0
+  20    13  0  0  2  3  4
+  21    13 24 25  2  5  6
+  22     0  0  0  2  5  6
+  23     0  0  0  0
+  24    21  0  0  1  5
+  25    21  0  0  1  6
+  26    11 30 31  2  8  7
+  27    11  0  0  1  9
+  28     0  0  0  2  8  7
+  29     0  0  0  0
+  30    26  0  0  1  8
+  31    26  0  0  1  7
+  32     0  0  0  0
+  33     0  0  0  1  8
+  34     9 36 37  8 10 12 13 15 18 19 11 14
+  35     9 60 61  3 16 17 20
+  36    34 38 39  6 10 12 13 15 18 19
+  37    34 54 55  2 11 14
+  38    36  0  0  1 10
+  39    36 40 41  5 12 13 15 18 19
+  40    39 42 43  3 12 13 15
+  41    39 52 53  2 18 19
+  42    40  0  0  1 12
+  43    40 48 49  2 13 15
+  44     0  0  0  1 12
+  45     0  0  0  0
+  46     0  0  0  0
+  47     0  0  0  0
+  48    43  0  0  1 13
+  49    43  0  0  1 15
+  50     0  0  0  1 15
+  51     0  0  0  0
+  52    41  0  0  1 18
+  53    41  0  0  1 19
+  54    37  0  0  1 11
+  55    37  0  0  1 14
+  56     0  0  0  0
+  57     0  0  0  1 11
+  58     0  0  0  3 16 17 20
+  59     0  0  0  0
+  60    35 62 63  2 16 17
+  61    35  0  0  1 20
+  62    60  0  0  1 16
+  63    60  0  0  1 17
+  64     0  0  0  1 17
+  65     0  0  0  0
+  66     0  0  0  0
+  67     0  0  0  1 20
+  68     0  0  0  0
+  69     0  0  0  0
+  70     7  0  0  1 21
+  71     7  0  0  1 22
+  72     0  0  0  1 21
+  73     0  0  0  0
+  74     0  0  0  0
+  75     0  0  0  2 23 24
+  76     0  0  0  0
+  77     0  0  0  0
+  78     5  0  0  1 23
+  79     5  0  0  1 24
+  80     0  0  0  1 23
+  81     0  0  0  0
+  82     0  0  0  0
+  83     0  0  0  1 24
+  84     0  0  0  0
+  85     0  0  0  0
+   1 +   0  2  3 24  1  1 24
+   2 +   1  4  5 22  1  1 22
+   3 *   1 44 45  2  1 23 24
+   4 +   2  6  7 20  1  1 20
+   5 *   2 42 43  2  1 21 22
+   6 +   4  8  9  9  1  1  9
+   7 +   4 22 23 11  1 10 20
+   8 *   6 10 11  6  1  1  6
+   9 *   6 18 19  3  1  7  9
+  10 -   8 12 13  2  1  1  2
+  11 -   8 14 15  4  1  3  6
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  2  2
+  14 -  11  0  0  2  1  3  4
+  15 -  11 16 17  2  1  5  6
+  16 -  15  0  0  1  1  5  5
+  17 -  15  0  0  1  1  6  6
+  18 -   9 20 21  2  1  7  8
+  19 -   9  0  0  1  1  9  9
+  20 -  18  0  0  1  1  8  8
+  21 -  18  0  0  1  1  7  7
+  22 +   7 24 25  8  2 10 15 18 19
+  23 +   7 38 39  3  2 16 17 20 20
+  24 *  22 26 27  6  4 10 10 12 13 15 15 18 19
+  25 *  22 36 37  2  2 11 11 14 14
+  26 -  24  0  0  1  1 10 10
+  27 -  24 28 29  5  3 12 13 15 15 18 19
+  28 -  27 30 31  3  2 12 13 15 15
+  29 -  27 34 35  2  1 18 19
+  30 -  28  0  0  1  1 12 12
+  31 -  28 32 33  2  2 13 13 15 15
+  32 -  31  0  0  1  1 13 13
+  33 -  31  0  0  1  1 15 15
+  34 -  29  0  0  1  1 18 18
+  35 -  29  0  0  1  1 19 19
+  36 -  25  0  0  1  1 11 11
+  37 -  25  0  0  1  1 14 14
+  38 -  23 40 41  2  1 16 17
+  39 -  23  0  0  1  1 20 20
+  40 -  38  0  0  1  1 16 16
+  41 -  38  0  0  1  1 17 17
+  42 -   5  0  0  1  1 21 21
+  43 -   5  0  0  1  1 22 22
+  44 -   3  0  0  1  1 23 23
+  45 -   3  0  0  1  1 24 24
+
+ CHAIN a
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            161
+Total number of atoms read in:              1300
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         161  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1301
+ selectset done           0
+ eigen done           0
+ tau           1   10.1664562              52
+ #popped           2           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau           3   1.19932365              41
+ #popped           4           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau           5   2.28549862              20
+ #popped           6           2
+ #selectset contacts        1301
+ selectset done           2
+ eigen done           2
+ tau           7  0.872438848              10
+ #popped           7           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau           9  0.849092245              30
+ #popped           3           0
+ #selectset contacts        1301
+ selectset done           0
+ eigen done           0
+ tau          11   2.05844712              93         133
+ #popped          12           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau          13   1.92830145              68         139
+ #popped          14           2
+ #selectset contacts        1301
+ selectset done           2
+ eigen done           2
+ tau          15   2.25771618              68         150
+ #popped          16           2
+ #selectset contacts        1301
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          15           1
+ #selectset contacts        1301
+ selectset done           1
+ eigen done           1
+ tau          17   2.76658154              83
+ #popped          13           0
+ #selectset contacts        1301
+ selectset done           0
+ eigen done           0
+ tau          19  0.782222211             103         121
+ #popped          20           0
+ #selectset contacts        1301
+ selectset done           0
+ eigen done           0
+ tau          21  0.496342748             103
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         161
+         161  residues read 6U8Y.dssp                                                   
+  grow short strand          96          98
+  grow short strand         121         122
+  grow short strand         129         133
+  exclude short helix         154         157
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  4  5  8  6  7
+   2     1  6  7  2  1  2
+   3     1 12 13  6  3  4  5  8  6  7
+   4     0  0  0  2  1  2
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  0  0  1  2
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  1  2
+  12     3 14 15  2  3  4
+  13     3 20 21  4  5  8  6  7
+  14    12  0  0  1  3
+  15    12  0  0  1  4
+  16     0  0  0  1  3
+  17     0  0  0  0
+  18     0  0  0  1  4
+  19     0  0  0  0
+  20    13 22 23  2  5  8
+  21    13  0  0  2  6  7
+  22    20  0  0  1  5
+  23    20  0  0  1  8
+   1 +   0  2  3  8  1  1  8
+   2 *   1  4  5  2  1  1  2
+   3 *   1  6  7  6  1  3  8
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  8  9  2  1  3  4
+   7 -   3 10 11  4  1  5  8
+   8 -   6  0  0  1  1  3  3
+   9 -   6  0  0  1  1  4  4
+  10 -   7 12 13  2  2  5  5  8  8
+  11 -   7  0  0  2  1  6  7
+  12 -  10  0  0  1  1  5  5
+  13 -  10  0  0  1  1  8  8
+
+ CHAIN b
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             79
+Total number of atoms read in:               624
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+          79  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         673
+ selectset done           0
+ eigen done           0
+ tau           1   2.83158517              21
+ #popped           2           1
+ #selectset contacts         673
+ selectset done           1
+ eigen done           1
+ tau           3  0.933645070              11
+ #popped           3           0
+ #selectset contacts         673
+ selectset done           0
+ eigen done           0
+ tau           5   1.65693843              66
+ #popped           6           0
+ #selectset contacts         673
+ selectset done           0
+ eigen done           0
+ tau           7   1.76690698              35
+ #popped           9           0
+ #selectset contacts         673
+ selectset done           0
+ eigen done           0
+ tau           9   1.39718187              52
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+          79
+          79  residues read 6U8Y.dssp                                                   
+  exclude short helix          17          20
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  3  1  2  3
+   2     1  0  0  1  1
+   3     1 10 11  2  2  3
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0  2  2  3
+   7     0  0  0  0
+   8     0  0  0  0
+   9     0  0  0  2  2  3
+  10     3  0  0  1  2
+  11     3  0  0  1  3
+   1 *   0  2  3  3  1  1  3
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  2  1  2  3
+   4 -   3  0  0  1  1  2  2
+   5 -   3  0  0  1  1  3  3
+
+ CHAIN c
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            112
+Total number of atoms read in:               858
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         112  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         976
+ selectset done           0
+ eigen done           0
+ tau           1   3.40872931              99
+ #popped           2           0
+ #selectset contacts         976
+ selectset done           0
+ eigen done           0
+ tau           3   2.09037375              23          37          77
+ #popped           4           1
+ #selectset contacts         976
+ selectset done           1
+ eigen done           1
+ tau           5   1.92353678              58
+ #popped           6           1
+ #selectset contacts         976
+ selectset done           1
+ eigen done           1
+ tau           7   1.11821079              23
+ #popped           8           2
+ #selectset contacts         976
+ selectset done           2
+ eigen done           2
+ tau           9   1.02666664              10
+ #popped           9           1
+ #selectset contacts         976
+ selectset done           1
+ eigen done           1
+ tau          11  0.760869622              47
+ #popped           5           0
+ #selectset contacts         976
+ selectset done           0
+ eigen done           0
+ tau          13   1.22362745              37          89
+ #popped          14           0
+ #selectset contacts         976
+ selectset done           0
+ eigen done           0
+ tau          15   2.27922082              37
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         112
+         112  residues read 6U8Y.dssp                                                   
+  grow short helix         103         109
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  5  1  3  4  2  5
+   2     1  4  5  4  1  3  4  2
+   3     1  0  0  1  5
+   4     2  6  7  3  1  3  4
+   5     2  0  0  1  2
+   6     4  8  9  2  1  3
+   7     4  0  0  1  4
+   8     6  0  0  1  1
+   9     6  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  1  1
+  12     0  0  0  1  3
+  13     0  0  0  0
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     0  0  0  1  2
+  17     0  0  0  0
+   1 +   0  2  3  5  1  1  5
+   2 *   1  4  5  4  1  1  4
+   3 =   1  0  0  1  1  5  5
+   4 -   2  6  7  3  2  1  1  3  4
+   5 -   2  0  0  1  1  2  2
+   6 -   4  8  9  2  2  1  1  3  3
+   7 -   4  0  0  1  1  4  4
+   8 -   6  0  0  1  1  1  1
+   9 -   6  0  0  1  1  3  3
+
+ CHAIN d
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             89
+Total number of atoms read in:               685
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+          89  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         721
+ selectset done           0
+ eigen done           0
+ tau           1   3.27119112              61
+ #popped           2           1
+ #selectset contacts         721
+ selectset done           1
+ eigen done           1
+ tau           3   2.49934626              24
+ #popped           4           2
+ #selectset contacts         721
+ selectset done           2
+ eigen done           2
+ tau           5   1.04497349              10
+ #popped           5           1
+ #selectset contacts         721
+ selectset done           1
+ eigen done           1
+ tau           7   1.14306080              36
+ #popped           9           1
+ #selectset contacts         721
+ selectset done           1
+ eigen done           1
+ tau           9  0.953378379              48
+ #popped           3           0
+ #selectset contacts         721
+ selectset done           0
+ eigen done           0
+ tau          11   1.58226037              72
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+          89
+          89  residues read 6U8Y.dssp                                                   
+  exclude short helix          69          72
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5  3  1  2  3
+   2     0  0  0  3  1  2  3
+   3     0  0  0  0
+   4     1  0  0  1  1
+   5     1  8  9  2  2  3
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     5  0  0  1  2
+   9     5  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  1  3
+  12     0  0  0  0
+  13     0  0  0  0
+   1 +   0  2  3  3  1  1  3
+   2 -   1  0  0  1  1  1  1
+   3 -   1  4  5  2  1  2  3
+   4 -   3  0  0  1  1  2  2
+   5 -   3  0  0  1  1  3  3
+
+ CHAIN e
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            232
+Total number of atoms read in:              1792
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           9
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         232  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1946
+ selectset done           0
+ eigen done           0
+ tau           1   14.6126366              28
+ #popped           2           1
+ #selectset contacts        1946
+ selectset done           1
+ eigen done           1
+ tau           3   1.25538325              14
+ #popped           3           0
+ #selectset contacts        1946
+ selectset done           0
+ eigen done           0
+ tau           5   2.76764154              60         176         204
+ #popped           6           1
+ #selectset contacts        1946
+ selectset done           1
+ eigen done           1
+ tau           7   5.32040787              60
+ #popped           8           2
+ #selectset contacts        1946
+ selectset done           2
+ eigen done           2
+ tau           9   1.74483967              44
+ #popped           9           1
+ #selectset contacts        1946
+ selectset done           1
+ eigen done           1
+ tau          11   2.31831217             191
+ #popped           7           0
+ #selectset contacts        1946
+ selectset done           0
+ eigen done           0
+ tau          13   1.46732378              81         112         132         156         220
+ #popped          14           1
+ #selectset contacts        1946
+ selectset done           1
+ eigen done           1
+ tau          15   2.89847660              81         132
+ #popped          16           2
+ #selectset contacts        1946
+ selectset done           2
+ eigen done           2
+ tau          17   2.43114924              81
+ #popped          18           3
+ #selectset contacts        1946
+ selectset done           3
+ eigen done           3
+ tau          19  0.772575200              71
+ #popped          19           2
+ #selectset contacts        1946
+ selectset done           2
+ eigen done           2
+ tau          21   2.03544068             176
+ #popped          22           2
+ #selectset contacts        1946
+ selectset done           2
+ eigen done           2
+ tau          23  0.807948172             166
+ #popped          17           1
+ #selectset contacts        1946
+ selectset done           1
+ eigen done           1
+ tau          25  0.955201745             122
+ #popped          15           0
+ #selectset contacts        1946
+ selectset done           0
+ eigen done           0
+ tau          27   2.59771466              93         112
+ #popped          28           0
+ #selectset contacts        1946
+ selectset done           0
+ eigen done           0
+ tau          29   1.13725924              93         146
+ #popped          30           0
+ #selectset contacts        1946
+ selectset done           0
+ eigen done           0
+ tau          31   3.36817646              93         156
+ #popped          32           0
+ #selectset contacts        1946
+ selectset done           0
+ eigen done           0
+ tau          33  0.776250005              93
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         232
+         232  residues read 6U8Y.dssp                                                   
+  exclude short helix          35          40
+  exclude short helix          52          57
+  exclude short helix         174         176
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  2  5  6  4  3
+   2     1  0  0  1  1
+   3     1 14 15  5  2  5  6  4  3
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     0  0  0  0
+   7     0  0  0  5  2  5  6  4  3
+   8     0  0  0  0
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  0
+  14     3 18 19  3  2  5  6
+  15     3 28 29  2  4  3
+  16     0  0  0  3  2  5  6
+  17     0  0  0  0
+  18    14  0  0  1  2
+  19    14 22 23  2  5  6
+  20     0  0  0  0
+  21     0  0  0  1  2
+  22    19  0  0  1  5
+  23    19  0  0  1  6
+  24     0  0  0  1  5
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28    15  0  0  1  4
+  29    15  0  0  1  3
+  30     0  0  0  0
+  31     0  0  0  1  4
+  32     0  0  0  0
+  33     0  0  0  0
+  34     0  0  0  0
+  35     0  0  0  0
+   1 +   0  2  3  6  1  1  6
+   2 =   1  0  0  1  1  1  1
+   3 +   1  4  5  5  1  2  6
+   4 -   3  6  7  3  2  2  2  5  6
+   5 -   3 10 11  2  1  3  4
+   6 -   4  0  0  1  1  2  2
+   7 -   4  8  9  2  1  5  6
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  1  1  6  6
+  10 -   5  0  0  1  1  4  4
+  11 -   5  0  0  1  1  3  3
+
+ CHAIN g
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            110
+Total number of atoms read in:               816
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         110  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         908
+ selectset done           0
+ eigen done           0
+ tau           1   2.80042005              76
+ #popped           2           1
+ #selectset contacts         908
+ selectset done           1
+ eigen done           1
+ tau           3   5.66129017              46
+ #popped           4           2
+ #selectset contacts         908
+ selectset done           2
+ eigen done           2
+ tau           5  0.923616767              13          36
+ #popped           6           3
+ #selectset contacts         908
+ selectset done           3
+ eigen done           3
+ tau           7   1.56321847              13
+ #popped           7           2
+ #selectset contacts         908
+ selectset done           2
+ eigen done           2
+ tau           9   1.14481127              23
+ #popped           5           1
+ #selectset contacts         908
+ selectset done           1
+ eigen done           1
+ tau          11   1.35845411              66
+ #popped          12           1
+ #selectset contacts         908
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts         908
+ selectset done           0
+ eigen done           0
+ tau          13   2.01065898             100
+ #popped          14           0
+ #selectset contacts         908
+ selectset done           0
+ eigen done           0
+ tau          15   1.13774443              88
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         110
+         110  residues read 6U8Y.dssp                                                   
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  4  1  2  3  4
+   2     1  4  5  3  1  2  3
+   3     1  0  0  1  4
+   4     2  6  7  2  1  2
+   5     2  0  0  1  3
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     0  0  0  0
+  11     0  0  0  1  2
+  12     0  0  0  0
+  13     0  0  0  1  3
+  14     0  0  0  1  4
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  4
+   1 +   0  2  3  4  1  1  4
+   2 *   1  4  5  3  1  1  3
+   3 =   1  0  0  1  1  4  4
+   4 -   2  6  7  2  1  1  2
+   5 -   2  0  0  1  1  3  3
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+
+ CHAIN h
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            487
+Total number of atoms read in:              3696
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         487  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau           1   3.89917374             271
+ #popped           2           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau           3   2.84087586              54
+ #popped           4           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau           5   1.82609475              34
+ #popped           6           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau           7   2.45136189              24
+ #popped           8           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau           9  0.892888844              14
+ #popped           7           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          11  0.950000048              44
+ #popped           5           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          13   1.99430192             194
+ #popped          14           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          15   3.19492054             102
+ #popped          16           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          17   4.13955736              75
+ #popped          18           4
+ #selectset contacts        4679
+ selectset done           4
+ eigen done           4
+ tau          19   0.00000000    
+ #popped          19           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          19   1.13942313              92
+ #popped          17           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          21   1.53098047             167
+ #popped          22           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          23   1.54918027             151
+ #popped          24           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          25   1.05126464             121         138
+ #popped          26           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          27   1.24672163             121
+ #popped          23           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          29   1.25168920             183
+ #popped          15           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          31   1.98131537             215         252
+ #popped          32           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          33   2.49170065             215
+ #popped          34           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          35   1.27233112             204
+ #popped          33           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          37   1.75700772             231
+ #popped          39           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          39  0.654535890             242
+ #popped           3           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          41   3.71462512             477
+ #popped          42           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          43   1.82270336             338         377         422         453
+ #popped          44           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          45   3.45228171             422
+ #popped          46           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          47   1.89742744             318         401
+ #popped          48           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          49   1.28938496             318         412
+ #popped          50           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          51   1.56358480             318
+ #popped          52           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          53   1.18139148             288         305
+ #popped          54           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          55   1.87256455             288
+ #popped          49           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          57   1.88467264             338
+ #popped          58           3
+ #selectset contacts        4679
+ selectset done           3
+ eigen done           3
+ tau          59   1.02908278             328
+ #popped          59           2
+ #selectset contacts        4679
+ selectset done           2
+ eigen done           2
+ tau          61   1.04910064             390
+ #popped          47           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          63   1.21678519             465
+ #popped          45           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          65   2.05888939             351         440
+ #popped          66           1
+ #selectset contacts        4679
+ selectset done           1
+ eigen done           1
+ tau          67   1.47453701             351
+ #popped          67           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          69   1.28983963             361
+ #popped          71           0
+ #selectset contacts        4679
+ selectset done           0
+ eigen done           0
+ tau          71   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         487
+         487  residues read 6U8Y.dssp                                                   
+  exclude short helix           2           4
+  grow short strand          58          61
+  grow short strand          72          75
+  exclude short helix         189         193
+  exclude short helix         228         231
+  exclude short helix         356         358
+  exclude short helix         420         423
+  exclude short helix         427         430
+  exclude short helix         447         452
+  exclude short helix         480         484
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 18  1  2  3  4  5  6  7  8  9 11 10 12 13 17 14 16 18 15
+   2     1  4  5 11  1  2  3  4  5  6  7  8  9 11 10
+   3     1 44 45  7 12 13 17 14 16 18 15
+   4     2  6  7  2  1  2
+   5     2 14 15  9  3  4  5  6  7  8  9 11 10
+   6     4  0  0  1  1
+   7     4  0  0  1  2
+   8     0  0  0  1  1
+   9     0  0  0  0
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     5 16 17  6  3  4  5  6  7  8
+  15     5 32 33  3  9 11 10
+  16    14 18 19  3  3  4  5
+  17    14 22 23  3  6  7  8
+  18    16  0  0  2  3  4
+  19    16  0  0  1  5
+  20     0  0  0  1  5
+  21     0  0  0  0
+  22    17 26 27  2  6  7
+  23    17  0  0  1  8
+  24     0  0  0  2  6  7
+  25     0  0  0  0
+  26    22  0  0  1  6
+  27    22  0  0  1  7
+  28     0  0  0  1  6
+  29     0  0  0  0
+  30     0  0  0  1  8
+  31     0  0  0  0
+  32    15 34 35  2  9 11
+  33    15  0  0  1 10
+  34    32  0  0  1  9
+  35    32  0  0  1 11
+  36     0  0  0  0
+  37     0  0  0  1  9
+  38     0  0  0  0
+  39     0  0  0  1 10
+  40     0  0  0  1 10
+  41     0  0  0  0
+  42     0  0  0  7 12 13 17 14 16 18 15
+  43     0  0  0  0
+  44     3 46 47  6 12 13 17 14 16 18
+  45     3  0  0  1 15
+  46    44 48 49  5 12 13 17 14 16
+  47    44  0  0  1 18
+  48    46 52 53  3 12 13 17
+  49    46 58 59  2 14 16
+  50     0  0  0  3 12 13 17
+  51     0  0  0  0
+  52    48 54 55  2 12 13
+  53    48  0  0  1 17
+  54    52  0  0  1 12
+  55    52  0  0  1 13
+  56     0  0  0  1 12
+  57     0  0  0  0
+  58    49  0  0  1 14
+  59    49  0  0  1 16
+  60     0  0  0  0
+  61     0  0  0  1 14
+  62     0  0  0  0
+  63     0  0  0  1 16
+  64     0  0  0  0
+  65     0  0  0  1 18
+  66     0  0  0  0
+  67     0  0  0  1 15
+  68     0  0  0  0
+  69     0  0  0  0
+  70     0  0  0  0
+  71     0  0  0  1 15
+   1 +   0  2  3 18  1  1 18
+   2 +   1  4  5 11  1  1 11
+   3 +   1 22 23  7  1 12 18
+   4 *   2  6  7  2  1  1  2
+   5 *   2  8  9  9  1  3 11
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+   8 -   5 10 11  6  1  3  8
+   9 -   5 18 19  3  1  9 11
+  10 -   8 12 13  3  1  3  5
+  11 -   8 14 15  3  1  6  8
+  12 -  10  0  0  2  1  3  4
+  13 -  10  0  0  1  1  5  5
+  14 -  11 16 17  2  1  6  7
+  15 -  11  0  0  1  1  8  8
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  1  1  7  7
+  18 -   9 20 21  2  2  9  9 11 11
+  19 -   9  0  0  1  1 10 10
+  20 -  18  0  0  1  1  9  9
+  21 -  18  0  0  1  1 11 11
+  22 -   3 24 25  6  2 12 14 16 18
+  23 -   3  0  0  1  1 15 15
+  24 -  22 26 27  5  2 12 14 16 17
+  25 -  22  0  0  1  1 18 18
+  26 -  24 28 29  3  2 12 13 17 17
+  27 -  24 32 33  2  2 14 14 16 16
+  28 -  26 30 31  2  1 12 13
+  29 -  26  0  0  1  1 17 17
+  30 -  28  0  0  1  1 12 12
+  31 -  28  0  0  1  1 13 13
+  32 -  27  0  0  1  1 14 14
+  33 -  27  0  0  1  1 16 16
+
+ CHAIN j
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            177
+Total number of atoms read in:              1462
+Total number of ignored atom records:          8
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         177  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1488
+ selectset done           0
+ eigen done           0
+ tau           1   2.72171831             149
+ #popped           2           1
+ #selectset contacts        1488
+ selectset done           1
+ eigen done           1
+ tau           3   1.57524121              10         139
+ #popped           4           2
+ #selectset contacts        1488
+ selectset done           2
+ eigen done           2
+ tau           5   999.999023              10
+ #popped           5           1
+ #selectset contacts        1488
+ selectset done           1
+ eigen done           1
+ tau           7   1.71851492              22          41
+ #popped           8           1
+ #selectset contacts        1488
+ selectset done           1
+ eigen done           1
+ tau           9   3.45846319             119
+ #popped          10           2
+ #selectset contacts        1488
+ selectset done           2
+ eigen done           2
+ tau          11   1.75657892              85         107
+ #popped          12           3
+ #selectset contacts        1488
+ selectset done           3
+ eigen done           3
+ tau          13   1.30521667              59          73
+ #popped          14           3
+ #selectset contacts        1488
+ selectset done           3
+ eigen done           3
+ tau          15   0.00000000    
+ #popped          13           2
+ #selectset contacts        1488
+ selectset done           2
+ eigen done           2
+ tau          15   1.43258417              96
+ #popped          11           1
+ #selectset contacts        1488
+ selectset done           1
+ eigen done           1
+ tau          17  0.695970654             129
+ #popped           3           0
+ #selectset contacts        1488
+ selectset done           0
+ eigen done           0
+ tau          19   1.95142269             165
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         177
+         177  residues read 6U8Y.dssp                                                   
+  grow short helix           3           9
+  grow short strand          15          16
+  exclude short helix          29          31
+  exclude short helix          38          40
+  grow short strand          53          56
+  grow short strand          81          83
+  exclude short helix          94          96
+  exclude short helix         104         106
+  grow short strand         110         114
+  exclude short helix         145         148
+  exclude short helix         165         168
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  8  1  2  3  5  6  4  7  8
+   2     1  4  5  7  1  2  3  5  6  4  7
+   3     1  0  0  1  8
+   4     2  0  0  1  1
+   5     2 10 11  6  2  3  5  6  4  7
+   6     0  0  0  1  1
+   7     0  0  0  0
+   8     0  0  0  6  2  3  5  6  4  7
+   9     0  0  0  0
+  10     5 14 15  5  2  3  5  6  4
+  11     5  0  0  1  7
+  12     0  0  0  5  2  3  5  6  4
+  13     0  0  0  0
+  14    10  0  0  4  2  3  5  6
+  15    10  0  0  1  4
+  16     0  0  0  0
+  17     0  0  0  0
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20     0  0  0  1  8
+  21     0  0  0  0
+   1 +   0  2  3  8  1  1  8
+   2 *   1  4  5  7  1  1  7
+   3 =   1  0  0  1  1  8  8
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  6  1  2  7
+   6 -   5  8  9  5  1  2  6
+   7 -   5  0  0  1  1  7  7
+   8 -   6  0  0  4  2  2  3  5  6
+   9 -   6  0  0  1  1  4  4
+
+ CHAIN k
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            170
+Total number of atoms read in:              1437
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:         163
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         170  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           1   5.47300339             159
+ #popped           2           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           3   2.79210901             145
+ #popped           4           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           5   2.42162418              29
+ #popped           6           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau           7   2.05284548              18
+ #popped           7           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           9   2.10362029              87
+ #popped          10           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau          11   1.39946020              49
+ #popped          12           2
+ #selectset contacts        1384
+ selectset done           2
+ eigen done           2
+ tau          13   1.11842108              39
+ #popped          13           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau          15  0.422774136              63
+ #popped          17           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau          17  0.260932356              76
+ #popped          11           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau          19   1.25119865             126
+ #popped          20           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau          21   1.11524439              97         115
+ #popped          22           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         170
+         170  residues read 6U8Y.dssp                                                   
+  grow short strand          19          22
+  grow short strand          26          29
+  exclude short helix          33          35
+  grow short helix          40          46
+  grow short strand          81          83
+  grow short strand          86          87
+  grow short strand          94          95
+  exclude short helix         104         106
+  grow short strand         119         120
+  exclude short helix         152         155
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  6  7 11  1  2  3  4  5  6  7  8  9 11 10
+   2     0  0  0 11  1  2  3  4  5  6  7  8  9 11 10
+   3     0  0  0  0
+   4     0  0  0 11  1  2  3  4  5  6  7  8  9 11 10
+   5     0  0  0  0
+   6     1  8  9  3  1  2  3
+   7     1 10 11  8  4  5  6  7  8  9 11 10
+   8     6  0  0  1  1
+   9     6  0  0  2  2  3
+  10     7 12 13  4  4  5  6  7
+  11     7 22 23  4  8  9 11 10
+  12    10  0  0  1  4
+  13    10 16 17  3  5  6  7
+  14     0  0  0  0
+  15     0  0  0  1  4
+  16    13  0  0  1  5
+  17    13 18 19  2  6  7
+  18    17  0  0  1  6
+  19    17  0  0  1  7
+  20     0  0  0  4  8  9 11 10
+  21     0  0  0  0
+  22    11  0  0  3  8  9 11
+  23    11  0  0  1 10
+   1 +   0  2  3 11  1  1 11
+   2 -   1  4  5  3  1  1  3
+   3 -   1  6  7  8  1  4 11
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  2  1  2  3
+   6 -   3  8  9  4  1  4  7
+   7 -   3 14 15  4  1  8 11
+   8 -   6  0  0  1  1  4  4
+   9 -   6 10 11  3  1  5  7
+  10 -   9  0  0  1  1  5  5
+  11 -   9 12 13  2  1  6  7
+  12 -  11  0  0  1  1  6  6
+  13 -  11  0  0  1  1  7  7
+  14 -   7  0  0  3  2  8  9 11 11
+  15 -   7  0  0  1  1 10 10
+
+ CHAIN l
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            373
+Total number of atoms read in:              3010
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           5
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         373  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau           1   2.82329655              42
+ #popped           2           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau           3   1.12104785              10
+ #popped           5           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau           5  0.794288278              21
+ #popped           7           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau           7  0.258129090              32
+ #popped           3           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau           9   1.88339376              66         186         228         246         263         298
+ #popped          10           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          11   2.53272605              66         263
+ #popped          12           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          13   2.12124991             342         363
+ #popped          14           3
+ #selectset contacts        3417
+ selectset done           3
+ eigen done           3
+ tau          15  0.469377726             318         332
+ #popped          16           3
+ #selectset contacts        3417
+ selectset done           3
+ eigen done           3
+ tau          17   2.55185556              66
+ #popped          18           4
+ #selectset contacts        3417
+ selectset done           4
+ eigen done           4
+ tau          19   0.00000000    
+ #popped          19           3
+ #selectset contacts        3417
+ selectset done           3
+ eigen done           3
+ tau          19   1.23676574             318
+ #popped          20           4
+ #selectset contacts        3417
+ selectset done           4
+ eigen done           4
+ tau          21   0.00000000    
+ #popped          21           3
+ #selectset contacts        3417
+ selectset done           3
+ eigen done           3
+ tau          21   0.00000000    
+ #popped          15           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          21   2.30648184             352
+ #popped          13           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          23   2.08639789             201
+ #popped          25           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          25   1.54397583             214
+ #popped          27           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          27   1.44734228             228
+ #popped          11           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          29   3.23340797             288
+ #popped          30           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          31   1.64319801              89
+ #popped          32           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          33   1.22504008              76
+ #popped          33           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          35   2.17808223             110         186
+ #popped          36           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          37   1.34471262             246
+ #popped          38           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          39   2.06193352             110
+ #popped          40           2
+ #selectset contacts        3417
+ selectset done           2
+ eigen done           2
+ tau          41  0.972190499              99
+ #popped          39           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          43   2.31044769             278
+ #popped          37           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          45   2.05248952             131
+ #popped          46           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          47  0.835879266             121
+ #popped          47           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          49   1.96125281             164
+ #popped          50           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          51   1.49226224             151
+ #popped          52           1
+ #selectset contacts        3417
+ selectset done           1
+ eigen done           1
+ tau          53  0.880264282             141
+ #popped          51           0
+ #selectset contacts        3417
+ selectset done           0
+ eigen done           0
+ tau          55   1.04717624             174
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         373
+         373  residues read 6U8Y.dssp                                                   
+  grow short strand          11          12
+  exclude short helix          64          66
+  exclude short helix         187         190
+  exclude short helix         196         199
+  exclude short helix         230         233
+  exclude short helix         290         292
+  exclude short helix         354         356
+  exclude short helix         358         363
+  exclude short helix         368         370
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  9 10 11  4  5  8  6  7
+   2     1  6  7  3  1  2  3
+   3     1 10 11  8  9 10 11  4  5  8  6  7
+   4     0  0  0  0
+   5     0  0  0  3  1  2  3
+   6     2  0  0  1  1
+   7     2  8  9  2  2  3
+   8     7  0  0  1  2
+   9     7  0  0  1  3
+  10     3 16 17  3  9 10 11
+  11     3 32 33  5  4  5  8  6  7
+  12     0  0  0  3  9 10 11
+  13     0  0  0  0
+  14     0  0  0  3  9 10 11
+  15     0  0  0  0
+  16    10  0  0  1  9
+  17    10  0  0  2 10 11
+  18     0  0  0  0
+  19     0  0  0  1  9
+  20     0  0  0  1  9
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  0
+  24     0  0  0  0
+  25     0  0  0  0
+  26     0  0  0  0
+  27     0  0  0  0
+  28     0  0  0  0
+  29     0  0  0  0
+  30     0  0  0  5  4  5  8  6  7
+  31     0  0  0  0
+  32    11  0  0  1  4
+  33    11 36 37  4  5  8  6  7
+  34     0  0  0  0
+  35     0  0  0  1  4
+  36    33 38 39  2  5  8
+  37    33 50 51  2  6  7
+  38    36  0  0  1  5
+  39    36  0  0  1  8
+  40     0  0  0  1  5
+  41     0  0  0  0
+  42     0  0  0  0
+  43     0  0  0  1  5
+  44     0  0  0  1  8
+  45     0  0  0  0
+  46     0  0  0  0
+  47     0  0  0  2  6  7
+  48     0  0  0  0
+  49     0  0  0  0
+  50    37  0  0  1  6
+  51    37  0  0  1  7
+  52     0  0  0  1  6
+  53     0  0  0  0
+  54     0  0  0  1  6
+  55     0  0  0  0
+  56     0  0  0  0
+  57     0  0  0  1  7
+   1 +   0  2  3 11  1  1 11
+   2 *   1  4  5  3  1  1  3
+   3 *   1  8  9  8  1  4 11
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  2  1  2  3
+   6 -   5  0  0  1  1  2  2
+   7 -   5  0  0  1  1  3  3
+   8 -   3 10 11  3  1  9 11
+   9 -   3 12 13  5  1  4  8
+  10 -   8  0  0  1  1  9  9
+  11 -   8  0  0  2  1 10 11
+  12 -   9  0  0  1  1  4  4
+  13 -   9 14 15  4  1  5  8
+  14 -  13 16 17  2  2  5  5  8  8
+  15 -  13 18 19  2  1  6  7
+  16 -  14  0  0  1  1  5  5
+  17 -  14  0  0  1  1  8  8
+  18 -  15  0  0  1  1  6  6
+  19 -  15  0  0  1  1  7  7
+
+ CHAIN m
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            301
+Total number of atoms read in:              2319
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         301  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2807
+ selectset done           0
+ eigen done           0
+ tau           1   1.87621319             150
+ #popped           2           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau           3   2.94459510              16          52         136
+ #popped           4           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau           5   8.23876572              16
+ #popped           7           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau           7   2.05249119              64
+ #popped           9           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau           9   1.86511290              79          94
+ #popped          10           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          11   2.96402884              79
+ #popped          13           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          13   1.37167978             109
+ #popped          15           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          15   1.00260425             126
+ #popped           5           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          17   999.999023              52
+ #popped          18           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          19   1.79694915              37
+ #popped          20           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          21  0.834766686              26
+ #popped           3           0
+ #selectset contacts        2807
+ selectset done           0
+ eigen done           0
+ tau          23   2.92044282             275
+ #popped          24           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          25   2.54001498             165
+ #popped          27           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          27   1.53685355             189         209         265
+ #popped          28           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          29   1.98529410             243
+ #popped          30           3
+ #selectset contacts        2807
+ selectset done           3
+ eigen done           3
+ tau          31   1.77365088             189         228
+ #popped          32           3
+ #selectset contacts        2807
+ selectset done           3
+ eigen done           3
+ tau          33   1.30003679             189
+ #popped          34           3
+ #selectset contacts        2807
+ selectset done           3
+ eigen done           3
+ tau          35   1.49018323             176
+ #popped          31           2
+ #selectset contacts        2807
+ selectset done           2
+ eigen done           2
+ tau          37  0.864197552             253
+ #popped          29           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          39  0.882329702             209
+ #popped          40           1
+ #selectset contacts        2807
+ selectset done           1
+ eigen done           1
+ tau          41  0.975955248             199
+ #popped          25           0
+ #selectset contacts        2807
+ selectset done           0
+ eigen done           0
+ tau          43   1.60694778             286
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         301
+         301  residues read 6U8Y.dssp                                                   
+  grow short helix         105         111
+  exclude short helix         192         197
+  exclude short helix         206         208
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 12  1  3  4  5  6  2  7  8  9 10 11 12
+   2     1  4  5  7  1  3  4  5  6  2  7
+   3     1 24 25  5  8  9 10 11 12
+   4     2  6  7  5  1  3  4  5  6
+   5     2 18 19  2  2  7
+   6     4  0  0  1  1
+   7     4 12 13  4  3  4  5  6
+   8     0  0  0  0
+   9     0  0  0  4  3  4  5  6
+  10     0  0  0  4  3  4  5  6
+  11     0  0  0  0
+  12     7  0  0  1  3
+  13     7 14 15  3  4  5  6
+  14    13  0  0  2  4  5
+  15    13  0  0  1  6
+  16     0  0  0  1  6
+  17     0  0  0  0
+  18     5  0  0  1  2
+  19     5  0  0  1  7
+  20     0  0  0  0
+  21     0  0  0  1  2
+  22     0  0  0  0
+  23     0  0  0  0
+  24     3 26 27  4  8  9 10 11
+  25     3  0  0  1 12
+  26    24  0  0  1  8
+  27    24 30 31  3  9 10 11
+  28     0  0  0  3  9 10 11
+  29     0  0  0  0
+  30    27 32 33  2  9 10
+  31    27  0  0  1 11
+  32    30  0  0  1  9
+  33    30  0  0  1 10
+  34     0  0  0  1  9
+  35     0  0  0  0
+  36     0  0  0  0
+  37     0  0  0  1  9
+  38     0  0  0  0
+  39     0  0  0  1 11
+  40     0  0  0  0
+  41     0  0  0  0
+  42     0  0  0  0
+  43     0  0  0  0
+  44     0  0  0  0
+  45     0  0  0  1 12
+   1 *   0  2  3 12  1  1 12
+   2 -   1  4  5  7  1  1  7
+   3 -   1 14 15  5  1  8 12
+   4 -   2  6  7  5  2  1  1  3  6
+   5 -   2 12 13  2  2  2  2  7  7
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  4  1  3  6
+   8 -   7  0  0  1  1  3  3
+   9 -   7 10 11  3  1  4  6
+  10 -   9  0  0  2  1  4  5
+  11 -   9  0  0  1  1  6  6
+  12 -   5  0  0  1  1  2  2
+  13 -   5  0  0  1  1  7  7
+  14 -   3 16 17  4  1  8 11
+  15 -   3  0  0  1  1 12 12
+  16 -  14  0  0  1  1  8  8
+  17 -  14 18 19  3  1  9 11
+  18 -  17 20 21  2  1  9 10
+  19 -  17  0  0  1  1 11 11
+  20 -  18  0  0  1  1  9  9
+  21 -  18  0  0  1  1 10 10
+
+ CHAIN n
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            176
+Total number of atoms read in:              1484
+Total number of ignored atom records:         17
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  calculate residue outside grid:           6
+  calculate residue outside grid:           7
+  calculate residue outside grid:           8
+  calculate residue outside grid:           9
+  calculate residue outside grid:          10
+  calculate residue outside grid:          11
+  calculate residue outside grid:          12
+  calculate residue outside grid:          13
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         176  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau           1   7.83391285              13
+ #popped           3           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau           3   11.8587036              37
+ #popped           4           1
+ #selectset contacts        1274
+ selectset done           1
+ eigen done           1
+ tau           5   3.44634914              26
+ #popped           5           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau           7   1.69687927             104
+ #popped           8           1
+ #selectset contacts        1274
+ selectset done           1
+ eigen done           1
+ tau           9   1.92886293              47
+ #popped          11           1
+ #selectset contacts        1274
+ selectset done           1
+ eigen done           1
+ tau          11  0.541890919              76
+ #popped          12           2
+ #selectset contacts        1274
+ selectset done           2
+ eigen done           2
+ tau          13   3.27934813              58
+ #popped          13           1
+ #selectset contacts        1274
+ selectset done           1
+ eigen done           1
+ tau          15   2.66207576              86
+ #popped           9           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau          17   1.54843807             126         139
+ #popped          18           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau          19  0.783040881             116
+ #popped          21           0
+ #selectset contacts        1274
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         176
+         176  residues read 6U8Y.dssp                                                   
+  exclude short helix          17          21
+  exclude short helix          23          25
+  grow short strand          48          51
+  exclude short helix          62          64
+  grow short strand         101         104
+  grow short strand         110         112
+  exclude short helix         115         117
+  exclude short helix         119         121
+  exclude short helix         128         133
+  grow short strand         156         158
+  grow short strand         168         170
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  8  9  5  1  2  3  4  5
+   2     0  0  0  0
+   3     0  0  0  5  1  2  3  4  5
+   4     0  0  0  0
+   5     0  0  0  5  1  2  3  4  5
+   6     0  0  0  0
+   7     0  0  0  0
+   8     1 12 13  2  1  2
+   9     1 20 21  3  3  4  5
+  10     0  0  0  0
+  11     0  0  0  2  1  2
+  12     8  0  0  1  1
+  13     8  0  0  1  2
+  14     0  0  0  1  1
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  2
+  18     0  0  0  3  3  4  5
+  19     0  0  0  0
+  20     9  0  0  1  3
+  21     9  0  0  2  4  5
+   1 +   0  2  3  5  1  1  5
+   2 -   1  4  5  2  1  1  2
+   3 -   1  6  7  3  1  3  5
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  2  2
+   6 -   3  0  0  1  1  3  3
+   7 -   3  0  0  2  1  4  5
+
+ CHAIN x
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            603
+Total number of atoms read in:              4677
+Total number of ignored atom records:          0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    H.J.YU,H.L.LI                                                         
+  calculate residue outside grid:         511
+  calculate residue outside grid:         512
+  calculate residue outside grid:         513
+  calculate residue outside grid:         514
+  calculate residue outside grid:         515
+  calculate residue outside grid:         530
+  calculate residue outside grid:         534
+  calculate residue outside grid:         535
+  calculate residue outside grid:         579
+  calculate residue outside grid:         580
+  calculate residue outside grid:         581
+  calculate residue outside grid:         582
+  calculate residue outside grid:         583
+  calculate residue outside grid:         584
+  calculate residue outside grid:         585
+  calculate residue outside grid:         586
+  calculate residue outside grid:         587
+  calculate residue outside grid:         588
+  calculate residue outside grid:         589
+  calculate residue outside grid:         590
+  calculate residue outside grid:         591
+  calculate residue outside grid:         592
+  calculate residue outside grid:         593
+  calculate residue outside grid:         594
+  calculate residue outside grid:         595
+  calculate residue outside grid:         596
+  calculate residue outside grid:         597
+  calculate residue outside grid:         598
+  calculate residue outside grid:         599
+  calculate residue outside grid:         600
+  calculate residue outside grid:         601
+  calculate residue outside grid:         602
+  calculate residue outside grid:         603
+  Reading DSSP file
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+         603  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        5641
+ selectset done           0
+ eigen done           0
+ tau           1   1.98152053             509         535
+ #popped           2           1
+ #selectset contacts        5641
+ selectset done           1
+ eigen done           1
+ tau           3   3.58459663             509
+ #popped           4           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau           5   2.11767936             457
+ #popped           6           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau           7   3.46001339             187
+ #popped           8           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau           9   3.29547763             117
+ #popped          10           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          11   1.83897281              50
+ #popped          12           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          13   2.38676691              35
+ #popped          14           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          15   2.41910815              22
+ #popped          16           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          17  0.948557436              11
+ #popped          13           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          19   1.79435480              68
+ #popped          21           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          21   1.13320518              86         105
+ #popped          22           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          23   2.24004340              86
+ #popped          11           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          25   2.80373001             173
+ #popped          26           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          27   1.22086978             163
+ #popped          28           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          29  0.994570613             128         152
+ #popped          30           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          31   1.05321515             128
+ #popped          31           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          33   0.00000000    
+ #popped           9           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau          33   2.03286314             328         380         412
+ #popped          34           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          35   1.64596117             202         234         278         300
+ #popped          36           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          37   2.27572489             202
+ #popped          39           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          39   2.04068494             328
+ #popped          40           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          41   1.35353529             268
+ #popped          42           7
+ #selectset contacts        5641
+ selectset done           7
+ eigen done           7
+ tau          43   3.87774348             248
+ #popped          45           7
+ #selectset contacts        5641
+ selectset done           7
+ eigen done           7
+ tau          45   1.10907674             258
+ #popped          43           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          47   2.08761191             278
+ #popped          49           6
+ #selectset contacts        5641
+ selectset done           6
+ eigen done           6
+ tau          49  0.696200550             318
+ #popped          41           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          51   1.89499259             397
+ #popped          37           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          53   1.97518253             234
+ #popped          54           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          55   1.38211381             212
+ #popped          57           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          57   0.00000000    
+ #popped          55           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          57   0.00000000    
+ #popped          35           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau          57   2.26248360             346         359         380         434
+ #popped          58           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          59   1.57263565             380
+ #popped          60           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          61   2.48288608             346
+ #popped          63           5
+ #selectset contacts        5641
+ selectset done           5
+ eigen done           5
+ tau          63  0.770104051             369
+ #popped          61           4
+ #selectset contacts        5641
+ selectset done           4
+ eigen done           4
+ tau          65  0.925264895             446
+ #popped          59           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau          67   1.41327369             359         422
+ #popped          68           3
+ #selectset contacts        5641
+ selectset done           3
+ eigen done           3
+ tau          69   0.00000000    
+ #popped           7           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau          69   2.62586808             493
+ #popped          70           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau          71   1.85513508             476
+ #popped           5           1
+ #selectset contacts        5641
+ selectset done           1
+ eigen done           1
+ tau          73   8.53333378             557
+ #popped          74           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau          75   1.08794987             545
+ #popped          75           1
+ #selectset contacts        5641
+ selectset done           1
+ eigen done           1
+ tau          77   3.24964094             582
+ #popped          78           2
+ #selectset contacts        5641
+ selectset done           2
+ eigen done           2
+ tau          79   1.20485818             571
+ #popped          79           1
+ #selectset contacts        5641
+ selectset done           1
+ eigen done           1
+ tau          81  0.908835351             593
+ #popped           3           0
+ #selectset contacts        5641
+ selectset done           0
+ eigen done           0
+ tau          83   3.29392457             520
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    MEMBRANE PROTEIN                        06-SEP-19   6U8Y              COMPND   2 MOLECULE: MONOVALENT CATION/H+ ANTIPORTER SUBUNIT E;                 SOURCE   2 ORGANISM_SCIENTIFIC: PYROCOCCUS FURIOSUS COM1;                       AUTHOR    H.J.YU,H.L.LI                                                         
+           0
+         603
+         603  residues read 6U8Y.dssp                                                   
+  exclude short helix          28          31
+  exclude short helix          46          48
+  grow short strand          53          55
+  grow short strand          66          68
+  exclude short helix         100         103
+  grow short helix         178         184
+  exclude short helix         214         217
+  exclude short helix         251         254
+  grow short helix         292         298
+  grow short helix         302         308
+  grow short helix         462         468
+  exclude short helix         545         550
+  exclude short helix         554         556
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 24  1  2  3  4  5  6  8  7  9 10 12 13 15 18 19 11 14 16 17 20 21 22 23 24
+   2     0  0  0 24  1  2  3  4  5  6  8  7  9 10 12 13 15 18 19 11 14 16 17 20 21 22 23 24
+   3     0  0  0  0
+   4     1  6  7 22  1  2  3  4  5  6  8  7  9 10 12 13 15 18 19 11 14 16 17 20 21 22
+   5     1 78 79  2 23 24
+   6     4  8  9 20  1  2  3  4  5  6  8  7  9 10 12 13 15 18 19 11 14 16 17 20
+   7     4 70 71  2 21 22
+   8     6 10 11  9  1  2  3  4  5  6  8  7  9
+   9     6 34 35 11 10 12 13 15 18 19 11 14 16 17 20
+  10     8 12 13  6  1  2  3  4  5  6
+  11     8 26 27  3  8  7  9
+  12    10 14 15  2  1  2
+  13    10 20 21  4  3  4  5  6
+  14    12  0  0  1  1
+  15    12  0  0  1  2
+  16     0  0  0  1  1
+  17     0  0  0  0
+  18     0  0  0  1  1
+  19     0  0  0  0
+  20    13  0  0  2  3  4
+  21    13 24 25  2  5  6
+  22     0  0  0  2  5  6
+  23     0  0  0  0
+  24    21  0  0  1  5
+  25    21  0  0  1  6
+  26    11 30 31  2  8  7
+  27    11  0  0  1  9
+  28     0  0  0  2  8  7
+  29     0  0  0  0
+  30    26  0  0  1  8
+  31    26  0  0  1  7
+  32     0  0  0  0
+  33     0  0  0  1  8
+  34     9 36 37  8 10 12 13 15 18 19 11 14
+  35     9 60 61  3 16 17 20
+  36    34 38 39  6 10 12 13 15 18 19
+  37    34 54 55  2 11 14
+  38    36  0  0  1 10
+  39    36 40 41  5 12 13 15 18 19
+  40    39 42 43  3 12 13 15
+  41    39 52 53  2 18 19
+  42    40  0  0  1 12
+  43    40 48 49  2 13 15
+  44     0  0  0  1 12
+  45     0  0  0  0
+  46     0  0  0  0
+  47     0  0  0  0
+  48    43  0  0  1 13
+  49    43  0  0  1 15
+  50     0  0  0  1 15
+  51     0  0  0  0
+  52    41  0  0  1 18
+  53    41  0  0  1 19
+  54    37  0  0  1 11
+  55    37  0  0  1 14
+  56     0  0  0  0
+  57     0  0  0  1 11
+  58     0  0  0  3 16 17 20
+  59     0  0  0  0
+  60    35 62 63  2 16 17
+  61    35  0  0  1 20
+  62    60  0  0  1 16
+  63    60  0  0  1 17
+  64     0  0  0  1 17
+  65     0  0  0  0
+  66     0  0  0  0
+  67     0  0  0  1 20
+  68     0  0  0  0
+  69     0  0  0  0
+  70     7  0  0  1 21
+  71     7  0  0  1 22
+  72     0  0  0  1 21
+  73     0  0  0  0
+  74     0  0  0  0
+  75     0  0  0  2 23 24
+  76     0  0  0  0
+  77     0  0  0  0
+  78     5  0  0  1 23
+  79     5  0  0  1 24
+  80     0  0  0  1 23
+  81     0  0  0  0
+  82     0  0  0  0
+  83     0  0  0  1 24
+  84     0  0  0  0
+  85     0  0  0  0
+   1 +   0  2  3 24  1  1 24
+   2 +   1  4  5 22  1  1 22
+   3 *   1 44 45  2  1 23 24
+   4 +   2  6  7 20  1  1 20
+   5 *   2 42 43  2  1 21 22
+   6 +   4  8  9  9  1  1  9
+   7 +   4 22 23 11  1 10 20
+   8 *   6 10 11  6  1  1  6
+   9 *   6 18 19  3  1  7  9
+  10 -   8 12 13  2  1  1  2
+  11 -   8 14 15  4  1  3  6
+  12 -  10  0  0  1  1  1  1
+  13 -  10  0  0  1  1  2  2
+  14 -  11  0  0  2  1  3  4
+  15 -  11 16 17  2  1  5  6
+  16 -  15  0  0  1  1  5  5
+  17 -  15  0  0  1  1  6  6
+  18 -   9 20 21  2  1  7  8
+  19 -   9  0  0  1  1  9  9
+  20 -  18  0  0  1  1  8  8
+  21 -  18  0  0  1  1  7  7
+  22 +   7 24 25  8  2 10 15 18 19
+  23 +   7 38 39  3  2 16 17 20 20
+  24 *  22 26 27  6  4 10 10 12 13 15 15 18 19
+  25 *  22 36 37  2  2 11 11 14 14
+  26 -  24  0  0  1  1 10 10
+  27 -  24 28 29  5  3 12 13 15 15 18 19
+  28 -  27 30 31  3  2 12 13 15 15
+  29 -  27 34 35  2  1 18 19
+  30 -  28  0  0  1  1 12 12
+  31 -  28 32 33  2  2 13 13 15 15
+  32 -  31  0  0  1  1 13 13
+  33 -  31  0  0  1  1 15 15
+  34 -  29  0  0  1  1 18 18
+  35 -  29  0  0  1  1 19 19
+  36 -  25  0  0  1  1 11 11
+  37 -  25  0  0  1  1 14 14
+  38 -  23 40 41  2  1 16 17
+  39 -  23  0  0  1  1 20 20
+  40 -  38  0  0  1  1 16 16
+  41 -  38  0  0  1  1 17 17
+  42 -   5  0  0  1  1 21 21
+  43 -   5  0  0  1  1 22 22
+  44 -   3  0  0  1  1 23 23
+  45 -   3  0  0  1  1 24 24
+
+ CHAIN : 6U8YA
+ CHAIN : 6U8YB
+ CHAIN : 6U8YC
+ CHAIN : 6U8YD
+ CHAIN : 6U8YE
+ CHAIN : 6U8YG
+ CHAIN : 6U8YH
+ CHAIN : 6U8YJ
+ CHAIN : 6U8YK
+ CHAIN : 6U8YL
+ CHAIN : 6U8YM
+ CHAIN : 6U8YN
+ CHAIN : 6U8YX
+ CHAIN : 6U8Ya
+ CHAIN : 6U8Yb
+ CHAIN : 6U8Yc
+ CHAIN : 6U8Yd
+ CHAIN : 6U8Ye
+ CHAIN : 6U8Yg
+ CHAIN : 6U8Yh
+ CHAIN : 6U8Yj
+ CHAIN : 6U8Yk
+ CHAIN : 6U8Yl
+ CHAIN : 6U8Ym
+ CHAIN : 6U8Yn
+ CHAIN : 6U8Yx
+

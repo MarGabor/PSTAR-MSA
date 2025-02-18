@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1ITHB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1CG8-B 16.4  2.1  134   141   15   MOLECULE: PROTEIN (HEMOGLOBIN);                                      
+
+# Pairwise alignments
+
+No 1: Query=1ITHB Sbjct=1CG8B Z-score=16.4
+
+DSSP  -LLLHHHHHHHHHHHHHHlhhHHHHHHHHHHHHHHHHLHHHHHHLLLLlLLLHhhHHHLH
+Query -GLTAAQIKAIQDHWFLNikgCLQAAADSIFFKYLTAYPGDLAFFHKFsSVPLygLRSNP   59
+ident   |   |   |   |                      ||     | |             
+Sbjct vKLSEDQEHYIKGVWKDV---DHKQITAKALERVFVVYPWTTRLFSKL-QGLF--SANDI   54
+DSSP  lLLLHHHHHHHHHHHHHL---LHHHHHHHHHHHHHHHLHHHHLLLHHH-LLLL--LLLLH
+
+DSSP  HHHHHHHHHHHHHHHHHHLLlLLHHHHHHLLHHHHHHHLLLHHHHHHHHLLHHHHHHHHH
+Query AYKAQTLTVINYLDKVVDALgGNAGALMKAKVPSHDAMGITPKHFGQLLKLVGGVFQEEF  119
+ident         |   |    | |              |   |     |  |            
+Sbjct GVQQHADKVQRALGEAIDDL-KKVEINFQNLSGKHQEIGVDTQNFKLLGQTFMVELALHY  113
+DSSP  HHHHHHHHHHHHHHHHHHLL-LLHHHHLHHHHHHHHHHLLLLLHHHHHHHHHHHHHHHHH
+
+DSSP  L--LLHHHHHHHHHHHHHHHHLLL----
+Query S--ADPTTVAAWGDAAGVLVAAMK----  141
+ident      |   ||          |      
+Sbjct KktFRPKEHAAAYKFFRLVAEALSsnyh  141
+DSSP  HhhLLHHHHHHHHHHHHHHHHHHHhlll
+
+
+# Structural equivalences
+   1: 1ITH-B 1CG8-B     1 -  17 <=>    2 -  18   (GLY    1  - ASN   17  <=> LYS    2  - VAL   18 )                          
+   1: 1ITH-B 1CG8-B    21 -  47 <=>   19 -  45   (CYS   21  - PHE   47  <=> ASP   19  - LEU   45 )                          
+   1: 1ITH-B 1CG8-B    49 -  52 <=>   46 -  49   (SER   49  - LEU   52  <=> GLN   46  - PHE   49 )                          
+   1: 1ITH-B 1CG8-B    55 -  79 <=>   50 -  74   (LEU   55  - LEU   79  <=> SER   50  - LEU   74 )                          
+   1: 1ITH-B 1CG8-B    81 - 120 <=>   75 - 114   (GLY   81  - SER  120  <=> LYS   75  - LYS  114 )                          
+   1: 1ITH-B 1CG8-B   121 - 141 <=>  117 - 137   (ALA  121  - LYS  141  <=> PHE  117  - SER  137 )                          
+
+# Translation-rotation matrices
+-matrix  "1ITH-B 1CG8-B  U(1,.)  -0.420754  0.587924  0.690877           18.093147"
+-matrix  "1ITH-B 1CG8-B  U(2,.)  -0.741304 -0.661806  0.111721           52.275814"
+-matrix  "1ITH-B 1CG8-B  U(3,.)   0.522910 -0.465143  0.714288           14.724936"
+

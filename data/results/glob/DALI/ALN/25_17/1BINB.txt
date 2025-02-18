@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1BINB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2DC3-A 12.3  2.8  136   172   18   MOLECULE: CYTOGLOBIN;                                                
+
+# Pairwise alignments
+
+No 1: Query=1BINB Sbjct=2DC3A Z-score=12.3
+
+DSSP  LLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHLLHHHL------LLLL-l
+Query VAFTEKQDALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLA------NGVD-p   53
+ident     |     |        ||     |          | ||  ||               
+Sbjct EELSEAERKAVQAMWARLYANCEDVGVAILVRFFVNFPSAKQYFSQFKhmedplEMERsp   60
+DSSP  LLLLHHHHHHHHHHHHHHHLLHHHHHHHHHHHHHHHLHHHHHHLLLLLllllhhHHLLlh
+
+DSSP  lLHHHHHHHHHHHHHHHHHHHHHhhhllLLLL-HHHHHHHHL-LLLLHHHHHHHHHHHHH
+Query tNPKLTGHAEKLFALVRDSAGQLkasgtVVAD-AALGSVHAQ-KAVTDPQFVVVKEALLK  111
+ident    |           |            |    |  |  ||    |    |       | 
+Sbjct qLRKHACRVMGALNTVVENLHDP---dkVSSVlALVGKAHALkHKVEPVYFKILSGVILE  117
+DSSP  hHHHHHHHHHHHHHHHHHLLLLH---hhHHHHhHHHHHHHHHlLLLLHHHHHHHHHHHHH
+
+DSSP  HHHHHHHHHLLHHHHHHHHHHHHHHHHHHHLL-----------------------
+Query TIKAAVGDKWSDELSRAWEVAYDELAAAIKKA-----------------------  143
+ident             |  |||             |                       
+Sbjct VVAEEFASDFPPETQRAWAKLRGLIYSHVTAAykevgwvqqvpnattppatlpss  172
+DSSP  HHHHHLHHHLLHHHHHHHHHHHHHHHHHHHHHhhhllllllllllllllllllll
+
+
+# Structural equivalences
+   1: 1BIN-B 2DC3-A     1 -  48 <=>    1 -  48   (VAL    1  - ALA   48  <=> GLU   17  - LYS   64 )                          
+   1: 1BIN-B 2DC3-A    49 -  52 <=>   55 -  58   (ASN   49  - ASP   52  <=> GLU   71  - ARG   74 )                          
+   1: 1BIN-B 2DC3-A    55 -  76 <=>   62 -  83   (ASN   55  - LEU   76  <=> LEU   78  - PRO   99 )                          
+   1: 1BIN-B 2DC3-A    82 -  85 <=>   86 -  89   (VAL   82  - ASP   85  <=> VAL  102  - VAL  105 )                          
+   1: 1BIN-B 2DC3-A    86 -  94 <=>   91 -  99   (ALA   86  - GLN   94  <=> ALA  107  - LEU  115 )                          
+   1: 1BIN-B 2DC3-A    95 - 143 <=>  101 - 149   (LYS   95  - ALA  143  <=> HIS  117  - ALA  165 )                          
+
+# Translation-rotation matrices
+-matrix  "1BIN-B 2DC3-A  U(1,.)  -0.989077  0.029268  0.144467           32.540249"
+-matrix  "1BIN-B 2DC3-A  U(2,.)   0.015723  0.995446 -0.094025           39.706638"
+-matrix  "1BIN-B 2DC3-A  U(3,.)  -0.146561 -0.090726 -0.985032           60.394524"
+

@@ -1,0 +1,33 @@
+# Job: toxin
+# Query: 1CDTB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1FF4-A  8.8  2.2   58    65   33   MOLECULE: MUSCARINIC TOXIN/ACETYLCHOLINE RECEPTOR BINDING P          
+
+# Pairwise alignments
+
+No 1: Query=1CDTB Sbjct=1FF4A Z-score=8.8
+
+DSSP  LEEELLL---lLLEEELLLLLLEEEEEEELLL--LLEEeEEEEELLLLLLLLLEEEEEEL
+Query LKCNKLI---pIAYKTCPEGKNLCYKMMLASK--KMVPvKRGCINVCPKNSALVKYVCCS   55
+ident | |             || | | | |               ||   |||        || 
+Sbjct LTCVTTKsiggVTTEDCPAGQNVCFKRWHYVTpkNYDI-IKGCAATCPKVDNNDPIRCCG   59
+DSSP  LEEEEELllllEEEEELLLLLLEEEEEEEELLllLEEE-EEEEELLLLLLLLLLLEEEEL
+
+DSSP  LLLLL-
+Query TDRCN-   60
+ident || || 
+Sbjct TDKCNd   65
+DSSP  LLLLLl
+
+
+# Structural equivalences
+   1: 1CDT-B 1FF4-A     1 -   7 <=>    1 -   7   (LEU    1  - ILE    7  <=> LEU    1  - LYS    7 )                          
+   1: 1CDT-B 1FF4-A     9 -  29 <=>   12 -  32   (ILE    9  - LYS   29  <=> VAL   12  - THR   32 )                          
+   1: 1CDT-B 1FF4-A    30 -  33 <=>   35 -  38   (LYS   30  - PRO   33  <=> ASN   35  - ILE   38 )                          
+   1: 1CDT-B 1FF4-A    35 -  60 <=>   39 -  64   (LYS   35  - ASN   60  <=> ILE   39  - ASN   64 )                          
+
+# Translation-rotation matrices
+-matrix  "1CDT-B 1FF4-A  U(1,.)  -0.076466  0.461380 -0.883901           25.312714"
+-matrix  "1CDT-B 1FF4-A  U(2,.)   0.285443  0.859523  0.423961          -20.363398"
+-matrix  "1CDT-B 1FF4-A  U(3,.)   0.955340 -0.219884 -0.197422          -41.147022"
+

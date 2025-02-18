@@ -1,0 +1,616 @@
+A length: 157
+B length: 157
+C length: 157
+D length: 157
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            157
+Total number of atoms read in:              1204
+Total number of ignored atom records:        393
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.UNNO       
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              COMPND   2 MOLECULE: LECTIN CEL-IV, C-TYPE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: CUCUMARIA ECHINATA;                             AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.U          
+         157  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           1   1.37249374              18          29          51         146
+ #popped           2           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau           3   1.34989107              18          51
+ #popped           4           2
+ #selectset contacts        1384
+ selectset done           2
+ eigen done           2
+ tau           5  0.800154150              18
+ #popped           5           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau           7  0.965849340              29          74          97         108
+ #popped           8           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau           9  0.671887636              85         121
+ #popped          10           2
+ #selectset contacts        1384
+ selectset done           2
+ eigen done           2
+ tau          11  0.531248748              29
+ #popped          13           2
+ #selectset contacts        1384
+ selectset done           2
+ eigen done           2
+ tau          13  0.608283043             135
+ #popped          14           2
+ #selectset contacts        1384
+ selectset done           2
+ eigen done           2
+ tau          15  0.343434334              85
+ #popped          11           1
+ #selectset contacts        1384
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           9           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau          17   1.25629783              61          74
+ #popped          18           0
+ #selectset contacts        1384
+ selectset done           0
+ eigen done           0
+ tau          19  0.642073810              61
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              COMPND   2 MOLECULE: LECTIN CEL-IV, C-TYPE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: CUCUMARIA ECHINATA;                             AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.U          
+           0
+         157
+         157  residues read 3ALU.dssp                                                   
+  grow short strand           4           5
+  grow short strand          10          12
+  grow short strand          36          40
+  grow short strand          45          48
+  grow short strand          50          51
+  exclude short helix          72          74
+  grow short strand          96          98
+  grow short strand         134         137
+  grow short strand         152         155
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2 14  5  6  3  4  9 11 12 13 10  7  8
+   2     1  4  5  5  1  2 14  5  6
+   3     1  8  9  9  3  4  9 11 12 13 10  7  8
+   4     2  6  7  3  1  2 14
+   5     2  0  0  2  5  6
+   6     4  0  0  2  1  2
+   7     4  0  0  1 14
+   8     3 10 11  7  3  4  9 11 12 13 10
+   9     3 18 19  2  7  8
+  10     8 12 13  6  3  4  9 11 12 13
+  11     8  0  0  1 10
+  12    10  0  0  2  3  4
+  13    10 14 15  4  9 11 12 13
+  14    13 16 17  3  9 11 12
+  15    13  0  0  1 13
+  16    14  0  0  1  9
+  17    14  0  0  2 11 12
+  18     9  0  0  1  7
+  19     9  0  0  1  8
+  20     0  0  0  1  7
+  21     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  5  3  1  2  5  6 14 14
+   3 -   1  8  9  9  2  3  4  7 13
+   4 -   2  6  7  3  2  1  2 14 14
+   5 -   2  0  0  2  1  5  6
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  1  1 14 14
+   8 -   3 10 11  7  2  3  4  9 13
+   9 -   3 18 19  2  1  7  8
+  10 -   8 12 13  6  3  3  4  9  9 11 13
+  11 -   8  0  0  1  1 10 10
+  12 -  10  0  0  2  1  3  4
+  13 -  10 14 15  4  2  9  9 11 13
+  14 -  13 16 17  3  2  9  9 11 12
+  15 -  13  0  0  1  1 13 13
+  16 -  14  0  0  1  1  9  9
+  17 -  14  0  0  2  1 11 12
+  18 -   9  0  0  1  1  7  7
+  19 -   9  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            157
+Total number of atoms read in:              1204
+Total number of ignored atom records:        414
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.UNNO       
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              COMPND   2 MOLECULE: LECTIN CEL-IV, C-TYPE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: CUCUMARIA ECHINATA;                             AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.U          
+         157  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1367
+ selectset done           0
+ eigen done           0
+ tau           1   1.40938866              18          29          51         146
+ #popped           2           1
+ #selectset contacts        1367
+ selectset done           1
+ eigen done           1
+ tau           3   1.17398417              18
+ #popped           5           1
+ #selectset contacts        1367
+ selectset done           1
+ eigen done           1
+ tau           5   1.24990761             147
+ #popped           6           1
+ #selectset contacts        1367
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1367
+ selectset done           0
+ eigen done           0
+ tau           7  0.988857925              61          75
+ #popped           8           0
+ #selectset contacts        1367
+ selectset done           0
+ eigen done           0
+ tau           9  0.786137998              29          61          85         120
+ #popped          10           1
+ #selectset contacts        1367
+ selectset done           1
+ eigen done           1
+ tau          11  0.451736361              29
+ #popped          13           1
+ #selectset contacts        1367
+ selectset done           1
+ eigen done           1
+ tau          13  0.501687706             135
+ #popped          14           1
+ #selectset contacts        1367
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          11           0
+ #selectset contacts        1367
+ selectset done           0
+ eigen done           0
+ tau          15  0.958076119              61          97         107
+ #popped          16           1
+ #selectset contacts        1367
+ selectset done           1
+ eigen done           1
+ tau          17  0.588047266              61
+ #popped          17           0
+ #selectset contacts        1367
+ selectset done           0
+ eigen done           0
+ tau          19  0.779183686              97
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              COMPND   2 MOLECULE: LECTIN CEL-IV, C-TYPE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: CUCUMARIA ECHINATA;                             AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.U          
+           0
+         157
+         157  residues read 3ALU.dssp                                                   
+  grow short strand           3           4
+  grow short strand          10          12
+  grow short strand          37          40
+  grow short strand          45          48
+  grow short strand          50          51
+  exclude short helix          72          74
+  grow short strand          96          98
+  grow short strand         134         137
+  grow short strand         152         155
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  5  6 14  3  4  9 11 12 13  7 10  8
+   2     1  4  5  5  1  2  5  6 14
+   3     1  8  9  9  3  4  9 11 12 13  7 10  8
+   4     2  0  0  2  1  2
+   5     2  6  7  3  5  6 14
+   6     5  0  0  2  5  6
+   7     5  0  0  1 14
+   8     3 10 11  8  3  4  9 11 12 13  7 10
+   9     3  0  0  1  8
+  10     8 12 13  6  3  4  9 11 12 13
+  11     8 16 17  2  7 10
+  12    10  0  0  2  3  4
+  13    10 14 15  4  9 11 12 13
+  14    13  0  0  3  9 11 12
+  15    13  0  0  1 13
+  16    11  0  0  1  7
+  17    11  0  0  1 10
+  18     0  0  0  1  7
+  19     0  0  0  0
+  20     0  0  0  1 10
+  21     0  0  0  0
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  5  3  1  2  5  6 14 14
+   3 -   1  8  9  9  2  3  4  7 13
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  3  2  5  6 14 14
+   6 -   5  0  0  2  1  5  6
+   7 -   5  0  0  1  1 14 14
+   8 -   3 10 11  8  3  3  4  7  7  9 13
+   9 -   3  0  0  1  1  8  8
+  10 -   8 12 13  6  3  3  4  9  9 11 13
+  11 -   8 16 17  2  2  7  7 10 10
+  12 -  10  0  0  2  1  3  4
+  13 -  10 14 15  4  2  9  9 11 13
+  14 -  13  0  0  3  2  9  9 11 12
+  15 -  13  0  0  1  1 13 13
+  16 -  11  0  0  1  1  7  7
+  17 -  11  0  0  1  1 10 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            157
+Total number of atoms read in:              1204
+Total number of ignored atom records:        385
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.UNNO       
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              COMPND   2 MOLECULE: LECTIN CEL-IV, C-TYPE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: CUCUMARIA ECHINATA;                             AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.U          
+         157  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1379
+ selectset done           0
+ eigen done           0
+ tau           1   1.75679839              37          47
+ #popped           2           0
+ #selectset contacts        1379
+ selectset done           0
+ eigen done           0
+ tau           3   1.43755126              17         147
+ #popped           4           1
+ #selectset contacts        1379
+ selectset done           1
+ eigen done           1
+ tau           5   1.26261795              17
+ #popped           5           0
+ #selectset contacts        1379
+ selectset done           0
+ eigen done           0
+ tau           7   1.16464770              55          82         123         133
+ #popped           8           1
+ #selectset contacts        1379
+ selectset done           1
+ eigen done           1
+ tau           9  0.298566759              95
+ #popped          10           2
+ #selectset contacts        1379
+ selectset done           2
+ eigen done           2
+ tau          11   2.37405419              55
+ #popped          12           2
+ #selectset contacts        1379
+ selectset done           2
+ eigen done           2
+ tau          13   1.02731276              29
+ #popped          11           1
+ #selectset contacts        1379
+ selectset done           1
+ eigen done           1
+ tau          15   2.78557014             105
+ #popped          17           1
+ #selectset contacts        1379
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           9           0
+ #selectset contacts        1379
+ selectset done           0
+ eigen done           0
+ tau          17   1.66705096              72
+ #popped          19           0
+ #selectset contacts        1379
+ selectset done           0
+ eigen done           0
+ tau          19  0.486842096              82
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              COMPND   2 MOLECULE: LECTIN CEL-IV, C-TYPE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: CUCUMARIA ECHINATA;                             AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.U          
+           0
+         157
+         157  residues read 3ALU.dssp                                                   
+  grow short strand           3           5
+  grow short strand          10          12
+  grow short strand          37          40
+  grow short strand          45          48
+  grow short strand          50          51
+  exclude short helix          72          74
+  grow short strand          96          98
+  grow short strand         134         137
+  grow short strand         152         156
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2 14  3  4  7  9 10 11 12 13  8  5  6
+   2     1  4  5 12  1  2 14  3  4  7  9 10 11 12 13  8
+   3     1  0  0  2  5  6
+   4     2  6  7  3  1  2 14
+   5     2  8  9  9  3  4  7  9 10 11 12 13  8
+   6     4  0  0  2  1  2
+   7     4  0  0  1 14
+   8     5 10 11  8  3  4  7  9 10 11 12 13
+   9     5  0  0  1  8
+  10     8 12 13  4  3  4  7  9
+  11     8 16 17  4 10 11 12 13
+  12    10 14 15  3  3  4  7
+  13    10  0  0  1  9
+  14    12  0  0  2  3  4
+  15    12  0  0  1  7
+  16    11  0  0  1 10
+  17    11  0  0  3 11 12 13
+  18     0  0  0  1  8
+  19     0  0  0  0
+  20     0  0  0  0
+  21     0  0  0  0
+   1 +   0  2  3 14  1  1 14
+   2 *   1  4  5 12  2  1  4  7 14
+   3 =   1  0  0  2  1  5  6
+   4 -   2  6  7  3  2  1  2 14 14
+   5 -   2  8  9  9  2  3  4  7 13
+   6 -   4  0  0  2  1  1  2
+   7 -   4  0  0  1  1 14 14
+   8 -   5 10 11  8  3  3  4  7  7  9 13
+   9 -   5  0  0  1  1  8  8
+  10 -   8 12 13  4  3  3  4  7  7  9  9
+  11 -   8 16 17  4  1 10 13
+  12 -  10 14 15  3  2  3  4  7  7
+  13 -  10  0  0  1  1  9  9
+  14 -  12  0  0  2  1  3  4
+  15 -  12  0  0  1  1  7  7
+  16 -  11  0  0  1  1 10 10
+  17 -  11  0  0  3  1 11 13
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            157
+Total number of atoms read in:              1204
+Total number of ignored atom records:        349
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.UNNO       
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              COMPND   2 MOLECULE: LECTIN CEL-IV, C-TYPE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: CUCUMARIA ECHINATA;                             AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.U          
+         157  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1374
+ selectset done           0
+ eigen done           0
+ tau           1   1.36534536              18          29          51         146
+ #popped           2           1
+ #selectset contacts        1374
+ selectset done           1
+ eigen done           1
+ tau           3   1.29308403              18
+ #popped           5           1
+ #selectset contacts        1374
+ selectset done           1
+ eigen done           1
+ tau           5   1.19556379             147
+ #popped           6           1
+ #selectset contacts        1374
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1374
+ selectset done           0
+ eigen done           0
+ tau           7  0.865416706              64          75
+ #popped           8           0
+ #selectset contacts        1374
+ selectset done           0
+ eigen done           0
+ tau           9  0.555080891              85         122
+ #popped          10           1
+ #selectset contacts        1374
+ selectset done           1
+ eigen done           1
+ tau          11   2.60225415              29          64
+ #popped          12           1
+ #selectset contacts        1374
+ selectset done           1
+ eigen done           1
+ tau          13  0.512817621              85         136
+ #popped          14           1
+ #selectset contacts        1374
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped          11           0
+ #selectset contacts        1374
+ selectset done           0
+ eigen done           0
+ tau          15   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   07-AUG-10   3ALU              COMPND   2 MOLECULE: LECTIN CEL-IV, C-TYPE;                                     SOURCE   2 ORGANISM_SCIENTIFIC: CUCUMARIA ECHINATA;                             AUTHOR    T.HATAKEYAMA,T.HOZAWA,K.ISHII,T.KAMIYA,S.GODA,M.KUSUNOKI,H.U          
+           0
+         157
+         157  residues read 3ALU.dssp                                                   
+  grow short strand           3           5
+  grow short strand          10          12
+  grow short strand          37          40
+  grow short strand          45          48
+  grow short strand          50          51
+  exclude short helix          72          74
+  grow short strand          96          98
+  grow short strand         134         137
+  grow short strand         152         155
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 14  1  2  5  6 14  3  4  9 13 12  7  8 10 11
+   2     1  4  5  5  1  2  5  6 14
+   3     1 10 11  9  3  4  9 13 12  7  8 10 11
+   4     2  0  0  2  1  2
+   5     2  6  7  3  5  6 14
+   6     5  0  0  2  5  6
+   7     5  0  0  1 14
+   8     0  0  0  9  3  4  9 13 12  7  8 10 11
+   9     0  0  0  0
+  10     3 12 13  7  3  4  9 13 12  7  8
+  11     3  0  0  2 10 11
+  12    10 14 15  5  3  4  9 13 12
+  13    10  0  0  2  7  8
+  14    12  0  0  4  3  4  9 13
+  15    12  0  0  1 12
+   1 *   0  2  3 14  1  1 14
+   2 -   1  4  5  5  3  1  2  5  6 14 14
+   3 -   1  8  9  9  2  3  4  7 13
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  3  2  5  6 14 14
+   6 -   5  0  0  2  1  5  6
+   7 -   5  0  0  1  1 14 14
+   8 -   3 10 11  7  3  3  4  7  9 12 13
+   9 -   3  0  0  2  1 10 11
+  10 -   8 12 13  5  3  3  4  9  9 12 13
+  11 -   8  0  0  2  1  7  8
+  12 -  10  0  0  4  3  3  4  9  9 13 13
+  13 -  10  0  0  1  1 12 12
+
+ CHAIN : 3ALUA
+ CHAIN : 3ALUB
+ CHAIN : 3ALUC
+ CHAIN : 3ALUD
+

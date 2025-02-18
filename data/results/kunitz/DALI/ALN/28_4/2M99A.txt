@@ -1,0 +1,32 @@
+# Job: kunitz
+# Query: 2M99A
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2CA7-A  8.1  1.5   56    60   39   MOLECULE: CONKUNITZIN-S1;                                            
+
+# Pairwise alignments
+
+No 1: Query=2M99A Sbjct=2CA7A Z-score=8.1
+
+DSSP  --LLHHHHLL-LLHHhLLLLEEEEEEEHHHLEEEEEEELLLLLLLLLLLLHHHHHHHHLL
+Query --RPRFCELA-PSAGsCFAFVPSYYYNQYSNTCHSFTYSGCGGNANRFRTIDECNRTCVG   57
+ident   ||  | |   |           |||     |  | | | ||| | ||    | |||  
+Sbjct kdRPSLCDLPaDSGS-GTKAEKRIYYNSARKQCLRFDYTGQGGNENNFRRTYDCQRTCLY   59
+DSSP  llLLHHHLLLlLLLL-LLLLEEEEEEELLLLEEEEEEELLLLLLLLLLLLHHHHHHHHHL
+
+DSSP  -
+Query -   57
+ident  
+Sbjct t   60
+DSSP  l
+
+
+# Structural equivalences
+   1: 2M99-A 2CA7-A     1 -   8 <=>    3 -  10   (ARG    1  - ALA    8  <=> ARG    3  - PRO   10 )                          
+   1: 2M99-A 2CA7-A     9 -  12 <=>   12 -  15   (PRO    9  - GLY   12  <=> ASP   12  - SER   15 )                          
+   1: 2M99-A 2CA7-A    14 -  57 <=>   16 -  59   (CYS   14  - GLY   57  <=> GLY   16  - TYR   59 )                          
+
+# Translation-rotation matrices
+-matrix  "2M99-A 2CA7-A  U(1,.)  -0.196540 -0.965629  0.170096            1.338127"
+-matrix  "2M99-A 2CA7-A  U(2,.)  -0.906179  0.245140  0.344595            0.299760"
+-matrix  "2M99-A 2CA7-A  U(3,.)  -0.374448 -0.086411 -0.923213            0.428703"
+

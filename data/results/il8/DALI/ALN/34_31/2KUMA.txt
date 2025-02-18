@@ -1,0 +1,33 @@
+# Job: il8
+# Query: 2KUMA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1HUN-B  5.6  2.4   59    69   19   MOLECULE: HUMAN MACROPHAGE INFLAMMATORY PROTEIN 1 BETA;              
+
+# Pairwise alignments
+
+No 1: Query=2KUMA Sbjct=1HUNB Z-score=5.6
+
+DSSP  --lllllllLLLLLLLLLLLLHHHhllLLEEEEELLLllLLLLEEEEEELL-EEEEELLL
+Query --fllppstACCTQLYRKPLSDKLlrkVIQVELQEADgdCHLQAFVLHLAQ-RSICIHPQ   57
+ident          |||       |       |           |   | |         |  | 
+Sbjct apmgsdpptACCFSYTARKLPRNF---VVDYYETSSL--CSQPAVVFQTKRsKQVCADPS   55
+DSSP  lllllllllLLLLLLLLLLLLHHH---LLEEEELLLL--LLLLLEEEELLLlLEEEELLL
+
+DSSP  LHHHHHHHHHHHHLhhhllllllllllllll
+Query NPSLSQWFEHQERKlhgtlpklnfgmlrkmg   88
+ident            |                   
+Sbjct ESWVQEYVYDLELN-----------------   69
+DSSP  LHHHHHHHHHHHLL-----------------
+
+
+# Structural equivalences
+   1: 2KUM-A 1HUN-B     8 -  22 <=>   10 -  24   (ALA    8  - LEU   22  <=> ALA   10  - PHE   24 )                          
+   1: 2KUM-A 1HUN-B    26 -  35 <=>   25 -  34   (VAL   26  - ASP   35  <=> VAL   25  - LEU   34 )                          
+   1: 2KUM-A 1HUN-B    38 -  49 <=>   35 -  46   (CYS   38  - GLN   49  <=> CYS   35  - ARG   46 )                          
+   1: 2KUM-A 1HUN-B    50 -  71 <=>   48 -  69   (ARG   50  - LYS   71  <=> LYS   48  - ASN   69 )                          
+
+# Translation-rotation matrices
+-matrix  "2KUM-A 1HUN-B  U(1,.)   0.847746  0.338429  0.408402           14.657231"
+-matrix  "2KUM-A 1HUN-B  U(2,.)   0.171478 -0.903512  0.392761            1.069714"
+-matrix  "2KUM-A 1HUN-B  U(3,.)   0.501918 -0.262930 -0.823982            6.390707"
+

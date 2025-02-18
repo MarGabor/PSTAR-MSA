@@ -1,0 +1,701 @@
+A length: 233
+B length: 233
+C length: 233
+D length: 233
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            233
+Total number of atoms read in:              1772
+Total number of ignored atom records:         26
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              COMPND   2 MOLECULE: LEUCOAGGLUTINATING PHYTOHEMAGGLUTININ;                     SOURCE   2 ORGANISM_SCIENTIFIC: PHASEOLUS VULGARIS;                             AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+         233  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1997
+ selectset done           0
+ eigen done           0
+ tau           1   1.12426996              19          47          74          87         208         223
+ #popped           2           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau           3   1.19926023              74         153
+ #popped           4           2
+ #selectset contacts        1997
+ selectset done           2
+ eigen done           2
+ tau           5  0.750660896             177         187
+ #popped           6           2
+ #selectset contacts        1997
+ selectset done           2
+ eigen done           2
+ tau           7  0.280414164             165
+ #popped           8           3
+ #selectset contacts        1997
+ selectset done           3
+ eigen done           3
+ tau           9   3.76585340              57
+ #popped          10           4
+ #selectset contacts        1997
+ selectset done           4
+ eigen done           4
+ tau          11   0.00000000    
+ #popped          11           3
+ #selectset contacts        1997
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           9           2
+ #selectset contacts        1997
+ selectset done           2
+ eigen done           2
+ tau          11   3.51746607             208
+ #popped          12           2
+ #selectset contacts        1997
+ selectset done           2
+ eigen done           2
+ tau          13   2.44959354             193
+ #popped           5           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau          15  0.812559545             119
+ #popped          16           2
+ #selectset contacts        1997
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          17           1
+ #selectset contacts        1997
+ selectset done           1
+ eigen done           1
+ tau          17  0.354178220             134
+ #popped           3           0
+ #selectset contacts        1997
+ selectset done           0
+ eigen done           0
+ tau          19  0.522324383              32
+ #popped          21           0
+ #selectset contacts        1997
+ selectset done           0
+ eigen done           0
+ tau          21  0.729859829              47
+ #popped          23           0
+ #selectset contacts        1997
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              COMPND   2 MOLECULE: LEUCOAGGLUTINATING PHYTOHEMAGGLUTININ;                     SOURCE   2 ORGANISM_SCIENTIFIC: PHASEOLUS VULGARIS;                             AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+           0
+         233
+         233  residues read 1G8W.dssp                                                   
+  exclude short helix          13          15
+  grow short strand          16          20
+  grow short strand          23          24
+  grow short strand          30          31
+  grow short strand          55          56
+  exclude short helix         103         105
+  grow short strand         149         152
+  exclude short helix         195         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  5  6  7 12 13 14 15 16  8  9 10 11  3  4
+   2     1  4  5 14  1  2  5  6  7 12 13 14 15 16  8  9 10 11
+   3     1  0  0  2  3  4
+   4     2  8  9 10  1  2  5  6  7 12 13 14 15 16
+   5     2 16 17  4  8  9 10 11
+   6     0  0  0 10  1  2  5  6  7 12 13 14 15 16
+   7     0  0  0  0
+   8     4 10 11  6  1  2  5  6  7 12
+   9     4 12 13  4 13 14 15 16
+  10     8  0  0  4  1  2  5  6
+  11     8  0  0  2  7 12
+  12     9 14 15  3 13 14 15
+  13     9  0  0  1 16
+  14    12  0  0  2 13 14
+  15    12  0  0  1 15
+  16     5  0  0  1  8
+  17     5 18 19  3  9 10 11
+  18    17  0  0  1  9
+  19    17  0  0  2 10 11
+  20     0  0  0  2  3  4
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1  2  5 16
+   3 -   1  0  0  2  1  3  4
+   4 -   2  6  7 10  3  1  2  5  7 12 16
+   5 -   2 14 15  4  1  8 11
+   6 -   4  8  9  6  3  1  2  5  7 12 12
+   7 -   4 10 11  4  1 13 16
+   8 -   6  0  0  4  2  1  2  5  6
+   9 -   6  0  0  2  2  7  7 12 12
+  10 -   7 12 13  3  1 13 15
+  11 -   7  0  0  1  1 16 16
+  12 -  10  0  0  2  1 13 14
+  13 -  10  0  0  1  1 15 15
+  14 -   5  0  0  1  1  8  8
+  15 -   5 16 17  3  1  9 11
+  16 -  15  0  0  1  1  9  9
+  17 -  15  0  0  2  1 10 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            233
+Total number of atoms read in:              1787
+Total number of ignored atom records:         26
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              COMPND   2 MOLECULE: LEUCOAGGLUTINATING PHYTOHEMAGGLUTININ;                     SOURCE   2 ORGANISM_SCIENTIFIC: PHASEOLUS VULGARIS;                             AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+         233  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2007
+ selectset done           0
+ eigen done           0
+ tau           1   1.08917308              19          47          73          87         208         223
+ #popped           2           1
+ #selectset contacts        2007
+ selectset done           1
+ eigen done           1
+ tau           3   1.18265569              99         162         177         187
+ #popped           4           2
+ #selectset contacts        2007
+ selectset done           2
+ eigen done           2
+ tau           5  0.449586213              19
+ #popped           7           2
+ #selectset contacts        2007
+ selectset done           2
+ eigen done           2
+ tau           7  0.500649452              63          73         208
+ #popped           8           3
+ #selectset contacts        2007
+ selectset done           3
+ eigen done           3
+ tau           9   3.89263058              99         193
+ #popped          10           4
+ #selectset contacts        2007
+ selectset done           4
+ eigen done           4
+ tau          11  0.390804946              63
+ #popped          13           4
+ #selectset contacts        2007
+ selectset done           4
+ eigen done           4
+ tau          13   0.00000000    
+ #popped          11           3
+ #selectset contacts        2007
+ selectset done           3
+ eigen done           3
+ tau          13  0.267361104             172
+ #popped           9           2
+ #selectset contacts        2007
+ selectset done           2
+ eigen done           2
+ tau          15   0.00000000    
+ #popped           5           1
+ #selectset contacts        2007
+ selectset done           1
+ eigen done           1
+ tau          15   2.69411254             152
+ #popped          16           2
+ #selectset contacts        2007
+ selectset done           2
+ eigen done           2
+ tau          17   1.55321050             118
+ #popped          19           2
+ #selectset contacts        2007
+ selectset done           2
+ eigen done           2
+ tau          19  0.374802232             137
+ #popped          17           1
+ #selectset contacts        2007
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           3           0
+ #selectset contacts        2007
+ selectset done           0
+ eigen done           0
+ tau          21  0.553475618              31
+ #popped          23           0
+ #selectset contacts        2007
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              COMPND   2 MOLECULE: LEUCOAGGLUTINATING PHYTOHEMAGGLUTININ;                     SOURCE   2 ORGANISM_SCIENTIFIC: PHASEOLUS VULGARIS;                             AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+           0
+         233
+         233  residues read 1G8W.dssp                                                   
+  exclude short helix          13          15
+  grow short strand          16          20
+  grow short strand          23          24
+  grow short strand          30          31
+  grow short strand          55          56
+  exclude short helix         103         105
+  grow short strand         149         152
+  exclude short helix         195         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  2  5  6  8 15 12 13 14  7 16  9 10 11  3  4
+   2     1  4  5 14  1  2  5  6  8 15 12 13 14  7 16  9 10 11
+   3     1  0  0  2  3  4
+   4     2  6  7 11  1  2  5  6  8 15 12 13 14  7 16
+   5     2 20 21  3  9 10 11
+   6     4  0  0  2  1  2
+   7     4  8  9  9  5  6  8 15 12 13 14  7 16
+   8     7 10 11  7  5  6  8 15 12 13 14
+   9     7  0  0  2  7 16
+  10     8 12 13  4  5  6  8 15
+  11     8 14 15  3 12 13 14
+  12    10  0  0  2  5  6
+  13    10  0  0  2  8 15
+  14    11  0  0  1 12
+  15    11  0  0  2 13 14
+  16     0  0  0  3  9 10 11
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  3  9 10 11
+  20     5  0  0  1  9
+  21     5  0  0  2 10 11
+  22     0  0  0  2  3  4
+  23     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 14  2  1  2  5 16
+   3 -   1  0  0  2  1  3  4
+   4 -   2  6  7 11  3  1  2  5  8 12 16
+   5 -   2 16 17  3  1  9 11
+   6 -   4  0  0  2  1  1  2
+   7 -   4  8  9  9  2  5  8 12 16
+   8 -   7 10 11  7  3  5  6  8  8 12 15
+   9 -   7  0  0  2  2  7  7 16 16
+  10 -   8 12 13  4  3  5  6  8  8 15 15
+  11 -   8 14 15  3  1 12 14
+  12 -  10  0  0  2  1  5  6
+  13 -  10  0  0  2  2  8  8 15 15
+  14 -  11  0  0  1  1 12 12
+  15 -  11  0  0  2  1 13 14
+  16 -   5  0  0  1  1  9  9
+  17 -   5  0  0  2  1 10 11
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            233
+Total number of atoms read in:              1773
+Total number of ignored atom records:         26
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              COMPND   2 MOLECULE: LEUCOAGGLUTINATING PHYTOHEMAGGLUTININ;                     SOURCE   2 ORGANISM_SCIENTIFIC: PHASEOLUS VULGARIS;                             AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+         233  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau           1   1.03764057              51          65          91         119         193         205
+ #popped           2           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau           3  0.784716427              76         219
+ #popped           4           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau           5   1.42374063              10          51
+ #popped           6           3
+ #selectset contacts        2001
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau           7  0.369643241              21
+ #popped           9           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           5           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau           9   1.22354817             163         193
+ #popped          10           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau          11  0.653267264              86         151
+ #popped          12           3
+ #selectset contacts        2001
+ selectset done           3
+ eigen done           3
+ tau          13  0.600775182             163
+ #popped          14           3
+ #selectset contacts        2001
+ selectset done           3
+ eigen done           3
+ tau          15   2.17643094              86
+ #popped          13           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau          17  0.912778914             125         135
+ #popped          18           2
+ #selectset contacts        2001
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          11           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped           3           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau          19   1.23746192              65         119
+ #popped          20           1
+ #selectset contacts        2001
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          21           0
+ #selectset contacts        2001
+ selectset done           0
+ eigen done           0
+ tau          21  0.801536322             109
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              COMPND   2 MOLECULE: LEUCOAGGLUTINATING PHYTOHEMAGGLUTININ;                     SOURCE   2 ORGANISM_SCIENTIFIC: PHASEOLUS VULGARIS;                             AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+           0
+         233
+         233  residues read 1G8W.dssp                                                   
+  exclude short helix          13          15
+  grow short strand          16          20
+  grow short strand          23          24
+  grow short strand          30          31
+  grow short strand          55          56
+  exclude short helix         103         105
+  grow short strand         149         152
+  exclude short helix         195         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  7 16  2  3  4  5 15  8  9 10 11 12 13 14  6
+   2     1  4  5 15  1  7 16  2  3  4  5 15  8  9 10 11 12 13 14
+   3     1  0  0  1  6
+   4     2  6  7  7  1  7 16  2  3  4  5
+   5     2 10 11  8 15  8  9 10 11 12 13 14
+   6     4  0  0  3  1  7 16
+   7     4  8  9  4  2  3  4  5
+   8     7  0  0  1  2
+   9     7  0  0  3  3  4  5
+  10     5 12 13  5 15  8  9 10 11
+  11     5  0  0  3 12 13 14
+  12    10  0  0  1 15
+  13    10  0  0  4  8  9 10 11
+  14     0  0  0  0
+  15     0  0  0  1 15
+  16     0  0  0  0
+  17     0  0  0  0
+  18     0  0  0  4  8  9 10 11
+  19     0  0  0  0
+  20     0  0  0  1  6
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5 15  2  1  5  7 16
+   3 -   1  0  0  1  1  6  6
+   4 -   2  6  7  7  3  1  5  7  7 16 16
+   5 -   2 10 11  8  1  8 15
+   6 -   4  0  0  3  3  1  1  7  7 16 16
+   7 -   4  8  9  4  1  2  5
+   8 -   7  0  0  1  1  2  2
+   9 -   7  0  0  3  1  3  5
+  10 -   5 12 13  5  2  8 11 15 15
+  11 -   5  0  0  3  1 12 14
+  12 -  10  0  0  1  1 15 15
+  13 -  10  0  0  4  1  8 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            233
+Total number of atoms read in:              1784
+Total number of ignored atom records:         26
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              COMPND   2 MOLECULE: LEUCOAGGLUTINATING PHYTOHEMAGGLUTININ;                     SOURCE   2 ORGANISM_SCIENTIFIC: PHASEOLUS VULGARIS;                             AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+         233  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau           1   1.18009961              17          48          74         158         207         223
+ #popped           2           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           3  0.876504779             177         187
+ #popped           4           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           5  0.493370801              17
+ #popped           7           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           7  0.479949087              64
+ #popped           9           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           3           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau           9  0.820196390              48
+ #popped          10           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          11  0.539822996              31
+ #popped          11           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau          13   1.09283817              91         119
+ #popped          14           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          15  0.270068645             125
+ #popped          16           2
+ #selectset contacts        1999
+ selectset done           2
+ eigen done           2
+ tau          17   2.45496893              84
+ #popped          17           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          19   999.999023             158
+ #popped          20           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          21  0.468304425             146
+ #popped          22           1
+ #selectset contacts        1999
+ selectset done           1
+ eigen done           1
+ tau          23  0.913236797             135
+ #popped          15           0
+ #selectset contacts        1999
+ selectset done           0
+ eigen done           0
+ tau          25  0.822313368             109
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   21-NOV-00   1G8W              COMPND   2 MOLECULE: LEUCOAGGLUTINATING PHYTOHEMAGGLUTININ;                     SOURCE   2 ORGANISM_SCIENTIFIC: PHASEOLUS VULGARIS;                             AUTHOR    L.BUTS,T.W.HAMELRYCK,M.DAO-THI,R.LORIS,L.WYNS,M.E.ETZLER              
+           0
+         233
+         233  residues read 1G8W.dssp                                                   
+  exclude short helix          13          15
+  grow short strand          16          20
+  grow short strand          23          24
+  grow short strand          30          31
+  grow short strand          55          56
+  exclude short helix         103         105
+  grow short strand         149         152
+  exclude short helix         195         198
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 16  1  6  7 12 13 14 15 16  2  3  4  5  8  9 10 11
+   2     1  6  7  8  1  6  7 12 13 14 15 16
+   3     1 10 11  8  2  3  4  5  8  9 10 11
+   4     0  0  0  8  1  6  7 12 13 14 15 16
+   5     0  0  0  0
+   6     2  0  0  1  1
+   7     2  8  9  7  6  7 12 13 14 15 16
+   8     7  0  0  1  6
+   9     7  0  0  6  7 12 13 14 15 16
+  10     3 12 13  4  2  3  4  5
+  11     3 16 17  4  8  9 10 11
+  12    10  0  0  3  2  3  4
+  13    10  0  0  1  5
+  14     0  0  0  4  8  9 10 11
+  15     0  0  0  0
+  16    11  0  0  2  8  9
+  17    11 22 23  2 10 11
+  18     0  0  0  0
+  19     0  0  0  2  8  9
+  20     0  0  0  2 10 11
+  21     0  0  0  0
+  22    17  0  0  1 10
+  23    17  0  0  1 11
+  24     0  0  0  0
+  25     0  0  0  1 10
+  26     0  0  0  0
+  27     0  0  0  0
+   1 *   0  2  3 16  1  1 16
+   2 -   1  4  5  8  3  1  1  6  7 12 16
+   3 -   1  8  9  8  2  2  5  8 11
+   4 -   2  0  0  1  1  1  1
+   5 -   2  6  7  7  2  6  7 12 16
+   6 -   5  0  0  1  1  6  6
+   7 -   5  0  0  6  2  7  7 12 16
+   8 -   3 10 11  4  1  2  5
+   9 -   3 12 13  4  1  8 11
+  10 -   8  0  0  3  1  2  4
+  11 -   8  0  0  1  1  5  5
+  12 -   9  0  0  2  1  8  9
+  13 -   9 14 15  2  1 10 11
+  14 -  13  0  0  1  1 10 10
+  15 -  13  0  0  1  1 11 11
+
+ CHAIN : 1G8WA
+ CHAIN : 1G8WB
+ CHAIN : 1G8WC
+ CHAIN : 1G8WD
+

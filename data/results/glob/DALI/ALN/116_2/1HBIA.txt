@@ -1,0 +1,38 @@
+# Job: glob
+# Query: 1HBIA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  4HRT-G 25.6  0.8  144   149   53   MOLECULE: GLOBIN-2 A CHAIN;                                          
+
+# Pairwise alignments
+
+No 1: Query=1HBIA Sbjct=4HRTG Z-score=25.6
+
+DSSP  lHHHHHHLL--LHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHLHHHHHHHHHHLLHHH
+Query sVYDAAAQL--TADVKKDLRDSWKVIGSDKKGNGVALMTTLFADNQETIGYFKRLGNVSQ   58
+ident  |  | |        |  || || |   |    |  ||  ||     |  || ||| |  
+Sbjct -VDAAVAKVcgSEAIKANLRRSWGVLSADIEATGLMLMSNLFTLRPDTKTYFTRLGDVQK   59
+DSSP  -LHHHHHHHhlLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLHHHHHHHHHHLLHHH
+
+DSSP  HHHLHHHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHH
+Query GMANDKLRGHSITLMYALQNFIDQLDNPDDLVCVVEKFAVNHITRKISAAEFGKINGPIK  118
+ident | || ||||| ||| ||| || | || |  | ||||||||||| ||||   || |  | |
+Sbjct GKANSKLRGHAITLTYALNNFVDSLDDPSRLKCVVEKFAVNHINRKISGDAFGAIVEPMK  119
+DSSP  HHHLHHHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHH
+
+DSSP  HHHHHLL---LLHHHHHHHHHHHHHHHHLL
+Query KVLASKN---FGDKYANAWAKLVAVVQAAL  145
+ident   |         |  | ||| || ||||||
+Sbjct ETLKARMgnyYSDDVAGAWAALVGVVQAAL  149
+DSSP  HHHHHHHhhhLLHHHHHHHHHHHHHHHHHL
+
+
+# Structural equivalences
+   1: 1HBI-A 4HRT-G     2 -   9 <=>    1 -   8   (VAL    3  - LEU   10  <=> VAL    1  - VAL    8 )                          
+   1: 1HBI-A 4HRT-G    10 - 125 <=>   11 - 126   (THR   11  - ASN  126  <=> SER   11  - MET  126 )                          
+   1: 1HBI-A 4HRT-G   126 - 145 <=>  130 - 149   (PHE  127  - LEU  146  <=> TYR  130  - LEU  149 )                          
+
+# Translation-rotation matrices
+-matrix  "1HBI-A 4HRT-G  U(1,.)   0.129363 -0.805422 -0.578412          126.108139"
+-matrix  "1HBI-A 4HRT-G  U(2,.)   0.945841  0.275375 -0.171912          -57.230629"
+-matrix  "1HBI-A 4HRT-G  U(3,.)   0.297742 -0.524847  0.797424           -9.354927"
+

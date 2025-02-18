@@ -1,0 +1,42 @@
+# Job: sodcu
+# Query: 3MNDB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2APS-B 19.2  2.3  141   155   30   MOLECULE: PROTEIN (CU,ZN SUPEROXIDE DISMUTASE);                      
+
+# Pairwise alignments
+
+No 1: Query=3MNDB Sbjct=2APSB Z-score=19.2
+
+DSSP  LEEEEEEEEL-----LLLEEEEEEEEELLEEEEEEEEELLLLEEEEEEEELLLLLLL---
+Query MKAVCVMRGE-----EGVKGVVHFTQAGDAVKVHAEFEGLKPGKHGFHVHEFGDTTQ---   52
+ident  | |               | |  |             ||  | |||| |          
+Sbjct EKLVVQVQQLdpvkgNKDVGTVEITESAYGLVFTPHLHGLAQGLHGFHIHQNPSCEPkek   60
+DSSP  LLEEEEEEELlllllLEEEEEEEEEEELLEEEEEEEELLLLLEEELEEEELLLLLLLeee
+
+DSSP  -----HHHHHLLLLLLLLL-LLLLLLLLLLLLLEEEEEEELLLLLEEEEEEELLLLLLLl
+Query -----GCTSAGAHFNPHGK-NHGAPDAAERHVGDLGNVTAGADGKATLDLTDKMISLTGe  106
+ident          || |  |     || |     | |||       || ||             
+Sbjct dgklvAGLGAGGHWDPKETkQHGYPWSDNAHLGDLPALFVEHDGSATNPVLAPRLKKLD-  119
+DSSP  lleeeLLHHHLLLLLLLLLlLLLLLLLLLLLLLLLLLEEELLLLLLLLLEEELLLLLHH-
+
+DSSP  lLLLLLEEEEELLLLLLLLllLLLLllLLLLLLEEEEEELEeelll
+Query hSVIGRSLVIHVDPDDLGLggHELSliTGNAGGRVACGIIGiakse  152
+ident   | | || ||   |      |      |  | | ||| |      
+Sbjct -EVKGHSLMIHEGGDNHSD--HPAP--LGGGGPRMACGVIK-----  155
+DSSP  -HHLLEEEEEELLLLLLLL--LLLH--HHHLLLEEEEEEEL-----
+
+
+# Structural equivalences
+   1: 3MND-B 2APS-B     1 -  10 <=>    1 -  10   (MET    1  - GLU   10  <=> GLU   13  - LEU   22 )                          
+   1: 3MND-B 2APS-B    11 -  52 <=>   16 -  57   (GLU   11  - GLN   52  <=> ASN   28  - PRO   69 )                          
+   1: 3MND-B 2APS-B    53 -  66 <=>   66 -  79   (GLY   53  - LYS   66  <=> ALA   78  - THR   91 )                          
+   1: 3MND-B 2APS-B    67 - 105 <=>   81 - 119   (ASN   67  - GLY  105  <=> GLN   93  - ASP  131 )                          
+   1: 3MND-B 2APS-B   108 - 125 <=>  120 - 137   (SER  108  - LEU  125  <=> GLU  132  - ASP  149 )                          
+   1: 3MND-B 2APS-B   128 - 131 <=>  138 - 141   (HIS  128  - SER  131  <=> HIS  150  - PRO  153 )                          
+   1: 3MND-B 2APS-B   134 - 147 <=>  142 - 155   (THR  134  - GLY  147  <=> LEU  154  - LYS  167 )                          
+
+# Translation-rotation matrices
+-matrix  "3MND-B 2APS-B  U(1,.)  -0.849152  0.379662 -0.367149           31.503408"
+-matrix  "3MND-B 2APS-B  U(2,.)   0.359535 -0.093681 -0.928417           49.505108"
+-matrix  "3MND-B 2APS-B  U(3,.)  -0.386879 -0.920370 -0.056952           69.904922"
+

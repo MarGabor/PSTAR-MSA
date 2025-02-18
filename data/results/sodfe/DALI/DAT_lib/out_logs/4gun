@@ -1,0 +1,2745 @@
+A length: 205
+B length: 205
+C length: 205
+D length: 204
+E length: 204
+F length: 205
+G length: 204
+H length: 205
+I length: 204
+J length: 204
+K length: 204
+L length: 204
+M length: 205
+N length: 205
+O length: 205
+P length: 204
+# 16 chains A B C D E F G H I J K L M N O P
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        145
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau           1   1.88532233              77
+ #popped           2           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau           3   2.10487700              10          34
+ #popped           4           2
+ #selectset contacts        1961
+ selectset done           2
+ eigen done           2
+ tau           5   1.18107498              10
+ #popped           7           2
+ #selectset contacts        1961
+ selectset done           2
+ eigen done           2
+ tau           7  0.946650088              48          66
+ #popped           8           2
+ #selectset contacts        1961
+ selectset done           2
+ eigen done           2
+ tau           9   1.24843192              48
+ #popped           5           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          11  0.975000024              23
+ #popped           3           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          13   1.23457420             171         188
+ #popped          14           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          15  0.940800309              97         112
+ #popped          16           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          17   1.61838531              97         129
+ #popped          18           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          19  0.765100718             171
+ #popped          20           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          21   2.33482838              87          97
+ #popped          22           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          23  0.243297502             147
+ #popped          24           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          25   2.48951507              87
+ #popped          25           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1  6  7  8 10  5  4  9
+   2     1  4  5  3  2  3  1
+   3     1 14 15  7  6  7  8 10  5  4  9
+   4     2 10 11  2  2  3
+   5     2  0  0  1  1
+   6     0  0  0  0
+   7     0  0  0  2  2  3
+   8     0  0  0  2  2  3
+   9     0  0  0  0
+  10     4  0  0  1  2
+  11     4  0  0  1  3
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     3 16 17  6  6  7  8 10  5  4
+  15     3  0  0  1  9
+  16    14 18 19  5  6  7  8 10  5
+  17    14  0  0  1  4
+  18    16 20 21  4  6  7  8 10
+  19    16  0  0  1  5
+  20    18 24 25  3  6  7  8
+  21    18  0  0  1 10
+  22     0  0  0  3  6  7  8
+  23     0  0  0  0
+  24    20  0  0  1  6
+  25    20  0  0  2  7  8
+  26     0  0  0  0
+  27     0  0  0  1  6
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  2  1  2  3
+   5 -   2  0  0  1  1  1  1
+   6 -   4  0  0  1  1  2  2
+   7 -   4  0  0  1  1  3  3
+   8 -   3 10 11  6  2  4  8 10 10
+   9 -   3  0  0  1  1  9  9
+  10 -   8 12 13  5  2  5  8 10 10
+  11 -   8  0  0  1  1  4  4
+  12 -  10 14 15  4  2  6  8 10 10
+  13 -  10  0  0  1  1  5  5
+  14 -  12 16 17  3  1  6  8
+  15 -  12  0  0  1  1 10 10
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  2  1  7  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        155
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1953
+ selectset done           0
+ eigen done           0
+ tau           1   1.84836006              10          35          77
+ #popped           2           1
+ #selectset contacts        1953
+ selectset done           1
+ eigen done           1
+ tau           3   1.09306037              10
+ #popped           5           1
+ #selectset contacts        1953
+ selectset done           1
+ eigen done           1
+ tau           5  0.828135788              48          66
+ #popped           6           1
+ #selectset contacts        1953
+ selectset done           1
+ eigen done           1
+ tau           7   1.05680513              48
+ #popped           3           0
+ #selectset contacts        1953
+ selectset done           0
+ eigen done           0
+ tau           9   1.68682599              35
+ #popped          10           1
+ #selectset contacts        1953
+ selectset done           1
+ eigen done           1
+ tau          11   1.05062413              23
+ #popped          11           0
+ #selectset contacts        1953
+ selectset done           0
+ eigen done           0
+ tau          13   1.20120740             171         188
+ #popped          14           0
+ #selectset contacts        1953
+ selectset done           0
+ eigen done           0
+ tau          15   1.29115033             127         171
+ #popped          16           1
+ #selectset contacts        1953
+ selectset done           1
+ eigen done           1
+ tau          17   1.67586088             110         127
+ #popped          18           1
+ #selectset contacts        1953
+ selectset done           1
+ eigen done           1
+ tau          19   1.46881878              97         110
+ #popped          20           1
+ #selectset contacts        1953
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          17           0
+ #selectset contacts        1953
+ selectset done           0
+ eigen done           0
+ tau          21  0.223182619             147
+ #popped          22           1
+ #selectset contacts        1953
+ selectset done           1
+ eigen done           1
+ tau          23  0.880308867             137
+ #popped          23           0
+ #selectset contacts        1953
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix           3           5
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1 10  4  5  6  7  8  9
+   2     1  8  9  2  2  3
+   3     1 10 11  8  1 10  4  5  6  7  8  9
+   4     0  0  0  0
+   5     0  0  0  2  2  3
+   6     0  0  0  2  2  3
+   7     0  0  0  0
+   8     2  0  0  1  2
+   9     2  0  0  1  3
+  10     3  0  0  1  1
+  11     3 14 15  7 10  4  5  6  7  8  9
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14    11 16 17  6 10  4  5  6  7  8
+  15    11  0  0  1  9
+  16    14 18 19  3 10  4  5
+  17    14 22 23  3  6  7  8
+  18    16 20 21  2 10  4
+  19    16  0  0  1  5
+  20    18  0  0  1 10
+  21    18  0  0  1  4
+  22    17  0  0  1  6
+  23    17  0  0  2  7  8
+  24     0  0  0  1  6
+  25     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  2  1  2  3
+   3 -   1  6  7  8  2  1  1  4 10
+   4 -   2  0  0  1  1  2  2
+   5 -   2  0  0  1  1  3  3
+   6 -   3  0  0  1  1  1  1
+   7 -   3  8  9  7  1  4 10
+   8 -   7 10 11  6  2  4  8 10 10
+   9 -   7  0  0  1  1  9  9
+  10 -   8 12 13  3  2  4  5 10 10
+  11 -   8 16 17  3  1  6  8
+  12 -  10 14 15  2  2  4  4 10 10
+  13 -  10  0  0  1  1  5  5
+  14 -  12  0  0  1  1 10 10
+  15 -  12  0  0  1  1  4  4
+  16 -  11  0  0  1  1  6  6
+  17 -  11  0  0  2  1  7  8
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        161
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau           1   1.75789607              10          36          73
+ #popped           2           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau           3   1.54753423              10
+ #popped           5           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau           5  0.774125874              47
+ #popped           7           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau           7   1.28543174              57
+ #popped           3           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau           9  0.949294627              26          86          97         175         193
+ #popped          10           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          11   1.83370578              26
+ #popped          13           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          13   2.56186318              97
+ #popped          11           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau          15   1.58676267              86         126
+ #popped          16           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          17  0.993171513             175
+ #popped          18           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          19  0.502779424             136         147
+ #popped          20           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          21   1.27315509              36
+ #popped          23           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          23   1.10201597             155         165
+ #popped          24           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          25   1.13403332              86
+ #popped          27           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          27   0.00000000    
+ #popped          17           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau          27   1.63187802             112
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix           3           5
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  9  1  6  7  8 10  4  5
+   2     1  6  7  2  2  3
+   3     1 10 11  8  9  1  6  7  8 10  4  5
+   4     0  0  0  0
+   5     0  0  0  2  2  3
+   6     2  0  0  1  2
+   7     2  0  0  1  3
+   8     0  0  0  0
+   9     0  0  0  1  3
+  10     3  0  0  1  9
+  11     3 16 17  7  1  6  7  8 10  4  5
+  12     0  0  0  0
+  13     0  0  0  1  9
+  14     0  0  0  0
+  15     0  0  0  1  9
+  16    11 18 19  5  1  6  7  8 10
+  17    11 28 29  2  4  5
+  18    16 22 23  4  1  6  7  8
+  19    16  0  0  1 10
+  20     0  0  0  4  1  6  7  8
+  21     0  0  0  0
+  22    18  0  0  1  1
+  23    18 24 25  3  6  7  8
+  24    23  0  0  2  6  7
+  25    23  0  0  1  8
+  26     0  0  0  0
+  27     0  0  0  2  6  7
+  28    17  0  0  1  4
+  29    17  0  0  1  5
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  2  1  2  3
+   3 -   1  6  7  8  2  1  1  4 10
+   4 -   2  0  0  1  1  2  2
+   5 -   2  0  0  1  1  3  3
+   6 -   3  0  0  1  1  9  9
+   7 -   3  8  9  7  3  1  1  4  8 10 10
+   8 -   7 10 11  5  3  1  1  6  8 10 10
+   9 -   7 16 17  2  1  4  5
+  10 -   8 12 13  4  2  1  1  6  8
+  11 -   8  0  0  1  1 10 10
+  12 -  10  0  0  1  1  1  1
+  13 -  10 14 15  3  1  6  8
+  14 -  13  0  0  2  1  6  7
+  15 -  13  0  0  1  1  8  8
+  16 -   9  0  0  1  1  4  4
+  17 -   9  0  0  1  1  5  5
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 5657  CA BASN D 117 
+ Alternate location indication is not blank or A, ignore atom: 5661  CB BASN D 117 
+ Alternate location indication is not blank or A, ignore atom: 5663  CG BASN D 117 
+ Alternate location indication is not blank or A, ignore atom: 5665  OD1BASN D 117 
+ Alternate location indication is not blank or A, ignore atom: 5667  ND2BASN D 117 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        151
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau           1   1.17905188              44         171         188
+ #popped           2           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau           3   2.62144232              44
+ #popped           4           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau           5   1.36450362              10          34
+ #popped           6           2
+ #selectset contacts        1939
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau           7  0.994897962              23
+ #popped           3           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau           9   3.84517169              70
+ #popped          10           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau          11   1.20288241              57
+ #popped          11           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau          13   1.06764579              83         112         171
+ #popped          14           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau          15   2.62517524              83         130
+ #popped          16           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau          17   1.21966851              83
+ #popped          19           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau          19  0.204095736             147
+ #popped          21           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          15           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau          21   1.58533907              97         112
+ #popped          22           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  9  2  3  6  7  8  5 10  4
+   2     1  4  5  2  1  9
+   3     1 10 11  8  2  3  6  7  8  5 10  4
+   4     2  0  0  1  1
+   5     2  0  0  1  9
+   6     0  0  0  0
+   7     0  0  0  1  1
+   8     0  0  0  0
+   9     0  0  0  1  1
+  10     3  0  0  1  2
+  11     3 14 15  7  3  6  7  8  5 10  4
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14    11 16 17  5  3  6  7  8  5
+  15    11 22 23  2 10  4
+  16    14 18 19  4  3  6  7  8
+  17    14  0  0  1  5
+  18    16  0  0  1  3
+  19    16 20 21  3  6  7  8
+  20    19  0  0  1  6
+  21    19  0  0  2  7  8
+  22    15  0  0  1 10
+  23    15  0  0  1  4
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  2  2  1  1  9  9
+   3 -   1  6  7  8  2  2  8 10 10
+   4 -   2  0  0  1  1  1  1
+   5 -   2  0  0  1  1  9  9
+   6 -   3  0  0  1  1  2  2
+   7 -   3  8  9  7  2  3  8 10 10
+   8 -   7 10 11  5  2  3  3  5  8
+   9 -   7 16 17  2  2  4  4 10 10
+  10 -   8 12 13  4  2  3  3  6  8
+  11 -   8  0  0  1  1  5  5
+  12 -  10  0  0  1  1  3  3
+  13 -  10 14 15  3  1  6  8
+  14 -  13  0  0  1  1  6  6
+  15 -  13  0  0  2  1  7  8
+  16 -   9  0  0  1  1 10 10
+  17 -   9  0  0  1  1  4  4
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 7254  CA BASN E 117 
+ Alternate location indication is not blank or A, ignore atom: 7258  CB BASN E 117 
+ Alternate location indication is not blank or A, ignore atom: 7260  CG BASN E 117 
+ Alternate location indication is not blank or A, ignore atom: 7262  OD1BASN E 117 
+ Alternate location indication is not blank or A, ignore atom: 7264  ND2BASN E 117 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        139
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau           1   1.81556463              83
+ #popped           2           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau           3   1.70441127              10          34
+ #popped           4           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           5   1.14051390              44          70
+ #popped           6           3
+ #selectset contacts        1947
+ selectset done           3
+ eigen done           3
+ tau           7   1.07397771              44
+ #popped           8           3
+ #selectset contacts        1947
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           9   1.17424238              57
+ #popped           5           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          11   1.01562500              23
+ #popped           3           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          13   1.43194079             128         174
+ #popped          14           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          15   1.89330673             112         191
+ #popped          16           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          17   1.45725453              97         112
+ #popped          18           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          17           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          15           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          19  0.225768775             147
+ #popped          21           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          21   1.94126570             162
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  3  2  1 10  4  5  9  6  7  8
+   2     1  4  5  3  3  2  1
+   3     1 14 15  7 10  4  5  9  6  7  8
+   4     2  6  7  2  3  2
+   5     2  0  0  1  1
+   6     4  0  0  1  3
+   7     4  0  0  1  2
+   8     0  0  0  0
+   9     0  0  0  1  3
+  10     0  0  0  1  2
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     3 16 17  4 10  4  5  9
+  15     3 20 21  3  6  7  8
+  16    14 18 19  2 10  4
+  17    14  0  0  2  5  9
+  18    16  0  0  1 10
+  19    16  0  0  1  4
+  20    15  0  0  1  6
+  21    15 22 23  2  7  8
+  22    21  0  0  1  7
+  23    21  0  0  1  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  2  1  2  3
+   5 -   2  0  0  1  1  1  1
+   6 -   4  0  0  1  1  3  3
+   7 -   4  0  0  1  1  2  2
+   8 -   3 10 11  4  2  4  5  9 10
+   9 -   3 14 15  3  1  6  8
+  10 -   8 12 13  2  2  4  4 10 10
+  11 -   8  0  0  2  2  5  5  9  9
+  12 -  10  0  0  1  1 10 10
+  13 -  10  0  0  1  1  4  4
+  14 -   9  0  0  1  1  6  6
+  15 -   9 16 17  2  1  7  8
+  16 -  15  0  0  1  1  7  7
+  17 -  15  0  0  1  1  8  8
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        109
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau           1   1.84088075              11          35          77
+ #popped           2           1
+ #selectset contacts        1945
+ selectset done           1
+ eigen done           1
+ tau           3   1.23292172              11
+ #popped           5           1
+ #selectset contacts        1945
+ selectset done           1
+ eigen done           1
+ tau           5  0.849206388              51          65
+ #popped           6           1
+ #selectset contacts        1945
+ selectset done           1
+ eigen done           1
+ tau           7   1.16853583              51
+ #popped           3           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau           9   1.47730160              35
+ #popped          10           1
+ #selectset contacts        1945
+ selectset done           1
+ eigen done           1
+ tau          11  0.930532515              23
+ #popped          11           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          13   1.14943111             171         188
+ #popped          14           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          15   1.19493711             126         171
+ #popped          16           1
+ #selectset contacts        1945
+ selectset done           1
+ eigen done           1
+ tau          17   1.75008047              97         126
+ #popped          18           2
+ #selectset contacts        1945
+ selectset done           2
+ eigen done           2
+ tau          19   0.00000000    
+ #popped          19           1
+ #selectset contacts        1945
+ selectset done           1
+ eigen done           1
+ tau          19   1.80069304             112
+ #popped          17           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          21  0.455644071             136         147
+ #popped          22           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix           3           5
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1 10  4  5  6  7  8  9
+   2     1  8  9  2  2  3
+   3     1 10 11  8  1 10  4  5  6  7  8  9
+   4     0  0  0  0
+   5     0  0  0  2  2  3
+   6     0  0  0  2  2  3
+   7     0  0  0  0
+   8     2  0  0  1  2
+   9     2  0  0  1  3
+  10     3  0  0  1  1
+  11     3 14 15  7 10  4  5  6  7  8  9
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14    11 16 17  6 10  4  5  6  7  8
+  15    11  0  0  1  9
+  16    14 18 19  3 10  4  5
+  17    14  0  0  3  6  7  8
+  18    16  0  0  1 10
+  19    16 20 21  2  4  5
+  20    19  0  0  1  4
+  21    19  0  0  1  5
+  22     0  0  0  3  6  7  8
+  23     0  0  0  0
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  2  1  2  3
+   3 -   1  6  7  8  2  1  1  4 10
+   4 -   2  0  0  1  1  2  2
+   5 -   2  0  0  1  1  3  3
+   6 -   3  0  0  1  1  1  1
+   7 -   3  8  9  7  1  4 10
+   8 -   7 10 11  6  2  4  8 10 10
+   9 -   7  0  0  1  1  9  9
+  10 -   8 12 13  3  2  4  5 10 10
+  11 -   8  0  0  3  1  6  8
+  12 -  10  0  0  1  1 10 10
+  13 -  10 14 15  2  1  4  5
+  14 -  13  0  0  1  1  4  4
+  15 -  13  0  0  1  1  5  5
+
+ CHAIN G
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:10443  CA BASN G 117 
+ Alternate location indication is not blank or A, ignore atom:10447  CB BASN G 117 
+ Alternate location indication is not blank or A, ignore atom:10449  CG BASN G 117 
+ Alternate location indication is not blank or A, ignore atom:10451  OD1BASN G 117 
+ Alternate location indication is not blank or A, ignore atom:10453  ND2BASN G 117 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        145
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau           1   1.86213136              11          32          77
+ #popped           2           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau           3   1.32679737              11
+ #popped           5           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau           5  0.957193851              48          66
+ #popped           6           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau           7   1.12000000              48
+ #popped           3           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau           9   1.54039049              32
+ #popped          10           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped          11           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          11   1.16666794             170         189
+ #popped          12           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          13  0.761886120              98         112
+ #popped          14           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          15   1.76642251              98         130
+ #popped          16           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          17  0.754538178              98
+ #popped          18           1
+ #selectset contacts        1961
+ selectset done           1
+ eigen done           1
+ tau          19   1.80241191              87
+ #popped          19           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          21   2.42943430             170
+ #popped          22           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          23  0.206217542             147
+ #popped          25           0
+ #selectset contacts        1961
+ selectset done           0
+ eigen done           0
+ tau          25   2.14226460             157
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1  6  7  8 10  5  4  9
+   2     1  8  9  2  2  3
+   3     1 10 11  8  1  6  7  8 10  5  4  9
+   4     0  0  0  0
+   5     0  0  0  2  2  3
+   6     0  0  0  2  2  3
+   7     0  0  0  0
+   8     2  0  0  1  2
+   9     2  0  0  1  3
+  10     3  0  0  1  1
+  11     3 12 13  7  6  7  8 10  5  4  9
+  12    11 14 15  6  6  7  8 10  5  4
+  13    11  0  0  1  9
+  14    12 16 17  5  6  7  8 10  5
+  15    12  0  0  1  4
+  16    14 22 23  4  6  7  8 10
+  17    14  0  0  1  5
+  18     0  0  0  0
+  19     0  0  0  4  6  7  8 10
+  20     0  0  0  0
+  21     0  0  0  0
+  22    16 24 25  3  6  7  8
+  23    16  0  0  1 10
+  24    22  0  0  1  6
+  25    22 26 27  2  7  8
+  26    25  0  0  1  7
+  27    25  0  0  1  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  2  1  2  3
+   3 -   1  6  7  8  2  1  1  4 10
+   4 -   2  0  0  1  1  2  2
+   5 -   2  0  0  1  1  3  3
+   6 -   3  0  0  1  1  1  1
+   7 -   3  8  9  7  1  4 10
+   8 -   7 10 11  6  2  4  8 10 10
+   9 -   7  0  0  1  1  9  9
+  10 -   8 12 13  5  2  5  8 10 10
+  11 -   8  0  0  1  1  4  4
+  12 -  10 14 15  4  2  6  8 10 10
+  13 -  10  0  0  1  1  5  5
+  14 -  12 16 17  3  1  6  8
+  15 -  12  0  0  1  1 10 10
+  16 -  14  0  0  1  1  6  6
+  17 -  14 18 19  2  1  7  8
+  18 -  17  0  0  1  1  7  7
+  19 -  17  0  0  1  1  8  8
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        115
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau           1   1.37080991              76         170         189
+ #popped           2           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau           3   2.73554850              10          35          76
+ #popped           4           2
+ #selectset contacts        1949
+ selectset done           2
+ eigen done           2
+ tau           5   1.23763907              10
+ #popped           7           2
+ #selectset contacts        1949
+ selectset done           2
+ eigen done           2
+ tau           7  0.850003481              48          66
+ #popped           8           2
+ #selectset contacts        1949
+ selectset done           2
+ eigen done           2
+ tau           9   1.03125000              48
+ #popped           5           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          11   1.94876707              35
+ #popped          12           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          13   0.00000000    
+ #popped           3           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau          13  0.893604696              97         112
+ #popped          14           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau          15   1.70797884              97         130
+ #popped          16           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau          17   1.47952151              97         170
+ #popped          18           1
+ #selectset contacts        1949
+ selectset done           1
+ eigen done           1
+ tau          19   0.00000000    
+ #popped          19           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau          19  0.205626652             147
+ #popped          21           0
+ #selectset contacts        1949
+ selectset done           0
+ eigen done           0
+ tau          21   2.14226460             157
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1  9 10  6  7  8  5  4
+   2     1  4  5  4  2  3  1  9
+   3     1 14 15  6 10  6  7  8  5  4
+   4     2 10 11  2  2  3
+   5     2 12 13  2  1  9
+   6     0  0  0  0
+   7     0  0  0  2  2  3
+   8     0  0  0  2  2  3
+   9     0  0  0  0
+  10     4  0  0  1  2
+  11     4  0  0  1  3
+  12     5  0  0  1  1
+  13     5  0  0  1  9
+  14     3 16 17  5 10  6  7  8  5
+  15     3  0  0  1  4
+  16    14 18 19  4 10  6  7  8
+  17    14  0  0  1  5
+  18    16  0  0  1 10
+  19    16 20 21  3  6  7  8
+  20    19  0  0  1  6
+  21    19 22 23  2  7  8
+  22    21  0  0  1  7
+  23    21  0  0  1  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  4  2  1  3  9  9
+   3 -   1 10 11  6  2  4  8 10 10
+   4 -   2  6  7  2  1  2  3
+   5 -   2  8  9  2  2  1  1  9  9
+   6 -   4  0  0  1  1  2  2
+   7 -   4  0  0  1  1  3  3
+   8 -   5  0  0  1  1  1  1
+   9 -   5  0  0  1  1  9  9
+  10 -   3 12 13  5  2  5  8 10 10
+  11 -   3  0  0  1  1  4  4
+  12 -  10 14 15  4  2  6  8 10 10
+  13 -  10  0  0  1  1  5  5
+  14 -  12  0  0  1  1 10 10
+  15 -  12 16 17  3  1  6  8
+  16 -  15  0  0  1  1  6  6
+  17 -  15 18 19  2  1  7  8
+  18 -  17  0  0  1  1  7  7
+  19 -  17  0  0  1  1  8  8
+
+ CHAIN I
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:13632  CA BASN I 117 
+ Alternate location indication is not blank or A, ignore atom:13636  CB BASN I 117 
+ Alternate location indication is not blank or A, ignore atom:13638  CG BASN I 117 
+ Alternate location indication is not blank or A, ignore atom:13640  OD1BASN I 117 
+ Alternate location indication is not blank or A, ignore atom:13642  ND2BASN I 117 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        175
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau           1   1.82943761              11          33          77
+ #popped           2           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau           3   1.24737942              11
+ #popped           5           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau           5  0.867769659              47          66
+ #popped           6           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau           7   1.10764802              47
+ #popped           3           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau           9   1.66974032              33
+ #popped          10           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau          11  0.866441309              23
+ #popped          11           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          13   1.05650246             171         186
+ #popped          14           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          15   1.20567381             130         171
+ #popped          16           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau          17  0.788148165             118         130
+ #popped          18           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau          19   1.73548102              97         118
+ #popped          20           2
+ #selectset contacts        1955
+ selectset done           2
+ eigen done           2
+ tau          21   0.00000000    
+ #popped          21           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          17           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          21  0.204657987             147
+ #popped          23           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1  9 10  4  5  6  7  8
+   2     1  8  9  2  2  3
+   3     1 10 11  8  1  9 10  4  5  6  7  8
+   4     0  0  0  0
+   5     0  0  0  2  2  3
+   6     0  0  0  2  2  3
+   7     0  0  0  0
+   8     2  0  0  1  2
+   9     2  0  0  1  3
+  10     3  0  0  1  1
+  11     3 16 17  7  9 10  4  5  6  7  8
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     0  0  0  7  9 10  4  5  6  7  8
+  15     0  0  0  0
+  16    11 18 19  4  9 10  4  5
+  17    11 22 23  3  6  7  8
+  18    16 20 21  3  9 10  4
+  19    16  0  0  1  5
+  20    18  0  0  2  9 10
+  21    18  0  0  1  4
+  22    17  0  0  1  6
+  23    17  0  0  2  7  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  2  1  2  3
+   3 -   1  6  7  8  2  1  1  4 10
+   4 -   2  0  0  1  1  2  2
+   5 -   2  0  0  1  1  3  3
+   6 -   3  0  0  1  1  1  1
+   7 -   3  8  9  7  1  4 10
+   8 -   7 10 11  4  2  4  5  9 10
+   9 -   7 14 15  3  1  6  8
+  10 -   8 12 13  3  2  4  4  9 10
+  11 -   8  0  0  1  1  5  5
+  12 -  10  0  0  2  1  9 10
+  13 -  10  0  0  1  1  4  4
+  14 -   9  0  0  1  1  6  6
+  15 -   9  0  0  2  1  7  8
+
+ CHAIN J
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:15229  CA BASN J 117 
+ Alternate location indication is not blank or A, ignore atom:15233  CB BASN J 117 
+ Alternate location indication is not blank or A, ignore atom:15235  CG BASN J 117 
+ Alternate location indication is not blank or A, ignore atom:15237  OD1BASN J 117 
+ Alternate location indication is not blank or A, ignore atom:15239  ND2BASN J 117 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        177
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau           1   1.91417933              77
+ #popped           2           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau           3   2.17388940              10          34
+ #popped           4           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           5   1.20335937              10
+ #popped           7           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           7  0.816282392              49          65
+ #popped           8           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           9   1.28043485              49
+ #popped           5           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          11   1.01562500              23
+ #popped           3           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          13   1.17323637             169         189
+ #popped          14           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          15   1.21612632             127         169
+ #popped          16           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          17   1.78176355              97         127
+ #popped          18           3
+ #selectset contacts        1947
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          19           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          19   1.77496088             112
+ #popped          17           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          21  0.219666049             147
+ #popped          22           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          23  0.880308867             137
+ #popped          23           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          25   2.33492637             157
+ #popped          15           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          27   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix           3           5
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1 10  4  5  6  7  8  9
+   2     1  4  5  3  2  3  1
+   3     1 14 15  7 10  4  5  6  7  8  9
+   4     2 10 11  2  2  3
+   5     2  0  0  1  1
+   6     0  0  0  0
+   7     0  0  0  2  2  3
+   8     0  0  0  2  2  3
+   9     0  0  0  0
+  10     4  0  0  1  2
+  11     4  0  0  1  3
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     3 16 17  6 10  4  5  6  7  8
+  15     3  0  0  1  9
+  16    14 18 19  3 10  4  5
+  17    14 22 23  3  6  7  8
+  18    16  0  0  1 10
+  19    16 20 21  2  4  5
+  20    19  0  0  1  4
+  21    19  0  0  1  5
+  22    17  0  0  1  6
+  23    17 26 27  2  7  8
+  24     0  0  0  1  6
+  25     0  0  0  0
+  26    23  0  0  1  7
+  27    23  0  0  1  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  2  1  2  3
+   5 -   2  0  0  1  1  1  1
+   6 -   4  0  0  1  1  2  2
+   7 -   4  0  0  1  1  3  3
+   8 -   3 10 11  6  2  4  8 10 10
+   9 -   3  0  0  1  1  9  9
+  10 -   8 12 13  3  2  4  5 10 10
+  11 -   8 16 17  3  1  6  8
+  12 -  10  0  0  1  1 10 10
+  13 -  10 14 15  2  1  4  5
+  14 -  13  0  0  1  1  4  4
+  15 -  13  0  0  1  1  5  5
+  16 -  11  0  0  1  1  6  6
+  17 -  11 18 19  2  1  7  8
+  18 -  17  0  0  1  1  7  7
+  19 -  17  0  0  1  1  8  8
+
+ CHAIN K
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:16826  CA BASN K 117 
+ Alternate location indication is not blank or A, ignore atom:16830  CB BASN K 117 
+ Alternate location indication is not blank or A, ignore atom:16832  CG BASN K 117 
+ Alternate location indication is not blank or A, ignore atom:16834  OD1BASN K 117 
+ Alternate location indication is not blank or A, ignore atom:16836  ND2BASN K 117 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        153
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau           1   1.95056999              84
+ #popped           2           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau           3   1.55992508              10          34
+ #popped           4           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           5   1.20785046              45          70
+ #popped           6           3
+ #selectset contacts        1947
+ selectset done           3
+ eigen done           3
+ tau           7   1.24458718              45
+ #popped           8           3
+ #selectset contacts        1947
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau           9   1.19689119              57
+ #popped           5           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          11   1.01562500              23
+ #popped           3           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          13   1.04874158              94         112         195
+ #popped          14           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          15   1.88854086             130         171
+ #popped          16           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          17   1.30386853             130         182
+ #popped          18           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          19  0.685535431             130
+ #popped          20           2
+ #selectset contacts        1947
+ selectset done           2
+ eigen done           2
+ tau          21   999.999023              94
+ #popped          17           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          23  0.203536570             147
+ #popped          25           1
+ #selectset contacts        1947
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          15           0
+ #selectset contacts        1947
+ selectset done           0
+ eigen done           0
+ tau          25   1.19363570             112
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1  5  9  6  7  8  4 10
+   2     1  4  5  3  2  3  1
+   3     1 14 15  7  5  9  6  7  8  4 10
+   4     2  8  9  2  2  3
+   5     2  0  0  1  1
+   6     0  0  0  2  2  3
+   7     0  0  0  0
+   8     4  0  0  1  2
+   9     4  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     3 16 17  5  5  9  6  7  8
+  15     3 26 27  2  4 10
+  16    14 20 21  2  5  9
+  17    14 24 25  3  6  7  8
+  18     0  0  0  2  5  9
+  19     0  0  0  0
+  20    16  0  0  1  5
+  21    16  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1  5
+  24    17  0  0  1  6
+  25    17  0  0  2  7  8
+  26    15  0  0  1  4
+  27    15  0  0  1 10
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  2  1  2  3
+   5 -   2  0  0  1  1  1  1
+   6 -   4  0  0  1  1  2  2
+   7 -   4  0  0  1  1  3  3
+   8 -   3 10 11  5  1  5  9
+   9 -   3 16 17  2  2  4  4 10 10
+  10 -   8 12 13  2  2  5  5  9  9
+  11 -   8 14 15  3  1  6  8
+  12 -  10  0  0  1  1  5  5
+  13 -  10  0  0  1  1  9  9
+  14 -  11  0  0  1  1  6  6
+  15 -  11  0  0  2  1  7  8
+  16 -   9  0  0  1  1  4  4
+  17 -   9  0  0  1  1 10 10
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:18423  CA BASN L 117 
+ Alternate location indication is not blank or A, ignore atom:18427  CB BASN L 117 
+ Alternate location indication is not blank or A, ignore atom:18429  CG BASN L 117 
+ Alternate location indication is not blank or A, ignore atom:18431  OD1BASN L 117 
+ Alternate location indication is not blank or A, ignore atom:18433  ND2BASN L 117 
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        161
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau           1   1.57164586              41          72
+ #popped           2           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau           3   1.68080533              12
+ #popped           5           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau           5  0.908564806              93         113         134         167         194
+ #popped           6           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau           7   1.25861788              41
+ #popped           8           3
+ #selectset contacts        1951
+ selectset done           3
+ eigen done           3
+ tau           9   1.20425022              29
+ #popped           9           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          11   1.58991444              93
+ #popped          12           3
+ #selectset contacts        1951
+ selectset done           3
+ eigen done           3
+ tau          13  0.773668408              83
+ #popped          13           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          15  0.834743381             123
+ #popped          17           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          17  0.850807607             180
+ #popped          18           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          19  0.590888619             134
+ #popped           7           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          21   1.75612378             113         167
+ #popped          22           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          23   1.27043772             113
+ #popped          24           2
+ #selectset contacts        1951
+ selectset done           2
+ eigen done           2
+ tau          25   0.00000000    
+ #popped          23           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          25  0.221285194             145
+ #popped          27           1
+ #selectset contacts        1951
+ selectset done           1
+ eigen done           1
+ tau          27   2.48593760             155
+ #popped           3           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau          29  0.713615060              51
+ #popped          31           0
+ #selectset contacts        1951
+ selectset done           0
+ eigen done           0
+ tau          31  0.837518632              62
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  5  9  4 10  6  7  8  2  3
+   2     1  6  7  8  1  5  9  4 10  6  7  8
+   3     1 30 31  2  2  3
+   4     0  0  0  0
+   5     0  0  0  8  1  5  9  4 10  6  7  8
+   6     2  8  9  3  1  5  9
+   7     2 22 23  5  4 10  6  7  8
+   8     6  0  0  1  1
+   9     6 16 17  2  5  9
+  10     0  0  0  1  1
+  11     0  0  0  0
+  12     0  0  0  0
+  13     0  0  0  2  5  9
+  14     0  0  0  0
+  15     0  0  0  0
+  16     9  0  0  1  5
+  17     9  0  0  1  9
+  18     0  0  0  0
+  19     0  0  0  1  9
+  20     0  0  0  0
+  21     0  0  0  0
+  22     7 24 25  2  4 10
+  23     7 26 27  3  6  7  8
+  24    22  0  0  1  4
+  25    22  0  0  1 10
+  26    23  0  0  1  6
+  27    23 28 29  2  7  8
+  28    27  0  0  1  7
+  29    27  0  0  1  8
+  30     3  0  0  1  2
+  31     3  0  0  1  3
+  32     0  0  0  0
+  33     0  0  0  1  3
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  8  2  1  1  4 10
+   3 -   1 18 19  2  1  2  3
+   4 -   2  6  7  3  3  1  1  5  5  9  9
+   5 -   2 10 11  5  3  4  4  6  8 10 10
+   6 -   4  0  0  1  1  1  1
+   7 -   4  8  9  2  2  5  5  9  9
+   8 -   7  0  0  1  1  5  5
+   9 -   7  0  0  1  1  9  9
+  10 -   5 12 13  2  2  4  4 10 10
+  11 -   5 14 15  3  1  6  8
+  12 -  10  0  0  1  1  4  4
+  13 -  10  0  0  1  1 10 10
+  14 -  11  0  0  1  1  6  6
+  15 -  11 16 17  2  1  7  8
+  16 -  15  0  0  1  1  7  7
+  17 -  15  0  0  1  1  8  8
+  18 -   3  0  0  1  1  2  2
+  19 -   3  0  0  1  1  3  3
+
+ CHAIN M
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        111
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau           1   1.94393337              77
+ #popped           2           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau           3   2.13882661              10          34
+ #popped           4           2
+ #selectset contacts        1955
+ selectset done           2
+ eigen done           2
+ tau           5   1.25055003              10
+ #popped           7           2
+ #selectset contacts        1955
+ selectset done           2
+ eigen done           2
+ tau           7  0.969460905              48          66
+ #popped           8           2
+ #selectset contacts        1955
+ selectset done           2
+ eigen done           2
+ tau           9   1.21642089              48
+ #popped           5           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau          11  0.994897962              23
+ #popped           3           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          13   1.23457420             171         188
+ #popped          14           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          15  0.908491254              95         112
+ #popped          16           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          17  0.809173524             130
+ #popped          18           1
+ #selectset contacts        1955
+ selectset done           1
+ eigen done           1
+ tau          19   999.999023              95
+ #popped          19           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          21   2.28699541             171
+ #popped          22           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          23  0.201877311             147
+ #popped          25           0
+ #selectset contacts        1955
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1  5  6  7  8 10  4  9
+   2     1  4  5  3  2  3  1
+   3     1 14 15  7  5  6  7  8 10  4  9
+   4     2 10 11  2  2  3
+   5     2  0  0  1  1
+   6     0  0  0  0
+   7     0  0  0  2  2  3
+   8     0  0  0  2  2  3
+   9     0  0  0  0
+  10     4  0  0  1  2
+  11     4  0  0  1  3
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     3 16 17  6  5  6  7  8 10  4
+  15     3  0  0  1  9
+  16    14 18 19  5  5  6  7  8 10
+  17    14  0  0  1  4
+  18    16  0  0  1  5
+  19    16 22 23  4  6  7  8 10
+  20     0  0  0  0
+  21     0  0  0  1  5
+  22    19 24 25  3  6  7  8
+  23    19  0  0  1 10
+  24    22  0  0  1  6
+  25    22  0  0  2  7  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  2  1  2  3
+   5 -   2  0  0  1  1  1  1
+   6 -   4  0  0  1  1  2  2
+   7 -   4  0  0  1  1  3  3
+   8 -   3 10 11  6  2  4  8 10 10
+   9 -   3  0  0  1  1  9  9
+  10 -   8 12 13  5  2  5  8 10 10
+  11 -   8  0  0  1  1  4  4
+  12 -  10  0  0  1  1  5  5
+  13 -  10 14 15  4  2  6  8 10 10
+  14 -  13 16 17  3  1  6  8
+  15 -  13  0  0  1  1 10 10
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  2  1  7  8
+
+ CHAIN N
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        125
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau           1   1.55192089              66
+ #popped           2           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau           3   2.00493836              51
+ #popped           4           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau           5   1.51312399              10          34
+ #popped           6           2
+ #selectset contacts        1939
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau           7   0.00000000    
+ #popped           3           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau           7   1.28664052              86         127         174         193
+ #popped           8           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau           9  0.925660014             174
+ #popped          10           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau          11  0.280847549             147
+ #popped          12           2
+ #selectset contacts        1939
+ selectset done           2
+ eigen done           2
+ tau          13   3.91210175              86
+ #popped          14           3
+ #selectset contacts        1939
+ selectset done           3
+ eigen done           3
+ tau          15  0.764502406              76
+ #popped          15           2
+ #selectset contacts        1939
+ selectset done           2
+ eigen done           2
+ tau          17  0.840294838             137
+ #popped          13           1
+ #selectset contacts        1939
+ selectset done           1
+ eigen done           1
+ tau          19   1.74044514             162
+ #popped           9           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau          21   1.74004126              97         112
+ #popped          22           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau          23   2.08783865              97
+ #popped          25           0
+ #selectset contacts        1939
+ selectset done           0
+ eigen done           0
+ tau          25   1.47326267             127
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  1  3  6  7  8 10  5  9  4
+   2     1  6  7  2  2  1
+   3     1  8  9  8  3  6  7  8 10  5  9  4
+   4     0  0  0  2  2  1
+   5     0  0  0  0
+   6     2  0  0  1  2
+   7     2  0  0  1  1
+   8     3 10 11  5  3  6  7  8 10
+   9     3 22 23  3  5  9  4
+  10     8 12 13  4  3  6  7  8
+  11     8  0  0  1 10
+  12    10 14 15  2  3  6
+  13    10 20 21  2  7  8
+  14    12  0  0  1  3
+  15    12  0  0  1  6
+  16     0  0  0  1  3
+  17     0  0  0  0
+  18     0  0  0  1  6
+  19     0  0  0  0
+  20    13  0  0  1  7
+  21    13  0  0  1  8
+  22     9 26 27  2  5  9
+  23     9  0  0  1  4
+  24     0  0  0  0
+  25     0  0  0  2  5  9
+  26    22  0  0  1  5
+  27    22  0  0  1  9
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  2  1  1  2
+   3 -   1  6  7  8  1  3 10
+   4 -   2  0  0  1  1  2  2
+   5 -   2  0  0  1  1  1  1
+   6 -   3  8  9  5  3  3  3  6  8 10 10
+   7 -   3 16 17  3  2  4  5  9  9
+   8 -   6 10 11  4  2  3  3  6  8
+   9 -   6  0  0  1  1 10 10
+  10 -   8 12 13  2  2  3  3  6  6
+  11 -   8 14 15  2  1  7  8
+  12 -  10  0  0  1  1  3  3
+  13 -  10  0  0  1  1  6  6
+  14 -  11  0  0  1  1  7  7
+  15 -  11  0  0  1  1  8  8
+  16 -   7 18 19  2  2  5  5  9  9
+  17 -   7  0  0  1  1  4  4
+  18 -  16  0  0  1  1  5  5
+  19 -  16  0  0  1  1  9  9
+
+ CHAIN O
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            205
+Total number of atoms read in:              1592
+Total number of ignored atom records:        117
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         205  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau           1   1.88532233              77
+ #popped           2           1
+ #selectset contacts        1945
+ selectset done           1
+ eigen done           1
+ tau           3   2.13882661              10          34
+ #popped           4           2
+ #selectset contacts        1945
+ selectset done           2
+ eigen done           2
+ tau           5   1.22650099              10
+ #popped           7           2
+ #selectset contacts        1945
+ selectset done           2
+ eigen done           2
+ tau           7  0.969460905              48          66
+ #popped           8           2
+ #selectset contacts        1945
+ selectset done           2
+ eigen done           2
+ tau           9   1.05423141              48
+ #popped           5           1
+ #selectset contacts        1945
+ selectset done           1
+ eigen done           1
+ tau          11   1.01562500              23
+ #popped           3           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          13   1.19048226             171         188
+ #popped          14           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          15  0.737889111              93
+ #popped          17           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          17   1.11993968             112         130
+ #popped          18           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          19   1.29682338             112
+ #popped          21           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          21   2.34277582             171
+ #popped          22           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          23  0.206363469             147
+ #popped          25           0
+ #selectset contacts        1945
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         205
+         205  residues read 4GUN.dssp                                                   
+  exclude short helix          89          91
+  exclude short helix         172         174
+  exclude short helix         176         179
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  2  3  1  4  6  7  8 10  5  9
+   2     1  4  5  3  2  3  1
+   3     1 14 15  7  4  6  7  8 10  5  9
+   4     2 10 11  2  2  3
+   5     2  0  0  1  1
+   6     0  0  0  0
+   7     0  0  0  2  2  3
+   8     0  0  0  2  2  3
+   9     0  0  0  0
+  10     4  0  0  1  2
+  11     4  0  0  1  3
+  12     0  0  0  0
+  13     0  0  0  1  1
+  14     3 18 19  6  4  6  7  8 10  5
+  15     3  0  0  1  9
+  16     0  0  0  0
+  17     0  0  0  6  4  6  7  8 10  5
+  18    14 20 21  5  4  6  7  8 10
+  19    14  0  0  1  5
+  20    18  0  0  1  4
+  21    18 22 23  4  6  7  8 10
+  22    21 24 25  3  6  7  8
+  23    21  0  0  1 10
+  24    22  0  0  1  6
+  25    22  0  0  2  7  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  2  1  2  3
+   5 -   2  0  0  1  1  1  1
+   6 -   4  0  0  1  1  2  2
+   7 -   4  0  0  1  1  3  3
+   8 -   3 10 11  6  2  4  8 10 10
+   9 -   3  0  0  1  1  9  9
+  10 -   8 12 13  5  3  4  4  6  8 10 10
+  11 -   8  0  0  1  1  5  5
+  12 -  10  0  0  1  1  4  4
+  13 -  10 14 15  4  2  6  8 10 10
+  14 -  13 16 17  3  1  6  8
+  15 -  13  0  0  1  1 10 10
+  16 -  14  0  0  1  1  6  6
+  17 -  14  0  0  2  1  7  8
+
+ CHAIN P
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            204
+Total number of atoms read in:              1584
+Total number of ignored atom records:        131
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+  Reading DSSP file
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+         204  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1938
+ selectset done           0
+ eigen done           0
+ tau           1   1.79429817              82
+ #popped           2           1
+ #selectset contacts        1938
+ selectset done           1
+ eigen done           1
+ tau           3   1.51809406              43          69
+ #popped           4           2
+ #selectset contacts        1938
+ selectset done           2
+ eigen done           2
+ tau           5   1.26857579              13          28
+ #popped           6           2
+ #selectset contacts        1938
+ selectset done           2
+ eigen done           2
+ tau           7  0.893013954              43
+ #popped           8           2
+ #selectset contacts        1938
+ selectset done           2
+ eigen done           2
+ tau           9   1.79903018              13
+ #popped           5           1
+ #selectset contacts        1938
+ selectset done           1
+ eigen done           1
+ tau          11   1.12086773              56
+ #popped           3           0
+ #selectset contacts        1938
+ selectset done           0
+ eigen done           0
+ tau          13   1.11120427             170         181
+ #popped          14           0
+ #selectset contacts        1938
+ selectset done           0
+ eigen done           0
+ tau          15  0.904539347              92         191
+ #popped          16           1
+ #selectset contacts        1938
+ selectset done           1
+ eigen done           1
+ tau          17  0.954004288             194
+ #popped          17           0
+ #selectset contacts        1938
+ selectset done           0
+ eigen done           0
+ tau          19   2.56112480             129         170
+ #popped          20           1
+ #selectset contacts        1938
+ selectset done           1
+ eigen done           1
+ tau          21   1.97355998             111
+ #popped          23           1
+ #selectset contacts        1938
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          21           0
+ #selectset contacts        1938
+ selectset done           0
+ eigen done           0
+ tau          23  0.202980459             146
+ #popped          25           0
+ #selectset contacts        1938
+ selectset done           0
+ eigen done           0
+ tau          25   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    OXIDOREDUCTASE                          29-AUG-12   4GUN              COMPND   2 MOLECULE: SUPEROXIDE DISMUTASE;                                      SOURCE   2 ORGANISM_SCIENTIFIC: CANDIDA ALBICANS;                               AUTHOR    Y.SHENG,D.CASCIO,J.S.VALENTINE                                        
+           0
+         204
+         204  residues read 4GUN.dssp                                                   
+  exclude short helix          88          90
+  exclude short helix         171         173
+  exclude short helix         175         178
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  3  1  2 10  4  5  9  6  7  8
+   2     1  4  5  3  3  1  2
+   3     1 16 17  7 10  4  5  9  6  7  8
+   4     2  6  7  2  3  1
+   5     2  0  0  1  2
+   6     4  0  0  1  3
+   7     4  0  0  1  1
+   8     0  0  0  0
+   9     0  0  0  1  3
+  10     0  0  0  0
+  11     0  0  0  0
+  12     0  0  0  1  2
+  13     0  0  0  0
+  14     0  0  0  7 10  4  5  9  6  7  8
+  15     0  0  0  0
+  16     3  0  0  1 10
+  17     3 20 21  6  4  5  9  6  7  8
+  18     0  0  0  0
+  19     0  0  0  1 10
+  20    17 22 23  3  4  5  9
+  21    17 24 25  3  6  7  8
+  22    20  0  0  1  4
+  23    20  0  0  2  5  9
+  24    21  0  0  1  6
+  25    21  0  0  2  7  8
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  3  1  1  3
+   3 -   1  8  9  7  1  4 10
+   4 -   2  6  7  2  2  1  1  3  3
+   5 -   2  0  0  1  1  2  2
+   6 -   4  0  0  1  1  3  3
+   7 -   4  0  0  1  1  1  1
+   8 -   3  0  0  1  1 10 10
+   9 -   3 10 11  6  1  4  9
+  10 -   9 12 13  3  2  4  5  9  9
+  11 -   9 14 15  3  1  6  8
+  12 -  10  0  0  1  1  4  4
+  13 -  10  0  0  2  2  5  5  9  9
+  14 -  11  0  0  1  1  6  6
+  15 -  11  0  0  2  1  7  8
+
+ CHAIN : 4GUNA
+ CHAIN : 4GUNB
+ CHAIN : 4GUNC
+ CHAIN : 4GUND
+ CHAIN : 4GUNE
+ CHAIN : 4GUNF
+ CHAIN : 4GUNG
+ CHAIN : 4GUNH
+ CHAIN : 4GUNI
+ CHAIN : 4GUNJ
+ CHAIN : 4GUNK
+ CHAIN : 4GUNL
+ CHAIN : 4GUNM
+ CHAIN : 4GUNN
+ CHAIN : 4GUNO
+ CHAIN : 4GUNP
+

@@ -1,0 +1,487 @@
+L length: 212
+H length: 214
+Y length: 129
+# 3 chains H L Y
+
+ CHAIN H
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            214
+Total number of atoms read in:              1608
+Total number of ignored atom records:         75
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+  Reading DSSP file
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              COMPND   2 MOLECULE: HYHEL-5 FAB (LIGHT CHAIN);                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+         214  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1736
+ selectset done           0
+ eigen done           0
+ tau           1   18.8935909             116
+ #popped           2           1
+ #selectset contacts        1736
+ selectset done           1
+ eigen done           1
+ tau           3  0.736603081              21          34          48          58          95         105
+ #popped           4           2
+ #selectset contacts        1736
+ selectset done           2
+ eigen done           2
+ tau           5  0.757392406              21          67
+ #popped           6           3
+ #selectset contacts        1736
+ selectset done           3
+ eigen done           3
+ tau           7  0.303651035              95
+ #popped           8           3
+ #selectset contacts        1736
+ selectset done           3
+ eigen done           3
+ tau           9  0.775229096              81
+ #popped          10           3
+ #selectset contacts        1736
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped           7           2
+ #selectset contacts        1736
+ selectset done           2
+ eigen done           2
+ tau          11  0.807418466              46
+ #popped           5           1
+ #selectset contacts        1736
+ selectset done           1
+ eigen done           1
+ tau          13   1.12380266              58
+ #popped          14           1
+ #selectset contacts        1736
+ selectset done           1
+ eigen done           1
+ tau          15   1.22347069              31
+ #popped           3           0
+ #selectset contacts        1736
+ selectset done           0
+ eigen done           0
+ tau          17  0.763214767             126         140         182
+ #popped          18           1
+ #selectset contacts        1736
+ selectset done           1
+ eigen done           1
+ tau          19   1.00248647             154         165
+ #popped          20           1
+ #selectset contacts        1736
+ selectset done           1
+ eigen done           1
+ tau          21  0.424141914             143
+ #popped          23           1
+ #selectset contacts        1736
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          19           0
+ #selectset contacts        1736
+ selectset done           0
+ eigen done           0
+ tau          23   2.89186811             193
+ #popped          24           1
+ #selectset contacts        1736
+ selectset done           1
+ eigen done           1
+ tau          25   0.00000000    
+ #popped          25           0
+ #selectset contacts        1736
+ selectset done           0
+ eigen done           0
+ tau          25  0.237486303             204
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              COMPND   2 MOLECULE: HYHEL-5 FAB (LIGHT CHAIN);                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+           0
+         214
+         214  residues read 1BQL.dssp                                                   
+  grow short strand           3           5
+  grow short strand           9          11
+  exclude short helix          28          30
+  grow short strand          56          59
+  exclude short helix          61          63
+  exclude short helix          87          89
+  grow short strand         109         113
+  grow short strand         122         125
+  grow short strand         153         156
+ crowded segment excluded!
+  exclude short helix         157         159
+  grow short strand         166         167
+  grow short strand         171         172
+  exclude short helix         202         204
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  3  7  8  9 10  4  5  6 11 12 13 14 15 16 17
+   2     1  4  5 10  1  2  3  7  8  9 10  4  5  6
+   3     1 18 19  7 11 12 13 14 15 16 17
+   4     2  6  7  9  1  2  3  7  8  9 10  4  5
+   5     2  0  0  1  6
+   6     4  8  9  7  1  2  3  7  8  9 10
+   7     4 12 13  2  4  5
+   8     6 10 11  6  1  2  3  7  8  9
+   9     6  0  0  1 10
+  10     8  0  0  5  1  2  3  7  8
+  11     8  0  0  1  9
+  12     7  0  0  1  4
+  13     7  0  0  1  5
+  14     0  0  0  1  6
+  15     0  0  0  0
+  16     0  0  0  0
+  17     0  0  0  1  6
+  18     3 22 23  5 11 12 13 14 15
+  19     3 26 27  2 16 17
+  20     0  0  0  5 11 12 13 14 15
+  21     0  0  0  0
+  22    18  0  0  2 11 12
+  23    18  0  0  3 13 14 15
+  24     0  0  0  0
+  25     0  0  0  2 16 17
+  26    19  0  0  1 16
+  27    19  0  0  1 17
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5 10  1  1 10
+   3 *   1 14 15  7  1 11 17
+   4 -   2  6  7  9  2  1  5  7 10
+   5 -   2  0  0  1  1  6  6
+   6 -   4  8  9  7  2  1  3  7 10
+   7 -   4 12 13  2  1  4  5
+   8 -   6 10 11  6  2  1  3  7  9
+   9 -   6  0  0  1  1 10 10
+  10 -   8  0  0  5  2  1  3  7  8
+  11 -   8  0  0  1  1  9  9
+  12 -   7  0  0  1  1  4  4
+  13 -   7  0  0  1  1  5  5
+  14 -   3 16 17  5  1 11 15
+  15 -   3 18 19  2  1 16 17
+  16 -  14  0  0  2  1 11 12
+  17 -  14  0  0  3  1 13 15
+  18 -  15  0  0  1  1 16 16
+  19 -  15  0  0  1  1 17 17
+
+ CHAIN L
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            212
+Total number of atoms read in:              1636
+Total number of ignored atom records:         55
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+  Reading DSSP file
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              COMPND   2 MOLECULE: HYHEL-5 FAB (LIGHT CHAIN);                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+         212  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1722
+ selectset done           0
+ eigen done           0
+ tau           1   9.28393173             105
+ #popped           2           1
+ #selectset contacts        1722
+ selectset done           1
+ eigen done           1
+ tau           3  0.545167625              19          73
+ #popped           4           2
+ #selectset contacts        1722
+ selectset done           2
+ eigen done           2
+ tau           5   1.02213538              13          77
+ #popped           6           2
+ #selectset contacts        1722
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           5           1
+ #selectset contacts        1722
+ selectset done           1
+ eigen done           1
+ tau           7   1.81508386              31          61
+ #popped           8           2
+ #selectset contacts        1722
+ selectset done           2
+ eigen done           2
+ tau           9  0.335294127              31
+ #popped           9           1
+ #selectset contacts        1722
+ selectset done           1
+ eigen done           1
+ tau          11  0.957599699              45
+ #popped           3           0
+ #selectset contacts        1722
+ selectset done           0
+ eigen done           0
+ tau          13  0.878814220             116         130         145         157         176
+ #popped          14           1
+ #selectset contacts        1722
+ selectset done           1
+ eigen done           1
+ tau          15  0.385232747             116
+ #popped          17           1
+ #selectset contacts        1722
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          15           0
+ #selectset contacts        1722
+ selectset done           0
+ eigen done           0
+ tau          17  0.610078573             130
+ #popped          19           0
+ #selectset contacts        1722
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              COMPND   2 MOLECULE: HYHEL-5 FAB (LIGHT CHAIN);                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+           0
+         212
+         212  residues read 1BQL.dssp                                                   
+  grow short strand           4           7
+  grow short strand          10          13
+  grow short strand          33          37
+  grow short strand          44          45
+ crowded segment excluded!
+  grow short strand          47          48
+ crowded segment excluded!
+  grow short strand          52          53
+  exclude short helix          79          81
+  grow short strand          95          96
+  grow short strand         100         104
+  grow short strand         112         116
+  exclude short helix         120         123
+  grow short strand         160         161
+  exclude short helix         181         185
+  grow short strand         203         207
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 17  1  2  8  9 10  3  6  7  4  5 11 12 13 14 15 16 17
+   2     1  4  5 10  1  2  8  9 10  3  6  7  4  5
+   3     1 14 15  7 11 12 13 14 15 16 17
+   4     2  0  0  5  1  2  8  9 10
+   5     2  8  9  5  3  6  7  4  5
+   6     0  0  0  5  1  2  8  9 10
+   7     0  0  0  0
+   8     5 10 11  3  3  6  7
+   9     5 12 13  2  4  5
+  10     8  0  0  1  3
+  11     8  0  0  2  6  7
+  12     9  0  0  1  4
+  13     9  0  0  1  5
+  14     3 16 17  5 11 12 13 14 15
+  15     3  0  0  2 16 17
+  16    14  0  0  1 11
+  17    14  0  0  4 12 13 14 15
+  18     0  0  0  0
+  19     0  0  0  2 16 17
+   1 +   0  2  3 17  1  1 17
+   2 *   1  4  5 10  1  1 10
+   3 *   1 12 13  7  1 11 17
+   4 -   2  0  0  5  2  1  2  8 10
+   5 -   2  6  7  5  1  3  7
+   6 -   5  8  9  3  2  3  3  6  7
+   7 -   5 10 11  2  1  4  5
+   8 -   6  0  0  1  1  3  3
+   9 -   6  0  0  2  1  6  7
+  10 -   7  0  0  1  1  4  4
+  11 -   7  0  0  1  1  5  5
+  12 -   3 14 15  5  1 11 15
+  13 -   3  0  0  2  1 16 17
+  14 -  12  0  0  1  1 11 11
+  15 -  12  0  0  4  1 12 15
+
+ CHAIN Y
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            129
+Total number of atoms read in:               999
+Total number of ignored atom records:         39
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+  Reading DSSP file
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              COMPND   2 MOLECULE: HYHEL-5 FAB (LIGHT CHAIN);                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+         129  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1180
+ selectset done           0
+ eigen done           0
+ tau           1   2.34255743              41          84
+ #popped           2           1
+ #selectset contacts        1180
+ selectset done           1
+ eigen done           1
+ tau           3   1.50547266              41         104
+ #popped           4           2
+ #selectset contacts        1180
+ selectset done           2
+ eigen done           2
+ tau           5   1.25157762              41         118
+ #popped           6           2
+ #selectset contacts        1180
+ selectset done           2
+ eigen done           2
+ tau           7   1.03916860              41
+ #popped           8           2
+ #selectset contacts        1180
+ selectset done           2
+ eigen done           2
+ tau           9   1.01087761              15          28
+ #popped          10           2
+ #selectset contacts        1180
+ selectset done           2
+ eigen done           2
+ tau          11  0.966579318              15
+ #popped           5           1
+ #selectset contacts        1180
+ selectset done           1
+ eigen done           1
+ tau          13  0.693877578              94
+ #popped           3           0
+ #selectset contacts        1180
+ selectset done           0
+ eigen done           0
+ tau          15   1.01755941              60
+ #popped          17           0
+ #selectset contacts        1180
+ selectset done           0
+ eigen done           0
+ tau          17  0.468713820              73
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    ANTIBODY/ANTIGEN                        03-FEB-95   1BQL              COMPND   2 MOLECULE: HYHEL-5 FAB (LIGHT CHAIN);                                 SOURCE   2 ORGANISM_SCIENTIFIC: MUS MUSCULUS;                                   AUTHOR    S.CHACKO,D.R.DAVIES                                                   
+           0
+         129
+         129  residues read 1BQL.dssp                                                   
+  grow short strand          43          45
+  grow short strand          51          53
+  grow short strand          58          59
+  exclude short helix          80          84
+  exclude short helix         104         107
+  exclude short helix         109         114
+  exclude short helix         120         124
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  2  6  3  4  5
+   2     1  4  5  3  1  2  6
+   3     1  0  0  3  3  4  5
+   4     2 12 13  2  1  2
+   5     2  0  0  1  6
+   6     0  0  0  2  1  2
+   7     0  0  0  0
+   8     0  0  0  2  1  2
+   9     0  0  0  0
+  10     0  0  0  2  1  2
+  11     0  0  0  0
+  12     4  0  0  1  1
+  13     4  0  0  1  2
+  14     0  0  0  1  6
+  15     0  0  0  0
+  16     0  0  0  3  3  4  5
+  17     0  0  0  0
+  18     0  0  0  0
+  19     0  0  0  0
+   1 *   0  2  3  6  1  1  6
+   2 -   1  4  5  3  2  1  2  6  6
+   3 -   1  0  0  3  1  3  5
+   4 -   2  6  7  2  1  1  2
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  2  2
+
+ CHAIN : 1BQLH
+ CHAIN : 1BQLL
+ CHAIN : 1BQLY
+

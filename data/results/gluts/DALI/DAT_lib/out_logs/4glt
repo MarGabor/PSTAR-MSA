@@ -1,0 +1,665 @@
+A length: 208
+B length: 203
+C length: 201
+D length: 208
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            208
+Total number of atoms read in:              1650
+Total number of ignored atom records:         54
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SEIDEL,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE-LIKE PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS FLAGELLATUS;                    AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SE          
+         208  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau           1   2.70075154              88         197
+ #popped           2           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau           3   1.45602024              36          54
+ #popped           4           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau           5   1.25220466              88
+ #popped           6           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau           7   1.40162611              66
+ #popped           8           2
+ #selectset contacts        1897
+ selectset done           2
+ eigen done           2
+ tau           9  0.728824496              36
+ #popped          10           2
+ #selectset contacts        1897
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           9           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau          11   1.15351355              76
+ #popped           3           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau          13   1.47641170             108         138
+ #popped          14           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau          15   2.08100891             108
+ #popped          16           2
+ #selectset contacts        1897
+ selectset done           2
+ eigen done           2
+ tau          17  0.649038434              98
+ #popped          17           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau          19   1.06101012             169         179
+ #popped          20           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau          21   2.00834060             150         169
+ #popped          22           1
+ #selectset contacts        1897
+ selectset done           1
+ eigen done           1
+ tau          23   1.04265642             150
+ #popped          15           0
+ #selectset contacts        1897
+ selectset done           0
+ eigen done           0
+ tau          25   1.35116422             124
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE-LIKE PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS FLAGELLATUS;                    AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SE          
+           0
+         208
+         208  residues read 4GLT.dssp                                                   
+  grow short strand           8          11
+  grow short strand          33          36
+  exclude short helix          46          48
+  grow short strand          57          59
+  grow short strand          65          66
+  exclude short helix         181         184
+  exclude short helix         199         202
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6  7 10  9  8
+   2     1  8  9  6  1  2  3  4  5  6
+   3     1 14 15  4  7 10  9  8
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     0  0  0  6  1  2  3  4  5  6
+   7     0  0  0  0
+   8     2 10 11  5  1  2  3  4  5
+   9     2  0  0  1  6
+  10     8  0  0  3  1  2  3
+  11     8  0  0  2  4  5
+  12     0  0  0  1  6
+  13     0  0  0  0
+  14     3 16 17  3  7 10  9
+  15     3  0  0  1  8
+  16    14  0  0  1  7
+  17    14 22 23  2 10  9
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     0  0  0  2 10  9
+  21     0  0  0  0
+  22    17  0  0  1 10
+  23    17  0  0  1  9
+  24     0  0  0  0
+  25     0  0  0  1 10
+  26     0  0  0  0
+  27     0  0  0  1  8
+   1 +   0  2  3 10  1  1 10
+   2 *   1  4  5  6  1  1  6
+   3 *   1  8  9  4  1  7 10
+   4 -   2  6  7  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   4  0  0  3  1  1  3
+   7 -   4  0  0  2  1  4  5
+   8 -   3 10 11  3  2  7  7  9 10
+   9 -   3  0  0  1  1  8  8
+  10 -   8  0  0  1  1  7  7
+  11 -   8 12 13  2  1  9 10
+  12 -  11  0  0  1  1 10 10
+  13 -  11  0  0  1  1  9  9
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            203
+Total number of atoms read in:              1609
+Total number of ignored atom records:         56
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SEIDEL,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE-LIKE PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS FLAGELLATUS;                    AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SE          
+         203  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau           1   2.46521711              78         193
+ #popped           2           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau           3   1.18504429              32          48
+ #popped           4           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau           5   1.01669633              61
+ #popped           6           2
+ #selectset contacts        1858
+ selectset done           2
+ eigen done           2
+ tau           7   0.00000000    
+ #popped           7           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau           7   999.999023              78
+ #popped           3           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau           9   1.80383885             119
+ #popped          10           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau          11   1.81328261              97
+ #popped          13           1
+ #selectset contacts        1858
+ selectset done           1
+ eigen done           1
+ tau          13  0.780419946             107
+ #popped          11           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau          15   1.72518730             134
+ #popped          17           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau          17   1.06496465             163         179
+ #popped          18           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau          19   1.51849008             145         163
+ #popped          20           0
+ #selectset contacts        1858
+ selectset done           0
+ eigen done           0
+ tau          21  0.849029660             145
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE-LIKE PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS FLAGELLATUS;                    AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SE          
+           0
+         203
+         203  residues read 4GLT.dssp                                                   
+  grow short strand           3           6
+  grow short strand          28          31
+  exclude short helix          41          44
+  grow short strand          52          54
+  grow short strand          60          61
+  exclude short helix         116         118
+  exclude short helix         176         179
+  exclude short helix         194         197
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6  7  8 10  9
+   2     1  6  7  6  1  2  3  4  5  6
+   3     1 10 11  4  7  8 10  9
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     2  0  0  5  1  2  3  4  5
+   7     2  0  0  1  6
+   8     0  0  0  1  6
+   9     0  0  0  0
+  10     3  0  0  1  7
+  11     3 16 17  3  8 10  9
+  12     0  0  0  0
+  13     0  0  0  1  7
+  14     0  0  0  1  7
+  15     0  0  0  0
+  16    11  0  0  1  8
+  17    11 20 21  2 10  9
+  18     0  0  0  2 10  9
+  19     0  0  0  0
+  20    17  0  0  1 10
+  21    17  0  0  1  9
+  22     0  0  0  0
+  23     0  0  0  1 10
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  1  1  6
+   3 -   1  6  7  4  1  7 10
+   4 -   2  0  0  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   3  0  0  1  1  7  7
+   7 -   3  8  9  3  1  8 10
+   8 -   7  0  0  1  1  8  8
+   9 -   7 10 11  2  1  9 10
+  10 -   9  0  0  1  1 10 10
+  11 -   9  0  0  1  1  9  9
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 3749  CA BARG C  64 
+ Alternate location indication is not blank or A, ignore atom: 3753  CB BARG C  64 
+ Alternate location indication is not blank or A, ignore atom: 3755  CG BARG C  64 
+ Alternate location indication is not blank or A, ignore atom: 3757  CD BARG C  64 
+ Alternate location indication is not blank or A, ignore atom: 3759  NE BARG C  64 
+ Alternate location indication is not blank or A, ignore atom: 3761  CZ BARG C  64 
+ Alternate location indication is not blank or A, ignore atom: 3763  NH1BARG C  64 
+ Alternate location indication is not blank or A, ignore atom: 3765  NH2BARG C  64 
+
+Total number of residues read in:            202
+Total number of atoms read in:              1601
+Total number of ignored atom records:         54
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SEIDEL,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE-LIKE PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS FLAGELLATUS;                    AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SE          
+         202  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1875
+ selectset done           0
+ eigen done           0
+ tau           1   2.39496994              92         192
+ #popped           2           1
+ #selectset contacts        1875
+ selectset done           1
+ eigen done           1
+ tau           3   2.00336695              78          92
+ #popped           4           1
+ #selectset contacts        1875
+ selectset done           1
+ eigen done           1
+ tau           5   1.83184493              32          49
+ #popped           6           1
+ #selectset contacts        1875
+ selectset done           1
+ eigen done           1
+ tau           7  0.999203563              61
+ #popped           8           2
+ #selectset contacts        1875
+ selectset done           2
+ eigen done           2
+ tau           9   0.00000000    
+ #popped           9           1
+ #selectset contacts        1875
+ selectset done           1
+ eigen done           1
+ tau           9   999.999023              78
+ #popped           3           0
+ #selectset contacts        1875
+ selectset done           0
+ eigen done           0
+ tau          11   1.75918567             133
+ #popped          12           1
+ #selectset contacts        1875
+ selectset done           1
+ eigen done           1
+ tau          13   1.27286947             103
+ #popped          15           1
+ #selectset contacts        1875
+ selectset done           1
+ eigen done           1
+ tau          15   1.09132493             119
+ #popped          13           0
+ #selectset contacts        1875
+ selectset done           0
+ eigen done           0
+ tau          17   1.11888444             144         163
+ #popped          18           0
+ #selectset contacts        1875
+ selectset done           0
+ eigen done           0
+ tau          19   2.02619743             144         174
+ #popped          20           0
+ #selectset contacts        1875
+ selectset done           0
+ eigen done           0
+ tau          21   1.10196221             144
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE-LIKE PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS FLAGELLATUS;                    AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SE          
+           0
+         202
+         202  residues read 4GLT.dssp                                                   
+  grow short strand           2           6
+  grow short strand          27          31
+  exclude short helix          41          44
+  grow short strand          52          54
+  grow short strand          60          61
+  exclude short helix         116         118
+  exclude short helix         176         179
+  exclude short helix         194         197
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  2  3  4  5  6  7  8 10  9
+   2     1  8  9  6  1  2  3  4  5  6
+   3     1 12 13  4  7  8 10  9
+   4     0  0  0  6  1  2  3  4  5  6
+   5     0  0  0  0
+   6     0  0  0  6  1  2  3  4  5  6
+   7     0  0  0  0
+   8     2  0  0  5  1  2  3  4  5
+   9     2  0  0  1  6
+  10     0  0  0  1  6
+  11     0  0  0  0
+  12     3 14 15  2  7  8
+  13     3 18 19  2 10  9
+  14    12  0  0  1  7
+  15    12  0  0  1  8
+  16     0  0  0  0
+  17     0  0  0  1  8
+  18    13  0  0  1 10
+  19    13  0  0  1  9
+  20     0  0  0  1 10
+  21     0  0  0  0
+  22     0  0  0  0
+  23     0  0  0  1 10
+   1 *   0  2  3 10  1  1 10
+   2 -   1  4  5  6  1  1  6
+   3 -   1  6  7  4  1  7 10
+   4 -   2  0  0  5  1  1  5
+   5 -   2  0  0  1  1  6  6
+   6 -   3  8  9  2  1  7  8
+   7 -   3 10 11  2  1  9 10
+   8 -   6  0  0  1  1  7  7
+   9 -   6  0  0  1  1  8  8
+  10 -   7  0  0  1  1 10 10
+  11 -   7  0  0  1  1  9  9
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            208
+Total number of atoms read in:              1653
+Total number of ignored atom records:         56
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SEIDEL,     
+  Reading DSSP file
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE-LIKE PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS FLAGELLATUS;                    AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SE          
+         208  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1909
+ selectset done           0
+ eigen done           0
+ tau           1   2.95791745              11          30          67
+ #popped           2           1
+ #selectset contacts        1909
+ selectset done           1
+ eigen done           1
+ tau           3  0.879144609              44
+ #popped           4           2
+ #selectset contacts        1909
+ selectset done           2
+ eigen done           2
+ tau           5   0.00000000    
+ #popped           5           1
+ #selectset contacts        1909
+ selectset done           1
+ eigen done           1
+ tau           5  0.982658982              56
+ #popped           3           0
+ #selectset contacts        1909
+ selectset done           0
+ eigen done           0
+ tau           7   1.42640054             129         198
+ #popped           8           1
+ #selectset contacts        1909
+ selectset done           1
+ eigen done           1
+ tau           9   2.21692061             114         129
+ #popped          10           1
+ #selectset contacts        1909
+ selectset done           1
+ eigen done           1
+ tau          11   2.16813946              30         114
+ #popped          12           2
+ #selectset contacts        1909
+ selectset done           2
+ eigen done           2
+ tau          13  0.738441765              30
+ #popped          13           1
+ #selectset contacts        1909
+ selectset done           1
+ eigen done           1
+ tau          15   2.01224375              88
+ #popped          16           2
+ #selectset contacts        1909
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          17           1
+ #selectset contacts        1909
+ selectset done           1
+ eigen done           1
+ tau          17  0.913461566              99
+ #popped           9           0
+ #selectset contacts        1909
+ selectset done           0
+ eigen done           0
+ tau          19   1.56699657             150
+ #popped          20           1
+ #selectset contacts        1909
+ selectset done           1
+ eigen done           1
+ tau          21  0.973375201             140
+ #popped          21           0
+ #selectset contacts        1909
+ selectset done           0
+ eigen done           0
+ tau          23   1.01444721             166         185
+ #popped          24           0
+ #selectset contacts        1909
+ selectset done           0
+ eigen done           0
+ tau          25   2.02803874             166
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    TRANSFERASE                             14-AUG-12   4GLT              COMPND   2 MOLECULE: GLUTATHIONE S-TRANSFERASE-LIKE PROTEIN;                    SOURCE   2 ORGANISM_SCIENTIFIC: METHYLOBACILLUS FLAGELLATUS;                    AUTHOR    Y.PATSKOVSKY,R.TORO,R.BHOSLE,W.D.ZENCHECK,B.HILLERICH,R.D.SE          
+           0
+         208
+         208  residues read 4GLT.dssp                                                   
+  grow short strand           8          11
+  grow short strand          33          36
+  exclude short helix          46          49
+  grow short strand          57          59
+  grow short strand          65          66
+  exclude short helix         121         123
+  exclude short helix         181         184
+  exclude short helix         199         202
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 10  1  3  4  5  2  6  7  8 10  9
+   2     1  4  5  4  1  3  4  5
+   3     1  8  9  6  2  6  7  8 10  9
+   4     2  0  0  2  1  3
+   5     2  0  0  2  4  5
+   6     0  0  0  0
+   7     0  0  0  2  4  5
+   8     3 12 13  3  2  6  7
+   9     3 20 21  3  8 10  9
+  10     0  0  0  3  2  6  7
+  11     0  0  0  0
+  12     8  0  0  1  2
+  13     8 16 17  2  6  7
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16    13  0  0  1  6
+  17    13  0  0  1  7
+  18     0  0  0  0
+  19     0  0  0  1  7
+  20     9  0  0  1  8
+  21     9 24 25  2 10  9
+  22     0  0  0  1  8
+  23     0  0  0  0
+  24    21  0  0  1 10
+  25    21  0  0  1  9
+  26     0  0  0  0
+  27     0  0  0  1 10
+   1 +   0  2  3 10  1  1 10
+   2 *   1  4  5  4  2  1  1  3  5
+   3 *   1  6  7  6  2  2  2  6 10
+   4 -   2  0  0  2  2  1  1  3  3
+   5 -   2  0  0  2  1  4  5
+   6 -   3  8  9  3  2  2  2  6  7
+   7 -   3 12 13  3  1  8 10
+   8 -   6  0  0  1  1  2  2
+   9 -   6 10 11  2  1  6  7
+  10 -   9  0  0  1  1  6  6
+  11 -   9  0  0  1  1  7  7
+  12 -   7  0  0  1  1  8  8
+  13 -   7 14 15  2  1  9 10
+  14 -  13  0  0  1  1 10 10
+  15 -  13  0  0  1  1  9  9
+
+ CHAIN : 4GLTA
+ CHAIN : 4GLTB
+ CHAIN : 4GLTC
+ CHAIN : 4GLTD
+

@@ -1,0 +1,42 @@
+# Job: glob
+# Query: 1OUTB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1MBA-A 15.3  2.3  140   146   19   MOLECULE: MYOGLOBIN;                                                 
+
+# Pairwise alignments
+
+No 1: Query=1OUTB Sbjct=1MBAA Z-score=15.3
+
+DSSP  LLLLhHHHHHHHHHHHLL--LHHHHHHHHHHHHHHHLHHHHHHLHHHLLlLLHHHHHHLH
+Query VEWTdAEKSTISAVWGKV--NIDEIGPLALARVLIVYPWTQRYFGSFGNvSTPAAIMGNP   58
+ident      ||       |  |  |    |   |       |     |  |      | |   |
+Sbjct SLSA-AEADLAGKSWAPVfaNKNANGLDFLVALFEKFPDSANFFADFKG-KSVADIKASP   58
+DSSP  LLLH-HHHHHHHHHHHHHhhLHHHHHHHHHHHHHHHLHHHHHHLLLLLL-LLHHHHHLLL
+
+DSSP  HHHHHHHHHHHLHHHHHHLLL---LHHHHLHHHHHHHHhLLLLLLHHHHHHHHHHHHHHH
+Query KVAAHGKVVCGALDKAVKNMG---NILATYKSLSETHAnKLFVDPDNFRVLADVLTIVIA  115
+ident |           |   | |        |        |     |    |           |
+Sbjct KLRDVSSRIFTRLNEFVNNAAnagKMSAMLSQFAKEHV-GFGVGSAQFENVRSMFPGFVA  117
+DSSP  LHHHHHHHHHHHHHHHHHHLLlhhHHHHHHHHHHHHHH-HLLLLHHHHHHHHHHHHHHHH
+
+DSSP  HHHHhhLLHHHHHHHHHHHHHHHHHHLLLLl
+Query AKFGasFTPEIQATWQKFMKVVVAAMGSRYf  146
+ident             | | |       |      
+Sbjct SVAA--PPAGADAAWTKLFGLIIDALKAAGa  146
+DSSP  LLLL--LLLLHHHHHHHHHHHHHHHHHHLLl
+
+
+# Structural equivalences
+   1: 1OUT-B 1MBA-A     1 -   4 <=>    1 -   4   (VAL    1  - THR    4  <=> SER    1  - ALA    4 )                          
+   1: 1OUT-B 1MBA-A     6 -  18 <=>    5 -  17   (ALA    6  - VAL   18  <=> ALA    5  - VAL   17 )                          
+   1: 1OUT-B 1MBA-A    19 -  47 <=>   20 -  48   (ASN   19  - ASN   47  <=> ASN   20  - GLY   48 )                          
+   1: 1OUT-B 1MBA-A    49 -  79 <=>   49 -  79   (SER   49  - GLY   79  <=> LYS   49  - ALA   79 )                          
+   1: 1OUT-B 1MBA-A    80 -  93 <=>   83 -  96   (ASN   80  - ALA   93  <=> LYS   83  - VAL   96 )                          
+   1: 1OUT-B 1MBA-A    95 - 119 <=>   97 - 121   (LYS   95  - GLY  119  <=> GLY   97  - ALA  121 )                          
+   1: 1OUT-B 1MBA-A   122 - 145 <=>  122 - 145   (PHE  122  - TYR  145  <=> PRO  122  - GLY  145 )                          
+
+# Translation-rotation matrices
+-matrix  "1OUT-B 1MBA-A  U(1,.)  -0.198822 -0.371656 -0.906831          -33.210823"
+-matrix  "1OUT-B 1MBA-A  U(2,.)  -0.972803 -0.037363  0.228599           -6.570736"
+-matrix  "1OUT-B 1MBA-A  U(3,.)  -0.118843  0.927618 -0.354119           82.824715"
+

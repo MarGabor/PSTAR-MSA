@@ -1,0 +1,357 @@
+A length: 199
+B length: 199
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  169  CB BTHR A  21 
+ Alternate location indication is not blank or A, ignore atom:  171  OG1BTHR A  21 
+ Alternate location indication is not blank or A, ignore atom:  173  CG2BTHR A  21 
+ Alternate location indication is not blank or A, ignore atom:  281  CB BSER A  35 
+ Alternate location indication is not blank or A, ignore atom:  283  OG BSER A  35 
+ Alternate location indication is not blank or A, ignore atom:  551  CB BSER A  67 
+ Alternate location indication is not blank or A, ignore atom:  553  OG BSER A  67 
+ Alternate location indication is not blank or A, ignore atom: 1215  CB BSER A 150 
+ Alternate location indication is not blank or A, ignore atom: 1217  OG BSER A 150 
+
+Total number of residues read in:            199
+Total number of atoms read in:              1578
+Total number of ignored atom records:        299
+ HEADER    HYDROLASE                               26-JUL-00   1F5J              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.A.MCCARTHY,E.N.BAKER                                                
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-JUL-00   1F5J              COMPND   2 MOLECULE: BETA-1,4-XYLANASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: DICTYOGLOMUS THERMOPHILUM;                      AUTHOR    A.A.MCCARTHY,E.N.BAKER                                                
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau           1   1.09147656             123         137
+ #popped           2           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau           3  0.672900498              46
+ #popped           4           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau           5  0.571740389              16
+ #popped           7           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau           7  0.272108853              36
+ #popped           8           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau           9   1.00000000              26
+ #popped           5           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau          11  0.450534552              63          80          91         153
+ #popped          12           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau          13   1.79126644             179         189
+ #popped          14           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau          15   1.25831723              91         168
+ #popped          16           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau          17  0.613700688             179
+ #popped          18           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau          19  0.407185256              63
+ #popped          21           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          13           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau          21  0.427056611             102
+ #popped          22           1
+ #selectset contacts        1812
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          23           0
+ #selectset contacts        1812
+ selectset done           0
+ eigen done           0
+ tau          23   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-JUL-00   1F5J              COMPND   2 MOLECULE: BETA-1,4-XYLANASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: DICTYOGLOMUS THERMOPHILUM;                      AUTHOR    A.A.MCCARTHY,E.N.BAKER                                                
+           0
+         199
+         199  residues read 1F5J.dssp                                                   
+  grow short strand           6          10
+  exclude short helix          30          32
+  exclude short helix          56          58
+  grow short strand         150         154
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 14  1  2  3  4  5 13 14 12  6  7  8  9 10 11
+   2     0  0  0 14  1  2  3  4  5 13 14 12  6  7  8  9 10 11
+   3     0  0  0  0
+   4     1  6  7  4  1  2  3  4
+   5     1 12 13 10  5 13 14 12  6  7  8  9 10 11
+   6     4  0  0  2  1  2
+   7     4 10 11  2  3  4
+   8     0  0  0  2  3  4
+   9     0  0  0  0
+  10     7  0  0  1  3
+  11     7  0  0  1  4
+  12     5 16 17  4  5 13 14 12
+  13     5 22 23  6  6  7  8  9 10 11
+  14     0  0  0  4  5 13 14 12
+  15     0  0  0  0
+  16    12 18 19  3  5 13 14
+  17    12  0  0  1 12
+  18    16 20 21  2  5 13
+  19    16  0  0  1 14
+  20    18  0  0  1  5
+  21    18  0  0  1 13
+  22    13  0  0  3  6  7  8
+  23    13  0  0  3  9 10 11
+   1 +   0  2  3 14  1  1 14
+   2 -   1  4  5  4  1  1  4
+   3 -   1  8  9 10  1  5 14
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7  2  1  3  4
+   6 -   5  0  0  1  1  3  3
+   7 -   5  0  0  1  1  4  4
+   8 -   3 10 11  4  2  5  5 12 14
+   9 -   3 16 17  6  1  6 11
+  10 -   8 12 13  3  2  5  5 13 14
+  11 -   8  0  0  1  1 12 12
+  12 -  10 14 15  2  2  5  5 13 13
+  13 -  10  0  0  1  1 14 14
+  14 -  12  0  0  1  1  5  5
+  15 -  12  0  0  1  1 13 13
+  16 -   9  0  0  3  1  6  8
+  17 -   9  0  0  3  1  9 11
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 1756  CB BTHR B  21 
+ Alternate location indication is not blank or A, ignore atom: 1758  OG1BTHR B  21 
+ Alternate location indication is not blank or A, ignore atom: 1760  CG2BTHR B  21 
+ Alternate location indication is not blank or A, ignore atom: 2003  C  BTYR B  52 
+ Alternate location indication is not blank or A, ignore atom: 2005  O  BTYR B  52 
+ Alternate location indication is not blank or A, ignore atom: 2015  N  BASN B  53 
+ Alternate location indication is not blank or A, ignore atom: 2150  CB BTHR B  69 
+ Alternate location indication is not blank or A, ignore atom: 2152  OG1BTHR B  69 
+ Alternate location indication is not blank or A, ignore atom: 2154  CG2BTHR B  69 
+ Alternate location indication is not blank or A, ignore atom: 2771  CB BSER B 146 
+ Alternate location indication is not blank or A, ignore atom: 2773  OG BSER B 146 
+ Alternate location indication is not blank or A, ignore atom: 2806  CB BSER B 150 
+ Alternate location indication is not blank or A, ignore atom: 2808  OG BSER B 150 
+
+Total number of residues read in:            199
+Total number of atoms read in:              1578
+Total number of ignored atom records:        299
+ HEADER    HYDROLASE                               26-JUL-00   1F5J              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.A.MCCARTHY,E.N.BAKER                                                
+  Reading DSSP file
+ HEADER    HYDROLASE                               26-JUL-00   1F5J              COMPND   2 MOLECULE: BETA-1,4-XYLANASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: DICTYOGLOMUS THERMOPHILUM;                      AUTHOR    A.A.MCCARTHY,E.N.BAKER                                                
+         199  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1811
+ selectset done           0
+ eigen done           0
+ tau           1   1.15232420             124         137
+ #popped           2           0
+ #selectset contacts        1811
+ selectset done           0
+ eigen done           0
+ tau           3  0.567444026              16          46         178         189
+ #popped           4           1
+ #selectset contacts        1811
+ selectset done           1
+ eigen done           1
+ tau           5   1.23037100              16
+ #popped           7           1
+ #selectset contacts        1811
+ selectset done           1
+ eigen done           1
+ tau           7  0.768504500              67          78          94         104
+ #popped           8           2
+ #selectset contacts        1811
+ selectset done           2
+ eigen done           2
+ tau           9  0.477223843              67         178
+ #popped          10           3
+ #selectset contacts        1811
+ selectset done           3
+ eigen done           3
+ tau          11   1.03024256              57
+ #popped          13           3
+ #selectset contacts        1811
+ selectset done           3
+ eigen done           3
+ tau          13   0.00000000    
+ #popped          11           2
+ #selectset contacts        1811
+ selectset done           2
+ eigen done           2
+ tau          13  0.319372118             167
+ #popped          14           2
+ #selectset contacts        1811
+ selectset done           2
+ eigen done           2
+ tau          15  0.398546815             118         143         154
+ #popped          16           3
+ #selectset contacts        1811
+ selectset done           3
+ eigen done           3
+ tau          17   12.7414522              94
+ #popped          19           3
+ #selectset contacts        1811
+ selectset done           3
+ eigen done           3
+ tau          19   0.00000000    
+ #popped          17           2
+ #selectset contacts        1811
+ selectset done           2
+ eigen done           2
+ tau          19   1.55714285             143
+ #popped           9           1
+ #selectset contacts        1811
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped           5           0
+ #selectset contacts        1811
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               26-JUL-00   1F5J              COMPND   2 MOLECULE: BETA-1,4-XYLANASE;                                         SOURCE   2 ORGANISM_SCIENTIFIC: DICTYOGLOMUS THERMOPHILUM;                      AUTHOR    A.A.MCCARTHY,E.N.BAKER                                                
+           0
+         199
+         199  residues read 1F5J.dssp                                                   
+  grow short strand           6          10
+  exclude short helix          30          32
+  exclude short helix          56          58
+  grow short strand         150         154
+ crowded segment excluded!
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 14  1  2  5  6 14  7  8  9 10 11 12 13  3  4
+   2     0  0  0 14  1  2  5  6 14  7  8  9 10 11 12 13  3  4
+   3     0  0  0  0
+   4     1  6  7 12  1  2  5  6 14  7  8  9 10 11 12 13
+   5     1  0  0  2  3  4
+   6     4  0  0  2  1  2
+   7     4 10 11 10  5  6 14  7  8  9 10 11 12 13
+   8     0  0  0 10  5  6 14  7  8  9 10 11 12 13
+   9     0  0  0  0
+  10     7 12 13  3  5  6 14
+  11     7 14 15  7  7  8  9 10 11 12 13
+  12    10  0  0  1  5
+  13    10  0  0  2  6 14
+  14    11 16 17  6  7  8  9 10 11 12
+  15    11  0  0  1 13
+  16    14 18 19  3  7  8  9
+  17    14 20 21  3 10 11 12
+  18    16  0  0  2  7  8
+  19    16  0  0  1  9
+  20    17  0  0  2 10 11
+  21    17  0  0  1 12
+   1 +   0  2  3 14  1  1 14
+   2 -   1  4  5 12  2  1  2  5 14
+   3 -   1  0  0  2  1  3  4
+   4 -   2  0  0  2  1  1  2
+   5 -   2  6  7 10  1  5 14
+   6 -   5  8  9  3  2  5  6 14 14
+   7 -   5 10 11  7  1  7 13
+   8 -   6  0  0  1  1  5  5
+   9 -   6  0  0  2  2  6  6 14 14
+  10 -   7 12 13  6  1  7 12
+  11 -   7  0  0  1  1 13 13
+  12 -  10 14 15  3  1  7  9
+  13 -  10 16 17  3  1 10 12
+  14 -  12  0  0  2  1  7  8
+  15 -  12  0  0  1  1  9  9
+  16 -  13  0  0  2  1 10 11
+  17 -  13  0  0  1  1 12 12
+
+ CHAIN : 1F5JA
+ CHAIN : 1F5JB
+

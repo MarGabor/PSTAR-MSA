@@ -1,0 +1,32 @@
+# Job: LIM
+# Query: 1X3HA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  2COR-A  4.0  7.4   63    79   25   MOLECULE: PINCH PROTEIN;                                             
+
+# Pairwise alignments
+
+No 1: Query=1X3HA Sbjct=2CORA Z-score=4.0
+
+DSSP  -lLLLLLLLLLLLllllllllLLLLLLLLLEEELLEEELLLLLLLLLLLLLLlllLLEEL
+Query -gSSGSSGKDFLAmfspkcggCNRPVLENYLSAMDTVWHPECFVCGDCFTSFstgSFFEL   59
+ident   |  |  |            |     |  |       ||  | |  |          ||
+Sbjct gsSGSSGEKARGL-gkyicqkCHAIIDEQPLIFKNDPYHPDHFNCANCGKEL-taDAREL   58
+DSSP  llLLLLLLLLLLL-lllllllLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL-llLLEEE
+
+DSSP  LLLEELHHHHHHHHLLlllll
+Query DGRPFCELHYHHRRGSgpssg   80
+ident  |   |         |     
+Sbjct KGELYCLPCHDKMGVSgpssg   79
+DSSP  LLEEELHHHHHLLLLLlllll
+
+
+# Structural equivalences
+   1: 1X3H-A 2COR-A     2 -  12 <=>    3 -  13   (SER    2  - ALA   12  <=> SER    3  - LEU   13 )                          
+   1: 1X3H-A 2COR-A    21 -  51 <=>   21 -  51   (CYS   21  - PHE   51  <=> CYS   21  - LEU   51 )                          
+   1: 1X3H-A 2COR-A    55 -  75 <=>   54 -  74   (SER   55  - SER   75  <=> ASP   54  - SER   74 )                          
+
+# Translation-rotation matrices
+-matrix  "1X3H-A 2COR-A  U(1,.)   0.863756 -0.503826  0.009222            5.162283"
+-matrix  "1X3H-A 2COR-A  U(2,.)   0.139951  0.222269 -0.964889          -11.044271"
+-matrix  "1X3H-A 2COR-A  U(3,.)   0.484086  0.834719  0.262497          -14.906259"
+

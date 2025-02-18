@@ -1,0 +1,852 @@
+A length: 154
+B length: 154
+C length: 153
+D length: 155
+E length: 149
+F length: 154
+# 6 chains A B C D E F
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            154
+Total number of atoms read in:              1201
+Total number of ignored atom records:         33
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           3
+  calculate residue outside grid:           4
+  calculate residue outside grid:           5
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+         154  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1377
+ selectset done           0
+ eigen done           0
+ tau           1   5.95741892              30
+ #popped           2           1
+ #selectset contacts        1377
+ selectset done           1
+ eigen done           1
+ tau           3   1.17300200              19
+ #popped           3           0
+ #selectset contacts        1377
+ selectset done           0
+ eigen done           0
+ tau           5   1.21425927              83         143
+ #popped           6           1
+ #selectset contacts        1377
+ selectset done           1
+ eigen done           1
+ tau           7  0.594110548              41          60
+ #popped           8           1
+ #selectset contacts        1377
+ selectset done           1
+ eigen done           1
+ tau           9  0.307429582              71
+ #popped          10           2
+ #selectset contacts        1377
+ selectset done           2
+ eigen done           2
+ tau          11   14.4061308              41
+ #popped          11           1
+ #selectset contacts        1377
+ selectset done           1
+ eigen done           1
+ tau          13   5.54329586              83
+ #popped           7           0
+ #selectset contacts        1377
+ selectset done           0
+ eigen done           0
+ tau          15  0.585483134             101         116
+ #popped          16           0
+ #selectset contacts        1377
+ selectset done           0
+ eigen done           0
+ tau          17  0.428957403             126
+ #popped          18           0
+ #selectset contacts        1377
+ selectset done           0
+ eigen done           0
+ tau          19   1.64537442             101
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+           0
+         154
+         154  residues read 4YLI.dssp                                                   
+  grow short strand          32          33
+  grow short strand          61          62
+  grow short strand         100         101
+  exclude short helix         121         123
+  grow short strand         127         131
+  grow short strand         136         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  5  6 11  4  7  8  9 10
+   2     1  0  0  1  1
+   3     1  6  7 10  2  3  5  6 11  4  7  8  9 10
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  6  2  3  5  6 11  4
+   7     3 18 19  4  7  8  9 10
+   8     6 10 11  5  2  3  5  6 11
+   9     6  0  0  1  4
+  10     8 12 13  3  2  3  5
+  11     8 14 15  2  6 11
+  12    10  0  0  2  2  3
+  13    10  0  0  1  5
+  14    11  0  0  1  6
+  15    11  0  0  1 11
+  16     0  0  0  4  7  8  9 10
+  17     0  0  0  0
+  18     7  0  0  2  7  8
+  19     7  0  0  2  9 10
+  20     0  0  0  2  7  8
+  21     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 10  1  2 11
+   4 -   3  6  7  6  2  2  6 11 11
+   5 -   3 14 15  4  1  7 10
+   6 -   4  8  9  5  3  2  3  5  6 11 11
+   7 -   4  0  0  1  1  4  4
+   8 -   6 10 11  3  2  2  3  5  5
+   9 -   6 12 13  2  2  6  6 11 11
+  10 -   8  0  0  2  1  2  3
+  11 -   8  0  0  1  1  5  5
+  12 -   9  0  0  1  1  6  6
+  13 -   9  0  0  1  1 11 11
+  14 -   5  0  0  2  1  7  8
+  15 -   5  0  0  2  1  9 10
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            154
+Total number of atoms read in:              1201
+Total number of ignored atom records:         58
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+         154  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau           1   7.69499969              30
+ #popped           2           1
+ #selectset contacts        1373
+ selectset done           1
+ eigen done           1
+ tau           3   1.17953861              18
+ #popped           3           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau           5   1.13503325              84         144
+ #popped           6           1
+ #selectset contacts        1373
+ selectset done           1
+ eigen done           1
+ tau           7   1.42515123              63          84
+ #popped           8           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau           9  0.415822685              41          53
+ #popped          10           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau          11  0.418971419              41
+ #popped          13           2
+ #selectset contacts        1373
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped           9           1
+ #selectset contacts        1373
+ selectset done           1
+ eigen done           1
+ tau          13  0.733849406              74
+ #popped           7           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          15  0.621445835             101         115
+ #popped          16           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          17  0.616210997             101
+ #popped          19           0
+ #selectset contacts        1373
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+           0
+         154
+         154  residues read 4YLI.dssp                                                   
+  grow short strand          32          33
+  grow short strand          61          62
+  grow short strand         100         101
+  exclude short helix         121         123
+  grow short strand         127         131
+  grow short strand         136         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  5 11  4  6  7  8  9 10
+   2     1  0  0  1  1
+   3     1  6  7 10  2  3  5 11  4  6  7  8  9 10
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  6  2  3  5 11  4  6
+   7     3 18 19  4  7  8  9 10
+   8     6 10 11  5  2  3  5 11  4
+   9     6  0  0  1  6
+  10     8 12 13  4  2  3  5 11
+  11     8  0  0  1  4
+  12    10  0  0  2  2  3
+  13    10  0  0  2  5 11
+  14     0  0  0  1  6
+  15     0  0  0  0
+  16     0  0  0  4  7  8  9 10
+  17     0  0  0  0
+  18     7  0  0  2  7  8
+  19     7  0  0  2  9 10
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 10  1  2 11
+   4 -   3  6  7  6  2  2  6 11 11
+   5 -   3 12 13  4  1  7 10
+   6 -   4  8  9  5  2  2  5 11 11
+   7 -   4  0  0  1  1  6  6
+   8 -   6 10 11  4  3  2  3  5  5 11 11
+   9 -   6  0  0  1  1  4  4
+  10 -   8  0  0  2  1  2  3
+  11 -   8  0  0  2  2  5  5 11 11
+  12 -   5  0  0  2  1  7  8
+  13 -   5  0  0  2  1  9 10
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            153
+Total number of atoms read in:              1195
+Total number of ignored atom records:         23
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           4
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+         153  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1372
+ selectset done           0
+ eigen done           0
+ tau           1   8.21471024              29
+ #popped           2           1
+ #selectset contacts        1372
+ selectset done           1
+ eigen done           1
+ tau           3   1.09629631              19
+ #popped           3           0
+ #selectset contacts        1372
+ selectset done           0
+ eigen done           0
+ tau           5  0.678010106             111         143
+ #popped           6           1
+ #selectset contacts        1372
+ selectset done           1
+ eigen done           1
+ tau           7  0.551762879              76          86
+ #popped           8           1
+ #selectset contacts        1372
+ selectset done           1
+ eigen done           1
+ tau           9   1.48010826              76         111
+ #popped          10           2
+ #selectset contacts        1372
+ selectset done           2
+ eigen done           2
+ tau          11   1.30719030              62          76
+ #popped          12           2
+ #selectset contacts        1372
+ selectset done           2
+ eigen done           2
+ tau          13  0.413432896              40          52
+ #popped          14           2
+ #selectset contacts        1372
+ selectset done           2
+ eigen done           2
+ tau          15  0.404524118              40
+ #popped          17           2
+ #selectset contacts        1372
+ selectset done           2
+ eigen done           2
+ tau          17   0.00000000    
+ #popped          11           1
+ #selectset contacts        1372
+ selectset done           1
+ eigen done           1
+ tau          17   1.03752077             100
+ #popped           7           0
+ #selectset contacts        1372
+ selectset done           0
+ eigen done           0
+ tau          19   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+           0
+         153
+         153  residues read 4YLI.dssp                                                   
+  grow short strand          31          32
+  grow short strand          60          61
+  grow short strand          99         100
+  exclude short helix         120         122
+  grow short strand         126         130
+  grow short strand         135         138
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  5 11  4  6  7  8  9 10
+   2     1  0  0  1  1
+   3     1  6  7 10  2  3  5 11  4  6  7  8  9 10
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3 10 11  8  2  3  5 11  4  6  7  8
+   7     3  0  0  2  9 10
+   8     0  0  0  8  2  3  5 11  4  6  7  8
+   9     0  0  0  0
+  10     6 12 13  6  2  3  5 11  4  6
+  11     6  0  0  2  7  8
+  12    10 14 15  5  2  3  5 11  4
+  13    10  0  0  1  6
+  14    12 16 17  4  2  3  5 11
+  15    12  0  0  1  4
+  16    14  0  0  2  2  3
+  17    14  0  0  2  5 11
+  18     0  0  0  2  7  8
+  19     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 10  1  2 11
+   4 -   3  6  7  8  2  2  8 11 11
+   5 -   3  0  0  2  1  9 10
+   6 -   4  8  9  6  2  2  6 11 11
+   7 -   4  0  0  2  1  7  8
+   8 -   6 10 11  5  2  2  5 11 11
+   9 -   6  0  0  1  1  6  6
+  10 -   8 12 13  4  3  2  3  5  5 11 11
+  11 -   8  0  0  1  1  4  4
+  12 -  10  0  0  2  1  2  3
+  13 -  10  0  0  2  2  5  5 11 11
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            155
+Total number of atoms read in:              1209
+Total number of ignored atom records:         39
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+  calculate residue outside grid:           1
+  calculate residue outside grid:           2
+  calculate residue outside grid:           4
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+         155  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1382
+ selectset done           0
+ eigen done           0
+ tau           1   6.85062551              30
+ #popped           2           1
+ #selectset contacts        1382
+ selectset done           1
+ eigen done           1
+ tau           3   1.17953861              18
+ #popped           3           0
+ #selectset contacts        1382
+ selectset done           0
+ eigen done           0
+ tau           5   1.21246207              83         144
+ #popped           6           1
+ #selectset contacts        1382
+ selectset done           1
+ eigen done           1
+ tau           7  0.574490011              41          58
+ #popped           8           1
+ #selectset contacts        1382
+ selectset done           1
+ eigen done           1
+ tau           9  0.334536821              83
+ #popped          10           1
+ #selectset contacts        1382
+ selectset done           1
+ eigen done           1
+ tau          11   1.72580123              41
+ #popped          13           1
+ #selectset contacts        1382
+ selectset done           1
+ eigen done           1
+ tau          13  0.878698170              71
+ #popped           7           0
+ #selectset contacts        1382
+ selectset done           0
+ eigen done           0
+ tau          15  0.699640214             108
+ #popped          16           1
+ #selectset contacts        1382
+ selectset done           1
+ eigen done           1
+ tau          17  0.576705873              98
+ #popped          17           0
+ #selectset contacts        1382
+ selectset done           0
+ eigen done           0
+ tau          19  0.621663690             118
+ #popped          21           0
+ #selectset contacts        1382
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+           0
+         155
+         155  residues read 4YLI.dssp                                                   
+  grow short strand          32          33
+  grow short strand          61          62
+  grow short strand         100         101
+  exclude short helix         121         123
+  grow short strand         127         131
+  grow short strand         136         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  5  6 11  4  7  8  9 10
+   2     1  0  0  1  1
+   3     1  6  7 10  2  3  5  6 11  4  7  8  9 10
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  6  2  3  5  6 11  4
+   7     3 16 17  4  7  8  9 10
+   8     6 10 11  5  2  3  5  6 11
+   9     6  0  0  1  4
+  10     8 12 13  4  2  3  5  6
+  11     8  0  0  1 11
+  12    10  0  0  2  2  3
+  13    10 14 15  2  5  6
+  14    13  0  0  1  5
+  15    13  0  0  1  6
+  16     7 18 19  2  7  8
+  17     7  0  0  2  9 10
+  18    16  0  0  1  7
+  19    16  0  0  1  8
+  20     0  0  0  0
+  21     0  0  0  2  9 10
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 10  1  2 11
+   4 -   3  6  7  6  2  2  6 11 11
+   5 -   3 14 15  4  1  7 10
+   6 -   4  8  9  5  3  2  3  5  6 11 11
+   7 -   4  0  0  1  1  4  4
+   8 -   6 10 11  4  2  2  3  5  6
+   9 -   6  0  0  1  1 11 11
+  10 -   8  0  0  2  1  2  3
+  11 -   8 12 13  2  1  5  6
+  12 -  11  0  0  1  1  5  5
+  13 -  11  0  0  1  1  6  6
+  14 -   5 16 17  2  1  7  8
+  15 -   5  0  0  2  1  9 10
+  16 -  14  0  0  1  1  7  7
+  17 -  14  0  0  1  1  8  8
+
+ CHAIN E
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            149
+Total number of atoms read in:              1161
+Total number of ignored atom records:         27
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+         149  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1338
+ selectset done           0
+ eigen done           0
+ tau           1   6.91222572              24
+ #popped           2           1
+ #selectset contacts        1338
+ selectset done           1
+ eigen done           1
+ tau           3   1.01343668              14
+ #popped           3           0
+ #selectset contacts        1338
+ selectset done           0
+ eigen done           0
+ tau           5   1.19292688              78         137
+ #popped           6           1
+ #selectset contacts        1338
+ selectset done           1
+ eigen done           1
+ tau           7  0.600318968              35          54
+ #popped           8           1
+ #selectset contacts        1338
+ selectset done           1
+ eigen done           1
+ tau           9   0.00000000    
+ #popped           7           0
+ #selectset contacts        1338
+ selectset done           0
+ eigen done           0
+ tau           9  0.780336440              94         104
+ #popped          10           0
+ #selectset contacts        1338
+ selectset done           0
+ eigen done           0
+ tau          11  0.606340885              94
+ #popped          13           0
+ #selectset contacts        1338
+ selectset done           0
+ eigen done           0
+ tau          13   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+           0
+         149
+         149  residues read 4YLI.dssp                                                   
+  grow short strand          26          27
+  grow short strand          55          56
+  grow short strand          94          95
+  exclude short helix         115         117
+  grow short strand         121         125
+  grow short strand         130         133
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  5  6 11  4  7  8  9 10
+   2     1  0  0  1  1
+   3     1  6  7 10  2  3  5  6 11  4  7  8  9 10
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3  8  9  6  2  3  5  6 11  4
+   7     3 12 13  4  7  8  9 10
+   8     6  0  0  5  2  3  5  6 11
+   9     6  0  0  1  4
+  10     0  0  0  4  7  8  9 10
+  11     0  0  0  0
+  12     7  0  0  2  7  8
+  13     7  0  0  2  9 10
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 10  1  2 11
+   4 -   3  6  7  6  2  2  6 11 11
+   5 -   3  8  9  4  1  7 10
+   6 -   4  0  0  5  3  2  3  5  6 11 11
+   7 -   4  0  0  1  1  4  4
+   8 -   5  0  0  2  1  7  8
+   9 -   5  0  0  2  1  9 10
+
+ CHAIN F
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            154
+Total number of atoms read in:              1201
+Total number of ignored atom records:         49
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+  Reading DSSP file
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+         154  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1381
+ selectset done           0
+ eigen done           0
+ tau           1   6.09610224              31
+ #popped           2           1
+ #selectset contacts        1381
+ selectset done           1
+ eigen done           1
+ tau           3   1.18153012              19
+ #popped           3           0
+ #selectset contacts        1381
+ selectset done           0
+ eigen done           0
+ tau           5   1.12208211              83         144
+ #popped           6           1
+ #selectset contacts        1381
+ selectset done           1
+ eigen done           1
+ tau           7  0.431189358              41          51
+ #popped           8           1
+ #selectset contacts        1381
+ selectset done           1
+ eigen done           1
+ tau           9   1.37878788              63          83
+ #popped          10           2
+ #selectset contacts        1381
+ selectset done           2
+ eigen done           2
+ tau          11  0.404814422              41
+ #popped          13           2
+ #selectset contacts        1381
+ selectset done           2
+ eigen done           2
+ tau          13   0.00000000    
+ #popped          11           1
+ #selectset contacts        1381
+ selectset done           1
+ eigen done           1
+ tau          13  0.672939599              73
+ #popped           7           0
+ #selectset contacts        1381
+ selectset done           0
+ eigen done           0
+ tau          15  0.591493726             100         118
+ #popped          16           0
+ #selectset contacts        1381
+ selectset done           0
+ eigen done           0
+ tau          17   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    SUGAR BINDING PROTEIN                   05-MAR-15   4YLI              COMPND   2 MOLECULE: COLLECTIN-11;                                              SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    R.WALLIS,U.V.GIRIJA,A.R.GINGRAS,P.C.E.MOODY,J.E.MARSHALL              
+           0
+         154
+         154  residues read 4YLI.dssp                                                   
+  grow short strand          32          33
+  grow short strand          61          62
+  grow short strand         100         101
+  exclude short helix         121         123
+  grow short strand         127         131
+  grow short strand         136         139
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 11  1  2  3  4  5 11  6  7  8  9 10
+   2     1  0  0  1  1
+   3     1  6  7 10  2  3  4  5 11  6  7  8  9 10
+   4     0  0  0  1  1
+   5     0  0  0  0
+   6     3 10 11  6  2  3  4  5 11  6
+   7     3  0  0  4  7  8  9 10
+   8     0  0  0  6  2  3  4  5 11  6
+   9     0  0  0  0
+  10     6 12 13  5  2  3  4  5 11
+  11     6  0  0  1  6
+  12    10  0  0  2  2  3
+  13    10  0  0  3  4  5 11
+  14     0  0  0  0
+  15     0  0  0  1  6
+  16     0  0  0  4  7  8  9 10
+  17     0  0  0  0
+   1 +   0  2  3 11  1  1 11
+   2 =   1  0  0  1  1  1  1
+   3 *   1  4  5 10  1  2 11
+   4 -   3  6  7  6  2  2  6 11 11
+   5 -   3  0  0  4  1  7 10
+   6 -   4  8  9  5  2  2  5 11 11
+   7 -   4  0  0  1  1  6  6
+   8 -   6  0  0  2  1  2  3
+   9 -   6  0  0  3  2  4  5 11 11
+
+ CHAIN : 4YLIA
+ CHAIN : 4YLIB
+ CHAIN : 4YLIC
+ CHAIN : 4YLID
+ CHAIN : 4YLIE
+ CHAIN : 4YLIF
+

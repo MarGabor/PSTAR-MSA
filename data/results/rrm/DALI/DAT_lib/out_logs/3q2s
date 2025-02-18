@@ -1,0 +1,573 @@
+A length: 205
+B length: 201
+C length: 93
+D length: 92
+# 4 chains A B C D
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom:  988  CA BASP A 142 
+ Alternate location indication is not blank or A, ignore atom:  992  CB BASP A 142 
+ Alternate location indication is not blank or A, ignore atom:  994  CG BASP A 142 
+ Alternate location indication is not blank or A, ignore atom:  996  OD1BASP A 142 
+ Alternate location indication is not blank or A, ignore atom:  998  OD2BASP A 142 
+ Alternate location indication is not blank or A, ignore atom: 1081  CA BASN A 152 
+ Alternate location indication is not blank or A, ignore atom: 1085  CB BASN A 152 
+ Alternate location indication is not blank or A, ignore atom: 1087  CG BASN A 152 
+ Alternate location indication is not blank or A, ignore atom: 1089  OD1BASN A 152 
+ Alternate location indication is not blank or A, ignore atom: 1091  ND2BASN A 152 
+
+Total number of residues read in:            207
+Total number of atoms read in:              1700
+Total number of ignored atom records:          9
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+  Reading DSSP file
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              COMPND   2 MOLECULE: CLEAVAGE AND POLYADENYLATION SPECIFICITY FACTOR S          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+         207  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1710
+ selectset done           0
+ eigen done           0
+ tau           1   5.47282696              13
+ #popped           3           0
+ #selectset contacts        1710
+ selectset done           0
+ eigen done           0
+ tau           3   2.20615268              33          58         128         151
+ #popped           4           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau           5  0.771057129              76         108
+ #popped           6           2
+ #selectset contacts        1710
+ selectset done           2
+ eigen done           2
+ tau           7  0.716157436              33          76         119         162         173
+ #popped           8           3
+ #selectset contacts        1710
+ selectset done           3
+ eigen done           3
+ tau           9   1.30854082              23
+ #popped          11           3
+ #selectset contacts        1710
+ selectset done           3
+ eigen done           3
+ tau          11  0.297722548             119
+ #popped          12           3
+ #selectset contacts        1710
+ selectset done           3
+ eigen done           3
+ tau          13   2.68168616              33
+ #popped           9           2
+ #selectset contacts        1710
+ selectset done           2
+ eigen done           2
+ tau          15   1.34822452             188
+ #popped          16           2
+ #selectset contacts        1710
+ selectset done           2
+ eigen done           2
+ tau          17  0.801880181              76         162
+ #popped          18           3
+ #selectset contacts        1710
+ selectset done           3
+ eigen done           3
+ tau          19  0.580580592              76
+ #popped          19           2
+ #selectset contacts        1710
+ selectset done           2
+ eigen done           2
+ tau          21  0.265456349             152
+ #popped           7           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau          23   4.46029282              88
+ #popped          25           1
+ #selectset contacts        1710
+ selectset done           1
+ eigen done           1
+ tau          25  0.609461963              98
+ #popped           5           0
+ #selectset contacts        1710
+ selectset done           0
+ eigen done           0
+ tau          27   1.22076368              43
+ #popped          29           0
+ #selectset contacts        1710
+ selectset done           0
+ eigen done           0
+ tau          29   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              COMPND   2 MOLECULE: CLEAVAGE AND POLYADENYLATION SPECIFICITY FACTOR S          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+           0
+         207
+         207  residues read 3Q2S.dssp                                                   
+  grow short strand          15          19
+  exclude short helix          22          24
+  grow short strand          83          85
+  grow short strand          88          90
+  exclude short helix         178         181
+  exclude short helix         185         188
+  grow short strand         202         206
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  4  5 14  1  2 11  4  5 12  9 10 13 14  6  7  8  3
+   2     0  0  0  0
+   3     0  0  0 14  1  2 11  4  5 12  9 10 13 14  6  7  8  3
+   4     1  6  7 13  1  2 11  4  5 12  9 10 13 14  6  7  8
+   5     1  0  0  1  3
+   6     4  8  9 10  1  2 11  4  5 12  9 10 13 14
+   7     4 24 25  3  6  7  8
+   8     6 10 11  3  1  2 11
+   9     6 16 17  7  4  5 12  9 10 13 14
+  10     8  0  0  1  1
+  11     8 12 13  2  2 11
+  12    11  0  0  1  2
+  13    11  0  0  1 11
+  14     0  0  0  1  2
+  15     0  0  0  0
+  16     9 18 19  5  4  5 12  9 10
+  17     9  0  0  2 13 14
+  18    16 20 21  3  4  5 12
+  19    16 22 23  2  9 10
+  20    18  0  0  2  4  5
+  21    18  0  0  1 12
+  22    19  0  0  1  9
+  23    19  0  0  1 10
+  24     7  0  0  1  6
+  25     7 26 27  2  7  8
+  26    25  0  0  1  7
+  27    25  0  0  1  8
+  28     0  0  0  0
+  29     0  0  0  1  3
+   1 +   0  2  3 14  1  1 14
+   2 -   1  4  5 13  2  1  2  4 14
+   3 -   1  0  0  1  1  3  3
+   4 -   2  6  7 10  3  1  2  4  5  9 14
+   5 -   2 20 21  3  1  6  8
+   6 -   4  8  9  3  2  1  2 11 11
+   7 -   4 12 13  7  3  4  5  9 10 12 14
+   8 -   6  0  0  1  1  1  1
+   9 -   6 10 11  2  2  2  2 11 11
+  10 -   9  0  0  1  1  2  2
+  11 -   9  0  0  1  1 11 11
+  12 -   7 14 15  5  3  4  5  9 10 12 12
+  13 -   7  0  0  2  1 13 14
+  14 -  12 16 17  3  2  4  5 12 12
+  15 -  12 18 19  2  1  9 10
+  16 -  14  0  0  2  1  4  5
+  17 -  14  0  0  1  1 12 12
+  18 -  15  0  0  1  1  9  9
+  19 -  15  0  0  1  1 10 10
+  20 -   5  0  0  1  1  6  6
+  21 -   5 22 23  2  1  7  8
+  22 -  21  0  0  1  1  7  7
+  23 -  21  0  0  1  1  8  8
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+ Alternate location indication is not blank or A, ignore atom: 2585  CA BILE B 128 
+ Alternate location indication is not blank or A, ignore atom: 2589  CB BILE B 128 
+ Alternate location indication is not blank or A, ignore atom: 2591  CG1BILE B 128 
+ Alternate location indication is not blank or A, ignore atom: 2593  CG2BILE B 128 
+ Alternate location indication is not blank or A, ignore atom: 2595  CD1BILE B 128 
+ Alternate location indication is not blank or A, ignore atom: 2598  CA BLEU B 129 
+ Alternate location indication is not blank or A, ignore atom: 2602  CB BLEU B 129 
+ Alternate location indication is not blank or A, ignore atom: 2604  CG BLEU B 129 
+ Alternate location indication is not blank or A, ignore atom: 2606  CD1BLEU B 129 
+ Alternate location indication is not blank or A, ignore atom: 2608  CD2BLEU B 129 
+
+Total number of residues read in:            203
+Total number of atoms read in:              1668
+Total number of ignored atom records:         23
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+  Reading DSSP file
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              COMPND   2 MOLECULE: CLEAVAGE AND POLYADENYLATION SPECIFICITY FACTOR S          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+         203  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1641
+ selectset done           0
+ eigen done           0
+ tau           1   2.23962784              33          62          87         151
+ #popped           2           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau           3   2.11275673              19         173
+ #popped           4           2
+ #selectset contacts        1641
+ selectset done           2
+ eigen done           2
+ tau           5   1.76363552              19         193
+ #popped           6           3
+ #selectset contacts        1641
+ selectset done           3
+ eigen done           3
+ tau           7   0.00000000    
+ #popped           7           2
+ #selectset contacts        1641
+ selectset done           2
+ eigen done           2
+ tau           7  0.645161331             183
+ #popped           5           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau           9  0.485871375              33          73
+ #popped          10           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          11  0.671198964              87         161
+ #popped          12           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          13   1.05074358              33
+ #popped          15           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          15   0.00000000    
+ #popped           3           0
+ #selectset contacts        1641
+ selectset done           0
+ eigen done           0
+ tau          15  0.748305500             114
+ #popped          16           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          17   1.54741561              97
+ #popped          18           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          19   1.14977825              49
+ #popped          21           1
+ #selectset contacts        1641
+ selectset done           1
+ eigen done           1
+ tau          21   0.00000000    
+ #popped          17           0
+ #selectset contacts        1641
+ selectset done           0
+ eigen done           0
+ tau          21   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              COMPND   2 MOLECULE: CLEAVAGE AND POLYADENYLATION SPECIFICITY FACTOR S          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+           0
+         203
+         203  residues read 3Q2S.dssp                                                   
+  grow short strand          16          19
+  exclude short helix          22          24
+  grow short strand          25          27
+  grow short strand          65          68
+  grow short strand          84          85
+  grow short strand          88          90
+  grow short strand         159         161
+  exclude short helix         174         177
+  exclude short helix         181         184
+  grow short strand         199         202
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1 15 14  2  6  7 13 12  5  3  4  8  9 10 11
+   2     1  4  5  9  1 15 14  2  6  7 13 12  5
+   3     1 16 17  6  3  4  8  9 10 11
+   4     2  6  7  3  1 15 14
+   5     2 10 11  6  2  6  7 13 12  5
+   6     4  0  0  2  1 15
+   7     4  0  0  1 14
+   8     0  0  0  0
+   9     0  0  0  1 14
+  10     5 12 13  5  2  6  7 13 12
+  11     5  0  0  1  5
+  12    10 14 15  4  2  6  7 13
+  13    10  0  0  1 12
+  14    12  0  0  1  2
+  15    12  0  0  3  6  7 13
+  16     3 18 19  4  3  4  8  9
+  17     3  0  0  2 10 11
+  18    16 20 21  3  3  4  8
+  19    16  0  0  1  9
+  20    18  0  0  1  3
+  21    18  0  0  2  4  8
+   1 *   0  2  3 15  1  1 15
+   2 -   1  4  5  9  3  1  2  5  7 12 15
+   3 -   1 14 15  6  2  3  4  8 11
+   4 -   2  6  7  3  2  1  1 14 15
+   5 -   2  8  9  6  3  2  2  5  7 12 13
+   6 -   4  0  0  2  2  1  1 15 15
+   7 -   4  0  0  1  1 14 14
+   8 -   5 10 11  5  3  2  2  6  7 12 13
+   9 -   5  0  0  1  1  5  5
+  10 -   8 12 13  4  3  2  2  6  7 13 13
+  11 -   8  0  0  1  1 12 12
+  12 -  10  0  0  1  1  2  2
+  13 -  10  0  0  3  2  6  7 13 13
+  14 -   3 16 17  4  2  3  4  8  9
+  15 -   3  0  0  2  1 10 11
+  16 -  14 18 19  3  2  3  4  8  8
+  17 -  14  0  0  1  1  9  9
+  18 -  16  0  0  1  1  3  3
+  19 -  16  0  0  2  2  4  4  8  8
+
+ CHAIN C
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             93
+Total number of atoms read in:               732
+Total number of ignored atom records:          3
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+  Reading DSSP file
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              COMPND   2 MOLECULE: CLEAVAGE AND POLYADENYLATION SPECIFICITY FACTOR S          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+          93  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         777
+ selectset done           0
+ eigen done           0
+ tau           1   1.34212554              12          31          49          67
+ #popped           2           1
+ #selectset contacts         777
+ selectset done           1
+ eigen done           1
+ tau           3  0.756014049              12          49          79
+ #popped           4           2
+ #selectset contacts         777
+ selectset done           2
+ eigen done           2
+ tau           5  0.384248704              12
+ #popped           5           1
+ #selectset contacts         777
+ selectset done           1
+ eigen done           1
+ tau           7   4.05939865              49
+ #popped           3           0
+ #selectset contacts         777
+ selectset done           0
+ eigen done           0
+ tau           9   1.01278782              31
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              COMPND   2 MOLECULE: CLEAVAGE AND POLYADENYLATION SPECIFICITY FACTOR S          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+           0
+          93
+          93  residues read 3Q2S.dssp                                                   
+  grow short strand           2           6
+  exclude short helix          56          61
+  grow short strand          75          78
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  5  3  4  6  2
+   2     1  4  5  5  1  5  3  4  6
+   3     1  0  0  1  2
+   4     2  6  7  2  1  5
+   5     2  8  9  3  3  4  6
+   6     4  0  0  1  1
+   7     4  0  0  1  5
+   8     5  0  0  2  3  4
+   9     5  0  0  1  6
+  10     0  0  0  1  2
+  11     0  0  0  0
+   1 *   0  2  3  6  1  1  6
+   2 -   1  4  5  5  2  1  1  3  6
+   3 -   1  0  0  1  1  2  2
+   4 -   2  6  7  2  2  1  1  5  5
+   5 -   2  8  9  3  2  3  4  6  6
+   6 -   4  0  0  1  1  1  1
+   7 -   4  0  0  1  1  5  5
+   8 -   5  0  0  2  1  3  4
+   9 -   5  0  0  1  1  6  6
+
+ CHAIN D
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:             92
+Total number of atoms read in:               727
+Total number of ignored atom records:          1
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+  Reading DSSP file
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              COMPND   2 MOLECULE: CLEAVAGE AND POLYADENYLATION SPECIFICITY FACTOR S          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+          92  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts         764
+ selectset done           0
+ eigen done           0
+ tau           1   1.26364839              12          31          49          68
+ #popped           2           1
+ #selectset contacts         764
+ selectset done           1
+ eigen done           1
+ tau           3   1.59637189              78
+ #popped           4           1
+ #selectset contacts         764
+ selectset done           1
+ eigen done           1
+ tau           5   0.00000000    
+ #popped           3           0
+ #selectset contacts         764
+ selectset done           0
+ eigen done           0
+ tau           5   1.87244582              25
+ #popped           7           0
+ #selectset contacts         764
+ selectset done           0
+ eigen done           0
+ tau           7   0.00000000    
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    NUCLEAR PROTEIN                         20-DEC-10   3Q2S              COMPND   2 MOLECULE: CLEAVAGE AND POLYADENYLATION SPECIFICITY FACTOR S          SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   AUTHOR    Q.YANG,M.COSENO,G.M.GILMARTIN,S.DOUBLIE                               
+           0
+          92
+          92  residues read 3Q2S.dssp                                                   
+  grow short strand           3           6
+  exclude short helix          57          62
+  grow short strand          77          78
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3  6  1  3  4  5  6  2
+   2     1  4  5  5  1  3  4  5  6
+   3     1  0  0  1  2
+   4     2  0  0  4  1  3  4  5
+   5     2  0  0  1  6
+   6     0  0  0  1  2
+   7     0  0  0  0
+   1 *   0  2  3  6  1  1  6
+   2 -   1  4  5  5  2  1  1  3  6
+   3 -   1  0  0  1  1  2  2
+   4 -   2  0  0  4  2  1  1  3  5
+   5 -   2  0  0  1  1  6  6
+
+ CHAIN : 3Q2SA
+ CHAIN : 3Q2SB
+ CHAIN : 3Q2SC
+ CHAIN : 3Q2SD
+

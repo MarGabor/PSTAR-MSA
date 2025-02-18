@@ -1,0 +1,40 @@
+# Job: kunitz
+# Query: 1TAPA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1TOC-U  3.6  3.6   44   120   27   MOLECULE: THROMBIN;                                                  
+
+# Pairwise alignments
+
+No 1: Query=1TAPA Sbjct=1TOCU Z-score=3.6
+
+DSSP  -llLLLLLlLLLLlllllLLLLLEEEEEElLLEEEEEELlllllllLLLLLLHHHHHHHH
+Query -ynRLCIKpRDWIdecdsNEGGERAYFRNgKGGCDSFWIcpedhtgADYYSSYRDCFNAC   59
+ident     ||            |      |||     |               | |   |  ||
+Sbjct slnVLCNN-PHTA--dcnNDAQVDRYFRE-GTTCLMSPA-----ctSEGYASQHECQQAC   51
+DSSP  leeHHHLL-LLLL--lllLLLEEEEEEEE-LLEEEEEEE-----elLLLLLLHHHHHHHL
+
+DSSP  L-----------------------------------------------------------
+Query I-----------------------------------------------------------   60
+ident                                                             
+Sbjct Fvggedhssemhssclgdpptscaegtdityydsdsktckvlaascpsgentfesevecq  111
+DSSP  Llllllllllllhhhhlllleeeeeeeeeeeeelllleeeeeeeeelllllllllhhhhh
+
+DSSP  ---------
+Query ---------   60
+ident          
+Sbjct vacgapieg  120
+DSSP  hhlllllll
+
+
+# Structural equivalences
+   1: 1TAP-A 1TOC-U     3 -   7 <=>    4 -   8   (ARG    3  - LYS    7  <=> VAL    3  - ASN    7 )                          
+   1: 1TAP-A 1TOC-U     9 -  12 <=>    9 -  12   (ARG    9  - ILE   12  <=> PRO    8  - ALA   11 )                          
+   1: 1TAP-A 1TOC-U    18 -  28 <=>   16 -  26   (ASN   18  - ASN   28  <=> ASN   15  - GLU   25 )                          
+   1: 1TAP-A 1TOC-U    30 -  38 <=>   27 -  35   (LYS   30  - ILE   38  <=> GLY   26  - ALA   34 )                          
+   1: 1TAP-A 1TOC-U    46 -  60 <=>   38 -  52   (ALA   46  - ILE   60  <=> SER   37  - PHE   51 )                          
+
+# Translation-rotation matrices
+-matrix  "1TAP-A 1TOC-U  U(1,.)   0.164108  0.945769 -0.280338          -16.213968"
+-matrix  "1TAP-A 1TOC-U  U(2,.)   0.866843 -0.273901 -0.416608          -27.682093"
+-matrix  "1TAP-A 1TOC-U  U(3,.)  -0.470800 -0.174640 -0.864782           92.196564"
+

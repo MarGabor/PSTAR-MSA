@@ -1,0 +1,366 @@
+A length: 214
+B length: 219
+# 2 chains A B
+
+ CHAIN A
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            214
+Total number of atoms read in:              1673
+Total number of ignored atom records:        165
+ HEADER    HYDROLASE                               10-MAR-16   5B3R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.SHIMIZU-IBUKA,Y.ISHII                                               
+  Reading DSSP file
+ HEADER    HYDROLASE                               10-MAR-16   5B3R              COMPND   2 MOLECULE: IMP-18;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.SHIMIZU-IBUKA,Y.ISHII                                               
+         214  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1937
+ selectset done           0
+ eigen done           0
+ tau           1   2.61796212             112
+ #popped           2           1
+ #selectset contacts        1937
+ selectset done           1
+ eigen done           1
+ tau           3   1.57387960              91
+ #popped           4           2
+ #selectset contacts        1937
+ selectset done           2
+ eigen done           2
+ tau           5  0.725729346              30          40          53
+ #popped           6           3
+ #selectset contacts        1937
+ selectset done           3
+ eigen done           3
+ tau           7   1.19218564              42
+ #popped           8           3
+ #selectset contacts        1937
+ selectset done           3
+ eigen done           3
+ tau           9   0.00000000    
+ #popped           7           2
+ #selectset contacts        1937
+ selectset done           2
+ eigen done           2
+ tau           9   1.58605492              66
+ #popped          10           3
+ #selectset contacts        1937
+ selectset done           3
+ eigen done           3
+ tau          11   0.00000000    
+ #popped          11           2
+ #selectset contacts        1937
+ selectset done           2
+ eigen done           2
+ tau          11   0.00000000    
+ #popped           5           1
+ #selectset contacts        1937
+ selectset done           1
+ eigen done           1
+ tau          11   0.00000000    
+ #popped           3           0
+ #selectset contacts        1937
+ selectset done           0
+ eigen done           0
+ tau          11   1.03203058             151         179         195
+ #popped          12           1
+ #selectset contacts        1937
+ selectset done           1
+ eigen done           1
+ tau          13   1.24818826             127         137
+ #popped          14           1
+ #selectset contacts        1937
+ selectset done           1
+ eigen done           1
+ tau          15  0.758283019             127
+ #popped          17           1
+ #selectset contacts        1937
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped          13           0
+ #selectset contacts        1937
+ selectset done           0
+ eigen done           0
+ tau          17  0.981170237             165
+ #popped          19           0
+ #selectset contacts        1937
+ selectset done           0
+ eigen done           0
+ tau          19   1.71517682             179
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               10-MAR-16   5B3R              COMPND   2 MOLECULE: IMP-18;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.SHIMIZU-IBUKA,Y.ISHII                                               
+           0
+         214
+         214  residues read 5B3R.dssp                                                   
+  grow short strand          37          41
+  exclude short helix          74          77
+  exclude short helix          80          85
+  grow short strand          89          93
+ crowded segment excluded!
+  grow short strand         110         112
+  grow short strand         116         120
+  grow short strand         124         127
+  grow short strand         139         142
+  grow short strand         147         151
+  grow short strand         186         189
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  5  4  6  7  8  9 10 11 12 14 13 15
+   2     1  4  5  8  1  2  3  5  4  6  7  8
+   3     1 12 13  7  9 10 11 12 14 13 15
+   4     2  6  7  6  1  2  3  5  4  6
+   5     2  0  0  2  7  8
+   6     4  8  9  4  1  2  3  5
+   7     4  0  0  2  4  6
+   8     6  0  0  3  1  2  3
+   9     6  0  0  1  5
+  10     0  0  0  2  4  6
+  11     0  0  0  0
+  12     3 16 17  5  9 10 11 12 14
+  13     3 20 21  2 13 15
+  14     0  0  0  5  9 10 11 12 14
+  15     0  0  0  0
+  16    12  0  0  2  9 10
+  17    12  0  0  3 11 12 14
+  18     0  0  0  0
+  19     0  0  0  2 13 15
+  20    13  0  0  1 13
+  21    13  0  0  1 15
+   1 +   0  2  3 15  1  1 15
+   2 *   1  4  5  8  1  1  8
+   3 *   1 10 11  7  1  9 15
+   4 -   2  6  7  6  1  1  6
+   5 -   2  0  0  2  1  7  8
+   6 -   4  8  9  4  2  1  3  5  5
+   7 -   4  0  0  2  2  4  4  6  6
+   8 -   6  0  0  3  1  1  3
+   9 -   6  0  0  1  1  5  5
+  10 -   3 12 13  5  2  9 12 14 14
+  11 -   3 14 15  2  2 13 13 15 15
+  12 -  10  0  0  2  1  9 10
+  13 -  10  0  0  3  2 11 12 14 14
+  14 -  11  0  0  1  1 13 13
+  15 -  11  0  0  1  1 15 15
+
+ CHAIN B
+  PUU: Parser for Protein Unfolding Units 
+  Ref: L. Holm, C. Sander, Proteins 19:256-268, 1994
+  Ver: 2.1 (February 2016)                                         
+  Dimensioned for        17000  residues.
+  
+  read defaults from puu.default                                                                     
+ lhetatm              reset from puu.default
+ printdepth           reset from puu.default
+ lsplit               reset from puu.default
+  current parameters:
+ dssplist            NONE                                    
+ pdblist             NONE                                    
+ breakdist              5.00000000    
+ minseglen                     10
+ hbond                  15.0000000    
+ compact                80.0000000    
+ taucutoff              2.59999990    
+ seed                  1234567811
+ treefilename        units.puu                               
+ prettyfilename      domains.puu                             
+ lhetatm              T
+ lsplit               T
+ printdepth                   -99
+ subunitfilename     subunits.puu                            
+  
+
+Total number of residues read in:            219
+Total number of atoms read in:              1713
+Total number of ignored atom records:        193
+ HEADER    HYDROLASE                               10-MAR-16   5B3R              
+ COMPND    MOL_ID: 1;                                                            
+ SOURCE    MOL_ID: 1;                                                            
+ AUTHOR    A.SHIMIZU-IBUKA,Y.ISHII                                               
+  Reading DSSP file
+ HEADER    HYDROLASE                               10-MAR-16   5B3R              COMPND   2 MOLECULE: IMP-18;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.SHIMIZU-IBUKA,Y.ISHII                                               
+         219  residues read 
+ # This is dostack           1
+ #popped           1           0
+ #selectset contacts        1977
+ selectset done           0
+ eigen done           0
+ tau           1   2.18613696             115
+ #popped           2           1
+ #selectset contacts        1977
+ selectset done           1
+ eigen done           1
+ tau           3   1.53344369              95
+ #popped           4           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau           5   1.21515846              19          30
+ #popped           6           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau           7  0.680570364              83
+ #popped           8           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau           9  0.869486988              45          57          72
+ #popped          10           3
+ #selectset contacts        1977
+ selectset done           3
+ eigen done           3
+ tau          11  0.562506080              45
+ #popped          12           3
+ #selectset contacts        1977
+ selectset done           3
+ eigen done           3
+ tau          13  0.391940325              19
+ #popped          11           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau          15  0.844235301              57
+ #popped           5           1
+ #selectset contacts        1977
+ selectset done           1
+ eigen done           1
+ tau          17   0.00000000    
+ #popped           3           0
+ #selectset contacts        1977
+ selectset done           0
+ eigen done           0
+ tau          17   1.11157858             155         183         199
+ #popped          18           1
+ #selectset contacts        1977
+ selectset done           1
+ eigen done           1
+ tau          19   1.21108556             143
+ #popped          20           2
+ #selectset contacts        1977
+ selectset done           2
+ eigen done           2
+ tau          21   1.29571640             130
+ #popped          21           1
+ #selectset contacts        1977
+ selectset done           1
+ eigen done           1
+ tau          23   0.00000000    
+ #popped          19           0
+ #selectset contacts        1977
+ selectset done           0
+ eigen done           0
+ tau          23   1.16787314             183
+ #popped          24           1
+ #selectset contacts        1977
+ selectset done           1
+ eigen done           1
+ tau          25   1.39313233             169
+ #popped          25           0
+ #selectset contacts        1977
+ selectset done           0
+ eigen done           0
+ tau          27  0.824161470             209
+ dostack done
+ findstrucdoms done
+ pret2 done
+ readnexttree returned            0
+ HEADER    HYDROLASE                               10-MAR-16   5B3R              COMPND   2 MOLECULE: IMP-18;                                                    SOURCE   2 ORGANISM_SCIENTIFIC: PSEUDOMONAS AERUGINOSA;                         AUTHOR    A.SHIMIZU-IBUKA,Y.ISHII                                               
+           0
+         219
+         219  residues read 5B3R.dssp                                                   
+  grow short strand          41          45
+  exclude short helix          78          81
+  exclude short helix          84          89
+  grow short strand          93          97
+ crowded segment excluded!
+  grow short strand         114         116
+  grow short strand         120         124
+  grow short strand         128         131
+  grow short strand         143         146
+  grow short strand         151         155
+  grow short strand         190         193
+ build parent ranges
+ delete empty nodes
+ rebuild parent from children
+   1     0  2  3 15  1  2  3  4  6  5  7  8  9 10 11 12 14 13 15
+   2     1  4  5  8  1  2  3  4  6  5  7  8
+   3     1 18 19  7  9 10 11 12 14 13 15
+   4     2 10 11  6  1  2  3  4  6  5
+   5     2  0  0  2  7  8
+   6     0  0  0  6  1  2  3  4  6  5
+   7     0  0  0  0
+   8     0  0  0  6  1  2  3  4  6  5
+   9     0  0  0  0
+  10     4 12 13  5  1  2  3  4  6
+  11     4  0  0  1  5
+  12    10 14 15  4  1  2  3  4
+  13    10  0  0  1  6
+  14    12  0  0  2  1  2
+  15    12  0  0  2  3  4
+  16     0  0  0  1  5
+  17     0  0  0  0
+  18     3 20 21  5  9 10 11 12 14
+  19     3 24 25  2 13 15
+  20    18  0  0  2  9 10
+  21    18  0  0  3 11 12 14
+  22     0  0  0  2  9 10
+  23     0  0  0  0
+  24    19  0  0  1 13
+  25    19  0  0  1 15
+  26     0  0  0  0
+  27     0  0  0  1 13
+  28     0  0  0  1 15
+  29     0  0  0  0
+   1 +   0  2  3 15  1  1 15
+   2 +   1  4  5  8  1  1  8
+   3 *   1 12 13  7  1  9 15
+   4 +   2  6  7  6  1  1  6
+   5 =   2  0  0  2  1  7  8
+   6 -   4  8  9  5  2  1  4  6  6
+   7 -   4  0  0  1  1  5  5
+   8 -   6 10 11  4  1  1  4
+   9 -   6  0  0  1  1  6  6
+  10 -   8  0  0  2  1  1  2
+  11 -   8  0  0  2  1  3  4
+  12 -   3 14 15  5  2  9 12 14 14
+  13 -   3 16 17  2  2 13 13 15 15
+  14 -  12  0  0  2  1  9 10
+  15 -  12  0  0  3  2 11 12 14 14
+  16 -  13  0  0  1  1 13 13
+  17 -  13  0  0  1  1 15 15
+
+ CHAIN : 5B3RA
+ CHAIN : 5B3RB
+

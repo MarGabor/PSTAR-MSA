@@ -1,0 +1,41 @@
+# Job: glob
+# Query: 1OUTB
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  1ECN-A 15.4  2.3  136   136   19   MOLECULE: ERYTHROCRUORIN (CYANO MET);                                
+
+# Pairwise alignments
+
+No 1: Query=1OUTB Sbjct=1ECNA Z-score=15.4
+
+DSSP  llLLHHHHHHHHHHHHLLLHhhHHHHHHHHHHHHLHHHHHHLHHHLLlLLHHHHHHLHHH
+Query veWTDAEKSTISAVWGKVNIdeIGPLALARVLIVYPWTQRYFGSFGNvSTPAAIMGNPKV   60
+ident         ||  |   ||         |  |    |     |  |        | |    
+Sbjct --LSADQISTVQASFDKVKG--DPVGILYAVFKADPSIMAKFTQFAG-KDLESIKGTAPF   55
+DSSP  --LLHHHHHHHHHHHHLLLL--LHHHHHHHHHHHLHHHHLLLLLLLL-LLHHHHLLLHHH
+
+DSSP  HHHHHHHHHLHHHHHHLLLLHHHHLHHHHHHHHhLLLLLLHHHHHHHHHHHHHHHHHhhH
+Query AAHGKVVCGALDKAVKNMGNILATYKSLSETHAnKLFVDPDNFRVLADVLTIVIAAKfgA  120
+ident   |     |   |      || |        |     |  |              |    
+Sbjct ETHANRIVGFFSKIIGELPNIEADVNTFVASHK-PRGVTHDQLNNFRAGFVSYMKAH--T  112
+DSSP  HHHHHHHHHHHHHHHHLLLLLHHHHHHHHHHHH-HHLLLHHHHHHHHHHHHHHHHHH--L
+
+DSSP  HLLhHHHHHHHHHHHHHHHHHLLLLl
+Query SFTpEIQATWQKFMKVVVAAMGSRYf  146
+ident  |     | |            |   
+Sbjct DFA-GAEAAWGATLDTFFGMIFSKM-  136
+DSSP  LHH-HHHHHHHHHHHHHHHHHHLLL-
+
+
+# Structural equivalences
+   1: 1OUT-B 1ECN-A     3 -  20 <=>    1 -  18   (TRP    3  - ILE   20  <=> LEU    1  - GLY   18 )                          
+   1: 1OUT-B 1ECN-A    23 -  47 <=>   19 -  43   (ILE   23  - ASN   47  <=> ASP   19  - GLY   43 )                          
+   1: 1OUT-B 1ECN-A    49 -  93 <=>   44 -  88   (SER   49  - ALA   93  <=> LYS   44  - LYS   88 )                          
+   1: 1OUT-B 1ECN-A    95 - 117 <=>   89 - 111   (LYS   95  - LYS  117  <=> PRO   89  - HIS  111 )                          
+   1: 1OUT-B 1ECN-A   120 - 123 <=>  112 - 115   (ALA  120  - THR  123  <=> THR  112  - ALA  115 )                          
+   1: 1OUT-B 1ECN-A   125 - 145 <=>  116 - 136   (GLU  125  - TYR  145  <=> GLY  116  - MET  136 )                          
+
+# Translation-rotation matrices
+-matrix  "1OUT-B 1ECN-A  U(1,.)  -0.090442  0.939138  0.331420           -0.912438"
+-matrix  "1OUT-B 1ECN-A  U(2,.)  -0.427310 -0.337188  0.838874           32.215733"
+-matrix  "1OUT-B 1ECN-A  U(3,.)   0.899570 -0.065750  0.431800           48.613461"
+

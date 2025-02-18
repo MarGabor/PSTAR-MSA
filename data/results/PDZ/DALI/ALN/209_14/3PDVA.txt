@@ -1,0 +1,33 @@
+# Job: PDZ
+# Query: 3PDVA
+# No:  Chain   Z    rmsd lali nres  %id PDB  Description
+   1:  3PS4-D 12.5  3.3   84    99   27   MOLECULE: MICROTUBULE-ASSOCIATED SERINE/THREONINE-PROTEIN K          
+
+# Pairwise alignments
+
+No 1: Query=3PDVA Sbjct=3PS4D Z-score=12.5
+
+DSSP  -lEEEEEELLL-LLLLEEEEE-------ehhhLEEEEEEEELLLLHHHHLLLLLLLEEEE
+Query -mALTVDVAGP-APWGFRITG-------grdfHTPIMVTKVAERGKAKDADLRPGDIIVA   51
+ident                ||                    |  | | | |  | |  || |  
+Sbjct smRSPITIQRSgKKYGFTLRAirvymgdtdvySVHHIVWHVEEGGPAQEAGLCAGDLITH   60
+DSSP  llLLLEEEELLlLLLLEEEEEeeeelllllleEEEEEEEEELLLLHHHHHLLLLLLEEEE
+
+DSSP  ELLEELLLLLHHHHHHHHHLLLLLEEEEEEL-LLLLLLL
+Query INGESAEGMLHAEAQSKIRQSPSPLRLQLDR-STIESEV   89
+ident  |||   || | |    |  |               | |
+Sbjct VNGEPVHGMVHPEVVELILKSGNKVAVTTTPfENTQSLV   99
+DSSP  ELLEELLLLLHHHHHHHHHHLLLEEEEEELLlLLLLEEL
+
+
+# Structural equivalences
+   1: 3PDV-A 3PS4-D     2 -  10 <=>    3 -  11   (ALA    2  - PRO   10  <=> ARG  965  - SER  973 )                          
+   1: 3PDV-A 3PS4-D    11 -  19 <=>   13 -  21   (ALA   11  - GLY   19  <=> LYS  975  - ALA  983 )                          
+   1: 3PDV-A 3PS4-D    24 -  82 <=>   33 -  91   (HIS   24  - ARG   82  <=> SER  995  - PRO 1053 )                          
+   1: 3PDV-A 3PS4-D    83 -  89 <=>   93 -  99   (SER   83  - VAL   89  <=> GLU 1055  - VAL 1061 )                          
+
+# Translation-rotation matrices
+-matrix  "3PDV-A 3PS4-D  U(1,.)  -0.643216 -0.710165  0.286249           12.396140"
+-matrix  "3PDV-A 3PS4-D  U(2,.)   0.735555 -0.676941 -0.026617           -3.230795"
+-matrix  "3PDV-A 3PS4-D  U(3,.)   0.212676  0.193432  0.957785          -47.340279"
+
