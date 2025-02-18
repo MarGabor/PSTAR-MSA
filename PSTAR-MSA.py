@@ -3991,8 +3991,10 @@ def pstar_union(ref_set_dict, comp_strat_MSA_aln_dict):
 def write_scores_to_file(union_test_set_dict, eval_path, union_ref_set, verbosity):
 
     scores_file_full_path = os.path.join(eval_path, 'scores_per_alignment.tsv')
+    jacc_scores_file_full_path = os.path.join(eval_path, 'jacc_scores_per_alignment.tsv')
 
     scores_dict = {}
+    jacc_scores_dict = {}
     for key in union_test_set_dict.keys():
         #set paths and write individual sets to files
         head, file_name = os.path.split(key)
@@ -4000,16 +4002,60 @@ def write_scores_to_file(union_test_set_dict, eval_path, union_ref_set, verbosit
         union_test_set_full_path = os.path.join(eval_path, "union_"+aln_name+"_MSA_set.json")
         write_set_to_file(union_test_set_dict[key], union_test_set_full_path)
         intersect_union = union_test_set_dict[key].intersection(union_ref_set)
+        union_A_C = union_test_set_dict[key].union(union_ref_set)
         if len(union_ref_set) > 0:
             SPS = len(intersect_union)/len(union_ref_set)
         else:
             SPS = 0
+        if len(union_A_C) > 0:
+            jacc_score = len(intersect_union)/len(union_A_C)
+        else:
+            jacc_score = 0
         scores_dict[os.path.split(key)[1]] = SPS
+        jacc_scores_dict[os.path.split(key)[1]] = jacc_score
         if verbosity > 0:
             sps_msg = "Score for alignment file %s: %s" % (key, str(SPS))
+            jacc_msg = "Jaccard index for alignment file %s: %s" % (key, str(jacc_score))
             print(sps_msg)
+            print(jacc_msg)
+    jacc_scores_df = pandas.DataFrame.from_dict(jacc_scores_dict, orient='index', columns=['Jaccard index'])
     scores_df = pandas.DataFrame.from_dict(scores_dict, orient='index', columns=['score'])
     scores_df.to_csv(scores_file_full_path, sep='\t')
+    jacc_scores_df.to_csv(jacc_scores_file_full_path, sep='\t')
+
+def write_PSM_and_jacc_DM_to_file(union_test_set_dict, eval_path, union_ref_set):
+    jacc_dm_file_full_path = os.path.join(eval_path, 'jacc_dm.tsv')
+    PSM_dm_file_full_path = os.path.join(eval_path, 'psm_dm.tsv')
+
+    jacc_dict = {}
+    PSM_dict = {}
+    for key_A in union_test_set_dict.keys():
+        for key_B in union_test_set_dict.keys():
+
+            intersect_A_C = union_test_set_dict[key_A].intersection(union_ref_set)
+            intersect_B_C = union_test_set_dict[key_B].intersection(union_ref_set)
+            intersect_A_B = union_test_set_dict[key_A].intersection(union_test_set_dict[key_B])
+            union_A_C = union_test_set_dict[key_A].union(union_ref_set)
+            union_B_C = union_test_set_dict[key_B].union(union_ref_set)
+            union_A_B = union_test_set_dict[key_A].union(union_test_set_dict[key_B])
+            if len(union_test_set_dict[key_A]) == 0 and len(union_test_set_dict[key_B]) == 0:
+                PSM = float(0)
+                JACC = float(0)
+            elif (len(union_test_set_dict[key_A]) == 0 and len(union_ref_set) == 0) or (len(union_test_set_dict[key_B]) == 0 and len(union_ref_set) == 0):
+                PSM = float(0.5)
+                JACC = 1-(len(intersect_A_B)/len(union_A_B))
+            else:
+                JACC = 1-(len(intersect_A_B)/len(union_A_B))
+                PSM = 0.5*(abs(((len(intersect_A_C))/(len(union_A_C)))-((len(intersect_B_C))/(len(union_B_C))))+1-(len(intersect_A_B)/len(union_A_B)))
+
+            jacc_dict[(os.path.split(key_A)[1],os.path.split(key_B)[1])] = JACC
+            PSM_dict[(os.path.split(key_A)[1],os.path.split(key_B)[1])] = PSM
+
+    jacc_df = pandas.DataFrame.from_dict(jacc_dict, orient='index', columns=['Jaccard-distance'])
+    PSM_df = pandas.DataFrame.from_dict(PSM_dict, orient='index', columns=['PSTAR-distance'])
+    jacc_df.to_csv(jacc_dm_file_full_path, sep='\t')
+    PSM_df.to_csv(PSM_dm_file_full_path, sep='\t')
+
 
 #calculates numbers based off precalculated structural alignments and corresponding comparison strategy
 # void (str, str, int)
@@ -4064,6 +4110,8 @@ def evaluate_job(out_path, job_name, verbosity):
     write_set_to_file(union_ref_set, union_ref_set_full_path)
     #write scores to file
     write_scores_to_file(union_test_set_dict, eval_path, union_ref_set, verbosity)
+    #write PSTAR metric distance matrix to file
+    write_PSM_and_jacc_DM_to_file(union_test_set_dict, eval_path, union_ref_set)
 
 def test_SPS(aln_file_full_path):
 
