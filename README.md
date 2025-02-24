@@ -1,7 +1,7 @@
 # Introduction
 *PSTAR-MSA* (Pairwise STructural Alignment Reference for Multiple Sequence Alignment) is an MSA benchmarking tool that aims to generalize the comparative scoring of multiple sequence alignment (MSA) algorithms. This is tried to be achieved by using pairwise structural alignments as reference data for each pair of aligned sequences in a given MSA. Tertiary protein structure data is sourced from the *"Protein Data Bank"* (PDB) and is planned to be expanded by high-certainty protein structure predictors like *AlphaFold*. Novel measure indices like the **PSTAR-score**, which is the cumulative pairwise structure alignment equivalent of the **sum-of-pairs-score** (SPS), have been itroduced in order to evaluate the similarity between MSA algorithms.
 Usually MSA algorithm quality is measured through the use of manually curated reference alignment databases such as *HOMSTRAD*, or *HomFam* for that matter. However, all of these databases suffer from limited data availability and it is not clear, if their status as references is legitimate. Because of this limited data availability it is likely that algorithms perform worse in general than they perform on the small select data set.
-An in-depth explanation of the scoring and some first results can be found [<ins>here</ins>](link to pdf). (Link not available yet.)
+An in-depth explanation of the scoring and some first results can be found [<ins>here</ins>](link to pdf not available yet)
 
 # Installation and setup
 **Linux** environment required.
@@ -32,7 +32,7 @@ python3 -m PSTAR-MSA --syncdb --diamondfile <path_to_DIAMOND_exe_file> --locpdbd
 
 ##### **<ins>Waiting is recommended to ensure flawless database generation.</ins>**
 
-However, you can download [these files](link to zip), manually create a directory you can later refer to under **--outputdir** of the **--syncdb** option, then extract the two files in the zip archive into this directory and launch the above command with these two files already in place and specifying the directory name under the **--outputdir** flag. The generation of the FASTA file based on the PDB copy is then skipped. But it can happen, if entries were removed from the PDB that manual deletions in the FASTA file and manual subsequent DIAMOND database generation have to be carried out.
+However, you can download the file "/PSTAR-MSA/data/atom_diamond_db.7z", manually create a directory you can later refer to under **--outputdir** of the **--syncdb** option, then extract the two files in the zip archive into this directory and launch the above command with these two files already in place and specifying the directory name under the **--outputdir** flag. The generation of the FASTA file based on the PDB copy is then skipped. But it can happen, if entries were removed from the PDB that manual deletions in the FASTA file and manual subsequent DIAMOND database generation have to be carried out.
 
 # Usage
 There are three main parts to alignment benchmarking with PSTAR-MSA, which can be done independently of each other. But we also provide the user with a wrapper function to do everything in one call. First: **Setting up the job**. This can be done via
